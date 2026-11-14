@@ -74,3 +74,19 @@ python3 -B computation/general_dual_audit_checks.py --module computation/general
 ```
 
 `general_dual_mass_probe.py` 不带参数时用本机 SciPy/HiGHS 重做确定种子的100例搜索，结果打印到标准输出。原探针使用 Python 3.13.18、SciPy 1.18.1；严格性由保存的准确证书和无求解器的两个检查承担。`general_dual_saved_certificate_check.py` 独立证明本批正容量饱和；它的输入契约是本批100份证书，不是任意未知容量问题的通用求解器。
+
+## 第7轮全参数族
+
+只复验整个参数族上界，无需重跑搜索：
+
+```sh
+python3 -B computation/independent_vertical_bound_check.py --input computation/inputs/r003_final_0546.json --certificate computation/results/round007/bb-live.json --round004 computation/results/round004/independent_final.json --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay007/independent-bb.json
+```
+
+重现分支搜索：
+
+```sh
+python3 -B computation/vertical_branch_bound.py computation/inputs/r003_final_0546.json --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay007/bb.json --target-gap 1/100000000 --seconds 180 --checkpoint-seconds 30 --cache /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay007/family.json
+```
+
+运行前创建输出父目录并确认data已挂载。墙钟上限随本机负载影响是否达到误差目标；即使时间停止，完整叶证书仍有效，实际完成状态须读 `status` 与准确缺口。加 `--resume` 从同版本代码、同输入和同目标的检查点继续。缓存不承担独立正确性证明；独立检查器从准确输入重建几何。`r007_best_vertical.json` 是该族最佳采样输入，其完整面积双算核结果位于 `results/round007/best-*.json`。

@@ -1,0 +1,256 @@
+{
+  "python": "3.9.6 (default, Oct 19 2026, 19:18:13) \n[Clang 21.0.0 (clang-2100.4.1.1)]",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "run_at_utc": "2026-11-14T17:03:58.548544+00:00",
+  "module_sha256": "c877c56f1f6cf7e0b79c06d79c96ae9070a6237684df0fb3a8e414b7a82d35c7",
+  "audit_script_sha256": "63ae37c92da3cc2eb33f6139b386e0ca41b0a3aa84b7e80dc1d85a1f95ea8175",
+  "bits": 16,
+  "beta_interval": [
+    "1/2",
+    "3/2"
+  ],
+  "independent_small_cases": [
+    {
+      "name": "new_activation",
+      "data": {
+        "lam": "1",
+        "Px": "20",
+        "Py": "20",
+        "pts": [
+          [
+            "10",
+            "8",
+            "4"
+          ],
+          [
+            "10",
+            "12",
+            "4"
+          ]
+        ]
+      },
+      "enumeration": {
+        "window_atoms_distinct": 4,
+        "x_coordinates": 1,
+        "y_coordinates": 4,
+        "candidate_boxes": 7,
+        "retained_boxes": 5
+      },
+      "evaluations": {
+        "1/2": {
+          "inner_area": "9326561865/1073741824",
+          "outer_area": "9327009371/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "2/3": {
+          "inner_area": "13621129315/1610612736",
+          "outer_area": "4540736563/536870912",
+          "independent_complete_area_equal": true
+        },
+        "1": {
+          "inner_area": "4294836225/536870912",
+          "outer_area": "4295098369/536870912",
+          "independent_complete_area_equal": true
+        },
+        "3/2": {
+          "inner_area": "4294836225/536870912",
+          "outer_area": "4295098369/536870912",
+          "independent_complete_area_equal": true
+        }
+      },
+      "whole_interval_upper": "131671506101/2147483648"
+    },
+    {
+      "name": "periodic_boundary_negative_lift",
+      "data": {
+        "lam": "1",
+        "Px": "10",
+        "Py": "10",
+        "pts": [
+          [
+            "0",
+            "19/2",
+            "4"
+          ]
+        ]
+      },
+      "enumeration": {
+        "window_atoms_distinct": 6,
+        "x_coordinates": 2,
+        "y_coordinates": 3,
+        "candidate_boxes": 15,
+        "retained_boxes": 6
+      },
+      "evaluations": {
+        "1/2": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "3/4": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "1": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "5/4": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "3/2": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        }
+      },
+      "whole_interval_upper": "25770262529/1073741824"
+    },
+    {
+      "name": "duplicate_zero_and_periodic_normalization",
+      "data": {
+        "lam": "1",
+        "Px": "10",
+        "Py": "10",
+        "pts": [
+          [
+            "0",
+            "19/2",
+            "1"
+          ],
+          [
+            "10",
+            "-1/2",
+            "3"
+          ],
+          [
+            "1",
+            "1",
+            "0"
+          ]
+        ]
+      },
+      "enumeration": {
+        "window_atoms_distinct": 6,
+        "x_coordinates": 2,
+        "y_coordinates": 3,
+        "candidate_boxes": 15,
+        "retained_boxes": 6
+      },
+      "evaluations": {
+        "1/2": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "3/4": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "1": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "5/4": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "3/2": {
+          "inner_area": "4294836225/1073741824",
+          "outer_area": "4295098369/1073741824",
+          "independent_complete_area_equal": true
+        }
+      },
+      "whole_interval_upper": "25770262529/1073741824"
+    },
+    {
+      "name": "interior_value_exceeds_both_endpoints",
+      "data": {
+        "lam": "1",
+        "Px": "20",
+        "Py": "20",
+        "pts": [
+          [
+            "10",
+            "8",
+            "1"
+          ],
+          [
+            "10",
+            "9",
+            "1"
+          ]
+        ]
+      },
+      "enumeration": {
+        "window_atoms_distinct": 4,
+        "x_coordinates": 1,
+        "y_coordinates": 4,
+        "candidate_boxes": 7,
+        "retained_boxes": 6
+      },
+      "evaluations": {
+        "1/2": {
+          "inner_area": "2017080077/1073741824",
+          "outer_area": "2017271061/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "1": {
+          "inner_area": "2331570957/1073741824",
+          "outer_area": "2331794709/1073741824",
+          "independent_complete_area_equal": true
+        },
+        "6/5": {
+          "inner_area": "2457367309/1073741824",
+          "outer_area": "12288020841/5368709120",
+          "independent_complete_area_equal": true
+        },
+        "3/2": {
+          "inner_area": "1073676289/536870912",
+          "outer_area": "1073807361/536870912",
+          "independent_complete_area_equal": true
+        }
+      },
+      "whole_interval_upper": "79254361917/2147483648"
+    }
+  ],
+  "direct_affine_endpoint_models": [
+    {
+      "name": "negative_source_y",
+      "exact_interval_envelope": [
+        "0",
+        "3",
+        "0",
+        "3/2"
+      ],
+      "all_21_rational_subchecks": "contained"
+    },
+    {
+      "name": "moving_cell_top",
+      "exact_interval_envelope": [
+        "0",
+        "3",
+        "5/2",
+        "15"
+      ],
+      "all_21_rational_subchecks": "contained"
+    }
+  ],
+  "saved_five_large_points_rerun": false,
+  "elapsed_seconds": 0.014184334,
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "planar-centered-square-weak11/computation/vertical_scaling_audit_checks.py",
+    "--module",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/vertical_scaling.py",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/vertical-scaling/independent-small-checks.json"
+  ]
+}
