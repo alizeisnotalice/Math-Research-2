@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "input_sha256": "527a4c0752b41e9fd4f8ba9ae7980207369ac6311dce126442b322468f2bd01b",
+  "baseline_R10_sha256": "44374d02d2a20a52c38b88afe66b0ab82da1031f46e0350ef8f9622b4d19bae2",
+  "positive_masses": 204,
+  "mass": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+  "extra_changed_label": [
+    1,
+    1,
+    50
+  ],
+  "extra_y_shift": "175603458831370317/25600000000000000000000",
+  "old_tail_radius": 10,
+  "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+  "q": 3,
+  "lower": "361695409582205353437404347120890849194492054052603291511771/212412988359601439711640323484750643086753792000000000000000",
+  "upper": "964521092223466325921164424550500785549293633480739718119931/566434635625603839231040862626001714898010112000000000000000",
+  "lower_minus_R10_full_upper": "80310609989559187003668329696805629547800764387/21751090008023187426471969124838465852083588300800000000",
+  "primary_reused_file_sha256": "b76e48557e6ab7d410712f0026c8c5efb4c8eb57b72bcd1cc46c56cac513e56e",
+  "independent_recorded_seconds": 45.886915042006876,
+  "independent_enumerated_boxes": 42486322,
+  "ledger_counts": {
+    "rows": 166,
+    "distinct_inputs": 163,
+    "actual_search_evaluations": 163,
+    "reuse": 3,
+    "duplicate_actual_evaluations": 0
+  },
+  "search_uses_single_R5_transport_call_per_actual_input": true,
+  "batches": [
+    {
+      "batch": 0,
+      "rows": 133,
+      "actual": 133,
+      "reused": 0
+    },
+    {
+      "batch": 1,
+      "rows": 33,
+      "actual": 30,
+      "reused": 3
+    }
+  ],
+  "wall_seconds_sum": "61.248662040976339",
+  "child_cpu_seconds_sum": "599.4114059999999598",
+  "geometry_or_search_rerun": false,
+  "files_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r012_final_0017.json": "527a4c0752b41e9fd4f8ba9ae7980207369ac6311dce126442b322468f2bd01b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/proofs/round012-lower.md": "1f5103101a6ba58402665c100430253e3f5ad59512b27c4d3ca319d3176b573f",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/rounds/012.md": "356deeec3e7693c4c289e273bbd9a16b212e5627cbfcda4ff6ecd260a707c26c",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round012/primary_final.json": "b76e48557e6ab7d410712f0026c8c5efb4c8eb57b72bcd1cc46c56cac513e56e",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round012/independent_final.json": "557d2d8a3254b44517fd721a70bb6e0e39c4aa196002ab94605d6d83ee8b5948",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round012/integration_checks.json": "35fc83a16a16b91a0c6fc924245283d366623c0422e861dd634a86598c12569f",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round012/search_ledger.json": "17a35f25b0fea625a9208702fc442643211140d2a08e0ca348dab3ed784fc094"
+  },
+  "audit_script_sha256": "76ab74f3c5a30829a728240e4bdf9039eac90bbafae717d5bc1c449e21da1a2d",
+  "python": "3.9.6 (default, Oct 19 2026, 19:18:13) \n[Clang 21.0.0 (clang-2100.4.1.1)]",
+  "verified_utc": "2026-11-14T17:52:11.302412+00:00",
+  "elapsed_seconds": 1.6022802919999999,
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "planar-centered-square-weak11/computation/review_round012_ledger.py",
+    "--topic",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11",
+    "--raw-search",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round012/supercell-2x2",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round012/independent-ledger-review.json"
+  ]
+}
