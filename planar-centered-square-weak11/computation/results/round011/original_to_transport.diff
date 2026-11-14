@@ -1,0 +1,93 @@
+--- planar-centered-square-weak11/computation/periodic_halo.py	2026-11-15 00:53:42
++++ planar-centered-square-weak11/computation/periodic_halo_transport.py	2026-11-15 01:26:18
+@@ -1,5 +1,9 @@
+ #!/usr/bin/env python3
+-"""Exact dyadic enclosures of the full periodic centered-square halo."""
++"""Full periodic halo with a verified label-preserving transport tail bound.
++
++Derived from periodic_halo.py SHA256
++b788671299ee33c14e4c6d872e36bfab06cbaa55dd6cd6a1c9bc6c26190a0f33.
++"""
+ import argparse, bisect, hashlib, json, math, platform, sys, time
+ from fractions import Fraction as F
+ from pathlib import Path
+@@ -36,8 +40,48 @@
+     return area
+ 
+ 
+-def calculate(data, bits=40, tail=F(5), rectangles_out=None):
++def calculate_transport(data, base, copy_factors, delta, bits=40, R=F(5), labels=None, rectangles_out=None):
++    tail, delta = F(R), F(delta)
++    if len(copy_factors) != 2 or any(type(v) is not int or v <= 0 for v in copy_factors):
++        raise ValueError('copy factors must be positive integers')
++    nxcopy, nycopy = copy_factors
++    bx, by, blam = (F(base[k]) for k in ('Px','Py','lam'))
+     px, py, lam = (F(data[k]) for k in ('Px','Py','lam'))
++    if min(bx,by,blam,tail) <= 0 or delta < 0 or (px,py,lam) != (nxcopy*bx,nycopy*by,blam):
++        raise ValueError('periods, threshold, radius or delta invalid')
++    source = [(F(x)%bx,F(y)%by,F(w)) for x,y,w in base['pts']]
++    actual = [(F(x)%px,F(y)%py,F(w)) for x,y,w in data['pts']]
++    if not source or any(w < 0 for _,_,w in source):
++        raise ValueError('base requires nonnegative masses and positive total')
++    total = sum((w for _,_,w in source),F(0))
++    if total <= 0 or len(actual) != nxcopy*nycopy*len(source):
++        raise ValueError('base mass or number of matched rows invalid')
++    expected_labels = {(a,b,i) for a in range(nxcopy) for b in range(nycopy) for i in range(len(source))}
++    if labels is None:
++        labels = [(a,b,i) for a in range(nxcopy) for b in range(nycopy) for i in range(len(source))]
++    else:
++        labels = [tuple(label) for label in labels]
++    if len(labels) != len(actual) or any(len(label)!=3 or any(type(v) is not int for v in label) for label in labels) or set(labels) != expected_labels:
++        raise ValueError('labels must cover each copy and base index exactly once')
++    max_distance = F(0)
++    for (x,y,w),(a,b,i) in zip(actual,labels):
++        sx,sy,sw = source[i]
++        if w != sw:
++            raise ValueError('matched mass differs from base')
++        dx=(x-(sx+a*bx))%px; dy=(y-(sy+b*by))%py
++        distance=max(min(dx,px-dx),min(dy,py-dy))
++        if distance > delta:
++            raise ValueError('matched displacement exceeds delta')
++        max_distance=max(max_distance,distance)
++    if sum((w for _,_,w in actual),F(0)) != nxcopy*nycopy*total:
++        raise ValueError('total mass mismatch')
++    bound=total/(bx*by)*(1+(bx+2*delta)/(2*tail))*(1+(by+2*delta)/(2*tail))
++    if bound >= lam:
++        raise ValueError('transport tail bound does not prove the requested radius cutoff')
++    def canonical_digest(obj):
++        return hashlib.sha256(json.dumps(obj,sort_keys=True,separators=(',',':')).encode()).hexdigest()
++    matching={'base_input':base,'base_canonical_sha256':canonical_digest(base),'data_canonical_sha256':canonical_digest(data),'copy_factors':[nxcopy,nycopy],'labels':labels,'rows':len(actual),'delta':str(delta),'maximum_torus_distance':str(max_distance),'base_mass':str(total),'expected_mass':str(nxcopy*nycopy*total),'base_periods':[str(bx),str(by)],'level':str(lam),'tail_radius':str(tail),'transport_tail_bound':str(bound),'original_code_sha256':'b788671299ee33c14e4c6d872e36bfab06cbaa55dd6cd6a1c9bc6c26190a0f33'}
++    px, py, lam = (F(data[k]) for k in ('Px','Py','lam'))
+     if px <= 0 or py <= 0 or lam <= 0 or tail <= 0 or bits < 0:
+         raise ValueError('positive periods, level, radius and nonnegative bits required')
+     raw_pts = [(F(x), F(y), F(w)) for x,y,w in data['pts']]
+@@ -47,8 +91,7 @@
+     if not pts:
+         raise ValueError('positive total mass required')
+     mass = sum((w for _,_,w in pts), F(0))
+-    bound = mass/(px*py)*(1+px/(2*tail))*(1+py/(2*tail))
+-    if bound >= lam: raise ValueError('tail bound does not prove the requested radius cutoff')
++    assert mass == nxcopy*nycopy*total
+     D = 1 << bits
+     # A shared integer scale makes every rectangle coordinate and area exact.
+     scale = math.lcm(D, px.denominator, py.denominator, tail.denominator, *(v.denominator for p in pts for v in p[:2]))
+@@ -103,14 +146,16 @@
+     ai,ao=union_area(inner),union_area(outer)
+     denom=scale*scale
+     result={'period_x':str(px),'period_y':str(py),'level':str(lam),'mass':str(mass),'tail_radius':str(tail),'tail_bound':str(bound),'tail_bound_float':float(bound),'bits':bits,'scale':str(scale),'weight_scale':str(W),'input_atoms':len(pts),'window_atoms_distinct':len(atoms),'window_x_coordinates':nx,'window_y_coordinates':ny,'counts':count,'inner_rectangles_unique':len(inner),'outer_rectangles_unique':len(outer),'inner_area':str(F(ai,denom)),'outer_area':str(F(ao,denom)),'inner_ratio':str(F(ai,denom)*lam/mass),'outer_ratio':str(F(ao,denom)*lam/mass),'inner_ratio_float':float(F(ai,denom)*lam/mass),'outer_ratio_float':float(F(ao,denom)*lam/mass),'python':sys.version,'platform':platform.platform()}
++    result['transport_matching']=matching
+     if rectangles_out:
+         with open(rectangles_out,'w') as f: json.dump({'scale':str(scale),'inner':[list(map(str,r)) for r in sorted(inner)],'outer':[list(map(str,r)) for r in sorted(outer)]},f,separators=(',',':'))
+     return result
+ 
+ 
+ def main():
+-    p=argparse.ArgumentParser(); p.add_argument('input'); p.add_argument('--bits',type=int,default=40); p.add_argument('--tail-radius',default='5'); p.add_argument('--output',required=True); p.add_argument('--rectangles-out'); args=p.parse_args()
+-    start=time.time(); data=json.loads(Path(args.input).read_text()); result=calculate(data,args.bits,F(args.tail_radius),args.rectangles_out)
+-    result.update(input_sha256=sha(args.input),code_sha256=sha(__file__),elapsed_seconds=time.time()-start)
++    p=argparse.ArgumentParser(); p.add_argument('input'); p.add_argument('--base',required=True); p.add_argument('--copy-factors',nargs=2,type=int,required=True); p.add_argument('--delta',required=True); p.add_argument('--labels'); p.add_argument('--bits',type=int,default=40); p.add_argument('--tail-radius',default='5'); p.add_argument('--output',required=True); p.add_argument('--rectangles-out'); args=p.parse_args()
++    start=time.time(); data=json.loads(Path(args.input).read_text()); base=json.loads(Path(args.base).read_text()); labels=json.loads(Path(args.labels).read_text()) if args.labels else None
++    result=calculate_transport(data,base,args.copy_factors,F(args.delta),args.bits,F(args.tail_radius),labels,args.rectangles_out)
++    result.update(input_sha256=sha(args.input),base_sha256=sha(args.base),labels_sha256=sha(args.labels) if args.labels else None,code_sha256=sha(__file__),elapsed_seconds=time.time()-start)
+     Path(args.output).write_text(json.dumps(result,indent=2)+'\n'); print(json.dumps(result,indent=2))
+ if __name__=='__main__': main()

@@ -120,3 +120,12 @@ python3 -I -B computation/verify_periodic_result.py --input computation/inputs/r
 ```
 
 搜索实现 `scan_supercells.py`、`scan_supercells_all.py`、`scan_supercells_cross.py` 保留实际字节与参数接口。搜索账本区分固定候选、缓存复用和重复夹逼；候选发现的全清单可再生，最终下界不依赖重跑它们。有限传递须用新周期和R=8所得q=4。
+
+## 第11轮输运尾界
+
+```sh
+python3 -B computation/check_supercell_transport_tail.py --input computation/inputs/r008_final_0611.json
+python3 -B computation/periodic_halo_transport.py computation/inputs/r011_transport_probe.json --base computation/inputs/r008_final_0611.json --copy-factors 1 2 --delta 1/32 --bits 40 --tail-radius 5 --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay011/transport.json
+```
+
+这里1/32是合法的宽位移上限；归档实际探针使用其准确最大位移。完整几何交叉复验用原两套周期算核对同一探针、bits=40、半径上限8运行。测试脚本 `test_periodic_halo_transport.py` 的参数为含三份 `probe_*.json` 的临时结果目录，会把测试输出写入该目录；先复制相应归档JSON到data临时目录，不覆盖旧证书。独立小例及102标签复验保存于本轮 `independent-audit-checks.json`，原执行路径按实际保留。
