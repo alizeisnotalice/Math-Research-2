@@ -1,0 +1,208 @@
+{
+  "scope": "finite sanity checks of a separate analytic five-source proof; no sampled proof for arbitrary coordinates",
+  "python": "3.15.0",
+  "arithmetic": "Fraction and exact integer order tests",
+  "random_search": false,
+  "LP_solver_used": false,
+  "grid_counts": {
+    "diagonal": {
+      "guard_triples_examined": 5984,
+      "full_quadrant_cases": {
+        "staircase": 36,
+        "swapped_staircase": 36
+      }
+    },
+    "aligned": {
+      "guard_triples_examined": 5984,
+      "full_quadrant_cases": {
+        "four_collinear": 124,
+        "right_anchor_split": 108,
+        "left_anchor_split": 108
+      }
+    }
+  },
+  "exact_examples": {
+    "axis_aligned_two_exceptions": {
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "-1",
+          "0"
+        ],
+        [
+          "4",
+          "1"
+        ],
+        [
+          "4",
+          "-1"
+        ]
+      ],
+      "masses": [
+        "5",
+        "17",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "M": "223/10",
+      "diameter_squared": "25",
+      "all_capacities": {
+        "2": "1/10",
+        "4": "1/10",
+        "1": "16",
+        "0": "4",
+        "3": "1/10",
+        "0,1": "22",
+        "0,2": "51/10",
+        "0,1,2": "221/10",
+        "1,4": "171/10",
+        "1,3,4": "86/5",
+        "1,3": "171/10",
+        "0,1,3,4": "111/5",
+        "0,1,4": "221/10",
+        "0,1,3": "221/10"
+      },
+      "singleton_capacities": [
+        "4",
+        "16",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "saturated_partition": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "P_equals_M_verified": true
+    },
+    "diagonal_two_exceptions": {
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "2",
+          "-1"
+        ]
+      ],
+      "masses": [
+        "10",
+        "10",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "M": "203/10",
+      "diameter_squared": "9",
+      "all_capacities": {
+        "2": "1/10",
+        "4": "1/10",
+        "1": "9",
+        "0": "9",
+        "3": "1/10",
+        "0,1": "9",
+        "0,2": "101/10",
+        "1,3": "101/10",
+        "0,4": "101/10",
+        "0,1,4": "201/10",
+        "0,1,3": "201/10",
+        "1,4": "101/10",
+        "0,1,2,3": "101/5",
+        "0,1,2": "201/10",
+        "0,1,3,4": "101/5",
+        "0,2,4": "51/5",
+        "0,1,2,4": "101/5",
+        "1,3,4": "51/5",
+        "0,1,2,3,4": "203/10"
+      },
+      "singleton_capacities": [
+        "9",
+        "9",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "saturated_partition": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "P_equals_M_verified": true
+    }
+  },
+  "unbalanced_hypergraph_example": {
+    "points": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "2",
+        "0"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "masses": [
+      "3",
+      "3",
+      "3"
+    ],
+    "odd_cycle_labels": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "capacities": [
+      "6",
+      "6",
+      "6"
+    ],
+    "meaning": "Unbalanced incidence submatrix; not a failure of fractional perfect cover."
+  },
+  "cpu_seconds": 0.033402999999999995,
+  "capacity_enumerator_sha256": "d1e456fb078afa7c33f3d545567f8a33f3ced75feb88a8076f91b4747d0e4b0e"
+}

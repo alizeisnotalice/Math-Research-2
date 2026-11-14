@@ -1,0 +1,274 @@
+{
+  "scope": "independent bounded exact examples supporting a separately reviewed analytic N<=5 theorem; no search, LP, or full capacity-table recomputation",
+  "python": "3.15.0",
+  "cpu_seconds": 0.020197999999999997,
+  "script_sha256": "7d0deadd9fef441c0209b936487493d801219d3542077f94b2767b76a6105970",
+  "sources": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-general-dual/planar-centered-square-weak11/proofs/five-source-capacity-equality.md": "ab37fb84f61be41daa90f8f2ce47d4d4bf4ab2c8b9f2764a0e1d01526e5b251c",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-general-dual/planar-centered-square-weak11/computation/results/five-source-capacity/exact-checks.json": "3e71b21fca667c8dd8b32fe2139b5f7cef19f206182048319a5db4da1b4dd22b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-general-dual/planar-centered-square-weak11/computation/five_source_capacity_check.py": "5f00eab5cd47ec1e3ea7f5e74bdbf774485c9f4da60424f55d0b858bf0e997d5",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-general-dual/planar-centered-square-weak11/rounds/021.md": "7b4de01fec1636ea8eb6ed9fac54077f10e8c342afeadab9c731d3cedeefcfeb"
+  },
+  "diagonal_unequal_offset_and_axis_boundary_checks": [
+    {
+      "a": "2/3",
+      "b": "3/5",
+      "s0": "1/7",
+      "r0": "2/9",
+      "t0": "0",
+      "v": "0",
+      "Dx_squared": "289/441",
+      "Dy_squared": "1369/2025",
+      "isolating_square_checks": 6
+    },
+    {
+      "a": "2/3",
+      "b": "3/5",
+      "s0": "1/7",
+      "r0": "2/9",
+      "t0": "0",
+      "v": "1/8",
+      "Dx_squared": "289/441",
+      "Dy_squared": "116281/129600",
+      "isolating_square_checks": 6
+    },
+    {
+      "a": "2/3",
+      "b": "3/5",
+      "s0": "1/7",
+      "r0": "2/9",
+      "t0": "1/8",
+      "v": "0",
+      "Dx_squared": "24649/28224",
+      "Dy_squared": "1369/2025",
+      "isolating_square_checks": 6
+    },
+    {
+      "a": "2/3",
+      "b": "3/5",
+      "s0": "1/7",
+      "r0": "2/9",
+      "t0": "1/8",
+      "v": "1/8",
+      "Dx_squared": "24649/28224",
+      "Dy_squared": "116281/129600",
+      "isolating_square_checks": 6
+    }
+  ],
+  "aligned_halfplane_checks": [
+    {
+      "xplus": "2/3",
+      "xminus": "2/3",
+      "pair_critical_side_squared": "3/50",
+      "q_right_halfplane_last_side_squared": "229/400",
+      "partition": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "entry_root_coincidence_tested": true,
+      "scope": "checks the conditional geometric subconstruction; not a claim these chosen p,q are both anomalous"
+    },
+    {
+      "xplus": "2/3",
+      "xminus": "8/9",
+      "pair_critical_side_squared": "3/50",
+      "q_right_halfplane_last_side_squared": "229/400",
+      "partition": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "entry_root_coincidence_tested": true,
+      "scope": "checks the conditional geometric subconstruction; not a claim these chosen p,q are both anomalous"
+    },
+    {
+      "xplus": "17/21",
+      "xminus": "2/3",
+      "pair_critical_side_squared": "3/50",
+      "q_right_halfplane_last_side_squared": "229/400",
+      "partition": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "entry_root_coincidence_tested": true,
+      "scope": "checks the conditional geometric subconstruction; not a claim these chosen p,q are both anomalous"
+    },
+    {
+      "xplus": "17/21",
+      "xminus": "8/9",
+      "pair_critical_side_squared": "3/50",
+      "q_right_halfplane_last_side_squared": "229/400",
+      "partition": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "entry_root_coincidence_tested": true,
+      "scope": "checks the conditional geometric subconstruction; not a claim these chosen p,q are both anomalous"
+    }
+  ],
+  "saved_fixtures": {
+    "axis_aligned_two_exceptions": {
+      "M": "223/10",
+      "diameter_squared": "25",
+      "partition": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "critical_singletons": [
+        "4",
+        "16"
+      ],
+      "fixed_side_closed_incidence": {
+        "p_199/100": true,
+        "p_2": false,
+        "p_201/100": false,
+        "q_399/100": true,
+        "q_4": false,
+        "q_401/100": false
+      },
+      "all_saved_capacities_arithmetic_checked": 14,
+      "full_continuous_capacity_table_reenumerated": false
+    },
+    "diagonal_two_exceptions": {
+      "M": "203/10",
+      "diameter_squared": "9",
+      "partition": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "critical_singletons": [
+        "9",
+        "9"
+      ],
+      "fixed_side_closed_incidence": {
+        "p_299/100": true,
+        "p_3": false,
+        "p_301/100": false,
+        "q_299/100": true,
+        "q_3": false,
+        "q_301/100": false
+      },
+      "all_saved_capacities_arithmetic_checked": 19,
+      "full_continuous_capacity_table_reenumerated": false
+    }
+  },
+  "odd_cycle_explicit_squares": [
+    {
+      "side": "21/10",
+      "incidences": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "side": "12/5",
+      "incidences": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "side": "17/7",
+      "incidences": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  ],
+  "odd_cycle_incidence_matrix": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "all_N_capacity_equality_proved": false,
+  "actual_strict_B_equals_M_claimed": false
+}
