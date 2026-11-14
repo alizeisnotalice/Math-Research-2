@@ -31,3 +31,23 @@ python3 -I -B computation/verify_round002.py
 ```
 
 完整搜索使用12个进程。只复核下界时，运行最终候选的两个算核和解析传递即可；无需重新搜索6305个点。归档的搜索账本保留各批次规模、耗时、代码/输入/任务清单哈希，候选发现的全部可再生记录留在 CodexTemp。
+
+## 第3轮周期与联合提案
+
+最终证书的最小核对为：
+
+```sh
+python3 -I -B computation/periodic_halo.py computation/inputs/r003_final_0546.json --bits 40 --tail-radius 5 --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay003/final-primary.json
+python3 -I -B computation/independent_periodic_halo.py --input computation/inputs/r003_final_0546.json --bits 40 --radius-cap 5 --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay003/final-independent.json
+python3 -I -B computation/verify_periodic_result.py --input computation/inputs/r003_final_0546.json --primary computation/results/round003/primary_final.json --independent computation/results/round003/independent_final.json --baseline-primary computation/results/round002/primary_final.json
+```
+
+最后一条只核保存算术与文件身份；前两条重算几何。搜索复现使用：
+
+```sh
+python3 -B computation/replay_search.py directional --input computation/inputs/r002_final_0475.json --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay003/directional
+python3 -B computation/scan_period_grid.py --input computation/inputs/r002_final_0475.json --out /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay003/period-grid --workers 12
+python3 -B computation/build_lp_input.py --results /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay003/directional/results.json --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay003/matlab-input.json
+```
+
+MATLAB 中 `addpath('computation'); propose_joint(inputPath,outputPath);` 生成数值提案，用后 `quit`。随后 `scan_joint_proposals.py --input computation/inputs/r002_final_0475.json --lp-input <提案输入> --lp-output <MATLAB输出> --out <data临时目录> --workers 12` 把联合方向有理化并完整认证。复现候选发现可直接使用已归档的 MATLAB 输入输出；不同求解器版本可能选择不同的等价 LP 解，不影响已给定准确最终输入的证明。

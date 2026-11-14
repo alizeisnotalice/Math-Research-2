@@ -1,0 +1,10 @@
+--- scan_perturbations.py
++++ scan_perturbations.py
+@@ -9,2 +9,2 @@
+-INPUT=Path('/Volumes/data/CodexProjects/T2/planar-centered-square-weak11/computation/inputs/legacy_r004_transfer_34_27.json')
+-OUT=Path('/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round002')
++INPUT=Path('/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round002/position-grid/batch3/candidate_0475.json')
++OUT=Path('/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round003/directional')
+@@ -63 +63 @@
+-    manifest={'schema':'periodic-halo-perturbations-v1','task_count':len(batch),'tasks':batch,'task_list_sha256':digest(batch),'source_input_sha256':sha(INPUT),'calculator_sha256':sha(Path(__file__).with_name('periodic_halo.py')),'scan_code_sha256':sha(__file__),'workers':12,'bits':40,'tail_radius_initial':5,'transformed_input_hash_format':'SHA256 UTF-8 json.dumps(sort_keys=True,separators=(comma,colon))','python':sys.version,'platform':platform.platform()}
++    manifest={'schema':'periodic-halo-perturbations-v1','task_count':len(batch),'tasks':batch,'task_list_sha256':digest(batch),'source_input_sha256':sha(INPUT),'calculator_sha256':sha('/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/periodic_halo.py'),'scan_code_sha256':sha(__file__),'workers':12,'bits':40,'tail_radius_initial':5,'transformed_input_hash_format':'SHA256 UTF-8 json.dumps(sort_keys=True,separators=(comma,colon))','python':sys.version,'platform':platform.platform()}
