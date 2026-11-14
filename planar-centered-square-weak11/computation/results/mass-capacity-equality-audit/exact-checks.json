@@ -1,0 +1,172 @@
+{
+  "scope": "analytic-proof audit plus bounded exact checks only; no search, LP, or full capacity-table re-enumeration",
+  "python": "3.15.0",
+  "cpu_seconds": 0.009353,
+  "script_sha256": "729229cb9f9bcc14b5a0f55b9f50689e5cdb24ccb186a43d6c12298cb1ceb5aa",
+  "sources": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-general-dual/planar-centered-square-weak11/computation/results/mass-capacity-attempt/exact-targeted.json": "d382d15ccffff40d2ba9357e881087e6b2afbc4397fc61ab8968e78539e35dc4",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-general-dual/planar-centered-square-weak11/proofs/mass-capacity-equality-attempt.md": "7cc74c83702818078187d9f1b29dc070e4473cbd7e0294fbc3b7934bde681740",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-general-dual/planar-centered-square-weak11/rounds/016-mass-capacity-equality.md": "dbfe48125d5a0fa5334188b5f9529f0e96d8c94fd118170edd21405f2d977a43"
+  },
+  "last_exit_cases": [
+    {
+      "case": "old_root_exactly_at_positive_entering_jump",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "masses": [
+        "4",
+        "1"
+      ],
+      "last_radius_squared": "5/4",
+      "constant_label_near_last_exit": [
+        0,
+        1
+      ]
+    },
+    {
+      "case": "negative_gap_then_positive_again",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "2",
+          "0"
+        ]
+      ],
+      "masses": [
+        "1",
+        "20"
+      ],
+      "last_radius_squared": "21/4",
+      "constant_label_near_last_exit": [
+        0,
+        1
+      ]
+    },
+    {
+      "case": "entering_jump_only_reaches_zero",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "masses": [
+        "1",
+        "3"
+      ],
+      "last_radius_squared": "1/4",
+      "constant_label_near_last_exit": [
+        0
+      ]
+    }
+  ],
+  "horizontal_prefix_example": {
+    "positions": [
+      "0",
+      "1/5",
+      "4",
+      "401/100",
+      "20"
+    ],
+    "masses": [
+      "1/100",
+      "1/100",
+      "1/10000",
+      "1",
+      "1/2"
+    ],
+    "partition": [
+      {
+        "S": [
+          0
+        ],
+        "anchor": "0",
+        "critical_side_squared": "1/100"
+      },
+      {
+        "S": [
+          1
+        ],
+        "anchor": "1/5",
+        "critical_side_squared": "1/100"
+      },
+      {
+        "S": [
+          2,
+          3
+        ],
+        "anchor": "4",
+        "critical_side_squared": "10001/10000"
+      },
+      {
+        "S": [
+          4
+        ],
+        "anchor": "20",
+        "critical_side_squared": "1/2"
+      }
+    ]
+  },
+  "seven_source": {
+    "all_23_saved_capacities_positive_and_at_most_label_mass": true,
+    "critical_singletons": "1/25",
+    "near_boundary_fixed_side_exact_incidence": {
+      "199/1000": [
+        true,
+        true
+      ],
+      "1/5": [
+        false,
+        false
+      ],
+      "201/1000": [
+        false,
+        false
+      ]
+    },
+    "cluster_capacity": "51/250",
+    "far_singleton": "1/1000",
+    "partition": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        6
+      ]
+    ],
+    "total": "41/200"
+  },
+  "four_source": {
+    "nine_saved_labels": "arithmetic checked; key saturated labels have direct critical-radius gap",
+    "S_and_T_capacity": "3/2",
+    "union_minimum_area": "2116/625",
+    "union_mass": "2",
+    "all_singletons_saturated": true
+  },
+  "collision_fixed_side_checks": [
+    "1/10",
+    "1",
+    "3/2"
+  ],
+  "general_P_equals_M_proved": false
+}
