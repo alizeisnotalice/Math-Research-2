@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "input_sha256": "4ae1dd5c50d37fb6ffa05c75ab3c8e93e59e2b9beee0a13b09350442ff836595",
+  "positive_masses": 204,
+  "mass": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+  "periods": [
+    "328734960629/50000000000",
+    "175603458831370317/32000000000000000"
+  ],
+  "positions_unchanged_from_R14": true,
+  "changed_mass_indices_from_R15": [
+    1,
+    28,
+    29,
+    52,
+    79,
+    80,
+    83,
+    84,
+    103,
+    130,
+    131,
+    154,
+    181,
+    182,
+    185,
+    186
+  ],
+  "winner_coefficients": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2
+  ],
+  "selected_source_ids": [
+    "0348",
+    "0100",
+    "0224",
+    "0472",
+    "0352",
+    "0104",
+    "0228",
+    "0476"
+  ],
+  "tail_radius": 10,
+  "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+  "q": 3,
+  "lower": "5787126754673683842842676728925313592799676901983204094406761/3398607813753623035386245175756010289388060672000000000000000",
+  "upper": "1929042251566008288323046694897964272986747561192175616104337/1132869271251207678462081725252003429796020224000000000000000",
+  "lower_minus_R15_full_upper": "678526496973571731352131441156024510304727428038361/16993039068768115176931225878780051446940303360000000000000",
+  "stages": [
+    {
+      "stage": "binary-mass",
+      "rows": 256,
+      "actual": 246,
+      "reuse": 10,
+      "aliases": 256
+    },
+    {
+      "stage": "mass-amplitudes",
+      "rows": 256,
+      "actual": 255,
+      "reuse": 1,
+      "aliases": 256
+    },
+    {
+      "stage": "mass-lp/evaluation",
+      "rows": 153,
+      "actual": 153,
+      "reuse": 0,
+      "aliases": 288
+    }
+  ],
+  "ledger_counts": {
+    "rows": 665,
+    "unique_inputs": 664,
+    "actual": 654,
+    "unique_actual": 654,
+    "reuse": 11
+  },
+  "lp_columns_reconstructed": 128,
+  "finite_difference_source_pairs_reconstructed": 256,
+  "formal_matlab_proposals": 48,
+  "matlab_exitflags": {
+    "1": 48
+  },
+  "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+  "matlab_recorded_wall_seconds": "0.34222383333333334",
+  "lp_aliases_reconstructed": 288,
+  "lp_unique_candidates_reconstructed": 153,
+  "feasibility_factors": {
+    "1": 222,
+    "5/6": 12,
+    "3130298592821581269235852802781059235435/3758651677167461373163660331941492562522": 2,
+    "4/5": 12,
+    "2/3": 12,
+    "1/2": 12,
+    "939089577846474380770755840834317770630500000000/939089577895510245496639147550931040242129462931": 4,
+    "751271662277179504616604672667454216504400000000/939089577895510245496639147550931040242129462931": 4,
+    "626059718564316253847170560556211847087000000000/939089577895510245496639147550931040242129462931": 4,
+    "469544788923237190385377920417158885315250000000/939089577895510245496639147550931040242129462931": 4
+  },
+  "LP_best_inner_below_R14_inner": "4128626271733286129740153257116283603103219317320601223/6797215627507246070772490351512020578776121344000000000000000",
+  "LP_maximum_outer": "3858083004051429565511887950791769791716201344332816044258483/2265738542502415356924163450504006859592040448000000000000000",
+  "R14_inner_minus_LP_maximum_outer": "4128575224963823158289249309805284543807565020445601223/6797215627507246070772490351512020578776121344000000000000000",
+  "heuristic_scope": "Finite differences are midpoint estimates, not derivatives; exact ray repair certifies mass constraints, not numerical LP optimality or trust budget.",
+  "search_wall_sum": "284.25328295698273",
+  "child_cpu_sum": "2747.0921029999997",
+  "primary_recorded_seconds": 19.704851865768433,
+  "independent_recorded_seconds": 24.059398457990028,
+  "geometry_or_search_rerun": false,
+  "files_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r017_final_0015.json": "4ae1dd5c50d37fb6ffa05c75ab3c8e93e59e2b9beee0a13b09350442ff836595",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/proofs/round017-lower.md": "20524211c1d7be13538754d6eedc283dfba43577af73435a253787e5fada0e0b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/rounds/017.md": "d4dee9847713f5c8ef732b386bbe9e7c9d62e3f9e6a07d96f626204a1e1616cb",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_binary_mass.py": "db11e2ac4603d95f033ee1e87c9275b289c130b9edc0ddae8bab4b242fefa2ee",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_mass_amplitudes.py": "83fd3710467fbd525492b836244d2bd9bca1f4445ed6fe82101e9623f07857e8",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_mass_lp.py": "acf0911ca32e4134c52a5df49b3798793ac7f795c1e330b19ae317007ff95185",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/export_mass_lp.py": "a00f4c055a5a18c045c0d0ce88f23c68d696848c413566a04c1ded707489258f",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/build_mass_lp_numeric.py": "2f057b70207cf079d3cd730049bf050b6b30919bab49901cb51ead185027d13d",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/propose_mass_joint.m": "358ded899f3fd38c396644b029246558b57ced521f13c660e7fc62547111b09b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/amplitudes_summary.json": "673505929a20011d841aab3ee6a6d80dad84de454df65ead08335174dc118f7a",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/arithmetic_check.json": "e0451aab790125db67886535a3baf48e6bd94cb959b314af1109206036658523",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/binary_summary.json": "3bdca7b5a63c0d493752ef4183a8057cd572a39480b00826424d4b5c127df112",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/independent_final.json": "6fa9cfc922ade444df24fe647d2feb1ac3e8c309b3c67119150a99beb37f1a1e",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/integration_checks.json": "69ce8ab4d0c73f3d2081bb5a13087f7c41e3cc130e8c219e53cb080965d641ea",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/mass_lp_input.json": "5685211defb6b51f3e89a07e4c56c2ac8330dd73352b14b3df5afc098bcd54a8",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/mass_lp_numeric.json": "0c54a2d53f2174ab1b9ec7849ea393624e2610ec86c2bdbbc48aa9edcc88eb11",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/mass_lp_output.json": "1e3603456aaf6604b8c2d9a61683bdfc8861eadd8496e3fd6d173c801c2bd412",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/matlab_evaluation_summary.json": "203927a36bde7fd1a56d27997c08fe3d488bdfc4022fc350c02cfb43fd5f5b77",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/primary_final.json": "f35d7256babf7781cce19a05f35e6921f3c98e996e239bc3dab70e8cc8087b5f",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/search_ledger.json": "b2b97958277874010877279c3a3eeb6a27511044a3306de15f313b9bf65e3d46"
+  },
+  "audit_script_sha256": "52bab170f966d4af83ab1e9f7178aeeb8b7fab91eee066f20cad17bf1ea4b00c",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "elapsed_seconds": 5.735612209013198,
+  "verified_utc": "2026-11-14T18:49:50.228781+00:00",
+  "command": [
+    "/Users/zzh/.local/bin/python3",
+    "planar-centered-square-weak11/computation/review_round017_ledger.py",
+    "--topic",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11",
+    "--raw",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round017",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round017/independent-ledger-review.json"
+  ]
+}
