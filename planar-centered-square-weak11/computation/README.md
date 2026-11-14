@@ -51,3 +51,13 @@ python3 -B computation/build_lp_input.py --results /Volumes/data/CodexTemp/T2/pl
 ```
 
 MATLAB 中 `addpath('computation'); propose_joint(inputPath,outputPath);` 生成数值提案，用后 `quit`。随后 `scan_joint_proposals.py --input computation/inputs/r002_final_0475.json --lp-input <提案输入> --lp-output <MATLAB输出> --out <data临时目录> --workers 12` 把联合方向有理化并完整认证。复现候选发现可直接使用已归档的 MATLAB 输入输出；不同求解器版本可能选择不同的等价 LP 解，不影响已给定准确最终输入的证明。
+
+## 第4轮共同坐标组
+
+`python3 -B computation/scan_coordinate_groups.py --input computation/inputs/r003_final_0546.json --out /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay004/group-search --workers 12` 重现最多八批的候选生成与准确搜索。输入原子的相等坐标用准确分数分组；当前批包含基线，后续批仅在严格区间改善时继续。
+
+最终认证把上节两套面积命令的输入换成 `computation/inputs/r004_final_0504.json`。保存结果检查为：
+
+```sh
+python3 -I -B computation/verify_periodic_result.py --input computation/inputs/r004_final_0504.json --primary computation/results/round004/primary_final.json --independent computation/results/round004/independent_final.json --baseline-primary computation/results/round003/primary_final.json
+```
