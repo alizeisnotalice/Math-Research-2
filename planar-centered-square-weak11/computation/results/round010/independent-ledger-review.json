@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "input_sha256": "44374d02d2a20a52c38b88afe66b0ab82da1031f46e0350ef8f9622b4d19bae2",
+  "baseline_R8_sha256": "6c2e5d2d8fba5063bd45ecd4467f8c74cca5c0edbef958f90146a103029d5910",
+  "positive_masses": 102,
+  "mass": "65941670400277227073796193886781311/6250000000000000000000000000000000",
+  "copy_factors": [
+    1,
+    2
+  ],
+  "changed_copy_1_original_indices": [
+    27,
+    29,
+    31,
+    33,
+    35,
+    37,
+    39,
+    41,
+    43,
+    45,
+    47,
+    49
+  ],
+  "exact_y_shift": "526810376494110951/25600000000000000000000",
+  "tail_radius": 8,
+  "tail_bound": "29150720596514721346254960994309659179989219069289991524835164741/30787731266798263204860933009600000000000000000000000000000000000",
+  "q": 4,
+  "lower": "2893563270370611986218271620763384493421786668783437512797293/1699303906876811517693122587878005144694030336000000000000000",
+  "upper": "964521090127792140688307764101846178664332207999630538119931/566434635625603839231040862626001714898010112000000000000000",
+  "lower_minus_R8_full_upper": "144178521704629684015790622254460626587462991803/5437772502005796856617992281209616463020897075200000000",
+  "ledger_counts": {
+    "rows": 358,
+    "distinct_inputs": 296,
+    "successful_full_evaluations": 326,
+    "reused": 32,
+    "duplicate_full_evaluations": 30,
+    "early_tail_only_rejections": 978,
+    "calculator_calls_including_early_rejections": 1304
+  },
+  "batches": [
+    {
+      "path": "supercell-probe",
+      "rows": 26,
+      "actual": 26,
+      "reused": 0
+    },
+    {
+      "path": "supercell-all-groups/batch0",
+      "rows": 134,
+      "actual": 108,
+      "reused": 26
+    },
+    {
+      "path": "supercell-cross-axis/batch0",
+      "rows": 132,
+      "actual": 132,
+      "reused": 0
+    },
+    {
+      "path": "supercell-cross-axis/batch1",
+      "rows": 33,
+      "actual": 30,
+      "reused": 3
+    },
+    {
+      "path": "supercell-all-groups/batch1",
+      "rows": 33,
+      "actual": 30,
+      "reused": 3
+    }
+  ],
+  "reuse_chains_verified": 32,
+  "wall_seconds_sum": "279.958349124965033",
+  "child_cpu_seconds_sum": "2974.5041439999998200",
+  "geometry_or_search_rerun": false,
+  "files_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r010_final_0019.json": "44374d02d2a20a52c38b88afe66b0ab82da1031f46e0350ef8f9622b4d19bae2",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/proofs/round010-lower.md": "803074a1276960c341cb12de38f1f84caa7b0611ee9dae73db3a47d088b05f06",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/rounds/010.md": "306ee82d1310b0dab57a5847724367892ced8fd0bb2e70e81d59ea71a92066ad",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round010/primary_final.json": "f8a7111b89e1fede804b839e335518b412abafdc4943ac7d62aac65bed29ac54",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round010/independent_final.json": "9f310008d993a285cb658e220735120b47d2163dbf91e30f8cf500bb31779bdf",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round010/integration_checks.json": "ff56e7d36cd090d0f7b62842452260e3a2502223fc70bbb9a963324620902148",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round010/search_ledger.json": "a2f094ca7e9d26a247342398e6340195a84791f980072cdbc40318637b52457a"
+  },
+  "audit_script_sha256": "ec8abe97d96e7d009befdea603c2d2493c449918fa177673aa3617c5bdd0a931",
+  "python": "3.9.6 (default, Oct 19 2026, 19:18:13) \n[Clang 21.0.0 (clang-2100.4.1.1)]",
+  "verified_utc": "2026-11-14T17:47:45.123714+00:00",
+  "elapsed_seconds": 0.875746958,
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "planar-centered-square-weak11/computation/review_round010_ledger.py",
+    "--topic",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11",
+    "--raw-search",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round010",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round010/independent-ledger-review.json"
+  ]
+}

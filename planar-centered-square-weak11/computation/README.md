@@ -110,3 +110,13 @@ python3 -B computation/unpack_kernel_preconditioner.py computation/results/kerne
 ```
 
 运行前确认data挂载并创建输出目录。解码器校验压缩和原始字节两项哈希；矩阵R本身不作为可信逆矩阵，而由向外矩阵乘法验证残差。活动点必要性与完整变量列检查已包含在独立检查器中。主认证和可再生发现步骤见 [核族地板证明](../proofs/kernel-family-floor.md)；`kernel_floor_scope_check.py`另记录对全部10657行发现菜单的审计，其大菜单可再生但不属于最终证明依赖。
+
+## 第10轮102原子超胞元
+
+用两套原周期算核对 `computation/inputs/r010_final_0019.json` 重新计算，bits=40、半径上限8。准确保存结果检查：
+
+```sh
+python3 -I -B computation/verify_periodic_result.py --input computation/inputs/r010_final_0019.json --primary computation/results/round010/primary_final.json --independent computation/results/round010/independent_final.json --baseline-primary computation/results/round008/primary_final.json
+```
+
+搜索实现 `scan_supercells.py`、`scan_supercells_all.py`、`scan_supercells_cross.py` 保留实际字节与参数接口。搜索账本区分固定候选、缓存复用和重复夹逼；候选发现的全清单可再生，最终下界不依赖重跑它们。有限传递须用新周期和R=8所得q=4。

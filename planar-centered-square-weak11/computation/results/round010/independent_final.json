@@ -1,0 +1,322 @@
+{
+  "algorithm": "independent x-column accumulation and active interval merging",
+  "input_path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r010_final_0019.json",
+  "input_sha256": "44374d02d2a20a52c38b88afe66b0ab82da1031f46e0350ef8f9622b4d19bae2",
+  "script_sha256": "d1e05a0627d699b54472b1b3e74ad500035135853298d33f519f78d3a17903e8",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "bits": 40,
+  "started_at_utc": "2026-11-14T17:34:54.285755+00:00",
+  "radius_cap": "8",
+  "base_atoms": 102,
+  "lifted_atoms": 2357,
+  "periods": [
+    "328734960629/100000000000",
+    "175603458831370317/32000000000000000"
+  ],
+  "lambda": "1",
+  "base_mass": "65941670400277227073796193886781311/6250000000000000000000000000000000",
+  "density": {
+    "fraction": "65941670400277227073796193886781311/112748039307122545916238768345703125",
+    "decimal_approximation": 0.5848586885014819
+  },
+  "tail_bound_at_cap": {
+    "fraction": "29150720596514721346254960994309659179989219069289991524835164741/30787731266798263204860933009600000000000000000000000000000000000",
+    "decimal_approximation": 0.946829123065365
+  },
+  "strict_tail_margin": {
+    "fraction": "1637010670283541858605972015290340820010780930710008475164835259/30787731266798263204860933009600000000000000000000000000000000000",
+    "decimal_approximation": 0.05317087693463491
+  },
+  "coordinate_grid_denominator": "24576000000000000000000000000000",
+  "mass_grid_denominator": "3000000000000000000000000000000000000000",
+  "counts": {
+    "positive_outer_with_empty_inner": 0,
+    "x_intervals": 11919,
+    "all_span_admissible_boxes": 12634140,
+    "empty_boxes": 65402,
+    "positive_mass_boxes": 12568738,
+    "positive_inner_boxes": 11946,
+    "positive_outer_boxes": 11946,
+    "x_coordinates": 156,
+    "y_coordinates": 47,
+    "unique_masses": 285333,
+    "unique_inner_rectangles": 11449,
+    "unique_outer_rectangles": 11449
+  },
+  "inner_rectangle_sha256": "9e526b8a894b2445a958cad3f86580e7145603921b0db6e9063b7a5e6263f486",
+  "outer_rectangle_sha256": "0225b2997a3a439add9403dab5ece5cb5590542f91e6962730944ca09a2d195a",
+  "inner_sweep": {
+    "x_events": 5590,
+    "peak_active_intervals": 2089
+  },
+  "outer_sweep": {
+    "x_events": 5590,
+    "peak_active_intervals": 2089
+  },
+  "area_lower": {
+    "fraction": "2893563270370611986218271620763384493421786668783437512797293/161061273600000000000000000000000000000000000000000000000000",
+    "decimal_approximation": 17.965605298495614
+  },
+  "area_upper": {
+    "fraction": "964521090127792140688307764101846178664332207999630538119931/53687091200000000000000000000000000000000000000000000000000",
+    "decimal_approximation": 17.965605298574868
+  },
+  "area_gap": {
+    "fraction": "267689621646772462779714346862981/3377699720527872000000000000000000000000000",
+    "decimal_approximation": 7.925204837478493e-11
+  },
+  "weak_ratio_lower": {
+    "fraction": "2893563270370611986218271620763384493421786668783437512797293/1699303906876811517693122587878005144694030336000000000000000",
+    "decimal_approximation": 1.7027932782716637
+  },
+  "weak_ratio_upper": {
+    "fraction": "964521090127792140688307764101846178664332207999630538119931/566434635625603839231040862626001714898010112000000000000000",
+    "decimal_approximation": 1.7027932782791753
+  },
+  "weak_ratio_gap": {
+    "fraction": "104566258455770493273325916743351953125/13920697605134839952942060239896618145333496512512",
+    "decimal_approximation": 7.511567410041275e-12
+  },
+  "tests": {
+    "seed": 20261114,
+    "tiny_examples": [
+      {
+        "case": 0,
+        "atoms": 1,
+        "areas": [
+          "3969/4096",
+          "4225/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 1,
+        "atoms": 2,
+        "areas": [
+          "3257/4096",
+          "3565/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 2,
+        "atoms": 3,
+        "areas": [
+          "819/256",
+          "859/256"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 3,
+        "atoms": 3,
+        "areas": [
+          "7927/4096",
+          "8361/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 3
+      },
+      {
+        "case": 4,
+        "atoms": 3,
+        "areas": [
+          "9",
+          "9"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 5,
+        "atoms": 2,
+        "areas": [
+          "363/256",
+          "3239/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 1
+      },
+      {
+        "case": 6,
+        "atoms": 5,
+        "areas": [
+          "1001/512",
+          "4389/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 2
+      },
+      {
+        "case": 7,
+        "atoms": 5,
+        "areas": [
+          "9855/2048",
+          "10341/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 6
+      },
+      {
+        "case": 8,
+        "atoms": 5,
+        "areas": [
+          "15107/4096",
+          "15969/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 9,
+        "atoms": 5,
+        "areas": [
+          "12663/4096",
+          "13169/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 5
+      },
+      {
+        "case": 10,
+        "atoms": 5,
+        "areas": [
+          "1797/1024",
+          "3995/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 2
+      },
+      {
+        "case": 11,
+        "atoms": 5,
+        "areas": [
+          "4561/2048",
+          "4823/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 3
+      },
+      {
+        "case": 12,
+        "atoms": 5,
+        "areas": [
+          "14059/4096",
+          "15493/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 6
+      },
+      {
+        "case": 13,
+        "atoms": 5,
+        "areas": [
+          "15429/4096",
+          "4119/1024"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 2
+      },
+      {
+        "case": 14,
+        "atoms": 5,
+        "areas": [
+          "17075/4096",
+          "17717/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 15,
+        "atoms": 5,
+        "areas": [
+          "14641/4096",
+          "15901/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 7
+      },
+      {
+        "case": 16,
+        "atoms": 5,
+        "areas": [
+          "7177/4096",
+          "8387/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 5
+      },
+      {
+        "case": 17,
+        "atoms": 5,
+        "areas": [
+          "6625/2048",
+          "3759/1024"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 2
+      }
+    ],
+    "threshold_tests": {
+      "R=1": "passed",
+      "R=5": "passed",
+      "R>5": "passed",
+      "clipping_and_zero_width": "passed"
+    }
+  },
+  "enumeration_seconds": 13.018739000021014,
+  "total_seconds": 13.694775958021637,
+  "command": [
+    "/Users/zzh/.local/bin/python3",
+    "planar-centered-square-weak11/computation/independent_periodic_halo.py",
+    "--input",
+    "planar-centered-square-weak11/computation/inputs/r010_final_0019.json",
+    "--radius-cap",
+    "8",
+    "--output",
+    "planar-centered-square-weak11/computation/results/round010/independent_final.json",
+    "--compare-primary",
+    "planar-centered-square-weak11/computation/results/round010/primary_final.json"
+  ],
+  "evidence_status": "Exact rational finite enumeration; periodic completeness uses the documented tail and coordinate-box reduction.",
+  "primary_comparison": {
+    "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round010/primary_final.json",
+    "sha256": "f8a7111b89e1fede804b839e335518b412abafdc4943ac7d62aac65bed29ac54",
+    "checks": {
+      "input_sha256": true,
+      "base_mass": true,
+      "tail_bound": true,
+      "area_lower": true,
+      "area_upper": true,
+      "ratio_lower": true,
+      "ratio_upper": true,
+      "all_boxes": true,
+      "lifted_atoms": true,
+      "unique_inner": true,
+      "unique_outer": true
+    }
+  }
+}
