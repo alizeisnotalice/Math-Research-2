@@ -1,0 +1,48 @@
+{
+  "proof_sha256": "02f55b0ccc9c0e2552d6244f052e15adfec183b2ee8cacb62cdbb184ef54daac",
+  "helper_sha256": "59130ee82cdb0f28ee1fbc205d59fe2fa00d35b07b29054d56d7a5a74ce12347",
+  "helper_actual_output": {
+    "activation_threshold": "w=1",
+    "actual_argv": [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-supercell-proof/planar-centered-square-weak11/computation/check_periodic_halo_mass_cells.py",
+      "--output",
+      "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/mass-cells-audit/final-helper-output.json"
+    ],
+    "areas": {
+      "1": "0",
+      "1/4": "0",
+      "4": "2"
+    },
+    "arithmetic": "fractions.Fraction (exact rational arithmetic)",
+    "implementation": "CPython",
+    "left_derivative": "0",
+    "nonconserving_complete_periodic_counterexample": {
+      "1": {
+        "J": "1",
+        "area": "1",
+        "mass": "1",
+        "tail_upper_bound_at_R": "9/16"
+      },
+      "1/4": {
+        "J": "1",
+        "area": "1/4",
+        "mass": "1/4",
+        "tail_upper_bound_at_R": "9/64"
+      }
+    },
+    "python": "3.15.0",
+    "reproduction_command": "python3 -I computation/check_periodic_halo_mass_cells.py --output <output.json>",
+    "right_derivative": "1/2",
+    "scope": "One-box local activation plus a closed-form complete-periodic counterexample; not a project-candidate computation.",
+    "status": "passed"
+  },
+  "helper_exit_code": 0,
+  "max_distance_definition_reread": true,
+  "all_fixed_inputs_effective_domain_reread": true,
+  "post_review_helper_change": "only --output and provenance metadata; actual_argv separate from reproduction_command; arithmetic unchanged",
+  "source_paths": [
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-supercell-proof/planar-centered-square-weak11/proofs/periodic-halo-mass-cells.md",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-supercell-proof/planar-centered-square-weak11/computation/check_periodic_halo_mass_cells.py"
+  ]
+}

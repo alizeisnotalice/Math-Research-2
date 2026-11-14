@@ -1,0 +1,57 @@
+{
+  "scope": "R19 symbolic formulas and bounded rational membership only; no project candidate cell enumeration",
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "script_sha256": "1d938823660c54b3e017b9be5a22adcc2b7ca553dd71669e439119e8c6a4e093",
+  "dt_formula_residual": "0",
+  "diagonal_sqrt_product_includes_linear_mass": "sqrt(M)*a/(2*sqrt(lam)) + sqrt(M)*b/(2*sqrt(lam)) + M/(4*lam) + a*b",
+  "cross_sqrt_product_expansion": "-sqrt(M)*sqrt(N)/(4*lam) + sqrt(M)*b/(2*sqrt(lam)) - sqrt(N)*a/(2*sqrt(lam)) + a*b",
+  "activation_one_sided": [
+    "0",
+    "1/2"
+  ],
+  "persistent_wall_ray_derivative": "1/2",
+  "transverse_union_wall_one_sided": [
+    "-1/2",
+    "1/2"
+  ],
+  "cap_mechanism": {
+    "lambda": "3/2",
+    "R": "1/2",
+    "mass_at_wall": "3/2",
+    "left_area_derivative": "2/3",
+    "right_area_derivative": "0",
+    "scope": "endpoint min mechanism; not a family claimed to satisfy uniform tail on both sides"
+  },
+  "general_weak_ratio_derivative": "lam*(-A0*Td + Ad*T0)/T0**2",
+  "nonconserved_area_only_counterexample": [
+    {
+      "mass": "1/4",
+      "area": "1/4",
+      "weak_ratio": "1"
+    },
+    {
+      "mass": "1",
+      "area": "1",
+      "weak_ratio": "1"
+    }
+  ],
+  "counterexample_uniform_tail_at_R2": "9/16",
+  "tiny_periodic_box_coverage": {
+    "periods": [
+      "4",
+      "3"
+    ],
+    "R": "1",
+    "copies": 8,
+    "all_nonempty_coordinate_boxes": 28,
+    "exact_center_membership_comparisons": 96,
+    "strict_closed_boundary_centers": {
+      "1/4": false,
+      "249/1000": true,
+      "251/1000": false
+    },
+    "uniform_tail_for_full_mass_polytope": "<=5/16<1"
+  },
+  "cpu_seconds": 0.10601000000000002
+}
