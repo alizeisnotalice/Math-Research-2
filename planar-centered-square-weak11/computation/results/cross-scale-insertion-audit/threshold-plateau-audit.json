@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "python": "3.15.0",
+  "method": "Fraction interval-intersection integrals at 18 boundary/interior centers; analytic all-r exclusion by pointwise densities <=1",
+  "source_sha256": {
+    "proofs/threshold-plateau-insertion.md": "8f313777fde68863c843923da6c5b8cbdb3b859a82f54e44bde5875b7333e6e2",
+    "computation/threshold_plateau_insertion_check.py": "a817e7ba9f9047b0bd29d6fa9a3686ba6d676192dca1b3d67e3c60d304f7c469",
+    "computation/results/cross-scale-budget/threshold-plateau-exact.json": "5ba35835deb1f58dd308b35617b8c70f5a19ee7d0d7aa29161ff1df875c4902f",
+    "rounds/022.md": "a6e87815facde5368a19239a7c61733ba87acaf28dc87bb7379b1595e038a34b"
+  },
+  "cases": [
+    {
+      "epsilon": "1/4",
+      "checked_centers": 9,
+      "f_integral": "1",
+      "g_integral": "1/4",
+      "mixed_average": "5/4",
+      "receiver_area": "1/4",
+      "area_mass_ratio_lower": "1"
+    },
+    {
+      "epsilon": "1/1024",
+      "checked_centers": 9,
+      "f_integral": "1",
+      "g_integral": "1/1024",
+      "mixed_average": "1025/1024",
+      "receiver_area": "1/4",
+      "area_mass_ratio_lower": "256"
+    }
+  ],
+  "original_cross_scale_proof_and_review_unchanged": true,
+  "random_seed": null,
+  "tolerance": null
+}

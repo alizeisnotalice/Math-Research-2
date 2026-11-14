@@ -1,0 +1,21 @@
+{
+  "software": "15.0.0 for Mac OS X ARM (64-bit) (May 15, 2026)",
+  "scope": "Exact symbolic scalar checks only; not a complete geometry formalization",
+  "assumptions": "p>=1, 0<e<=1; smoothing h as specified per formula",
+  "checks": {
+    "strictWitnessMarginIdentity": true,
+    "uniformStrictWitnessMargin": true,
+    "nextSourceExcluded": true,
+    "atomBandArea": true,
+    "smoothBandArea": true,
+    "smoothHorizontalCapture": true,
+    "smoothVerticalCapture": true,
+    "smoothSingleSourceExcluded": true,
+    "oldHaloShiftExcluded": true
+  },
+  "all_passed": true,
+  "script_sha256": "37dbce879a76019f5749a6911d0608a51d04fc108659aaa1d7ac55d25c4da261",
+  "exit_code": 0,
+  "wall_seconds": 1.8277584580064286,
+  "command": "wolframscript -file computation/check_insertion_symbolic.wl"
+}
