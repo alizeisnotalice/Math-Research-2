@@ -1,0 +1,322 @@
+{
+  "algorithm": "independent x-column accumulation and active interval merging",
+  "input_path": "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/dominated-tail/probe204.json",
+  "input_sha256": "af576a95467e92c342409932c2e206574baa2daacd59c776025edcf33fc71406",
+  "script_sha256": "d1e05a0627d699b54472b1b3e74ad500035135853298d33f519f78d3a17903e8",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "bits": 40,
+  "started_at_utc": "2026-11-14T17:46:10.708384+00:00",
+  "radius_cap": "10",
+  "base_atoms": 204,
+  "lifted_atoms": 3953,
+  "periods": [
+    "328734960629/50000000000",
+    "175603458831370317/32000000000000000"
+  ],
+  "lambda": "1",
+  "base_mass": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+  "density": {
+    "fraction": "65941670400277227073796193886781311/112748039307122545916238768345703125",
+    "decimal_approximation": 0.5848586885014819
+  },
+  "tail_bound_at_cap": {
+    "fraction": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+    "decimal_approximation": 0.9903492862417033
+  },
+  "strict_tail_margin": {
+    "fraction": "232127798221275844204607953609293888809801794115125875164835259/24052915052186143128797603913750000000000000000000000000000000000",
+    "decimal_approximation": 0.009650713758296752
+  },
+  "coordinate_grid_denominator": "24576000000000000000000000000000",
+  "mass_grid_denominator": "3000000000000000000000000000000000000000",
+  "counts": {
+    "positive_outer_with_empty_inner": 0,
+    "x_intervals": 22978,
+    "all_span_admissible_boxes": 42486322,
+    "empty_boxes": 181404,
+    "positive_mass_boxes": 42304918,
+    "positive_inner_boxes": 24646,
+    "positive_outer_boxes": 24646,
+    "x_coordinates": 221,
+    "y_coordinates": 62,
+    "unique_masses": 1251682,
+    "unique_inner_rectangles": 23904,
+    "unique_outer_rectangles": 23904
+  },
+  "inner_rectangle_sha256": "fb76fc00e2f0d4f234d5509bcef8d01447b4998aab9b6e3eba388246c3014a30",
+  "outer_rectangle_sha256": "36b13a7d3a0054a468e15ab65989436346b3b4ee5637f6aa8f6df73d6f045882",
+  "inner_sweep": {
+    "x_events": 15197,
+    "peak_active_intervals": 2248
+  },
+  "outer_sweep": {
+    "x_events": 15197,
+    "peak_active_intervals": 2248
+  },
+  "area_lower": {
+    "fraction": "2893563269865283379579232487203629372810722440135154212953543/80530636800000000000000000000000000000000000000000000000000",
+    "decimal_approximation": 35.93121059071625
+  },
+  "area_upper": {
+    "fraction": "482260544979651175507124420843603965207957002462889268239653/13421772800000000000000000000000000000000000000000000000000",
+    "decimal_approximation": 35.931210590873
+  },
+  "area_gap": {
+    "fraction": "1058950482054215660878748424561299/6755399441055744000000000000000000000000000",
+    "decimal_approximation": 1.5675616094859986e-10
+  },
+  "weak_ratio_lower": {
+    "fraction": "2893563269865283379579232487203629372810722440135154212953543/1699303906876811517693122587878005144694030336000000000000000",
+    "decimal_approximation": 1.7027932779742898
+  },
+  "weak_ratio_upper": {
+    "fraction": "482260544979651175507124420843603965207957002462889268239653/283217317812801919615520431313000857449005056000000000000000",
+    "decimal_approximation": 1.7027932779817188
+  },
+  "weak_ratio_gap": {
+    "fraction": "413652532052427992530761103344257421875/55682790420539359811768240959586472581333986050048",
+    "decimal_approximation": 7.428732089903429e-12
+  },
+  "tests": {
+    "seed": 20261114,
+    "tiny_examples": [
+      {
+        "case": 0,
+        "atoms": 1,
+        "areas": [
+          "3969/4096",
+          "4225/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 1,
+        "atoms": 2,
+        "areas": [
+          "3257/4096",
+          "3565/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 2,
+        "atoms": 3,
+        "areas": [
+          "819/256",
+          "859/256"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 3,
+        "atoms": 3,
+        "areas": [
+          "7927/4096",
+          "8361/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 3
+      },
+      {
+        "case": 4,
+        "atoms": 3,
+        "areas": [
+          "9",
+          "9"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 5,
+        "atoms": 2,
+        "areas": [
+          "363/256",
+          "3239/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 1
+      },
+      {
+        "case": 6,
+        "atoms": 5,
+        "areas": [
+          "1001/512",
+          "4389/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 2
+      },
+      {
+        "case": 7,
+        "atoms": 5,
+        "areas": [
+          "9855/2048",
+          "10341/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 6
+      },
+      {
+        "case": 8,
+        "atoms": 5,
+        "areas": [
+          "15107/4096",
+          "15969/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 9,
+        "atoms": 5,
+        "areas": [
+          "12663/4096",
+          "13169/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 5
+      },
+      {
+        "case": 10,
+        "atoms": 5,
+        "areas": [
+          "1797/1024",
+          "3995/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 2
+      },
+      {
+        "case": 11,
+        "atoms": 5,
+        "areas": [
+          "4561/2048",
+          "4823/2048"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 3
+      },
+      {
+        "case": 12,
+        "atoms": 5,
+        "areas": [
+          "14059/4096",
+          "15493/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 6
+      },
+      {
+        "case": 13,
+        "atoms": 5,
+        "areas": [
+          "15429/4096",
+          "4119/1024"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 2
+      },
+      {
+        "case": 14,
+        "atoms": 5,
+        "areas": [
+          "17075/4096",
+          "17717/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 0
+      },
+      {
+        "case": 15,
+        "atoms": 5,
+        "areas": [
+          "14641/4096",
+          "15901/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 7
+      },
+      {
+        "case": 16,
+        "atoms": 5,
+        "areas": [
+          "7177/4096",
+          "8387/4096"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 5
+      },
+      {
+        "case": 17,
+        "atoms": 5,
+        "areas": [
+          "6625/2048",
+          "3759/1024"
+        ],
+        "all_subsets_vs_boxes": "equal",
+        "slab_vs_cells": "equal",
+        "positive_outer_with_empty_inner": 2
+      }
+    ],
+    "threshold_tests": {
+      "R=1": "passed",
+      "R=5": "passed",
+      "R>5": "passed",
+      "clipping_and_zero_width": "passed"
+    }
+  },
+  "enumeration_seconds": 41.3002666659886,
+  "total_seconds": 42.59228187499684,
+  "command": [
+    "/Users/zzh/.local/bin/python3",
+    "planar-centered-square-weak11/computation/independent_periodic_halo.py",
+    "--input",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/dominated-tail/probe204.json",
+    "--radius-cap",
+    "10",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/dominated-tail/independent_r10.json",
+    "--compare-primary",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/dominated-tail/primary_r10.json"
+  ],
+  "evidence_status": "Exact rational finite enumeration; periodic completeness uses the documented tail and coordinate-box reduction.",
+  "primary_comparison": {
+    "path": "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/dominated-tail/primary_r10.json",
+    "sha256": "8351e3e2712dd82368444cb0f9be769b4823d07cd4d513ee288cd429c6b3864b",
+    "checks": {
+      "input_sha256": true,
+      "base_mass": true,
+      "tail_bound": true,
+      "area_lower": true,
+      "area_upper": true,
+      "ratio_lower": true,
+      "ratio_upper": true,
+      "all_boxes": true,
+      "lifted_atoms": true,
+      "unique_inner": true,
+      "unique_outer": true
+    }
+  }
+}
