@@ -1,0 +1,108 @@
+{
+  "round": 9,
+  "scope": "fixed-kernel-family floor and audited interface; no new C2 bounds",
+  "files": [
+    {
+      "path": "proofs/kernel-interface-audit.md",
+      "bytes": 12765,
+      "sha256": "deddd007d8d126932703cb4a98fcf0bf71a2cad4a22f0cc855c4ba003cfc22a2"
+    },
+    {
+      "path": "proofs/kernel-family-floor.md",
+      "bytes": 10115,
+      "sha256": "9c8d1f05b4578e77a94bcc9c6d0c8aff0a64bfa26e0621f1a9ad9537db93be15"
+    },
+    {
+      "path": "rounds/009-kernel-family-floor.md",
+      "bytes": 2540,
+      "sha256": "646564d4322e04d3234116dea9de214bc4f98340a512643b5a4b0581298c9153"
+    },
+    {
+      "path": "references/kernel-interface-versions.json",
+      "bytes": 4475,
+      "sha256": "8e0a64f972eb87f01ec40da36b8fdd67aab98415f42f4f1c63fc188612a24e45"
+    },
+    {
+      "path": "computation/kernel_interface_point_check.py",
+      "bytes": 2325,
+      "sha256": "d79e09b99e6aa19bfdf325afaa7771da9bd5303f2cc9268a8125cf99d63ed4fb"
+    },
+    {
+      "path": "computation/kernel_family_floor.py",
+      "bytes": 17269,
+      "sha256": "1524f9c38830ab954ff92c80bfd33c4aec850a580394102c42c36cbb0d599751"
+    },
+    {
+      "path": "computation/unpack_kernel_preconditioner.py",
+      "bytes": 951,
+      "sha256": "1cddc7ffab2a35037cf5a2683941e20af40c52bc2d6647f8351a0a492d55a031"
+    },
+    {
+      "path": "computation/kernel_vendor/hl_core.py",
+      "bytes": 11048,
+      "sha256": "c3d864b1368ad8150fd3366bf77f687a9a3cdd49b924a20d576aa678aed42ebf"
+    },
+    {
+      "path": "computation/kernel_vendor/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "computation/kernel_vendor/README.md",
+      "bytes": 815,
+      "sha256": "e0da6d16393caca75676c613bff689e05df664a95d1532fe6da69850b330a46a"
+    },
+    {
+      "path": "computation/inputs/kernel-audit/scaled.json",
+      "bytes": 58656,
+      "sha256": "d570ac3ffc1357e129183eda9579fde8a1bf3775e914efe6ef2d6be336348c99"
+    },
+    {
+      "path": "computation/inputs/kernel-audit/candidate.json",
+      "bytes": 58671,
+      "sha256": "88af41536e1117d953bbc4594ee99f1319b79b75d98d740c5d3c82caaf1f306f"
+    },
+    {
+      "path": "computation/inputs/kernel-audit/unit-origin-spline.json",
+      "bytes": 106,
+      "sha256": "54016612a3d1b98c60758d5bdf6853f2cf1905443a802c11e17a552cc7ee0e1d"
+    },
+    {
+      "path": "computation/results/kernel-interface/point-check.json",
+      "bytes": 3348,
+      "sha256": "e07c1d9335882d856b5be496e757aa590cb1699638c7e97a8e63e49626f0c44c"
+    },
+    {
+      "path": "computation/results/kernel-interface/floor-lp-dense.json",
+      "bytes": 120042,
+      "sha256": "5670e830c6f6310dc99f6396e5bbaa06bbfffd40e372b39dd8e60f8651757e8c"
+    },
+    {
+      "path": "computation/results/kernel-interface/floor-certified.json",
+      "bytes": 621556,
+      "sha256": "3264f2e5ad8690fb20651651be4dd19e089d80e6e50339de30d76dba403d0173"
+    },
+    {
+      "path": "computation/results/kernel-interface/floor-neumann.json",
+      "bytes": 329640,
+      "sha256": "f156fea5bb30191b9276fc51361a442fdc67e64e8c84c1ad9d996510f73deca3"
+    },
+    {
+      "path": "computation/results/kernel-interface/floor-preconditioner.byteshuffle8.gz",
+      "bytes": 9822059,
+      "sha256": "6765a557999b826e7910f14cfd9be485b1ce3864544f2a10869a66d61952e937"
+    },
+    {
+      "path": "computation/results/kernel-interface/floor-preconditioner-storage.json",
+      "bytes": 614,
+      "sha256": "0a328d0ea74627aab6fddfefe83bf1cd743a5731b369edf8589875acd1cbacb6"
+    },
+    {
+      "path": "computation/results/kernel-interface/floor-bundle-replay-summary.json",
+      "bytes": 2254,
+      "sha256": "2f7cf2e6f464b5e290776fe7f17231177719e117472046e1e1abf0d36b09bf1b"
+    }
+  ],
+  "excludes": "regenerable full menus and floating matrices; unrelated earlier delegated work; coarse LP output",
+  "independent_review": "parent integrates pcw-kernel-audit independent checker/report separately"
+}

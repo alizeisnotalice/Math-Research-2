@@ -1,0 +1,91 @@
+{
+  "access_date": "2026-11-15 Asia/Shanghai",
+  "official_sources": [
+    {
+      "id": "tomar_current_page",
+      "url": "https://www.mefyi.com/papers/weak-type-squares/",
+      "actual_access": "web open, current content read",
+      "stated_first_posted": "2026-10-21",
+      "stated_upper_bound": "3.59123",
+      "linked_package": "https://github.com/tejasvi/square-maximal-weak-type/tree/v5",
+      "package_commit": null,
+      "package_commit_note": "GitHub tag API returned HTTP403; no current commit verified"
+    },
+    {
+      "id": "tomar_current_pdf",
+      "url": "https://www.mefyi.com/papers/weak-type-squares/weak-type-squares.pdf",
+      "actual_access": "web PDF text read; 12 pages",
+      "read_scope": "operator definition, Theorem2.2, Lemma3.1, kernel class, C1-C4, current result and historical version comparisons",
+      "sha256": null,
+      "sha256_note": "Direct byte request returned HTTP403; old stored PDF hash is not asserted for this live version",
+      "local_full_text_saved": false
+    },
+    {
+      "id": "lin_current_page",
+      "url": "https://coolrmal.github.io/articles/two-partial-balayage-principles/",
+      "actual_access": "web open, current content read",
+      "read_scope": "Principle2, Corollary3.1, sections4.1 and4.3; distinguish other operators",
+      "square_bound_listed": "3.879",
+      "stronger_candidate_discussed": "3.615749"
+    },
+    {
+      "id": "lin_current_pdf",
+      "url": "https://coolrmal.github.io/assets/papers/two-partial-balayage-principles.pdf",
+      "actual_access": "web PDF opened; separate direct byte request hashed in memory without saving full text",
+      "pages": 13,
+      "bytes": 447334,
+      "sha256": "4dbcd4d0e418b8ae0022511cca1a8fc40b0d096c72911afb7547da9615185924",
+      "http_last_modified": "Sat, 14 Nov 2026 00:58:11 GMT",
+      "local_full_text_saved": false
+    }
+  ],
+  "legacy_root": "/Volumes/data/CodexProjects/T/Math-Research-planar-centered-square-weak11/planar-centered-square-weak11",
+  "legacy_sources": [
+    {
+      "path": "kernel-rescaling/provenance/UPSTREAM.json",
+      "sha256": "fef451891b01dc038899004af973fe340655975372a1675d9d514be49ec6aca7",
+      "repository": "https://github.com/tejasvi/square-maximal-weak-type-v4",
+      "commit": "3af09fc359ce262f4a7f63d34b0d97e6d4d95d1a",
+      "legacy_paper_sha256": "4cfd1ec7e22e15a6b80e13eb3e72e9d02386c93cdb28dc3aec0721324653e31e",
+      "vendor_license": "Apache-2.0"
+    },
+    {
+      "path": "round004/proofs/kernel.md",
+      "sha256": "f6180f44d4dee187f90da2c0e208cb85da0470a18062fadeedd284586023efd2",
+      "read_scope": "kernel parameters, full-check provenance and point-control proof"
+    },
+    {
+      "path": "round004/kernel/records/full-c1234-report.json",
+      "sha256": "236e32ace5a5883bac6075fd6d18dbbe914f09ad3fe20e010902cabd4dc13929",
+      "status": "historical complete C4 run; hashed this round, leaves not rerun"
+    },
+    {
+      "path": "round004/kernel/records/point-control.json",
+      "sha256": "d230de7f90393d5a53ef63b3ed525853eaeffe0f02f5a9bc230a403ba8b7008f",
+      "status": "read; same point and underlying values freshly recomputed with copied evaluator"
+    }
+  ],
+  "fresh_computation": {
+    "script": "computation/kernel_interface_point_check.py",
+    "output": "computation/results/kernel-interface/point-check.json",
+    "python": "3.12.13",
+    "python_flint": "0.9.0",
+    "precision_bits": 192,
+    "only": "direct halfmass and one-point generator/ray-cap check",
+    "full_C4_rerun": false,
+    "new_general_upper_bound": false
+  },
+  "subsequent_round009_family_floor": {
+    "proof": "proofs/kernel-family-floor.md",
+    "minimal_certificate": "computation/results/kernel-interface/floor-neumann.json",
+    "frozen_parameters": {"alpha": "47/40", "R": "33/20", "h": "1/32"},
+    "spline_classes": 1181,
+    "all_variables_including_singular_coefficient": 1182,
+    "certified_halfmass_floor": "3.589342358790",
+    "current_kernel_remaining_improvement_strictly_below": "0.001523",
+    "certification": "exact rational y0 plus rigorous Neumann matrix products; independent matrix implementation also passed",
+    "not_a_C2_lower_or_upper_bound": true,
+    "full_C4_rerun": false
+  },
+  "rights": "No third-party full-text paper is stored in this workspace; official URLs, version metadata, hashes and original audit only. Legacy T remains read-only. Small unchanged Apache-2.0 evaluator source and its license are included for reproducibility."
+}

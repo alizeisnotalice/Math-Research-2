@@ -99,3 +99,14 @@ python3 -I -B computation/verify_periodic_result.py --input computation/inputs/r
 ```
 
 第一条重做3267候选搜索，第二条仅检查已保存准确算术和身份。重算最终几何时，把两套周期面积命令的输入改为 `r008_final_0611.json`，仍用 bits=40、半径上限5。方向摘要中的坐标字符串是历史标签；实际变换按成员编号作用于固定R6基准，详见本轮独立审查。
+
+## 第9轮核族成本地板
+
+选择已有的 Python 3.12 / python-flint 0.9.0 环境为 `PY_ARB`。下列独立最小复核不调用 LP、求逆或原 evaluator：
+
+```sh
+python3 -B computation/unpack_kernel_preconditioner.py computation/results/kernel-interface/floor-preconditioner.byteshuffle8.gz /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/kernel-interface/replay-R.bin
+"$PY_ARB" -B computation/kernel_floor_neumann_review.py computation/results/kernel-interface/floor-certified.json computation/inputs/kernel-audit/candidate.json /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/kernel-interface/replay-R.bin /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/kernel-interface/replay-independent.json
+```
+
+运行前确认data挂载并创建输出目录。解码器校验压缩和原始字节两项哈希；矩阵R本身不作为可信逆矩阵，而由向外矩阵乘法验证残差。活动点必要性与完整变量列检查已包含在独立检查器中。主认证和可再生发现步骤见 [核族地板证明](../proofs/kernel-family-floor.md)；`kernel_floor_scope_check.py`另记录对全部10657行发现菜单的审计，其大菜单可再生但不属于最终证明依赖。
