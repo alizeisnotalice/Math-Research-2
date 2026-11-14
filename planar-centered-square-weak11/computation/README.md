@@ -17,3 +17,17 @@ wolframscript -file computation/symbolic_checks.wl
 前两条命令重新枚举几何；`verify_saved_results.py` 只核对归档结果之间的准确算术和文件身份，不重算几何。原始矩形大数组可重建，不进入公开提交。软件版本和实际参数分别记录在结果 JSON 中；不同算法使用不同 Python 版本的事实按实际保留。
 
 一般 L¹ 下界还依赖 [完整解析传递](../proofs/periodic-complete-halo.md)，不能只凭程序输出宣称。结果中的周期比值外界不适用于全部输入，也不是 C₂ 的一般上界。
+
+## 第2轮搜索与最终候选
+
+`scan_perturbations.py` 和 `scan_position_grid.py` 保留实际运行版本的字节，原始默认路径对应本机实验。跨工作目录复现时使用 `replay_search.py` 显式提供路径，它不改变候选生成规则：
+
+```sh
+python3 -B computation/replay_search.py directional --input computation/inputs/legacy_r004_transfer_34_27.json --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay002/directional
+python3 -B computation/replay_search.py position --input computation/inputs/r002_directional_0302.json --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay002/position
+python3 -I -B computation/periodic_halo.py computation/inputs/r002_final_0475.json --bits 40 --tail-radius 5 --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay002/final-primary.json
+python3 -I -B computation/independent_periodic_halo.py --input computation/inputs/r002_final_0475.json --bits 40 --radius-cap 5 --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay002/final-independent.json
+python3 -I -B computation/verify_round002.py
+```
+
+完整搜索使用12个进程。只复核下界时，运行最终候选的两个算核和解析传递即可；无需重新搜索6305个点。归档的搜索账本保留各批次规模、耗时、代码/输入/任务清单哈希，候选发现的全部可再生记录留在 CodexTemp。
