@@ -1,0 +1,15 @@
+{
+  "software": "Wolfram Language 15.0.0 for Mac OS X ARM (64-bit) (May 15, 2026)",
+  "command": "wolframscript -file computation/symbolic_checks.wl",
+  "script_sha256": "b80d2abdcdb8249e2bff1446de1eb2f1dfcec94d101ad923434c406a048a7f4d",
+  "returncode": 0,
+  "checks": {
+    "tail_strictly_decreasing": true,
+    "tail_polynomial_equivalence": true,
+    "uncapped_radius_margin": true,
+    "capped_radius_margin": true,
+    "reflection_single_atom_identity": true,
+    "reflection_single_atom_positive": true
+  },
+  "evidence": "Actual local wolframscript run reported ALL_EXACT_SYMBOLIC_CHECKS_PASSED; process exited with code 0. These scalar checks do not replace the geometric proof."
+}
