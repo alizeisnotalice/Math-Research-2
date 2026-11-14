@@ -1,0 +1,130 @@
+{
+  "python": "3.9.6 (default, Oct 19 2026, 19:18:13) \n[Clang 21.0.0 (clang-2100.4.1.1)]",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "run_at_utc": "2026-11-14T16:47:40.968703+00:00",
+  "probe_path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-general-dual/planar-centered-square-weak11/computation/general_dual_mass_probe.py",
+  "probe_sha256": "d1e456fb078afa7c33f3d545567f8a33f3ced75feb88a8076f91b4747d0e4b0e",
+  "audit_script_sha256": "05b7c5b9b2eca87c983c5974cd28649b27e7d9180088577c836d0f0bf184d34c",
+  "small_exact_cases": [
+    {
+      "name": "one_atom_unattained_capacity",
+      "points": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "masses": [
+        "3/7"
+      ],
+      "exact_coefficients": {
+        "0": "3/7"
+      },
+      "matches_independent_analytic_expectation": true
+    },
+    {
+      "name": "two_atoms_exact_strict_threshold",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "2",
+          "1"
+        ]
+      ],
+      "masses": [
+        "1",
+        "3"
+      ],
+      "exact_coefficients": {
+        "0": "1",
+        "1": "3"
+      },
+      "matches_independent_analytic_expectation": true
+    },
+    {
+      "name": "two_atoms_above_threshold",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "2",
+          "1"
+        ]
+      ],
+      "masses": [
+        "1",
+        "13/4"
+      ],
+      "exact_coefficients": {
+        "0": "1",
+        "0,1": "17/4",
+        "1": "13/4"
+      },
+      "matches_independent_analytic_expectation": true
+    },
+    {
+      "name": "bounded_interior_singleton_capacity",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "2",
+          "0"
+        ]
+      ],
+      "masses": [
+        "1/4",
+        "10",
+        "1/4"
+      ],
+      "exact_coefficients": {
+        "0": "1/4",
+        "0,1": "41/4",
+        "0,1,2": "21/2",
+        "1": "4",
+        "1,2": "41/4",
+        "2": "1/4"
+      },
+      "matches_independent_analytic_expectation": true
+    }
+  ],
+  "closed_critical_radius_and_zero_area_center_cell": "passed",
+  "fixed_family_example": {
+    "N": 3,
+    "source_incidence_labels": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "source_load_objective": 12,
+    "all_space_objective": 4,
+    "scope": "only this selected family; not a weak-constant obstruction"
+  },
+  "elapsed_seconds": 0.023913541999999996,
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "planar-centered-square-weak11/computation/general_dual_audit_checks.py",
+    "--module",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-general-dual/planar-centered-square-weak11/computation/general_dual_mass_probe.py",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/general-dual/independent-small-checks.json"
+  ],
+  "full_100_case_search_rerun": false
+}

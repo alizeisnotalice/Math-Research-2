@@ -61,3 +61,16 @@ MATLAB 中 `addpath('computation'); propose_joint(inputPath,outputPath);` 生成
 ```sh
 python3 -I -B computation/verify_periodic_result.py --input computation/inputs/r004_final_0504.json --primary computation/results/round004/primary_final.json --independent computation/results/round004/independent_final.json --baseline-primary computation/results/round003/primary_final.json
 ```
+
+## 第5轮有限源对偶
+
+以下复核使用标准库，无需重跑 LP 搜索：
+
+```sh
+python3 -B computation/general_dual_obstructions.py
+python3 -B computation/general_dual_mass_probe.py --verify computation/results/general-dual/mass-probe.json
+python3 -B computation/general_dual_saved_certificate_check.py --certificates computation/results/general-dual/mass-probe.json --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay005/independent.json
+python3 -B computation/general_dual_audit_checks.py --module computation/general_dual_mass_probe.py --output /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay005/small.json
+```
+
+`general_dual_mass_probe.py` 不带参数时用本机 SciPy/HiGHS 重做确定种子的100例搜索，结果打印到标准输出。原探针使用 Python 3.13.18、SciPy 1.18.1；严格性由保存的准确证书和无求解器的两个检查承担。`general_dual_saved_certificate_check.py` 独立证明本批正容量饱和；它的输入契约是本批100份证书，不是任意未知容量问题的通用求解器。
