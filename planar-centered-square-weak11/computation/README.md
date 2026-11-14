@@ -90,3 +90,12 @@ python3 -B computation/vertical_branch_bound.py computation/inputs/r003_final_05
 ```
 
 运行前创建输出父目录并确认data已挂载。墙钟上限随本机负载影响是否达到误差目标；即使时间停止，完整叶证书仍有效，实际完成状态须读 `status` 与准确缺口。加 `--resume` 从同版本代码、同输入和同目标的检查点继续。缓存不承担独立正确性证明；独立检查器从准确输入重建几何。`r007_best_vertical.json` 是该族最佳采样输入，其完整面积双算核结果位于 `results/round007/best-*.json`。
+
+## 第8轮联合组方向
+
+```sh
+python3 -B computation/scan_joint_groups.py --input computation/inputs/r006_final_0015.json --mass-summary computation/results/round006/epoch7_summary.json --coordinate-summary computation/results/round006/epoch5_summary.json --out /Volumes/data/CodexTemp/T2/planar-centered-square-weak11/replay008/joint-groups --workers 12
+python3 -I -B computation/verify_periodic_result.py --input computation/inputs/r008_final_0611.json --primary computation/results/round008/primary_final.json --independent computation/results/round008/independent_final.json --baseline-primary computation/results/round006/primary_final.json
+```
+
+第一条重做3267候选搜索，第二条仅检查已保存准确算术和身份。重算最终几何时，把两套周期面积命令的输入改为 `r008_final_0611.json`，仍用 bits=40、半径上限5。方向摘要中的坐标字符串是历史标签；实际变换按成员编号作用于固定R6基准，详见本轮独立审查。

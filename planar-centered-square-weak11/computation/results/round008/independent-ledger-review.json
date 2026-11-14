@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "scope": "fixed-base transformations and saved arithmetic/ledger; no geometry or search rerun",
+  "input_sha256": "6c2e5d2d8fba5063bd45ecd4467f8c74cca5c0edbef958f90146a103029d5910",
+  "fixed_base_R6_sha256": "28a58be8102b17759f5bde054057d4f105599fa83fc62d8911a3e52efbaeda69",
+  "winner_coefficients": [
+    "-1/32",
+    "69/64"
+  ],
+  "stale_coordinate_label": "708543405925624449648571/600000000000000000000000",
+  "actual_R6_x2": "708563130023262189648571/600000000000000000000000",
+  "coordinate_label_ignored_in_transform": true,
+  "mass_transfer_from_1_to_0": "99999/320000000000",
+  "x2_x3_displacement": "22682712283401/640000000000000000",
+  "positive_masses": 51,
+  "mass": "65941670400277227073796193886781311/12500000000000000000000000000000000",
+  "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+  "q": 3,
+  "lower": "2893563225302059541790308926866202820672451217485798472797293/1699303906876811517693122587878005144694030336000000000000000",
+  "upper": "964521075104941317840498455276271679634280286733750858119931/566434635625603839231040862626001714898010112000000000000000",
+  "lower_minus_R6_full_upper": "281595165048161351831807177287623570362952556069/5437772502005796856617992281209616463020897075200000000",
+  "exact_input_changes": [
+    {
+      "zero_based_atom": 0,
+      "field": "weight",
+      "before": "99999/100000",
+      "after": "319996899999/320000000000",
+      "delta": "99999/320000000000"
+    },
+    {
+      "zero_based_atom": 1,
+      "field": "weight",
+      "before": "501060968564316253847170560556211847087/125000000000000000000000000000000000000",
+      "after": "501060929502206878847170560556211847087/125000000000000000000000000000000000000",
+      "delta": "-99999/320000000000"
+    },
+    {
+      "zero_based_atom": 2,
+      "field": "x",
+      "before": "708563130023262189648571/600000000000000000000000",
+      "after": "708584395066027878086071/600000000000000000000000",
+      "delta": "22682712283401/640000000000000000"
+    },
+    {
+      "zero_based_atom": 3,
+      "field": "x",
+      "before": "708563130023262189648571/600000000000000000000000",
+      "after": "708584395066027878086071/600000000000000000000000",
+      "delta": "22682712283401/640000000000000000"
+    }
+  ],
+  "all_manifest_inputs_reconstructed": 3267,
+  "completion_records_checked": 3267,
+  "batch_checks": [
+    {
+      "batch": 0,
+      "tasks_reconstructed": 1089,
+      "winner_coefficients": [
+        "0",
+        "1"
+      ],
+      "strict_gain_over_center": "238766857858095038683327965600992706873269201689/5437772502005796856617992281209616463020897075200000000"
+    },
+    {
+      "batch": 1,
+      "tasks_reconstructed": 1089,
+      "winner_coefficients": [
+        "-1/16",
+        "17/16"
+      ],
+      "strict_gain_over_center": "116712668054723178486140693671360725920895868391/21751090008023187426471969124838465852083588300800000000"
+    },
+    {
+      "batch": 2,
+      "tasks_reconstructed": 1089,
+      "winner_coefficients": [
+        "-1/32",
+        "69/64"
+      ],
+      "strict_gain_over_center": "18093524755024062413608420005498429080646370543/7250363336007729142157323041612821950694529433600000000"
+    }
+  ],
+  "wall_seconds_sum": "511.07517237597495",
+  "child_cpu_seconds_sum": "5630.669179000000199",
+  "files_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r008_final_0611.json": "6c2e5d2d8fba5063bd45ecd4467f8c74cca5c0edbef958f90146a103029d5910",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/proofs/round008-lower.md": "887431ee6c349a9faede9c68b32088dbb6724d05d5f220328803e6849a32680e",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/rounds/008.md": "7f93204790658678fa1530b112d71624c9f4f591c0ac596ffe053803fe69d4db",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round008/primary_final.json": "ebdd5030099a156ac056d827d9c66066414523b88e97cfd02535c9701903cc6d",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round008/independent_final.json": "f2daf4c794598a3b503f01c36994edabafb1d534933842f33519368d0ca2a48a",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round008/integration_checks.json": "d088c670e43d5a704624a1f8f520611756465d43d5f46b50a6da326053a5418e",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round008/search_ledger.json": "c490f7604f7f434b2d39d20f4c60287826053f80b3a446644296d5ec8a3b0de8"
+  },
+  "audit_script_sha256": "9da6211d07ce583d7507dfed3e3a18c5e301028680b69c7f85c90d375d553b96",
+  "verified_utc": "2026-11-14T17:26:48.743149+00:00",
+  "python": "3.9.6 (default, Oct 19 2026, 19:18:13) \n[Clang 21.0.0 (clang-2100.4.1.1)]",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "elapsed_seconds": 2.037433375,
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "planar-centered-square-weak11/computation/review_round008_ledger.py",
+    "--topic",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11",
+    "--raw-search",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round008/joint-groups",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round008/independent-ledger-review.json"
+  ]
+}
