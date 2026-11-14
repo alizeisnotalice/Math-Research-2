@@ -1,0 +1,99 @@
+[
+  {
+    "batch": 0,
+    "points": 290,
+    "new_calls": 287,
+    "reused": 3,
+    "new_distinct_inputs": 290,
+    "selection": {
+      "grid": "a=-1..1 step1/8, b=0..10 step5/8 plus R18 baseline",
+      "excluded": [],
+      "kappa_cap": "1001/1000",
+      "source_binary_sha256": "9eb82bebf5c15bb91eabd31d8451c96d4d8fe77e1d41b7d14b2d33cde762cac4"
+    },
+    "wall_seconds": 115.47218433298985,
+    "children_user_cpu_seconds": 1177.895624,
+    "children_system_cpu_seconds": 8.810621000000001,
+    "manifest_sha256": "baccc7c03770818304a91abed32e5332027a7d9b1be46c48afd71616e0532433",
+    "task_list_sha256": "7b1245280a4499d1c7c661515163e6ae1d6f6b372341d746bbc349735ff3168e",
+    "results_sha256": "dfb1216bb6a03eb2d4252e65526f138076d2fbdfc7c3c85178f63f0ffb3b732b",
+    "run_kernel_sha256": "372e2fbf28d53a71372cc4af51e97181bcd86ccee6e05045422140afe2f72908",
+    "grid_source_sha256": "d6ab31ff2469996bffc0738d1abfd8a1fa908adc6994c7b4b62dfd886e3644ca",
+    "winner": {
+      "id": "0132",
+      "input_sha256": "5666b1b86151b97ded3e07ccaade5f28f98ac3c36e85ede0bdb33e0739a74dc0",
+      "tail_radius": 5,
+      "kappa": "16013/16000",
+      "delta": "10009397153388108069/409600000000000000000000",
+      "tail_bound": "2499838818480736269164094061473586687448266018994549333509769820605839532808874881363241/2522130945376113721742207632146432000000000000000000000000000000000000000000000000000000",
+      "inner_ratio": "5787126892182429552028959924579958231924808072315452508062189/3398607813753623035386245175756010289388060672000000000000000",
+      "outer_ratio": "5787126892207186816347956397133349842723527693020103386968439/3398607813753623035386245175756010289388060672000000000000000",
+      "elapsed_seconds": 4.8615076249989215,
+      "window_x_coordinates": 136,
+      "window_y_coordinates": 38,
+      "reused": false,
+      "coefficients": [
+        [
+          "-1/8",
+          "-1/8",
+          "1",
+          "1",
+          "65/8",
+          "65/8",
+          "65/8",
+          "65/8"
+        ]
+      ]
+    }
+  },
+  {
+    "batch": 1,
+    "points": 1681,
+    "new_calls": 1593,
+    "reused": 88,
+    "new_distinct_inputs": 1599,
+    "selection": {
+      "grid": "a=-1..1 step1/20, b=0..10 step1/4",
+      "excluded": [],
+      "kappa_cap": "1001/1000",
+      "coarse_winner": [
+        "-1/8",
+        "65/8"
+      ]
+    },
+    "wall_seconds": 682.3458334579773,
+    "children_user_cpu_seconds": 6522.522519,
+    "children_system_cpu_seconds": 40.544983,
+    "manifest_sha256": "0c0cdf13aabde64e913a1e9149311b996fa341fa2442c084b8e67b0fbdd97179",
+    "task_list_sha256": "59e16bda22c1c164d97e03c8d10919bd235d2982c3b1c3cd55b209296436faa9",
+    "results_sha256": "51e6b59d71106ec1526e6c21e9f983951e9f94ae89add708998eca924e47ff15",
+    "run_kernel_sha256": "372e2fbf28d53a71372cc4af51e97181bcd86ccee6e05045422140afe2f72908",
+    "grid_source_sha256": "d6ab31ff2469996bffc0738d1abfd8a1fa908adc6994c7b4b62dfd886e3644ca",
+    "winner": {
+      "id": "0730",
+      "input_sha256": "7f0e7e6a472e1bcbac6456e084dd8ef4a33da99d76cccb9486450fcca041d522",
+      "tail_radius": 5,
+      "kappa": "40033/40000",
+      "delta": "10009397153388108069/409600000000000000000000",
+      "tail_bound": "6249675102743977709576355308997195769600726505864534657365678837713955786981682890502381/6305327363440284304355519080366080000000000000000000000000000000000000000000000000000000",
+      "inner_ratio": "5787126894038138187105363553426540382889979981647727898687189/3398607813753623035386245175756010289388060672000000000000000",
+      "outer_ratio": "1929042298020965148915932651684446280915060639138618446697813/1132869271251207678462081725252003429796020224000000000000000",
+      "elapsed_seconds": 5.067572082974948,
+      "window_x_coordinates": 136,
+      "window_y_coordinates": 38,
+      "reused": false,
+      "coefficients": [
+        [
+          "-3/20",
+          "-3/20",
+          "1",
+          "1",
+          "33/4",
+          "33/4",
+          "33/4",
+          "33/4"
+        ]
+      ]
+    }
+  }
+]
