@@ -1,0 +1,38 @@
+{
+  "status": "PASS_scalar_interval_and_rational_checks",
+  "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+  "flint": "0.9.0",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "arithmetic": {
+    "arb_precision_bits": 128,
+    "final_decimal_claim": "strict lower 379/100",
+    "random_seed": null,
+    "workers": 1
+  },
+  "rigorous_scalar_checks": {
+    "cost_constant_arb": "[3.7922377958740797427392621866700982914 +/- 5.54e-38]",
+    "constant_gt_379_over_100": true,
+    "rational_lower": "75842093/20000000",
+    "pi_gt_31415_over_10000": true,
+    "sqrt2_gt_14142_over_10000": true
+  },
+  "exploratory_only": {
+    "H_terms": 128,
+    "S_inclusive_index": 4096,
+    "S_partial_float": 1.0130084859581836,
+    "S_tail_bound_formula": "1/(32*N_S^2); floating rounding not enclosed here",
+    "golden_section_iterations": 100,
+    "search_interval": [
+      0.05,
+      0.95
+    ],
+    "q": 0.6266063322726074,
+    "R": 2.0582967886003116,
+    "vertex_necessary_cost": 4.195382991907563,
+    "meaning": "Numerical minimum of vertex-based necessary cost; neither certified global minimum nor feasible upper bound."
+  },
+  "sources_sha256": {
+    "proofs/killed-green-homothetic-diamond-obstruction.md": "1bc3087156ef3f34f03a0e5734fb7a9b3e04aef33f0603821dccae389ca25d05",
+    "computation/killed_green_diamond_check.py": "a6bad008668562253dce37052b085bee22aaafa61cdb7ff9965fbd82f0c69e17"
+  }
+}
