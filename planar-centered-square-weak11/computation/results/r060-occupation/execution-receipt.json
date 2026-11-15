@@ -1,0 +1,302 @@
+{
+  "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/cauchy_occupation_cell_lp.m",
+  "source_sha256": "dab5992d41449cfeb047455d472d106ee05ce691e82f8f41f7e65bc241c9c1fd",
+  "pilot": {
+    "pid": 25008,
+    "exit_status": 0
+  },
+  "batch": [
+    {
+      "pid": 25865,
+      "case": [
+        0.3,
+        0.125,
+        16,
+        "midpoint"
+      ],
+      "tag": "h030-d1250-midpoint",
+      "exit_status": 0,
+      "wall_seconds": 17.78336262702942
+    },
+    {
+      "pid": 25868,
+      "case": [
+        0.3,
+        0.125,
+        16,
+        "cellinf"
+      ],
+      "tag": "h030-d1250-cellinf",
+      "exit_status": 0,
+      "wall_seconds": 17.782216787338257
+    },
+    {
+      "pid": 25862,
+      "case": [
+        0.15,
+        0.125,
+        16,
+        "cellinf"
+      ],
+      "tag": "h015-d1250-cellinf",
+      "exit_status": 1,
+      "wall_seconds": 20.326124906539917
+    },
+    {
+      "pid": 25863,
+      "case": [
+        0.15,
+        0.0625,
+        32,
+        "midpoint"
+      ],
+      "tag": "h015-d0625-midpoint",
+      "exit_status": 0,
+      "wall_seconds": 30.231189012527466
+    },
+    {
+      "pid": 25864,
+      "case": [
+        0.15,
+        0.0625,
+        32,
+        "cellinf"
+      ],
+      "tag": "h015-d0625-cellinf",
+      "exit_status": 1,
+      "wall_seconds": 30.230353832244873
+    },
+    {
+      "pid": 25876,
+      "case": [
+        0.3,
+        0.0625,
+        32,
+        "midpoint"
+      ],
+      "tag": "h030-d0625-midpoint",
+      "exit_status": 0,
+      "wall_seconds": 30.22676110267639
+    },
+    {
+      "pid": 25880,
+      "case": [
+        0.3,
+        0.0625,
+        32,
+        "cellinf"
+      ],
+      "tag": "h030-d0625-cellinf",
+      "exit_status": 0,
+      "wall_seconds": 30.225682258605957
+    },
+    {
+      "pid": 26419,
+      "case": [
+        0.6,
+        0.125,
+        16,
+        "cellinf"
+      ],
+      "tag": "h060-d1250-cellinf",
+      "exit_status": 0,
+      "wall_seconds": 17.780478954315186
+    },
+    {
+      "pid": 26418,
+      "case": [
+        0.6,
+        0.125,
+        16,
+        "midpoint"
+      ],
+      "tag": "h060-d1250-midpoint",
+      "exit_status": 0,
+      "wall_seconds": 18.036591053009033
+    },
+    {
+      "pid": 26606,
+      "case": [
+        0.6,
+        0.0625,
+        32,
+        "midpoint"
+      ],
+      "tag": "h060-d0625-midpoint",
+      "exit_status": 0,
+      "wall_seconds": 16.758966207504272
+    },
+    {
+      "pid": 26720,
+      "case": [
+        0.6,
+        0.0625,
+        32,
+        "cellinf"
+      ],
+      "tag": "h060-d0625-cellinf",
+      "exit_status": 0,
+      "wall_seconds": 21.336822748184204
+    }
+  ],
+  "retry": [
+    {
+      "pid": 27061,
+      "exit_status": 0
+    },
+    {
+      "pid": 27244,
+      "exit_status": 0
+    }
+  ],
+  "exit_verification": "ps -p 25008,25862,25863,25864,25865,25868,25876,25880,26418,26419,26606,26720,27061,27244 returned no processes",
+  "failed_attempts": "PIDs 25862 and 25864 exited 1 with MATLAB service error 5006; successful retries used separate output directories.",
+  "command_pattern": "matlab -singleCompThread -batch cauchy_occupation_cell_lp(h,delta,N,mode,output)",
+  "results": [
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h015-d0625-midpoint/occupation-cell-lp.json",
+      "sha256": "e1b6c57e2146a9bd29e4fcdd9d4e176b4249ba1b38eb6609fe5426bc6180a4ef",
+      "bytes": 33292,
+      "h": 0.15,
+      "delta": 0.0625,
+      "N": 32,
+      "mode": "midpoint",
+      "elapsed_seconds": 3.290578083333333,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h015-d125-mid/occupation-cell-lp.json",
+      "sha256": "f2b63b537314244a9fef98d799699364d7ab5a45006ec7f2d2a878ae2feacf38",
+      "bytes": 9923,
+      "h": 0.15,
+      "delta": 0.125,
+      "N": 16,
+      "mode": "midpoint",
+      "elapsed_seconds": 1.1388046666666667,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h030-d0625-cellinf/occupation-cell-lp.json",
+      "sha256": "fa2c9f22f1053f1f1f7bded6b911effed80e0a64f9f87f8690f0bd4aa924a2ce",
+      "bytes": 33116,
+      "h": 0.3,
+      "delta": 0.0625,
+      "N": 32,
+      "mode": "cellinf",
+      "elapsed_seconds": 3.259757958333333,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h030-d0625-midpoint/occupation-cell-lp.json",
+      "sha256": "723396fc7e0a29e72593fe5babf92c9b69c6e7c34672eac67cfd926b3b3466b7",
+      "bytes": 33116,
+      "h": 0.3,
+      "delta": 0.0625,
+      "N": 32,
+      "mode": "midpoint",
+      "elapsed_seconds": 3.1921402083333335,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h030-d1250-cellinf/occupation-cell-lp.json",
+      "sha256": "9b85114601f23178c146e835639e9e74399e1f22dd5048312a205d7c7937205d",
+      "bytes": 9878,
+      "h": 0.3,
+      "delta": 0.125,
+      "N": 16,
+      "mode": "cellinf",
+      "elapsed_seconds": 1.6843649583333333,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h030-d1250-midpoint/occupation-cell-lp.json",
+      "sha256": "0e17f97eca8189015229b9ca3b27e74536137bbff790c8654589617655a6331e",
+      "bytes": 9913,
+      "h": 0.3,
+      "delta": 0.125,
+      "N": 16,
+      "mode": "midpoint",
+      "elapsed_seconds": 1.6351453333333332,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h060-d0625-cellinf/occupation-cell-lp.json",
+      "sha256": "efa7fcdcb21ca45e0d95117b2bb428fefa4629fd44150d980d587e36c8c47ba7",
+      "bytes": 32970,
+      "h": 0.6,
+      "delta": 0.0625,
+      "N": 32,
+      "mode": "cellinf",
+      "elapsed_seconds": 2.2620585,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h060-d0625-midpoint/occupation-cell-lp.json",
+      "sha256": "633ec6a15353cab15e9bafeb727a39c2c44d4db315268defbec332c3aab9bad6",
+      "bytes": 32879,
+      "h": 0.6,
+      "delta": 0.0625,
+      "N": 32,
+      "mode": "midpoint",
+      "elapsed_seconds": 2.19417625,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h060-d1250-cellinf/occupation-cell-lp.json",
+      "sha256": "78b171730439697c401fb130c1922bdb4cecb6ce1bf9ad54928f8d8030053fd8",
+      "bytes": 9833,
+      "h": 0.6,
+      "delta": 0.125,
+      "N": 16,
+      "mode": "cellinf",
+      "elapsed_seconds": 1.208149625,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/h060-d1250-midpoint/occupation-cell-lp.json",
+      "sha256": "3f34f1f653c2646e229f35b58a3d0a8ca832017450528dc4cb574127dae7d955",
+      "bytes": 9867,
+      "h": 0.6,
+      "delta": 0.125,
+      "N": 16,
+      "mode": "midpoint",
+      "elapsed_seconds": 1.2172964583333334,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/retry-h015-d0625-cellinf/occupation-cell-lp.json",
+      "sha256": "7f0422cd43c5e4539ffaf7c813d779632981381adb0f0727f62a1dd605102a96",
+      "bytes": 33131,
+      "h": 0.15,
+      "delta": 0.0625,
+      "N": 32,
+      "mode": "cellinf",
+      "elapsed_seconds": 2.3812950833333333,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    },
+    {
+      "output": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r060-occupation/retry-h015-d1250-cellinf/occupation-cell-lp.json",
+      "sha256": "b2f3e6a1cdb9e8f2b0cbb0090d3d28304075bef6b76aed926ed872c338bb5fdb",
+      "bytes": 9887,
+      "h": 0.15,
+      "delta": 0.125,
+      "N": 16,
+      "mode": "cellinf",
+      "elapsed_seconds": 0.9692613333333333,
+      "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+      "threads": 1
+    }
+  ],
+  "scope": "Floating screening only; no strict continuous certificate."
+}

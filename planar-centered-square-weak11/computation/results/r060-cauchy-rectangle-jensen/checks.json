@@ -1,0 +1,429 @@
+{
+  "status": "PASS bounded exact-symbolic and nondirected rectangle checks",
+  "timestamp_utc": "2026-11-15T09:58:04.774011+00:00",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "precision_digits": 90,
+  "workers": 1,
+  "random_seed": null,
+  "script_sha256": "823ea2a45c89a6537ff4eb32211eb6b42e246c2d2ddbdb5344c13418e11bd7ea",
+  "symbolic_check": "mixed derivative of U rectangle primitive exactly 1/(a+b)",
+  "cases": [
+    {
+      "name": "origin_corner",
+      "split_sandwich": {
+        "n": 8,
+        "piece_count": 3,
+        "lower_numeric": 0.9982189103614205,
+        "upper_numeric": 0.9982189247763937,
+        "width_over_reference": 1.4440693338375322e-08
+      },
+      "direct_Q_GL": [
+        {
+          "n": 16,
+          "Q_numeric": 0.3880754475740115,
+          "relative_error": -4.459869173399026e-17
+        },
+        {
+          "n": 32,
+          "Q_numeric": 0.3880754475740115,
+          "relative_error": -4.459869173399026e-17
+        }
+      ],
+      "intervals": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "t": ".3",
+      "U_rectangle": "1.38629436111989061883446424291635313615100026872051050824136",
+      "V_rectangle": "0.998218913545879078726843173364714484155173498194992696026977",
+      "Q_rectangle": "0.388075447574011540107621069551638651995826770525517812214383",
+      "U_minus_V_minus_Q": "1.2272734e-91",
+      "monotone_Riemann_n": 256,
+      "monotone_Riemann_lower": "0.99468415408241942024932175149693132890737233924217",
+      "monotone_Riemann_upper": "1.0017524251470992892309006544788145911062118256318",
+      "quadrature": [
+        {
+          "n": 4,
+          "Gauss_V_lower_numeric": 0.9919034465763327,
+          "left_Radau_V_upper_numeric": 1.0105391729270456,
+          "width_over_reference": 0.018668977413496445,
+          "Gauss_relative_error": 0.006326735432323727,
+          "Radau_relative_error": 0.012342241981172718,
+          "moment_residual_G": 2.7755575615628914e-16,
+          "moment_residual_R": 5.551115123125783e-17
+        },
+        {
+          "n": 8,
+          "Gauss_V_lower_numeric": 0.998180778462985,
+          "left_Radau_V_upper_numeric": 0.9982905360538539,
+          "width_over_reference": 0.00010995342742901995,
+          "Gauss_relative_error": 3.820312596420868e-05,
+          "Radau_relative_error": 7.175030146481128e-05,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.3877787807814457e-16
+        },
+        {
+          "n": 16,
+          "Gauss_V_lower_numeric": 0.9982189116575216,
+          "left_Radau_V_upper_numeric": 0.9982189170327227,
+          "width_over_reference": 5.384791841837802e-09,
+          "Gauss_relative_error": 1.8917267728842757e-09,
+          "Radau_relative_error": 3.4930650689535263e-09,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.249000902703301e-16
+        },
+        {
+          "n": 32,
+          "Gauss_V_lower_numeric": 0.9982189135458167,
+          "left_Radau_V_upper_numeric": 0.9982189135458798,
+          "width_over_reference": 6.317318470224574e-14,
+          "Gauss_relative_error": 6.24793772842665e-14,
+          "Radau_relative_error": 6.938074179792408e-16,
+          "moment_residual_G": 1.8596235662471372e-14,
+          "moment_residual_R": 4.2327252813834093e-16
+        }
+      ]
+    },
+    {
+      "name": "crossing",
+      "split_sandwich": {
+        "n": 8,
+        "piece_count": 6,
+        "lower_numeric": 2.6587328915781443,
+        "upper_numeric": 2.658733067266178,
+        "width_over_reference": 6.607960952167738e-08
+      },
+      "direct_Q_GL": [
+        {
+          "n": 16,
+          "Q_numeric": 0.5476781503357704,
+          "relative_error": 2.1208122015636151e-16
+        },
+        {
+          "n": 32,
+          "Q_numeric": 0.5476781503357703,
+          "relative_error": 9.36672005360928e-18
+        }
+      ],
+      "intervals": [
+        [
+          "-.25",
+          ".5"
+        ],
+        [
+          "-.5",
+          "2"
+        ]
+      ],
+      "t": ".1",
+      "U_rectangle": "3.2064110812733463768632306730560516514960775378183040122423",
+      "V_rectangle": "2.65873293093757610682320099224261290848294607798001261301277",
+      "Q_rectangle": "0.54767815033577027004002968081343874301313145983829139922953",
+      "U_minus_V_minus_Q": "0.0",
+      "monotone_Riemann_n": 256,
+      "monotone_Riemann_lower": "2.6363407863511146618796810487026664790458810257483",
+      "monotone_Riemann_upper": "2.6811230251545205451841686973721475215201106726191",
+      "quadrature": [
+        {
+          "n": 4,
+          "Gauss_V_lower_numeric": 2.2639802786036385,
+          "left_Radau_V_upper_numeric": 3.498563101370966,
+          "width_over_reference": 0.46435007006588064,
+          "Gauss_relative_error": 0.1484739771116206,
+          "Radau_relative_error": 0.31587609295426006,
+          "moment_residual_G": 2.7755575615628914e-16,
+          "moment_residual_R": 5.551115123125783e-17
+        },
+        {
+          "n": 8,
+          "Gauss_V_lower_numeric": 2.5443025426078494,
+          "left_Radau_V_upper_numeric": 2.8268192435527273,
+          "width_over_reference": 0.1062599020975195,
+          "Gauss_relative_error": 0.04303944446551612,
+          "Radau_relative_error": 0.06322045763200337,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.3877787807814457e-16
+        },
+        {
+          "n": 16,
+          "Gauss_V_lower_numeric": 2.644327856228066,
+          "left_Radau_V_upper_numeric": 2.6758245287657445,
+          "width_over_reference": 0.011846497318770424,
+          "Gauss_relative_error": 0.005418022450427325,
+          "Radau_relative_error": 0.006428474868343099,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.249000902703301e-16
+        },
+        {
+          "n": 32,
+          "Gauss_V_lower_numeric": 2.658401922951742,
+          "left_Radau_V_upper_numeric": 2.659104542247131,
+          "width_over_reference": 0.0002642684743596857,
+          "Gauss_relative_error": 0.00012449839620304483,
+          "Radau_relative_error": 0.0001397700781566409,
+          "moment_residual_G": 1.8596235662471372e-14,
+          "moment_residual_R": 4.2327252813834093e-16
+        }
+      ]
+    },
+    {
+      "name": "far",
+      "split_sandwich": {
+        "n": 8,
+        "piece_count": 6,
+        "lower_numeric": 0.14333298732155814,
+        "upper_numeric": 0.14333300560861167,
+        "width_over_reference": 1.2758439873245358e-07
+      },
+      "direct_Q_GL": [
+        {
+          "n": 16,
+          "Q_numeric": 1.407053989913337e-05,
+          "relative_error": -2.331470486717228e-17
+        },
+        {
+          "n": 32,
+          "Q_numeric": 1.4070539899133387e-05,
+          "relative_error": 1.1806660283902213e-15
+        }
+      ],
+      "intervals": [
+        [
+          "2",
+          "3"
+        ],
+        [
+          "4",
+          "5"
+        ]
+      ],
+      "t": ".2",
+      "U_rectangle": "0.143347062032631159413496657075935055230761163598097695597104",
+      "V_rectangle": "0.143332991492732026043383139765601401888559099244868675888398",
+      "Q_rectangle": "0.0000140705398991333701135173103336533422020643532290197087058697",
+      "U_minus_V_minus_Q": "3.0068197e-90",
+      "monotone_Riemann_n": 256,
+      "monotone_Riemann_lower": "0.13711608346238106645792886012730474775065325996628",
+      "monotone_Riemann_upper": "0.14954989909716439963430833337826846035930064648978",
+      "quadrature": [
+        {
+          "n": 4,
+          "Gauss_V_lower_numeric": 0.01081726830960966,
+          "left_Radau_V_upper_numeric": 0.6658139539459687,
+          "width_over_reference": 4.569755216959745,
+          "Gauss_relative_error": 0.9245305062222317,
+          "Radau_relative_error": 3.645224710737514,
+          "moment_residual_G": 2.7755575615628914e-16,
+          "moment_residual_R": 5.551115123125783e-17
+        },
+        {
+          "n": 8,
+          "Gauss_V_lower_numeric": 0.04706169323219995,
+          "left_Radau_V_upper_numeric": 0.32699605658322045,
+          "width_over_reference": 1.953035099844512,
+          "Gauss_relative_error": 0.6716618222917206,
+          "Radau_relative_error": 1.2813732775527915,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.3877787807814457e-16
+        },
+        {
+          "n": 16,
+          "Gauss_V_lower_numeric": 0.11146539535475197,
+          "left_Radau_V_upper_numeric": 0.18268027578981041,
+          "width_over_reference": 0.4968491879880253,
+          "Gauss_relative_error": 0.222332596327594,
+          "Radau_relative_error": 0.2745165916604313,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.249000902703301e-16
+        },
+        {
+          "n": 32,
+          "Gauss_V_lower_numeric": 0.14121181462898877,
+          "left_Radau_V_upper_numeric": 0.14566550536837866,
+          "width_over_reference": 0.0310723350779693,
+          "Gauss_relative_error": 0.01479894364620734,
+          "Radau_relative_error": 0.01627339143176196,
+          "moment_residual_G": 1.8596235662471372e-14,
+          "moment_residual_R": 4.2327252813834093e-16
+        }
+      ]
+    },
+    {
+      "name": "thin_source_edge",
+      "split_sandwich": {
+        "n": 8,
+        "piece_count": 7,
+        "lower_numeric": 3.923602698963371e-06,
+        "upper_numeric": 3.923603187531771e-06,
+        "width_over_reference": 1.2452035140265464e-07
+      },
+      "direct_Q_GL": [
+        {
+          "n": 16,
+          "Q_numeric": 7.439983718358659e-08,
+          "relative_error": -2.1915099019294084e-07
+        },
+        {
+          "n": 32,
+          "Q_numeric": 7.439985355452613e-08,
+          "relative_error": 8.889530957219543e-10
+        }
+      ],
+      "intervals": [
+        [
+          ".999",
+          "1.001"
+        ],
+        [
+          "-.001",
+          ".001"
+        ]
+      ],
+      "t": ".03",
+      "U_rectangle": "0.00000399800266367092734246204652794132086515812949807795910363705",
+      "V_rectangle": "0.00000392360281018253918878279361353274448115627850105312263792324",
+      "Q_rectangle": "0.00000007439985348838815367925291440857638400185099702483646571381",
+      "U_minus_V_minus_Q": "8.7547348e-94",
+      "monotone_Riemann_n": 256,
+      "monotone_Riemann_lower": "0.0000037579652357631180514001028278085067310259488744676",
+      "monotone_Riemann_upper": "0.0000040892399967393165669664654205536522172064681972699",
+      "quadrature": [
+        {
+          "n": 4,
+          "Gauss_V_lower_numeric": 9.235511647349961e-07,
+          "left_Radau_V_upper_numeric": 1.7964617790193114e-05,
+          "width_over_reference": 4.343219089667567,
+          "Gauss_relative_error": 0.7646165502944908,
+          "Radau_relative_error": 3.5786025393730765,
+          "moment_residual_G": 2.7755575615628914e-16,
+          "moment_residual_R": 5.551115123125783e-17
+        },
+        {
+          "n": 8,
+          "Gauss_V_lower_numeric": 1.7567875339477569e-06,
+          "left_Radau_V_upper_numeric": 9.1340440876433e-06,
+          "width_over_reference": 1.8802251172188167,
+          "Gauss_relative_error": 0.5522514334558688,
+          "Radau_relative_error": 1.3279736837629479,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.3877787807814457e-16
+        },
+        {
+          "n": 16,
+          "Gauss_V_lower_numeric": 2.927122054700292e-06,
+          "left_Radau_V_upper_numeric": 5.347326827849659e-06,
+          "width_over_reference": 0.6168322560246028,
+          "Gauss_relative_error": 0.25397085375109296,
+          "Radau_relative_error": 0.3628614022735098,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.249000902703301e-16
+        },
+        {
+          "n": 32,
+          "Gauss_V_lower_numeric": 3.7600709126915555e-06,
+          "left_Radau_V_upper_numeric": 4.104885585032483e-06,
+          "width_over_reference": 0.08788215551433082,
+          "Gauss_relative_error": 0.04167901426377447,
+          "Radau_relative_error": 0.04620314125055634,
+          "moment_residual_G": 1.8596235662471372e-14,
+          "moment_residual_R": 4.2327252813834093e-16
+        }
+      ]
+    },
+    {
+      "name": "axis_strip",
+      "split_sandwich": {
+        "n": 8,
+        "piece_count": 4,
+        "lower_numeric": 0.0005926243285303344,
+        "upper_numeric": 0.0005926243829653316,
+        "width_over_reference": 9.185413667798039e-08
+      },
+      "direct_Q_GL": [
+        {
+          "n": 16,
+          "Q_numeric": 5.235101428417217e-05,
+          "relative_error": 0.00012325905281776025
+        },
+        {
+          "n": 32,
+          "Q_numeric": 5.234459940879242e-05,
+          "relative_error": 7.081116577375457e-07
+        }
+      ],
+      "intervals": [
+        [
+          "-8",
+          "-7.5"
+        ],
+        [
+          "0",
+          ".01"
+        ]
+      ],
+      "t": "1",
+      "U_rectangle": "0.000644968903157996027856516232104213847462838075028177443283488",
+      "V_rectangle": "0.000592624340814998419274267459541412765423810909518486986526261",
+      "Q_rectangle": "0.000052344562342997608582248772562801082039027165509690456757227",
+      "U_minus_V_minus_Q": "2.531491e-90",
+      "monotone_Riemann_n": 256,
+      "monotone_Riemann_lower": "0.00058650913251540638994599393138035649540357486545485",
+      "monotone_Riemann_upper": "0.00059873928806668517280882721603591890861014566625316",
+      "quadrature": [
+        {
+          "n": 4,
+          "Gauss_V_lower_numeric": 0.00046294953661138775,
+          "left_Radau_V_upper_numeric": 0.0008105497192978866,
+          "width_over_reference": 0.5865438841213753,
+          "Gauss_relative_error": 0.2188145090788495,
+          "Radau_relative_error": 0.3677293750425258,
+          "moment_residual_G": 2.7755575615628914e-16,
+          "moment_residual_R": 5.551115123125783e-17
+        },
+        {
+          "n": 8,
+          "Gauss_V_lower_numeric": 0.0005744388510381938,
+          "left_Radau_V_upper_numeric": 0.0006169297982664903,
+          "width_over_reference": 0.07169963213097429,
+          "Gauss_relative_error": 0.03068636997224117,
+          "Radau_relative_error": 0.041013262158733105,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.3877787807814457e-16
+        },
+        {
+          "n": 16,
+          "Gauss_V_lower_numeric": 0.0005923219374081534,
+          "left_Radau_V_upper_numeric": 0.0005930154892555146,
+          "width_over_reference": 0.0011703060431290653,
+          "Gauss_relative_error": 0.0005102784108211401,
+          "Radau_relative_error": 0.0006600276323079252,
+          "moment_residual_G": 1.8318679906315083e-15,
+          "moment_residual_R": 1.249000902703301e-16
+        },
+        {
+          "n": 32,
+          "Gauss_V_lower_numeric": 0.0005926242582078738,
+          "left_Radau_V_upper_numeric": 0.0005926244475331753,
+          "width_over_reference": 3.194693305393348e-07,
+          "Gauss_relative_error": 1.3939205476792083e-07,
+          "Radau_relative_error": 1.8007727577141397e-07,
+          "moment_residual_G": 1.8596235662471372e-14,
+          "moment_residual_R": 4.2327252813834093e-16
+        }
+      ]
+    }
+  ],
+  "scope": "Five deterministic rectangles, quadrature/moment scalar checks only; no MATLAB, LP, candidate, directed enclosure or new C2 bound.",
+  "elapsed_seconds": 0.31785095800296403
+}

@@ -4,7 +4,7 @@
 
 | 课题目录 | 问题与对象 | 当前结论/证明状态 | 最新轮次 | 下一问题 |
 | --- | --- | --- | --- | --- |
-| [planar-centered-square-weak11](planar-centered-square-weak11/README.md) | 二维 Lebesgue 背景、中心轴平行共同半径、全尺度弱 (1,1) 精确常数 | 精确值开放；已证下界约1.702793754234565，旧一般上界3.590865312933 | 第59轮完成 | 位置墙层认证、一般覆盖与跨尺度预算 |
+| [planar-centered-square-weak11](planar-centered-square-weak11/README.md) | 二维 Lebesgue 背景、中心轴平行共同半径、全尺度弱 (1,1) 精确常数 | 精确值开放；已证下界约1.702793754234565，旧一般上界3.590865312933 | 第60轮完成 | 位置墙层认证、一般覆盖与跨尺度预算 |
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 开放；n≤5精确计数及空间矩，远峰矩形族已构造但渐近占比未证 | 第1轮完成 | 最短路前缀与计数比联合估计、加权空间矩 |
 
