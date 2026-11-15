@@ -1,0 +1,100 @@
+{
+  "status": "passed_combined_R45_eleven_local_segments",
+  "scope": "eleven new R45 source/slab and sweep instances; source review and tests reused, no candidate-bbox classification loops rerun",
+  "index_sha256": "855c330b1d36dc212956eefcfba840a831aeabe17d7f8ba6dfa94b5466986a88",
+  "five_direction_pairs": [
+    {
+      "direction": "q0",
+      "left_run": "local-slope-q0",
+      "right_run": "negative-slope-q0",
+      "open_normalized_bracket": [
+        "-47/57600000",
+        "-1/1280000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    },
+    {
+      "direction": "q1",
+      "left_run": "local-slope",
+      "right_run": "negative-slope-q1",
+      "open_normalized_bracket": [
+        "-1/1280000",
+        "1/19200000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    },
+    {
+      "direction": "q2",
+      "left_run": "local-slope-q2",
+      "right_run": "negative-slope-q2",
+      "open_normalized_bracket": [
+        "-47/57600000",
+        "-1/1280000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    },
+    {
+      "direction": "q3",
+      "left_run": "local-slope-q3",
+      "right_run": "negative-slope-q3",
+      "open_normalized_bracket": [
+        "-47/57600000",
+        "-1/1280000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    },
+    {
+      "direction": "all",
+      "left_run": "local-slope-all",
+      "right_run": "negative-slope-all-next",
+      "open_normalized_bracket": [
+        "-47/57600000",
+        "-41/57600000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    }
+  ],
+  "pair_conclusion": "each continuous one-dimensional direction has an interior maximum point or plateau between the recorded left-positive and right-negative centers",
+  "no_uniqueness_exact_wall_or_multidimensional_claim": true,
+  "extra_midpoint": {
+    "run": "negative-slope-all",
+    "normalized_s0": "-43/57600000",
+    "beta_lower": "3223478470083844097249935241337/922337203685477580800000000000000",
+    "beta_upper": "6446956940167688195848747435799/1844674407370955161600000000000000",
+    "prior_secant_left": "-11/14400000",
+    "prior_secant_right": "-7/9600000",
+    "prior_secant_upper": "-38804933191660140371307934822790081806640625/18125908340019322855393307604032054876736323584",
+    "prior_secant_reused_not_recomputed": true,
+    "not_monotone_decreasing_throughout_prior_secant_interval": true
+  },
+  "total_active_boxes": 292849,
+  "total_saved_bbox_visits": 509732320,
+  "all_candidate_classifications_independently_replayed": false,
+  "raw_join_conditional_scopes_preserved": true,
+  "report_sha256": "0017a70bee0bf505f37735150b363bf6fdb27d84f8ba0828f37c5b1677cc99d7",
+  "evidence_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/round045-join-sweep-audit/exact-checks.json": "b72c0d51d23b197f28f29869b1533f8de83ae4801d42e378b7725982c1b3d294",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round045/independent-enumerators-review.json": "e19ab0522bc7ce8f97726195806fe79c7b61d1d3a793f8936f7be9e905fa1190",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-audit/planar-centered-square-weak11/reviews/round045-enumerators.md": "7c95396316d0e3e41825c5d0b4b6a887b40a0e345464c8e36355553703596262",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/rounds/045.md": "0017a70bee0bf505f37735150b363bf6fdb27d84f8ba0828f37c5b1677cc99d7",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round043/secant_analysis.json": "51099670bd8ccf4c7e92370e7aef9f58893487f5eb6fc3373066a451030ac29f",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-ledger-audit/planar-centered-square-weak11/reviews/round043-ledger-review.md": "13e9aaa0581e8333aebdccc0dac11e827b7f28b760014c3ff724b7fcb192ee23"
+  },
+  "script_sha256": "1048bc00a7c27275133a02eb14dc789ef8968176dbc2d938c802f77cbdf5b044",
+  "actual_command": [
+    "/Users/zzh/.local/bin/python3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/complete_round045_join_sweep_check.py",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/round045-join-sweep-audit/exact-checks.json",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round045/independent-enumerators-review.json",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-audit/planar-centered-square-weak11/reviews/round045-enumerators.md",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/rounds/045.md",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round043/secant_analysis.json",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-ledger-audit/planar-centered-square-weak11/reviews/round043-ledger-review.md",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/round045-join-sweep-audit/combined-acceptance.json"
+  ]
+}

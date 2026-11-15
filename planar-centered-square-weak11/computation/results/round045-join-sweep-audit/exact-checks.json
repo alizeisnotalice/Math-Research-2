@@ -1,0 +1,796 @@
+{
+  "status": "passed_sweep_replay_pending_catalogue_binding",
+  "scope": "11 new active catalogues only; reused R39 proof/source tests, no old tests or bbox enumeration rerun",
+  "index_sha256": "855c330b1d36dc212956eefcfba840a831aeabe17d7f8ba6dfa94b5466986a88",
+  "source_sha256": {
+    "r039_join_slope.py": "a4c44c806c533bcefb6fbdcda05ee98918caa4fbf585a9ffc64eb5727dd09f56",
+    "r039_endpoint_sweep.py": "3d8039a449d0902899932b0201296b0546cc8216ae741d0937fe86ea0682abd0",
+    "r039_interval_primitives.py": "470c323935ab9d3235d4bb8cd2cace21c7e0d2b60524912e4e563bddef39fcfa"
+  },
+  "reused_independent_script_sha256": "46ac35f415025e03af461b9ea26a71f1c2a71c04968389ef1dbc66a6f4057bd2",
+  "reused_prior_check_sha256": "2667aa8d1803bfe51ff11bfaddd9a735405da51ac2a1c1a508b6be511ecd7219",
+  "base_horizontal_period": "328734960629/100000000000",
+  "runs": [
+    {
+      "name": "local-slope",
+      "hashes": {
+        "run_manifest.json": "14382eae836cd672845fc514867dc78edffe6f5d50222c75cc15c684794549e5",
+        "velocities.json": "9b790bae1b20ec8317aaa475c37b26ba97ba3b502bfb5b170f1be37fa9d22019",
+        "slab.json": "ee07928faf9a6ef4d39e06a0b2c8e499308d02eb4f045ba6610ab2e4d08306fd",
+        "slope.json": "4311cebc6b044e879c61089369ecb495eb55efaf353456347efe1737200d4f0a"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        77,
+        78
+      ],
+      "s0_physical": "-328734960629/128000000000000000",
+      "s0_normalized": "-1/1280000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "508566706424761756152926183379823/7205759403792793600000000000000000000000",
+      "delta_physical": "328734960629/10000000000000000000",
+      "delta_normalized": "1/100000000",
+      "beta_lower": "3903593983354428602942788300290071/18446744073709551616000000000000000",
+      "beta_upper": "1951796991677214301475834457762223/9223372036854775808000000000000000",
+      "sign": "positive",
+      "dJ_dphysical_bounds": [
+        "372275732360308513922003583935744380950927734375/37121860280359573207845493973057648387555990700032",
+        "186137866180154256961425252701017665863037109375/18560930140179786603922746986528824193777995350016"
+      ],
+      "dJ_dnormalized_bounds": [
+        "2506343387557850328400759737178395155204325505859375/76025569854176405929667571656822063897714668953665536",
+        "1253171693778925164203230814584738166696324740234375/38012784927088202964833785828411031948857334476832768"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 302,
+      "max_active_at_replayed_gap": 4489,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.261634
+    },
+    {
+      "name": "local-slope-q0",
+      "hashes": {
+        "run_manifest.json": "5c736779ecd6853b2332aef0a235c034ac0aa53fa4a0054ef6842b53677e12b3",
+        "velocities.json": "549ca221978d2ded69c6f0dc195760428d784dfe5d40bf0364723078592eb148",
+        "slab.json": "ccb1c004d49a14691118bd252dcb1ce76ba5d5d1dd5e1a6fe83e53464c98b3d7",
+        "slope.json": "1807fe80a50d0ca8a2abc9545685b57ac70591118eb34b3b270fafb94dfd3790"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        26,
+        27
+      ],
+      "s0_physical": "-15450543149563/5760000000000000000",
+      "s0_normalized": "-47/57600000",
+      "H": "328734960629/11520000000000000000",
+      "delta_empty": "328734960629/11520000000000000000",
+      "endpoint_radius": "3388816139923968589369114637/1660206966633859645440000000000000000",
+      "delta_physical": "3388816139923968589369114637/1660206966633859645440000000000000000",
+      "delta_normalized": "3388816139923968589369114637/5457680718123733672020302993817600000",
+      "beta_lower": "1321623585208099923618839828855973/18446744073709551616000000000000000",
+      "beta_upper": "20650368518876561306822368389107/288230376151711744000000000000000",
+      "sign": "positive",
+      "dJ_dphysical_bounds": [
+        "126039846916971199380763991246793079376220703125/37121860280359573207845493973057648387555990700032",
+        "1969372608077674990350949133787822723388671875/580029066880618331372585843329025756055562354688"
+      ],
+      "dJ_dnormalized_bounds": [
+        "848562260253403428052221129573487074739232455078125/76025569854176405929667571656822063897714668953665536",
+        "13258785316459428563494445432596921479430279296875/1187899528971506342651055807137844748401791702401024"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 436,
+      "max_active_at_replayed_gap": 4513,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.354656
+    },
+    {
+      "name": "local-slope-q2",
+      "hashes": {
+        "run_manifest.json": "48d4ae6ae9679bee95f4b539e8ca728e21326d22640e3bed853f42d53f2dc9d3",
+        "velocities.json": "5afc5b1ecf61d9a4aace0bf8f5eeb6b1a3397402bf672cec5330fab42ffdc9c5",
+        "slab.json": "1261f0c8dd1856a36ca24dd83306d93dd0528f86be7eea97a67cfda19989c170",
+        "slope.json": "97382674b2b81b0d3ce566e47fc04e7094b6b5ce7cf24f215a558bfed2a3c9f2"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        128,
+        129
+      ],
+      "s0_physical": "-15450543149563/5760000000000000000",
+      "s0_normalized": "-47/57600000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "367568843060645154153827460013891/32425917317067571200000000000000000000000",
+      "delta_physical": "367568843060645154153827460013891/32425917317067571200000000000000000000000",
+      "delta_normalized": "367568843060645154153827460013891/106595326525854173281646542848000000000000",
+      "beta_lower": "330405896302024980905831478210087/4611686018427387904000000000000000",
+      "beta_upper": "1321623585208099923632145492918473/18446744073709551616000000000000000",
+      "sign": "positive",
+      "dJ_dphysical_bounds": [
+        "31509961729242799845297954388626766204833984375/9280465070089893301961373493264412096888997675008",
+        "126039846916971199382032918254706668853759765625/37121860280359573207845493973057648387555990700032"
+      ],
+      "dJ_dnormalized_bounds": [
+        "212140565063350857013775366691214494796220162109375/19006392463544101482416892914205515974428667238416384",
+        "848562260253403428060764170494832070237889681640625/76025569854176405929667571656822063897714668953665536"
+      ],
+      "boxes": 27133,
+      "raw_endpoint_classes": 25788,
+      "nonzero_velocity_gaps_replayed": 290,
+      "max_active_at_replayed_gap": 4476,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.2524350000000002
+    },
+    {
+      "name": "local-slope-q3",
+      "hashes": {
+        "run_manifest.json": "71e831469f044e7604103db55956c1d4484ec71327c0ac2e4be72b11e33ed1b7",
+        "velocities.json": "4509efbacb909e0c37603def881f4a9ea850b1ed6f7f28722f9718a53bc0832b",
+        "slab.json": "eca99fbc0a7cc37b10726c5fb6b639651131de94bb8aec28ef9fe57d37daf3ae",
+        "slope.json": "6b866c2ed21f52ad5c9ca87d8cf6f9b7276756547ccf73395003aa8e8bd287f8"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        179,
+        180
+      ],
+      "s0_physical": "-15450543149563/5760000000000000000",
+      "s0_normalized": "-47/57600000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "367568843060645154153827460013891/32425917317067571200000000000000000000000",
+      "delta_physical": "367568843060645154153827460013891/32425917317067571200000000000000000000000",
+      "delta_normalized": "367568843060645154153827460013891/106595326525854173281646542848000000000000",
+      "beta_lower": "660810241103148355281908317748299/9223372036854775808000000000000000",
+      "beta_upper": "1321620482206296710572636215574723/18446744073709551616000000000000000",
+      "sign": "positive",
+      "dJ_dphysical_bounds": [
+        "63019775495829425361815292143659496307373046875/18560930140179786603922746986528824193777995350016",
+        "126039550991658850724471684987518596649169921875/37121860280359573207845493973057648387555990700032"
+      ],
+      "dJ_dnormalized_bounds": [
+        "424280133969303656448328584044872448626406388671875/38012784927088202964833785828411031948857334476832768",
+        "848560267938607312902319871819718988305821810546875/76025569854176405929667571656822063897714668953665536"
+      ],
+      "boxes": 27133,
+      "raw_endpoint_classes": 25788,
+      "nonzero_velocity_gaps_replayed": 288,
+      "max_active_at_replayed_gap": 4476,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.2545829999999998
+    },
+    {
+      "name": "local-slope-all",
+      "hashes": {
+        "run_manifest.json": "708fdd6189d23806c76d8c8ab36ed4a60ef5e550acbcd8539608e02a0523cf23",
+        "velocities.json": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e",
+        "slab.json": "e75a978c5caed51bd8445febff454da94d696105a8612ab45bf19d757f771b96",
+        "slope.json": "6fb33183cc332976bfbd299483cf66620fc503afe072d9443c79404b9dc81767"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        26,
+        27,
+        77,
+        78,
+        128,
+        129,
+        179,
+        180
+      ],
+      "s0_physical": "-15450543149563/5760000000000000000",
+      "s0_normalized": "-47/57600000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "367568843060645154153827460013891/32425917317067571200000000000000000000000",
+      "delta_physical": "367568843060645154153827460013891/32425917317067571200000000000000000000000",
+      "delta_normalized": "367568843060645154153827460013891/106595326525854173281646542848000000000000",
+      "beta_lower": "1573692327195385032152775375730973/3689348814741910323200000000000000",
+      "beta_upper": "1573692327195385032155595199949723/3689348814741910323200000000000000",
+      "sign": "positive",
+      "dJ_dphysical_bounds": [
+        "750394977185909763409030616631971836090087890625/37121860280359573207845493973057648387555990700032",
+        "750394977185909763410375213599072933197021484375/37121860280359573207845493973057648387555990700032"
+      ],
+      "dJ_dnormalized_bounds": [
+        "5052028176003264497414438596230489172371699384765625/76025569854176405929667571656822063897714668953665536",
+        "5052028176003264497423491084546226300629450849609375/76025569854176405929667571656822063897714668953665536"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 276,
+      "max_active_at_replayed_gap": 4513,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.1861569999999997
+    },
+    {
+      "name": "negative-slope-q0",
+      "hashes": {
+        "run_manifest.json": "404ac1f648d0750b9da5f69bd172b1904e28ffba7dbd10d69e4929c45f5ab3db",
+        "velocities.json": "549ca221978d2ded69c6f0dc195760428d784dfe5d40bf0364723078592eb148",
+        "slab.json": "a59faedb1c72c5ac375a24bc8faf04c7bce668a6a17de3373e60827497f1f7ef",
+        "slope.json": "61da184594eaf2acb861d3bc94e843dc568b6b12e7d982567fff3c99d04883ea"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        26,
+        27
+      ],
+      "s0_physical": "-328734960629/128000000000000000",
+      "s0_normalized": "-1/1280000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "3137467839695883774630911351/1106804644422573096960000000000000000",
+      "delta_physical": "3137467839695883774630911351/1106804644422573096960000000000000000",
+      "delta_normalized": "3137467839695883774630911351/3638453812082489114680201995878400000",
+      "beta_lower": "-1279707103650316169319392593019027/18446744073709551616000000000000000",
+      "beta_upper": "-639853551825158084652295783814201/9223372036854775808000000000000000",
+      "sign": "negative",
+      "dJ_dphysical_bounds": [
+        "-122042379727393738681735286046889019012451171875/37121860280359573207845493973057648387555990700032",
+        "-61021189863696869340161875134868717193603515625/18560930140179786603922746986528824193777995350016"
+      ],
+      "dJ_dnormalized_bounds": [
+        "-821649344404567008016821526938093869322046841796875/76025569854176405929667571656822063897714668953665536",
+        "-410824672202283504003659186809812619504086775390625/38012784927088202964833785828411031948857334476832768"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 346,
+      "max_active_at_replayed_gap": 4513,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.2551620000000003
+    },
+    {
+      "name": "negative-slope-q1",
+      "hashes": {
+        "run_manifest.json": "625566869de7083d7cfc5496a14d5298901590d70d150837e99cf58f9963b0d4",
+        "velocities.json": "9b790bae1b20ec8317aaa475c37b26ba97ba3b502bfb5b170f1be37fa9d22019",
+        "slab.json": "a645d9785b2ef901259818e38346fa125b88ca4a70703c541cdca8708901e3f1",
+        "slope.json": "2001a09a11b5790b0f1b5974114fea39655dbb811076fbcf257452249bc1c712"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        77,
+        78
+      ],
+      "s0_physical": "328734960629/1920000000000000000",
+      "s0_normalized": "1/19200000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "2265713054106785141818411351/73786976294838206464000000000000000",
+      "delta_physical": "2265713054106785141818411351/73786976294838206464000000000000000",
+      "delta_normalized": "2265713054106785141818411351/242563587472165940978680133058560000",
+      "beta_lower": "-639855103326059691187879279907951/9223372036854775808000000000000000",
+      "beta_upper": "-1279710206652119382367244155519027/18446744073709551616000000000000000",
+      "sign": "negative",
+      "dJ_dphysical_bounds": [
+        "-61021337826353043669498374930186367034912109375/18560930140179786603922746986528824193777995350016",
+        "-122042675652706087338184752990629863739013671875/37121860280359573207845493973057648387555990700032"
+      ],
+      "dJ_dnormalized_bounds": [
+        "-410825668359681561586623815083095981892697615234375/38012784927088202964833785828411031948857334476832768",
+        "-821651336719363123167780867741753308408960904296875/76025569854176405929667571656822063897714668953665536"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 302,
+      "max_active_at_replayed_gap": 4489,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.3223979999999997
+    },
+    {
+      "name": "negative-slope-q2",
+      "hashes": {
+        "run_manifest.json": "a6593a90e03c551fc4260cfff06f389ea4ac867819610632545ea47fd02ad52f",
+        "velocities.json": "5afc5b1ecf61d9a4aace0bf8f5eeb6b1a3397402bf672cec5330fab42ffdc9c5",
+        "slab.json": "98e7a8923a9173b3e71aa3585811f5fbfad4350e8dbcbcb423e0be8f0032597b",
+        "slope.json": "3d9359c3da41efb753d0ba3d8bcacbc03c8c8dcb1deb46ebd312a5a8dbd79f6a"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        128,
+        129
+      ],
+      "s0_physical": "-328734960629/128000000000000000",
+      "s0_normalized": "-1/1280000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "2265713054106785141818411351/73786976294838206464000000000000000",
+      "delta_physical": "2265713054106785141818411351/73786976294838206464000000000000000",
+      "delta_normalized": "2265713054106785141818411351/242563587472165940978680133058560000",
+      "beta_lower": "-159963387956289521164531160309019/2305843009213693952000000000000000",
+      "beta_upper": "-1279707103650316169307734878175277/18446744073709551616000000000000000",
+      "sign": "negative",
+      "dJ_dphysical_bounds": [
+        "-15255297465924217335179439574148082733154296875/4640232535044946650980686746632206048444498837504",
+        "-122042379727393738680623519723441791534423828125/37121860280359573207845493973057648387555990700032"
+      ],
+      "dJ_dnormalized_bounds": [
+        "-102706168050570876001850416436384860231665919921875/9503196231772050741208446457102757987214333619208192",
+        "-821649344404567008009336569066640226476893033203125/76025569854176405929667571656822063897714668953665536"
+      ],
+      "boxes": 27133,
+      "raw_endpoint_classes": 25788,
+      "nonzero_velocity_gaps_replayed": 288,
+      "max_active_at_replayed_gap": 4476,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.422486000000001
+    },
+    {
+      "name": "negative-slope-q3",
+      "hashes": {
+        "run_manifest.json": "750979990e0000db4e0f403cecb46ae49d9e2fb8aaac8bfdba9fd119b295aca3",
+        "velocities.json": "4509efbacb909e0c37603def881f4a9ea850b1ed6f7f28722f9718a53bc0832b",
+        "slab.json": "df16bfda9401c8447912cc6f37e1d844da7ec6e1f1e4c4f9ca90fc76cf49a3a6",
+        "slope.json": "256abbae51a6eb54d71e270c0bb744f1520187ad64167877bc6e66c47e8861bd"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        179,
+        180
+      ],
+      "s0_physical": "-328734960629/128000000000000000",
+      "s0_normalized": "-1/1280000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "2265713054106785141818411351/73786976294838206464000000000000000",
+      "delta_physical": "2265713054106785141818411351/73786976294838206464000000000000000",
+      "delta_normalized": "2265713054106785141818411351/242563587472165940978680133058560000",
+      "beta_lower": "-639855103326059691187879279907951/9223372036854775808000000000000000",
+      "beta_upper": "-1279710206652119382367244155519027/18446744073709551616000000000000000",
+      "sign": "negative",
+      "dJ_dphysical_bounds": [
+        "-61021337826353043669498374930186367034912109375/18560930140179786603922746986528824193777995350016",
+        "-122042675652706087338184752990629863739013671875/37121860280359573207845493973057648387555990700032"
+      ],
+      "dJ_dnormalized_bounds": [
+        "-410825668359681561586623815083095981892697615234375/38012784927088202964833785828411031948857334476832768",
+        "-821651336719363123167780867741753308408960904296875/76025569854176405929667571656822063897714668953665536"
+      ],
+      "boxes": 27133,
+      "raw_endpoint_classes": 25788,
+      "nonzero_velocity_gaps_replayed": 286,
+      "max_active_at_replayed_gap": 4476,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.341246
+    },
+    {
+      "name": "negative-slope-all",
+      "hashes": {
+        "run_manifest.json": "67bdf8652f49c4217f1a6bb7ff5c15140a4ad0c342610a8cf50fa118241ae01c",
+        "velocities.json": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e",
+        "slab.json": "973c0e6d2c909369d20483a4804cd18f3893162ce3da9a80d87fd1a7b5ed6c9e",
+        "slope.json": "2d5996eda530232dd38667c91b4ec8f176b16e6ae22129510c5e91addc6655f3"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        26,
+        27,
+        77,
+        78,
+        128,
+        129,
+        179,
+        180
+      ],
+      "s0_physical": "-14135603307047/5760000000000000000",
+      "s0_normalized": "-43/57600000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "875873742341808121985830690418407/64851834634135142400000000000000000000000",
+      "delta_physical": "875873742341808121985830690418407/64851834634135142400000000000000000000000",
+      "delta_normalized": "875873742341808121985830690418407/213190653051708346563293085696000000000000",
+      "beta_lower": "3223478470083844097249935241337/922337203685477580800000000000000",
+      "beta_upper": "6446956940167688195848747435799/1844674407370955161600000000000000",
+      "sign": "positive",
+      "dJ_dphysical_bounds": [
+        "1537074313203737305283515568417072296142578125/9280465070089893301961373493264412096888997675008",
+        "3074148626407474611210225789927959442138671875/18560930140179786603922746986528824193777995350016"
+      ],
+      "dJ_dnormalized_bounds": [
+        "10348340507338297301156557702477717854697001953125/19006392463544101482416892914205515974428667238416384",
+        "20696681014676594606643418257288564161695029296875/38012784927088202964833785828411031948857334476832768"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 272,
+      "max_active_at_replayed_gap": 4513,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.305530000000001
+    },
+    {
+      "name": "negative-slope-all-next",
+      "hashes": {
+        "run_manifest.json": "e158abc46e662165f9c9332baf3713045f6ab6a32665894f290e49d63fa98685",
+        "velocities.json": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e",
+        "slab.json": "3a68847dd3d59b93ad45737bd1490033c747f2d9dfc078f471dfe206e6658456",
+        "slope.json": "a06dde493352475fe2dcd167918bda037b4e6a66ec9c2e1756313fb6673a96e4"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        26,
+        27,
+        77,
+        78,
+        128,
+        129,
+        179,
+        180
+      ],
+      "s0_physical": "-13478133385789/5760000000000000000",
+      "s0_normalized": "-41/57600000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "5650705746278479015520987943460061/129703669268270284800000000000000000000000",
+      "delta_physical": "328734960629/10000000000000000000",
+      "delta_normalized": "1/100000000",
+      "beta_lower": "-247239155005506232904939468019027/3689348814741910323200000000000000",
+      "beta_upper": "-61809788751376558225577213196163/922337203685477580800000000000000",
+      "sign": "negative",
+      "dJ_dphysical_bounds": [
+        "-117892816069367519810170873651040554046630859375/37121860280359573207845493973057648387555990700032",
+        "-29473204017341879952229124639588832855224609375/9280465070089893301961373493264412096888997675008"
+      ],
+      "dJ_dnormalized_bounds": [
+        "-793712440299632028830267385926396928397343583984375/76025569854176405929667571656822063897714668953665536",
+        "-198428110074908007205455578914454912684243427734375/19006392463544101482416892914205515974428667238416384"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 272,
+      "max_active_at_replayed_gap": 4513,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.2933880000000002
+    }
+  ],
+  "five_direction_pairs": [
+    {
+      "direction": "q0",
+      "left_run": "local-slope-q0",
+      "right_run": "negative-slope-q0",
+      "open_normalized_bracket": [
+        "-47/57600000",
+        "-1/1280000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    },
+    {
+      "direction": "q1",
+      "left_run": "local-slope",
+      "right_run": "negative-slope-q1",
+      "open_normalized_bracket": [
+        "-1/1280000",
+        "1/19200000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    },
+    {
+      "direction": "q2",
+      "left_run": "local-slope-q2",
+      "right_run": "negative-slope-q2",
+      "open_normalized_bracket": [
+        "-47/57600000",
+        "-1/1280000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    },
+    {
+      "direction": "q3",
+      "left_run": "local-slope-q3",
+      "right_run": "negative-slope-q3",
+      "open_normalized_bracket": [
+        "-47/57600000",
+        "-1/1280000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    },
+    {
+      "direction": "all",
+      "left_run": "local-slope-all",
+      "right_run": "negative-slope-all-next",
+      "open_normalized_bracket": [
+        "-47/57600000",
+        "-41/57600000"
+      ],
+      "interior_maximum_or_plateau_exists_conditional_on_catalogue_audit": true,
+      "uniqueness_or_multidimensional_optimality_claimed": false
+    }
+  ],
+  "extra_all_midpoint_positive": {
+    "name": "negative-slope-all",
+    "s0_normalized": "-43/57600000",
+    "beta_lower": "3223478470083844097249935241337/922337203685477580800000000000000",
+    "beta_upper": "6446956940167688195848747435799/1844674407370955161600000000000000"
+  },
+  "archive_manifest_sha256": "7b444c5046d07b8e83c4101c02d6e5eb46e8cbcaca8d104df584a12130673058",
+  "archive_files_checked": [
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope/run_manifest.json",
+      "raw_sha256": "14382eae836cd672845fc514867dc78edffe6f5d50222c75cc15c684794549e5",
+      "archived_sha256": "14382eae836cd672845fc514867dc78edffe6f5d50222c75cc15c684794549e5"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope/velocities.json",
+      "raw_sha256": "9b790bae1b20ec8317aaa475c37b26ba97ba3b502bfb5b170f1be37fa9d22019",
+      "archived_sha256": "9b790bae1b20ec8317aaa475c37b26ba97ba3b502bfb5b170f1be37fa9d22019"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope/slope.json",
+      "raw_sha256": "4311cebc6b044e879c61089369ecb495eb55efaf353456347efe1737200d4f0a",
+      "archived_sha256": "4311cebc6b044e879c61089369ecb495eb55efaf353456347efe1737200d4f0a"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope/slab.json.gz",
+      "raw_sha256": "ee07928faf9a6ef4d39e06a0b2c8e499308d02eb4f045ba6610ab2e4d08306fd",
+      "archived_sha256": "17c4a301610315d3f3b21535a14d3ebb752af8f4cad892024486cc5217e2d27f"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q0/run_manifest.json",
+      "raw_sha256": "5c736779ecd6853b2332aef0a235c034ac0aa53fa4a0054ef6842b53677e12b3",
+      "archived_sha256": "5c736779ecd6853b2332aef0a235c034ac0aa53fa4a0054ef6842b53677e12b3"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q0/velocities.json",
+      "raw_sha256": "549ca221978d2ded69c6f0dc195760428d784dfe5d40bf0364723078592eb148",
+      "archived_sha256": "549ca221978d2ded69c6f0dc195760428d784dfe5d40bf0364723078592eb148"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q0/slope.json",
+      "raw_sha256": "1807fe80a50d0ca8a2abc9545685b57ac70591118eb34b3b270fafb94dfd3790",
+      "archived_sha256": "1807fe80a50d0ca8a2abc9545685b57ac70591118eb34b3b270fafb94dfd3790"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q0/slab.json.gz",
+      "raw_sha256": "ccb1c004d49a14691118bd252dcb1ce76ba5d5d1dd5e1a6fe83e53464c98b3d7",
+      "archived_sha256": "0360fa9177dd95980c7a1a251c6c887ae6d56c2a1267bd837468b25afe374d98"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q2/run_manifest.json",
+      "raw_sha256": "48d4ae6ae9679bee95f4b539e8ca728e21326d22640e3bed853f42d53f2dc9d3",
+      "archived_sha256": "48d4ae6ae9679bee95f4b539e8ca728e21326d22640e3bed853f42d53f2dc9d3"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q2/velocities.json",
+      "raw_sha256": "5afc5b1ecf61d9a4aace0bf8f5eeb6b1a3397402bf672cec5330fab42ffdc9c5",
+      "archived_sha256": "5afc5b1ecf61d9a4aace0bf8f5eeb6b1a3397402bf672cec5330fab42ffdc9c5"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q2/slope.json",
+      "raw_sha256": "97382674b2b81b0d3ce566e47fc04e7094b6b5ce7cf24f215a558bfed2a3c9f2",
+      "archived_sha256": "97382674b2b81b0d3ce566e47fc04e7094b6b5ce7cf24f215a558bfed2a3c9f2"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q2/slab.json.gz",
+      "raw_sha256": "1261f0c8dd1856a36ca24dd83306d93dd0528f86be7eea97a67cfda19989c170",
+      "archived_sha256": "7d34663e25207cc32a186f80ab0e34809182ed5ae4eea4d14e0fa54ec19db707"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q3/run_manifest.json",
+      "raw_sha256": "71e831469f044e7604103db55956c1d4484ec71327c0ac2e4be72b11e33ed1b7",
+      "archived_sha256": "71e831469f044e7604103db55956c1d4484ec71327c0ac2e4be72b11e33ed1b7"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q3/velocities.json",
+      "raw_sha256": "4509efbacb909e0c37603def881f4a9ea850b1ed6f7f28722f9718a53bc0832b",
+      "archived_sha256": "4509efbacb909e0c37603def881f4a9ea850b1ed6f7f28722f9718a53bc0832b"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q3/slope.json",
+      "raw_sha256": "6b866c2ed21f52ad5c9ca87d8cf6f9b7276756547ccf73395003aa8e8bd287f8",
+      "archived_sha256": "6b866c2ed21f52ad5c9ca87d8cf6f9b7276756547ccf73395003aa8e8bd287f8"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-q3/slab.json.gz",
+      "raw_sha256": "eca99fbc0a7cc37b10726c5fb6b639651131de94bb8aec28ef9fe57d37daf3ae",
+      "archived_sha256": "9075373f53f473235764ed9cdb4e6eee42fa6813031f4711aafd44f82b8d9bb7"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-all/run_manifest.json",
+      "raw_sha256": "708fdd6189d23806c76d8c8ab36ed4a60ef5e550acbcd8539608e02a0523cf23",
+      "archived_sha256": "708fdd6189d23806c76d8c8ab36ed4a60ef5e550acbcd8539608e02a0523cf23"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-all/velocities.json",
+      "raw_sha256": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e",
+      "archived_sha256": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-all/slope.json",
+      "raw_sha256": "6fb33183cc332976bfbd299483cf66620fc503afe072d9443c79404b9dc81767",
+      "archived_sha256": "6fb33183cc332976bfbd299483cf66620fc503afe072d9443c79404b9dc81767"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/local-slope-all/slab.json.gz",
+      "raw_sha256": "e75a978c5caed51bd8445febff454da94d696105a8612ab45bf19d757f771b96",
+      "archived_sha256": "e9d5c7675219627b16ddfadd240bac004c19c99283c41ab6b8bbdca38a0ebe11"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q0/run_manifest.json",
+      "raw_sha256": "404ac1f648d0750b9da5f69bd172b1904e28ffba7dbd10d69e4929c45f5ab3db",
+      "archived_sha256": "404ac1f648d0750b9da5f69bd172b1904e28ffba7dbd10d69e4929c45f5ab3db"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q0/velocities.json",
+      "raw_sha256": "549ca221978d2ded69c6f0dc195760428d784dfe5d40bf0364723078592eb148",
+      "archived_sha256": "549ca221978d2ded69c6f0dc195760428d784dfe5d40bf0364723078592eb148"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q0/slope.json",
+      "raw_sha256": "61da184594eaf2acb861d3bc94e843dc568b6b12e7d982567fff3c99d04883ea",
+      "archived_sha256": "61da184594eaf2acb861d3bc94e843dc568b6b12e7d982567fff3c99d04883ea"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q0/slab.json.gz",
+      "raw_sha256": "a59faedb1c72c5ac375a24bc8faf04c7bce668a6a17de3373e60827497f1f7ef",
+      "archived_sha256": "ebd09d4533b1a052bb4491f2c5dd60d9463399eb49ea8477dba341ef29ae94c0"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q1/run_manifest.json",
+      "raw_sha256": "625566869de7083d7cfc5496a14d5298901590d70d150837e99cf58f9963b0d4",
+      "archived_sha256": "625566869de7083d7cfc5496a14d5298901590d70d150837e99cf58f9963b0d4"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q1/velocities.json",
+      "raw_sha256": "9b790bae1b20ec8317aaa475c37b26ba97ba3b502bfb5b170f1be37fa9d22019",
+      "archived_sha256": "9b790bae1b20ec8317aaa475c37b26ba97ba3b502bfb5b170f1be37fa9d22019"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q1/slope.json",
+      "raw_sha256": "2001a09a11b5790b0f1b5974114fea39655dbb811076fbcf257452249bc1c712",
+      "archived_sha256": "2001a09a11b5790b0f1b5974114fea39655dbb811076fbcf257452249bc1c712"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q1/slab.json.gz",
+      "raw_sha256": "a645d9785b2ef901259818e38346fa125b88ca4a70703c541cdca8708901e3f1",
+      "archived_sha256": "7f6b040d3146fa788b6abb17e05e9d0bb5a6cfa425cde21acc1da9916d9c125b"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q2/run_manifest.json",
+      "raw_sha256": "a6593a90e03c551fc4260cfff06f389ea4ac867819610632545ea47fd02ad52f",
+      "archived_sha256": "a6593a90e03c551fc4260cfff06f389ea4ac867819610632545ea47fd02ad52f"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q2/velocities.json",
+      "raw_sha256": "5afc5b1ecf61d9a4aace0bf8f5eeb6b1a3397402bf672cec5330fab42ffdc9c5",
+      "archived_sha256": "5afc5b1ecf61d9a4aace0bf8f5eeb6b1a3397402bf672cec5330fab42ffdc9c5"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q2/slope.json",
+      "raw_sha256": "3d9359c3da41efb753d0ba3d8bcacbc03c8c8dcb1deb46ebd312a5a8dbd79f6a",
+      "archived_sha256": "3d9359c3da41efb753d0ba3d8bcacbc03c8c8dcb1deb46ebd312a5a8dbd79f6a"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q2/slab.json.gz",
+      "raw_sha256": "98e7a8923a9173b3e71aa3585811f5fbfad4350e8dbcbcb423e0be8f0032597b",
+      "archived_sha256": "7d0f56deacac5b58373b34c1eef64a46e8ea3d3607314bd90fd0cc393a9023fb"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q3/run_manifest.json",
+      "raw_sha256": "750979990e0000db4e0f403cecb46ae49d9e2fb8aaac8bfdba9fd119b295aca3",
+      "archived_sha256": "750979990e0000db4e0f403cecb46ae49d9e2fb8aaac8bfdba9fd119b295aca3"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q3/velocities.json",
+      "raw_sha256": "4509efbacb909e0c37603def881f4a9ea850b1ed6f7f28722f9718a53bc0832b",
+      "archived_sha256": "4509efbacb909e0c37603def881f4a9ea850b1ed6f7f28722f9718a53bc0832b"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q3/slope.json",
+      "raw_sha256": "256abbae51a6eb54d71e270c0bb744f1520187ad64167877bc6e66c47e8861bd",
+      "archived_sha256": "256abbae51a6eb54d71e270c0bb744f1520187ad64167877bc6e66c47e8861bd"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-q3/slab.json.gz",
+      "raw_sha256": "df16bfda9401c8447912cc6f37e1d844da7ec6e1f1e4c4f9ca90fc76cf49a3a6",
+      "archived_sha256": "087843692ba4dc2b511d170f49dde735a4482424a580d607e4150fe2698ff758"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-all/run_manifest.json",
+      "raw_sha256": "67bdf8652f49c4217f1a6bb7ff5c15140a4ad0c342610a8cf50fa118241ae01c",
+      "archived_sha256": "67bdf8652f49c4217f1a6bb7ff5c15140a4ad0c342610a8cf50fa118241ae01c"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-all/velocities.json",
+      "raw_sha256": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e",
+      "archived_sha256": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-all/slope.json",
+      "raw_sha256": "2d5996eda530232dd38667c91b4ec8f176b16e6ae22129510c5e91addc6655f3",
+      "archived_sha256": "2d5996eda530232dd38667c91b4ec8f176b16e6ae22129510c5e91addc6655f3"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-all/slab.json.gz",
+      "raw_sha256": "973c0e6d2c909369d20483a4804cd18f3893162ce3da9a80d87fd1a7b5ed6c9e",
+      "archived_sha256": "bef8e59f3f58fa0f77eb93809cec0845e71ba502fbae318e21d88987a784cbd9"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-all-next/run_manifest.json",
+      "raw_sha256": "e158abc46e662165f9c9332baf3713045f6ab6a32665894f290e49d63fa98685",
+      "archived_sha256": "e158abc46e662165f9c9332baf3713045f6ab6a32665894f290e49d63fa98685"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-all-next/velocities.json",
+      "raw_sha256": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e",
+      "archived_sha256": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-all-next/slope.json",
+      "raw_sha256": "a06dde493352475fe2dcd167918bda037b4e6a66ec9c2e1756313fb6673a96e4",
+      "archived_sha256": "a06dde493352475fe2dcd167918bda037b4e6a66ec9c2e1756313fb6673a96e4"
+    },
+    {
+      "destination": "planar-centered-square-weak11/computation/results/round045/negative-slope-all-next/slab.json.gz",
+      "raw_sha256": "3a68847dd3d59b93ad45737bd1490033c747f2d9dfc078f471dfe206e6658456",
+      "archived_sha256": "daa8cb6873a0954d521fbd9c229c0067d03c3b6b614f9f278d49307f09e8f927"
+    }
+  ],
+  "not_recomputed": [
+    "candidate-bbox loops",
+    "rejected-box classifications",
+    "periodic halo areas",
+    "frozen R39 tiny tests"
+  ],
+  "total_main_cpu_seconds": 14.680346,
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "script_sha256": "6f296cca49b3cd6c6bbdd62e837ce2d678727424cd8fadc8e613db985441ff19",
+  "actual_command": [
+    "/Users/zzh/.local/bin/python3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/review_round045_join_sweep.py",
+    "--index",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round045/results_index.json",
+    "--operations",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra",
+    "--reference_audit",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/r039_join_sweep_audit.py",
+    "--prior_check",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/r039-join-sweep-audit/exact-checks.json",
+    "--archive_repository",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute",
+    "--output",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/round045-join-sweep-audit/exact-checks.json"
+  ]
+}

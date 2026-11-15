@@ -1,0 +1,39 @@
+{
+  "scope": "R41 base q2 group original labels 26,27; physical s=s_normalized*base_px",
+  "normalized_s0": "-47/57600000",
+  "normalized_H": "1/100000000",
+  "physical_s0": "-15450543149563/5760000000000000000",
+  "physical_H": "328734960629/10000000000000000000",
+  "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+  "base_sha256": "6c2e5d2d8fba5063bd45ecd4467f8c74cca5c0edbef958f90146a103029d5910",
+  "velocity_sha256": "5afc5b1ecf61d9a4aace0bf8f5eeb6b1a3397402bf672cec5330fab42ffdc9c5",
+  "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+  "sweep_sha256": "a4c44c806c533bcefb6fbdcda05ee98918caa4fbf585a9ffc64eb5727dd09f56",
+  "runner_sha256": "4c1ca120af90c2ea4b3bd5a4d65aada257a8cdbb718f6f606ce83f2f2a0b18fe",
+  "commands": [
+    [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/position_slab_enumerator.py",
+      "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round041/cross-group-probe/candidate_0036.json",
+      "--velocities",
+      "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round045/local-slope-q2/velocities.json",
+      "--s0",
+      "-15450543149563/5760000000000000000",
+      "--H",
+      "328734960629/10000000000000000000",
+      "--R",
+      "10",
+      "--output",
+      "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round045/local-slope-q2/slab.json"
+    ],
+    [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r039_join_slope.py",
+      "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round045/local-slope-q2/slab.json",
+      "--output",
+      "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round045/local-slope-q2/slope.json",
+      "--bits",
+      "80"
+    ]
+  ]
+}
