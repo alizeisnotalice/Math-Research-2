@@ -1,11 +1,11 @@
 # 当前状态
 
-2026-11-15，本地第6轮完成。**原题开放；用户总目标仍active。**
+2026-11-15，本地第7轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
 - 第4轮严格证明平行矩形切割逐标号重数≤2，P₂(ρ≥⌈n/2⌉)≥Σ_j C_j/(2A₂)。是否沿无穷子列不消失仍未证。
-- 独立集整数递推把完整峰数/峰距精确计数推进至n7：Q6≈0.359102430662，R6≈281.655336121；β正支持概率≈0.094183624939。均为有限结果。
+- 独立集整数递推把完整峰数/峰距精确计数推进至n7：Q7≈0.344418314818，R7≈1020.931353568；β正支持概率≈0.040477029758。均为有限结果。
 - 已构造全n、双峰距离恒2的行列置换轨道，严格否定逐轨道统一远峰占比引理，未决定原均匀条件律。
 
 - 充分大n时P₂(ρ>n/4)≥n²/(10R_n)，R_n=A₂/A₁。若R_n/n²沿无穷子列有界则证伪；肯定答案必要求R_n/n²→∞。
@@ -28,6 +28,6 @@
 
 ## 入口
 
-最新报告rounds/006.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r006.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/007.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
-第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮高β搜索和两步核进一步扫描尚待归档。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
+第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。

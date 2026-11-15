@@ -144,3 +144,14 @@ CLANG_MODULE_CACHE_PATH=/Volumes/data/CodexTemp/cache/swift-modules swiftc -O -m
 
 从临时输出目录运行binary，参数为 `8 12 16 24 32` 或 `--cut-only 24 32`；该历史源码会写当前目录gpu-search-results.jsonl，重跑前必须选新目录以免覆盖旧记录。最终源码含接受次数计数，旧V1/V2记录不能冒称同一binary轨迹。历史 `gpu_seconds` 字段是提交等待墙钟，不是硬件执行秒数。
 `annotate_samples.py 输入.jsonl 输出.jsonl`以CPU独立核验排列、峰数、距离、β、首次合并和界面。全209保存样本实际复核通过；AGX满载采样是系统字段，不提供混合或概率认证。完成后退出独立进程释放Metal资源。
+
+## 第7轮：高β族归一化与完整n5两步核
+
+```sh
+python3 -B free-boundary-grid-twin-peaks/computation/verify_geodesic_seed_family.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_beta_one_n3.py
+python3 -B free-boundary-grid-twin-peaks/computation/certificates/r007-gpu/high_beta_seed_audit.py
+```
+
+`two_step_completion_scan.cpp`按C++17、O3、pthread方式编译，参数为n（2..5）；n5约512MiB表、12线程。
+`certificates/r007-gpu/`保存真实v1/v2源码、最终16标签、独立审计、硬件计时与版本更正。`audit_r007.py 输入.jsonl 输出.json`复核完整样本。历史源需要当前目录存在空的r007-metal.jsonl且会覆盖它，复现必须使用全新临时目录。真实种子、旧JSON错误及缺失早期样本均在README说明，不补造记录。所有程序完成后退出释放内存。
