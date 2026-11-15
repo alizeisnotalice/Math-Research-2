@@ -59,23 +59,30 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--total', type=int, default=24)
     ap.add_argument('--min-degree', type=int, default=6)
+    ap.add_argument('--max-first-degree', type=int)
     ap.add_argument('--max-terms', type=int, default=6)
     ap.add_argument('--seconds', type=float, default=14400)
     ap.add_argument('--out', type=Path, required=True)
     args = ap.parse_args()
+    if args.min_degree < 1 or args.total < 2*args.min_degree or args.max_terms < 2 or args.seconds <= 0:
+        ap.error('Require positive degrees/time, total>=2*min-degree and max-terms>=2')
+    if args.max_first_degree is not None and args.max_first_degree < args.min_degree:
+        ap.error('max-first-degree must be at least min-degree')
     if not Path('/Volumes/data').is_mount():
         raise SystemExit('data is not mounted')
     args.out.mkdir(parents=True, exist_ok=True)
     start = time.monotonic()
     config = {k: v for k, v in vars(args).items() if k != 'out'}
-    config['version'] = 1
+    config['version'] = 2
+    degree_pairs = [(m,t-m) for t in range(2*args.min_degree,args.total+1)
+                    for m in range(args.min_degree,min(t//2,args.max_first_degree or t//2)+1)]
     counts = dict(raw=0, canonical=0, excluded=0, fair=0, unknown=0)
     digest = hashlib.sha256()
     shards = []
     complete = True
     with gzip.open(args.out/'ledger.jsonl.gz', 'wt') as ledger, open(args.out/'unknown.jsonl', 'w') as unknown:
         for total in range(2 * args.min_degree, args.total + 1):
-            for m in range(args.min_degree, total // 2 + 1):
+            for m in range(args.min_degree, min(total // 2,args.max_first_degree or total//2) + 1):
                 n = total - m
                 shard_counts = dict(raw=0, canonical=0, excluded=0, fair=0, unknown=0)
                 for I in supports(m, args.max_terms):
@@ -109,7 +116,7 @@ def main():
                     break
             if not complete:
                 break
-    state['complete'] = complete and len(shards) == sum(t//2 - args.min_degree + 1 for t in range(2*args.min_degree, args.total+1))
+    state['complete'] = complete and len(shards) == len(degree_pairs)
     (args.out/'summary.json').write_text(json.dumps(state, indent=2)+'\n')
     print(json.dumps({'complete': state['complete'], 'counts': counts, 'seconds': time.monotonic()-start}), flush=True)
 

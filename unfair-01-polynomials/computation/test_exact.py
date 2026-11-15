@@ -2,6 +2,8 @@ import unittest
 from algebraic_verify import RealField, verify
 from support_search import classify
 from verify_support_ledger import verify_record
+from verify_support_ledger import support_list
+from support_search import supports
 
 
 class ExactChecks(unittest.TestCase):
@@ -47,6 +49,14 @@ class ExactChecks(unittest.TestCase):
             verify_record([I,J,status,witness])
         with self.assertRaises(AssertionError):
             verify_record([[0,1],[0,2],'excluded',[1,1,0]])
+
+    def test_mask_enumerator(self):
+        for degree in range(1,13):
+            for cap in range(2,8):
+                brute=sorted([(0,*(k for k in range(1,degree) if b&(1<<(k-1))),degree)
+                              for b in range(1<<(degree-1)) if b.bit_count()<=cap-2],key=lambda x:(len(x),x))
+                self.assertEqual(support_list(degree,cap),brute)
+                self.assertEqual(list(supports(degree,cap)),brute)
 
 
 if __name__=='__main__':

@@ -16,9 +16,15 @@ import time
 
 def support_list(d, cap):
     result = []
-    for bits in range(1 << (d - 1)):
-        if bits.bit_count() <= cap - 2:
+    for size in range(min(d-1,cap-2)+1):
+        bits=(1<<size)-1
+        while bits < (1 << (d-1)):
             result.append((0, *(k for k in range(1, d) if bits & (1 << (k-1))), d))
+            if size == 0:
+                break
+            low=bits & -bits
+            advanced=bits+low
+            bits=advanced | (((advanced ^ bits)//low)>>2)
     return sorted(result, key=lambda p: (len(p), p))
 
 
@@ -71,7 +77,7 @@ def main():
     start = time.monotonic()
     with gzip.open(args.directory/'ledger.jsonl.gz','rt') as ledger:
         for total in range(2*c['min_degree'],c['total']+1):
-            for m in range(c['min_degree'],total//2+1):
+            for m in range(c['min_degree'],min(total//2,c.get('max_first_degree') or total//2)+1):
                 for I,J in itertools.product(by_degree[m],by_degree[total-m]):
                     counts['raw'] += 1
                     if not is_representative(I,J):
