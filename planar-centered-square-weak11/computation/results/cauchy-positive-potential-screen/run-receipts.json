@@ -1,0 +1,37 @@
+{
+  "purpose": "finite numerical 4/8 atom screening; not strict certificate",
+  "operator": "MATLAB R2026b -singleCompThread -batch, operations_terra",
+  "attempts": [
+    {
+      "script_sha256": "96e1ff17917f7ebf8ead773f9b4fd83a004f5bfb45a1d61ec4e2c4fd8c22702b",
+      "pid": 36648,
+      "session": 9044,
+      "exit_code": 1,
+      "result": "struct indexed assignment field mismatch at source line23; no valid final result"
+    },
+    {
+      "pid": null,
+      "session": 81323,
+      "exit_code": 130,
+      "result": "existing output directory assertion followed by unintended shell launch, immediately interrupted by operations; no result"
+    },
+    {
+      "script_sha256": "a6484e970b7e0c0d9cde410f77bf93b565aea2c2247b955d2c2ca14c0593ee56",
+      "pid": null,
+      "session": 44724,
+      "exit_code": 0,
+      "result": "all five theta integrals and scans completed; process-name ps check afterward found no matching MATLAB process"
+    }
+  ],
+  "pid_limit": "PIDs not collected for attempts2/3; not reconstructed or invented",
+  "stdout_log": "No standalone stdout log was saved for these attempts; execution fields are operations tool-receipt summary",
+  "successful_output_sha256": "1b0d3f7f201f2f049b3b8238e612cd1c8b8dd3f9383ee8d88b956265709db304",
+  "successful_output_source": "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/cauchy-positive-part-potential-screen-v2/positive-part-potential-screen.json",
+  "independent_comparison": {
+    "four_axis_MATLAB_mass": 2.63788348035956,
+    "four_axis_independent_1D_70_110_digit_value": "2.63787610467755717406",
+    "absolute_difference_approx": 7.3756820028e-06,
+    "use": "numeric sanity only; not a directed integral error certificate"
+  },
+  "strict_cost_floor_dependencies": "187 rational rectangles with independent256bit verification; no MATLAB quadrature in proof"
+}

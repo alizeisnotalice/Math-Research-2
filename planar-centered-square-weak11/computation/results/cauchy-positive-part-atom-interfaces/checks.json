@@ -1,0 +1,159 @@
+{
+  "status": "PASS exact algebra and actual 1D numerical cross-checks; numerical values are not directed certificates",
+  "timestamp_utc": "2026-11-15T02:50:47.317362+00:00",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "workers": 1,
+  "git_base": "f9502e0df212da80e489494087f67a27645ab356",
+  "script_sha256": "4eb63ec41f02273fd8f44654bb7978fedc813a141706a2e2b473e0ab1a709318",
+  "symbolic_checks": {
+    "four_ray_derivative": "exact symbolic zero",
+    "four_vertex_value": "exact symbolic zero",
+    "four_radius_derivative": "exact symbolic zero",
+    "core_sign_numerator": "exact symbolic zero",
+    "core_crossover": "exact symbolic zero",
+    "tail_partial_fraction": "exact symbolic zero",
+    "tail_zero_boundary": "exact symbolic zero",
+    "tail_width": "exact symbolic zero",
+    "tail_integral_linear_piece": "exact symbolic zero",
+    "tail_integral_log_argument": "exact symbolic zero",
+    "tail_root_product": "exact symbolic zero",
+    "tail_root_sum": "exact symbolic zero",
+    "eight_branch_continuity": "exact symbolic zero",
+    "eight_outer_d_concavity": "exact symbolic zero",
+    "eight_cross_line_value": "exact symbolic zero",
+    "eight_cross_line_derivative": "exact symbolic zero",
+    "eight_outer_axis_value": "exact symbolic zero",
+    "eight_outer_axis_derivative": "exact symbolic zero",
+    "eight_inner_axis_value": "exact symbolic zero",
+    "eight_inner_axis_derivative": "exact symbolic zero",
+    "eight_axis_candidate": "exact symbolic zero",
+    "eight_cross_candidate": "exact symbolic zero",
+    "eight_large_radius_minimum": "exact symbolic zero",
+    "eight_switch_weight": "exact symbolic zero",
+    "eight_large_radius_derivative": "exact symbolic zero",
+    "four_cost_factor_polynomial": "exact symbolic zero",
+    "four_cost_factor_shift": "exact symbolic zero",
+    "four_cost_factor_positive_halfline": "exact symbolic zero",
+    "truncated_core_integral": "exact symbolic zero",
+    "eight_small_radius_axis_cap_four": "exact symbolic zero",
+    "eight_small_radius_axis_cap_amgm": "exact symbolic zero",
+    "eight_small_radius_diag_cap": "exact symbolic zero",
+    "rectangle_potential_primitive": "exact symbolic zero"
+  },
+  "eight_switch_gap_over_radius": "-(R - 2)*(5*R**4 - 5*R**3 - 12*R**2 + 3*R + 3)/(12*R*(R - 1)*(R + 1)**2*(2*R - 1))",
+  "rational_checks": [
+    {
+      "R": "5/4",
+      "theta": "0",
+      "axis_value": "5/18",
+      "cross_value": "-19/36"
+    },
+    {
+      "R": "5/4",
+      "theta": "1/2",
+      "axis_value": "-1/36",
+      "cross_value": "-1/12"
+    },
+    {
+      "R": "5/4",
+      "theta": "1",
+      "axis_value": "-1/3",
+      "cross_value": "13/36"
+    },
+    {
+      "R": "3/2",
+      "theta": "0",
+      "axis_value": "3/10",
+      "cross_value": "1/40"
+    },
+    {
+      "R": "3/2",
+      "theta": "1/2",
+      "axis_value": "1/4",
+      "cross_value": "9/40"
+    },
+    {
+      "R": "3/2",
+      "theta": "1",
+      "axis_value": "1/5",
+      "cross_value": "17/40"
+    },
+    {
+      "R": "2",
+      "theta": "0",
+      "axis_value": "1/3",
+      "cross_value": null
+    },
+    {
+      "R": "2",
+      "theta": "1/2",
+      "axis_value": "5/12",
+      "cross_value": null
+    },
+    {
+      "R": "2",
+      "theta": "1",
+      "axis_value": "1/2",
+      "cross_value": null
+    },
+    {
+      "R": "5/2",
+      "theta": "0",
+      "axis_value": "11/21",
+      "cross_value": null
+    },
+    {
+      "R": "5/2",
+      "theta": "1/2",
+      "axis_value": "4/7",
+      "cross_value": null
+    },
+    {
+      "R": "5/2",
+      "theta": "1",
+      "axis_value": "13/21",
+      "cross_value": null
+    }
+  ],
+  "numerical_cross_checks": [
+    {
+      "digits": 70,
+      "core_by_r": "2.235365512926683351742592516691807046570715915090322034876050159235017",
+      "core_by_d": "2.235365512926683351742592516691807046570715915090322034876050159235017",
+      "tail_closed": "0.4025105917508738223146376518474093537201941047540780139904790203407624",
+      "tail_quadrature": "0.4025105917508738223146376518474093537201941047540780139904790203407624",
+      "I_four": "2.637876104677557174057230168539216400290910019844400048866529179575779",
+      "optimal_R": "2.181055373230846659482048688521535689805788218727630376661196276433171",
+      "m_opt": "0.5525541026812727479529799092770263775068988651780400837793907101577503",
+      "cost_J_four_numeric": "5.206145266233705030340795754541373878319748322070493715660389043580375",
+      "core_discrepancy": "0.0",
+      "tail_discrepancy": "5.8861914e-71"
+    },
+    {
+      "digits": 110,
+      "core_by_r": "2.235365512926683351742592516691807046570715915090322034876050159235017064010864681329754215394249427064798464",
+      "core_by_d": "2.235365512926683351742592516691807046570715915090322034876050159235017064010864681329754215394249427064798464",
+      "tail_closed": "0.40251059175087382231463765184740935372019410475407801399047902034076236523045334053732745128211388513913665312",
+      "tail_quadrature": "0.40251059175087382231463765184740935372019410475407801399047902034076236523045334053732745128211388513913665311",
+      "I_four": "2.6378761046775571740572301685392164002909100198444000488665291795757794292413180218670816666763633122039351172",
+      "optimal_R": "2.1810553732308466594820486885215356898057882187276303766611962764331710824944192997486641413769402469311735781",
+      "m_opt": "0.55255410268127274795297990927702637750689886517804008377939071015775035514858163823314687833523439272731777537",
+      "cost_J_four_numeric": "5.2061452662337050303407957545413738783197483220704937156603890435803752044190660570949004415424530799374686536",
+      "core_discrepancy": "0.0",
+      "tail_discrepancy": "1.039541e-110"
+    }
+  ],
+  "exact_four_axis_exclusion": {
+    "I_strictly_above": "1+log(3)",
+    "R_over_two_m_strictly_above": "19/10",
+    "log3_strictly_above": "263/240",
+    "J_strictly_above": "9557/2400",
+    "strictly_above_3_98": true
+  },
+  "elapsed_seconds": 0.36001716600731015,
+  "scope": "Analytic proof establishes geometry and exact minimum formulas. CAS checks are scalar identities only. mpmath is nondirected numerical evidence. No large 2D integration, MATLAB, LP, or frozen proof rerun."
+}

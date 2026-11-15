@@ -1,0 +1,6660 @@
+{
+  "status": "completed_numerical_positive_part_potential_screen",
+  "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+  "weights": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "model": "U=1/l1; nu=theta*four_axis_atoms+(1-theta)*four_diagonal_atoms at common l1 radius R; K=(U-U*nu)_+",
+  "integral": "8*int_y=0^1 int_t=0^1 Kunit(y+t/(1-t),y)/(1-t)^2 dt dy; infinite tails retained",
+  "integral_AbsTol": 1E-7,
+  "integral_RelTol": 1E-6,
+  "parameter_samples": "theta 0,.25,.5,.75,1; R1.05:.01:4; 65 boundary directions times five radial layers and diagonal coordinate crossings",
+  "models": [
+    {
+      "axis_weight": 0,
+      "unit_positive_mass": 2.2616784270352306,
+      "best_sample": {
+        "R": 2.69,
+        "minimum_sample_Wunit": 1.5296433668478695,
+        "sample_cost": 5.349525131336474
+      },
+      "R_scan": [
+        {
+          "R": 1.48,
+          "minimum_sample_Wunit": 0.00422401284210433,
+          "sample_cost": 586.40688508299866
+        },
+        {
+          "R": 1.49,
+          "minimum_sample_Wunit": 0.021113817307988808,
+          "sample_cost": 118.90678513072736
+        },
+        {
+          "R": 1.5,
+          "minimum_sample_Wunit": 0.037500000000000033,
+          "sample_cost": 67.850352811056865
+        },
+        {
+          "R": 1.51,
+          "minimum_sample_Wunit": 0.057832193682869931,
+          "sample_cost": 44.58462193014222
+        },
+        {
+          "R": 1.52,
+          "minimum_sample_Wunit": 0.073417522522025547,
+          "sample_cost": 35.586748628398361
+        },
+        {
+          "R": 1.53,
+          "minimum_sample_Wunit": 0.090747218939733476,
+          "sample_cost": 29.170938193504494
+        },
+        {
+          "R": 1.54,
+          "minimum_sample_Wunit": 0.10792367006858272,
+          "sample_cost": 24.849954389746927
+        },
+        {
+          "R": 1.55,
+          "minimum_sample_Wunit": 0.12240211850022689,
+          "sample_cost": 22.19603094917867
+        },
+        {
+          "R": 1.56,
+          "minimum_sample_Wunit": 0.1405773336277974,
+          "sample_cost": 19.576486756413292
+        },
+        {
+          "R": 1.57,
+          "minimum_sample_Wunit": 0.15504533761041486,
+          "sample_cost": 17.978003210928748
+        },
+        {
+          "R": 1.58,
+          "minimum_sample_Wunit": 0.16857473104699366,
+          "sample_cost": 16.746442335051974
+        },
+        {
+          "R": 1.59,
+          "minimum_sample_Wunit": 0.18662306178909835,
+          "sample_cost": 15.318978202836911
+        },
+        {
+          "R": 1.6,
+          "minimum_sample_Wunit": 0.19963546920068662,
+          "sample_cost": 14.501172553134356
+        },
+        {
+          "R": 1.61,
+          "minimum_sample_Wunit": 0.21234341628811695,
+          "sample_cost": 13.804281651858531
+        },
+        {
+          "R": 1.62,
+          "minimum_sample_Wunit": 0.22978666092029096,
+          "sample_cost": 12.915346870308978
+        },
+        {
+          "R": 1.63,
+          "minimum_sample_Wunit": 0.24204946621114409,
+          "sample_cost": 12.412862351756022
+        },
+        {
+          "R": 1.6400000000000001,
+          "minimum_sample_Wunit": 0.25492168879809329,
+          "sample_cost": 11.931135255760662
+        },
+        {
+          "R": 1.65,
+          "minimum_sample_Wunit": 0.27097365198715684,
+          "sample_cost": 11.361657254217567
+        },
+        {
+          "R": 1.6600000000000001,
+          "minimum_sample_Wunit": 0.28257860421110992,
+          "sample_cost": 11.027517619278502
+        },
+        {
+          "R": 1.67,
+          "minimum_sample_Wunit": 0.2964616558676782,
+          "sample_cost": 10.63812948540952
+        },
+        {
+          "R": 1.6800000000000002,
+          "minimum_sample_Wunit": 0.31044060068707013,
+          "sample_cost": 10.2811313635145
+        },
+        {
+          "R": 1.69,
+          "minimum_sample_Wunit": 0.32146390222397814,
+          "sample_cost": 10.047130814324909
+        },
+        {
+          "R": 1.7000000000000002,
+          "minimum_sample_Wunit": 0.33629509223137322,
+          "sample_cost": 9.7180286080934462
+        },
+        {
+          "R": 1.71,
+          "minimum_sample_Wunit": 0.3484010637101177,
+          "sample_cost": 9.49103573058589
+        },
+        {
+          "R": 1.7200000000000002,
+          "minimum_sample_Wunit": 0.35890653546590784,
+          "sample_cost": 9.3212978831038775
+        },
+        {
+          "R": 1.73,
+          "minimum_sample_Wunit": 0.37463803371332738,
+          "sample_cost": 9.0340231838998974
+        },
+        {
+          "R": 1.7400000000000002,
+          "minimum_sample_Wunit": 0.38503425619580156,
+          "sample_cost": 8.8920108996869711
+        },
+        {
+          "R": 1.75,
+          "minimum_sample_Wunit": 0.39507575757575764,
+          "sample_cost": 8.7659012859922516
+        },
+        {
+          "R": 1.76,
+          "minimum_sample_Wunit": 0.41068997258656292,
+          "sample_cost": 8.5292745905887575
+        },
+        {
+          "R": 1.77,
+          "minimum_sample_Wunit": 0.42049170048893192,
+          "sample_cost": 8.42538905740564
+        },
+        {
+          "R": 1.78,
+          "minimum_sample_Wunit": 0.43158476814448882,
+          "sample_cost": 8.3018475826044167
+        },
+        {
+          "R": 1.79,
+          "minimum_sample_Wunit": 0.44549183515593727,
+          "sample_cost": 8.133307140777351
+        },
+        {
+          "R": 1.8,
+          "minimum_sample_Wunit": 0.4549023848886361,
+          "sample_cost": 8.0542973031324774
+        },
+        {
+          "R": 1.81,
+          "minimum_sample_Wunit": 0.4669996133869625,
+          "sample_cost": 7.9330736925798213
+        },
+        {
+          "R": 1.82,
+          "minimum_sample_Wunit": 0.47932202409036972,
+          "sample_cost": 7.8147709109847421
+        },
+        {
+          "R": 1.83,
+          "minimum_sample_Wunit": 0.48837680842729608,
+          "sample_cost": 7.7543965577409626
+        },
+        {
+          "R": 1.84,
+          "minimum_sample_Wunit": 0.50144102761092069,
+          "sample_cost": 7.6351336058921584
+        },
+        {
+          "R": 1.85,
+          "minimum_sample_Wunit": 0.51228058649540409,
+          "sample_cost": 7.5550339214323534
+        },
+        {
+          "R": 1.86,
+          "minimum_sample_Wunit": 0.52101018294348433,
+          "sample_cost": 7.508972897579465
+        },
+        {
+          "R": 1.87,
+          "minimum_sample_Wunit": 0.53501264573535656,
+          "sample_cost": 7.3912863130824107
+        },
+        {
+          "R": 1.8800000000000001,
+          "minimum_sample_Wunit": 0.5444540438515777,
+          "sample_cost": 7.3410018005968354
+        },
+        {
+          "R": 1.8900000000000001,
+          "minimum_sample_Wunit": 0.55355304849362419,
+          "sample_cost": 7.29735075183639
+        },
+        {
+          "R": 1.9,
+          "minimum_sample_Wunit": 0.56762811752238163,
+          "sample_cost": 7.1919086366218012
+        },
+        {
+          "R": 1.9100000000000001,
+          "minimum_sample_Wunit": 0.57591760460585939,
+          "sample_cost": 7.1632026905253614
+        },
+        {
+          "R": 1.92,
+          "minimum_sample_Wunit": 0.586035899129332,
+          "sample_cost": 7.1134305644155482
+        },
+        {
+          "R": 1.9300000000000002,
+          "minimum_sample_Wunit": 0.598708806040128,
+          "sample_cost": 7.0355788054826816
+        },
+        {
+          "R": 1.94,
+          "minimum_sample_Wunit": 0.60673695535637551,
+          "sample_cost": 7.01461552065023
+        },
+        {
+          "R": 1.9500000000000002,
+          "minimum_sample_Wunit": 0.6178478555668645,
+          "sample_cost": 6.9596682591955332
+        },
+        {
+          "R": 1.96,
+          "minimum_sample_Wunit": 0.6291842927599649,
+          "sample_cost": 6.9045460489691592
+        },
+        {
+          "R": 1.9700000000000002,
+          "minimum_sample_Wunit": 0.63696972152690134,
+          "sample_cost": 6.8899254633646914
+        },
+        {
+          "R": 1.98,
+          "minimum_sample_Wunit": 0.649052552391383,
+          "sample_cost": 6.8304824260226065
+        },
+        {
+          "R": 1.9900000000000002,
+          "minimum_sample_Wunit": 0.65910754210842382,
+          "sample_cost": 6.794394060680367
+        },
+        {
+          "R": 2,
+          "minimum_sample_Wunit": 0.66666666666666663,
+          "sample_cost": 6.7850352811056922
+        },
+        {
+          "R": 2.01,
+          "minimum_sample_Wunit": 0.681063451860136,
+          "sample_cost": 6.7081906892145948
+        },
+        {
+          "R": 2.02,
+          "minimum_sample_Wunit": 0.69536683547591216,
+          "sample_cost": 6.6357440295225558
+        },
+        {
+          "R": 2.0300000000000002,
+          "minimum_sample_Wunit": 0.70957960844628187,
+          "sample_cost": 6.5673749069376317
+        },
+        {
+          "R": 2.04,
+          "minimum_sample_Wunit": 0.72370445344129564,
+          "sample_cost": 6.5027932999401532
+        },
+        {
+          "R": 2.05,
+          "minimum_sample_Wunit": 0.7377439500390317,
+          "sample_cost": 6.4417360448111376
+        },
+        {
+          "R": 2.06,
+          "minimum_sample_Wunit": 0.75170057960291037,
+          "sample_cost": 6.383963797152262
+        },
+        {
+          "R": 2.0700000000000003,
+          "minimum_sample_Wunit": 0.76557672988523284,
+          "sample_cost": 6.3292583967749678
+        },
+        {
+          "R": 2.08,
+          "minimum_sample_Wunit": 0.77937469937469961,
+          "sample_cost": 6.2774205748376035
+        },
+        {
+          "R": 2.09,
+          "minimum_sample_Wunit": 0.79309670140435229,
+          "sample_cost": 6.2282679524698716
+        },
+        {
+          "R": 2.1,
+          "minimum_sample_Wunit": 0.80674486803519074,
+          "sample_cost": 6.1816332885493459
+        },
+        {
+          "R": 2.1100000000000003,
+          "minimum_sample_Wunit": 0.82032125372961417,
+          "sample_cost": 6.1373629411791786
+        },
+        {
+          "R": 2.12,
+          "minimum_sample_Wunit": 0.83382783882783917,
+          "sample_cost": 6.0953155130659358
+        },
+        {
+          "R": 2.13,
+          "minimum_sample_Wunit": 0.84726653283949216,
+          "sample_cost": 6.0553606556533266
+        },
+        {
+          "R": 2.14,
+          "minimum_sample_Wunit": 0.86063917756173869,
+          "sample_cost": 6.0173780107213
+        },
+        {
+          "R": 2.1500000000000004,
+          "minimum_sample_Wunit": 0.87394755003450686,
+          "sample_cost": 5.9812562713618034
+        },
+        {
+          "R": 2.16,
+          "minimum_sample_Wunit": 0.88719336534264548,
+          "sample_cost": 5.9468923469125707
+        },
+        {
+          "R": 2.17,
+          "minimum_sample_Wunit": 0.90037827927417835,
+          "sample_cost": 5.9141906186650193
+        },
+        {
+          "R": 2.18,
+          "minimum_sample_Wunit": 0.91350389084319383,
+          "sample_cost": 5.8830622750391939
+        },
+        {
+          "R": 2.1900000000000004,
+          "minimum_sample_Wunit": 0.92657174468533554,
+          "sample_cost": 5.85342471650018
+        },
+        {
+          "R": 2.2,
+          "minimum_sample_Wunit": 0.93958333333333344,
+          "sample_cost": 5.8252010218273256
+        },
+        {
+          "R": 2.21,
+          "minimum_sample_Wunit": 0.95254009937952167,
+          "sample_cost": 5.7983194684812913
+        },
+        {
+          "R": 2.2199999999999998,
+          "minimum_sample_Wunit": 0.96544343753181916,
+          "sample_cost": 5.77271310077814
+        },
+        {
+          "R": 2.23,
+          "minimum_sample_Wunit": 0.97829469656925649,
+          "sample_cost": 5.7483193404019852
+        },
+        {
+          "R": 2.24,
+          "minimum_sample_Wunit": 0.99109518120270823,
+          "sample_cost": 5.7250796344911965
+        },
+        {
+          "R": 2.25,
+          "minimum_sample_Wunit": 1.0038461538461541,
+          "sample_cost": 5.7029391371362479
+        },
+        {
+          "R": 2.26,
+          "minimum_sample_Wunit": 1.0165488363034374,
+          "sample_cost": 5.6818464206460275
+        },
+        {
+          "R": 2.27,
+          "minimum_sample_Wunit": 1.0292044113751837,
+          "sample_cost": 5.6617532133864144
+        },
+        {
+          "R": 2.2800000000000002,
+          "minimum_sample_Wunit": 1.0418140243902441,
+          "sample_cost": 5.6426141613812408
+        },
+        {
+          "R": 2.29,
+          "minimum_sample_Wunit": 1.0543787846657711,
+          "sample_cost": 5.6243866112002241
+        },
+        {
+          "R": 2.3,
+          "minimum_sample_Wunit": 1.0668997668997666,
+          "sample_cost": 5.6070304119489
+        },
+        {
+          "R": 2.31,
+          "minimum_sample_Wunit": 1.0793780124997117,
+          "sample_cost": 5.5905077344281722
+        },
+        {
+          "R": 2.3200000000000003,
+          "minimum_sample_Wunit": 1.0918145308506757,
+          "sample_cost": 5.5747829057512925
+        },
+        {
+          "R": 2.33,
+          "minimum_sample_Wunit": 1.10421030052609,
+          "sample_cost": 5.5598222578985323
+        },
+        {
+          "R": 2.34,
+          "minimum_sample_Wunit": 1.1165662704441859,
+          "sample_cost": 5.5455939888581609
+        },
+        {
+          "R": 2.35,
+          "minimum_sample_Wunit": 1.1288833609729132,
+          "sample_cost": 5.53206803515007
+        },
+        {
+          "R": 2.3600000000000003,
+          "minimum_sample_Wunit": 1.1411624649859951,
+          "sample_cost": 5.5192159546581374
+        },
+        {
+          "R": 2.37,
+          "minimum_sample_Wunit": 1.1534044488726205,
+          "sample_cost": 5.5070108188117226
+        },
+        {
+          "R": 2.38,
+          "minimum_sample_Wunit": 1.1656101535031302,
+          "sample_cost": 5.4954271132573638
+        },
+        {
+          "R": 2.39,
+          "minimum_sample_Wunit": 1.1777803951529044,
+          "sample_cost": 5.484440646250845
+        },
+        {
+          "R": 2.4000000000000004,
+          "minimum_sample_Wunit": 1.1899159663865548,
+          "sample_cost": 5.4740284640784909
+        },
+        {
+          "R": 2.41,
+          "minimum_sample_Wunit": 1.2020176369043907,
+          "sample_cost": 5.4641687728863895
+        },
+        {
+          "R": 2.42,
+          "minimum_sample_Wunit": 1.2140861543530186,
+          "sample_cost": 5.4548408663582384
+        },
+        {
+          "R": 2.43,
+          "minimum_sample_Wunit": 1.2261222451018372,
+          "sample_cost": 5.4460250587375638
+        },
+        {
+          "R": 2.4400000000000004,
+          "minimum_sample_Wunit": 1.2381266149870802,
+          "sample_cost": 5.4377026227392182
+        },
+        {
+          "R": 2.45,
+          "minimum_sample_Wunit": 1.2500999500249879,
+          "sample_cost": 5.42985573193872
+        },
+        {
+          "R": 2.46,
+          "minimum_sample_Wunit": 1.2620429170955736,
+          "sample_cost": 5.4224674072672245
+        },
+        {
+          "R": 2.4699999999999998,
+          "minimum_sample_Wunit": 1.2739561645984039,
+          "sample_cost": 5.4155214672747158
+        },
+        {
+          "R": 2.48,
+          "minimum_sample_Wunit": 1.2858403230817022,
+          "sample_cost": 5.4090024818554507
+        },
+        {
+          "R": 2.49,
+          "minimum_sample_Wunit": 1.2976960058460418,
+          "sample_cost": 5.4028957291576862
+        },
+        {
+          "R": 2.5,
+          "minimum_sample_Wunit": 1.3095238095238095,
+          "sample_cost": 5.397187155424982
+        },
+        {
+          "R": 2.51,
+          "minimum_sample_Wunit": 1.3213243146355726,
+          "sample_cost": 5.3918633375389513
+        },
+        {
+          "R": 2.52,
+          "minimum_sample_Wunit": 1.3330980861244019,
+          "sample_cost": 5.3869114480538851
+        },
+        {
+          "R": 2.5300000000000002,
+          "minimum_sample_Wunit": 1.3448456738691705,
+          "sample_cost": 5.3823192225319012
+        },
+        {
+          "R": 2.54,
+          "minimum_sample_Wunit": 1.3565676131777828,
+          "sample_cost": 5.3780749290040122
+        },
+        {
+          "R": 2.55,
+          "minimum_sample_Wunit": 1.3682644252612446,
+          "sample_cost": 5.3741673393973688
+        },
+        {
+          "R": 2.56,
+          "minimum_sample_Wunit": 1.3799366176894268,
+          "sample_cost": 5.3705857027826216
+        },
+        {
+          "R": 2.5700000000000003,
+          "minimum_sample_Wunit": 1.3915846848293461,
+          "sample_cost": 5.3673197203075382
+        },
+        {
+          "R": 2.58,
+          "minimum_sample_Wunit": 1.4032091082667422,
+          "sample_cost": 5.3643595216941495
+        },
+        {
+          "R": 2.59,
+          "minimum_sample_Wunit": 1.4148103572116817,
+          "sample_cost": 5.3616956431868568
+        },
+        {
+          "R": 2.5999999999999996,
+          "minimum_sample_Wunit": 1.4263888888888885,
+          "sample_cost": 5.3593190068480405
+        },
+        {
+          "R": 2.61,
+          "minimum_sample_Wunit": 1.4379451489134734,
+          "sample_cost": 5.357220901106075
+        },
+        {
+          "R": 2.62,
+          "minimum_sample_Wunit": 1.4494795716526843,
+          "sample_cost": 5.3553929624682777
+        },
+        {
+          "R": 2.63,
+          "minimum_sample_Wunit": 1.4609925805742869,
+          "sample_cost": 5.3538271583181887
+        },
+        {
+          "R": 2.6399999999999997,
+          "minimum_sample_Wunit": 1.4724845885821494,
+          "sample_cost": 5.3525157707228956
+        },
+        {
+          "R": 2.65,
+          "minimum_sample_Wunit": 1.4839559983395598,
+          "sample_cost": 5.351451381181934
+        },
+        {
+          "R": 2.66,
+          "minimum_sample_Wunit": 1.4954072025808149,
+          "sample_cost": 5.3506268562544452
+        },
+        {
+          "R": 2.67,
+          "minimum_sample_Wunit": 1.5068385844115582,
+          "sample_cost": 5.3500353340062041
+        },
+        {
+          "R": 2.6799999999999997,
+          "minimum_sample_Wunit": 1.5182505175983434,
+          "sample_cost": 5.3496702112224463
+        },
+        {
+          "R": 2.69,
+          "minimum_sample_Wunit": 1.5296433668478695,
+          "sample_cost": 5.349525131336474
+        },
+        {
+          "R": 2.7,
+          "minimum_sample_Wunit": 1.5410174880763119,
+          "sample_cost": 5.34959397302776
+        },
+        {
+          "R": 2.71,
+          "minimum_sample_Wunit": 1.5523732286691572,
+          "sample_cost": 5.3498708394466172
+        },
+        {
+          "R": 2.7199999999999998,
+          "minimum_sample_Wunit": 1.563710927731933,
+          "sample_cost": 5.3503500480256134
+        },
+        {
+          "R": 2.73,
+          "minimum_sample_Wunit": 1.5750309163321921,
+          "sample_cost": 5.3510261208408343
+        },
+        {
+          "R": 2.74,
+          "minimum_sample_Wunit": 1.5863335177331122,
+          "sample_cost": 5.3518937754886453
+        },
+        {
+          "R": 2.75,
+          "minimum_sample_Wunit": 1.5976190476190473,
+          "sample_cost": 5.35294791644609
+        },
+        {
+          "R": 2.76,
+          "minimum_sample_Wunit": 1.6088878143133458,
+          "sample_cost": 5.3541836268852947
+        },
+        {
+          "R": 2.77,
+          "minimum_sample_Wunit": 1.6201401189887452,
+          "sample_cost": 5.3555961609142688
+        },
+        {
+          "R": 2.7800000000000002,
+          "minimum_sample_Wunit": 1.6313762558706382,
+          "sample_cost": 5.3571809362184037
+        },
+        {
+          "R": 2.79,
+          "minimum_sample_Wunit": 1.6425965124334843,
+          "sample_cost": 5.3589335270787766
+        },
+        {
+          "R": 2.8,
+          "minimum_sample_Wunit": 1.6538011695906432,
+          "sample_cost": 5.3608496577448932
+        },
+        {
+          "R": 2.81,
+          "minimum_sample_Wunit": 1.6649905018778728,
+          "sample_cost": 5.3629251961410906
+        },
+        {
+          "R": 2.8200000000000003,
+          "minimum_sample_Wunit": 1.6761647776307467,
+          "sample_cost": 5.3651561478871432
+        },
+        {
+          "R": 2.83,
+          "minimum_sample_Wunit": 1.6873242591562154,
+          "sample_cost": 5.3675386506149536
+        },
+        {
+          "R": 2.84,
+          "minimum_sample_Wunit": 1.6984692028985504,
+          "sample_cost": 5.3700689685643184
+        },
+        {
+          "R": 2.8499999999999996,
+          "minimum_sample_Wunit": 1.7095998595998592,
+          "sample_cost": 5.3727434874419577
+        },
+        {
+          "R": 2.86,
+          "minimum_sample_Wunit": 1.7207164744554011,
+          "sample_cost": 5.3755587095289528
+        },
+        {
+          "R": 2.87,
+          "minimum_sample_Wunit": 1.731819287263884,
+          "sample_cost": 5.3785112490226838
+        },
+        {
+          "R": 2.88,
+          "minimum_sample_Wunit": 1.7429085325729328,
+          "sample_cost": 5.3815978276002916
+        },
+        {
+          "R": 2.8899999999999997,
+          "minimum_sample_Wunit": 1.7539844398199151,
+          "sample_cost": 5.3848152701914485
+        },
+        {
+          "R": 2.9,
+          "minimum_sample_Wunit": 1.7650472334682861,
+          "sample_cost": 5.3881605009490094
+        },
+        {
+          "R": 2.91,
+          "minimum_sample_Wunit": 1.7760971331396203,
+          "sample_cost": 5.3916305394068438
+        },
+        {
+          "R": 2.92,
+          "minimum_sample_Wunit": 1.787134353741497,
+          "sample_cost": 5.3952224968147382
+        },
+        {
+          "R": 2.9299999999999997,
+          "minimum_sample_Wunit": 1.7981591055913722,
+          "sample_cost": 5.3989335726410008
+        },
+        {
+          "R": 2.94,
+          "minimum_sample_Wunit": 1.8091715945366058,
+          "sample_cost": 5.4027610512337647
+        },
+        {
+          "R": 2.95,
+          "minimum_sample_Wunit": 1.8201720220707562,
+          "sample_cost": 5.406702298632788
+        },
+        {
+          "R": 2.96,
+          "minimum_sample_Wunit": 1.8311605854462998,
+          "sample_cost": 5.4107547595237913
+        },
+        {
+          "R": 2.9699999999999998,
+          "minimum_sample_Wunit": 1.8421374777838868,
+          "sample_cost": 5.414915954328011
+        },
+        {
+          "R": 2.98,
+          "minimum_sample_Wunit": 1.853102888178265,
+          "sample_cost": 5.4191834764199989
+        },
+        {
+          "R": 2.99,
+          "minimum_sample_Wunit": 1.864057001800985,
+          "sample_cost": 5.42355498946711
+        },
+        {
+          "R": 3,
+          "minimum_sample_Wunit": 1.875,
+          "sample_cost": 5.4280282248845539
+        },
+        {
+          "R": 3.01,
+          "minimum_sample_Wunit": 1.885932060396273,
+          "sample_cost": 5.4326009794001546
+        },
+        {
+          "R": 3.02,
+          "minimum_sample_Wunit": 1.8968533569774886,
+          "sample_cost": 5.4372711127233755
+        },
+        {
+          "R": 3.0300000000000002,
+          "minimum_sample_Wunit": 1.9077640601889767,
+          "sample_cost": 5.4420365453133961
+        },
+        {
+          "R": 3.04,
+          "minimum_sample_Wunit": 1.9186643370219372,
+          "sample_cost": 5.4468952562414277
+        },
+        {
+          "R": 3.05,
+          "minimum_sample_Wunit": 1.9295543510990663,
+          "sample_cost": 5.4518452811425995
+        },
+        {
+          "R": 3.06,
+          "minimum_sample_Wunit": 1.9404342627576641,
+          "sample_cost": 5.4568847102530995
+        },
+        {
+          "R": 3.07,
+          "minimum_sample_Wunit": 1.9513042291303155,
+          "sample_cost": 5.4620116865284505
+        },
+        {
+          "R": 3.08,
+          "minimum_sample_Wunit": 1.9621644042232278,
+          "sample_cost": 5.4672244038390314
+        },
+        {
+          "R": 3.09,
+          "minimum_sample_Wunit": 1.9730149389922902,
+          "sample_cost": 5.4725211052392009
+        },
+        {
+          "R": 3.1,
+          "minimum_sample_Wunit": 1.9838559814169572,
+          "sample_cost": 5.4779000813064744
+        },
+        {
+          "R": 3.11,
+          "minimum_sample_Wunit": 1.9946876765719952,
+          "sample_cost": 5.4833596685475632
+        },
+        {
+          "R": 3.12,
+          "minimum_sample_Wunit": 2.0055101666971975,
+          "sample_cost": 5.4888982478680832
+        },
+        {
+          "R": 3.13,
+          "minimum_sample_Wunit": 2.0163235912651047,
+          "sample_cost": 5.4945142431030076
+        },
+        {
+          "R": 3.14,
+          "minimum_sample_Wunit": 2.0271280870468193,
+          "sample_cost": 5.5002061196050924
+        },
+        {
+          "R": 3.15,
+          "minimum_sample_Wunit": 2.0379237881759598,
+          "sample_cost": 5.5059723828885927
+        },
+        {
+          "R": 3.16,
+          "minimum_sample_Wunit": 2.0487108262108267,
+          "sample_cost": 5.5118115773257808
+        },
+        {
+          "R": 3.17,
+          "minimum_sample_Wunit": 2.0594893301948303,
+          "sample_cost": 5.5177222848938694
+        },
+        {
+          "R": 3.1799999999999997,
+          "minimum_sample_Wunit": 2.0702594267152445,
+          "sample_cost": 5.5237031239700931
+        },
+        {
+          "R": 3.19,
+          "minimum_sample_Wunit": 2.0810212399603314,
+          "sample_cost": 5.5297527481727968
+        },
+        {
+          "R": 3.2,
+          "minimum_sample_Wunit": 2.0917748917748917,
+          "sample_cost": 5.5358698452464994
+        },
+        {
+          "R": 3.21,
+          "minimum_sample_Wunit": 2.1025205017142983,
+          "sample_cost": 5.5420531359889846
+        },
+        {
+          "R": 3.2199999999999998,
+          "minimum_sample_Wunit": 2.113258187097049,
+          "sample_cost": 5.5483013732186164
+        },
+        {
+          "R": 3.23,
+          "minimum_sample_Wunit": 2.1239880630559,
+          "sample_cost": 5.5546133407800733
+        },
+        {
+          "R": 3.24,
+          "minimum_sample_Wunit": 2.1347102425876012,
+          "sample_cost": 5.5609878525869174
+        },
+        {
+          "R": 3.25,
+          "minimum_sample_Wunit": 2.1454248366013071,
+          "sample_cost": 5.5674237516993488
+        },
+        {
+          "R": 3.26,
+          "minimum_sample_Wunit": 2.1561319539656818,
+          "sample_cost": 5.5739199094356975
+        },
+        {
+          "R": 3.27,
+          "minimum_sample_Wunit": 2.1668317015547465,
+          "sample_cost": 5.5804752245161842
+        },
+        {
+          "R": 3.2800000000000002,
+          "minimum_sample_Wunit": 2.177524184292507,
+          "sample_cost": 5.5870886222376175
+        },
+        {
+          "R": 3.29,
+          "minimum_sample_Wunit": 2.1882095051964052,
+          "sample_cost": 5.5937590536777124
+        },
+        {
+          "R": 3.3,
+          "minimum_sample_Wunit": 2.1988877654196157,
+          "sample_cost": 5.6004854949278311
+        },
+        {
+          "R": 3.31,
+          "minimum_sample_Wunit": 2.2095590642922431,
+          "sample_cost": 5.6072669463529037
+        },
+        {
+          "R": 3.32,
+          "minimum_sample_Wunit": 2.2202234993614303,
+          "sample_cost": 5.6141024318774919
+        },
+        {
+          "R": 3.33,
+          "minimum_sample_Wunit": 2.2308811664304335,
+          "sample_cost": 5.6209909982968682
+        },
+        {
+          "R": 3.34,
+          "minimum_sample_Wunit": 2.2415321595966757,
+          "sample_cost": 5.6279317146121119
+        },
+        {
+          "R": 3.35,
+          "minimum_sample_Wunit": 2.2521765712888238,
+          "sample_cost": 5.6349236713882576
+        },
+        {
+          "R": 3.36,
+          "minimum_sample_Wunit": 2.2628144923029079,
+          "sample_cost": 5.6419659801345619
+        },
+        {
+          "R": 3.37,
+          "minimum_sample_Wunit": 2.2734460118375193,
+          "sample_cost": 5.649057772706005
+        },
+        {
+          "R": 3.38,
+          "minimum_sample_Wunit": 2.284071217528107,
+          "sample_cost": 5.6561982007251768
+        },
+        {
+          "R": 3.39,
+          "minimum_sample_Wunit": 2.2946901954804093,
+          "sample_cost": 5.6633864350237673
+        },
+        {
+          "R": 3.4,
+          "minimum_sample_Wunit": 2.30530303030303,
+          "sample_cost": 5.6706216651028569
+        },
+        {
+          "R": 3.41,
+          "minimum_sample_Wunit": 2.3159098051392069,
+          "sample_cost": 5.6779030986112957
+        },
+        {
+          "R": 3.42,
+          "minimum_sample_Wunit": 2.3265106016977679,
+          "sample_cost": 5.6852299608414567
+        },
+        {
+          "R": 3.4299999999999997,
+          "minimum_sample_Wunit": 2.3371055002833283,
+          "sample_cost": 5.6926014942417078
+        },
+        {
+          "R": 3.44,
+          "minimum_sample_Wunit": 2.3476945798257267,
+          "sample_cost": 5.7000169579449347
+        },
+        {
+          "R": 3.45,
+          "minimum_sample_Wunit": 2.3582779179087363,
+          "sample_cost": 5.7074756273125153
+        },
+        {
+          "R": 3.46,
+          "minimum_sample_Wunit": 2.36885559079806,
+          "sample_cost": 5.7149767934931779
+        },
+        {
+          "R": 3.4699999999999998,
+          "minimum_sample_Wunit": 2.3794276734686486,
+          "sample_cost": 5.722519762996134
+        },
+        {
+          "R": 3.48,
+          "minimum_sample_Wunit": 2.3899942396313367,
+          "sample_cost": 5.7301038572780021
+        },
+        {
+          "R": 3.49,
+          "minimum_sample_Wunit": 2.4005553617588395,
+          "sample_cost": 5.7377284123429524
+        },
+        {
+          "R": 3.5,
+          "minimum_sample_Wunit": 2.4111111111111114,
+          "sample_cost": 5.7453927783556251
+        },
+        {
+          "R": 3.51,
+          "minimum_sample_Wunit": 2.4216615577600904,
+          "sample_cost": 5.7530963192663407
+        },
+        {
+          "R": 3.52,
+          "minimum_sample_Wunit": 2.43220677061385,
+          "sample_cost": 5.76083841244812
+        },
+        {
+          "R": 3.53,
+          "minimum_sample_Wunit": 2.4427468174401659,
+          "sample_cost": 5.7686184483451122
+        },
+        {
+          "R": 3.54,
+          "minimum_sample_Wunit": 2.4532817648895211,
+          "sample_cost": 5.77643583013202
+        },
+        {
+          "R": 3.55,
+          "minimum_sample_Wunit": 2.4638116785175606,
+          "sample_cost": 5.7842899733840882
+        },
+        {
+          "R": 3.56,
+          "minimum_sample_Wunit": 2.4743366228070172,
+          "sample_cost": 5.7921803057573067
+        },
+        {
+          "R": 3.57,
+          "minimum_sample_Wunit": 2.4848566611891121,
+          "sample_cost": 5.8001062666784486
+        },
+        {
+          "R": 3.58,
+          "minimum_sample_Wunit": 2.4953718560644527,
+          "sample_cost": 5.8080673070446061
+        },
+        {
+          "R": 3.59,
+          "minimum_sample_Wunit": 2.505882268823445,
+          "sample_cost": 5.8160628889318469
+        },
+        {
+          "R": 3.6,
+          "minimum_sample_Wunit": 2.5163879598662207,
+          "sample_cost": 5.8240924853127325
+        },
+        {
+          "R": 3.61,
+          "minimum_sample_Wunit": 2.526888988622102,
+          "sample_cost": 5.8321555797823272
+        },
+        {
+          "R": 3.62,
+          "minimum_sample_Wunit": 2.5373854135686194,
+          "sample_cost": 5.84025166629243
+        },
+        {
+          "R": 3.63,
+          "minimum_sample_Wunit": 2.54787729225008,
+          "sample_cost": 5.8483802488937533
+        },
+        {
+          "R": 3.64,
+          "minimum_sample_Wunit": 2.5583646812957164,
+          "sample_cost": 5.8565408414857343
+        },
+        {
+          "R": 3.65,
+          "minimum_sample_Wunit": 2.5688476364374111,
+          "sample_cost": 5.8647329675737652
+        },
+        {
+          "R": 3.66,
+          "minimum_sample_Wunit": 2.5793262125270262,
+          "sample_cost": 5.872956160033536
+        },
+        {
+          "R": 3.67,
+          "minimum_sample_Wunit": 2.5898004635533205,
+          "sample_cost": 5.881209960882309
+        },
+        {
+          "R": 3.68,
+          "minimum_sample_Wunit": 2.6002704426585028,
+          "sample_cost": 5.88949392105681
+        },
+        {
+          "R": 3.69,
+          "minimum_sample_Wunit": 2.6107362021543894,
+          "sample_cost": 5.89780760019761
+        },
+        {
+          "R": 3.7,
+          "minimum_sample_Wunit": 2.6211977935382196,
+          "sample_cost": 5.9061505664396652
+        },
+        {
+          "R": 3.71,
+          "minimum_sample_Wunit": 2.6316552675080893,
+          "sample_cost": 5.9145223962089339
+        },
+        {
+          "R": 3.7199999999999998,
+          "minimum_sample_Wunit": 2.6421086739780648,
+          "sample_cost": 5.9229226740247576
+        },
+        {
+          "R": 3.73,
+          "minimum_sample_Wunit": 2.6525580620929454,
+          "sample_cost": 5.9313509923078689
+        },
+        {
+          "R": 3.74,
+          "minimum_sample_Wunit": 2.6630034802426934,
+          "sample_cost": 5.9398069511938631
+        },
+        {
+          "R": 3.75,
+          "minimum_sample_Wunit": 2.6734449760765551,
+          "sample_cost": 5.9482901583518863
+        },
+        {
+          "R": 3.76,
+          "minimum_sample_Wunit": 2.6838825965168676,
+          "sample_cost": 5.9568002288084294
+        },
+        {
+          "R": 3.77,
+          "minimum_sample_Wunit": 2.6943163877725551,
+          "sample_cost": 5.965336784776035
+        },
+        {
+          "R": 3.78,
+          "minimum_sample_Wunit": 2.7047463953523367,
+          "sample_cost": 5.973899455486757
+        },
+        {
+          "R": 3.79,
+          "minimum_sample_Wunit": 2.7151726640776408,
+          "sample_cost": 5.9824878770302368
+        },
+        {
+          "R": 3.8,
+          "minimum_sample_Wunit": 2.725595238095238,
+          "sample_cost": 5.99110169219623
+        },
+        {
+          "R": 3.81,
+          "minimum_sample_Wunit": 2.7360141608896056,
+          "sample_cost": 5.99974055032144
+        },
+        {
+          "R": 3.82,
+          "minimum_sample_Wunit": 2.7464294752950176,
+          "sample_cost": 6.0084041071405494
+        },
+        {
+          "R": 3.83,
+          "minimum_sample_Wunit": 2.7568412235073785,
+          "sample_cost": 6.0170920246412765
+        },
+        {
+          "R": 3.84,
+          "minimum_sample_Wunit": 2.7672494470957978,
+          "sample_cost": 6.0258039709233664
+        },
+        {
+          "R": 3.85,
+          "minimum_sample_Wunit": 2.7776541870139271,
+          "sample_cost": 6.0345396200613548
+        },
+        {
+          "R": 3.86,
+          "minimum_sample_Wunit": 2.7880554836110383,
+          "sample_cost": 6.0432986519710417
+        },
+        {
+          "R": 3.87,
+          "minimum_sample_Wunit": 2.7984533766428896,
+          "sample_cost": 6.0520807522794886
+        },
+        {
+          "R": 3.88,
+          "minimum_sample_Wunit": 2.808847905282331,
+          "sample_cost": 6.0608856121985051
+        },
+        {
+          "R": 3.89,
+          "minimum_sample_Wunit": 2.819239108129719,
+          "sample_cost": 6.0697129284014419
+        },
+        {
+          "R": 3.9,
+          "minimum_sample_Wunit": 2.8296270232230816,
+          "sample_cost": 6.0785624029032723
+        },
+        {
+          "R": 3.91,
+          "minimum_sample_Wunit": 2.8400116880480955,
+          "sample_cost": 6.0874337429437642
+        },
+        {
+          "R": 3.92,
+          "minimum_sample_Wunit": 2.8503931395478337,
+          "sample_cost": 6.0963266608737472
+        },
+        {
+          "R": 3.93,
+          "minimum_sample_Wunit": 2.8607714141323233,
+          "sample_cost": 6.1052408740443145
+        },
+        {
+          "R": 3.94,
+          "minimum_sample_Wunit": 2.8711465476879012,
+          "sample_cost": 6.1141761046988812
+        },
+        {
+          "R": 3.95,
+          "minimum_sample_Wunit": 2.881518575586373,
+          "sample_cost": 6.1231320798680446
+        },
+        {
+          "R": 3.96,
+          "minimum_sample_Wunit": 2.8918875326939837,
+          "sample_cost": 6.1321085312671331
+        },
+        {
+          "R": 3.97,
+          "minimum_sample_Wunit": 2.9022534533802142,
+          "sample_cost": 6.1411051951963511
+        },
+        {
+          "R": 3.98,
+          "minimum_sample_Wunit": 2.9126163715263749,
+          "sample_cost": 6.150121812443512
+        },
+        {
+          "R": 3.99,
+          "minimum_sample_Wunit": 2.9229763205340449,
+          "sample_cost": 6.1591581281891887
+        },
+        {
+          "R": 4,
+          "minimum_sample_Wunit": 2.9333333333333336,
+          "sample_cost": 6.1682138919142648
+        }
+      ]
+    },
+    {
+      "axis_weight": 0.25,
+      "unit_positive_mass": 2.172828841790305,
+      "best_sample": {
+        "R": 2.58,
+        "minimum_sample_Wunit": 1.460224170850718,
+        "sample_cost": 4.9523964166634773
+      },
+      "R_scan": [
+        {
+          "R": 1.4000000000000001,
+          "minimum_sample_Wunit": 0.0192466291421505,
+          "sample_cost": 110.63611447113779
+        },
+        {
+          "R": 1.4100000000000001,
+          "minimum_sample_Wunit": 0.037086701822976562,
+          "sample_cost": 58.239217941011844
+        },
+        {
+          "R": 1.42,
+          "minimum_sample_Wunit": 0.05761602343447067,
+          "sample_cost": 38.021472286863165
+        },
+        {
+          "R": 1.4300000000000002,
+          "minimum_sample_Wunit": 0.074888001635569856,
+          "sample_cost": 29.665751532529764
+        },
+        {
+          "R": 1.44,
+          "minimum_sample_Wunit": 0.091090821587583887,
+          "sample_cost": 24.731239700172537
+        },
+        {
+          "R": 1.4500000000000002,
+          "minimum_sample_Wunit": 0.1108066822510218,
+          "sample_cost": 20.614156777634186
+        },
+        {
+          "R": 1.46,
+          "minimum_sample_Wunit": 0.1261287411134358,
+          "sample_cost": 18.360612808284163
+        },
+        {
+          "R": 1.47,
+          "minimum_sample_Wunit": 0.1409857241835048,
+          "sample_cost": 16.65156479997005
+        },
+        {
+          "R": 1.48,
+          "minimum_sample_Wunit": 0.15963395907866351,
+          "sample_cost": 14.907117265419044
+        },
+        {
+          "R": 1.49,
+          "minimum_sample_Wunit": 0.17376523932257779,
+          "sample_cost": 13.880501446850291
+        },
+        {
+          "R": 1.5,
+          "minimum_sample_Wunit": 0.18750000000000006,
+          "sample_cost": 13.036973050741826
+        },
+        {
+          "R": 1.51,
+          "minimum_sample_Wunit": 0.20528161169708753,
+          "sample_cost": 12.067001523440311
+        },
+        {
+          "R": 1.52,
+          "minimum_sample_Wunit": 0.21841141751592053,
+          "sample_cost": 11.492310734411111
+        },
+        {
+          "R": 1.53,
+          "minimum_sample_Wunit": 0.23283109540092262,
+          "sample_cost": 10.922886023854462
+        },
+        {
+          "R": 1.54,
+          "minimum_sample_Wunit": 0.24827071002192186,
+          "sample_cost": 10.377947686086046
+        },
+        {
+          "R": 1.55,
+          "minimum_sample_Wunit": 0.26054828605815916,
+          "sample_cost": 10.017761719675944
+        },
+        {
+          "R": 1.56,
+          "minimum_sample_Wunit": 0.27558036855887513,
+          "sample_cost": 9.59392771160185
+        },
+        {
+          "R": 1.57,
+          "minimum_sample_Wunit": 0.28901352656529233,
+          "sample_cost": 9.2656663440265827
+        },
+        {
+          "R": 1.58,
+          "minimum_sample_Wunit": 0.30055815793819923,
+          "sample_cost": 9.0236278360487088
+        },
+        {
+          "R": 1.59,
+          "minimum_sample_Wunit": 0.31615071767444347,
+          "sample_cost": 8.687515618083502
+        },
+        {
+          "R": 1.6,
+          "minimum_sample_Wunit": 0.32784059740581484,
+          "sample_cost": 8.4834548847801141
+        },
+        {
+          "R": 1.61,
+          "minimum_sample_Wunit": 0.33874879283481629,
+          "sample_cost": 8.313224666679579
+        },
+        {
+          "R": 1.62,
+          "minimum_sample_Wunit": 0.35444807436525522,
+          "sample_cost": 8.0440160700636785
+        },
+        {
+          "R": 1.63,
+          "minimum_sample_Wunit": 0.36502007397262637,
+          "sample_cost": 7.90776913571278
+        },
+        {
+          "R": 1.6400000000000001,
+          "minimum_sample_Wunit": 0.37603182865823326,
+          "sample_cost": 7.7706725966948929
+        },
+        {
+          "R": 1.65,
+          "minimum_sample_Wunit": 0.39071240380138039,
+          "sample_cost": 7.5701800918269244
+        },
+        {
+          "R": 1.6600000000000001,
+          "minimum_sample_Wunit": 0.40077181450958332,
+          "sample_cost": 7.4698955111951761
+        },
+        {
+          "R": 1.67,
+          "minimum_sample_Wunit": 0.41252266201968441,
+          "sample_cost": 7.3448114670847167
+        },
+        {
+          "R": 1.6800000000000002,
+          "minimum_sample_Wunit": 0.42567326091534052,
+          "sample_cost": 7.2034030395541215
+        },
+        {
+          "R": 1.69,
+          "minimum_sample_Wunit": 0.4352778131124001,
+          "sample_cost": 7.1285696951371893
+        },
+        {
+          "R": 1.7000000000000002,
+          "minimum_sample_Wunit": 0.447721279390319,
+          "sample_cost": 7.0127059421042146
+        },
+        {
+          "R": 1.71,
+          "minimum_sample_Wunit": 0.45949196335150855,
+          "sample_cost": 6.9136887291090536
+        },
+        {
+          "R": 1.7200000000000002,
+          "minimum_sample_Wunit": 0.46869003219793393,
+          "sample_cost": 6.8575139260031994
+        },
+        {
+          "R": 1.73,
+          "minimum_sample_Wunit": 0.48179072361101372,
+          "sample_cost": 6.7488425180272031
+        },
+        {
+          "R": 1.7400000000000002,
+          "minimum_sample_Wunit": 0.49230393463336319,
+          "sample_cost": 6.68129598263677
+        },
+        {
+          "R": 1.75,
+          "minimum_sample_Wunit": 0.50113636363636371,
+          "sample_cost": 6.6391992388037089
+        },
+        {
+          "R": 1.76,
+          "minimum_sample_Wunit": 0.51486767597051042,
+          "sample_cost": 6.5361984588008477
+        },
+        {
+          "R": 1.77,
+          "minimum_sample_Wunit": 0.52422370855306988,
+          "sample_cost": 6.4927008902685994
+        },
+        {
+          "R": 1.78,
+          "minimum_sample_Wunit": 0.53382754598729587,
+          "sample_cost": 6.4481413090026631
+        },
+        {
+          "R": 1.79,
+          "minimum_sample_Wunit": 0.54700719289832644,
+          "sample_cost": 6.3636831310135555
+        },
+        {
+          "R": 1.8,
+          "minimum_sample_Wunit": 0.55534881346006459,
+          "sample_cost": 6.3383276211022608
+        },
+        {
+          "R": 1.81,
+          "minimum_sample_Wunit": 0.56568885419703585,
+          "sample_cost": 6.2918020354965289
+        },
+        {
+          "R": 1.82,
+          "minimum_sample_Wunit": 0.57770465685286754,
+          "sample_cost": 6.229202214462366
+        },
+        {
+          "R": 1.83,
+          "minimum_sample_Wunit": 0.58576281890028337,
+          "sample_cost": 6.2112055199514762
+        },
+        {
+          "R": 1.84,
+          "minimum_sample_Wunit": 0.5968114928859577,
+          "sample_cost": 6.1630258586281519
+        },
+        {
+          "R": 1.85,
+          "minimum_sample_Wunit": 0.6077398228215134,
+          "sample_cost": 6.1181663861538169
+        },
+        {
+          "R": 1.86,
+          "minimum_sample_Wunit": 0.61553774840128239,
+          "sample_cost": 6.1061394533330615
+        },
+        {
+          "R": 1.87,
+          "minimum_sample_Wunit": 0.62727376623331677,
+          "sample_cost": 6.0564984428428605
+        },
+        {
+          "R": 1.8800000000000001,
+          "minimum_sample_Wunit": 0.63717816001319383,
+          "sample_cost": 6.0262943242315741
+        },
+        {
+          "R": 1.8900000000000001,
+          "minimum_sample_Wunit": 0.645237050722412,
+          "sample_cost": 6.0145042020364832
+        },
+        {
+          "R": 1.9,
+          "minimum_sample_Wunit": 0.65714328366030861,
+          "sample_cost": 5.968190129839086
+        },
+        {
+          "R": 1.9100000000000001,
+          "minimum_sample_Wunit": 0.66607658651741863,
+          "sample_cost": 5.9502893947826223
+        },
+        {
+          "R": 1.92,
+          "minimum_sample_Wunit": 0.6748840775762952,
+          "sample_cost": 5.9342904274328987
+        },
+        {
+          "R": 1.9300000000000002,
+          "minimum_sample_Wunit": 0.6864787269401369,
+          "sample_cost": 5.8949897754737659
+        },
+        {
+          "R": 1.94,
+          "minimum_sample_Wunit": 0.69448482045986371,
+          "sample_cost": 5.8875719008134908
+        },
+        {
+          "R": 1.9500000000000002,
+          "minimum_sample_Wunit": 0.704021095412311,
+          "sample_cost": 5.8678509243170325
+        },
+        {
+          "R": 1.96,
+          "minimum_sample_Wunit": 0.71533127738633251,
+          "sample_cost": 5.8344570847791646
+        },
+        {
+          "R": 1.9700000000000002,
+          "minimum_sample_Wunit": 0.722446482261394,
+          "sample_cost": 5.8360942015445767
+        },
+        {
+          "R": 1.98,
+          "minimum_sample_Wunit": 0.7326962071573504,
+          "sample_cost": 5.8130218964852292
+        },
+        {
+          "R": 1.9900000000000002,
+          "minimum_sample_Wunit": 0.74314186527318182,
+          "sample_cost": 5.7893518710661649
+        },
+        {
+          "R": 2,
+          "minimum_sample_Wunit": 0.75,
+          "sample_cost": 5.7942102447741464
+        },
+        {
+          "R": 2.01,
+          "minimum_sample_Wunit": 0.76370875958027673,
+          "sample_cost": 5.7472470320633189
+        },
+        {
+          "R": 2.02,
+          "minimum_sample_Wunit": 0.7773367095182443,
+          "sample_cost": 5.7028123704178881
+        },
+        {
+          "R": 2.0300000000000002,
+          "minimum_sample_Wunit": 0.79088628280303785,
+          "sample_cost": 5.6607445146216895
+        },
+        {
+          "R": 2.04,
+          "minimum_sample_Wunit": 0.8043598178137652,
+          "sample_cost": 5.62089521861729
+        },
+        {
+          "R": 2.05,
+          "minimum_sample_Wunit": 0.81775956284152984,
+          "sample_cost": 5.5831283561481726
+        },
+        {
+          "R": 2.06,
+          "minimum_sample_Wunit": 0.831087680355161,
+          "sample_cost": 5.547318707143484
+        },
+        {
+          "R": 2.0700000000000003,
+          "minimum_sample_Wunit": 0.84434625102742888,
+          "sample_cost": 5.5133508870668448
+        },
+        {
+          "R": 2.08,
+          "minimum_sample_Wunit": 0.85753727753727771,
+          "sample_cost": 5.481118399959545
+        },
+        {
+          "R": 2.09,
+          "minimum_sample_Wunit": 0.87066268816246528,
+          "sample_cost": 5.450522798820792
+        },
+        {
+          "R": 2.1,
+          "minimum_sample_Wunit": 0.88372434017595325,
+          "sample_cost": 5.4214729393938583
+        },
+        {
+          "R": 2.1100000000000003,
+          "minimum_sample_Wunit": 0.89672402305842858,
+          "sample_cost": 5.39388431545583
+        },
+        {
+          "R": 2.12,
+          "minimum_sample_Wunit": 0.90966346153846189,
+          "sample_cost": 5.36767846541094
+        },
+        {
+          "R": 2.13,
+          "minimum_sample_Wunit": 0.9225443184709774,
+          "sample_cost": 5.3427824414207565
+        },
+        {
+          "R": 2.14,
+          "minimum_sample_Wunit": 0.9353681975639736,
+          "sample_cost": 5.3191283335150557
+        },
+        {
+          "R": 2.1500000000000004,
+          "minimum_sample_Wunit": 0.94813664596273317,
+          "sample_cost": 5.2966528421529162
+        },
+        {
+          "R": 2.16,
+          "minimum_sample_Wunit": 0.96085115670013133,
+          "sample_cost": 5.2752968935752875
+        },
+        {
+          "R": 2.17,
+          "minimum_sample_Wunit": 0.9735131710210575,
+          "sample_cost": 5.2550052930331912
+        },
+        {
+          "R": 2.18,
+          "minimum_sample_Wunit": 0.98612408058842349,
+          "sample_cost": 5.2357264116106954
+        },
+        {
+          "R": 2.1900000000000004,
+          "minimum_sample_Wunit": 0.9986852295777251,
+          "sample_cost": 5.2174119029060089
+        },
+        {
+          "R": 2.2,
+          "minimum_sample_Wunit": 1.0111979166666667,
+          "sample_cost": 5.2000164463015581
+        },
+        {
+          "R": 2.21,
+          "minimum_sample_Wunit": 1.023663396925929,
+          "sample_cost": 5.1834975139566914
+        },
+        {
+          "R": 2.2199999999999998,
+          "minimum_sample_Wunit": 1.0360828836167393,
+          "sample_cost": 5.1678151590044878
+        },
+        {
+          "R": 2.23,
+          "minimum_sample_Wunit": 1.0484575499005762,
+          "sample_cost": 5.1529318227350531
+        },
+        {
+          "R": 2.24,
+          "minimum_sample_Wunit": 1.06078853046595,
+          "sample_cost": 5.1388121588089657
+        },
+        {
+          "R": 2.25,
+          "minimum_sample_Wunit": 1.0730769230769233,
+          "sample_cost": 5.1254228727714839
+        },
+        {
+          "R": 2.26,
+          "minimum_sample_Wunit": 1.0853237900477164,
+          "sample_cost": 5.1127325753359916
+        },
+        {
+          "R": 2.27,
+          "minimum_sample_Wunit": 1.0975301596474754,
+          "sample_cost": 5.10071164807786
+        },
+        {
+          "R": 2.2800000000000002,
+          "minimum_sample_Wunit": 1.1096970274390245,
+          "sample_cost": 5.0893321203310933
+        },
+        {
+          "R": 2.29,
+          "minimum_sample_Wunit": 1.121825357555194,
+          "sample_cost": 5.0785675562124775
+        },
+        {
+          "R": 2.3,
+          "minimum_sample_Wunit": 1.1339160839160836,
+          "sample_cost": 5.0683929508144079
+        },
+        {
+          "R": 2.31,
+          "minimum_sample_Wunit": 1.14597011139042,
+          "sample_cost": 5.0587846347098777
+        },
+        {
+          "R": 2.3200000000000003,
+          "minimum_sample_Wunit": 1.15798831690398,
+          "sample_cost": 5.0497201860033485
+        },
+        {
+          "R": 2.33,
+          "minimum_sample_Wunit": 1.1699715504978663,
+          "sample_cost": 5.0411783492409379
+        },
+        {
+          "R": 2.34,
+          "minimum_sample_Wunit": 1.1819206363392614,
+          "sample_cost": 5.0331389605638011
+        },
+        {
+          "R": 2.35,
+          "minimum_sample_Wunit": 1.19383637368712,
+          "sample_cost": 5.0255828785510639
+        },
+        {
+          "R": 2.3600000000000003,
+          "minimum_sample_Wunit": 1.2057195378151266,
+          "sample_cost": 5.0184919202540357
+        },
+        {
+          "R": 2.37,
+          "minimum_sample_Wunit": 1.2175708808941068,
+          "sample_cost": 5.0118488019727065
+        },
+        {
+          "R": 2.38,
+          "minimum_sample_Wunit": 1.229391132835949,
+          "sample_cost": 5.0056370843693738
+        },
+        {
+          "R": 2.39,
+          "minimum_sample_Wunit": 1.2411810021009742,
+          "sample_cost": 4.9998411215533141
+        },
+        {
+          "R": 2.4000000000000004,
+          "minimum_sample_Wunit": 1.2529411764705884,
+          "sample_cost": 4.9944460138053213
+        },
+        {
+          "R": 2.41,
+          "minimum_sample_Wunit": 1.2646723237869431,
+          "sample_cost": 4.989437563642114
+        },
+        {
+          "R": 2.42,
+          "minimum_sample_Wunit": 1.2763750926612305,
+          "sample_cost": 4.984802234948555
+        },
+        {
+          "R": 2.43,
+          "minimum_sample_Wunit": 1.2880501131521542,
+          "sample_cost": 4.9805271149306432
+        },
+        {
+          "R": 2.4400000000000004,
+          "minimum_sample_Wunit": 1.2996979974160208,
+          "sample_cost": 4.9765998786647456
+        },
+        {
+          "R": 2.45,
+          "minimum_sample_Wunit": 1.3113193403298353,
+          "sample_cost": 4.9730087560386931
+        },
+        {
+          "R": 2.46,
+          "minimum_sample_Wunit": 1.3229147200886846,
+          "sample_cost": 4.9697425008985956
+        },
+        {
+          "R": 2.4699999999999998,
+          "minimum_sample_Wunit": 1.3344846987786467,
+          "sample_cost": 4.9667903622315341
+        },
+        {
+          "R": 2.48,
+          "minimum_sample_Wunit": 1.3460298229263743,
+          "sample_cost": 4.96414205722917
+        },
+        {
+          "R": 2.49,
+          "minimum_sample_Wunit": 1.3575506240264614,
+          "sample_cost": 4.9617877460905211
+        },
+        {
+          "R": 2.5,
+          "minimum_sample_Wunit": 1.3690476190476191,
+          "sample_cost": 4.9597180084343915
+        },
+        {
+          "R": 2.51,
+          "minimum_sample_Wunit": 1.3805213109186618,
+          "sample_cost": 4.9579238212026544
+        },
+        {
+          "R": 2.52,
+          "minimum_sample_Wunit": 1.3919721889952155,
+          "sample_cost": 4.9563965379456949
+        },
+        {
+          "R": 2.5300000000000002,
+          "minimum_sample_Wunit": 1.4034007295080455,
+          "sample_cost": 4.9551278693901493
+        },
+        {
+          "R": 2.54,
+          "minimum_sample_Wunit": 1.414807395993837,
+          "sample_cost": 4.9541098651972959
+        },
+        {
+          "R": 2.55,
+          "minimum_sample_Wunit": 1.4261926397092228,
+          "sample_cost": 4.9533348968278545
+        },
+        {
+          "R": 2.56,
+          "minimum_sample_Wunit": 1.4375569000288104,
+          "sample_cost": 4.9527956414356744
+        },
+        {
+          "R": 2.5700000000000003,
+          "minimum_sample_Wunit": 1.4489006048279187,
+          "sample_cost": 4.952485066719
+        },
+        {
+          "R": 2.58,
+          "minimum_sample_Wunit": 1.460224170850718,
+          "sample_cost": 4.9523964166634773
+        },
+        {
+          "R": 2.59,
+          "minimum_sample_Wunit": 1.4715280040643997,
+          "sample_cost": 4.9525231981163378
+        },
+        {
+          "R": 2.5999999999999996,
+          "minimum_sample_Wunit": 1.4828124999999996,
+          "sample_cost": 4.952859168135709
+        },
+        {
+          "R": 2.61,
+          "minimum_sample_Wunit": 1.4940780440804526,
+          "sample_cost": 4.953398322063391
+        },
+        {
+          "R": 2.62,
+          "minimum_sample_Wunit": 1.50532501193643,
+          "sample_cost": 4.954134882273264
+        },
+        {
+          "R": 2.63,
+          "minimum_sample_Wunit": 1.51655376971049,
+          "sample_cost": 4.9550632875511029
+        },
+        {
+          "R": 2.6399999999999997,
+          "minimum_sample_Wunit": 1.52776467435004,
+          "sample_cost": 4.9561781830648561
+        },
+        {
+          "R": 2.65,
+          "minimum_sample_Wunit": 1.5389580738895805,
+          "sample_cost": 4.9574744108874338
+        },
+        {
+          "R": 2.66,
+          "minimum_sample_Wunit": 1.5501343077226939,
+          "sample_cost": 4.9589470010368206
+        },
+        {
+          "R": 2.67,
+          "minimum_sample_Wunit": 1.5612937068642005,
+          "sample_cost": 4.9605911630008883
+        },
+        {
+          "R": 2.6799999999999997,
+          "minimum_sample_Wunit": 1.5724365942028984,
+          "sample_cost": 4.9624022777165653
+        },
+        {
+          "R": 2.69,
+          "minimum_sample_Wunit": 1.5835632847452734,
+          "sample_cost": 4.9643758899752282
+        },
+        {
+          "R": 2.7,
+          "minimum_sample_Wunit": 1.5946740858505568,
+          "sample_cost": 4.9665077012280952
+        },
+        {
+          "R": 2.71,
+          "minimum_sample_Wunit": 1.60576929745748,
+          "sample_cost": 4.9687935627672957
+        },
+        {
+          "R": 2.7199999999999998,
+          "minimum_sample_Wunit": 1.6168492123030758,
+          "sample_cost": 4.9712294692598924
+        },
+        {
+          "R": 2.73,
+          "minimum_sample_Wunit": 1.6279141161338315,
+          "sample_cost": 4.9738115526137676
+        },
+        {
+          "R": 2.74,
+          "minimum_sample_Wunit": 1.6389642879095212,
+          "sample_cost": 4.9765360761556252
+        },
+        {
+          "R": 2.75,
+          "minimum_sample_Wunit": 1.6499999999999997,
+          "sample_cost": 4.9793994291027834
+        },
+        {
+          "R": 2.76,
+          "minimum_sample_Wunit": 1.6610215183752413,
+          "sample_cost": 4.9823981213115811
+        },
+        {
+          "R": 2.77,
+          "minimum_sample_Wunit": 1.6720291027888921,
+          "sample_cost": 4.9855287782864028
+        },
+        {
+          "R": 2.7800000000000002,
+          "minimum_sample_Wunit": 1.6830230069555916,
+          "sample_cost": 4.9887881364343363
+        },
+        {
+          "R": 2.79,
+          "minimum_sample_Wunit": 1.6940034787223066,
+          "sample_cost": 4.9921730385515053
+        },
+        {
+          "R": 2.8,
+          "minimum_sample_Wunit": 1.7049707602339179,
+          "sample_cost": 4.9956804295279618
+        },
+        {
+          "R": 2.81,
+          "minimum_sample_Wunit": 1.71592508809327,
+          "sample_cost": 4.9993073522589171
+        },
+        {
+          "R": 2.8200000000000003,
+          "minimum_sample_Wunit": 1.7268666935159087,
+          "sample_cost": 5.0030509437508135
+        },
+        {
+          "R": 2.83,
+          "minimum_sample_Wunit": 1.7377958024797042,
+          "sample_cost": 5.0069084314115244
+        },
+        {
+          "R": 2.84,
+          "minimum_sample_Wunit": 1.7487126358695648,
+          "sample_cost": 5.0108771295145695
+        },
+        {
+          "R": 2.8499999999999996,
+          "minimum_sample_Wunit": 1.7596174096174093,
+          "sample_cost": 5.0149544358279279
+        },
+        {
+          "R": 2.86,
+          "minimum_sample_Wunit": 1.7705103348375952,
+          "sample_cost": 5.0191378283985673
+        },
+        {
+          "R": 2.87,
+          "minimum_sample_Wunit": 1.7813916179579659,
+          "sample_cost": 5.0234248624843572
+        },
+        {
+          "R": 2.88,
+          "minimum_sample_Wunit": 1.7922614608466769,
+          "sample_cost": 5.0278131676255651
+        },
+        {
+          "R": 2.8899999999999997,
+          "minimum_sample_Wunit": 1.8031200609349709,
+          "sample_cost": 5.032300444848552
+        },
+        {
+          "R": 2.9,
+          "minimum_sample_Wunit": 1.8139676113360323,
+          "sample_cost": 5.0368844639948076
+        },
+        {
+          "R": 2.91,
+          "minimum_sample_Wunit": 1.8248043009600834,
+          "sample_cost": 5.0415630611687625
+        },
+        {
+          "R": 2.92,
+          "minimum_sample_Wunit": 1.8356303146258508,
+          "sample_cost": 5.0463341362983041
+        },
+        {
+          "R": 2.9299999999999997,
+          "minimum_sample_Wunit": 1.8464458331685321,
+          "sample_cost": 5.0511956508022315
+        },
+        {
+          "R": 2.94,
+          "minimum_sample_Wunit": 1.8572510335444032,
+          "sample_cost": 5.0561456253591741
+        },
+        {
+          "R": 2.95,
+          "minimum_sample_Wunit": 1.8680460889321648,
+          "sample_cost": 5.0611821377729358
+        },
+        {
+          "R": 2.96,
+          "minimum_sample_Wunit": 1.878831168831169,
+          "sample_cost": 5.0663033209293733
+        },
+        {
+          "R": 2.9699999999999998,
+          "minimum_sample_Wunit": 1.889606439156619,
+          "sample_cost": 5.0715073608403145
+        },
+        {
+          "R": 2.98,
+          "minimum_sample_Wunit": 1.9003720623318612,
+          "sample_cost": 5.0767924947701752
+        },
+        {
+          "R": 2.99,
+          "minimum_sample_Wunit": 1.9111281973778669,
+          "sample_cost": 5.0821570094412536
+        },
+        {
+          "R": 3,
+          "minimum_sample_Wunit": 1.921875,
+          "sample_cost": 5.0875992393138851
+        },
+        {
+          "R": 3.01,
+          "minimum_sample_Wunit": 1.9326126226721754,
+          "sample_cost": 5.0931175649378027
+        },
+        {
+          "R": 3.02,
+          "minimum_sample_Wunit": 1.9433412147184865,
+          "sample_cost": 5.0987104113713277
+        },
+        {
+          "R": 3.0300000000000002,
+          "minimum_sample_Wunit": 1.9540609223924017,
+          "sample_cost": 5.1043762466651188
+        },
+        {
+          "R": 3.04,
+          "minimum_sample_Wunit": 1.964771888953601,
+          "sample_cost": 5.1101135804074742
+        },
+        {
+          "R": 3.05,
+          "minimum_sample_Wunit": 1.9754742547425472,
+          "sample_cost": 5.1159209623282393
+        },
+        {
+          "R": 3.06,
+          "minimum_sample_Wunit": 1.9861681572528576,
+          "sample_cost": 5.1217969809586288
+        },
+        {
+          "R": 3.07,
+          "minimum_sample_Wunit": 1.9968537312015568,
+          "sample_cost": 5.1277402623443287
+        },
+        {
+          "R": 3.08,
+          "minimum_sample_Wunit": 2.0075311085972851,
+          "sample_cost": 5.1337494688094578
+        },
+        {
+          "R": 3.09,
+          "minimum_sample_Wunit": 2.0182004188065177,
+          "sample_cost": 5.1398232977690554
+        },
+        {
+          "R": 3.1,
+          "minimum_sample_Wunit": 2.0288617886178866,
+          "sample_cost": 5.1459604805878465
+        },
+        {
+          "R": 3.11,
+          "minimum_sample_Wunit": 2.0395153423046319,
+          "sample_cost": 5.1521597814832676
+        },
+        {
+          "R": 3.12,
+          "minimum_sample_Wunit": 2.0501612016852908,
+          "sample_cost": 5.1584199964706849
+        },
+        {
+          "R": 3.13,
+          "minimum_sample_Wunit": 2.0607994861826326,
+          "sample_cost": 5.1647399523489925
+        },
+        {
+          "R": 3.14,
+          "minimum_sample_Wunit": 2.0714303128809428,
+          "sample_cost": 5.1711185057247473
+        },
+        {
+          "R": 3.15,
+          "minimum_sample_Wunit": 2.0820537965816759,
+          "sample_cost": 5.1775545420731737
+        },
+        {
+          "R": 3.16,
+          "minimum_sample_Wunit": 2.09267004985755,
+          "sample_cost": 5.1840469748344242
+        },
+        {
+          "R": 3.17,
+          "minimum_sample_Wunit": 2.1032791831051285,
+          "sample_cost": 5.1905947445435343
+        },
+        {
+          "R": 3.1799999999999997,
+          "minimum_sample_Wunit": 2.1138813045959344,
+          "sample_cost": 5.1971968179926478
+        },
+        {
+          "R": 3.19,
+          "minimum_sample_Wunit": 2.1244765205261489,
+          "sample_cost": 5.2038521874241095
+        },
+        {
+          "R": 3.2,
+          "minimum_sample_Wunit": 2.1350649350649351,
+          "sample_cost": 5.2105598697531024
+        },
+        {
+          "R": 3.21,
+          "minimum_sample_Wunit": 2.145646650401436,
+          "sample_cost": 5.2173189058185887
+        },
+        {
+          "R": 3.2199999999999998,
+          "minimum_sample_Wunit": 2.1562217667904866,
+          "sample_cost": 5.2241283596613561
+        },
+        {
+          "R": 3.23,
+          "minimum_sample_Wunit": 2.16679038259708,
+          "sample_cost": 5.2309873178280144
+        },
+        {
+          "R": 3.24,
+          "minimum_sample_Wunit": 2.1773525943396228,
+          "sample_cost": 5.23789488869989
+        },
+        {
+          "R": 3.25,
+          "minimum_sample_Wunit": 2.1879084967320259,
+          "sample_cost": 5.2448502018457726
+        },
+        {
+          "R": 3.26,
+          "minimum_sample_Wunit": 2.1984581827246665,
+          "sample_cost": 5.2518524073975223
+        },
+        {
+          "R": 3.27,
+          "minimum_sample_Wunit": 2.2090017435442437,
+          "sample_cost": 5.2589006754476122
+        },
+        {
+          "R": 3.2800000000000002,
+          "minimum_sample_Wunit": 2.2195392687325795,
+          "sample_cost": 5.2659941954677105
+        },
+        {
+          "R": 3.29,
+          "minimum_sample_Wunit": 2.2300708461843839,
+          "sample_cost": 5.2731321757474507
+        },
+        {
+          "R": 3.3,
+          "minimum_sample_Wunit": 2.2405965621840243,
+          "sample_cost": 5.280313842852582
+        },
+        {
+          "R": 3.31,
+          "minimum_sample_Wunit": 2.2511165014413277,
+          "sample_cost": 5.2875384411016952
+        },
+        {
+          "R": 3.32,
+          "minimum_sample_Wunit": 2.2616307471264365,
+          "sample_cost": 5.2948052320608419
+        },
+        {
+          "R": 3.33,
+          "minimum_sample_Wunit": 2.2721393809037655,
+          "sample_cost": 5.302113494055277
+        },
+        {
+          "R": 3.34,
+          "minimum_sample_Wunit": 2.2826424829650636,
+          "sample_cost": 5.30946252169769
+        },
+        {
+          "R": 3.35,
+          "minimum_sample_Wunit": 2.2931401320616289,
+          "sample_cost": 5.3168516254322729
+        },
+        {
+          "R": 3.36,
+          "minimum_sample_Wunit": 2.3036324055356863,
+          "sample_cost": 5.3242801310939916
+        },
+        {
+          "R": 3.37,
+          "minimum_sample_Wunit": 2.3141193793509647,
+          "sample_cost": 5.3317473794824926
+        },
+        {
+          "R": 3.38,
+          "minimum_sample_Wunit": 2.3246011281224819,
+          "sample_cost": 5.3392527259500735
+        },
+        {
+          "R": 3.39,
+          "minimum_sample_Wunit": 2.3350777251455859,
+          "sample_cost": 5.3467955400031766
+        },
+        {
+          "R": 3.4,
+          "minimum_sample_Wunit": 2.3455492424242426,
+          "sample_cost": 5.3543752049168907
+        },
+        {
+          "R": 3.41,
+          "minimum_sample_Wunit": 2.3560157506986203,
+          "sample_cost": 5.361991117361983
+        },
+        {
+          "R": 3.42,
+          "minimum_sample_Wunit": 2.3664773194719722,
+          "sample_cost": 5.3696426870439566
+        },
+        {
+          "R": 3.4299999999999997,
+          "minimum_sample_Wunit": 2.3769340170368514,
+          "sample_cost": 5.3773293363537293
+        },
+        {
+          "R": 3.44,
+          "minimum_sample_Wunit": 2.3873859105006638,
+          "sample_cost": 5.3850505000294548
+        },
+        {
+          "R": 3.45,
+          "minimum_sample_Wunit": 2.3978330658105937,
+          "sample_cost": 5.3928056248290908
+        },
+        {
+          "R": 3.46,
+          "minimum_sample_Wunit": 2.4082755477778992,
+          "sample_cost": 5.40059416921335
+        },
+        {
+          "R": 3.4699999999999998,
+          "minimum_sample_Wunit": 2.4187134201016223,
+          "sample_cost": 5.4084156030385877
+        },
+        {
+          "R": 3.48,
+          "minimum_sample_Wunit": 2.4291467453917051,
+          "sample_cost": 5.4162694072593274
+        },
+        {
+          "R": 3.49,
+          "minimum_sample_Wunit": 2.4395755851915459,
+          "sample_cost": 5.4241550736400219
+        },
+        {
+          "R": 3.5,
+          "minimum_sample_Wunit": 2.45,
+          "sample_cost": 5.4320721044757621
+        },
+        {
+          "R": 3.51,
+          "minimum_sample_Wunit": 2.4604200492928507,
+          "sample_cost": 5.4400200123215843
+        },
+        {
+          "R": 3.52,
+          "minimum_sample_Wunit": 2.470835791543756,
+          "sample_cost": 5.4479983197300692
+        },
+        {
+          "R": 3.53,
+          "minimum_sample_Wunit": 2.4812472842446924,
+          "sample_cost": 5.4560065589969478
+        },
+        {
+          "R": 3.54,
+          "minimum_sample_Wunit": 2.4916545839259081,
+          "sample_cost": 5.4640442719144309
+        },
+        {
+          "R": 3.55,
+          "minimum_sample_Wunit": 2.5020577461753932,
+          "sample_cost": 5.4721110095319867
+        },
+        {
+          "R": 3.56,
+          "minimum_sample_Wunit": 2.5124568256578943,
+          "sample_cost": 5.4802063319242942
+        },
+        {
+          "R": 3.57,
+          "minimum_sample_Wunit": 2.5228518761334708,
+          "sample_cost": 5.4883298079661405
+        },
+        {
+          "R": 3.58,
+          "minimum_sample_Wunit": 2.5332429504756098,
+          "sample_cost": 5.4964810151140266
+        },
+        {
+          "R": 3.59,
+          "minimum_sample_Wunit": 2.5436301006889241,
+          "sample_cost": 5.50465953919421
+        },
+        {
+          "R": 3.6,
+          "minimum_sample_Wunit": 2.5540133779264216,
+          "sample_cost": 5.5128649741970168
+        },
+        {
+          "R": 3.61,
+          "minimum_sample_Wunit": 2.5643928325063783,
+          "sample_cost": 5.5210969220771684
+        },
+        {
+          "R": 3.62,
+          "minimum_sample_Wunit": 2.5747685139288188,
+          "sample_cost": 5.5293549925599343
+        },
+        {
+          "R": 3.63,
+          "minimum_sample_Wunit": 2.5851404708916057,
+          "sample_cost": 5.5376388029529178
+        },
+        {
+          "R": 3.64,
+          "minimum_sample_Wunit": 2.5955087513061659,
+          "sample_cost": 5.5459479779632748
+        },
+        {
+          "R": 3.65,
+          "minimum_sample_Wunit": 2.6058734023128425,
+          "sample_cost": 5.5542821495201915
+        },
+        {
+          "R": 3.66,
+          "minimum_sample_Wunit": 2.6162344702959119,
+          "sample_cost": 5.562640956602432
+        },
+        {
+          "R": 3.67,
+          "minimum_sample_Wunit": 2.6265920008982349,
+          "sample_cost": 5.5710240450708106
+        },
+        {
+          "R": 3.68,
+          "minimum_sample_Wunit": 2.6369460390355917,
+          "sample_cost": 5.5794310675054106
+        },
+        {
+          "R": 3.69,
+          "minimum_sample_Wunit": 2.6472966289106772,
+          "sample_cost": 5.5878616830473851
+        },
+        {
+          "R": 3.7,
+          "minimum_sample_Wunit": 2.6576438140267933,
+          "sample_cost": 5.59631555724521
+        },
+        {
+          "R": 3.71,
+          "minimum_sample_Wunit": 2.6679876372012128,
+          "sample_cost": 5.6047923619052407
+        },
+        {
+          "R": 3.7199999999999998,
+          "minimum_sample_Wunit": 2.6783281405782642,
+          "sample_cost": 5.6132917749464077
+        },
+        {
+          "R": 3.73,
+          "minimum_sample_Wunit": 2.68866536564211,
+          "sample_cost": 5.6218134802589486
+        },
+        {
+          "R": 3.74,
+          "minimum_sample_Wunit": 2.6989993532292345,
+          "sample_cost": 5.6303571675670447
+        },
+        {
+          "R": 3.75,
+          "minimum_sample_Wunit": 2.70933014354067,
+          "sample_cost": 5.6389225322952035
+        },
+        {
+          "R": 3.76,
+          "minimum_sample_Wunit": 2.71965777615394,
+          "sample_cost": 5.6475092754383107
+        },
+        {
+          "R": 3.77,
+          "minimum_sample_Wunit": 2.7299822900347381,
+          "sample_cost": 5.6561171034352133
+        },
+        {
+          "R": 3.78,
+          "minimum_sample_Wunit": 2.7403037235483572,
+          "sample_cost": 5.6647457280457054
+        },
+        {
+          "R": 3.79,
+          "minimum_sample_Wunit": 2.7506221144708585,
+          "sample_cost": 5.6733948662308675
+        },
+        {
+          "R": 3.8,
+          "minimum_sample_Wunit": 2.7609375,
+          "sample_cost": 5.6820642400365831
+        },
+        {
+          "R": 3.81,
+          "minimum_sample_Wunit": 2.7712499167659308,
+          "sample_cost": 5.6907535764801809
+        },
+        {
+          "R": 3.82,
+          "minimum_sample_Wunit": 2.7815594008416467,
+          "sample_cost": 5.6994626074400889
+        },
+        {
+          "R": 3.83,
+          "minimum_sample_Wunit": 2.791865987753221,
+          "sample_cost": 5.7081910695484153
+        },
+        {
+          "R": 3.84,
+          "minimum_sample_Wunit": 2.8021697124898148,
+          "sample_cost": 5.7169387040863571
+        },
+        {
+          "R": 3.85,
+          "minimum_sample_Wunit": 2.8124706095134751,
+          "sample_cost": 5.7257052568823452
+        },
+        {
+          "R": 3.86,
+          "minimum_sample_Wunit": 2.8227687127687116,
+          "sample_cost": 5.7344904782128836
+        },
+        {
+          "R": 3.87,
+          "minimum_sample_Wunit": 2.8330640556918922,
+          "sample_cost": 5.7432941227059091
+        },
+        {
+          "R": 3.88,
+          "minimum_sample_Wunit": 2.8433566712204,
+          "sample_cost": 5.75211594924674
+        },
+        {
+          "R": 3.89,
+          "minimum_sample_Wunit": 2.8536465918016436,
+          "sample_cost": 5.7609557208863595
+        },
+        {
+          "R": 3.9,
+          "minimum_sample_Wunit": 2.8639338494018287,
+          "sample_cost": 5.7698132047521291
+        },
+        {
+          "R": 3.91,
+          "minimum_sample_Wunit": 2.8742184755145885,
+          "sample_cost": 5.7786881719607406
+        },
+        {
+          "R": 3.92,
+          "minimum_sample_Wunit": 2.8845005011693954,
+          "sample_cost": 5.7875803975334028
+        },
+        {
+          "R": 3.93,
+          "minimum_sample_Wunit": 2.8947799569398196,
+          "sample_cost": 5.7964896603131955
+        },
+        {
+          "R": 3.94,
+          "minimum_sample_Wunit": 2.9050568729516097,
+          "sample_cost": 5.8054157428844642
+        },
+        {
+          "R": 3.95,
+          "minimum_sample_Wunit": 2.9153312788906018,
+          "sample_cost": 5.8143584314942958
+        },
+        {
+          "R": 3.96,
+          "minimum_sample_Wunit": 2.9256032040104616,
+          "sample_cost": 5.82331751597593
+        },
+        {
+          "R": 3.97,
+          "minimum_sample_Wunit": 2.9358726771402828,
+          "sample_cost": 5.8322927896740806
+        },
+        {
+          "R": 3.98,
+          "minimum_sample_Wunit": 2.9461397266920035,
+          "sample_cost": 5.841284049372133
+        },
+        {
+          "R": 3.99,
+          "minimum_sample_Wunit": 2.9564043806676903,
+          "sample_cost": 5.8502910952211273
+        },
+        {
+          "R": 4,
+          "minimum_sample_Wunit": 2.9666666666666668,
+          "sample_cost": 5.8593137306704852
+        }
+      ]
+    },
+    {
+      "axis_weight": 0.5,
+      "unit_positive_mass": 2.2367810855284986,
+      "best_sample": {
+        "R": 2.46,
+        "minimum_sample_Wunit": 1.3837865230817958,
+        "sample_cost": 4.8909655468526845
+      },
+      "R_scan": [
+        {
+          "R": 1.3,
+          "minimum_sample_Wunit": 0.018866767761025027,
+          "sample_cost": 100.18038284099246
+        },
+        {
+          "R": 1.31,
+          "minimum_sample_Wunit": 0.04204286087190362,
+          "sample_cost": 45.650318999113047
+        },
+        {
+          "R": 1.32,
+          "minimum_sample_Wunit": 0.061325555721459313,
+          "sample_cost": 31.776046034761592
+        },
+        {
+          "R": 1.33,
+          "minimum_sample_Wunit": 0.079750893477575024,
+          "sample_cost": 24.806255388874863
+        },
+        {
+          "R": 1.34,
+          "minimum_sample_Wunit": 0.10071651183676772,
+          "sample_cost": 19.938955608809881
+        },
+        {
+          "R": 1.35,
+          "minimum_sample_Wunit": 0.11776589161424847,
+          "sample_cost": 17.307785269985892
+        },
+        {
+          "R": 1.36,
+          "minimum_sample_Wunit": 0.13414217605082768,
+          "sample_cost": 15.420766300324173
+        },
+        {
+          "R": 1.37,
+          "minimum_sample_Wunit": 0.15344238632112209,
+          "sample_cost": 13.680100134269534
+        },
+        {
+          "R": 1.3800000000000001,
+          "minimum_sample_Wunit": 0.16875087811828288,
+          "sample_cost": 12.621344394707966
+        },
+        {
+          "R": 1.3900000000000001,
+          "minimum_sample_Wunit": 0.18433890887064175,
+          "sample_cost": 11.7221175980333
+        },
+        {
+          "R": 1.4000000000000001,
+          "minimum_sample_Wunit": 0.2015382958088171,
+          "sample_cost": 10.876570405742358
+        },
+        {
+          "R": 1.4100000000000001,
+          "minimum_sample_Wunit": 0.21545933617172666,
+          "sample_cost": 10.319683878991624
+        },
+        {
+          "R": 1.42,
+          "minimum_sample_Wunit": 0.23114612123799311,
+          "sample_cost": 9.7562644718052987
+        },
+        {
+          "R": 1.4300000000000002,
+          "minimum_sample_Wunit": 0.24595700345392563,
+          "sample_cost": 9.2983602368819334
+        },
+        {
+          "R": 1.44,
+          "minimum_sample_Wunit": 0.25875103023139912,
+          "sample_cost": 8.9626488729416778
+        },
+        {
+          "R": 1.4500000000000002,
+          "minimum_sample_Wunit": 0.27451685219542377,
+          "sample_cost": 8.56565306412556
+        },
+        {
+          "R": 1.46,
+          "minimum_sample_Wunit": 0.28740481039586774,
+          "sample_cost": 8.29478559413336
+        },
+        {
+          "R": 1.47,
+          "minimum_sample_Wunit": 0.29926809131245646,
+          "sample_cost": 8.0754687653487043
+        },
+        {
+          "R": 1.48,
+          "minimum_sample_Wunit": 0.31504390531522264,
+          "sample_cost": 7.7758134772348617
+        },
+        {
+          "R": 1.49,
+          "minimum_sample_Wunit": 0.32641666133716674,
+          "sample_cost": 7.6066547394350037
+        },
+        {
+          "R": 1.5,
+          "minimum_sample_Wunit": 0.3375,
+          "sample_cost": 7.4559369517616618
+        },
+        {
+          "R": 1.51,
+          "minimum_sample_Wunit": 0.35273102971130516,
+          "sample_cost": 7.2294242971588369
+        },
+        {
+          "R": 1.52,
+          "minimum_sample_Wunit": 0.36340531250981556,
+          "sample_cost": 7.110323985516116
+        },
+        {
+          "R": 1.53,
+          "minimum_sample_Wunit": 0.37491497186211176,
+          "sample_cost": 6.983024466997569
+        },
+        {
+          "R": 1.54,
+          "minimum_sample_Wunit": 0.388617749975261,
+          "sample_cost": 6.8251514795413772
+        },
+        {
+          "R": 1.55,
+          "minimum_sample_Wunit": 0.3986944536160914,
+          "sample_cost": 6.7393294655119425
+        },
+        {
+          "R": 1.56,
+          "minimum_sample_Wunit": 0.41058340348995281,
+          "sample_cost": 6.6288973244815512
+        },
+        {
+          "R": 1.57,
+          "minimum_sample_Wunit": 0.42298171552016972,
+          "sample_cost": 6.5173522819289458
+        },
+        {
+          "R": 1.58,
+          "minimum_sample_Wunit": 0.43254158482940475,
+          "sample_cost": 6.454755447520319
+        },
+        {
+          "R": 1.59,
+          "minimum_sample_Wunit": 0.44477635388720743,
+          "sample_cost": 6.3569097287921723
+        },
+        {
+          "R": 1.6,
+          "minimum_sample_Wunit": 0.45604572561094309,
+          "sample_cost": 6.2780542140614193
+        },
+        {
+          "R": 1.61,
+          "minimum_sample_Wunit": 0.46515416938151555,
+          "sample_cost": 6.2322995615707182
+        },
+        {
+          "R": 1.62,
+          "minimum_sample_Wunit": 0.4777112921840711,
+          "sample_cost": 6.1440962113567661
+        },
+        {
+          "R": 1.63,
+          "minimum_sample_Wunit": 0.4879906817341087,
+          "sample_cost": 6.0891569128145511
+        },
+        {
+          "R": 1.6400000000000001,
+          "minimum_sample_Wunit": 0.49714196851837317,
+          "sample_cost": 6.0506322022731345
+        },
+        {
+          "R": 1.65,
+          "minimum_sample_Wunit": 0.50956476124734285,
+          "sample_cost": 5.975331271382232
+        },
+        {
+          "R": 1.6600000000000001,
+          "minimum_sample_Wunit": 0.51896502480805684,
+          "sample_cost": 5.9384290507457731
+        },
+        {
+          "R": 1.67,
+          "minimum_sample_Wunit": 0.52858366817169067,
+          "sample_cost": 5.9008243586180917
+        },
+        {
+          "R": 1.6800000000000002,
+          "minimum_sample_Wunit": 0.540481602790899,
+          "sample_cost": 5.8402459058703968
+        },
+        {
+          "R": 1.69,
+          "minimum_sample_Wunit": 0.54909172400082207,
+          "sample_cost": 5.8173071812391584
+        },
+        {
+          "R": 1.7000000000000002,
+          "minimum_sample_Wunit": 0.55914746654926484,
+          "sample_cost": 5.7804941664774692
+        },
+        {
+          "R": 1.71,
+          "minimum_sample_Wunit": 0.57058178784456071,
+          "sample_cost": 5.7314934611755266
+        },
+        {
+          "R": 1.7200000000000002,
+          "minimum_sample_Wunit": 0.57847352892996007,
+          "sample_cost": 5.7196162248495162
+        },
+        {
+          "R": 1.73,
+          "minimum_sample_Wunit": 0.58894341350869994,
+          "sample_cost": 5.6834510390354787
+        },
+        {
+          "R": 1.7400000000000002,
+          "minimum_sample_Wunit": 0.59957361307092483,
+          "sample_cost": 5.6474119832096417
+        },
+        {
+          "R": 1.75,
+          "minimum_sample_Wunit": 0.60719696969696979,
+          "sample_cost": 5.6407907287891161
+        },
+        {
+          "R": 1.76,
+          "minimum_sample_Wunit": 0.61806382273736349,
+          "sample_cost": 5.6051275253796069
+        },
+        {
+          "R": 1.77,
+          "minimum_sample_Wunit": 0.627955716617208,
+          "sample_cost": 5.5797019418838767
+        },
+        {
+          "R": 1.78,
+          "minimum_sample_Wunit": 0.63607032383010309,
+          "sample_cost": 5.57093840561053
+        },
+        {
+          "R": 1.79,
+          "minimum_sample_Wunit": 0.64658671368015752,
+          "sample_cost": 5.5420797586068611
+        },
+        {
+          "R": 1.8,
+          "minimum_sample_Wunit": 0.6557952420314932,
+          "sample_cost": 5.5254828432899075
+        },
+        {
+          "R": 1.81,
+          "minimum_sample_Wunit": 0.6643780950071092,
+          "sample_cost": 5.5148706507410523
+        },
+        {
+          "R": 1.82,
+          "minimum_sample_Wunit": 0.67457847945366067,
+          "sample_cost": 5.4916617512800148
+        },
+        {
+          "R": 1.83,
+          "minimum_sample_Wunit": 0.68314882937327071,
+          "sample_cost": 5.4825214179159936
+        },
+        {
+          "R": 1.84,
+          "minimum_sample_Wunit": 0.6921819581609947,
+          "sample_cost": 5.4702711865569285
+        },
+        {
+          "R": 1.85,
+          "minimum_sample_Wunit": 0.70209597692522929,
+          "sample_cost": 5.4518068161759015
+        },
+        {
+          "R": 1.86,
+          "minimum_sample_Wunit": 0.71006531385908045,
+          "sample_cost": 5.4490535535651805
+        },
+        {
+          "R": 1.87,
+          "minimum_sample_Wunit": 0.719534886731277,
+          "sample_cost": 5.43531656506448
+        },
+        {
+          "R": 1.8800000000000001,
+          "minimum_sample_Wunit": 0.72918818021469534,
+          "sample_cost": 5.4208771365193087
+        },
+        {
+          "R": 1.8900000000000001,
+          "minimum_sample_Wunit": 0.73692105295119981,
+          "sample_cost": 5.4212087465938241
+        },
+        {
+          "R": 1.9,
+          "minimum_sample_Wunit": 0.74648263521094838,
+          "sample_cost": 5.4085516111677725
+        },
+        {
+          "R": 1.9100000000000001,
+          "minimum_sample_Wunit": 0.75589750068303385,
+          "sample_cost": 5.3975579167433994
+        },
+        {
+          "R": 1.92,
+          "minimum_sample_Wunit": 0.76373225602325845,
+          "sample_cost": 5.3982725809089995
+        },
+        {
+          "R": 1.9300000000000002,
+          "minimum_sample_Wunit": 0.77306492769781032,
+          "sample_cost": 5.3888008412806858
+        },
+        {
+          "R": 1.94,
+          "minimum_sample_Wunit": 0.7822326855633519,
+          "sample_cost": 5.3809751553863361
+        },
+        {
+          "R": 1.9500000000000002,
+          "minimum_sample_Wunit": 0.7901943352577574,
+          "sample_cost": 5.3818153954164405
+        },
+        {
+          "R": 1.96,
+          "minimum_sample_Wunit": 0.79931641845833235,
+          "sample_cost": 5.3751042889495055
+        },
+        {
+          "R": 1.9700000000000002,
+          "minimum_sample_Wunit": 0.80792324299588669,
+          "sample_cost": 5.372245315432612
+        },
+        {
+          "R": 1.98,
+          "minimum_sample_Wunit": 0.81633986192331776,
+          "sample_cost": 5.3709716851543634
+        },
+        {
+          "R": 1.9900000000000002,
+          "minimum_sample_Wunit": 0.825267474071822,
+          "sample_cost": 5.3666702342557855
+        },
+        {
+          "R": 2,
+          "minimum_sample_Wunit": 0.83333333333333326,
+          "sample_cost": 5.3682746052683976
+        },
+        {
+          "R": 2.01,
+          "minimum_sample_Wunit": 0.84635406730041751,
+          "sample_cost": 5.3386753917707708
+        },
+        {
+          "R": 2.02,
+          "minimum_sample_Wunit": 0.85930658356057654,
+          "sample_cost": 5.3106549606384368
+        },
+        {
+          "R": 2.0300000000000002,
+          "minimum_sample_Wunit": 0.872192957159794,
+          "sample_cost": 5.2841238281551774
+        },
+        {
+          "R": 2.04,
+          "minimum_sample_Wunit": 0.88501518218623487,
+          "sample_cost": 5.2589991408625245
+        },
+        {
+          "R": 2.05,
+          "minimum_sample_Wunit": 0.89777517564402787,
+          "sample_cost": 5.2352040727737208
+        },
+        {
+          "R": 2.06,
+          "minimum_sample_Wunit": 0.91047478110741153,
+          "sample_cost": 5.2126672871727431
+        },
+        {
+          "R": 2.0700000000000003,
+          "minimum_sample_Wunit": 0.923115772169625,
+          "sample_cost": 5.1913224550668327
+        },
+        {
+          "R": 2.08,
+          "minimum_sample_Wunit": 0.93569985569985592,
+          "sample_cost": 5.17110782345501
+        },
+        {
+          "R": 2.09,
+          "minimum_sample_Wunit": 0.94822867492057816,
+          "sample_cost": 5.151965827502206
+        },
+        {
+          "R": 2.1,
+          "minimum_sample_Wunit": 0.96070381231671564,
+          "sample_cost": 5.13384274149666
+        },
+        {
+          "R": 2.1100000000000003,
+          "minimum_sample_Wunit": 0.97312679238724287,
+          "sample_cost": 5.11668836414003
+        },
+        {
+          "R": 2.12,
+          "minimum_sample_Wunit": 0.9854990842490845,
+          "sample_cost": 5.100455734293913
+        },
+        {
+          "R": 2.13,
+          "minimum_sample_Wunit": 0.99782210410246253,
+          "sample_cost": 5.0851008737987327
+        },
+        {
+          "R": 2.14,
+          "minimum_sample_Wunit": 1.0100972175662084,
+          "sample_cost": 5.0705825544039191
+        },
+        {
+          "R": 2.1500000000000004,
+          "minimum_sample_Wunit": 1.0223257418909597,
+          "sample_cost": 5.0568620862127771
+        },
+        {
+          "R": 2.16,
+          "minimum_sample_Wunit": 1.0345089480576171,
+          "sample_cost": 5.0439031253601758
+        },
+        {
+          "R": 2.17,
+          "minimum_sample_Wunit": 1.0466480627679366,
+          "sample_cost": 5.0316714989136129
+        },
+        {
+          "R": 2.18,
+          "minimum_sample_Wunit": 1.0587442703336531,
+          "sample_cost": 5.0201350452246931
+        },
+        {
+          "R": 2.1900000000000004,
+          "minimum_sample_Wunit": 1.0707987144701145,
+          "sample_cost": 5.0092634681635326
+        },
+        {
+          "R": 2.2,
+          "minimum_sample_Wunit": 1.0828125000000002,
+          "sample_cost": 4.9990282038478195
+        },
+        {
+          "R": 2.21,
+          "minimum_sample_Wunit": 1.0947866944723361,
+          "sample_cost": 4.9894022986346185
+        },
+        {
+          "R": 2.2199999999999998,
+          "minimum_sample_Wunit": 1.1067223297016593,
+          "sample_cost": 4.98036029727996
+        },
+        {
+          "R": 2.23,
+          "minimum_sample_Wunit": 1.1186204032318958,
+          "sample_cost": 4.9718781402911514
+        },
+        {
+          "R": 2.24,
+          "minimum_sample_Wunit": 1.1304818797291918,
+          "sample_cost": 4.9639330696022936
+        },
+        {
+          "R": 2.25,
+          "minimum_sample_Wunit": 1.1423076923076925,
+          "sample_cost": 4.9565035417961036
+        },
+        {
+          "R": 2.26,
+          "minimum_sample_Wunit": 1.1540987437919952,
+          "sample_cost": 4.9495691481769883
+        },
+        {
+          "R": 2.27,
+          "minimum_sample_Wunit": 1.165855907919767,
+          "sample_cost": 4.9431105410725422
+        },
+        {
+          "R": 2.2800000000000002,
+          "minimum_sample_Wunit": 1.177580030487805,
+          "sample_cost": 4.9371093658044867
+        },
+        {
+          "R": 2.29,
+          "minimum_sample_Wunit": 1.1892719304446171,
+          "sample_cost": 4.9315481978266735
+        },
+        {
+          "R": 2.3,
+          "minimum_sample_Wunit": 1.2009324009324005,
+          "sample_cost": 4.9264104845780583
+        },
+        {
+          "R": 2.31,
+          "minimum_sample_Wunit": 1.2125622102811282,
+          "sample_cost": 4.9216804916431363
+        },
+        {
+          "R": 2.3200000000000003,
+          "minimum_sample_Wunit": 1.224162102957284,
+          "sample_cost": 4.9173432528521479
+        },
+        {
+          "R": 2.33,
+          "minimum_sample_Wunit": 1.2357328004696426,
+          "sample_cost": 4.9133845239887615
+        },
+        {
+          "R": 2.34,
+          "minimum_sample_Wunit": 1.2472750022343368,
+          "sample_cost": 4.9097907398046114
+        },
+        {
+          "R": 2.35,
+          "minimum_sample_Wunit": 1.2587893864013266,
+          "sample_cost": 4.9065489740683583
+        },
+        {
+          "R": 2.3600000000000003,
+          "minimum_sample_Wunit": 1.2702766106442582,
+          "sample_cost": 4.9036469024022651
+        },
+        {
+          "R": 2.37,
+          "minimum_sample_Wunit": 1.2817373129155931,
+          "sample_cost": 4.9010727676819972
+        },
+        {
+          "R": 2.38,
+          "minimum_sample_Wunit": 1.2931721121687678,
+          "sample_cost": 4.8988153477957557
+        },
+        {
+          "R": 2.39,
+          "minimum_sample_Wunit": 1.3045816090490441,
+          "sample_cost": 4.8968639255771595
+        },
+        {
+          "R": 2.4000000000000004,
+          "minimum_sample_Wunit": 1.3159663865546221,
+          "sample_cost": 4.8952082607428293
+        },
+        {
+          "R": 2.41,
+          "minimum_sample_Wunit": 1.3273270106694954,
+          "sample_cost": 4.8938385636804256
+        },
+        {
+          "R": 2.42,
+          "minimum_sample_Wunit": 1.3386640309694422,
+          "sample_cost": 4.89274547094637
+        },
+        {
+          "R": 2.43,
+          "minimum_sample_Wunit": 1.3499779812024713,
+          "sample_cost": 4.89192002234453
+        },
+        {
+          "R": 2.4400000000000004,
+          "minimum_sample_Wunit": 1.3612693798449613,
+          "sample_cost": 4.8913536394681749
+        },
+        {
+          "R": 2.45,
+          "minimum_sample_Wunit": 1.372538730634683,
+          "sample_cost": 4.8910381055973184
+        },
+        {
+          "R": 2.46,
+          "minimum_sample_Wunit": 1.3837865230817958,
+          "sample_cost": 4.8909655468526845
+        },
+        {
+          "R": 2.4699999999999998,
+          "minimum_sample_Wunit": 1.3950132329588893,
+          "sample_cost": 4.8911284145155376
+        },
+        {
+          "R": 2.48,
+          "minimum_sample_Wunit": 1.4062193227710467,
+          "sample_cost": 4.8915194684301522
+        },
+        {
+          "R": 2.49,
+          "minimum_sample_Wunit": 1.4174052422068812,
+          "sample_cost": 4.8921317614123323
+        },
+        {
+          "R": 2.5,
+          "minimum_sample_Wunit": 1.4285714285714286,
+          "sample_cost": 4.89295862459359
+        },
+        {
+          "R": 2.51,
+          "minimum_sample_Wunit": 1.4397183072017508,
+          "sample_cost": 4.8939936536360786
+        },
+        {
+          "R": 2.52,
+          "minimum_sample_Wunit": 1.4508462918660288,
+          "sample_cost": 4.8952306957585749
+        },
+        {
+          "R": 2.5300000000000002,
+          "minimum_sample_Wunit": 1.4619557851469205,
+          "sample_cost": 4.8966638375183589
+        },
+        {
+          "R": 2.54,
+          "minimum_sample_Wunit": 1.4730471788098909,
+          "sample_cost": 4.8982873932981068
+        },
+        {
+          "R": 2.55,
+          "minimum_sample_Wunit": 1.4841208541572009,
+          "sample_cost": 4.9000958944508106
+        },
+        {
+          "R": 2.56,
+          "minimum_sample_Wunit": 1.4951771823681939,
+          "sample_cost": 4.9020840790592448
+        },
+        {
+          "R": 2.5700000000000003,
+          "minimum_sample_Wunit": 1.5062165248264914,
+          "sample_cost": 4.9042468822698124
+        },
+        {
+          "R": 2.58,
+          "minimum_sample_Wunit": 1.5172392334346934,
+          "sample_cost": 4.9065794271634759
+        },
+        {
+          "R": 2.59,
+          "minimum_sample_Wunit": 1.5282456509171178,
+          "sample_cost": 4.9090770161293493
+        },
+        {
+          "R": 2.5999999999999996,
+          "minimum_sample_Wunit": 1.5392361111111108,
+          "sample_cost": 4.9117351227089143
+        },
+        {
+          "R": 2.61,
+          "minimum_sample_Wunit": 1.5502109392474317,
+          "sample_cost": 4.9145493838811865
+        },
+        {
+          "R": 2.62,
+          "minimum_sample_Wunit": 1.5611704522201761,
+          "sample_cost": 4.9175155927612924
+        },
+        {
+          "R": 2.63,
+          "minimum_sample_Wunit": 1.5721149588466932,
+          "sample_cost": 4.9206296916868162
+        },
+        {
+          "R": 2.6399999999999997,
+          "minimum_sample_Wunit": 1.5830447601179307,
+          "sample_cost": 4.923887765668125
+        },
+        {
+          "R": 2.65,
+          "minimum_sample_Wunit": 1.5939601494396014,
+          "sample_cost": 4.9272860361805062
+        },
+        {
+          "R": 2.66,
+          "minimum_sample_Wunit": 1.6048614128645728,
+          "sample_cost": 4.9308208552774833
+        },
+        {
+          "R": 2.67,
+          "minimum_sample_Wunit": 1.6157488293168432,
+          "sample_cost": 4.9344887000061055
+        },
+        {
+          "R": 2.6799999999999997,
+          "minimum_sample_Wunit": 1.6266226708074532,
+          "sample_cost": 4.9382861671062948
+        },
+        {
+          "R": 2.69,
+          "minimum_sample_Wunit": 1.6374832026426771,
+          "sample_cost": 4.9422099679775151
+        },
+        {
+          "R": 2.7,
+          "minimum_sample_Wunit": 1.6483306836248017,
+          "sample_cost": 4.9462569238971987
+        },
+        {
+          "R": 2.71,
+          "minimum_sample_Wunit": 1.6591653662458032,
+          "sample_cost": 4.9504239614763588
+        },
+        {
+          "R": 2.7199999999999998,
+          "minimum_sample_Wunit": 1.6699874968742185,
+          "sample_cost": 4.9547081083387488
+        },
+        {
+          "R": 2.73,
+          "minimum_sample_Wunit": 1.6807973159354712,
+          "sample_cost": 4.9591064890108854
+        },
+        {
+          "R": 2.74,
+          "minimum_sample_Wunit": 1.6915950580859302,
+          "sample_cost": 4.9636163210110036
+        },
+        {
+          "R": 2.75,
+          "minimum_sample_Wunit": 1.7023809523809521,
+          "sample_cost": 4.9682349111258
+        },
+        {
+          "R": 2.76,
+          "minimum_sample_Wunit": 1.7131552224371369,
+          "sample_cost": 4.9729596518645636
+        },
+        {
+          "R": 2.77,
+          "minimum_sample_Wunit": 1.7239180865890389,
+          "sample_cost": 4.9777880180808642
+        },
+        {
+          "R": 2.7800000000000002,
+          "minimum_sample_Wunit": 1.7346697580405448,
+          "sample_cost": 4.9827175637526748
+        },
+        {
+          "R": 2.79,
+          "minimum_sample_Wunit": 1.745410445011129,
+          "sample_cost": 4.987745918912319
+        },
+        {
+          "R": 2.8,
+          "minimum_sample_Wunit": 1.7561403508771929,
+          "sample_cost": 4.992870786718159
+        },
+        {
+          "R": 2.81,
+          "minimum_sample_Wunit": 1.7668596743086669,
+          "sample_cost": 4.9980899406604742
+        },
+        {
+          "R": 2.8200000000000003,
+          "minimum_sample_Wunit": 1.7775686094010705,
+          "sample_cost": 5.0034012218943849
+        },
+        {
+          "R": 2.83,
+          "minimum_sample_Wunit": 1.7882673458031928,
+          "sample_cost": 5.008802536693171
+        },
+        {
+          "R": 2.84,
+          "minimum_sample_Wunit": 1.7989560688405795,
+          "sample_cost": 5.0142918540156476
+        },
+        {
+          "R": 2.8499999999999996,
+          "minimum_sample_Wunit": 1.8096349596349592,
+          "sample_cost": 5.0198672031817235
+        },
+        {
+          "R": 2.86,
+          "minimum_sample_Wunit": 1.8203041952197891,
+          "sample_cost": 5.0255266716505576
+        },
+        {
+          "R": 2.87,
+          "minimum_sample_Wunit": 1.8309639486520473,
+          "sample_cost": 5.0312684028960586
+        },
+        {
+          "R": 2.88,
+          "minimum_sample_Wunit": 1.8416143891204211,
+          "sample_cost": 5.0370905943748125
+        },
+        {
+          "R": 2.8899999999999997,
+          "minimum_sample_Wunit": 1.8522556820500262,
+          "sample_cost": 5.0429914955817656
+        },
+        {
+          "R": 2.9,
+          "minimum_sample_Wunit": 1.8628879892037786,
+          "sample_cost": 5.0489694061892765
+        },
+        {
+          "R": 2.91,
+          "minimum_sample_Wunit": 1.8735114687805463,
+          "sample_cost": 5.0550226742654036
+        },
+        {
+          "R": 2.92,
+          "minimum_sample_Wunit": 1.8841262755102044,
+          "sample_cost": 5.0611496945675114
+        },
+        {
+          "R": 2.9299999999999997,
+          "minimum_sample_Wunit": 1.894732560745692,
+          "sample_cost": 5.0673489069075375
+        },
+        {
+          "R": 2.94,
+          "minimum_sample_Wunit": 1.9053304725522007,
+          "sample_cost": 5.073618794585367
+        },
+        {
+          "R": 2.95,
+          "minimum_sample_Wunit": 1.9159201557935734,
+          "sample_cost": 5.0799578828871184
+        },
+        {
+          "R": 2.96,
+          "minimum_sample_Wunit": 1.9265017522160379,
+          "sample_cost": 5.0863647376451491
+        },
+        {
+          "R": 2.9699999999999998,
+          "minimum_sample_Wunit": 1.9370754005293509,
+          "sample_cost": 5.0928379638568879
+        },
+        {
+          "R": 2.98,
+          "minimum_sample_Wunit": 1.9476412364854574,
+          "sample_cost": 5.0993762043596975
+        },
+        {
+          "R": 2.99,
+          "minimum_sample_Wunit": 1.9581993929547488,
+          "sample_cost": 5.1059781385591094
+        },
+        {
+          "R": 3,
+          "minimum_sample_Wunit": 1.96875,
+          "sample_cost": 5.1126424812079971
+        },
+        {
+          "R": 3.01,
+          "minimum_sample_Wunit": 1.9792931849480775,
+          "sample_cost": 5.1193679812342632
+        },
+        {
+          "R": 3.02,
+          "minimum_sample_Wunit": 1.9898290724594845,
+          "sample_cost": 5.12615342061485
+        },
+        {
+          "R": 3.0300000000000002,
+          "minimum_sample_Wunit": 2.0003577845958267,
+          "sample_cost": 5.1329976132939237
+        },
+        {
+          "R": 3.04,
+          "minimum_sample_Wunit": 2.0108794408852648,
+          "sample_cost": 5.1398994041432511
+        },
+        {
+          "R": 3.05,
+          "minimum_sample_Wunit": 2.0213941583860278,
+          "sample_cost": 5.1468576679628448
+        },
+        {
+          "R": 3.06,
+          "minimum_sample_Wunit": 2.0319020517480508,
+          "sample_cost": 5.1538713085200616
+        },
+        {
+          "R": 3.07,
+          "minimum_sample_Wunit": 2.0424032332727977,
+          "sample_cost": 5.16093925762547
+        },
+        {
+          "R": 3.08,
+          "minimum_sample_Wunit": 2.0528978129713424,
+          "sample_cost": 5.168060474243819
+        },
+        {
+          "R": 3.09,
+          "minimum_sample_Wunit": 2.0633858986207456,
+          "sample_cost": 5.175233943638605
+        },
+        {
+          "R": 3.1,
+          "minimum_sample_Wunit": 2.0738675958188155,
+          "sample_cost": 5.1824586765487117
+        },
+        {
+          "R": 3.11,
+          "minimum_sample_Wunit": 2.0843430080372691,
+          "sample_cost": 5.1897337083957913
+        },
+        {
+          "R": 3.12,
+          "minimum_sample_Wunit": 2.0948122366733837,
+          "sample_cost": 5.1970580985210058
+        },
+        {
+          "R": 3.13,
+          "minimum_sample_Wunit": 2.10527538110016,
+          "sample_cost": 5.2044309294498881
+        },
+        {
+          "R": 3.14,
+          "minimum_sample_Wunit": 2.1157325387150663,
+          "sample_cost": 5.2118513061841343
+        },
+        {
+          "R": 3.15,
+          "minimum_sample_Wunit": 2.1261838049873916,
+          "sample_cost": 5.21931835551916
+        },
+        {
+          "R": 3.16,
+          "minimum_sample_Wunit": 2.136629273504274,
+          "sample_cost": 5.2268312253863494
+        },
+        {
+          "R": 3.17,
+          "minimum_sample_Wunit": 2.1470690360154272,
+          "sample_cost": 5.2343890842189547
+        },
+        {
+          "R": 3.1799999999999997,
+          "minimum_sample_Wunit": 2.1575031824766246,
+          "sample_cost": 5.2419911203406651
+        },
+        {
+          "R": 3.19,
+          "minimum_sample_Wunit": 2.1679318010919668,
+          "sample_cost": 5.2496365413759083
+        },
+        {
+          "R": 3.2,
+          "minimum_sample_Wunit": 2.178354978354978,
+          "sample_cost": 5.2573245736809753
+        },
+        {
+          "R": 3.21,
+          "minimum_sample_Wunit": 2.1887727990885741,
+          "sample_cost": 5.2650544617951249
+        },
+        {
+          "R": 3.2199999999999998,
+          "minimum_sample_Wunit": 2.1991853464839242,
+          "sample_cost": 5.2728254679108764
+        },
+        {
+          "R": 3.23,
+          "minimum_sample_Wunit": 2.2095927021382606,
+          "sample_cost": 5.2806368713626535
+        },
+        {
+          "R": 3.24,
+          "minimum_sample_Wunit": 2.2199949460916439,
+          "sample_cost": 5.2884879681331167
+        },
+        {
+          "R": 3.25,
+          "minimum_sample_Wunit": 2.2303921568627452,
+          "sample_cost": 5.2963780703764094
+        },
+        {
+          "R": 3.26,
+          "minimum_sample_Wunit": 2.2407844114836513,
+          "sample_cost": 5.3043065059577037
+        },
+        {
+          "R": 3.27,
+          "minimum_sample_Wunit": 2.2511717855337414,
+          "sample_cost": 5.3122726180083424
+        },
+        {
+          "R": 3.2800000000000002,
+          "minimum_sample_Wunit": 2.2615543531726514,
+          "sample_cost": 5.3202757644960075
+        },
+        {
+          "R": 3.29,
+          "minimum_sample_Wunit": 2.2719321871723626,
+          "sample_cost": 5.3283153178093112
+        },
+        {
+          "R": 3.3,
+          "minimum_sample_Wunit": 2.2823053589484328,
+          "sample_cost": 5.3363906643562578
+        },
+        {
+          "R": 3.31,
+          "minimum_sample_Wunit": 2.2926739385904122,
+          "sample_cost": 5.3445012041760016
+        },
+        {
+          "R": 3.32,
+          "minimum_sample_Wunit": 2.3030379948914428,
+          "sample_cost": 5.3526463505634556
+        },
+        {
+          "R": 3.33,
+          "minimum_sample_Wunit": 2.313397595377098,
+          "sample_cost": 5.3608255297062017
+        },
+        {
+          "R": 3.34,
+          "minimum_sample_Wunit": 2.3237528063334514,
+          "sample_cost": 5.36903818033326
+        },
+        {
+          "R": 3.35,
+          "minimum_sample_Wunit": 2.3341036928344341,
+          "sample_cost": 5.377283753375254
+        },
+        {
+          "R": 3.36,
+          "minimum_sample_Wunit": 2.3444503187684651,
+          "sample_cost": 5.3855617116355763
+        },
+        {
+          "R": 3.37,
+          "minimum_sample_Wunit": 2.3547927468644096,
+          "sample_cost": 5.3938715294720847
+        },
+        {
+          "R": 3.38,
+          "minimum_sample_Wunit": 2.3651310387168563,
+          "sample_cost": 5.4022126924889982
+        },
+        {
+          "R": 3.39,
+          "minimum_sample_Wunit": 2.3754652548107629,
+          "sample_cost": 5.4105846972385683
+        },
+        {
+          "R": 3.4,
+          "minimum_sample_Wunit": 2.3857954545454545,
+          "sample_cost": 5.4189870509322
+        },
+        {
+          "R": 3.41,
+          "minimum_sample_Wunit": 2.3961216962580334,
+          "sample_cost": 5.4274192711606393
+        },
+        {
+          "R": 3.42,
+          "minimum_sample_Wunit": 2.4064440372461768,
+          "sample_cost": 5.4358808856229288
+        },
+        {
+          "R": 3.4299999999999997,
+          "minimum_sample_Wunit": 2.416762533790374,
+          "sample_cost": 5.4443714318638126
+        },
+        {
+          "R": 3.44,
+          "minimum_sample_Wunit": 2.427077241175601,
+          "sample_cost": 5.45289045701924
+        },
+        {
+          "R": 3.45,
+          "minimum_sample_Wunit": 2.4373882137124507,
+          "sample_cost": 5.4614375175697436
+        },
+        {
+          "R": 3.46,
+          "minimum_sample_Wunit": 2.4476955047577382,
+          "sample_cost": 5.4700121791013636
+        },
+        {
+          "R": 3.4699999999999998,
+          "minimum_sample_Wunit": 2.457999166734596,
+          "sample_cost": 5.4786140160738688
+        },
+        {
+          "R": 3.48,
+          "minimum_sample_Wunit": 2.4682992511520738,
+          "sample_cost": 5.4872426115960033
+        },
+        {
+          "R": 3.49,
+          "minimum_sample_Wunit": 2.4785958086242523,
+          "sample_cost": 5.495897557207523
+        },
+        {
+          "R": 3.5,
+          "minimum_sample_Wunit": 2.4888888888888889,
+          "sample_cost": 5.504578452667789
+        },
+        {
+          "R": 3.51,
+          "minimum_sample_Wunit": 2.4991785408256111,
+          "sample_cost": 5.51328490575067
+        },
+        {
+          "R": 3.52,
+          "minimum_sample_Wunit": 2.5094648124736616,
+          "sample_cost": 5.5220165320455532
+        },
+        {
+          "R": 3.53,
+          "minimum_sample_Wunit": 2.519747751049219,
+          "sample_cost": 5.5307729547642381
+        },
+        {
+          "R": 3.54,
+          "minimum_sample_Wunit": 2.5300274029622951,
+          "sample_cost": 5.5395538045535293
+        },
+        {
+          "R": 3.55,
+          "minimum_sample_Wunit": 2.5403038138332255,
+          "sample_cost": 5.5483587193133177
+        },
+        {
+          "R": 3.56,
+          "minimum_sample_Wunit": 2.5505770285087719,
+          "sample_cost": 5.5571873440199626
+        },
+        {
+          "R": 3.57,
+          "minimum_sample_Wunit": 2.5608470910778296,
+          "sample_cost": 5.5660393305548119
+        },
+        {
+          "R": 3.58,
+          "minimum_sample_Wunit": 2.5711140448867673,
+          "sample_cost": 5.5749143375376748
+        },
+        {
+          "R": 3.59,
+          "minimum_sample_Wunit": 2.5813779325544028,
+          "sample_cost": 5.583812030165074
+        },
+        {
+          "R": 3.6,
+          "minimum_sample_Wunit": 2.5916387959866221,
+          "sample_cost": 5.592732080053139
+        },
+        {
+          "R": 3.61,
+          "minimum_sample_Wunit": 2.6018966763906546,
+          "sample_cost": 5.601674165084968
+        },
+        {
+          "R": 3.62,
+          "minimum_sample_Wunit": 2.6121516142890187,
+          "sample_cost": 5.6106379692623189
+        },
+        {
+          "R": 3.63,
+          "minimum_sample_Wunit": 2.622403649533132,
+          "sample_cost": 5.6196231825614866
+        },
+        {
+          "R": 3.64,
+          "minimum_sample_Wunit": 2.6326528213166149,
+          "sample_cost": 5.6286295007932194
+        },
+        {
+          "R": 3.65,
+          "minimum_sample_Wunit": 2.6428991681882734,
+          "sample_cost": 5.6376566254665716
+        },
+        {
+          "R": 3.66,
+          "minimum_sample_Wunit": 2.6531427280647977,
+          "sample_cost": 5.6467042636565186
+        },
+        {
+          "R": 3.67,
+          "minimum_sample_Wunit": 2.6633835382431488,
+          "sample_cost": 5.6557721278752613
+        },
+        {
+          "R": 3.68,
+          "minimum_sample_Wunit": 2.6736216354126805,
+          "sample_cost": 5.6648599359470673
+        },
+        {
+          "R": 3.69,
+          "minimum_sample_Wunit": 2.6838570556669645,
+          "sample_cost": 5.6739674108865534
+        },
+        {
+          "R": 3.7,
+          "minimum_sample_Wunit": 2.694089834515367,
+          "sample_cost": 5.6830942807802804
+        },
+        {
+          "R": 3.71,
+          "minimum_sample_Wunit": 2.7043200068943367,
+          "sample_cost": 5.6922402786716
+        },
+        {
+          "R": 3.7199999999999998,
+          "minimum_sample_Wunit": 2.7145476071784636,
+          "sample_cost": 5.7014051424485821
+        },
+        {
+          "R": 3.73,
+          "minimum_sample_Wunit": 2.7247726691912737,
+          "sample_cost": 5.710588614734978
+        },
+        {
+          "R": 3.74,
+          "minimum_sample_Wunit": 2.7349952262157755,
+          "sample_cost": 5.7197904427841308
+        },
+        {
+          "R": 3.75,
+          "minimum_sample_Wunit": 2.7452153110047846,
+          "sample_cost": 5.7290103783756887
+        },
+        {
+          "R": 3.76,
+          "minimum_sample_Wunit": 2.755432955791012,
+          "sample_cost": 5.73824817771508
+        },
+        {
+          "R": 3.77,
+          "minimum_sample_Wunit": 2.7656481922969216,
+          "sample_cost": 5.7475036013356542
+        },
+        {
+          "R": 3.78,
+          "minimum_sample_Wunit": 2.775861051744378,
+          "sample_cost": 5.7567764140033972
+        },
+        {
+          "R": 3.79,
+          "minimum_sample_Wunit": 2.7860715648640761,
+          "sample_cost": 5.7660663846241516
+        },
+        {
+          "R": 3.8,
+          "minimum_sample_Wunit": 2.7962797619047617,
+          "sample_cost": 5.77537328615326
+        },
+        {
+          "R": 3.81,
+          "minimum_sample_Wunit": 2.806485672642256,
+          "sample_cost": 5.7846968955075653
+        },
+        {
+          "R": 3.82,
+          "minimum_sample_Wunit": 2.8166893263882757,
+          "sample_cost": 5.79403699347968
+        },
+        {
+          "R": 3.83,
+          "minimum_sample_Wunit": 2.826890751999064,
+          "sample_cost": 5.8033933646544851
+        },
+        {
+          "R": 3.84,
+          "minimum_sample_Wunit": 2.8370899778838314,
+          "sample_cost": 5.8127657973277618
+        },
+        {
+          "R": 3.85,
+          "minimum_sample_Wunit": 2.8472870320130226,
+          "sample_cost": 5.822154083426903
+        },
+        {
+          "R": 3.86,
+          "minimum_sample_Wunit": 2.8574819419263857,
+          "sample_cost": 5.8315580184336628
+        },
+        {
+          "R": 3.87,
+          "minimum_sample_Wunit": 2.8676747347408944,
+          "sample_cost": 5.84097740130884
+        },
+        {
+          "R": 3.88,
+          "minimum_sample_Wunit": 2.8778654371584693,
+          "sample_cost": 5.8504120344188983
+        },
+        {
+          "R": 3.89,
+          "minimum_sample_Wunit": 2.8880540754735673,
+          "sample_cost": 5.859861723464391
+        },
+        {
+          "R": 3.9,
+          "minimum_sample_Wunit": 2.8982406755805763,
+          "sample_cost": 5.8693262774102228
+        },
+        {
+          "R": 3.91,
+          "minimum_sample_Wunit": 2.9084252629810816,
+          "sample_cost": 5.878805508417611
+        },
+        {
+          "R": 3.92,
+          "minimum_sample_Wunit": 2.9186078627909566,
+          "sample_cost": 5.8882992317777729
+        },
+        {
+          "R": 3.93,
+          "minimum_sample_Wunit": 2.9287884997473155,
+          "sample_cost": 5.8978072658472405
+        },
+        {
+          "R": 3.94,
+          "minimum_sample_Wunit": 2.9389671982153187,
+          "sample_cost": 5.9073294319847465
+        },
+        {
+          "R": 3.95,
+          "minimum_sample_Wunit": 2.9491439821948306,
+          "sample_cost": 5.9168655544897071
+        },
+        {
+          "R": 3.96,
+          "minimum_sample_Wunit": 2.9593188753269395,
+          "sample_cost": 5.9264154605421728
+        },
+        {
+          "R": 3.97,
+          "minimum_sample_Wunit": 2.9694919009003522,
+          "sample_cost": 5.9359789801442417
+        },
+        {
+          "R": 3.98,
+          "minimum_sample_Wunit": 2.9796630818576326,
+          "sample_cost": 5.945555946062921
+        },
+        {
+          "R": 3.99,
+          "minimum_sample_Wunit": 2.9898324408013353,
+          "sample_cost": 5.9551461937743433
+        },
+        {
+          "R": 4,
+          "minimum_sample_Wunit": 3,
+          "sample_cost": 5.96474956140933
+        }
+      ]
+    },
+    {
+      "axis_weight": 0.75,
+      "unit_positive_mass": 2.3726004758358261,
+      "best_sample": {
+        "R": 2.33,
+        "minimum_sample_Wunit": 1.301494050441419,
+        "sample_cost": 4.9483940087534357
+      },
+      "R_scan": [
+        {
+          "R": 1.33,
+          "minimum_sample_Wunit": 0.015632559500585411,
+          "sample_cost": 134.23563113733317
+        },
+        {
+          "R": 1.34,
+          "minimum_sample_Wunit": 0.039832830568124949,
+          "sample_cost": 53.476508619248655
+        },
+        {
+          "R": 1.35,
+          "minimum_sample_Wunit": 0.063088905775076184,
+          "sample_cost": 34.269609799755415
+        },
+        {
+          "R": 1.36,
+          "minimum_sample_Wunit": 0.085480225988700864,
+          "sample_cost": 25.668871305312276
+        },
+        {
+          "R": 1.37,
+          "minimum_sample_Wunit": 0.10707763142889723,
+          "sample_cost": 20.793950023321525
+        },
+        {
+          "R": 1.3800000000000001,
+          "minimum_sample_Wunit": 0.12794449358690885,
+          "sample_cost": 17.657580328427919
+        },
+        {
+          "R": 1.3900000000000001,
+          "minimum_sample_Wunit": 0.14813767299645975,
+          "sample_cost": 15.472436169130162
+        },
+        {
+          "R": 1.4000000000000001,
+          "minimum_sample_Wunit": 0.16770833333333365,
+          "sample_cost": 13.864239302275411
+        },
+        {
+          "R": 1.4100000000000001,
+          "minimum_sample_Wunit": 0.18670263637283702,
+          "sample_cost": 12.632298872817278
+        },
+        {
+          "R": 1.42,
+          "minimum_sample_Wunit": 0.20516233766233744,
+          "sample_cost": 11.659331956309639
+        },
+        {
+          "R": 1.4300000000000002,
+          "minimum_sample_Wunit": 0.22312529907168169,
+          "sample_cost": 10.872211114612345
+        },
+        {
+          "R": 1.44,
+          "minimum_sample_Wunit": 0.24062593144560368,
+          "sample_cost": 10.222972056952541
+        },
+        {
+          "R": 1.4500000000000002,
+          "minimum_sample_Wunit": 0.25769557823129269,
+          "sample_cost": 9.6788476827637524
+        },
+        {
+          "R": 1.46,
+          "minimum_sample_Wunit": 0.27436284906327341,
+          "sample_cost": 9.2166909469680114
+        },
+        {
+          "R": 1.47,
+          "minimum_sample_Wunit": 0.29065391075889407,
+          "sample_cost": 8.8196858505141424
+        },
+        {
+          "R": 1.48,
+          "minimum_sample_Wunit": 0.30659274193548386,
+          "sample_cost": 8.4753214467229352
+        },
+        {
+          "R": 1.49,
+          "minimum_sample_Wunit": 0.3222013564461928,
+          "sample_cost": 8.1740970530066157
+        },
+        {
+          "R": 1.5,
+          "minimum_sample_Wunit": 0.33750000000000013,
+          "sample_cost": 7.9086682527860832
+        },
+        {
+          "R": 1.51,
+          "minimum_sample_Wunit": 0.35250732364658993,
+          "sample_cost": 7.6732680175134282
+        },
+        {
+          "R": 1.52,
+          "minimum_sample_Wunit": 0.36724053724053712,
+          "sample_cost": 7.4633048145508631
+        },
+        {
+          "R": 1.53,
+          "minimum_sample_Wunit": 0.38171554552912224,
+          "sample_cost": 7.2750776316763242
+        },
+        {
+          "R": 1.54,
+          "minimum_sample_Wunit": 0.39594706911636046,
+          "sample_cost": 7.1055700715878141
+        },
+        {
+          "R": 1.55,
+          "minimum_sample_Wunit": 0.40994875222816407,
+          "sample_cost": 6.9522990522764694
+        },
+        {
+          "R": 1.56,
+          "minimum_sample_Wunit": 0.42373325892857155,
+          "sample_cost": 6.8132019334448559
+        },
+        {
+          "R": 1.57,
+          "minimum_sample_Wunit": 0.43731235920540673,
+          "sample_cost": 6.6865511456318147
+        },
+        {
+          "R": 1.58,
+          "minimum_sample_Wunit": 0.450697006148089,
+          "sample_cost": 6.5708888089778039
+        },
+        {
+          "R": 1.59,
+          "minimum_sample_Wunit": 0.46389740527452406,
+          "sample_cost": 6.4649760860496395
+        },
+        {
+          "R": 1.6,
+          "minimum_sample_Wunit": 0.47692307692307695,
+          "sample_cost": 6.3677535351464769
+        },
+        {
+          "R": 1.61,
+          "minimum_sample_Wunit": 0.489782912505496,
+          "sample_cost": 6.2783097739705589
+        },
+        {
+          "R": 1.62,
+          "minimum_sample_Wunit": 0.50248522531396222,
+          "sample_cost": 6.1958564900022823
+        },
+        {
+          "R": 1.63,
+          "minimum_sample_Wunit": 0.51503779648741621,
+          "sample_cost": 6.1197083468826774
+        },
+        {
+          "R": 1.6400000000000001,
+          "minimum_sample_Wunit": 0.52744791666666668,
+          "sample_cost": 6.0492667030865181
+        },
+        {
+          "R": 1.65,
+          "minimum_sample_Wunit": 0.53972242380261248,
+          "sample_cost": 5.9840063249117224
+        },
+        {
+          "R": 1.6600000000000001,
+          "minimum_sample_Wunit": 0.55186773752563245,
+          "sample_cost": 5.9234644704244355
+        },
+        {
+          "R": 1.67,
+          "minimum_sample_Wunit": 0.563889890435463,
+          "sample_cost": 5.8672318650265307
+        },
+        {
+          "R": 1.6800000000000002,
+          "minimum_sample_Wunit": 0.57579455662862156,
+          "sample_cost": 5.8149451969534045
+        },
+        {
+          "R": 1.69,
+          "minimum_sample_Wunit": 0.587587077743656,
+          "sample_cost": 5.7662808421997021
+        },
+        {
+          "R": 1.7000000000000002,
+          "minimum_sample_Wunit": 0.59927248677248712,
+          "sample_cost": 5.7209495901392167
+        },
+        {
+          "R": 1.71,
+          "minimum_sample_Wunit": 0.61085552985811564,
+          "sample_cost": 5.6786921884811079
+        },
+        {
+          "R": 1.7200000000000002,
+          "minimum_sample_Wunit": 0.62234068627451011,
+          "sample_cost": 5.63927556281981
+        },
+        {
+          "R": 1.73,
+          "minimum_sample_Wunit": 0.63373218676300858,
+          "sample_cost": 5.602489594539505
+        },
+        {
+          "R": 1.7400000000000002,
+          "minimum_sample_Wunit": 0.6450340303807458,
+          "sample_cost": 5.5681443631744933
+        },
+        {
+          "R": 1.75,
+          "minimum_sample_Wunit": 0.65625000000000022,
+          "sample_cost": 5.5360677769502589
+        },
+        {
+          "R": 1.76,
+          "minimum_sample_Wunit": 0.667383676582761,
+          "sample_cost": 5.5061035292175546
+        },
+        {
+          "R": 1.77,
+          "minimum_sample_Wunit": 0.67843845234188183,
+          "sample_cost": 5.4781093296583432
+        },
+        {
+          "R": 1.78,
+          "minimum_sample_Wunit": 0.68941754288876567,
+          "sample_cost": 5.451955368106379
+        },
+        {
+          "R": 1.79,
+          "minimum_sample_Wunit": 0.70032399845742044,
+          "sample_cost": 5.4275229760584685
+        },
+        {
+          "R": 1.8,
+          "minimum_sample_Wunit": 0.71116071428571415,
+          "sample_cost": 5.4047034568192389
+        },
+        {
+          "R": 1.81,
+          "minimum_sample_Wunit": 0.7219304402267035,
+          "sample_cost": 5.3833970600026788
+        },
+        {
+          "R": 1.82,
+          "minimum_sample_Wunit": 0.73263578965576936,
+          "sample_cost": 5.3635120800276228
+        },
+        {
+          "R": 1.83,
+          "minimum_sample_Wunit": 0.7432792477329816,
+          "sample_cost": 5.3449640614620035
+        },
+        {
+          "R": 1.84,
+          "minimum_sample_Wunit": 0.75386317907444678,
+          "sample_cost": 5.3276750967276767
+        },
+        {
+          "R": 1.85,
+          "minimum_sample_Wunit": 0.76438983488132139,
+          "sample_cost": 5.3115732038802266
+        },
+        {
+          "R": 1.86,
+          "minimum_sample_Wunit": 0.77486135957066193,
+          "sample_cost": 5.2965917740108255
+        },
+        {
+          "R": 1.87,
+          "minimum_sample_Wunit": 0.78527979694821615,
+          "sample_cost": 5.28266907934817
+        },
+        {
+          "R": 1.8800000000000001,
+          "minimum_sample_Wunit": 0.79564709595959593,
+          "sample_cost": 5.2697478344217981
+        },
+        {
+          "R": 1.8900000000000001,
+          "minimum_sample_Wunit": 0.80596511605303056,
+          "sample_cost": 5.2577748037270569
+        },
+        {
+          "R": 1.9,
+          "minimum_sample_Wunit": 0.81623563218390816,
+          "sample_cost": 5.24670045024297
+        },
+        {
+          "R": 1.9100000000000001,
+          "minimum_sample_Wunit": 0.82646033948868991,
+          "sample_cost": 5.236478619924827
+        },
+        {
+          "R": 1.92,
+          "minimum_sample_Wunit": 0.83664085765336493,
+          "sample_cost": 5.2270662579480183
+        },
+        {
+          "R": 1.9300000000000002,
+          "minimum_sample_Wunit": 0.84677873499944956,
+          "sample_cost": 5.2184231530369125
+        },
+        {
+          "R": 1.94,
+          "minimum_sample_Wunit": 0.85687545230858286,
+          "sample_cost": 5.21051170668848
+        },
+        {
+          "R": 1.9500000000000002,
+          "minimum_sample_Wunit": 0.86693242640499579,
+          "sample_cost": 5.2032967245079744
+        },
+        {
+          "R": 1.96,
+          "minimum_sample_Wunit": 0.87695101351351346,
+          "sample_cost": 5.1967452272238326
+        },
+        {
+          "R": 1.9700000000000002,
+          "minimum_sample_Wunit": 0.88693251240931659,
+          "sample_cost": 5.1908262792501381
+        },
+        {
+          "R": 1.98,
+          "minimum_sample_Wunit": 0.89687816737433224,
+          "sample_cost": 5.18551083292485
+        },
+        {
+          "R": 1.9900000000000002,
+          "minimum_sample_Wunit": 0.90678917097395362,
+          "sample_cost": 5.1807715867767783
+        },
+        {
+          "R": 2,
+          "minimum_sample_Wunit": 0.91666666666666663,
+          "sample_cost": 5.176582856369075
+        },
+        {
+          "R": 2.01,
+          "minimum_sample_Wunit": 0.92899937502055829,
+          "sample_cost": 5.1590686927061684
+        },
+        {
+          "R": 2.02,
+          "minimum_sample_Wunit": 0.94127645760290868,
+          "sample_cost": 5.1425693819300031
+        },
+        {
+          "R": 2.0300000000000002,
+          "minimum_sample_Wunit": 0.95349963151655015,
+          "sample_cost": 5.1270336021635634
+        },
+        {
+          "R": 2.04,
+          "minimum_sample_Wunit": 0.96567054655870455,
+          "sample_cost": 5.1124134288992362
+        },
+        {
+          "R": 2.05,
+          "minimum_sample_Wunit": 0.977790788446526,
+          "sample_cost": 5.0986640585668344
+        },
+        {
+          "R": 2.06,
+          "minimum_sample_Wunit": 0.98986188185966206,
+          "sample_cost": 5.0857435586575885
+        },
+        {
+          "R": 2.0700000000000003,
+          "minimum_sample_Wunit": 1.001885293311821,
+          "sample_cost": 5.0736126414747247
+        },
+        {
+          "R": 2.08,
+          "minimum_sample_Wunit": 1.013862433862434,
+          "sample_cost": 5.0622344589448032
+        },
+        {
+          "R": 2.09,
+          "minimum_sample_Wunit": 1.025794661678691,
+          "sample_cost": 5.0515744162376537
+        },
+        {
+          "R": 2.1,
+          "minimum_sample_Wunit": 1.0376832844574782,
+          "sample_cost": 5.0416000022137535
+        },
+        {
+          "R": 2.1100000000000003,
+          "minimum_sample_Wunit": 1.0495295617160572,
+          "sample_cost": 5.0322806349529223
+        },
+        {
+          "R": 2.12,
+          "minimum_sample_Wunit": 1.0613347069597072,
+          "sample_cost": 5.0235875208221978
+        },
+        {
+          "R": 2.13,
+          "minimum_sample_Wunit": 1.0730998897339477,
+          "sample_cost": 5.0154935257184334
+        },
+        {
+          "R": 2.14,
+          "minimum_sample_Wunit": 1.0848262375684434,
+          "sample_cost": 5.0079730572760157
+        },
+        {
+          "R": 2.1500000000000004,
+          "minimum_sample_Wunit": 1.096514837819186,
+          "sample_cost": 5.001001956965589
+        },
+        {
+          "R": 2.16,
+          "minimum_sample_Wunit": 1.1081667394151029,
+          "sample_cost": 4.9945574011282075
+        },
+        {
+          "R": 2.17,
+          "minimum_sample_Wunit": 1.1197829545148159,
+          "sample_cost": 4.9886178100934382
+        },
+        {
+          "R": 2.18,
+          "minimum_sample_Wunit": 1.131364460078883,
+          "sample_cost": 4.9831627646214063
+        },
+        {
+          "R": 2.1900000000000004,
+          "minimum_sample_Wunit": 1.1429121993625042,
+          "sample_cost": 4.9781729289893564
+        },
+        {
+          "R": 2.2,
+          "minimum_sample_Wunit": 1.1544270833333334,
+          "sample_cost": 4.9736299801144073
+        },
+        {
+          "R": 2.21,
+          "minimum_sample_Wunit": 1.1659099920187432,
+          "sample_cost": 4.9695165421669483
+        },
+        {
+          "R": 2.2199999999999998,
+          "minimum_sample_Wunit": 1.1773617757865795,
+          "sample_cost": 4.9658161261848619
+        },
+        {
+          "R": 2.23,
+          "minimum_sample_Wunit": 1.1887832565632155,
+          "sample_cost": 4.9625130742479318
+        },
+        {
+          "R": 2.24,
+          "minimum_sample_Wunit": 1.2001752289924335,
+          "sample_cost": 4.9595925078157466
+        },
+        {
+          "R": 2.25,
+          "minimum_sample_Wunit": 1.2115384615384617,
+          "sample_cost": 4.9570402798712792
+        },
+        {
+          "R": 2.26,
+          "minimum_sample_Wunit": 1.222873697536274,
+          "sample_cost": 4.9548429305470441
+        },
+        {
+          "R": 2.27,
+          "minimum_sample_Wunit": 1.2341816561920587,
+          "sample_cost": 4.9529876459417652
+        },
+        {
+          "R": 2.2800000000000002,
+          "minimum_sample_Wunit": 1.2454630335365855,
+          "sample_cost": 4.9514622198630907
+        },
+        {
+          "R": 2.29,
+          "minimum_sample_Wunit": 1.25671850333404,
+          "sample_cost": 4.9502550182566587
+        },
+        {
+          "R": 2.3,
+          "minimum_sample_Wunit": 1.2679487179487174,
+          "sample_cost": 4.9493549461040391
+        },
+        {
+          "R": 2.31,
+          "minimum_sample_Wunit": 1.2791543091718365,
+          "sample_cost": 4.9487514165919135
+        },
+        {
+          "R": 2.3200000000000003,
+          "minimum_sample_Wunit": 1.2903358890105883,
+          "sample_cost": 4.9484343223727709
+        },
+        {
+          "R": 2.33,
+          "minimum_sample_Wunit": 1.301494050441419,
+          "sample_cost": 4.9483940087534357
+        },
+        {
+          "R": 2.34,
+          "minimum_sample_Wunit": 1.3126293681294126,
+          "sample_cost": 4.9486212486622581
+        },
+        {
+          "R": 2.35,
+          "minimum_sample_Wunit": 1.3237423991155335,
+          "sample_cost": 4.94910721925882
+        },
+        {
+          "R": 2.3600000000000003,
+          "minimum_sample_Wunit": 1.3348336834733898,
+          "sample_cost": 4.949843480061781
+        },
+        {
+          "R": 2.37,
+          "minimum_sample_Wunit": 1.3459037449370794,
+          "sample_cost": 4.9508219524811823
+        },
+        {
+          "R": 2.38,
+          "minimum_sample_Wunit": 1.3569530915015866,
+          "sample_cost": 4.9520349006510731
+        },
+        {
+          "R": 2.39,
+          "minimum_sample_Wunit": 1.367982215997114,
+          "sample_cost": 4.9534749134671552
+        },
+        {
+          "R": 2.4000000000000004,
+          "minimum_sample_Wunit": 1.3789915966386557,
+          "sample_cost": 4.9551348877419521
+        },
+        {
+          "R": 2.41,
+          "minimum_sample_Wunit": 1.3899816975520478,
+          "sample_cost": 4.9570080123972495
+        },
+        {
+          "R": 2.42,
+          "minimum_sample_Wunit": 1.4009529692776541,
+          "sample_cost": 4.9590877536200537
+        },
+        {
+          "R": 2.43,
+          "minimum_sample_Wunit": 1.4119058492527885,
+          "sample_cost": 4.9613678409142334
+        },
+        {
+          "R": 2.4400000000000004,
+          "minimum_sample_Wunit": 1.4228407622739019,
+          "sample_cost": 4.96384225398547
+        },
+        {
+          "R": 2.45,
+          "minimum_sample_Wunit": 1.4337581209395305,
+          "sample_cost": 4.9665052104019418
+        },
+        {
+          "R": 2.46,
+          "minimum_sample_Wunit": 1.4446583260749069,
+          "sample_cost": 4.9693511539778461
+        },
+        {
+          "R": 2.4699999999999998,
+          "minimum_sample_Wunit": 1.455541767139132,
+          "sample_cost": 4.9723747438307466
+        },
+        {
+          "R": 2.48,
+          "minimum_sample_Wunit": 1.466408822615719,
+          "sample_cost": 4.9755708440676436
+        },
+        {
+          "R": 2.49,
+          "minimum_sample_Wunit": 1.4772598603873008,
+          "sample_cost": 4.9789345140580128
+        },
+        {
+          "R": 2.5,
+          "minimum_sample_Wunit": 1.4880952380952381,
+          "sample_cost": 4.9824609992552347
+        },
+        {
+          "R": 2.51,
+          "minimum_sample_Wunit": 1.4989153034848395,
+          "sample_cost": 4.9861457225306358
+        },
+        {
+          "R": 2.52,
+          "minimum_sample_Wunit": 1.5097203947368421,
+          "sample_cost": 4.9899842759871245
+        },
+        {
+          "R": 2.5300000000000002,
+          "minimum_sample_Wunit": 1.5205108407857955,
+          "sample_cost": 4.9939724132216838
+        },
+        {
+          "R": 2.54,
+          "minimum_sample_Wunit": 1.5312869616259448,
+          "sample_cost": 4.9981060420083265
+        },
+        {
+          "R": 2.55,
+          "minimum_sample_Wunit": 1.5420490686051793,
+          "sample_cost": 5.0023812173750439
+        },
+        {
+          "R": 2.56,
+          "minimum_sample_Wunit": 1.5527974647075771,
+          "sample_cost": 5.006794135050276
+        },
+        {
+          "R": 2.5700000000000003,
+          "minimum_sample_Wunit": 1.563532444825064,
+          "sample_cost": 5.01134112525608
+        },
+        {
+          "R": 2.58,
+          "minimum_sample_Wunit": 1.574254296018669,
+          "sample_cost": 5.0160186468267725
+        },
+        {
+          "R": 2.59,
+          "minimum_sample_Wunit": 1.584963297769836,
+          "sample_cost": 5.0208232816333416
+        },
+        {
+          "R": 2.5999999999999996,
+          "minimum_sample_Wunit": 1.595659722222222,
+          "sample_cost": 5.0257517292952372
+        },
+        {
+          "R": 2.61,
+          "minimum_sample_Wunit": 1.606343834414411,
+          "sample_cost": 5.030800802162382
+        },
+        {
+          "R": 2.62,
+          "minimum_sample_Wunit": 1.6170158925039222,
+          "sample_cost": 5.0359674205514784
+        },
+        {
+          "R": 2.63,
+          "minimum_sample_Wunit": 1.6276761479828963,
+          "sample_cost": 5.0412486082216867
+        },
+        {
+          "R": 2.6399999999999997,
+          "minimum_sample_Wunit": 1.6383248458858213,
+          "sample_cost": 5.0466414880757435
+        },
+        {
+          "R": 2.65,
+          "minimum_sample_Wunit": 1.6489622249896221,
+          "sample_cost": 5.0521432780735624
+        },
+        {
+          "R": 2.66,
+          "minimum_sample_Wunit": 1.6595885180064518,
+          "sample_cost": 5.0577512873461288
+        },
+        {
+          "R": 2.67,
+          "minimum_sample_Wunit": 1.6702039517694856,
+          "sample_cost": 5.0634629124983723
+        },
+        {
+          "R": 2.6799999999999997,
+          "minimum_sample_Wunit": 1.6808087474120081,
+          "sample_cost": 5.0692756340903511
+        },
+        {
+          "R": 2.69,
+          "minimum_sample_Wunit": 1.6914031205400808,
+          "sample_cost": 5.075187013286814
+        },
+        {
+          "R": 2.7,
+          "minimum_sample_Wunit": 1.7019872813990464,
+          "sample_cost": 5.0811946886658044
+        },
+        {
+          "R": 2.71,
+          "minimum_sample_Wunit": 1.7125614350341265,
+          "sample_cost": 5.0872963731776046
+        },
+        {
+          "R": 2.7199999999999998,
+          "minimum_sample_Wunit": 1.7231257814453613,
+          "sample_cost": 5.0934898512457716
+        },
+        {
+          "R": 2.73,
+          "minimum_sample_Wunit": 1.7336805157371109,
+          "sample_cost": 5.099772976002626
+        },
+        {
+          "R": 2.74,
+          "minimum_sample_Wunit": 1.7442258282623395,
+          "sample_cost": 5.106143666651966
+        },
+        {
+          "R": 2.75,
+          "minimum_sample_Wunit": 1.7547619047619043,
+          "sample_cost": 5.1125999059522016
+        },
+        {
+          "R": 2.76,
+          "minimum_sample_Wunit": 1.7652889264990324,
+          "sample_cost": 5.1191397378135912
+        },
+        {
+          "R": 2.77,
+          "minimum_sample_Wunit": 1.7758070703891859,
+          "sample_cost": 5.1257612650035682
+        },
+        {
+          "R": 2.7800000000000002,
+          "minimum_sample_Wunit": 1.7863165091254982,
+          "sample_cost": 5.1324626469545134
+        },
+        {
+          "R": 2.79,
+          "minimum_sample_Wunit": 1.7968174112999513,
+          "sample_cost": 5.1392420976687125
+        },
+        {
+          "R": 2.8,
+          "minimum_sample_Wunit": 1.8073099415204676,
+          "sample_cost": 5.1460978837154858
+        },
+        {
+          "R": 2.81,
+          "minimum_sample_Wunit": 1.817794260524064,
+          "sample_cost": 5.153028322315814
+        },
+        {
+          "R": 2.8200000000000003,
+          "minimum_sample_Wunit": 1.8282705252862326,
+          "sample_cost": 5.1600317795100068
+        },
+        {
+          "R": 2.83,
+          "minimum_sample_Wunit": 1.8387388891266814,
+          "sample_cost": 5.1671066684042914
+        },
+        {
+          "R": 2.84,
+          "minimum_sample_Wunit": 1.8491995018115939,
+          "sample_cost": 5.1742514474923214
+        },
+        {
+          "R": 2.8499999999999996,
+          "minimum_sample_Wunit": 1.8596525096525092,
+          "sample_cost": 5.1814646190479738
+        },
+        {
+          "R": 2.86,
+          "minimum_sample_Wunit": 1.8700980556019831,
+          "sample_cost": 5.1887447275858616
+        },
+        {
+          "R": 2.87,
+          "minimum_sample_Wunit": 1.8805362793461291,
+          "sample_cost": 5.1960903583862956
+        },
+        {
+          "R": 2.88,
+          "minimum_sample_Wunit": 1.8909673173941655,
+          "sample_cost": 5.2035001360815674
+        },
+        {
+          "R": 2.8899999999999997,
+          "minimum_sample_Wunit": 1.9013913031650818,
+          "sample_cost": 5.2109727233005874
+        },
+        {
+          "R": 2.9,
+          "minimum_sample_Wunit": 1.9118083670715249,
+          "sample_cost": 5.2185068193690958
+        },
+        {
+          "R": 2.91,
+          "minimum_sample_Wunit": 1.9222186366010092,
+          "sample_cost": 5.226101159062817
+        },
+        {
+          "R": 2.92,
+          "minimum_sample_Wunit": 1.932622236394558,
+          "sample_cost": 5.23375451141103
+        },
+        {
+          "R": 2.9299999999999997,
+          "minimum_sample_Wunit": 1.9430192883228519,
+          "sample_cost": 5.2414656785482574
+        },
+        {
+          "R": 2.94,
+          "minimum_sample_Wunit": 1.9534099115599981,
+          "sample_cost": 5.2492334946117269
+        },
+        {
+          "R": 2.95,
+          "minimum_sample_Wunit": 1.963794222654982,
+          "sample_cost": 5.2570568246826026
+        },
+        {
+          "R": 2.96,
+          "minimum_sample_Wunit": 1.9741723356009073,
+          "sample_cost": 5.2649345637688967
+        },
+        {
+          "R": 2.9699999999999998,
+          "minimum_sample_Wunit": 1.9845443619020831,
+          "sample_cost": 5.27286563582821
+        },
+        {
+          "R": 2.98,
+          "minimum_sample_Wunit": 1.9949104106390536,
+          "sample_cost": 5.28084899282845
+        },
+        {
+          "R": 2.99,
+          "minimum_sample_Wunit": 2.0052705885316309,
+          "sample_cost": 5.2888836138448374
+        },
+        {
+          "R": 3,
+          "minimum_sample_Wunit": 2.015625,
+          "sample_cost": 5.2969685041916117
+        },
+        {
+          "R": 3.01,
+          "minimum_sample_Wunit": 2.02597374722398,
+          "sample_cost": 5.3051026945868145
+        },
+        {
+          "R": 3.02,
+          "minimum_sample_Wunit": 2.0363169302004822,
+          "sample_cost": 5.313285240348768
+        },
+        {
+          "R": 3.0300000000000002,
+          "minimum_sample_Wunit": 2.0466546467992517,
+          "sample_cost": 5.3215152206227856
+        },
+        {
+          "R": 3.04,
+          "minimum_sample_Wunit": 2.0569869928169284,
+          "sample_cost": 5.3297917376368744
+        },
+        {
+          "R": 3.05,
+          "minimum_sample_Wunit": 2.0673140620295087,
+          "sample_cost": 5.33811391598509
+        },
+        {
+          "R": 3.06,
+          "minimum_sample_Wunit": 2.0776359462432445,
+          "sample_cost": 5.3464809019374124
+        },
+        {
+          "R": 3.07,
+          "minimum_sample_Wunit": 2.087952735344039,
+          "sample_cost": 5.3548918627749718
+        },
+        {
+          "R": 3.08,
+          "minimum_sample_Wunit": 2.0982645173453998,
+          "sample_cost": 5.3633459861495583
+        },
+        {
+          "R": 3.09,
+          "minimum_sample_Wunit": 2.1085713784349736,
+          "sample_cost": 5.3718424794664053
+        },
+        {
+          "R": 3.1,
+          "minimum_sample_Wunit": 2.1188734030197445,
+          "sample_cost": 5.3803805692892128
+        },
+        {
+          "R": 3.11,
+          "minimum_sample_Wunit": 2.1291706737699059,
+          "sample_cost": 5.3889595007665481
+        },
+        {
+          "R": 3.12,
+          "minimum_sample_Wunit": 2.1394632716614765,
+          "sample_cost": 5.3975785370786866
+        },
+        {
+          "R": 3.13,
+          "minimum_sample_Wunit": 2.149751276017688,
+          "sample_cost": 5.4062369589040662
+        },
+        {
+          "R": 3.14,
+          "minimum_sample_Wunit": 2.1600347645491897,
+          "sample_cost": 5.4149340639045516
+        },
+        {
+          "R": 3.15,
+          "minimum_sample_Wunit": 2.1703138133931072,
+          "sample_cost": 5.4236691662287306
+        },
+        {
+          "R": 3.16,
+          "minimum_sample_Wunit": 2.1805884971509979,
+          "sample_cost": 5.4324415960325165
+        },
+        {
+          "R": 3.17,
+          "minimum_sample_Wunit": 2.1908588889257259,
+          "sample_cost": 5.4412506990163614
+        },
+        {
+          "R": 3.1799999999999997,
+          "minimum_sample_Wunit": 2.2011250603573149,
+          "sample_cost": 5.4500958359783978
+        },
+        {
+          "R": 3.19,
+          "minimum_sample_Wunit": 2.2113870816577847,
+          "sample_cost": 5.4589763823828923
+        },
+        {
+          "R": 3.2,
+          "minimum_sample_Wunit": 2.2216450216450214,
+          "sample_cost": 5.4678917279433925
+        },
+        {
+          "R": 3.21,
+          "minimum_sample_Wunit": 2.2318989477757119,
+          "sample_cost": 5.4768412762199832
+        },
+        {
+          "R": 3.2199999999999998,
+          "minimum_sample_Wunit": 2.2421489261773617,
+          "sample_cost": 5.48582444423012
+        },
+        {
+          "R": 3.23,
+          "minimum_sample_Wunit": 2.2523950216794413,
+          "sample_cost": 5.4948406620724688
+        },
+        {
+          "R": 3.24,
+          "minimum_sample_Wunit": 2.2626372978436655,
+          "sample_cost": 5.5038893725632976
+        },
+        {
+          "R": 3.25,
+          "minimum_sample_Wunit": 2.272875816993464,
+          "sample_cost": 5.5129700308848815
+        },
+        {
+          "R": 3.26,
+          "minimum_sample_Wunit": 2.2831106402426355,
+          "sample_cost": 5.52208210424553
+        },
+        {
+          "R": 3.27,
+          "minimum_sample_Wunit": 2.2933418275232391,
+          "sample_cost": 5.531225071550705
+        },
+        {
+          "R": 3.2800000000000002,
+          "minimum_sample_Wunit": 2.3035694376127234,
+          "sample_cost": 5.5403984230848895
+        },
+        {
+          "R": 3.29,
+          "minimum_sample_Wunit": 2.3137935281603408,
+          "sample_cost": 5.5496016602037344
+        },
+        {
+          "R": 3.3,
+          "minimum_sample_Wunit": 2.3240141557128413,
+          "sample_cost": 5.55883429503617
+        },
+        {
+          "R": 3.31,
+          "minimum_sample_Wunit": 2.3342313757394968,
+          "sample_cost": 5.5680958501960243
+        },
+        {
+          "R": 3.32,
+          "minimum_sample_Wunit": 2.344445242656449,
+          "sample_cost": 5.5773858585028684
+        },
+        {
+          "R": 3.33,
+          "minimum_sample_Wunit": 2.35465580985043,
+          "sample_cost": 5.5867038627117021
+        },
+        {
+          "R": 3.34,
+          "minimum_sample_Wunit": 2.3648631297018392,
+          "sample_cost": 5.5960494152511879
+        },
+        {
+          "R": 3.35,
+          "minimum_sample_Wunit": 2.3750672536072392,
+          "sample_cost": 5.6054220779700783
+        },
+        {
+          "R": 3.36,
+          "minimum_sample_Wunit": 2.3852682320012439,
+          "sample_cost": 5.6148214218915928
+        },
+        {
+          "R": 3.37,
+          "minimum_sample_Wunit": 2.3954661143778546,
+          "sample_cost": 5.6242470269753948
+        },
+        {
+          "R": 3.38,
+          "minimum_sample_Wunit": 2.4056609493112311,
+          "sample_cost": 5.6336984818869507
+        },
+        {
+          "R": 3.39,
+          "minimum_sample_Wunit": 2.4158527844759394,
+          "sample_cost": 5.64317538377398
+        },
+        {
+          "R": 3.4,
+          "minimum_sample_Wunit": 2.4260416666666664,
+          "sample_cost": 5.6526773380497346
+        },
+        {
+          "R": 3.41,
+          "minimum_sample_Wunit": 2.4362276418174464,
+          "sample_cost": 5.6622039581828787
+        },
+        {
+          "R": 3.42,
+          "minimum_sample_Wunit": 2.4464107550203815,
+          "sample_cost": 5.671754865493746
+        },
+        {
+          "R": 3.4299999999999997,
+          "minimum_sample_Wunit": 2.456591050543897,
+          "sample_cost": 5.6813296889567333
+        },
+        {
+          "R": 3.44,
+          "minimum_sample_Wunit": 2.4667685718505385,
+          "sample_cost": 5.6909280650086007
+        },
+        {
+          "R": 3.45,
+          "minimum_sample_Wunit": 2.4769433616143082,
+          "sample_cost": 5.7005496373625268
+        },
+        {
+          "R": 3.46,
+          "minimum_sample_Wunit": 2.4871154617375772,
+          "sample_cost": 5.7101940568276568
+        },
+        {
+          "R": 3.4699999999999998,
+          "minimum_sample_Wunit": 2.4972849133675696,
+          "sample_cost": 5.7198609811340138
+        },
+        {
+          "R": 3.48,
+          "minimum_sample_Wunit": 2.5074517569124426,
+          "sample_cost": 5.7295500747625185
+        },
+        {
+          "R": 3.49,
+          "minimum_sample_Wunit": 2.5176160320569587,
+          "sample_cost": 5.7392610087800211
+        },
+        {
+          "R": 3.5,
+          "minimum_sample_Wunit": 2.5277777777777781,
+          "sample_cost": 5.7489934606791167
+        },
+        {
+          "R": 3.51,
+          "minimum_sample_Wunit": 2.5379370323583714,
+          "sample_cost": 5.758747114222615
+        },
+        {
+          "R": 3.52,
+          "minimum_sample_Wunit": 2.5480938334035672,
+          "sample_cost": 5.7685216592924906
+        },
+        {
+          "R": 3.53,
+          "minimum_sample_Wunit": 2.5582482178537456,
+          "sample_cost": 5.7783167917431637
+        },
+        {
+          "R": 3.54,
+          "minimum_sample_Wunit": 2.5684002219986821,
+          "sample_cost": 5.7881322132589927
+        },
+        {
+          "R": 3.55,
+          "minimum_sample_Wunit": 2.5785498814910577,
+          "sample_cost": 5.7979676312158039
+        },
+        {
+          "R": 3.56,
+          "minimum_sample_Wunit": 2.588697231359649,
+          "sample_cost": 5.8078227585463376
+        },
+        {
+          "R": 3.57,
+          "minimum_sample_Wunit": 2.5988423060221884,
+          "sample_cost": 5.8176973136095027
+        },
+        {
+          "R": 3.58,
+          "minimum_sample_Wunit": 2.6089851392979249,
+          "sample_cost": 5.8275910200632826
+        },
+        {
+          "R": 3.59,
+          "minimum_sample_Wunit": 2.6191257644198815,
+          "sample_cost": 5.8375036067411976
+        },
+        {
+          "R": 3.6,
+          "minimum_sample_Wunit": 2.6292642140468225,
+          "sample_cost": 5.8474348075321894
+        },
+        {
+          "R": 3.61,
+          "minimum_sample_Wunit": 2.6394005202749309,
+          "sample_cost": 5.8573843612638443
+        },
+        {
+          "R": 3.62,
+          "minimum_sample_Wunit": 2.6495347146492185,
+          "sample_cost": 5.8673520115888191
+        },
+        {
+          "R": 3.63,
+          "minimum_sample_Wunit": 2.6596668281746578,
+          "sample_cost": 5.8773375068743858
+        },
+        {
+          "R": 3.64,
+          "minimum_sample_Wunit": 2.6697968913270644,
+          "sample_cost": 5.8873406000949764
+        },
+        {
+          "R": 3.65,
+          "minimum_sample_Wunit": 2.6799249340637044,
+          "sample_cost": 5.8973610487276842
+        },
+        {
+          "R": 3.66,
+          "minimum_sample_Wunit": 2.6900509858336834,
+          "sample_cost": 5.907398614650532
+        },
+        {
+          "R": 3.67,
+          "minimum_sample_Wunit": 2.7001750755880627,
+          "sample_cost": 5.91745306404354
+        },
+        {
+          "R": 3.68,
+          "minimum_sample_Wunit": 2.7102972317897693,
+          "sample_cost": 5.9275241672923995
+        },
+        {
+          "R": 3.69,
+          "minimum_sample_Wunit": 2.7204174824232519,
+          "sample_cost": 5.9376116988947469
+        },
+        {
+          "R": 3.7,
+          "minimum_sample_Wunit": 2.7305358550039402,
+          "sample_cost": 5.9477154373689025
+        },
+        {
+          "R": 3.71,
+          "minimum_sample_Wunit": 2.74065237658746,
+          "sample_cost": 5.9578351651650534
+        },
+        {
+          "R": 3.7199999999999998,
+          "minimum_sample_Wunit": 2.7507670737786634,
+          "sample_cost": 5.9679706685787446
+        },
+        {
+          "R": 3.73,
+          "minimum_sample_Wunit": 2.7608799727404372,
+          "sample_cost": 5.9781217376666564
+        },
+        {
+          "R": 3.74,
+          "minimum_sample_Wunit": 2.7709910992023166,
+          "sample_cost": 5.9882881661645762
+        },
+        {
+          "R": 3.75,
+          "minimum_sample_Wunit": 2.7811004784688995,
+          "sample_cost": 5.9984697514075114
+        },
+        {
+          "R": 3.76,
+          "minimum_sample_Wunit": 2.791208135428084,
+          "sample_cost": 6.0086662942518512
+        },
+        {
+          "R": 3.77,
+          "minimum_sample_Wunit": 2.8013140945591051,
+          "sample_cost": 6.0188775989995511
+        },
+        {
+          "R": 3.78,
+          "minimum_sample_Wunit": 2.8114183799403989,
+          "sample_cost": 6.0291034733242546
+        },
+        {
+          "R": 3.79,
+          "minimum_sample_Wunit": 2.8215210152572938,
+          "sample_cost": 6.039343728199313
+        },
+        {
+          "R": 3.8,
+          "minimum_sample_Wunit": 2.8316220238095235,
+          "sample_cost": 6.0495981778276242
+        },
+        {
+          "R": 3.81,
+          "minimum_sample_Wunit": 2.8417214285185812,
+          "sample_cost": 6.05986663957326
+        },
+        {
+          "R": 3.82,
+          "minimum_sample_Wunit": 2.8518192519349048,
+          "sample_cost": 6.0701489338948091
+        },
+        {
+          "R": 3.83,
+          "minimum_sample_Wunit": 2.861915516244907,
+          "sample_cost": 6.0804448842804106
+        },
+        {
+          "R": 3.84,
+          "minimum_sample_Wunit": 2.8720102432778485,
+          "sample_cost": 6.090754317184401
+        },
+        {
+          "R": 3.85,
+          "minimum_sample_Wunit": 2.8821034545125706,
+          "sample_cost": 6.1010770619655341
+        },
+        {
+          "R": 3.86,
+          "minimum_sample_Wunit": 2.892195171084059,
+          "sample_cost": 6.1114129508267609
+        },
+        {
+          "R": 3.87,
+          "minimum_sample_Wunit": 2.9022854137898966,
+          "sample_cost": 6.1217618187564637
+        },
+        {
+          "R": 3.88,
+          "minimum_sample_Wunit": 2.9123742030965385,
+          "sample_cost": 6.1321235034711794
+        },
+        {
+          "R": 3.89,
+          "minimum_sample_Wunit": 2.922461559145491,
+          "sample_cost": 6.1424978453596744
+        },
+        {
+          "R": 3.9,
+          "minimum_sample_Wunit": 2.9325475017593234,
+          "sample_cost": 6.1528846874284362
+        },
+        {
+          "R": 3.91,
+          "minimum_sample_Wunit": 2.9426320504475747,
+          "sample_cost": 6.1632838752484593
+        },
+        {
+          "R": 3.92,
+          "minimum_sample_Wunit": 2.9527152244125179,
+          "sample_cost": 6.173695256903331
+        },
+        {
+          "R": 3.93,
+          "minimum_sample_Wunit": 2.9627970425548114,
+          "sample_cost": 6.1841186829385792
+        },
+        {
+          "R": 3.94,
+          "minimum_sample_Wunit": 2.9728775234790272,
+          "sample_cost": 6.1945540063122051
+        },
+        {
+          "R": 3.95,
+          "minimum_sample_Wunit": 2.982956685499059,
+          "sample_cost": 6.20500108234645
+        },
+        {
+          "R": 3.96,
+          "minimum_sample_Wunit": 2.9930345466434169,
+          "sample_cost": 6.21545976868067
+        },
+        {
+          "R": 3.97,
+          "minimum_sample_Wunit": 3.0031111246604212,
+          "sample_cost": 6.2259299252253388
+        },
+        {
+          "R": 3.98,
+          "minimum_sample_Wunit": 3.0131864370232613,
+          "sample_cost": 6.2364114141171694
+        },
+        {
+          "R": 3.99,
+          "minimum_sample_Wunit": 3.02326050093498,
+          "sample_cost": 6.2469040996752465
+        },
+        {
+          "R": 4,
+          "minimum_sample_Wunit": 3.0333333333333337,
+          "sample_cost": 6.2574078483582216
+        }
+      ]
+    },
+    {
+      "axis_weight": 1,
+      "unit_positive_mass": 2.63788348035956,
+      "best_sample": {
+        "R": 2.18,
+        "minimum_sample_Wunit": 1.2039846498241127,
+        "sample_cost": 5.2061616623983413
+      },
+      "R_scan": [
+        {
+          "R": 1.37,
+          "minimum_sample_Wunit": 0.010780020526855949,
+          "sample_cost": 229.63979947684095
+        },
+        {
+          "R": 1.3800000000000001,
+          "minimum_sample_Wunit": 0.037231313578063308,
+          "sample_cost": 67.464518670067065
+        },
+        {
+          "R": 1.3900000000000001,
+          "minimum_sample_Wunit": 0.06278189035511228,
+          "sample_cost": 40.590165759381996
+        },
+        {
+          "R": 1.4000000000000001,
+          "minimum_sample_Wunit": 0.087500000000000411,
+          "sample_cost": 29.54429498002694
+        },
+        {
+          "R": 1.4100000000000001,
+          "minimum_sample_Wunit": 0.11144722194109941,
+          "sample_cost": 23.528518952560926
+        },
+        {
+          "R": 1.42,
+          "minimum_sample_Wunit": 0.13467926013380532,
+          "sample_cost": 19.74702060477799
+        },
+        {
+          "R": 1.4300000000000002,
+          "minimum_sample_Wunit": 0.15724662647143289,
+          "sample_cost": 17.152062495812068
+        },
+        {
+          "R": 1.44,
+          "minimum_sample_Wunit": 0.17919523099850979,
+          "sample_cost": 15.262446311752214
+        },
+        {
+          "R": 1.4500000000000002,
+          "minimum_sample_Wunit": 0.20056689342403652,
+          "sample_cost": 13.826185176359992
+        },
+        {
+          "R": 1.46,
+          "minimum_sample_Wunit": 0.22139978791092277,
+          "sample_cost": 12.698549713599411
+        },
+        {
+          "R": 1.47,
+          "minimum_sample_Wunit": 0.24172883107933515,
+          "sample_cost": 11.790489341418633
+        },
+        {
+          "R": 1.48,
+          "minimum_sample_Wunit": 0.26158602150537635,
+          "sample_cost": 11.044206303777637
+        },
+        {
+          "R": 1.49,
+          "minimum_sample_Wunit": 0.28100073764445521,
+          "sample_cost": 10.420551141321566
+        },
+        {
+          "R": 1.5,
+          "minimum_sample_Wunit": 0.30000000000000021,
+          "sample_cost": 9.8920630513483427
+        },
+        {
+          "R": 1.51,
+          "minimum_sample_Wunit": 0.31860870244512124,
+          "sample_cost": 9.4389106094862942
+        },
+        {
+          "R": 1.52,
+          "minimum_sample_Wunit": 0.33684981684981669,
+          "sample_cost": 9.0464142893388715
+        },
+        {
+          "R": 1.53,
+          "minimum_sample_Wunit": 0.35474457453948838,
+          "sample_cost": 8.70347551782828
+        },
+        {
+          "R": 1.54,
+          "minimum_sample_Wunit": 0.37231262758821815,
+          "sample_cost": 8.40154751471382
+        },
+        {
+          "R": 1.55,
+          "minimum_sample_Wunit": 0.38957219251336905,
+          "sample_cost": 8.1339417742789184
+        },
+        {
+          "R": 1.56,
+          "minimum_sample_Wunit": 0.40654017857142877,
+          "sample_cost": 7.89534906532629
+        },
+        {
+          "R": 1.57,
+          "minimum_sample_Wunit": 0.42323230254624911,
+          "sample_cost": 7.6815013310896267
+        },
+        {
+          "R": 1.58,
+          "minimum_sample_Wunit": 0.43966319165998424,
+          "sample_cost": 7.4889283948317349
+        },
+        {
+          "R": 1.59,
+          "minimum_sample_Wunit": 0.45584647601596773,
+          "sample_cost": 7.3147798409912506
+        },
+        {
+          "R": 1.6,
+          "minimum_sample_Wunit": 0.47179487179487184,
+          "sample_cost": 7.15669257280159
+        },
+        {
+          "R": 1.61,
+          "minimum_sample_Wunit": 0.48752025626531015,
+          "sample_cost": 7.012690941111317
+        },
+        {
+          "R": 1.62,
+          "minimum_sample_Wunit": 0.50303373553312,
+          "sample_cost": 6.8811104671923395
+        },
+        {
+          "R": 1.63,
+          "minimum_sample_Wunit": 0.5183457058362001,
+          "sample_cost": 6.7605389029518328
+        },
+        {
+          "R": 1.6400000000000001,
+          "minimum_sample_Wunit": 0.53346590909090907,
+          "sample_cost": 6.6497701988732185
+        },
+        {
+          "R": 1.65,
+          "minimum_sample_Wunit": 0.54840348330914368,
+          "sample_cost": 6.5477681979187023
+        },
+        {
+          "R": 1.6600000000000001,
+          "minimum_sample_Wunit": 0.56316700843016665,
+          "sample_cost": 6.4536377394878617
+        },
+        {
+          "R": 1.67,
+          "minimum_sample_Wunit": 0.5777645480462853,
+          "sample_cost": 6.36660146702651
+        },
+        {
+          "R": 1.6800000000000002,
+          "minimum_sample_Wunit": 0.5922036874451273,
+          "sample_cost": 6.2859810676682768
+        },
+        {
+          "R": 1.69,
+          "minimum_sample_Wunit": 0.606491568342223,
+          "sample_cost": 6.2111819862957445
+        },
+        {
+          "R": 1.7000000000000002,
+          "minimum_sample_Wunit": 0.62063492063492109,
+          "sample_cost": 6.1416808857936678
+        },
+        {
+          "R": 1.71,
+          "minimum_sample_Wunit": 0.63464009147133738,
+          "sample_cost": 6.07701529463472
+        },
+        {
+          "R": 1.7200000000000002,
+          "minimum_sample_Wunit": 0.64851307189542517,
+          "sample_cost": 6.0167750092430916
+        },
+        {
+          "R": 1.73,
+          "minimum_sample_Wunit": 0.662259521300617,
+          "sample_cost": 5.960594913655016
+        },
+        {
+          "R": 1.7400000000000002,
+          "minimum_sample_Wunit": 0.67588478989938849,
+          "sample_cost": 5.9081489511884584
+        },
+        {
+          "R": 1.75,
+          "minimum_sample_Wunit": 0.68939393939393956,
+          "sample_cost": 5.8591450381063286
+        },
+        {
+          "R": 1.76,
+          "minimum_sample_Wunit": 0.70279176201372973,
+          "sample_cost": 5.8133207519029959
+        },
+        {
+          "R": 1.77,
+          "minimum_sample_Wunit": 0.71608279806835751,
+          "sample_cost": 5.7704396599885657
+        },
+        {
+          "R": 1.78,
+          "minimum_sample_Wunit": 0.7292713521490497,
+          "sample_cost": 5.730288180484453
+        },
+        {
+          "R": 1.79,
+          "minimum_sample_Wunit": 0.74236150809854373,
+          "sample_cost": 5.692672887276176
+        },
+        {
+          "R": 1.8,
+          "minimum_sample_Wunit": 0.75535714285714273,
+          "sample_cost": 5.6574181876647609
+        },
+        {
+          "R": 1.81,
+          "minimum_sample_Wunit": 0.76826193928210529,
+          "sample_cost": 5.6243643138701875
+        },
+        {
+          "R": 1.82,
+          "minimum_sample_Wunit": 0.78107939802802329,
+          "sample_cost": 5.593365579992879
+        },
+        {
+          "R": 1.83,
+          "minimum_sample_Wunit": 0.79381284856741474,
+          "sample_cost": 5.5642888643833173
+        },
+        {
+          "R": 1.84,
+          "minimum_sample_Wunit": 0.806465459423206,
+          "sample_cost": 5.5370122841297862
+        },
+        {
+          "R": 1.85,
+          "minimum_sample_Wunit": 0.819040247678019,
+          "sample_cost": 5.5114240338771134
+        },
+        {
+          "R": 1.86,
+          "minimum_sample_Wunit": 0.83154008781915767,
+          "sample_cost": 5.4874213656892579
+        },
+        {
+          "R": 1.87,
+          "minimum_sample_Wunit": 0.84396771997276665,
+          "sample_cost": 5.4649096903652925
+        },
+        {
+          "R": 1.8800000000000001,
+          "minimum_sample_Wunit": 0.85632575757575757,
+          "sample_cost": 5.4438017836675971
+        },
+        {
+          "R": 1.8900000000000001,
+          "minimum_sample_Wunit": 0.86861669452976176,
+          "sample_cost": 5.424017083446425
+        },
+        {
+          "R": 1.9,
+          "minimum_sample_Wunit": 0.88084291187739483,
+          "sample_cost": 5.4054810657450636
+        },
+        {
+          "R": 1.9100000000000001,
+          "minimum_sample_Wunit": 0.89300668403761185,
+          "sample_cost": 5.38812468972203
+        },
+        {
+          "R": 1.92,
+          "minimum_sample_Wunit": 0.9051101846337104,
+          "sample_cost": 5.3718839026945719
+        },
+        {
+          "R": 1.9300000000000002,
+          "minimum_sample_Wunit": 0.91715549194465851,
+          "sample_cost": 5.3566991978412659
+        },
+        {
+          "R": 1.94,
+          "minimum_sample_Wunit": 0.92914459400781568,
+          "sample_cost": 5.3425152181414557
+        },
+        {
+          "R": 1.9500000000000002,
+          "minimum_sample_Wunit": 0.94107939339875135,
+          "sample_cost": 5.3292804010092238
+        },
+        {
+          "R": 1.96,
+          "minimum_sample_Wunit": 0.95296171171171173,
+          "sample_cost": 5.3169466588259482
+        },
+        {
+          "R": 1.9700000000000002,
+          "minimum_sample_Wunit": 0.964793293762366,
+          "sample_cost": 5.3054690912108153
+        },
+        {
+          "R": 1.98,
+          "minimum_sample_Wunit": 0.97657581153266659,
+          "sample_cost": 5.2948057254107477
+        },
+        {
+          "R": 1.9900000000000002,
+          "minimum_sample_Wunit": 0.98831086787608535,
+          "sample_cost": 5.2849172816551757
+        },
+        {
+          "R": 2,
+          "minimum_sample_Wunit": 1,
+          "sample_cost": 5.27576696071912
+        },
+        {
+          "R": 2.01,
+          "minimum_sample_Wunit": 1.0116446827406991,
+          "sample_cost": 5.2673202512805073
+        },
+        {
+          "R": 2.02,
+          "minimum_sample_Wunit": 1.0232463316452409,
+          "sample_cost": 5.2595447549529508
+        },
+        {
+          "R": 2.0300000000000002,
+          "minimum_sample_Wunit": 1.0348063058733061,
+          "sample_cost": 5.252410027130531
+        },
+        {
+          "R": 2.04,
+          "minimum_sample_Wunit": 1.0463259109311742,
+          "sample_cost": 5.2458874320022693
+        },
+        {
+          "R": 2.05,
+          "minimum_sample_Wunit": 1.057806401249024,
+          "sample_cost": 5.2399500102860994
+        },
+        {
+          "R": 2.06,
+          "minimum_sample_Wunit": 1.0692489826119127,
+          "sample_cost": 5.2345723583993209
+        },
+        {
+          "R": 2.0700000000000003,
+          "minimum_sample_Wunit": 1.0806548144540171,
+          "sample_cost": 5.2297305179283216
+        },
+        {
+          "R": 2.08,
+          "minimum_sample_Wunit": 1.0920250120250121,
+          "sample_cost": 5.2254018743877477
+        },
+        {
+          "R": 2.09,
+          "minimum_sample_Wunit": 1.1033606484368039,
+          "sample_cost": 5.2215650643709521
+        },
+        {
+          "R": 2.1,
+          "minimum_sample_Wunit": 1.1146627565982405,
+          "sample_cost": 5.218199890291384
+        },
+        {
+          "R": 2.1100000000000003,
+          "minimum_sample_Wunit": 1.1259323310448714,
+          "sample_cost": 5.2152872420006773
+        },
+        {
+          "R": 2.12,
+          "minimum_sample_Wunit": 1.13717032967033,
+          "sample_cost": 5.2128090246449812
+        },
+        {
+          "R": 2.13,
+          "minimum_sample_Wunit": 1.1483776753654329,
+          "sample_cost": 5.2107480921879334
+        },
+        {
+          "R": 2.14,
+          "minimum_sample_Wunit": 1.1595552575706782,
+          "sample_cost": 5.2090881860877181
+        },
+        {
+          "R": 2.1500000000000004,
+          "minimum_sample_Wunit": 1.1707039337474123,
+          "sample_cost": 5.2078138786680324
+        },
+        {
+          "R": 2.16,
+          "minimum_sample_Wunit": 1.1818245307725888,
+          "sample_cost": 5.2069105207690871
+        },
+        {
+          "R": 2.17,
+          "minimum_sample_Wunit": 1.1929178462616949,
+          "sample_cost": 5.206364193305971
+        },
+        {
+          "R": 2.18,
+          "minimum_sample_Wunit": 1.2039846498241127,
+          "sample_cost": 5.2061616623983413
+        },
+        {
+          "R": 2.1900000000000004,
+          "minimum_sample_Wunit": 1.2150256842548937,
+          "sample_cost": 5.2062903377680332
+        },
+        {
+          "R": 2.2,
+          "minimum_sample_Wunit": 1.2260416666666667,
+          "sample_cost": 5.206738234130273
+        },
+        {
+          "R": 2.21,
+          "minimum_sample_Wunit": 1.2370332895651504,
+          "sample_cost": 5.2074939353301808
+        },
+        {
+          "R": 2.2199999999999998,
+          "minimum_sample_Wunit": 1.2480012218714995,
+          "sample_cost": 5.2085465609995429
+        },
+        {
+          "R": 2.23,
+          "minimum_sample_Wunit": 1.2589461098945351,
+          "sample_cost": 5.2098857355296078
+        },
+        {
+          "R": 2.24,
+          "minimum_sample_Wunit": 1.2698685782556751,
+          "sample_cost": 5.2115015591744287
+        },
+        {
+          "R": 2.25,
+          "minimum_sample_Wunit": 1.2807692307692309,
+          "sample_cost": 5.2133845811160224
+        },
+        {
+          "R": 2.26,
+          "minimum_sample_Wunit": 1.291648651280553,
+          "sample_cost": 5.215525774337693
+        },
+        {
+          "R": 2.27,
+          "minimum_sample_Wunit": 1.3025074044643503,
+          "sample_cost": 5.2179165121655213
+        },
+        {
+          "R": 2.2800000000000002,
+          "minimum_sample_Wunit": 1.313346036585366,
+          "sample_cost": 5.2205485463502317
+        },
+        {
+          "R": 2.29,
+          "minimum_sample_Wunit": 1.3241650762234629,
+          "sample_cost": 5.2234139865727327
+        },
+        {
+          "R": 2.3,
+          "minimum_sample_Wunit": 1.3349650349650346,
+          "sample_cost": 5.2265052812666228
+        },
+        {
+          "R": 2.31,
+          "minimum_sample_Wunit": 1.3457464080625448,
+          "sample_cost": 5.2298151996599849
+        },
+        {
+          "R": 2.3200000000000003,
+          "minimum_sample_Wunit": 1.3565096750638923,
+          "sample_cost": 5.233336814946993
+        },
+        {
+          "R": 2.33,
+          "minimum_sample_Wunit": 1.3672553004131951,
+          "sample_cost": 5.2370634885072889
+        },
+        {
+          "R": 2.34,
+          "minimum_sample_Wunit": 1.377983734024488,
+          "sample_cost": 5.2409888550978074
+        },
+        {
+          "R": 2.35,
+          "minimum_sample_Wunit": 1.3886954118297403,
+          "sample_cost": 5.2451068089478694
+        },
+        {
+          "R": 2.3600000000000003,
+          "minimum_sample_Wunit": 1.3993907563025214,
+          "sample_cost": 5.249411490693916
+        },
+        {
+          "R": 2.37,
+          "minimum_sample_Wunit": 1.4100701769585655,
+          "sample_cost": 5.253897275095337
+        },
+        {
+          "R": 2.38,
+          "minimum_sample_Wunit": 1.4207340708344054,
+          "sample_cost": 5.2585587594774692
+        },
+        {
+          "R": 2.39,
+          "minimum_sample_Wunit": 1.4313828229451837,
+          "sample_cost": 5.2633907528520352
+        },
+        {
+          "R": 2.4000000000000004,
+          "minimum_sample_Wunit": 1.4420168067226893,
+          "sample_cost": 5.2683882656691639
+        },
+        {
+          "R": 2.41,
+          "minimum_sample_Wunit": 1.4526363844346002,
+          "sample_cost": 5.2735465001586368
+        },
+        {
+          "R": 2.42,
+          "minimum_sample_Wunit": 1.463241907585866,
+          "sample_cost": 5.278860841221217
+        },
+        {
+          "R": 2.43,
+          "minimum_sample_Wunit": 1.4738337173031053,
+          "sample_cost": 5.2843268478338636
+        },
+        {
+          "R": 2.4400000000000004,
+          "minimum_sample_Wunit": 1.4844121447028424,
+          "sample_cost": 5.2899402449353348
+        },
+        {
+          "R": 2.45,
+          "minimum_sample_Wunit": 1.4949775112443779,
+          "sample_cost": 5.29569691576115
+        },
+        {
+          "R": 2.46,
+          "minimum_sample_Wunit": 1.5055301290680179,
+          "sample_cost": 5.3015928945991577
+        },
+        {
+          "R": 2.4699999999999998,
+          "minimum_sample_Wunit": 1.5160703013193748,
+          "sample_cost": 5.3076243599390294
+        },
+        {
+          "R": 2.48,
+          "minimum_sample_Wunit": 1.5265983224603912,
+          "sample_cost": 5.31378762799092
+        },
+        {
+          "R": 2.49,
+          "minimum_sample_Wunit": 1.5371144785677204,
+          "sample_cost": 5.3200791465502917
+        },
+        {
+          "R": 2.5,
+          "minimum_sample_Wunit": 1.5476190476190477,
+          "sample_cost": 5.3264954891875727
+        },
+        {
+          "R": 2.51,
+          "minimum_sample_Wunit": 1.5581122997679286,
+          "sample_cost": 5.3330333497426823
+        },
+        {
+          "R": 2.52,
+          "minimum_sample_Wunit": 1.5685944976076556,
+          "sample_cost": 5.3396895371060218
+        },
+        {
+          "R": 2.5300000000000002,
+          "minimum_sample_Wunit": 1.5790658964246704,
+          "sample_cost": 5.3464609702686348
+        },
+        {
+          "R": 2.54,
+          "minimum_sample_Wunit": 1.5895267444419989,
+          "sample_cost": 5.3533446736255081
+        },
+        {
+          "R": 2.55,
+          "minimum_sample_Wunit": 1.5999772830531573,
+          "sample_cost": 5.3603377725170356
+        },
+        {
+          "R": 2.56,
+          "minimum_sample_Wunit": 1.6104177470469607,
+          "sample_cost": 5.3674374889946783
+        },
+        {
+          "R": 2.5700000000000003,
+          "minimum_sample_Wunit": 1.6208483648236367,
+          "sample_cost": 5.37464113779781
+        },
+        {
+          "R": 2.58,
+          "minimum_sample_Wunit": 1.6312693586026448,
+          "sample_cost": 5.3819461225295
+        },
+        {
+          "R": 2.59,
+          "minimum_sample_Wunit": 1.641680944622554,
+          "sample_cost": 5.3893499320199343
+        },
+        {
+          "R": 2.5999999999999996,
+          "minimum_sample_Wunit": 1.6520833333333331,
+          "sample_cost": 5.3968501368667718
+        },
+        {
+          "R": 2.61,
+          "minimum_sample_Wunit": 1.6624767295813903,
+          "sample_cost": 5.4044443861424947
+        },
+        {
+          "R": 2.62,
+          "minimum_sample_Wunit": 1.6728613327876682,
+          "sample_cost": 5.4121304042594245
+        },
+        {
+          "R": 2.63,
+          "minimum_sample_Wunit": 1.6832373371190992,
+          "sample_cost": 5.4199059879836859
+        },
+        {
+          "R": 2.6399999999999997,
+          "minimum_sample_Wunit": 1.6936049316537121,
+          "sample_cost": 5.42776900358989
+        },
+        {
+          "R": 2.65,
+          "minimum_sample_Wunit": 1.703964300539643,
+          "sample_cost": 5.4357173841489272
+        },
+        {
+          "R": 2.66,
+          "minimum_sample_Wunit": 1.7143156231483307,
+          "sample_cost": 5.4437491269415892
+        },
+        {
+          "R": 2.67,
+          "minimum_sample_Wunit": 1.7246590742221279,
+          "sample_cost": 5.4518622909913281
+        },
+        {
+          "R": 2.6799999999999997,
+          "minimum_sample_Wunit": 1.7349948240165629,
+          "sample_cost": 5.46005499470978
+        },
+        {
+          "R": 2.69,
+          "minimum_sample_Wunit": 1.7453230384374847,
+          "sample_cost": 5.4683254136490671
+        },
+        {
+          "R": 2.7,
+          "minimum_sample_Wunit": 1.7556438791732913,
+          "sample_cost": 5.4766717783553061
+        },
+        {
+          "R": 2.71,
+          "minimum_sample_Wunit": 1.7659575038224493,
+          "sample_cost": 5.48509237231804
+        },
+        {
+          "R": 2.7199999999999998,
+          "minimum_sample_Wunit": 1.7762640660165041,
+          "sample_cost": 5.4935855300106127
+        },
+        {
+          "R": 2.73,
+          "minimum_sample_Wunit": 1.7865637155387504,
+          "sample_cost": 5.5021496350168491
+        },
+        {
+          "R": 2.74,
+          "minimum_sample_Wunit": 1.7968565984387486,
+          "sample_cost": 5.5107831182396163
+        },
+        {
+          "R": 2.75,
+          "minimum_sample_Wunit": 1.8071428571428567,
+          "sample_cost": 5.5194844561871239
+        },
+        {
+          "R": 2.76,
+          "minimum_sample_Wunit": 1.817422630560928,
+          "sample_cost": 5.5282521693330846
+        },
+        {
+          "R": 2.77,
+          "minimum_sample_Wunit": 1.8276960541893328,
+          "sample_cost": 5.537084820547018
+        },
+        {
+          "R": 2.7800000000000002,
+          "minimum_sample_Wunit": 1.8379632602104516,
+          "sample_cost": 5.545981013591236
+        },
+        {
+          "R": 2.79,
+          "minimum_sample_Wunit": 1.8482243775887737,
+          "sample_cost": 5.5549393916812431
+        },
+        {
+          "R": 2.8,
+          "minimum_sample_Wunit": 1.8584795321637424,
+          "sample_cost": 5.56395863610642
+        },
+        {
+          "R": 2.81,
+          "minimum_sample_Wunit": 1.8687288467394612,
+          "sample_cost": 5.57303746490812
+        },
+        {
+          "R": 2.8200000000000003,
+          "minimum_sample_Wunit": 1.8789724411713946,
+          "sample_cost": 5.5821746316123484
+        },
+        {
+          "R": 2.83,
+          "minimum_sample_Wunit": 1.8892104324501702,
+          "sample_cost": 5.591368924014481
+        },
+        {
+          "R": 2.84,
+          "minimum_sample_Wunit": 1.8994429347826083,
+          "sample_cost": 5.6006191630134774
+        },
+        {
+          "R": 2.8499999999999996,
+          "minimum_sample_Wunit": 1.9096700596700593,
+          "sample_cost": 5.6099242014933219
+        },
+        {
+          "R": 2.86,
+          "minimum_sample_Wunit": 1.9198919159841772,
+          "sample_cost": 5.6192829232494361
+        },
+        {
+          "R": 2.87,
+          "minimum_sample_Wunit": 1.9301086100402107,
+          "sample_cost": 5.6286942419579677
+        },
+        {
+          "R": 2.88,
+          "minimum_sample_Wunit": 1.9403202456679096,
+          "sample_cost": 5.638157100186
+        },
+        {
+          "R": 2.8899999999999997,
+          "minimum_sample_Wunit": 1.9505269242801375,
+          "sample_cost": 5.64767046844077
+        },
+        {
+          "R": 2.9,
+          "minimum_sample_Wunit": 1.9607287449392712,
+          "sample_cost": 5.6572333442561469
+        },
+        {
+          "R": 2.91,
+          "minimum_sample_Wunit": 1.9709258044214724,
+          "sample_cost": 5.6668447513146365
+        },
+        {
+          "R": 2.92,
+          "minimum_sample_Wunit": 1.9811181972789118,
+          "sample_cost": 5.6765037386033512
+        },
+        {
+          "R": 2.9299999999999997,
+          "minimum_sample_Wunit": 1.9913060159000118,
+          "sample_cost": 5.6862093796024293
+        },
+        {
+          "R": 2.94,
+          "minimum_sample_Wunit": 2.0014893505677955,
+          "sample_cost": 5.6959607715043825
+        },
+        {
+          "R": 2.95,
+          "minimum_sample_Wunit": 2.0116682895163907,
+          "sample_cost": 5.7057570344631188
+        },
+        {
+          "R": 2.96,
+          "minimum_sample_Wunit": 2.0218429189857763,
+          "sample_cost": 5.71559731087124
+        },
+        {
+          "R": 2.9699999999999998,
+          "minimum_sample_Wunit": 2.032013323274815,
+          "sample_cost": 5.7254807646644412
+        },
+        {
+          "R": 2.98,
+          "minimum_sample_Wunit": 2.04217958479265,
+          "sample_cost": 5.7354065806517971
+        },
+        {
+          "R": 2.99,
+          "minimum_sample_Wunit": 2.0523417841085125,
+          "sample_cost": 5.7453739638708283
+        },
+        {
+          "R": 3,
+          "minimum_sample_Wunit": 2.0625,
+          "sample_cost": 5.7553821389663122
+        },
+        {
+          "R": 3.01,
+          "minimum_sample_Wunit": 2.0726543094998822,
+          "sample_cost": 5.7654303495917842
+        },
+        {
+          "R": 3.02,
+          "minimum_sample_Wunit": 2.0828047879414804,
+          "sample_cost": 5.7755178578327939
+        },
+        {
+          "R": 3.0300000000000002,
+          "minimum_sample_Wunit": 2.0929515090026767,
+          "sample_cost": 5.7856439436509941
+        },
+        {
+          "R": 3.04,
+          "minimum_sample_Wunit": 2.1030945447485925,
+          "sample_cost": 5.7958079043481918
+        },
+        {
+          "R": 3.05,
+          "minimum_sample_Wunit": 2.1132339656729897,
+          "sample_cost": 5.8060090540495448
+        },
+        {
+          "R": 3.06,
+          "minimum_sample_Wunit": 2.1233698407384378,
+          "sample_cost": 5.81624672320506
+        },
+        {
+          "R": 3.07,
+          "minimum_sample_Wunit": 2.1335022374152803,
+          "sample_cost": 5.8265202581087188
+        },
+        {
+          "R": 3.08,
+          "minimum_sample_Wunit": 2.1436312217194571,
+          "sample_cost": 5.8368290204344424
+        },
+        {
+          "R": 3.09,
+          "minimum_sample_Wunit": 2.153756858249201,
+          "sample_cost": 5.8471723867882561
+        },
+        {
+          "R": 3.1,
+          "minimum_sample_Wunit": 2.1638792102206739,
+          "sample_cost": 5.8575497482759582
+        },
+        {
+          "R": 3.11,
+          "minimum_sample_Wunit": 2.1739983395025426,
+          "sample_cost": 5.86796051008572
+        },
+        {
+          "R": 3.12,
+          "minimum_sample_Wunit": 2.18411430664957,
+          "sample_cost": 5.8784040910849731
+        },
+        {
+          "R": 3.13,
+          "minimum_sample_Wunit": 2.1942271709352159,
+          "sample_cost": 5.8888799234310421
+        },
+        {
+          "R": 3.14,
+          "minimum_sample_Wunit": 2.2043369903833132,
+          "sample_cost": 5.8993874521949783
+        },
+        {
+          "R": 3.15,
+          "minimum_sample_Wunit": 2.2144438217988234,
+          "sample_cost": 5.9099261349980665
+        },
+        {
+          "R": 3.16,
+          "minimum_sample_Wunit": 2.2245477207977213,
+          "sample_cost": 5.9204954416605222
+        },
+        {
+          "R": 3.17,
+          "minimum_sample_Wunit": 2.2346487418360241,
+          "sample_cost": 5.9310948538618913
+        },
+        {
+          "R": 3.1799999999999997,
+          "minimum_sample_Wunit": 2.2447469382380048,
+          "sample_cost": 5.9417238648127046
+        },
+        {
+          "R": 3.19,
+          "minimum_sample_Wunit": 2.2548423622236022,
+          "sample_cost": 5.95238197893698
+        },
+        {
+          "R": 3.2,
+          "minimum_sample_Wunit": 2.2649350649350648,
+          "sample_cost": 5.9630687115650991
+        },
+        {
+          "R": 3.21,
+          "minimum_sample_Wunit": 2.2750250964628496,
+          "sample_cost": 5.9737835886367332
+        },
+        {
+          "R": 3.2199999999999998,
+          "minimum_sample_Wunit": 2.2851125058707993,
+          "sample_cost": 5.9845261464133941
+        },
+        {
+          "R": 3.23,
+          "minimum_sample_Wunit": 2.2951973412206215,
+          "sample_cost": 5.9952959312002516
+        },
+        {
+          "R": 3.24,
+          "minimum_sample_Wunit": 2.3052796495956871,
+          "sample_cost": 6.0060924990768916
+        },
+        {
+          "R": 3.25,
+          "minimum_sample_Wunit": 2.3153594771241828,
+          "sample_cost": 6.0169154156366575
+        },
+        {
+          "R": 3.26,
+          "minimum_sample_Wunit": 2.3254368690016203,
+          "sample_cost": 6.02776425573429
+        },
+        {
+          "R": 3.27,
+          "minimum_sample_Wunit": 2.3355118695127364,
+          "sample_cost": 6.0386386032415151
+        },
+        {
+          "R": 3.2800000000000002,
+          "minimum_sample_Wunit": 2.3455845220527953,
+          "sample_cost": 6.04953805081033
+        },
+        {
+          "R": 3.29,
+          "minimum_sample_Wunit": 2.3556548691483195,
+          "sample_cost": 6.0604621996436752
+        },
+        {
+          "R": 3.3,
+          "minimum_sample_Wunit": 2.36572295247725,
+          "sample_cost": 6.0714106592732691
+        },
+        {
+          "R": 3.31,
+          "minimum_sample_Wunit": 2.3757888128885813,
+          "sample_cost": 6.0823830473442762
+        },
+        {
+          "R": 3.32,
+          "minimum_sample_Wunit": 2.3858524904214558,
+          "sample_cost": 6.0933789894066406
+        },
+        {
+          "R": 3.33,
+          "minimum_sample_Wunit": 2.395914024323762,
+          "sample_cost": 6.1043981187127905
+        },
+        {
+          "R": 3.34,
+          "minimum_sample_Wunit": 2.405973453070227,
+          "sample_cost": 6.1154400760215228
+        },
+        {
+          "R": 3.35,
+          "minimum_sample_Wunit": 2.4160308143800444,
+          "sample_cost": 6.1265045094078161
+        },
+        {
+          "R": 3.36,
+          "minimum_sample_Wunit": 2.4260861452340228,
+          "sample_cost": 6.1375910740784132
+        },
+        {
+          "R": 3.37,
+          "minimum_sample_Wunit": 2.4361394818913,
+          "sample_cost": 6.1486994321929016
+        },
+        {
+          "R": 3.38,
+          "minimum_sample_Wunit": 2.4461908599056059,
+          "sample_cost": 6.1598292526901721
+        },
+        {
+          "R": 3.39,
+          "minimum_sample_Wunit": 2.456240314141116,
+          "sample_cost": 6.1709802111200212
+        },
+        {
+          "R": 3.4,
+          "minimum_sample_Wunit": 2.4662878787878784,
+          "sample_cost": 6.1821519894797428
+        },
+        {
+          "R": 3.41,
+          "minimum_sample_Wunit": 2.47633358737686,
+          "sample_cost": 6.1933442760555186
+        },
+        {
+          "R": 3.42,
+          "minimum_sample_Wunit": 2.4863774727945858,
+          "sample_cost": 6.2045567652684745
+        },
+        {
+          "R": 3.4299999999999997,
+          "minimum_sample_Wunit": 2.49641956729742,
+          "sample_cost": 6.2157891575252142
+        },
+        {
+          "R": 3.44,
+          "minimum_sample_Wunit": 2.5064599025254757,
+          "sample_cost": 6.2270411590726837
+        },
+        {
+          "R": 3.45,
+          "minimum_sample_Wunit": 2.5164985095161656,
+          "sample_cost": 6.2383124818572391
+        },
+        {
+          "R": 3.46,
+          "minimum_sample_Wunit": 2.5265354187174158,
+          "sample_cost": 6.2496028433877635
+        },
+        {
+          "R": 3.4699999999999998,
+          "minimum_sample_Wunit": 2.5365706600005433,
+          "sample_cost": 6.2609119666027011
+        },
+        {
+          "R": 3.48,
+          "minimum_sample_Wunit": 2.5466042626728109,
+          "sample_cost": 6.2722395797408659
+        },
+        {
+          "R": 3.49,
+          "minimum_sample_Wunit": 2.5566362554896651,
+          "sample_cost": 6.2835854162159217
+        },
+        {
+          "R": 3.5,
+          "minimum_sample_Wunit": 2.5666666666666669,
+          "sample_cost": 6.2949492144944044
+        },
+        {
+          "R": 3.51,
+          "minimum_sample_Wunit": 2.5766955238911318,
+          "sample_cost": 6.3063307179771648
+        },
+        {
+          "R": 3.52,
+          "minimum_sample_Wunit": 2.5867228543334733,
+          "sample_cost": 6.3177296748841236
+        },
+        {
+          "R": 3.53,
+          "minimum_sample_Wunit": 2.5967486846582726,
+          "sample_cost": 6.3291458381422316
+        },
+        {
+          "R": 3.54,
+          "minimum_sample_Wunit": 2.6067730410350691,
+          "sample_cost": 6.3405789652765465
+        },
+        {
+          "R": 3.55,
+          "minimum_sample_Wunit": 2.61679594914889,
+          "sample_cost": 6.3520288183042908
+        },
+        {
+          "R": 3.56,
+          "minimum_sample_Wunit": 2.6268174342105262,
+          "sample_cost": 6.363495163631832
+        },
+        {
+          "R": 3.57,
+          "minimum_sample_Wunit": 2.6368375209665476,
+          "sample_cost": 6.374977771954474
+        },
+        {
+          "R": 3.58,
+          "minimum_sample_Wunit": 2.646856233709082,
+          "sample_cost": 6.386476418158975
+        },
+        {
+          "R": 3.59,
+          "minimum_sample_Wunit": 2.6568735962853607,
+          "sample_cost": 6.3979908812286927
+        },
+        {
+          "R": 3.6,
+          "minimum_sample_Wunit": 2.6668896321070235,
+          "sample_cost": 6.4095209441513115
+        },
+        {
+          "R": 3.61,
+          "minimum_sample_Wunit": 2.6769043641592072,
+          "sample_cost": 6.4210663938290145
+        },
+        {
+          "R": 3.62,
+          "minimum_sample_Wunit": 2.686917815009418,
+          "sample_cost": 6.4326270209910863
+        },
+        {
+          "R": 3.63,
+          "minimum_sample_Wunit": 2.6969300068161841,
+          "sample_cost": 6.4442026201088165
+        },
+        {
+          "R": 3.64,
+          "minimum_sample_Wunit": 2.7069409613375139,
+          "sample_cost": 6.4557929893126671
+        },
+        {
+          "R": 3.65,
+          "minimum_sample_Wunit": 2.7169506999391357,
+          "sample_cost": 6.4673979303116367
+        },
+        {
+          "R": 3.66,
+          "minimum_sample_Wunit": 2.7269592436025691,
+          "sample_cost": 6.4790172483147046
+        },
+        {
+          "R": 3.67,
+          "minimum_sample_Wunit": 2.736966612932977,
+          "sample_cost": 6.4906507519543721
+        },
+        {
+          "R": 3.68,
+          "minimum_sample_Wunit": 2.7469728281668582,
+          "sample_cost": 6.5022982532121691
+        },
+        {
+          "R": 3.69,
+          "minimum_sample_Wunit": 2.7569779091795397,
+          "sample_cost": 6.513959567346097
+        },
+        {
+          "R": 3.7,
+          "minimum_sample_Wunit": 2.7669818754925144,
+          "sample_cost": 6.5256345128199369
+        },
+        {
+          "R": 3.71,
+          "minimum_sample_Wunit": 2.7769847462805837,
+          "sample_cost": 6.5373229112344013
+        },
+        {
+          "R": 3.7199999999999998,
+          "minimum_sample_Wunit": 2.7869865403788627,
+          "sample_cost": 6.5490245872600035
+        },
+        {
+          "R": 3.73,
+          "minimum_sample_Wunit": 2.7969872762896015,
+          "sample_cost": 6.56073936857168
+        },
+        {
+          "R": 3.74,
+          "minimum_sample_Wunit": 2.8069869721888576,
+          "sample_cost": 6.5724670857850471
+        },
+        {
+          "R": 3.75,
+          "minimum_sample_Wunit": 2.8169856459330145,
+          "sample_cost": 6.5842075723942841
+        },
+        {
+          "R": 3.76,
+          "minimum_sample_Wunit": 2.8269833150651564,
+          "sample_cost": 6.5959606647115594
+        },
+        {
+          "R": 3.77,
+          "minimum_sample_Wunit": 2.8369799968212881,
+          "sample_cost": 6.6077262018079974
+        },
+        {
+          "R": 3.78,
+          "minimum_sample_Wunit": 2.8469757081364193,
+          "sample_cost": 6.6195040254561031
+        },
+        {
+          "R": 3.79,
+          "minimum_sample_Wunit": 2.8569704656505115,
+          "sample_cost": 6.6312939800736261
+        },
+        {
+          "R": 3.8,
+          "minimum_sample_Wunit": 2.8669642857142854,
+          "sample_cost": 6.64309591266881
+        },
+        {
+          "R": 3.81,
+          "minimum_sample_Wunit": 2.8769571843949064,
+          "sample_cost": 6.6549096727869959
+        },
+        {
+          "R": 3.82,
+          "minimum_sample_Wunit": 2.8869491774815339,
+          "sample_cost": 6.6667351124585323
+        },
+        {
+          "R": 3.83,
+          "minimum_sample_Wunit": 2.8969402804907496,
+          "sample_cost": 6.6785720861479652
+        },
+        {
+          "R": 3.84,
+          "minimum_sample_Wunit": 2.9069305086718655,
+          "sample_cost": 6.6904204507044591
+        },
+        {
+          "R": 3.85,
+          "minimum_sample_Wunit": 2.9169198770121181,
+          "sample_cost": 6.7022800653134205
+        },
+        {
+          "R": 3.86,
+          "minimum_sample_Wunit": 2.9269084002417327,
+          "sample_cost": 6.7141507914493062
+        },
+        {
+          "R": 3.87,
+          "minimum_sample_Wunit": 2.9368960928388992,
+          "sample_cost": 6.7260324928295372
+        },
+        {
+          "R": 3.88,
+          "minimum_sample_Wunit": 2.9468829690346077,
+          "sample_cost": 6.7379250353695657
+        },
+        {
+          "R": 3.89,
+          "minimum_sample_Wunit": 2.9568690428174156,
+          "sample_cost": 6.7498282871389454
+        },
+        {
+          "R": 3.9,
+          "minimum_sample_Wunit": 2.966854327938071,
+          "sample_cost": 6.7617421183185238
+        },
+        {
+          "R": 3.91,
+          "minimum_sample_Wunit": 2.9768388379140678,
+          "sample_cost": 6.7736664011585885
+        },
+        {
+          "R": 3.92,
+          "minimum_sample_Wunit": 2.9868225860340796,
+          "sample_cost": 6.7856010099380306
+        },
+        {
+          "R": 3.93,
+          "minimum_sample_Wunit": 2.9968055853623072,
+          "sample_cost": 6.797545820924479
+        },
+        {
+          "R": 3.94,
+          "minimum_sample_Wunit": 3.0067878487427357,
+          "sample_cost": 6.8095007123353168
+        },
+        {
+          "R": 3.95,
+          "minimum_sample_Wunit": 3.0167693888032878,
+          "sample_cost": 6.82146556429968
+        },
+        {
+          "R": 3.96,
+          "minimum_sample_Wunit": 3.0267502179598949,
+          "sample_cost": 6.833440258821283
+        },
+        {
+          "R": 3.97,
+          "minimum_sample_Wunit": 3.0367303484204897,
+          "sample_cost": 6.8454246797421172
+        },
+        {
+          "R": 3.98,
+          "minimum_sample_Wunit": 3.0467097921888904,
+          "sample_cost": 6.8574187127070125
+        },
+        {
+          "R": 3.99,
+          "minimum_sample_Wunit": 3.0566885610686256,
+          "sample_cost": 6.8694222451289821
+        },
+        {
+          "R": 4,
+          "minimum_sample_Wunit": 3.0666666666666669,
+          "sample_cost": 6.8814351661553737
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.28081120833333334,
+  "scope": "Float quadrature and finite D samples only. No integral enclosure or continuous D majorization certificate; no new general C2 upper."
+}
