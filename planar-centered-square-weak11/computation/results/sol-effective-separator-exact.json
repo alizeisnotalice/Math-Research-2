@@ -1,0 +1,203 @@
+{
+  "python": "3.15.0",
+  "arithmetic": "exact Fraction, deterministic single process; no seed or tolerance",
+  "corner_example": {
+    "points": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "4",
+        "0"
+      ]
+    ],
+    "masses": [
+      "1",
+      "14"
+    ],
+    "eligible_with_p": [
+      [],
+      [
+        0
+      ]
+    ],
+    "old_components": [
+      [
+        0,
+        1
+      ]
+    ],
+    "internal_proxy_outer_loss": "13"
+  },
+  "noncorner_union_failure": true,
+  "light_components": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "light_eligible_edges": 8,
+  "heavy_last_max_old": "3/10000",
+  "heavy_last_proxy_area": "10011/10000",
+  "fixed_projection_ratio_lower": "4925/1251",
+  "eligible_light_subsets_with_heavy": 25,
+  "leaf_checks": {
+    "mass_dominant": {
+      "total": "16",
+      "last_mass": "15",
+      "old_mass": "1",
+      "D": "1",
+      "old_proxy_outer_radius_bound": "3/2",
+      "final_radius": "2"
+    },
+    "uniform_nesting": {
+      "total": "8",
+      "min_mass": "1",
+      "bbox_diameter": "1/1000",
+      "squared_test": "2/15625"
+    }
+  },
+  "six_cycle": {
+    "a": "49/100",
+    "pair_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "deletions": [
+      {
+        "deleted": 0,
+        "component_sizes": [
+          5
+        ],
+        "whole_component_eligible": false
+      },
+      {
+        "deleted": 1,
+        "component_sizes": [
+          5
+        ],
+        "whole_component_eligible": false
+      },
+      {
+        "deleted": 2,
+        "component_sizes": [
+          5
+        ],
+        "whole_component_eligible": false
+      },
+      {
+        "deleted": 3,
+        "component_sizes": [
+          5
+        ],
+        "whole_component_eligible": false
+      },
+      {
+        "deleted": 4,
+        "component_sizes": [
+          5
+        ],
+        "whole_component_eligible": false
+      },
+      {
+        "deleted": 5,
+        "component_sizes": [
+          5
+        ],
+        "whole_component_eligible": false
+      }
+    ],
+    "whole_six_eligible": true,
+    "proper_eligible_rank": 2,
+    "proper_eligible_count": 12,
+    "rank_root_proxy_bound": "8/3"
+  },
+  "rank_checks": {
+    "chain_N": 8,
+    "chain_components": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    ],
+    "chain_eligible_rank": 2,
+    "chain_eligible_count": 15,
+    "general_rank_k_new_mass_payment": "T_j<=k*m_j"
+  },
+  "quarter_strip": {
+    "M": "1",
+    "a": "1/4",
+    "R": "1/4",
+    "W": "49/50",
+    "H": "49/50",
+    "proxy_caps": [
+      "1/4",
+      "1/4",
+      "1"
+    ],
+    "container": [
+      "-1/4",
+      "37/25",
+      "-1/2",
+      "37/25"
+    ],
+    "container_area": "17127/5000",
+    "actual_disjoint_proxy_area": "3/2"
+  },
+  "source_sha256": {
+    "proofs/sol-effective-envelope.md": "334581dea21101cc0839a6ec63ed6725fdad15d6be3b2b6c153f35a17bec394f",
+    "proofs/sol-effective-ordering-draft.md": "6a7113db5873ec6e851ce75587e20766edb8364e1f8bf105b858575b4741317d",
+    "proofs/general-dual-interface.md": "8b9184ac14d3e38cb31c82e5c44a697e366a2c46cc3294323c8ffa393627c821",
+    "proofs/mass-capacity-equality-attempt.md": "7cc74c83702818078187d9f1b29dc070e4473cbd7e0294fbc3b7934bde681740"
+  },
+  "proof_sha256": "fb7cf5793e63ca3724ceff0cbfe0ee71f0da6dc28582b17879ba00e358995207"
+}

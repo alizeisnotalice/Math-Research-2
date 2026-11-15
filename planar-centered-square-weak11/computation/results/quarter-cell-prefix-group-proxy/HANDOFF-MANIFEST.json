@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-15 Asia/Shanghai",
+  "status": "complete and frozen for root R49 integration; not committed or pushed",
+  "case_count": 1,
+  "definition": "coarse quarter-cell bbox plus cumulative-prefix radius grouping; not original U_pi and not C2",
+  "rigorous_fact": {
+    "order": [
+      5,
+      6,
+      7,
+      3,
+      0,
+      4,
+      2,
+      1
+    ],
+    "area_upper": "58944981652268129571/18446744073709551616",
+    "area_upper_float": 3.1954138582253653,
+    "strictly_below": "7/2"
+  },
+  "exploratory_only": {
+    "representative_orders": 10080,
+    "minimum_float": 3.1954138576374205,
+    "no_exact_optimality_claim": true
+  },
+  "files": [
+    {
+      "path": "proofs/quarter-cell-prefix-group-single-test.md",
+      "bytes": 3984,
+      "sha256": "8faa60748b4215b8bd8662c3047e31da7ddaf106bd9801d358e53fec17f1f510"
+    },
+    {
+      "path": "computation/quarter_cell_prefix_group_proxy.py",
+      "bytes": 5381,
+      "sha256": "09ddff9ca40877851779d12d681b44093f4610fa4f0778cfb39ee0e49eb1809a"
+    },
+    {
+      "path": "computation/quarter_cell_specified_order_upper.py",
+      "bytes": 2904,
+      "sha256": "bfcb7fe72e550cf3f9eb7d04e3fc9994ef30c2b58ad91390b3279a03108587ee"
+    },
+    {
+      "path": "computation/results/quarter-cell-prefix-group-proxy/quarter-cell-single-input.json",
+      "bytes": 2611,
+      "sha256": "381cc5adc4516b2fd86e6ec4fca8d7b02114f8880c9f14311257402533350299"
+    },
+    {
+      "path": "computation/results/quarter-cell-prefix-group-proxy/all-orders.csv",
+      "bytes": 504194,
+      "sha256": "fe4750a19fee1ca1f2b2539940bb98d8fc6efb6f7a2f5b7746e4343a0b5dad03"
+    },
+    {
+      "path": "computation/results/quarter-cell-prefix-group-proxy/specified-order-outer-certificate.json",
+      "bytes": 4290,
+      "sha256": "67bed2dbb6eaadb528d3d308c5843c914c149f0721652c97e4bfbc6413d3d23a"
+    }
+  ],
+  "actual_runs": {
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "production_elapsed_seconds": 0.11112645899993367,
+    "production_exit_code": 0,
+    "specified_order_exact_elapsed_seconds": 0.008845333009958267,
+    "specified_order_exit_code": 0
+  },
+  "frozen_prior_R34_R40_and_post_R40_local_materials_rechecked_unchanged": true,
+  "remaining": "No conclusion for arbitrary c>z inputs or the general four-side concentrated budget."
+}

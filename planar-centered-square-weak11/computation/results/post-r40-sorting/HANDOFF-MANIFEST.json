@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-15 Asia/Shanghai",
+  "status": "new independent structural draft, no commit/push; R34 and R40 frozen files verified unchanged",
+  "files": [
+    {
+      "path": "proofs/post-r40-sorting-obstructions.md",
+      "bytes": 11566,
+      "sha256": "47f0ac8ff9675a02458ef313654f7f44b0153fb7fd55e4cd1d340313f1e08beb"
+    },
+    {
+      "path": "computation/post_r40_sorting_obstruction_check.py",
+      "bytes": 5215,
+      "sha256": "e533adf57f104bcf822df6fff2eafab81874d92711b7fcd8efcb433123b20291"
+    },
+    {
+      "path": "computation/results/post-r40-sorting/exact-obstructions.json",
+      "bytes": 4557,
+      "sha256": "cf18aac220582195958c5dce0b20a153ada2a5e228ec8009430d3f44667a3ff8"
+    }
+  ],
+  "actual_run": {
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "arithmetic": "fractions.Fraction exact; no random inputs or floating decisions",
+    "exit_code": 0,
+    "elapsed_seconds": 0.00848862502607517
+  },
+  "proved_scope": [
+    "all single-functional projection orders may have proxy ratio at least 4925/1251 while the same input free minimum is exactly 3337/3336",
+    "individual-mass increasing orders may have proxy ratio at least 22201/2900 while a free order has ratio below 122103/116000",
+    "three-point interleaving can charge an internal cluster area 13 at own mass 1",
+    "six-cycle has no small-component deletion separator, yet is covered by valid rank-root bound 8/3"
+  ],
+  "not_proved": [
+    "free-order minproxy can exceed 3",
+    "general free-order minproxy is at most 3",
+    "any new C2 bound"
+  ],
+  "no_blind_or_permutation_search": true
+}
