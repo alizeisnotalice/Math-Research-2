@@ -1,0 +1,74 @@
+{
+  "python": "3.15.0",
+  "single_process": true,
+  "arithmetic": "fractions.Fraction",
+  "random_seed": null,
+  "tolerance": null,
+  "neighbor_source_pairs_checked": 192,
+  "layers": [
+    {
+      "n": 3,
+      "h": "1/8",
+      "K": 2048,
+      "cell_mass": "1/2048",
+      "quantization_units": 2,
+      "cross_cell_tail": "8/49",
+      "aggregated_tail": "1/8",
+      "smoothing_loss_bound": "3/1024"
+    },
+    {
+      "n": 4,
+      "h": "1/16",
+      "K": 8192,
+      "cell_mass": "1/8192",
+      "quantization_units": 8,
+      "cross_cell_tail": "8/49",
+      "aggregated_tail": "1/8",
+      "smoothing_loss_bound": "3/1024"
+    },
+    {
+      "n": 5,
+      "h": "1/32",
+      "K": 32768,
+      "cell_mass": "1/32768",
+      "quantization_units": 32,
+      "cross_cell_tail": "8/49",
+      "aggregated_tail": "1/8",
+      "smoothing_loss_bound": "3/1024"
+    },
+    {
+      "n": 6,
+      "h": "1/64",
+      "K": 131072,
+      "cell_mass": "1/131072",
+      "quantization_units": 128,
+      "cross_cell_tail": "8/49",
+      "aggregated_tail": "1/8",
+      "smoothing_loss_bound": "3/1024"
+    },
+    {
+      "n": 7,
+      "h": "1/128",
+      "K": 524288,
+      "cell_mass": "1/524288",
+      "quantization_units": 512,
+      "cross_cell_tail": "8/49",
+      "aggregated_tail": "1/8",
+      "smoothing_loss_bound": "3/1024"
+    },
+    {
+      "n": 8,
+      "h": "1/256",
+      "K": 2097152,
+      "cell_mass": "1/2097152",
+      "quantization_units": 2048,
+      "cross_cell_tail": "8/49",
+      "aggregated_tail": "1/8",
+      "smoothing_loss_bound": "3/1024"
+    }
+  ],
+  "strict_gap_lower_bound": "491/7168",
+  "excess_over_1over16": "43/7168",
+  "uniform_Linfty": 4194304,
+  "script_sha256": "7bdf1b49c562213f7314993657398658cca7ef190600e836bd8d49bc05cca43c"
+}

@@ -1,0 +1,254 @@
+{
+  "round": 32,
+  "date_asia_shanghai": "2026-11-15",
+  "theme": "完整边界状态、循环比值层级与网格聚合障碍",
+  "status": "final_reviewed_ready_for_root_integration",
+  "baseline_commit": "f9502e0df212da80e489494087f67a27645ab356",
+  "committed_by_branch": false,
+  "pushed_by_branch": false,
+  "integration_owner": "root",
+  "files": [
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-recursive/planar-centered-square-weak11/rounds/032.md",
+      "dest": "planar-centered-square-weak11/rounds/032.md",
+      "sha256": "648ba95e82516bd41c758699a550d9210cd9961d0d378d413a866e0670884228",
+      "size": 7239,
+      "role": "round_report",
+      "actual_verification": "Reports only actual computations and bound source proof versions; Root owns final Git receipt."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-recursive/planar-centered-square-weak11/proofs/boundary-state-cycle-hierarchy.md",
+      "dest": "planar-centered-square-weak11/proofs/boundary-state-cycle-hierarchy.md",
+      "sha256": "2f3d8cdd747c709dfa000cd9f1b474835e0e89dbd847a3b95ee3d83fec361274",
+      "size": 14930,
+      "role": "primary_proof",
+      "actual_verification": "Sections 1-5 audited by counterexample Sol; Sections 6-8 audited by geometry Sol; frozen hash 2f3d8cdd..."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-recursive/planar-centered-square-weak11/computation/check_boundary_cycle_example.py",
+      "dest": "planar-centered-square-weak11/computation/check_boundary_cycle_example.py",
+      "sha256": "fcd10a0096e52561971308e3858e9aa74b4bc09e2410ae6e6df0777fcabe3536",
+      "size": 7045,
+      "role": "reproduction_code",
+      "actual_verification": "Executed once by author, independently replayed by Sol; exact Fraction/Qsqrt2, exit0."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-recursive/planar-centered-square-weak11/computation/results/recursive-boundary/cycle-example.json",
+      "dest": "planar-centered-square-weak11/computation/results/recursive-boundary/cycle-example.json",
+      "sha256": "985b0fe68e1aa62f71b9a6ddf3a162207a6eb2e6c018fa7ff68fd9fd39e40453",
+      "size": 77167,
+      "role": "actual_result",
+      "actual_verification": "32 windows, 3093 source subsets, 179 simple cycles, all potential edges passed; author and replay bytes identical."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-recursive/planar-centered-square-weak11/proofs/nonuniform-grid-aggregation-obstruction.md",
+      "dest": "planar-centered-square-weak11/proofs/nonuniform-grid-aggregation-obstruction.md",
+      "sha256": "c3fd02dfc22dded159b39148527665ca77a12d90ab155f2e945f091f2f125d5c",
+      "size": 5098,
+      "role": "primary_proof",
+      "actual_verification": "Two independent Sol analytic audits bind c3fd02df...; proves only specified aggregation obstruction, not absence of L_n rate."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-recursive/planar-centered-square-weak11/computation/check_grid_aggregation_obstruction.py",
+      "dest": "planar-centered-square-weak11/computation/check_grid_aggregation_obstruction.py",
+      "sha256": "ce53f6f53e69d6bb565cab97b46629ddbf9db8e9e4a6e843f450ddf48bacfd96",
+      "size": 2831,
+      "role": "reproduction_code",
+      "actual_verification": "Author actual single-process Fraction run, n=3,...,8, 192 neighbor pairs, exit0."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-recursive/planar-centered-square-weak11/computation/results/recursive-boundary/grid-aggregation-obstruction.json",
+      "dest": "planar-centered-square-weak11/computation/results/recursive-boundary/grid-aggregation-obstruction.json",
+      "sha256": "d83b5bd91d46471e2c3c821a333c4f78fef2d05855e890c611ead898a05adf84",
+      "size": 2521,
+      "role": "actual_result",
+      "actual_verification": "Scalar/tail/quantization checks only; not a huge full-source-box enumeration."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/proofs/recursive-collar-exact-gluing.md",
+      "dest": "planar-centered-square-weak11/proofs/recursive-collar-exact-gluing.md",
+      "sha256": "d9ef0e87218d859a6752c07b9915952ba784292db981acec183d84ed194b55d1",
+      "size": 8779,
+      "role": "geometry_proof",
+      "actual_verification": "Author analytic proof; Astra read and checked collar geometry, width scope and finite-radius restrictions."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/computation/recursive_geometry_exact.py",
+      "dest": "planar-centered-square-weak11/computation/recursive_geometry_exact.py",
+      "sha256": "e50ea4b5fccbf08f375ee9ed7b06f5e9c36d99e7295467c86e0c76b76d1ab325",
+      "size": 3194,
+      "role": "reproduction_code",
+      "actual_verification": "Geometry Sol actual Fraction single-process run, 196 rational checks, exit0."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/computation/results/recursive_geometry_exact.json",
+      "dest": "planar-centered-square-weak11/computation/results/recursive_geometry_exact.json",
+      "sha256": "79412d0252f590eda37f52bd083478a5d4f2b619465f1473fab77b49cfc4bc4e",
+      "size": 422,
+      "role": "actual_result",
+      "actual_verification": "196 finite gluing checks plus marginal/collar examples; general theorem remains analytic."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/reviews/recursive_geometry_sources.json",
+      "dest": "planar-centered-square-weak11/reviews/recursive_geometry_sources.json",
+      "sha256": "b9e997270c57bf4ce51e7cef6ba737e2d0d297a9837274a499739e357cce9521",
+      "size": 684,
+      "role": "source_index",
+      "actual_verification": "Records source identity and read scope; hashes are not proof evidence."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/reviews/boundary-cycle-hierarchy-transfer-review.md",
+      "dest": "planar-centered-square-weak11/reviews/boundary-cycle-hierarchy-transfer-review.md",
+      "sha256": "4ccf740e51c19fb9ed9d328783e26e29a9af3314e3e26d80b04fa00a982ff8b9",
+      "size": 6741,
+      "role": "independent_review",
+      "actual_verification": "Binds final primary proof 2f3d8cdd..., sections6-8; no required fixes."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/computation/check_boundary_cycle_transfer_review.py",
+      "dest": "planar-centered-square-weak11/computation/check_boundary_cycle_transfer_review.py",
+      "sha256": "8dac93caf138dd99d386f3e52b60b2f07a6c7aeaab47086e0d7334db12d8482a",
+      "size": 2741,
+      "role": "independent_check_code",
+      "actual_verification": "1083 nonempty inner-radius cases, 5 rounding levels, 9 witness points, 3-vertex potential example; actual exit0."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/computation/results/boundary_cycle_transfer_review_exact.json",
+      "dest": "planar-centered-square-weak11/computation/results/boundary_cycle_transfer_review_exact.json",
+      "sha256": "ffe2a8d5816b1ba34d5609bc1b40150a10724a79446bd6199235c8e105d78c81",
+      "size": 1194,
+      "role": "actual_result",
+      "actual_verification": "Independent finite auxiliary checks; no all-parameter formal verification claim."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/reviews/grid-aggregation-obstruction-review.md",
+      "dest": "planar-centered-square-weak11/reviews/grid-aggregation-obstruction-review.md",
+      "sha256": "ed4ca0937da2f01c20333304e0317decff74a10c43e05406ba30d8d068d6331f",
+      "size": 5594,
+      "role": "independent_review",
+      "actual_verification": "First independent full analytic audit of c3fd02df..., including cross-cell tail and smoothing loss."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/computation/check_grid_aggregation_obstruction_review.py",
+      "dest": "planar-centered-square-weak11/computation/check_grid_aggregation_obstruction_review.py",
+      "sha256": "7bdf1b49c562213f7314993657398658cca7ef190600e836bd8d49bc05cca43c",
+      "size": 2335,
+      "role": "independent_check_code",
+      "actual_verification": "Actual single-process Fraction run: 6 levels and 192 neighboring source pairs, exit0."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-geometry/planar-centered-square-weak11/computation/results/grid_aggregation_obstruction_review_exact.json",
+      "dest": "planar-centered-square-weak11/computation/results/grid_aggregation_obstruction_review_exact.json",
+      "sha256": "bc06e740ee4e575e0d61640660fa313fefc34926a499ca9f9e6aedbc79a85a00",
+      "size": 1770,
+      "role": "actual_result",
+      "actual_verification": "Records exact normalization, tail, quantization and smoothing checks."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/proofs/boundary-state-corner-counterexample.md",
+      "dest": "planar-centered-square-weak11/proofs/boundary-state-corner-counterexample.md",
+      "sha256": "8d507dc283d5665733dae11ea79596711440a46fb2559469241d97158d6bfb12",
+      "size": 7053,
+      "role": "counterexample_proof",
+      "actual_verification": "Astra analytic read; full rational inner/outer area computation by author Sol; precise statistic scope preserved."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/computation/boundary_state_corner_counterexample.py",
+      "dest": "planar-centered-square-weak11/computation/boundary_state_corner_counterexample.py",
+      "sha256": "fdd26326f261cdd8b44c0f8986812c71733608d28ce7a0809beebcd4b998c5bc",
+      "size": 6094,
+      "role": "reproduction_code",
+      "actual_verification": "Actual Fraction/isqrt dyadic full-source-box checks for specified three-atom inputs, exit0."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/computation/boundary_state_corner_counterexample.json",
+      "dest": "planar-centered-square-weak11/computation/boundary_state_corner_counterexample.json",
+      "sha256": "12b08882161ff723d81219707648270516b5983d5afdfe2f4078fd556891310d",
+      "size": 3333,
+      "role": "actual_result",
+      "actual_verification": "Finite exact interval evidence, not unverified decimals."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/reviews/recursive-cycle-ratio-audit.md",
+      "dest": "planar-centered-square-weak11/reviews/recursive-cycle-ratio-audit.md",
+      "sha256": "577cf9557085b333687c4c67b177cdbc1d142a996d7ee067408f71202c32b633",
+      "size": 3276,
+      "role": "interface_review",
+      "actual_verification": "Records zero-cycle unique-root correction and finite model scope."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/reviews/boundary-cycle-hierarchy-graph-review.md",
+      "dest": "planar-centered-square-weak11/reviews/boundary-cycle-hierarchy-graph-review.md",
+      "sha256": "035d135f7d5807e0324e57bee60b6c28bd5aae922dc3ac18244a8234f6edb9a3",
+      "size": 7968,
+      "role": "independent_review",
+      "actual_verification": "Final primary proof 2f3d8cdd... sections1-5 audited; independent analytic cycle identity and full script replay."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/computation/check_boundary_cycle_example_review_copy.py",
+      "dest": "planar-centered-square-weak11/computation/check_boundary_cycle_example_review_copy.py",
+      "sha256": "fcd10a0096e52561971308e3858e9aa74b4bc09e2410ae6e6df0777fcabe3536",
+      "size": 7045,
+      "role": "replay_code",
+      "actual_verification": "Byte-identical author script preserved for exact independent replay command; result deduplicated to author JSON destination."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/reviews/grid-aggregation-obstruction-second-review.md",
+      "dest": "planar-centered-square-weak11/reviews/grid-aggregation-obstruction-second-review.md",
+      "sha256": "f1fe2c5b98ba499df9ca9ad3640f2e052eb6bd4fd9b0a60f8feaeca3cdbf6647",
+      "size": 6112,
+      "role": "independent_review",
+      "actual_verification": "Second independent full analytic audit of c3fd02df..., 96 local source pairs and rational strict gap."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/computation/check_grid_aggregation_second_review.py",
+      "dest": "planar-centered-square-weak11/computation/check_grid_aggregation_second_review.py",
+      "sha256": "30500380e454b765022b0d14a137629e54a1f28878b9ee274af8733e0978ad7f",
+      "size": 2127,
+      "role": "independent_check_code",
+      "actual_verification": "Actual Fraction single-process n=3/7/12 and 96 local source label pairs, exit0; independent script, no author replay."
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/computation/check_grid_aggregation_second_review.json",
+      "dest": "planar-centered-square-weak11/computation/check_grid_aggregation_second_review.json",
+      "sha256": "a6a27efb586c2a3ebeafffad4c507a7a308552bb6f9234c2cfc8031a5d345539",
+      "size": 956,
+      "role": "actual_result",
+      "actual_verification": "Exact gap lower bound 491/7168>1/16 and tail/rounding/smoothing checks."
+    }
+  ],
+  "existing_dependencies": [
+    {
+      "dest": "planar-centered-square-weak11/proofs/periodic-complete-halo.md",
+      "sha256": "7571ad4fa597d9f152fcfd1249bf07c69d998326abf30c44a9abaca1fe18987e",
+      "use": "Existing main dependency, analytically reread; historical large computations not rerun."
+    },
+    {
+      "dest": "planar-centered-square-weak11/proofs/supercell-transport-tail.md",
+      "sha256": "8d3ca43b655d19f0425e19b21712af749939a4fc0bee5f5c77b181788f11dfdd",
+      "use": "Existing main dependency, analytically reread; historical large computations not rerun."
+    },
+    {
+      "dest": "planar-centered-square-weak11/proofs/cross-scale-insertion-obstruction.md",
+      "sha256": "8a47d929f40acf09e04dba13d4f07dfc217ef54e6517b979f367c3f4c30894c8",
+      "use": "Existing main dependency, analytically reread; historical large computations not rerun."
+    }
+  ],
+  "deduplication": [
+    {
+      "omitted_source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-recursive-counterexample/planar-centered-square-weak11/computation/results/recursive-boundary/cycle-example.json",
+      "same_as_dest": "planar-centered-square-weak11/computation/results/recursive-boundary/cycle-example.json",
+      "sha256": "985b0fe68e1aa62f71b9a6ddf3a162207a6eb2e6c018fa7ff68fd9fd39e40453",
+      "reason": "Independent replay output byte-identical; retain one canonical result."
+    }
+  ],
+  "not_claimed": [
+    "No new numerical general C2 bound",
+    "No effective uniform bound on C2-L_n",
+    "No complete high-level graph enumeration",
+    "No historic upper-bound kernel rerun",
+    "No branch commit, push, or backup completion claim"
+  ],
+  "total_files": 26,
+  "total_bytes": 194249
+}
