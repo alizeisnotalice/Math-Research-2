@@ -1,0 +1,1231 @@
+{
+  "round": 69,
+  "status": "PASS_FIXED_EXACT_HEAVY_CORE_GEOMETRY",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "sympy": "1.14.0",
+  "process_pid": 30634,
+  "script_sha256": "c71607fbd7d1c91f00c7afd0064b12539d8ab3557a5c49d7cd5549f1fa386f54",
+  "input_sha256": "9842542211c40c0d75d7d53a059cd738a59fe5ca3e7bbbad1f8729aa12dab848",
+  "symbolic_zero_identities": [
+    "0",
+    "0",
+    "0"
+  ],
+  "cases": [
+    {
+      "id": "r068-six-source-two-heavy-core",
+      "source_count": 6,
+      "subset_count": 63,
+      "eligible_subsets": 17,
+      "unique_maximum_masks": [
+        15
+      ],
+      "S_mask": 15,
+      "H_mask": 3,
+      "L": "1",
+      "M": "499/500",
+      "E": "1/500",
+      "r": "43/50",
+      "radius_margin_3M_minus_4r2": "89/2500",
+      "near_outside_indices": [],
+      "beta": "0",
+      "near_profiles": [
+        {
+          "source": 4,
+          "distance_to_V_squared": "81/100",
+          "strict_near": false
+        },
+        {
+          "source": 5,
+          "distance_to_V_squared": "2809/2500",
+          "strict_near": false
+        }
+      ],
+      "connected": true,
+      "nonterminal_margin": "17637/55000",
+      "S_width": "9/10",
+      "S_height": "9/10",
+      "C": [
+        "-1/5",
+        "17/10",
+        "-1/5",
+        "17/10"
+      ],
+      "K": [
+        "17/50",
+        "29/25",
+        "17/50",
+        "29/25"
+      ],
+      "K_contained_in_C": true,
+      "C_area": "361/100",
+      "C_intersect_K_area": "1681/2500",
+      "ZH_intersect_K_area": "1033/2500",
+      "Gamma_exact": "8377/2500",
+      "low_mass_weak9": "9/500",
+      "total9_upper": "4211/1250",
+      "gap_to_7over2": "82/625",
+      "low_rank_upper": "1/250",
+      "min_low_refined_total": "8387/2500",
+      "uniform_dominant_corner_corollary_applies": false,
+      "uniform_corner_constant": null,
+      "MST_cost": "27/10",
+      "MST_5over2_test_passes": false,
+      "branch_counts": {
+        "touch_core": 12,
+        "low_miss_core": 2,
+        "high_miss_core": 0
+      },
+      "all_touching_eligible_labels": [
+        {
+          "mask": 1,
+          "mass": "1/10",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 2,
+          "mass": "449/500",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 3,
+          "mass": "499/500",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 4,
+          "mass": "1/1000",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 6,
+          "mass": "899/1000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 7,
+          "mass": "999/1000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 8,
+          "mass": "1/1000",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 10,
+          "mass": "899/1000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 11,
+          "mass": "999/1000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 14,
+          "mass": "9/10",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 15,
+          "mass": "1",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 17,
+          "mass": "1/5",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 33,
+          "mass": "101/1000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 49,
+          "mass": "201/1000",
+          "branch": "touch_core"
+        }
+      ],
+      "W_or_Wprime_area_evaluated": false,
+      "scope": "Exact certificate for the proved heavy-core upper bound only, not the actual Wprime value."
+    },
+    {
+      "id": "r068-eight-point-heavy-corner",
+      "source_count": 9,
+      "subset_count": 511,
+      "eligible_subsets": 168,
+      "unique_maximum_masks": [
+        255
+      ],
+      "S_mask": 255,
+      "H_mask": 128,
+      "L": "1",
+      "M": "393/400",
+      "E": "7/400",
+      "r": "17/20",
+      "radius_margin_3M_minus_4r2": "23/400",
+      "near_outside_indices": [],
+      "beta": "0",
+      "near_profiles": [
+        {
+          "source": 8,
+          "distance_to_V_squared": "961/3600",
+          "strict_near": false
+        }
+      ],
+      "connected": true,
+      "nonterminal_margin": "1303/8800",
+      "S_width": "7/8",
+      "S_height": "7/8",
+      "C": [
+        "-1/2",
+        "11/8",
+        "-1/2",
+        "11/8"
+      ],
+      "K": [
+        "1/40",
+        "69/40",
+        "1/40",
+        "69/40"
+      ],
+      "K_contained_in_C": false,
+      "C_area": "225/64",
+      "C_intersect_K_area": "729/400",
+      "ZH_intersect_K_area": "1",
+      "Gamma_exact": "4309/1600",
+      "low_mass_weak9": "63/400",
+      "total9_upper": "4561/1600",
+      "gap_to_7over2": "1039/1600",
+      "low_rank_upper": "49/400",
+      "min_low_refined_total": "901/320",
+      "uniform_dominant_corner_corollary_applies": true,
+      "uniform_corner_constant": "2767/800",
+      "MST_cost": "21/8",
+      "MST_5over2_test_passes": false,
+      "branch_counts": {
+        "touch_core": 160,
+        "low_miss_core": 7,
+        "high_miss_core": 0
+      },
+      "all_touching_eligible_labels": [
+        {
+          "mask": 1,
+          "mass": "1/400",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 2,
+          "mass": "1/400",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 4,
+          "mass": "1/400",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 8,
+          "mass": "1/400",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 16,
+          "mass": "1/400",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 32,
+          "mass": "1/400",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 64,
+          "mass": "1/400",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 128,
+          "mass": "393/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 129,
+          "mass": "197/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 130,
+          "mass": "197/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 131,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 132,
+          "mass": "197/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 133,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 134,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 135,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 136,
+          "mass": "197/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 137,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 138,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 139,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 140,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 141,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 142,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 143,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 144,
+          "mass": "197/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 145,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 146,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 147,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 148,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 149,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 150,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 151,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 152,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 153,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 154,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 155,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 156,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 157,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 158,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 159,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 160,
+          "mass": "197/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 161,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 162,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 163,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 164,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 165,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 166,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 167,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 168,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 169,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 170,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 171,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 172,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 173,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 174,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 175,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 176,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 177,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 178,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 179,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 180,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 181,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 182,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 183,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 184,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 185,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 186,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 187,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 188,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 189,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 190,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 191,
+          "mass": "399/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 192,
+          "mass": "197/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 193,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 194,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 195,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 196,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 197,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 198,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 199,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 200,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 201,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 202,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 203,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 204,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 205,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 206,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 207,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 208,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 209,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 210,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 211,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 212,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 213,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 214,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 215,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 216,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 217,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 218,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 219,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 220,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 221,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 222,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 223,
+          "mass": "399/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 224,
+          "mass": "79/80",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 225,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 226,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 227,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 228,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 229,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 230,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 231,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 232,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 233,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 234,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 235,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 236,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 237,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 238,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 239,
+          "mass": "399/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 240,
+          "mass": "99/100",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 241,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 242,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 243,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 244,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 245,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 246,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 247,
+          "mass": "399/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 248,
+          "mass": "397/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 249,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 250,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 251,
+          "mass": "399/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 252,
+          "mass": "199/200",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 253,
+          "mass": "399/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 254,
+          "mass": "399/400",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 255,
+          "mass": "1",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 384,
+          "mass": "787/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 386,
+          "mass": "789/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 388,
+          "mass": "789/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 390,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 392,
+          "mass": "789/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 394,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 396,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 398,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 416,
+          "mass": "789/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 418,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 420,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 422,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 424,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 426,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 428,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 430,
+          "mass": "159/160",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 448,
+          "mass": "789/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 450,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 452,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 454,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 456,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 458,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 460,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 462,
+          "mass": "159/160",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 480,
+          "mass": "791/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 482,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 484,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 486,
+          "mass": "159/160",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 488,
+          "mass": "793/800",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 490,
+          "mass": "159/160",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 492,
+          "mass": "159/160",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 494,
+          "mass": "797/800",
+          "branch": "touch_core"
+        }
+      ],
+      "W_or_Wprime_area_evaluated": false,
+      "scope": "Exact certificate for the proved heavy-core upper bound only, not the actual Wprime value."
+    },
+    {
+      "id": "r069-seven-source-two-heavy-core",
+      "source_count": 7,
+      "subset_count": 127,
+      "eligible_subsets": 23,
+      "unique_maximum_masks": [
+        31
+      ],
+      "S_mask": 31,
+      "H_mask": 3,
+      "L": "1",
+      "M": "499/500",
+      "E": "1/500",
+      "r": "43/50",
+      "radius_margin_3M_minus_4r2": "89/2500",
+      "near_outside_indices": [],
+      "beta": "0",
+      "near_profiles": [
+        {
+          "source": 5,
+          "distance_to_V_squared": "81/100",
+          "strict_near": false
+        },
+        {
+          "source": 6,
+          "distance_to_V_squared": "4/25",
+          "strict_near": false
+        }
+      ],
+      "connected": true,
+      "nonterminal_margin": "7567/3300",
+      "S_width": "9/10",
+      "S_height": "9/10",
+      "C": [
+        "-1/2",
+        "7/5",
+        "-1/2",
+        "7/5"
+      ],
+      "K": [
+        "-9/25",
+        "43/50",
+        "-43/50",
+        "43/50"
+      ],
+      "K_contained_in_C": false,
+      "C_area": "361/100",
+      "C_intersect_K_area": "1037/625",
+      "ZH_intersect_K_area": "61/50",
+      "Gamma_exact": "7927/2500",
+      "low_mass_weak9": "9/500",
+      "total9_upper": "1993/625",
+      "gap_to_7over2": "389/1250",
+      "low_rank_upper": "3/500",
+      "min_low_refined_total": "3971/1250",
+      "uniform_dominant_corner_corollary_applies": false,
+      "uniform_corner_constant": null,
+      "MST_cost": "27/10",
+      "MST_5over2_test_passes": false,
+      "branch_counts": {
+        "touch_core": 17,
+        "low_miss_core": 3,
+        "high_miss_core": 1
+      },
+      "all_touching_eligible_labels": [
+        {
+          "mask": 1,
+          "mass": "499/1000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 2,
+          "mass": "499/1000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 3,
+          "mass": "499/500",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 4,
+          "mass": "1/1500",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 6,
+          "mass": "1499/3000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 7,
+          "mass": "749/750",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 8,
+          "mass": "1/1500",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 11,
+          "mass": "749/750",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 15,
+          "mass": "1499/1500",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 16,
+          "mass": "1/1500",
+          "branch": "low_miss_core"
+        },
+        {
+          "mask": 19,
+          "mass": "749/750",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 23,
+          "mass": "1499/1500",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 27,
+          "mass": "1499/1500",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 31,
+          "mass": "1",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 33,
+          "mass": "997/1000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 41,
+          "mass": "2993/3000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 66,
+          "mass": "997/1000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 68,
+          "mass": "187/375",
+          "branch": "high_miss_core"
+        },
+        {
+          "mask": 70,
+          "mass": "2993/3000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 82,
+          "mass": "2993/3000",
+          "branch": "touch_core"
+        },
+        {
+          "mask": 86,
+          "mass": "599/600",
+          "branch": "touch_core"
+        }
+      ],
+      "W_or_Wprime_area_evaluated": false,
+      "scope": "Exact certificate for the proved heavy-core upper bound only, not the actual Wprime value."
+    }
+  ],
+  "elapsed_seconds": 0.017404916987288743,
+  "scope": "Only three existing fixed fixtures: all-subset domain/branch predicates, strict beta, rational clipped Gamma geometry and conditional upper-bound arithmetic. No fullhalo/W/Wprime areas, no LP, MATLAB, new input family or search."
+}

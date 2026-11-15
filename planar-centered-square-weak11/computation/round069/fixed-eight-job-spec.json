@@ -1,0 +1,66 @@
+{
+  "schema": "r069-fixed-eight-state-spec-v1",
+  "jobs": [
+    {
+      "job_id": "s00-c00-n16-S48623",
+      "input": "planar-centered-square-weak11/computation/inputs/r069/s00-c00-n16-S48623.json",
+      "input_sha256": "3cadeb44d6154dcdde0da3844314fde6d41f3805f8eefb7a390320eadffd0ff1",
+      "output": "planar-centered-square-weak11/computation/results/round069-state/s00-c00-n16-S48623.json"
+    },
+    {
+      "job_id": "s00-c01-n17-S114159",
+      "input": "planar-centered-square-weak11/computation/inputs/r069/s00-c01-n17-S114159.json",
+      "input_sha256": "4f98fa4903cc0ced4837f98973658ea7141119645a094e241f6b37bacaa9f35b",
+      "output": "planar-centered-square-weak11/computation/results/round069-state/s00-c01-n17-S114159.json"
+    },
+    {
+      "job_id": "s10-c00-n16-S24575",
+      "input": "planar-centered-square-weak11/computation/inputs/r069/s10-c00-n16-S24575.json",
+      "input_sha256": "8d6ec220c07fc5f831a19cdda1bcb152e51773c9bc1c394bed446f6e4bb33c8f",
+      "output": "planar-centered-square-weak11/computation/results/round069-state/s10-c00-n16-S24575.json"
+    },
+    {
+      "job_id": "s10-c01-n17-S90111",
+      "input": "planar-centered-square-weak11/computation/inputs/r069/s10-c01-n17-S90111.json",
+      "input_sha256": "d507bb357d61993e83471608c1490c73b77654188f4d3f554e26e46c6b184a15",
+      "output": "planar-centered-square-weak11/computation/results/round069-state/s10-c01-n17-S90111.json"
+    },
+    {
+      "job_id": "s10-c02-n18-S90111",
+      "input": "planar-centered-square-weak11/computation/inputs/r069/s10-c02-n18-S90111.json",
+      "input_sha256": "0734235f9c846790f0365bebd7a323e4d04389a40562e29f27dedf11712a83b9",
+      "output": "planar-centered-square-weak11/computation/results/round069-state/s10-c02-n18-S90111.json"
+    },
+    {
+      "job_id": "s10-c02-n18-S179711",
+      "input": "planar-centered-square-weak11/computation/inputs/r069/s10-c02-n18-S179711.json",
+      "input_sha256": "bec5f7eb87cf2d96c817ef36da88558c148b0e68397ae3c049e3ba5397a557ed",
+      "output": "planar-centered-square-weak11/computation/results/round069-state/s10-c02-n18-S179711.json"
+    },
+    {
+      "job_id": "r068-final-four-corner-six-source-S15",
+      "input": "planar-centered-square-weak11/computation/inputs/r069/r068-final-four-corner-six-source-S15.json",
+      "input_sha256": "2bc875fcc62f54f630440dcaffc26e5f731090153c2f3afaa3b4eb0c9224dfcc",
+      "output": "planar-centered-square-weak11/computation/results/round069-state/r068-final-four-corner-six-source-S15.json"
+    },
+    {
+      "job_id": "r068-tree-barrier-nine-source-S255",
+      "input": "planar-centered-square-weak11/computation/inputs/r069/r068-tree-barrier-nine-source-S255.json",
+      "input_sha256": "ac3fc081a67b8b73b39eba4a31a43d8bd575f2349ab82efc7b59c3ec806464d8",
+      "output": "planar-centered-square-weak11/computation/results/round069-state/r068-tree-barrier-nine-source-S255.json"
+    }
+  ],
+  "bits": 64,
+  "geometry_source": "planar-centered-square-weak11/computation/round064/mass_polytope_variation.py",
+  "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+  "rectclip_source": "planar-centered-square-weak11/computation/round066/erosion_ring_diagnostic.py",
+  "rectclip_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+  "K": "[bboxS.xmax-sqrt(3L)/2,bboxS.xmin+sqrt(3L)/2] x corresponding y interval",
+  "source_pins": {
+    "computation/frontier063/structural-inputs.json": "20ffbb4a3e444d1b72b8fa6e3bfcafaf839f71144bd6298a9419b28af786ce41",
+    "computation/results/round068-max-tree/classification.json": "2d4ef1623ed67aa661a09f606b8222d4ee8e9d3d559f9a7c13b7b35898203f53",
+    "computation/inputs/r068-reachable-surplus-six-source.json": "98c4fdc86206906a2ccf7302c56746e340e0d7141d3eab288ce449170730a307",
+    "computation/inputs/r068-support-tree-payment.json": "25ccd96bb2e35a37c78ce680a12654a67d25db8adcb87a270d4c22b47cce7aa4"
+  },
+  "scope": "Exactly six historical maximum states in five inputs plus final six-source and tree-nine-source controls; no random/new family."
+}
