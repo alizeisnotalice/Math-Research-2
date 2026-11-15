@@ -1,0 +1,48 @@
+{
+  "verified": true,
+  "cases": [
+    {
+      "I": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "J": [
+        0,
+        2,
+        6,
+        8,
+        9,
+        11,
+        12,
+        14,
+        17
+      ],
+      "certificate": "B10=(a-1)^2*(a^2-a+1)>0, but 10 not in J",
+      "domain": "0<a<1 from c2=a+B2=1"
+    },
+    {
+      "I": [
+        0,
+        1,
+        3,
+        8
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        11,
+        16
+      ],
+      "certificate": "round 11, r=3, d=1, m=8",
+      "domain": "0<A1<1 from c1; 0<A3<1 from c3=A3+A1*B2+B3 and B3>0",
+      "dependency": "proofs/011-next-four-term-strip.md"
+    }
+  ]
+}
