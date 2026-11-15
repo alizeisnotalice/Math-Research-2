@@ -1,0 +1,824 @@
+{
+  "args": {
+    "m": 7,
+    "n": 18,
+    "min_support": 11,
+    "limit": 100,
+    "seconds": 1800.0,
+    "domination": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/sync/unfair-01-polynomials/computation/diagonal_domination.py",
+    "fractional_internal": true
+  },
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "scipy": "1.18.1",
+  "script_sha256": "c3824a2a8c37ab23781c7da554feeaa1b3bdb6a67f9f5646c3711003a13e2bdb",
+  "result": {
+    "m": 7,
+    "n": 18,
+    "min_support": 11,
+    "limit": 100,
+    "model": "endpoint singleton plus internal r=0-or-at-least-2 supports",
+    "counts": {
+      "monomial_rule_not_certified_escape": 2,
+      "diagonal_domination": 12,
+      "escapes_both_rules": 2
+    },
+    "records": [
+      {
+        "round": 0,
+        "I": [
+          0,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        "support_size": 14,
+        "verdict": {
+          "status": "monomial_rule_not_certified_escape",
+          "kernel": {
+            "status": "none"
+          },
+          "row_count": 5,
+          "strict_variable_count": 10
+        }
+      },
+      {
+        "round": 1,
+        "I": [
+          0,
+          3,
+          5,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10,
+          14,
+          16,
+          18
+        ],
+        "support_size": 14,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 21,
+            "target": 19,
+            "target_to_source": [
+              0,
+              2
+            ]
+          }
+        }
+      },
+      {
+        "round": 2,
+        "I": [
+          0,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          2,
+          4,
+          8,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        "support_size": 14,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 2,
+            "target": 6,
+            "target_to_source": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "round": 3,
+        "I": [
+          0,
+          3,
+          5,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          6,
+          8,
+          9,
+          12,
+          14,
+          16,
+          18
+        ],
+        "support_size": 14,
+        "verdict": {
+          "status": "monomial_rule_not_certified_escape",
+          "kernel": {
+            "status": "none"
+          },
+          "row_count": 5,
+          "strict_variable_count": 10
+        }
+      },
+      {
+        "round": 4,
+        "I": [
+          0,
+          1,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          1,
+          2,
+          4,
+          8,
+          9,
+          10,
+          13,
+          15,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 1,
+            "target": 3,
+            "target_to_source": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "round": 5,
+        "I": [
+          0,
+          1,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          1,
+          2,
+          4,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 1,
+            "target": 3,
+            "target_to_source": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "round": 6,
+        "I": [
+          0,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "escapes_both_rules",
+          "units": [
+            "a0",
+            "a7",
+            "b0",
+            "b18"
+          ],
+          "strict_variables": [
+            "a2",
+            "a4",
+            "b2",
+            "b4",
+            "b6",
+            "b8",
+            "b9",
+            "b10",
+            "b12",
+            "b13",
+            "b15"
+          ],
+          "monomial_rows": [
+            {
+              "diagonals": [
+                2,
+                9
+              ],
+              "left": [
+                [
+                  "a",
+                  2
+                ]
+              ],
+              "right": [
+                [
+                  "b",
+                  9
+                ]
+              ],
+              "row": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "diagonals": [
+                2,
+                20
+              ],
+              "left": [
+                [
+                  "b",
+                  2
+                ]
+              ],
+              "right": [
+                [
+                  "b",
+                  13
+                ]
+              ],
+              "row": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0
+              ]
+            },
+            {
+              "diagonals": [
+                9,
+                16
+              ],
+              "left": [
+                [
+                  "b",
+                  2
+                ]
+              ],
+              "right": [
+                [
+                  "a",
+                  4
+                ],
+                [
+                  "b",
+                  12
+                ]
+              ],
+              "row": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ]
+            }
+          ],
+          "positive_kernel": {
+            "status": "exact",
+            "w": [
+              1,
+              1,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              1
+            ],
+            "delta_numeric": 0.07692307692307693
+          }
+        }
+      },
+      {
+        "round": 7,
+        "I": [
+          0,
+          3,
+          5,
+          6,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          6,
+          8,
+          9,
+          14,
+          16,
+          17,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 21,
+            "target": 19,
+            "target_to_source": [
+              0,
+              2
+            ]
+          }
+        }
+      },
+      {
+        "round": 8,
+        "I": [
+          0,
+          1,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          1,
+          2,
+          4,
+          8,
+          9,
+          12,
+          13,
+          15,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 1,
+            "target": 3,
+            "target_to_source": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "round": 9,
+        "I": [
+          0,
+          3,
+          5,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10,
+          12,
+          14,
+          16,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "escapes_both_rules",
+          "units": [
+            "a0",
+            "a7",
+            "b0",
+            "b18"
+          ],
+          "strict_variables": [
+            "a3",
+            "a5",
+            "b3",
+            "b5",
+            "b6",
+            "b8",
+            "b9",
+            "b10",
+            "b12",
+            "b14",
+            "b16"
+          ],
+          "monomial_rows": [
+            {
+              "diagonals": [
+                5,
+                23
+              ],
+              "left": [
+                [
+                  "b",
+                  5
+                ]
+              ],
+              "right": [
+                [
+                  "b",
+                  16
+                ]
+              ],
+              "row": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1
+              ]
+            },
+            {
+              "diagonals": [
+                9,
+                16
+              ],
+              "left": [
+                [
+                  "a",
+                  3
+                ],
+                [
+                  "b",
+                  6
+                ]
+              ],
+              "right": [
+                [
+                  "b",
+                  16
+                ]
+              ],
+              "row": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1
+              ]
+            },
+            {
+              "diagonals": [
+                16,
+                23
+              ],
+              "left": [
+                [
+                  "b",
+                  9
+                ]
+              ],
+              "right": [
+                [
+                  "a",
+                  5
+                ]
+              ],
+              "row": [
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "positive_kernel": {
+            "status": "exact",
+            "w": [
+              1,
+              1,
+              1,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2
+            ],
+            "delta_numeric": 0.07692307692307693
+          }
+        }
+      },
+      {
+        "round": 10,
+        "I": [
+          0,
+          3,
+          5,
+          6,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          6,
+          9,
+          10,
+          14,
+          16,
+          17,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 3,
+            "target": 8,
+            "target_to_source": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "round": 11,
+        "I": [
+          0,
+          3,
+          5,
+          6,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          8,
+          9,
+          10,
+          14,
+          16,
+          17,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 21,
+            "target": 19,
+            "target_to_source": [
+              0,
+              2
+            ]
+          }
+        }
+      },
+      {
+        "round": 12,
+        "I": [
+          0,
+          3,
+          5,
+          6,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          6,
+          8,
+          10,
+          14,
+          16,
+          17,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 3,
+            "target": 9,
+            "target_to_source": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "round": 13,
+        "I": [
+          0,
+          1,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          1,
+          2,
+          4,
+          8,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        "support_size": 15,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 1,
+            "target": 3,
+            "target_to_source": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "round": 14,
+        "I": [
+          0,
+          1,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          1,
+          2,
+          4,
+          8,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        "support_size": 16,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 1,
+            "target": 3,
+            "target_to_source": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "round": 15,
+        "I": [
+          0,
+          3,
+          5,
+          6,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10,
+          14,
+          16,
+          17,
+          18
+        ],
+        "support_size": 16,
+        "verdict": {
+          "status": "diagonal_domination",
+          "certificate": {
+            "source": 21,
+            "target": 19,
+            "target_to_source": [
+              0,
+              2
+            ]
+          }
+        }
+      },
+      {
+        "round": 16,
+        "solver_status": 2,
+        "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+      }
+    ],
+    "elapsed_seconds": 1.9539567079918925
+  }
+}
