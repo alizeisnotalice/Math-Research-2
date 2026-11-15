@@ -1,0 +1,67 @@
+{
+  "status": "PASS_STRICT_FAT_FIXED_THETA_ENVELOPE_COUNTEREXAMPLE",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "builder_sha256": "299eb98a245501c803dbad1f7086dc4e9d72da2a83799cf5277952854866ca67",
+  "input_sha256": "0958dcb4bc734fd9c1bb247d77d33cd2312f4ecaeb645d826318d3172524885c",
+  "budget_source_sha256": "211d33e21e47e6e14290e4ddbc3b3a36e247131de1bc53114091b7766d0fe8b6",
+  "erosion_source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+  "module_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+  "budget_output_sha256": "1762e58524542dc332073522b2bfc3a82c28c87b981c9b60bfdaf5c0d7f900d0",
+  "erosion_output_sha256": "68389678b1cadc1a3938c002f4a516cef0cad0b8dd183fe574f429665f24ab50",
+  "receipts": [
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/theta_competitor_budget.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--r64-input",
+        "/Volumes/data/CodexTemp/T2/round066/three-source-fat-control-20261115/input.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/three-source-fat-control-20261115/budget.json"
+      ],
+      "pid": 91366,
+      "exit_status": 0,
+      "wall_seconds": 0.04089391598245129,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 1, \"blocks\": 1, \"seconds\": 0.0009927089849952608}\n",
+      "stderr": "",
+      "owned_pid_absent": true
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round066/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexTemp/T2/round066/three-source-fat-control-20261115/budget.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/three-source-fat-control-20261115/erosion.json"
+      ],
+      "pid": 91368,
+      "exit_status": 0,
+      "wall_seconds": 0.034500125009799376,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 1, \"seconds\": 0.0003394169907551259}\n",
+      "stderr": "",
+      "owned_pid_absent": true
+    }
+  ],
+  "analytic_lower_bound": "6102446099455670517546512912619930032920147/1742245718635204932932477990050653242654720",
+  "production_budget": {
+    "lower": "78121526523547619242901708967427626857883827/22300745198530623141535718272648361505980416",
+    "upper": "78121526523547619243007155079397020500491859/22300745198530623141535718272648361505980416",
+    "normalized_lower": "78121526523547619242901708967427626857883827/22300745198530623141535718272648361505980416",
+    "normalized_upper": "78121526523547619243007155079397020500491859/22300745198530623141535718272648361505980416"
+  },
+  "production_actual_deletion": {
+    "lower": "696681321373481833881060239338439733158939/696898287454081973172991196020261297061888",
+    "upper": "1393362642746963667765365397696513844112785/1393796574908163946345982392040522594123776",
+    "normalized_lower": "696681321373481833881060239338439733158939/696898287454081973172991196020261297061888",
+    "normalized_upper": "1393362642746963667765365397696513844112785/1393796574908163946345982392040522594123776"
+  },
+  "fat_branch": true,
+  "connected": true,
+  "scope": "Unique eligible maximum S is fat; input connected/nonterminal. Counterexample only to fixedtheta=.75 container-envelope/strong compensation selection, not actual deletion<=3.5."
+}

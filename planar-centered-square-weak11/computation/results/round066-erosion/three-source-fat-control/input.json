@@ -1,0 +1,98 @@
+{
+  "schema": "r066-three-source-fat-envelope-counterexample-v1",
+  "id": "r066-three-source-fat-fixedtheta-envelope-obstruction",
+  "points": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1023/1024",
+      "1023/1024"
+    ],
+    [
+      "1151/1024",
+      "1023/1024"
+    ]
+  ],
+  "initial_masses": [
+    "1/5",
+    "4/5",
+    "1/1024"
+  ],
+  "S_mask": 3,
+  "S_indices": [
+    0,
+    1
+  ],
+  "theta": "3/4",
+  "all_nonempty_subsets": [
+    {
+      "mask": 1,
+      "mass": "1/5",
+      "span_squared": "0",
+      "strict_eligible": true
+    },
+    {
+      "mask": 2,
+      "mass": "4/5",
+      "span_squared": "0",
+      "strict_eligible": true
+    },
+    {
+      "mask": 3,
+      "mass": "1",
+      "span_squared": "1046529/1048576",
+      "strict_eligible": true
+    },
+    {
+      "mask": 4,
+      "mass": "1/1024",
+      "span_squared": "0",
+      "strict_eligible": true
+    },
+    {
+      "mask": 5,
+      "mass": "1029/5120",
+      "span_squared": "1324801/1048576",
+      "strict_eligible": false
+    },
+    {
+      "mask": 6,
+      "mass": "4101/5120",
+      "span_squared": "1/64",
+      "strict_eligible": true
+    },
+    {
+      "mask": 7,
+      "mass": "1025/1024",
+      "span_squared": "1324801/1048576",
+      "strict_eligible": false
+    }
+  ],
+  "maximum_eligible_mass": "1",
+  "unique_maximum_mask": 3,
+  "eligible_connected_by_masks": [
+    3,
+    6
+  ],
+  "fat_width_squared_over_L": [
+    "1046529/1048576",
+    "1046529/1048576"
+  ],
+  "whole_nonterminal_margin": "6982433/34603008",
+  "analytic_heavy_singleton_outside_C": {
+    "lower": "42878411728017442736885984100137529363/1701411834604692317316873037158841057280",
+    "upper": "5359801466002180342110748012517191171/212676479325586539664609129644855132160",
+    "formula": "33/80-sqrt(3/20)"
+  },
+  "analytic_C_area": {
+    "lower": "1212048003536157069700251707587709608781943/348449143727040986586495598010130648530944",
+    "upper": "606024001768078534850125853793854804391483/174224571863520493293247799005065324265472",
+    "formula": "alpha^2+3/4+alpha sqrt3"
+  },
+  "analytic_B_lower": "6102446099455670517546512912619930032920147/1742245718635204932932477990050653242654720",
+  "analytic_B_minus_7over2_lower": "4586084232453252282839947442643683628627/1742245718635204932932477990050653242654720",
+  "scope": "Unique eligible maximum S is fat; input connected/nonterminal. Counterexample only to fixedtheta=.75 container-envelope/strong compensation selection, not actual deletion<=3.5.",
+  "builder_sha256": "299eb98a245501c803dbad1f7086dc4e9d72da2a83799cf5277952854866ca67"
+}

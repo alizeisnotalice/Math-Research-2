@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "scope": "Five-source connected nonterminal thin example; strict failure of shape-free strong condition only, not fat-branch or general3.5 counterexample.",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "runner_sha256": "58f05c4a82210251a45de7d140a7cda541a1cbe467b1545de91cd09252c4331f",
+  "original_input_sha256": "b9e9888e8d9f2f12525b41dc85cfeda07f5554527fae838dc59ab4706fdd1940",
+  "budget_sha256": "211d33e21e47e6e14290e4ddbc3b3a36e247131de1bc53114091b7766d0fe8b6",
+  "erosion_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+  "module_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+  "budget_output_sha256": "42851809b3bb86c42a0981cc429287561dd67844357abb932a3051e92c242408",
+  "erosion_output_sha256": "113656907e2298a5f6d07695ebccd72b0e93c3894bb0b85a74b6f3edc7333c3d",
+  "receipts": [
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/theta_competitor_budget.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--r64-input",
+        "/Volumes/data/CodexTemp/T2/round066/five-source-control-20261115/input-adapter.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/five-source-control-20261115/budget.json"
+      ],
+      "pid": 82340,
+      "exit_status": 0,
+      "wall_seconds": 0.03980504200444557,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 1, \"blocks\": 1, \"seconds\": 0.0008672499970998615}\n",
+      "stderr": "",
+      "owned_pid_absent": true
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round066/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexTemp/T2/round066/five-source-control-20261115/budget.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/five-source-control-20261115/erosion.json"
+      ],
+      "pid": 82342,
+      "exit_status": 0,
+      "wall_seconds": 0.03214416699483991,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 1, \"seconds\": 0.0003092499973718077}\n",
+      "stderr": "",
+      "owned_pid_absent": true
+    }
+  ],
+  "closed_form_checks": {
+    "C_area": {
+      "closed_form_lower": "55440661480042213648045033605/39614081257132168796771975168",
+      "closed_form_upper": "887050583680675418368720537683/633825300114114700748351602688",
+      "geometry_interval_overlap": true
+    },
+    "low_old_credit": {
+      "closed_form_lower": "1/64",
+      "closed_form_upper": "1/64",
+      "geometry_interval_overlap": true
+    },
+    "high_unpaid": {
+      "closed_form_lower": "346776362290646007284718126523/10141204801825835211973625643008",
+      "closed_form_upper": "21673522643165375455294882909/633825300114114700748351602688",
+      "geometry_interval_overlap": true
+    },
+    "compensated_high": {
+      "closed_form_lower": "188320037262117332097630225851/10141204801825835211973625643008",
+      "closed_form_upper": "11770002328882333256101889117/633825300114114700748351602688",
+      "geometry_interval_overlap": true
+    },
+    "shape_free_margin": {
+      "closed_form_lower": "1422081534932793186216301199/79228162514264337593543950336",
+      "closed_form_upper": "88880095933299574138518825/4951760157141521099596496896",
+      "geometry_interval_overlap": true
+    },
+    "actual_shape_budget": {
+      "closed_form_lower": "898820586009557751624822426797/633825300114114700748351602688",
+      "closed_form_upper": "14381129376152924025997158828779/10141204801825835211973625643008",
+      "geometry_interval_overlap": true
+    }
+  },
+  "strict_strong_failure": true,
+  "fat_branch": false
+}

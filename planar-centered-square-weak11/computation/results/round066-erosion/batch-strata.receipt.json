@@ -1,0 +1,485 @@
+{
+  "status": "PASS",
+  "phase": "strata",
+  "workers": 12,
+  "wall_seconds": 0.2817452500166837,
+  "runner_sha256": "409cdafbb0ffeb3ee223948ca576cfa6ee92b0e39dd50b594172f6a08d3588aa",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "limits": {
+    "seconds_per_job": 120,
+    "rss_limit_mib": 768
+  },
+  "jobs": [
+    {
+      "job": "stratum-00",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-00.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-00-erosion.json"
+      ],
+      "pid": 80294,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "f292dabea972784f9332c52d3a2f4cfebcc0e295699417f73b6477c0d2c3982c",
+      "samples": [
+        {
+          "elapsed_seconds": 0.05564995898748748,
+          "cpu_percent": 0.0,
+          "rss_kib": 14224
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.1153784999914933,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.0037555000162683427}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "9a11b6bb5a9789b7f622f25ba57d1dc12073e47b2b2c791eea28684f06a1ea03",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 3
+    },
+    {
+      "job": "stratum-01",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-01.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-01-erosion.json"
+      ],
+      "pid": 80295,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "ecdcf3a0a263f5c8ecb06f1c9e550333b3d3e4356f66eb40efc9c904a9c6868b",
+      "samples": [
+        {
+          "elapsed_seconds": 0.044318542000837624,
+          "cpu_percent": 0.0,
+          "rss_kib": 20944
+        },
+        {
+          "elapsed_seconds": 0.10458866698900238,
+          "cpu_percent": 21.3,
+          "rss_kib": 26944
+        },
+        {
+          "elapsed_seconds": 0.16210999997565523,
+          "cpu_percent": 21.3,
+          "rss_kib": 27296
+        },
+        {
+          "elapsed_seconds": 0.21998574997996911,
+          "cpu_percent": 0.0,
+          "rss_kib": 0
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.2780691669904627,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.17594954097876325}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "f9c1fae9a1bb8a91965b30f42f6cc8e1633227240a4879b5a20a9b11bb4f8188",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 79
+    },
+    {
+      "job": "stratum-02",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-02.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-02-erosion.json"
+      ],
+      "pid": 80296,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "921751c7e3de5efddb1c55e57cacfadd22cf982b7a631db71ba1bd9ae66cb70e",
+      "samples": [
+        {
+          "elapsed_seconds": 0.053007875016191974,
+          "cpu_percent": 0.0,
+          "rss_kib": 23376
+        },
+        {
+          "elapsed_seconds": 0.11294716701377183,
+          "cpu_percent": 0.0,
+          "rss_kib": 0
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.17158254201058298,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.06187462498201057}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "7be956ce7d9b0f480d2f6c2f4209e673b42bf7802277c6f56a8ac80a0d014673",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 21
+    },
+    {
+      "job": "stratum-03",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-03.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-03-erosion.json"
+      ],
+      "pid": 80297,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "b72b159e1ff6c4d96c8626f97a198816f2a065f37713b63a5ededff4343398d4",
+      "samples": [
+        {
+          "elapsed_seconds": 0.05186183299520053,
+          "cpu_percent": 0.0,
+          "rss_kib": 20368
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.11433308300911449,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.0405109999992419}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "216fdd0b2115288794a549a70ff2fb0536fd60b5f6f505203e25201b1bbbf260",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 13
+    },
+    {
+      "job": "stratum-04",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-04.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-04-erosion.json"
+      ],
+      "pid": 80300,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "c6f4df7ef1b5eca533888dadcb6c9878c899e25ef1e59fe01131e1450ae61ef6",
+      "samples": [
+        {
+          "elapsed_seconds": 0.027126000000862405,
+          "cpu_percent": 0.0,
+          "rss_kib": 14912
+        },
+        {
+          "elapsed_seconds": 0.09577866600011475,
+          "cpu_percent": 16.9,
+          "rss_kib": 24032
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.15364999999292195,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.08526616697781719}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "60897162b601475ead95eb99f54030b5e634de02be914838eba78c9b73b12bd6",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 20
+    },
+    {
+      "job": "stratum-05",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-05.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-05-erosion.json"
+      ],
+      "pid": 80298,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "4f55b93ccdeb623578a395aeb7b32efa4197822e753a4920f5de3ce3d7d879d6",
+      "samples": [
+        {
+          "elapsed_seconds": 0.0632481659995392,
+          "cpu_percent": 0.0,
+          "rss_kib": 23120
+        },
+        {
+          "elapsed_seconds": 0.1213092909893021,
+          "cpu_percent": 18.3,
+          "rss_kib": 23328
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.17401024998980574,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.08711720802239142}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "fae33889d7123fe15acc95c7f75a24fbb1082d6a55ebad12f8171e2bae0ce5c1",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 15
+    },
+    {
+      "job": "stratum-06",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-06.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-06-erosion.json"
+      ],
+      "pid": 80299,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "4b7c38f6636f799dbe29811f2f6ec67ee5fecd58d182651d702cda38fbeab50d",
+      "samples": [
+        {
+          "elapsed_seconds": 0.039999166008783504,
+          "cpu_percent": 0.0,
+          "rss_kib": 13136
+        },
+        {
+          "elapsed_seconds": 0.10832404100801796,
+          "cpu_percent": 16.5,
+          "rss_kib": 23760
+        },
+        {
+          "elapsed_seconds": 0.1627367910114117,
+          "cpu_percent": 16.5,
+          "rss_kib": 24096
+        },
+        {
+          "elapsed_seconds": 0.21979858301347122,
+          "cpu_percent": 44.8,
+          "rss_kib": 24272
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.2738953750231303,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.21471812500385568}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "8579381e04539bbc1d35d2512a55bb636551d12309cfe5325ac6b93ac8589d94",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 14
+    },
+    {
+      "job": "stratum-07",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-07.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-07-erosion.json"
+      ],
+      "pid": 80301,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "4671d4a0f669f01b28c22adaac3545ab21adbd2f89c3c68330cbea5d12a845b6",
+      "samples": [
+        {
+          "elapsed_seconds": 0.04663304198766127,
+          "cpu_percent": 0.0,
+          "rss_kib": 19280
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.1073909169936087,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.022201084007974714}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "a91598d75ca7adf920c55a1a421b8dcc5bd5253c7d95c4545551c5992535e89b",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 6
+    },
+    {
+      "job": "stratum-08",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-08.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-08-erosion.json"
+      ],
+      "pid": 80303,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "782e622f7e078255cdcbd0bfe0ccef12abb8fca08377f581e1836790f3fc84ed",
+      "samples": [
+        {
+          "elapsed_seconds": 0.0651624169840943,
+          "cpu_percent": 0.0,
+          "rss_kib": 20544
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.11828200001036748,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.00013100000796839595}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "e1aa14d3eea73d22fad649f8c3db4af27ce52838b23e1ea5ad234f91b057706a",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 0
+    },
+    {
+      "job": "stratum-09",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-09.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-09-erosion.json"
+      ],
+      "pid": 80310,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "822af31eed800d1c24d9e0291bfd8817730e91400a885180610c50159865cab6",
+      "samples": [
+        {
+          "elapsed_seconds": 0.048365916998591274,
+          "cpu_percent": 3.1,
+          "rss_kib": 13568
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.10641929198754951,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.023385875014355406}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "a66078a5ba9548a1bac8e170f4a04e15293a60a8509f7c47e6cb9b747d72ff28",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 12
+    },
+    {
+      "job": "stratum-10",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-10.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-10-erosion.json"
+      ],
+      "pid": 80313,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "96d8e4ebbb282be4a36d2d29c785fffc0b3e05e6f78a405ed422d3ad8cd628f0",
+      "samples": [
+        {
+          "elapsed_seconds": 0.039643208001507446,
+          "cpu_percent": 1.6,
+          "rss_kib": 12464
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.09840454100049101,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.014947291987482458}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "8ff082787b48fd9a05bb7ee8795e485c6baaf2a2208b777eabf4831437788019",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 4
+    },
+    {
+      "job": "stratum-11",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/stratum-11.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/stratum-11-erosion.json"
+      ],
+      "pid": 80314,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "885e80ec4172fd21c14c70ecbdd138fc4063c246c72657adabfd8edd41d68542",
+      "samples": [
+        {
+          "elapsed_seconds": 0.03502508398378268,
+          "cpu_percent": 0.0,
+          "rss_kib": 10352
+        },
+        {
+          "elapsed_seconds": 0.09585520898690447,
+          "cpu_percent": 0.0,
+          "rss_kib": 23152
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.1506927500013262,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 6, \"seconds\": 0.02493337501073256}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "ad4b9312d06f8e12ff47349ff7131047db7dcc6c6da903c4a4e45fb56dd27526",
+      "output_status": "PASS",
+      "cases": 6,
+      "blocks": 12
+    }
+  ]
+}

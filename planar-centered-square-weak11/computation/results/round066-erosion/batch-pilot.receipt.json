@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "phase": "pilot",
+  "workers": 1,
+  "wall_seconds": 0.05798429201240651,
+  "runner_sha256": "409cdafbb0ffeb3ee223948ca576cfa6ee92b0e39dd50b594172f6a08d3588aa",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "limits": {
+    "seconds_per_job": 120,
+    "rss_limit_mib": 768
+  },
+  "jobs": [
+    {
+      "job": "r64-final",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/sources/erosion_ring_diagnostic.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--budget-result",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/r64-final-theta.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round066/erosion-20261115/r64-final-erosion.json"
+      ],
+      "pid": 80187,
+      "source_sha256": "4dc4fb494736c40334359f9950f052ee2e4a53b503883ffbc3f9bc0da69b1361",
+      "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+      "budget_result_sha256": "9a68cc30dac1cd030da2ae8b0b2673fb963c5f32bd86473c4a81d4fa6d05eb9e",
+      "samples": [
+        {
+          "elapsed_seconds": 0.00465337501373142,
+          "cpu_percent": 0.0,
+          "rss_kib": 5136
+        }
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.05742241701227613,
+      "stdout": "{\"status\": \"PASS\", \"cases\": 1, \"seconds\": 0.0029287500074133277}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "stop_reason": null,
+      "output_sha256": "0dc19c78d01b341f94d7c94648e5531850e0c2df9a088a9683adbb458fb3af11",
+      "output_status": "PASS",
+      "cases": 1,
+      "blocks": 1
+    }
+  ]
+}

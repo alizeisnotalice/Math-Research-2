@@ -1,0 +1,482 @@
+{
+  "status": "PASS_INDEPENDENT_R66_CRITICAL_CONTROLS",
+  "script_sha256": "fd63fc2a3f41eb4148c4a553464f2d15c5220d23e6aab184a345ad01ead3f2cb",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "elapsed_seconds": 0.13264979200903326,
+  "source_pins": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round066-erosion/five-source-control/budget.json",
+      "sha256": "42851809b3bb86c42a0981cc429287561dd67844357abb932a3051e92c242408",
+      "bytes": 11194
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round066-erosion/five-source-control/erosion.json",
+      "sha256": "113656907e2298a5f6d07695ebccd72b0e93c3894bb0b85a74b6f3edc7333c3d",
+      "bytes": 4981
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round066-erosion/five-source-control/receipt.json",
+      "sha256": "00fa18b4b1bf7f3b9d6204b478c2b827ea26839c17e3bde70740aabe5305e080",
+      "bytes": 4035
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round066-erosion/five-source-control/input-adapter.json",
+      "sha256": "475e1074e3b81b9bbbe69b4159a0cd0206bd0c59d377625b408fdd46505c7fae",
+      "bytes": 6112
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round066-erosion/three-source-fat-control/budget.json",
+      "sha256": "1762e58524542dc332073522b2bfc3a82c28c87b981c9b60bfdaf5c0d7f900d0",
+      "bytes": 12632
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round066-erosion/three-source-fat-control/erosion.json",
+      "sha256": "68389678b1cadc1a3938c002f4a516cef0cad0b8dd183fe574f429665f24ab50",
+      "bytes": 6192
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round066-erosion/three-source-fat-control/receipt.json",
+      "sha256": "b3cfd74b9eb3f2f3c4dde6701f9f9e8fa54eabc6990975b82ad97793d39725ab",
+      "bytes": 3744
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round066-erosion/three-source-fat-control/input.json",
+      "sha256": "0958dcb4bc734fd9c1bb247d77d33cd2312f4ecaeb645d826318d3172524885c",
+      "bytes": 2573
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r066_grid_budgets.py",
+      "sha256": "c6524c436d8efd15a1b941c3e37448608622f6723fc51e3325a6eaa44aa159b1",
+      "bytes": 14300
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r064_mass_variation.py",
+      "sha256": "267b430e167801314bba81200250945bedcb1473918992f57ac03c1feb94cad4",
+      "bytes": 11158
+    }
+  ],
+  "cases": [
+    {
+      "role": "THIN_CONTROL",
+      "id": "r066-five-source-thin-shape-loss-control",
+      "source_count": 5,
+      "all_maximum_masks": [
+        15
+      ],
+      "proper_blocks": 1,
+      "connected": true,
+      "whole_nonterminal": true,
+      "components": [
+        {
+          "mask": 31,
+          "rank": 5,
+          "mass": "65/64",
+          "span_squared_over_mass": "4489/4160",
+          "terminal_35_33": false
+        }
+      ],
+      "blocks": [
+        {
+          "S_mask": 15,
+          "L": "1",
+          "fat_both_axes": false,
+          "strong_pass": false,
+          "strong_strict_fail": true,
+          "budget_pass": true,
+          "score": [
+            "103530035356453801095288130802499634568597/5575186299632655785383929568162090376495104",
+            "103530035356453801100242833902690267587185/5575186299632655785383929568162090376495104"
+          ],
+          "budget": {
+            "lower": "7906109484815576446252911332107629441456597/5575186299632655785383929568162090376495104",
+            "upper": "7906109484815576446269587188750262876117461/5575186299632655785383929568162090376495104",
+            "normalized_lower": "7906109484815576446252911332107629441456597/5575186299632655785383929568162090376495104",
+            "normalized_upper": "7906109484815576446269587188750262876117461/5575186299632655785383929568162090376495104"
+          },
+          "deletion": {
+            "lower": "10729569760823687792606330140807269131347137/11150372599265311570767859136324180752990208",
+            "upper": "10729569760823687792629612656609642303854367/11150372599265311570767859136324180752990208",
+            "normalized_lower": "10729569760823687792606330140807269131347137/11150372599265311570767859136324180752990208",
+            "normalized_upper": "10729569760823687792629612656609642303854367/11150372599265311570767859136324180752990208"
+          },
+          "hole": {
+            "lower": "5082649208807465099888880937572836041245649/11150372599265311570767859136324180752990208",
+            "upper": "5082649208807465099924485475236328103024591/11150372599265311570767859136324180752990208",
+            "normalized_lower": "5082649208807465099888880937572836041245649/11150372599265311570767859136324180752990208",
+            "normalized_upper": "5082649208807465099924485475236328103024591/11150372599265311570767859136324180752990208"
+          },
+          "ring_union": {
+            "lower": "95321160644107023871251163057695501176523/2787593149816327892691964784081045188247552",
+            "upper": "95321160644107023873138218797432112034105/2787593149816327892691964784081045188247552",
+            "normalized_lower": "95321160644107023871251163057695501176523/2787593149816327892691964784081045188247552",
+            "normalized_upper": "95321160644107023873138218797432112034105/2787593149816327892691964784081045188247552"
+          },
+          "high_labels": 2,
+          "all_individual_ring_rows": [
+            {
+              "mask": 15,
+              "a": "1",
+              "ring_lower": "1393796574908163946343030912988729065865217/5575186299632655785383929568162090376495104",
+              "ring_upper": "1393796574908163946348933871092316122382337/5575186299632655785383929568162090376495104"
+            },
+            {
+              "mask": 30,
+              "a": "3/4",
+              "ring_lower": "381116250951451079076729057546587831533569/5575186299632655785383929568162090376495104",
+              "ring_upper": "381116250951451079081230063100572962127873/5575186299632655785383929568162090376495104"
+            }
+          ],
+          "ring_upper_rounding_over_a": 0,
+          "compressed_grid_cells": 1581,
+          "grid_shape": [
+            52,
+            32
+          ],
+          "S_is_whole_component": false
+        }
+      ],
+      "wall_seconds": 0.003430332988500595,
+      "all_nonempty_subsets": [
+        {
+          "mask": 1,
+          "mass": "1/4",
+          "span_squared": "0",
+          "strict_eligible": true
+        },
+        {
+          "mask": 2,
+          "mass": "1/4",
+          "span_squared": "0",
+          "strict_eligible": true
+        },
+        {
+          "mask": 3,
+          "mass": "1/2",
+          "span_squared": "1/16",
+          "strict_eligible": true
+        },
+        {
+          "mask": 4,
+          "mass": "1/4",
+          "span_squared": "0",
+          "strict_eligible": true
+        },
+        {
+          "mask": 5,
+          "mass": "1/2",
+          "span_squared": "1/4",
+          "strict_eligible": true
+        },
+        {
+          "mask": 6,
+          "mass": "1/2",
+          "span_squared": "1/16",
+          "strict_eligible": true
+        },
+        {
+          "mask": 7,
+          "mass": "3/4",
+          "span_squared": "1/4",
+          "strict_eligible": true
+        },
+        {
+          "mask": 8,
+          "mass": "1/4",
+          "span_squared": "0",
+          "strict_eligible": true
+        },
+        {
+          "mask": 9,
+          "mass": "1/2",
+          "span_squared": "9/16",
+          "strict_eligible": false
+        },
+        {
+          "mask": 10,
+          "mass": "1/2",
+          "span_squared": "1/4",
+          "strict_eligible": true
+        },
+        {
+          "mask": 11,
+          "mass": "3/4",
+          "span_squared": "9/16",
+          "strict_eligible": true
+        },
+        {
+          "mask": 12,
+          "mass": "1/2",
+          "span_squared": "1/16",
+          "strict_eligible": true
+        },
+        {
+          "mask": 13,
+          "mass": "3/4",
+          "span_squared": "9/16",
+          "strict_eligible": true
+        },
+        {
+          "mask": 14,
+          "mass": "3/4",
+          "span_squared": "1/4",
+          "strict_eligible": true
+        },
+        {
+          "mask": 15,
+          "mass": "1",
+          "span_squared": "9/16",
+          "strict_eligible": true
+        },
+        {
+          "mask": 16,
+          "mass": "1/64",
+          "span_squared": "0",
+          "strict_eligible": true
+        },
+        {
+          "mask": 17,
+          "mass": "17/64",
+          "span_squared": "4489/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 18,
+          "mass": "17/64",
+          "span_squared": "2601/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 19,
+          "mass": "33/64",
+          "span_squared": "4489/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 20,
+          "mass": "17/64",
+          "span_squared": "1225/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 21,
+          "mass": "33/64",
+          "span_squared": "4489/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 22,
+          "mass": "33/64",
+          "span_squared": "2601/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 23,
+          "mass": "49/64",
+          "span_squared": "4489/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 24,
+          "mass": "17/64",
+          "span_squared": "361/4096",
+          "strict_eligible": true
+        },
+        {
+          "mask": 25,
+          "mass": "33/64",
+          "span_squared": "4489/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 26,
+          "mass": "33/64",
+          "span_squared": "2601/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 27,
+          "mass": "49/64",
+          "span_squared": "4489/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 28,
+          "mass": "33/64",
+          "span_squared": "1225/4096",
+          "strict_eligible": true
+        },
+        {
+          "mask": 29,
+          "mass": "49/64",
+          "span_squared": "4489/4096",
+          "strict_eligible": false
+        },
+        {
+          "mask": 30,
+          "mass": "49/64",
+          "span_squared": "2601/4096",
+          "strict_eligible": true
+        },
+        {
+          "mask": 31,
+          "mass": "65/64",
+          "span_squared": "4489/4096",
+          "strict_eligible": false
+        }
+      ],
+      "independent_maximum_subset_masks": [
+        15
+      ]
+    },
+    {
+      "role": "FAT_CONTROL",
+      "id": "r066-three-source-fat-fixedtheta-envelope-obstruction",
+      "source_count": 3,
+      "all_maximum_masks": [
+        3
+      ],
+      "proper_blocks": 1,
+      "connected": true,
+      "whole_nonterminal": true,
+      "components": [
+        {
+          "mask": 7,
+          "rank": 3,
+          "mass": "1025/1024",
+          "span_squared_over_mass": "1324801/1049600",
+          "terminal_35_33": false
+        }
+      ],
+      "blocks": [
+        {
+          "S_mask": 3,
+          "L": "1",
+          "fat_both_axes": true,
+          "strong_pass": false,
+          "strong_strict_fail": true,
+          "budget_pass": false,
+          "score": [
+            "550454297233566782133633882259308697712563/22300745198530623141535718272648361505980416",
+            "550454297233566782168620441132730326786243/22300745198530623141535718272648361505980416"
+          ],
+          "budget": {
+            "lower": "78121526523547619242901708967427626857883827/22300745198530623141535718272648361505980416",
+            "upper": "78121526523547619243007155079397020500491859/22300745198530623141535718272648361505980416",
+            "normalized_lower": "78121526523547619242901708967427626857883827/22300745198530623141535718272648361505980416",
+            "normalized_upper": "78121526523547619243007155079397020500491859/22300745198530623141535718272648361505980416"
+          },
+          "deletion": {
+            "lower": "696681321373481833881060239338439733158939/696898287454081973172991196020261297061888",
+            "upper": "1393362642746963667765365397696513844112785/1393796574908163946345982392040522594123776",
+            "normalized_lower": "696681321373481833881060239338439733158939/696898287454081973172991196020261297061888",
+            "normalized_upper": "1393362642746963667765365397696513844112785/1393796574908163946345982392040522594123776"
+          },
+          "hole": {
+            "lower": "55827724239596200558690849163156826981152947/22300745198530623141535718272648361505980416",
+            "upper": "55827724239596200558778240861693527410332131/22300745198530623141535718272648361505980416",
+            "normalized_lower": "55827724239596200558690849163156826981152947/22300745198530623141535718272648361505980416",
+            "normalized_upper": "55827724239596200558778240861693527410332131/22300745198530623141535718272648361505980416"
+          },
+          "ring_union": {
+            "lower": "572232368716506843795880152945300568897463/22300745198530623141535718272648361505980416",
+            "upper": "572232368716506843829686120198004786667719/22300745198530623141535718272648361505980416",
+            "normalized_lower": "572232368716506843795880152945300568897463/22300745198530623141535718272648361505980416",
+            "normalized_upper": "572232368716506843829686120198004786667719/22300745198530623141535718272648361505980416"
+          },
+          "high_labels": 3,
+          "all_individual_ring_rows": [
+            {
+              "mask": 2,
+              "a": "4/5",
+              "ring_lower": "4460149039706124628300195802445466634154601/5575186299632655785383929568162090376495104",
+              "ring_upper": "4460149039706124628308643428421757132425401/5575186299632655785383929568162090376495104"
+            },
+            {
+              "mask": 3,
+              "a": "1",
+              "ring_lower": "5316911983139663487003542222693990401/5575186299632655785383929568162090376495104",
+              "ring_upper": "5316911983139663496226914259548766209/5575186299632655785383929568162090376495104"
+            },
+            {
+              "mask": 6,
+              "a": "4/5",
+              "ring_lower": "3841888448697140861176906597391333744905697/5575186299632655785383929568162090376495104",
+              "ring_upper": "3841888448697140861184769082006446279087137/5575186299632655785383929568162090376495104"
+            }
+          ],
+          "ring_upper_rounding_over_a": 1,
+          "compressed_grid_cells": 529,
+          "grid_shape": [
+            24,
+            24
+          ],
+          "S_is_whole_component": false
+        }
+      ],
+      "wall_seconds": 0.0013455000007525086,
+      "all_nonempty_subsets": [
+        {
+          "mask": 1,
+          "mass": "1/5",
+          "span_squared": "0",
+          "strict_eligible": true
+        },
+        {
+          "mask": 2,
+          "mass": "4/5",
+          "span_squared": "0",
+          "strict_eligible": true
+        },
+        {
+          "mask": 3,
+          "mass": "1",
+          "span_squared": "1046529/1048576",
+          "strict_eligible": true
+        },
+        {
+          "mask": 4,
+          "mass": "1/1024",
+          "span_squared": "0",
+          "strict_eligible": true
+        },
+        {
+          "mask": 5,
+          "mass": "1029/5120",
+          "span_squared": "1324801/1048576",
+          "strict_eligible": false
+        },
+        {
+          "mask": 6,
+          "mass": "4101/5120",
+          "span_squared": "1/64",
+          "strict_eligible": true
+        },
+        {
+          "mask": 7,
+          "mass": "1025/1024",
+          "span_squared": "1324801/1048576",
+          "strict_eligible": false
+        }
+      ],
+      "independent_maximum_subset_masks": [
+        3
+      ]
+    }
+  ],
+  "rational_radical_certificate": {
+    "B_excess_lower": "246397/131072000",
+    "strong_excess_lower": "707/128000",
+    "sqrt3_lower": "433/250",
+    "sqrt_3over20_upper": "97/250"
+  },
+  "scalar_erosion_cases": 375,
+  "fat_repetition_N32": {
+    "bbox_count": 1681,
+    "eligible_count": 1012,
+    "maximum_mass": "1",
+    "maximizers": 1,
+    "selected_tails": 6,
+    "capacity_sum": "123/32"
+  },
+  "scope": "Separate controls; original 201-block replay unchanged. New fat example refutes fixed theta 3/4 envelope selection, not true deletion selection or C2."
+}

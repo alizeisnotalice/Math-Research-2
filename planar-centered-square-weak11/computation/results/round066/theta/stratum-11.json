@@ -1,0 +1,2615 @@
+{
+  "schema": "r066-theta-competitor-budget-v1",
+  "status": "PASS",
+  "source_sha256": "211d33e21e47e6e14290e4ddbc3b3a36e247131de1bc53114091b7766d0fe8b6",
+  "geometry_module_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+  "input_sha256": "20ffbb4a3e444d1b72b8fa6e3bfcafaf839f71144bd6298a9419b28af786ce41",
+  "input_path": "/Volumes/data/CodexProjects/T2/.local/compute/frontier063/structural-inputs.json",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "theta": "3/4",
+  "cases": [
+    {
+      "id": "s11-c00-n16",
+      "points": [
+        [
+          "-4",
+          "-4"
+        ],
+        [
+          "-7/2",
+          "-4"
+        ],
+        [
+          "-4",
+          "-7/2"
+        ],
+        [
+          "-7/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "-4"
+        ],
+        [
+          "9/2",
+          "-4"
+        ],
+        [
+          "4",
+          "-7/2"
+        ],
+        [
+          "9/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "4"
+        ],
+        [
+          "9/2",
+          "4"
+        ],
+        [
+          "4",
+          "9/2"
+        ],
+        [
+          "9/2",
+          "9/2"
+        ],
+        [
+          "-4",
+          "4"
+        ],
+        [
+          "-7/2",
+          "4"
+        ],
+        [
+          "-4",
+          "9/2"
+        ],
+        [
+          "-7/2",
+          "9/2"
+        ]
+      ],
+      "masses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16",
+        "1",
+        "1",
+        "1",
+        "1",
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16"
+      ],
+      "all_maximum_masks": [
+        240,
+        61440
+      ],
+      "blocks": [
+        {
+          "S_mask": 240,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 100,
+          "strict_eligible_count": 36,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "4",
+            "9/2",
+            "-4",
+            "-7/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306784867536142258450632613/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "26085918632197846306784867536142258450632613/34844914372704098658649559801013064853094400"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-26041547913552026458247/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 240,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.002550000004703179
+        },
+        {
+          "S_mask": 61440,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 100,
+          "strict_eligible_count": 36,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "-4",
+            "-7/2",
+            "4",
+            "9/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306784867536142258450632613/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "26085918632197846306784867536142258450632613/34844914372704098658649559801013064853094400"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-26041547913552026458247/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 61440,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.0022358749993145466
+        }
+      ],
+      "improper_full_maximum_masks_skipped": [],
+      "all_proper_maximum_masks_evaluated": true
+    },
+    {
+      "id": "s11-c01-n17",
+      "points": [
+        [
+          "-4",
+          "-4"
+        ],
+        [
+          "-7/2",
+          "-4"
+        ],
+        [
+          "-4",
+          "-7/2"
+        ],
+        [
+          "-7/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "-4"
+        ],
+        [
+          "9/2",
+          "-4"
+        ],
+        [
+          "4",
+          "-7/2"
+        ],
+        [
+          "9/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "4"
+        ],
+        [
+          "9/2",
+          "4"
+        ],
+        [
+          "4",
+          "9/2"
+        ],
+        [
+          "9/2",
+          "9/2"
+        ],
+        [
+          "-4",
+          "4"
+        ],
+        [
+          "-7/2",
+          "4"
+        ],
+        [
+          "-4",
+          "9/2"
+        ],
+        [
+          "-7/2",
+          "9/2"
+        ],
+        [
+          "-2",
+          "0"
+        ]
+      ],
+      "masses": [
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16",
+        "1",
+        "1",
+        "1",
+        "1",
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1/8"
+      ],
+      "all_maximum_masks": [
+        15,
+        3840
+      ],
+      "blocks": [
+        {
+          "S_mask": 15,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 149,
+          "strict_eligible_count": 37,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "-4",
+            "-7/2",
+            "-4",
+            "-7/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306788206753505543642878973/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "26085918632197846306788206753505543642878973/34844914372704098658649559801013064853094400"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-26876352254373324519837/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "1/8",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.004210500017507002
+        },
+        {
+          "S_mask": 3840,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 149,
+          "strict_eligible_count": 37,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "4",
+            "9/2",
+            "4",
+            "9/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306788206753505543642878973/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "26085918632197846306788206753505543642878973/34844914372704098658649559801013064853094400"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-26876352254373324519837/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "1/8",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 3840,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.004156500013777986
+        }
+      ],
+      "improper_full_maximum_masks_skipped": [],
+      "all_proper_maximum_masks_evaluated": true
+    },
+    {
+      "id": "s11-c02-n18",
+      "points": [
+        [
+          "-4",
+          "-4"
+        ],
+        [
+          "-7/2",
+          "-4"
+        ],
+        [
+          "-4",
+          "-7/2"
+        ],
+        [
+          "-7/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "-4"
+        ],
+        [
+          "9/2",
+          "-4"
+        ],
+        [
+          "4",
+          "-7/2"
+        ],
+        [
+          "9/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "4"
+        ],
+        [
+          "9/2",
+          "4"
+        ],
+        [
+          "4",
+          "9/2"
+        ],
+        [
+          "9/2",
+          "9/2"
+        ],
+        [
+          "-4",
+          "4"
+        ],
+        [
+          "-7/2",
+          "4"
+        ],
+        [
+          "-4",
+          "9/2"
+        ],
+        [
+          "-7/2",
+          "9/2"
+        ],
+        [
+          "-2",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "masses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16",
+        "1",
+        "1",
+        "1",
+        "1",
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16",
+        "3/16",
+        "3/16"
+      ],
+      "all_maximum_masks": [
+        240,
+        61440
+      ],
+      "blocks": [
+        {
+          "S_mask": 240,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 183,
+          "strict_eligible_count": 38,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "4",
+            "9/2",
+            "-4",
+            "-7/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306793046914822549018364613/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "26085918632197846306793046914822549018364613/34844914372704098658649559801013064853094400"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-28086392583624668391247/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "3/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 131072,
+              "rank": 1,
+              "mass": "3/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 240,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.004408667009556666
+        },
+        {
+          "S_mask": 61440,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 183,
+          "strict_eligible_count": 38,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "-4",
+            "-7/2",
+            "4",
+            "9/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306793046914822549018364613/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "26085918632197846306793046914822549018364613/34844914372704098658649559801013064853094400"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-28086392583624668391247/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "3/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 131072,
+              "rank": 1,
+              "mass": "3/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 61440,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.004702584003098309
+        }
+      ],
+      "improper_full_maximum_masks_skipped": [],
+      "all_proper_maximum_masks_evaluated": true
+    },
+    {
+      "id": "s11-c03-n19",
+      "points": [
+        [
+          "-4",
+          "-4"
+        ],
+        [
+          "-7/2",
+          "-4"
+        ],
+        [
+          "-4",
+          "-7/2"
+        ],
+        [
+          "-7/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "-4"
+        ],
+        [
+          "9/2",
+          "-4"
+        ],
+        [
+          "4",
+          "-7/2"
+        ],
+        [
+          "9/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "4"
+        ],
+        [
+          "9/2",
+          "4"
+        ],
+        [
+          "4",
+          "9/2"
+        ],
+        [
+          "9/2",
+          "9/2"
+        ],
+        [
+          "-4",
+          "4"
+        ],
+        [
+          "-7/2",
+          "4"
+        ],
+        [
+          "-4",
+          "9/2"
+        ],
+        [
+          "-7/2",
+          "9/2"
+        ],
+        [
+          "-2",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "2",
+          "0"
+        ]
+      ],
+      "masses": [
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16",
+        "1",
+        "1",
+        "1",
+        "1",
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "all_maximum_masks": [
+        15,
+        3840
+      ],
+      "blocks": [
+        {
+          "S_mask": 15,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 218,
+          "strict_eligible_count": 39,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "-4",
+            "-7/2",
+            "-4",
+            "-7/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306799034635590867386273701/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "26085918632197846306799034635590867386273701/34844914372704098658649559801013064853094400"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-29583322775704260368519/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "1/4",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 131072,
+              "rank": 1,
+              "mass": "1/4",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 262144,
+              "rank": 1,
+              "mass": "1/4",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.005041292024543509
+        },
+        {
+          "S_mask": 3840,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 218,
+          "strict_eligible_count": 39,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "4",
+            "9/2",
+            "4",
+            "9/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306799034635590867386273701/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "26085918632197846306799034635590867386273701/34844914372704098658649559801013064853094400"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-29583322775704260368519/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "1/4",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 131072,
+              "rank": 1,
+              "mass": "1/4",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 262144,
+              "rank": 1,
+              "mass": "1/4",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 3840,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.0049979169853031635
+        }
+      ],
+      "improper_full_maximum_masks_skipped": [],
+      "all_proper_maximum_masks_evaluated": true
+    },
+    {
+      "id": "s11-c04-n20",
+      "points": [
+        [
+          "-4",
+          "-4"
+        ],
+        [
+          "-7/2",
+          "-4"
+        ],
+        [
+          "-4",
+          "-7/2"
+        ],
+        [
+          "-7/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "-4"
+        ],
+        [
+          "9/2",
+          "-4"
+        ],
+        [
+          "4",
+          "-7/2"
+        ],
+        [
+          "9/2",
+          "-7/2"
+        ],
+        [
+          "4",
+          "4"
+        ],
+        [
+          "9/2",
+          "4"
+        ],
+        [
+          "4",
+          "9/2"
+        ],
+        [
+          "9/2",
+          "9/2"
+        ],
+        [
+          "-4",
+          "4"
+        ],
+        [
+          "-7/2",
+          "4"
+        ],
+        [
+          "-4",
+          "9/2"
+        ],
+        [
+          "-7/2",
+          "9/2"
+        ],
+        [
+          "-2",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "masses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16",
+        "1",
+        "1",
+        "1",
+        "1",
+        "25/16",
+        "25/16",
+        "25/16",
+        "25/16",
+        "5/16",
+        "5/16",
+        "5/16",
+        "5/16"
+      ],
+      "all_maximum_masks": [
+        240,
+        61440
+      ],
+      "blocks": [
+        {
+          "S_mask": 240,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 263,
+          "strict_eligible_count": 40,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "4",
+            "9/2",
+            "-4",
+            "-7/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306805986601082984696309605/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "5217183726439569261361197320216596939261921/6968982874540819731729911960202612970618880"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-31321314148733587877495/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "5/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 131072,
+              "rank": 1,
+              "mass": "5/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 262144,
+              "rank": 1,
+              "mass": "5/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 524288,
+              "rank": 1,
+              "mass": "5/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 240,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.005918832990573719
+        },
+        {
+          "S_mask": 61440,
+          "S_rank": 4,
+          "L": "25/4",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 263,
+          "strict_eligible_count": 40,
+          "maximum_eligible_mass": "25/4",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "-4",
+            "-7/2",
+            "4",
+            "9/2"
+          ],
+          "S_width_squared_over_L": [
+            "1/25",
+            "1/25"
+          ],
+          "container_area": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "13512196138020494320680355554024374092088643/5575186299632655785383929568162090376495104",
+            "upper": "13512196138020494320726944820507265763077851/5575186299632655785383929568162090376495104",
+            "normalized_lower": "13512196138020494320680355554024374092088643/34844914372704098658649559801013064853094400",
+            "normalized_upper": "13512196138020494320726944820507265763077851/34844914372704098658649559801013064853094400"
+          },
+          "true_deletion": {
+            "lower": "26085918632197846306705872157671646409343333/5575186299632655785383929568162090376495104",
+            "upper": "26085918632197846306805986601082984696309605/5575186299632655785383929568162090376495104",
+            "normalized_lower": "26085918632197846306705872157671646409343333/34844914372704098658649559801013064853094400",
+            "normalized_upper": "5217183726439569261361197320216596939261921/6968982874540819731729911960202612970618880"
+          },
+          "analytic_envelope_budget": {
+            "lower": "9899528692554585156851911541248829026969369/1393796574908163946345982392040522594123776",
+            "upper": "618720543284661572303637765284045502694081/87112285931760246646623899502532662132736",
+            "normalized_lower": "9899528692554585156851911541248829026969369/8711228593176024664662389950253266213273600",
+            "normalized_upper": "618720543284661572303637765284045502694081/544451787073501541541399371890829138329600"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-31321314148733587877495/1393796574908163946345982392040522594123776",
+            "upper": "5823658310361458873651/696898287454081973172991196020261297061888",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "4",
+              "span_squared_over_mass": "1/16",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "25/4",
+              "span_squared_over_mass": "1/25",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "5/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 131072,
+              "rank": 1,
+              "mass": "5/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 262144,
+              "rank": 1,
+              "mass": "5/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 524288,
+              "rank": 1,
+              "mass": "5/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 61440,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "1/25",
+              "bbox_width_squared_over_mass": [
+                "1/25",
+                "1/25"
+              ],
+              "receiver_area": {
+                "lower": "22300745198530623141526273539682622215553025/5575186299632655785383929568162090376495104",
+                "upper": "22300745198530623141545163005614100796407809/5575186299632655785383929568162090376495104",
+                "normalized_lower": "892029807941224925661050941587304888622121/1393796574908163946345982392040522594123776",
+                "normalized_upper": "22300745198530623141545163005614100796407809/34844914372704098658649559801013064853094400"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.006473916000686586
+        }
+      ],
+      "improper_full_maximum_masks_skipped": [],
+      "all_proper_maximum_masks_evaluated": true
+    },
+    {
+      "id": "s11-c05-n20",
+      "points": [
+        [
+          "-31/4",
+          "-8"
+        ],
+        [
+          "-7",
+          "-8"
+        ],
+        [
+          "-8",
+          "-7"
+        ],
+        [
+          "-27/4",
+          "-7"
+        ],
+        [
+          "8",
+          "-8"
+        ],
+        [
+          "9",
+          "-8"
+        ],
+        [
+          "33/4",
+          "-7"
+        ],
+        [
+          "9",
+          "-7"
+        ],
+        [
+          "8",
+          "8"
+        ],
+        [
+          "37/4",
+          "8"
+        ],
+        [
+          "8",
+          "9"
+        ],
+        [
+          "9",
+          "9"
+        ],
+        [
+          "-31/4",
+          "8"
+        ],
+        [
+          "-7",
+          "8"
+        ],
+        [
+          "-8",
+          "9"
+        ],
+        [
+          "-27/4",
+          "9"
+        ],
+        [
+          "-4",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "17/4",
+          "0"
+        ],
+        [
+          "0",
+          "4"
+        ]
+      ],
+      "masses": [
+        "25/4",
+        "101/16",
+        "51/8",
+        "103/16",
+        "4",
+        "65/16",
+        "33/8",
+        "67/16",
+        "25/4",
+        "101/16",
+        "51/8",
+        "103/16",
+        "4",
+        "65/16",
+        "33/8",
+        "67/16",
+        "3/2",
+        "25/16",
+        "13/8",
+        "27/16"
+      ],
+      "all_maximum_masks": [
+        15,
+        3840
+      ],
+      "blocks": [
+        {
+          "S_mask": 15,
+          "S_rank": 4,
+          "L": "203/8",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 447,
+          "strict_eligible_count": 46,
+          "maximum_eligible_mass": "203/8",
+          "high_competitor_count_including_S": 1,
+          "S_bbox": [
+            "-8",
+            "-27/4",
+            "-8",
+            "-7"
+          ],
+          "S_width_squared_over_L": [
+            "25/406",
+            "8/203"
+          ],
+          "container_area": {
+            "lower": "2621804070569250951851620525685352820699401/87112285931760246646623899502532662132736",
+            "upper": "41948865129108015229638885361718131760178297/1393796574908163946345982392040522594123776",
+            "normalized_lower": "374543438652750135978802932240764688671343/315782036502630894094011635696680900231168",
+            "normalized_upper": "41948865129108015229638885361718131760178297/35367588088294660138529303198028260825890816"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "2111969269897580693372671996187529998560877/174224571863520493293247799005065324265472",
+            "upper": "16895754159180645547004809312498269129566863/1393796574908163946345982392040522594123776",
+            "normalized_lower": "2111969269897580693372671996187529998560877/4420948511036832517316162899753532603236352",
+            "normalized_upper": "16895754159180645547004809312498269129566863/35367588088294660138529303198028260825890816"
+          },
+          "true_deletion": {
+            "lower": "12526555484963684841317038024609931315305717/696898287454081973172991196020261297061888",
+            "upper": "6263277742481842420671222204476740712781119/348449143727040986586495598010130648530944",
+            "normalized_lower": "12526555484963684841317038024609931315305717/17683794044147330069264651599014130412945408",
+            "normalized_upper": "6263277742481842420671222204476740712781119/8841897022073665034632325799507065206472704"
+          },
+          "analytic_envelope_budget": {
+            "lower": "2621804070569250951851620525685352820699401/87112285931760246646623899502532662132736",
+            "upper": "41948865129108015229638885361718131760178297/1393796574908163946345982392040522594123776",
+            "normalized_lower": "374543438652750135978802932240764688671343/315782036502630894094011635696680900231168",
+            "normalized_upper": "41948865129108015229638885361718131760178297/35367588088294660138529303198028260825890816"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-63769719439586849500923/1393796574908163946345982392040522594123776",
+            "upper": "23433342998029141079847/1393796574908163946345982392040522594123776",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "203/8",
+              "span_squared_over_mass": "25/406",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "131/8",
+              "span_squared_over_mass": "8/131",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "203/8",
+              "span_squared_over_mass": "25/406",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "131/8",
+              "span_squared_over_mass": "25/262",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "3/2",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 131072,
+              "rank": 1,
+              "mass": "25/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 262144,
+              "rank": 1,
+              "mass": "13/8",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 524288,
+              "rank": 1,
+              "mass": "27/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "25/406",
+              "bbox_width_squared_over_mass": [
+                "25/406",
+                "8/203"
+              ],
+              "receiver_area": {
+                "lower": "85249833929177327471591367723721794655471665/5575186299632655785383929568162090376495104",
+                "upper": "85249833929177327471628318923153501137000473/5575186299632655785383929568162090376495104",
+                "normalized_lower": "85249833929177327471591367723721794655471665/141470352353178640554117212792113043303563264",
+                "normalized_upper": "12178547704168189638804045560450500162428639/20210050336168377222016744684587577614794752"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.01293687499128282
+        },
+        {
+          "S_mask": 3840,
+          "S_rank": 4,
+          "L": "203/8",
+          "theta": "3/4",
+          "bits": 72,
+          "closed_bbox_count": 447,
+          "strict_eligible_count": 46,
+          "maximum_eligible_mass": "203/8",
+          "high_competitor_count_including_S": 2,
+          "S_bbox": [
+            "8",
+            "37/4",
+            "8",
+            "9"
+          ],
+          "S_width_squared_over_L": [
+            "25/406",
+            "8/203"
+          ],
+          "container_area": {
+            "lower": "2621804070569250951851620525685352820699401/87112285931760246646623899502532662132736",
+            "upper": "41948865129108015229638885361718131760178297/1393796574908163946345982392040522594123776",
+            "normalized_lower": "374543438652750135978802932240764688671343/315782036502630894094011635696680900231168",
+            "normalized_upper": "41948865129108015229638885361718131760178297/35367588088294660138529303198028260825890816"
+          },
+          "low_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_unpaid_union": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "high_union_outside_container_before_old_credit": {
+            "lower": "0",
+            "upper": "0",
+            "normalized_lower": "0",
+            "normalized_upper": "0"
+          },
+          "low_hole": {
+            "lower": "2011040377649954447505589349611894990237293/174224571863520493293247799005065324265472",
+            "upper": "16088323021199635580068443287798368415804047/1393796574908163946345982392040522594123776",
+            "normalized_lower": "287291482521422063929369907087413570033899/631564073005261788188023271393361800462336",
+            "normalized_upper": "16088323021199635580068443287798368415804047/35367588088294660138529303198028260825890816"
+          },
+          "true_deletion": {
+            "lower": "12930271053954189824785221036959881672187125/696898287454081973172991196020261297061888",
+            "upper": "6465135526977094912405313710651715891221823/348449143727040986586495598010130648530944",
+            "normalized_lower": "12930271053954189824785221036959881672187125/17683794044147330069264651599014130412945408",
+            "normalized_upper": "6465135526977094912405313710651715891221823/8841897022073665034632325799507065206472704"
+          },
+          "analytic_envelope_budget": {
+            "lower": "2621804070569250951851620525685352820699401/87112285931760246646623899502532662132736",
+            "upper": "41948865129108015229638885361718131760178297/1393796574908163946345982392040522594123776",
+            "normalized_lower": "374543438652750135978802932240764688671343/315782036502630894094011635696680900231168",
+            "normalized_upper": "41948865129108015229638885361718131760178297/35367588088294660138529303198028260825890816"
+          },
+          "identity_budget_minus_delta_minus_hole": {
+            "lower": "-63769719439586849500923/1393796574908163946345982392040522594123776",
+            "upper": "23728490903208493905703/1393796574908163946345982392040522594123776",
+            "contains_zero": true
+          },
+          "high_unpaid_minus_low_old_credit_normalized": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "budget_certifies_7over2": true,
+          "components": [
+            {
+              "mask": 15,
+              "rank": 4,
+              "mass": "203/8",
+              "span_squared_over_mass": "25/406",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 240,
+              "rank": 4,
+              "mass": "131/8",
+              "span_squared_over_mass": "8/131",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "mass": "203/8",
+              "span_squared_over_mass": "25/406",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 61440,
+              "rank": 4,
+              "mass": "131/8",
+              "span_squared_over_mass": "25/262",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 65536,
+              "rank": 1,
+              "mass": "3/2",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 131072,
+              "rank": 1,
+              "mass": "25/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 262144,
+              "rank": 1,
+              "mass": "13/8",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            },
+            {
+              "mask": 524288,
+              "rank": 1,
+              "mass": "27/16",
+              "span_squared_over_mass": "0",
+              "terminal_35_33": true
+            }
+          ],
+          "scope": "Exact input-specific intervals. High geometry aggregated as a union, never as a sum of individual areas.",
+          "universal_compensation_threshold": {
+            "lower": "42381332365655695981/2361183241434822606848",
+            "upper": "84762664731311391963/4722366482869645213696"
+          },
+          "certifies_universal_compensation_condition": true,
+          "individual_competitors_DIAGNOSTIC_ONLY_NOT_UNION_SUM": [
+            {
+              "mask": 3328,
+              "rank": 3,
+              "is_S": false,
+              "mass_over_L": "305/406",
+              "bbox_span_squared_over_mass": "16/305",
+              "bbox_width_squared_over_mass": [
+                "16/305",
+                "16/305"
+              ],
+              "receiver_area": {
+                "lower": "15792238427332001955488797951911437256557601/1393796574908163946345982392040522594123776",
+                "upper": "3948059606833000488874186460450449963918801/348449143727040986586495598010130648530944",
+                "normalized_lower": "15792238427332001955488797951911437256557601/35367588088294660138529303198028260825890816",
+                "normalized_upper": "3948059606833000488874186460450449963918801/8841897022073665034632325799507065206472704"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            },
+            {
+              "mask": 3840,
+              "rank": 4,
+              "is_S": true,
+              "mass_over_L": "1",
+              "bbox_span_squared_over_mass": "25/406",
+              "bbox_width_squared_over_mass": [
+                "25/406",
+                "8/203"
+              ],
+              "receiver_area": {
+                "lower": "85249833929177327471591367723721794655471665/5575186299632655785383929568162090376495104",
+                "upper": "85249833929177327471628318923153501137000473/5575186299632655785383929568162090376495104",
+                "normalized_lower": "85249833929177327471591367723721794655471665/141470352353178640554117212792113043303563264",
+                "normalized_upper": "12178547704168189638804045560450500162428639/20210050336168377222016744684587577614794752"
+              },
+              "outside_container_area": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "individually_unpaid_after_remaining_halo": {
+                "lower": "0",
+                "upper": "0",
+                "normalized_lower": "0",
+                "normalized_upper": "0"
+              },
+              "certified_contained_in_container": true,
+              "certified_individually_fully_paid": true,
+              "certified_receiver_area_at_most_L_over_10000": false
+            }
+          ],
+          "wall_seconds": 0.012779207987478003
+        }
+      ],
+      "improper_full_maximum_masks_skipped": [],
+      "all_proper_maximum_masks_evaluated": true
+    }
+  ],
+  "budget": {
+    "seconds_per_block": 120,
+    "total_seconds": 900
+  },
+  "scope": "Frozen deterministic inputs and all proper maximum blocks. Exact integer/Fraction enclosures; no new universal theorem or C2 bound.",
+  "wall_seconds": 0.0763883340114262,
+  "evaluated_proper_blocks": 12
+}
