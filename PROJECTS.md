@@ -8,6 +8,6 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 开放；n≤5精确计数及空间矩，远峰矩形族已构造但渐近占比未证 | 第1轮完成 | 最短路前缀与计数比联合估计、加权空间矩 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；六点/总次数28及七点/总次数24有限子类严格排除；固定支撑有次数压缩界 | 第4轮完成 | 四项因子族的无界前缀排除与支配证书 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；已认证有限子类与任意次数四项因子族，建立严格对角支配规则 | 第5轮完成 | 八点支撑失败型与无界前缀推进 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
