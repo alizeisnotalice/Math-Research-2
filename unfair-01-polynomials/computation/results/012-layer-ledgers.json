@@ -1,0 +1,3661 @@
+{
+  "batches": [
+    {
+      "directory": "round012-parallel",
+      "elapsed_seconds": 54.99619249999523,
+      "workers": 12,
+      "jobs": 15,
+      "driver_sha256": "f9a68705a02d6472f8420fe71712eb5ef6666cc630ab630e6eb7e5c907037d05",
+      "all_workers_exited": true
+    },
+    {
+      "directory": "round012-fullcpu",
+      "elapsed_seconds": 133.04458270801115,
+      "workers": 12,
+      "jobs": 29,
+      "driver_sha256": "1915289e8df4eec8b30198202b4853a67d66050787f4a83a3c8f1c23855faf12",
+      "all_workers_exited": true
+    },
+    {
+      "directory": "round012-eight",
+      "elapsed_seconds": 127.91571304100216,
+      "workers": 12,
+      "jobs": 13,
+      "driver_sha256": "a3243158575e0b29a312409d51a14514424d511d6a1e3da949cb611aeb137bf2",
+      "all_workers_exited": true
+    }
+  ],
+  "source_sha256": {
+    "support_search_layer.py": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710",
+    "verify_support_layer.py": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93"
+  },
+  "groups": [
+    {
+      "min_total": 29,
+      "total": 30,
+      "max_terms": 6,
+      "counts": {
+        "raw": 23406120,
+        "canonical": 11158550,
+        "excluded": 11044640,
+        "fair": 113910,
+        "unknown": 0
+      },
+      "jobs": [
+        {
+          "directory": "round012-parallel/m01",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 1,
+              "max_first_degree": 1,
+              "max_terms": 6,
+              "seconds": 14399.999717959,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 45012,
+              "canonical": 22612,
+              "excluded": 12241,
+              "fair": 10371,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 1,
+                "n": 28,
+                "complete": true,
+                "raw": 20854,
+                "canonical": 10480,
+                "excluded": 5746,
+                "fair": 4734,
+                "unknown": 0
+              },
+              {
+                "m": 1,
+                "n": 29,
+                "complete": true,
+                "raw": 24158,
+                "canonical": 12132,
+                "excluded": 6495,
+                "fair": 5637,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "b395bac28c6bfa6297968216a911b4e7993d74bf57f87c86dd2892e9a818e316",
+            "elapsed_seconds": 0.32816074998117983,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93206,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 45012,
+              "canonical": 22612,
+              "fair": 10371,
+              "excluded": 12241,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "b395bac28c6bfa6297968216a911b4e7993d74bf57f87c86dd2892e9a818e316",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 0.28734549999353476
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m02",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 2,
+              "max_first_degree": 2,
+              "max_terms": 6,
+              "seconds": 14399.999423500005,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 77512,
+              "canonical": 38393,
+              "excluded": 26380,
+              "fair": 12013,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 2,
+                "n": 27,
+                "complete": true,
+                "raw": 35804,
+                "canonical": 17994,
+                "excluded": 12518,
+                "fair": 5476,
+                "unknown": 0
+              },
+              {
+                "m": 2,
+                "n": 28,
+                "complete": true,
+                "raw": 41708,
+                "canonical": 20399,
+                "excluded": 13862,
+                "fair": 6537,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "e4c905a48b043a974cef38b545e44f661bbc9ab59e6418f405d2eac3bb372d1c",
+            "elapsed_seconds": 0.5321854999929201,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93204,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 77512,
+              "canonical": 38393,
+              "fair": 12013,
+              "excluded": 26380,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "e4c905a48b043a974cef38b545e44f661bbc9ab59e6418f405d2eac3bb372d1c",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 0.6097530840197578
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m03",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 3,
+              "max_first_degree": 3,
+              "max_terms": 6,
+              "seconds": 14399.999293334025,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 132712,
+              "canonical": 66453,
+              "excluded": 56664,
+              "fair": 9789,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 3,
+                "n": 26,
+                "complete": true,
+                "raw": 61104,
+                "canonical": 30644,
+                "excluded": 26253,
+                "fair": 4391,
+                "unknown": 0
+              },
+              {
+                "m": 3,
+                "n": 27,
+                "complete": true,
+                "raw": 71608,
+                "canonical": 35809,
+                "excluded": 30411,
+                "fair": 5398,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "d1ec0e70233615ab4c8f7f6eb5281794f371a30de55c0f396c359f8f29d056da",
+            "elapsed_seconds": 0.8554202500090469,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93205,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 132712,
+              "canonical": 66453,
+              "fair": 9789,
+              "excluded": 56664,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "d1ec0e70233615ab4c8f7f6eb5281794f371a30de55c0f396c359f8f29d056da",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 1.172096041002078
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m04",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 4,
+              "max_first_degree": 4,
+              "max_terms": 6,
+              "seconds": 14399.993227292027,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 225816,
+              "canonical": 112434,
+              "excluded": 101624,
+              "fair": 10810,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 4,
+                "n": 25,
+                "complete": true,
+                "raw": 103608,
+                "canonical": 51962,
+                "excluded": 47105,
+                "fair": 4857,
+                "unknown": 0
+              },
+              {
+                "m": 4,
+                "n": 26,
+                "complete": true,
+                "raw": 122208,
+                "canonical": 60472,
+                "excluded": 54519,
+                "fair": 5953,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "c9d709909af7cec7a7bda6c5467010234b115f344dfb15d69e224de23b4cb384",
+            "elapsed_seconds": 1.46060008299537,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93209,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 225816,
+              "canonical": 112434,
+              "fair": 10810,
+              "excluded": 101624,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "c9d709909af7cec7a7bda6c5467010234b115f344dfb15d69e224de23b4cb384",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 1.950877124996623
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m05",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 5,
+              "max_first_degree": 5,
+              "max_terms": 6,
+              "seconds": 14399.998436875001,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 381664,
+              "canonical": 191138,
+              "excluded": 182327,
+              "fair": 8811,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 5,
+                "n": 24,
+                "complete": true,
+                "raw": 174448,
+                "canonical": 87382,
+                "excluded": 83472,
+                "fair": 3910,
+                "unknown": 0
+              },
+              {
+                "m": 5,
+                "n": 25,
+                "complete": true,
+                "raw": 207216,
+                "canonical": 103756,
+                "excluded": 98855,
+                "fair": 4901,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "51bc5766f4869917e2b6a22be7753a655de443539f76324021d972e78c414045",
+            "elapsed_seconds": 2.372772500006249,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93207,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 381664,
+              "canonical": 191138,
+              "fair": 8811,
+              "excluded": 182327,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "51bc5766f4869917e2b6a22be7753a655de443539f76324021d972e78c414045",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 3.455784209014382
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m06",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 6,
+              "max_first_degree": 6,
+              "max_terms": 6,
+              "seconds": 14399.996171709005,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 620372,
+              "canonical": 309447,
+              "excluded": 300234,
+              "fair": 9213,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 6,
+                "n": 23,
+                "complete": true,
+                "raw": 282379,
+                "canonical": 141424,
+                "excluded": 137314,
+                "fair": 4110,
+                "unknown": 0
+              },
+              {
+                "m": 6,
+                "n": 24,
+                "complete": true,
+                "raw": 337993,
+                "canonical": 168023,
+                "excluded": 162920,
+                "fair": 5103,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "7a08932829458d8bf503b0e401cedcdfc902390f8d31c3357d4faafd7cfd2487",
+            "elapsed_seconds": 4.110479875002056,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93208,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 620372,
+              "canonical": 309447,
+              "fair": 9213,
+              "excluded": 300234,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "7a08932829458d8bf503b0e401cedcdfc902390f8d31c3357d4faafd7cfd2487",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 5.485945291991811
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m07",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 7,
+              "max_first_degree": 7,
+              "max_terms": 6,
+              "seconds": 14399.989295209001,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 949392,
+              "canonical": 475165,
+              "excluded": 467420,
+              "fair": 7745,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 7,
+                "n": 22,
+                "complete": true,
+                "raw": 430179,
+                "canonical": 215324,
+                "excluded": 211893,
+                "fair": 3431,
+                "unknown": 0
+              },
+              {
+                "m": 7,
+                "n": 23,
+                "complete": true,
+                "raw": 519213,
+                "canonical": 259841,
+                "excluded": 255527,
+                "fair": 4314,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "e9a99e04f6651f5a7e1e706a53718ab24a6d6e9d0f349f499d927347f11aa7c2",
+            "elapsed_seconds": 6.479109582985984,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93214,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 949392,
+              "canonical": 475165,
+              "fair": 7745,
+              "excluded": 467420,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "e9a99e04f6651f5a7e1e706a53718ab24a6d6e9d0f349f499d927347f11aa7c2",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 8.566262749984162
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m08",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 8,
+              "max_first_degree": 8,
+              "max_terms": 6,
+              "seconds": 14399.992802125023,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 1360557,
+              "canonical": 679379,
+              "excluded": 671428,
+              "fair": 7951,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 8,
+                "n": 21,
+                "complete": true,
+                "raw": 613404,
+                "canonical": 307010,
+                "excluded": 303483,
+                "fair": 3527,
+                "unknown": 0
+              },
+              {
+                "m": 8,
+                "n": 22,
+                "complete": true,
+                "raw": 747153,
+                "canonical": 372369,
+                "excluded": 367945,
+                "fair": 4424,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "6bdb058f8e176eddd583d31d478d5cc1f524f3ec4e4ac51be724871c01e831d4",
+            "elapsed_seconds": 9.194475249998504,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93210,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 1360557,
+              "canonical": 679379,
+              "fair": 7951,
+              "excluded": 671428,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "6bdb058f8e176eddd583d31d478d5cc1f524f3ec4e4ac51be724871c01e831d4",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 11.86560608400032
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m09",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 9,
+              "max_first_degree": 9,
+              "max_terms": 6,
+              "seconds": 14399.991050084005,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 1830816,
+              "canonical": 915903,
+              "excluded": 909124,
+              "fair": 6779,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 9,
+                "n": 20,
+                "complete": true,
+                "raw": 820868,
+                "canonical": 410742,
+                "excluded": 407683,
+                "fair": 3059,
+                "unknown": 0
+              },
+              {
+                "m": 9,
+                "n": 21,
+                "complete": true,
+                "raw": 1009948,
+                "canonical": 505161,
+                "excluded": 501441,
+                "fair": 3720,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "0ba2229cd900e17cfde267db121afe4e8a38c3e70a970f87d82e4b99e431bba7",
+            "elapsed_seconds": 12.069615208980395,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93211,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 1830816,
+              "canonical": 915903,
+              "fair": 6779,
+              "excluded": 909124,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "0ba2229cd900e17cfde267db121afe4e8a38c3e70a970f87d82e4b99e431bba7",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 15.737846333009657
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m10",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 10,
+              "max_first_degree": 10,
+              "max_terms": 6,
+              "seconds": 14399.989916917024,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 2325504,
+              "canonical": 1161478,
+              "excluded": 1154114,
+              "fair": 7364,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 10,
+                "n": 19,
+                "complete": true,
+                "raw": 1036288,
+                "canonical": 518512,
+                "excluded": 515392,
+                "fair": 3120,
+                "unknown": 0
+              },
+              {
+                "m": 10,
+                "n": 20,
+                "complete": true,
+                "raw": 1289216,
+                "canonical": 642966,
+                "excluded": 638722,
+                "fair": 4244,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "582b4e9a20999302c1537df04f60b51d6174e502664ece8673bc62b49e5868a7",
+            "elapsed_seconds": 15.918070958985481,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93212,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 2325504,
+              "canonical": 1161478,
+              "fair": 7364,
+              "excluded": 1154114,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "582b4e9a20999302c1537df04f60b51d6174e502664ece8673bc62b49e5868a7",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 19.191607624990866
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m11",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 11,
+              "max_first_degree": 11,
+              "max_terms": 6,
+              "seconds": 14399.987532500003,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 2803132,
+              "canonical": 1402302,
+              "excluded": 1396155,
+              "fair": 6147,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 11,
+                "n": 18,
+                "complete": true,
+                "raw": 1240604,
+                "canonical": 620670,
+                "excluded": 617885,
+                "fair": 2785,
+                "unknown": 0
+              },
+              {
+                "m": 11,
+                "n": 19,
+                "complete": true,
+                "raw": 1562528,
+                "canonical": 781632,
+                "excluded": 778270,
+                "fair": 3362,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "cde085790e715559a8a8f41a82f3f4c34904da5a85cb0033482711c6deebcf93",
+            "elapsed_seconds": 19.467501209001057,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93213,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 2803132,
+              "canonical": 1402302,
+              "fair": 6147,
+              "excluded": 1396155,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "cde085790e715559a8a8f41a82f3f4c34904da5a85cb0033482711c6deebcf93",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 22.278407874982804
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m12",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 12,
+              "max_first_degree": 12,
+              "max_terms": 6,
+              "seconds": 14399.988908084022,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 3220822,
+              "canonical": 1608627,
+              "excluded": 1602490,
+              "fair": 6137,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 12,
+                "n": 17,
+                "complete": true,
+                "raw": 1414554,
+                "canonical": 707684,
+                "excluded": 705009,
+                "fair": 2675,
+                "unknown": 0
+              },
+              {
+                "m": 12,
+                "n": 18,
+                "complete": true,
+                "raw": 1806268,
+                "canonical": 900943,
+                "excluded": 897481,
+                "fair": 3462,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "190d8f8535b1191f9532dd0df47b5d3cc1941a91b28d8683c8716675eb30e6ca",
+            "elapsed_seconds": 22.28970275001484,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93215,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 3220822,
+              "canonical": 1608627,
+              "fair": 6137,
+              "excluded": 1602490,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "190d8f8535b1191f9532dd0df47b5d3cc1941a91b28d8683c8716675eb30e6ca",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 24.945517166983336
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m13",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 13,
+              "max_first_degree": 13,
+              "max_terms": 6,
+              "seconds": 14398.788579917018,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 3539652,
+              "canonical": 1770640,
+              "excluded": 1765225,
+              "fair": 5415,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 13,
+                "n": 16,
+                "complete": true,
+                "raw": 1541154,
+                "canonical": 770984,
+                "excluded": 768478,
+                "fair": 2506,
+                "unknown": 0
+              },
+              {
+                "m": 13,
+                "n": 17,
+                "complete": true,
+                "raw": 1998498,
+                "canonical": 999656,
+                "excluded": 996747,
+                "fair": 2909,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "0afe4affa4e1673253093fe1cb1cef4908748b4d39445bcefff354978f015b33",
+            "elapsed_seconds": 24.41878279199591,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93228,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 3539652,
+              "canonical": 1770640,
+              "fair": 5415,
+              "excluded": 1765225,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "0afe4affa4e1673253093fe1cb1cef4908748b4d39445bcefff354978f015b33",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 26.436944290995598
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m14",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 14,
+              "max_first_degree": 14,
+              "max_terms": 6,
+              "seconds": 14398.436141000013,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 3729316,
+              "canonical": 1862755,
+              "excluded": 1857390,
+              "fair": 5365,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 14,
+                "n": 15,
+                "complete": true,
+                "raw": 1607803,
+                "canonical": 804322,
+                "excluded": 802016,
+                "fair": 2306,
+                "unknown": 0
+              },
+              {
+                "m": 14,
+                "n": 16,
+                "complete": true,
+                "raw": 2121513,
+                "canonical": 1058433,
+                "excluded": 1055374,
+                "fair": 3059,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "689765f0187a9fa380faf2e120e3127723761b2ed93ca89cf2a58e23ff44b56a",
+            "elapsed_seconds": 25.96453262498835,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93231,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 3729316,
+              "canonical": 1862755,
+              "fair": 5365,
+              "excluded": 1857390,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "689765f0187a9fa380faf2e120e3127723761b2ed93ca89cf2a58e23ff44b56a",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 27.3284993749985
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-parallel/m15",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 15,
+              "max_first_degree": 15,
+              "max_terms": 6,
+              "seconds": 14397.619459000009,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 2163841,
+              "canonical": 541824,
+              "excluded": 541824,
+              "fair": 0,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 15,
+                "n": 15,
+                "complete": true,
+                "raw": 2163841,
+                "canonical": 541824,
+                "excluded": 541824,
+                "fair": 0,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "f8aec8a0afb391a7d5005c099574ee9edcf3e4df8fc7368b97f06085dad5de86",
+            "elapsed_seconds": 8.551282374974107,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 93235,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 2163841,
+              "canonical": 541824,
+              "fair": 0,
+              "excluded": 541824,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "f8aec8a0afb391a7d5005c099574ee9edcf3e4df8fc7368b97f06085dad5de86",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 12.38508379200357
+          },
+          "unknown": []
+        }
+      ]
+    },
+    {
+      "min_total": 25,
+      "total": 26,
+      "max_terms": 7,
+      "counts": {
+        "raw": 21919118,
+        "canonical": 10332708,
+        "excluded": 10262475,
+        "fair": 70233,
+        "unknown": 0
+      },
+      "jobs": [
+        {
+          "directory": "round012-fullcpu/seven26-m01",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 1,
+              "max_first_degree": 1,
+              "max_terms": 7,
+              "seconds": 14305.125749708997,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 100007,
+              "canonical": 50110,
+              "excluded": 37921,
+              "fair": 12189,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 1,
+                "n": 24,
+                "complete": true,
+                "raw": 44552,
+                "canonical": 22343,
+                "excluded": 17086,
+                "fair": 5257,
+                "unknown": 0
+              },
+              {
+                "m": 1,
+                "n": 25,
+                "complete": true,
+                "raw": 55455,
+                "canonical": 27767,
+                "excluded": 20835,
+                "fair": 6932,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "c9aa755dfa2be4e962cbc4bd535a7bb0d6a5ad96c8f92ebd4b4eea7951391b36",
+            "elapsed_seconds": 0.5001918750058394,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96926,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 100007,
+              "canonical": 50110,
+              "fair": 12189,
+              "excluded": 37921,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "c9aa755dfa2be4e962cbc4bd535a7bb0d6a5ad96c8f92ebd4b4eea7951391b36",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 0.7931228340021335
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m02",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 2,
+              "max_first_degree": 2,
+              "max_terms": 7,
+              "seconds": 14306.035477375,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 159990,
+              "canonical": 79668,
+              "excluded": 68463,
+              "fair": 11205,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 2,
+                "n": 23,
+                "complete": true,
+                "raw": 70886,
+                "canonical": 35510,
+                "excluded": 30722,
+                "fair": 4788,
+                "unknown": 0
+              },
+              {
+                "m": 2,
+                "n": 24,
+                "complete": true,
+                "raw": 89104,
+                "canonical": 44158,
+                "excluded": 37741,
+                "fair": 6417,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "f9759fcc308c6de10eb2de9352c5eaa5c610172732380a7a4e2c2e827e5194c3",
+            "elapsed_seconds": 0.7885932910139672,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96921,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 159990,
+              "canonical": 79668,
+              "fair": 11205,
+              "excluded": 68463,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "f9759fcc308c6de10eb2de9352c5eaa5c610172732380a7a4e2c2e827e5194c3",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 1.2925138330028858
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m03",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 3,
+              "max_first_degree": 3,
+              "max_terms": 7,
+              "seconds": 14310.636501292,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 253356,
+              "canonical": 126857,
+              "excluded": 118511,
+              "fair": 8346,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 3,
+                "n": 22,
+                "complete": true,
+                "raw": 111584,
+                "canonical": 55904,
+                "excluded": 52341,
+                "fair": 3563,
+                "unknown": 0
+              },
+              {
+                "m": 3,
+                "n": 23,
+                "complete": true,
+                "raw": 141772,
+                "canonical": 70953,
+                "excluded": 66170,
+                "fair": 4783,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "68cb50b5ff3dfae05791a1a58539c16d0041c0aa946ef647d98eab36d856bb4a",
+            "elapsed_seconds": 2.599511166976299,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96892,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 253356,
+              "canonical": 126857,
+              "fair": 8346,
+              "excluded": 118511,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "68cb50b5ff3dfae05791a1a58539c16d0041c0aa946ef647d98eab36d856bb4a",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 2.52592812498915
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m04",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 4,
+              "max_first_degree": 4,
+              "max_terms": 7,
+              "seconds": 14313.181320374977,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 396768,
+              "canonical": 198066,
+              "excluded": 190366,
+              "fair": 7700,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 4,
+                "n": 21,
+                "complete": true,
+                "raw": 173600,
+                "canonical": 86912,
+                "excluded": 83650,
+                "fair": 3262,
+                "unknown": 0
+              },
+              {
+                "m": 4,
+                "n": 22,
+                "complete": true,
+                "raw": 223168,
+                "canonical": 111154,
+                "excluded": 106716,
+                "fair": 4438,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "b756a2a67f64f00d95dc923c6f38e34ca52562accff141ad2a5f71302a7e549c",
+            "elapsed_seconds": 3.695503666996956,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96873,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 396768,
+              "canonical": 198066,
+              "fair": 7700,
+              "excluded": 190366,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "b756a2a67f64f00d95dc923c6f38e34ca52562accff141ad2a5f71302a7e549c",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 4.725214709003922
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m05",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 5,
+              "max_first_degree": 5,
+              "max_terms": 7,
+              "seconds": 14320.736035916983,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 613824,
+              "canonical": 307202,
+              "excluded": 301348,
+              "fair": 5854,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 5,
+                "n": 20,
+                "complete": true,
+                "raw": 266624,
+                "canonical": 133490,
+                "excluded": 130996,
+                "fair": 2494,
+                "unknown": 0
+              },
+              {
+                "m": 5,
+                "n": 21,
+                "complete": true,
+                "raw": 347200,
+                "canonical": 173712,
+                "excluded": 170352,
+                "fair": 3360,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "2ac7af75508a10b1838d9b356206628b0000f386e1825dcf483e78c8b2930bcd",
+            "elapsed_seconds": 6.811708958004601,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96810,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 613824,
+              "canonical": 307202,
+              "fair": 5854,
+              "excluded": 301348,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "2ac7af75508a10b1838d9b356206628b0000f386e1825dcf483e78c8b2930bcd",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 7.931500083010178
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m06",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 6,
+              "max_first_degree": 6,
+              "max_terms": 7,
+              "seconds": 14332.006518208975,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 936960,
+              "canonical": 468246,
+              "excluded": 463001,
+              "fair": 5245,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 6,
+                "n": 19,
+                "complete": true,
+                "raw": 403712,
+                "canonical": 202040,
+                "excluded": 199828,
+                "fair": 2212,
+                "unknown": 0
+              },
+              {
+                "m": 6,
+                "n": 20,
+                "complete": true,
+                "raw": 533248,
+                "canonical": 266206,
+                "excluded": 263173,
+                "fair": 3033,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "ffb5a56ccd8d4c186d2a616cf8cd2f0a1e91b1326d3c84760a61cf64269491d7",
+            "elapsed_seconds": 9.98425520802266,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96754,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 936960,
+              "canonical": 468246,
+              "fair": 5245,
+              "excluded": 463001,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "ffb5a56ccd8d4c186d2a616cf8cd2f0a1e91b1326d3c84760a61cf64269491d7",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 15.162221000005957
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m07",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 7,
+              "max_first_degree": 7,
+              "max_terms": 7,
+              "seconds": 14342.059680209,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 1387134,
+              "canonical": 693987,
+              "excluded": 689767,
+              "fair": 4220,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 7,
+                "n": 18,
+                "complete": true,
+                "raw": 592326,
+                "canonical": 296422,
+                "excluded": 294613,
+                "fair": 1809,
+                "unknown": 0
+              },
+              {
+                "m": 7,
+                "n": 19,
+                "complete": true,
+                "raw": 794808,
+                "canonical": 397565,
+                "excluded": 395154,
+                "fair": 2411,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "d3a0971c930f61773f5a4a61649563f8a39b756a08d3b137ae2e2da9a0972e3a",
+            "elapsed_seconds": 9.755841458012583,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96711,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 1387134,
+              "canonical": 693987,
+              "fair": 4220,
+              "excluded": 689767,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "d3a0971c930f61773f5a4a61649563f8a39b756a08d3b137ae2e2da9a0972e3a",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 21.340143334004097
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m08",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 8,
+              "max_first_degree": 8,
+              "max_terms": 7,
+              "seconds": 14352.38251216698,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 1954440,
+              "canonical": 977099,
+              "excluded": 973132,
+              "fair": 3967,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 8,
+                "n": 17,
+                "complete": true,
+                "raw": 826200,
+                "canonical": 413359,
+                "excluded": 411682,
+                "fair": 1677,
+                "unknown": 0
+              },
+              {
+                "m": 8,
+                "n": 18,
+                "complete": true,
+                "raw": 1128240,
+                "canonical": 563740,
+                "excluded": 561450,
+                "fair": 2290,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "58617d7446d06ca3439dbaa7b8c16f01a6b8dc876c57fbe8ae264fbe33066c82",
+            "elapsed_seconds": 13.890731374995084,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96654,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 1954440,
+              "canonical": 977099,
+              "fair": 3967,
+              "excluded": 973132,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "58617d7446d06ca3439dbaa7b8c16f01a6b8dc876c57fbe8ae264fbe33066c82",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 27.619447709002998
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m09",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 9,
+              "max_first_degree": 9,
+              "max_terms": 7,
+              "seconds": 14399.995736458979,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 2590551,
+              "canonical": 1295798,
+              "excluded": 1292811,
+              "fair": 2987,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 9,
+                "n": 16,
+                "complete": true,
+                "raw": 1082736,
+                "canonical": 541687,
+                "excluded": 540376,
+                "fair": 1311,
+                "unknown": 0
+              },
+              {
+                "m": 9,
+                "n": 17,
+                "complete": true,
+                "raw": 1507815,
+                "canonical": 754111,
+                "excluded": 752435,
+                "fair": 1676,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "43d460e1afd05d92bcb1cd4a2205cd9a6031b81dedb567504f38d1635b283655",
+            "elapsed_seconds": 18.430059999984223,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96356,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 2590551,
+              "canonical": 1295798,
+              "fair": 2987,
+              "excluded": 1292811,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "43d460e1afd05d92bcb1cd4a2205cd9a6031b81dedb567504f38d1635b283655",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 26.993916957988404
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m10",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 10,
+              "max_first_degree": 10,
+              "max_terms": 7,
+              "seconds": 14399.996392959001,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 3215294,
+              "canonical": 1607610,
+              "excluded": 1604636,
+              "fair": 2974,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 10,
+                "n": 15,
+                "complete": true,
+                "raw": 1326686,
+                "canonical": 663656,
+                "excluded": 662402,
+                "fair": 1254,
+                "unknown": 0
+              },
+              {
+                "m": 10,
+                "n": 16,
+                "complete": true,
+                "raw": 1888608,
+                "canonical": 943954,
+                "excluded": 942234,
+                "fair": 1720,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "4b34745472cfac58b080839b9541d48774c9518cd53b158796babd44598029ba",
+            "elapsed_seconds": 24.333826917019906,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96350,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 3215294,
+              "canonical": 1607610,
+              "fair": 2974,
+              "excluded": 1604636,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "4b34745472cfac58b080839b9541d48774c9518cd53b158796babd44598029ba",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 33.424331749993144
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m11",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 11,
+              "max_first_degree": 11,
+              "max_terms": 7,
+              "seconds": 14399.99647766698,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 3734214,
+              "canonical": 1867691,
+              "excluded": 1865003,
+              "fair": 2688,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 11,
+                "n": 14,
+                "complete": true,
+                "raw": 1518440,
+                "canonical": 759572,
+                "excluded": 758343,
+                "fair": 1229,
+                "unknown": 0
+              },
+              {
+                "m": 11,
+                "n": 15,
+                "complete": true,
+                "raw": 2215774,
+                "canonical": 1108119,
+                "excluded": 1106660,
+                "fair": 1459,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "09095c2210ea8f6994d9222e949b088f2a0fd3920b4a5716f8f4ed750219652d",
+            "elapsed_seconds": 29.305267875024583,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96351,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 3734214,
+              "canonical": 1867691,
+              "fair": 2688,
+              "excluded": 1865003,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "09095c2210ea8f6994d9222e949b088f2a0fd3920b4a5716f8f4ed750219652d",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 38.50515087498934
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m12",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 12,
+              "max_first_degree": 12,
+              "max_terms": 7,
+              "seconds": 14399.987807625002,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 4061184,
+              "canonical": 2030612,
+              "excluded": 2027754,
+              "fair": 2858,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 12,
+                "n": 13,
+                "complete": true,
+                "raw": 1624064,
+                "canonical": 812384,
+                "excluded": 811131,
+                "fair": 1253,
+                "unknown": 0
+              },
+              {
+                "m": 12,
+                "n": 14,
+                "complete": true,
+                "raw": 2437120,
+                "canonical": 1218228,
+                "excluded": 1216623,
+                "fair": 1605,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "d22218a4746e58450ee8137b6d7b3a9d941486820296438bb4c5bcc59a7c53a7",
+            "elapsed_seconds": 32.857523582992144,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96352,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 4061184,
+              "canonical": 2030612,
+              "fair": 2858,
+              "excluded": 2027754,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "d22218a4746e58450ee8137b6d7b3a9d941486820296438bb4c5bcc59a7c53a7",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 46.191422125004465
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/seven26-m13",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 13,
+              "max_first_degree": 13,
+              "max_terms": 7,
+              "seconds": 14357.697597749997,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 2515396,
+              "canonical": 629762,
+              "excluded": 629762,
+              "fair": 0,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 13,
+                "n": 13,
+                "complete": true,
+                "raw": 2515396,
+                "canonical": 629762,
+                "excluded": 629762,
+                "fair": 0,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "439b29d660db38c22f9bfeab79330c81a7ef3c749428638436da0a07d44c06c3",
+            "elapsed_seconds": 10.704487792012515,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96626,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 2515396,
+              "canonical": 629762,
+              "fair": 0,
+              "excluded": 629762,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "439b29d660db38c22f9bfeab79330c81a7ef3c749428638436da0a07d44c06c3",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 15.924936125025852
+          },
+          "unknown": []
+        }
+      ]
+    },
+    {
+      "min_total": 31,
+      "total": 32,
+      "max_terms": 6,
+      "counts": {
+        "raw": 43429723,
+        "canonical": 20764478,
+        "excluded": 20577179,
+        "fair": 187299,
+        "unknown": 0
+      },
+      "jobs": [
+        {
+          "directory": "round012-fullcpu/six32-m01",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 1,
+              "max_first_degree": 1,
+              "max_terms": 6,
+              "seconds": 14304.758760583994,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 59772,
+              "canonical": 30007,
+              "excluded": 15466,
+              "fair": 14541,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 1,
+                "n": 30,
+                "complete": true,
+                "raw": 27841,
+                "canonical": 13981,
+                "excluded": 7295,
+                "fair": 6686,
+                "unknown": 0
+              },
+              {
+                "m": 1,
+                "n": 31,
+                "complete": true,
+                "raw": 31931,
+                "canonical": 16026,
+                "excluded": 8171,
+                "fair": 7855,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "a43cec0bb96682e29bb667b30c952f0c02246a8721bc423948e1cfa2c4932098",
+            "elapsed_seconds": 0.24412520800251514,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96927,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 59772,
+              "canonical": 30007,
+              "fair": 14541,
+              "excluded": 15466,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "a43cec0bb96682e29bb667b30c952f0c02246a8721bc423948e1cfa2c4932098",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 0.5173726250068285
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m02",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 2,
+              "max_first_degree": 2,
+              "max_terms": 6,
+              "seconds": 14305.777821041993,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 103998,
+              "canonical": 51476,
+              "excluded": 34047,
+              "fair": 17429,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 2,
+                "n": 29,
+                "complete": true,
+                "raw": 48316,
+                "canonical": 24264,
+                "excluded": 16252,
+                "fair": 8012,
+                "unknown": 0
+              },
+              {
+                "m": 2,
+                "n": 30,
+                "complete": true,
+                "raw": 55682,
+                "canonical": 27212,
+                "excluded": 17795,
+                "fair": 9417,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "cd48eebd0e92be5211a721c6c50f8c1ca4e80e2152fb78b3fdd47bc5f6eb7102",
+            "elapsed_seconds": 0.37786391700501554,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96922,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 103998,
+              "canonical": 51476,
+              "fair": 17429,
+              "excluded": 34047,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "cd48eebd0e92be5211a721c6c50f8c1ca4e80e2152fb78b3fdd47bc5f6eb7102",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 0.8892667079926468
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m03",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 3,
+              "max_first_degree": 3,
+              "max_terms": 6,
+              "seconds": 14306.578861833987,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 180048,
+              "canonical": 90236,
+              "excluded": 75496,
+              "fair": 14740,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 3,
+                "n": 28,
+                "complete": true,
+                "raw": 83416,
+                "canonical": 41814,
+                "excluded": 35162,
+                "fair": 6652,
+                "unknown": 0
+              },
+              {
+                "m": 3,
+                "n": 29,
+                "complete": true,
+                "raw": 96632,
+                "canonical": 48422,
+                "excluded": 40334,
+                "fair": 8088,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "7b72f01b3523c8cfef3bf6877fe27ffa5145d6d16e271e295b6c051cd2ae7163",
+            "elapsed_seconds": 1.0488989170116838,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96920,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 180048,
+              "canonical": 90236,
+              "fair": 14740,
+              "excluded": 75496,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "7b72f01b3523c8cfef3bf6877fe27ffa5145d6d16e271e295b6c051cd2ae7163",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 1.4917027500050608
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m04",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 4,
+              "max_first_degree": 4,
+              "max_terms": 6,
+              "seconds": 14310.758470959001,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 310048,
+              "canonical": 154298,
+              "excluded": 137750,
+              "fair": 16548,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 4,
+                "n": 27,
+                "complete": true,
+                "raw": 143216,
+                "canonical": 71792,
+                "excluded": 64299,
+                "fair": 7493,
+                "unknown": 0
+              },
+              {
+                "m": 4,
+                "n": 28,
+                "complete": true,
+                "raw": 166832,
+                "canonical": 82506,
+                "excluded": 73451,
+                "fair": 9055,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "e896d7638badefe0818cfc3cf1c631660a25c74fb96484e7c3813cad849d862d",
+            "elapsed_seconds": 3.2060116670036223,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96891,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 310048,
+              "canonical": 154298,
+              "fair": 16548,
+              "excluded": 137750,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "e896d7638badefe0818cfc3cf1c631660a25c74fb96484e7c3813cad849d862d",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 3.1515605410095304
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m05",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 5,
+              "max_first_degree": 5,
+              "max_terms": 6,
+              "seconds": 14315.895160458982,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 530848,
+              "canonical": 265792,
+              "excluded": 252020,
+              "fair": 13772,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 5,
+                "n": 26,
+                "complete": true,
+                "raw": 244416,
+                "canonical": 122392,
+                "excluded": 116239,
+                "fair": 6153,
+                "unknown": 0
+              },
+              {
+                "m": 5,
+                "n": 27,
+                "complete": true,
+                "raw": 286432,
+                "canonical": 143400,
+                "excluded": 135781,
+                "fair": 7619,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "8394dba5749340890ef1959133225b81a1bf59cbbca1294cab5b98e1b8b57dcb",
+            "elapsed_seconds": 5.284983791993,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96861,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 530848,
+              "canonical": 265792,
+              "fair": 13772,
+              "excluded": 252020,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "8394dba5749340890ef1959133225b81a1bf59cbbca1294cab5b98e1b8b57dcb",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 6.777438917022664
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m06",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 6,
+              "max_first_degree": 6,
+              "max_terms": 6,
+              "seconds": 14330.913687708991,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 875037,
+              "canonical": 436507,
+              "excluded": 421808,
+              "fair": 14699,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 6,
+                "n": 25,
+                "complete": true,
+                "raw": 401481,
+                "canonical": 201017,
+                "excluded": 194433,
+                "fair": 6584,
+                "unknown": 0
+              },
+              {
+                "m": 6,
+                "n": 26,
+                "complete": true,
+                "raw": 473556,
+                "canonical": 235490,
+                "excluded": 227375,
+                "fair": 8115,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "7850c326fdf404c12a6d7dd204d7919c20676e847e56cbce9d3f7c664ffe96f9",
+            "elapsed_seconds": 10.01174420901225,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96755,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 875037,
+              "canonical": 436507,
+              "fair": 14699,
+              "excluded": 421808,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "7850c326fdf404c12a6d7dd204d7919c20676e847e56cbce9d3f7c664ffe96f9",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 14.602614999981597
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m07",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 7,
+              "max_first_degree": 7,
+              "max_terms": 6,
+              "seconds": 14337.767743916978,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 1359678,
+              "canonical": 680392,
+              "excluded": 667812,
+              "fair": 12580,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 7,
+                "n": 24,
+                "complete": true,
+                "raw": 621471,
+                "canonical": 311012,
+                "excluded": 305420,
+                "fair": 5592,
+                "unknown": 0
+              },
+              {
+                "m": 7,
+                "n": 25,
+                "complete": true,
+                "raw": 738207,
+                "canonical": 369380,
+                "excluded": 362392,
+                "fair": 6988,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "999d25156d3309b44908289a38a19864eab862ff6cff1c7baea1e5bf0ab9d635",
+            "elapsed_seconds": 9.914133875019616,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96717,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 1359678,
+              "canonical": 680392,
+              "fair": 12580,
+              "excluded": 667812,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "999d25156d3309b44908289a38a19864eab862ff6cff1c7baea1e5bf0ab9d635",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 22.81929954199586
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m08",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 8,
+              "max_first_degree": 8,
+              "max_terms": 6,
+              "seconds": 14354.39762199999,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 1981188,
+              "canonical": 989105,
+              "excluded": 976026,
+              "fair": 13079,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 8,
+                "n": 23,
+                "complete": true,
+                "raw": 901791,
+                "canonical": 451264,
+                "excluded": 445470,
+                "fair": 5794,
+                "unknown": 0
+              },
+              {
+                "m": 8,
+                "n": 24,
+                "complete": true,
+                "raw": 1079397,
+                "canonical": 537841,
+                "excluded": 530556,
+                "fair": 7285,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "6ddc03713c015dca601bb081c1b7c98b57465171f310c59df1503f69d28af407",
+            "elapsed_seconds": 12.93858824999188,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96641,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 1981188,
+              "canonical": 989105,
+              "fair": 13079,
+              "excluded": 976026,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "6ddc03713c015dca601bb081c1b7c98b57465171f310c59df1503f69d28af407",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 28.04705270798877
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m09",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 9,
+              "max_first_degree": 9,
+              "max_terms": 6,
+              "seconds": 14399.995583624986,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 2714928,
+              "canonical": 1358201,
+              "excluded": 1347106,
+              "fair": 11095,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 9,
+                "n": 22,
+                "complete": true,
+                "raw": 1230161,
+                "canonical": 615449,
+                "excluded": 610481,
+                "fair": 4968,
+                "unknown": 0
+              },
+              {
+                "m": 9,
+                "n": 23,
+                "complete": true,
+                "raw": 1484767,
+                "canonical": 742752,
+                "excluded": 736625,
+                "fair": 6127,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "c3781360394d3e53791edfb839aac1677651906156b801d447468a3c7c151d38",
+            "elapsed_seconds": 17.912218540994218,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96349,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 2714928,
+              "canonical": 1358201,
+              "fair": 11095,
+              "excluded": 1347106,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "c3781360394d3e53791edfb839aac1677651906156b801d447468a3c7c151d38",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 29.484012750006514
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m10",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 10,
+              "max_first_degree": 10,
+              "max_terms": 6,
+              "seconds": 14399.996593708987,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 3518208,
+              "canonical": 1756968,
+              "excluded": 1745395,
+              "fair": 11573,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 10,
+                "n": 21,
+                "complete": true,
+                "raw": 1586176,
+                "canonical": 793536,
+                "excluded": 788386,
+                "fair": 5150,
+                "unknown": 0
+              },
+              {
+                "m": 10,
+                "n": 22,
+                "complete": true,
+                "raw": 1932032,
+                "canonical": 963432,
+                "excluded": 957009,
+                "fair": 6423,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "d4ea3b53e9eb33f9e88ec0a71c063cf2e85e9b8b62c6b6ef65259adc1ee8ed93",
+            "elapsed_seconds": 23.86381129201618,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96348,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 3518208,
+              "canonical": 1756968,
+              "fair": 11573,
+              "excluded": 1745395,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "d4ea3b53e9eb33f9e88ec0a71c063cf2e85e9b8b62c6b6ef65259adc1ee8ed93",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 38.11041820899118
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m11",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 11,
+              "max_first_degree": 11,
+              "max_terms": 6,
+              "seconds": 14399.999006458995,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 4335552,
+              "canonical": 2168672,
+              "excluded": 2158143,
+              "fair": 10529,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 11,
+                "n": 20,
+                "complete": true,
+                "raw": 1943896,
+                "canonical": 972396,
+                "excluded": 967647,
+                "fair": 4749,
+                "unknown": 0
+              },
+              {
+                "m": 11,
+                "n": 21,
+                "complete": true,
+                "raw": 2391656,
+                "canonical": 1196276,
+                "excluded": 1190496,
+                "fair": 5780,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "05a54567daf311256d08df9c0c8f61a657258c9ca4a3f8611982ccb5cf198b94",
+            "elapsed_seconds": 30.475288415997056,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96346,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 4335552,
+              "canonical": 2168672,
+              "fair": 10529,
+              "excluded": 2158143,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "05a54567daf311256d08df9c0c8f61a657258c9ca4a3f8611982ccb5cf198b94",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 53.34166025000741
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m12",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 12,
+              "max_first_degree": 12,
+              "max_terms": 6,
+              "seconds": 14399.999216249998,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 5105208,
+              "canonical": 2549702,
+              "excluded": 2539255,
+              "fair": 10447,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 12,
+                "n": 19,
+                "complete": true,
+                "raw": 2274976,
+                "canonical": 1137994,
+                "excluded": 1133452,
+                "fair": 4542,
+                "unknown": 0
+              },
+              {
+                "m": 12,
+                "n": 20,
+                "complete": true,
+                "raw": 2830232,
+                "canonical": 1411708,
+                "excluded": 1405803,
+                "fair": 5905,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "b47200745432abadbff7272854d3a69d7d35bd4fff8a2593aa7f0b0beeee5451",
+            "elapsed_seconds": 37.46637795798597,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96354,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 5105208,
+              "canonical": 2549702,
+              "fair": 10447,
+              "excluded": 2539255,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "b47200745432abadbff7272854d3a69d7d35bd4fff8a2593aa7f0b0beeee5451",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 67.28454200000851
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m13",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 13,
+              "max_first_degree": 13,
+              "max_terms": 6,
+              "seconds": 14399.999155792,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 5766028,
+              "canonical": 2884026,
+              "excluded": 2874805,
+              "fair": 9221,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 13,
+                "n": 18,
+                "complete": true,
+                "raw": 2551916,
+                "canonical": 1276464,
+                "excluded": 1272269,
+                "fair": 4195,
+                "unknown": 0
+              },
+              {
+                "m": 13,
+                "n": 19,
+                "complete": true,
+                "raw": 3214112,
+                "canonical": 1607562,
+                "excluded": 1602536,
+                "fair": 5026,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "c597e1279637d7cd3093634d9998a8c60ceb83a3cb7e2ee62c8ce6feb4c9d9ec",
+            "elapsed_seconds": 43.199519875022816,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96342,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 5766028,
+              "canonical": 2884026,
+              "fair": 9221,
+              "excluded": 2874805,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "c597e1279637d7cd3093634d9998a8c60ceb83a3cb7e2ee62c8ce6feb4c9d9ec",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 74.75460437498987
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m14",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 14,
+              "max_first_degree": 14,
+              "max_terms": 6,
+              "seconds": 14399.999498999998,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 6263983,
+              "canonical": 3128511,
+              "excluded": 3119476,
+              "fair": 9035,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 14,
+                "n": 17,
+                "complete": true,
+                "raw": 2751081,
+                "canonical": 1376077,
+                "excluded": 1372083,
+                "fair": 3994,
+                "unknown": 0
+              },
+              {
+                "m": 14,
+                "n": 18,
+                "complete": true,
+                "raw": 3512902,
+                "canonical": 1752434,
+                "excluded": 1747393,
+                "fair": 5041,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "e82059e2451ccd9982f3f3ed635c49537ad5bc0a94c3f9d8b4e2312e69edc1fc",
+            "elapsed_seconds": 47.57240745800664,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96344,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 6263983,
+              "canonical": 3128511,
+              "fair": 9035,
+              "excluded": 3119476,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "e82059e2451ccd9982f3f3ed635c49537ad5bc0a94c3f9d8b4e2312e69edc1fc",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 76.66450879100012
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m15",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 15,
+              "max_first_degree": 15,
+              "max_terms": 6,
+              "seconds": 14399.999453249999,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 6557718,
+              "canonical": 3279932,
+              "excluded": 3271921,
+              "fair": 8011,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 15,
+                "n": 16,
+                "complete": true,
+                "raw": 2855211,
+                "canonical": 1428142,
+                "excluded": 1424424,
+                "fair": 3718,
+                "unknown": 0
+              },
+              {
+                "m": 15,
+                "n": 17,
+                "complete": true,
+                "raw": 3702507,
+                "canonical": 1851790,
+                "excluded": 1847497,
+                "fair": 4293,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "3bf65a8be794e65d96ab84a1b12f8e7416efb0336775f4531d6243baed08bf88",
+            "elapsed_seconds": 50.642906500026584,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96343,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 6557718,
+              "canonical": 3279932,
+              "fair": 8011,
+              "excluded": 3271921,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "3bf65a8be794e65d96ab84a1b12f8e7416efb0336775f4531d6243baed08bf88",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 82.19000849997974
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-fullcpu/six32-m16",
+          "summary": {
+            "config": {
+              "total": 32,
+              "min_total": 31,
+              "min_degree": 16,
+              "max_first_degree": 16,
+              "max_terms": 6,
+              "seconds": 14399.999064083997,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 3767481,
+              "canonical": 940653,
+              "excluded": 940653,
+              "fair": 0,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 16,
+                "n": 16,
+                "complete": true,
+                "raw": 3767481,
+                "canonical": 940653,
+                "excluded": 940653,
+                "fair": 0,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "29f1e2bc6bbd992ddb376c0fa437f040ce0721019c619a1e620cc7240d3ea138",
+            "elapsed_seconds": 14.9680588330084,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 96345,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 3767481,
+              "canonical": 940653,
+              "fair": 0,
+              "excluded": 940653,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "29f1e2bc6bbd992ddb376c0fa437f040ce0721019c619a1e620cc7240d3ea138",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 27.120018916000845
+          },
+          "unknown": []
+        }
+      ]
+    },
+    {
+      "min_total": 25,
+      "total": 26,
+      "max_terms": 8,
+      "counts": {
+        "raw": 53742037,
+        "canonical": 25306037,
+        "excluded": 25199305,
+        "fair": 106731,
+        "unknown": 1
+      },
+      "jobs": [
+        {
+          "directory": "round012-eight/eight26-m01",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 1,
+              "max_first_degree": 1,
+              "max_terms": 8,
+              "seconds": 14392.441369165987,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 335550,
+              "canonical": 168074,
+              "excluded": 145637,
+              "fair": 22437,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 1,
+                "n": 24,
+                "complete": true,
+                "raw": 145499,
+                "canonical": 72899,
+                "excluded": 63610,
+                "fair": 9289,
+                "unknown": 0
+              },
+              {
+                "m": 1,
+                "n": 25,
+                "complete": true,
+                "raw": 190051,
+                "canonical": 95175,
+                "excluded": 82027,
+                "fair": 13148,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "b45c7b92bf58f10426c9f16f65530e21ea984cba138e6dd6429be689f4cbe352",
+            "elapsed_seconds": 1.6967576250026468,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97830,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 335550,
+              "canonical": 168074,
+              "fair": 22437,
+              "excluded": 145637,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "b45c7b92bf58f10426c9f16f65530e21ea984cba138e6dd6429be689f4cbe352",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 2.1254094159812666
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m02",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 2,
+              "max_first_degree": 2,
+              "max_terms": 8,
+              "seconds": 14399.986446833005,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 511110,
+              "canonical": 255322,
+              "excluded": 236583,
+              "fair": 18739,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 2,
+                "n": 23,
+                "complete": true,
+                "raw": 220112,
+                "canonical": 110288,
+                "excluded": 102568,
+                "fair": 7720,
+                "unknown": 0
+              },
+              {
+                "m": 2,
+                "n": 24,
+                "complete": true,
+                "raw": 290998,
+                "canonical": 145034,
+                "excluded": 134015,
+                "fair": 11019,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "aa1980960a8f1fb81a72320f2c1776474cb53b38d152898958ba2313450bad6c",
+            "elapsed_seconds": 2.776262833009241,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97747,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 511110,
+              "canonical": 255322,
+              "fair": 18739,
+              "excluded": 236583,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "aa1980960a8f1fb81a72320f2c1776474cb53b38d152898958ba2313450bad6c",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 3.576153792004334
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m03",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 3,
+              "max_first_degree": 3,
+              "max_terms": 8,
+              "seconds": 14399.987085666013,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 768864,
+              "canonical": 384896,
+              "excluded": 371142,
+              "fair": 13754,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 3,
+                "n": 22,
+                "complete": true,
+                "raw": 328640,
+                "canonical": 164552,
+                "excluded": 158903,
+                "fair": 5649,
+                "unknown": 0
+              },
+              {
+                "m": 3,
+                "n": 23,
+                "complete": true,
+                "raw": 440224,
+                "canonical": 220344,
+                "excluded": 212239,
+                "fair": 8105,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "0f53d95c677d5beb7d477894cdca28aee2e382c5c1fc1c17c2f289a37b48e9a1",
+            "elapsed_seconds": 4.163643417006824,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97746,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 768864,
+              "canonical": 384896,
+              "fair": 13754,
+              "excluded": 371142,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "0f53d95c677d5beb7d477894cdca28aee2e382c5c1fc1c17c2f289a37b48e9a1",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 5.515086708997842
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m04",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 4,
+              "max_first_degree": 4,
+              "max_terms": 8,
+              "seconds": 14399.989843082993,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 1140960,
+              "canonical": 570422,
+              "excluded": 558814,
+              "fair": 11608,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 4,
+                "n": 21,
+                "complete": true,
+                "raw": 483680,
+                "canonical": 242192,
+                "excluded": 237435,
+                "fair": 4757,
+                "unknown": 0
+              },
+              {
+                "m": 4,
+                "n": 22,
+                "complete": true,
+                "raw": 657280,
+                "canonical": 328230,
+                "excluded": 321379,
+                "fair": 6851,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "0c5327ed8dfa7adfeeeb0422542d5d0580cdc4206c51a1a3740812ad58cff567",
+            "elapsed_seconds": 6.408154333010316,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97745,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 1140960,
+              "canonical": 570422,
+              "fair": 11608,
+              "excluded": 558814,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "0c5327ed8dfa7adfeeeb0422542d5d0580cdc4206c51a1a3740812ad58cff567",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 8.520067208999535
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m05",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 5,
+              "max_first_degree": 5,
+              "max_terms": 8,
+              "seconds": 14399.993499208009,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 1668096,
+              "canonical": 834746,
+              "excluded": 826064,
+              "fair": 8682,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 5,
+                "n": 20,
+                "complete": true,
+                "raw": 700736,
+                "canonical": 350714,
+                "excluded": 347122,
+                "fair": 3592,
+                "unknown": 0
+              },
+              {
+                "m": 5,
+                "n": 21,
+                "complete": true,
+                "raw": 967360,
+                "canonical": 484032,
+                "excluded": 478942,
+                "fair": 5090,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "eb2b6559bbe0c1982cce4416004c63d066a9ce7ba5ad5cfa84145a28c828b553",
+            "elapsed_seconds": 9.882022500009043,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97742,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 1668096,
+              "canonical": 834746,
+              "fair": 8682,
+              "excluded": 826064,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "eb2b6559bbe0c1982cce4416004c63d066a9ce7ba5ad5cfa84145a28c828b553",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 12.227899207995506
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m06",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 6,
+              "max_first_degree": 6,
+              "max_terms": 8,
+              "seconds": 14399.998911915987,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 2399232,
+              "canonical": 1199882,
+              "excluded": 1192700,
+              "fair": 7182,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 6,
+                "n": 19,
+                "complete": true,
+                "raw": 997760,
+                "canonical": 499400,
+                "excluded": 496463,
+                "fair": 2937,
+                "unknown": 0
+              },
+              {
+                "m": 6,
+                "n": 20,
+                "complete": true,
+                "raw": 1401472,
+                "canonical": 700482,
+                "excluded": 696237,
+                "fair": 4245,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "b4e8f554337b008ef957b3327623b09a4eebbe72988bde0a48edce38b16da29e",
+            "elapsed_seconds": 14.158173167001223,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97737,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 2399232,
+              "canonical": 1199882,
+              "fair": 7182,
+              "excluded": 1192700,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "b4e8f554337b008ef957b3327623b09a4eebbe72988bde0a48edce38b16da29e",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 17.785665917006554
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m07",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 7,
+              "max_first_degree": 7,
+              "max_terms": 8,
+              "seconds": 14399.997137916012,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 3389312,
+              "canonical": 1695696,
+              "excluded": 1689950,
+              "fair": 5746,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 7,
+                "n": 18,
+                "complete": true,
+                "raw": 1393792,
+                "canonical": 697416,
+                "excluded": 695041,
+                "fair": 2375,
+                "unknown": 0
+              },
+              {
+                "m": 7,
+                "n": 19,
+                "complete": true,
+                "raw": 1995520,
+                "canonical": 998280,
+                "excluded": 994909,
+                "fair": 3371,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "985c4ae07527a744445ed04de7cea8b20c450aae9f1c73ea3010e4a942da0821",
+            "elapsed_seconds": 20.839538290980272,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97744,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 3389312,
+              "canonical": 1695696,
+              "fair": 5746,
+              "excluded": 1689950,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "985c4ae07527a744445ed04de7cea8b20c450aae9f1c73ea3010e4a942da0821",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 25.172942291974323
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m08",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 8,
+              "max_first_degree": 8,
+              "max_terms": 8,
+              "seconds": 14399.999022540986,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 4657217,
+              "canonical": 2329263,
+              "excluded": 2324294,
+              "fair": 4969,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 8,
+                "n": 17,
+                "complete": true,
+                "raw": 1891411,
+                "canonical": 946403,
+                "excluded": 944365,
+                "fair": 2038,
+                "unknown": 0
+              },
+              {
+                "m": 8,
+                "n": 18,
+                "complete": true,
+                "raw": 2765806,
+                "canonical": 1382860,
+                "excluded": 1379929,
+                "fair": 2931,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "3d2db70a33317d63b84c8dce781026b7b1b963ddba09bd9ff03c2199133fd131",
+            "elapsed_seconds": 28.925894499989226,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97738,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 4657217,
+              "canonical": 2329263,
+              "fair": 4969,
+              "excluded": 2324294,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "3d2db70a33317d63b84c8dce781026b7b1b963ddba09bd9ff03c2199133fd131",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 33.653005833009956
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m09",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 9,
+              "max_first_degree": 9,
+              "max_terms": 8,
+              "seconds": 14399.999280749995,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 6135974,
+              "canonical": 3069382,
+              "excluded": 3066000,
+              "fair": 3382,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 9,
+                "n": 16,
+                "complete": true,
+                "raw": 2457403,
+                "canonical": 1229399,
+                "excluded": 1227938,
+                "fair": 1461,
+                "unknown": 0
+              },
+              {
+                "m": 9,
+                "n": 17,
+                "complete": true,
+                "raw": 3678571,
+                "canonical": 1839983,
+                "excluded": 1838062,
+                "fair": 1921,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "eb0345fb961851e84f855ba96a5c638cd543079aec6c5feecf73ae3c532fb685",
+            "elapsed_seconds": 38.939003042003606,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97735,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 6135974,
+              "canonical": 3069382,
+              "fair": 3382,
+              "excluded": 3066000,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "eb0345fb961851e84f855ba96a5c638cd543079aec6c5feecf73ae3c532fb685",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 42.887016666994896
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m10",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 10,
+              "max_first_degree": 10,
+              "max_terms": 8,
+              "seconds": 14399.999386207986,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 7654050,
+              "canonical": 3828014,
+              "excluded": 3824611,
+              "fair": 3403,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 10,
+                "n": 15,
+                "complete": true,
+                "raw": 3017816,
+                "canonical": 1509734,
+                "excluded": 1508306,
+                "fair": 1428,
+                "unknown": 0
+              },
+              {
+                "m": 10,
+                "n": 16,
+                "complete": true,
+                "raw": 4636234,
+                "canonical": 2318280,
+                "excluded": 2316305,
+                "fair": 1975,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "bf00954c69c2c0902ef44075e50a581f29cfa5d58c873a456493d7ad7c6d9f39",
+            "elapsed_seconds": 49.550002416974166,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97736,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 7654050,
+              "canonical": 3828014,
+              "fair": 3403,
+              "excluded": 3824611,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "bf00954c69c2c0902ef44075e50a581f29cfa5d58c873a456493d7ad7c6d9f39",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 51.188381290994585
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m11",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 11,
+              "max_first_degree": 11,
+              "max_terms": 8,
+              "seconds": 14399.999338208,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 8965056,
+              "canonical": 4484192,
+              "excluded": 4480972,
+              "fair": 3219,
+              "unknown": 1
+            },
+            "shards": [
+              {
+                "m": 11,
+                "n": 14,
+                "complete": true,
+                "raw": 3473408,
+                "canonical": 1737536,
+                "excluded": 1736078,
+                "fair": 1458,
+                "unknown": 0
+              },
+              {
+                "m": 11,
+                "n": 15,
+                "complete": true,
+                "raw": 5491648,
+                "canonical": 2746656,
+                "excluded": 2744894,
+                "fair": 1761,
+                "unknown": 1
+              }
+            ],
+            "ledger_sha256_uncompressed": "e6675f58d49249ff605c4c4fbc53d86f4662bc310650464a0b355afc4ef24f46",
+            "elapsed_seconds": 58.9670989169972,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97734,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 8965056,
+              "canonical": 4484192,
+              "fair": 3219,
+              "excluded": 4480972,
+              "unknown": 1
+            },
+            "ledger_sha256_uncompressed": "e6675f58d49249ff605c4c4fbc53d86f4662bc310650464a0b355afc4ef24f46",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 58.291206709021935
+          },
+          "unknown": [
+            {
+              "I": [
+                0,
+                1,
+                4,
+                5,
+                11
+              ],
+              "J": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                8,
+                9,
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "directory": "round012-eight/eight26-m12",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 12,
+              "max_first_degree": 12,
+              "max_terms": 8,
+              "seconds": 14399.999259665987,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 9816516,
+              "canonical": 4909428,
+              "excluded": 4905818,
+              "fair": 3610,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 12,
+                "n": 13,
+                "complete": true,
+                "raw": 3729860,
+                "canonical": 1865812,
+                "excluded": 1864213,
+                "fair": 1599,
+                "unknown": 0
+              },
+              {
+                "m": 12,
+                "n": 14,
+                "complete": true,
+                "raw": 6086656,
+                "canonical": 3043616,
+                "excluded": 3041605,
+                "fair": 2011,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "04ba8998a2d60220086fb6c3daa8e0088aa6f616d32d7b3aed3c619696c69576",
+            "elapsed_seconds": 65.36369975001435,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97733,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 9816516,
+              "canonical": 4909428,
+              "fair": 3610,
+              "excluded": 4905818,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "04ba8998a2d60220086fb6c3daa8e0088aa6f616d32d7b3aed3c619696c69576",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 62.46011104201898
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round012-eight/eight26-m13",
+          "summary": {
+            "config": {
+              "total": 26,
+              "min_total": 25,
+              "min_degree": 13,
+              "max_first_degree": 13,
+              "max_terms": 8,
+              "seconds": 14399.999307916005,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 6300100,
+              "canonical": 1576720,
+              "excluded": 1576720,
+              "fair": 0,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 13,
+                "n": 13,
+                "complete": true,
+                "raw": 6300100,
+                "canonical": 1576720,
+                "excluded": 1576720,
+                "fair": 0,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "843efa928f6ebb96c771d3a137a62a9f7676821dbf2e39658d2eba821ed144bb",
+            "elapsed_seconds": 24.74300166699686,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 97740,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 6300100,
+              "canonical": 1576720,
+              "fair": 0,
+              "excluded": 1576720,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "843efa928f6ebb96c771d3a137a62a9f7676821dbf2e39658d2eba821ed144bb",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 31.744818749983096
+          },
+          "unknown": []
+        }
+      ]
+    }
+  ]
+}
