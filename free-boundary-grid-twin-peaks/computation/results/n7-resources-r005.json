@@ -1,0 +1,41 @@
+{
+  "successful_runs": [
+    {
+      "name": "baseline_corrected_d4",
+      "result": "n7-result-rerun.json (retained outside this compact handoff)",
+      "wall_seconds": 118.7,
+      "user_seconds": 765.25,
+      "system_seconds": 5.13,
+      "max_rss_bytes": 3018063872,
+      "peak_memory_footprint_bytes": 5242852392,
+      "overlap_status": "No concurrent beta computation was recorded for this run."
+    },
+    {
+      "name": "splitmix_cached_images",
+      "result": "n7-exact-r005.json",
+      "wall_seconds": 40.6,
+      "user_seconds": 208.1,
+      "system_seconds": 3.74,
+      "max_rss_bytes": 3246850048,
+      "peak_memory_footprint_bytes": 6106814080,
+      "overlap_status": "No beta overlap was recorded for this run."
+    },
+    {
+      "name": "parallel_atomic_hash",
+      "result": "Matches n7-exact-r005.json in every certificate field.",
+      "wall_seconds": 68.85,
+      "user_seconds": 228.95,
+      "system_seconds": 7.93,
+      "max_rss_bytes": 3137699840,
+      "peak_memory_footprint_bytes": 4469002272,
+      "stage_seconds": {
+        "parallel_hash_clear": 0.045735,
+        "parallel_hash_insert": 0.711968,
+        "recurrence_and_statistics": 47.523
+      },
+      "overlap_status": "This run overlapped an independent beta computation. Do not compare its elapsed time with the other two runs to infer the cost of atomic insertion or CPU capacity."
+    }
+  ],
+  "implementation_correction": "The first n=7 attempt asserted at k=2 because removing a vertex from a D4-canonical set need not remain canonical. The corrected recurrence maps every child to its D4 minimum before lookup; no output from the failed attempt is used.",
+  "process_release": "All n7 counters, generic counters, and Python verifiers had exited when this handoff was frozen."
+}

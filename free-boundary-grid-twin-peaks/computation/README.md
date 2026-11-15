@@ -96,3 +96,27 @@ TMPDIR=/Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks CLANG_MODULE_CAC
 `rectangle_root_mod.cpp`接受行数和列数，限面积≤24；以模2^64和模(2^64−1)两遍连通顺序递推及CRT恢复，结果≤24!小于两模乘积，恢复唯一。它与Python独立集根带算法交叉。`core_broken_grid.cpp`无参数，完整遍历3686400个有限核心状态；独立Python验证器利用删边单调性复核，亦生成n5/6/12/32的完整近峰成员。
 
 计算结束先保存必要输出，再确认所启动进程退出；不保留大表常驻REPL。n7采用新算法和独立资源预算，不能直接放宽旧程序输入限制。
+
+## 第5轮：n7 D4整数计数与分轨认证
+
+`n7_d4_peak_dp.cpp` 无参数，只处理n7；`d4_peak_dp_generic.cpp` 接收n=3..6。
+使用前述data共享缓存，以 `clang++ -std=c++17 -O3 -pthread` 编译。n7主计数最高实测footprint约6.11GB。
+
+```sh
+/Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/n7_d4_peak_dp > /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/n7-rerun.json
+python3 -B free-boundary-grid-twin-peaks/computation/check_selected_n7.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_d4_orbits.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_r005.py
+```
+
+选定集合脚本读取归档n7结果，使用Python任意精度重算。Burnside脚本使用独立的周期商图与逐行算法，不重复C++D4枚举。
+`rectangle_independent_root.cpp` 接收行数、列数，限两者≤7且面积≤35；`rectangle_independent_root 7 5` 复现最大矩形。
+
+β完整认证在 `certificates/r005-beta/`，保留冻结源码、顺序驱动、输入、每轨JSON/资源和必要历史对照。该源码同样以C++17、O3、pthread编译，不需GMP；每轨内部12线程。不要同时启动全部12轨，驱动保证上一轨退出后才启动下一轨。实际最大footprint约8.78GB。
+
+```sh
+python3 -B free-boundary-grid-twin-peaks/computation/certificates/r005-beta/verify_beta_zero_layered.py --orbit-dir free-boundary-grid-twin-peaks/computation/certificates/r005-beta/orbits --certificate /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/beta-check.json
+python3 -B free-boundary-grid-twin-peaks/computation/certificates/r005-beta/run_n7_beta_orbits_certified.py --source free-boundary-grid-twin-peaks/computation/certificates/r005-beta/beta_zero_layered_orbit_certified.cpp --binary /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/beta_zero_layered_orbit_certified --output-dir /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/beta-rerun
+```
+
+第二条命令会实际重跑12轨，输出目录必须不存在。历史单进程的binary哈希缺口与新分轨认证严格分开；见证书目录SOURCE_VERSION.md。各进程完整退出后释放表和线程，不保留数值REPL。

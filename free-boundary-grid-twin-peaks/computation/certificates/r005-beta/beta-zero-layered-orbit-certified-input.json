@@ -1,0 +1,17 @@
+{
+  "purpose": "Final n=7 per-D4-orbit replay; each orbit is a separate, sequential process.",
+  "n": 7,
+  "orbits": 12,
+  "source": "beta_zero_layered_orbit_certified.cpp",
+  "source_sha256_before_run": "e0c769ad793d63391dc3e853b7170680afa04dfde4b53c1c656f9d1fd875c3b5",
+  "binary": "beta_zero_layered_orbit_certified",
+  "binary_sha256_before_run": "945b1cb671f8c04bc36c5e267de79f1e3c73783644f4b2e3ef5a7ae88d622cb3",
+  "compiler_command": "TMPDIR=/Volumes/data/CodexTemp/T2/a022-analytic-moment CLANG_MODULE_CACHE_PATH=/Volumes/data/CodexTemp/cache/clang clang++ -std=c++17 -O3 -pthread -fmodules-cache-path=/Volumes/data/CodexTemp/cache/clang beta_zero_layered_orbit_certified.cpp -o beta_zero_layered_orbit_certified",
+  "driver": "run_n7_beta_orbits_certified.py",
+  "driver_sha256": "b2538d78aec76b2c14944cb299dec544c46b7ce0ca8fb0ae4e0b3021ecb285ee",
+  "verifier": "verify_beta_zero_layered.py",
+  "verifier_sha256": "87c916e2f7e36447b2204b7d352f1fc4e1f13ce9a9c4e2cabee79c9bff6e4d8e",
+  "expected_beta0_total": "131529421404957780122938007473728844832061946591752192",
+  "historical_full_run_json": "beta-zero-layered-n7.json",
+  "parallelism": "One orbit process at a time; the C++ process itself uses 12 workers."
+}
