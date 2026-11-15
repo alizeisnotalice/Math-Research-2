@@ -1,0 +1,879 @@
+{
+  "status": "PASS exact finite checks; no universal 3.5 proof",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "arithmetic": "integer/Fraction; strict root brackets at 32 bits",
+  "seed": null,
+  "floating_decisions": false,
+  "script_sha256": "6b44aa5fa47ee0eb3e428c3780074eaf3206eabe1207fa53e87bcc24af28bfc9",
+  "cases": [
+    {
+      "name": "singleton",
+      "source_count": 1,
+      "points": [
+        [
+          "0/1",
+          "0/1",
+          "1/1"
+        ]
+      ],
+      "total_mass": "1/1",
+      "max_eligible_mass": "1/1",
+      "all_nonempty_subsets_checked": 1,
+      "square_cap_checks": 1,
+      "maximizer_count": 1,
+      "maximizers": [
+        {
+          "mask": 1,
+          "proper": false,
+          "mass": "1/1",
+          "width": "0/1",
+          "height": "0/1",
+          "collar_outside_source_checks": 0,
+          "exterior_growth_subset_checks": 0,
+          "localized_source_count": 1,
+          "localized_mass": "1/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "4611686014132420609/4611686018427387904",
+          "deletion_ratio_upper": "4611686022722355201/4611686018427387904",
+          "deletion_ratio_upper_display": 1.0000000009313226,
+          "delta_band_width": "1/536870912",
+          "gamma_sum": "1/536870912",
+          "certified_at_7over2": true
+        }
+      ]
+    },
+    {
+      "name": "separated",
+      "source_count": 2,
+      "points": [
+        [
+          "0/1",
+          "0/1",
+          "1/1"
+        ],
+        [
+          "3/1",
+          "0/1",
+          "1/1"
+        ]
+      ],
+      "total_mass": "2/1",
+      "max_eligible_mass": "1/1",
+      "all_nonempty_subsets_checked": 3,
+      "square_cap_checks": 2,
+      "maximizer_count": 2,
+      "maximizers": [
+        {
+          "mask": 1,
+          "proper": true,
+          "mass": "1/1",
+          "width": "0/1",
+          "height": "0/1",
+          "collar_outside_source_checks": 1,
+          "exterior_growth_subset_checks": 1,
+          "localized_source_count": 1,
+          "localized_mass": "1/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "4611686014132420609/4611686018427387904",
+          "deletion_ratio_upper": "4611686031312289793/4611686018427387904",
+          "deletion_ratio_upper_display": 1.0000000027939677,
+          "delta_band_width": "1/268435456",
+          "gamma_sum": "3/536870912",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 2,
+          "proper": true,
+          "mass": "1/1",
+          "width": "0/1",
+          "height": "0/1",
+          "collar_outside_source_checks": 1,
+          "exterior_growth_subset_checks": 1,
+          "localized_source_count": 1,
+          "localized_mass": "1/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "4611686014132420609/4611686018427387904",
+          "deletion_ratio_upper": "4611686031312289793/4611686018427387904",
+          "deletion_ratio_upper_display": 1.0000000027939677,
+          "delta_band_width": "1/268435456",
+          "gamma_sum": "3/536870912",
+          "certified_at_7over2": true
+        }
+      ]
+    },
+    {
+      "name": "wide_chain",
+      "source_count": 5,
+      "points": [
+        [
+          "0/1",
+          "0/1",
+          "3/4"
+        ],
+        [
+          "1/1",
+          "0/1",
+          "3/4"
+        ],
+        [
+          "2/1",
+          "0/1",
+          "3/4"
+        ],
+        [
+          "3/1",
+          "0/1",
+          "3/4"
+        ],
+        [
+          "4/1",
+          "0/1",
+          "3/4"
+        ]
+      ],
+      "total_mass": "15/4",
+      "max_eligible_mass": "3/2",
+      "all_nonempty_subsets_checked": 31,
+      "square_cap_checks": 9,
+      "maximizer_count": 4,
+      "maximizers": [
+        {
+          "mask": 3,
+          "proper": true,
+          "mass": "3/2",
+          "width": "1/1",
+          "height": "0/1",
+          "collar_outside_source_checks": 3,
+          "exterior_growth_subset_checks": 7,
+          "localized_source_count": 3,
+          "localized_mass": "9/4",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "8731266062281084129/6917529027641081856",
+          "deletion_ratio_upper": "1455211015852918581/1152921504606846976",
+          "deletion_ratio_upper_display": 1.2621943558500577,
+          "delta_band_width": "32836427357/4611686018427387904",
+          "gamma_sum": "3027058713/144115188075855872",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 6,
+          "proper": true,
+          "mass": "3/2",
+          "width": "1/1",
+          "height": "0/1",
+          "collar_outside_source_checks": 3,
+          "exterior_growth_subset_checks": 7,
+          "localized_source_count": 4,
+          "localized_mass": "3/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "3212711527901840331/2305843009213693952",
+          "deletion_ratio_upper": "3212711539532217141/2305843009213693952",
+          "deletion_ratio_upper_display": 1.3932915322920318,
+          "delta_band_width": "17445565215/2305843009213693952",
+          "gamma_sum": "2832511493/144115188075855872",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 12,
+          "proper": true,
+          "mass": "3/2",
+          "width": "1/1",
+          "height": "0/1",
+          "collar_outside_source_checks": 3,
+          "exterior_growth_subset_checks": 7,
+          "localized_source_count": 4,
+          "localized_mass": "3/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "3212711527901840331/2305843009213693952",
+          "deletion_ratio_upper": "3212711539532217141/2305843009213693952",
+          "deletion_ratio_upper_display": 1.3932915322920318,
+          "delta_band_width": "17445565215/2305843009213693952",
+          "gamma_sum": "2832511493/144115188075855872",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 24,
+          "proper": true,
+          "mass": "3/2",
+          "width": "1/1",
+          "height": "0/1",
+          "collar_outside_source_checks": 3,
+          "exterior_growth_subset_checks": 7,
+          "localized_source_count": 3,
+          "localized_mass": "9/4",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "8731266062281084129/6917529027641081856",
+          "deletion_ratio_upper": "1455211015852918581/1152921504606846976",
+          "deletion_ratio_upper_display": 1.2621943558500577,
+          "delta_band_width": "32836427357/4611686018427387904",
+          "gamma_sum": "3027058713/144115188075855872",
+          "certified_at_7over2": true
+        }
+      ]
+    },
+    {
+      "name": "two_clusters_bridge",
+      "source_count": 5,
+      "points": [
+        [
+          "-17/16",
+          "0/1",
+          "3/8"
+        ],
+        [
+          "-1/1",
+          "1/16",
+          "5/8"
+        ],
+        [
+          "0/1",
+          "0/1",
+          "1/1"
+        ],
+        [
+          "1/1",
+          "-1/16",
+          "5/8"
+        ],
+        [
+          "17/16",
+          "0/1",
+          "3/8"
+        ]
+      ],
+      "total_mass": "3/1",
+      "max_eligible_mass": "2/1",
+      "all_nonempty_subsets_checked": 31,
+      "square_cap_checks": 13,
+      "maximizer_count": 2,
+      "maximizers": [
+        {
+          "mask": 7,
+          "proper": true,
+          "mass": "2/1",
+          "width": "17/16",
+          "height": "1/16",
+          "collar_outside_source_checks": 2,
+          "exterior_growth_subset_checks": 3,
+          "localized_source_count": 5,
+          "localized_mass": "3/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "5232850045402509149/4611686018427387904",
+          "deletion_ratio_upper": "1308212514205053911/1152921504606846976",
+          "deletion_ratio_upper_display": 1.1346934799790747,
+          "delta_band_width": "11417706495/2305843009213693952",
+          "gamma_sum": "26831670683/1152921504606846976",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 28,
+          "proper": true,
+          "mass": "2/1",
+          "width": "17/16",
+          "height": "1/16",
+          "collar_outside_source_checks": 2,
+          "exterior_growth_subset_checks": 3,
+          "localized_source_count": 5,
+          "localized_mass": "3/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "5232850045402509149/4611686018427387904",
+          "deletion_ratio_upper": "1308212514205053911/1152921504606846976",
+          "deletion_ratio_upper_display": 1.1346934799790747,
+          "delta_band_width": "11417706495/2305843009213693952",
+          "gamma_sum": "26831670683/1152921504606846976",
+          "certified_at_7over2": true
+        }
+      ]
+    },
+    {
+      "name": "square_grid_17over16",
+      "source_count": 9,
+      "points": [
+        [
+          "0/1",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "0/1",
+          "17/16",
+          "1/2"
+        ],
+        [
+          "0/1",
+          "17/8",
+          "1/2"
+        ],
+        [
+          "17/16",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "17/16",
+          "17/16",
+          "1/2"
+        ],
+        [
+          "17/16",
+          "17/8",
+          "1/2"
+        ],
+        [
+          "17/8",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "17/8",
+          "17/16",
+          "1/2"
+        ],
+        [
+          "17/8",
+          "17/8",
+          "1/2"
+        ]
+      ],
+      "total_mass": "9/2",
+      "max_eligible_mass": "2/1",
+      "all_nonempty_subsets_checked": 511,
+      "square_cap_checks": 49,
+      "maximizer_count": 4,
+      "maximizers": [
+        {
+          "mask": 27,
+          "proper": true,
+          "mass": "2/1",
+          "width": "17/16",
+          "height": "17/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "11383883819117361871/9223372036854775808",
+          "deletion_ratio_upper": "11383883887261829635/9223372036854775808",
+          "deletion_ratio_upper_display": 1.2342431641892004,
+          "delta_band_width": "17036116941/1152921504606846976",
+          "gamma_sum": "12314309093/576460752303423488",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 54,
+          "proper": true,
+          "mass": "2/1",
+          "width": "17/16",
+          "height": "17/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "11383883819117361871/9223372036854775808",
+          "deletion_ratio_upper": "11383883887261829635/9223372036854775808",
+          "deletion_ratio_upper_display": 1.2342431641892004,
+          "delta_band_width": "17036116941/1152921504606846976",
+          "gamma_sum": "12314309093/576460752303423488",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 216,
+          "proper": true,
+          "mass": "2/1",
+          "width": "17/16",
+          "height": "17/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "11383883819117361871/9223372036854775808",
+          "deletion_ratio_upper": "11383883887261829635/9223372036854775808",
+          "deletion_ratio_upper_display": 1.2342431641892004,
+          "delta_band_width": "17036116941/1152921504606846976",
+          "gamma_sum": "12314309093/576460752303423488",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 432,
+          "proper": true,
+          "mass": "2/1",
+          "width": "17/16",
+          "height": "17/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "11383883819117361871/9223372036854775808",
+          "deletion_ratio_upper": "11383883887261829635/9223372036854775808",
+          "deletion_ratio_upper_display": 1.2342431641892004,
+          "delta_band_width": "17036116941/1152921504606846976",
+          "gamma_sum": "12314309093/576460752303423488",
+          "certified_at_7over2": true
+        }
+      ]
+    },
+    {
+      "name": "square_grid_19over16",
+      "source_count": 9,
+      "points": [
+        [
+          "0/1",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "0/1",
+          "19/16",
+          "1/2"
+        ],
+        [
+          "0/1",
+          "19/8",
+          "1/2"
+        ],
+        [
+          "19/16",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "19/16",
+          "19/16",
+          "1/2"
+        ],
+        [
+          "19/16",
+          "19/8",
+          "1/2"
+        ],
+        [
+          "19/8",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "19/8",
+          "19/16",
+          "1/2"
+        ],
+        [
+          "19/8",
+          "19/8",
+          "1/2"
+        ]
+      ],
+      "total_mass": "9/2",
+      "max_eligible_mass": "2/1",
+      "all_nonempty_subsets_checked": 511,
+      "square_cap_checks": 49,
+      "maximizer_count": 4,
+      "maximizers": [
+        {
+          "mask": 27,
+          "proper": true,
+          "mass": "2/1",
+          "width": "19/16",
+          "height": "19/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "10165119689010625231/9223372036854775808",
+          "deletion_ratio_upper": "10165119751786383875/9223372036854775808",
+          "deletion_ratio_upper_display": 1.1021044918462108,
+          "delta_band_width": "15693939661/1152921504606846976",
+          "gamma_sum": "11643220453/576460752303423488",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 54,
+          "proper": true,
+          "mass": "2/1",
+          "width": "19/16",
+          "height": "19/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "10165119689010625231/9223372036854775808",
+          "deletion_ratio_upper": "10165119751786383875/9223372036854775808",
+          "deletion_ratio_upper_display": 1.1021044918462108,
+          "delta_band_width": "15693939661/1152921504606846976",
+          "gamma_sum": "11643220453/576460752303423488",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 216,
+          "proper": true,
+          "mass": "2/1",
+          "width": "19/16",
+          "height": "19/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "10165119689010625231/9223372036854775808",
+          "deletion_ratio_upper": "10165119751786383875/9223372036854775808",
+          "deletion_ratio_upper_display": 1.1021044918462108,
+          "delta_band_width": "15693939661/1152921504606846976",
+          "gamma_sum": "11643220453/576460752303423488",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 432,
+          "proper": true,
+          "mass": "2/1",
+          "width": "19/16",
+          "height": "19/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "10165119689010625231/9223372036854775808",
+          "deletion_ratio_upper": "10165119751786383875/9223372036854775808",
+          "deletion_ratio_upper_display": 1.1021044918462108,
+          "delta_band_width": "15693939661/1152921504606846976",
+          "gamma_sum": "11643220453/576460752303423488",
+          "certified_at_7over2": true
+        }
+      ]
+    },
+    {
+      "name": "square_grid_21over16",
+      "source_count": 9,
+      "points": [
+        [
+          "0/1",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "0/1",
+          "21/16",
+          "1/2"
+        ],
+        [
+          "0/1",
+          "21/8",
+          "1/2"
+        ],
+        [
+          "21/16",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "21/16",
+          "21/16",
+          "1/2"
+        ],
+        [
+          "21/16",
+          "21/8",
+          "1/2"
+        ],
+        [
+          "21/8",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "21/8",
+          "21/16",
+          "1/2"
+        ],
+        [
+          "21/8",
+          "21/8",
+          "1/2"
+        ]
+      ],
+      "total_mass": "9/2",
+      "max_eligible_mass": "2/1",
+      "all_nonempty_subsets_checked": 511,
+      "square_cap_checks": 49,
+      "maximizer_count": 4,
+      "maximizers": [
+        {
+          "mask": 27,
+          "proper": true,
+          "mass": "2/1",
+          "width": "21/16",
+          "height": "21/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "588388471524966401/576460752303423488",
+          "deletion_ratio_upper": "2353553900640080689/2305843009213693952",
+          "deletion_ratio_upper_display": 1.0206913008542835,
+          "delta_band_width": "14540215085/1152921504606846976",
+          "gamma_sum": "11066358165/576460752303423488",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 54,
+          "proper": true,
+          "mass": "2/1",
+          "width": "21/16",
+          "height": "21/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "588388471524966401/576460752303423488",
+          "deletion_ratio_upper": "2353553900640080689/2305843009213693952",
+          "deletion_ratio_upper_display": 1.0206913008542835,
+          "delta_band_width": "14540215085/1152921504606846976",
+          "gamma_sum": "11066358165/576460752303423488",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 216,
+          "proper": true,
+          "mass": "2/1",
+          "width": "21/16",
+          "height": "21/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "588388471524966401/576460752303423488",
+          "deletion_ratio_upper": "2353553900640080689/2305843009213693952",
+          "deletion_ratio_upper_display": 1.0206913008542835,
+          "delta_band_width": "14540215085/1152921504606846976",
+          "gamma_sum": "11066358165/576460752303423488",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 432,
+          "proper": true,
+          "mass": "2/1",
+          "width": "21/16",
+          "height": "21/16",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 9,
+          "localized_mass": "9/2",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "588388471524966401/576460752303423488",
+          "deletion_ratio_upper": "2353553900640080689/2305843009213693952",
+          "deletion_ratio_upper_display": 1.0206913008542835,
+          "delta_band_width": "14540215085/1152921504606846976",
+          "gamma_sum": "11066358165/576460752303423488",
+          "certified_at_7over2": true
+        }
+      ]
+    },
+    {
+      "name": "asymmetric_frame",
+      "source_count": 8,
+      "points": [
+        [
+          "0/1",
+          "0/1",
+          "3/8"
+        ],
+        [
+          "1/1",
+          "0/1",
+          "5/8"
+        ],
+        [
+          "2/1",
+          "0/1",
+          "1/2"
+        ],
+        [
+          "0/1",
+          "1/1",
+          "1/2"
+        ],
+        [
+          "2/1",
+          "1/1",
+          "1/2"
+        ],
+        [
+          "0/1",
+          "2/1",
+          "1/2"
+        ],
+        [
+          "1/1",
+          "2/1",
+          "5/8"
+        ],
+        [
+          "2/1",
+          "2/1",
+          "3/8"
+        ]
+      ],
+      "total_mass": "4/1",
+      "max_eligible_mass": "13/8",
+      "all_nonempty_subsets_checked": 255,
+      "square_cap_checks": 24,
+      "maximizer_count": 2,
+      "maximizers": [
+        {
+          "mask": 22,
+          "proper": true,
+          "mass": "13/8",
+          "width": "1/1",
+          "height": "1/1",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 8,
+          "localized_mass": "4/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "34209363913054928157/29975959119778021376",
+          "deletion_ratio_upper": "34209364169016182901/29975959119778021376",
+          "deletion_ratio_upper_display": 1.1412266754275422,
+          "delta_band_width": "31995156843/2305843009213693952",
+          "gamma_sum": "25811837681/1152921504606846976",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 104,
+          "proper": true,
+          "mass": "13/8",
+          "width": "1/1",
+          "height": "1/1",
+          "collar_outside_source_checks": 5,
+          "exterior_growth_subset_checks": 31,
+          "localized_source_count": 8,
+          "localized_mass": "4/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": false,
+          "deletion_ratio_lower": "34209363913054928157/29975959119778021376",
+          "deletion_ratio_upper": "34209364169016182901/29975959119778021376",
+          "deletion_ratio_upper_display": 1.1412266754275422,
+          "delta_band_width": "31995156843/2305843009213693952",
+          "gamma_sum": "25811837681/1152921504606846976",
+          "certified_at_7over2": true
+        }
+      ]
+    },
+    {
+      "name": "bridge_with_irrelevant_far_sources",
+      "source_count": 7,
+      "points": [
+        [
+          "-17/16",
+          "0/1",
+          "3/8"
+        ],
+        [
+          "-1/1",
+          "1/16",
+          "5/8"
+        ],
+        [
+          "0/1",
+          "0/1",
+          "1/1"
+        ],
+        [
+          "1/1",
+          "-1/16",
+          "5/8"
+        ],
+        [
+          "17/16",
+          "0/1",
+          "3/8"
+        ],
+        [
+          "-10/1",
+          "0/1",
+          "1/4"
+        ],
+        [
+          "10/1",
+          "0/1",
+          "1/4"
+        ]
+      ],
+      "total_mass": "7/2",
+      "max_eligible_mass": "2/1",
+      "all_nonempty_subsets_checked": 127,
+      "square_cap_checks": 15,
+      "maximizer_count": 2,
+      "maximizers": [
+        {
+          "mask": 7,
+          "proper": true,
+          "mass": "2/1",
+          "width": "17/16",
+          "height": "1/16",
+          "collar_outside_source_checks": 4,
+          "exterior_growth_subset_checks": 15,
+          "localized_source_count": 5,
+          "localized_mass": "3/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "5232850045402509149/4611686018427387904",
+          "deletion_ratio_upper": "1308212515278795735/1152921504606846976",
+          "deletion_ratio_upper_display": 1.1346934809103972,
+          "delta_band_width": "15712673791/2305843009213693952",
+          "gamma_sum": "31126637979/1152921504606846976",
+          "certified_at_7over2": true
+        },
+        {
+          "mask": 28,
+          "proper": true,
+          "mass": "2/1",
+          "width": "17/16",
+          "height": "1/16",
+          "collar_outside_source_checks": 4,
+          "exterior_growth_subset_checks": 15,
+          "localized_source_count": 5,
+          "localized_mass": "3/1",
+          "localization_delta_intervals_overlap": true,
+          "thin_branch_proved": true,
+          "deletion_ratio_lower": "5232850045402509149/4611686018427387904",
+          "deletion_ratio_upper": "1308212515278795735/1152921504606846976",
+          "deletion_ratio_upper_display": 1.1346934809103972,
+          "delta_band_width": "15712673791/2305843009213693952",
+          "gamma_sum": "31126637979/1152921504606846976",
+          "certified_at_7over2": true
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 0.11158795800292864
+}

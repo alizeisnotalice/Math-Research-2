@@ -1,0 +1,287 @@
+{
+  "status": "PASS_R63_STRUCTURE_ONLY",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "script_sha256": "b229cabdff43ab5b5c4f11bc3d9e3c68c97d3e3db44ae47fb51cae1c23e9964f",
+  "arithmetic": "Exact Fraction; no square roots, floating decisions, randomization, bbox halo-union imports or author code calls.",
+  "proof_source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/proofs/r063-maximal-compact-block-deletion.md",
+  "proof_sha256": "250c403cec2fa265e91867f5db576aefdf60c3e88e00f634f900201817c48568",
+  "statistics": {
+    "cases": 788,
+    "nonempty_subsets": 327186,
+    "maximum_blocks": 1346,
+    "square_cap_subset_checks": 327186,
+    "closed_collar_point_checks": 6204,
+    "exterior_subset_checks": 36392,
+    "localized_mass_checks": 1346,
+    "direct_radius_receiver_checks": 14450
+  },
+  "strata": [
+    {
+      "name": "square_four",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ],
+        [
+          "2",
+          "0"
+        ],
+        [
+          "2",
+          "2"
+        ]
+      ],
+      "mass_menu": [
+        "1",
+        "2"
+      ],
+      "statistics": {
+        "cases": 16,
+        "nonempty_subsets": 240,
+        "maximum_blocks": 19,
+        "square_cap_subset_checks": 240,
+        "closed_collar_point_checks": 12,
+        "exterior_subset_checks": 28,
+        "localized_mass_checks": 19,
+        "direct_radius_receiver_checks": 2975
+      }
+    },
+    {
+      "name": "two_row_strip",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "0"
+        ],
+        [
+          "2",
+          "1"
+        ],
+        [
+          "4",
+          "0"
+        ],
+        [
+          "4",
+          "1"
+        ],
+        [
+          "6",
+          "0"
+        ],
+        [
+          "6",
+          "1"
+        ]
+      ],
+      "mass_menu": [
+        "1",
+        "2"
+      ],
+      "statistics": {
+        "cases": 256,
+        "nonempty_subsets": 65280,
+        "maximum_blocks": 406,
+        "square_cap_subset_checks": 65280,
+        "closed_collar_point_checks": 1632,
+        "exterior_subset_checks": 6282,
+        "localized_mass_checks": 406,
+        "direct_radius_receiver_checks": 3825
+      }
+    },
+    {
+      "name": "square_nine",
+      "points": [
+        [
+          "-2",
+          "-2"
+        ],
+        [
+          "-2",
+          "0"
+        ],
+        [
+          "-2",
+          "2"
+        ],
+        [
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ],
+        [
+          "2",
+          "-2"
+        ],
+        [
+          "2",
+          "0"
+        ],
+        [
+          "2",
+          "2"
+        ]
+      ],
+      "mass_menu": [
+        "1",
+        "2"
+      ],
+      "statistics": {
+        "cases": 512,
+        "nonempty_subsets": 261632,
+        "maximum_blocks": 915,
+        "square_cap_subset_checks": 261632,
+        "closed_collar_point_checks": 4552,
+        "exterior_subset_checks": 30071,
+        "localized_mass_checks": 915,
+        "direct_radius_receiver_checks": 5100
+      }
+    },
+    {
+      "name": "singleton",
+      "points": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "masses": [
+        "1"
+      ],
+      "statistics": {
+        "cases": 1,
+        "nonempty_subsets": 1,
+        "maximum_blocks": 1,
+        "square_cap_subset_checks": 1,
+        "localized_mass_checks": 1,
+        "direct_radius_receiver_checks": 425
+      }
+    },
+    {
+      "name": "strict_equal_pair",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "masses": [
+        "1/2",
+        "1/2"
+      ],
+      "statistics": {
+        "cases": 1,
+        "nonempty_subsets": 3,
+        "maximum_blocks": 2,
+        "square_cap_subset_checks": 3,
+        "closed_collar_point_checks": 2,
+        "exterior_subset_checks": 2,
+        "localized_mass_checks": 2,
+        "direct_radius_receiver_checks": 850
+      }
+    },
+    {
+      "name": "tiny_bridge",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "2",
+          "0"
+        ],
+        [
+          "3",
+          "0"
+        ]
+      ],
+      "masses": [
+        "1",
+        "1/1000",
+        "1/1000",
+        "1"
+      ],
+      "statistics": {
+        "cases": 1,
+        "nonempty_subsets": 15,
+        "maximum_blocks": 2,
+        "square_cap_subset_checks": 15,
+        "closed_collar_point_checks": 4,
+        "exterior_subset_checks": 6,
+        "localized_mass_checks": 2,
+        "direct_radius_receiver_checks": 850
+      }
+    },
+    {
+      "name": "diagonal_wide",
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "2"
+        ],
+        [
+          "4",
+          "4"
+        ]
+      ],
+      "masses": [
+        "1",
+        "1",
+        "2",
+        "1"
+      ],
+      "statistics": {
+        "cases": 1,
+        "nonempty_subsets": 15,
+        "maximum_blocks": 1,
+        "square_cap_subset_checks": 15,
+        "closed_collar_point_checks": 2,
+        "exterior_subset_checks": 3,
+        "localized_mass_checks": 1,
+        "direct_radius_receiver_checks": 425
+      }
+    }
+  ],
+  "R61_manifest_frozen_sha256": "879c71cad764f9919424843ff06e103dde4573a9436f664550233a251c690e9e",
+  "R61_five_payload_hashes_unchanged": true,
+  "elapsed_seconds": 3.375114415975986,
+  "scope": "All-subset square caps, maximal-block closure, closed collar, exterior constraints, local mass/L invariance; finite receiver checks by direct actual capture radii. No area integration or proof/test conclusion about conjecture(6)."
+}
