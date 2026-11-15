@@ -1,0 +1,11 @@
+Print["Version: ",$Version];
+aa=1+p x+r x^2+s x^4+x^9;
+bb=1+q x+u x^3+v x^4+w x^6+x^11;
+ks={1,2,6,10,13,15};
+cs=Coefficient[Expand[aa bb],x,#]&/@ks;
+Print["Diagonals: ",InputForm[cs]];
+eq=Thread[cs==1];
+dom=And@@Join[Thread[0<{p,q,r,s,v,w}],Thread[{p,q,r,s,v,w}<=1]];
+Print["ExactReduce: ",Reduce[And@@eq && dom,{p,q,r,s,v,w},Reals]];
+ee=AssociationThread[ks,cs-1];
+Print["ResidualIdentity: ",Expand[ee[1]-ee[10]+w(ee[15]-ee[6]+r(ee[13]-ee[2]))-p(1-r q w)]];
