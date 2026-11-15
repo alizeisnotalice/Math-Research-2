@@ -1,0 +1,199 @@
+{
+  "iterated_gain_geometric_sum": [
+    {
+      "steps": 1,
+      "sum": "1"
+    },
+    {
+      "steps": 2,
+      "sum": "3/2"
+    },
+    {
+      "steps": 3,
+      "sum": "7/4"
+    },
+    {
+      "steps": 4,
+      "sum": "15/8"
+    },
+    {
+      "steps": 5,
+      "sum": "31/16"
+    },
+    {
+      "steps": 6,
+      "sum": "63/32"
+    },
+    {
+      "steps": 7,
+      "sum": "127/64"
+    },
+    {
+      "steps": 8,
+      "sum": "255/128"
+    }
+  ],
+  "rational_square_certificates": {
+    "71_over_25_squared_minus_8": "41/625",
+    "17_over_6_squared_minus_8": "1/36"
+  },
+  "rational_recursion": [
+    {
+      "N": 1,
+      "d": "1/12",
+      "t": "1/540",
+      "tau": "1/25920"
+    },
+    {
+      "N": 2,
+      "d": "1/311040",
+      "t": "1/13996800",
+      "tau": "1/17414258688000"
+    },
+    {
+      "N": 3,
+      "d": "1/208971104256000",
+      "t": "1/9403699691520000",
+      "tau": "1/7860406034514963836436480000000"
+    },
+    {
+      "N": 4,
+      "d": "1/94324872414179566037237760000000",
+      "t": "1/4244619258638080471675699200000000",
+      "tau": "1/1601492680071225589410127946507046219469974738567168000000000000000"
+    }
+  ],
+  "python": "3.15.0",
+  "arithmetic": "exact Fraction Q(sqrt(2))",
+  "threshold": 1,
+  "atom_mass": 4,
+  "random_seed": null,
+  "tolerance": null,
+  "cases": [
+    {
+      "case": "singleton",
+      "nonempty": 1,
+      "selected_top": [
+        0
+      ],
+      "selected_bottom": [
+        0
+      ],
+      "c": "(1)+(0)sqrt(2)",
+      "gplus": "(0)+(0)sqrt(2)",
+      "gminus": "(0)+(0)sqrt(2)",
+      "rplus": "(1)+(0)sqrt(2)",
+      "rminus": "(1)+(0)sqrt(2)",
+      "gain": "(3/4)+(-1/2)sqrt(2)",
+      "eta": "(-7/8)+(5/8)sqrt(2)"
+    },
+    {
+      "case": "positive_gap_selected_away_from_c",
+      "nonempty": 2,
+      "selected_top": [
+        0
+      ],
+      "selected_bottom": [
+        1
+      ],
+      "c": "(11/10)+(0)sqrt(2)",
+      "gplus": "(1/10)+(0)sqrt(2)",
+      "gminus": "(0)+(0)sqrt(2)",
+      "rplus": "(1)+(0)sqrt(2)",
+      "rminus": "(1)+(0)sqrt(2)",
+      "gain": "(3/8)+(-1/4)sqrt(2)",
+      "eta": "(13/56)+(-9/56)sqrt(2)"
+    },
+    {
+      "case": "persistent_right_tie",
+      "nonempty": 2,
+      "selected_top": [
+        1
+      ],
+      "selected_bottom": [
+        0
+      ],
+      "c": "(1)+(0)sqrt(2)",
+      "gplus": "(0)+(0)sqrt(2)",
+      "gminus": "(0)+(0)sqrt(2)",
+      "rplus": "(1)+(0)sqrt(2)",
+      "rminus": "(1)+(0)sqrt(2)",
+      "gain": "(3/8)+(-1/4)sqrt(2)",
+      "eta": "(13/56)+(-9/56)sqrt(2)"
+    },
+    {
+      "case": "distinct_top_bottom_radii",
+      "nonempty": 3,
+      "selected_top": [
+        1
+      ],
+      "selected_bottom": [
+        0,
+        1
+      ],
+      "c": "(0)+(1)sqrt(2)",
+      "gplus": "(-13/10)+(1)sqrt(2)",
+      "gminus": "(0)+(0)sqrt(2)",
+      "rplus": "(1)+(0)sqrt(2)",
+      "rminus": "(0)+(1)sqrt(2)",
+      "gain": "(-1/16)+(1/16)sqrt(2)",
+      "eta": "(-7/20)+(1/4)sqrt(2)"
+    },
+    {
+      "case": "just_inactive_pair",
+      "nonempty": 2,
+      "selected_top": [
+        1
+      ],
+      "selected_bottom": [
+        0
+      ],
+      "c": "(1)+(0)sqrt(2)",
+      "gplus": "(0)+(0)sqrt(2)",
+      "gminus": "(0)+(0)sqrt(2)",
+      "rplus": "(1)+(0)sqrt(2)",
+      "rminus": "(1)+(0)sqrt(2)",
+      "gain": "(3/8)+(-1/4)sqrt(2)",
+      "eta": "(13/56)+(-9/56)sqrt(2)"
+    },
+    {
+      "case": "activation_wall_empty_pair",
+      "nonempty": 2,
+      "selected_top": [
+        1
+      ],
+      "selected_bottom": [
+        0
+      ],
+      "c": "(1)+(0)sqrt(2)",
+      "gplus": "(0)+(0)sqrt(2)",
+      "gminus": "(0)+(0)sqrt(2)",
+      "rplus": "(1)+(0)sqrt(2)",
+      "rminus": "(1)+(0)sqrt(2)",
+      "gain": "(3/8)+(-1/4)sqrt(2)",
+      "eta": "(13/56)+(-9/56)sqrt(2)"
+    },
+    {
+      "case": "just_active_pair",
+      "nonempty": 3,
+      "selected_top": [
+        0,
+        1
+      ],
+      "selected_bottom": [
+        0,
+        1
+      ],
+      "c": "(0)+(1)sqrt(2)",
+      "gplus": "(0)+(0)sqrt(2)",
+      "gminus": "(0)+(0)sqrt(2)",
+      "rplus": "(0)+(1)sqrt(2)",
+      "rminus": "(0)+(1)sqrt(2)",
+      "gain": "(-1/2)+(3/8)sqrt(2)",
+      "eta": "(-15/49)+(43/196)sqrt(2)"
+    }
+  ],
+  "status": "PASS",
+  "scope": "seven finite double-band witness checks; complete general proof is separate",
+  "script_sha256": "cb000d740ca99293b1d684bb2c94d6b93fa61ffc1f5038e1a5fb7f5b8a107be7"
+}

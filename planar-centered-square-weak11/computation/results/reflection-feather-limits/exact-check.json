@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite examples and scalar identities; general-parameter proofs are in the paired markdown.",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "executable": "/Users/zzh/.local/bin/python3",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "arithmetic": "fractions.Fraction and exact Q(sqrt(2)) sign comparisons",
+  "random_seed": null,
+  "floating_tolerance": null,
+  "lambda": "1",
+  "single_process": true,
+  "script_sha256": "78031024c2e6083ed740790d9c6e6f92369b4b274b7022a7c1fce445b9165b7e",
+  "source_sha256": {
+    "proofs/reflection-nonattainment.md": "384968620d3132cddf77252ab864b42b178531b547e2a0abbeb902e78e00c745"
+  },
+  "feather_cases": [
+    {
+      "epsilon": "1",
+      "old_atoms": 3,
+      "new_atoms": 6,
+      "old_nonempty_subsets": 4,
+      "new_nonempty_subsets": 9,
+      "old_empty_subsets": 3,
+      "new_empty_subsets": 54,
+      "seam": "9/2",
+      "old_area": {
+        "rational": "6",
+        "sqrt2_coefficient": "-2"
+      },
+      "new_area": {
+        "rational": "15",
+        "sqrt2_coefficient": "-6"
+      },
+      "actual_excess_area": {
+        "rational": "3",
+        "sqrt2_coefficient": "-2"
+      },
+      "actual_ratio_gain": {
+        "rational": "1/2",
+        "sqrt2_coefficient": "-1/3"
+      }
+    },
+    {
+      "epsilon": "1/4",
+      "old_atoms": 3,
+      "new_atoms": 6,
+      "old_nonempty_subsets": 4,
+      "new_nonempty_subsets": 9,
+      "old_empty_subsets": 3,
+      "new_empty_subsets": 54,
+      "seam": "17/4",
+      "old_area": {
+        "rational": "21/4",
+        "sqrt2_coefficient": "-2"
+      },
+      "new_area": {
+        "rational": "45/4",
+        "sqrt2_coefficient": "-9/2"
+      },
+      "actual_excess_area": {
+        "rational": "3/4",
+        "sqrt2_coefficient": "-1/2"
+      },
+      "actual_ratio_gain": {
+        "rational": "1/6",
+        "sqrt2_coefficient": "-1/9"
+      }
+    },
+    {
+      "epsilon": "1/16",
+      "old_atoms": 3,
+      "new_atoms": 6,
+      "old_nonempty_subsets": 4,
+      "new_nonempty_subsets": 9,
+      "old_empty_subsets": 3,
+      "new_empty_subsets": 54,
+      "seam": "33/8",
+      "old_area": {
+        "rational": "81/16",
+        "sqrt2_coefficient": "-2"
+      },
+      "new_area": {
+        "rational": "165/16",
+        "sqrt2_coefficient": "-33/8"
+      },
+      "actual_excess_area": {
+        "rational": "3/16",
+        "sqrt2_coefficient": "-1/8"
+      },
+      "actual_ratio_gain": {
+        "rational": "1/22",
+        "sqrt2_coefficient": "-1/33"
+      }
+    },
+    {
+      "epsilon": "1/256",
+      "old_atoms": 3,
+      "new_atoms": 6,
+      "old_nonempty_subsets": 4,
+      "new_nonempty_subsets": 9,
+      "old_empty_subsets": 3,
+      "new_empty_subsets": 54,
+      "seam": "129/32",
+      "old_area": {
+        "rational": "1281/256",
+        "sqrt2_coefficient": "-2"
+      },
+      "new_area": {
+        "rational": "2565/256",
+        "sqrt2_coefficient": "-513/128"
+      },
+      "actual_excess_area": {
+        "rational": "3/256",
+        "sqrt2_coefficient": "-1/128"
+      },
+      "actual_ratio_gain": {
+        "rational": "1/342",
+        "sqrt2_coefficient": "-1/513"
+      }
+    },
+    {
+      "epsilon": "1/65536",
+      "old_atoms": 3,
+      "new_atoms": 6,
+      "old_nonempty_subsets": 4,
+      "new_nonempty_subsets": 9,
+      "old_empty_subsets": 3,
+      "new_empty_subsets": 54,
+      "seam": "2049/512",
+      "old_area": {
+        "rational": "327681/65536",
+        "sqrt2_coefficient": "-2"
+      },
+      "new_area": {
+        "rational": "655365/65536",
+        "sqrt2_coefficient": "-131073/32768"
+      },
+      "actual_excess_area": {
+        "rational": "3/65536",
+        "sqrt2_coefficient": "-1/32768"
+      },
+      "actual_ratio_gain": {
+        "rational": "1/87382",
+        "sqrt2_coefficient": "-1/131073"
+      }
+    }
+  ],
+  "delta_cases": [
+    {
+      "t": "1/16",
+      "eta": {
+        "rational": "-9/16",
+        "sqrt2_coefficient": "1/2"
+      },
+      "delta": "1/16",
+      "true_ratio_gain_lower": {
+        "rational": "3/2",
+        "sqrt2_coefficient": "-1"
+      }
+    },
+    {
+      "t": "1/256",
+      "eta": {
+        "rational": "-129/256",
+        "sqrt2_coefficient": "1/2"
+      },
+      "delta": "1/256",
+      "true_ratio_gain_lower": {
+        "rational": "3/2",
+        "sqrt2_coefficient": "-1"
+      }
+    },
+    {
+      "t": "1/65536",
+      "eta": {
+        "rational": "-32769/65536",
+        "sqrt2_coefficient": "1/2"
+      },
+      "delta": "1/65536",
+      "true_ratio_gain_lower": {
+        "rational": "3/2",
+        "sqrt2_coefficient": "-1"
+      }
+    }
+  ]
+}

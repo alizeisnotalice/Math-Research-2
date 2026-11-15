@@ -1,0 +1,101 @@
+{
+  "round": 30,
+  "date": "2026-11-15",
+  "topic": "planar-centered-square-weak11",
+  "destination_root": "/Volumes/data/CodexProjects/T2",
+  "base_commit": "f9502e0df212da80e489494087f67a27645ab356",
+  "final_claims": {
+    "single_step_gain": "(3-2sqrt(2))*m_min/(4M)",
+    "iterated_global_deficit": "(3-2sqrt(2))*m_min/(2M)",
+    "finite_atom_gap": "C2-C2,N >= 2160 * 25920^(-2^(N-1))",
+    "d2": "1/311040"
+  },
+  "limitations": [
+    "Natural reflection sequence is not proved to converge to C2.",
+    "Finite total atom-count gap does not force periodic cell complexity to grow.",
+    "General exact C2 and L1 attainment remain open."
+  ],
+  "audit_bound_proof_sha256": "b9d1cd0073df414cf2c39003f00c6722bb4bf1e6385ad5a2d5426e047229f4b5",
+  "local_verification": "All listed hashes and byte sizes read from current files; final geometry review binds the main proof; each actual JSON reports PASS and matches its checker hash.",
+  "commit_push_status": "Not committed or pushed by subagents; root owns integration, commit and remote verification.",
+  "files": [
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-reflection/planar-centered-square-weak11/rounds/030.md",
+      "dest": "planar-centered-square-weak11/rounds/030.md",
+      "sha256": "ee37019fa978876671ab024549d3d6f49ce685ba5bf0caed064d7b2c15bb66f5",
+      "size": 7111,
+      "role": "round report"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-reflection/planar-centered-square-weak11/proofs/quantitative-reflection-gap.md",
+      "dest": "planar-centered-square-weak11/proofs/quantitative-reflection-gap.md",
+      "sha256": "b9d1cd0073df414cf2c39003f00c6722bb4bf1e6385ad5a2d5426e047229f4b5",
+      "size": 11862,
+      "role": "main proof"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-reflection/planar-centered-square-weak11/computation/check_quantitative_reflection.py",
+      "dest": "planar-centered-square-weak11/computation/check_quantitative_reflection.py",
+      "sha256": "4dfb11afac2b422c4ab8e10190c39bdc42d42802ce914dd01c4976e2d98cdda8",
+      "size": 2577,
+      "role": "exact rational checker"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-reflection/planar-centered-square-weak11/computation/results/quantitative-reflection/exact-checks.json",
+      "dest": "planar-centered-square-weak11/computation/results/quantitative-reflection/exact-checks.json",
+      "sha256": "0f2438a820d180bb6071358e81b2442bcc8e2edc71f320962f4ff1d995e35ea9",
+      "size": 9048,
+      "role": "actual exact output"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-reflection/planar-centered-square-weak11/reviews/reflection-feather-limits-audit.md",
+      "dest": "planar-centered-square-weak11/reviews/reflection-feather-limits-audit.md",
+      "sha256": "4eac5062480180e48c50b73dbdfa1640d6426e09e3a3897cd3a055336fbb0a7f",
+      "size": 2614,
+      "role": "independent limits audit"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/reviews/reflection-band-geometry-independent.md",
+      "dest": "planar-centered-square-weak11/reviews/reflection-band-geometry-independent.md",
+      "sha256": "3b9baa25d965bc336966b69ccfcc753d7400b370929fc1120155770976b73102",
+      "size": 10453,
+      "role": "independent main proof audit"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/computation/reflection_band_check.py",
+      "dest": "planar-centered-square-weak11/computation/reflection_band_check.py",
+      "sha256": "cb000d740ca99293b1d684bb2c94d6b93fa61ffc1f5038e1a5fb7f5b8a107be7",
+      "size": 5310,
+      "role": "exact Qsqrt2 geometry checker"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/computation/results/reflection-band-check.json",
+      "dest": "planar-centered-square-weak11/computation/results/reflection-band-check.json",
+      "sha256": "e984008335ad5ebd6b7d459805c457d6298c92598abea52585ea4fb6abbc235f",
+      "size": 4361,
+      "role": "actual geometry output"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-limits/planar-centered-square-weak11/proofs/reflection-feather-limits.md",
+      "dest": "planar-centered-square-weak11/proofs/reflection-feather-limits.md",
+      "sha256": "57a1fefd2e25a78a142d8b755bba24db8c47841ec47aef58ce342f221f9225d8",
+      "size": 11761,
+      "role": "exact degeneration examples and L1 transfer"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-limits/planar-centered-square-weak11/computation/reflection_feather_limits.py",
+      "dest": "planar-centered-square-weak11/computation/reflection_feather_limits.py",
+      "sha256": "78031024c2e6083ed740790d9c6e6f92369b4b274b7022a7c1fce445b9165b7e",
+      "size": 7134,
+      "role": "exact full subset counterexample checker"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-limits/planar-centered-square-weak11/computation/results/reflection-feather-limits/exact-check.json",
+      "dest": "planar-centered-square-weak11/computation/results/reflection-feather-limits/exact-check.json",
+      "sha256": "11ea4bf063e9c795484d64c331d9927e7dbe667a70db754cc503cb6abe363ff8",
+      "size": 4646,
+      "role": "actual counterexample output"
+    }
+  ],
+  "total_file_bytes": 76877
+}
