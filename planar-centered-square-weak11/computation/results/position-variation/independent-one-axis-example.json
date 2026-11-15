@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "scope": "one finite two-atom rational example only; not a proof for arbitrary inputs",
+  "model": {
+    "weights": [
+      "9",
+      "16"
+    ],
+    "positions": [
+      "(0,0)",
+      "(s,0)"
+    ],
+    "parameter_interval": [
+      "-1",
+      "7"
+    ],
+    "level": "1",
+    "R": "3"
+  },
+  "events": [
+    "-1",
+    "-1/2",
+    "0",
+    "1/2",
+    "1",
+    "7/2",
+    "4",
+    "9/2",
+    "5",
+    "7"
+  ],
+  "pieces": [
+    {
+      "interval": [
+        "-1",
+        "-1/2"
+      ],
+      "alpha": "23",
+      "beta": "1"
+    },
+    {
+      "interval": [
+        "-1/2",
+        "0"
+      ],
+      "alpha": "25",
+      "beta": "5"
+    },
+    {
+      "interval": [
+        "0",
+        "1/2"
+      ],
+      "alpha": "25",
+      "beta": "-5"
+    },
+    {
+      "interval": [
+        "1/2",
+        "1"
+      ],
+      "alpha": "23",
+      "beta": "-1"
+    },
+    {
+      "interval": [
+        "1",
+        "7/2"
+      ],
+      "alpha": "20",
+      "beta": "2"
+    },
+    {
+      "interval": [
+        "7/2",
+        "4"
+      ],
+      "alpha": "20",
+      "beta": "2"
+    },
+    {
+      "interval": [
+        "4",
+        "9/2"
+      ],
+      "alpha": "32",
+      "beta": "-1"
+    },
+    {
+      "interval": [
+        "9/2",
+        "5"
+      ],
+      "alpha": "50",
+      "beta": "-5"
+    },
+    {
+      "interval": [
+        "5",
+        "7"
+      ],
+      "alpha": "25",
+      "beta": "0"
+    }
+  ],
+  "sample_checks": 72,
+  "all_subset_vs_saturated_bbox_areas_equal": true,
+  "persistent_source_y_equals": true,
+  "source_collision_at_s0_area": "25",
+  "empty_rectangle_wall_s": "5",
+  "area_at_start": "22",
+  "area_at_end": "25",
+  "net_area_change": "3",
+  "slope_integral": "3",
+  "script_sha256": "4d38752028a5f7cb824d993282524738e82259e47c729447c9df112d2ebcfa95",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "command": [
+    "/Users/zzh/.local/bin/python3",
+    "planar-centered-square-weak11/computation/review_position_variation_small.py",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/variation/independent-one-axis-example.json"
+  ],
+  "verified_utc": "2026-11-15T01:43:01.966664+00:00",
+  "elapsed_seconds": 0.019907374982722104
+}
