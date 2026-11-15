@@ -1,0 +1,134 @@
+{
+  "round": 68,
+  "normalization": "L=1,s=sqrtL=1,strict eligibility mass>bbox_span^2",
+  "examples": [
+    {
+      "id": "thick-monotone-chain",
+      "S_count": 4,
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "3/10",
+          "3/10"
+        ],
+        [
+          "3/5",
+          "3/5"
+        ],
+        [
+          "9/10",
+          "9/10"
+        ],
+        [
+          "11/10",
+          "9/10"
+        ]
+      ],
+      "masses": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/100"
+      ],
+      "expected_chain": true,
+      "expected_tree_bound": "253/100"
+    },
+    {
+      "id": "thick-nonchain-tree",
+      "S_count": 4,
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "2/5",
+          "3/5"
+        ],
+        [
+          "3/5",
+          "2/5"
+        ],
+        [
+          "19/20",
+          "19/20"
+        ],
+        [
+          "11/10",
+          "19/20"
+        ]
+      ],
+      "masses": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/100"
+      ],
+      "expected_chain": false,
+      "expected_tree_bound": "1131/400"
+    },
+    {
+      "id": "two-row-tree-method-barrier",
+      "S_count": 8,
+      "points": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "7/24",
+          "0"
+        ],
+        [
+          "7/12",
+          "0"
+        ],
+        [
+          "7/8",
+          "0"
+        ],
+        [
+          "0",
+          "7/8"
+        ],
+        [
+          "7/24",
+          "7/8"
+        ],
+        [
+          "7/12",
+          "7/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ],
+        [
+          "11/10",
+          "7/8"
+        ]
+      ],
+      "masses": [
+        "1/400",
+        "1/400",
+        "1/400",
+        "1/400",
+        "1/400",
+        "1/400",
+        "1/400",
+        "393/400",
+        "1/800"
+      ],
+      "expected_chain": false,
+      "expected_tree_bound": "29/8",
+      "expected_Z_area": "225/64",
+      "expected_tree_cost": "21/8",
+      "scope": "Counterexample to universal support-tree sufficient criterion, not to Wprime selection; no Wprime evaluated."
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "process_pid": 14178,
+  "round": 68,
+  "status": "PASS_BOUNDED_EXACT_SUPPORT_TREE_AND_CHAIN_CHECKS",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "sympy": "1.14.0",
+  "script_sha256": "1d4754dce74d74739894391d225930eb23e832ea06526deb6f56bc7509df2e19",
+  "input_sha256": "25ccd96bb2e35a37c78ce680a12654a67d25db8adcb87a270d4c22b47cce7aa4",
+  "symbolic_zero_identities": [
+    "0",
+    "0"
+  ],
+  "examples": [
+    {
+      "id": "thick-monotone-chain",
+      "positive_sources": 5,
+      "subset_count": 31,
+      "strict_eligible_subsets": 17,
+      "S_mask": 15,
+      "S_rank": 4,
+      "unique_maximum_masks": [
+        15
+      ],
+      "L": "1",
+      "S_width": "9/10",
+      "S_height": "9/10",
+      "connected": true,
+      "nonterminal_margin_exact": "229/1650",
+      "support_union_area_exact": "253/100",
+      "compressed_covered_cells": 37,
+      "MST_cost_exact": "153/100",
+      "tree_upper_exact": "253/100",
+      "tree_edges": [
+        {
+          "i": 0,
+          "j": 1,
+          "cost": "51/100"
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "cost": "51/100"
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "cost": "51/100"
+        }
+      ],
+      "certifies_tree_5over2_extra": true,
+      "certifies_Wprime_le_3point5_by_tree": true,
+      "chain_after_axis_reflection": true,
+      "chain_exact_formula": "253/100",
+      "coarse_bbox_area": "361/100",
+      "Wprime_evaluated": false
+    },
+    {
+      "id": "thick-nonchain-tree",
+      "positive_sources": 5,
+      "subset_count": 31,
+      "strict_eligible_subsets": 18,
+      "S_mask": 15,
+      "S_rank": 4,
+      "unique_maximum_masks": [
+        15
+      ],
+      "L": "1",
+      "S_width": "19/20",
+      "S_height": "19/20",
+      "connected": true,
+      "nonterminal_margin_exact": "229/1650",
+      "support_union_area_exact": "1063/400",
+      "compressed_covered_cells": 39,
+      "MST_cost_exact": "731/400",
+      "tree_upper_exact": "1131/400",
+      "tree_edges": [
+        {
+          "i": 1,
+          "j": 2,
+          "cost": "9/25"
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "cost": "283/400"
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "cost": "19/25"
+        }
+      ],
+      "certifies_tree_5over2_extra": true,
+      "certifies_Wprime_le_3point5_by_tree": true,
+      "chain_after_axis_reflection": false,
+      "chain_exact_formula": null,
+      "coarse_bbox_area": "1521/400",
+      "Wprime_evaluated": false
+    },
+    {
+      "id": "two-row-tree-method-barrier",
+      "positive_sources": 9,
+      "subset_count": 511,
+      "strict_eligible_subsets": 168,
+      "S_mask": 255,
+      "S_rank": 8,
+      "unique_maximum_masks": [
+        255
+      ],
+      "L": "1",
+      "S_width": "7/8",
+      "S_height": "7/8",
+      "connected": true,
+      "nonterminal_margin_exact": "1303/8800",
+      "support_union_area_exact": "225/64",
+      "compressed_covered_cells": 21,
+      "MST_cost_exact": "21/8",
+      "tree_upper_exact": "29/8",
+      "tree_edges": [
+        {
+          "i": 0,
+          "j": 1,
+          "cost": "7/24"
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "cost": "7/24"
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "cost": "7/24"
+        },
+        {
+          "i": 4,
+          "j": 5,
+          "cost": "7/24"
+        },
+        {
+          "i": 5,
+          "j": 6,
+          "cost": "7/24"
+        },
+        {
+          "i": 6,
+          "j": 7,
+          "cost": "7/24"
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "cost": "7/8"
+        }
+      ],
+      "certifies_tree_5over2_extra": false,
+      "certifies_Wprime_le_3point5_by_tree": false,
+      "chain_after_axis_reflection": false,
+      "chain_exact_formula": null,
+      "coarse_bbox_area": "225/64",
+      "Wprime_evaluated": false,
+      "support_union_excess_over_7over2": "1/64",
+      "MST_excess_over_5over2": "1/8",
+      "scope": "Does not refute Wprime, whose value is not computed; refutes universality of the support-only/MST sufficient test."
+    }
+  ],
+  "elapsed_seconds": 0.027151916990987957,
+  "scope": "Exact rational eligibility/connectivity/domain/tree/rectangle-union checks and symbolic algebra only. General area lemma is proved analytically. No Wprime measurement, optimization, floating LP, MATLAB or general3.5 selection certificate."
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS_ALL_FOUR_ACTUAL_INDEPENDENT_PROCESSES_EXIT0_ABSENT",
+  "runs": [
+    {
+      "result": "five-source-state.json",
+      "result_sha256": "758272f27e48de4d5161482da96262dd43a7eab810839027f9d742e0195a7352",
+      "entry": "review_r068_state_geometry.py",
+      "entry_sha256": "889b8132e92f6c48cdf1537857ee0cd4a6440b94aa6571d8fc9135cfc252d822",
+      "pid": 11549,
+      "exit_status": 0,
+      "owned_pid_absent": true,
+      "absence_check": "ps -p PID -o pid= returned1 with empty stdout"
+    },
+    {
+      "result": "six-source-patch.json",
+      "result_sha256": "8dea286f37f0abf60a68b334819f7ac73eed96215ca90d97dbad0477094e1854",
+      "entry": "review_r068_reachable_source_patch.py",
+      "entry_sha256": "90152030df6394a4e24739bc3d0ee69435f29a9c4dd7268e145ef71bb5884e3b",
+      "pid": 16300,
+      "exit_status": 0,
+      "owned_pid_absent": true,
+      "absence_check": "ps -p PID -o pid= returned1 with empty stdout"
+    },
+    {
+      "result": "support-tree.json",
+      "result_sha256": "d07af0add81162672fa7c99a13a79c4a5fc6adef1cbfbc75176e1109a5137abb",
+      "entry": "review_r068_support_tree_examples.py",
+      "entry_sha256": "9c153f6565c8ea02ba73d0b2fa679822041f6b9b2b116525a7425cba75a39b85",
+      "pid": 16053,
+      "exit_status": 0,
+      "owned_pid_absent": true,
+      "absence_check": "ps -p PID -o pid= returned1 with empty stdout"
+    },
+    {
+      "result": "N128-horizontal.json",
+      "result_sha256": "8b8de8d2f8b8a45f10392c6a57946bd111720c5c59b5d7f31ecf14ba5940bf67",
+      "entry": "review_r068_two_row_horizontal.py",
+      "entry_sha256": "bc33eeae0e8f39e817e6f40742c8cbe1c2a93d639bb90997228df64e12035c49",
+      "pid": 16215,
+      "exit_status": 0,
+      "owned_pid_absent": true,
+      "absence_check": "ps -p PID -o pid= returned1 with empty stdout"
+    }
+  ],
+  "scope": "Final five-source geometry, revised final six-source patch, three support fixtures and final N128 horizontal replay. No preliminary/canceled variant output included."
+}
