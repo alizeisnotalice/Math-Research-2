@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "scope": "Exact ledger reconstruction and two existing frozen-kernel certificates; no geometry rerun",
+  "input_sha256": "6b45a21bb0d1508effa2c9934d27aa851b0e8985d192f9f39f00ea6053363dee",
+  "canonical_input_sha256": "42fd8ef5e3a09e3cacba1bec843e9998d645a6ae2b9d39462f73b5b9c47e1d84",
+  "lower": "1929042477932389341824282248481927768186848824841306229723963/1132869271251207678462081725252003429796020224000000000000000",
+  "upper": "5787127433821586332238944975402072232669514970846550525109389/3398607813753623035386245175756010289388060672000000000000000",
+  "lower_minus_R26_full_upper": "119528774408986508592034197971908956783899271/1160058133761236662745171686658051512111124709376000",
+  "tail_bound_R10": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+  "q": 3,
+  "D": "1099511627776",
+  "epsilon": "1/2199023255552",
+  "finite_L1_factor": "(1-6/N)^2 for every integer N>6",
+  "changes_from_R25": {
+    "x": [
+      28,
+      29,
+      79,
+      80,
+      181,
+      182
+    ],
+    "y": [],
+    "mass": []
+  },
+  "selection_counts": {
+    "strict_improvements": 61,
+    "distinct_directions": 45,
+    "selected": 12
+  },
+  "selected_source_ids": [
+    "0360",
+    "0756",
+    "0162",
+    "0558",
+    "0011",
+    "0407",
+    "0209",
+    "0605",
+    "0155",
+    "0551",
+    "0196",
+    "0592"
+  ],
+  "winner_combinations": [
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "ledger_counts": {
+    "rows": 299,
+    "unique_inputs": 299,
+    "new_evaluations": 299,
+    "reuse": 0,
+    "old_inputs_evaluated_afresh": 13
+  },
+  "old_input_ids": [
+    "0000",
+    "0001",
+    "0002",
+    "0003",
+    "0004",
+    "0005",
+    "0006",
+    "0007",
+    "0008",
+    "0009",
+    "0010",
+    "0011",
+    "0012"
+  ],
+  "wall_seconds": "427.9961721250147",
+  "child_cpu_seconds": "4693.986787",
+  "primary_recorded_seconds": 23.103594064712524,
+  "independent_recorded_seconds": 30.626406458002748,
+  "all_inputs_independently_reconstructed": true,
+  "compressed_archives_match_raw": true,
+  "geometry_or_search_rerun": false,
+  "files_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r008_final_0611.json": "6c2e5d2d8fba5063bd45ecd4467f8c74cca5c0edbef958f90146a103029d5910",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r025_final_0110.json": "34a9569786741ddf2a61cc52fd85725bf8efdccf46306e34c1d8d340be49cd0c",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r027_final_0079.json": "6b45a21bb0d1508effa2c9934d27aa851b0e8985d192f9f39f00ea6053363dee",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/proofs/round027-lower.md": "368fc4cb4b5498be3db4dcf02fd63c98a1d2bfff6a1ffce23812b4d09d89272b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/rounds/027.md": "e75c86407f303a39d710945bdfa571bf88253f0f0b3ea8ac90e1c50fa7424adb",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/proofs/periodic-complete-halo.md": "7571ad4fa597d9f152fcfd1249bf07c69d998326abf30c44a9abaca1fe18987e",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_quadrant_joint_r27.py": "4d40cac18251822a74fbd5fda678f35fb7e5aff8840c928a36d0e594aba58a41",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/build_round027_ledger.py": "19c2e5025924b47d635ebb99e7d9c5edee34e5f7eae720b83ff57da92739a0a5",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/periodic_halo.py": "b788671299ee33c14e4c6d872e36bfab06cbaa55dd6cd6a1c9bc6c26190a0f33",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/independent_periodic_halo.py": "d1e05a0627d699b54472b1b3e74ad500035135853298d33f519f78d3a17903e8",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/periodic_halo_dominated.py": "a697093e30172da71528dc3668add00ea4083811cc2b69ef3a0fc9942eded5e3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_quadrant_groups.py": "bc6d8a19543882b6b84d49cbcc36b51218146bb0b6cc2c70d575cd765cc6d61c",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_supercell_mass.py": "37e4e05705477f45abfe8c1088bd20c93b0b4a2dad8e777bcda6240eb1b99fc0",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_supercell_2x2.py": "9c4f47ef2b1db471cc06be447d689dc48fa3ec56d692e3c23350a46c8825a78c",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round026/primary_old_R10.json": "32ebe83c69327326279421595ce96224209c2f85512a487159a841ce207020c6",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round026/quadrant-groups/manifest.json": "4445cfc88d7ba633bd8b3d495a1aa90a119d542a751b23fe917931e85953f691",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round026/quadrant-groups/results.json": "0e7633d75509ef95a353a05901d45b8a3605c4199e725d28e93d6974fd7759fb",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round027/completed.jsonl": "6c4946352eb870a0f9e131d21e3b2acae405234546a28b6c1a76a80df4b51b21",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round027/independent_old_R10.json": "74b4ba23638382217312db219a58a3a14c8c9b587f96a33247cf45f7ae9e80e7",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round027/integration_checks.json": "1a34be49241b6941221c97a5a5aa0ec6bbadbdfa833500e252ad22b96a1589cb",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round027/manifest.json.gz": "aaf4b0b2f465cfaf44cc127bd66fa4fc1064d7f7c938f92a02ee6264ca31753f",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round027/primary_old_R10.json": "d93ee5e7ecf7bad692eebc4d3a074fe23e957e7866e3893e22ab88f44c180065",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round027/results.json.gz": "cc00ef3d5184d4f2906f6f9e804588e600534d3ace8e3fc4777c9f5e0ff7527d",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round027/summary.json": "9d47d7b8e64f10ca2bd890eff2ea0f9c4cf0318917a77be887749d155de15438"
+  },
+  "audit_script_sha256": "7bce4940d3c5456d811edb0ab73397a7ec41b82ab6e08207925dbd0796b98269",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "command": [
+    "/Users/zzh/.local/bin/python3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-ledger-audit/planar-centered-square-weak11/computation/review_round027_ledger.py",
+    "--topic",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11",
+    "--raw",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round027/quadrant-joint",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round027/independent-ledger-review.json"
+  ],
+  "verified_utc": "2026-11-15T01:43:24.320365+00:00",
+  "elapsed_seconds": 3.3024528329842724
+}
