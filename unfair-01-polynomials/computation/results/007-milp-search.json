@@ -1,0 +1,180 @@
+{
+  "args": {
+    "m": 7,
+    "n": 17,
+    "limit": 25,
+    "seconds": 600.0,
+    "domination": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/sync/unfair-01-polynomials/computation/diagonal_domination.py"
+  },
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "scipy": "1.18.1",
+  "script_sha256": "4595095c7c9e0bc590568655cc2cee67eb54789bf2e553bf64b7dd675aa0d29f",
+  "result": {
+    "m": 7,
+    "n": 17,
+    "model": "MILP support necessary conditions",
+    "candidates": [
+      {
+        "I": [
+          0,
+          3,
+          5,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          15,
+          17
+        ],
+        "support_size": 13,
+        "domination_status": "unknown"
+      },
+      {
+        "I": [
+          0,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          2,
+          6,
+          8,
+          9,
+          11,
+          12,
+          14,
+          17
+        ],
+        "support_size": 13,
+        "domination_status": "unknown"
+      },
+      {
+        "I": [
+          0,
+          3,
+          5,
+          7
+        ],
+        "J": [
+          0,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          13,
+          15,
+          17
+        ],
+        "support_size": 14,
+        "domination_status": "unknown"
+      },
+      {
+        "I": [
+          0,
+          2,
+          4,
+          7
+        ],
+        "J": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          9,
+          11,
+          12,
+          14,
+          17
+        ],
+        "support_size": 14,
+        "domination_status": "unknown"
+      }
+    ],
+    "domination_excluded": 4,
+    "solver_log": [
+      {
+        "round": 0,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "fun": 13.0
+      },
+      {
+        "round": 1,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "fun": 13.0
+      },
+      {
+        "round": 2,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "fun": 14.0
+      },
+      {
+        "round": 3,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "fun": 14.0
+      },
+      {
+        "round": 4,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "fun": 14.0
+      },
+      {
+        "round": 5,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "fun": 14.0
+      },
+      {
+        "round": 6,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "fun": 15.0
+      },
+      {
+        "round": 7,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "fun": 15.0
+      },
+      {
+        "round": 8,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "fun": null
+      }
+    ],
+    "elapsed_seconds": 0.11763616700773127
+  },
+  "candidate_integer_constraints_independently_verified": true,
+  "two_reversal_orbits_verified": true,
+  "solver_optimality_or_exhaustiveness_certified": false,
+  "run_status": {
+    "state": "succeeded",
+    "script_sha256": "4595095c7c9e0bc590568655cc2cee67eb54789bf2e553bf64b7dd675aa0d29f",
+    "runtime": {
+      "executable": "/Users/zzh/.venvs/main/bin/python",
+      "version": "3.13.18",
+      "modules": {
+        "scipy": "1.18.1"
+      }
+    },
+    "started_at": "2026-11-15T11:00:18.306042+00:00",
+    "finished_at": "2026-11-15T11:00:19.100631+00:00",
+    "exit_code": 0
+  }
+}
