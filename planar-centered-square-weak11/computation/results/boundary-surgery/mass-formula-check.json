@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "scope": "Actual R41 exposed-label mass conservation and R15 window-padding prerequisites only; no halo t scan.",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "arithmetic": "Fraction",
+  "N_min": 7,
+  "exposed_labels_zero_based": [
+    0,
+    51
+  ],
+  "exposed_points": [
+    [
+      "0",
+      "0",
+      "319996899999/320000000000"
+    ],
+    [
+      "0",
+      "175603458831370317/64000000000000000",
+      "319996899999/320000000000"
+    ]
+  ],
+  "w_I": "319996899999/160000000000",
+  "m": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+  "Px": "328734960629/50000000000",
+  "Py": "175603458831370317/32000000000000000",
+  "three_Px_minus_15": "236204881887/50000000000",
+  "balanced_cases": [
+    {
+      "t": "0",
+      "u": "1",
+      "strip_mass": "461591692801940589516573357207469177/3125000000000000000000000000000000",
+      "double_cell_mass": "461591692801940589516573357207469177/1562500000000000000000000000000000"
+    },
+    {
+      "t": "1/2",
+      "u": "1/2",
+      "strip_mass": "461591692801940589516573357207469177/3125000000000000000000000000000000",
+      "double_cell_mass": "461591692801940589516573357207469177/1562500000000000000000000000000000"
+    },
+    {
+      "t": "1",
+      "u": "0",
+      "strip_mass": "461591692801940589516573357207469177/3125000000000000000000000000000000",
+      "double_cell_mass": "461591692801940589516573357207469177/1562500000000000000000000000000000"
+    }
+  ],
+  "general_mass_delta": "(t+u-1)*w_I",
+  "general_gain": "[BL(t)+BR(u)-Jper*delta_m]/[N*m+delta_m]",
+  "required_axis_conditions": "ell(t)<0<r(u), all positive atoms strictly between axes; uniform full R15 and window catalogs must be certified separately",
+  "source_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+  "script_sha256": "a5de98bc421bcc0b707910d539dc332794f271f6564c60ba4440abf938873457",
+  "random_seed": null,
+  "floating_tolerance": null
+}

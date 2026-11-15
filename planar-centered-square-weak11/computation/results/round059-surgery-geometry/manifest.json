@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "round": 59,
+  "theme": "labelwise mass-preserving endpoint surgery uniform tail and fixed collar locality",
+  "files": [
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/proofs/r059-surgery-uniform-tail-locality-independent.md",
+      "destination": "planar-centered-square-weak11/proofs/r059-surgery-uniform-tail-locality-independent.md",
+      "bytes": 8518,
+      "sha256": "ec219c22d5fc99cd1f03953f482aae2cd7c108926355095cc9bdf368693bcfaa"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/computation/r059_surgery_tail_locality_check.py",
+      "destination": "planar-centered-square-weak11/computation/r059_surgery_tail_locality_check.py",
+      "bytes": 2917,
+      "sha256": "19ff5977c8e89317d31c03c9365dc436ef9c33dc4dd3b548351882fab717bf7a"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/computation/results/round059-surgery-geometry/exact-parameters.json",
+      "destination": "planar-centered-square-weak11/computation/results/round059-surgery-geometry/exact-parameters.json",
+      "bytes": 2850,
+      "sha256": "65ebf0f6659ec4cc08ac755d07b67fa1eb3b2fb08ff88e1941334677af36a330"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/reviews/r059-boundary-surgery-kernel-independent.md",
+      "destination": "planar-centered-square-weak11/reviews/r059-boundary-surgery-kernel-independent.md",
+      "bytes": 5252,
+      "sha256": "a0e04755fcf6940d4e2f94003258b6701b522652051de99082aeb6421afa553f"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/computation/r059_surgery_axis_kernel_independent.py",
+      "destination": "planar-centered-square-weak11/computation/r059_surgery_axis_kernel_independent.py",
+      "bytes": 5605,
+      "sha256": "30e5967c53ee50c5827a172a0a92e56a471361a29b8c1ce65d5d59031e1ca8e0"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/computation/results/round059-surgery-geometry/axis-kernel-review.json",
+      "destination": "planar-centered-square-weak11/computation/results/round059-surgery-geometry/axis-kernel-review.json",
+      "bytes": 3290,
+      "sha256": "4eb42065026d9393d57ae8352f27c9795005f3b96aa6050ece71a5436bf8ed7b"
+    }
+  ],
+  "exact_formula": "J_N(t)=A/m+[Lambda_L(t)+Lambda_R(1-t)-6A]/(mN), all t in [0,1], N>=7",
+  "actual_run": "Python3.15.0 Fraction fixed-constant/affine identity check exit0",
+  "no_N_scan": true,
+  "no_halo_area_run": true,
+  "no_commit_push": true,
+  "remaining": "Need actual true axes and full two local reflected-halfhalo areas; no sign for K(1/2) claimed",
+  "kernel_review": {
+    "verdict": "PASS t1/2 axes + setup/source endpoints + area code + true-axis error proof",
+    "target_sha256": "1a0233317706618b5f2d1231d10ac7da1e5f46324e1bacc9320eb4ac9632043d",
+    "actual_run": "Independent complete75900 bboxes per half-axis, exact source dictionary checks at t0,1/2,1 bothsides, exit0",
+    "no_large_area_run": true
+  }
+}

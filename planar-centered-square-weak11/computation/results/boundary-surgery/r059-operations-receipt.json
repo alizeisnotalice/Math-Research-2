@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "scope": "Core exact output/hash recheck plus transcription of existing operations execution receipt; no new execution or agent reactivation.",
+  "operations_handoff_source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/operations-handoff-20261115.md",
+  "operations_handoff_sha256": "18946f8a73e6406bb4e6c4e672b498fa3b5c267d9375abbe3268beaa9c6da05a",
+  "operations_verbatim_R59_receipt": "- R59: two collar areas, frozen in `r059/`, both PASS and exit 0, PIDs 29300/29338 absent, actual times 94.3576/94.4562 seconds. Left output SHA `2a1a923fbe8bbd62b0bc512af2f61e1c776847b21e6b4e75af344ae71f5736a3`, right `b43e4df4a00a07d5554e86a8c2761cb4d17697e013458933e298834c125f3db5`. Both used Python 3.13.18 and `python3 -B boundary_weight_surgery.py r041_final_0036.json --side SIDE --t 1/2 --mode area --axis r059-half-SIDE-axis.json --output half-SIDE-area.json`. Script, dependency, axes and input are frozen in that directory.",
+  "files": [
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r059/half-left-area.json",
+      "destination": "planar-centered-square-weak11/computation/results/boundary-surgery/r059-half-left-area.json",
+      "sha256": "2a1a923fbe8bbd62b0bc512af2f61e1c776847b21e6b4e75af344ae71f5736a3",
+      "size": 3219,
+      "cwd": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r059",
+      "command_argv": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "boundary_weight_surgery.py",
+        "r041_final_0036.json",
+        "--side",
+        "left",
+        "--t",
+        "1/2",
+        "--mode",
+        "area",
+        "--axis",
+        "r059-half-left-axis.json",
+        "--output",
+        "half-left-area.json"
+      ],
+      "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+      "elapsed_seconds": 94.35760593414307,
+      "owned_pid": 29300,
+      "exit_status_reported_by_operations": 0,
+      "owned_pid_absent_verified_by_operations": true,
+      "status_and_all_bound_hashes_rechecked_by_core": true
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r059/half-right-area.json",
+      "destination": "planar-centered-square-weak11/computation/results/boundary-surgery/r059-half-right-area.json",
+      "sha256": "b43e4df4a00a07d5554e86a8c2761cb4d17697e013458933e298834c125f3db5",
+      "size": 3060,
+      "cwd": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r059",
+      "command_argv": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "boundary_weight_surgery.py",
+        "r041_final_0036.json",
+        "--side",
+        "right",
+        "--t",
+        "1/2",
+        "--mode",
+        "area",
+        "--axis",
+        "r059-half-right-axis.json",
+        "--output",
+        "half-right-area.json"
+      ],
+      "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+      "elapsed_seconds": 94.45615005493164,
+      "owned_pid": 29338,
+      "exit_status_reported_by_operations": 0,
+      "owned_pid_absent_verified_by_operations": true,
+      "status_and_all_bound_hashes_rechecked_by_core": true
+    }
+  ]
+}
