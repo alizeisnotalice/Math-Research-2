@@ -1,0 +1,71 @@
+{
+  "script_sha256": "8cc5d57052ad6345d799e9a60e132b29400be402284a5286857f427df2b465a9",
+  "input_sha256": "8a0e3645331cdf05d52ddf8f60521bfc66abbbf313886ac209f87b21aee80b28",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "blas_threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "runs": [
+    {
+      "side": "left",
+      "command": [
+        "/Users/zzh/.local/bin/python3",
+        "planar-centered-square-weak11/computation/round057/full_area_sided_sweep.py",
+        "--slab",
+        "planar-centered-square-weak11/computation/round052/position-mass-slab.compact.json.gz",
+        "--side",
+        "left",
+        "--bits",
+        "256",
+        "--output",
+        "planar-centered-square-weak11/computation/round057/full-area-left-256.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.9092939580150414,
+      "outputs": [
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round057/full-area-left-256.json",
+          "sha256": "c5685ecf7cdb38082bf70505ed4fab63f99cc7292aba167ef9bc397216954a62",
+          "bytes": 8733
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round057/full-area-left-256.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "command": [
+        "/Users/zzh/.local/bin/python3",
+        "planar-centered-square-weak11/computation/round057/full_area_sided_sweep.py",
+        "--slab",
+        "planar-centered-square-weak11/computation/round052/position-mass-slab.compact.json.gz",
+        "--side",
+        "right",
+        "--bits",
+        "256",
+        "--output",
+        "planar-centered-square-weak11/computation/round057/full-area-right-256.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.903119666996645,
+      "outputs": [
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round057/full-area-right-256.json",
+          "sha256": "7bb3037e84163021673bb204bc54979d0ead6d1984150b338490f72a07a639aa",
+          "bytes": 8732
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round057/full-area-right-256.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "scope": "bounded exact quadratic/nested-radical and first/second jet algebra tests; no R57 geometry enumeration",
+  "checks": {
+    "branch_checked_edge_cases": 14,
+    "field_sign_and_inverse_grid": 150,
+    "quadratic_square_radical_comparisons": 900,
+    "generic_nested_radical_interval_comparisons": 180,
+    "contact_order_controls": {
+      "crossing": {
+        "center_sign": 0,
+        "contact_order": 1,
+        "first_nonzero_jet_sign": 1,
+        "left_sign": -1,
+        "right_sign": 1,
+        "persistent_in_t": false,
+        "same_full_recipe": false
+      },
+      "tangency": {
+        "center_sign": 0,
+        "contact_order": 2,
+        "first_nonzero_jet_sign": -1,
+        "left_sign": -1,
+        "right_sign": -1,
+        "persistent_in_t": false,
+        "same_full_recipe": false
+      },
+      "t_persistent_z_distinct": {
+        "center_sign": 0,
+        "contact_order": null,
+        "left_sign": 0,
+        "right_sign": 0,
+        "persistent_in_t": true,
+        "same_full_recipe": false
+      }
+    },
+    "parameter_origin_identity": true,
+    "fail_closed_cases": [
+      "negative_Q",
+      "negative_radicand",
+      "zero_division",
+      "nonanalytic_zero_mass_jet"
+    ]
+  },
+  "kernel_sha256": "d3777b6be87577cebab7ba76cb02e6e25de69131e11f24c9ba7f166857c61305",
+  "script_sha256": "65bc3904ed06709462d6c6e74d3d273df4ddcf30b39997dbb93b9d8423d71f9b",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "cpu_seconds": 0.026929,
+  "random_seed": null,
+  "floating_tolerance": null,
+  "actual_command": [
+    "/Users/zzh/.local/bin/python3",
+    "planar-centered-square-weak11/computation/test_r057_quadratic_endpoint_kernel.py",
+    "planar-centered-square-weak11/computation/results/round057-quadratic-kernel/exact-tests.json"
+  ]
+}
