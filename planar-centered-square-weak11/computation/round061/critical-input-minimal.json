@@ -1,0 +1,72 @@
+{
+  "schema": "r061-critical-input-v1",
+  "threshold": "1",
+  "input": {
+    "coordinate_unit": "1/4",
+    "mass_unit": "1/16",
+    "points_quarters": [
+      [
+        4,
+        8
+      ],
+      [
+        -4,
+        -8
+      ],
+      [
+        0,
+        -8
+      ],
+      [
+        -4,
+        8
+      ],
+      [
+        4,
+        -4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        -8,
+        0
+      ],
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -8
+      ],
+      [
+        0,
+        -4
+      ],
+      [
+        -4,
+        -4
+      ]
+    ],
+    "mass_sixteenths": [
+      36,
+      1,
+      1,
+      100,
+      16,
+      4,
+      25,
+      4,
+      4,
+      16,
+      36
+    ],
+    "seed": 617046
+  },
+  "bits": 24,
+  "expected_geometric_bound": "611497158639875/525566558076928",
+  "critical_mask": 1791,
+  "reproduce": "Import finite_source_cut_certificate.py and call run_case(input, bits); this is a finite input at threshold1, not a general C2 result."
+}
