@@ -1,0 +1,89 @@
+{
+  "round": 64,
+  "date": "2026-11-15",
+  "status": "INDEPENDENT PROOF/DOMAIN/SEED-BEST-ENDPOINT GEOMETRY REVIEW PASS",
+  "files": [
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/reviews/r064-mass-polytope-independent-review.md",
+      "destination": "planar-centered-square-weak11/reviews/r064-mass-polytope-independent-review.md",
+      "bytes": 10948,
+      "sha256": "27579c5680b1b1d5cfd42f38559efe00052fbddc8f9f97eae0c7525bce7180c0"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/reviews/r064-competitor-envelope-independent-review.md",
+      "destination": "planar-centered-square-weak11/reviews/r064-competitor-envelope-independent-review.md",
+      "bytes": 4155,
+      "sha256": "68b7cbf811d6ece3594a5d6cc3f217d49ee5f38a8ab0f00066846747570f3cb0"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r064_mass_variation.py",
+      "destination": "planar-centered-square-weak11/computation/review_r064_mass_variation.py",
+      "bytes": 11158,
+      "sha256": "267b430e167801314bba81200250945bedcb1473918992f57ac03c1feb94cad4"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r064_continuation_competitor.py",
+      "destination": "planar-centered-square-weak11/computation/review_r064_continuation_competitor.py",
+      "bytes": 9421,
+      "sha256": "f8fa1a9f0fda2a86869f261be423e7cb241ccbc955dbca70c9c67baef5776b10"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round064-mass-variation-independent.json",
+      "destination": "planar-centered-square-weak11/computation/results/round064-mass-variation-independent.json",
+      "bytes": 9835,
+      "sha256": "e48db76cbca422de6827f6427563501c1f52d217fa6ecae122ad29cacbd64b9b"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round064-continuation-competitor-independent.json",
+      "destination": "planar-centered-square-weak11/computation/results/round064-continuation-competitor-independent.json",
+      "bytes": 17139,
+      "sha256": "8b405b23c86317c85094f72ea85d99cb668313784d71f79f8ef30b198ef8ce6a"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/finalize_r064_independent_review.py",
+      "destination": "planar-centered-square-weak11/computation/finalize_r064_independent_review.py",
+      "bytes": 3138,
+      "sha256": "47182c4606413877f2b60e3207b1166d468dabc0f34486f45eba19f1ce891b31"
+    }
+  ],
+  "total_payload_bytes": 65794,
+  "final_reviewed_proofs": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/proofs/r064-overlapping-competitor-envelope.md",
+      "sha256": "3a9ae761af9c2f24fdfb49da3ecf291b4d2ba1d86cd98c651561580b6376ea28",
+      "bytes": 5189
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/proofs/r064-source-state-mass-polytope-variation.md",
+      "sha256": "ef14cc7ee5b1384c241eb69bf78b6ae7639f1916afe58723e9187bef3a5cbdfe",
+      "bytes": 18303
+    }
+  ],
+  "scope": "General finite-source state and mass-polytope theorem plus competitor-envelope sufficient lemma reviewed. All72 saved masses independently feasible; all8 accepted continuation state/hash chains checked; complete geometry independently replayed ONLY originalseed, firstbest and finalendpoint.42 positive stored interval comparisons checked arithmetically, NOT all72 geometric certificates replayed. No gradient/local/global/C2 claim.",
+  "actual_runs": [
+    {
+      "python": "3.13.18",
+      "exit_code": 0,
+      "seconds": 0.08989383399602957,
+      "geometry_cases": [
+        "seed",
+        "pilotbest"
+      ]
+    },
+    {
+      "python": "3.13.18",
+      "exit_code": 0,
+      "seconds": 0.21159220798290335,
+      "geometry_cases": [
+        "continuationendpoint"
+      ],
+      "continuation_constraint_points": 64,
+      "accepted_chain_steps": 8,
+      "competitor_scalar_cases": 4352
+    }
+  ],
+  "final_gain_over_original_seed": "4993611576166682680563276323763995450280281/22300745198530623141535718272648361505980416",
+  "final_competitor_mass": "268181345/268435456",
+  "dependency": "computation/review_r064_continuation_competitor.py imports the independent functions in computation/review_r064_mass_variation.py; neither imports producer.",
+  "git": "No delegated commit/push, no MATLAB or optimizer launch; root owns archive. R62/R63 frozen files unchanged."
+}
