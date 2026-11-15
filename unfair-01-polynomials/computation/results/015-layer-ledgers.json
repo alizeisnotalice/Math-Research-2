@@ -1,0 +1,2561 @@
+{
+  "batches": [
+    {
+      "directory": "round015-fullcpu/output",
+      "elapsed_seconds": 2991.548576125002,
+      "workers": 12,
+      "jobs": 34,
+      "driver_sha256": "5db06f38cf15613e13fda9f90b41c779e3e65829f65a68005e130905fb15ab01",
+      "all_workers_exited": true,
+      "note": "Started before user removed deadlines; old driver preserved in temp, enumerator and checker unchanged."
+    }
+  ],
+  "source_sha256": {
+    "support_search_layer.py": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710",
+    "verify_support_layer.py": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93"
+  },
+  "groups": [
+    {
+      "min_total": 29,
+      "total": 30,
+      "max_terms": 9,
+      "counts": {
+        "raw": 888124644,
+        "canonical": 419547833,
+        "excluded": 418887352,
+        "fair": 660462,
+        "unknown": 19
+      },
+      "jobs": [
+        {
+          "directory": "round015-fullcpu/output/nine30-m01",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 1,
+              "max_first_degree": 1,
+              "max_terms": 9,
+              "seconds": 13092.228681042005,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 2968842,
+              "canonical": 1485034,
+              "excluded": 1340671,
+              "fair": 144363,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 1,
+                "n": 28,
+                "complete": true,
+                "raw": 1285624,
+                "canonical": 643190,
+                "excluded": 583583,
+                "fair": 59607,
+                "unknown": 0
+              },
+              {
+                "m": 1,
+                "n": 29,
+                "complete": true,
+                "raw": 1683218,
+                "canonical": 841844,
+                "excluded": 757088,
+                "fair": 84756,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "153ae03b0beb4ea0c3c34e706e61e33689b565fb749e527200a887583a5a5e20",
+            "elapsed_seconds": 17.041947708989028,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12753,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 2968842,
+              "canonical": 1485034,
+              "fair": 144363,
+              "excluded": 1340671,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "153ae03b0beb4ea0c3c34e706e61e33689b565fb749e527200a887583a5a5e20",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 28.084115875011776
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m02",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 2,
+              "max_first_degree": 2,
+              "max_terms": 9,
+              "seconds": 13112.080923624977,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 4514672,
+              "canonical": 2255522,
+              "excluded": 2137863,
+              "fair": 117659,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 2,
+                "n": 27,
+                "complete": true,
+                "raw": 1943424,
+                "canonical": 972090,
+                "excluded": 923760,
+                "fair": 48330,
+                "unknown": 0
+              },
+              {
+                "m": 2,
+                "n": 28,
+                "complete": true,
+                "raw": 2571248,
+                "canonical": 1283432,
+                "excluded": 1214103,
+                "fair": 69329,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "028f0b274b87299cee320f0107e65f2b0dfada3c1a19ed37ed75cd5c886bc74a",
+            "elapsed_seconds": 26.779328208998777,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12692,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 4514672,
+              "canonical": 2255522,
+              "fair": 117659,
+              "excluded": 2137863,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "028f0b274b87299cee320f0107e65f2b0dfada3c1a19ed37ed75cd5c886bc74a",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 43.79059991700342
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m03",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 3,
+              "max_first_degree": 3,
+              "max_terms": 9,
+              "seconds": 13165.445516582986,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 6791672,
+              "canonical": 3396677,
+              "excluded": 3310148,
+              "fair": 86529,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 3,
+                "n": 26,
+                "complete": true,
+                "raw": 2904824,
+                "canonical": 1453010,
+                "excluded": 1417556,
+                "fair": 35454,
+                "unknown": 0
+              },
+              {
+                "m": 3,
+                "n": 27,
+                "complete": true,
+                "raw": 3886848,
+                "canonical": 1943667,
+                "excluded": 1892592,
+                "fair": 51075,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "fef23b2858aef04280b16dbfebd1f6250e60001efeb24c9e0d694bfe96b72384",
+            "elapsed_seconds": 48.858876624988625,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12506,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 6791672,
+              "canonical": 3396677,
+              "fair": 86529,
+              "excluded": 3310148,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "fef23b2858aef04280b16dbfebd1f6250e60001efeb24c9e0d694bfe96b72384",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 60.311871167010395
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m04",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 4,
+              "max_first_degree": 4,
+              "max_terms": 9,
+              "seconds": 13365.386233291996,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 10098888,
+              "canonical": 5047894,
+              "excluded": 4977045,
+              "fair": 70849,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 4,
+                "n": 25,
+                "complete": true,
+                "raw": 4289240,
+                "canonical": 2145218,
+                "excluded": 2116307,
+                "fair": 28911,
+                "unknown": 0
+              },
+              {
+                "m": 4,
+                "n": 26,
+                "complete": true,
+                "raw": 5809648,
+                "canonical": 2902676,
+                "excluded": 2860738,
+                "fair": 41938,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "003f187f43cd52f4d14634227505fedfa2497f6e69ffb692aab4b5e70c87088a",
+            "elapsed_seconds": 75.25548691599397,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 11957,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 10098888,
+              "canonical": 5047894,
+              "fair": 70849,
+              "excluded": 4977045,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "003f187f43cd52f4d14634227505fedfa2497f6e69ffb692aab4b5e70c87088a",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 115.87330791697605
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m05",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 5,
+              "max_first_degree": 5,
+              "max_terms": 9,
+              "seconds": 13398.771630667005,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 14828976,
+              "canonical": 7416004,
+              "excluded": 7363959,
+              "fair": 52045,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 5,
+                "n": 24,
+                "complete": true,
+                "raw": 6250496,
+                "canonical": 3126176,
+                "excluded": 3104867,
+                "fair": 21309,
+                "unknown": 0
+              },
+              {
+                "m": 5,
+                "n": 25,
+                "complete": true,
+                "raw": 8578480,
+                "canonical": 4289828,
+                "excluded": 4259092,
+                "fair": 30736,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "7434c5b0d9208209b9b3af71a39164db6a251c2bb2de63737547aba839c3a391",
+            "elapsed_seconds": 107.86269895802252,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 11861,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 14828976,
+              "canonical": 7416004,
+              "fair": 52045,
+              "excluded": 7363959,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "7434c5b0d9208209b9b3af71a39164db6a251c2bb2de63737547aba839c3a391",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 173.11362724998617
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m06",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 6,
+              "max_first_degree": 6,
+              "max_terms": 9,
+              "seconds": 13814.110677749995,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 21480192,
+              "canonical": 10739058,
+              "excluded": 10696263,
+              "fair": 42795,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 6,
+                "n": 23,
+                "complete": true,
+                "raw": 8979200,
+                "canonical": 4490528,
+                "excluded": 4473471,
+                "fair": 17057,
+                "unknown": 0
+              },
+              {
+                "m": 6,
+                "n": 24,
+                "complete": true,
+                "raw": 12500992,
+                "canonical": 6248530,
+                "excluded": 6222792,
+                "fair": 25738,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "a7890d845e328fd8d443073b85aa1c5d248de225c81ad11c586ebb501ef22e18",
+            "elapsed_seconds": 186.2760511249944,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 10126,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 21480192,
+              "canonical": 10739058,
+              "fair": 42795,
+              "excluded": 10696263,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "a7890d845e328fd8d443073b85aa1c5d248de225c81ad11c586ebb501ef22e18",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 210.96012491700822
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m07",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 7,
+              "max_first_degree": 7,
+              "max_terms": 9,
+              "seconds": 14399.993487917003,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 30658560,
+              "canonical": 15331616,
+              "excluded": 15300107,
+              "fair": 31509,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 7,
+                "n": 22,
+                "complete": true,
+                "raw": 12700160,
+                "canonical": 6351488,
+                "excluded": 6338642,
+                "fair": 12846,
+                "unknown": 0
+              },
+              {
+                "m": 7,
+                "n": 23,
+                "complete": true,
+                "raw": 17958400,
+                "canonical": 8980128,
+                "excluded": 8961465,
+                "fair": 18663,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "e91e6ece87ac8afb216def0bd708941edf3c6df9ffd8f507d82a6d14bba134f7",
+            "elapsed_seconds": 200.540089792019,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7965,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 30658560,
+              "canonical": 15331616,
+              "fair": 31509,
+              "excluded": 15300107,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "e91e6ece87ac8afb216def0bd708941edf3c6df9ffd8f507d82a6d14bba134f7",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 350.5541852080205
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m08",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 8,
+              "max_first_degree": 8,
+              "max_terms": 9,
+              "seconds": 14399.997222791979,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 43061760,
+              "canonical": 21531180,
+              "excluded": 21503732,
+              "fair": 27448,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 8,
+                "n": 21,
+                "complete": true,
+                "raw": 17661440,
+                "canonical": 8832128,
+                "excluded": 8820957,
+                "fair": 11171,
+                "unknown": 0
+              },
+              {
+                "m": 8,
+                "n": 22,
+                "complete": true,
+                "raw": 25400320,
+                "canonical": 12699052,
+                "excluded": 12682775,
+                "fair": 16277,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "e6ce4cffe6c0665eb256835dbd0e09e23e8314a9c8ca2c68558f62a1d581b183",
+            "elapsed_seconds": 294.1527033330058,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7959,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 43061760,
+              "canonical": 21531180,
+              "fair": 27448,
+              "excluded": 21503732,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "e6ce4cffe6c0665eb256835dbd0e09e23e8314a9c8ca2c68558f62a1d581b183",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 553.0872103340225
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m09",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 9,
+              "max_first_degree": 9,
+              "max_terms": 9,
+              "seconds": 14399.998257792002,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 59201820,
+              "canonical": 29604044,
+              "excluded": 29583817,
+              "fair": 20227,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 9,
+                "n": 20,
+                "complete": true,
+                "raw": 24016920,
+                "canonical": 12010410,
+                "excluded": 12002151,
+                "fair": 8259,
+                "unknown": 0
+              },
+              {
+                "m": 9,
+                "n": 21,
+                "complete": true,
+                "raw": 35184900,
+                "canonical": 17593634,
+                "excluded": 17581666,
+                "fair": 11968,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "8c900a2f8345b1f1ebb2685166e0a217a8e7d7853e3d25d71e44130836573ce4",
+            "elapsed_seconds": 418.742958250019,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7961,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 59201820,
+              "canonical": 29604044,
+              "fair": 20227,
+              "excluded": 29583817,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "8c900a2f8345b1f1ebb2685166e0a217a8e7d7853e3d25d71e44130836573ce4",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 781.4755614580063
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m10",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 10,
+              "max_first_degree": 10,
+              "max_terms": 9,
+              "seconds": 14399.999360291986,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 78908376,
+              "canonical": 39455952,
+              "excluded": 39438386,
+              "fair": 17561,
+              "unknown": 5
+            },
+            "shards": [
+              {
+                "m": 10,
+                "n": 19,
+                "complete": true,
+                "raw": 31628008,
+                "canonical": 15815954,
+                "excluded": 15810137,
+                "fair": 5814,
+                "unknown": 3
+              },
+              {
+                "m": 10,
+                "n": 20,
+                "complete": true,
+                "raw": 47280368,
+                "canonical": 23639998,
+                "excluded": 23628249,
+                "fair": 11747,
+                "unknown": 2
+              }
+            ],
+            "ledger_sha256_uncompressed": "f4576ed015531be7be4cb4dd0c37758b7d896cb68f3ec217713d14343a2078c3",
+            "elapsed_seconds": 692.7717282499943,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7962,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 78908376,
+              "canonical": 39455952,
+              "fair": 17561,
+              "excluded": 39438386,
+              "unknown": 5
+            },
+            "ledger_sha256_uncompressed": "f4576ed015531be7be4cb4dd0c37758b7d896cb68f3ec217713d14343a2078c3",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 915.3827022500045
+          },
+          "unknown": [
+            {
+              "I": [
+                0,
+                1,
+                2,
+                4,
+                10
+              ],
+              "J": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                7,
+                11,
+                13,
+                19
+              ]
+            },
+            {
+              "I": [
+                0,
+                1,
+                2,
+                6,
+                10
+              ],
+              "J": [
+                0,
+                2,
+                3,
+                5,
+                6,
+                7,
+                11,
+                15,
+                19
+              ]
+            },
+            {
+              "I": [
+                0,
+                1,
+                2,
+                3,
+                6,
+                10
+              ],
+              "J": [
+                0,
+                2,
+                3,
+                5,
+                6,
+                11,
+                12,
+                15,
+                19
+              ]
+            },
+            {
+              "I": [
+                0,
+                3,
+                5,
+                6,
+                10
+              ],
+              "J": [
+                0,
+                3,
+                8,
+                9,
+                11,
+                12,
+                13,
+                16,
+                20
+              ]
+            },
+            {
+              "I": [
+                0,
+                1,
+                2,
+                3,
+                6,
+                10
+              ],
+              "J": [
+                0,
+                1,
+                2,
+                5,
+                11,
+                12,
+                13,
+                16,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m11",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 11,
+              "max_first_degree": 11,
+              "max_terms": 9,
+              "seconds": 14399.999554749986,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 100894640,
+              "canonical": 50451428,
+              "excluded": 50439360,
+              "fair": 12062,
+              "unknown": 6
+            },
+            "shards": [
+              {
+                "m": 11,
+                "n": 18,
+                "complete": true,
+                "raw": 39906768,
+                "canonical": 19955802,
+                "excluded": 19950599,
+                "fair": 5203,
+                "unknown": 0
+              },
+              {
+                "m": 11,
+                "n": 19,
+                "complete": true,
+                "raw": 60987872,
+                "canonical": 30495626,
+                "excluded": 30488761,
+                "fair": 6859,
+                "unknown": 6
+              }
+            ],
+            "ledger_sha256_uncompressed": "c4c4f6df16b8c0446917eee24cafe68a6cdb411ba4e4f5d036d4acc36bcc717f",
+            "elapsed_seconds": 887.6694305839774,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7958,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 100894640,
+              "canonical": 50451428,
+              "fair": 12062,
+              "excluded": 50439360,
+              "unknown": 6
+            },
+            "ledger_sha256_uncompressed": "c4c4f6df16b8c0446917eee24cafe68a6cdb411ba4e4f5d036d4acc36bcc717f",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 1109.1900785409962
+          },
+          "unknown": [
+            {
+              "I": [
+                0,
+                1,
+                3,
+                5,
+                11
+              ],
+              "J": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                7,
+                13,
+                17,
+                19
+              ]
+            },
+            {
+              "I": [
+                0,
+                2,
+                4,
+                8,
+                11
+              ],
+              "J": [
+                0,
+                2,
+                4,
+                6,
+                10,
+                12,
+                13,
+                16,
+                19
+              ]
+            },
+            {
+              "I": [
+                0,
+                3,
+                6,
+                7,
+                11
+              ],
+              "J": [
+                0,
+                3,
+                6,
+                7,
+                9,
+                10,
+                14,
+                15,
+                19
+              ]
+            },
+            {
+              "I": [
+                0,
+                2,
+                4,
+                5,
+                8,
+                11
+              ],
+              "J": [
+                0,
+                2,
+                4,
+                5,
+                10,
+                12,
+                13,
+                16,
+                19
+              ]
+            },
+            {
+              "I": [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7,
+                11
+              ],
+              "J": [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7,
+                14,
+                15,
+                19
+              ]
+            },
+            {
+              "I": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                8,
+                11
+              ],
+              "J": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                12,
+                13,
+                16,
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m12",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 12,
+              "max_first_degree": 12,
+              "max_terms": 9,
+              "seconds": 14399.999621416995,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 122687144,
+              "canonical": 61346548,
+              "excluded": 61334479,
+              "fair": 12068,
+              "unknown": 1
+            },
+            "shards": [
+              {
+                "m": 12,
+                "n": 17,
+                "complete": true,
+                "raw": 47820728,
+                "canonical": 23912782,
+                "excluded": 23907697,
+                "fair": 5084,
+                "unknown": 1
+              },
+              {
+                "m": 12,
+                "n": 18,
+                "complete": true,
+                "raw": 74866416,
+                "canonical": 37433766,
+                "excluded": 37426782,
+                "fair": 6984,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "08f931dd512217389783efbd1fdbd188faa8b98d1c1d9e27fc2990d9eff8ef8a",
+            "elapsed_seconds": 1097.7519849590026,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7956,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 122687144,
+              "canonical": 61346548,
+              "fair": 12068,
+              "excluded": 61334479,
+              "unknown": 1
+            },
+            "ledger_sha256_uncompressed": "08f931dd512217389783efbd1fdbd188faa8b98d1c1d9e27fc2990d9eff8ef8a",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 1377.8430023329856
+          },
+          "unknown": [
+            {
+              "I": [
+                0,
+                1,
+                2,
+                4,
+                12
+              ],
+              "J": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7,
+                9,
+                14,
+                17
+              ]
+            }
+          ]
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m13",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 13,
+              "max_first_degree": 13,
+              "max_terms": 9,
+              "seconds": 14399.99966999999,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 141051534,
+              "canonical": 70530408,
+              "excluded": 70518575,
+              "fair": 11828,
+              "unknown": 5
+            },
+            "shards": [
+              {
+                "m": 13,
+                "n": 16,
+                "complete": true,
+                "raw": 54099968,
+                "canonical": 27052672,
+                "excluded": 27047314,
+                "fair": 5356,
+                "unknown": 2
+              },
+              {
+                "m": 13,
+                "n": 17,
+                "complete": true,
+                "raw": 86951566,
+                "canonical": 43477736,
+                "excluded": 43471261,
+                "fair": 6472,
+                "unknown": 3
+              }
+            ],
+            "ledger_sha256_uncompressed": "0ffd61ac84f278c667db66d69c95ab0203572793343f3520e9d1d805e79af6b0",
+            "elapsed_seconds": 1311.6605369999888,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7955,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 141051534,
+              "canonical": 70530408,
+              "fair": 11828,
+              "excluded": 70518575,
+              "unknown": 5
+            },
+            "ledger_sha256_uncompressed": "0ffd61ac84f278c667db66d69c95ab0203572793343f3520e9d1d805e79af6b0",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 1486.4524803339737
+          },
+          "unknown": [
+            {
+              "I": [
+                0,
+                2,
+                3,
+                6,
+                13
+              ],
+              "J": [
+                0,
+                1,
+                2,
+                5,
+                6,
+                9,
+                16
+              ]
+            },
+            {
+              "I": [
+                0,
+                1,
+                3,
+                4,
+                8,
+                13
+              ],
+              "J": [
+                0,
+                1,
+                2,
+                4,
+                6,
+                7,
+                11,
+                16
+              ]
+            },
+            {
+              "I": [
+                0,
+                1,
+                2,
+                4,
+                6,
+                13
+              ],
+              "J": [
+                0,
+                1,
+                3,
+                5,
+                6,
+                8,
+                10,
+                17
+              ]
+            },
+            {
+              "I": [
+                0,
+                1,
+                2,
+                5,
+                6,
+                13
+              ],
+              "J": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                6,
+                9,
+                10,
+                17
+              ]
+            },
+            {
+              "I": [
+                0,
+                2,
+                3,
+                4,
+                8,
+                13
+              ],
+              "J": [
+                0,
+                2,
+                3,
+                6,
+                7,
+                8,
+                12,
+                17
+              ]
+            }
+          ]
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m14",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 14,
+              "max_first_degree": 14,
+              "max_terms": 9,
+              "seconds": 14399.999721667002,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 152809104,
+              "canonical": 76408456,
+              "excluded": 76394935,
+              "fair": 13519,
+              "unknown": 2
+            },
+            "shards": [
+              {
+                "m": 14,
+                "n": 15,
+                "complete": true,
+                "raw": 57585296,
+                "canonical": 28795336,
+                "excluded": 28789343,
+                "fair": 5993,
+                "unknown": 0
+              },
+              {
+                "m": 14,
+                "n": 16,
+                "complete": true,
+                "raw": 95223808,
+                "canonical": 47613120,
+                "excluded": 47605592,
+                "fair": 7526,
+                "unknown": 2
+              }
+            ],
+            "ledger_sha256_uncompressed": "9d640472678b84bc675a7efdb6bda6e4bb9dabff149067a7622c3ee363bf5284",
+            "elapsed_seconds": 1439.1119429999962,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7954,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 152809104,
+              "canonical": 76408456,
+              "fair": 13519,
+              "excluded": 76394935,
+              "unknown": 2
+            },
+            "ledger_sha256_uncompressed": "9d640472678b84bc675a7efdb6bda6e4bb9dabff149067a7622c3ee363bf5284",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 1552.2095914160018
+          },
+          "unknown": [
+            {
+              "I": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                8,
+                14
+              ],
+              "J": [
+                0,
+                1,
+                3,
+                5,
+                7,
+                10,
+                16
+              ]
+            },
+            {
+              "I": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                8,
+                14
+              ],
+              "J": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                7,
+                10,
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "directory": "round015-fullcpu/output/nine30-m15",
+          "summary": {
+            "config": {
+              "total": 30,
+              "min_total": 29,
+              "min_degree": 15,
+              "max_first_degree": 15,
+              "max_terms": 9,
+              "seconds": 14399.99947112499,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 98168464,
+              "canonical": 24548012,
+              "excluded": 24548012,
+              "fair": 0,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 15,
+                "n": 15,
+                "complete": true,
+                "raw": 98168464,
+                "canonical": 24548012,
+                "excluded": 24548012,
+                "fair": 0,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "79953e546d4c622cee68332872504d9976f36b13385d6839fb6bcf7cf101734d",
+            "elapsed_seconds": 428.92075437502353,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7957,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 98168464,
+              "canonical": 24548012,
+              "fair": 0,
+              "excluded": 24548012,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "79953e546d4c622cee68332872504d9976f36b13385d6839fb6bcf7cf101734d",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 878.6749121669855
+          },
+          "unknown": []
+        }
+      ]
+    },
+    {
+      "min_total": 37,
+      "total": 38,
+      "max_terms": 6,
+      "counts": {
+        "raw": 225150662,
+        "canonical": 108413364,
+        "excluded": 107660795,
+        "fair": 752569,
+        "unknown": 0
+      },
+      "jobs": [
+        {
+          "directory": "round015-fullcpu/output/six38-m01",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 1,
+              "max_first_degree": 1,
+              "max_terms": 6,
+              "seconds": 13032.227285250003,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 126248,
+              "canonical": 63296,
+              "excluded": 28457,
+              "fair": 34839,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 1,
+                "n": 36,
+                "complete": true,
+                "raw": 59536,
+                "canonical": 29854,
+                "excluded": 13570,
+                "fair": 16284,
+                "unknown": 0
+              },
+              {
+                "m": 1,
+                "n": 37,
+                "complete": true,
+                "raw": 66712,
+                "canonical": 33442,
+                "excluded": 14887,
+                "fair": 18555,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "1ccb31d44ee4a1b6bed47197745d1cfc021096781a35355ebd57e06b9aa7e737",
+            "elapsed_seconds": 0.7409779999870807,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 13004,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 126248,
+              "canonical": 63296,
+              "fair": 34839,
+              "excluded": 28457,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "1ccb31d44ee4a1b6bed47197745d1cfc021096781a35355ebd57e06b9aa7e737",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 1.335993624990806
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m02",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 2,
+              "max_first_degree": 2,
+              "max_terms": 6,
+              "seconds": 13033.108209582977,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 224984,
+              "canonical": 111188,
+              "excluded": 65848,
+              "fair": 45340,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 2,
+                "n": 35,
+                "complete": true,
+                "raw": 105912,
+                "canonical": 53110,
+                "excluded": 31846,
+                "fair": 21264,
+                "unknown": 0
+              },
+              {
+                "m": 2,
+                "n": 36,
+                "complete": true,
+                "raw": 119072,
+                "canonical": 58078,
+                "excluded": 34002,
+                "fair": 24076,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "c9822173373ff98ca5820b7eaefa8e61ee4e971e8ebf452d4fc4294ecee7d56e",
+            "elapsed_seconds": 1.455400999984704,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12997,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 224984,
+              "canonical": 111188,
+              "fair": 45340,
+              "excluded": 65848,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "c9822173373ff98ca5820b7eaefa8e61ee4e971e8ebf452d4fc4294ecee7d56e",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 2.4976290419872385
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m03",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 3,
+              "max_first_degree": 3,
+              "max_terms": 6,
+              "seconds": 13036.716129374981,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 399576,
+              "canonical": 200096,
+              "excluded": 157079,
+              "fair": 43017,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 3,
+                "n": 34,
+                "complete": true,
+                "raw": 187752,
+                "canonical": 94030,
+                "excluded": 74245,
+                "fair": 19785,
+                "unknown": 0
+              },
+              {
+                "m": 3,
+                "n": 35,
+                "complete": true,
+                "raw": 211824,
+                "canonical": 106066,
+                "excluded": 82834,
+                "fair": 23232,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "591ac6f4eb26216179ce2d30dbec661847cda3e57486e5c4d4b2651f72c8ad6c",
+            "elapsed_seconds": 2.7810807499918155,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12931,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 399576,
+              "canonical": 200096,
+              "fair": 43017,
+              "excluded": 157079,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "591ac6f4eb26216179ce2d30dbec661847cda3e57486e5c4d4b2651f72c8ad6c",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 4.633273540996015
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m04",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 4,
+              "max_first_degree": 4,
+              "max_terms": 6,
+              "seconds": 13046.800995458005,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 707096,
+              "canonical": 351576,
+              "excluded": 300616,
+              "fair": 50960,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 4,
+                "n": 33,
+                "complete": true,
+                "raw": 331592,
+                "canonical": 166070,
+                "excluded": 142565,
+                "fair": 23505,
+                "unknown": 0
+              },
+              {
+                "m": 4,
+                "n": 34,
+                "complete": true,
+                "raw": 375504,
+                "canonical": 185506,
+                "excluded": 158051,
+                "fair": 27455,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "3ebb7ec8b27ffcdb829af3fc712334877928104105b3f0ef18a94874c57aed33",
+            "elapsed_seconds": 4.844729042000836,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12876,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 707096,
+              "canonical": 351576,
+              "fair": 50960,
+              "excluded": 300616,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "3ebb7ec8b27ffcdb829af3fc712334877928104105b3f0ef18a94874c57aed33",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 8.67858329101
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m05",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 5,
+              "max_first_degree": 5,
+              "max_terms": 6,
+              "seconds": 13051.12566762499,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 1246496,
+              "canonical": 623796,
+              "excluded": 578726,
+              "fair": 45070,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 5,
+                "n": 32,
+                "complete": true,
+                "raw": 583312,
+                "canonical": 291930,
+                "excluded": 271417,
+                "fair": 20513,
+                "unknown": 0
+              },
+              {
+                "m": 5,
+                "n": 33,
+                "complete": true,
+                "raw": 663184,
+                "canonical": 331866,
+                "excluded": 307309,
+                "fair": 24557,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "896ba0935f0116f57966819b47ea6baef73ec41cb6e18729712a2e12a0fa77cf",
+            "elapsed_seconds": 9.269194874999812,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12860,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 1246496,
+              "canonical": 623796,
+              "fair": 45070,
+              "excluded": 578726,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "896ba0935f0116f57966819b47ea6baef73ec41cb6e18729712a2e12a0fa77cf",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 15.398053749988321
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m06",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 6,
+              "max_first_degree": 6,
+              "max_terms": 6,
+              "seconds": 13077.717049457977,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 2120028,
+              "canonical": 1056998,
+              "excluded": 1006458,
+              "fair": 50540,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 6,
+                "n": 31,
+                "complete": true,
+                "raw": 989861,
+                "canonical": 495354,
+                "excluded": 472300,
+                "fair": 23054,
+                "unknown": 0
+              },
+              {
+                "m": 6,
+                "n": 32,
+                "complete": true,
+                "raw": 1130167,
+                "canonical": 561644,
+                "excluded": 534158,
+                "fair": 27486,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "3524dd922fcdea85560db45e83de34af2f078667cc9334c2deb2af9a740fbc58",
+            "elapsed_seconds": 13.79079100000672,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12785,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 2120028,
+              "canonical": 1056998,
+              "fair": 50540,
+              "excluded": 1006458,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "3524dd922fcdea85560db45e83de34af2f078667cc9334c2deb2af9a740fbc58",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 26.54774329200154
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m07",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 7,
+              "max_first_degree": 7,
+              "max_terms": 6,
+              "seconds": 13098.978512707981,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 3407004,
+              "canonical": 1704349,
+              "excluded": 1659139,
+              "fair": 45210,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 7,
+                "n": 30,
+                "complete": true,
+                "raw": 1586937,
+                "canonical": 793892,
+                "excluded": 773470,
+                "fair": 20422,
+                "unknown": 0
+              },
+              {
+                "m": 7,
+                "n": 31,
+                "complete": true,
+                "raw": 1820067,
+                "canonical": 910457,
+                "excluded": 885669,
+                "fair": 24788,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "84c67edf01d79135badabf6ef4dcca0a58ded57e248e05aba4be7f6b4401c21a",
+            "elapsed_seconds": 22.155189916986274,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12746,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 3407004,
+              "canonical": 1704349,
+              "fair": 45210,
+              "excluded": 1659139,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "84c67edf01d79135badabf6ef4dcca0a58ded57e248e05aba4be7f6b4401c21a",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 43.16718583297916
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m08",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 8,
+              "max_first_degree": 8,
+              "max_terms": 6,
+              "seconds": 13120.277040666988,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 5147901,
+              "canonical": 2569257,
+              "excluded": 2519904,
+              "fair": 49353,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 8,
+                "n": 29,
+                "complete": true,
+                "raw": 2391642,
+                "canonical": 1196404,
+                "excluded": 1174016,
+                "fair": 22388,
+                "unknown": 0
+              },
+              {
+                "m": 8,
+                "n": 30,
+                "complete": true,
+                "raw": 2756259,
+                "canonical": 1372853,
+                "excluded": 1345888,
+                "fair": 26965,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "1f0b394483fcb9b2e01064673a435b56dfa470342f2f0660ecc525eb7c6e05a0",
+            "elapsed_seconds": 33.26730437501101,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12663,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 5147901,
+              "canonical": 2569257,
+              "fair": 49353,
+              "excluded": 2519904,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "1f0b394483fcb9b2e01064673a435b56dfa470342f2f0660ecc525eb7c6e05a0",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 64.09476058400469
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m09",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 9,
+              "max_first_degree": 9,
+              "max_terms": 6,
+              "seconds": 13198.874365583004,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 7336956,
+              "canonical": 3669644,
+              "excluded": 3626047,
+              "fair": 43597,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 9,
+                "n": 28,
+                "complete": true,
+                "raw": 3399202,
+                "canonical": 1700184,
+                "excluded": 1680550,
+                "fair": 19634,
+                "unknown": 0
+              },
+              {
+                "m": 9,
+                "n": 29,
+                "complete": true,
+                "raw": 3937754,
+                "canonical": 1969460,
+                "excluded": 1945497,
+                "fair": 23963,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "acec228ca743d56606ef56ea6a3997cf597071b28360bfb40a5ba54b86ede267",
+            "elapsed_seconds": 60.50739499999327,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12406,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 7336956,
+              "canonical": 3669644,
+              "fair": 43597,
+              "excluded": 3626047,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "acec228ca743d56606ef56ea6a3997cf597071b28360bfb40a5ba54b86ede267",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 86.65680012499797
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m10",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 10,
+              "max_first_degree": 10,
+              "max_terms": 6,
+              "seconds": 13342.458048207976,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 9921536,
+              "canonical": 4953550,
+              "excluded": 4908389,
+              "fair": 45161,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 10,
+                "n": 27,
+                "complete": true,
+                "raw": 4582912,
+                "canonical": 2292192,
+                "excluded": 2271924,
+                "fair": 20268,
+                "unknown": 0
+              },
+              {
+                "m": 10,
+                "n": 28,
+                "complete": true,
+                "raw": 5338624,
+                "canonical": 2661358,
+                "excluded": 2636465,
+                "fair": 24893,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "21605cd6aa60c5fd64c43e9b0e2b23eaceccf1c232eeed66910bb3711fb1e15c",
+            "elapsed_seconds": 79.28859691598336,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 12020,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 9921536,
+              "canonical": 4953550,
+              "fair": 45161,
+              "excluded": 4908389,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "21605cd6aa60c5fd64c43e9b0e2b23eaceccf1c232eeed66910bb3711fb1e15c",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 142.4143551659945
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m11",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 11,
+              "max_first_degree": 11,
+              "max_terms": 6,
+              "seconds": 13380.473796749982,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 12806708,
+              "canonical": 6404826,
+              "excluded": 6364181,
+              "fair": 40645,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 11,
+                "n": 26,
+                "complete": true,
+                "raw": 5896536,
+                "canonical": 2949004,
+                "excluded": 2930493,
+                "fair": 18511,
+                "unknown": 0
+              },
+              {
+                "m": 11,
+                "n": 27,
+                "complete": true,
+                "raw": 6910172,
+                "canonical": 3455822,
+                "excluded": 3433688,
+                "fair": 22134,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "76f6d02be6fc1d7336a29810ca4b0be9fd14529c70bdc6d759f5550d2d1e52ba",
+            "elapsed_seconds": 97.37910558399744,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 11933,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 12806708,
+              "canonical": 6404826,
+              "fair": 40645,
+              "excluded": 6364181,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "76f6d02be6fc1d7336a29810ca4b0be9fd14529c70bdc6d759f5550d2d1e52ba",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 183.7228352079983
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m12",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 12,
+              "max_first_degree": 12,
+              "max_terms": 6,
+              "seconds": 13413.76214412498,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 15863574,
+              "canonical": 7921284,
+              "excluded": 7877913,
+              "fair": 43371,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 12,
+                "n": 25,
+                "complete": true,
+                "raw": 7278462,
+                "canonical": 3640100,
+                "excluded": 3620579,
+                "fair": 19521,
+                "unknown": 0
+              },
+              {
+                "m": 12,
+                "n": 26,
+                "complete": true,
+                "raw": 8585112,
+                "canonical": 4281184,
+                "excluded": 4257334,
+                "fair": 23850,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "fdd7c79534c91abcf058d4d3812c2312764092c84600c6796cc687378523d7aa",
+            "elapsed_seconds": 115.33905224999762,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 11799,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 15863574,
+              "canonical": 7921284,
+              "fair": 43371,
+              "excluded": 7877913,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "fdd7c79534c91abcf058d4d3812c2312764092c84600c6796cc687378523d7aa",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 220.3361825000029
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m13",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 13,
+              "max_first_degree": 13,
+              "max_terms": 6,
+              "seconds": 13772.696018916991,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 18940076,
+              "canonical": 9471776,
+              "excluded": 9431579,
+              "fair": 40197,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 13,
+                "n": 24,
+                "complete": true,
+                "raw": 8656982,
+                "canonical": 4329360,
+                "excluded": 4311054,
+                "fair": 18306,
+                "unknown": 0
+              },
+              {
+                "m": 13,
+                "n": 25,
+                "complete": true,
+                "raw": 10283094,
+                "canonical": 5142416,
+                "excluded": 5120525,
+                "fair": 21891,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "2ed85e7974efa98ff83754f8a3b69393182eef975794cb03227b81bc929572fd",
+            "elapsed_seconds": 149.60844891599845,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 10531,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 18940076,
+              "canonical": 9471776,
+              "fair": 40197,
+              "excluded": 9431579,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "2ed85e7974efa98ff83754f8a3b69393182eef975794cb03227b81bc929572fd",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 224.07044654199854
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m14",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 14,
+              "max_first_degree": 14,
+              "max_terms": 6,
+              "seconds": 13846.728163124993,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 21873116,
+              "canonical": 10922581,
+              "excluded": 10882000,
+              "fair": 40581,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 14,
+                "n": 23,
+                "complete": true,
+                "raw": 9956137,
+                "canonical": 4979040,
+                "excluded": 4961224,
+                "fair": 17816,
+                "unknown": 0
+              },
+              {
+                "m": 14,
+                "n": 24,
+                "complete": true,
+                "raw": 11916979,
+                "canonical": 5943541,
+                "excluded": 5920776,
+                "fair": 22765,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "2c43667e160017969e417239889a5b43e0f444173edc9a88bb257a18d340bd9a",
+            "elapsed_seconds": 207.02735445901635,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 9978,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 21873116,
+              "canonical": 10922581,
+              "fair": 40581,
+              "excluded": 10882000,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "2c43667e160017969e417239889a5b43e0f444173edc9a88bb257a18d340bd9a",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 258.9508103750122
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m15",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 15,
+              "max_first_degree": 15,
+              "max_terms": 6,
+              "seconds": 13884.641499249992,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 24500976,
+              "canonical": 12252431,
+              "excluded": 12216527,
+              "fair": 35904,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 15,
+                "n": 22,
+                "complete": true,
+                "raw": 11101637,
+                "canonical": 5551790,
+                "excluded": 5535290,
+                "fair": 16500,
+                "unknown": 0
+              },
+              {
+                "m": 15,
+                "n": 23,
+                "complete": true,
+                "raw": 13399339,
+                "canonical": 6700641,
+                "excluded": 6681237,
+                "fair": 19404,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "b834874e1a812d2b49b2fc68c7f5db3836fd20602e920e63299210c60a6c5414",
+            "elapsed_seconds": 247.25696733299992,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 9758,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 24500976,
+              "canonical": 12252431,
+              "fair": 35904,
+              "excluded": 12216527,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "b834874e1a812d2b49b2fc68c7f5db3836fd20602e920e63299210c60a6c5414",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 294.6480760000122
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m16",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 16,
+              "max_first_degree": 16,
+              "max_terms": 6,
+              "seconds": 14399.98464124999,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 26675163,
+              "canonical": 13320662,
+              "excluded": 13284639,
+              "fair": 36023,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 16,
+                "n": 21,
+                "complete": true,
+                "raw": 12026436,
+                "canonical": 6014254,
+                "excluded": 5998469,
+                "fair": 15785,
+                "unknown": 0
+              },
+              {
+                "m": 16,
+                "n": 22,
+                "complete": true,
+                "raw": 14648727,
+                "canonical": 7306408,
+                "excluded": 7286170,
+                "fair": 20238,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "312f7a2984ad1cbb7f35ff279747be9a8d16b478d8d2d44fa41029b8059f69cc",
+            "elapsed_seconds": 177.35697479199735,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7964,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 26675163,
+              "canonical": 13320662,
+              "fair": 36023,
+              "excluded": 13284639,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "312f7a2984ad1cbb7f35ff279747be9a8d16b478d8d2d44fa41029b8059f69cc",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 337.7897614579997
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m17",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 17,
+              "max_first_degree": 17,
+              "max_terms": 6,
+              "seconds": 14399.985667083005,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 28270944,
+              "canonical": 14137544,
+              "excluded": 14105754,
+              "fair": 31790,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 17,
+                "n": 20,
+                "complete": true,
+                "raw": 12675612,
+                "canonical": 6338842,
+                "excluded": 6324126,
+                "fair": 14716,
+                "unknown": 0
+              },
+              {
+                "m": 17,
+                "n": 21,
+                "complete": true,
+                "raw": 15595332,
+                "canonical": 7798702,
+                "excluded": 7781628,
+                "fair": 17074,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "d3dcab03b46efe380c5eda9b7679951f237ac944d425fd2cb698c6927906e0cc",
+            "elapsed_seconds": 190.90502654202282,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7963,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 28270944,
+              "canonical": 14137544,
+              "fair": 31790,
+              "excluded": 14105754,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "d3dcab03b46efe380c5eda9b7679951f237ac944d425fd2cb698c6927906e0cc",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 394.78553895797813
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m18",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 18,
+              "max_first_degree": 18,
+              "max_terms": 6,
+              "seconds": 14399.993465874984,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 29195976,
+              "canonical": 14579382,
+              "excluded": 14548411,
+              "fair": 30971,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 18,
+                "n": 19,
+                "complete": true,
+                "raw": 13010272,
+                "canonical": 6506194,
+                "excluded": 6492599,
+                "fair": 13595,
+                "unknown": 0
+              },
+              {
+                "m": 18,
+                "n": 20,
+                "complete": true,
+                "raw": 16185704,
+                "canonical": 8073188,
+                "excluded": 8055812,
+                "fair": 17376,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "db0694cd724a3b9d57a182ac9798c707c53afc3158080066a0d8529d82b71749",
+            "elapsed_seconds": 200.32535383300274,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 7960,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 29195976,
+              "canonical": 14579382,
+              "fair": 30971,
+              "excluded": 14548411,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "db0694cd724a3b9d57a182ac9798c707c53afc3158080066a0d8529d82b71749",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 426.7970477499766
+          },
+          "unknown": []
+        },
+        {
+          "directory": "round015-fullcpu/output/six38-m19",
+          "summary": {
+            "config": {
+              "total": 38,
+              "min_total": 37,
+              "min_degree": 19,
+              "max_first_degree": 19,
+              "max_terms": 6,
+              "seconds": 13551.487990708003,
+              "version": 3
+            },
+            "complete": true,
+            "counts": {
+              "raw": 16386304,
+              "canonical": 4099128,
+              "excluded": 4099128,
+              "fair": 0,
+              "unknown": 0
+            },
+            "shards": [
+              {
+                "m": 19,
+                "n": 19,
+                "complete": true,
+                "raw": 16386304,
+                "canonical": 4099128,
+                "excluded": 4099128,
+                "fair": 0,
+                "unknown": 0
+              }
+            ],
+            "ledger_sha256_uncompressed": "f2681adf398624e872e6b3cd793c843d2c404bbc41dd2670c1f46066a8417112",
+            "elapsed_seconds": 64.54940187500324,
+            "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+            "pid": 11426,
+            "script_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710"
+          },
+          "verification": {
+            "verified": true,
+            "counts": {
+              "raw": 16386304,
+              "canonical": 4099128,
+              "fair": 0,
+              "excluded": 4099128,
+              "unknown": 0
+            },
+            "ledger_sha256_uncompressed": "f2681adf398624e872e6b3cd793c843d2c404bbc41dd2670c1f46066a8417112",
+            "verifier_sha256": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+            "elapsed_seconds": 121.40543266700115
+          },
+          "unknown": []
+        }
+      ]
+    }
+  ]
+}

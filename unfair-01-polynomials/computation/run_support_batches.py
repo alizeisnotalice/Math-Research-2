@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bounded parallel exact search followed by independent full-ledger checking.
+"""Parallel exact search followed by independent full-ledger checking.
 
 Input is a list of {tag, min_total, total, max_terms}. Each first degree is a
 separate process. No result status is inferred from timeout or process failure.
@@ -20,10 +20,11 @@ def main():
     ap.add_argument('config', type=Path)
     ap.add_argument('--out', type=Path, required=True)
     ap.add_argument('--workers', type=int, default=os.cpu_count())
-    ap.add_argument('--seconds', type=float, default=14400)
+    ap.add_argument('--seconds', type=float, default=0,
+                    help='Optional batch deadline; 0 (default) imposes no deadline.')
     args = ap.parse_args()
     assert Path('/Volumes/data').is_mount()
-    assert 1 <= args.workers and 0 < args.seconds <= 14400
+    assert 1 <= args.workers and args.seconds >= 0
     configs = json.loads(args.config.read_text())
     assert configs and len({c['tag'] for c in configs}) == len(configs)
     for c in configs:
@@ -32,7 +33,10 @@ def main():
     args.out.mkdir(parents=True, exist_ok=True)
     base = Path(__file__).resolve().parent
     start = time.monotonic()
-    deadline = start + args.seconds
+    deadline = start + args.seconds if args.seconds else None
+
+    def remaining():
+        return max(0.01, deadline-time.monotonic()) if deadline is not None else None
 
     def run(task):
         c, m = task
@@ -44,10 +48,12 @@ def main():
              '--total', str(c['total']), '--min-total', str(c['min_total']),
              '--min-degree', str(m), '--max-first-degree', str(m),
              '--max-terms', str(c['max_terms']),
-             '--seconds', str(max(1, deadline-time.monotonic())), '--out', str(out)],
+             # The legacy enumerator requires a positive float; this sentinel
+             # removes any practical deadline without altering running jobs.
+             '--seconds', str(remaining() if deadline is not None else 1e100), '--out', str(out)],
             [sys.executable, str(base/'verify_support_layer.py'), str(out)]]
         for phase, command in zip(('search', 'verify'), commands):
-            if time.monotonic() >= deadline:
+            if deadline is not None and time.monotonic() >= deadline:
                 state.update(status='unknown_batch_deadline', phase=phase)
                 break
             with (out/(phase+'.stdout')).open('w') as stdout, (out/(phase+'.stderr')).open('w') as stderr:
@@ -57,7 +63,7 @@ def main():
                 state.update(phase=phase, pid=child.pid, status='running', process_exited=False)
                 (out/'job.json').write_text(json.dumps(state))
                 try:
-                    code = child.wait(timeout=max(0.01, deadline-time.monotonic()))
+                    code = child.wait(timeout=remaining())
                 except subprocess.TimeoutExpired:
                     child.kill()
                     child.wait()
@@ -84,6 +90,7 @@ def main():
         futures = [pool.submit(run,task) for task in tasks]
         jobs = [f.result() for f in as_completed(futures)]
     report = {'workers':args.workers, 'configs':configs, 'jobs':jobs,
+              'deadline_seconds':args.seconds or None,
               'elapsed_seconds':time.monotonic()-start,
               'all_workers_exited':True}
     (args.out/'batch.json').write_text(json.dumps(report,indent=2)+'\n')

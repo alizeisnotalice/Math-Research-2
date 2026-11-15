@@ -8,6 +8,6 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 开放；全n矩形重数≤2，精确峰数/峰距至n7，原极限未闭合 | 第5轮完成 | 拼接归一化、前缀收缩与GPU构造搜索 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；已证有限/无界子类；直接支配普遍性已否定，失败型仍可代数排除 | 第14轮完成 | 固定偏移阈值的显式化与有限端点余量 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；已证有限/无界子类；直接支配普遍性已否定，失败型仍可代数排除 | 第15轮完成 | k4/k6线性区域的独立证书与CPU/GPU持续搜索 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。

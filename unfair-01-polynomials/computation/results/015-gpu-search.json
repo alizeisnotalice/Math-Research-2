@@ -1,0 +1,5473 @@
+{
+  "hardware": "Apple M6, 12 GPU cores, Metal 4",
+  "backend": "PyTorch 2.15.0 MPS, float32",
+  "cpu_recheck": "NumPy 2.5.4 float64 in searcher; independent exact verification separately",
+  "gpu_sample": {
+    "observed_at": "2026-11-15T21:16:10.616370",
+    "performance_statistics": "|   \"PerformanceStatistics\" = {\"In use system memory (driver)\"=0,\"Alloc system memory\"=2619310080,\"Tiler Utilization %\"=2,\"recoveryCount\"=0,\"lastRecoveryTime\"=0,\"Renderer Utilization %\"=100,\"TiledSceneBytes\"=1048576,\"Device Utilization %\"=100,\"SplitSceneCount\"=0,\"Allocated PB Size\"=58720256,\"In use system memory\"=1714094080}",
+    "source": "ioreg AGXAccelerator actual hardware counters"
+  },
+  "runs": [
+    {
+      "directory": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m24n40",
+      "config": {
+        "m": 24,
+        "n": 40,
+        "starts": 32768,
+        "steps": 12000,
+        "restart_every": 2000,
+        "seed": 2026111502,
+        "out": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m24n40",
+        "torch": "2.15.0",
+        "numpy": "2.5.4",
+        "device": "mps",
+        "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+        "dtype": "float32",
+        "pid": 11987,
+        "script_sha256": "c2d5ae1b97ce41cc52058b9fa412f11f5c24549fd4928ea3cc758f1dc43487d4",
+        "scope": "degrees fixed; zeros allowed; 0.1<a1<0.9; projected numerical search only"
+      },
+      "source": "gpu_factor_search_v1.py",
+      "complete": true,
+      "process_exited_verified": true,
+      "fully_trained_initializations": 196608,
+      "history": [
+        {
+          "step": 0,
+          "elapsed_seconds": 0.3157420000061393,
+          "min_mse_gpu": 0.06905602663755417,
+          "best_max_residual_float64": 0.6585109403496965,
+          "allocated_bytes": 69473536,
+          "driver_bytes": 1116422144
+        },
+        {
+          "step": 100,
+          "elapsed_seconds": 2.16848070899141,
+          "min_mse_gpu": 0.0007477061590179801,
+          "best_max_residual_float64": 0.12167471647262573,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 200,
+          "elapsed_seconds": 4.048515083995881,
+          "min_mse_gpu": 0.0005982937291264534,
+          "best_max_residual_float64": 0.11018199473619461,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 300,
+          "elapsed_seconds": 5.931228083994938,
+          "min_mse_gpu": 0.0005069185863249004,
+          "best_max_residual_float64": 0.10616005212068558,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 400,
+          "elapsed_seconds": 7.807638375001261,
+          "min_mse_gpu": 0.00046500726602971554,
+          "best_max_residual_float64": 0.10420815646648407,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 500,
+          "elapsed_seconds": 9.659711042011622,
+          "min_mse_gpu": 0.0004415359580889344,
+          "best_max_residual_float64": 0.10308929532766342,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 600,
+          "elapsed_seconds": 11.581405208999058,
+          "min_mse_gpu": 0.00042679504258558154,
+          "best_max_residual_float64": 0.10237913578748703,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 700,
+          "elapsed_seconds": 13.446222250000574,
+          "min_mse_gpu": 0.0004168139130342752,
+          "best_max_residual_float64": 0.10189598053693771,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 800,
+          "elapsed_seconds": 15.302957459003665,
+          "min_mse_gpu": 0.00040968594839796424,
+          "best_max_residual_float64": 0.10155022144317627,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 900,
+          "elapsed_seconds": 17.19551562500419,
+          "min_mse_gpu": 0.0004043871886096895,
+          "best_max_residual_float64": 0.10129308700561523,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1000,
+          "elapsed_seconds": 19.057529750018148,
+          "min_mse_gpu": 0.00040032394463196397,
+          "best_max_residual_float64": 0.10109596699476242,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1100,
+          "elapsed_seconds": 20.934871125005884,
+          "min_mse_gpu": 0.0003971293044742197,
+          "best_max_residual_float64": 0.10094109922647476,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1200,
+          "elapsed_seconds": 22.819027499994263,
+          "min_mse_gpu": 0.00039456592639908195,
+          "best_max_residual_float64": 0.10081694275140762,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1300,
+          "elapsed_seconds": 24.661637792014517,
+          "min_mse_gpu": 0.00039247339009307325,
+          "best_max_residual_float64": 0.10071568936109543,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1400,
+          "elapsed_seconds": 26.528943209006684,
+          "min_mse_gpu": 0.0003907403734046966,
+          "best_max_residual_float64": 0.10063192993402481,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1500,
+          "elapsed_seconds": 28.375429375009844,
+          "min_mse_gpu": 0.00038928736466914415,
+          "best_max_residual_float64": 0.10056175291538239,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1600,
+          "elapsed_seconds": 30.257346208993113,
+          "min_mse_gpu": 0.00038805443909950554,
+          "best_max_residual_float64": 0.10050232708454132,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1700,
+          "elapsed_seconds": 32.120474666997325,
+          "min_mse_gpu": 0.00038700029836036265,
+          "best_max_residual_float64": 0.1004515215754509,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1800,
+          "elapsed_seconds": 33.95376758399652,
+          "min_mse_gpu": 0.0003860904835164547,
+          "best_max_residual_float64": 0.10040771961212158,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1900,
+          "elapsed_seconds": 35.764658291998785,
+          "min_mse_gpu": 0.0003852992376778275,
+          "best_max_residual_float64": 0.10036966949701309,
+          "allocated_bytes": 68687104,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2000,
+          "elapsed_seconds": 37.58946404201561,
+          "min_mse_gpu": 0.06474992632865906,
+          "best_max_residual_float64": 0.7196229653693935,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2100,
+          "elapsed_seconds": 39.432202416996006,
+          "min_mse_gpu": 0.0006231917068362236,
+          "best_max_residual_float64": 0.1337944120168686,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2200,
+          "elapsed_seconds": 41.257349916995736,
+          "min_mse_gpu": 0.00047639451804570854,
+          "best_max_residual_float64": 0.11638759076595306,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2300,
+          "elapsed_seconds": 43.07872333400883,
+          "min_mse_gpu": 0.00042791233863681555,
+          "best_max_residual_float64": 0.11008593440055847,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2400,
+          "elapsed_seconds": 44.89112929199473,
+          "min_mse_gpu": 0.0004048123664688319,
+          "best_max_residual_float64": 0.10696256905794144,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2500,
+          "elapsed_seconds": 46.72198741699685,
+          "min_mse_gpu": 0.00039167702198028564,
+          "best_max_residual_float64": 0.10514792054891586,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2600,
+          "elapsed_seconds": 48.58308987499913,
+          "min_mse_gpu": 0.00038337099249474704,
+          "best_max_residual_float64": 0.10398508608341217,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2700,
+          "elapsed_seconds": 50.3908361250069,
+          "min_mse_gpu": 0.000377729709725827,
+          "best_max_residual_float64": 0.10318826884031296,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2800,
+          "elapsed_seconds": 52.22355612501269,
+          "min_mse_gpu": 0.0003736956277862191,
+          "best_max_residual_float64": 0.1026148647069931,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2900,
+          "elapsed_seconds": 54.038442791992566,
+          "min_mse_gpu": 0.0003706960123963654,
+          "best_max_residual_float64": 0.10218650847673416,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3000,
+          "elapsed_seconds": 55.846886375016766,
+          "min_mse_gpu": 0.00036839619860984385,
+          "best_max_residual_float64": 0.10185693204402924,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3100,
+          "elapsed_seconds": 57.71014408400515,
+          "min_mse_gpu": 0.0003665888507384807,
+          "best_max_residual_float64": 0.10159720480442047,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3200,
+          "elapsed_seconds": 59.51924141700147,
+          "min_mse_gpu": 0.00036513947998173535,
+          "best_max_residual_float64": 0.10138844698667526,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3300,
+          "elapsed_seconds": 61.351089875010075,
+          "min_mse_gpu": 0.00036395707866176963,
+          "best_max_residual_float64": 0.1012178435921669,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3400,
+          "elapsed_seconds": 63.15513208400807,
+          "min_mse_gpu": 0.00036297840415500104,
+          "best_max_residual_float64": 0.10107642412185669,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3500,
+          "elapsed_seconds": 64.95272479200503,
+          "min_mse_gpu": 0.00036215822910889983,
+          "best_max_residual_float64": 0.10095775872468948,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3600,
+          "elapsed_seconds": 66.83363500001724,
+          "min_mse_gpu": 0.00036146334605291486,
+          "best_max_residual_float64": 0.10085711628198624,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3700,
+          "elapsed_seconds": 68.65575579201686,
+          "min_mse_gpu": 0.0003608691622503102,
+          "best_max_residual_float64": 0.100770965218544,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3800,
+          "elapsed_seconds": 70.48424108399195,
+          "min_mse_gpu": 0.00036035661469213665,
+          "best_max_residual_float64": 0.1006966084241867,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3900,
+          "elapsed_seconds": 72.32185454200953,
+          "min_mse_gpu": 0.0003599112678784877,
+          "best_max_residual_float64": 0.1006319522857666,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4000,
+          "elapsed_seconds": 74.14383950000047,
+          "min_mse_gpu": 0.0629381313920021,
+          "best_max_residual_float64": 0.6253532614880961,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4100,
+          "elapsed_seconds": 76.01756883400958,
+          "min_mse_gpu": 0.0007181923720054328,
+          "best_max_residual_float64": 0.12619111018954854,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4200,
+          "elapsed_seconds": 77.83564104200923,
+          "min_mse_gpu": 0.0005700741894543171,
+          "best_max_residual_float64": 0.10698861305750995,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4300,
+          "elapsed_seconds": 79.63105954200728,
+          "min_mse_gpu": 0.0005202349275350571,
+          "best_max_residual_float64": 0.10029328410318428,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4400,
+          "elapsed_seconds": 81.45092858400312,
+          "min_mse_gpu": 0.0004748305364046246,
+          "best_max_residual_float64": 0.09707263054974646,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4500,
+          "elapsed_seconds": 83.26494191700476,
+          "min_mse_gpu": 0.0004486478865146637,
+          "best_max_residual_float64": 0.09532636467406164,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4600,
+          "elapsed_seconds": 85.10035483399406,
+          "min_mse_gpu": 0.0004322458407841623,
+          "best_max_residual_float64": 0.0941284831059761,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4700,
+          "elapsed_seconds": 86.9252878339903,
+          "min_mse_gpu": 0.0004211539635434747,
+          "best_max_residual_float64": 0.09330692791470696,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4800,
+          "elapsed_seconds": 88.72563929200987,
+          "min_mse_gpu": 0.0004132379835937172,
+          "best_max_residual_float64": 0.09271500527546195,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4900,
+          "elapsed_seconds": 90.5411377499986,
+          "min_mse_gpu": 0.00040735621587373316,
+          "best_max_residual_float64": 0.09227227208333133,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5000,
+          "elapsed_seconds": 92.39163929200731,
+          "min_mse_gpu": 0.00040284640272147954,
+          "best_max_residual_float64": 0.0919313539429254,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5100,
+          "elapsed_seconds": 94.24012554201181,
+          "min_mse_gpu": 0.00039930123602971435,
+          "best_max_residual_float64": 0.09166236749953427,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5200,
+          "elapsed_seconds": 96.05622991701239,
+          "min_mse_gpu": 0.00039645531796850264,
+          "best_max_residual_float64": 0.09144598839801787,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5300,
+          "elapsed_seconds": 97.87951291701756,
+          "min_mse_gpu": 0.00039413245394825935,
+          "best_max_residual_float64": 0.09126897922166322,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5400,
+          "elapsed_seconds": 99.69906866701785,
+          "min_mse_gpu": 0.0003922086616512388,
+          "best_max_residual_float64": 0.09112209304509733,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5500,
+          "elapsed_seconds": 101.54035508399829,
+          "min_mse_gpu": 0.0003905943885911256,
+          "best_max_residual_float64": 0.09099890714253078,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5600,
+          "elapsed_seconds": 103.39599062499474,
+          "min_mse_gpu": 0.0003892265376634896,
+          "best_max_residual_float64": 0.09089421865203562,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5700,
+          "elapsed_seconds": 105.21628745901398,
+          "min_mse_gpu": 0.00038805563235655427,
+          "best_max_residual_float64": 0.09080457375034712,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5800,
+          "elapsed_seconds": 107.05719387499266,
+          "min_mse_gpu": 0.000387044798117131,
+          "best_max_residual_float64": 0.09072722582367021,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5900,
+          "elapsed_seconds": 108.88662379200105,
+          "min_mse_gpu": 0.0003861655422952026,
+          "best_max_residual_float64": 0.09065989976368982,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6000,
+          "elapsed_seconds": 110.69077412501792,
+          "min_mse_gpu": 0.06769005954265594,
+          "best_max_residual_float64": 0.701800485082305,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6100,
+          "elapsed_seconds": 112.55888679201598,
+          "min_mse_gpu": 0.0005697953165508807,
+          "best_max_residual_float64": 0.11958536505699158,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6200,
+          "elapsed_seconds": 114.35918116700486,
+          "min_mse_gpu": 0.000451967294793576,
+          "best_max_residual_float64": 0.10923279821872711,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6300,
+          "elapsed_seconds": 116.18458050000481,
+          "min_mse_gpu": 0.00041312954272143543,
+          "best_max_residual_float64": 0.10559280216693878,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6400,
+          "elapsed_seconds": 117.9983745420177,
+          "min_mse_gpu": 0.00039466022280976176,
+          "best_max_residual_float64": 0.10382060706615448,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6500,
+          "elapsed_seconds": 119.80312945900369,
+          "min_mse_gpu": 0.00038418013718910515,
+          "best_max_residual_float64": 0.1028040200471878,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6600,
+          "elapsed_seconds": 121.6745899170055,
+          "min_mse_gpu": 0.00037756605888716877,
+          "best_max_residual_float64": 0.10215876996517181,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6700,
+          "elapsed_seconds": 123.4749909590173,
+          "min_mse_gpu": 0.00037308139144442976,
+          "best_max_residual_float64": 0.10171987116336823,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6800,
+          "elapsed_seconds": 125.28227158400114,
+          "min_mse_gpu": 0.000369879329809919,
+          "best_max_residual_float64": 0.10140586644411087,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6900,
+          "elapsed_seconds": 127.11419729201589,
+          "min_mse_gpu": 0.00036750143044628203,
+          "best_max_residual_float64": 0.10117241740226746,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7000,
+          "elapsed_seconds": 128.90757662500255,
+          "min_mse_gpu": 0.0003656802873592824,
+          "best_max_residual_float64": 0.10099349915981293,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7100,
+          "elapsed_seconds": 130.73978608401376,
+          "min_mse_gpu": 0.0003642505034804344,
+          "best_max_residual_float64": 0.10085296630859375,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7200,
+          "elapsed_seconds": 132.57470566700795,
+          "min_mse_gpu": 0.00036310480209067464,
+          "best_max_residual_float64": 0.10074032843112946,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7300,
+          "elapsed_seconds": 134.3721471670142,
+          "min_mse_gpu": 0.0003621708892751485,
+          "best_max_residual_float64": 0.10064849257469177,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7400,
+          "elapsed_seconds": 136.20069091700134,
+          "min_mse_gpu": 0.00036139844451099634,
+          "best_max_residual_float64": 0.10057251900434494,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7500,
+          "elapsed_seconds": 138.01110666699242,
+          "min_mse_gpu": 0.00036075146635994315,
+          "best_max_residual_float64": 0.10050889104604721,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7600,
+          "elapsed_seconds": 139.88750412501395,
+          "min_mse_gpu": 0.00036020364495925605,
+          "best_max_residual_float64": 0.10045502334833145,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7700,
+          "elapsed_seconds": 141.73310924999532,
+          "min_mse_gpu": 0.0003597353643272072,
+          "best_max_residual_float64": 0.10040896385908127,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7800,
+          "elapsed_seconds": 143.5403931250039,
+          "min_mse_gpu": 0.00035933151957578957,
+          "best_max_residual_float64": 0.10036926716566086,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7900,
+          "elapsed_seconds": 145.3383590420126,
+          "min_mse_gpu": 0.0003589810221455991,
+          "best_max_residual_float64": 0.1003347858786583,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8000,
+          "elapsed_seconds": 147.1575191669981,
+          "min_mse_gpu": 0.06691030412912369,
+          "best_max_residual_float64": 0.6621614981760116,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8100,
+          "elapsed_seconds": 148.9878954589949,
+          "min_mse_gpu": 0.0007814039126969874,
+          "best_max_residual_float64": 0.14416972508180592,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8200,
+          "elapsed_seconds": 150.7858532500104,
+          "min_mse_gpu": 0.0005407395074144006,
+          "best_max_residual_float64": 0.11435838759506112,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8300,
+          "elapsed_seconds": 152.61503870901652,
+          "min_mse_gpu": 0.0004656277596950531,
+          "best_max_residual_float64": 0.1048903320805401,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8400,
+          "elapsed_seconds": 154.4184060000116,
+          "min_mse_gpu": 0.00043040039599873126,
+          "best_max_residual_float64": 0.10030427912975881,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8500,
+          "elapsed_seconds": 156.24295804201392,
+          "min_mse_gpu": 0.00041047431295737624,
+          "best_max_residual_float64": 0.09765001605381585,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8600,
+          "elapsed_seconds": 158.08848516701255,
+          "min_mse_gpu": 0.00039789298898540437,
+          "best_max_residual_float64": 0.09594638331003225,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8700,
+          "elapsed_seconds": 159.90389025001787,
+          "min_mse_gpu": 0.0003893474058713764,
+          "best_max_residual_float64": 0.09477523014356848,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8800,
+          "elapsed_seconds": 161.73429212500923,
+          "min_mse_gpu": 0.00038323187618516386,
+          "best_max_residual_float64": 0.09392919540450961,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8900,
+          "elapsed_seconds": 163.5851435000077,
+          "min_mse_gpu": 0.0003786798915825784,
+          "best_max_residual_float64": 0.09329489464874996,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9000,
+          "elapsed_seconds": 165.38812712501385,
+          "min_mse_gpu": 0.00037518609315156937,
+          "best_max_residual_float64": 0.09280515039073123,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9100,
+          "elapsed_seconds": 167.24725954199675,
+          "min_mse_gpu": 0.0003724374691955745,
+          "best_max_residual_float64": 0.0924180576240552,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9200,
+          "elapsed_seconds": 169.0566285419918,
+          "min_mse_gpu": 0.00037023075856268406,
+          "best_max_residual_float64": 0.09210600382014889,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9300,
+          "elapsed_seconds": 170.86858970901812,
+          "min_mse_gpu": 0.0003684285911731422,
+          "best_max_residual_float64": 0.09185034542974435,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9400,
+          "elapsed_seconds": 172.69674262500484,
+          "min_mse_gpu": 0.0003669355937745422,
+          "best_max_residual_float64": 0.09163788990940347,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9500,
+          "elapsed_seconds": 174.4977677089919,
+          "min_mse_gpu": 0.00036568325594998896,
+          "best_max_residual_float64": 0.09145918416009735,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9600,
+          "elapsed_seconds": 176.3631987500121,
+          "min_mse_gpu": 0.0003646214900072664,
+          "best_max_residual_float64": 0.09130739974210655,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9700,
+          "elapsed_seconds": 178.17414570899564,
+          "min_mse_gpu": 0.0003637125773821026,
+          "best_max_residual_float64": 0.09117725458395398,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9800,
+          "elapsed_seconds": 179.98741679199156,
+          "min_mse_gpu": 0.0003629282582551241,
+          "best_max_residual_float64": 0.09106473579572594,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9900,
+          "elapsed_seconds": 181.81967358401744,
+          "min_mse_gpu": 0.00036224620998837054,
+          "best_max_residual_float64": 0.09096677210643733,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10000,
+          "elapsed_seconds": 183.62263070899644,
+          "min_mse_gpu": 0.06711120158433914,
+          "best_max_residual_float64": 0.6243482015803625,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10100,
+          "elapsed_seconds": 185.4429562500154,
+          "min_mse_gpu": 0.00046917737927287817,
+          "best_max_residual_float64": 0.11540599912405014,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10200,
+          "elapsed_seconds": 187.27606637499412,
+          "min_mse_gpu": 0.000407763960538432,
+          "best_max_residual_float64": 0.10270926859382001,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10300,
+          "elapsed_seconds": 189.09944091699435,
+          "min_mse_gpu": 0.00038675518590025604,
+          "best_max_residual_float64": 0.1004714832810445,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10400,
+          "elapsed_seconds": 190.93388625001535,
+          "min_mse_gpu": 0.00037670371239073575,
+          "best_max_residual_float64": 0.09959526548918785,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10500,
+          "elapsed_seconds": 192.76714466701378,
+          "min_mse_gpu": 0.00037100096233189106,
+          "best_max_residual_float64": 0.0989671839019568,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10600,
+          "elapsed_seconds": 194.62018083399744,
+          "min_mse_gpu": 0.0003674080944620073,
+          "best_max_residual_float64": 0.09711116571235667,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10700,
+          "elapsed_seconds": 196.45586895899032,
+          "min_mse_gpu": 0.00036497716791927814,
+          "best_max_residual_float64": 0.09617580542870963,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10800,
+          "elapsed_seconds": 198.25543262501014,
+          "min_mse_gpu": 0.000363245140761137,
+          "best_max_residual_float64": 0.09561491786644893,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10900,
+          "elapsed_seconds": 200.05993120899075,
+          "min_mse_gpu": 0.00036196125438436866,
+          "best_max_residual_float64": 0.09524360886235339,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11000,
+          "elapsed_seconds": 201.89856304199202,
+          "min_mse_gpu": 0.00036097969859838486,
+          "best_max_residual_float64": 0.09498135551217324,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11100,
+          "elapsed_seconds": 203.75190850000945,
+          "min_mse_gpu": 0.00036021030973643064,
+          "best_max_residual_float64": 0.0947873959781953,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11200,
+          "elapsed_seconds": 205.5590757089958,
+          "min_mse_gpu": 0.000359594589099288,
+          "best_max_residual_float64": 0.09463895210364148,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11300,
+          "elapsed_seconds": 207.38890633400297,
+          "min_mse_gpu": 0.00035909321741200984,
+          "best_max_residual_float64": 0.0945222143740998,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11400,
+          "elapsed_seconds": 209.19362179201562,
+          "min_mse_gpu": 0.0003586791572161019,
+          "best_max_residual_float64": 0.0944283909406014,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11500,
+          "elapsed_seconds": 211.02977645900683,
+          "min_mse_gpu": 0.00035833255969919264,
+          "best_max_residual_float64": 0.09435472635698039,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11600,
+          "elapsed_seconds": 212.88830416699057,
+          "min_mse_gpu": 0.0003580394259188324,
+          "best_max_residual_float64": 0.09428369950560933,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11700,
+          "elapsed_seconds": 214.69481200000155,
+          "min_mse_gpu": 0.00035778895835392177,
+          "best_max_residual_float64": 0.0942344192106579,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11800,
+          "elapsed_seconds": 216.51960904200678,
+          "min_mse_gpu": 0.00035757318255491555,
+          "best_max_residual_float64": 0.0943946365235715,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11900,
+          "elapsed_seconds": 218.31981895901845,
+          "min_mse_gpu": 0.00035738584119826555,
+          "best_max_residual_float64": 0.09415020001013907,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 12000,
+          "elapsed_seconds": 220.1186082920176,
+          "min_mse_gpu": 0.06829288601875305,
+          "best_max_residual_float64": 0.5831712538450262,
+          "allocated_bytes": 67900672,
+          "driver_bytes": 1116405760
+        }
+      ],
+      "best_saved_case": {
+        "A": [
+          1.0,
+          0.8991742730140686,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.014325852505862713,
+          0.015805022791028023,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.018381742760539055,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "B": [
+          1.0,
+          0.1008257269859314,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.022366473451256752,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.023694755509495735,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9698413610458374,
+          0.04511828348040581,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.021633777767419815,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "max_residual_float64": 0.09065989976368982,
+        "l2_residual_float64": 0.1796310222441612,
+        "status": "numerical_only"
+      },
+      "best_observed_residual_float64": 0.09065989976368982,
+      "note": "v1 performed an extra final-step restart; that incomplete block is not counted."
+    },
+    {
+      "directory": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m32n48d2",
+      "config": {
+        "m": 32,
+        "n": 48,
+        "starts": 32768,
+        "steps": 12000,
+        "fractional_index": 2,
+        "margin": 0.02,
+        "restart_every": 2000,
+        "seed": 2026111503,
+        "out": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m32n48d2",
+        "torch": "2.15.0",
+        "numpy": "2.5.4",
+        "device": "mps",
+        "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+        "dtype": "float32",
+        "pid": 12813,
+        "script_sha256": "2080fcc0fbfb72040f736606878d02e8f9f307f9f1b18abb43a8514a4ee8a4cf",
+        "scope": "degrees fixed; zeros allowed; first fractional index d; projected numerical search only"
+      },
+      "source": "gpu_factor_search.py",
+      "complete": true,
+      "process_exited_verified": true,
+      "fully_trained_initializations": 196608,
+      "history": [
+        {
+          "step": 0,
+          "elapsed_seconds": 0.4921167910215445,
+          "min_mse_gpu": 0.06927567720413208,
+          "best_max_residual_float64": 0.5704774367056431,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 100,
+          "elapsed_seconds": 3.4368994579999708,
+          "min_mse_gpu": 0.005352657288312912,
+          "best_max_residual_float64": 0.1941631972233383,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 200,
+          "elapsed_seconds": 6.358761041017715,
+          "min_mse_gpu": 0.004906797781586647,
+          "best_max_residual_float64": 0.20395332665269494,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 300,
+          "elapsed_seconds": 9.277289125020616,
+          "min_mse_gpu": 0.0037705206777900457,
+          "best_max_residual_float64": 0.202376998920063,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 400,
+          "elapsed_seconds": 12.209137916011969,
+          "min_mse_gpu": 0.003737220773473382,
+          "best_max_residual_float64": 0.20147343744817592,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 500,
+          "elapsed_seconds": 15.103720000013709,
+          "min_mse_gpu": 0.003737121121957898,
+          "best_max_residual_float64": 0.20162768694003996,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 600,
+          "elapsed_seconds": 18.091193583008135,
+          "min_mse_gpu": 0.003737121121957898,
+          "best_max_residual_float64": 0.20164220646399222,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 700,
+          "elapsed_seconds": 21.010228625003947,
+          "min_mse_gpu": 0.003737121354788542,
+          "best_max_residual_float64": 0.2016432334139031,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 800,
+          "elapsed_seconds": 23.91173074999824,
+          "min_mse_gpu": 0.003737121121957898,
+          "best_max_residual_float64": 0.2016432736716569,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 900,
+          "elapsed_seconds": 26.84099050000077,
+          "min_mse_gpu": 0.003737120656296611,
+          "best_max_residual_float64": 0.20164317456302028,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1000,
+          "elapsed_seconds": 29.73802066600183,
+          "min_mse_gpu": 0.003737120656296611,
+          "best_max_residual_float64": 0.2016432383441995,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1100,
+          "elapsed_seconds": 32.70535529102199,
+          "min_mse_gpu": 0.003737120423465967,
+          "best_max_residual_float64": 0.20164328564861767,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1200,
+          "elapsed_seconds": 35.62493345802068,
+          "min_mse_gpu": 0.003737121121957898,
+          "best_max_residual_float64": 0.20164322039718519,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1300,
+          "elapsed_seconds": 38.56902512500528,
+          "min_mse_gpu": 0.003737121121957898,
+          "best_max_residual_float64": 0.20164325951153006,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1400,
+          "elapsed_seconds": 41.46610362501815,
+          "min_mse_gpu": 0.003737121354788542,
+          "best_max_residual_float64": 0.20164325827210283,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1500,
+          "elapsed_seconds": 44.35475437500281,
+          "min_mse_gpu": 0.0037371222861111164,
+          "best_max_residual_float64": 0.20164321123772821,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1600,
+          "elapsed_seconds": 47.2911842080066,
+          "min_mse_gpu": 0.00373711995780468,
+          "best_max_residual_float64": 0.2016433073079289,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1700,
+          "elapsed_seconds": 50.17118833301356,
+          "min_mse_gpu": 0.003737264545634389,
+          "best_max_residual_float64": 0.20212497654680872,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1800,
+          "elapsed_seconds": 53.07191862500622,
+          "min_mse_gpu": 0.00373712251894176,
+          "best_max_residual_float64": 0.20164555944752216,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1900,
+          "elapsed_seconds": 55.97321245801868,
+          "min_mse_gpu": 0.003737121121957898,
+          "best_max_residual_float64": 0.20164325366683067,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2000,
+          "elapsed_seconds": 58.84170420799637,
+          "min_mse_gpu": 0.06690238416194916,
+          "best_max_residual_float64": 0.5908522398713689,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2100,
+          "elapsed_seconds": 61.795880165998824,
+          "min_mse_gpu": 0.005576223600655794,
+          "best_max_residual_float64": 0.21921296476329477,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2200,
+          "elapsed_seconds": 64.66901020801743,
+          "min_mse_gpu": 0.005515655502676964,
+          "best_max_residual_float64": 0.22053040716487393,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2300,
+          "elapsed_seconds": 67.5729070410016,
+          "min_mse_gpu": 0.005395259242504835,
+          "best_max_residual_float64": 0.22072126883554422,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2400,
+          "elapsed_seconds": 70.449027708004,
+          "min_mse_gpu": 0.0053948163986206055,
+          "best_max_residual_float64": 0.22072290138896422,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2500,
+          "elapsed_seconds": 73.33780379101518,
+          "min_mse_gpu": 0.0053948163986206055,
+          "best_max_residual_float64": 0.22072293477820892,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2600,
+          "elapsed_seconds": 76.29273845799617,
+          "min_mse_gpu": 0.0053956289775669575,
+          "best_max_residual_float64": 0.22072292718957498,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2700,
+          "elapsed_seconds": 79.16339045800851,
+          "min_mse_gpu": 0.005486947949975729,
+          "best_max_residual_float64": 0.22072290593297716,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2800,
+          "elapsed_seconds": 82.06091054101125,
+          "min_mse_gpu": 0.0054036402143538,
+          "best_max_residual_float64": 0.22072294744865717,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2900,
+          "elapsed_seconds": 84.92796483301208,
+          "min_mse_gpu": 0.005398616194725037,
+          "best_max_residual_float64": 0.22072291020047174,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3000,
+          "elapsed_seconds": 87.83866812501219,
+          "min_mse_gpu": 0.005400674417614937,
+          "best_max_residual_float64": 0.22072263223882782,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3100,
+          "elapsed_seconds": 90.79062766602146,
+          "min_mse_gpu": 0.005396825261414051,
+          "best_max_residual_float64": 0.2315964466373579,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3200,
+          "elapsed_seconds": 93.68705733300885,
+          "min_mse_gpu": 0.0053954110480844975,
+          "best_max_residual_float64": 0.22066469774824848,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3300,
+          "elapsed_seconds": 96.58768233301817,
+          "min_mse_gpu": 0.005395093932747841,
+          "best_max_residual_float64": 0.22072306371061168,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3400,
+          "elapsed_seconds": 99.45757770800265,
+          "min_mse_gpu": 0.00540153170004487,
+          "best_max_residual_float64": 0.22004083056832613,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3500,
+          "elapsed_seconds": 102.35312924999744,
+          "min_mse_gpu": 0.005450715776532888,
+          "best_max_residual_float64": 0.22084979898206147,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3600,
+          "elapsed_seconds": 105.26966129100765,
+          "min_mse_gpu": 0.005402770824730396,
+          "best_max_residual_float64": 0.2207224904977585,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3700,
+          "elapsed_seconds": 108.19266220802092,
+          "min_mse_gpu": 0.005435977131128311,
+          "best_max_residual_float64": 0.22083056006451862,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3800,
+          "elapsed_seconds": 111.11090387500008,
+          "min_mse_gpu": 0.00539509579539299,
+          "best_max_residual_float64": 0.22087050920838314,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3900,
+          "elapsed_seconds": 113.98826641601045,
+          "min_mse_gpu": 0.005405381787568331,
+          "best_max_residual_float64": 0.22072258636441244,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4000,
+          "elapsed_seconds": 116.89648016600404,
+          "min_mse_gpu": 0.07164233177900314,
+          "best_max_residual_float64": 0.6841735273204435,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4100,
+          "elapsed_seconds": 119.830180207995,
+          "min_mse_gpu": 0.006371041759848595,
+          "best_max_residual_float64": 0.2585589500913501,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4200,
+          "elapsed_seconds": 122.7441309580172,
+          "min_mse_gpu": 0.0038767829537391663,
+          "best_max_residual_float64": 0.19693006750767283,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4300,
+          "elapsed_seconds": 125.65320458300994,
+          "min_mse_gpu": 0.003729456104338169,
+          "best_max_residual_float64": 0.19511109507580682,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4400,
+          "elapsed_seconds": 128.5390154159977,
+          "min_mse_gpu": 0.0037120359484106302,
+          "best_max_residual_float64": 0.19426667202892078,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4500,
+          "elapsed_seconds": 131.4431729580101,
+          "min_mse_gpu": 0.0037049618549644947,
+          "best_max_residual_float64": 0.19378463624883335,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4600,
+          "elapsed_seconds": 134.35882583301282,
+          "min_mse_gpu": 0.003701313864439726,
+          "best_max_residual_float64": 0.1933656123099392,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4700,
+          "elapsed_seconds": 137.26999570801854,
+          "min_mse_gpu": 0.0037026156205683947,
+          "best_max_residual_float64": 0.19240865780231853,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4800,
+          "elapsed_seconds": 140.15961387500283,
+          "min_mse_gpu": 0.003697821870446205,
+          "best_max_residual_float64": 0.19285440111511454,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4900,
+          "elapsed_seconds": 143.08651275001466,
+          "min_mse_gpu": 0.00369688356295228,
+          "best_max_residual_float64": 0.1926825561262291,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5000,
+          "elapsed_seconds": 146.00528412501444,
+          "min_mse_gpu": 0.0036965052131563425,
+          "best_max_residual_float64": 0.19300895738124257,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5100,
+          "elapsed_seconds": 148.92874487501103,
+          "min_mse_gpu": 0.003695725928992033,
+          "best_max_residual_float64": 0.1924255664215213,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5200,
+          "elapsed_seconds": 151.83905670800596,
+          "min_mse_gpu": 0.0036953508388251066,
+          "best_max_residual_float64": 0.19227144809272367,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5300,
+          "elapsed_seconds": 154.74047791599878,
+          "min_mse_gpu": 0.0036950651556253433,
+          "best_max_residual_float64": 0.19240724950405808,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5400,
+          "elapsed_seconds": 157.65328391600633,
+          "min_mse_gpu": 0.0036948274355381727,
+          "best_max_residual_float64": 0.19217322446818708,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5500,
+          "elapsed_seconds": 160.5471695830056,
+          "min_mse_gpu": 0.0037040223833173513,
+          "best_max_residual_float64": 0.18748775454956168,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5600,
+          "elapsed_seconds": 163.47623429101077,
+          "min_mse_gpu": 0.003694494254887104,
+          "best_max_residual_float64": 0.1919776355529672,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5700,
+          "elapsed_seconds": 166.3979947080079,
+          "min_mse_gpu": 0.0036943682935088873,
+          "best_max_residual_float64": 0.1920059291610574,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5800,
+          "elapsed_seconds": 169.29025200000615,
+          "min_mse_gpu": 0.003698008367791772,
+          "best_max_residual_float64": 0.19491271618154848,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5900,
+          "elapsed_seconds": 172.2065836249967,
+          "min_mse_gpu": 0.0036941803991794586,
+          "best_max_residual_float64": 0.19201368634790672,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6000,
+          "elapsed_seconds": 175.09018662502058,
+          "min_mse_gpu": 0.06774894148111343,
+          "best_max_residual_float64": 0.6631532482333766,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6100,
+          "elapsed_seconds": 178.0563538330025,
+          "min_mse_gpu": 0.00016148838039953262,
+          "best_max_residual_float64": 0.05475433170795441,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6200,
+          "elapsed_seconds": 180.96424370800378,
+          "min_mse_gpu": 8.468350279144943e-05,
+          "best_max_residual_float64": 0.03961418196558952,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6300,
+          "elapsed_seconds": 183.85600029100897,
+          "min_mse_gpu": 6.066753121558577e-05,
+          "best_max_residual_float64": 0.033508606255054474,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6400,
+          "elapsed_seconds": 186.75728849999723,
+          "min_mse_gpu": 4.917599289910868e-05,
+          "best_max_residual_float64": 0.030156437307596207,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6500,
+          "elapsed_seconds": 189.6521960410173,
+          "min_mse_gpu": 4.2517840483924374e-05,
+          "best_max_residual_float64": 0.028032807633280754,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6600,
+          "elapsed_seconds": 192.6040413750161,
+          "min_mse_gpu": 3.820753045147285e-05,
+          "best_max_residual_float64": 0.026568373665213585,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6700,
+          "elapsed_seconds": 195.4886880830163,
+          "min_mse_gpu": 3.520718382787891e-05,
+          "best_max_residual_float64": 0.025499757379293442,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6800,
+          "elapsed_seconds": 198.37687033301336,
+          "min_mse_gpu": 3.3008778700605035e-05,
+          "best_max_residual_float64": 0.024687664583325386,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6900,
+          "elapsed_seconds": 201.2783099579974,
+          "min_mse_gpu": 3.133572681690566e-05,
+          "best_max_residual_float64": 0.02405139058828354,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7000,
+          "elapsed_seconds": 204.16424287500558,
+          "min_mse_gpu": 3.002436824317556e-05,
+          "best_max_residual_float64": 0.023540761321783066,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7100,
+          "elapsed_seconds": 207.10345750002307,
+          "min_mse_gpu": 2.8972413929295726e-05,
+          "best_max_residual_float64": 0.023123033344745636,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7200,
+          "elapsed_seconds": 209.98741054101265,
+          "min_mse_gpu": 2.8112319341744296e-05,
+          "best_max_residual_float64": 0.022775830700993538,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7300,
+          "elapsed_seconds": 212.8954607080086,
+          "min_mse_gpu": 2.7397851226851344e-05,
+          "best_max_residual_float64": 0.022483378648757935,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7400,
+          "elapsed_seconds": 215.79896008301876,
+          "min_mse_gpu": 2.6796467864187434e-05,
+          "best_max_residual_float64": 0.022234253585338593,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7500,
+          "elapsed_seconds": 218.7185152080201,
+          "min_mse_gpu": 2.6284509658580646e-05,
+          "best_max_residual_float64": 0.022019945085048676,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7600,
+          "elapsed_seconds": 221.68589062499814,
+          "min_mse_gpu": 2.5844328774837777e-05,
+          "best_max_residual_float64": 0.021834028884768486,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7700,
+          "elapsed_seconds": 224.56591187501908,
+          "min_mse_gpu": 2.5462621124461293e-05,
+          "best_max_residual_float64": 0.021671533584594727,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7800,
+          "elapsed_seconds": 227.47909624999738,
+          "min_mse_gpu": 2.5129127607215196e-05,
+          "best_max_residual_float64": 0.021528566256165504,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7900,
+          "elapsed_seconds": 230.38625066602253,
+          "min_mse_gpu": 2.4835881049511954e-05,
+          "best_max_residual_float64": 0.021402042359113693,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8000,
+          "elapsed_seconds": 233.29363125000964,
+          "min_mse_gpu": 0.06834311783313751,
+          "best_max_residual_float64": 0.6294538705467676,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8100,
+          "elapsed_seconds": 236.23811162501806,
+          "min_mse_gpu": 0.005263185128569603,
+          "best_max_residual_float64": 0.24544357769542335,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8200,
+          "elapsed_seconds": 239.11664129100973,
+          "min_mse_gpu": 0.00526311295107007,
+          "best_max_residual_float64": 0.23682883014674205,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8300,
+          "elapsed_seconds": 242.01735920799547,
+          "min_mse_gpu": 0.005069015081971884,
+          "best_max_residual_float64": 0.22071568406225106,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8400,
+          "elapsed_seconds": 244.8981376250158,
+          "min_mse_gpu": 0.005068306345492601,
+          "best_max_residual_float64": 0.22072234330364848,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8500,
+          "elapsed_seconds": 247.80277391601703,
+          "min_mse_gpu": 0.005068306345492601,
+          "best_max_residual_float64": 0.22072288762128234,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8600,
+          "elapsed_seconds": 250.7412228330213,
+          "min_mse_gpu": 0.0050683049485087395,
+          "best_max_residual_float64": 0.22072287636660404,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8700,
+          "elapsed_seconds": 253.63588433302357,
+          "min_mse_gpu": 0.0037378270644694567,
+          "best_max_residual_float64": 0.20080405572192284,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8800,
+          "elapsed_seconds": 256.5665987910179,
+          "min_mse_gpu": 0.0037371248472481966,
+          "best_max_residual_float64": 0.20161407118546126,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8900,
+          "elapsed_seconds": 259.45156358301756,
+          "min_mse_gpu": 0.003737121354788542,
+          "best_max_residual_float64": 0.2016408572758055,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9000,
+          "elapsed_seconds": 262.3656339580193,
+          "min_mse_gpu": 0.003737121121957898,
+          "best_max_residual_float64": 0.20164312872884627,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9100,
+          "elapsed_seconds": 265.31081087500206,
+          "min_mse_gpu": 0.003737121354788542,
+          "best_max_residual_float64": 0.2016432129606156,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9200,
+          "elapsed_seconds": 268.23389633299666,
+          "min_mse_gpu": 0.003737120656296611,
+          "best_max_residual_float64": 0.20164324064063566,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9300,
+          "elapsed_seconds": 271.1546800000069,
+          "min_mse_gpu": 0.003737121354788542,
+          "best_max_residual_float64": 0.20164322577051008,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9400,
+          "elapsed_seconds": 274.0468488750048,
+          "min_mse_gpu": 0.003737120656296611,
+          "best_max_residual_float64": 0.20164324251296972,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9500,
+          "elapsed_seconds": 276.9555519160058,
+          "min_mse_gpu": 0.003737121121957898,
+          "best_max_residual_float64": 0.20164328509477425,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9600,
+          "elapsed_seconds": 279.8764101249981,
+          "min_mse_gpu": 0.003737121354788542,
+          "best_max_residual_float64": 0.20164321964949794,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9700,
+          "elapsed_seconds": 282.7860134160146,
+          "min_mse_gpu": 0.003737121354788542,
+          "best_max_residual_float64": 0.20164323500128933,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9800,
+          "elapsed_seconds": 285.69225600000937,
+          "min_mse_gpu": 0.003737121354788542,
+          "best_max_residual_float64": 0.20164328545041776,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9900,
+          "elapsed_seconds": 288.5805178330047,
+          "min_mse_gpu": 0.0037371914368122816,
+          "best_max_residual_float64": 0.20174354689706187,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10000,
+          "elapsed_seconds": 291.49412720801774,
+          "min_mse_gpu": 0.06552067399024963,
+          "best_max_residual_float64": 0.533509191904556,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10100,
+          "elapsed_seconds": 294.4213371660153,
+          "min_mse_gpu": 0.006496771704405546,
+          "best_max_residual_float64": 0.2651076949167799,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10200,
+          "elapsed_seconds": 297.3420406250225,
+          "min_mse_gpu": 0.0045649209059774876,
+          "best_max_residual_float64": 0.18985368987610696,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10300,
+          "elapsed_seconds": 300.23402520801756,
+          "min_mse_gpu": 0.004459022544324398,
+          "best_max_residual_float64": 0.19211528708005232,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10400,
+          "elapsed_seconds": 303.1529498330201,
+          "min_mse_gpu": 0.0044449628330767155,
+          "best_max_residual_float64": 0.19493990435216602,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10500,
+          "elapsed_seconds": 306.08956962500815,
+          "min_mse_gpu": 0.004441558849066496,
+          "best_max_residual_float64": 0.1962725143606745,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10600,
+          "elapsed_seconds": 309.0242656250193,
+          "min_mse_gpu": 0.004441076423972845,
+          "best_max_residual_float64": 0.19681313592145444,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10700,
+          "elapsed_seconds": 311.9432053330238,
+          "min_mse_gpu": 0.00444102194160223,
+          "best_max_residual_float64": 0.1970039917389096,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10800,
+          "elapsed_seconds": 314.83149375001085,
+          "min_mse_gpu": 0.004454468376934528,
+          "best_max_residual_float64": 0.1959365071608301,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10900,
+          "elapsed_seconds": 317.7541750000091,
+          "min_mse_gpu": 0.004710867069661617,
+          "best_max_residual_float64": 0.2041345891150126,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11000,
+          "elapsed_seconds": 320.6940637080115,
+          "min_mse_gpu": 0.004441046621650457,
+          "best_max_residual_float64": 0.19713552143661006,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11100,
+          "elapsed_seconds": 323.61854070800473,
+          "min_mse_gpu": 0.004441142547875643,
+          "best_max_residual_float64": 0.19708186770900438,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11200,
+          "elapsed_seconds": 326.5388876250072,
+          "min_mse_gpu": 0.00444225175306201,
+          "best_max_residual_float64": 0.19868550296621335,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11300,
+          "elapsed_seconds": 329.43782462499803,
+          "min_mse_gpu": 0.004441532306373119,
+          "best_max_residual_float64": 0.19739122519556718,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11400,
+          "elapsed_seconds": 332.3662672910141,
+          "min_mse_gpu": 0.004441041499376297,
+          "best_max_residual_float64": 0.196990077602063,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11500,
+          "elapsed_seconds": 335.2550342500035,
+          "min_mse_gpu": 0.004450374282896519,
+          "best_max_residual_float64": 0.19776834958436695,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11600,
+          "elapsed_seconds": 338.23989504101337,
+          "min_mse_gpu": 0.004441044759005308,
+          "best_max_residual_float64": 0.197156296639716,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11700,
+          "elapsed_seconds": 341.16289458301617,
+          "min_mse_gpu": 0.0044412510469555855,
+          "best_max_residual_float64": 0.19677076077230726,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11800,
+          "elapsed_seconds": 344.06054095801665,
+          "min_mse_gpu": 0.004441373515874147,
+          "best_max_residual_float64": 0.1973672771310575,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11900,
+          "elapsed_seconds": 346.99174079101067,
+          "min_mse_gpu": 0.0044410340487957,
+          "best_max_residual_float64": 0.1971349371370522,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 12000,
+          "elapsed_seconds": 349.8854132500128,
+          "min_mse_gpu": 0.004554494749754667,
+          "best_max_residual_float64": 0.19208287894311815,
+          "allocated_bytes": 83231232,
+          "driver_bytes": 1116405760
+        }
+      ],
+      "best_saved_case": {
+        "A": [
+          1.0,
+          0.0,
+          0.021402042359113693,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002755766035988927,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.003755227837246e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "B": [
+          1.0,
+          0.0,
+          0.9785979390144348,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.4035003914614208e-07,
+          0.0001450215931981802,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9984062314033508,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          9.976937872124836e-05,
+          0.0,
+          0.009322116151452065,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.5543025710940128e-06,
+          0.0,
+          0.999679684638977,
+          0.0,
+          1.0
+        ],
+        "max_residual_float64": 0.021402042359113693,
+        "l2_residual_float64": 0.04484954874994932,
+        "status": "numerical_only"
+      },
+      "best_observed_residual_float64": 0.021402042359113693,
+      "note": "All six restart blocks completed."
+    },
+    {
+      "directory": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m24n48d3",
+      "config": {
+        "m": 24,
+        "n": 48,
+        "starts": 32768,
+        "steps": 12000,
+        "fractional_index": 3,
+        "margin": 0.05,
+        "restart_every": 2000,
+        "seed": 2026111504,
+        "out": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m24n48d3",
+        "torch": "2.15.0",
+        "numpy": "2.5.4",
+        "device": "mps",
+        "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+        "dtype": "float32",
+        "pid": 14506,
+        "script_sha256": "2080fcc0fbfb72040f736606878d02e8f9f307f9f1b18abb43a8514a4ee8a4cf",
+        "scope": "degrees fixed; zeros allowed; first fractional index d; projected numerical search only"
+      },
+      "source": "gpu_factor_search.py",
+      "complete": true,
+      "process_exited_verified": true,
+      "fully_trained_initializations": 196608,
+      "history": [
+        {
+          "step": 0,
+          "elapsed_seconds": 0.07840912500978447,
+          "min_mse_gpu": 0.05915657430887222,
+          "best_max_residual_float64": 0.6870059326011944,
+          "allocated_bytes": 74414336,
+          "driver_bytes": 1116422144
+        },
+        {
+          "step": 100,
+          "elapsed_seconds": 2.271190375002334,
+          "min_mse_gpu": 0.0002442144905216992,
+          "best_max_residual_float64": 0.07815897464752197,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 200,
+          "elapsed_seconds": 4.476692584023112,
+          "min_mse_gpu": 0.00016671704361215234,
+          "best_max_residual_float64": 0.06443542242050171,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 300,
+          "elapsed_seconds": 6.653899834025651,
+          "min_mse_gpu": 0.00014073129568714648,
+          "best_max_residual_float64": 0.05925142765045166,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 400,
+          "elapsed_seconds": 8.858846167015145,
+          "min_mse_gpu": 0.00012807764869648963,
+          "best_max_residual_float64": 0.05657162144780159,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 500,
+          "elapsed_seconds": 11.044570917001693,
+          "min_mse_gpu": 0.00012073999096173793,
+          "best_max_residual_float64": 0.05496229603886604,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 600,
+          "elapsed_seconds": 13.295217167004012,
+          "min_mse_gpu": 0.00011602159065660089,
+          "best_max_residual_float64": 0.053903765976428986,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 700,
+          "elapsed_seconds": 15.477807417017175,
+          "min_mse_gpu": 0.00011277091834926978,
+          "best_max_residual_float64": 0.0531630665063858,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 800,
+          "elapsed_seconds": 17.658740334009053,
+          "min_mse_gpu": 0.00011041797552024946,
+          "best_max_residual_float64": 0.052620887756347656,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 900,
+          "elapsed_seconds": 19.86214683399885,
+          "min_mse_gpu": 0.00010865005606319755,
+          "best_max_residual_float64": 0.05221003293991089,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1000,
+          "elapsed_seconds": 22.041194625024218,
+          "min_mse_gpu": 0.00010728240158641711,
+          "best_max_residual_float64": 0.05189013481140137,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1100,
+          "elapsed_seconds": 24.289633542008232,
+          "min_mse_gpu": 0.00010619914974085987,
+          "best_max_residual_float64": 0.05163544416427612,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1200,
+          "elapsed_seconds": 26.4795678340015,
+          "min_mse_gpu": 0.00010532428859733045,
+          "best_max_residual_float64": 0.051428936421871185,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1300,
+          "elapsed_seconds": 28.684079667000333,
+          "min_mse_gpu": 0.00010460634075570852,
+          "best_max_residual_float64": 0.0512588769197464,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1400,
+          "elapsed_seconds": 30.860729917010758,
+          "min_mse_gpu": 0.0001040089555317536,
+          "best_max_residual_float64": 0.05111696943640709,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1500,
+          "elapsed_seconds": 33.063262250012485,
+          "min_mse_gpu": 0.00010350577213102952,
+          "best_max_residual_float64": 0.05099719762802124,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1600,
+          "elapsed_seconds": 35.29626350000035,
+          "min_mse_gpu": 0.00010307769844075665,
+          "best_max_residual_float64": 0.050895094871520996,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1700,
+          "elapsed_seconds": 37.47376808401896,
+          "min_mse_gpu": 0.00010271021164953709,
+          "best_max_residual_float64": 0.05080725997686386,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1800,
+          "elapsed_seconds": 39.68591700002435,
+          "min_mse_gpu": 0.00010239217954222113,
+          "best_max_residual_float64": 0.05073113739490509,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1900,
+          "elapsed_seconds": 41.87057158400421,
+          "min_mse_gpu": 0.00010211476183030754,
+          "best_max_residual_float64": 0.05066472291946411,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2000,
+          "elapsed_seconds": 44.06938375000027,
+          "min_mse_gpu": 0.06363529711961746,
+          "best_max_residual_float64": 0.6156004396638441,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2100,
+          "elapsed_seconds": 46.27205170900561,
+          "min_mse_gpu": 0.0003501343308016658,
+          "best_max_residual_float64": 0.08429256364983533,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2200,
+          "elapsed_seconds": 48.47675379202701,
+          "min_mse_gpu": 0.00022833018738310784,
+          "best_max_residual_float64": 0.0678913679037858,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2300,
+          "elapsed_seconds": 50.657148625003174,
+          "min_mse_gpu": 0.00018213526345789433,
+          "best_max_residual_float64": 0.061587762275886485,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2400,
+          "elapsed_seconds": 52.84125500000664,
+          "min_mse_gpu": 0.00015687711129430681,
+          "best_max_residual_float64": 0.05829532503957846,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2500,
+          "elapsed_seconds": 55.04853087500669,
+          "min_mse_gpu": 0.00014235403796192259,
+          "best_max_residual_float64": 0.05630186157361345,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2600,
+          "elapsed_seconds": 57.25753675002488,
+          "min_mse_gpu": 0.000133030756842345,
+          "best_max_residual_float64": 0.05498175579054515,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2700,
+          "elapsed_seconds": 59.46755441700225,
+          "min_mse_gpu": 0.0001265979080926627,
+          "best_max_residual_float64": 0.05405273625778092,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2800,
+          "elapsed_seconds": 61.67636025001411,
+          "min_mse_gpu": 0.00012192727444926277,
+          "best_max_residual_float64": 0.0533693605361891,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2900,
+          "elapsed_seconds": 63.87859325000318,
+          "min_mse_gpu": 0.00011840447405120358,
+          "best_max_residual_float64": 0.052849393374457626,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3000,
+          "elapsed_seconds": 66.0521744590078,
+          "min_mse_gpu": 0.00011566806642804295,
+          "best_max_residual_float64": 0.05244304337480799,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3100,
+          "elapsed_seconds": 68.28396800000337,
+          "min_mse_gpu": 0.00011349171109031886,
+          "best_max_residual_float64": 0.05211851531778931,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3200,
+          "elapsed_seconds": 70.47500983401551,
+          "min_mse_gpu": 0.00011172700760653242,
+          "best_max_residual_float64": 0.0518546324987983,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3300,
+          "elapsed_seconds": 72.66819870902691,
+          "min_mse_gpu": 0.00011027300934074447,
+          "best_max_residual_float64": 0.051636786632808025,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3400,
+          "elapsed_seconds": 75.47463095901185,
+          "min_mse_gpu": 0.00010905844828812405,
+          "best_max_residual_float64": 0.05145459380776093,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3500,
+          "elapsed_seconds": 77.65969895900344,
+          "min_mse_gpu": 0.00010803199984366074,
+          "best_max_residual_float64": 0.05130051161269794,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3600,
+          "elapsed_seconds": 79.87955937502556,
+          "min_mse_gpu": 0.00010715585813159123,
+          "best_max_residual_float64": 0.051168920088830894,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3700,
+          "elapsed_seconds": 82.04998104201513,
+          "min_mse_gpu": 0.00010640105028869584,
+          "best_max_residual_float64": 0.051055558827145145,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3800,
+          "elapsed_seconds": 84.25587562500732,
+          "min_mse_gpu": 0.00010574594489298761,
+          "best_max_residual_float64": 0.05095715489423347,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3900,
+          "elapsed_seconds": 86.43119091700646,
+          "min_mse_gpu": 0.00010517319606151432,
+          "best_max_residual_float64": 0.05087115072523014,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4000,
+          "elapsed_seconds": 88.64027716702549,
+          "min_mse_gpu": 0.0573386624455452,
+          "best_max_residual_float64": 0.7106746371900419,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4100,
+          "elapsed_seconds": 90.84273600002052,
+          "min_mse_gpu": 0.0014567917678505182,
+          "best_max_residual_float64": 0.2423034514769853,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4200,
+          "elapsed_seconds": 93.03064683399862,
+          "min_mse_gpu": 0.0014567519538104534,
+          "best_max_residual_float64": 0.1932582558888416,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4300,
+          "elapsed_seconds": 95.2137929170276,
+          "min_mse_gpu": 0.001456752186641097,
+          "best_max_residual_float64": 0.18797073421045374,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4400,
+          "elapsed_seconds": 97.38517470902298,
+          "min_mse_gpu": 0.001456752186641097,
+          "best_max_residual_float64": 0.1869379514430305,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4500,
+          "elapsed_seconds": 99.59135929201148,
+          "min_mse_gpu": 0.001456752186641097,
+          "best_max_residual_float64": 0.18668246140270695,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4600,
+          "elapsed_seconds": 101.79818441701354,
+          "min_mse_gpu": 0.001456752303056419,
+          "best_max_residual_float64": 0.18662272547600112,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4700,
+          "elapsed_seconds": 104.00487295901985,
+          "min_mse_gpu": 0.001456752186641097,
+          "best_max_residual_float64": 0.18661126880372203,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4800,
+          "elapsed_seconds": 106.18127162501332,
+          "min_mse_gpu": 0.0014567519538104534,
+          "best_max_residual_float64": 0.18660971742537757,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4900,
+          "elapsed_seconds": 108.38473858401994,
+          "min_mse_gpu": 0.001456752186641097,
+          "best_max_residual_float64": 0.18660952119332075,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5000,
+          "elapsed_seconds": 110.56285587500315,
+          "min_mse_gpu": 0.0014567520702257752,
+          "best_max_residual_float64": 0.18660960827881534,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5100,
+          "elapsed_seconds": 112.78525758400792,
+          "min_mse_gpu": 0.001456752303056419,
+          "best_max_residual_float64": 0.18660958827531937,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5200,
+          "elapsed_seconds": 114.97411945901695,
+          "min_mse_gpu": 0.001456752303056419,
+          "best_max_residual_float64": 0.18660950054684777,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5300,
+          "elapsed_seconds": 118.37868045901996,
+          "min_mse_gpu": 0.001456752303056419,
+          "best_max_residual_float64": 0.18660951028239037,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5400,
+          "elapsed_seconds": 123.83581837502425,
+          "min_mse_gpu": 0.001456752303056419,
+          "best_max_residual_float64": 0.18660953408413405,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5500,
+          "elapsed_seconds": 131.8024813340162,
+          "min_mse_gpu": 0.001456752186641097,
+          "best_max_residual_float64": 0.1866095412993134,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5600,
+          "elapsed_seconds": 135.4212241670175,
+          "min_mse_gpu": 0.001456752186641097,
+          "best_max_residual_float64": 0.18660951053478914,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5700,
+          "elapsed_seconds": 138.30047395901056,
+          "min_mse_gpu": 0.001456752303056419,
+          "best_max_residual_float64": 0.18660977061512396,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5800,
+          "elapsed_seconds": 141.1876240420097,
+          "min_mse_gpu": 0.001456752303056419,
+          "best_max_residual_float64": 0.1865972768197499,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5900,
+          "elapsed_seconds": 144.09745166701032,
+          "min_mse_gpu": 0.001456752186641097,
+          "best_max_residual_float64": 0.1870456865598047,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6000,
+          "elapsed_seconds": 146.93652912499965,
+          "min_mse_gpu": 0.0613674521446228,
+          "best_max_residual_float64": 0.6612335784909626,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6100,
+          "elapsed_seconds": 149.91037104200223,
+          "min_mse_gpu": 0.0001935153268277645,
+          "best_max_residual_float64": 0.07009413093328476,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6200,
+          "elapsed_seconds": 152.79302958401968,
+          "min_mse_gpu": 0.00014529423788189888,
+          "best_max_residual_float64": 0.06062594801187515,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6300,
+          "elapsed_seconds": 155.66073891700944,
+          "min_mse_gpu": 0.00012781914847437292,
+          "best_max_residual_float64": 0.05681513622403145,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6400,
+          "elapsed_seconds": 158.60260520901647,
+          "min_mse_gpu": 0.00011913410708075389,
+          "best_max_residual_float64": 0.05482443422079086,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6500,
+          "elapsed_seconds": 161.4117605840147,
+          "min_mse_gpu": 0.0001140638196375221,
+          "best_max_residual_float64": 0.053628627210855484,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6600,
+          "elapsed_seconds": 164.19857970901649,
+          "min_mse_gpu": 0.00011079751857323572,
+          "best_max_residual_float64": 0.05284412205219269,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6700,
+          "elapsed_seconds": 166.9210234170023,
+          "min_mse_gpu": 0.0001085478434106335,
+          "best_max_residual_float64": 0.052297014743089676,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6800,
+          "elapsed_seconds": 169.71134904201608,
+          "min_mse_gpu": 0.00010692143405321985,
+          "best_max_residual_float64": 0.05189789831638336,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6900,
+          "elapsed_seconds": 172.42563883401453,
+          "min_mse_gpu": 0.00010570121230557561,
+          "best_max_residual_float64": 0.051596470177173615,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7000,
+          "elapsed_seconds": 175.19074445901788,
+          "min_mse_gpu": 0.0001047589466907084,
+          "best_max_residual_float64": 0.05136246606707573,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7100,
+          "elapsed_seconds": 177.9636955000169,
+          "min_mse_gpu": 0.0001040138304233551,
+          "best_max_residual_float64": 0.051176685839891434,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7200,
+          "elapsed_seconds": 180.70205862500006,
+          "min_mse_gpu": 0.00010341316374251619,
+          "best_max_residual_float64": 0.05102641507983208,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7300,
+          "elapsed_seconds": 183.48271820900845,
+          "min_mse_gpu": 0.00010292095976183191,
+          "best_max_residual_float64": 0.05090295150876045,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7400,
+          "elapsed_seconds": 186.2041019590106,
+          "min_mse_gpu": 0.00010251200728816912,
+          "best_max_residual_float64": 0.050800129771232605,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7500,
+          "elapsed_seconds": 188.95898783401935,
+          "min_mse_gpu": 0.00010216800001217052,
+          "best_max_residual_float64": 0.05071350559592247,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7600,
+          "elapsed_seconds": 191.73225020902464,
+          "min_mse_gpu": 0.00010187578300246969,
+          "best_max_residual_float64": 0.05063978210091591,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7700,
+          "elapsed_seconds": 194.48895929200808,
+          "min_mse_gpu": 0.0001016251408145763,
+          "best_max_residual_float64": 0.05057647079229355,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7800,
+          "elapsed_seconds": 197.21262195901363,
+          "min_mse_gpu": 0.00010140855010831729,
+          "best_max_residual_float64": 0.050521671772003174,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7900,
+          "elapsed_seconds": 200.01366641701316,
+          "min_mse_gpu": 0.00010121984087163582,
+          "best_max_residual_float64": 0.050473902374506,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8000,
+          "elapsed_seconds": 202.76917804201366,
+          "min_mse_gpu": 0.062410105019807816,
+          "best_max_residual_float64": 0.6203593834323695,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8100,
+          "elapsed_seconds": 205.53972800000338,
+          "min_mse_gpu": 0.00031101194326765835,
+          "best_max_residual_float64": 0.07935982028750185,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8200,
+          "elapsed_seconds": 208.1193575420184,
+          "min_mse_gpu": 0.0001978402870008722,
+          "best_max_residual_float64": 0.06522521501365647,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8300,
+          "elapsed_seconds": 210.30034054201678,
+          "min_mse_gpu": 0.00015971131506375968,
+          "best_max_residual_float64": 0.05980038483692425,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8400,
+          "elapsed_seconds": 212.4769402090169,
+          "min_mse_gpu": 0.0001413296995451674,
+          "best_max_residual_float64": 0.05698058989381953,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8500,
+          "elapsed_seconds": 214.67347850001534,
+          "min_mse_gpu": 0.00013069776468910277,
+          "best_max_residual_float64": 0.055281611500589634,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8600,
+          "elapsed_seconds": 216.8746843750123,
+          "min_mse_gpu": 0.00012385778245516121,
+          "best_max_residual_float64": 0.05416150693111486,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8700,
+          "elapsed_seconds": 219.0733763340104,
+          "min_mse_gpu": 0.00011913713387912139,
+          "best_max_residual_float64": 0.0533763091511983,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8800,
+          "elapsed_seconds": 221.24828120900202,
+          "min_mse_gpu": 0.0001157122096628882,
+          "best_max_residual_float64": 0.0528007064058932,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8900,
+          "elapsed_seconds": 223.4506052500219,
+          "min_mse_gpu": 0.00011313246068311855,
+          "best_max_residual_float64": 0.05236404850086049,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9000,
+          "elapsed_seconds": 225.63650412502466,
+          "min_mse_gpu": 0.00011113165965070948,
+          "best_max_residual_float64": 0.05202369295032514,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9100,
+          "elapsed_seconds": 227.86285600002157,
+          "min_mse_gpu": 0.0001095429397537373,
+          "best_max_residual_float64": 0.05175251186046197,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9200,
+          "elapsed_seconds": 230.0522932090098,
+          "min_mse_gpu": 0.00010825690696947277,
+          "best_max_residual_float64": 0.051532452398823564,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9300,
+          "elapsed_seconds": 232.22980962501606,
+          "min_mse_gpu": 0.00010719914280343801,
+          "best_max_residual_float64": 0.05135111776327174,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9400,
+          "elapsed_seconds": 234.42976670901407,
+          "min_mse_gpu": 0.00010631710756570101,
+          "best_max_residual_float64": 0.05119971741344521,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9500,
+          "elapsed_seconds": 236.60260125002242,
+          "min_mse_gpu": 0.00010557284986134619,
+          "best_max_residual_float64": 0.05107186345385568,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9600,
+          "elapsed_seconds": 238.8433870000008,
+          "min_mse_gpu": 0.00010493850277271122,
+          "best_max_residual_float64": 0.050962817334616065,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9700,
+          "elapsed_seconds": 241.02278554200893,
+          "min_mse_gpu": 0.00010439295147079974,
+          "best_max_residual_float64": 0.050868991599696434,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9800,
+          "elapsed_seconds": 243.22249291700427,
+          "min_mse_gpu": 0.00010391998512204736,
+          "best_max_residual_float64": 0.050787635054755406,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9900,
+          "elapsed_seconds": 245.396060167026,
+          "min_mse_gpu": 0.00010350697266403586,
+          "best_max_residual_float64": 0.050716604618162395,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10000,
+          "elapsed_seconds": 247.57504279201385,
+          "min_mse_gpu": 0.06030995398759842,
+          "best_max_residual_float64": 0.7567289376192516,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10100,
+          "elapsed_seconds": 249.8010341670015,
+          "min_mse_gpu": 0.00017866278358269483,
+          "best_max_residual_float64": 0.06729274243116379,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10200,
+          "elapsed_seconds": 251.97396129200934,
+          "min_mse_gpu": 0.00013705543824471533,
+          "best_max_residual_float64": 0.058852557092905045,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10300,
+          "elapsed_seconds": 254.19520779201412,
+          "min_mse_gpu": 0.0001224792213179171,
+          "best_max_residual_float64": 0.055596355348825455,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10400,
+          "elapsed_seconds": 256.3725855840021,
+          "min_mse_gpu": 0.00011532549251569435,
+          "best_max_residual_float64": 0.05367881421276266,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10500,
+          "elapsed_seconds": 258.57173291701474,
+          "min_mse_gpu": 0.00011118074326077476,
+          "best_max_residual_float64": 0.05205829921060001,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10600,
+          "elapsed_seconds": 260.78037695901,
+          "min_mse_gpu": 0.00010852523701032624,
+          "best_max_residual_float64": 0.05116619432499192,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10700,
+          "elapsed_seconds": 262.9716741250013,
+          "min_mse_gpu": 0.00010670378105714917,
+          "best_max_residual_float64": 0.05059734087922152,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10800,
+          "elapsed_seconds": 265.15535570902284,
+          "min_mse_gpu": 0.00010539134382270277,
+          "best_max_residual_float64": 0.05021109249969413,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10900,
+          "elapsed_seconds": 267.3243556670204,
+          "min_mse_gpu": 0.00010440954065416008,
+          "best_max_residual_float64": 0.0499385890988755,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11000,
+          "elapsed_seconds": 269.5321076250111,
+          "min_mse_gpu": 0.00010365308116888627,
+          "best_max_residual_float64": 0.049736668338752565,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11100,
+          "elapsed_seconds": 271.73939383402467,
+          "min_mse_gpu": 0.00010305613977834582,
+          "best_max_residual_float64": 0.04957789443953686,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11200,
+          "elapsed_seconds": 273.94099570901017,
+          "min_mse_gpu": 0.0001025757155730389,
+          "best_max_residual_float64": 0.04945177790489197,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11300,
+          "elapsed_seconds": 276.1120623340248,
+          "min_mse_gpu": 0.00010218263923889026,
+          "best_max_residual_float64": 0.049351064032503444,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11400,
+          "elapsed_seconds": 278.33294479202596,
+          "min_mse_gpu": 0.00010185641440330073,
+          "best_max_residual_float64": 0.04924393653599779,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11500,
+          "elapsed_seconds": 280.51032245901297,
+          "min_mse_gpu": 0.00010158250370295718,
+          "best_max_residual_float64": 0.049165961279733494,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11600,
+          "elapsed_seconds": 282.720303375012,
+          "min_mse_gpu": 0.00010134990588994697,
+          "best_max_residual_float64": 0.049131382213296604,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11700,
+          "elapsed_seconds": 284.9093348340248,
+          "min_mse_gpu": 0.00010115069017047063,
+          "best_max_residual_float64": 0.04906949824943041,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11800,
+          "elapsed_seconds": 287.0768443340203,
+          "min_mse_gpu": 0.00010097858466906473,
+          "best_max_residual_float64": 0.04902532852500485,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11900,
+          "elapsed_seconds": 289.277760417026,
+          "min_mse_gpu": 0.00010082883818540722,
+          "best_max_residual_float64": 0.04898846969989634,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 12000,
+          "elapsed_seconds": 291.44905845902395,
+          "min_mse_gpu": 0.00010069757991004735,
+          "best_max_residual_float64": 0.04897638246220026,
+          "allocated_bytes": 73758976,
+          "driver_bytes": 1116405760
+        }
+      ],
+      "best_saved_case": {
+        "A": [
+          1.0,
+          0.0,
+          0.0,
+          0.9496514797210693,
+          0.9754572510719299,
+          0.0,
+          0.9641045331954956,
+          0.9672343134880066,
+          0.0,
+          0.9734262824058533,
+          0.9735107421875,
+          0.9729339480400085,
+          0.973536491394043,
+          0.9729882478713989,
+          0.9735205769538879,
+          0.9735403060913086,
+          0.0,
+          0.9736688733100891,
+          0.9736712574958801,
+          0.02338591404259205,
+          0.0,
+          0.9727472066879272,
+          0.012892849743366241,
+          0.010698829777538776,
+          1.0
+        ],
+        "B": [
+          1.0,
+          0.0,
+          0.0,
+          0.050348520278930664,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9833205342292786,
+          0.0,
+          0.0,
+          0.03353922814130783,
+          0.0,
+          0.0,
+          0.0017292191041633487,
+          0.0019214388448745012,
+          0.0,
+          0.0011605208273977041,
+          0.0006258171633817255,
+          0.0012485940242186189,
+          0.0019952417351305485,
+          0.005152101628482342,
+          0.0,
+          0.0012517338618636131,
+          0.991007387638092,
+          0.0,
+          0.0,
+          0.0163642019033432,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.004007422830909491,
+          0.0,
+          0.0005527298199012876,
+          0.0,
+          0.0019588847644627094,
+          0.013145842589437962,
+          0.0,
+          0.006158517207950354,
+          1.0
+        ],
+        "max_residual_float64": 0.04897638246220026,
+        "l2_residual_float64": 0.13284619912770135,
+        "status": "numerical_only"
+      },
+      "best_observed_residual_float64": 0.04897638246220026,
+      "note": "All six restart blocks completed."
+    },
+    {
+      "directory": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m40n64d1",
+      "config": {
+        "m": 40,
+        "n": 64,
+        "starts": 16384,
+        "steps": 12000,
+        "fractional_index": 1,
+        "margin": 0.1,
+        "restart_every": 2000,
+        "seed": 2026111505,
+        "out": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m40n64d1",
+        "torch": "2.15.0",
+        "numpy": "2.5.4",
+        "device": "mps",
+        "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+        "dtype": "float32",
+        "pid": 15626,
+        "script_sha256": "2080fcc0fbfb72040f736606878d02e8f9f307f9f1b18abb43a8514a4ee8a4cf",
+        "scope": "degrees fixed; zeros allowed; first fractional index d; projected numerical search only"
+      },
+      "source": "gpu_factor_search.py",
+      "complete": true,
+      "process_exited_verified": true,
+      "fully_trained_initializations": 98304,
+      "history": [
+        {
+          "step": 0,
+          "elapsed_seconds": 0.27239354100311175,
+          "min_mse_gpu": 0.06602104008197784,
+          "best_max_residual_float64": 0.6741885959144234,
+          "allocated_bytes": 56787712,
+          "driver_bytes": 1116422144
+        },
+        {
+          "step": 100,
+          "elapsed_seconds": 2.5265042079845443,
+          "min_mse_gpu": 0.0003362729330547154,
+          "best_max_residual_float64": 0.12077063322067261,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 200,
+          "elapsed_seconds": 4.755842707992997,
+          "min_mse_gpu": 0.00027949450304731727,
+          "best_max_residual_float64": 0.10973852872848511,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 300,
+          "elapsed_seconds": 7.016881249990547,
+          "min_mse_gpu": 0.00026090722531080246,
+          "best_max_residual_float64": 0.10588759183883667,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 400,
+          "elapsed_seconds": 9.270715999999084,
+          "min_mse_gpu": 0.00025211292086169124,
+          "best_max_residual_float64": 0.10401833057403564,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 500,
+          "elapsed_seconds": 11.535686957999133,
+          "min_mse_gpu": 0.0002471437328495085,
+          "best_max_residual_float64": 0.10294753313064575,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 600,
+          "elapsed_seconds": 13.789889208012028,
+          "min_mse_gpu": 0.00024401885457336903,
+          "best_max_residual_float64": 0.10226863622665405,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 700,
+          "elapsed_seconds": 16.030210249999072,
+          "min_mse_gpu": 0.00024190559634007514,
+          "best_max_residual_float64": 0.1018068790435791,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 800,
+          "elapsed_seconds": 18.27933958300855,
+          "min_mse_gpu": 0.0002393227186985314,
+          "best_max_residual_float64": 0.10147684812545776,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 900,
+          "elapsed_seconds": 20.51455520800664,
+          "min_mse_gpu": 0.00023616573889739811,
+          "best_max_residual_float64": 0.10123145580291748,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1000,
+          "elapsed_seconds": 22.766813166002976,
+          "min_mse_gpu": 0.00023374235024675727,
+          "best_max_residual_float64": 0.10104340314865112,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1100,
+          "elapsed_seconds": 25.017660124984104,
+          "min_mse_gpu": 0.00023183535085991025,
+          "best_max_residual_float64": 0.10089582204818726,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1200,
+          "elapsed_seconds": 27.27790408299188,
+          "min_mse_gpu": 0.00023030408192425966,
+          "best_max_residual_float64": 0.10077738761901855,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1300,
+          "elapsed_seconds": 29.509869750007056,
+          "min_mse_gpu": 0.00022905328660272062,
+          "best_max_residual_float64": 0.10068100690841675,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1400,
+          "elapsed_seconds": 31.76618716600933,
+          "min_mse_gpu": 0.00022801689920015633,
+          "best_max_residual_float64": 0.1006011962890625,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1500,
+          "elapsed_seconds": 34.0043321250123,
+          "min_mse_gpu": 0.0002271473204018548,
+          "best_max_residual_float64": 0.10053437948226929,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1600,
+          "elapsed_seconds": 36.27828374999808,
+          "min_mse_gpu": 0.0002264098438899964,
+          "best_max_residual_float64": 0.10047775506973267,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1700,
+          "elapsed_seconds": 38.52723391598556,
+          "min_mse_gpu": 0.00022577864001505077,
+          "best_max_residual_float64": 0.10042935609817505,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1800,
+          "elapsed_seconds": 40.77267941599712,
+          "min_mse_gpu": 0.00022523367078974843,
+          "best_max_residual_float64": 0.10038775205612183,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 1900,
+          "elapsed_seconds": 43.050325415999396,
+          "min_mse_gpu": 0.00022475974401459098,
+          "best_max_residual_float64": 0.10035151243209839,
+          "allocated_bytes": 56394496,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2000,
+          "elapsed_seconds": 45.28103416599333,
+          "min_mse_gpu": 0.07146863639354706,
+          "best_max_residual_float64": 0.7038317178290354,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2100,
+          "elapsed_seconds": 47.56908795799245,
+          "min_mse_gpu": 0.00039489922346547246,
+          "best_max_residual_float64": 0.12774598598480225,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2200,
+          "elapsed_seconds": 49.80061387500609,
+          "min_mse_gpu": 0.00029999794787727296,
+          "best_max_residual_float64": 0.11296558380126953,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2300,
+          "elapsed_seconds": 52.057810625003185,
+          "min_mse_gpu": 0.0002681064361240715,
+          "best_max_residual_float64": 0.10976916551589966,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2400,
+          "elapsed_seconds": 54.30096566598513,
+          "min_mse_gpu": 0.0002528384793549776,
+          "best_max_residual_float64": 0.10671883821487427,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2500,
+          "elapsed_seconds": 56.56702812499134,
+          "min_mse_gpu": 0.00024413624487351626,
+          "best_max_residual_float64": 0.10495632886886597,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2600,
+          "elapsed_seconds": 58.83418429098674,
+          "min_mse_gpu": 0.00023862491070758551,
+          "best_max_residual_float64": 0.10383093357086182,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2700,
+          "elapsed_seconds": 61.07788854101091,
+          "min_mse_gpu": 0.0002348777197767049,
+          "best_max_residual_float64": 0.1030614972114563,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2800,
+          "elapsed_seconds": 63.326028165989555,
+          "min_mse_gpu": 0.0002321958600077778,
+          "best_max_residual_float64": 0.1025087833404541,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 2900,
+          "elapsed_seconds": 65.56057724999846,
+          "min_mse_gpu": 0.00023020039952825755,
+          "best_max_residual_float64": 0.10209649801254272,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3000,
+          "elapsed_seconds": 67.81953183299629,
+          "min_mse_gpu": 0.0002286695671500638,
+          "best_max_residual_float64": 0.10177958011627197,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3100,
+          "elapsed_seconds": 70.09380158298882,
+          "min_mse_gpu": 0.00022746600734535605,
+          "best_max_residual_float64": 0.10153007507324219,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3200,
+          "elapsed_seconds": 72.37135633299476,
+          "min_mse_gpu": 0.00022650045866612345,
+          "best_max_residual_float64": 0.10132968425750732,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3300,
+          "elapsed_seconds": 74.7981589580013,
+          "min_mse_gpu": 0.00022571247245650738,
+          "best_max_residual_float64": 0.10116583108901978,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3400,
+          "elapsed_seconds": 77.28696979099186,
+          "min_mse_gpu": 0.00022506008099298924,
+          "best_max_residual_float64": 0.10103023052215576,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3500,
+          "elapsed_seconds": 79.74102045799373,
+          "min_mse_gpu": 0.00022451327822636813,
+          "best_max_residual_float64": 0.10091644525527954,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3600,
+          "elapsed_seconds": 82.24942608299898,
+          "min_mse_gpu": 0.00022404984338209033,
+          "best_max_residual_float64": 0.10082000494003296,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3700,
+          "elapsed_seconds": 84.71387579099974,
+          "min_mse_gpu": 0.00022365347831510007,
+          "best_max_residual_float64": 0.10073751211166382,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3800,
+          "elapsed_seconds": 87.23182512499625,
+          "min_mse_gpu": 0.00022331149375531822,
+          "best_max_residual_float64": 0.10066622495651245,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 3900,
+          "elapsed_seconds": 89.67574999999488,
+          "min_mse_gpu": 0.00022301432909443974,
+          "best_max_residual_float64": 0.10060429573059082,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4000,
+          "elapsed_seconds": 92.21343620799598,
+          "min_mse_gpu": 0.07053723931312561,
+          "best_max_residual_float64": 0.6160453494547922,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4100,
+          "elapsed_seconds": 94.69718154100701,
+          "min_mse_gpu": 0.000414262933190912,
+          "best_max_residual_float64": 0.13486909866333008,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4200,
+          "elapsed_seconds": 97.21051595799509,
+          "min_mse_gpu": 0.00030730667640455067,
+          "best_max_residual_float64": 0.11718207597732544,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4300,
+          "elapsed_seconds": 99.65918591601076,
+          "min_mse_gpu": 0.00027228204999119043,
+          "best_max_residual_float64": 0.11062413454055786,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4400,
+          "elapsed_seconds": 102.17566462498507,
+          "min_mse_gpu": 0.00025563547387719154,
+          "best_max_residual_float64": 0.10735070705413818,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4500,
+          "elapsed_seconds": 104.64192095800536,
+          "min_mse_gpu": 0.0002461753028910607,
+          "best_max_residual_float64": 0.10544228553771973,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4600,
+          "elapsed_seconds": 106.98269895798876,
+          "min_mse_gpu": 0.00024019238480832428,
+          "best_max_residual_float64": 0.10421675443649292,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4700,
+          "elapsed_seconds": 109.22279733300093,
+          "min_mse_gpu": 0.00023612723452970386,
+          "best_max_residual_float64": 0.10337585210800171,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4800,
+          "elapsed_seconds": 111.46866745798616,
+          "min_mse_gpu": 0.00023321874323301017,
+          "best_max_residual_float64": 0.10277009010314941,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 4900,
+          "elapsed_seconds": 113.69979908299865,
+          "min_mse_gpu": 0.00023105497530195862,
+          "best_max_residual_float64": 0.10231727361679077,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5000,
+          "elapsed_seconds": 115.9484758329927,
+          "min_mse_gpu": 0.00022939522750675678,
+          "best_max_residual_float64": 0.10196852684020996,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5100,
+          "elapsed_seconds": 118.22646462501143,
+          "min_mse_gpu": 0.0002280902990605682,
+          "best_max_residual_float64": 0.10169363021850586,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5200,
+          "elapsed_seconds": 120.46390908298781,
+          "min_mse_gpu": 0.00022704321600031108,
+          "best_max_residual_float64": 0.10147255659103394,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5300,
+          "elapsed_seconds": 122.72405608301051,
+          "min_mse_gpu": 0.00022618875664193183,
+          "best_max_residual_float64": 0.10129183530807495,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5400,
+          "elapsed_seconds": 124.94765904100495,
+          "min_mse_gpu": 0.00022548124252352864,
+          "best_max_residual_float64": 0.10114198923110962,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5500,
+          "elapsed_seconds": 127.1948757499922,
+          "min_mse_gpu": 0.0002248881064588204,
+          "best_max_residual_float64": 0.10101622343063354,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5600,
+          "elapsed_seconds": 129.4468327499926,
+          "min_mse_gpu": 0.00022438551241066307,
+          "best_max_residual_float64": 0.10090959072113037,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5700,
+          "elapsed_seconds": 131.69863287499174,
+          "min_mse_gpu": 0.0002239555469714105,
+          "best_max_residual_float64": 0.1008182168006897,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5800,
+          "elapsed_seconds": 133.92509962499025,
+          "min_mse_gpu": 0.00022358456044457853,
+          "best_max_residual_float64": 0.10073935985565186,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 5900,
+          "elapsed_seconds": 136.15936970800976,
+          "min_mse_gpu": 0.00022326216276269406,
+          "best_max_residual_float64": 0.10067075490951538,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6000,
+          "elapsed_seconds": 138.39254208299099,
+          "min_mse_gpu": 0.07139214873313904,
+          "best_max_residual_float64": 0.6966741181973983,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6100,
+          "elapsed_seconds": 140.67007074999856,
+          "min_mse_gpu": 0.0003929857921320945,
+          "best_max_residual_float64": 0.12297201156616211,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6200,
+          "elapsed_seconds": 142.9195149159932,
+          "min_mse_gpu": 0.0003045455669052899,
+          "best_max_residual_float64": 0.1103189280879098,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6300,
+          "elapsed_seconds": 145.150505291007,
+          "min_mse_gpu": 0.0002758901391644031,
+          "best_max_residual_float64": 0.10617776003220535,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6400,
+          "elapsed_seconds": 147.4131089579896,
+          "min_mse_gpu": 0.00026233276003040373,
+          "best_max_residual_float64": 0.10420151182140666,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6500,
+          "elapsed_seconds": 149.65775654101162,
+          "min_mse_gpu": 0.00025465598446317017,
+          "best_max_residual_float64": 0.1030779000783994,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6600,
+          "elapsed_seconds": 151.93081799999345,
+          "min_mse_gpu": 0.00024981595925055444,
+          "best_max_residual_float64": 0.1035272479057312,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6700,
+          "elapsed_seconds": 154.16130758301006,
+          "min_mse_gpu": 0.00024653528816998005,
+          "best_max_residual_float64": 0.10281747579574585,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6800,
+          "elapsed_seconds": 156.40458766600932,
+          "min_mse_gpu": 0.00024419327382929623,
+          "best_max_residual_float64": 0.10230797529220581,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 6900,
+          "elapsed_seconds": 158.63539933299762,
+          "min_mse_gpu": 0.00024117578868754208,
+          "best_max_residual_float64": 0.10192793607711792,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7000,
+          "elapsed_seconds": 160.87477045800188,
+          "min_mse_gpu": 0.00023801170755177736,
+          "best_max_residual_float64": 0.10163611173629761,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7100,
+          "elapsed_seconds": 163.1486452909885,
+          "min_mse_gpu": 0.00023551963386125863,
+          "best_max_residual_float64": 0.1014062762260437,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7200,
+          "elapsed_seconds": 165.795179208013,
+          "min_mse_gpu": 0.00023351666459348053,
+          "best_max_residual_float64": 0.10122185945510864,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7300,
+          "elapsed_seconds": 168.9743868749938,
+          "min_mse_gpu": 0.00023187921033240855,
+          "best_max_residual_float64": 0.10107123851776123,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7400,
+          "elapsed_seconds": 172.19271120798658,
+          "min_mse_gpu": 0.0002305212547071278,
+          "best_max_residual_float64": 0.10094636678695679,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7500,
+          "elapsed_seconds": 175.35738504098845,
+          "min_mse_gpu": 0.00022938109759707004,
+          "best_max_residual_float64": 0.1008417010307312,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7600,
+          "elapsed_seconds": 178.57411804099684,
+          "min_mse_gpu": 0.00022841351164970547,
+          "best_max_residual_float64": 0.10075312852859497,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7700,
+          "elapsed_seconds": 181.76341750001302,
+          "min_mse_gpu": 0.00022758451814297587,
+          "best_max_residual_float64": 0.1006772518157959,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7800,
+          "elapsed_seconds": 184.95629191599437,
+          "min_mse_gpu": 0.00022686857846565545,
+          "best_max_residual_float64": 0.10061174631118774,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 7900,
+          "elapsed_seconds": 188.1466429999855,
+          "min_mse_gpu": 0.00022624553821515292,
+          "best_max_residual_float64": 0.10055482387542725,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8000,
+          "elapsed_seconds": 191.29641245800303,
+          "min_mse_gpu": 0.06946396827697754,
+          "best_max_residual_float64": 0.6304477692206776,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8100,
+          "elapsed_seconds": 193.79521974999807,
+          "min_mse_gpu": 0.0003442378656473011,
+          "best_max_residual_float64": 0.12061494588851929,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8200,
+          "elapsed_seconds": 196.0348167080083,
+          "min_mse_gpu": 0.0002829887962434441,
+          "best_max_residual_float64": 0.10974907875061035,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8300,
+          "elapsed_seconds": 198.2920311249909,
+          "min_mse_gpu": 0.0002629902446642518,
+          "best_max_residual_float64": 0.10591268539428711,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8400,
+          "elapsed_seconds": 200.5155560830026,
+          "min_mse_gpu": 0.00025353001547046006,
+          "best_max_residual_float64": 0.1040419340133667,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8500,
+          "elapsed_seconds": 202.764285207988,
+          "min_mse_gpu": 0.00024818372912704945,
+          "best_max_residual_float64": 0.10296767950057983,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8600,
+          "elapsed_seconds": 205.0164511660114,
+          "min_mse_gpu": 0.0002448192972224206,
+          "best_max_residual_float64": 0.10228556394577026,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8700,
+          "elapsed_seconds": 207.2735079159902,
+          "min_mse_gpu": 0.00024254419258795679,
+          "best_max_residual_float64": 0.10182136297225952,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8800,
+          "elapsed_seconds": 209.54401137499372,
+          "min_mse_gpu": 0.00024092243984341621,
+          "best_max_residual_float64": 0.1014891266822815,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 8900,
+          "elapsed_seconds": 211.8157620409911,
+          "min_mse_gpu": 0.00023783621145412326,
+          "best_max_residual_float64": 0.10124200582504272,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9000,
+          "elapsed_seconds": 214.05204912499175,
+          "min_mse_gpu": 0.00023516963119618595,
+          "best_max_residual_float64": 0.10105258226394653,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9100,
+          "elapsed_seconds": 216.37620274999063,
+          "min_mse_gpu": 0.00023306948423851281,
+          "best_max_residual_float64": 0.10090380907058716,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9200,
+          "elapsed_seconds": 219.28239729101188,
+          "min_mse_gpu": 0.0002313817967660725,
+          "best_max_residual_float64": 0.1007845401763916,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9300,
+          "elapsed_seconds": 222.218652999989,
+          "min_mse_gpu": 0.00023000239161774516,
+          "best_max_residual_float64": 0.10068726539611816,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9400,
+          "elapsed_seconds": 225.11392479098868,
+          "min_mse_gpu": 0.00022885874204803258,
+          "best_max_residual_float64": 0.10060679912567139,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9500,
+          "elapsed_seconds": 228.13198124998598,
+          "min_mse_gpu": 0.00022789875220041722,
+          "best_max_residual_float64": 0.10053938627243042,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9600,
+          "elapsed_seconds": 231.12470191600733,
+          "min_mse_gpu": 0.0002270843688165769,
+          "best_max_residual_float64": 0.10048234462738037,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9700,
+          "elapsed_seconds": 234.13920770800905,
+          "min_mse_gpu": 0.00022638689551968127,
+          "best_max_residual_float64": 0.10043346881866455,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9800,
+          "elapsed_seconds": 237.18558062499505,
+          "min_mse_gpu": 0.00022578451898880303,
+          "best_max_residual_float64": 0.1003914475440979,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 9900,
+          "elapsed_seconds": 240.40099254099187,
+          "min_mse_gpu": 0.00022526056272909045,
+          "best_max_residual_float64": 0.10035485029220581,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10000,
+          "elapsed_seconds": 243.73211262500263,
+          "min_mse_gpu": 0.06885534524917603,
+          "best_max_residual_float64": 0.5854262939973323,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10100,
+          "elapsed_seconds": 247.14358041598462,
+          "min_mse_gpu": 0.00030709721613675356,
+          "best_max_residual_float64": 0.11521053314208984,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10200,
+          "elapsed_seconds": 250.48961170800612,
+          "min_mse_gpu": 0.00026770069962367415,
+          "best_max_residual_float64": 0.10730355978012085,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10300,
+          "elapsed_seconds": 253.8213882909913,
+          "min_mse_gpu": 0.000254062470048666,
+          "best_max_residual_float64": 0.10443234443664551,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10400,
+          "elapsed_seconds": 257.2249371249927,
+          "min_mse_gpu": 0.0002475168148521334,
+          "best_max_residual_float64": 0.10302668809890747,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10500,
+          "elapsed_seconds": 260.5346615409944,
+          "min_mse_gpu": 0.00024379878595937043,
+          "best_max_residual_float64": 0.10221952199935913,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10600,
+          "elapsed_seconds": 263.4318053330062,
+          "min_mse_gpu": 0.0002414545597275719,
+          "best_max_residual_float64": 0.10170745849609375,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10700,
+          "elapsed_seconds": 265.88829116598936,
+          "min_mse_gpu": 0.00023986749874893576,
+          "best_max_residual_float64": 0.10135936737060547,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10800,
+          "elapsed_seconds": 268.39414687501267,
+          "min_mse_gpu": 0.00023873700411058962,
+          "best_max_residual_float64": 0.10111051797866821,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 10900,
+          "elapsed_seconds": 270.7883687079884,
+          "min_mse_gpu": 0.0002357082994421944,
+          "best_max_residual_float64": 0.10092562437057495,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11000,
+          "elapsed_seconds": 273.04966604098445,
+          "min_mse_gpu": 0.00023335730656981468,
+          "best_max_residual_float64": 0.10078400373458862,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11100,
+          "elapsed_seconds": 275.29719416599255,
+          "min_mse_gpu": 0.00023150643392000347,
+          "best_max_residual_float64": 0.1006729006767273,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11200,
+          "elapsed_seconds": 277.5583655409864,
+          "min_mse_gpu": 0.00023001947556622326,
+          "best_max_residual_float64": 0.10058373212814331,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11300,
+          "elapsed_seconds": 279.7823612499924,
+          "min_mse_gpu": 0.00022880460892338306,
+          "best_max_residual_float64": 0.10051119327545166,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11400,
+          "elapsed_seconds": 282.03316308298963,
+          "min_mse_gpu": 0.00022779767459724098,
+          "best_max_residual_float64": 0.10045117139816284,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11500,
+          "elapsed_seconds": 284.2618803330115,
+          "min_mse_gpu": 0.000226952790399082,
+          "best_max_residual_float64": 0.10040098428726196,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11600,
+          "elapsed_seconds": 286.53746958301053,
+          "min_mse_gpu": 0.00022623602126259357,
+          "best_max_residual_float64": 0.10035848617553711,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11700,
+          "elapsed_seconds": 288.7742365000013,
+          "min_mse_gpu": 0.00022562243975698948,
+          "best_max_residual_float64": 0.10032206773757935,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11800,
+          "elapsed_seconds": 291.0034018330043,
+          "min_mse_gpu": 0.00022509267728310078,
+          "best_max_residual_float64": 0.10029083490371704,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 11900,
+          "elapsed_seconds": 293.2541210830095,
+          "min_mse_gpu": 0.00022463194909505546,
+          "best_max_residual_float64": 0.10026353597640991,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        },
+        {
+          "step": 12000,
+          "elapsed_seconds": 295.4735622500011,
+          "min_mse_gpu": 0.0002242285991087556,
+          "best_max_residual_float64": 0.1002398133277893,
+          "allocated_bytes": 56001280,
+          "driver_bytes": 1116405760
+        }
+      ],
+      "best_saved_case": {
+        "A": [
+          1.0,
+          0.8997601866722107,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "B": [
+          1.0,
+          0.1002398133277893,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.035678062587976456,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "max_residual_float64": 0.1002398133277893,
+        "l2_residual_float64": 0.15701669559560433,
+        "status": "numerical_only"
+      },
+      "best_observed_residual_float64": 0.1002398133277893,
+      "note": "All six restart blocks completed."
+    },
+    {
+      "directory": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m32n64d4",
+      "config": {
+        "m": 32,
+        "n": 64,
+        "starts": 32768,
+        "steps": 12000,
+        "fractional_index": 4,
+        "margin": 0.01,
+        "restart_every": 2000,
+        "seed": 2026111506,
+        "out": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round015-gpu/m32n64d4",
+        "torch": "2.15.0",
+        "numpy": "2.5.4",
+        "device": "mps",
+        "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+        "dtype": "float32",
+        "pid": 16678,
+        "script_sha256": "2080fcc0fbfb72040f736606878d02e8f9f307f9f1b18abb43a8514a4ee8a4cf",
+        "scope": "degrees fixed; zeros allowed; first fractional index d; projected numerical search only"
+      },
+      "source": "gpu_factor_search.py",
+      "complete": true,
+      "process_exited_verified": true,
+      "fully_trained_initializations": 196608,
+      "history": [
+        {
+          "step": 0,
+          "elapsed_seconds": 0.1871167079953011,
+          "min_mse_gpu": 0.057661641389131546,
+          "best_max_residual_float64": 0.617453334587037,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082867712
+        },
+        {
+          "step": 100,
+          "elapsed_seconds": 4.008739999990212,
+          "min_mse_gpu": 0.007213306147605181,
+          "best_max_residual_float64": 0.24923115968704224,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 200,
+          "elapsed_seconds": 7.808955541986506,
+          "min_mse_gpu": 0.006105370819568634,
+          "best_max_residual_float64": 0.2376563985376512,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 300,
+          "elapsed_seconds": 11.624979666987201,
+          "min_mse_gpu": 0.006096867378801107,
+          "best_max_residual_float64": 0.23825582869355943,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 400,
+          "elapsed_seconds": 15.444932332989993,
+          "min_mse_gpu": 0.00609686691313982,
+          "best_max_residual_float64": 0.23825265203288093,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 500,
+          "elapsed_seconds": 19.258495499991113,
+          "min_mse_gpu": 0.006096865516155958,
+          "best_max_residual_float64": 0.23825249235627455,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 600,
+          "elapsed_seconds": 23.105095041973982,
+          "min_mse_gpu": 0.00609686691313982,
+          "best_max_residual_float64": 0.23777606727130807,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 700,
+          "elapsed_seconds": 26.92315974997473,
+          "min_mse_gpu": 0.006096865050494671,
+          "best_max_residual_float64": 0.2373650946405481,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 800,
+          "elapsed_seconds": 30.728930957993725,
+          "min_mse_gpu": 0.006096866447478533,
+          "best_max_residual_float64": 0.2370793489839147,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 900,
+          "elapsed_seconds": 34.54381241698866,
+          "min_mse_gpu": 0.006096866447478533,
+          "best_max_residual_float64": 0.2368707030684103,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1000,
+          "elapsed_seconds": 38.35104729197337,
+          "min_mse_gpu": 0.006096865516155958,
+          "best_max_residual_float64": 0.2367125190258732,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1100,
+          "elapsed_seconds": 42.20888183297939,
+          "min_mse_gpu": 0.006096866447478533,
+          "best_max_residual_float64": 0.23658939110044352,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1200,
+          "elapsed_seconds": 46.01086358298198,
+          "min_mse_gpu": 0.00609686691313982,
+          "best_max_residual_float64": 0.23649095743034576,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1300,
+          "elapsed_seconds": 49.82381004199851,
+          "min_mse_gpu": 0.006096865516155958,
+          "best_max_residual_float64": 0.23641125354674952,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1400,
+          "elapsed_seconds": 53.61198633298045,
+          "min_mse_gpu": 0.006099443882703781,
+          "best_max_residual_float64": 0.23539901700904875,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1500,
+          "elapsed_seconds": 57.46769354198477,
+          "min_mse_gpu": 0.006096865516155958,
+          "best_max_residual_float64": 0.23629875433315028,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1600,
+          "elapsed_seconds": 61.34403774997918,
+          "min_mse_gpu": 0.006096865516155958,
+          "best_max_residual_float64": 0.23624325311450267,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1700,
+          "elapsed_seconds": 65.15143283299403,
+          "min_mse_gpu": 0.006096865516155958,
+          "best_max_residual_float64": 0.23789068194123608,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1800,
+          "elapsed_seconds": 68.93972729198867,
+          "min_mse_gpu": 0.006096881814301014,
+          "best_max_residual_float64": 0.23630449703779344,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 1900,
+          "elapsed_seconds": 72.74829016698641,
+          "min_mse_gpu": 0.006096945609897375,
+          "best_max_residual_float64": 0.23614030103218608,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2000,
+          "elapsed_seconds": 76.57218429198838,
+          "min_mse_gpu": 0.05991360545158386,
+          "best_max_residual_float64": 0.6712736127087275,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2100,
+          "elapsed_seconds": 80.44820779198199,
+          "min_mse_gpu": 0.007463155314326286,
+          "best_max_residual_float64": 0.2748114508654602,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2200,
+          "elapsed_seconds": 84.26169137499528,
+          "min_mse_gpu": 0.006616574712097645,
+          "best_max_residual_float64": 0.22870736775956657,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2300,
+          "elapsed_seconds": 88.05320812499849,
+          "min_mse_gpu": 0.006615658290684223,
+          "best_max_residual_float64": 0.22939619841070935,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2400,
+          "elapsed_seconds": 91.88962754199747,
+          "min_mse_gpu": 0.006615659687668085,
+          "best_max_residual_float64": 0.229399401104039,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2500,
+          "elapsed_seconds": 95.7410399169894,
+          "min_mse_gpu": 0.006615659687668085,
+          "best_max_residual_float64": 0.22939938424247752,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2600,
+          "elapsed_seconds": 99.62334404198918,
+          "min_mse_gpu": 0.006615658290684223,
+          "best_max_residual_float64": 0.2293993559804437,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2700,
+          "elapsed_seconds": 103.70999704199494,
+          "min_mse_gpu": 0.006615659687668085,
+          "best_max_residual_float64": 0.22939939021282774,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2800,
+          "elapsed_seconds": 107.97253920798539,
+          "min_mse_gpu": 0.006615659687668085,
+          "best_max_residual_float64": 0.2293993625860633,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 2900,
+          "elapsed_seconds": 112.21431229199516,
+          "min_mse_gpu": 0.0066123525612056255,
+          "best_max_residual_float64": 0.22939942788261947,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3000,
+          "elapsed_seconds": 116.45823608298087,
+          "min_mse_gpu": 0.006609566509723663,
+          "best_max_residual_float64": 0.22939933044793115,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3100,
+          "elapsed_seconds": 120.76169404198299,
+          "min_mse_gpu": 0.006607390008866787,
+          "best_max_residual_float64": 0.22939933788321198,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3200,
+          "elapsed_seconds": 124.9698412079888,
+          "min_mse_gpu": 0.0066056521609425545,
+          "best_max_residual_float64": 0.22939945906027326,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3300,
+          "elapsed_seconds": 129.2320124580001,
+          "min_mse_gpu": 0.006604233756661415,
+          "best_max_residual_float64": 0.22939898514415713,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3400,
+          "elapsed_seconds": 133.4515194579726,
+          "min_mse_gpu": 0.006603062152862549,
+          "best_max_residual_float64": 0.23158657171154218,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3500,
+          "elapsed_seconds": 137.38405841699569,
+          "min_mse_gpu": 0.0066020796075463295,
+          "best_max_residual_float64": 0.22944432208310528,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3600,
+          "elapsed_seconds": 141.25265383298392,
+          "min_mse_gpu": 0.006601243745535612,
+          "best_max_residual_float64": 0.22939934182459698,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3700,
+          "elapsed_seconds": 145.09191645798273,
+          "min_mse_gpu": 0.006600529886782169,
+          "best_max_residual_float64": 0.2293992658484041,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3800,
+          "elapsed_seconds": 148.89835670799948,
+          "min_mse_gpu": 0.006625340320169926,
+          "best_max_residual_float64": 0.23366833673109233,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 3900,
+          "elapsed_seconds": 153.15444233297603,
+          "min_mse_gpu": 0.006599379703402519,
+          "best_max_residual_float64": 0.22939536981479725,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4000,
+          "elapsed_seconds": 158.33135570798186,
+          "min_mse_gpu": 0.05747181922197342,
+          "best_max_residual_float64": 0.5872278393697936,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4100,
+          "elapsed_seconds": 163.501524124993,
+          "min_mse_gpu": 0.007116775494068861,
+          "best_max_residual_float64": 0.2749488729007945,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4200,
+          "elapsed_seconds": 168.65843520799535,
+          "min_mse_gpu": 0.0055785817094147205,
+          "best_max_residual_float64": 0.2281387746334076,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4300,
+          "elapsed_seconds": 173.80878604197642,
+          "min_mse_gpu": 0.005505606532096863,
+          "best_max_residual_float64": 0.21897903084754944,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4400,
+          "elapsed_seconds": 178.9619549169729,
+          "min_mse_gpu": 0.00550560187548399,
+          "best_max_residual_float64": 0.21741051971912384,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4500,
+          "elapsed_seconds": 183.00836237499607,
+          "min_mse_gpu": 0.005505603738129139,
+          "best_max_residual_float64": 0.22368661681560553,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4600,
+          "elapsed_seconds": 186.86290191698936,
+          "min_mse_gpu": 0.0055056046694517136,
+          "best_max_residual_float64": 0.22368662254124816,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4700,
+          "elapsed_seconds": 190.68420379198506,
+          "min_mse_gpu": 0.003887214930728078,
+          "best_max_residual_float64": 0.22368663631243457,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4800,
+          "elapsed_seconds": 194.50750687497202,
+          "min_mse_gpu": 0.0038299732841551304,
+          "best_max_residual_float64": 0.2236866398999986,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 4900,
+          "elapsed_seconds": 198.2940483749844,
+          "min_mse_gpu": 0.003829971654340625,
+          "best_max_residual_float64": 0.2236867090166541,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5000,
+          "elapsed_seconds": 202.11289541699807,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.22939933674245516,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5100,
+          "elapsed_seconds": 205.9802898329799,
+          "min_mse_gpu": 0.0038299725856631994,
+          "best_max_residual_float64": 0.22365968050196772,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5200,
+          "elapsed_seconds": 209.8075990829966,
+          "min_mse_gpu": 0.003829971654340625,
+          "best_max_residual_float64": 0.22368610962455637,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5300,
+          "elapsed_seconds": 213.62338241699035,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.22368702236550897,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5400,
+          "elapsed_seconds": 217.46021745799226,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.22563548848561288,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5500,
+          "elapsed_seconds": 221.28892399999313,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.2236973997440015,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5600,
+          "elapsed_seconds": 225.167626999988,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.22368669064903912,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5700,
+          "elapsed_seconds": 228.98274324997328,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.22368867922486757,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5800,
+          "elapsed_seconds": 232.80513045800035,
+          "min_mse_gpu": 0.003829971421509981,
+          "best_max_residual_float64": 0.22366786472153577,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 5900,
+          "elapsed_seconds": 236.61297662497964,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.22368335939103656,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6000,
+          "elapsed_seconds": 240.4242235829879,
+          "min_mse_gpu": 0.05832841247320175,
+          "best_max_residual_float64": 0.6596525979694441,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6100,
+          "elapsed_seconds": 244.29351308298646,
+          "min_mse_gpu": 0.006498019676655531,
+          "best_max_residual_float64": 0.2145332599058838,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6200,
+          "elapsed_seconds": 248.08034749998478,
+          "min_mse_gpu": 0.006294265855103731,
+          "best_max_residual_float64": 0.240761858805157,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6300,
+          "elapsed_seconds": 251.90683100000024,
+          "min_mse_gpu": 0.006264869123697281,
+          "best_max_residual_float64": 0.24073223041695657,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6400,
+          "elapsed_seconds": 255.7205190419918,
+          "min_mse_gpu": 0.006264864932745695,
+          "best_max_residual_float64": 0.24073198480653235,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6500,
+          "elapsed_seconds": 259.53915116697317,
+          "min_mse_gpu": 0.00626486586406827,
+          "best_max_residual_float64": 0.24073219858056083,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6600,
+          "elapsed_seconds": 263.3635264999757,
+          "min_mse_gpu": 0.006264865398406982,
+          "best_max_residual_float64": 0.2407320743582233,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6700,
+          "elapsed_seconds": 267.1882115829794,
+          "min_mse_gpu": 0.003830480854958296,
+          "best_max_residual_float64": 0.24073219943384405,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6800,
+          "elapsed_seconds": 271.0202620419732,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.24072160184671287,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 6900,
+          "elapsed_seconds": 274.845096791978,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.24132358107969143,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7000,
+          "elapsed_seconds": 278.6322760829935,
+          "min_mse_gpu": 0.0038299730513244867,
+          "best_max_residual_float64": 0.24072819455479877,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7100,
+          "elapsed_seconds": 282.49294649998774,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.24371211394504577,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7200,
+          "elapsed_seconds": 286.31791433299077,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.24076466974000676,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7300,
+          "elapsed_seconds": 290.1296353749931,
+          "min_mse_gpu": 0.003829971421509981,
+          "best_max_residual_float64": 0.24072654871225163,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7400,
+          "elapsed_seconds": 293.93800916697364,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.24151584433350481,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7500,
+          "elapsed_seconds": 297.73661212497973,
+          "min_mse_gpu": 0.0038299723528325558,
+          "best_max_residual_float64": 0.24073381776497893,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7600,
+          "elapsed_seconds": 301.5850576669909,
+          "min_mse_gpu": 0.00382997072301805,
+          "best_max_residual_float64": 0.24073016471010322,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7700,
+          "elapsed_seconds": 305.39420662497287,
+          "min_mse_gpu": 0.003829972120001912,
+          "best_max_residual_float64": 0.24059550175615851,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7800,
+          "elapsed_seconds": 309.21365299998433,
+          "min_mse_gpu": 0.003829971654340625,
+          "best_max_residual_float64": 0.24073099088487737,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 7900,
+          "elapsed_seconds": 313.0259704999917,
+          "min_mse_gpu": 0.003830051515251398,
+          "best_max_residual_float64": 0.24073238612096715,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8000,
+          "elapsed_seconds": 316.8436127079767,
+          "min_mse_gpu": 0.055514562875032425,
+          "best_max_residual_float64": 0.6507659617992607,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8100,
+          "elapsed_seconds": 320.70197179197567,
+          "min_mse_gpu": 0.0068868109956383705,
+          "best_max_residual_float64": 0.2207411593712969,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8200,
+          "elapsed_seconds": 324.52566283298074,
+          "min_mse_gpu": 0.006525879260152578,
+          "best_max_residual_float64": 0.2335635871597615,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8300,
+          "elapsed_seconds": 328.32428470798186,
+          "min_mse_gpu": 0.006371235940605402,
+          "best_max_residual_float64": 0.2358086127578512,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8400,
+          "elapsed_seconds": 332.14915595797356,
+          "min_mse_gpu": 0.006371223833411932,
+          "best_max_residual_float64": 0.23578806557714596,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8500,
+          "elapsed_seconds": 335.98479349998524,
+          "min_mse_gpu": 0.006371225696057081,
+          "best_max_residual_float64": 0.23578810989195959,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8600,
+          "elapsed_seconds": 339.8503097499779,
+          "min_mse_gpu": 0.006371225696057081,
+          "best_max_residual_float64": 0.23578808024744785,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8700,
+          "elapsed_seconds": 343.6542869169789,
+          "min_mse_gpu": 0.006371226627379656,
+          "best_max_residual_float64": 0.23578803642639634,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8800,
+          "elapsed_seconds": 347.47476962499786,
+          "min_mse_gpu": 0.006371227093040943,
+          "best_max_residual_float64": 0.23578800655847765,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 8900,
+          "elapsed_seconds": 351.3003482919885,
+          "min_mse_gpu": 0.006371225230395794,
+          "best_max_residual_float64": 0.23578796328009233,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9000,
+          "elapsed_seconds": 355.1251934579923,
+          "min_mse_gpu": 0.006371227093040943,
+          "best_max_residual_float64": 0.23579034766419196,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9100,
+          "elapsed_seconds": 358.98217041697353,
+          "min_mse_gpu": 0.006371227093040943,
+          "best_max_residual_float64": 0.23578713389428335,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9200,
+          "elapsed_seconds": 362.79006995799136,
+          "min_mse_gpu": 0.006371225230395794,
+          "best_max_residual_float64": 0.23578781601376067,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9300,
+          "elapsed_seconds": 366.6148856249929,
+          "min_mse_gpu": 0.006476385053247213,
+          "best_max_residual_float64": 0.2357876850355299,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9400,
+          "elapsed_seconds": 370.43664804199943,
+          "min_mse_gpu": 0.006371234077960253,
+          "best_max_residual_float64": 0.23592438347796701,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9500,
+          "elapsed_seconds": 374.26331650000066,
+          "min_mse_gpu": 0.006371225230395794,
+          "best_max_residual_float64": 0.23578852310387502,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9600,
+          "elapsed_seconds": 378.10588066698983,
+          "min_mse_gpu": 0.006371228955686092,
+          "best_max_residual_float64": 0.23578808207411547,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9700,
+          "elapsed_seconds": 381.93803337498684,
+          "min_mse_gpu": 0.006371441762894392,
+          "best_max_residual_float64": 0.23568061824558234,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9800,
+          "elapsed_seconds": 385.7645700419962,
+          "min_mse_gpu": 0.006371226627379656,
+          "best_max_residual_float64": 0.23579540970616006,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 9900,
+          "elapsed_seconds": 389.5783839999931,
+          "min_mse_gpu": 0.006371227093040943,
+          "best_max_residual_float64": 0.23578790088694115,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10000,
+          "elapsed_seconds": 393.36969404199044,
+          "min_mse_gpu": 0.057980213314294815,
+          "best_max_residual_float64": 0.6215073557743294,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10100,
+          "elapsed_seconds": 397.2444722079963,
+          "min_mse_gpu": 0.003630097024142742,
+          "best_max_residual_float64": 0.26171842217445374,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10200,
+          "elapsed_seconds": 401.06645987497177,
+          "min_mse_gpu": 0.0036289968993514776,
+          "best_max_residual_float64": 0.2379354878161435,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10300,
+          "elapsed_seconds": 404.90840308298357,
+          "min_mse_gpu": 0.003628997365012765,
+          "best_max_residual_float64": 0.2556662306943722,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10400,
+          "elapsed_seconds": 408.7057632499782,
+          "min_mse_gpu": 0.003628998063504696,
+          "best_max_residual_float64": 0.25919368467484394,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10500,
+          "elapsed_seconds": 412.5213000829972,
+          "min_mse_gpu": 0.003628997365012765,
+          "best_max_residual_float64": 0.25919369033549255,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10600,
+          "elapsed_seconds": 416.4146470419946,
+          "min_mse_gpu": 0.003628998063504696,
+          "best_max_residual_float64": 0.2591936770410348,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10700,
+          "elapsed_seconds": 420.245218749973,
+          "min_mse_gpu": 0.0036289978306740522,
+          "best_max_residual_float64": 0.2590178444432407,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10800,
+          "elapsed_seconds": 424.1751627079793,
+          "min_mse_gpu": 0.003628998063504696,
+          "best_max_residual_float64": 0.25919483494252904,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 10900,
+          "elapsed_seconds": 427.96619724997436,
+          "min_mse_gpu": 0.003628997365012765,
+          "best_max_residual_float64": 0.2591936889352795,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11000,
+          "elapsed_seconds": 431.81513279199135,
+          "min_mse_gpu": 0.0036289978306740522,
+          "best_max_residual_float64": 0.24611303402668772,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11100,
+          "elapsed_seconds": 435.6477264999994,
+          "min_mse_gpu": 0.0036289978306740522,
+          "best_max_residual_float64": 0.2591374391419672,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11200,
+          "elapsed_seconds": 439.4489730829955,
+          "min_mse_gpu": 0.003628998063504696,
+          "best_max_residual_float64": 0.2591939229915421,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11300,
+          "elapsed_seconds": 443.252561457979,
+          "min_mse_gpu": 0.003628998063504696,
+          "best_max_residual_float64": 0.2591935946397461,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11400,
+          "elapsed_seconds": 447.0429537499731,
+          "min_mse_gpu": 0.003628998063504696,
+          "best_max_residual_float64": 0.2591937199161094,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11500,
+          "elapsed_seconds": 450.83080524997786,
+          "min_mse_gpu": 0.003628997365012765,
+          "best_max_residual_float64": 0.2576594183061225,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11600,
+          "elapsed_seconds": 454.6603557499766,
+          "min_mse_gpu": 0.003628997365012765,
+          "best_max_residual_float64": 0.25919365464800537,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11700,
+          "elapsed_seconds": 458.44915212498745,
+          "min_mse_gpu": 0.003628997365012765,
+          "best_max_residual_float64": 0.2591936601646663,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11800,
+          "elapsed_seconds": 462.25350033299765,
+          "min_mse_gpu": 0.003628997365012765,
+          "best_max_residual_float64": 0.2591935786762687,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 11900,
+          "elapsed_seconds": 466.0367022919818,
+          "min_mse_gpu": 0.0036289978306740522,
+          "best_max_residual_float64": 0.2591113391034259,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        },
+        {
+          "step": 12000,
+          "elapsed_seconds": 469.8461802499951,
+          "min_mse_gpu": 0.003628998063504696,
+          "best_max_residual_float64": 0.25782756957876174,
+          "allocated_bytes": 98612992,
+          "driver_bytes": 1082851328
+        }
+      ],
+      "best_saved_case": {
+        "A": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.09946420788764954,
+          0.0,
+          0.0,
+          0.0,
+          0.38346245884895325,
+          0.0,
+          0.840347170829773,
+          0.04091842472553253,
+          0.6254332065582275,
+          0.06224970519542694,
+          0.17060981690883636,
+          0.0,
+          0.0,
+          0.2693214416503906,
+          0.3399825096130371,
+          0.020335329696536064,
+          0.8432257175445557,
+          0.20294266939163208,
+          0.7073954343795776,
+          0.0,
+          0.07297958433628082,
+          0.0,
+          0.0,
+          0.42613962292671204,
+          0.0,
+          0.0,
+          0.0,
+          0.07822960615158081,
+          1.0
+        ],
+        "B": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9005358219146729,
+          0.0,
+          0.14454670250415802,
+          0.0,
+          0.4955105781555176,
+          0.0,
+          0.015917673707008362,
+          0.0,
+          0.0,
+          0.0,
+          0.004393605515360832,
+          0.0,
+          0.07544705271720886,
+          0.5693805813789368,
+          0.0,
+          0.0,
+          0.0,
+          0.49063822627067566,
+          0.0,
+          0.0,
+          0.061075590550899506,
+          0.3868200182914734,
+          0.0,
+          0.05997547134757042,
+          0.1836952120065689,
+          0.35967734456062317,
+          0.499191015958786,
+          0.0,
+          0.0,
+          0.44815927743911743,
+          0.7576469779014587,
+          0.09065034985542297,
+          0.0,
+          0.0,
+          0.07047925144433975,
+          0.0,
+          0.0,
+          0.0,
+          0.029481330886483192,
+          0.0,
+          0.0,
+          0.1830134242773056,
+          0.06365553289651871,
+          0.21974684298038483,
+          0.16576077044010162,
+          0.0,
+          0.3700433671474457,
+          0.2115834504365921,
+          0.0,
+          0.0,
+          0.0,
+          0.09407572448253632,
+          0.0,
+          0.07596296817064285,
+          0.5901481509208679,
+          0.6291437745094299,
+          0.06956367194652557,
+          0.019252797588706017,
+          0.0,
+          0.8042700290679932,
+          1.0
+        ],
+        "max_residual_float64": 0.22368335939103656,
+        "l2_residual_float64": 0.7307827945161561,
+        "status": "numerical_only"
+      },
+      "best_observed_residual_float64": 0.2145332599058838,
+      "note": "All six restart blocks completed."
+    }
+  ],
+  "fully_trained_initializations": 884736,
+  "scope": "Numerical exploration only. No exclusion follows from absent candidates. Pilot m18n30 excluded from this production-run count."
+}
