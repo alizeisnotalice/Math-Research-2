@@ -1,0 +1,258 @@
+{
+  "format": "balanced-root-gpu-checkpoint-v1",
+  "status": "partial_unknown",
+  "source_sha256": "cb79a0894f1e3af3838a4718abfd165aa65d256a4471e43052cd0703def8f0f8",
+  "input_sha256": "b186e1050608bd0fc9c10221063de6375d3e8822375ae1fe389ffe248ead6d05",
+  "prepared_candidate": {
+    "index": 1,
+    "name": "stretch_H_L12",
+    "total_groups": 39
+  },
+  "parameters": {
+    "L": 12,
+    "device": "mps",
+    "dtype": "torch.float32",
+    "batch_size": 131072,
+    "max_codes": 10000000,
+    "tol": 1e-06,
+    "eta": 1e-05,
+    "condition_limit": 100000000.0,
+    "group_limit": 48
+  },
+  "group_count": 39,
+  "maximum_degree": 78,
+  "balance_weights": [
+    12,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    12,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    12,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "group_product_relative_error": 4.85355092608471e-13,
+  "versions": {
+    "torch": "2.15.0",
+    "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O"
+  },
+  "claim_boundary": "Numerical ranking only: incomplete E intervals, near-boundary, ill-conditioned, and every float non-hit are unknown.",
+  "elapsed_seconds": 319.05067245897953,
+  "E_progress": [
+    {
+      "E": 1,
+      "status": "complete",
+      "total_codes": 1728,
+      "completed_code_half_open": [
+        0,
+        1728
+      ],
+      "counts": {
+        "codes_seen": 1728,
+        "fractional_masks": 1402,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 2,
+      "status": "complete",
+      "total_codes": 287496,
+      "completed_code_half_open": [
+        0,
+        287496
+      ],
+      "counts": {
+        "codes_seen": 287496,
+        "fractional_masks": 210983,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 3,
+      "status": "partial_unknown",
+      "total_codes": 10648000,
+      "completed_code_half_open": [
+        0,
+        10000000
+      ],
+      "counts": {
+        "codes_seen": 10000000,
+        "fractional_masks": 6814502,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 4,
+      "status": "partial_unknown",
+      "total_codes": 121287375,
+      "completed_code_half_open": [
+        0,
+        10000000
+      ],
+      "counts": {
+        "codes_seen": 10000000,
+        "fractional_masks": 6522688,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 5,
+      "status": "partial_unknown",
+      "total_codes": 496793088,
+      "completed_code_half_open": [
+        0,
+        10000000
+      ],
+      "counts": {
+        "codes_seen": 10000000,
+        "fractional_masks": 6738960,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 6,
+      "status": "partial_unknown",
+      "total_codes": 788889024,
+      "completed_code_half_open": [
+        0,
+        10000000
+      ],
+      "counts": {
+        "codes_seen": 10000000,
+        "fractional_masks": 6908352,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 7,
+      "status": "partial_unknown",
+      "total_codes": 496793088,
+      "completed_code_half_open": [
+        0,
+        10000000
+      ],
+      "counts": {
+        "codes_seen": 10000000,
+        "fractional_masks": 6939077,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 8,
+      "status": "partial_unknown",
+      "total_codes": 121287375,
+      "completed_code_half_open": [
+        0,
+        10000000
+      ],
+      "counts": {
+        "codes_seen": 10000000,
+        "fractional_masks": 6917194,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 9,
+      "status": "partial_unknown",
+      "total_codes": 10648000,
+      "completed_code_half_open": [
+        0,
+        10000000
+      ],
+      "counts": {
+        "codes_seen": 10000000,
+        "fractional_masks": 7075175,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 10,
+      "status": "complete",
+      "total_codes": 287496,
+      "completed_code_half_open": [
+        0,
+        287496
+      ],
+      "counts": {
+        "codes_seen": 287496,
+        "fractional_masks": 224025,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 11,
+      "status": "complete",
+      "total_codes": 1728,
+      "completed_code_half_open": [
+        0,
+        1728
+      ],
+      "counts": {
+        "codes_seen": 1728,
+        "fractional_masks": 1535,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    },
+    {
+      "E": 12,
+      "status": "complete",
+      "total_codes": 4,
+      "completed_code_half_open": [
+        0,
+        4
+      ],
+      "counts": {
+        "codes_seen": 4,
+        "fractional_masks": 4,
+        "closed_tolerance_fractional_masks": 0,
+        "ill_conditioned_fractional_masks": 0
+      }
+    }
+  ],
+  "checkpoint_sha256": "2d903088959be8170d75098faac215217cd49425e1db92be249fd5098a7f0813",
+  "execution_exit_code": 0,
+  "scope": "partial numerical comparison; original H family now independently proved fair"
+}
