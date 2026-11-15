@@ -1,0 +1,55 @@
+{
+  "algorithm": "all endpoint-one 0-1 C; numerical real root partitions",
+  "certificate_status": "screen-only; no exact conclusion follows from an empty candidate list",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.5.4",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "parameters": {
+    "min_degree": 19,
+    "max_degree": 19,
+    "tol": 1e-07,
+    "workers": 10
+  },
+  "degrees": [
+    {
+      "degree": 19,
+      "polynomials_examined": 262144,
+      "root_grouped": 262144,
+      "root_partitions_tested": 138555904,
+      "constant_one_partitions": 406854,
+      "nonnegative_partitions": 7423,
+      "fractional_numerical_candidates": 0,
+      "candidates": [],
+      "most_negative_constant_one_case": {
+        "min_coefficient": -92.6874262900457,
+        "mask": 39780
+      }
+    }
+  ],
+  "elapsed_seconds": 687.440062046051,
+  "run_status": {
+    "state": "succeeded",
+    "script_sha256": "85449bdb7e66d253520755dc2baf0c877c5af86f7bbd86e08b6901f0b09ca702",
+    "started_at": "2026-11-15T10:23:51.560935+00:00",
+    "finished_at": "2026-11-15T10:35:19.066031+00:00",
+    "exit_code": 0,
+    "command": [
+      "/Users/zzh/.venvs/main/bin/python",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/counterexample_routes/root_partition_screen.py",
+      "--min-degree",
+      "19",
+      "--max-degree",
+      "19",
+      "--workers",
+      "10"
+    ],
+    "runtime": {
+      "executable": "/Users/zzh/.venvs/main/bin/python",
+      "version": "3.13.18",
+      "modules": {
+        "numpy": "2.5.4"
+      }
+    },
+    "timeout_seconds": 14400.0
+  }
+}
