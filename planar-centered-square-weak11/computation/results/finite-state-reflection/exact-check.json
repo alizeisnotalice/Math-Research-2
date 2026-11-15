@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "scope": "Exact tails, safe thresholds, and small counterexamples only; R35/R41 axes and coefficient values were not computed.",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "executable": "/Users/zzh/.local/bin/python3",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "single_process": true,
+  "arithmetic": "Fraction and directed dyadic square roots",
+  "sqrt_bits": 60,
+  "random_seed": null,
+  "floating_tolerance": null,
+  "script_sha256": "77e329f03f1e7047b4842fc2c13a626ba24d2565876e67da66989ad8385b7a7f",
+  "templates": [
+    {
+      "input": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r035_final_0134.json",
+      "sha256": "5021c54704af45b3ef8289c67a245926473434640372a934b2f15c4485f0c026",
+      "atoms": 204,
+      "Px": "328734960629/50000000000",
+      "Py": "175603458831370317/32000000000000000",
+      "mass": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+      "density": "65941670400277227073796193886781311/112748039307122545916238768345703125",
+      "old_R10_tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "reflected_R15_halfplane_bound": "26926515139458554369175308496283577011201095478932741874835164741/27059529433709411019897304402968750000000000000000000000000000000",
+      "full_double_periodic_density": "131883340800554454147592387773562622/112748039307122545916238768345703125",
+      "old_cell_padding": [
+        2,
+        2
+      ],
+      "old_area_polynomial_N_threshold": 4,
+      "axis_N_threshold": 5,
+      "seam_horizontal_source_cells": 5,
+      "seam_vertical_padding": 3,
+      "reflected_and_increment_N_threshold": 6
+    },
+    {
+      "input": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r041_final_0036.json",
+      "sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "atoms": 204,
+      "Px": "328734960629/50000000000",
+      "Py": "175603458831370317/32000000000000000",
+      "mass": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+      "density": "65941670400277227073796193886781311/112748039307122545916238768345703125",
+      "old_R10_tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "reflected_R15_halfplane_bound": "26926515139458554369175308496283577011201095478932741874835164741/27059529433709411019897304402968750000000000000000000000000000000",
+      "full_double_periodic_density": "131883340800554454147592387773562622/112748039307122545916238768345703125",
+      "old_cell_padding": [
+        2,
+        2
+      ],
+      "old_area_polynomial_N_threshold": 4,
+      "axis_N_threshold": 5,
+      "seam_horizontal_source_cells": 5,
+      "seam_vertical_padding": 3,
+      "reflected_and_increment_N_threshold": 6
+    }
+  ],
+  "phase_parity_cases": [
+    {
+      "N": 1,
+      "full_area": "1",
+      "axis_offset_from_last_source": "1/2",
+      "excess_coefficient_of_3_minus_2sqrt2": "1"
+    },
+    {
+      "N": 2,
+      "full_area": "10",
+      "axis_offset_from_last_source": "1",
+      "excess_coefficient_of_3_minus_2sqrt2": "8"
+    },
+    {
+      "N": 3,
+      "full_area": "18",
+      "axis_offset_from_last_source": "1/2",
+      "excess_coefficient_of_3_minus_2sqrt2": "3"
+    },
+    {
+      "N": 4,
+      "full_area": "40",
+      "axis_offset_from_last_source": "1",
+      "excess_coefficient_of_3_minus_2sqrt2": "16"
+    },
+    {
+      "N": 5,
+      "full_area": "55",
+      "axis_offset_from_last_source": "1/2",
+      "excess_coefficient_of_3_minus_2sqrt2": "5"
+    },
+    {
+      "N": 6,
+      "full_area": "90",
+      "axis_offset_from_last_source": "1",
+      "excess_coefficient_of_3_minus_2sqrt2": "24"
+    },
+    {
+      "N": 7,
+      "full_area": "112",
+      "axis_offset_from_last_source": "1/2",
+      "excess_coefficient_of_3_minus_2sqrt2": "7"
+    },
+    {
+      "N": 8,
+      "full_area": "160",
+      "axis_offset_from_last_source": "1",
+      "excess_coefficient_of_3_minus_2sqrt2": "32"
+    },
+    {
+      "N": 9,
+      "full_area": "189",
+      "axis_offset_from_last_source": "1/2",
+      "excess_coefficient_of_3_minus_2sqrt2": "9"
+    },
+    {
+      "N": 10,
+      "full_area": "250",
+      "axis_offset_from_last_source": "1",
+      "excess_coefficient_of_3_minus_2sqrt2": "40"
+    }
+  ],
+  "parity_third_difference_at_N1": "15",
+  "fixed_phase_small_N_cases": [
+    {
+      "N": 1,
+      "area_lower": "4",
+      "area_upper": "4"
+    },
+    {
+      "N": 2,
+      "area_lower": "9754662478328557113727161377609169/649037107316853453566312041152512",
+      "area_upper": "2497193594452110622645725512090872353/166153499473114484112975882535043072"
+    },
+    {
+      "N": 3,
+      "area_lower": "11239125616369783275488101583933322219/332306998946228968225951765070086144",
+      "area_upper": "11239125616369783282911524623966017783/332306998946228968225951765070086144"
+    },
+    {
+      "N": 4,
+      "area_lower": "5075603201241510298066507588258118649/83076749736557242056487941267521536",
+      "area_upper": "5075603201241510300540981934935683837/83076749736557242056487941267521536"
+    },
+    {
+      "N": 5,
+      "area_lower": "32394532672035828743275645649539473905/332306998946228968225951765070086144",
+      "area_upper": "16197266336017914379184847930506414095/166153499473114484112975882535043072"
+    },
+    {
+      "N": 6,
+      "area_lower": "23646629602718463597731252014673012739/166153499473114484112975882535043072",
+      "area_upper": "23646629602718463608420689228408342317/166153499473114484112975882535043072"
+    },
+    {
+      "N": 7,
+      "area_lower": "64998592405169336548826605492452129315/332306998946228968225951765070086144",
+      "area_upper": "8124824050646167072197371940894288085/41538374868278621028243970633760768"
+    },
+    {
+      "N": 8,
+      "area_lower": "10688816533904132100420993754857223177/41538374868278621028243970633760768",
+      "area_upper": "10688816533904132105072810884003211041/41538374868278621028243970633760768"
+    }
+  ],
+  "fixed_phase_third_difference_interval": [
+    "238969526784439197312569296861760255/332306998946228968225951765070086144",
+    "238969526784439238670169000207658233/332306998946228968225951765070086144"
+  ],
+  "axis_drift_tail_bound": "2222/3125",
+  "axis_drift_cases": [
+    {
+      "N": 1,
+      "c_formula": "4*sqrt(1)",
+      "stabilized": false
+    },
+    {
+      "N": 2,
+      "c_formula": "4*sqrt(2)",
+      "stabilized": false
+    },
+    {
+      "N": 3,
+      "c_formula": "4*sqrt(3)",
+      "stabilized": false
+    },
+    {
+      "N": 4,
+      "c_formula": "4*sqrt(4)",
+      "stabilized": true
+    },
+    {
+      "N": 5,
+      "c_formula": "9",
+      "stabilized": true
+    },
+    {
+      "N": 6,
+      "c_formula": "10",
+      "stabilized": true
+    },
+    {
+      "N": 7,
+      "c_formula": "11",
+      "stabilized": true
+    },
+    {
+      "N": 8,
+      "c_formula": "12",
+      "stabilized": true
+    }
+  ],
+  "exterior_crop_cases": [
+    {
+      "N": 1,
+      "full_area": "1",
+      "cropped_area": "1/4",
+      "lost_area": "3/4"
+    },
+    {
+      "N": 2,
+      "full_area": "4",
+      "cropped_area": "9/4",
+      "lost_area": "7/4"
+    },
+    {
+      "N": 3,
+      "full_area": "9",
+      "cropped_area": "25/4",
+      "lost_area": "11/4"
+    },
+    {
+      "N": 4,
+      "full_area": "16",
+      "cropped_area": "49/4",
+      "lost_area": "15/4"
+    },
+    {
+      "N": 5,
+      "full_area": "25",
+      "cropped_area": "81/4",
+      "lost_area": "19/4"
+    }
+  ]
+}

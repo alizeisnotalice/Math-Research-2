@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "arithmetic": "Fraction; exact toy profiles plus certified kernel inner/outer intervals",
+  "random_seed": null,
+  "floating_tolerance": null,
+  "source_snapshots": {
+    "reflection_edge_states.py": {
+      "sha256": "ea664c7f9520b9983b13383fd032ff3110a6379b7dea381108ed49c88db9fede",
+      "bytes": 6210
+    },
+    "reflection_edge_corners.py": {
+      "sha256": "53fe05c311c6601d4a7221e7518e3185b0b966ed737cd2a11c9916e5ce375fc3",
+      "bytes": 6357
+    },
+    "periodic_halo.py": {
+      "sha256": "b788671299ee33c14e4c6d872e36bfab06cbaa55dd6cd6a1c9bc6c26190a0f33",
+      "bytes": 6119
+    }
+  },
+  "source_filter_tests": [
+    {
+      "state": "bulk",
+      "atoms": 55,
+      "mass": "56"
+    },
+    {
+      "state": "left",
+      "atoms": 40,
+      "mass": "218/5"
+    },
+    {
+      "state": "right",
+      "atoms": 15,
+      "mass": "62/5"
+    },
+    {
+      "state": "bottom",
+      "atoms": 35,
+      "mass": "38"
+    },
+    {
+      "state": "top",
+      "atoms": 20,
+      "mass": "18"
+    },
+    {
+      "state": "seam-old",
+      "atoms": 26,
+      "mass": "118/5"
+    },
+    {
+      "state": "seam-new",
+      "atoms": 41,
+      "mass": "36"
+    },
+    {
+      "state": "corner-lb",
+      "atoms": 26,
+      "mass": "149/5"
+    },
+    {
+      "state": "corner-lt",
+      "atoms": 14,
+      "mass": "69/5"
+    },
+    {
+      "state": "corner-rb",
+      "atoms": 9,
+      "mass": "41/5"
+    },
+    {
+      "state": "corner-rt",
+      "atoms": 6,
+      "mass": "21/5"
+    },
+    {
+      "state": "seam-bottom-old",
+      "atoms": 16,
+      "mass": "79/5"
+    },
+    {
+      "state": "seam-bottom-new",
+      "atoms": 25,
+      "mass": "24"
+    },
+    {
+      "state": "seam-top-old",
+      "atoms": 10,
+      "mass": "39/5"
+    },
+    {
+      "state": "seam-top-new",
+      "atoms": 16,
+      "mass": "12"
+    }
+  ],
+  "independent_sparse_profile_tests": [
+    {
+      "state": "bulk",
+      "exact_area": "1",
+      "inner": "261121/262144",
+      "outer": "263169/262144",
+      "boxes": 210
+    },
+    {
+      "state": "left",
+      "exact_area": "5/2",
+      "inner": "1305605/524288",
+      "outer": "1315845/524288",
+      "boxes": 150
+    },
+    {
+      "state": "right",
+      "exact_area": "3/2",
+      "inner": "783363/524288",
+      "outer": "789507/524288",
+      "boxes": 100
+    },
+    {
+      "state": "bottom",
+      "exact_area": "5/2",
+      "inner": "1305605/524288",
+      "outer": "1315845/524288",
+      "boxes": 210
+    },
+    {
+      "state": "top",
+      "exact_area": "3/2",
+      "inner": "783363/524288",
+      "outer": "789507/524288",
+      "boxes": 126
+    },
+    {
+      "state": "seam-old",
+      "exact_area": "4",
+      "inner": "261121/65536",
+      "outer": "263169/65536",
+      "boxes": 210
+    },
+    {
+      "state": "seam-new",
+      "exact_area": "4",
+      "inner": "261121/65536",
+      "outer": "263169/65536",
+      "boxes": 1512
+    },
+    {
+      "state": "corner-lb",
+      "exact_area": "25/4",
+      "inner": "6528025/1048576",
+      "outer": "6579225/1048576",
+      "boxes": 150
+    },
+    {
+      "state": "corner-lt",
+      "exact_area": "15/4",
+      "inner": "3916815/1048576",
+      "outer": "3947535/1048576",
+      "boxes": 90
+    },
+    {
+      "state": "corner-rb",
+      "exact_area": "15/4",
+      "inner": "3916815/1048576",
+      "outer": "3947535/1048576",
+      "boxes": 100
+    },
+    {
+      "state": "corner-rt",
+      "exact_area": "9/4",
+      "inner": "2350089/1048576",
+      "outer": "2368521/1048576",
+      "boxes": 60
+    },
+    {
+      "state": "seam-bottom-old",
+      "exact_area": "14",
+      "inner": "1827847/131072",
+      "outer": "1842183/131072",
+      "boxes": 315
+    },
+    {
+      "state": "seam-bottom-new",
+      "exact_area": "14",
+      "inner": "1827847/131072",
+      "outer": "1842183/131072",
+      "boxes": 1512
+    },
+    {
+      "state": "seam-top-old",
+      "exact_area": "10",
+      "inner": "1305605/131072",
+      "outer": "1315845/131072",
+      "boxes": 210
+    },
+    {
+      "state": "seam-top-new",
+      "exact_area": "10",
+      "inner": "1305605/131072",
+      "outer": "1315845/131072",
+      "boxes": 1080
+    }
+  ],
+  "script_sha256": "76cf00b3975e1f92ee5742ba7751326a4eaa838b023208b2c1f469d2fc7447ff",
+  "elapsed_seconds": 0.039833584014559165,
+  "scope": "Small deterministic source-filter and exact sparse-area tests only; no re-execution of expensive R35/R41 profiles and no claims that their leading/corner results are complete"
+}

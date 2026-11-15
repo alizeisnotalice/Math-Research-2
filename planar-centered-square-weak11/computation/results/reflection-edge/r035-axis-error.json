@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "input_sha256": "5021c54704af45b3ef8289c67a245926473434640372a934b2f15c4485f0c026",
+  "seam_sha256": "2bbff06589d7abe62c6d876102499641be9053f3399a6244335691af033092d4",
+  "script_sha256": "63b932fbe200af7d301657c05906d23196d3d6cc1cd5ee6f72a5ace8a6402bad",
+  "edge_state_code_sha256": "ea664c7f9520b9983b13383fd032ff3110a6379b7dea381108ed49c88db9fede",
+  "corner_state_code_sha256": "53fe05c311c6601d4a7221e7518e3185b0b966ed737cd2a11c9916e5ce375fc3",
+  "delta_upper": "1/18446744073709551616",
+  "states": [
+    {
+      "state": "seam-old",
+      "common_catalog_axis": "lower interval endpoint",
+      "atoms": 3715,
+      "nx": 211,
+      "ny": 62,
+      "all_bbox_upper_count": 43680798,
+      "height_bound": "175603458831370317/32000000000000000",
+      "area_change_upper": "3835249606657201440036483/147573952589676412928000000000000000",
+      "area_change_upper_float": 2.5988662222261962e-11
+    },
+    {
+      "state": "seam-new",
+      "common_catalog_axis": "lower interval endpoint",
+      "atoms": 9113,
+      "nx": 379,
+      "ny": 85,
+      "all_bbox_upper_count": 263196550,
+      "height_bound": "175603458831370317/32000000000000000",
+      "area_change_upper": "924364490649673984136127/5902958103587056517120000000000000",
+      "area_change_upper_float": 1.565934357704427e-10
+    },
+    {
+      "state": "seam-bottom-old",
+      "common_catalog_axis": "lower interval endpoint",
+      "atoms": 3820,
+      "nx": 211,
+      "ny": 64,
+      "all_bbox_upper_count": 46521280,
+      "height_bound": "20",
+      "area_change_upper": "3634475/36028797018963968",
+      "area_change_upper_float": 1.008769456856129e-10
+    },
+    {
+      "state": "seam-bottom-new",
+      "common_catalog_axis": "lower interval endpoint",
+      "atoms": 8082,
+      "nx": 379,
+      "ny": 76,
+      "all_bbox_upper_count": 210701260,
+      "height_bound": "30",
+      "area_change_upper": "790129725/1152921504606846976",
+      "area_change_upper_float": 6.853282915122993e-10
+    },
+    {
+      "state": "seam-top-old",
+      "common_catalog_axis": "lower interval endpoint",
+      "atoms": 3805,
+      "nx": 211,
+      "ny": 63,
+      "all_bbox_upper_count": 45089856,
+      "height_bound": "20",
+      "area_change_upper": "3522645/36028797018963968",
+      "area_change_upper_float": 9.777303966451711e-11
+    },
+    {
+      "state": "seam-top-new",
+      "common_catalog_axis": "lower interval endpoint",
+      "atoms": 8041,
+      "nx": 379,
+      "ny": 74,
+      "all_bbox_upper_count": 199827750,
+      "height_bound": "30",
+      "area_change_upper": "1498708125/2305843009213693952",
+      "area_change_upper_float": 6.499610420186708e-10
+    }
+  ],
+  "gamma_change_upper": "13472180936449525521719829/73786976294838206464000000000000000",
+  "Gamma_change_upper": "3537023255/2305843009213693952",
+  "gamma_change_upper_float": 1.8258209799270467e-10,
+  "Gamma_change_upper_float": 1.5339393188811001e-09,
+  "proof_scope": "In axis-centered coordinates fixed window [-15,0], original and mirror source x move by at most delta. Their order is fixed because axis lower endpoint exceeds all original x. Each bbox receiver endpoint moves at most delta; every nonempty receiver at any axis has radius<R by the uniform tail. Complete catalog at the lower axis is a superset for the entire axis interval. Area symmetric difference per bbox <=2 delta min(window height,2R), including empty/activation/cropping events. Counts include all boxes, not only surviving rectangles."
+}

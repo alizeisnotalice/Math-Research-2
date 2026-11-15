@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "single_process": true,
+  "arithmetic": "Fraction/int/isqrt",
+  "scope": "Three explicit rational choices support the general algebraic proof; no halo or smoothing file generated.",
+  "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+  "script_sha256": "9f826c819a7ef3f046b2fd1d52fe0941b9d47a85f8506dd3baeefecfcea69d89",
+  "cases": [
+    {
+      "N": 6,
+      "atom_count_upper": 14688,
+      "mass": "593475033602495043664165744981031799/390625000000000000000000000000000",
+      "sqrt_mass_rational_upper": 39,
+      "eta_formula": "(9*N-1)/(4*(2**n-1)*(sqrt_mass_rational_upper+1))",
+      "eta_denominator_bits": 14696,
+      "area_error_at_most_9N_minus_1": true,
+      "at_least_half_ratio_deficit_retained": true
+    },
+    {
+      "N": 7,
+      "atom_count_upper": 19992,
+      "mass": "3231141849613584126616013500452284239/1562500000000000000000000000000000",
+      "sqrt_mass_rational_upper": 46,
+      "eta_formula": "(9*N-1)/(4*(2**n-1)*(sqrt_mass_rational_upper+1))",
+      "eta_denominator_bits": 19999,
+      "area_error_at_most_9N_minus_1": true,
+      "at_least_half_ratio_deficit_retained": true
+    },
+    {
+      "N": 10,
+      "atom_count_upper": 40800,
+      "mass": "65941670400277227073796193886781311/15625000000000000000000000000000",
+      "sqrt_mass_rational_upper": 65,
+      "eta_formula": "(9*N-1)/(4*(2**n-1)*(sqrt_mass_rational_upper+1))",
+      "eta_denominator_bits": 40809,
+      "area_error_at_most_9N_minus_1": true,
+      "at_least_half_ratio_deficit_retained": true
+    }
+  ]
+}

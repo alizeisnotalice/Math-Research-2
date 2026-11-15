@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "python": "3.15.0",
+  "arithmetic": "fractions.Fraction; exact strict comparisons",
+  "script_sha256": "262cd7676c510d26c348bfb33e60d98c387efe8090cd2a7db57a9001b4a79bd7",
+  "records": [
+    {
+      "template": "r035",
+      "input_sha256": "5021c54704af45b3ef8289c67a245926473434640372a934b2f15c4485f0c026",
+      "atoms": 204,
+      "Px": "328734960629/50000000000",
+      "xmax": "979821360288625294630001/150000000000000000000000",
+      "xmax_plus_4Px_minus_30": "424640887836625294630001/150000000000000000000000",
+      "margin_decimal_display": 2.8309392522441685,
+      "strict_positive": true,
+      "N5_left_capture_cut_lower": "424640887836625294630001/150000000000000000000000"
+    },
+    {
+      "template": "r041",
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "atoms": 204,
+      "Px": "328734960629/50000000000",
+      "xmax": "979821360288625294630001/150000000000000000000000",
+      "xmax_plus_4Px_minus_30": "424640887836625294630001/150000000000000000000000",
+      "margin_decimal_display": 2.8309392522441685,
+      "strict_positive": true,
+      "N5_left_capture_cut_lower": "424640887836625294630001/150000000000000000000000"
+    }
+  ],
+  "consequences": [
+    "C>xmax implies C+4Px>30.",
+    "c_N-30=(N-5)Px+(C+4Px-30)>(N-5)Px.",
+    "Every source seen in the left seam window at r<15 lies in the last five columns.",
+    "For N>=5 the seam source window lies strictly right of x=0, so the left cut is invisible."
+  ]
+}
