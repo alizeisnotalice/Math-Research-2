@@ -51,3 +51,20 @@ python3 -B free-boundary-grid-twin-peaks/computation/walk_scan.py --binary /Volu
 ## 第2轮新增核验
 
 `weighted_promotion.py` 完整枚举3×3，验证所有提升关系元、逐输出归一化、精确逆像及有理对数证书。`promotion_dp.cpp` 接收边长n（2≤n≤5），以第一触邻递推给出总提升质量的精确分子/分母；n5内存1 GiB。编译缓存沿用上节，命令和实际结果在rounds/002.md与manifest-r002.json。
+
+## 第3轮新增核验
+
+```sh
+python3 -B free-boundary-grid-twin-peaks/computation/verify_r003.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_shortest_lift.py
+python3 -B free-boundary-grid-twin-peaks/computation/beta_fiber_n3.py
+python3 -B free-boundary-grid-twin-peaks/computation/geodesic_fiber.py --n 4 5 6 7 --output /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/geodesic-fiber-rerun.json
+```
+
+按上节同样编译singleton_dp.cpp与beta_walk.cpp；前者n5内存1 GiB，命令为`singleton_dp 5`。后者新增任一峰2×2块和β观测，复现命令：
+
+```sh
+python3 -B free-boundary-grid-twin-peaks/computation/walk_scan.py --binary /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/beta_walk --steps 20000000 --workers 3 --reflect-every 10 --top-block-every 4 --output /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/beta-walks-rerun.json
+```
+
+此处沿用驱动参数名top-block-every，但beta_walk中从两峰等概率选择。给定块B，选择概率正比于Σ_{峰v∈B}1/b(v)，b(v)是含v的2×2块数；接受比为输出/输入的此项之比。仅理想随机核的平稳性有解析依据，实际浮点/伪随机实现及有限轨迹不提供认证概率。全部最佳标号以独立峰判定器再次核验。
