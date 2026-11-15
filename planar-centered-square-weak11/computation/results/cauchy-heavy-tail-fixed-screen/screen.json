@@ -1,0 +1,202 @@
+{
+  "status": "completed_numeric_fixed_weight_heavy_tail_screen",
+  "matlab_version": "26.2.0.3433840 (R2026b) Update 1",
+  "threads": 1,
+  "input_path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r055-v2/input.json",
+  "total_source_mass": 1.8700277344358458,
+  "point_count": 76,
+  "times": [
+    0.025,
+    0.1,
+    0.3,
+    1
+  ],
+  "models": [
+    {
+      "time": 0.025,
+      "D_sample_count": 4672,
+      "minimum_sample_or_local": 1.0006334416604821,
+      "minimum_point": [
+        1,
+        0
+      ],
+      "local_optimizers": [
+        [
+          1,
+          1.2325951644078309E-32,
+          1.0006334416604821,
+          1
+        ],
+        [
+          1,
+          0,
+          1.0006334416604821,
+          1
+        ],
+        [
+          1,
+          0,
+          1.0006334416604821,
+          1
+        ],
+        [
+          1,
+          0,
+          1.0006334416604821,
+          1
+        ],
+        [
+          1,
+          0,
+          1.0006334416604821,
+          1
+        ]
+      ],
+      "core_half_integral": 4.3196432932196256,
+      "unbounded_corner_half_integral": 0,
+      "numerical_cost": 4.3169087833517494,
+      "signed_integral_exact_formula_value": 0.2937432696256409
+    },
+    {
+      "time": 0.1,
+      "D_sample_count": 4672,
+      "minimum_sample_or_local": 1.0042838964614211,
+      "minimum_point": [
+        1,
+        0
+      ],
+      "local_optimizers": [
+        [
+          1,
+          1.2325951644078309E-32,
+          1.0042838964614211,
+          1
+        ],
+        [
+          1,
+          0,
+          1.0042838964614211,
+          1
+        ],
+        [
+          1,
+          0,
+          1.0042838964614211,
+          1
+        ],
+        [
+          1,
+          0,
+          1.0042838964614211,
+          1
+        ],
+        [
+          1,
+          0,
+          1.0042838964614211,
+          1
+        ]
+      ],
+      "core_half_integral": 4.3744050478181125,
+      "unbounded_corner_half_integral": 0,
+      "numerical_cost": 4.3557454851474384,
+      "signed_integral_exact_formula_value": 1.1749730785025636
+    },
+    {
+      "time": 0.3,
+      "D_sample_count": 4672,
+      "minimum_sample_or_local": 1.038730354620867,
+      "minimum_point": [
+        1,
+        0
+      ],
+      "local_optimizers": [
+        [
+          1,
+          1.2325951644078309E-32,
+          1.038730354620867,
+          1
+        ],
+        [
+          1,
+          0,
+          1.038730354620867,
+          1
+        ],
+        [
+          1,
+          0,
+          1.038730354620867,
+          1
+        ],
+        [
+          1,
+          0,
+          1.038730354620867,
+          1
+        ],
+        [
+          1,
+          0,
+          1.038730354620867,
+          1
+        ]
+      ],
+      "core_half_integral": 4.8402805634780179,
+      "unbounded_corner_half_integral": 7.7338881497160867E-9,
+      "numerical_cost": 4.6598046833613438,
+      "signed_integral_exact_formula_value": 3.5249192355076908
+    },
+    {
+      "time": 1,
+      "D_sample_count": 4672,
+      "minimum_sample_or_local": 1.2324402546275135,
+      "minimum_point": [
+        0.5,
+        0.5
+      ],
+      "local_optimizers": [
+        [
+          0.5,
+          0.5,
+          1.2324402546275135,
+          1
+        ],
+        [
+          0.5009765625,
+          0.4990234375,
+          1.2324402808804553,
+          2
+        ],
+        [
+          0.501953125,
+          0.498046875,
+          1.2324403596394391,
+          2
+        ],
+        [
+          0.5029296875,
+          0.4970703125,
+          1.2324404909049349,
+          2
+        ],
+        [
+          0.50390625,
+          0.49609375,
+          1.2324406746777337,
+          2
+        ]
+      ],
+      "core_half_integral": 7.9255308320251094,
+      "unbounded_corner_half_integral": 1.5754763350300504E-6,
+      "numerical_cost": 6.43076398855279,
+      "signed_integral_exact_formula_value": 11.749730785025635
+    }
+  ],
+  "quadrature_AbsTol": 2E-5,
+  "quadrature_RelTol": 0.0002,
+  "integral_domain": "4 times x>=y>=0; split at y=L; x=y+Lu/(1-u), infinite y=L+Lv/(1-v)",
+  "stable_evaluation": "Direct V near finite sources; otherwise compact W via noncancelling reflection-paired first moment minus exact quadratic remainder, plus positive Qt. Qt uses exact formula when min(a,b)<=8t and 8-point Gauss on [0,t] otherwise. No interval guarantee.",
+  "elapsed_seconds": 1.014685125,
+  "scope": "Floating fixed weight screening; finite full-dimensional D grid plus local optimization does not certify essential infimum. Full unbounded transformed quadrature is not a rigorous integral enclosure. No new general upper bound."
+}
