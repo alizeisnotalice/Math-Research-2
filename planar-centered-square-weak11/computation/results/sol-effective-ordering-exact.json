@@ -1,0 +1,566 @@
+{
+  "python": "3.15.0",
+  "method": "deterministic exact Fraction; single process, no random seed or tolerance",
+  "nested_examples": [
+    {
+      "N": 3,
+      "delta": "1/900",
+      "diameter": "1/450",
+      "lower_radius_gap": "1/12",
+      "full_label_load": 3,
+      "envelope_area": 3
+    },
+    {
+      "N": 8,
+      "delta": "1/6400",
+      "diameter": "7/6400",
+      "lower_radius_gap": "1/32",
+      "full_label_load": 8,
+      "envelope_area": 8
+    },
+    {
+      "N": 32,
+      "delta": "1/102400",
+      "diameter": "31/102400",
+      "lower_radius_gap": "1/128",
+      "full_label_load": 32,
+      "envelope_area": 32
+    }
+  ],
+  "pointwise_examples": [
+    {
+      "delta": "1/10",
+      "eta": "1/10000",
+      "bbox_span_squared": "81/100",
+      "light_average": "1/6400",
+      "full_average": "25/169",
+      "maximal_average": "25/169"
+    },
+    {
+      "delta": "1/100",
+      "eta": "1/100000000",
+      "bbox_span_squared": "9801/10000",
+      "light_average": "1/96040000",
+      "full_average": "625/5476",
+      "maximal_average": "625/5476"
+    },
+    {
+      "delta": "1/1000",
+      "eta": "1/1000000000000",
+      "bbox_span_squared": "998001/1000000",
+      "light_average": "1/996004000000",
+      "full_average": "62500/561001",
+      "maximal_average": "62500/561001"
+    }
+  ],
+  "inherited_old_bound_times_9": "32317787816397/1000000000000",
+  "rectangle_four_point": {
+    "d": "7/10",
+    "subsets": [
+      {
+        "indices": [
+          0
+        ],
+        "mass": "1/4",
+        "span_squared": "0",
+        "eligible": true
+      },
+      {
+        "indices": [
+          1
+        ],
+        "mass": "1/4",
+        "span_squared": "0",
+        "eligible": true
+      },
+      {
+        "indices": [
+          2
+        ],
+        "mass": "1/4",
+        "span_squared": "0",
+        "eligible": true
+      },
+      {
+        "indices": [
+          3
+        ],
+        "mass": "1/4",
+        "span_squared": "0",
+        "eligible": true
+      },
+      {
+        "indices": [
+          0,
+          1
+        ],
+        "mass": "1/2",
+        "span_squared": "2401/2500",
+        "eligible": false
+      },
+      {
+        "indices": [
+          0,
+          2
+        ],
+        "mass": "1/2",
+        "span_squared": "49/100",
+        "eligible": true
+      },
+      {
+        "indices": [
+          0,
+          3
+        ],
+        "mass": "1/2",
+        "span_squared": "2401/2500",
+        "eligible": false
+      },
+      {
+        "indices": [
+          1,
+          2
+        ],
+        "mass": "1/2",
+        "span_squared": "2401/2500",
+        "eligible": false
+      },
+      {
+        "indices": [
+          1,
+          3
+        ],
+        "mass": "1/2",
+        "span_squared": "49/100",
+        "eligible": true
+      },
+      {
+        "indices": [
+          2,
+          3
+        ],
+        "mass": "1/2",
+        "span_squared": "2401/2500",
+        "eligible": false
+      },
+      {
+        "indices": [
+          0,
+          1,
+          2
+        ],
+        "mass": "3/4",
+        "span_squared": "2401/2500",
+        "eligible": false
+      },
+      {
+        "indices": [
+          0,
+          1,
+          3
+        ],
+        "mass": "3/4",
+        "span_squared": "2401/2500",
+        "eligible": false
+      },
+      {
+        "indices": [
+          0,
+          2,
+          3
+        ],
+        "mass": "3/4",
+        "span_squared": "2401/2500",
+        "eligible": false
+      },
+      {
+        "indices": [
+          1,
+          2,
+          3
+        ],
+        "mass": "3/4",
+        "span_squared": "2401/2500",
+        "eligible": false
+      },
+      {
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "mass": "1",
+        "span_squared": "2401/2500",
+        "eligible": true
+      }
+    ],
+    "orders": [
+      {
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/2",
+          "1/4",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/2",
+          "1/4",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          0,
+          3,
+          2,
+          1
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/2",
+          "1/4",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/2",
+          "1/4",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/2",
+          "1/4",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/2",
+          "1/4",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          2,
+          3,
+          0,
+          1
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          2,
+          3,
+          1,
+          0
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/2",
+          "1/4",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          3,
+          1,
+          2,
+          0
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/2",
+          "1/4",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      },
+      {
+        "order": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "proxy_masses": [
+          "1/4",
+          "1/4",
+          "1/2",
+          "1"
+        ],
+        "union_area_by_proved_disjointness": "79/40"
+      }
+    ],
+    "limiting_proxy_formula": "13/8+sqrt(2)/4",
+    "limiting_proxy_float_display": 1.9785533905932737,
+    "true_halo_formula": "2-sqrt(2)*d+(1-d)/50",
+    "true_halo_float_display": 1.0160505063388334
+  },
+  "proof_sha256": "b7f0f241899ec643da120e016d4ac564e04057568847d1a8716e866eadfa9adb"
+}

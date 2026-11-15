@@ -1,0 +1,3003 @@
+{
+  "status": "completed",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "scope": "deterministic menu only; floating union-area exploration, not a global or rigorous negative certificate",
+  "arithmetic": "rational input, IEEE double square roots and union areas; exploratory detection tolerance 1e-10",
+  "source_counts": "2, 3, 4, or 5 old atoms plus the new point atom at origin",
+  "case_count": 100,
+  "seed": 20261115,
+  "epsilon_over_M_menu": [
+    "1/100",
+    "1/10",
+    "1",
+    "10"
+  ],
+  "coordinate_menu": "{-8,...,8}/4 in each coordinate, distinct nonzero old positions; positive integer weights 1..8 normalized to M=1",
+  "best_pure_over_M": {
+    "kind": "seeded-small-input",
+    "old": [
+      [
+        "-3/2",
+        "0",
+        "6/11"
+      ],
+      [
+        "-1/4",
+        "0",
+        "5/11"
+      ]
+    ],
+    "epsilon": "10",
+    "M": "1",
+    "pure_mixed_area_float": 0.5533184645630573,
+    "pure_over_M_float": 0.5533184645630573,
+    "gap_over_M_float": -0.44668153543694267,
+    "gap_over_M_plus_4eps_float": -40.446681535436944,
+    "index": 12
+  },
+  "detected_M_violations": [],
+  "cases": [
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "1/4",
+          "-2",
+          "2/3"
+        ],
+        [
+          "7/4",
+          "-3/4",
+          "1/3"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 0
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "-7/4",
+          "3/8"
+        ],
+        [
+          "-1/4",
+          "2",
+          "3/8"
+        ],
+        [
+          "3/2",
+          "-1/2",
+          "1/4"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 1
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "1/2",
+          "-1",
+          "6/17"
+        ],
+        [
+          "3/4",
+          "3/2",
+          "3/17"
+        ],
+        [
+          "7/4",
+          "-3/4",
+          "1/17"
+        ],
+        [
+          "2",
+          "1/2",
+          "7/17"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 2
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "3/4",
+          "1/26"
+        ],
+        [
+          "-1/2",
+          "-5/4",
+          "7/26"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/13"
+        ],
+        [
+          "1/2",
+          "-3/2",
+          "4/13"
+        ],
+        [
+          "3/4",
+          "1",
+          "4/13"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 3
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/4",
+          "-5/4",
+          "2/7"
+        ],
+        [
+          "3/4",
+          "-5/4",
+          "5/7"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 4
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "-2",
+          "5/13"
+        ],
+        [
+          "0",
+          "-1",
+          "5/13"
+        ],
+        [
+          "0",
+          "3/4",
+          "3/13"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 5
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1",
+          "-3/4",
+          "8/21"
+        ],
+        [
+          "-1",
+          "1/2",
+          "2/7"
+        ],
+        [
+          "1/2",
+          "2",
+          "5/21"
+        ],
+        [
+          "3/4",
+          "-5/4",
+          "2/21"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 6
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "5/4",
+          "7/22"
+        ],
+        [
+          "-1",
+          "-1/2",
+          "1/22"
+        ],
+        [
+          "-1/2",
+          "0",
+          "7/22"
+        ],
+        [
+          "1",
+          "-5/4",
+          "1/11"
+        ],
+        [
+          "3/2",
+          "-3/4",
+          "5/22"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.035408572542552585,
+      "pure_over_M_float": 0.035408572542552585,
+      "gap_over_M_float": -0.9645914274574474,
+      "gap_over_M_plus_4eps_float": -1.3645914274574473,
+      "index": 7
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "-5/4",
+          "1/3"
+        ],
+        [
+          "-1/2",
+          "1",
+          "2/3"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.10649560129982882,
+      "pure_over_M_float": 0.10649560129982882,
+      "gap_over_M_float": -0.8935043987001712,
+      "gap_over_M_plus_4eps_float": -4.893504398700172,
+      "index": 8
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/4",
+          "-2",
+          "2/5"
+        ],
+        [
+          "0",
+          "-1",
+          "7/15"
+        ],
+        [
+          "5/4",
+          "3/2",
+          "2/15"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.1500764542081714,
+      "pure_over_M_float": 0.1500764542081714,
+      "gap_over_M_float": -0.8499235457918286,
+      "gap_over_M_plus_4eps_float": -4.849923545791828,
+      "index": 9
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "-2",
+          "1/10"
+        ],
+        [
+          "-3/4",
+          "1",
+          "2/5"
+        ],
+        [
+          "1/2",
+          "-1/4",
+          "3/10"
+        ],
+        [
+          "7/4",
+          "-2",
+          "1/5"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.10550126120666903,
+      "pure_over_M_float": 0.10550126120666903,
+      "gap_over_M_float": -0.894498738793331,
+      "gap_over_M_plus_4eps_float": -4.894498738793331,
+      "index": 10
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "-1/4",
+          "4/11"
+        ],
+        [
+          "-2",
+          "7/4",
+          "5/22"
+        ],
+        [
+          "1/2",
+          "-5/4",
+          "2/11"
+        ],
+        [
+          "3/4",
+          "7/4",
+          "1/22"
+        ],
+        [
+          "5/4",
+          "0",
+          "2/11"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -5.0,
+      "index": 11
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "0",
+          "6/11"
+        ],
+        [
+          "-1/4",
+          "0",
+          "5/11"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.5533184645630573,
+      "pure_over_M_float": 0.5533184645630573,
+      "gap_over_M_float": -0.44668153543694267,
+      "gap_over_M_plus_4eps_float": -40.446681535436944,
+      "index": 12
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "3/4",
+          "1/7"
+        ],
+        [
+          "-3/4",
+          "-3/4",
+          "4/7"
+        ],
+        [
+          "-3/4",
+          "1/4",
+          "2/7"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.3615518373584301,
+      "pure_over_M_float": 0.3615518373584301,
+      "gap_over_M_float": -0.6384481626415699,
+      "gap_over_M_plus_4eps_float": -40.638448162641566,
+      "index": 13
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/4",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "3/2",
+          "5/4",
+          "3/8"
+        ],
+        [
+          "7/4",
+          "-7/4",
+          "1/16"
+        ],
+        [
+          "7/4",
+          "-1",
+          "1/16"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.32608766362905506,
+      "pure_over_M_float": 0.32608766362905506,
+      "gap_over_M_float": -0.6739123363709449,
+      "gap_over_M_plus_4eps_float": -40.67391233637095,
+      "index": 14
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-1/4",
+          "4/13"
+        ],
+        [
+          "-1",
+          "3/4",
+          "1/13"
+        ],
+        [
+          "1/4",
+          "-5/4",
+          "4/13"
+        ],
+        [
+          "1/2",
+          "-1/4",
+          "3/13"
+        ],
+        [
+          "3/2",
+          "1/4",
+          "1/13"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.35449254679603115,
+      "pure_over_M_float": 0.35449254679603115,
+      "gap_over_M_float": -0.6455074532039689,
+      "gap_over_M_plus_4eps_float": -40.64550745320397,
+      "index": 15
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/4",
+          "2",
+          "3/5"
+        ],
+        [
+          "2",
+          "1/4",
+          "2/5"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 16
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-3/2",
+          "6/11"
+        ],
+        [
+          "-1/4",
+          "-3/4",
+          "1/11"
+        ],
+        [
+          "1",
+          "3/4",
+          "4/11"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 17
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-1",
+          "2/15"
+        ],
+        [
+          "-1/2",
+          "-1",
+          "4/15"
+        ],
+        [
+          "-1/2",
+          "1/2",
+          "1/3"
+        ],
+        [
+          "3/2",
+          "3/2",
+          "4/15"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0007203446558268212,
+      "pure_over_M_float": 0.0007203446558268212,
+      "gap_over_M_float": -0.9992796553441732,
+      "gap_over_M_plus_4eps_float": -1.0392796553441732,
+      "index": 18
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "-5/4",
+          "4/19"
+        ],
+        [
+          "-1",
+          "3/4",
+          "6/19"
+        ],
+        [
+          "3/4",
+          "7/4",
+          "2/19"
+        ],
+        [
+          "1",
+          "1",
+          "3/19"
+        ],
+        [
+          "2",
+          "0",
+          "4/19"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 19
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1",
+          "5/4",
+          "2/7"
+        ],
+        [
+          "3/2",
+          "5/4",
+          "5/7"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 20
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "1/4",
+          "3/7"
+        ],
+        [
+          "-5/4",
+          "3/2",
+          "2/7"
+        ],
+        [
+          "7/4",
+          "7/4",
+          "2/7"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 21
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "5/4",
+          "2/7"
+        ],
+        [
+          "-3/4",
+          "-2",
+          "1/7"
+        ],
+        [
+          "3/4",
+          "-2",
+          "2/7"
+        ],
+        [
+          "3/2",
+          "-7/4",
+          "2/7"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 22
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "-7/4",
+          "1/9"
+        ],
+        [
+          "-1",
+          "-1",
+          "4/9"
+        ],
+        [
+          "3/4",
+          "-7/4",
+          "1/18"
+        ],
+        [
+          "7/4",
+          "0",
+          "2/9"
+        ],
+        [
+          "2",
+          "-1",
+          "1/6"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 23
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "5/4",
+          "3/8"
+        ],
+        [
+          "5/4",
+          "-3/4",
+          "5/8"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.012990243203607754,
+      "pure_over_M_float": 0.012990243203607754,
+      "gap_over_M_float": -0.9870097567963922,
+      "gap_over_M_plus_4eps_float": -4.987009756796392,
+      "index": 24
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "-2",
+          "8/13"
+        ],
+        [
+          "-3/4",
+          "3/2",
+          "2/13"
+        ],
+        [
+          "1/4",
+          "-3/4",
+          "3/13"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.042110906292698314,
+      "pure_over_M_float": 0.042110906292698314,
+      "gap_over_M_float": -0.9578890937073017,
+      "gap_over_M_plus_4eps_float": -4.957889093707301,
+      "index": 25
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "0",
+          "3/2",
+          "3/14"
+        ],
+        [
+          "3/4",
+          "1/2",
+          "1/14"
+        ],
+        [
+          "5/4",
+          "-1/2",
+          "1/7"
+        ],
+        [
+          "5/4",
+          "7/4",
+          "4/7"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.014085797181206061,
+      "pure_over_M_float": 0.014085797181206061,
+      "gap_over_M_float": -0.9859142028187939,
+      "gap_over_M_plus_4eps_float": -4.985914202818794,
+      "index": 26
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/2",
+          "0",
+          "1/11"
+        ],
+        [
+          "-1/4",
+          "-1",
+          "4/11"
+        ],
+        [
+          "-1/4",
+          "1",
+          "3/11"
+        ],
+        [
+          "3/2",
+          "-5/4",
+          "5/22"
+        ],
+        [
+          "3/2",
+          "-1",
+          "1/22"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.19188124394505657,
+      "pure_over_M_float": 0.19188124394505657,
+      "gap_over_M_float": -0.8081187560549434,
+      "gap_over_M_plus_4eps_float": -4.808118756054943,
+      "index": 27
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/4",
+          "-3/2",
+          "1/5"
+        ],
+        [
+          "-1/4",
+          "-3/4",
+          "4/5"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.381971174920384,
+      "pure_over_M_float": 0.381971174920384,
+      "gap_over_M_float": -0.618028825079616,
+      "gap_over_M_plus_4eps_float": -40.61802882507962,
+      "index": 28
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "2",
+          "1/8"
+        ],
+        [
+          "-3/4",
+          "-7/4",
+          "1/2"
+        ],
+        [
+          "0",
+          "1/2",
+          "3/8"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.4068761932087348,
+      "pure_over_M_float": 0.4068761932087348,
+      "gap_over_M_float": -0.5931238067912652,
+      "gap_over_M_plus_4eps_float": -40.59312380679127,
+      "index": 29
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "1",
+          "8/21"
+        ],
+        [
+          "-7/4",
+          "5/4",
+          "4/21"
+        ],
+        [
+          "-1",
+          "7/4",
+          "8/21"
+        ],
+        [
+          "0",
+          "3/2",
+          "1/21"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.18412701952923705,
+      "pure_over_M_float": 0.18412701952923705,
+      "gap_over_M_float": -0.815872980470763,
+      "gap_over_M_plus_4eps_float": -40.815872980470765,
+      "index": 30
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-1",
+          "5/19"
+        ],
+        [
+          "-7/4",
+          "7/4",
+          "1/19"
+        ],
+        [
+          "-3/4",
+          "-1/4",
+          "5/19"
+        ],
+        [
+          "-1/4",
+          "1/2",
+          "6/19"
+        ],
+        [
+          "1/4",
+          "3/4",
+          "2/19"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.3537552010775613,
+      "pure_over_M_float": 0.3537552010775613,
+      "gap_over_M_float": -0.6462447989224387,
+      "gap_over_M_plus_4eps_float": -40.64624479892244,
+      "index": 31
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "3/2",
+          "1/9"
+        ],
+        [
+          "3/4",
+          "1",
+          "8/9"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 32
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "-1/2",
+          "3/8"
+        ],
+        [
+          "-7/4",
+          "-3/4",
+          "1/8"
+        ],
+        [
+          "1",
+          "3/4",
+          "1/2"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 33
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1",
+          "-1/4",
+          "1/3"
+        ],
+        [
+          "-1/2",
+          "-3/4",
+          "8/15"
+        ],
+        [
+          "1",
+          "3/2",
+          "1/15"
+        ],
+        [
+          "3/2",
+          "3/2",
+          "1/15"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 34
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1",
+          "3/4",
+          "1/26"
+        ],
+        [
+          "-3/4",
+          "-3/4",
+          "7/26"
+        ],
+        [
+          "-1/2",
+          "7/4",
+          "3/13"
+        ],
+        [
+          "5/4",
+          "1/4",
+          "5/26"
+        ],
+        [
+          "3/2",
+          "-1",
+          "7/26"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 35
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "-5/4",
+          "7/15"
+        ],
+        [
+          "-3/4",
+          "-5/4",
+          "8/15"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 36
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "3/4",
+          "3/8"
+        ],
+        [
+          "1",
+          "-3/2",
+          "3/8"
+        ],
+        [
+          "3/2",
+          "-1/2",
+          "1/4"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 37
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "7/4",
+          "4/9"
+        ],
+        [
+          "-3/2",
+          "-1",
+          "5/18"
+        ],
+        [
+          "-1/4",
+          "-2",
+          "1/9"
+        ],
+        [
+          "1/4",
+          "-3/4",
+          "1/6"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 38
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "1/4",
+          "-7/4",
+          "1/21"
+        ],
+        [
+          "1/2",
+          "5/4",
+          "4/21"
+        ],
+        [
+          "7/4",
+          "-1",
+          "8/21"
+        ],
+        [
+          "7/4",
+          "-3/4",
+          "2/7"
+        ],
+        [
+          "2",
+          "-1",
+          "2/21"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 39
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "-5/4",
+          "2/5"
+        ],
+        [
+          "1/2",
+          "2",
+          "3/5"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -5.0,
+      "index": 40
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "1/2",
+          "8/15"
+        ],
+        [
+          "-1",
+          "-5/4",
+          "4/15"
+        ],
+        [
+          "-3/4",
+          "-3/4",
+          "1/5"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.03466905515290142,
+      "pure_over_M_float": 0.03466905515290142,
+      "gap_over_M_float": -0.9653309448470986,
+      "gap_over_M_plus_4eps_float": -4.965330944847098,
+      "index": 41
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "1/4",
+          "8/23"
+        ],
+        [
+          "1/4",
+          "5/4",
+          "8/23"
+        ],
+        [
+          "1/2",
+          "-3/4",
+          "6/23"
+        ],
+        [
+          "2",
+          "3/4",
+          "1/23"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.03761067447625899,
+      "pure_over_M_float": 0.03761067447625899,
+      "gap_over_M_float": -0.962389325523741,
+      "gap_over_M_plus_4eps_float": -4.962389325523741,
+      "index": 42
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "0",
+          "2/25"
+        ],
+        [
+          "-1/2",
+          "2",
+          "8/25"
+        ],
+        [
+          "-1/4",
+          "3/2",
+          "4/25"
+        ],
+        [
+          "1/2",
+          "-2",
+          "8/25"
+        ],
+        [
+          "7/4",
+          "3/4",
+          "3/25"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -5.0,
+      "index": 43
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-1",
+          "3/7"
+        ],
+        [
+          "-7/4",
+          "1/4",
+          "4/7"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.2140123403105374,
+      "pure_over_M_float": 0.2140123403105374,
+      "gap_over_M_float": -0.7859876596894626,
+      "gap_over_M_plus_4eps_float": -40.78598765968946,
+      "index": 44
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "-1/2",
+          "2/7"
+        ],
+        [
+          "1/2",
+          "-1",
+          "2/7"
+        ],
+        [
+          "1",
+          "3/2",
+          "3/7"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.3251244460441569,
+      "pure_over_M_float": 0.3251244460441569,
+      "gap_over_M_float": -0.6748755539558431,
+      "gap_over_M_plus_4eps_float": -40.67487555395584,
+      "index": 45
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/2",
+          "-3/4",
+          "7/15"
+        ],
+        [
+          "1",
+          "1/4",
+          "1/3"
+        ],
+        [
+          "3/2",
+          "3/4",
+          "1/15"
+        ],
+        [
+          "2",
+          "1",
+          "2/15"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.3705831226142937,
+      "pure_over_M_float": 0.3705831226142937,
+      "gap_over_M_float": -0.6294168773857063,
+      "gap_over_M_plus_4eps_float": -40.62941687738571,
+      "index": 46
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "0",
+          "2/25"
+        ],
+        [
+          "-5/4",
+          "2",
+          "7/25"
+        ],
+        [
+          "1/2",
+          "-3/2",
+          "6/25"
+        ],
+        [
+          "7/4",
+          "-1/2",
+          "6/25"
+        ],
+        [
+          "2",
+          "-3/2",
+          "4/25"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.25862585724519427,
+      "pure_over_M_float": 0.25862585724519427,
+      "gap_over_M_float": -0.7413741427548057,
+      "gap_over_M_plus_4eps_float": -40.74137414275481,
+      "index": 47
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "-1/4",
+          "4/5"
+        ],
+        [
+          "1/2",
+          "-3/2",
+          "1/5"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 48
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "2",
+          "1/2"
+        ],
+        [
+          "-1/2",
+          "-5/4",
+          "1/12"
+        ],
+        [
+          "7/4",
+          "-1/4",
+          "5/12"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 49
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-2",
+          "5/16"
+        ],
+        [
+          "-1/2",
+          "3/2",
+          "1/16"
+        ],
+        [
+          "0",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "3/4",
+          "1/4",
+          "3/8"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.008126686616438894,
+      "pure_over_M_float": 0.008126686616438894,
+      "gap_over_M_float": -0.9918733133835611,
+      "gap_over_M_plus_4eps_float": -1.0318733133835611,
+      "index": 50
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "-7/4",
+          "1/23"
+        ],
+        [
+          "-7/4",
+          "3/4",
+          "6/23"
+        ],
+        [
+          "-1/4",
+          "5/4",
+          "5/23"
+        ],
+        [
+          "1/4",
+          "3/4",
+          "3/23"
+        ],
+        [
+          "1/2",
+          "-1/2",
+          "8/23"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0008087960020968232,
+      "pure_over_M_float": 0.0008087960020968232,
+      "gap_over_M_float": -0.9991912039979032,
+      "gap_over_M_plus_4eps_float": -1.0391912039979032,
+      "index": 51
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "1/4",
+          "-1/2",
+          "7/12"
+        ],
+        [
+          "1/2",
+          "7/4",
+          "5/12"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.01641851618683776,
+      "pure_over_M_float": 0.01641851618683776,
+      "gap_over_M_float": -0.9835814838131622,
+      "gap_over_M_plus_4eps_float": -1.3835814838131621,
+      "index": 52
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "5/4",
+          "3/7"
+        ],
+        [
+          "3/4",
+          "-5/4",
+          "2/7"
+        ],
+        [
+          "5/4",
+          "-2",
+          "2/7"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 53
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-3/4",
+          "1/14"
+        ],
+        [
+          "-3/2",
+          "-1/4",
+          "1/14"
+        ],
+        [
+          "-5/4",
+          "1",
+          "4/7"
+        ],
+        [
+          "-3/4",
+          "3/4",
+          "2/7"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 54
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-3/2",
+          "1/13"
+        ],
+        [
+          "-3/4",
+          "0",
+          "4/13"
+        ],
+        [
+          "1/2",
+          "3/4",
+          "7/26"
+        ],
+        [
+          "7/4",
+          "-3/4",
+          "7/26"
+        ],
+        [
+          "2",
+          "-5/4",
+          "1/13"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 55
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/4",
+          "-2",
+          "1/8"
+        ],
+        [
+          "-1/4",
+          "0",
+          "7/8"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.4252929551520812,
+      "pure_over_M_float": 0.4252929551520812,
+      "gap_over_M_float": -0.5747070448479188,
+      "gap_over_M_plus_4eps_float": -4.574707044847919,
+      "index": 56
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "-3/2",
+          "4/13"
+        ],
+        [
+          "-3/2",
+          "-3/4",
+          "6/13"
+        ],
+        [
+          "5/4",
+          "3/4",
+          "3/13"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -5.0,
+      "index": 57
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "1/2",
+          "1/21"
+        ],
+        [
+          "-5/4",
+          "3/2",
+          "1/3"
+        ],
+        [
+          "-1",
+          "-1/2",
+          "8/21"
+        ],
+        [
+          "-1/4",
+          "7/4",
+          "5/21"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.0667901572317775,
+      "pure_over_M_float": 0.0667901572317775,
+      "gap_over_M_float": -0.9332098427682225,
+      "gap_over_M_plus_4eps_float": -4.933209842768223,
+      "index": 58
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "-1/2",
+          "4/17"
+        ],
+        [
+          "-3/2",
+          "3/4",
+          "7/34"
+        ],
+        [
+          "-1/2",
+          "2",
+          "7/34"
+        ],
+        [
+          "0",
+          "-1/4",
+          "3/17"
+        ],
+        [
+          "5/4",
+          "5/4",
+          "3/17"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.11298137141533382,
+      "pure_over_M_float": 0.11298137141533382,
+      "gap_over_M_float": -0.8870186285846662,
+      "gap_over_M_plus_4eps_float": -4.887018628584666,
+      "index": 59
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "1",
+          "5/4",
+          "3/7"
+        ],
+        [
+          "3/2",
+          "-1/4",
+          "4/7"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.2998257142674614,
+      "pure_over_M_float": 0.2998257142674614,
+      "gap_over_M_float": -0.7001742857325386,
+      "gap_over_M_plus_4eps_float": -40.70017428573254,
+      "index": 60
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/2",
+          "2",
+          "7/16"
+        ],
+        [
+          "-1/4",
+          "-3/4",
+          "1/4"
+        ],
+        [
+          "-1/4",
+          "3/4",
+          "5/16"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.37519346332913983,
+      "pure_over_M_float": 0.37519346332913983,
+      "gap_over_M_float": -0.6248065366708602,
+      "gap_over_M_plus_4eps_float": -40.62480653667086,
+      "index": 61
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-1",
+          "4/9"
+        ],
+        [
+          "-1/4",
+          "-3/2",
+          "1/18"
+        ],
+        [
+          "1/2",
+          "1",
+          "5/18"
+        ],
+        [
+          "3/4",
+          "5/4",
+          "2/9"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.2971799268651534,
+      "pure_over_M_float": 0.2971799268651534,
+      "gap_over_M_float": -0.7028200731348466,
+      "gap_over_M_plus_4eps_float": -40.702820073134845,
+      "index": 62
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "2",
+          "4/19"
+        ],
+        [
+          "-1",
+          "2",
+          "1/19"
+        ],
+        [
+          "-1/2",
+          "-2",
+          "5/19"
+        ],
+        [
+          "1",
+          "3/4",
+          "2/19"
+        ],
+        [
+          "3/2",
+          "-2",
+          "7/19"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.2696803865454065,
+      "pure_over_M_float": 0.2696803865454065,
+      "gap_over_M_float": -0.7303196134545935,
+      "gap_over_M_plus_4eps_float": -40.7303196134546,
+      "index": 63
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-3/2",
+          "2/3"
+        ],
+        [
+          "-1/4",
+          "-3/4",
+          "1/3"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 64
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "5/4",
+          "1/8"
+        ],
+        [
+          "-1/4",
+          "-5/4",
+          "1/8"
+        ],
+        [
+          "1",
+          "-2",
+          "3/4"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 65
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "0",
+          "-7/4",
+          "1/5"
+        ],
+        [
+          "1/4",
+          "-3/4",
+          "1/10"
+        ],
+        [
+          "1",
+          "1/4",
+          "7/20"
+        ],
+        [
+          "3/2",
+          "-1/2",
+          "7/20"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 66
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "1/2",
+          "-3/4",
+          "2/17"
+        ],
+        [
+          "1/2",
+          "2",
+          "2/17"
+        ],
+        [
+          "3/4",
+          "-1",
+          "1/17"
+        ],
+        [
+          "3/4",
+          "1",
+          "8/17"
+        ],
+        [
+          "1",
+          "-1/2",
+          "4/17"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 67
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "-1",
+          "3/4"
+        ],
+        [
+          "-1/4",
+          "0",
+          "1/4"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.039711517679880126,
+      "pure_over_M_float": 0.039711517679880126,
+      "gap_over_M_float": -0.9602884823201199,
+      "gap_over_M_plus_4eps_float": -1.3602884823201198,
+      "index": 68
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1",
+          "7/4",
+          "1/5"
+        ],
+        [
+          "2",
+          "-1",
+          "2/5"
+        ],
+        [
+          "2",
+          "-1/4",
+          "2/5"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 69
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/4",
+          "7/4",
+          "2/7"
+        ],
+        [
+          "-1/4",
+          "2",
+          "5/21"
+        ],
+        [
+          "7/4",
+          "1/4",
+          "1/7"
+        ],
+        [
+          "2",
+          "2",
+          "1/3"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 70
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "5/4",
+          "5/28"
+        ],
+        [
+          "-3/2",
+          "-1/2",
+          "5/28"
+        ],
+        [
+          "-1",
+          "2",
+          "2/7"
+        ],
+        [
+          "3/4",
+          "-1/2",
+          "1/7"
+        ],
+        [
+          "7/4",
+          "-1/2",
+          "3/14"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 71
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "1",
+          "-3/4",
+          "2/3"
+        ],
+        [
+          "5/4",
+          "-1/4",
+          "1/3"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.11130175035098788,
+      "pure_over_M_float": 0.11130175035098788,
+      "gap_over_M_float": -0.8886982496490121,
+      "gap_over_M_plus_4eps_float": -4.888698249649012,
+      "index": 72
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "-3/2",
+          "1/2"
+        ],
+        [
+          "-3/4",
+          "-3/4",
+          "1/5"
+        ],
+        [
+          "2",
+          "-1",
+          "3/10"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.030238664841484297,
+      "pure_over_M_float": 0.030238664841484297,
+      "gap_over_M_float": -0.9697613351585157,
+      "gap_over_M_plus_4eps_float": -4.969761335158516,
+      "index": 73
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-5/4",
+          "8/23"
+        ],
+        [
+          "1",
+          "7/4",
+          "8/23"
+        ],
+        [
+          "5/4",
+          "-5/4",
+          "1/23"
+        ],
+        [
+          "7/4",
+          "-7/4",
+          "6/23"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -5.0,
+      "index": 74
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "1/2",
+          "3/4",
+          "1/13"
+        ],
+        [
+          "3/4",
+          "-3/4",
+          "3/13"
+        ],
+        [
+          "3/2",
+          "-1/2",
+          "4/13"
+        ],
+        [
+          "7/4",
+          "-2",
+          "3/13"
+        ],
+        [
+          "7/4",
+          "1/2",
+          "2/13"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.049535736469001446,
+      "pure_over_M_float": 0.049535736469001446,
+      "gap_over_M_float": -0.9504642635309986,
+      "gap_over_M_plus_4eps_float": -4.950464263530998,
+      "index": 75
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "0",
+          "2/9"
+        ],
+        [
+          "-1/2",
+          "-1/2",
+          "7/9"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.40301412692699223,
+      "pure_over_M_float": 0.40301412692699223,
+      "gap_over_M_float": -0.5969858730730078,
+      "gap_over_M_plus_4eps_float": -40.59698587307301,
+      "index": 76
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/4",
+          "-1/4",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "2",
+          "1/5"
+        ],
+        [
+          "5/4",
+          "-2",
+          "3/10"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.3524535488377616,
+      "pure_over_M_float": 0.3524535488377616,
+      "gap_over_M_float": -0.6475464511622384,
+      "gap_over_M_plus_4eps_float": -40.64754645116224,
+      "index": 77
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/2",
+          "1/2",
+          "1/5"
+        ],
+        [
+          "5/4",
+          "-3/4",
+          "7/20"
+        ],
+        [
+          "5/4",
+          "1/4",
+          "7/20"
+        ],
+        [
+          "7/4",
+          "-1/2",
+          "1/10"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.35562013176641116,
+      "pure_over_M_float": 0.35562013176641116,
+      "gap_over_M_float": -0.6443798682335888,
+      "gap_over_M_plus_4eps_float": -40.644379868233585,
+      "index": 78
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "-1/4",
+          "1/4"
+        ],
+        [
+          "-3/2",
+          "7/4",
+          "1/24"
+        ],
+        [
+          "-1",
+          "-3/2",
+          "1/4"
+        ],
+        [
+          "-1",
+          "2",
+          "5/24"
+        ],
+        [
+          "-1/2",
+          "1/2",
+          "1/4"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.29261060780695836,
+      "pure_over_M_float": 0.29261060780695836,
+      "gap_over_M_float": -0.7073893921930416,
+      "gap_over_M_plus_4eps_float": -40.70738939219304,
+      "index": 79
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "3/2",
+          "3/10"
+        ],
+        [
+          "2",
+          "0",
+          "7/10"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 80
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "0",
+          "-1",
+          "3/7"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "3/14"
+        ],
+        [
+          "3/2",
+          "-3/2",
+          "5/14"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 81
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/4",
+          "-2",
+          "4/17"
+        ],
+        [
+          "1",
+          "-3/4",
+          "3/17"
+        ],
+        [
+          "3/2",
+          "0",
+          "6/17"
+        ],
+        [
+          "7/4",
+          "3/4",
+          "4/17"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 82
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "0",
+          "8/21"
+        ],
+        [
+          "-1",
+          "-3/2",
+          "1/21"
+        ],
+        [
+          "1/2",
+          "-2",
+          "1/7"
+        ],
+        [
+          "3/2",
+          "-1/4",
+          "1/3"
+        ],
+        [
+          "3/2",
+          "2",
+          "2/21"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 83
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "2",
+          "3/4"
+        ],
+        [
+          "-3/4",
+          "-3/4",
+          "1/4"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 84
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "3/2",
+          "3/4",
+          "3/16"
+        ],
+        [
+          "3/2",
+          "5/4",
+          "1/2"
+        ],
+        [
+          "7/4",
+          "1/4",
+          "5/16"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 85
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1",
+          "3/4",
+          "6/19"
+        ],
+        [
+          "5/4",
+          "-2",
+          "1/19"
+        ],
+        [
+          "5/4",
+          "7/4",
+          "4/19"
+        ],
+        [
+          "3/2",
+          "-7/4",
+          "8/19"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 86
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "1",
+          "1/6"
+        ],
+        [
+          "-1",
+          "-1/2",
+          "1/4"
+        ],
+        [
+          "-1",
+          "3/2",
+          "1/12"
+        ],
+        [
+          "3/4",
+          "-1/4",
+          "1/3"
+        ],
+        [
+          "7/4",
+          "3/4",
+          "1/6"
+        ]
+      ],
+      "epsilon": "1/10",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.4,
+      "index": 87
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "3/4",
+          "5/12"
+        ],
+        [
+          "-3/4",
+          "0",
+          "7/12"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.16180902578696355,
+      "pure_over_M_float": 0.16180902578696355,
+      "gap_over_M_float": -0.8381909742130365,
+      "gap_over_M_plus_4eps_float": -4.8381909742130365,
+      "index": 88
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "1",
+          "6/19"
+        ],
+        [
+          "-3/2",
+          "1/4",
+          "8/19"
+        ],
+        [
+          "7/4",
+          "3/4",
+          "5/19"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -5.0,
+      "index": 89
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-7/4",
+          "-1/2",
+          "6/23"
+        ],
+        [
+          "1/4",
+          "-7/4",
+          "4/23"
+        ],
+        [
+          "1/2",
+          "3/2",
+          "5/23"
+        ],
+        [
+          "1",
+          "-2",
+          "8/23"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -5.0,
+      "index": 90
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1",
+          "7/4",
+          "3/17"
+        ],
+        [
+          "0",
+          "1",
+          "5/17"
+        ],
+        [
+          "3/4",
+          "0",
+          "5/17"
+        ],
+        [
+          "5/4",
+          "-3/2",
+          "3/17"
+        ],
+        [
+          "5/4",
+          "7/4",
+          "1/17"
+        ]
+      ],
+      "epsilon": "1",
+      "M": "1",
+      "pure_mixed_area_float": 0.18464005605940614,
+      "pure_over_M_float": 0.18464005605940614,
+      "gap_over_M_float": -0.8153599439405939,
+      "gap_over_M_plus_4eps_float": -4.815359943940594,
+      "index": 91
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/2",
+          "3/4",
+          "2/5"
+        ],
+        [
+          "5/4",
+          "-7/4",
+          "3/5"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.277817366544058,
+      "pure_over_M_float": 0.277817366544058,
+      "gap_over_M_float": -0.722182633455942,
+      "gap_over_M_plus_4eps_float": -40.722182633455944,
+      "index": 92
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1",
+          "-1/2",
+          "1/2"
+        ],
+        [
+          "-1/4",
+          "1/4",
+          "3/8"
+        ],
+        [
+          "1",
+          "2",
+          "1/8"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.4003646668374756,
+      "pure_over_M_float": 0.4003646668374756,
+      "gap_over_M_float": -0.5996353331625244,
+      "gap_over_M_plus_4eps_float": -40.599635333162524,
+      "index": 93
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1",
+          "-2",
+          "2/13"
+        ],
+        [
+          "-3/4",
+          "-2",
+          "3/13"
+        ],
+        [
+          "1/2",
+          "1/4",
+          "1/13"
+        ],
+        [
+          "1",
+          "-7/4",
+          "7/13"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.2626523130035263,
+      "pure_over_M_float": 0.2626523130035263,
+      "gap_over_M_float": -0.7373476869964737,
+      "gap_over_M_plus_4eps_float": -40.73734768699647,
+      "index": 94
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "0",
+          "2",
+          "2/23"
+        ],
+        [
+          "1",
+          "-3/4",
+          "8/23"
+        ],
+        [
+          "1",
+          "3/2",
+          "4/23"
+        ],
+        [
+          "1",
+          "2",
+          "3/23"
+        ],
+        [
+          "2",
+          "7/4",
+          "6/23"
+        ]
+      ],
+      "epsilon": "10",
+      "M": "1",
+      "pure_mixed_area_float": 0.28934158113649566,
+      "pure_over_M_float": 0.28934158113649566,
+      "gap_over_M_float": -0.7106584188635043,
+      "gap_over_M_plus_4eps_float": -40.7106584188635,
+      "index": 95
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-5/4",
+          "0",
+          "3/5"
+        ],
+        [
+          "-1",
+          "1/4",
+          "2/5"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 96
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-3/2",
+          "-2",
+          "7/23"
+        ],
+        [
+          "5/4",
+          "-3/2",
+          "8/23"
+        ],
+        [
+          "5/4",
+          "1/2",
+          "8/23"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 97
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-1/4",
+          "7/4",
+          "7/26"
+        ],
+        [
+          "1/2",
+          "-3/4",
+          "4/13"
+        ],
+        [
+          "2",
+          "-2",
+          "4/13"
+        ],
+        [
+          "2",
+          "0",
+          "3/26"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 98
+    },
+    {
+      "kind": "seeded-small-input",
+      "old": [
+        [
+          "-2",
+          "1/4",
+          "2/7"
+        ],
+        [
+          "-1",
+          "2",
+          "2/21"
+        ],
+        [
+          "5/4",
+          "5/4",
+          "1/7"
+        ],
+        [
+          "2",
+          "5/4",
+          "5/21"
+        ],
+        [
+          "2",
+          "7/4",
+          "5/21"
+        ]
+      ],
+      "epsilon": "1/100",
+      "M": "1",
+      "pure_mixed_area_float": 0.0,
+      "pure_over_M_float": 0.0,
+      "gap_over_M_float": -1.0,
+      "gap_over_M_plus_4eps_float": -1.04,
+      "index": 99
+    }
+  ],
+  "two_atom_halo_counterexample": {
+    "M": "2",
+    "area_exact": "2-sqrt(2)/5",
+    "area_float": 1.717157287525381,
+    "root_comparison_exact": "2>49/25, hence sqrt(2)>7/5"
+  },
+  "source_sha256": {
+    "proofs/joint-old-reserve-counterexample-notes.md": "1cc1796058b63b042cc451a3a80da6ceb980bd628d627df4d3c2bbfe7e06dd92",
+    "computation/joint_old_reserve_small_probe.py": "4de19af7e5592313fe28be6aeb80b2bc64943b52bc9fd0abf99cfd3f39ed594d"
+  },
+  "elapsed_seconds": 0.030830959003651515
+}

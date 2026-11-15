@@ -1,0 +1,9562 @@
+{
+  "status": "PASS: all representative orders have strictly more than 2 proxy area",
+  "definition": "At each step choose maximum cardinality old subset S with bbox(new point union S) max span squared < (|S|+1)/8; square is centered at the new point and has area (M_eff+new_mass).",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "bits": 32,
+  "arithmetic": "Fraction exact eligibility; integer isqrt radius brackets; exact integer rectangle-union area. Floating values are exploratory only.",
+  "input": {
+    "points": [
+      [
+        "-49/100",
+        "-49/100"
+      ],
+      [
+        "-49/100",
+        "0"
+      ],
+      [
+        "-49/100",
+        "49/100"
+      ],
+      [
+        "0",
+        "-49/100"
+      ],
+      [
+        "0",
+        "49/100"
+      ],
+      [
+        "49/100",
+        "-49/100"
+      ],
+      [
+        "49/100",
+        "0"
+      ],
+      [
+        "49/100",
+        "49/100"
+      ]
+    ],
+    "masses": [
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8"
+    ],
+    "M": "1"
+  },
+  "D4_reduction": "All final vertices lie in two D4 orbits: corner 0 or edge midpoint 1. Each has all remaining 7! orders enumerated.",
+  "eligibility_checks": 1024,
+  "permutation_count": 10080,
+  "unique_signature_count": 348,
+  "observed_square_area_types": [
+    1,
+    2,
+    3,
+    8
+  ],
+  "area_denominator": 184467440737095516160000,
+  "radius_bounds": {
+    "1": {
+      "radius_squared": "1/32",
+      "lower_radius_numerator": 759250124,
+      "upper_radius_numerator": 759250125,
+      "radius_denominator": 4294967296
+    },
+    "2": {
+      "radius_squared": "1/16",
+      "lower_radius_numerator": 1073741824,
+      "upper_radius_numerator": 1073741824,
+      "radius_denominator": 4294967296
+    },
+    "3": {
+      "radius_squared": "3/32",
+      "lower_radius_numerator": 1315059792,
+      "upper_radius_numerator": 1315059793,
+      "radius_denominator": 4294967296
+    },
+    "4": {
+      "radius_squared": "1/8",
+      "lower_radius_numerator": 1518500249,
+      "upper_radius_numerator": 1518500250,
+      "radius_denominator": 4294967296
+    },
+    "5": {
+      "radius_squared": "5/32",
+      "lower_radius_numerator": 1697734891,
+      "upper_radius_numerator": 1697734892,
+      "radius_denominator": 4294967296
+    },
+    "6": {
+      "radius_squared": "3/16",
+      "lower_radius_numerator": 1859775393,
+      "upper_radius_numerator": 1859775394,
+      "radius_denominator": 4294967296
+    },
+    "7": {
+      "radius_squared": "7/32",
+      "lower_radius_numerator": 2008787013,
+      "upper_radius_numerator": 2008787014,
+      "radius_denominator": 4294967296
+    },
+    "8": {
+      "radius_squared": "1/4",
+      "lower_radius_numerator": 2147483648,
+      "upper_radius_numerator": 2147483648,
+      "radius_denominator": 4294967296
+    }
+  },
+  "minimum_proxy_area_lower": "378116406113191688339/180143985094819840000",
+  "minimum_proxy_area_upper": "12099725004195137798823/5764607523034234880000",
+  "minimum_proxy_area_float_interval": [
+    2.0989677002769085,
+    2.0989677017640878
+  ],
+  "strict_excess_over_2_lower": "17828435923552008339/180143985094819840000",
+  "possible_optimal_signature_ids": [
+    237
+  ],
+  "orbit_stats": {
+    "corner": {
+      "last": 0,
+      "permutations": 5040,
+      "best_floating_area": 2.288234429344014,
+      "best_order": [
+        2,
+        1,
+        5,
+        7,
+        6,
+        3,
+        4,
+        0
+      ],
+      "best_signature_id": 69
+    },
+    "edge_midpoint": {
+      "last": 1,
+      "permutations": 5040,
+      "best_floating_area": 2.0989677013221164,
+      "best_order": [
+        0,
+        2,
+        5,
+        3,
+        7,
+        4,
+        6,
+        1
+      ],
+      "best_signature_id": 237
+    }
+  },
+  "signatures": [
+    {
+      "id": 0,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 475775560529012623270400,
+      "outer_area_numerator": 475775560699704248133200,
+      "floating_area": 2.5791844819735186,
+      "multiplicity": 10
+    },
+    {
+      "id": 1,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 466200666896936803136000,
+      "outer_area_numerator": 466200667030364107868000,
+      "floating_area": 2.5272788795586307,
+      "multiplicity": 15
+    },
+    {
+      "id": 2,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 478998214447144226828800,
+      "outer_area_numerator": 478998214643256138730400,
+      "floating_area": 2.596654523889212,
+      "multiplicity": 19
+    },
+    {
+      "id": 3,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 477043893040655321203200,
+      "outer_area_numerator": 477043893221429161535600,
+      "floating_area": 2.5860601263041,
+      "multiplicity": 5
+    },
+    {
+      "id": 4,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        4,
+        6,
+        0
+      ],
+      "inner_area_numerator": 454543358039796604880384,
+      "outer_area_numerator": 454543358271228239703184,
+      "floating_area": 2.4640844819735186,
+      "multiplicity": 45
+    },
+    {
+      "id": 5,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        1,
+        2,
+        3,
+        6,
+        5,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 468154988303425708761600,
+      "outer_area_numerator": 468154988452191085062800,
+      "floating_area": 2.5378732771437424,
+      "multiplicity": 14
+    },
+    {
+      "id": 6,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        2,
+        3,
+        7,
+        4,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 465386584183515122947584,
+      "outer_area_numerator": 465386584462293293370784,
+      "floating_area": 2.522865728718988,
+      "multiplicity": 14
+    },
+    {
+      "id": 7,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        1,
+        2,
+        3,
+        7,
+        6,
+        4,
+        5,
+        0
+      ],
+      "inner_area_numerator": 452001404438645845558784,
+      "outer_area_numerator": 452001404669196571570384,
+      "floating_area": 2.450304523889212,
+      "multiplicity": 52
+    },
+    {
+      "id": 8,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        1,
+        2,
+        4,
+        5,
+        3,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 459621976664232760067584,
+      "outer_area_numerator": 459621976916709734640784,
+      "floating_area": 2.4916157287189877,
+      "multiplicity": 16
+    },
+    {
+      "id": 9,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        2,
+        4,
+        5,
+        3,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 450047083032156939933184,
+      "outer_area_numerator": 450047083247369594375584,
+      "floating_area": 2.4397101263041003,
+      "multiplicity": 23
+    },
+    {
+      "id": 10,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 455604399995339867907584,
+      "outer_area_numerator": 455604400235994724740784,
+      "floating_area": 2.469836401947142,
+      "multiplicity": 29
+    },
+    {
+      "id": 11,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 459414686108133325161984,
+      "outer_area_numerator": 459414686359751306275984,
+      "floating_area": 2.49049200436203,
+      "multiplicity": 5
+    },
+    {
+      "id": 12,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        1,
+        2,
+        4,
+        6,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 471757983860119731110400,
+      "outer_area_numerator": 471757984018989238233200,
+      "floating_area": 2.557405155201672,
+      "multiplicity": 3
+    },
+    {
+      "id": 13,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        2,
+        4,
+        7,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 471071994965273523417600,
+      "outer_area_numerator": 471071995118887174440800,
+      "floating_area": 2.553686401947142,
+      "multiplicity": 1
+    },
+    {
+      "id": 14,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        2,
+        5,
+        3,
+        7,
+        4,
+        6,
+        0
+      ],
+      "inner_area_numerator": 438389774175016741677568,
+      "outer_area_numerator": 438389774488233726210768,
+      "floating_area": 2.376515728718988,
+      "multiplicity": 73
+    },
+    {
+      "id": 15,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        1,
+        2,
+        5,
+        6,
+        3,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 444761173851621349840384,
+      "outer_area_numerator": 444761174044929671073184,
+      "floating_area": 2.4110551552016726,
+      "multiplicity": 36
+    },
+    {
+      "id": 16,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        2,
+        5,
+        7,
+        4,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 447757377250993126906368,
+      "outer_area_numerator": 447757377600615438111168,
+      "floating_area": 2.4272976067769183,
+      "multiplicity": 15
+    },
+    {
+      "id": 17,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        1,
+        2,
+        5,
+        7,
+        6,
+        3,
+        4,
+        0
+      ],
+      "inner_area_numerator": 428607589986841486637568,
+      "outer_area_numerator": 428607590261935157580768,
+      "floating_area": 2.323486401947142,
+      "multiplicity": 48
+    },
+    {
+      "id": 18,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        1,
+        2,
+        6,
+        3,
+        4,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 468148986506973663270400,
+      "outer_area_numerator": 468148986806775258092000,
+      "floating_area": 2.5378407417371087,
+      "multiplicity": 26
+    },
+    {
+      "id": 19,
+      "types": [
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        1,
+        2,
+        6,
+        3,
+        5,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 452809485355615480256000,
+      "outer_area_numerator": 452809485591851559096800,
+      "floating_area": 2.4546851393222213,
+      "multiplicity": 52
+    },
+    {
+      "id": 20,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        1,
+        2,
+        6,
+        4,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 456412480912309502604800,
+      "outer_area_numerator": 456412481158649712267200,
+      "floating_area": 2.474217017380151,
+      "multiplicity": 30
+    },
+    {
+      "id": 21,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        1,
+        2,
+        6,
+        5,
+        3,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 441072979760951319590400,
+      "outer_area_numerator": 441072979943726013272000,
+      "floating_area": 2.391061414965263,
+      "multiplicity": 66
+    },
+    {
+      "id": 22,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        2,
+        7,
+        4,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 459414686108133325161984,
+      "outer_area_numerator": 459414686359751306275984,
+      "floating_area": 2.49049200436203,
+      "multiplicity": 3
+    },
+    {
+      "id": 23,
+      "types": [
+        8,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        1,
+        2,
+        7,
+        6,
+        4,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 444761173851621349840384,
+      "outer_area_numerator": 444761174044929671073184,
+      "floating_area": 2.4110551552016726,
+      "multiplicity": 30
+    },
+    {
+      "id": 24,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        1,
+        3,
+        4,
+        2,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 483494489454783891776000,
+      "outer_area_numerator": 483494489667114784058000,
+      "floating_area": 2.6210288795586303,
+      "multiplicity": 14
+    },
+    {
+      "id": 25,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        3,
+        4,
+        2,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 472651263311065373708800,
+      "outer_area_numerator": 472651263476049730390400,
+      "floating_area": 2.5622476328131603,
+      "multiplicity": 26
+    },
+    {
+      "id": 26,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        1,
+        3,
+        4,
+        2,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 486717143372915495334400,
+      "outer_area_numerator": 486717143610666674655200,
+      "floating_area": 2.6384989214743237,
+      "multiplicity": 41
+    },
+    {
+      "id": 27,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        3,
+        4,
+        2,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 483494489454783891776000,
+      "outer_area_numerator": 483494489667114784058000,
+      "floating_area": 2.6210288795586303,
+      "multiplicity": 19
+    },
+    {
+      "id": 28,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 481540168048294986150400,
+      "outer_area_numerator": 481540168245287806863200,
+      "floating_area": 2.6104344819735186,
+      "multiplicity": 1
+    },
+    {
+      "id": 29,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        3,
+        5,
+        7,
+        4,
+        2,
+        6,
+        0
+      ],
+      "inner_area_numerator": 456497679446285510505984,
+      "outer_area_numerator": 456497679693055216897984,
+      "floating_area": 2.4746788795586303,
+      "multiplicity": 25
+    },
+    {
+      "id": 30,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        3,
+        5,
+        7,
+        6,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 469882859191154787894784,
+      "outer_area_numerator": 469882859486151938698384,
+      "floating_area": 2.5472400843884064,
+      "multiplicity": 4
+    },
+    {
+      "id": 31,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        1,
+        3,
+        6,
+        5,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 483494489454783891776000,
+      "outer_area_numerator": 483494489667114784058000,
+      "floating_area": 2.6210288795586303,
+      "multiplicity": 4
+    },
+    {
+      "id": 32,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        3,
+        7,
+        4,
+        2,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 467340905590004028573184,
+      "outer_area_numerator": 467340905884120270565584,
+      "floating_area": 2.5334601263041,
+      "multiplicity": 25
+    },
+    {
+      "id": 33,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        1,
+        3,
+        7,
+        6,
+        4,
+        2,
+        5,
+        0
+      ],
+      "inner_area_numerator": 467340905590004028573184,
+      "outer_area_numerator": 467340905884120270565584,
+      "floating_area": 2.5334601263041003,
+      "multiplicity": 27
+    },
+    {
+      "id": 34,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        1,
+        4,
+        2,
+        5,
+        3,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 467340905590004028573184,
+      "outer_area_numerator": 467340905884120270565584,
+      "floating_area": 2.5334601263041,
+      "multiplicity": 23
+    },
+    {
+      "id": 35,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        4,
+        2,
+        5,
+        3,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 456497679446285510505984,
+      "outer_area_numerator": 456497679693055216897984,
+      "floating_area": 2.4746788795586303,
+      "multiplicity": 37
+    },
+    {
+      "id": 36,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        2,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        1,
+        4,
+        2,
+        5,
+        6,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 463323328921111136413184,
+      "outer_area_numerator": 463323329203405260665584,
+      "floating_area": 2.5116807995322543,
+      "multiplicity": 50
+    },
+    {
+      "id": 37,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        2,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        4,
+        2,
+        5,
+        7,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 465865282522261895734784,
+      "outer_area_numerator": 465865282805436928798384,
+      "floating_area": 2.525460757616561,
+      "multiplicity": 18
+    },
+    {
+      "id": 38,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        2,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        1,
+        4,
+        2,
+        6,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 479476912785890999616000,
+      "outer_area_numerator": 479476912986399774158000,
+      "floating_area": 2.5992495527867847,
+      "multiplicity": 15
+    },
+    {
+      "id": 39,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        4,
+        2,
+        7,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 477522591379402093990400,
+      "outer_area_numerator": 477522591564572796963200,
+      "floating_area": 2.588655155201673,
+      "multiplicity": 5
+    },
+    {
+      "id": 40,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        1,
+        5,
+        3,
+        6,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 465386584183515122947584,
+      "outer_area_numerator": 465386584462293293370784,
+      "floating_area": 2.5228657287189877,
+      "multiplicity": 2
+    },
+    {
+      "id": 41,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        5,
+        3,
+        7,
+        4,
+        2,
+        6,
+        0
+      ],
+      "inner_area_numerator": 440344095581505647303168,
+      "outer_area_numerator": 440344095910060703405568,
+      "floating_area": 2.3871101263041,
+      "multiplicity": 42
+    },
+    {
+      "id": 42,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        5,
+        3,
+        7,
+        6,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 453729275326374924691968,
+      "outer_area_numerator": 453729275703157425205968,
+      "floating_area": 2.459671331133876,
+      "multiplicity": 8
+    },
+    {
+      "id": 43,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        1,
+        5,
+        6,
+        3,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 460100675002979532854784,
+      "outer_area_numerator": 460100675259853370068384,
+      "floating_area": 2.4942107576165604,
+      "multiplicity": 15
+    },
+    {
+      "id": 44,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        5,
+        7,
+        4,
+        2,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 449711698657482032531968,
+      "outer_area_numerator": 449711699022442415305968,
+      "floating_area": 2.43789200436203,
+      "multiplicity": 26
+    },
+    {
+      "id": 45,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        1,
+        5,
+        7,
+        6,
+        3,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 443947091138199669651968,
+      "outer_area_numerator": 443947091476858856575968,
+      "floating_area": 2.4066420043620305,
+      "multiplicity": 24
+    },
+    {
+      "id": 46,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        1,
+        6,
+        3,
+        4,
+        2,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 475867915432744931776000,
+      "outer_area_numerator": 475867915774185794016800,
+      "floating_area": 2.579685139322221,
+      "multiplicity": 40
+    },
+    {
+      "id": 47,
+      "types": [
+        8,
+        1,
+        3,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        1,
+        6,
+        3,
+        5,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 468148986506973663270400,
+      "outer_area_numerator": 468148986806775258092000,
+      "floating_area": 2.537840741737109,
+      "multiplicity": 26
+    },
+    {
+      "id": 48,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        1,
+        6,
+        4,
+        2,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 464131409838080771110400,
+      "outer_area_numerator": 464131410126060248192000,
+      "floating_area": 2.5160614149652636,
+      "multiplicity": 48
+    },
+    {
+      "id": 49,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        1,
+        6,
+        5,
+        3,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 456412480912309502604800,
+      "outer_area_numerator": 456412481158649712267200,
+      "floating_area": 2.4742170173801514,
+      "multiplicity": 36
+    },
+    {
+      "id": 50,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        1,
+        7,
+        4,
+        2,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 461369007514622230787584,
+      "outer_area_numerator": 461369007781578283470784,
+      "floating_area": 2.501086401947142,
+      "multiplicity": 8
+    },
+    {
+      "id": 51,
+      "types": [
+        8,
+        1,
+        3,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        1,
+        7,
+        6,
+        4,
+        2,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 460100675002979532854784,
+      "outer_area_numerator": 460100675259853370068384,
+      "floating_area": 2.4942107576165604,
+      "multiplicity": 21
+    },
+    {
+      "id": 52,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        2,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 469272719328685018153984,
+      "outer_area_numerator": 469272719546395125106784,
+      "floating_area": 2.54393250937039,
+      "multiplicity": 4
+    },
+    {
+      "id": 53,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        1,
+        3,
+        4,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 459697825696609198019584,
+      "outer_area_numerator": 459697825877054984841584,
+      "floating_area": 2.4920269069555023,
+      "multiplicity": 7
+    },
+    {
+      "id": 54,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        1,
+        3,
+        4,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 472495373246816621712384,
+      "outer_area_numerator": 472495373489947015703984,
+      "floating_area": 2.5614025512860836,
+      "multiplicity": 10
+    },
+    {
+      "id": 55,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        1,
+        3,
+        4,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 470541051840327716086784,
+      "outer_area_numerator": 470541052068120038509184,
+      "floating_area": 2.550808153700972,
+      "multiplicity": 4
+    },
+    {
+      "id": 56,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        1,
+        3,
+        5,
+        7,
+        4,
+        6,
+        0
+      ],
+      "inner_area_numerator": 448040516839468999763968,
+      "outer_area_numerator": 448040517117919116676768,
+      "floating_area": 2.42883250937039,
+      "multiplicity": 17
+    },
+    {
+      "id": 57,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        2,
+        1,
+        3,
+        6,
+        5,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 461652147103098103645184,
+      "outer_area_numerator": 461652147298881962036384,
+      "floating_area": 2.502621304540614,
+      "multiplicity": 3
+    },
+    {
+      "id": 58,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        1,
+        3,
+        7,
+        4,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 458883742983187517831168,
+      "outer_area_numerator": 458883743308984170344368,
+      "floating_area": 2.4876137561158598,
+      "multiplicity": 10
+    },
+    {
+      "id": 59,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        1,
+        3,
+        7,
+        6,
+        4,
+        5,
+        0
+      ],
+      "inner_area_numerator": 445498563238318240442368,
+      "outer_area_numerator": 445498563515887448543968,
+      "floating_area": 2.4150525512860836,
+      "multiplicity": 39
+    },
+    {
+      "id": 60,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        2,
+        1,
+        4,
+        5,
+        3,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 453119135463905154951168,
+      "outer_area_numerator": 453119135763400611614368,
+      "floating_area": 2.4563637561158598,
+      "multiplicity": 20
+    },
+    {
+      "id": 61,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        1,
+        4,
+        5,
+        3,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 443544241831829334816768,
+      "outer_area_numerator": 443544242094060471349168,
+      "floating_area": 2.404458153700972,
+      "multiplicity": 30
+    },
+    {
+      "id": 62,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        1,
+        4,
+        5,
+        6,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 449101558795012262791168,
+      "outer_area_numerator": 449101559082685601714368,
+      "floating_area": 2.4345844293440138,
+      "multiplicity": 30
+    },
+    {
+      "id": 63,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        1,
+        4,
+        5,
+        7,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 452911844907805720045568,
+      "outer_area_numerator": 452911845206442183249568,
+      "floating_area": 2.455240031758902,
+      "multiplicity": 5
+    },
+    {
+      "id": 64,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        1,
+        4,
+        6,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 465255142659792125993984,
+      "outer_area_numerator": 465255142865680115206784,
+      "floating_area": 2.522153182598544,
+      "multiplicity": 3
+    },
+    {
+      "id": 65,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        1,
+        4,
+        7,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 464569153764945918301184,
+      "outer_area_numerator": 464569153965578051414384,
+      "floating_area": 2.518434429344014,
+      "multiplicity": 1
+    },
+    {
+      "id": 66,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        1,
+        5,
+        3,
+        7,
+        4,
+        6,
+        0
+      ],
+      "inner_area_numerator": 431886932974689136561152,
+      "outer_area_numerator": 431886933334924603184352,
+      "floating_area": 2.34126375611586,
+      "multiplicity": 90
+    },
+    {
+      "id": 67,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        2,
+        1,
+        5,
+        6,
+        3,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 438258332651293744723968,
+      "outer_area_numerator": 438258332891620548046768,
+      "floating_area": 2.375803182598544,
+      "multiplicity": 40
+    },
+    {
+      "id": 68,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        1,
+        5,
+        7,
+        4,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 441254536050665521789952,
+      "outer_area_numerator": 441254536447306315084752,
+      "floating_area": 2.39204563417379,
+      "multiplicity": 15
+    },
+    {
+      "id": 69,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        1,
+        5,
+        7,
+        6,
+        3,
+        4,
+        0
+      ],
+      "inner_area_numerator": 422104748786513881521152,
+      "outer_area_numerator": 422104749108626034554352,
+      "floating_area": 2.288234429344014,
+      "multiplicity": 50
+    },
+    {
+      "id": 70,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        2,
+        1,
+        6,
+        3,
+        4,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 461646145306646058153984,
+      "outer_area_numerator": 461646145653466135065584,
+      "floating_area": 2.5025887691339808,
+      "multiplicity": 31
+    },
+    {
+      "id": 71,
+      "types": [
+        8,
+        2,
+        1,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        2,
+        1,
+        6,
+        3,
+        5,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 446306644155287875139584,
+      "outer_area_numerator": 446306644438542436070384,
+      "floating_area": 2.419433166719093,
+      "multiplicity": 71
+    },
+    {
+      "id": 72,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        2,
+        1,
+        6,
+        4,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 449909639711981897488384,
+      "outer_area_numerator": 449909640005340589240784,
+      "floating_area": 2.438965044777023,
+      "multiplicity": 31
+    },
+    {
+      "id": 73,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        2,
+        1,
+        6,
+        5,
+        3,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 434570138560623714473984,
+      "outer_area_numerator": 434570138790416890245584,
+      "floating_area": 2.355809442362135,
+      "multiplicity": 71
+    },
+    {
+      "id": 74,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        1,
+        7,
+        4,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 452911844907805720045568,
+      "outer_area_numerator": 452911845206442183249568,
+      "floating_area": 2.455240031758902,
+      "multiplicity": 3
+    },
+    {
+      "id": 75,
+      "types": [
+        8,
+        2,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        1,
+        7,
+        6,
+        4,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 438258332651293744723968,
+      "outer_area_numerator": 438258332891620548046768,
+      "floating_area": 2.375803182598544,
+      "multiplicity": 31
+    },
+    {
+      "id": 76,
+      "types": [
+        8,
+        2,
+        1,
+        1,
+        3,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        2,
+        3,
+        1,
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 459621976664232760067584,
+      "outer_area_numerator": 459621976916709734640784,
+      "floating_area": 2.4916157287189877,
+      "multiplicity": 16
+    },
+    {
+      "id": 77,
+      "types": [
+        8,
+        2,
+        1,
+        1,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        1,
+        4,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 450047083032156939933184,
+      "outer_area_numerator": 450047083247369594375584,
+      "floating_area": 2.4397101263041,
+      "multiplicity": 23
+    },
+    {
+      "id": 78,
+      "types": [
+        8,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        3,
+        1,
+        4,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 467340905590004028573184,
+      "outer_area_numerator": 467340905884120270565584,
+      "floating_area": 2.5334601263041,
+      "multiplicity": 23
+    },
+    {
+      "id": 79,
+      "types": [
+        8,
+        2,
+        1,
+        1,
+        3,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        1,
+        4,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 465386584183515122947584,
+      "outer_area_numerator": 465386584462293293370784,
+      "floating_area": 2.5228657287189877,
+      "multiplicity": 2
+    },
+    {
+      "id": 80,
+      "types": [
+        8,
+        2,
+        1,
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        1,
+        5,
+        7,
+        4,
+        6,
+        0
+      ],
+      "inner_area_numerator": 438389774175016741677568,
+      "outer_area_numerator": 438389774488233726210768,
+      "floating_area": 2.3765157287189878,
+      "multiplicity": 73
+    },
+    {
+      "id": 81,
+      "types": [
+        8,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        1,
+        6,
+        5,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 456497679446285510505984,
+      "outer_area_numerator": 456497679693055216897984,
+      "floating_area": 2.4746788795586303,
+      "multiplicity": 37
+    },
+    {
+      "id": 82,
+      "types": [
+        8,
+        2,
+        1,
+        1,
+        3,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        1,
+        7,
+        4,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 453729275326374924691968,
+      "outer_area_numerator": 453729275703157425205968,
+      "floating_area": 2.4596713311338756,
+      "multiplicity": 8
+    },
+    {
+      "id": 83,
+      "types": [
+        8,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        1,
+        7,
+        6,
+        4,
+        5,
+        0
+      ],
+      "inner_area_numerator": 440344095581505647303168,
+      "outer_area_numerator": 440344095910060703405568,
+      "floating_area": 2.3871101263041,
+      "multiplicity": 42
+    },
+    {
+      "id": 84,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        2,
+        3,
+        4,
+        1,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 455604399995339867907584,
+      "outer_area_numerator": 455604400235994724740784,
+      "floating_area": 2.469836401947142,
+      "multiplicity": 29
+    },
+    {
+      "id": 85,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        4,
+        1,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 444761173851621349840384,
+      "outer_area_numerator": 444761174044929671073184,
+      "floating_area": 2.411055155201672,
+      "multiplicity": 36
+    },
+    {
+      "id": 86,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        3,
+        4,
+        1,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 463323328921111136413184,
+      "outer_area_numerator": 463323329203405260665584,
+      "floating_area": 2.511680799532254,
+      "multiplicity": 50
+    },
+    {
+      "id": 87,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        2,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        4,
+        1,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 460100675002979532854784,
+      "outer_area_numerator": 460100675259853370068384,
+      "floating_area": 2.4942107576165604,
+      "multiplicity": 15
+    },
+    {
+      "id": 88,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        4,
+        1,
+        0
+      ],
+      "inner_area_numerator": 459414686108133325161984,
+      "outer_area_numerator": 459414686359751306275984,
+      "floating_area": 2.49049200436203,
+      "multiplicity": 5
+    },
+    {
+      "id": 89,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        5,
+        7,
+        4,
+        1,
+        6,
+        0
+      ],
+      "inner_area_numerator": 428607589986841486637568,
+      "outer_area_numerator": 428607590261935157580768,
+      "floating_area": 2.323486401947142,
+      "multiplicity": 48
+    },
+    {
+      "id": 90,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        5,
+        7,
+        6,
+        4,
+        1,
+        0
+      ],
+      "inner_area_numerator": 447757377250993126906368,
+      "outer_area_numerator": 447757377600615438111168,
+      "floating_area": 2.427297606776918,
+      "multiplicity": 15
+    },
+    {
+      "id": 91,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        6,
+        5,
+        7,
+        4,
+        1,
+        0
+      ],
+      "inner_area_numerator": 465865282522261895734784,
+      "outer_area_numerator": 465865282805436928798384,
+      "floating_area": 2.5254607576165604,
+      "multiplicity": 18
+    },
+    {
+      "id": 92,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        7,
+        4,
+        1,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 443947091138199669651968,
+      "outer_area_numerator": 443947091476858856575968,
+      "floating_area": 2.40664200436203,
+      "multiplicity": 24
+    },
+    {
+      "id": 93,
+      "types": [
+        8,
+        3,
+        1,
+        1,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        7,
+        6,
+        4,
+        1,
+        5,
+        0
+      ],
+      "inner_area_numerator": 449711698657482032531968,
+      "outer_area_numerator": 449711699022442415305968,
+      "floating_area": 2.43789200436203,
+      "multiplicity": 26
+    },
+    {
+      "id": 94,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        3,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 465255142659792125993984,
+      "outer_area_numerator": 465255142865680115206784,
+      "floating_area": 2.5221531825985446,
+      "multiplicity": 1
+    },
+    {
+      "id": 95,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        3,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 454411916516073607926784,
+      "outer_area_numerator": 454411916674615061539184,
+      "floating_area": 2.4633719358530746,
+      "multiplicity": 4
+    },
+    {
+      "id": 96,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        3,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 468477796577923729552384,
+      "outer_area_numerator": 468477796809232005803984,
+      "floating_area": 2.539623224514238,
+      "multiplicity": 17
+    },
+    {
+      "id": 97,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        3,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 465255142659792125993984,
+      "outer_area_numerator": 465255142865680115206784,
+      "floating_area": 2.5221531825985446,
+      "multiplicity": 8
+    },
+    {
+      "id": 98,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        5,
+        3,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 449101558795012262791168,
+      "outer_area_numerator": 449101559082685601714368,
+      "floating_area": 2.434584429344014,
+      "multiplicity": 30
+    },
+    {
+      "id": 99,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        5,
+        3,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 438258332651293744723968,
+      "outer_area_numerator": 438258332891620548046768,
+      "floating_area": 2.3758031825985446,
+      "multiplicity": 40
+    },
+    {
+      "id": 100,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        2,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        5,
+        6,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 445083982126119370631168,
+      "outer_area_numerator": 445083982401970591814368,
+      "floating_area": 2.412805102572168,
+      "multiplicity": 52
+    },
+    {
+      "id": 101,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        5,
+        7,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 447625935727270129952768,
+      "outer_area_numerator": 447625936004002259947168,
+      "floating_area": 2.4265850606564747,
+      "multiplicity": 18
+    },
+    {
+      "id": 102,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        6,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 461237565990899233833984,
+      "outer_area_numerator": 461237566184965105306784,
+      "floating_area": 2.5003738558266986,
+      "multiplicity": 15
+    },
+    {
+      "id": 103,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        4,
+        1,
+        7,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 459283244584410328208384,
+      "outer_area_numerator": 459283244763138128111984,
+      "floating_area": 2.489779458241587,
+      "multiplicity": 5
+    },
+    {
+      "id": 104,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        5,
+        3,
+        6,
+        7,
+        4,
+        1,
+        0
+      ],
+      "inner_area_numerator": 452911844907805720045568,
+      "outer_area_numerator": 452911845206442183249568,
+      "floating_area": 2.455240031758902,
+      "multiplicity": 5
+    },
+    {
+      "id": 105,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        5,
+        3,
+        7,
+        4,
+        1,
+        6,
+        0
+      ],
+      "inner_area_numerator": 422104748786513881521152,
+      "outer_area_numerator": 422104749108626034554352,
+      "floating_area": 2.288234429344014,
+      "multiplicity": 50
+    },
+    {
+      "id": 106,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        5,
+        3,
+        7,
+        6,
+        4,
+        1,
+        0
+      ],
+      "inner_area_numerator": 441254536050665521789952,
+      "outer_area_numerator": 441254536447306315084752,
+      "floating_area": 2.39204563417379,
+      "multiplicity": 15
+    },
+    {
+      "id": 107,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        2,
+        5,
+        6,
+        3,
+        7,
+        4,
+        1,
+        0
+      ],
+      "inner_area_numerator": 447625935727270129952768,
+      "outer_area_numerator": 447625936004002259947168,
+      "floating_area": 2.4265850606564743,
+      "multiplicity": 18
+    },
+    {
+      "id": 108,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        5,
+        7,
+        4,
+        1,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 431472351862490266749952,
+      "outer_area_numerator": 431472352221007746454752,
+      "floating_area": 2.3390163074019443,
+      "multiplicity": 26
+    },
+    {
+      "id": 109,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        5,
+        7,
+        6,
+        3,
+        4,
+        1,
+        0
+      ],
+      "inner_area_numerator": 431472351862490266749952,
+      "outer_area_numerator": 431472352221007746454752,
+      "floating_area": 2.3390163074019443,
+      "multiplicity": 26
+    },
+    {
+      "id": 110,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        2,
+        6,
+        3,
+        4,
+        1,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 457628568637753165993984,
+      "outer_area_numerator": 457628568972751125165584,
+      "floating_area": 2.480809442362135,
+      "multiplicity": 50
+    },
+    {
+      "id": 111,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        2,
+        6,
+        3,
+        5,
+        7,
+        4,
+        1,
+        0
+      ],
+      "inner_area_numerator": 455674247231264260368384,
+      "outer_area_numerator": 455674247550924147970784,
+      "floating_area": 2.470215044777023,
+      "multiplicity": 40
+    },
+    {
+      "id": 112,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        2,
+        6,
+        4,
+        1,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 445892063043089005328384,
+      "outer_area_numerator": 445892063324625579340784,
+      "floating_area": 2.4171857180051775,
+      "multiplicity": 50
+    },
+    {
+      "id": 113,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        2,
+        6,
+        5,
+        3,
+        7,
+        4,
+        1,
+        0
+      ],
+      "inner_area_numerator": 443937741636600099702784,
+      "outer_area_numerator": 443937741902798602145984,
+      "floating_area": 2.4065913204200653,
+      "multiplicity": 40
+    },
+    {
+      "id": 114,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        7,
+        4,
+        1,
+        3,
+        5,
+        6,
+        0
+      ],
+      "inner_area_numerator": 438258332651293744723968,
+      "outer_area_numerator": 438258332891620548046768,
+      "floating_area": 2.3758031825985446,
+      "multiplicity": 2
+    },
+    {
+      "id": 115,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        7,
+        4,
+        1,
+        3,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 449101558795012262791168,
+      "outer_area_numerator": 449101559082685601714368,
+      "floating_area": 2.434584429344014,
+      "multiplicity": 10
+    },
+    {
+      "id": 116,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        7,
+        4,
+        1,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 443129660719630465005568,
+      "outer_area_numerator": 443129660980143614619568,
+      "floating_area": 2.4022107049870565,
+      "multiplicity": 8
+    },
+    {
+      "id": 117,
+      "types": [
+        8,
+        3,
+        1,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        7,
+        6,
+        3,
+        4,
+        1,
+        5,
+        0
+      ],
+      "inner_area_numerator": 454866166314294625671168,
+      "outer_area_numerator": 454866166628269160444368,
+      "floating_area": 2.4658344293440138,
+      "multiplicity": 22
+    },
+    {
+      "id": 118,
+      "types": [
+        8,
+        3,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        7,
+        6,
+        4,
+        1,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 447625935727270129952768,
+      "outer_area_numerator": 447625936004002259947168,
+      "floating_area": 2.4265850606564743,
+      "multiplicity": 22
+    },
+    {
+      "id": 119,
+      "types": [
+        8,
+        2,
+        2,
+        1,
+        3,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        3,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 475775560529012623270400,
+      "outer_area_numerator": 475775560699704248133200,
+      "floating_area": 2.579184481973518,
+      "multiplicity": 10
+    },
+    {
+      "id": 120,
+      "types": [
+        8,
+        2,
+        2,
+        1,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        1,
+        2,
+        4,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 466200666896936803136000,
+      "outer_area_numerator": 466200667030364107868000,
+      "floating_area": 2.5272788795586303,
+      "multiplicity": 15
+    },
+    {
+      "id": 121,
+      "types": [
+        8,
+        2,
+        2,
+        1,
+        3,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        3,
+        1,
+        2,
+        4,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 483494489454783891776000,
+      "outer_area_numerator": 483494489667114784058000,
+      "floating_area": 2.6210288795586303,
+      "multiplicity": 14
+    },
+    {
+      "id": 122,
+      "types": [
+        8,
+        2,
+        2,
+        1,
+        3,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        1,
+        2,
+        4,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 481540168048294986150400,
+      "outer_area_numerator": 481540168245287806863200,
+      "floating_area": 2.610434481973518,
+      "multiplicity": 1
+    },
+    {
+      "id": 123,
+      "types": [
+        8,
+        2,
+        2,
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        1,
+        2,
+        5,
+        7,
+        4,
+        6,
+        0
+      ],
+      "inner_area_numerator": 454543358039796604880384,
+      "outer_area_numerator": 454543358271228239703184,
+      "floating_area": 2.464084481973518,
+      "multiplicity": 45
+    },
+    {
+      "id": 124,
+      "types": [
+        8,
+        2,
+        2,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        3,
+        1,
+        2,
+        6,
+        5,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 472651263311065373708800,
+      "outer_area_numerator": 472651263476049730390400,
+      "floating_area": 2.5622476328131607,
+      "multiplicity": 26
+    },
+    {
+      "id": 125,
+      "types": [
+        8,
+        2,
+        2,
+        1,
+        3,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        1,
+        2,
+        7,
+        4,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 469882859191154787894784,
+      "outer_area_numerator": 469882859486151938698384,
+      "floating_area": 2.5472400843884064,
+      "multiplicity": 4
+    },
+    {
+      "id": 126,
+      "types": [
+        8,
+        2,
+        2,
+        1,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        3,
+        1,
+        2,
+        7,
+        6,
+        4,
+        5,
+        0
+      ],
+      "inner_area_numerator": 456497679446285510505984,
+      "outer_area_numerator": 456497679693055216897984,
+      "floating_area": 2.4746788795586303,
+      "multiplicity": 25
+    },
+    {
+      "id": 127,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        3,
+        1,
+        4,
+        2,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 478998214447144226828800,
+      "outer_area_numerator": 478998214643256138730400,
+      "floating_area": 2.596654523889212,
+      "multiplicity": 19
+    },
+    {
+      "id": 128,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        1,
+        4,
+        2,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 468154988303425708761600,
+      "outer_area_numerator": 468154988452191085062800,
+      "floating_area": 2.5378732771437424,
+      "multiplicity": 14
+    },
+    {
+      "id": 129,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        3,
+        1,
+        4,
+        2,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 486717143372915495334400,
+      "outer_area_numerator": 486717143610666674655200,
+      "floating_area": 2.6384989214743237,
+      "multiplicity": 41
+    },
+    {
+      "id": 130,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        2,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        1,
+        4,
+        2,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 483494489454783891776000,
+      "outer_area_numerator": 483494489667114784058000,
+      "floating_area": 2.6210288795586303,
+      "multiplicity": 4
+    },
+    {
+      "id": 131,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        1,
+        5,
+        6,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 477043893040655321203200,
+      "outer_area_numerator": 477043893221429161535600,
+      "floating_area": 2.5860601263041,
+      "multiplicity": 5
+    },
+    {
+      "id": 132,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        1,
+        5,
+        7,
+        4,
+        2,
+        6,
+        0
+      ],
+      "inner_area_numerator": 452001404438645845558784,
+      "outer_area_numerator": 452001404669196571570384,
+      "floating_area": 2.450304523889212,
+      "multiplicity": 52
+    },
+    {
+      "id": 133,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        1,
+        5,
+        7,
+        6,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 465386584183515122947584,
+      "outer_area_numerator": 465386584462293293370784,
+      "floating_area": 2.5228657287189877,
+      "multiplicity": 14
+    },
+    {
+      "id": 134,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        3,
+        1,
+        6,
+        5,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 483494489454783891776000,
+      "outer_area_numerator": 483494489667114784058000,
+      "floating_area": 2.6210288795586303,
+      "multiplicity": 19
+    },
+    {
+      "id": 135,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        1,
+        7,
+        4,
+        2,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 467340905590004028573184,
+      "outer_area_numerator": 467340905884120270565584,
+      "floating_area": 2.5334601263041,
+      "multiplicity": 27
+    },
+    {
+      "id": 136,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        3,
+        1,
+        7,
+        6,
+        4,
+        2,
+        5,
+        0
+      ],
+      "inner_area_numerator": 467340905590004028573184,
+      "outer_area_numerator": 467340905884120270565584,
+      "floating_area": 2.5334601263041,
+      "multiplicity": 25
+    },
+    {
+      "id": 137,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        3,
+        4,
+        1,
+        2,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 468148986506973663270400,
+      "outer_area_numerator": 468148986806775258092000,
+      "floating_area": 2.537840741737109,
+      "multiplicity": 26
+    },
+    {
+      "id": 138,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        4,
+        1,
+        2,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 452809485355615480256000,
+      "outer_area_numerator": 452809485591851559096800,
+      "floating_area": 2.4546851393222213,
+      "multiplicity": 52
+    },
+    {
+      "id": 139,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        1,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        3,
+        4,
+        1,
+        2,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 475867915432744931776000,
+      "outer_area_numerator": 475867915774185794016800,
+      "floating_area": 2.5796851393222213,
+      "multiplicity": 40
+    },
+    {
+      "id": 140,
+      "types": [
+        8,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        4,
+        1,
+        2,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 468148986506973663270400,
+      "outer_area_numerator": 468148986806775258092000,
+      "floating_area": 2.537840741737109,
+      "multiplicity": 26
+    },
+    {
+      "id": 141,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        3,
+        4,
+        2,
+        1,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 456412480912309502604800,
+      "outer_area_numerator": 456412481158649712267200,
+      "floating_area": 2.474217017380151,
+      "multiplicity": 30
+    },
+    {
+      "id": 142,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        4,
+        2,
+        1,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 441072979760951319590400,
+      "outer_area_numerator": 441072979943726013272000,
+      "floating_area": 2.391061414965263,
+      "multiplicity": 66
+    },
+    {
+      "id": 143,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        1,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        3,
+        4,
+        2,
+        1,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 464131409838080771110400,
+      "outer_area_numerator": 464131410126060248192000,
+      "floating_area": 2.516061414965263,
+      "multiplicity": 48
+    },
+    {
+      "id": 144,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        4,
+        2,
+        1,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 456412480912309502604800,
+      "outer_area_numerator": 456412481158649712267200,
+      "floating_area": 2.474217017380151,
+      "multiplicity": 36
+    },
+    {
+      "id": 145,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        3,
+        5,
+        6,
+        4,
+        2,
+        1,
+        7,
+        0
+      ],
+      "inner_area_numerator": 471757983860119731110400,
+      "outer_area_numerator": 471757984018989238233200,
+      "floating_area": 2.557405155201672,
+      "multiplicity": 3
+    },
+    {
+      "id": 146,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        5,
+        6,
+        7,
+        4,
+        2,
+        1,
+        0
+      ],
+      "inner_area_numerator": 471071994965273523417600,
+      "outer_area_numerator": 471071995118887174440800,
+      "floating_area": 2.5536864019471417,
+      "multiplicity": 1
+    },
+    {
+      "id": 147,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        5,
+        7,
+        4,
+        2,
+        1,
+        6,
+        0
+      ],
+      "inner_area_numerator": 444761173851621349840384,
+      "outer_area_numerator": 444761174044929671073184,
+      "floating_area": 2.411055155201672,
+      "multiplicity": 30
+    },
+    {
+      "id": 148,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        5,
+        7,
+        6,
+        4,
+        2,
+        1,
+        0
+      ],
+      "inner_area_numerator": 459414686108133325161984,
+      "outer_area_numerator": 459414686359751306275984,
+      "floating_area": 2.4904920043620296,
+      "multiplicity": 3
+    },
+    {
+      "id": 149,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        3,
+        6,
+        4,
+        2,
+        1,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 479476912785890999616000,
+      "outer_area_numerator": 479476912986399774158000,
+      "floating_area": 2.5992495527867843,
+      "multiplicity": 15
+    },
+    {
+      "id": 150,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        3,
+        6,
+        5,
+        7,
+        4,
+        2,
+        1,
+        0
+      ],
+      "inner_area_numerator": 477522591379402093990400,
+      "outer_area_numerator": 477522591564572796963200,
+      "floating_area": 2.588655155201672,
+      "multiplicity": 5
+    },
+    {
+      "id": 151,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        7,
+        4,
+        2,
+        1,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 460100675002979532854784,
+      "outer_area_numerator": 460100675259853370068384,
+      "floating_area": 2.4942107576165604,
+      "multiplicity": 21
+    },
+    {
+      "id": 152,
+      "types": [
+        8,
+        3,
+        2,
+        1,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        3,
+        7,
+        6,
+        4,
+        2,
+        1,
+        5,
+        0
+      ],
+      "inner_area_numerator": 461369007514622230787584,
+      "outer_area_numerator": 461369007781578283470784,
+      "floating_area": 2.501086401947142,
+      "multiplicity": 8
+    },
+    {
+      "id": 153,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 477799729171425921356800,
+      "outer_area_numerator": 477799729436460648558000,
+      "floating_area": 2.5901575223885116,
+      "multiplicity": 5
+    },
+    {
+      "id": 154,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        3,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 462460228020067738342400,
+      "outer_area_numerator": 462460228221536949562800,
+      "floating_area": 2.5070019199736238,
+      "multiplicity": 19
+    },
+    {
+      "id": 155,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        1,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        3,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 481022383089557524915200,
+      "outer_area_numerator": 481022383380012539155200,
+      "floating_area": 2.607627564304205,
+      "multiplicity": 55
+    },
+    {
+      "id": 156,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        1,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        3,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 473303454163786256409600,
+      "outer_area_numerator": 473303454412602003230400,
+      "floating_area": 2.5657831667190933,
+      "multiplicity": 29
+    },
+    {
+      "id": 157,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        5,
+        3,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 461646145306646058153984,
+      "outer_area_numerator": 461646145653466135065584,
+      "floating_area": 2.502588769133981,
+      "multiplicity": 31
+    },
+    {
+      "id": 158,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        1,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        5,
+        3,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 446306644155287875139584,
+      "outer_area_numerator": 446306644438542436070384,
+      "floating_area": 2.4194331667190934,
+      "multiplicity": 71
+    },
+    {
+      "id": 159,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        1,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        5,
+        6,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 457628568637753165993984,
+      "outer_area_numerator": 457628568972751125165584,
+      "floating_area": 2.480809442362135,
+      "multiplicity": 50
+    },
+    {
+      "id": 160,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        5,
+        7,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 455674247231264260368384,
+      "outer_area_numerator": 455674247550924147970784,
+      "floating_area": 2.4702150447770235,
+      "multiplicity": 40
+    },
+    {
+      "id": 161,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        1,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        6,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 473782152502533029196800,
+      "outer_area_numerator": 473782152755745638658000,
+      "floating_area": 2.5683781956166656,
+      "multiplicity": 45
+    },
+    {
+      "id": 162,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        1,
+        2,
+        7,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 467331556088404458624000,
+      "outer_area_numerator": 467331556310060016135600,
+      "floating_area": 2.533409442362135,
+      "multiplicity": 15
+    },
+    {
+      "id": 163,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        3,
+        5,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 466063223576761760691200,
+      "outer_area_numerator": 466063223788335102733200,
+      "floating_area": 2.5265337980315534,
+      "multiplicity": 1
+    },
+    {
+      "id": 164,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        3,
+        5,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 450723722425403577676800,
+      "outer_area_numerator": 450723722573411403738000,
+      "floating_area": 2.4433781956166656,
+      "multiplicity": 5
+    },
+    {
+      "id": 165,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        1,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        3,
+        6,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 469285877494893364249600,
+      "outer_area_numerator": 469285877731886993330400,
+      "floating_area": 2.5440038399472473,
+      "multiplicity": 47
+    },
+    {
+      "id": 166,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        1,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        3,
+        7,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 461566948569122095744000,
+      "outer_area_numerator": 461566948764476457405600,
+      "floating_area": 2.502159442362135,
+      "multiplicity": 19
+    },
+    {
+      "id": 167,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        5,
+        3,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 449909639711981897488384,
+      "outer_area_numerator": 449909640005340589240784,
+      "floating_area": 2.4389650447770235,
+      "multiplicity": 31
+    },
+    {
+      "id": 168,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        5,
+        3,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 434570138560623714473984,
+      "outer_area_numerator": 434570138790416890245584,
+      "floating_area": 2.355809442362135,
+      "multiplicity": 71
+    },
+    {
+      "id": 169,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        1,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        5,
+        6,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 445892063043089005328384,
+      "outer_area_numerator": 445892063324625579340784,
+      "floating_area": 2.417185718005178,
+      "multiplicity": 50
+    },
+    {
+      "id": 170,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        5,
+        7,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 443937741636600099702784,
+      "outer_area_numerator": 443937741902798602145984,
+      "floating_area": 2.4065913204200653,
+      "multiplicity": 40
+    },
+    {
+      "id": 171,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        1,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        6,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 462045646907868868531200,
+      "outer_area_numerator": 462045647107620092833200,
+      "floating_area": 2.504754471259708,
+      "multiplicity": 45
+    },
+    {
+      "id": 172,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        2,
+        1,
+        7,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 455595050493740297958400,
+      "outer_area_numerator": 455595050661934470310800,
+      "floating_area": 2.4697857180051774,
+      "multiplicity": 15
+    },
+    {
+      "id": 173,
+      "types": [
+        8,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        5,
+        3,
+        1,
+        2,
+        4,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 469272719328685018153984,
+      "outer_area_numerator": 469272719546395125106784,
+      "floating_area": 2.5439325093703897,
+      "multiplicity": 4
+    },
+    {
+      "id": 174,
+      "types": [
+        8,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        5,
+        3,
+        1,
+        2,
+        4,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 459697825696609198019584,
+      "outer_area_numerator": 459697825877054984841584,
+      "floating_area": 2.492026906955502,
+      "multiplicity": 7
+    },
+    {
+      "id": 175,
+      "types": [
+        8,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        3,
+        1,
+        2,
+        7,
+        4,
+        6,
+        0
+      ],
+      "inner_area_numerator": 448040516839468999763968,
+      "outer_area_numerator": 448040517117919116676768,
+      "floating_area": 2.42883250937039,
+      "multiplicity": 17
+    },
+    {
+      "id": 176,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        5,
+        3,
+        1,
+        4,
+        2,
+        6,
+        7,
+        0
+      ],
+      "inner_area_numerator": 472495373246816621712384,
+      "outer_area_numerator": 472495373489947015703984,
+      "floating_area": 2.561402551286084,
+      "multiplicity": 10
+    },
+    {
+      "id": 177,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        2,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        5,
+        3,
+        1,
+        4,
+        2,
+        7,
+        6,
+        0
+      ],
+      "inner_area_numerator": 461652147103098103645184,
+      "outer_area_numerator": 461652147298881962036384,
+      "floating_area": 2.5026213045406145,
+      "multiplicity": 3
+    },
+    {
+      "id": 178,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        5,
+        3,
+        1,
+        6,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 470541051840327716086784,
+      "outer_area_numerator": 470541052068120038509184,
+      "floating_area": 2.550808153700972,
+      "multiplicity": 4
+    },
+    {
+      "id": 179,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        3,
+        1,
+        7,
+        4,
+        2,
+        6,
+        0
+      ],
+      "inner_area_numerator": 445498563238318240442368,
+      "outer_area_numerator": 445498563515887448543968,
+      "floating_area": 2.415052551286084,
+      "multiplicity": 39
+    },
+    {
+      "id": 180,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        3,
+        1,
+        7,
+        6,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 458883742983187517831168,
+      "outer_area_numerator": 458883743308984170344368,
+      "floating_area": 2.4876137561158598,
+      "multiplicity": 10
+    },
+    {
+      "id": 181,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        5,
+        3,
+        6,
+        4,
+        2,
+        1,
+        7,
+        0
+      ],
+      "inner_area_numerator": 465255142659792125993984,
+      "outer_area_numerator": 465255142865680115206784,
+      "floating_area": 2.5221531825985446,
+      "multiplicity": 3
+    },
+    {
+      "id": 182,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        5,
+        3,
+        6,
+        7,
+        4,
+        2,
+        1,
+        0
+      ],
+      "inner_area_numerator": 464569153764945918301184,
+      "outer_area_numerator": 464569153965578051414384,
+      "floating_area": 2.5184344293440137,
+      "multiplicity": 1
+    },
+    {
+      "id": 183,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        3,
+        7,
+        4,
+        2,
+        1,
+        6,
+        0
+      ],
+      "inner_area_numerator": 438258332651293744723968,
+      "outer_area_numerator": 438258332891620548046768,
+      "floating_area": 2.375803182598545,
+      "multiplicity": 31
+    },
+    {
+      "id": 184,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        3,
+        7,
+        6,
+        4,
+        2,
+        1,
+        0
+      ],
+      "inner_area_numerator": 452911844907805720045568,
+      "outer_area_numerator": 452911845206442183249568,
+      "floating_area": 2.4552400317589016,
+      "multiplicity": 3
+    },
+    {
+      "id": 185,
+      "types": [
+        8,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        5,
+        6,
+        3,
+        1,
+        2,
+        4,
+        7,
+        0
+      ],
+      "inner_area_numerator": 465255142659792125993984,
+      "outer_area_numerator": 465255142865680115206784,
+      "floating_area": 2.5221531825985446,
+      "multiplicity": 1
+    },
+    {
+      "id": 186,
+      "types": [
+        8,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        5,
+        6,
+        3,
+        1,
+        2,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 454411916516073607926784,
+      "outer_area_numerator": 454411916674615061539184,
+      "floating_area": 2.4633719358530746,
+      "multiplicity": 4
+    },
+    {
+      "id": 187,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        2,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        5,
+        6,
+        3,
+        1,
+        4,
+        2,
+        7,
+        0
+      ],
+      "inner_area_numerator": 468477796577923729552384,
+      "outer_area_numerator": 468477796809232005803984,
+      "floating_area": 2.539623224514238,
+      "multiplicity": 17
+    },
+    {
+      "id": 188,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        5,
+        6,
+        3,
+        1,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 465255142659792125993984,
+      "outer_area_numerator": 465255142865680115206784,
+      "floating_area": 2.522153182598544,
+      "multiplicity": 8
+    },
+    {
+      "id": 189,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        2,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        5,
+        6,
+        3,
+        4,
+        2,
+        1,
+        7,
+        0
+      ],
+      "inner_area_numerator": 461237565990899233833984,
+      "outer_area_numerator": 461237566184965105306784,
+      "floating_area": 2.5003738558266986,
+      "multiplicity": 15
+    },
+    {
+      "id": 190,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        5,
+        6,
+        3,
+        7,
+        4,
+        2,
+        1,
+        0
+      ],
+      "inner_area_numerator": 459283244584410328208384,
+      "outer_area_numerator": 459283244763138128111984,
+      "floating_area": 2.4897794582415864,
+      "multiplicity": 5
+    },
+    {
+      "id": 191,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        7,
+        4,
+        1,
+        2,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 454866166314294625671168,
+      "outer_area_numerator": 454866166628269160444368,
+      "floating_area": 2.465834429344014,
+      "multiplicity": 22
+    },
+    {
+      "id": 192,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        7,
+        4,
+        2,
+        1,
+        6,
+        3,
+        0
+      ],
+      "inner_area_numerator": 447625935727270129952768,
+      "outer_area_numerator": 447625936004002259947168,
+      "floating_area": 2.4265850606564743,
+      "multiplicity": 22
+    },
+    {
+      "id": 193,
+      "types": [
+        8,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        5,
+        7,
+        6,
+        3,
+        1,
+        2,
+        4,
+        0
+      ],
+      "inner_area_numerator": 438258332651293744723968,
+      "outer_area_numerator": 438258332891620548046768,
+      "floating_area": 2.3758031825985446,
+      "multiplicity": 2
+    },
+    {
+      "id": 194,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        5,
+        7,
+        6,
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 449101558795012262791168,
+      "outer_area_numerator": 449101559082685601714368,
+      "floating_area": 2.434584429344014,
+      "multiplicity": 10
+    },
+    {
+      "id": 195,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        5,
+        7,
+        6,
+        3,
+        4,
+        2,
+        1,
+        0
+      ],
+      "inner_area_numerator": 443129660719630465005568,
+      "outer_area_numerator": 443129660980143614619568,
+      "floating_area": 2.402210704987056,
+      "multiplicity": 8
+    },
+    {
+      "id": 196,
+      "types": [
+        8,
+        2,
+        2,
+        2,
+        3,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        6,
+        3,
+        1,
+        2,
+        4,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 477799729171425921356800,
+      "outer_area_numerator": 477799729436460648558000,
+      "floating_area": 2.590157522388511,
+      "multiplicity": 5
+    },
+    {
+      "id": 197,
+      "types": [
+        8,
+        2,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        6,
+        3,
+        1,
+        2,
+        5,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 462460228020067738342400,
+      "outer_area_numerator": 462460228221536949562800,
+      "floating_area": 2.5070019199736233,
+      "multiplicity": 19
+    },
+    {
+      "id": 198,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        6,
+        3,
+        1,
+        4,
+        2,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 481022383089557524915200,
+      "outer_area_numerator": 481022383380012539155200,
+      "floating_area": 2.607627564304205,
+      "multiplicity": 55
+    },
+    {
+      "id": 199,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        6,
+        3,
+        1,
+        5,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 473303454163786256409600,
+      "outer_area_numerator": 473303454412602003230400,
+      "floating_area": 2.565783166719093,
+      "multiplicity": 29
+    },
+    {
+      "id": 200,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        6,
+        3,
+        4,
+        2,
+        1,
+        5,
+        7,
+        0
+      ],
+      "inner_area_numerator": 473782152502533029196800,
+      "outer_area_numerator": 473782152755745638658000,
+      "floating_area": 2.5683781956166656,
+      "multiplicity": 45
+    },
+    {
+      "id": 201,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        6,
+        3,
+        5,
+        7,
+        4,
+        2,
+        1,
+        0
+      ],
+      "inner_area_numerator": 467331556088404458624000,
+      "outer_area_numerator": 467331556310060016135600,
+      "floating_area": 2.533409442362135,
+      "multiplicity": 15
+    },
+    {
+      "id": 202,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        6,
+        4,
+        1,
+        2,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 469285877494893364249600,
+      "outer_area_numerator": 469285877731886993330400,
+      "floating_area": 2.5440038399472473,
+      "multiplicity": 47
+    },
+    {
+      "id": 203,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        6,
+        4,
+        2,
+        1,
+        5,
+        3,
+        7,
+        0
+      ],
+      "inner_area_numerator": 462045646907868868531200,
+      "outer_area_numerator": 462045647107620092833200,
+      "floating_area": 2.504754471259708,
+      "multiplicity": 45
+    },
+    {
+      "id": 204,
+      "types": [
+        8,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        6,
+        5,
+        3,
+        1,
+        2,
+        4,
+        7,
+        0
+      ],
+      "inner_area_numerator": 466063223576761760691200,
+      "outer_area_numerator": 466063223788335102733200,
+      "floating_area": 2.5265337980315534,
+      "multiplicity": 1
+    },
+    {
+      "id": 205,
+      "types": [
+        8,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        6,
+        5,
+        3,
+        1,
+        2,
+        7,
+        4,
+        0
+      ],
+      "inner_area_numerator": 450723722425403577676800,
+      "outer_area_numerator": 450723722573411403738000,
+      "floating_area": 2.4433781956166656,
+      "multiplicity": 5
+    },
+    {
+      "id": 206,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        6,
+        5,
+        3,
+        1,
+        7,
+        4,
+        2,
+        0
+      ],
+      "inner_area_numerator": 461566948569122095744000,
+      "outer_area_numerator": 461566948764476457405600,
+      "floating_area": 2.502159442362135,
+      "multiplicity": 19
+    },
+    {
+      "id": 207,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        6,
+        5,
+        3,
+        7,
+        4,
+        2,
+        1,
+        0
+      ],
+      "inner_area_numerator": 455595050493740297958400,
+      "outer_area_numerator": 455595050661934470310800,
+      "floating_area": 2.4697857180051774,
+      "multiplicity": 15
+    },
+    {
+      "id": 208,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        7,
+        4,
+        1,
+        2,
+        3,
+        5,
+        6,
+        0
+      ],
+      "inner_area_numerator": 461652147103098103645184,
+      "outer_area_numerator": 461652147298881962036384,
+      "floating_area": 2.5026213045406145,
+      "multiplicity": 4
+    },
+    {
+      "id": 209,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        7,
+        4,
+        1,
+        2,
+        3,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 472495373246816621712384,
+      "outer_area_numerator": 472495373489947015703984,
+      "floating_area": 2.561402551286084,
+      "multiplicity": 14
+    },
+    {
+      "id": 210,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        7,
+        4,
+        1,
+        2,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 466523475171434823926784,
+      "outer_area_numerator": 466523475387405028609184,
+      "floating_area": 2.5290288269291263,
+      "multiplicity": 10
+    },
+    {
+      "id": 211,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        7,
+        4,
+        2,
+        1,
+        3,
+        5,
+        6,
+        0
+      ],
+      "inner_area_numerator": 454411916516073607926784,
+      "outer_area_numerator": 454411916674615061539184,
+      "floating_area": 2.4633719358530746,
+      "multiplicity": 1
+    },
+    {
+      "id": 212,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        7,
+        4,
+        2,
+        1,
+        3,
+        6,
+        5,
+        0
+      ],
+      "inner_area_numerator": 465255142659792125993984,
+      "outer_area_numerator": 465255142865680115206784,
+      "floating_area": 2.5221531825985446,
+      "multiplicity": 11
+    },
+    {
+      "id": 213,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        7,
+        4,
+        2,
+        1,
+        6,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 459283244584410328208384,
+      "outer_area_numerator": 459283244763138128111984,
+      "floating_area": 2.4897794582415864,
+      "multiplicity": 10
+    },
+    {
+      "id": 214,
+      "types": [
+        8,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        7,
+        6,
+        3,
+        1,
+        2,
+        4,
+        5,
+        0
+      ],
+      "inner_area_numerator": 461652147103098103645184,
+      "outer_area_numerator": 461652147298881962036384,
+      "floating_area": 2.5026213045406145,
+      "multiplicity": 4
+    },
+    {
+      "id": 215,
+      "types": [
+        8,
+        2,
+        3,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        7,
+        6,
+        3,
+        1,
+        4,
+        2,
+        5,
+        0
+      ],
+      "inner_area_numerator": 472495373246816621712384,
+      "outer_area_numerator": 472495373489947015703984,
+      "floating_area": 2.5614025512860836,
+      "multiplicity": 14
+    },
+    {
+      "id": 216,
+      "types": [
+        8,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        7,
+        6,
+        3,
+        4,
+        2,
+        1,
+        5,
+        0
+      ],
+      "inner_area_numerator": 466523475171434823926784,
+      "outer_area_numerator": 466523475387405028609184,
+      "floating_area": 2.529028826929126,
+      "multiplicity": 10
+    },
+    {
+      "id": 217,
+      "types": [
+        8,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        7,
+        6,
+        4,
+        1,
+        2,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 465255142659792125993984,
+      "outer_area_numerator": 465255142865680115206784,
+      "floating_area": 2.522153182598544,
+      "multiplicity": 11
+    },
+    {
+      "id": 218,
+      "types": [
+        8,
+        3,
+        2,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        7,
+        6,
+        4,
+        2,
+        1,
+        5,
+        3,
+        0
+      ],
+      "inner_area_numerator": 459283244584410328208384,
+      "outer_area_numerator": 459283244763138128111984,
+      "floating_area": 2.4897794582415864,
+      "multiplicity": 10
+    },
+    {
+      "id": 219,
+      "types": [
+        8,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        7,
+        6,
+        5,
+        3,
+        1,
+        2,
+        4,
+        0
+      ],
+      "inner_area_numerator": 454411916516073607926784,
+      "outer_area_numerator": 454411916674615061539184,
+      "floating_area": 2.4633719358530746,
+      "multiplicity": 1
+    },
+    {
+      "id": 220,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        1
+      ],
+      "inner_area_numerator": 430341593733186533331968,
+      "outer_area_numerator": 430341593891298490214768,
+      "floating_area": 2.332886454576646,
+      "multiplicity": 15
+    },
+    {
+      "id": 221,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7,
+        6,
+        1
+      ],
+      "inner_area_numerator": 419498367589468015264768,
+      "outer_area_numerator": 419498367700233436547168,
+      "floating_area": 2.2741052078311763,
+      "multiplicity": 20
+    },
+    {
+      "id": 222,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 433564247651318136890368,
+      "outer_area_numerator": 433564247834850380811968,
+      "floating_area": 2.35035649649234,
+      "multiplicity": 38
+    },
+    {
+      "id": 223,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        4,
+        7,
+        6,
+        5,
+        1
+      ],
+      "inner_area_numerator": 430341593733186533331968,
+      "outer_area_numerator": 430341593891298490214768,
+      "floating_area": 2.332886454576646,
+      "multiplicity": 15
+    },
+    {
+      "id": 224,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 430134303177087098426368,
+      "outer_area_numerator": 430134303334340061849968,
+      "floating_area": 2.3317627302196886,
+      "multiplicity": 6
+    },
+    {
+      "id": 225,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        4,
+        6,
+        1
+      ],
+      "inner_area_numerator": 403344783724688152061952,
+      "outer_area_numerator": 403344783917238923054752,
+      "floating_area": 2.186536454576646,
+      "multiplicity": 40
+    },
+    {
+      "id": 226,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        6,
+        4,
+        1
+      ],
+      "inner_area_numerator": 418476994319946900170752,
+      "outer_area_numerator": 418476994575204193685152,
+      "floating_area": 2.2685683326345765,
+      "multiplicity": 24
+    },
+    {
+      "id": 227,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        6,
+        5,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 432088624583576004051968,
+      "outer_area_numerator": 432088624756167039044768,
+      "floating_area": 2.3423571278048003,
+      "multiplicity": 17
+    },
+    {
+      "id": 228,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        7,
+        4,
+        6,
+        5,
+        1
+      ],
+      "inner_area_numerator": 414188009868406670129152,
+      "outer_area_numerator": 414188010108303976722352,
+      "floating_area": 2.245317701322116,
+      "multiplicity": 30
+    },
+    {
+      "id": 229,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        3,
+        7,
+        6,
+        4,
+        5,
+        1
+      ],
+      "inner_area_numerator": 415935040718796140849152,
+      "outer_area_numerator": 415935040973172525552352,
+      "floating_area": 2.25478837455027,
+      "multiplicity": 81
+    },
+    {
+      "id": 230,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        0,
+        2,
+        4,
+        5,
+        3,
+        6,
+        7,
+        1
+      ],
+      "inner_area_numerator": 414188009868406670129152,
+      "outer_area_numerator": 414188010108303976722352,
+      "floating_area": 2.245317701322116,
+      "multiplicity": 30
+    },
+    {
+      "id": 231,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        4,
+        5,
+        3,
+        7,
+        6,
+        1
+      ],
+      "inner_area_numerator": 403344783724688152061952,
+      "outer_area_numerator": 403344783917238923054752,
+      "floating_area": 2.186536454576646,
+      "multiplicity": 40
+    },
+    {
+      "id": 232,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        2,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        3,
+        7,
+        1
+      ],
+      "inner_area_numerator": 415935040718796140849152,
+      "outer_area_numerator": 415935040973172525552352,
+      "floating_area": 2.25478837455027,
+      "multiplicity": 81
+    },
+    {
+      "id": 233,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        6,
+        3,
+        1
+      ],
+      "inner_area_numerator": 418476994319946900170752,
+      "outer_area_numerator": 418476994575204193685152,
+      "floating_area": 2.2685683326345765,
+      "multiplicity": 24
+    },
+    {
+      "id": 234,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        0,
+        2,
+        4,
+        6,
+        5,
+        3,
+        7,
+        1
+      ],
+      "inner_area_numerator": 432088624583576004051968,
+      "outer_area_numerator": 432088624756167039044768,
+      "floating_area": 2.3423571278048003,
+      "multiplicity": 17
+    },
+    {
+      "id": 235,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        4,
+        7,
+        6,
+        5,
+        3,
+        1
+      ],
+      "inner_area_numerator": 430134303177087098426368,
+      "outer_area_numerator": 430134303334340061849968,
+      "floating_area": 2.3317627302196886,
+      "multiplicity": 6
+    },
+    {
+      "id": 236,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        5,
+        3,
+        6,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 413980719312307235223552,
+      "outer_area_numerator": 413980719551345548357552,
+      "floating_area": 2.2441939769651578,
+      "multiplicity": 12
+    },
+    {
+      "id": 237,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        5,
+        3,
+        7,
+        4,
+        6,
+        1
+      ],
+      "inner_area_numerator": 387191199859908288859136,
+      "outer_area_numerator": 387191200134244409562336,
+      "floating_area": 2.0989677013221164,
+      "multiplicity": 80
+    },
+    {
+      "id": 238,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        5,
+        3,
+        7,
+        6,
+        4,
+        1
+      ],
+      "inner_area_numerator": 402323410455167036967936,
+      "outer_area_numerator": 402323410792209680192736,
+      "floating_area": 2.1809995793800456,
+      "multiplicity": 48
+    },
+    {
+      "id": 239,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        5,
+        6,
+        3,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 414459417651054008010752,
+      "outer_area_numerator": 414459417894489183785152,
+      "floating_area": 2.24678900586273,
+      "multiplicity": 66
+    },
+    {
+      "id": 240,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        5,
+        7,
+        4,
+        6,
+        3,
+        1
+      ],
+      "inner_area_numerator": 402323410455167036967936,
+      "outer_area_numerator": 402323410792209680192736,
+      "floating_area": 2.1809995793800456,
+      "multiplicity": 48
+    },
+    {
+      "id": 241,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        5,
+        7,
+        6,
+        3,
+        4,
+        1
+      ],
+      "inner_area_numerator": 398305833786274144807936,
+      "outer_area_numerator": 398305834111494670292736,
+      "floating_area": 2.1592202526082,
+      "multiplicity": 96
+    },
+    {
+      "id": 242,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        0,
+        2,
+        6,
+        3,
+        4,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 422715019711147573331968,
+      "outer_area_numerator": 422715019998369500173568,
+      "floating_area": 2.291542714340237,
+      "multiplicity": 52
+    },
+    {
+      "id": 243,
+      "types": [
+        1,
+        8,
+        1,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        6,
+        3,
+        5,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 416743121635765775546368,
+      "outer_area_numerator": 416743121895827513078768,
+      "floating_area": 2.259168989983279,
+      "multiplicity": 82
+    },
+    {
+      "id": 244,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        0,
+        2,
+        6,
+        4,
+        5,
+        3,
+        7,
+        1
+      ],
+      "inner_area_numerator": 416743121635765775546368,
+      "outer_area_numerator": 416743121895827513078768,
+      "floating_area": 2.259168989983279,
+      "multiplicity": 82
+    },
+    {
+      "id": 245,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        0,
+        2,
+        6,
+        5,
+        3,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 410771223560383977760768,
+      "outer_area_numerator": 410771223793285525983968,
+      "floating_area": 2.226795265626321,
+      "multiplicity": 132
+    },
+    {
+      "id": 246,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        7,
+        4,
+        6,
+        5,
+        3,
+        1
+      ],
+      "inner_area_numerator": 413980719312307235223552,
+      "outer_area_numerator": 413980719551345548357552,
+      "floating_area": 2.2441939769651578,
+      "multiplicity": 12
+    },
+    {
+      "id": 247,
+      "types": [
+        1,
+        8,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        0,
+        2,
+        7,
+        6,
+        4,
+        5,
+        3,
+        1
+      ],
+      "inner_area_numerator": 414459417651054008010752,
+      "outer_area_numerator": 414459417894489183785152,
+      "floating_area": 2.24678900586273,
+      "multiplicity": 66
+    },
+    {
+      "id": 248,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        0,
+        3,
+        4,
+        2,
+        5,
+        6,
+        7,
+        1
+      ],
+      "inner_area_numerator": 430681587301229567552768,
+      "outer_area_numerator": 430681587496001363405568,
+      "floating_area": 2.334729563500595,
+      "multiplicity": 18
+    },
+    {
+      "id": 249,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        3,
+        4,
+        2,
+        5,
+        7,
+        6,
+        1
+      ],
+      "inner_area_numerator": 415342086149871384538368,
+      "outer_area_numerator": 415342086281077664410368,
+      "floating_area": 2.2515739610857066,
+      "multiplicity": 50
+    },
+    {
+      "id": 250,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        1,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        0,
+        3,
+        4,
+        2,
+        6,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 433904241219361171111168,
+      "outer_area_numerator": 433904241439553254002768,
+      "floating_area": 2.3521996054162884,
+      "multiplicity": 87
+    },
+    {
+      "id": 251,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        1,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        3,
+        4,
+        2,
+        7,
+        6,
+        5,
+        1
+      ],
+      "inner_area_numerator": 426185312293589902605568,
+      "outer_area_numerator": 426185312472142718077968,
+      "floating_area": 2.3103552078311766,
+      "multiplicity": 55
+    },
+    {
+      "id": 252,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        0,
+        3,
+        5,
+        6,
+        4,
+        2,
+        7,
+        1
+      ],
+      "inner_area_numerator": 441157940638401447453184,
+      "outer_area_numerator": 441157940767002392815184,
+      "floating_area": 2.3915219884825785,
+      "multiplicity": 2
+    },
+    {
+      "id": 253,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 438463163409108793680384,
+      "outer_area_numerator": 438463163526542824072784,
+      "floating_area": 2.3769135718421257,
+      "multiplicity": 1
+    },
+    {
+      "id": 254,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        3,
+        5,
+        7,
+        4,
+        2,
+        6,
+        1
+      ],
+      "inner_area_numerator": 414161130629903066183168,
+      "outer_area_numerator": 414161130792942825655168,
+      "floating_area": 2.2451719884825785,
+      "multiplicity": 30
+    },
+    {
+      "id": 255,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        3,
+        5,
+        7,
+        6,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 426805854551968595424768,
+      "outer_area_numerator": 426805854767406955907968,
+      "floating_area": 2.3137191742570136,
+      "multiplicity": 4
+    },
+    {
+      "id": 256,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        0,
+        3,
+        6,
+        4,
+        2,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 444380594556533051011584,
+      "outer_area_numerator": 444380594710554283412384,
+      "floating_area": 2.4089920303982724,
+      "multiplicity": 8
+    },
+    {
+      "id": 257,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        0,
+        3,
+        6,
+        5,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 440417484815597699305984,
+      "outer_area_numerator": 440417484948369801267584,
+      "floating_area": 2.3875079694272374,
+      "multiplicity": 4
+    },
+    {
+      "id": 258,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        3,
+        7,
+        4,
+        2,
+        6,
+        5,
+        1
+      ],
+      "inner_area_numerator": 425004356773621584250368,
+      "outer_area_numerator": 425004356984007879322768,
+      "floating_area": 2.3039532352280485,
+      "multiplicity": 40
+    },
+    {
+      "id": 259,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        0,
+        3,
+        7,
+        6,
+        4,
+        2,
+        5,
+        1
+      ],
+      "inner_area_numerator": 424263900950817836103168,
+      "outer_area_numerator": 424263901165375287775168,
+      "floating_area": 2.2999392161727075,
+      "multiplicity": 31
+    },
+    {
+      "id": 260,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        0,
+        4,
+        2,
+        5,
+        3,
+        6,
+        7,
+        1
+      ],
+      "inner_area_numerator": 414528003436449704349952,
+      "outer_area_numerator": 414528003713006849913152,
+      "floating_area": 2.2471608102460645,
+      "multiplicity": 36
+    },
+    {
+      "id": 261,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        1,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        4,
+        2,
+        5,
+        3,
+        7,
+        6,
+        1
+      ],
+      "inner_area_numerator": 399188502285091521335552,
+      "outer_area_numerator": 399188502498083150917952,
+      "floating_area": 2.1640052078311767,
+      "multiplicity": 100
+    },
+    {
+      "id": 262,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        1,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        0,
+        4,
+        2,
+        5,
+        6,
+        3,
+        7,
+        1
+      ],
+      "inner_area_numerator": 416275034286839175069952,
+      "outer_area_numerator": 416275034577875398743152,
+      "floating_area": 2.2566314834742185,
+      "multiplicity": 93
+    },
+    {
+      "id": 263,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        4,
+        2,
+        5,
+        7,
+        6,
+        3,
+        1
+      ],
+      "inner_area_numerator": 414320712880350269444352,
+      "outer_area_numerator": 414320713156048421548352,
+      "floating_area": 2.2460370858891068,
+      "multiplicity": 81
+    },
+    {
+      "id": 264,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        1,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        0,
+        4,
+        2,
+        6,
+        5,
+        3,
+        7,
+        1
+      ],
+      "inner_area_numerator": 432428618151619038272768,
+      "outer_area_numerator": 432428618360869912235568,
+      "floating_area": 2.344200236728749,
+      "multiplicity": 81
+    },
+    {
+      "id": 265,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        4,
+        2,
+        7,
+        6,
+        5,
+        3,
+        1
+      ],
+      "inner_area_numerator": 425978021737490467699968,
+      "outer_area_numerator": 425978021915184289713168,
+      "floating_area": 2.3092314834742185,
+      "multiplicity": 29
+    },
+    {
+      "id": 266,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        0,
+        5,
+        3,
+        6,
+        4,
+        2,
+        7,
+        1
+      ],
+      "inner_area_numerator": 425004356773621584250368,
+      "outer_area_numerator": 425004356984007879322768,
+      "floating_area": 2.3039532352280485,
+      "multiplicity": 4
+    },
+    {
+      "id": 267,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        0,
+        5,
+        3,
+        6,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 422309579544328930477568,
+      "outer_area_numerator": 422309579743548310580368,
+      "floating_area": 2.289344818587595,
+      "multiplicity": 2
+    },
+    {
+      "id": 268,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        5,
+        3,
+        7,
+        4,
+        2,
+        6,
+        1
+      ],
+      "inner_area_numerator": 398007546765123202980352,
+      "outer_area_numerator": 398007547009948312162752,
+      "floating_area": 2.157603235228049,
+      "multiplicity": 60
+    },
+    {
+      "id": 269,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        5,
+        3,
+        7,
+        6,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 410652270687188732221952,
+      "outer_area_numerator": 410652270984412442415552,
+      "floating_area": 2.226150421002483,
+      "multiplicity": 8
+    },
+    {
+      "id": 270,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        2,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        0,
+        5,
+        6,
+        3,
+        4,
+        2,
+        7,
+        1
+      ],
+      "inner_area_numerator": 426751387624011054970368,
+      "outer_area_numerator": 426751387848876428152768,
+      "floating_area": 2.313423908456203,
+      "multiplicity": 36
+    },
+    {
+      "id": 271,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        0,
+        5,
+        6,
+        3,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 422788277883075703264768,
+      "outer_area_numerator": 422788278086691946007968,
+      "floating_area": 2.2919398474851675,
+      "multiplicity": 18
+    },
+    {
+      "id": 272,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        5,
+        7,
+        4,
+        2,
+        6,
+        3,
+        1
+      ],
+      "inner_area_numerator": 413139757360381951089152,
+      "outer_area_numerator": 413139757667913582793152,
+      "floating_area": 2.2396351132859786,
+      "multiplicity": 57
+    },
+    {
+      "id": 273,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        0,
+        5,
+        7,
+        6,
+        3,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 406634694018295840061952,
+      "outer_area_numerator": 406634694303697432515552,
+      "floating_area": 2.2043710942306376,
+      "multiplicity": 30
+    },
+    {
+      "id": 274,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        0,
+        6,
+        3,
+        4,
+        2,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 433531366616362487453184,
+      "outer_area_numerator": 433531366874073402773984,
+      "floating_area": 2.3501782482461695,
+      "multiplicity": 60
+    },
+    {
+      "id": 275,
+      "types": [
+        1,
+        8,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        0,
+        6,
+        3,
+        5,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 425071981867787470800384,
+      "outer_area_numerator": 425071982088030275301584,
+      "floating_area": 2.3043198316057163,
+      "multiplicity": 30
+    },
+    {
+      "id": 276,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        0,
+        6,
+        4,
+        2,
+        5,
+        3,
+        7,
+        1
+      ],
+      "inner_area_numerator": 427559468540980689667584,
+      "outer_area_numerator": 427559468771531415679184,
+      "floating_area": 2.3178045238892118,
+      "multiplicity": 100
+    },
+    {
+      "id": 277,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        0,
+        6,
+        5,
+        3,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 419100083792405673014784,
+      "outer_area_numerator": 419100083985488288206784,
+      "floating_area": 2.2719461072487586,
+      "multiplicity": 50
+    },
+    {
+      "id": 278,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        0,
+        7,
+        4,
+        2,
+        6,
+        5,
+        3,
+        1
+      ],
+      "inner_area_numerator": 424797066217522149344768,
+      "outer_area_numerator": 424797066427049450957968,
+      "floating_area": 2.3028295108710903,
+      "multiplicity": 23
+    },
+    {
+      "id": 279,
+      "types": [
+        1,
+        8,
+        2,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        0,
+        7,
+        6,
+        4,
+        2,
+        5,
+        3,
+        1
+      ],
+      "inner_area_numerator": 422788277883075703264768,
+      "outer_area_numerator": 422788278086691946007968,
+      "floating_area": 2.2919398474851675,
+      "multiplicity": 32
+    },
+    {
+      "id": 280,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        7,
+        1
+      ],
+      "inner_area_numerator": 426185312293589902605568,
+      "outer_area_numerator": 426185312472142718077968,
+      "floating_area": 2.3103552078311766,
+      "multiplicity": 55
+    },
+    {
+      "id": 281,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        4,
+        5,
+        7,
+        6,
+        1
+      ],
+      "inner_area_numerator": 415342086149871384538368,
+      "outer_area_numerator": 415342086281077664410368,
+      "floating_area": 2.2515739610857066,
+      "multiplicity": 50
+    },
+    {
+      "id": 282,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        4,
+        6,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 433904241219361171111168,
+      "outer_area_numerator": 433904241439553254002768,
+      "floating_area": 2.3521996054162884,
+      "multiplicity": 87
+    },
+    {
+      "id": 283,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        2,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        4,
+        7,
+        6,
+        5,
+        1
+      ],
+      "inner_area_numerator": 430681587301229567552768,
+      "outer_area_numerator": 430681587496001363405568,
+      "floating_area": 2.334729563500595,
+      "multiplicity": 18
+    },
+    {
+      "id": 284,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        5,
+        6,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 425978021737490467699968,
+      "outer_area_numerator": 425978021915184289713168,
+      "floating_area": 2.3092314834742185,
+      "multiplicity": 29
+    },
+    {
+      "id": 285,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        5,
+        7,
+        4,
+        6,
+        1
+      ],
+      "inner_area_numerator": 399188502285091521335552,
+      "outer_area_numerator": 399188502498083150917952,
+      "floating_area": 2.1640052078311767,
+      "multiplicity": 100
+    },
+    {
+      "id": 286,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        5,
+        7,
+        6,
+        4,
+        1
+      ],
+      "inner_area_numerator": 414320712880350269444352,
+      "outer_area_numerator": 414320713156048421548352,
+      "floating_area": 2.2460370858891068,
+      "multiplicity": 81
+    },
+    {
+      "id": 287,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        6,
+        5,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 432428618151619038272768,
+      "outer_area_numerator": 432428618360869912235568,
+      "floating_area": 2.344200236728749,
+      "multiplicity": 81
+    },
+    {
+      "id": 288,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        7,
+        4,
+        6,
+        5,
+        1
+      ],
+      "inner_area_numerator": 414528003436449704349952,
+      "outer_area_numerator": 414528003713006849913152,
+      "floating_area": 2.2471608102460645,
+      "multiplicity": 36
+    },
+    {
+      "id": 289,
+      "types": [
+        2,
+        8,
+        1,
+        1,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        3,
+        0,
+        7,
+        6,
+        4,
+        5,
+        1
+      ],
+      "inner_area_numerator": 416275034286839175069952,
+      "outer_area_numerator": 416275034577875398743152,
+      "floating_area": 2.2566314834742185,
+      "multiplicity": 93
+    },
+    {
+      "id": 290,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        2,
+        4,
+        5,
+        3,
+        0,
+        6,
+        7,
+        1
+      ],
+      "inner_area_numerator": 425004356773621584250368,
+      "outer_area_numerator": 425004356984007879322768,
+      "floating_area": 2.3039532352280485,
+      "multiplicity": 40
+    },
+    {
+      "id": 291,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        4,
+        5,
+        3,
+        0,
+        7,
+        6,
+        1
+      ],
+      "inner_area_numerator": 414161130629903066183168,
+      "outer_area_numerator": 414161130792942825655168,
+      "floating_area": 2.2451719884825785,
+      "multiplicity": 30
+    },
+    {
+      "id": 292,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        2,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        4,
+        5,
+        6,
+        3,
+        0,
+        7,
+        1
+      ],
+      "inner_area_numerator": 424263900950817836103168,
+      "outer_area_numerator": 424263901165375287775168,
+      "floating_area": 2.2999392161727075,
+      "multiplicity": 31
+    },
+    {
+      "id": 293,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        4,
+        5,
+        7,
+        6,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 426805854551968595424768,
+      "outer_area_numerator": 426805854767406955907968,
+      "floating_area": 2.3137191742570136,
+      "multiplicity": 4
+    },
+    {
+      "id": 294,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        4,
+        6,
+        3,
+        0,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 444380594556533051011584,
+      "outer_area_numerator": 444380594710554283412384,
+      "floating_area": 2.4089920303982724,
+      "multiplicity": 8
+    },
+    {
+      "id": 295,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        2,
+        4,
+        6,
+        5,
+        3,
+        0,
+        7,
+        1
+      ],
+      "inner_area_numerator": 440417484815597699305984,
+      "outer_area_numerator": 440417484948369801267584,
+      "floating_area": 2.3875079694272374,
+      "multiplicity": 4
+    },
+    {
+      "id": 296,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        4,
+        7,
+        6,
+        3,
+        0,
+        5,
+        1
+      ],
+      "inner_area_numerator": 441157940638401447453184,
+      "outer_area_numerator": 441157940767002392815184,
+      "floating_area": 2.3915219884825785,
+      "multiplicity": 2
+    },
+    {
+      "id": 297,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        4,
+        7,
+        6,
+        5,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 438463163409108793680384,
+      "outer_area_numerator": 438463163526542824072784,
+      "floating_area": 2.3769135718421257,
+      "multiplicity": 1
+    },
+    {
+      "id": 298,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        2,
+        5,
+        3,
+        0,
+        6,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 424797066217522149344768,
+      "outer_area_numerator": 424797066427049450957968,
+      "floating_area": 2.3028295108710903,
+      "multiplicity": 23
+    },
+    {
+      "id": 299,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        5,
+        3,
+        0,
+        7,
+        4,
+        6,
+        1
+      ],
+      "inner_area_numerator": 398007546765123202980352,
+      "outer_area_numerator": 398007547009948312162752,
+      "floating_area": 2.157603235228049,
+      "multiplicity": 60
+    },
+    {
+      "id": 300,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        5,
+        3,
+        0,
+        7,
+        6,
+        4,
+        1
+      ],
+      "inner_area_numerator": 413139757360381951089152,
+      "outer_area_numerator": 413139757667913582793152,
+      "floating_area": 2.2396351132859786,
+      "multiplicity": 57
+    },
+    {
+      "id": 301,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        2,
+        5,
+        6,
+        3,
+        0,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 422788277883075703264768,
+      "outer_area_numerator": 422788278086691946007968,
+      "floating_area": 2.2919398474851675,
+      "multiplicity": 32
+    },
+    {
+      "id": 302,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        5,
+        7,
+        4,
+        6,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 410652270687188732221952,
+      "outer_area_numerator": 410652270984412442415552,
+      "floating_area": 2.226150421002483,
+      "multiplicity": 8
+    },
+    {
+      "id": 303,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        5,
+        7,
+        6,
+        3,
+        0,
+        4,
+        1
+      ],
+      "inner_area_numerator": 406634694018295840061952,
+      "outer_area_numerator": 406634694303697432515552,
+      "floating_area": 2.2043710942306376,
+      "multiplicity": 30
+    },
+    {
+      "id": 304,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        2,
+        6,
+        3,
+        0,
+        4,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 433531366616362487453184,
+      "outer_area_numerator": 433531366874073402773984,
+      "floating_area": 2.3501782482461695,
+      "multiplicity": 60
+    },
+    {
+      "id": 305,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        2,
+        6,
+        3,
+        0,
+        5,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 427559468540980689667584,
+      "outer_area_numerator": 427559468771531415679184,
+      "floating_area": 2.3178045238892118,
+      "multiplicity": 100
+    },
+    {
+      "id": 306,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        2,
+        6,
+        4,
+        5,
+        3,
+        0,
+        7,
+        1
+      ],
+      "inner_area_numerator": 425071981867787470800384,
+      "outer_area_numerator": 425071982088030275301584,
+      "floating_area": 2.3043198316057163,
+      "multiplicity": 30
+    },
+    {
+      "id": 307,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        2,
+        6,
+        5,
+        3,
+        0,
+        7,
+        4,
+        1
+      ],
+      "inner_area_numerator": 419100083792405673014784,
+      "outer_area_numerator": 419100083985488288206784,
+      "floating_area": 2.2719461072487586,
+      "multiplicity": 50
+    },
+    {
+      "id": 308,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        7,
+        4,
+        6,
+        3,
+        0,
+        5,
+        1
+      ],
+      "inner_area_numerator": 425004356773621584250368,
+      "outer_area_numerator": 425004356984007879322768,
+      "floating_area": 2.3039532352280485,
+      "multiplicity": 4
+    },
+    {
+      "id": 309,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        2,
+        7,
+        4,
+        6,
+        5,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 422309579544328930477568,
+      "outer_area_numerator": 422309579743548310580368,
+      "floating_area": 2.289344818587595,
+      "multiplicity": 2
+    },
+    {
+      "id": 310,
+      "types": [
+        2,
+        8,
+        1,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        7,
+        6,
+        3,
+        0,
+        4,
+        5,
+        1
+      ],
+      "inner_area_numerator": 426751387624011054970368,
+      "outer_area_numerator": 426751387848876428152768,
+      "floating_area": 2.313423908456203,
+      "multiplicity": 36
+    },
+    {
+      "id": 311,
+      "types": [
+        2,
+        8,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        2,
+        7,
+        6,
+        4,
+        5,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 422788277883075703264768,
+      "outer_area_numerator": 422788278086691946007968,
+      "floating_area": 2.2919398474851675,
+      "multiplicity": 18
+    },
+    {
+      "id": 312,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        3,
+        0,
+        4,
+        2,
+        5,
+        6,
+        7,
+        1
+      ],
+      "inner_area_numerator": 426525305861632936826368,
+      "outer_area_numerator": 426525306076845591268768,
+      "floating_area": 2.3121983167551248,
+      "multiplicity": 66
+    },
+    {
+      "id": 313,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        0,
+        4,
+        2,
+        5,
+        7,
+        6,
+        1
+      ],
+      "inner_area_numerator": 411185804710274753811968,
+      "outer_area_numerator": 411185804861921892273568,
+      "floating_area": 2.229042714340237,
+      "multiplicity": 132
+    },
+    {
+      "id": 314,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        1,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        3,
+        0,
+        4,
+        2,
+        6,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 434244234787404205331968,
+      "outer_area_numerator": 434244235044256127193568,
+      "floating_area": 2.354042714340237,
+      "multiplicity": 96
+    },
+    {
+      "id": 315,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        0,
+        4,
+        2,
+        7,
+        6,
+        5,
+        1
+      ],
+      "inner_area_numerator": 426525305861632936826368,
+      "outer_area_numerator": 426525306076845591268768,
+      "floating_area": 2.3121983167551248,
+      "multiplicity": 66
+    },
+    {
+      "id": 316,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "representative_order": [
+        3,
+        0,
+        5,
+        6,
+        4,
+        2,
+        7,
+        1
+      ],
+      "inner_area_numerator": 437001659198804816726784,
+      "outer_area_numerator": 437001659347846620678384,
+      "floating_area": 2.368990741737109,
+      "multiplicity": 12
+    },
+    {
+      "id": 317,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        3,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        3,
+        0,
+        5,
+        6,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 434306881969512162953984,
+      "outer_area_numerator": 434306882107387051935984,
+      "floating_area": 2.354382325096656,
+      "multiplicity": 6
+    },
+    {
+      "id": 318,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        0,
+        5,
+        7,
+        4,
+        2,
+        6,
+        1
+      ],
+      "inner_area_numerator": 410004849190306435456768,
+      "outer_area_numerator": 410004849373787053518368,
+      "floating_area": 2.2226407417371092,
+      "multiplicity": 82
+    },
+    {
+      "id": 319,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        0,
+        5,
+        7,
+        6,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 422649573112371964698368,
+      "outer_area_numerator": 422649573348251183771168,
+      "floating_area": 2.291187927511544,
+      "multiplicity": 17
+    },
+    {
+      "id": 320,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        3,
+        0,
+        6,
+        4,
+        2,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 444720588124576085232384,
+      "outer_area_numerator": 444720588315257156603184,
+      "floating_area": 2.410835139322221,
+      "multiplicity": 48
+    },
+    {
+      "id": 321,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "representative_order": [
+        3,
+        0,
+        6,
+        5,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 440757478383640733526784,
+      "outer_area_numerator": 440757478553072674458384,
+      "floating_area": 2.3893510783511864,
+      "multiplicity": 24
+    },
+    {
+      "id": 322,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        3,
+        0,
+        7,
+        4,
+        2,
+        6,
+        5,
+        1
+      ],
+      "inner_area_numerator": 425344350341664618471168,
+      "outer_area_numerator": 425344350588710752513568,
+      "floating_area": 2.305796344151997,
+      "multiplicity": 48
+    },
+    {
+      "id": 323,
+      "types": [
+        2,
+        8,
+        2,
+        1,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        3,
+        0,
+        7,
+        6,
+        4,
+        2,
+        5,
+        1
+      ],
+      "inner_area_numerator": 424603894518860870323968,
+      "outer_area_numerator": 424603894770078160965968,
+      "floating_area": 2.301782325096656,
+      "multiplicity": 33
+    },
+    {
+      "id": 324,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        4,
+        2,
+        5,
+        3,
+        0,
+        6,
+        7,
+        1
+      ],
+      "inner_area_numerator": 425344350341664618471168,
+      "outer_area_numerator": 425344350588710752513568,
+      "floating_area": 2.305796344151997,
+      "multiplicity": 48
+    },
+    {
+      "id": 325,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        1,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        2,
+        5,
+        3,
+        0,
+        7,
+        6,
+        1
+      ],
+      "inner_area_numerator": 410004849190306435456768,
+      "outer_area_numerator": 410004849373787053518368,
+      "floating_area": 2.2226407417371092,
+      "multiplicity": 82
+    },
+    {
+      "id": 326,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        1,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        4,
+        2,
+        5,
+        6,
+        3,
+        0,
+        7,
+        1
+      ],
+      "inner_area_numerator": 424603894518860870323968,
+      "outer_area_numerator": 424603894770078160965968,
+      "floating_area": 2.301782325096656,
+      "multiplicity": 33
+    },
+    {
+      "id": 327,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        2,
+        5,
+        7,
+        6,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 422649573112371964698368,
+      "outer_area_numerator": 422649573348251183771168,
+      "floating_area": 2.291187927511544,
+      "multiplicity": 17
+    },
+    {
+      "id": 328,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        1,
+        3,
+        2,
+        3
+      ],
+      "representative_order": [
+        4,
+        2,
+        6,
+        3,
+        0,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 444720588124576085232384,
+      "outer_area_numerator": 444720588315257156603184,
+      "floating_area": 2.410835139322221,
+      "multiplicity": 48
+    },
+    {
+      "id": 329,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        1,
+        2,
+        2,
+        3
+      ],
+      "representative_order": [
+        4,
+        2,
+        6,
+        5,
+        3,
+        0,
+        7,
+        1
+      ],
+      "inner_area_numerator": 440757478383640733526784,
+      "outer_area_numerator": 440757478553072674458384,
+      "floating_area": 2.3893510783511864,
+      "multiplicity": 24
+    },
+    {
+      "id": 330,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        1,
+        3,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        2,
+        7,
+        6,
+        3,
+        0,
+        5,
+        1
+      ],
+      "inner_area_numerator": 437001659198804816726784,
+      "outer_area_numerator": 437001659347846620678384,
+      "floating_area": 2.368990741737109,
+      "multiplicity": 12
+    },
+    {
+      "id": 331,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2
+      ],
+      "representative_order": [
+        4,
+        2,
+        7,
+        6,
+        5,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 434306881969512162953984,
+      "outer_area_numerator": 434306882107387051935984,
+      "floating_area": 2.354382325096656,
+      "multiplicity": 6
+    },
+    {
+      "id": 332,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "representative_order": [
+        5,
+        3,
+        0,
+        6,
+        4,
+        2,
+        7,
+        1
+      ],
+      "inner_area_numerator": 435820703678836498371584,
+      "outer_area_numerator": 435820703859711781923184,
+      "floating_area": 2.362588769133981,
+      "multiplicity": 10
+    },
+    {
+      "id": 333,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2
+      ],
+      "representative_order": [
+        5,
+        3,
+        0,
+        6,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 433125926449543844598784,
+      "outer_area_numerator": 433125926619252213180784,
+      "floating_area": 2.3479803524935283,
+      "multiplicity": 5
+    },
+    {
+      "id": 334,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        3,
+        0,
+        7,
+        4,
+        2,
+        6,
+        1
+      ],
+      "inner_area_numerator": 408823893670338117101568,
+      "outer_area_numerator": 408823893885652214763168,
+      "floating_area": 2.2162387691339815,
+      "multiplicity": 52
+    },
+    {
+      "id": 335,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        3,
+        0,
+        7,
+        6,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 421468617592403646343168,
+      "outer_area_numerator": 421468617860116345015968,
+      "floating_area": 2.284785954908416,
+      "multiplicity": 13
+    },
+    {
+      "id": 336,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        2,
+        1,
+        2,
+        3
+      ],
+      "representative_order": [
+        5,
+        6,
+        3,
+        0,
+        4,
+        2,
+        7,
+        1
+      ],
+      "inner_area_numerator": 435080247856032750224384,
+      "outer_area_numerator": 435080248041079190375584,
+      "floating_area": 2.35857475007864,
+      "multiplicity": 20
+    },
+    {
+      "id": 337,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "representative_order": [
+        5,
+        6,
+        3,
+        0,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 431117138115097398518784,
+      "outer_area_numerator": 431117138278894708230784,
+      "floating_area": 2.337090689107605,
+      "multiplicity": 10
+    },
+    {
+      "id": 338,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        2,
+        1,
+        3,
+        1
+      ],
+      "representative_order": [
+        5,
+        7,
+        4,
+        2,
+        6,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 421468617592403646343168,
+      "outer_area_numerator": 421468617860116345015968,
+      "floating_area": 2.284785954908416,
+      "multiplicity": 13
+    },
+    {
+      "id": 339,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        3,
+        1,
+        2,
+        1
+      ],
+      "representative_order": [
+        5,
+        7,
+        6,
+        3,
+        0,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 414963554250317535315968,
+      "outer_area_numerator": 414963554495900194738368,
+      "floating_area": 2.249521935853075,
+      "multiplicity": 12
+    },
+    {
+      "id": 340,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "representative_order": [
+        6,
+        3,
+        0,
+        4,
+        2,
+        5,
+        7,
+        1
+      ],
+      "inner_area_numerator": 444347713521577401574400,
+      "outer_area_numerator": 444347713749777305374400,
+      "floating_area": 2.408813782152102,
+      "multiplicity": 80
+    },
+    {
+      "id": 341,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "representative_order": [
+        6,
+        3,
+        0,
+        5,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 435888328773002384921600,
+      "outer_area_numerator": 435888328963734177902000,
+      "floating_area": 2.3629553655116493,
+      "multiplicity": 40
+    },
+    {
+      "id": 342,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "representative_order": [
+        6,
+        4,
+        2,
+        5,
+        3,
+        0,
+        7,
+        1
+      ],
+      "inner_area_numerator": 435888328773002384921600,
+      "outer_area_numerator": 435888328963734177902000,
+      "floating_area": 2.3629553655116493,
+      "multiplicity": 40
+    },
+    {
+      "id": 343,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "representative_order": [
+        6,
+        5,
+        3,
+        0,
+        7,
+        4,
+        2,
+        1
+      ],
+      "inner_area_numerator": 427428944024427368268800,
+      "outer_area_numerator": 427428944177691050429600,
+      "floating_area": 2.317096948871196,
+      "multiplicity": 20
+    },
+    {
+      "id": 344,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "representative_order": [
+        7,
+        4,
+        2,
+        6,
+        3,
+        0,
+        5,
+        1
+      ],
+      "inner_area_numerator": 435820703678836498371584,
+      "outer_area_numerator": 435820703859711781923184,
+      "floating_area": 2.362588769133981,
+      "multiplicity": 10
+    },
+    {
+      "id": 345,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "representative_order": [
+        7,
+        4,
+        2,
+        6,
+        5,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 433125926449543844598784,
+      "outer_area_numerator": 433125926619252213180784,
+      "floating_area": 2.3479803524935283,
+      "multiplicity": 5
+    },
+    {
+      "id": 346,
+      "types": [
+        2,
+        8,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "representative_order": [
+        7,
+        6,
+        3,
+        0,
+        4,
+        2,
+        5,
+        1
+      ],
+      "inner_area_numerator": 435080247856032750224384,
+      "outer_area_numerator": 435080248041079190375584,
+      "floating_area": 2.35857475007864,
+      "multiplicity": 20
+    },
+    {
+      "id": 347,
+      "types": [
+        2,
+        8,
+        2,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "representative_order": [
+        7,
+        6,
+        4,
+        2,
+        5,
+        3,
+        0,
+        1
+      ],
+      "inner_area_numerator": 431117138115097398518784,
+      "outer_area_numerator": 431117138278894708230784,
+      "floating_area": 2.337090689107605,
+      "multiplicity": 10
+    }
+  ],
+  "ledger_sha256": "d4aa7f76f8a9ae76f25a6641acc5b844a43ddf03e6d08aca1a8e668d4eb0317e",
+  "script_sha256": "341a04274bd23dbee6c7ab4e266041feaf18d52b73183153cd7ac8d8e0fab975",
+  "elapsed_seconds": 0.06374554199283011,
+  "scope": "A strict lower bound for an insertion upper-bound proxy, not a lower bound for C2."
+}
