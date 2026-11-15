@@ -1,0 +1,48 @@
+{
+  "schema": "r056-l1-proportional-budget-v1",
+  "dimension": 2,
+  "threshold": "1",
+  "parameters": {
+    "n": "any integer >= 1",
+    "L": "16*2^n"
+  },
+  "density": {
+    "expression": "1_D+1_A",
+    "D": [
+      "-L",
+      "L",
+      "0",
+      "L"
+    ],
+    "A": [
+      "-1",
+      "1",
+      "0",
+      "1"
+    ]
+  },
+  "common_source_patch": [
+    "-1",
+    "1",
+    "1",
+    "2"
+  ],
+  "receivers": {
+    "t": [
+      "4",
+      "L/4"
+    ],
+    "s": [
+      "-t/2",
+      "t/2"
+    ]
+  },
+  "square": "(s,t)+[-r,r]^2",
+  "strict_witness": "integral_Q f > 4*r^2",
+  "R": "(t+sqrt(t^2+4))/2",
+  "approximating_radii": "t+(1-1/k)*(R-t), k integer >=1",
+  "certified_dyadic_lower": "8*n/99",
+  "exact_restricted_infimum": "[(1/4)*log(R)+1/(16*R^4)] evaluated between R(4) and R(L/4)",
+  "random_seed": null,
+  "floating_tolerance": null
+}
