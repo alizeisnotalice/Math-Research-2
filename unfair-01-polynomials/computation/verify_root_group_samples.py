@@ -11,6 +11,8 @@ def check(input_path,report_path):
  source=Path(__file__).resolve().parent/report['source']
  for run in report['runs']:
   assert run['source_sha256']==hashlib.sha256(source.read_bytes()).hexdigest()
+  if 'v1_helper_sha256' in run:
+   assert run['v1_helper_sha256']==hashlib.sha256((source.parent/'gpu_root_group_search.py').read_bytes()).hexdigest()
   assert run['input_sha256']==hashlib.sha256(inp.read_bytes()).hexdigest()
   c=inputs[run['prepared_candidate']['index']];C=c['coefficients_ascending'];groups=c['groups_ascending_coefficients'];g=len(groups)
   assert c['sha256']==hashlib.sha256(json.dumps(C,separators=(',',':')).encode()).hexdigest()
