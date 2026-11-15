@@ -1,0 +1,43 @@
+{
+  "status": "passed_combined_local_positive_segment",
+  "scope": "enumerator code/completeness review plus independent real active-endpoint and y-union replay; not independent replay of all 44M rejected boxes",
+  "raw_join_conditional_scope_preserved": true,
+  "slab_sha256": "c0d262c39a01db8d50cd2fee1a00c7867aa8e08417c4fc85522103b70ce13b25",
+  "slope_sha256": "479524aff5a851e23f256198c818a77678ca4de7698d957e9eec8f104c7ed597",
+  "claim": "A(s)=A(s0)+beta*(s-s0) for |s-s0|<=delta, with the recorded strictly positive beta interval",
+  "beta_lower": "82711662599225853187437/1208925819614629174706176",
+  "beta_upper": "82711662599225853188199/1208925819614629174706176",
+  "delta": "561489540315834114922821552388999/86469112845513523200000000000000000000000",
+  "normalization": {
+    "definition": "tau=s/base_Px; J=lambda*A/mass",
+    "base_Px": "328734960629/100000000000",
+    "s0_tau": "17/5000000",
+    "H_tau": "1/5000000",
+    "delta_tau": "561489540315834114922821552388999/284254204068944462084390780928000000000000",
+    "dJ_ds_bounds": [
+      "240722620508243135372866527177393436431884765625/74243720560719146415690987946115296775111981400064",
+      "240722620508243135375084239058196544647216796875/74243720560719146415690987946115296775111981400064"
+    ],
+    "dJ_dtau_bounds": [
+      "1620663115269878068772020122552983343601226806640625/152051139708352811859335143313644127795429337907331072",
+      "1620663115269878068786950850034783542156219482421875/152051139708352811859335143313644127795429337907331072"
+    ]
+  },
+  "limiter_is_not_a_certified_area_saturation_wall": true,
+  "evidence_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/r039-join-sweep-audit/exact-checks.json": "2667aa8d1803bfe51ff11bfaddd9a735405da51ac2a1c1a508b6be511ecd7219",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/r039-slope/independent-enumerator-real-review.json": "0a639c5977a3f8bc6827a55a741a652d34431c7c0fae1a29154dec7710d9bfb4",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-audit/planar-centered-square-weak11/reviews/position-slab-enumerator-review.md": "e7ee2aad0d9bd1373800e72bd6628a6ee711c971c1eb13da0d2c60a06a57ac3a",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/r039-slope/independent-limiter-note.json": "2f81819c4019a8acf989a6833cea2c93a3284c27f672ac6004224ab6bde2226a"
+  },
+  "script_sha256": "eb9bb2ff1ea9b0b9dea94f06b0026a033202153bbcd23c5dbb6fd1bb4f3af02e",
+  "actual_command": [
+    "/Users/zzh/.local/bin/python3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/r039_join_combination_check.py",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/r039-join-sweep-audit/exact-checks.json",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/r039-slope/independent-enumerator-real-review.json",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-audit/planar-centered-square-weak11/reviews/position-slab-enumerator-review.md",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/r039-slope/independent-limiter-note.json",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/r039-join-sweep-audit/combined-acceptance.json"
+  ]
+}

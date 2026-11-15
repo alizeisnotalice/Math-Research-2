@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "scope": "limiter identity and disjoint y support only; no nearest true area wall claim",
+  "slab_sha256": "c0d262c39a01db8d50cd2fee1a00c7867aa8e08417c4fc85522103b70ce13b25",
+  "slope_sha256": "479524aff5a851e23f256198c818a77678ca4de7698d957e9eec8f104c7ed597",
+  "owners_zero_based_box_and_horizontal_endpoint": [
+    [
+      25244,
+      0
+    ],
+    [
+      25243,
+      1
+    ]
+  ],
+  "bbox": [
+    [
+      137,
+      138,
+      25,
+      25
+    ],
+    [
+      137,
+      137,
+      36,
+      36
+    ]
+  ],
+  "y_centers": [
+    "35136509207263900091257231773/64000000000000000000000000000",
+    "316077158213425564705302455727/64000000000000000000000000000"
+  ],
+  "radius_squared": [
+    "3978884493935123472843867122353556744001321/1600000000000000000000000000000000000000000000",
+    "49710457940433649267504963684597898865291/40000000000000000000000000000000000000000000"
+  ],
+  "first_y_support_strictly_below": "7/10",
+  "second_y_support_strictly_above": "47/10",
+  "strict_support_gap_lower_bound": "4",
+  "script_sha256": "4239278d5d5ed2a2a3a9f813b55c8597d0303ce9604b3925ff029799f8f3d73c",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "command": [
+    "/Users/zzh/.local/bin/python3",
+    "planar-centered-square-weak11/computation/review_position_slab_limiter.py",
+    "--slab",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/r039-slope/slab.json",
+    "--slope",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/r039-slope/slope.json",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/r039-slope/independent-limiter-note.json"
+  ],
+  "verified_utc": "2026-11-15T02:21:12.605085+00:00"
+}
