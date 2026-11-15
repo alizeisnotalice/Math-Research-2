@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "arithmetic": "exact fractions.Fraction; deterministic; no tolerance or random seed",
+  "cases": [
+    {
+      "n": 1,
+      "atoms": 32,
+      "old_mass": "8",
+      "epsilon": "1",
+      "centers": 91,
+      "capture_events": 1626,
+      "mixed_margin_min": "3/4",
+      "strong_mixed_area_lower": null
+    },
+    {
+      "n": 3,
+      "atoms": 96,
+      "old_mass": "8",
+      "epsilon": "1/3",
+      "centers": 91,
+      "capture_events": 4654,
+      "mixed_margin_min": "1/4",
+      "strong_mixed_area_lower": null
+    },
+    {
+      "n": 17,
+      "atoms": 544,
+      "old_mass": "8",
+      "epsilon": "1/17",
+      "centers": 91,
+      "capture_events": 25846,
+      "mixed_margin_min": "3/68",
+      "strong_mixed_area_lower": "16/17"
+    }
+  ],
+  "fixed_l1": {
+    "old_mass": "8",
+    "epsilons": [
+      "1/4",
+      "1/1024"
+    ],
+    "mixed_witnesses": 50,
+    "full_plateau_rectangle_area": "3/4",
+    "source_free_subregion_area": "1/4"
+  },
+  "elapsed_seconds": 0.13121991700609215,
+  "scope": "Actual finite-event tests cover every radius only at the listed centers. General all-n/all-center proof is analytic. Fixed L1 tests verify exact rectangle integrals, not the global analytic exclusion.",
+  "source_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/proofs/cross-scale-insertion-obstruction.md": "8a47d929f40acf09e04dba13d4f07dfc217ef54e6517b979f367c3f4c30894c8",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/proofs/threshold-plateau-insertion.md": "8f313777fde68863c843923da6c5b8cbdb3b859a82f54e44bde5875b7333e6e2",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/proofs/finite-atomic-threshold-platform-insertion.md": "f5c8bbf546a16241f13ab920d268ed13fe16280d68d7680558b9554544eb5c6b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/computation/astra_covering_platform_review.py": "451a366261c916569b1f82ba79ae6df950ac899c0e066488c35f901f044740d0"
+  }
+}

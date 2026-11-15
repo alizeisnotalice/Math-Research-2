@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "arithmetic": "fractions.Fraction exact rational; no random inputs or floating tolerances",
+  "cases": [
+    {
+      "n": 1,
+      "epsilon": "1",
+      "L": 16,
+      "h": "1/16",
+      "old_atoms": 32,
+      "old_atom_mass": "1/4",
+      "old_total_mass": "8",
+      "old_all_radius_centers": 42,
+      "old_capture_events_checked": 1019,
+      "mixed_centers_checked": 10,
+      "mixed_margin_at_least": "1/2",
+      "pure_mixed_area_lower": "1/4",
+      "status": "PASS"
+    },
+    {
+      "n": 2,
+      "epsilon": "1/2",
+      "L": 32,
+      "h": "1/32",
+      "old_atoms": 64,
+      "old_atom_mass": "1/8",
+      "old_total_mass": "8",
+      "old_all_radius_centers": 42,
+      "old_capture_events_checked": 2027,
+      "mixed_centers_checked": 10,
+      "mixed_margin_at_least": "1/4",
+      "pure_mixed_area_lower": "1/4",
+      "status": "PASS"
+    },
+    {
+      "n": 7,
+      "epsilon": "1/7",
+      "L": 112,
+      "h": "1/112",
+      "old_atoms": 224,
+      "old_atom_mass": "1/28",
+      "old_total_mass": "8",
+      "old_all_radius_centers": 42,
+      "old_capture_events_checked": 7067,
+      "mixed_centers_checked": 10,
+      "mixed_margin_at_least": "1/14",
+      "pure_mixed_area_lower": "1/4",
+      "status": "PASS"
+    },
+    {
+      "n": 32,
+      "epsilon": "1/32",
+      "L": 512,
+      "h": "1/512",
+      "old_atoms": 1024,
+      "old_atom_mass": "1/128",
+      "old_total_mass": "8",
+      "old_all_radius_centers": 42,
+      "old_capture_events_checked": 32267,
+      "mixed_centers_checked": 10,
+      "mixed_margin_at_least": "1/64",
+      "pure_mixed_area_lower": "1/4",
+      "status": "PASS"
+    }
+  ],
+  "total_event_checks": 42380,
+  "source_sha256": {
+    "proofs/finite-atomic-threshold-platform-insertion.md": "f5c8bbf546a16241f13ab920d268ed13fe16280d68d7680558b9554544eb5c6b",
+    "proofs/cross-scale-insertion-obstruction.md": "8a47d929f40acf09e04dba13d4f07dfc217ef54e6517b979f367c3f4c30894c8",
+    "proofs/threshold-plateau-insertion.md": "8f313777fde68863c843923da6c5b8cbdb3b859a82f54e44bde5875b7333e6e2",
+    "computation/finite_atomic_platform_insertion_check.py": "17168f6494a1328fd55ee05b03a2fd43c5b71ca29996f5107de210eb1c9e009d"
+  },
+  "elapsed_seconds": 13.474560125003336,
+  "scope": "Finite deterministic source-distance events validate all radii at each listed center; all-center/all-n theorem is analytic."
+}
