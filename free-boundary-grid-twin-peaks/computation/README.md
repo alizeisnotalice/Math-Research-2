@@ -120,3 +120,27 @@ python3 -B free-boundary-grid-twin-peaks/computation/certificates/r005-beta/run_
 ```
 
 第二条命令会实际重跑12轨，输出目录必须不存在。历史单进程的binary哈希缺口与新分轨认证严格分开；见证书目录SOURCE_VERSION.md。各进程完整退出后释放表和线程，不保留数值REPL。
+
+## 第6轮：前二扇区与Metal搜索
+
+`n7_top2.cpp` 无参数，沿用n7 D4表并新增前二扇区两个精确累加器；以C++17、O3、pthread编译，实际footprint约5.06GB。
+
+```sh
+python3 -B free-boundary-grid-twin-peaks/computation/audit_top2_identity.py
+python3 -B free-boundary-grid-twin-peaks/computation/audit_top2_first_merge.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_support_T_n3.py
+python3 -B free-boundary-grid-twin-peaks/computation/search_two_step_n4.py
+python3 -B free-boundary-grid-twin-peaks/computation/n8_independent_set_census.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_r006.py
+```
+
+`top2_h_dp.cpp`接收n=3..5，以反向增长DP输出逐种子对h；`audit_top2_h.py`接受该binary路径作Python任意精度独立包含—排除核验（参数见源码）。n8脚本仅做逐行状态数资源预检，未枚举n8的C表。
+
+Metal源码、原始种子/参数记录与完整样本在 `certificates/r006-gpu/`。用Swift6.4.2及Metal运行时编译，不要求离线metal编译器：
+
+```sh
+CLANG_MODULE_CACHE_PATH=/Volumes/data/CodexTemp/cache/swift-modules swiftc -O -module-cache-path /Volumes/data/CodexTemp/cache/swift-modules free-boundary-grid-twin-peaks/computation/certificates/r006-gpu/twin_peaks_gpu.swift -o /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/twin_peaks_gpu
+```
+
+从临时输出目录运行binary，参数为 `8 12 16 24 32` 或 `--cut-only 24 32`；该历史源码会写当前目录gpu-search-results.jsonl，重跑前必须选新目录以免覆盖旧记录。最终源码含接受次数计数，旧V1/V2记录不能冒称同一binary轨迹。历史 `gpu_seconds` 字段是提交等待墙钟，不是硬件执行秒数。
+`annotate_samples.py 输入.jsonl 输出.jsonl`以CPU独立核验排列、峰数、距离、β、首次合并和界面。全209保存样本实际复核通过；AGX满载采样是系统字段，不提供混合或概率认证。完成后退出独立进程释放Metal资源。
