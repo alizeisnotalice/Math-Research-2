@@ -1,0 +1,46 @@
+{
+  "status": "PASS_POSITIVE_GRID_PADDING_FIXED_THETA_ENVELOPE_OBSTRUCTION",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "builder_sha256": "da02df97f9a5833b1096226b58a4e892d59fd8e9f1df92264e11821e0f8341a4",
+  "budget_source_sha256": "211d33e21e47e6e14290e4ddbc3b3a36e247131de1bc53114091b7766d0fe8b6",
+  "geometry_source_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+  "input_sha256": "26ae7ed968b11ab932c52b513bdcc2569647a6345d76e72fc4b782b2f3b4c164",
+  "output_sha256": "55e2be86c5c5ec55a04fa508d85d782c8ac7c0113bae2d3505f2be398c3a38a0",
+  "execution": {
+    "command": [
+      "/Users/zzh/.venvs/main/bin/python3",
+      "-B",
+      "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/theta_competitor_budget.py",
+      "--module",
+      "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+      "--r64-input",
+      "/Volumes/data/CodexTemp/T2/round067/grid-padding-control-20261115/input.json",
+      "--out",
+      "/Volumes/data/CodexTemp/T2/round067/grid-padding-control-20261115/budget.json"
+    ],
+    "pid": 1181,
+    "exit_status": 0,
+    "wall_seconds": 0.06872695899801329,
+    "stdout": "{\"status\": \"PASS\", \"cases\": 1, \"blocks\": 1, \"seconds\": 0.0031294999935198575}\n",
+    "stderr": "",
+    "owned_pid_absent": true
+  },
+  "total_wall_seconds": 0.09348487498937175,
+  "closed_bbox_count": 46,
+  "strict_eligible_count": 18,
+  "unique_maximum_mask": 511,
+  "uniform_support_neighborhood_union_equals_C": true,
+  "production_budget": {
+    "lower": "9765181970055092066737568818501063704793293/2787593149816327892691964784081045188247552",
+    "upper": "19530363940110184133501499134797174021274705/5575186299632655785383929568162090376495104",
+    "normalized_lower": "9765181970055092066737568818501063704793293/2787593149816327892691964784081045188247552",
+    "normalized_upper": "19530363940110184133501499134797174021274705/5575186299632655785383929568162090376495104"
+  },
+  "production_actual_deletion": {
+    "lower": "22293805738220965532922537671384486872793645/22300745198530623141535718272648361505980416",
+    "upper": "22293805738220965532974677635972943190833329/22300745198530623141535718272648361505980416",
+    "normalized_lower": "22293805738220965532922537671384486872793645/22300745198530623141535718272648361505980416",
+    "normalized_upper": "22293805738220965532974677635972943190833329/22300745198530623141535718272648361505980416"
+  },
+  "scope": "Single prescribed positive grid-padding input. Tests uniform-radius source-support union only; no LP/random extension or new mass-sensitive state claim."
+}

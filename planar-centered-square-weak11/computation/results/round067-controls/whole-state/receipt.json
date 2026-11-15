@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "runner_sha256": "4611a34d307e9fc328edaac22da0f4d421f80359c25fe41e8c9fbe9eb82e8d7e",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "jobs": [
+    {
+      "name": "positive-grid-padding",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round067/whole-state-controls-20261115/sources/whole_erosion_state.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--erosion-source",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round066/erosion_ring_diagnostic.py",
+        "--input",
+        "/Volumes/data/CodexTemp/T2/round067/grid-padding-control-20261115/input.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round067/whole-state-controls-20261115/positive-grid-padding.json"
+      ],
+      "pid": 3443,
+      "exit_status": 0,
+      "wall_seconds": 0.05663145799189806,
+      "stdout": "{\"status\": \"PASS\", \"id\": \"r067-positive-nine-plus-one-uniform-neighborhood-obstruction\", \"labels\": 17, \"W_upper_display\": 1.0006653863375947, \"Wprime_upper_display\": 1.0006653863375947, \"Delta_upper_display\": 0.9996888238375947}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "input_sha256": "26ae7ed968b11ab932c52b513bdcc2569647a6345d76e72fc4b782b2f3b4c164",
+      "state_source_sha256": "ab0e7dba2993869d69871384e9f95f0f095563b453dbde897561097d06251ccf",
+      "output_sha256": "bc80f81bd22b2e6a2453c89bfa1f3e34945ea74016f6a78d6a16769b037f15fb",
+      "output_status": "PASS"
+    },
+    {
+      "name": "r64-final",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/round067/whole-state-controls-20261115/sources/whole_erosion_state.py",
+        "--module",
+        "/Volumes/data/CodexProjects/T2/.local/compute/r064-lp-pilot/mass_polytope_variation.py",
+        "--erosion-source",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round066/erosion_ring_diagnostic.py",
+        "--input",
+        "/Volumes/data/CodexProjects/T2/.local/compute/frontier066/r064-final-input.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/round067/whole-state-controls-20261115/r64-final.json"
+      ],
+      "pid": 3446,
+      "exit_status": 0,
+      "wall_seconds": 0.08763299998827279,
+      "stdout": "{\"status\": \"PASS\", \"id\": \"alpha15over16-near8-farcorners4-positive21-final-certified-winner\", \"labels\": 54, \"W_upper_display\": 1.2992259316209571, \"Wprime_upper_display\": 1.2992259316209571, \"Delta_upper_display\": 1.2359935097459571}\n",
+      "stderr": "",
+      "owned_pid_absent": true,
+      "input_sha256": "7f714841fa21edddf0e5ce42eea95b4e7ac9a254c33e0cd032c2f4cf4e6061e1",
+      "state_source_sha256": "ab0e7dba2993869d69871384e9f95f0f095563b453dbde897561097d06251ccf",
+      "output_sha256": "6be011432e5c3c06f91cf45b38dfc811c1433173f07724152c5f8495a141e624",
+      "output_status": "PASS"
+    }
+  ],
+  "wall_seconds": 0.1455519169976469,
+  "scope": "Two directed prescribed inputs only; no additional state discount by Hremaining, no random inputs/LP/theta scan or MATLAB."
+}
