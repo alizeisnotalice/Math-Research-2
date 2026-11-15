@@ -1,0 +1,227 @@
+{
+  "status": "PASS",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "arithmetic": "Exact multiquadratic field Q(sqrt(2),sqrt(3),sqrt(5)); sign comparisons use directed rational isqrt intervals",
+  "comparison_max_bits": 16,
+  "random_seed": null,
+  "floating_tolerance": null,
+  "threshold": 1,
+  "atom_mass": 1,
+  "N": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "scope": "All nonempty subsets, including unsaturated mass-3 and mass-5 mixed receivers; complete vertical-slab union area. General N is proved separately.",
+  "script_sha256": "ed020839a3d6ad11a82123b0d47e54429a7a68059a42f72fb6890f16da4f0b74",
+  "cases": [
+    {
+      "N": 2,
+      "old_enumeration": {
+        "all_nonempty_subsets": 3,
+        "nonempty_receivers": 3,
+        "empty_receivers": 0,
+        "classes": {
+          "one_column_span0_mass1": 2,
+          "one_column_span1_mass2": 1
+        }
+      },
+      "new_enumeration": {
+        "all_nonempty_subsets": 15,
+        "nonempty_receivers": 11,
+        "empty_receivers": 4,
+        "classes": {
+          "one_column_span0_mass1": 4,
+          "one_column_span1_mass2": 2,
+          "mixed_span1_mass3": 4,
+          "mixed_span1_mass4": 1
+        }
+      },
+      "old_area": {
+        "1": "5",
+        "2": "-2"
+      },
+      "new_area": {
+        "1": "6",
+        "2": "-1"
+      },
+      "true_added_area": {
+        "1": "-4",
+        "2": "3"
+      },
+      "new_ratio": {
+        "1": "3/2",
+        "2": "-1/4"
+      }
+    },
+    {
+      "N": 3,
+      "old_enumeration": {
+        "all_nonempty_subsets": 7,
+        "nonempty_receivers": 5,
+        "empty_receivers": 2,
+        "classes": {
+          "one_column_span0_mass1": 3,
+          "one_column_span1_mass2": 2
+        }
+      },
+      "new_enumeration": {
+        "all_nonempty_subsets": 63,
+        "nonempty_receivers": 27,
+        "empty_receivers": 36,
+        "classes": {
+          "one_column_span0_mass1": 6,
+          "one_column_span1_mass2": 4,
+          "mixed_span1_mass3": 8,
+          "mixed_span1_mass4": 2,
+          "mixed_span2_mass5": 6,
+          "mixed_span2_mass6": 1
+        }
+      },
+      "old_area": {
+        "1": "9",
+        "2": "-4"
+      },
+      "new_area": {
+        "1": "10",
+        "2": "-2"
+      },
+      "true_added_area": {
+        "1": "-8",
+        "2": "6"
+      },
+      "new_ratio": {
+        "1": "5/3",
+        "2": "-1/3"
+      }
+    },
+    {
+      "N": 4,
+      "old_enumeration": {
+        "all_nonempty_subsets": 15,
+        "nonempty_receivers": 7,
+        "empty_receivers": 8,
+        "classes": {
+          "one_column_span0_mass1": 4,
+          "one_column_span1_mass2": 3
+        }
+      },
+      "new_enumeration": {
+        "all_nonempty_subsets": 255,
+        "nonempty_receivers": 43,
+        "empty_receivers": 212,
+        "classes": {
+          "one_column_span0_mass1": 8,
+          "one_column_span1_mass2": 6,
+          "mixed_span1_mass3": 12,
+          "mixed_span1_mass4": 3,
+          "mixed_span2_mass5": 12,
+          "mixed_span2_mass6": 2
+        }
+      },
+      "old_area": {
+        "1": "13",
+        "2": "-6"
+      },
+      "new_area": {
+        "1": "14",
+        "2": "-3"
+      },
+      "true_added_area": {
+        "1": "-12",
+        "2": "9"
+      },
+      "new_ratio": {
+        "1": "7/4",
+        "2": "-3/8"
+      }
+    },
+    {
+      "N": 5,
+      "old_enumeration": {
+        "all_nonempty_subsets": 31,
+        "nonempty_receivers": 9,
+        "empty_receivers": 22,
+        "classes": {
+          "one_column_span0_mass1": 5,
+          "one_column_span1_mass2": 4
+        }
+      },
+      "new_enumeration": {
+        "all_nonempty_subsets": 1023,
+        "nonempty_receivers": 59,
+        "empty_receivers": 964,
+        "classes": {
+          "one_column_span0_mass1": 10,
+          "one_column_span1_mass2": 8,
+          "mixed_span1_mass3": 16,
+          "mixed_span1_mass4": 4,
+          "mixed_span2_mass5": 18,
+          "mixed_span2_mass6": 3
+        }
+      },
+      "old_area": {
+        "1": "17",
+        "2": "-8"
+      },
+      "new_area": {
+        "1": "18",
+        "2": "-4"
+      },
+      "true_added_area": {
+        "1": "-16",
+        "2": "12"
+      },
+      "new_ratio": {
+        "1": "9/5",
+        "2": "-2/5"
+      }
+    },
+    {
+      "N": 6,
+      "old_enumeration": {
+        "all_nonempty_subsets": 63,
+        "nonempty_receivers": 11,
+        "empty_receivers": 52,
+        "classes": {
+          "one_column_span0_mass1": 6,
+          "one_column_span1_mass2": 5
+        }
+      },
+      "new_enumeration": {
+        "all_nonempty_subsets": 4095,
+        "nonempty_receivers": 75,
+        "empty_receivers": 4020,
+        "classes": {
+          "one_column_span0_mass1": 12,
+          "one_column_span1_mass2": 10,
+          "mixed_span1_mass3": 20,
+          "mixed_span1_mass4": 5,
+          "mixed_span2_mass5": 24,
+          "mixed_span2_mass6": 4
+        }
+      },
+      "old_area": {
+        "1": "21",
+        "2": "-10"
+      },
+      "new_area": {
+        "1": "22",
+        "2": "-5"
+      },
+      "true_added_area": {
+        "1": "-20",
+        "2": "15"
+      },
+      "new_ratio": {
+        "1": "11/6",
+        "2": "-5/12"
+      }
+    }
+  ],
+  "L1_eta": "1/1000",
+  "L1_ratio_loss_upper": "3/250",
+  "N3_gain_over_infinite_old_template_lower": "1/50"
+}

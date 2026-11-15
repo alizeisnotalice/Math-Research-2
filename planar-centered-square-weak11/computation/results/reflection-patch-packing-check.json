@@ -1,0 +1,88 @@
+{
+  "python": "3.15.0",
+  "arithmetic": "Fraction exact rational certificates",
+  "seed": null,
+  "tolerance": null,
+  "examples": [
+    {
+      "N": 1,
+      "area": "8/25",
+      "receiver_multiplicity": 1,
+      "covered_source_mass": "4",
+      "gain": "1/25",
+      "smoothing_eta": "1/120",
+      "smooth_gain": "1/50",
+      "mixed_average": "50/49"
+    },
+    {
+      "N": 2,
+      "area": "16/25",
+      "receiver_multiplicity": 1,
+      "covered_source_mass": "8",
+      "gain": "1/25",
+      "smoothing_eta": "1/120",
+      "smooth_gain": "1/50",
+      "mixed_average": "50/49"
+    },
+    {
+      "N": 5,
+      "area": "8/5",
+      "receiver_multiplicity": 1,
+      "covered_source_mass": "20",
+      "gain": "1/25",
+      "smoothing_eta": "1/120",
+      "smooth_gain": "1/50",
+      "mixed_average": "50/49"
+    },
+    {
+      "N": 20,
+      "area": "32/5",
+      "receiver_multiplicity": 1,
+      "covered_source_mass": "80",
+      "gain": "1/25",
+      "smoothing_eta": "1/120",
+      "smooth_gain": "1/50",
+      "mixed_average": "50/49"
+    },
+    {
+      "N": 64,
+      "area": "512/25",
+      "receiver_multiplicity": 1,
+      "covered_source_mass": "256",
+      "gain": "1/25",
+      "smoothing_eta": "1/120",
+      "smooth_gain": "1/50",
+      "mixed_average": "50/49"
+    }
+  ],
+  "overlap": {
+    "union_area": "5",
+    "raw_area": "6",
+    "cost": "1",
+    "q": 2,
+    "cells": [
+      [
+        "0",
+        "1",
+        "1",
+        1
+      ],
+      [
+        "1",
+        "2",
+        "1",
+        2
+      ],
+      [
+        "2",
+        "3",
+        "1/2",
+        1
+      ]
+    ]
+  },
+  "shielded_small_witness": "PASS: rational top/bottom patches fully covered by pair old interval",
+  "status": "PASS",
+  "scope": "finite certificates only; all-N and general patch theorem proved in separate report",
+  "script_sha256": "0745587881b6854f450a0df1906ffe552e7f9ff195c190b4a907b7dbb1c028fb"
+}

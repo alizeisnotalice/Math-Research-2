@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "source_records": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-reflection/planar-centered-square-weak11/proofs/reflection-column-profile-gain.md",
+      "bytes": 7200,
+      "sha256": "2910172722887f9c57f50632fa642b3f3d6388e06be1f7f7cc0a33edd56d0546"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-reflection/planar-centered-square-weak11/computation/reflection_column_exact.py",
+      "bytes": 4967,
+      "sha256": "ed020839a3d6ad11a82123b0d47e54429a7a68059a42f72fb6890f16da4f0b74"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-reflection/planar-centered-square-weak11/computation/results/reflection-column/exact-unions.json",
+      "bytes": 5335,
+      "sha256": "f8c94a0fc751e964f4f4eb9a75bcadd7bdd21f3664e4d5b6ea2489a4528e9f9b"
+    }
+  ],
+  "replay_script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/computation/reflection_column_exact_replay.py",
+  "replay_exit_code": 0,
+  "replay_seconds": 0.21222137499717064,
+  "replay_stdout": "{\"status\": \"PASS\", \"output\": \"/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-reflection-geometry/planar-centered-square-weak11/computation/results/reflection-column/exact-unions.json\", \"N\": [2, 3, 4, 5, 6], \"max_subsets\": 4095, \"comparison_max_bits\": 16}",
+  "replayed_json_sha256": "f8c94a0fc751e964f4f4eb9a75bcadd7bdd21f3664e4d5b6ea2489a4528e9f9b",
+  "replayed_json_matches_author_byte_for_byte": true,
+  "independent_rational_certificates": {
+    "sqrt2_lower_squared": "124609/62500",
+    "sqrt2_upper_squared": "9/4",
+    "sqrt6_upper_squared": "2401/400",
+    "q2_side_sum_upper": "186/125",
+    "N3_template_gain_strict_lower": "1/50",
+    "L1_loss_upper": "3/250",
+    "remaining_gap_strict_lower": "1/125"
+  },
+  "perimeter_checks": [
+    {
+      "N": 2,
+      "representation_rectangles": 7,
+      "loss": "7/1000"
+    },
+    {
+      "N": 3,
+      "representation_rectangles": 13,
+      "loss": "13/1500"
+    },
+    {
+      "N": 4,
+      "representation_rectangles": 19,
+      "loss": "19/2000"
+    },
+    {
+      "N": 5,
+      "representation_rectangles": 25,
+      "loss": "1/100"
+    },
+    {
+      "N": 6,
+      "representation_rectangles": 31,
+      "loss": "31/3000"
+    }
+  ],
+  "scope": "Author full-subset implementation independently read and replayed; analytic general-N proof independently checked; rational margin checks above are separate Fraction computations"
+}
