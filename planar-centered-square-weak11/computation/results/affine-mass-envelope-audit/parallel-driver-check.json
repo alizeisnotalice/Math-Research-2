@@ -1,0 +1,193 @@
+{
+  "scope": "parallel-driver tiny exact tree audit only; no real-family envelope evaluation",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "elapsed_seconds": 0.40214333301992156,
+  "script_sha256": "6b1df45c6128a0ae4acf75101148a8f76ee47c581e8a9f07813d813bb57e27f0",
+  "source_sha256": "a9e7cc66bf2ac79494a425064aa5432bd4ea52b8ef57f141da53016892623096",
+  "reference_point_exactly_bound": true,
+  "outside_reference_point_rejected": true,
+  "all_seven_node_edges_and_splits_checked": true,
+  "all_four_leaves_match_independent_single_worker_certificate": true,
+  "tree": {
+    "status": "leaf_limit",
+    "scope": "pending independent review; fixed certified point lower, per-box corner mass upper",
+    "input_sha256": "cbd932d66281e1495df8c8779e46e7048ab2f44610e481fe8ef06b9f346c75f3",
+    "driver_sha256": "a9e7cc66bf2ac79494a425064aa5432bd4ea52b8ef57f141da53016892623096",
+    "envelope_sha256": "19db8ef78e753b3d476b66aef4ce435c54d9f8c09c0e22c4664eb4f954bfb5d7",
+    "reference_input_sha256": "59ff226962e9212c93024d809cd6b33077402a090e35247dba4b2b49a86e03b0",
+    "reference_certificate_sha256": "9eb4235d89bd49e5e801f90c5647224f12166c443e293688df0ef0288d082643",
+    "reference_point": [
+      "0",
+      "0"
+    ],
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "family": {
+      "bits": 5,
+      "dyadic_outward_radius_error_at_most": "1/32",
+      "radius": "2",
+      "mass": "2",
+      "minimum_corner_label_mass": "5/16",
+      "all_corner_labels_strictly_positive": true,
+      "uniform_kappa": "11/8",
+      "delta": "0",
+      "actual_maximum_distance": "0",
+      "uniform_tail_bound": "539/1600",
+      "tail_margin": "1061/1600",
+      "window_atoms_distinct": 9,
+      "x_coordinates": 5,
+      "y_coordinates": 3,
+      "enumerated_boxes": 24,
+      "retained_boxes": 9
+    },
+    "workers": 2,
+    "target_gap": "1/10000000000",
+    "max_leaves": 4,
+    "initialization_seconds": 0.0007546249835286289,
+    "initialization_cpu_seconds": 0.0006670000000000009,
+    "elapsed_seconds": 0.07196258299518377,
+    "parent_cpu_seconds": 0.021562000000000005,
+    "aggregate_worker_cpu_seconds": 0.0009519999999999958,
+    "splits": 3,
+    "leaf_count": 4,
+    "partition_area_and_union_verified": true,
+    "lower": "425/512",
+    "upper": "345/256",
+    "gap": "265/512",
+    "lower_float": 0.830078125,
+    "upper_float": 1.34765625,
+    "gap_float": 0.517578125,
+    "nodes": [
+      {
+        "id": 0,
+        "parent": null,
+        "cell": [
+          "-1",
+          "1",
+          "-1",
+          "1"
+        ],
+        "upper": "47/32",
+        "status": "split",
+        "children": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "parent": 0,
+        "cell": [
+          "-1",
+          "0",
+          "-1",
+          "1"
+        ],
+        "upper": "331/256",
+        "status": "active",
+        "children": []
+      },
+      {
+        "id": 2,
+        "parent": 0,
+        "cell": [
+          "0",
+          "1",
+          "-1",
+          "1"
+        ],
+        "upper": "717/512",
+        "status": "split",
+        "children": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "parent": 2,
+        "cell": [
+          "0",
+          "1",
+          "-1",
+          "0"
+        ],
+        "upper": "345/256",
+        "status": "split",
+        "children": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "parent": 2,
+        "cell": [
+          "0",
+          "1",
+          "0",
+          "1"
+        ],
+        "upper": "345/256",
+        "status": "active",
+        "children": []
+      },
+      {
+        "id": 5,
+        "parent": 3,
+        "cell": [
+          "0",
+          "1/2",
+          "-1",
+          "0"
+        ],
+        "upper": "161/128",
+        "status": "active",
+        "children": []
+      },
+      {
+        "id": 6,
+        "parent": 3,
+        "cell": [
+          "1/2",
+          "1",
+          "-1",
+          "0"
+        ],
+        "upper": "313/256",
+        "status": "active",
+        "children": []
+      }
+    ]
+  },
+  "baseline_sha256": "34167dc11b19c81644ce864e7bf269b68d7be502b1eef731085802234b1e9cd9",
+  "actual_command": [
+    "/Users/zzh/.local/bin/python3",
+    "-B",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/parallel_branch_mass_family.py",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/affine-mass-envelope-audit/positive-family.json",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/affine-mass-envelope-audit/parallel-two-worker-four-leaf.json",
+    "--reference-input",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/affine-mass-envelope-audit/parallel-reference-input.json",
+    "--reference-certificate",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/affine-mass-envelope-audit/parallel-reference-certificate.json",
+    "--reference-point",
+    "0",
+    "0",
+    "--workers",
+    "2",
+    "--bits",
+    "5",
+    "--radius",
+    "2",
+    "--gap",
+    "1/10000000000",
+    "--max-leaves",
+    "4",
+    "--seconds",
+    "30",
+    "--checkpoint-seconds",
+    "0.001"
+  ]
+}
