@@ -1,0 +1,529 @@
+{
+  "status": "passed",
+  "scope": "Complete four-batch exact reconstruction, eight mass transfers and family corners, all reuse chains, mixed intervals and frozen two-kernel certificates; no geometry replay",
+  "input_sha256": "b4e2f0f4d8132741747a4569e727431889dcb521840dd053b9a5f87527275e68",
+  "canonical_input_sha256": "86156d092d377a76593d37c146a0e81ed064525dd6614fa6fdc8898970eba7aa",
+  "mass_parameters": {
+    "a": "-13/200",
+    "b": "39/5"
+  },
+  "positions_unchanged_from_R43": true,
+  "changed_mass_indices_from_R43": [
+    1,
+    28,
+    29,
+    32,
+    33,
+    52,
+    79,
+    80,
+    103,
+    130,
+    131,
+    134,
+    135,
+    154,
+    181,
+    182
+  ],
+  "eight_zero_sum_mass_vectors_independently_reconstructed": true,
+  "original_R17_binary_manifest_identity_checked": true,
+  "original_R17_binary_manifest_sha256": "9eb82bebf5c15bb91eabd31d8451c96d4d8fe77e1d41b7d14b2d33cde762cac4",
+  "family_four_corners_reconstructed": true,
+  "minimum_mass": "1/1250",
+  "maximum_kappa": "50043/50000",
+  "stages": [
+    {
+      "batch": "batch0",
+      "rows": 81,
+      "new": 80,
+      "reuse": 1,
+      "winner": "0072",
+      "wall_seconds": 35.00009216601029,
+      "child_user_cpu_seconds": 327.650087,
+      "child_system_cpu_seconds": 2.576495
+    },
+    {
+      "batch": "batch1",
+      "rows": 81,
+      "new": 56,
+      "reuse": 25,
+      "winner": "0072",
+      "wall_seconds": 26.222281207999913,
+      "child_user_cpu_seconds": 231.197709,
+      "child_system_cpu_seconds": 2.131897
+    },
+    {
+      "batch": "batch2",
+      "rows": 81,
+      "new": 56,
+      "reuse": 25,
+      "winner": "0072",
+      "wall_seconds": 24.765206791984383,
+      "child_user_cpu_seconds": 225.631709,
+      "child_system_cpu_seconds": 1.125998
+    },
+    {
+      "batch": "cross",
+      "rows": 15,
+      "new": 12,
+      "reuse": 3,
+      "winner": "0010",
+      "wall_seconds": 6.737945832981495,
+      "child_user_cpu_seconds": 44.721496,
+      "child_system_cpu_seconds": null
+    }
+  ],
+  "ledger_counts": {
+    "rows": 258,
+    "unique_inputs": 205,
+    "new_evaluations": 204,
+    "reuse": 54
+  },
+  "reuses": [
+    {
+      "batch": "batch0",
+      "id": "0040",
+      "source_id": "0195",
+      "source_results_sha256": "77ad0879448ba152611c517863aeb8cc9fd8b9d30a94b85287e88c0ed67be7c5"
+    },
+    {
+      "batch": "batch1",
+      "id": "0004",
+      "source_id": "0036",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0005",
+      "source_id": "0037",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0006",
+      "source_id": "0038",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0007",
+      "source_id": "0039",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0008",
+      "source_id": "0040",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0013",
+      "source_id": "0045",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0014",
+      "source_id": "0046",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0015",
+      "source_id": "0047",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0016",
+      "source_id": "0048",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0017",
+      "source_id": "0049",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0022",
+      "source_id": "0054",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0023",
+      "source_id": "0055",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0024",
+      "source_id": "0056",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0025",
+      "source_id": "0057",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0026",
+      "source_id": "0058",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0031",
+      "source_id": "0063",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0032",
+      "source_id": "0064",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0033",
+      "source_id": "0065",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0034",
+      "source_id": "0066",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0035",
+      "source_id": "0067",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0040",
+      "source_id": "0072",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0041",
+      "source_id": "0073",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0042",
+      "source_id": "0074",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0043",
+      "source_id": "0075",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch1",
+      "id": "0044",
+      "source_id": "0076",
+      "source_results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec"
+    },
+    {
+      "batch": "batch2",
+      "id": "0004",
+      "source_id": "0036",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0005",
+      "source_id": "0037",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0006",
+      "source_id": "0038",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0007",
+      "source_id": "0039",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0008",
+      "source_id": "0040",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0013",
+      "source_id": "0045",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0014",
+      "source_id": "0046",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0015",
+      "source_id": "0047",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0016",
+      "source_id": "0048",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0017",
+      "source_id": "0049",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0022",
+      "source_id": "0054",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0023",
+      "source_id": "0055",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0024",
+      "source_id": "0056",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0025",
+      "source_id": "0057",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0026",
+      "source_id": "0058",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0031",
+      "source_id": "0063",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0032",
+      "source_id": "0064",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0033",
+      "source_id": "0065",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0034",
+      "source_id": "0066",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0035",
+      "source_id": "0067",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0040",
+      "source_id": "0072",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0041",
+      "source_id": "0073",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0042",
+      "source_id": "0074",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0043",
+      "source_id": "0075",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "batch2",
+      "id": "0044",
+      "source_id": "0076",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "cross",
+      "id": "0000",
+      "source_id": "0008",
+      "source_results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f"
+    },
+    {
+      "batch": "cross",
+      "id": "0005",
+      "source_id": "0008",
+      "source_results_sha256": "92d1c6a5ff3d690a05ab69c811f11b75604043a85de43994ac99fa93c1f8b72e"
+    },
+    {
+      "batch": "cross",
+      "id": "0010",
+      "source_id": "0072",
+      "source_results_sha256": "92d1c6a5ff3d690a05ab69c811f11b75604043a85de43994ac99fa93c1f8b72e"
+    }
+  ],
+  "mixed_differences": [
+    {
+      "geometry": "q2_28_minus",
+      "lower": "-16249430941584530476161251765783580078125/27841395210269679905884120479793236290666993025024",
+      "upper": "-23171749779856177802737736197004439453125/41762092815404519858826180719689854436000489537536",
+      "sign": "negative"
+    },
+    {
+      "geometry": "q2_28_plus",
+      "lower": "20478277254871310849807474481240626953125/37121860280359573207845493973057648387555990700032",
+      "upper": "21547100108469838103300872881613376953125/37121860280359573207845493973057648387555990700032",
+      "sign": "positive"
+    },
+    {
+      "geometry": "all_26_minus",
+      "lower": "1231031909223937777886565042554270931640625/167048371261618079435304722878759417744001958150144",
+      "upper": "51495097860580570734597161641047396484375/6960348802567419976471030119948309072666748256256",
+      "sign": "positive"
+    },
+    {
+      "geometry": "all_26_plus",
+      "lower": "-873026353357170680357944549109551573259733131/83524185630809039717652361439379708872000979075072000",
+      "upper": "-870618615017926942270045255699399531267545631/83524185630809039717652361439379708872000979075072000",
+      "sign": "negative"
+    }
+  ],
+  "all_12_tested_geometry_changes_strictly_decrease": true,
+  "lower": "4340346118764344606014261066910295650150823608714252066195323/2548955860315217276539683881817007717041045504000000000000000",
+  "upper": "964521359729480211579144673129006452098948621237257973260419/566434635625603839231040862626001714898010112000000000000000",
+  "lower_minus_R43_full_upper": "15221096369086156689898475377466517759765625/334096742523236158870609445757518835488003916300288",
+  "tail_bound_R10": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+  "q": 3,
+  "D": "1099511627776",
+  "epsilon": "1/2199023255552",
+  "finite_L1_factor": "(1-6/N)^2 for every integer N>6",
+  "primary_recorded_seconds": 19.557116270065308,
+  "independent_recorded_seconds": 25.664181542000733,
+  "geometry_or_search_rerun": false,
+  "source_vector_scope": "Uses archived R17 selected-vector ledger; reconstructs every vector from mass group/anchor/epsilon formula, not a fresh R15 search ranking",
+  "fixed_geometry_family_scope": "Mass corners are a source identity check; R24 fixed-R14-geometry envelope does not bound the new R43 geometry",
+  "files_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r008_final_0611.json": "6c2e5d2d8fba5063bd45ecd4467f8c74cca5c0edbef958f90146a103029d5910",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r043_final_0195.json": "97c70896d07591e65e690be51b08a02b439f070440d3748aad12d0b2ae140dff",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r048_final_0010.json": "b4e2f0f4d8132741747a4569e727431889dcb521840dd053b9a5f87527275e68",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r014_final_0935.json": "498422cc89eecb00436d38ebf84df0028b5c5521db1d762e904d6226292bdd65",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r024_common_family.json": "cc43a36cd1fa0eeb486fe251fb6b47eca539abcae9ca402c596f14feea9f2322",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round017/search_ledger.json": "b2b97958277874010877279c3a3eeb6a27511044a3306de15f313b9bf65e3d46",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round043/cross-group-refine/manifest.json": "af6857f1c1f594c19b1615c02994899187bbe4e3a97401ce4650fa6f524e9dc4",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round043/cross-group-refine/results.json": "77ad0879448ba152611c517863aeb8cc9fd8b9d30a94b85287e88c0ed67be7c5",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_mass_geometry_r48.py": "bfd7936a59fc01a356fbc53e40ed736af9b35b55c24ffdc8902ca747c95c3254",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch0/manifest.json": "bf7ddc166548c8f41a1deb03122658dd90b8d87b78a0a650b1d6af7336dd1574",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch0/results.json": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch0/summary.json": "e60daffea8bf15d5a0e04d9bc37169978370f4f8a9c0c9570b610bad67abe47b",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch0/completed.jsonl": "21d5cd34542754886d2b219e58e704a50c34e5bee652692a97cea2dfbf60523a",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch0/completed.jsonl": "21d5cd34542754886d2b219e58e704a50c34e5bee652692a97cea2dfbf60523a",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch0/manifest.json.gz": "d3c1d80ed34c6538786337fa5bcec64e4072aa6511a7adddcd0020ef9b04a1a8",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch0/results.json.gz": "b17817694c8760e32b2cdd4454e2e54eb969945568572daf6ae7d00052d07686",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch0/summary.json": "e60daffea8bf15d5a0e04d9bc37169978370f4f8a9c0c9570b610bad67abe47b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_mass_geometry_r48_extension.py": "425f6ae62eaaf7d0a4d06699c65c98b55027565e0098ed5dadf9d96f3fd06af8",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch1/manifest.json": "d0b253c9590cdbaeccb4c20353f8c36a3e925bf08dc661c6d8b556d2d9a526df",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch1/results.json": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch1/summary.json": "3654b36517fc5f0c5bc54ffefd6b1c2509e1d131596a49b5702c0e74038b769b",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch1/completed.jsonl": "449ed17d238144517d319c02b2064ec967e46716a04066d06035d54ced5c2df9",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch1/completed.jsonl": "449ed17d238144517d319c02b2064ec967e46716a04066d06035d54ced5c2df9",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch1/manifest.json.gz": "d14d747222f5bb9f8bc7a58a49c50f782f3dd25f1a36a5bbb920531efd597fc8",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch1/results.json.gz": "bbe8c15ad740ce92c87c44c5c8fff4a8c5e6be36885b23c7f3085198f9d0c3db",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch1/summary.json": "3654b36517fc5f0c5bc54ffefd6b1c2509e1d131596a49b5702c0e74038b769b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_mass_geometry_r48_final_extension.py": "f4e947bd778a9f0ad4ec7786d1abca0f1ca52839a0580cd5029fb091277db7b5",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch2/manifest.json": "6c9137acdde7c2e062819e96e8242903acec8c65dfcfb641040b9729fd81d17c",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch2/results.json": "92d1c6a5ff3d690a05ab69c811f11b75604043a85de43994ac99fa93c1f8b72e",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch2/summary.json": "b72f4687acdc493bcba77a8af19a95c97d6a99395aee1eccec8beec200f762ff",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/batch2/completed.jsonl": "f9953722de68df613f96bfbf8c1205d89f77a8298db80c1274b30dcddfed5c9b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch2/completed.jsonl": "f9953722de68df613f96bfbf8c1205d89f77a8298db80c1274b30dcddfed5c9b",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch2/manifest.json.gz": "390ab2cb3d6530db234ffd923fdc40d31643d5c0bba883480ed520145d5f21e6",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch2/results.json.gz": "81907225f0c8556d05d48420306b5f8161fa904fdffdf857dd8ceff91b2d3771",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/batch2/summary.json": "b72f4687acdc493bcba77a8af19a95c97d6a99395aee1eccec8beec200f762ff",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_mass_geometry_r48_cross.py": "0a3c87790cd74ecae277b6b8575eb96008801a56855e361abd23ae62aaa7d681",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/cross/manifest.json": "8cebf80dbcc0486881ed1c245b73696837182b4fb3530ff420d2db95d1655ca2",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/cross/results.json": "3340b6edfe0b34ce8869aff23ae60c59d0aa0f7ea9e58ba0884b6eb919dec237",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/cross/summary.json": "54ff87373ac0e8bf01b84422452631ccc10d66a18ff2becaabe951e007bfea21",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/cross/completed.jsonl": "2188034676a941751e498ca04aaab719d77bb8a0170acdd92668b6e4be47d9f9",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/cross/completed.jsonl": "2188034676a941751e498ca04aaab719d77bb8a0170acdd92668b6e4be47d9f9",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/cross/manifest.json.gz": "f002aa34ba9fc44e5deb010234611dbe44b06f7f6fa4135867a94166998a575c",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/cross/results.json.gz": "a97a221e4ddc9b32e4957885f57cb6576aa067de2b605d024d4c63deee9d6bb5",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/cross/summary.json": "54ff87373ac0e8bf01b84422452631ccc10d66a18ff2becaabe951e007bfea21",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round043/primary_old_R10.json": "b557648e1d80989906bca04736c2c83ef33647658813edabb1fabc0cae809a14",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/proofs/round048-lower.md": "faec25876cadb2753360da45098c3e3f5940ba72de1399fc84b964d88a8350ba",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/rounds/048.md": "fb6044acda90a7bd109c855a5061f2cc6722005503864719f26c864968f97988",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/proofs/periodic-complete-halo.md": "7571ad4fa597d9f152fcfd1249bf07c69d998326abf30c44a9abaca1fe18987e",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_mass_response.py": "372e2fbf28d53a71372cc4af51e97181bcd86ccee6e05045422140afe2f72908",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_supercell_mass.py": "37e4e05705477f45abfe8c1088bd20c93b0b4a2dad8e777bcda6240eb1b99fc0",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_quadrant_groups.py": "bc6d8a19543882b6b84d49cbcc36b51218146bb0b6cc2c70d575cd765cc6d61c",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/scan_supercell_2x2.py": "9c4f47ef2b1db471cc06be447d689dc48fa3ec56d692e3c23350a46c8825a78c",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/periodic_halo_dominated.py": "a697093e30172da71528dc3668add00ea4083811cc2b69ef3a0fc9942eded5e3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/periodic_halo.py": "b788671299ee33c14e4c6d872e36bfab06cbaa55dd6cd6a1c9bc6c26190a0f33",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/independent_periodic_halo.py": "d1e05a0627d699b54472b1b3e74ad500035135853298d33f519f78d3a17903e8",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/audit_mass_geometry_r48.py": "48be91ce73e881a2027ab055f493a1b468a7b2d890bb66bb7b80269b7ee4ce5f",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/audit_family_geometry_r48.py": "45e78cb0b006e718befad67e273a485e9ccfcafd7163dbf22fa7fe193317129f",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/build_round048_ledger.py": "009fdf751a6054ba32f2a7011b3fbd57c2f41b52a7ba0d48d42f6b5acde72222",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/source-manifest.json": "0ab27ccc6ef6593b070536e453075e246d9447b1b1e42549e94848365dddd4f9",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/exact_audit.json": "c5f83558e5d99d8618b718b14edac9786acaf96505b60d6c12927ad3efd6c1b0",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/primary_old_R10.json": "274b977ca340f1a12e5a0cc6efb79718420c5b2128c7b51498408102e6264385",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/family_audit.json": "665ca3561b7be76b00a5144376ba9a2febe0e78c3bfc4727ea13946e022cca8e",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/integration_checks.json": "e4174d38be5e4ec7aa56d94e95dddefdd761dc4023d4fb114b8809444e8f3e74",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/results/round048/independent_old_R10.json": "9347381df9654da23d099d91ee3783b618dc8c3ac38ddf65adf12d716c940b73"
+  },
+  "audit_script_sha256": "93744f0cb6be20c9a6638fe56fb475330bf57261f8c4297e95a3f31480fe8ba6",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "command": [
+    "/Users/zzh/.local/bin/python3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-ledger-audit/planar-centered-square-weak11/computation/review_round048_ledger.py",
+    "--topic",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11",
+    "--raw",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry",
+    "--output",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/independent-ledger-review.json"
+  ],
+  "verified_utc": "2026-11-15T02:57:45.074530+00:00",
+  "elapsed_seconds": 1.67123683297541
+}

@@ -1,0 +1,79 @@
+{
+  "scope": "Exact bookkeeping and interval arithmetic; verifies stored certificates structurally, does not rerun halo kernels or establish a continuous family bound.",
+  "records": 258,
+  "unique_inputs": 205,
+  "new_calls": 204,
+  "reused_records": 54,
+  "batches": [
+    {
+      "name": "batch0",
+      "points": 81,
+      "new_calls": 80,
+      "reused": 1,
+      "errors": 0,
+      "manifest_sha256": "bf7ddc166548c8f41a1deb03122658dd90b8d87b78a0a650b1d6af7336dd1574",
+      "results_sha256": "9a0490ff75af1975ef2dbd386ddfd35189796dc3b0a0f9bf3808df77be40e4ec",
+      "summary_sha256": "e60daffea8bf15d5a0e04d9bc37169978370f4f8a9c0c9570b610bad67abe47b"
+    },
+    {
+      "name": "batch1",
+      "points": 81,
+      "new_calls": 56,
+      "reused": 25,
+      "errors": 0,
+      "manifest_sha256": "d0b253c9590cdbaeccb4c20353f8c36a3e925bf08dc661c6d8b556d2d9a526df",
+      "results_sha256": "5cb182e4b2d022e8dcb3f90e5a3dacca8b409cb030e50a629f5dc052215d8f5f",
+      "summary_sha256": "3654b36517fc5f0c5bc54ffefd6b1c2509e1d131596a49b5702c0e74038b769b"
+    },
+    {
+      "name": "batch2",
+      "points": 81,
+      "new_calls": 56,
+      "reused": 25,
+      "errors": 0,
+      "manifest_sha256": "6c9137acdde7c2e062819e96e8242903acec8c65dfcfb641040b9729fd81d17c",
+      "results_sha256": "92d1c6a5ff3d690a05ab69c811f11b75604043a85de43994ac99fa93c1f8b72e",
+      "summary_sha256": "b72f4687acdc493bcba77a8af19a95c97d6a99395aee1eccec8beec200f762ff"
+    },
+    {
+      "name": "cross",
+      "points": 15,
+      "new_calls": 12,
+      "reused": 3,
+      "errors": 0,
+      "manifest_sha256": "8cebf80dbcc0486881ed1c245b73696837182b4fb3530ff420d2db95d1655ca2",
+      "results_sha256": "3340b6edfe0b34ce8869aff23ae60c59d0aa0f7ea9e58ba0884b6eb919dec237",
+      "summary_sha256": "54ff87373ac0e8bf01b84422452631ccc10d66a18ff2becaabe951e007bfea21"
+    }
+  ],
+  "mixed_difference_definition": "(J(final mass,g)-J(final mass,baseline))-(J(original mass,g)-J(original mass,baseline))",
+  "mixed_differences": [
+    {
+      "geometry": "q2_28_minus",
+      "lower": "-16249430941584530476161251765783580078125/27841395210269679905884120479793236290666993025024",
+      "upper": "-23171749779856177802737736197004439453125/41762092815404519858826180719689854436000489537536",
+      "sign": "negative"
+    },
+    {
+      "geometry": "q2_28_plus",
+      "lower": "20478277254871310849807474481240626953125/37121860280359573207845493973057648387555990700032",
+      "upper": "21547100108469838103300872881613376953125/37121860280359573207845493973057648387555990700032",
+      "sign": "positive"
+    },
+    {
+      "geometry": "all_26_minus",
+      "lower": "1231031909223937777886565042554270931640625/167048371261618079435304722878759417744001958150144",
+      "upper": "51495097860580570734597161641047396484375/6960348802567419976471030119948309072666748256256",
+      "sign": "positive"
+    },
+    {
+      "geometry": "all_26_plus",
+      "lower": "-873026353357170680357944549109551573259733131/83524185630809039717652361439379708872000979075072000",
+      "upper": "-870618615017926942270045255699399531267545631/83524185630809039717652361439379708872000979075072000",
+      "sign": "negative"
+    }
+  ],
+  "all_12_geometry_changes_strictly_decrease_at_three_tested_masses": true,
+  "script_sha256": "48be91ce73e881a2027ab055f493a1b468a7b2d890bb66bb7b80269b7ee4ce5f",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]"
+}
