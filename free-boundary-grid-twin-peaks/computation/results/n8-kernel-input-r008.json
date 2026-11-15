@@ -1,0 +1,13 @@
+{
+  "claim": "Counterexample to the pointwise candidate p(S) <= 4/|boundary(S)| on the free 8 by 8 grid; not a counterexample to the twin-peaks problem.",
+  "n": 8,
+  "S_cells": [[2,0],[0,1],[1,1],[2,1],[3,0],[4,0],[5,0],[6,0],[7,0],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7]],
+  "S_mask_hex": "0x1010101010107fc",
+  "S_size": 15,
+  "m": 49,
+  "U_size": 35,
+  "source": "completion_ie_n8_largeS.cpp",
+  "source_sha256": "6150ed860122941a6e02ea62b93c0250e7cd469d0739ac139dc291fa5c9d5f0f",
+  "compile_command": "TMPDIR=/Volumes/data/CodexTemp/T2/a022-analytic-moment/r008 CLANG_MODULE_CACHE_PATH=/Volumes/data/CodexTemp/cache/clang clang++ -std=c++17 -O3 -pthread -fmodules-cache-path=/Volumes/data/CodexTemp/cache/clang completion_ie_n8_largeS.cpp -o completion_ie_n8_largeS",
+  "run_command": "/usr/bin/time -l completion_ie_n8_largeS 0x1010101010107fc > n8-extended-L.json 2> n8-extended-L.time"
+}

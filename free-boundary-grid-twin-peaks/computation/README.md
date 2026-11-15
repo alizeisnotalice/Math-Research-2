@@ -155,3 +155,17 @@ python3 -B free-boundary-grid-twin-peaks/computation/certificates/r007-gpu/high_
 
 `two_step_completion_scan.cpp`按C++17、O3、pthread方式编译，参数为n（2..5）；n5约512MiB表、12线程。
 `certificates/r007-gpu/`保存真实v1/v2源码、最终16标签、独立审计、硬件计时与版本更正。`audit_r007.py 输入.jsonl 输出.json`复核完整样本。历史源需要当前目录存在空的r007-metal.jsonl且会覆盖它，复现必须使用全新临时目录。真实种子、旧JSON错误及缺失早期样本均在README说明，不补造记录。所有程序完成后退出释放内存。
+
+## 第8轮：独立整数反例
+
+```sh
+c++ -O3 -std=c++20 -pthread -fmodules-cache-path=/Volumes/data/CodexTemp/cache/clang free-boundary-grid-twin-peaks/computation/completion_ie_n8_largeS.cpp -o /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/kernel8
+/Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/kernel8 0x1010101010107fc
+A022_CERT_DIR=/Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/n8-independent-python python3 -B free-boundary-grid-twin-peaks/computation/verify_largeS.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_r008.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_peak_polynomial_counterexample.py
+python3 -B free-boundary-grid-twin-peaks/computation/check_extended_l_holes.py
+python3 -B free-boundary-grid-twin-peaks/computation/certificates/r008-gpu/summarize.py
+```
+
+输入与两份独立整数结果在results/n8-kernel-*-r008.json。C++约375MB、Python约365MB；结果保存后进程正常退出。n7选定形态源码completion_ie_selected.cpp，参数n、S掩码（其driver保存原运行路径，迁移复现需改为本机新临时目录）。GPU入口与计时/边界更正见certificates/r008-gpu/README.md。
