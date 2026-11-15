@@ -68,3 +68,31 @@ python3 -B free-boundary-grid-twin-peaks/computation/walk_scan.py --binary /Volu
 ```
 
 此处沿用驱动参数名top-block-every，但beta_walk中从两峰等概率选择。给定块B，选择概率正比于Σ_{峰v∈B}1/b(v)，b(v)是含v的2×2块数；接受比为输出/输入的此项之比。仅理想随机核的平稳性有解析依据，实际浮点/伪随机实现及有限轨迹不提供认证概率。全部最佳标号以独立峰判定器再次核验。
+
+## 第4轮：独立集、缩图与全n构造证书
+
+按上节C++编译方式构建`independent_peak_dp.cpp`（仅接受2≤n≤6），然后运行：
+
+```sh
+python3 -B free-boundary-grid-twin-peaks/computation/verify_independent_peak_dp.py /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/independent_peak_dp
+python3 -B free-boundary-grid-twin-peaks/computation/check_selected_joint_peaks.py /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/independent_peak_dp
+python3 -B free-boundary-grid-twin-peaks/computation/verify_r004.py
+python3 -B free-boundary-grid-twin-peaks/computation/rectangle_root_counts.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_orbit_core.py
+python3 -B free-boundary-grid-twin-peaks/computation/beta_zero_recurrence_n3.py 3
+```
+
+n6独立集表5598861项，主Agent实测最大常驻约532MiB；C++表用192位、交错和用256位，解析界见证明。selected checker以Python任意精度重算两个18点独立集的全子集。n6完整JSON来自实际C++输出，不手动删去根分布。
+
+β有向边轨道程序需要本机GMP 6.3.0，实际编译方式（安装路径若变化应从本机查实）：
+
+```sh
+TMPDIR=/Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks CLANG_MODULE_CACHE_PATH=/Volumes/data/CodexTemp/cache/clang clang++ -std=c++17 -O3 -I/opt/homebrew/Cellar/gmp/6.3.0/include -fmodules-cache-path=/Volumes/data/CodexTemp/cache/clang free-boundary-grid-twin-peaks/computation/beta_zero_orbits.cpp -L/opt/homebrew/Cellar/gmp/6.3.0/lib -lgmpxx -lgmp -o /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/beta_zero_orbits
+/Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/beta_zero_orbits 6
+```
+
+程序逐轨释放三张整数表，最大单轨773426项；每步检查整除、非负、反向边对称及有向边覆盖总数。拒绝n=1或n≥7。未测量该程序峰值内存，不把状态数当实际内存测量。
+
+`rectangle_root_mod.cpp`接受行数和列数，限面积≤24；以模2^64和模(2^64−1)两遍连通顺序递推及CRT恢复，结果≤24!小于两模乘积，恢复唯一。它与Python独立集根带算法交叉。`core_broken_grid.cpp`无参数，完整遍历3686400个有限核心状态；独立Python验证器利用删边单调性复核，亦生成n5/6/12/32的完整近峰成员。
+
+计算结束先保存必要输出，再确认所启动进程退出；不保留大表常驻REPL。n7采用新算法和独立资源预算，不能直接放宽旧程序输入限制。
