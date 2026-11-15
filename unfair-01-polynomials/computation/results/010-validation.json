@@ -1,0 +1,194 @@
+{
+  "valid": "accepted",
+  "attacks": {
+    "forged_unit": {
+      "returncode": 1,
+      "rejected": true,
+      "message": "strict_variables is not precisely the independently derived nonunit set"
+    },
+    "omitted_strict_variable": {
+      "returncode": 1,
+      "rejected": true,
+      "message": "strict_variables is not precisely the independently derived nonunit set"
+    },
+    "support_not_normalized": {
+      "returncode": 1,
+      "rejected": true,
+      "message": "I must be a nonempty, strictly increasing list of nonnegative integers beginning at 0"
+    },
+    "nonstrict_multiplier": {
+      "returncode": 1,
+      "rejected": true,
+      "message": "multiplier uses a non-strict or undeclared variable"
+    },
+    "repeated_atom_variable": {
+      "returncode": 1,
+      "rejected": true,
+      "message": "positive atom is not a squarefree product over declared strict variables"
+    },
+    "overlapping_atom_factors": {
+      "returncode": 1,
+      "rejected": true,
+      "message": "positive atom is not a squarefree product over declared strict variables"
+    },
+    "negative_atom_weight": {
+      "returncode": 1,
+      "rejected": true,
+      "message": "negative positive-atom coefficient"
+    },
+    "false_polynomial_identity": {
+      "returncode": 1,
+      "rejected": true,
+      "message": "exact polynomial equality failed"
+    }
+  },
+  "verified": {
+    "010-positive-718.json": {
+      "status": "verified",
+      "variables": [
+        "a2",
+        "a4",
+        "b2",
+        "b4",
+        "b6",
+        "b8",
+        "b9",
+        "b10",
+        "b12",
+        "b13",
+        "b15"
+      ],
+      "equation_count": 20,
+      "multiplier_terms": 28,
+      "positive_atoms": 6,
+      "strict_witnesses": {
+        "a2": {
+          "diagonal": 2,
+          "other_terms": 1
+        },
+        "a4": {
+          "diagonal": 4,
+          "other_terms": 2
+        },
+        "b2": {
+          "diagonal": 2,
+          "other_terms": 1
+        },
+        "b4": {
+          "diagonal": 4,
+          "other_terms": 2
+        },
+        "b6": {
+          "diagonal": 6,
+          "other_terms": 2
+        },
+        "b8": {
+          "diagonal": 8,
+          "other_terms": 2
+        },
+        "b9": {
+          "diagonal": 9,
+          "other_terms": 1
+        },
+        "b10": {
+          "diagonal": 10,
+          "other_terms": 2
+        },
+        "b12": {
+          "diagonal": 12,
+          "other_terms": 2
+        },
+        "b13": {
+          "diagonal": 13,
+          "other_terms": 2
+        },
+        "b15": {
+          "diagonal": 15,
+          "other_terms": 2
+        }
+      },
+      "claim_boundary": "The certificate is strictly positive only on the declared open cube 0<x<1; it does not classify arbitrary supports or search bases."
+    },
+    "010-positive-719b.json": {
+      "status": "verified",
+      "variables": [
+        "a2",
+        "a4",
+        "b2",
+        "b4",
+        "b6",
+        "b8",
+        "b9",
+        "b10",
+        "b11",
+        "b13",
+        "b14",
+        "b16"
+      ],
+      "equation_count": 21,
+      "multiplier_terms": 23,
+      "positive_atoms": 10,
+      "strict_witnesses": {
+        "a2": {
+          "diagonal": 2,
+          "other_terms": 1
+        },
+        "a4": {
+          "diagonal": 4,
+          "other_terms": 2
+        },
+        "b2": {
+          "diagonal": 2,
+          "other_terms": 1
+        },
+        "b4": {
+          "diagonal": 4,
+          "other_terms": 2
+        },
+        "b6": {
+          "diagonal": 6,
+          "other_terms": 2
+        },
+        "b8": {
+          "diagonal": 8,
+          "other_terms": 2
+        },
+        "b9": {
+          "diagonal": 9,
+          "other_terms": 1
+        },
+        "b10": {
+          "diagonal": 10,
+          "other_terms": 2
+        },
+        "b11": {
+          "diagonal": 11,
+          "other_terms": 2
+        },
+        "b13": {
+          "diagonal": 13,
+          "other_terms": 3
+        },
+        "b14": {
+          "diagonal": 14,
+          "other_terms": 1
+        },
+        "b16": {
+          "diagonal": 16,
+          "other_terms": 2
+        }
+      },
+      "claim_boundary": "The certificate is strictly positive only on the declared open cube 0<x<1; it does not classify arbitrary supports or search bases."
+    }
+  },
+  "unit_boundary_tests": 3,
+  "square_multiplier_encoding": true,
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "scipy": "1.18.1",
+  "sha256": {
+    "positive_certificate_search.py": "06ea9209fbfad4bdf83eb956dca2a9416e6a0c83a96bdd7a61315172757d11c9",
+    "verify_positive_certificate.py": "c7ae3a04a04a8b40969e67b431f867c9487372985c205c8d64112f8e205635e3",
+    "check_positive_certificates.py": "706566d392d39fcdd0cc3281497e89aab934c57d0d40b10946130215c61405a5"
+  }
+}
