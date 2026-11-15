@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- |
 | [planar-centered-square-weak11](planar-centered-square-weak11/README.md) | 二维 Lebesgue 背景、中心轴平行共同半径、全尺度弱 (1,1) 精确常数 | 精确值开放；已证下界约1.702793754234565，旧一般上界3.590865312933 | 第57轮完成 | 位置墙层认证、一般覆盖与跨尺度预算 |
 
-| [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 开放；初始化完成，历史公式待核验 | 第1轮准备 | 精确空间矩与远峰构造占比 |
+| [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 开放；n≤5精确计数及空间矩，远峰矩形族已构造但渐近占比未证 | 第1轮完成 | 最短路前缀与计数比联合估计、加权空间矩 |
 
 | [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；六点/总次数28及七点/总次数24有限子类严格排除；固定支撑有次数压缩界 | 第4轮完成 | 四项因子族的无界前缀排除与支配证书 |
 
