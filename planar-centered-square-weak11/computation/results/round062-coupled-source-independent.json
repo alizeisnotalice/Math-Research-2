@@ -1,0 +1,73 @@
+{
+  "status": "PASS_BOUNDED_INDEPENDENT_R62_AUDIT",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "sympy": "1.14.0",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "arithmetic": "Exact Fraction reference enclosures and symbolic differentiation; fixed-point source checker compared independently.",
+  "source_pins": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r062-coupled-wholecell-source-interface.md",
+      "sha256": "3afd1ca1d3c3762ec4ba6e997fca18717b9a4942b2a0bafcd640ffbeb88f9042"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r062_coupled_source_verify.py",
+      "sha256": "65143813817936d4db538aa0a4b1f4f6de7d55e1070b211bf05f4211f9710827"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/cauchy_occupation_coupled_lp.m",
+      "sha256": "fb69861a37adaeba94ac57dfbf9921889970b2b53b07b2df166e50e39d29c5a7"
+    }
+  ],
+  "script_sha256": "a15e5e0a96d94d0b41cf2e8de777133908dec810d3430bec2b6e0aba6cea49e4",
+  "jet_sample_points": 60,
+  "rectangle_probability_sample_points": 108,
+  "symbolic_derivative_identities": 5,
+  "toys": {
+    "corner_only_false_positive": true,
+    "pure_curvature_correction_exact": true,
+    "no_mixed_derivative_required": true,
+    "coefficient_cancellation": true,
+    "LP_row_direction": true
+  },
+  "coverage_repair_runs": [
+    {
+      "name": "budget_incomplete",
+      "status": "INVALID_SOURCE",
+      "complete": false,
+      "sufficient_repair": null,
+      "checked_boxes": 1,
+      "negative_witnesses": 4,
+      "input_sha256": "d6de2b0776bf8545682e5281cf8422d932862cf22bd3e2ca6fcf369b615551d7"
+    },
+    {
+      "name": "negative_early",
+      "status": "INVALID_SOURCE",
+      "complete": false,
+      "sufficient_repair": null,
+      "checked_boxes": 1,
+      "negative_witnesses": 4,
+      "input_sha256": "d6de2b0776bf8545682e5281cf8422d932862cf22bd3e2ca6fcf369b615551d7"
+    },
+    {
+      "name": "negative_complete",
+      "status": "INVALID_SOURCE",
+      "complete": true,
+      "sufficient_repair": "721234381883345703345045471908950479312460814555/69096770259494692925803184397423356553608146259",
+      "checked_boxes": 3,
+      "negative_witnesses": 12,
+      "input_sha256": "d6de2b0776bf8545682e5281cf8422d932862cf22bd3e2ca6fcf369b615551d7"
+    },
+    {
+      "name": "repaired_complete",
+      "status": "PASS_SOURCE_NONNEGATIVE",
+      "complete": true,
+      "sufficient_repair": "0",
+      "checked_boxes": 3,
+      "origin_amplitude": "721234381883345703345045471908950479312460814555/69096770259494692925803184397423356553608146259",
+      "halfmass_over_pi": "46780871372869577250415138861749640884979965447851/4422193296607660347251403801435094819430921360576"
+    }
+  ],
+  "elapsed_seconds": 0.3966319999890402,
+  "scope": "Independent proof/code review plus bounded exact rational checks. No MATLAB execution, no optimized candidate certification, no full-D bound."
+}

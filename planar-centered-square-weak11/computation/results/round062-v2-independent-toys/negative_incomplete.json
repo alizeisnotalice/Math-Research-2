@@ -1,0 +1,125 @@
+{
+  "status": "INVALID_SOURCE",
+  "input": "/Volumes/data/CodexTemp/T2/r062-independent-v2-audit/toy-input.json",
+  "input_sha256": "d6de2b0776bf8545682e5281cf8422d932862cf22bd3e2ca6fcf369b615551d7",
+  "script_sha256": "9ee1de8d1944cfd567a50a79c37d772e10cb16b121cca71f1676645f9197b2e7",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "bits": 160,
+  "atan_terms": 88,
+  "pi_fixed": [
+    "4591442807048218921384805199743311128454155023540",
+    "4591442807048218921384805199743311128454155025340"
+  ],
+  "rounding": "Every signed arithmetic operation uses exact integers and outward floor/ceil at common scale 2^160; atan alternating remainder included.",
+  "h": "1",
+  "delta": "1/8",
+  "N": 1,
+  "origin_repair_added_exact": "0",
+  "source_origin_mass_exact": "0",
+  "mu_mass_exact": "9/64",
+  "halfmass_over_pi_exact": "9/64",
+  "source_only": true,
+  "D_minimum_certified": false,
+  "complete_terminal_coverage": false,
+  "checked_boxes": 1,
+  "accepted_leaves": 0,
+  "unresolved_leaves": 1,
+  "unchecked_stack": 2,
+  "additional_origin_repair_sufficient_exact": null,
+  "elapsed_seconds": 0.0008960420091170818,
+  "limits": {
+    "max_seconds": 20,
+    "max_boxes": 1,
+    "max_depth": 0,
+    "initial_subdiv": 1
+  },
+  "accepted": [],
+  "unresolved": [
+    {
+      "cell": 0,
+      "box": [
+        "-1/16",
+        "1/16",
+        "-1/16",
+        "1/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "-1441302290095035254338045531252915820737766682749",
+      "error_fixed": "2",
+      "repair_upper": "1441302290095035254338045531252915820737766682749/146930935864979479196188545604295453798759468607",
+      "curvature_intervals_fixed": [
+        [
+          "-75812255243002786077852789661756831794319322807",
+          "12"
+        ],
+        [
+          "-75812255243002786077852789661756831794319322807",
+          "12"
+        ]
+      ]
+    }
+  ],
+  "split_records": [],
+  "negative_corner_witnesses": [
+    {
+      "cell": 0,
+      "point": [
+        "-1/16",
+        "-1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 0,
+      "point": [
+        "-1/16",
+        "1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 0,
+      "point": [
+        "1/16",
+        "-1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 0,
+      "point": [
+        "1/16",
+        "1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    }
+  ],
+  "unchecked": [
+    {
+      "cell": 2,
+      "box": [
+        "1/16",
+        "3/16",
+        "1/16",
+        "3/16"
+      ],
+      "depth": 0
+    },
+    {
+      "cell": 1,
+      "box": [
+        "1/16",
+        "3/16",
+        "-1/16",
+        "1/16"
+      ],
+      "depth": 0
+    }
+  ],
+  "scope": "Only positivity of lambda*p_h+P_h*f-f on all source cells; exterior positivity automatic. No D-minimum certificate or new upper constant."
+}

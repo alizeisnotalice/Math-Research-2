@@ -1,0 +1,144 @@
+{
+  "status": "PASS_R62_V3_JUMP_DELTA",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 5.875662167003611,
+  "script_sha256": "d8a22fe037a2225ab393b557de9b3a04c4280f523bd6db71bcba87b5780c4391",
+  "AST_changed_functions": [
+    "Model",
+    "exact_run",
+    "self_test"
+  ],
+  "AST_changed_Model_methods": [
+    "__init__",
+    "box_bound"
+  ],
+  "symbolic_telescope_identities": 2,
+  "cases": [
+    {
+      "name": "constant",
+      "N": 1,
+      "density_coefficients": [
+        "1/32",
+        "1/32",
+        "1/32"
+      ],
+      "vertical_jumps": 6,
+      "horizontal_jumps": 6,
+      "positive_source_boxes": 3,
+      "lower_fixed": [
+        "101890239299509627498124622752641834400704259768",
+        "97436535162323558251828978622138992910934306323",
+        "93117253792165224935290903089662551847141563664"
+      ]
+    },
+    {
+      "name": "nonmonotone",
+      "N": 1,
+      "density_coefficients": [
+        "1/64",
+        "3/64",
+        "1/32"
+      ],
+      "vertical_jumps": 12,
+      "horizontal_jumps": 12,
+      "positive_source_boxes": 3,
+      "lower_fixed": [
+        "124831396578292655958747363782718526109826053325",
+        "74702759216525986709908854993644769274320559326",
+        "93216519618755741110979116004526547706779677911"
+      ]
+    },
+    {
+      "name": "zeros_and_edge_heavy",
+      "N": 2,
+      "density_coefficients": [
+        "0",
+        "1/32",
+        "0",
+        "1/64",
+        "1/16",
+        "1/64"
+      ],
+      "vertical_jumps": 30,
+      "horizontal_jumps": 30,
+      "positive_source_boxes": 6,
+      "lower_fixed": [
+        "148537902956382496825647665972866230572469009729",
+        "98389263086804311273622218107864737199581671065",
+        "139719425105347285610641905015695353420471359717",
+        "113034708872896598856610931186008526679622820304",
+        "40431949938286109141001281494166813018236269044",
+        "101447919246122309992420125574006752962868459641"
+      ]
+    }
+  ],
+  "curvature_fullcell_reference_points": 108,
+  "outer_boundary_checks": 22,
+  "signed_split_rows": [
+    {
+      "L": "-3",
+      "U": "2",
+      "jump": "-2",
+      "extra": "0",
+      "bound": "6",
+      "true_upper": "6"
+    },
+    {
+      "L": "-3",
+      "U": "2",
+      "jump": "2",
+      "extra": "5",
+      "bound": "29",
+      "true_upper": "4"
+    },
+    {
+      "L": "1",
+      "U": "4",
+      "jump": "-1",
+      "extra": "3",
+      "bound": "8",
+      "true_upper": "-1"
+    }
+  ],
+  "source_coverage_repair_runs": [
+    {
+      "name": "negative_incomplete",
+      "status": "INVALID_SOURCE",
+      "complete": false,
+      "repair": null
+    },
+    {
+      "name": "negative_complete",
+      "status": "INVALID_SOURCE",
+      "complete": true,
+      "repair": "1442441175258373149322094902565893160322391323166/138193540518989385851606368794846713107216292517"
+    },
+    {
+      "name": "repaired_complete",
+      "status": "PASS_SOURCE_NONNEGATIVE",
+      "complete": true,
+      "origin_amplitude": "1442441175258373149322094902565893160322391323166/138193540518989385851606368794846713107216292517"
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r062_coupled_source_verify_v2.py",
+      "sha256": "9ee1de8d1944cfd567a50a79c37d772e10cb16b121cca71f1676645f9197b2e7"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r062_coupled_source_verify_v3.py",
+      "sha256": "58cc151a64c30920c25fbb3a24f79ef7651e5d762210532678cf12ac5a39edc0"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/cauchy_occupation_jump_aux_lp.m",
+      "sha256": "c23c30dd82c85fd07023bd103a1b54af2eb8fde820fb463294e48ff6e5d62bc0"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r062_coupled_source.py",
+      "sha256": "a15e5e0a96d94d0b41cf2e8de777133908dec810d3430bec2b6e0aba6cea49e4"
+    }
+  ],
+  "scope": "Jump identity, outer-zero boundaries, nonmonotone D4 coefficients, signed LP bound and exact checker delta only; no MATLAB launch/optimized candidate/full-D/new-C2 certificate."
+}

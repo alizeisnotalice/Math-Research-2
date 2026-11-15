@@ -1,0 +1,113 @@
+{
+  "status": "PASS_SOURCE_NONNEGATIVE",
+  "input": "/Volumes/data/CodexTemp/T2/r062-independent-v2-audit/toy-input.json",
+  "input_sha256": "d6de2b0776bf8545682e5281cf8422d932862cf22bd3e2ca6fcf369b615551d7",
+  "script_sha256": "9ee1de8d1944cfd567a50a79c37d772e10cb16b121cca71f1676645f9197b2e7",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "bits": 160,
+  "atan_terms": 88,
+  "pi_fixed": [
+    "4591442807048218921384805199743311128454155023540",
+    "4591442807048218921384805199743311128454155025340"
+  ],
+  "rounding": "Every signed arithmetic operation uses exact integers and outward floor/ceil at common scale 2^160; atan alternating remainder included.",
+  "h": "1",
+  "delta": "1/8",
+  "N": 1,
+  "origin_repair_added_exact": "480813725086124383107364967521964386774130441056/46064513506329795283868789598282237702405430839",
+  "source_origin_mass_exact": "480813725086124383107364967521964386774130441056/46064513506329795283868789598282237702405430839",
+  "mu_mass_exact": "31186659027068928676426177027790260892865997105135/2948128864405106898167602534290063212953947573696",
+  "halfmass_over_pi_exact": "31186659027068928676426177027790260892865997105135/2948128864405106898167602534290063212953947573696",
+  "source_only": true,
+  "D_minimum_certified": false,
+  "complete_terminal_coverage": true,
+  "checked_boxes": 3,
+  "accepted_leaves": 3,
+  "unresolved_leaves": 0,
+  "unchecked_stack": 0,
+  "additional_origin_repair_sufficient_exact": "0",
+  "elapsed_seconds": 0.0004729169886559248,
+  "limits": {
+    "max_seconds": 20,
+    "max_boxes": 100,
+    "max_depth": 0,
+    "initial_subdiv": 1
+  },
+  "accepted": [
+    {
+      "cell": 0,
+      "box": [
+        "-1/16",
+        "1/16",
+        "-1/16",
+        "1/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "92338363548763355953467050810247091397768006190",
+      "error_fixed": "0",
+      "repair_upper": "0",
+      "curvature_intervals_fixed": [
+        [
+          "-3167103500742247610636694175547067109615362131340",
+          "-3007792331608398261634867656287511862199104020737"
+        ],
+        [
+          "-3167103500742247610636694175547067109615362131340",
+          "-3007792331608398261634867656287511862199104020737"
+        ]
+      ]
+    },
+    {
+      "cell": 1,
+      "box": [
+        "1/16",
+        "3/16",
+        "-1/16",
+        "1/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "45462073997618037399901408514134778349273444823",
+      "error_fixed": "0",
+      "repair_upper": "0",
+      "curvature_intervals_fixed": [
+        [
+          "-3089335187775002334740577536113462021524953500151",
+          "-2483273517608013141644768858909710612458405959304"
+        ],
+        [
+          "-3154317849860999933634227684396363773468287575915",
+          "-2916991053673050389585513161003360560698753710673"
+        ]
+      ]
+    },
+    {
+      "cell": 2,
+      "box": [
+        "1/16",
+        "3/16",
+        "1/16",
+        "3/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "2",
+      "error_fixed": "0",
+      "repair_upper": "0",
+      "curvature_intervals_fixed": [
+        [
+          "-3076888837715505676274234699420615330729439891512",
+          "-2408306769906639160010209799018096707176642760527"
+        ],
+        [
+          "-3076888837715505676274234699420615330729439891512",
+          "-2408306769906639160010209799018096707176642760527"
+        ]
+      ]
+    }
+  ],
+  "unresolved": [],
+  "split_records": [],
+  "negative_corner_witnesses": [],
+  "unchecked": [],
+  "scope": "Only positivity of lambda*p_h+P_h*f-f on all source cells; exterior positivity automatic. No D-minimum certificate or new upper constant."
+}

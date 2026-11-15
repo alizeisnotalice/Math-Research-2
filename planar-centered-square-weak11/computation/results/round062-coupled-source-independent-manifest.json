@@ -1,0 +1,88 @@
+{
+  "round": 62,
+  "date": "2026-11-15",
+  "status": "BOUNDED SOURCE CHECKER PASS; TERMINATION PROOF REQUIRES JOINT BITS/ATAN-TERMS QUALIFICATION",
+  "scope": "Independent proof/code review and exact rational toy checks; no MATLAB launch, no optimized source/full-D/new-C2 certificate.",
+  "files": [
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/reviews/r062-coupled-source-independent-review.md",
+      "destination": "planar-centered-square-weak11/reviews/r062-coupled-source-independent-review.md",
+      "bytes": 9817,
+      "sha256": "712353a1a38353ce8f0d0e02494f05e12fbf51f11f2e7da0c51690a870a3cd5c"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r062_coupled_source.py",
+      "destination": "planar-centered-square-weak11/computation/review_r062_coupled_source.py",
+      "bytes": 9783,
+      "sha256": "a15e5e0a96d94d0b41cf2e8de777133908dec810d3430bec2b6e0aba6cea49e4"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round062-coupled-source-independent.json",
+      "destination": "planar-centered-square-weak11/computation/results/round062-coupled-source-independent.json",
+      "bytes": 3222,
+      "sha256": "ae37a71538e2010ed27975844d0f787b0058dfe73901310418d6a6cebc1731bb"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/finalize_r062_independent_review.py",
+      "destination": "planar-centered-square-weak11/computation/finalize_r062_independent_review.py",
+      "bytes": 2292,
+      "sha256": "e56c59f14fa227b16aa3edf7c34eacea0a91d6ca2dd21350ee3bbd8e96781e3d"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round062-independent-toys/invalid-toy-input.json",
+      "destination": "planar-centered-square-weak11/computation/results/round062-independent-toys/invalid-toy-input.json",
+      "bytes": 103,
+      "sha256": "d6de2b0776bf8545682e5281cf8422d932862cf22bd3e2ca6fcf369b615551d7"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round062-independent-toys/budget_incomplete.json",
+      "destination": "planar-centered-square-weak11/computation/results/round062-independent-toys/budget_incomplete.json",
+      "bytes": 3447,
+      "sha256": "a8de6a15738e8442826241d282625901d3b07a5ccafb2286286a1ea2a3f6e5e0"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round062-independent-toys/negative_early.json",
+      "destination": "planar-centered-square-weak11/computation/results/round062-independent-toys/negative_early.json",
+      "bytes": 3450,
+      "sha256": "74768398c51454d7429a312818af18a4eeb0bde247ab36f105b9130bc7890c49"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round062-independent-toys/negative_complete.json",
+      "destination": "planar-centered-square-weak11/computation/results/round062-independent-toys/negative_complete.json",
+      "bytes": 6404,
+      "sha256": "8ddd547c3948492d2d8bdc8595f3ebf10fb43df385b24eb80e1cdc09a627d16f"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round062-independent-toys/repaired-toy.json",
+      "destination": "planar-centered-square-weak11/computation/results/round062-independent-toys/repaired-toy.json",
+      "bytes": 3792,
+      "sha256": "f1acccfcac2353fcde82b676c399ae2a435bdb17476946ab9097451d75f85aa2"
+    }
+  ],
+  "total_payload_bytes": 42310,
+  "author_sources_at_successful_run": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r062-coupled-wholecell-source-interface.md",
+      "sha256": "3afd1ca1d3c3762ec4ba6e997fca18717b9a4942b2a0bafcd640ffbeb88f9042"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r062_coupled_source_verify.py",
+      "sha256": "65143813817936d4db538aa0a4b1f4f6de7d55e1070b211bf05f4211f9710827"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/cauchy_occupation_coupled_lp.m",
+      "sha256": "fb69861a37adaeba94ac57dfbf9921889970b2b53b07b2df166e50e39d29c5a7"
+    }
+  ],
+  "actual_run": {
+    "python": "3.13.18",
+    "sympy": "1.14.0",
+    "exit_code": 0,
+    "seconds": 0.3966319999890402,
+    "symbolic_identities": 5,
+    "scalar_jet_points": 60,
+    "rectangle_probability_points": 108,
+    "source_coverage_repair_runs": 4
+  },
+  "git": "No delegated commit or push; root owns integration."
+}

@@ -1,0 +1,97 @@
+{
+  "status": "PASS_R62_V2_DELTA",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 1.1549007089924999,
+  "script_sha256": "939c8c08eeea64e8bcb338f05c10de6bf13c98ff247e88d7e57f7572dbcbe211",
+  "changed_AST_functions": [
+    "cauchyjet",
+    "kprime",
+    "self_test"
+  ],
+  "statistics": {
+    "rational_sample_points": 1365,
+    "intervals": 273,
+    "negative_critical_inclusions": 108,
+    "positive_critical_inclusions": 108
+  },
+  "symbolic_identities": 2,
+  "aux_rational_rows": [
+    {
+      "coefficients": [
+        "1",
+        "1"
+      ],
+      "signed_upper": "-1",
+      "eta": "0",
+      "separate_positive_sum": "2"
+    },
+    {
+      "coefficients": [
+        "1/2",
+        "3"
+      ],
+      "signed_upper": "-8",
+      "eta": "0",
+      "separate_positive_sum": "1"
+    },
+    {
+      "coefficients": [
+        "4",
+        "1/8"
+      ],
+      "signed_upper": "61/8",
+      "eta": "61/8",
+      "separate_positive_sum": "8"
+    }
+  ],
+  "source_toy_runs": [
+    {
+      "name": "negative_incomplete",
+      "status": "INVALID_SOURCE",
+      "complete": false,
+      "repair": null,
+      "checked": 1
+    },
+    {
+      "name": "negative_complete",
+      "status": "INVALID_SOURCE",
+      "complete": true,
+      "repair": "480813725086124383107364967521964386774130441056/46064513506329795283868789598282237702405430839",
+      "checked": 3
+    },
+    {
+      "name": "repaired_complete",
+      "status": "PASS_SOURCE_NONNEGATIVE",
+      "complete": true,
+      "origin_amplitude": "480813725086124383107364967521964386774130441056/46064513506329795283868789598282237702405430839",
+      "checked": 3
+    }
+  ],
+  "termination_joint_precision_fix_confirmed": true,
+  "source_pins": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r062_coupled_source_verify.py",
+      "sha256": "65143813817936d4db538aa0a4b1f4f6de7d55e1070b211bf05f4211f9710827"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r062_coupled_source_verify_v2.py",
+      "sha256": "9ee1de8d1944cfd567a50a79c37d772e10cb16b121cca71f1676645f9197b2e7"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/cauchy_occupation_coupled_aux_lp.m",
+      "sha256": "5ee56d623be52fe53c709fcd02de0fd6e64f2a6e4cf90ebe73e57cae0fc1142e"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r062-coupled-wholecell-source-interface.md",
+      "sha256": "f8a34101dea4c5f800d1fcb358f34fdc8b4adad6f28442840d2fc5353e1b0f92"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r062_coupled_source.py",
+      "sha256": "a15e5e0a96d94d0b41cf2e8de777133908dec810d3430bec2b6e0aba6cea49e4"
+    }
+  ],
+  "arithmetic": "Exact Fraction, independent 240-step sqrt3 bracket, independent 120-term atan brackets, symbolic derivative identities.",
+  "scope": "V2 derivative extrema and signed-auxiliary LP delta only; no MATLAB launch, no optimized candidate or full-D certificate."
+}

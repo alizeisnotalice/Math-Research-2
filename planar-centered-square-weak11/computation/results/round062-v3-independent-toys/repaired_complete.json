@@ -1,0 +1,116 @@
+{
+  "status": "PASS_SOURCE_NONNEGATIVE",
+  "input": "/Volumes/data/CodexTemp/T2/r062-independent-v3-audit/toy-input.json",
+  "input_sha256": "d6de2b0776bf8545682e5281cf8422d932862cf22bd3e2ca6fcf369b615551d7",
+  "script_sha256": "58cc151a64c30920c25fbb3a24f79ef7651e5d762210532678cf12ac5a39edc0",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "bits": 160,
+  "atan_terms": 88,
+  "pi_fixed": [
+    "4591442807048218921384805199743311128454155023540",
+    "4591442807048218921384805199743311128454155025340"
+  ],
+  "rounding": "Every signed arithmetic operation uses exact integers and outward floor/ceil at common scale 2^160; atan alternating remainder included.",
+  "h": "1",
+  "delta": "1/8",
+  "N": 1,
+  "origin_repair_added_exact": "1442441175258373149322094902565893160322391323166/138193540518989385851606368794846713107216292517",
+  "source_origin_mass_exact": "1442441175258373149322094902565893160322391323166/138193540518989385851606368794846713107216292517",
+  "mu_mass_exact": "93559977081206786029278531083370782678597991315277/8844386593215320694502807602870189638861842721088",
+  "halfmass_over_pi_exact": "93559977081206786029278531083370782678597991315277/8844386593215320694502807602870189638861842721088",
+  "source_only": true,
+  "D_minimum_certified": false,
+  "curvature_oracle": "exact telescoped signed density jumps",
+  "nonzero_vertical_jumps": 6,
+  "nonzero_horizontal_jumps": 6,
+  "complete_terminal_coverage": true,
+  "checked_boxes": 3,
+  "accepted_leaves": 3,
+  "unresolved_leaves": 0,
+  "unchecked_stack": 0,
+  "additional_origin_repair_sufficient_exact": "0",
+  "elapsed_seconds": 0.0006315420032478869,
+  "limits": {
+    "max_seconds": 20,
+    "max_boxes": 100,
+    "max_depth": 0,
+    "initial_subdiv": 1
+  },
+  "accepted": [
+    {
+      "cell": 0,
+      "box": [
+        "-1/16",
+        "1/16",
+        "-1/16",
+        "1/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "92338363548763355953467050810247091397768006188",
+      "error_fixed": "0",
+      "repair_upper": "0",
+      "curvature_intervals_fixed": [
+        [
+          "-3140290293747934861453277371248767921133112433565",
+          "-3034035227451482522373868920640977308307330042761"
+        ],
+        [
+          "-3140290293747934861453277371248767921133112433565",
+          "-3034035227451482522373868920640977308307330042761"
+        ]
+      ]
+    },
+    {
+      "cell": 1,
+      "box": [
+        "1/16",
+        "3/16",
+        "-1/16",
+        "1/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "45462073997618037399901408514134778349273444821",
+      "error_fixed": "0",
+      "repair_upper": "0",
+      "curvature_intervals_fixed": [
+        [
+          "-3064835663650657316293359543431733199868918687623",
+          "-2507251942118616731961005957070046146586272512741"
+        ],
+        [
+          "-3127772477041164235274737125906106490548978967545",
+          "-2942743573596830567013396214539826993566752153263"
+        ]
+      ]
+    },
+    {
+      "cell": 2,
+      "box": [
+        "1/16",
+        "3/16",
+        "1/16",
+        "3/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "0",
+      "error_fixed": "0",
+      "repair_upper": "0",
+      "curvature_intervals_fixed": [
+        [
+          "-3052634036642018257249829939554409227716014530268",
+          "-2431837132510006644792391006023194172329604140281"
+        ],
+        [
+          "-3052634036642018257249829939554409227716014530268",
+          "-2431837132510006644792391006023194172329604140281"
+        ]
+      ]
+    }
+  ],
+  "unresolved": [],
+  "split_records": [],
+  "negative_corner_witnesses": [],
+  "unchecked": [],
+  "scope": "Only positivity of lambda*p_h+P_h*f-f on all source cells; exterior positivity automatic. No D-minimum certificate or new upper constant."
+}

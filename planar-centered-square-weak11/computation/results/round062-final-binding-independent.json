@@ -1,0 +1,325 @@
+{
+  "status": "PASS_FINAL_R62_BINDING_AND_COVERAGE_AUDIT",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "script_sha256": "b7c57cf6af8a79093c06087752ef886944a4b2af456c828b1bb5f5985e4abf8d",
+  "elapsed_seconds": 0.18062274999101646,
+  "final_proofs": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r062-coupled-wholecell-source-interface.md",
+      "sha256": "ee97c8df889c5b7658f4405531d0db47d54eab48c3c88bd4bbb6a8e2be813730",
+      "bytes": 15874
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r062-jump-telescoped-source-curvature.md",
+      "sha256": "130a10cff83b6a15f4298b6a04a2c898335ad7eba1751c041d9f894a0d98522e",
+      "bytes": 8597
+    }
+  ],
+  "frozen_independent_review_manifests": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round062-coupled-source-independent-manifest.json",
+      "sha256": "33e95bcbe1cc5a75280d5af41983204c143cada87ff8a12bb7e6e8f3f3c02d6d",
+      "bytes": 5201
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round062-v2-delta-independent-manifest.json",
+      "sha256": "3aca4d102cc1eea78302cadd438443ed8c833d313d6b1f6ecde9e3b46af6c8ce",
+      "bytes": 5531
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round062-v3-jump-independent-manifest.json",
+      "sha256": "f87f43caac0ccbd55e6720bd6b82f55ed32364e377e18f3d985c0c54caa93600",
+      "bytes": 5399
+    }
+  ],
+  "runs": [
+    {
+      "label": "v1-h015-d125-s2",
+      "root_directory": "/Volumes/data/CodexProjects/T2/.local/compute/r062-pilot",
+      "archive_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/results/r062-coupled-source/v1-h015-d125-s2",
+      "h": "3/20",
+      "delta": "1/8",
+      "N": 16,
+      "subdiv": 2,
+      "MATLAB_pid": 46139,
+      "MATLAB_exit_status": 0,
+      "receipt_pid_absent": true,
+      "current_pid_absent": true,
+      "MATLAB_wall_seconds": "25.270965999981854",
+      "source_checker_seconds": "1.64742983301403",
+      "source_status": "PASS_SOURCE_NONNEGATIVE",
+      "complete_leaves": 612,
+      "all_leaf_bounds_nonnegative": true,
+      "geometric_initial_partition_exactly_covered": true,
+      "curvature_error_arithmetic_matched": true,
+      "min_stored_lower_fixed": "1036950073048182319066507422357476083980134",
+      "halfmass_over_pi_exact": "355375052752634298393/160000000000000000000",
+      "sampled_D_cost_display": "6.9777728437297561",
+      "D_minimum_certified": false,
+      "root_to_archive_three_files_byte_identical": true,
+      "artifacts": [
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-pilot/occupation-coupled-lp.json",
+          "sha256": "093ab95d5089a5da6760257338e07e9c2cccbe6ced65a2d0ef4bd7e03455d5f3",
+          "bytes": 9855
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-pilot/source-exact.json",
+          "sha256": "32dd024d79be793aa576161d369dd86fd65fb805d9a25f99ba8ef0727103b8a4",
+          "bytes": 395400
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-pilot/receipt.json",
+          "sha256": "70dd08ae0a6d4ae55379efa67ca0f144d6efcf421c8282a3e1aa70295b03cbad",
+          "bytes": 2475
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-pilot/run_pilot.py",
+          "sha256": "c87b23ba7f2f9597975c9afdb3b5d478a51d5e8fa48628129134617562978271",
+          "bytes": 1755
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-pilot/cauchy_occupation_coupled_lp.m",
+          "sha256": "fb69861a37adaeba94ac57dfbf9921889970b2b53b07b2df166e50e39d29c5a7",
+          "bytes": 5779
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-pilot/r062_coupled_source_verify.py",
+          "sha256": "65143813817936d4db538aa0a4b1f4f6de7d55e1070b211bf05f4211f9710827",
+          "bytes": 12924
+        }
+      ]
+    },
+    {
+      "label": "v2-h015-d125-s2",
+      "root_directory": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v2-pilot",
+      "archive_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/results/r062-coupled-source/v2-h015-d125-s2",
+      "h": "3/20",
+      "delta": "1/8",
+      "N": 16,
+      "subdiv": 2,
+      "MATLAB_pid": 51819,
+      "MATLAB_exit_status": 0,
+      "receipt_pid_absent": true,
+      "current_pid_absent": true,
+      "MATLAB_wall_seconds": "22.26277083400055",
+      "source_checker_seconds": "1.8196394160040654",
+      "source_status": "PASS_SOURCE_NONNEGATIVE",
+      "complete_leaves": 612,
+      "all_leaf_bounds_nonnegative": true,
+      "geometric_initial_partition_exactly_covered": true,
+      "curvature_error_arithmetic_matched": true,
+      "min_stored_lower_fixed": "905182774699957281455246609968010362091192",
+      "halfmass_over_pi_exact": "32413700406210501/15625000000000000",
+      "sampled_D_cost_display": "6.51716115659593",
+      "D_minimum_certified": false,
+      "root_to_archive_three_files_byte_identical": true,
+      "artifacts": [
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v2-pilot/occupation-coupled-aux-lp.json",
+          "sha256": "79240584f7993f3215fe8c847270511a82e2d307aec089245da0867528fd75c8",
+          "bytes": 10083
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v2-pilot/source-exact.json",
+          "sha256": "ec0d5dd427fcf14f9ee417d81a5db61d0326033d098e426999fcd342f16685dd",
+          "bytes": 394165
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v2-pilot/receipt.json",
+          "sha256": "e968b0cb8fae418210deb34a7246185df0aa2179756af447eb1ed65662104dc6",
+          "bytes": 2250
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v2-pilot/run_pilot.py",
+          "sha256": "0cc4cb001d1d2cf70224c38eba2d29a5f1a2a3ab93937c7a8a48f398f49a437e",
+          "bytes": 1765
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v2-pilot/cauchy_occupation_coupled_aux_lp.m",
+          "sha256": "5ee56d623be52fe53c709fcd02de0fd6e64f2a6e4cf90ebe73e57cae0fc1142e",
+          "bytes": 6283
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v2-pilot/r062_coupled_source_verify_v2.py",
+          "sha256": "9ee1de8d1944cfd567a50a79c37d772e10cb16b121cca71f1676645f9197b2e7",
+          "bytes": 13594
+        }
+      ]
+    },
+    {
+      "label": "v3-h015-d125-s2",
+      "root_directory": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-pilot",
+      "archive_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/results/r062-coupled-source/v3-h015-d125-s2",
+      "h": "3/20",
+      "delta": "1/8",
+      "N": 16,
+      "subdiv": 2,
+      "MATLAB_pid": 55789,
+      "MATLAB_exit_status": 0,
+      "receipt_pid_absent": true,
+      "current_pid_absent": true,
+      "MATLAB_wall_seconds": "26.300603916984983",
+      "source_checker_seconds": "2.7093833750113845",
+      "source_status": "PASS_SOURCE_NONNEGATIVE",
+      "complete_leaves": 612,
+      "all_leaf_bounds_nonnegative": true,
+      "geometric_initial_partition_exactly_covered": true,
+      "curvature_error_arithmetic_matched": true,
+      "min_stored_lower_fixed": "858781304006677635887483897155223343979967",
+      "halfmass_over_pi_exact": "322202087025565676571/160000000000000000000",
+      "sampled_D_cost_display": "6.3264231848176014",
+      "D_minimum_certified": false,
+      "root_to_archive_three_files_byte_identical": true,
+      "artifacts": [
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-pilot/occupation-jump-aux-lp.json",
+          "sha256": "1098aaf3c5c864a7cbb7cc2848791d6c237f9c1dff73b9031949a34ff0b9a61b",
+          "bytes": 10213
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-pilot/source-exact.json",
+          "sha256": "f26e1902bb64e013c749c59de5cb75bfa4f017a3b1ff845b260c5e9fece81d17",
+          "bytes": 393166
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-pilot/receipt.json",
+          "sha256": "a2e6891b6f2b376030b0661ecb9a776675f248d698948ea05a5e7d30c3090b3a",
+          "bytes": 2564
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-pilot/run_pilot.py",
+          "sha256": "963cf169dd16e8102eb3bb54a5392b984542bd151be29088b054bf424fda8796",
+          "bytes": 1756
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-pilot/cauchy_occupation_jump_aux_lp.m",
+          "sha256": "c23c30dd82c85fd07023bd103a1b54af2eb8fde820fb463294e48ff6e5d62bc0",
+          "bytes": 7663
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-pilot/r062_coupled_source_verify_v3.py",
+          "sha256": "58cc151a64c30920c25fbb3a24f79ef7651e5d762210532678cf12ac5a39edc0",
+          "bytes": 14631
+        }
+      ]
+    },
+    {
+      "label": "v3-h015-d125-s4",
+      "root_directory": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h015-s4",
+      "archive_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/results/r062-coupled-source/v3-h015-d125-s4",
+      "h": "3/20",
+      "delta": "1/8",
+      "N": 16,
+      "subdiv": 4,
+      "MATLAB_pid": 56582,
+      "MATLAB_exit_status": 0,
+      "receipt_pid_absent": true,
+      "current_pid_absent": true,
+      "MATLAB_wall_seconds": "57.69145237500197",
+      "source_checker_seconds": "10.31574604200432",
+      "source_status": "PASS_SOURCE_NONNEGATIVE",
+      "complete_leaves": 2448,
+      "all_leaf_bounds_nonnegative": true,
+      "geometric_initial_partition_exactly_covered": true,
+      "curvature_error_arithmetic_matched": true,
+      "min_stored_lower_fixed": "818545508539263709604090371552201959828959",
+      "halfmass_over_pi_exact": "15739558622277994521/8000000000000000000",
+      "sampled_D_cost_display": "6.180910217311804",
+      "D_minimum_certified": false,
+      "root_to_archive_three_files_byte_identical": true,
+      "artifacts": [
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h015-s4/occupation-jump-aux-lp.json",
+          "sha256": "cb080857c2c5bd330e07b71ca36d812de5850c6c65ab2aecd265187bae00a146",
+          "bytes": 10202
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h015-s4/source-exact.json",
+          "sha256": "2edda600d203f5ae27260c5a99a5c2ffbfb614f1ade60b65b51798a261722a99",
+          "bytes": 1571459
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h015-s4/receipt.json",
+          "sha256": "9e1d8a9be0e96e46be5c9b2b2515c35ec54c25b3dcd41ba8dc8c507808307738",
+          "bytes": 4912
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h015-s4/run_pilot.py",
+          "sha256": "8c70e3197434249bf168e4dbe6b4e92ff7cd5c9fefdabd0957694c2defde942e",
+          "bytes": 1756
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h015-s4/cauchy_occupation_jump_aux_lp.m",
+          "sha256": "c23c30dd82c85fd07023bd103a1b54af2eb8fde820fb463294e48ff6e5d62bc0",
+          "bytes": 7663
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h015-s4/r062_coupled_source_verify_v3.py",
+          "sha256": "58cc151a64c30920c25fbb3a24f79ef7651e5d762210532678cf12ac5a39edc0",
+          "bytes": 14631
+        }
+      ]
+    },
+    {
+      "label": "v3-h0075-d125-s4",
+      "root_directory": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h0075-s4",
+      "archive_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/results/r062-coupled-source/v3-h0075-d125-s4",
+      "h": "3/40",
+      "delta": "1/8",
+      "N": 16,
+      "subdiv": 4,
+      "MATLAB_pid": 56583,
+      "MATLAB_exit_status": 0,
+      "receipt_pid_absent": true,
+      "current_pid_absent": true,
+      "MATLAB_wall_seconds": "88.00823083298746",
+      "source_checker_seconds": "20.957734958006768",
+      "source_status": "PASS_SOURCE_NONNEGATIVE",
+      "complete_leaves": 2448,
+      "all_leaf_bounds_nonnegative": true,
+      "geometric_initial_partition_exactly_covered": true,
+      "curvature_error_arithmetic_matched": true,
+      "min_stored_lower_fixed": "3331153553104564342376000315995751108124999",
+      "halfmass_over_pi_exact": "2267532371884869648453/640000000000000000000",
+      "sampled_D_cost_display": "11.130723502016476",
+      "D_minimum_certified": false,
+      "root_to_archive_three_files_byte_identical": true,
+      "artifacts": [
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h0075-s4/occupation-jump-aux-lp.json",
+          "sha256": "2ae9e0dc960fe98a23689be796965de4cb29ff5284220e07d1a7c3275e1b17b3",
+          "bytes": 11275
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h0075-s4/source-exact.json",
+          "sha256": "52bb58b1d9c73c1ec7f6559995b6136888e72f107345820a96e9ddd72cf7aa69",
+          "bytes": 1582358
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h0075-s4/receipt.json",
+          "sha256": "04739b5c824722deb427cc92bba2a6cc98c79f902a868f0ff5e786c19ab444b2",
+          "bytes": 7181
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h0075-s4/run_pilot.py",
+          "sha256": "0878ff82f89c7f2f471cd035f57b9fa4ba7ec37f9f5985e4f14816cc9e9284fe",
+          "bytes": 1757
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h0075-s4/cauchy_occupation_jump_aux_lp.m",
+          "sha256": "c23c30dd82c85fd07023bd103a1b54af2eb8fde820fb463294e48ff6e5d62bc0",
+          "bytes": 7663
+        },
+        {
+          "path": "/Volumes/data/CodexProjects/T2/.local/compute/r062-v3-h0075-s4/r062_coupled_source_verify_v3.py",
+          "sha256": "58cc151a64c30920c25fbb3a24f79ef7651e5d762210532678cf12ac5a39edc0",
+          "bytes": 14631
+        }
+      ]
+    }
+  ],
+  "total_source_leaves": 6732,
+  "scope": "Artifact hashes, receipts, exact saved candidate masses, complete stored geometric leaf coverage and stored curvature-error arithmetic checked. NO full source residual reevaluation or independent rerun of optimized candidates; no MATLAB launch or full-D certificate."
+}

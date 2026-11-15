@@ -1,0 +1,222 @@
+{
+  "status": "INVALID_SOURCE",
+  "input": "/Volumes/data/CodexTemp/T2/r062-independent-v2-audit/toy-input.json",
+  "input_sha256": "d6de2b0776bf8545682e5281cf8422d932862cf22bd3e2ca6fcf369b615551d7",
+  "script_sha256": "9ee1de8d1944cfd567a50a79c37d772e10cb16b121cca71f1676645f9197b2e7",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "bits": 160,
+  "atan_terms": 88,
+  "pi_fixed": [
+    "4591442807048218921384805199743311128454155023540",
+    "4591442807048218921384805199743311128454155025340"
+  ],
+  "rounding": "Every signed arithmetic operation uses exact integers and outward floor/ceil at common scale 2^160; atan alternating remainder included.",
+  "h": "1",
+  "delta": "1/8",
+  "N": 1,
+  "origin_repair_added_exact": "0",
+  "source_origin_mass_exact": "0",
+  "mu_mass_exact": "9/64",
+  "halfmass_over_pi_exact": "9/64",
+  "source_only": true,
+  "D_minimum_certified": false,
+  "complete_terminal_coverage": true,
+  "checked_boxes": 3,
+  "accepted_leaves": 0,
+  "unresolved_leaves": 3,
+  "unchecked_stack": 0,
+  "additional_origin_repair_sufficient_exact": "480813725086124383107364967521964386774130441056/46064513506329795283868789598282237702405430839",
+  "elapsed_seconds": 0.0006534160056617111,
+  "limits": {
+    "max_seconds": 20,
+    "max_boxes": 100,
+    "max_depth": 0,
+    "initial_subdiv": 1
+  },
+  "accepted": [],
+  "unresolved": [
+    {
+      "cell": 0,
+      "box": [
+        "-1/16",
+        "1/16",
+        "-1/16",
+        "1/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "-1441302290095035254338045531252915820737766682749",
+      "error_fixed": "2",
+      "repair_upper": "1441302290095035254338045531252915820737766682749/146930935864979479196188545604295453798759468607",
+      "curvature_intervals_fixed": [
+        [
+          "-75812255243002786077852789661756831794319322807",
+          "12"
+        ],
+        [
+          "-75812255243002786077852789661756831794319322807",
+          "12"
+        ]
+      ]
+    },
+    {
+      "cell": 1,
+      "box": [
+        "1/16",
+        "3/16",
+        "-1/16",
+        "1/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "-1441879993875801746920546642769762838325565857280",
+      "error_fixed": "2",
+      "repair_upper": "65539999721627352132752120125898310832980266240/6477058407770107401958911873122458254936738153",
+      "curvature_intervals_fixed": [
+        [
+          "-69793667371258767396198678043577066114134226923",
+          "18"
+        ],
+        [
+          "-75054974966810536408300078222669488946159330834",
+          "12"
+        ]
+      ]
+    },
+    {
+      "cell": 2,
+      "box": [
+        "1/16",
+        "3/16",
+        "1/16",
+        "3/16"
+      ],
+      "depth": 0,
+      "lower_fixed": "-1442441175258373149322094902565893160322391323168",
+      "error_fixed": "2",
+      "repair_upper": "480813725086124383107364967521964386774130441056/46064513506329795283868789598282237702405430839",
+      "curvature_intervals_fixed": [
+        [
+          "-69096506107107414639367043133103468530335868372",
+          "18"
+        ],
+        [
+          "-69096506107107414639367043133103468530335868372",
+          "18"
+        ]
+      ]
+    }
+  ],
+  "split_records": [],
+  "negative_corner_witnesses": [
+    {
+      "cell": 0,
+      "point": [
+        "-1/16",
+        "-1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 0,
+      "point": [
+        "-1/16",
+        "1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 0,
+      "point": [
+        "1/16",
+        "-1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 0,
+      "point": [
+        "1/16",
+        "1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 1,
+      "point": [
+        "1/16",
+        "-1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 1,
+      "point": [
+        "1/16",
+        "1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 1,
+      "point": [
+        "3/16",
+        "-1/16"
+      ],
+      "residual_upper_fixed": "-1441879993875801746920546642769762838325565857221",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 1,
+      "point": [
+        "3/16",
+        "1/16"
+      ],
+      "residual_upper_fixed": "-1441879993875801746920546642769762838325565857221",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 2,
+      "point": [
+        "1/16",
+        "1/16"
+      ],
+      "residual_upper_fixed": "-1441302290095035254338045531252915820737766682692",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 2,
+      "point": [
+        "1/16",
+        "3/16"
+      ],
+      "residual_upper_fixed": "-1441879993875801746920546642769762838325565857221",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 2,
+      "point": [
+        "3/16",
+        "1/16"
+      ],
+      "residual_upper_fixed": "-1441879993875801746920546642769762838325565857221",
+      "one_sided_positive_area": true
+    },
+    {
+      "cell": 2,
+      "point": [
+        "3/16",
+        "3/16"
+      ],
+      "residual_upper_fixed": "-1442441175258373149322094902565893160322391323108",
+      "one_sided_positive_area": true
+    }
+  ],
+  "unchecked": [],
+  "scope": "Only positivity of lambda*p_h+P_h*f-f on all source cells; exterior positivity automatic. No D-minimum certificate or new upper constant."
+}
