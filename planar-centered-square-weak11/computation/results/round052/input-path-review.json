@@ -1,0 +1,275 @@
+{
+  "status": "passed",
+  "scope": "R52 exact R43-to-R48 mass path, q2 source identity/physical phase, current frozen handoff hashes and uniform tail hypotheses only; no bbox, endpoint-order, effective-wall, mixed-derivative or area replay",
+  "parameter_domain": {
+    "t": [
+      "0",
+      "1"
+    ],
+    "z_physical": [
+      "0",
+      "328734960629/50000000000000000"
+    ],
+    "z_normalized_to_R8_Px": [
+      "0",
+      "1/500000"
+    ],
+    "slice_center_z": "328734960629/100000000000000000",
+    "slice_requested_H": "328734960629/10000000000000000000"
+  },
+  "R8_period_x": "328734960629/100000000000",
+  "target_period_x": "328734960629/50000000000",
+  "target_period_y": "175603458831370317/32000000000000000",
+  "mass_total": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+  "mass_derivative_sum": "0",
+  "mass_parameters_t0": {
+    "a": "-1/8",
+    "b": "42/5"
+  },
+  "mass_parameters_t1": {
+    "a": "-13/200",
+    "b": "39/5"
+  },
+  "mass_derivative_formula": "3/50*(V0+V1)-3/5*(V4+V5+V6+V7)",
+  "q2": {
+    "quadrant_index_zero_based": 2,
+    "copy_x": 1,
+    "copy_y": 0,
+    "original_R8_labels_zero_based": [
+      28,
+      29
+    ],
+    "target_labels_zero_based": [
+      130,
+      131
+    ],
+    "physical_velocity": 1
+  },
+  "corners": [
+    {
+      "t": "0",
+      "z_physical": "0",
+      "task_id": "0000",
+      "canonical_sha256": "70c3f0b1213d1dbb5dca7c407b644672fe88ce7bdecd0e1147ae2b1567ea7ad6",
+      "file_sha256": "97c70896d07591e65e690be51b08a02b439f070440d3748aad12d0b2ae140dff"
+    },
+    {
+      "t": "0",
+      "z_physical": "328734960629/50000000000000000",
+      "task_id": "0002",
+      "canonical_sha256": "b2f2dbddf3449d7bceca62a051cae7513b284c13f3e59d800e1a6b29cc92f0cf",
+      "file_sha256": "762f5ba90284144c2afcba613b6c7e46436d281c13c27800590f04a5e5d0294a"
+    },
+    {
+      "t": "1",
+      "z_physical": "0",
+      "task_id": "0010",
+      "canonical_sha256": "86156d092d377a76593d37c146a0e81ed064525dd6614fa6fdc8898970eba7aa",
+      "file_sha256": "b4e2f0f4d8132741747a4569e727431889dcb521840dd053b9a5f87527275e68"
+    },
+    {
+      "t": "1",
+      "z_physical": "328734960629/50000000000000000",
+      "task_id": "0012",
+      "canonical_sha256": "01d4ad6acf9b5fffe187d49ee928d64dec30e145c60d03e0af0fb4abdeb4566d",
+      "file_sha256": "69d7ab0eeb7b374ef3488685722bd962630e031a1958181e101e6111ec4b74b2"
+    }
+  ],
+  "slices": [
+    {
+      "mass_t": "0",
+      "input_canonical_sha256": "70c3f0b1213d1dbb5dca7c407b644672fe88ce7bdecd0e1147ae2b1567ea7ad6",
+      "source_catalog_count": 3953,
+      "source_catalog_sha256": "6ec2078f4c592e283bad023bc5954b4debca6f014e7df1bc0ef6fd196364cefe",
+      "source_order_sha256": "7165952a1558aa3fd014f3ecd473afa28222a4e33f0b123b820943d551400134",
+      "slab_file_sha256": "a8c2b207aea2abbe827e2d1dface2d91542c1663614298b8bce5c90fcec133ff",
+      "tail10": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "source_geometry_phase": "unshifted input + vx*z0 + period_shift*target_period"
+    },
+    {
+      "mass_t": "1/2",
+      "input_canonical_sha256": "017dfce0c772c3b1c96345a9021cd0f99916e91a5f9a9bd14be34b82cba51c0f",
+      "source_catalog_count": 3953,
+      "source_catalog_sha256": "c782b3001127c53c1aa3f0a1dbdda725c888494654304e3be75300caac471d72",
+      "source_order_sha256": "7165952a1558aa3fd014f3ecd473afa28222a4e33f0b123b820943d551400134",
+      "slab_file_sha256": "28cbde8a37b7e945e69e479ad5b2dd8403fbee772ec19371f91ee1bc60968589",
+      "tail10": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "source_geometry_phase": "unshifted input + vx*z0 + period_shift*target_period"
+    },
+    {
+      "mass_t": "1",
+      "input_canonical_sha256": "86156d092d377a76593d37c146a0e81ed064525dd6614fa6fdc8898970eba7aa",
+      "source_catalog_count": 3953,
+      "source_catalog_sha256": "402c4200bcc7bff001cb08ad1d06578b22c230336ab5216fb0ce6f586b33929d",
+      "source_order_sha256": "7165952a1558aa3fd014f3ecd473afa28222a4e33f0b123b820943d551400134",
+      "slab_file_sha256": "a5a4d1965c5ef0b11ce249c430a7dfd8a886927f3c7dcab08c745513c292fb93",
+      "tail10": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "source_geometry_phase": "unshifted input + vx*z0 + period_shift*target_period"
+    }
+  ],
+  "uniform_domain_certificate": {
+    "strict_positive_mass_min": "1/1250",
+    "actual_mass_constant": true,
+    "kappa_endpoint_max": "25021/25000",
+    "lifted_delta_bound": "4741293388446998559/204800000000000000000000",
+    "dominated_tail_R5": "23817706932915372733562235728385533567726464267531246135599426668007807585698687576857/24029448793598644452574386739200000000000000000000000000000000000000000000000000000000",
+    "dominated_tail_R5_margin": "211741860683271719012151010814466432273535732468753864400573331992192414301312423143/24029448793598644452574386739200000000000000000000000000000000000000000000000000000000",
+    "periodic_count_tail_R10": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+    "periodic_count_tail_R10_margin": "232127798221275844204607953609293888809801794115125875164835259/24052915052186143128797603913750000000000000000000000000000000000",
+    "q_R5": 2,
+    "q_R10": 3,
+    "L1_inheritance": "Any separately certified inner area at any parameter in this domain transfers by (1-2q/N)^2 using actual mass; D=2^bits and epsilon=1/(2D). No new halo area is certified here."
+  },
+  "handoff_files_checked": [
+    {
+      "path": "prepare_slice.py",
+      "sha256": "5f5eb0d2ac5bc5c50ea87e26311525d8c7ddee4a4a003ab0313b50e642884d31",
+      "bytes": 4241
+    },
+    {
+      "path": "slice/manifest.json",
+      "sha256": "c36fad110db52fa3311d21a5d6144288efda37bb1a43e35b3cb30853dfc5d9f7",
+      "bytes": 6515
+    },
+    {
+      "path": "slice/midmass_t_half.json",
+      "sha256": "d6e0ccfacc4e70b996c2af8ec88486fbb887b917b61c5f3899bbd39dfc3a9fa3",
+      "bytes": 44801
+    },
+    {
+      "path": "slice/velocity_x.json",
+      "sha256": "09b06a3ef8f08a9249a712462d7f5f7f9035b30fc7598c7471acf51c7ae1c2ff",
+      "bytes": 613
+    },
+    {
+      "path": "slice/velocity_mass.json",
+      "sha256": "e50e8fe778b45fc3f5742a7575c28bb0e354375678485ca7f18c6a82d4322211",
+      "bytes": 2759
+    },
+    {
+      "path": "run_one_axis.py",
+      "sha256": "baf21ae12843c8431f5ab9db76e297dc36fe967fab8f2f9f8daaf3413da563af",
+      "bytes": 1689
+    },
+    {
+      "path": "run_one_axis_t0.py",
+      "sha256": "2c71ff705b7c49f866052f8b021c5dc5760768fb4fbb961e0174c9a0262a7f60",
+      "bytes": 1688
+    },
+    {
+      "path": "run_one_axis_t1.py",
+      "sha256": "9f8493f6dab3a1acf0734f00b4907377c4252af9bca642c937c1208fa90eab86",
+      "bytes": 1688
+    },
+    {
+      "path": "one_axis/run_manifest.json",
+      "sha256": "e8d4786bbbf0d7a781c8ca3c4794bf81d4c5e30bdbb590a29869183ded889b43",
+      "bytes": 1820
+    },
+    {
+      "path": "one_axis/slab.json",
+      "sha256": "28cbde8a37b7e945e69e479ad5b2dd8403fbee772ec19371f91ee1bc60968589",
+      "bytes": 32381466
+    },
+    {
+      "path": "one_axis/slope.json",
+      "sha256": "d07ed223b9833b767e9698627ef84d4a4fb6e3385ade2a8840e8861ad886725e",
+      "bytes": 71260
+    },
+    {
+      "path": "one_axis_t0/run_manifest.json",
+      "sha256": "ec21748d7923a173d93812217297b43ca2e16a22977a2dab7648302f466a81f3",
+      "bytes": 1825
+    },
+    {
+      "path": "one_axis_t0/slab.json",
+      "sha256": "a8c2b207aea2abbe827e2d1dface2d91542c1663614298b8bce5c90fcec133ff",
+      "bytes": 32143208
+    },
+    {
+      "path": "one_axis_t0/slope.json",
+      "sha256": "8663a3429df4aa8dd9fae1e62ef2df283caeb94df1dddcc24865b27e9b234564",
+      "bytes": 70237
+    },
+    {
+      "path": "one_axis_t1/run_manifest.json",
+      "sha256": "48491a5afd68b14efe77fdf49be466662f64380a8dfbcf0abc78972581141d19",
+      "bytes": 1825
+    },
+    {
+      "path": "one_axis_t1/slab.json",
+      "sha256": "a5a4d1965c5ef0b11ce249c430a7dfd8a886927f3c7dcab08c745513c292fb93",
+      "bytes": 32305160
+    },
+    {
+      "path": "one_axis_t1/slope.json",
+      "sha256": "212148abfd7485c5ed23808089ca8921a11d725c3a93c4597cbed25db0e551b9",
+      "bytes": 71211
+    },
+    {
+      "path": "compare_box_orders.py",
+      "sha256": "c078bc1675cbe8e0353f469109680cd6fa0d5c32be08ebc3bdf69e0c39ed3313",
+      "bytes": 3056
+    },
+    {
+      "path": "box_order_comparison.json",
+      "sha256": "0a1e0c739c996e44e46fea9eb457b754857dfaf6ca413429a02fe5214a34a686",
+      "bytes": 2985
+    },
+    {
+      "path": "verify_wall_witness.py",
+      "sha256": "fc5c663b78b97f000b68c2ea753f0621c7537a6fb19cfa2fbf6b738afff20597",
+      "bytes": 2381
+    },
+    {
+      "path": "wall_witness.json",
+      "sha256": "1b3241177e4d8abe55c20ac4616bc4138895d29c69f1789665084615769f9366",
+      "bytes": 2127
+    }
+  ],
+  "files_sha256": {
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-ledger-audit/planar-centered-square-weak11/computation/inputs/r008_final_0611.json": "6c2e5d2d8fba5063bd45ecd4467f8c74cca5c0edbef958f90146a103029d5910",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-ledger-audit/planar-centered-square-weak11/computation/inputs/r014_final_0935.json": "498422cc89eecb00436d38ebf84df0028b5c5521db1d762e904d6226292bdd65",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-ledger-audit/planar-centered-square-weak11/computation/results/round017/search_ledger.json": "b2b97958277874010877279c3a3eeb6a27511044a3306de15f313b9bf65e3d46",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round043/cross-group-refine/candidate_0195.json": "97c70896d07591e65e690be51b08a02b439f070440d3748aad12d0b2ae140dff",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/cross/candidate_0010.json": "b4e2f0f4d8132741747a4569e727431889dcb521840dd053b9a5f87527275e68",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round017/binary-mass/manifest.json": "9eb82bebf5c15bb91eabd31d8451c96d4d8fe77e1d41b7d14b2d33cde762cac4",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/cross/manifest.json": "8cebf80dbcc0486881ed1c245b73696837182b4fb3530ff420d2db95d1655ca2",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round048/mass-geometry/cross/results.json": "3340b6edfe0b34ce8869aff23ae60c59d0aa0f7ea9e58ba0884b6eb919dec237",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/manifest.json": "c36fad110db52fa3311d21a5d6144288efda37bb1a43e35b3cb30853dfc5d9f7",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/handoff.json": "e06c1e8a8ced63a71ef12e6a1e915d4f820be9d5ddcca05fea9f1332c3d892cd",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/corner_t0_z0.json": "97c70896d07591e65e690be51b08a02b439f070440d3748aad12d0b2ae140dff",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/corner_t0_z1.json": "762f5ba90284144c2afcba613b6c7e46436d281c13c27800590f04a5e5d0294a",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/corner_t1_z0.json": "b4e2f0f4d8132741747a4569e727431889dcb521840dd053b9a5f87527275e68",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/corner_t1_z1.json": "69d7ab0eeb7b374ef3488685722bd962630e031a1958181e101e6111ec4b74b2",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis_t0/slab.json": "a8c2b207aea2abbe827e2d1dface2d91542c1663614298b8bce5c90fcec133ff",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis/slab.json": "28cbde8a37b7e945e69e479ad5b2dd8403fbee772ec19371f91ee1bc60968589",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis_t1/slab.json": "a5a4d1965c5ef0b11ce249c430a7dfd8a886927f3c7dcab08c745513c292fb93",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/prepare_slice.py": "5f5eb0d2ac5bc5c50ea87e26311525d8c7ddee4a4a003ab0313b50e642884d31",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/midmass_t_half.json": "d6e0ccfacc4e70b996c2af8ec88486fbb887b917b61c5f3899bbd39dfc3a9fa3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/velocity_x.json": "09b06a3ef8f08a9249a712462d7f5f7f9035b30fc7598c7471acf51c7ae1c2ff",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/velocity_mass.json": "e50e8fe778b45fc3f5742a7575c28bb0e354375678485ca7f18c6a82d4322211",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/run_one_axis.py": "baf21ae12843c8431f5ab9db76e297dc36fe967fab8f2f9f8daaf3413da563af",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/run_one_axis_t0.py": "2c71ff705b7c49f866052f8b021c5dc5760768fb4fbb961e0174c9a0262a7f60",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/run_one_axis_t1.py": "9f8493f6dab3a1acf0734f00b4907377c4252af9bca642c937c1208fa90eab86",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis/run_manifest.json": "e8d4786bbbf0d7a781c8ca3c4794bf81d4c5e30bdbb590a29869183ded889b43",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis/slope.json": "d07ed223b9833b767e9698627ef84d4a4fb6e3385ade2a8840e8861ad886725e",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis_t0/run_manifest.json": "ec21748d7923a173d93812217297b43ca2e16a22977a2dab7648302f466a81f3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis_t0/slope.json": "8663a3429df4aa8dd9fae1e62ef2df283caeb94df1dddcc24865b27e9b234564",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis_t1/run_manifest.json": "48491a5afd68b14efe77fdf49be466662f64380a8dfbcf0abc78972581141d19",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis_t1/slope.json": "212148abfd7485c5ed23808089ca8921a11d725c3a93c4597cbed25db0e551b9",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/compare_box_orders.py": "c078bc1675cbe8e0353f469109680cd6fa0d5c32be08ebc3bdf69e0c39ed3313",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/box_order_comparison.json": "0a1e0c739c996e44e46fea9eb457b754857dfaf6ca413429a02fe5214a34a686",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/verify_wall_witness.py": "fc5c663b78b97f000b68c2ea753f0621c7537a6fb19cfa2fbf6b738afff20597",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/wall_witness.json": "1b3241177e4d8abe55c20ac4616bc4138895d29c69f1789665084615769f9366"
+  },
+  "script_sha256": "557f1b65b432e789a0cf8fffc0df6513867f848d0940d3df1bdc6e465f8b8ad5",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "command": [
+    "/Users/zzh/.local/bin/python3",
+    "planar-centered-square-weak11/computation/review_round052_input_path.py"
+  ],
+  "verified_utc": "2026-11-15T09:40:36.295357+00:00",
+  "elapsed_seconds": 0.4060475000005681
+}

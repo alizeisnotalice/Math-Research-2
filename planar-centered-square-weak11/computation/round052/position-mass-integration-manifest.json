@@ -1,0 +1,85 @@
+{
+  "round": 52,
+  "theme": "two-parameter midpoint mass/x candidate slab and omitted-empty certificate",
+  "status": "producer complete; independent omission audit and endpoint-union stage separate",
+  "source_workspace": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl",
+  "code_sha256": "44d2bde1ff28c19e5b16e138e728759bb7d873882692695c7cb20ef00834a4d4",
+  "actual_verification": [
+    "exact finite small-case selftest passed",
+    "45633320 bbox midpoint rescan exit0,53.81s",
+    "26327 retained candidate masses and slopes independently directly summed exit0,1.45s"
+  ],
+  "result": {
+    "rho": "1",
+    "t0": "1/2",
+    "T": "1/1000",
+    "H": "328734960629/10000000000000000000",
+    "active_candidates": 26327,
+    "additional_center_equality_candidates": 0,
+    "nonzero_mass_derivative_candidates": 24547,
+    "all_candidates_root_branch": true
+  },
+  "whitelist": [
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/position_mass_slab.py",
+      "destination": "planar-centered-square-weak11/computation/position_mass_slab.py",
+      "sha256": "44d2bde1ff28c19e5b16e138e728759bb7d873882692695c7cb20ef00834a4d4",
+      "bytes": 19063
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round052/position-mass-slab.compact.json.gz",
+      "destination": "planar-centered-square-weak11/computation/round052/position-mass-slab.compact.json.gz",
+      "sha256": "8a0e3645331cdf05d52ddf8f60521bfc66abbbf313886ac209f87b21aee80b28",
+      "bytes": 2214390
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round052/position-mass-summary.json",
+      "destination": "planar-centered-square-weak11/computation/round052/position-mass-summary.json",
+      "sha256": "27e4be5a7b664fbb94bfb97c9113f755c06a8814e6ee1d2d6ffbf15aabcffac0",
+      "bytes": 2975
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round052/position-mass-selftest.json",
+      "destination": "planar-centered-square-weak11/computation/round052/position-mass-selftest.json",
+      "sha256": "8dbd6c9b25592cec6c88faeedfea26d385ccd521513fc53142af2f234ce82d10",
+      "bytes": 28334
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round052/position-mass-run.json",
+      "destination": "planar-centered-square-weak11/computation/round052/position-mass-run.json",
+      "sha256": "3f5ff6b7ad44effe778a9b6474359fac4d754880bc528a1cd1a8ea2d04e6e551",
+      "bytes": 3637
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round052/position-mass-slab-interface.md",
+      "destination": "planar-centered-square-weak11/computation/round052/position-mass-slab-interface.md",
+      "sha256": "d35d2972e6d272262fc18b53e086a7f2c0dc351899b1bb2a60a686a617cb0234",
+      "bytes": 3808
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round052/verify_position_mass_candidates.py",
+      "destination": "planar-centered-square-weak11/computation/round052/verify_position_mass_candidates.py",
+      "sha256": "15caac372eae671a8dfd1b397e6810c156f6928f9d3be70b9f328105c1e12685",
+      "bytes": 2660
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round052/position-mass-candidate-checks.json",
+      "destination": "planar-centered-square-weak11/computation/round052/position-mass-candidate-checks.json",
+      "sha256": "4f463479e680e48467ea5f1348c97422b16174363d9cbc999db4ebf5ffa011e7",
+      "bytes": 1165
+    }
+  ],
+  "local_only_large_output": {
+    "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round052/position-mass-slab.json",
+    "sha256": "e00098ccf068a0ed3d23b6d2769f83fa9aa3b84d9836b2569dc6a1b7b8e1ebc0",
+    "bytes": 90212691
+  },
+  "limitations": [
+    "conditional on pinned one-axis source catalog/order/geometric-prefilter stability",
+    "endpoint order, union area and mixed derivative not certified by this module",
+    "local t window only; no t in [0,1] two-dimensional cell claim",
+    "no exact weak-type constant conclusion"
+  ],
+  "git": "no commit or push; root integrates",
+  "notes": "compact gzip removes duplicate candidate_boxes only; boxes contains all candidate expressions, box_records aligned"
+}

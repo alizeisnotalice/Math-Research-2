@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "tests": [
+    "square-center moving radical retained",
+    "nonpersistent equality rejected",
+    "constant rational-square normalization",
+    "exact dyadic square-root inclusions",
+    "one-rectangle beta and beta_t equal analytic 2 and 1/4"
+  ],
+  "toy_certificate": {
+    "status": "passed",
+    "scope": "exact joint raw-endpoint order and direct y-union root-sum derivatives; conditional on supplied bbox completeness/empty, source-catalogue and uniform-tail certificate",
+    "source_candidate_code_sha256": "toy",
+    "source_center_data_canonical_sha256": "toy",
+    "base_dz_radius": "1/10",
+    "base_dt_radius": "1/10",
+    "endpoint_rho": "1",
+    "dz_radius": "1/10",
+    "dt_radius": "1/10",
+    "z0": "0",
+    "t0": "0",
+    "bits": 160,
+    "endpoint_limiter": null,
+    "x_endpoint_count": 4,
+    "y_endpoint_count": 4,
+    "consecutive_order_checks": 6,
+    "all_center_equalities_persistent": true,
+    "all_candidate_clipped_rectangles_positive": true,
+    "box_count": 1,
+    "moving_x_gaps": 2,
+    "max_active_at_moving_gap": 1,
+    "sweep_method": "direct sorted interval rank merge; no production UnionTree or endpoint sweep",
+    "x_endpoint_order_sha256": "4582b0cb0aafeb5540e15a657e3650ea10f9110655982d2e377945462a6b7f68",
+    "y_endpoint_order_sha256": "79efef49cea793c1c0c32c466b49e68902e9b6447517be612c4aba757b3042e3",
+    "moving_gap_union_trace_sha256": "bafb657d5aca6187b08d85a76cbd18cd66ae6d8ff7798bd8e83042e725d54c97",
+    "nonzero_y_endpoint_coefficients": [
+      [
+        [
+          "0",
+          "0",
+          0,
+          "0",
+          "0"
+        ],
+        "-1"
+      ],
+      [
+        [
+          "0",
+          "0",
+          1,
+          "4",
+          "1"
+        ],
+        "1"
+      ]
+    ],
+    "beta_formula": "constant + sum coefficient*sqrt(q0+q1*(t-t0)); independent of z on certified rectangle",
+    "beta_constant": "0",
+    "beta_root_terms": [
+      {
+        "q0": "4",
+        "q1": "1",
+        "coefficient": "1"
+      }
+    ],
+    "beta_center_bounds": [
+      "2",
+      "2"
+    ],
+    "beta_t_center_bounds": [
+      "1/4",
+      "1/4"
+    ],
+    "beta_cell_bounds": [
+      "2886234474205370120823109496185436154946216830423/1461501637330902918203684832716283019655932542976",
+      "739828816656078359742671538549069842692383080239/365375409332725729550921208179070754913983135744"
+    ],
+    "beta_t_cell_bounds": [
+      "182687704666362864775460604089535377456991567872/739828816656078359742671538549069842692383080239",
+      "730750818665451459101842416358141509827966271488/2886234474205370120823109496185436154946216830423"
+    ],
+    "mass": "1",
+    "mass_t_derivative": "0",
+    "lambda": "1",
+    "mixed_J_z_t_formula": "lambda*(M(t)*beta_t(t)-M_t*beta(t))/M(t)^2",
+    "mixed_J_z_t_center_bounds": [
+      "1/4",
+      "1/4"
+    ],
+    "mixed_J_z_t_cell_bounds": [
+      "182687704666362864775460604089535377456991567872/739828816656078359742671538549069842692383080239",
+      "730750818665451459101842416358141509827966271488/2886234474205370120823109496185436154946216830423"
+    ],
+    "evidence_boundary": "No bbox enumeration or rejected-box loop rerun. Endpoint radius uses every raw active x/y endpoint and clipping boundary, so it is sufficient, not a maximal effective-union cell.",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "cpu_seconds": 0.0037389999999999993,
+    "decimals_display_only": {
+      "beta_center_bounds": [
+        "2",
+        "2"
+      ],
+      "beta_t_center_bounds": [
+        "0.25",
+        "0.25"
+      ],
+      "mixed_J_z_t_center_bounds": [
+        "0.25",
+        "0.25"
+      ],
+      "mixed_J_z_t_cell_bounds": [
+        "0.246932399162397401624962223048",
+        "0.253184841770916654069723859535"
+      ],
+      "dz_radius": "0.1",
+      "dt_radius": "0.1"
+    }
+  },
+  "script_sha256": "37bbe43363c673f9118b34fbeaf2301710acf3ff70e3fb3d2046b74cad863960",
+  "actual_command": [
+    "/Users/zzh/.local/bin/python3",
+    "planar-centered-square-weak11/computation/position_mass_endpoint_union.py",
+    "--self-test",
+    "--output",
+    "planar-centered-square-weak11/computation/results/round052-endpoint-union/self-test.json"
+  ]
+}

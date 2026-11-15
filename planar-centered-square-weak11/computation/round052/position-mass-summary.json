@@ -1,0 +1,86 @@
+{
+  "schema": "position-mass-slab-v1",
+  "status": "complete_candidate_and_empty_certificate",
+  "z0": "328734960629/100000000000000000",
+  "t0": "1/2",
+  "H": "328734960629/10000000000000000000",
+  "T": "1/1000",
+  "rho": "1",
+  "rho_empty": "1",
+  "rho_cap": "1",
+  "rho_atom_positive": "1",
+  "dz_radius": "328734960629/10000000000000000000",
+  "dt_radius": "1/1000",
+  "rho_limiter": "empty_box_margins",
+  "rho_constraints": [
+    [
+      "empty_box_margins",
+      "1"
+    ],
+    [
+      "candidate_cap_branches",
+      "1"
+    ],
+    [
+      "strict_atom_mass",
+      "1"
+    ],
+    [
+      "requested_rho_one",
+      "1"
+    ]
+  ],
+  "counts": {
+    "x_pair_span_prefilter": 1655,
+    "y_pair_span_prefilter": 104,
+    "boxes_visited": 45633320,
+    "reject_zero_mass": 197594,
+    "reject_y_span": 30431846,
+    "reject_y_clip_below": 5149984,
+    "reject_x_clip_left": 35362,
+    "reject_y_clip_above": 5214612,
+    "reject_x_span": 4542551,
+    "candidate_boxes": 26327,
+    "center_active_candidates": 26327,
+    "reject_x_clip_right": 35044
+  },
+  "center_active_count": 26327,
+  "additional_center_empty_wall_keys": [],
+  "empty_box_weakest_witness": {
+    "kind": "requested_rho_one",
+    "rho": "1"
+  },
+  "cap_branch_weakest_witness": null,
+  "strict_mass_weakest_witness": null,
+  "uniform_mass": {
+    "center_total_mass": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+    "total_derivative": "0",
+    "full_T_mass_upper": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+    "center_atoms_strictly_positive": true,
+    "full_T_atom_masses_nonnegative": true,
+    "rho_domain_atom_masses_at_least_half_center": true
+  },
+  "uniform_tail": {
+    "radius": "10",
+    "bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+    "lambda": "1",
+    "strict": true,
+    "full_T": true,
+    "method": "position-independent periodic count with full-T total-mass upper"
+  },
+  "code_sha256": "44d2bde1ff28c19e5b16e138e728759bb7d873882692695c7cb20ef00834a4d4",
+  "elapsed_seconds": 53.26978304202203,
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "candidate_nonzero_mass_derivative_count": 24547,
+  "candidate_root_count": 26327,
+  "full_output_sha256": "e00098ccf068a0ed3d23b6d2769f83fa9aa3b84d9836b2569dc6a1b7b8e1ebc0",
+  "full_output_bytes": 90212691,
+  "compact_output": {
+    "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round052/position-mass-slab.compact.json.gz",
+    "sha256": "8a0e3645331cdf05d52ddf8f60521bfc66abbbf313886ac209f87b21aee80b28",
+    "bytes": 2214390,
+    "decompressed_canonical_sha256": "8e13d2126eed924f6316697ac4db2f890b5287594381e8eae6c90c0e0c148bb9",
+    "difference": "candidate_boxes duplicate omitted; boxes retains every candidate"
+  }
+}

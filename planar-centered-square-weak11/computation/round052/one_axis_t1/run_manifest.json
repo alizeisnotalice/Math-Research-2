@@ -1,0 +1,35 @@
+{
+  "scope": "fixed t=1 only; no common 2D stratum claim",
+  "normalized_z0": "1/1000000",
+  "normalized_H": "1/100000000",
+  "slice_manifest_sha256": "c36fad110db52fa3311d21a5d6144288efda37bb1a43e35b3cb30853dfc5d9f7",
+  "enumerator_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+  "sweep_sha256": "a4c44c806c533bcefb6fbdcda05ee98918caa4fbf585a9ffc64eb5727dd09f56",
+  "runner_sha256": "9f8493f6dab3a1acf0734f00b4907377c4252af9bca642c937c1208fa90eab86",
+  "commands": [
+    [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/position_slab_enumerator.py",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/corner_t1_z0.json",
+      "--velocities",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/slice/velocity_x.json",
+      "--s0",
+      "328734960629/100000000000000000",
+      "--H",
+      "328734960629/10000000000000000000",
+      "--R",
+      "10",
+      "--output",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis_t1/slab.json"
+    ],
+    [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r039_join_slope.py",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis_t1/slab.json",
+      "--output",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-r001-geometry/planar-centered-square-weak11/computation/round052/one_axis_t1/slope.json",
+      "--bits",
+      "80"
+    ]
+  ]
+}

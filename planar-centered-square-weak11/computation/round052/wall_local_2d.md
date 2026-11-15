@@ -1,0 +1,13 @@
+# Exposed wall in a two-parameter neighborhood
+
+Let P8=328734960629/10^11; the supercell input has Px=2 P8. The physical position parameter is s0=P8/10^6=328734960629/10^17; write u=s-s0. Here |u|≤10^-11, inside both endpoint source/empty stability radii 328734960629/10^19. The t-neighborhood is the exact interval in `wall_witness.json` expanded by 10^-9; the x-neighborhood is its exact x interval expanded by 10^-10; y is its common y expanded by 10^-7. The root is t*=0.4372085136321013... at u=0.
+
+The two t-endpoint slabs have the same source catalogue geometry, order and active bbox keys, and each certifies that omitted bboxes stay empty in its position slab. For every fixed s in the common slab, the mass of each bbox is affine in t and its geometric activity threshold is fixed, including the R=10 radius cap. If omitted at t=0 and t=1 it is omitted for the entire segment. Thus their common 26,327 bbox keys contain all boxes that can become active on the product. The independent input-phase audit provides a common R=10 tail bound; this certificate concerns the finite-R union and relies on that tail result to identify the full union.
+
+Exact rational interval audit excludes all but four boxes throughout the indicated parameter/spatial product; the least exclusion margin is recorded in `wall_local_2d.json`. The three right-extending boxes have the same left edge and y interval; the fourth is left-extending. All four are active there and cover the y interval, and the two inner endpoints stay inside the fixed x interval. Let g(t)=A_left(t,0)-B_right(t,0); A_left is constant and B_right(t,u)=B_right(t,0)+u. For the fixed rectangle K from the x and y intervals, its covered area is exactly
+
+    |K| - (2/10^7) max(g(t)-u, 0).
+
+The crossing is therefore exposed, with local wall u=g(t). Because q_B is positive and affine with negative derivative, g'(t)=-q'_B/(2 sqrt(q_B))>0 and g''(t)=(q'_B)^2/(4 q_B^(3/2))>0. This establishes a local area hinge, not a kink in total area: events elsewhere might cancel it. It does not establish a single stable cell on a rectangle crossing the wall.
+
+Run `python3 audit_wall_2d.py`. It reads the gzip endpoint slabs if present, rechecks the exact source input relation, same geometry and omitted radii, checks the witness crossing by outward rational radical enclosures, and computes the exclusion intervals. Its output records source and script hashes and Python version. Initial preparation of this new script encountered a syntax error; the corrected script ran to completion. The previous `audit_wall_cover.py` attempt failed its strict-cover assertion and is not a proof of masking.

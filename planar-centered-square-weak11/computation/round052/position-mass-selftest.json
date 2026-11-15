@@ -1,0 +1,1387 @@
+{
+  "status": "passed",
+  "scope": "finite exact position/mass bbox examples only; endpoint joint order is a separate certificate",
+  "conserving_two_atom": {
+    "schema": "position-mass-slab-v1",
+    "status": "complete_candidate_and_empty_certificate",
+    "external_premise": "accepted one-axis source catalogue, source order and all geometric prefilter events are valid on H; this module freshly rescans every eligible bbox for mass variation",
+    "z0": "51/10",
+    "t0": "1/2",
+    "H": "1/10",
+    "T": "1/1000",
+    "rho": "101/206",
+    "rho_empty": "101/206",
+    "rho_cap": "1",
+    "rho_atom_positive": "1",
+    "dz_radius": "101/2060",
+    "dt_radius": "101/206000",
+    "rho_limiter": "empty_box_margins",
+    "rho_constraints": [
+      [
+        "empty_box_margins",
+        "101/206"
+      ],
+      [
+        "candidate_cap_branches",
+        "1"
+      ],
+      [
+        "strict_atom_mass",
+        "1"
+      ],
+      [
+        "requested_rho_one",
+        "1"
+      ]
+    ],
+    "domain": [
+      "-10",
+      "11",
+      "-4",
+      "4"
+    ],
+    "periodic": false,
+    "lambda": "1",
+    "R": "3",
+    "candidate_boxes": [
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "9/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "51/10",
+          "1",
+          -1,
+          "4",
+          "-1/4"
+        ],
+        [
+          "51/10",
+          "1",
+          1,
+          "4",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "4",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "4",
+          "-1/4"
+        ]
+      ]
+    ],
+    "boxes": [
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "9/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "51/10",
+          "1",
+          -1,
+          "4",
+          "-1/4"
+        ],
+        [
+          "51/10",
+          "1",
+          1,
+          "4",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "4",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "4",
+          "-1/4"
+        ]
+      ]
+    ],
+    "box_records": [
+      {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "m0": "9",
+        "mu": "1",
+        "radius_branch": "root",
+        "q0": "9/4",
+        "q1": "1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "active",
+        "unresolved_zero_margin_reasons": [],
+        "q_full_domain_lower": "1853899/824000",
+        "q_full_domain_upper": "1854101/824000",
+        "cap_gap_lower": "5561899/824000"
+      },
+      {
+        "bbox": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "m0": "16",
+        "mu": "-1",
+        "radius_branch": "root",
+        "q0": "4",
+        "q1": "-1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          1,
+          1
+        ],
+        "center_status": "active",
+        "unresolved_zero_margin_reasons": [],
+        "q_full_domain_lower": "3295899/824000",
+        "q_full_domain_upper": "3296101/824000",
+        "cap_gap_lower": "4119899/824000"
+      }
+    ],
+    "counts": {
+      "boxes_visited": 3,
+      "candidate_boxes": 2,
+      "center_active_candidates": 2,
+      "reject_x_span": 1
+    },
+    "candidate_x_pairs": 3,
+    "candidate_y_pairs": 1,
+    "center_active_keys_match_source_slab": true,
+    "center_active_count": 2,
+    "additional_center_empty_wall_keys": [],
+    "center_active_keys_sha256": "2bdb083f0ab65b51e840c27b7635c0892103161b17fdeb35e97e390ce75113b8",
+    "empty_box_weakest_witness": {
+      "bbox": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "m0": "25",
+      "mu": "0",
+      "reason": "x_span",
+      "d0": "51/20",
+      "d_velocity": "1/2",
+      "r0_squared": "25/4",
+      "q": "101/400",
+      "L": "103/400",
+      "rho_bound": "101/206",
+      "permanent": false,
+      "clip_distance_positivity_required": false,
+      "clip_positive_radius": null,
+      "guarantee": "q(z,t)>=q0/2>0; clip d remains >=d0/2 when nonconstant"
+    },
+    "rejection_witnesses": {
+      "x_span": {
+        "bbox": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "m0": "25",
+        "mu": "0",
+        "reason": "x_span",
+        "d0": "51/20",
+        "d_velocity": "1/2",
+        "r0_squared": "25/4",
+        "q": "101/400",
+        "L": "103/400",
+        "rho_bound": "101/206",
+        "permanent": false,
+        "clip_distance_positivity_required": false,
+        "clip_positive_radius": null,
+        "guarantee": "q(z,t)>=q0/2>0; clip d remains >=d0/2 when nonconstant"
+      }
+    },
+    "cap_branch_weakest_witness": null,
+    "strict_mass_weakest_witness": null,
+    "uniform_mass": {
+      "center_total_mass": "25",
+      "total_derivative": "0",
+      "full_T_mass_upper": "25",
+      "center_atoms_strictly_positive": true,
+      "full_T_atom_masses_nonnegative": true,
+      "rho_domain_atom_masses_at_least_half_center": true
+    },
+    "uniform_tail": {
+      "radius": "3",
+      "bound": "25/36",
+      "lambda": "1",
+      "strict": true,
+      "full_T": true,
+      "method": "finite full-T total mass"
+    },
+    "coordinate_scale": "10",
+    "weight_derivative_common_scale": "1",
+    "arithmetic": "two integer prefix sums; integer squared-margin comparisons",
+    "source_catalog_sha256": "5df0c0e20668a48f91f65fb21420daee6ea34f2d5611059d5132ca79eecc65d6",
+    "source_order_sha256": "5a2427b0b3eac76f679c46b7a8f09911d1d27e496441030477a237e94e400918",
+    "source_enumerator_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+    "source_slab_canonical_sha256": "2791cb91957240ccc143fdb9f2b5ec83085d001856d1f8ff765167d2943cda90",
+    "center_data_canonical_sha256": "c523bfa69ae37d7d562685d89c17a55f3c492b9e2ab2f39354b09a7ebcaa87f2",
+    "mass_velocity_sha256": "2212ff35050630b078206233ba349e9eed80f8e61fb13cbdc5aff8bddf90ae78",
+    "x_velocity_sha256": "463f2998327eb3a694145e6014444480b2235be84aa6cfd57871cc64f1cd816c",
+    "source_mass_derivative_catalog_sha256": "989a224c96ed263218d694804a485bb9c0f28668c38d7b73a84ccf8bb078a6e5",
+    "mass_prefix_sha256": "5e5d3b06f4b902c078c4897e65ff5755fbc69da8c0f2c157e7316f98ec49944b",
+    "derivative_prefix_sha256": "623c223a63cff64df48c6eee92a9879ccb6b5c017972ccec890a7a3e3944c207",
+    "code_sha256": "44d2bde1ff28c19e5b16e138e728759bb7d873882692695c7cb20ef00834a4d4",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "elapsed_seconds": 0.0004418749886099249
+  },
+  "new_mass_activation_wall": {
+    "schema": "position-mass-slab-v1",
+    "status": "complete_candidate_and_empty_certificate",
+    "external_premise": "accepted one-axis source catalogue, source order and all geometric prefilter events are valid on H; this module freshly rescans every eligible bbox for mass variation",
+    "z0": "0",
+    "t0": "1/2",
+    "H": "1/10",
+    "T": "1/1000",
+    "rho": "1",
+    "rho_empty": "1",
+    "rho_cap": "1",
+    "rho_atom_positive": "1",
+    "dz_radius": "1/10",
+    "dt_radius": "1/1000",
+    "rho_limiter": "empty_box_margins",
+    "rho_constraints": [
+      [
+        "empty_box_margins",
+        "1"
+      ],
+      [
+        "candidate_cap_branches",
+        "1"
+      ],
+      [
+        "strict_atom_mass",
+        "1"
+      ],
+      [
+        "requested_rho_one",
+        "1"
+      ]
+    ],
+    "domain": [
+      "-4",
+      "4",
+      "-4",
+      "9"
+    ],
+    "periodic": false,
+    "lambda": "1",
+    "R": "3",
+    "candidate_boxes": [
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "9/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "25/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "25/4",
+          "1/4"
+        ],
+        [
+          "5",
+          "0",
+          -1,
+          "25/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "25/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "4",
+          "0"
+        ],
+        [
+          "5",
+          "0",
+          -1,
+          "4",
+          "0"
+        ],
+        [
+          "5",
+          "0",
+          1,
+          "4",
+          "0"
+        ]
+      ]
+    ],
+    "boxes": [
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "9/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "9/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "25/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "25/4",
+          "1/4"
+        ],
+        [
+          "5",
+          "0",
+          -1,
+          "25/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "25/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "4",
+          "0"
+        ],
+        [
+          "5",
+          "0",
+          -1,
+          "4",
+          "0"
+        ],
+        [
+          "5",
+          "0",
+          1,
+          "4",
+          "0"
+        ]
+      ]
+    ],
+    "box_records": [
+      {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "m0": "9",
+        "mu": "1",
+        "radius_branch": "root",
+        "q0": "9/4",
+        "q1": "1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "active",
+        "unresolved_zero_margin_reasons": [],
+        "q_full_domain_lower": "8999/4000",
+        "q_full_domain_upper": "9001/4000",
+        "cap_gap_lower": "26999/4000"
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "m0": "25",
+        "mu": "1",
+        "radius_branch": "root",
+        "q0": "25/4",
+        "q1": "1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "empty_equality_wall",
+        "unresolved_zero_margin_reasons": [
+          "y_span"
+        ],
+        "q_full_domain_lower": "24999/4000",
+        "q_full_domain_upper": "25001/4000",
+        "cap_gap_lower": "10999/4000"
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "m0": "16",
+        "mu": "0",
+        "radius_branch": "root",
+        "q0": "4",
+        "q1": "0",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "active",
+        "unresolved_zero_margin_reasons": [],
+        "q_full_domain_lower": "4",
+        "q_full_domain_upper": "4",
+        "cap_gap_lower": "5"
+      }
+    ],
+    "counts": {
+      "boxes_visited": 3,
+      "candidate_boxes": 3,
+      "center_active_candidates": 2,
+      "center_empty_wall_candidates": 1
+    },
+    "candidate_x_pairs": 1,
+    "candidate_y_pairs": 3,
+    "center_active_keys_match_source_slab": true,
+    "center_active_count": 2,
+    "additional_center_empty_wall_keys": [
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "center_active_keys_sha256": "4a35a9563f31f9d37d360e7c9971d9938ed146036678e0859524a8a59bf9782a",
+    "empty_box_weakest_witness": {
+      "kind": "requested_rho_one",
+      "rho": "1"
+    },
+    "rejection_witnesses": {},
+    "cap_branch_weakest_witness": null,
+    "strict_mass_weakest_witness": null,
+    "uniform_mass": {
+      "center_total_mass": "25",
+      "total_derivative": "1",
+      "full_T_mass_upper": "25001/1000",
+      "center_atoms_strictly_positive": true,
+      "full_T_atom_masses_nonnegative": true,
+      "rho_domain_atom_masses_at_least_half_center": true
+    },
+    "uniform_tail": {
+      "radius": "3",
+      "bound": "25001/36000",
+      "lambda": "1",
+      "strict": true,
+      "full_T": true,
+      "method": "finite full-T total mass"
+    },
+    "coordinate_scale": "1",
+    "weight_derivative_common_scale": "1",
+    "arithmetic": "two integer prefix sums; integer squared-margin comparisons",
+    "source_catalog_sha256": "a3094eded06ee5df53082fedcd09089e9f59818c14a2e4bc19aef9983b61b2a5",
+    "source_order_sha256": "50e0c5c19bc80cff8e0f8a682c0fefbc70f21590e5331dc0c8b39f619a8be2f6",
+    "source_enumerator_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+    "source_slab_canonical_sha256": "6dcb38a99eb7280c00acb1bf88058aff505960593ca347a63a9ea5b950e28e67",
+    "center_data_canonical_sha256": "bed8dd70bfcf9f3049be3f46f09d2d79fb150202c1332a716446b3726868965b",
+    "mass_velocity_sha256": "97a8223dff77eea8cd38cc7fcd2e45c4eaca52ef021e6362b860f4d6c4187d17",
+    "x_velocity_sha256": "3d5812abc84c11768aa73a732c85d75dbed439188f5bb3239e9b762ea31d9862",
+    "source_mass_derivative_catalog_sha256": "ab2147d983bbc7b10ed47f6288f504010d0a02820c89a994280f67048d727ca3",
+    "mass_prefix_sha256": "fbadd45b1d24968ca24c2888a57a37420303a96d6599f0d9d8dfed088ecd0047",
+    "derivative_prefix_sha256": "482fd481f3da45f5054953dbd2bf21fcae2f1505aeb7aebade6dc2362b9dd193",
+    "code_sha256": "44d2bde1ff28c19e5b16e138e728759bb7d873882692695c7cb20ef00834a4d4",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "elapsed_seconds": 0.00023299999884329736
+  },
+  "diagonal_zero_mass": {
+    "schema": "position-mass-slab-v1",
+    "status": "complete_candidate_and_empty_certificate",
+    "external_premise": "accepted one-axis source catalogue, source order and all geometric prefilter events are valid on H; this module freshly rescans every eligible bbox for mass variation",
+    "z0": "0",
+    "t0": "1/2",
+    "H": "1/10",
+    "T": "1/1000",
+    "rho": "1",
+    "rho_empty": "1",
+    "rho_cap": "1",
+    "rho_atom_positive": "1",
+    "dz_radius": "1/10",
+    "dt_radius": "1/1000",
+    "rho_limiter": "empty_box_margins",
+    "rho_constraints": [
+      [
+        "empty_box_margins",
+        "1"
+      ],
+      [
+        "candidate_cap_branches",
+        "1"
+      ],
+      [
+        "strict_atom_mass",
+        "1"
+      ],
+      [
+        "requested_rho_one",
+        "1"
+      ]
+    ],
+    "domain": [
+      "-4",
+      "4",
+      "-4",
+      "4"
+    ],
+    "periodic": false,
+    "lambda": "1",
+    "R": "3",
+    "candidate_boxes": [
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/2",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/2",
+          "0"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ]
+      ]
+    ],
+    "boxes": [
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          -1,
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "1/4"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/2",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/2",
+          "0"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          -1,
+          "1/4",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          1,
+          "1/4",
+          "-1/4"
+        ]
+      ]
+    ],
+    "box_records": [
+      {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "m0": "1",
+        "mu": "1",
+        "radius_branch": "root",
+        "q0": "1/4",
+        "q1": "1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "active",
+        "unresolved_zero_margin_reasons": [],
+        "q_full_domain_lower": "999/4000",
+        "q_full_domain_upper": "1001/4000",
+        "cap_gap_lower": "34999/4000"
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "m0": "1",
+        "mu": "1",
+        "radius_branch": "root",
+        "q0": "1/4",
+        "q1": "1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "empty_equality_wall",
+        "unresolved_zero_margin_reasons": [
+          "y_span"
+        ],
+        "q_full_domain_lower": "999/4000",
+        "q_full_domain_upper": "1001/4000",
+        "cap_gap_lower": "34999/4000"
+      },
+      {
+        "bbox": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "m0": "1",
+        "mu": "1",
+        "radius_branch": "root",
+        "q0": "1/4",
+        "q1": "1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "empty_equality_wall",
+        "unresolved_zero_margin_reasons": [
+          "x_span"
+        ],
+        "q_full_domain_lower": "999/4000",
+        "q_full_domain_upper": "1001/4000",
+        "cap_gap_lower": "34999/4000"
+      },
+      {
+        "bbox": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "m0": "2",
+        "mu": "0",
+        "radius_branch": "root",
+        "q0": "1/2",
+        "q1": "0",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "active",
+        "unresolved_zero_margin_reasons": [],
+        "q_full_domain_lower": "1/2",
+        "q_full_domain_upper": "1/2",
+        "cap_gap_lower": "17/2"
+      },
+      {
+        "bbox": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "m0": "1",
+        "mu": "-1",
+        "radius_branch": "root",
+        "q0": "1/4",
+        "q1": "-1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "empty_equality_wall",
+        "unresolved_zero_margin_reasons": [
+          "x_span"
+        ],
+        "q_full_domain_lower": "999/4000",
+        "q_full_domain_upper": "1001/4000",
+        "cap_gap_lower": "34999/4000"
+      },
+      {
+        "bbox": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "m0": "1",
+        "mu": "-1",
+        "radius_branch": "root",
+        "q0": "1/4",
+        "q1": "-1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "empty_equality_wall",
+        "unresolved_zero_margin_reasons": [
+          "y_span"
+        ],
+        "q_full_domain_lower": "999/4000",
+        "q_full_domain_upper": "1001/4000",
+        "cap_gap_lower": "34999/4000"
+      },
+      {
+        "bbox": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "m0": "1",
+        "mu": "-1",
+        "radius_branch": "root",
+        "q0": "1/4",
+        "q1": "-1/4",
+        "cap_branch_rho_bound": "1",
+        "x_velocities": [
+          0,
+          0
+        ],
+        "center_status": "active",
+        "unresolved_zero_margin_reasons": [],
+        "q_full_domain_lower": "999/4000",
+        "q_full_domain_upper": "1001/4000",
+        "cap_gap_lower": "34999/4000"
+      }
+    ],
+    "counts": {
+      "boxes_visited": 9,
+      "candidate_boxes": 7,
+      "center_active_candidates": 3,
+      "center_empty_wall_candidates": 4,
+      "reject_zero_mass": 2
+    },
+    "candidate_x_pairs": 3,
+    "candidate_y_pairs": 3,
+    "center_active_keys_match_source_slab": true,
+    "center_active_count": 3,
+    "additional_center_empty_wall_keys": [
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        1
+      ]
+    ],
+    "center_active_keys_sha256": "0c7374a19fa22bab4bc0283db3d652fe6f580f38fea6f4834ee4e510a5c8a2b5",
+    "empty_box_weakest_witness": {
+      "kind": "requested_rho_one",
+      "rho": "1"
+    },
+    "rejection_witnesses": {},
+    "cap_branch_weakest_witness": null,
+    "strict_mass_weakest_witness": null,
+    "uniform_mass": {
+      "center_total_mass": "2",
+      "total_derivative": "0",
+      "full_T_mass_upper": "2",
+      "center_atoms_strictly_positive": true,
+      "full_T_atom_masses_nonnegative": true,
+      "rho_domain_atom_masses_at_least_half_center": true
+    },
+    "uniform_tail": {
+      "radius": "3",
+      "bound": "1/18",
+      "lambda": "1",
+      "strict": true,
+      "full_T": true,
+      "method": "finite full-T total mass"
+    },
+    "coordinate_scale": "1",
+    "weight_derivative_common_scale": "1",
+    "arithmetic": "two integer prefix sums; integer squared-margin comparisons",
+    "source_catalog_sha256": "ff8f7d0ca938794eb6412a6046c0de3f8fa483a21266e50334c92f6e4b626277",
+    "source_order_sha256": "62c4029121aa3c6edda098b9102001999260f5fb688fc3bebc468fc3dba31678",
+    "source_enumerator_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+    "source_slab_canonical_sha256": "8cf7e1ce2a263f765882065277554d0e65321b551ae5924337fcfe46e225314e",
+    "center_data_canonical_sha256": "860f79bf493bb6f7027234cc10f0130c5ed0081e15baae91153ed97a0d6b51c7",
+    "mass_velocity_sha256": "2212ff35050630b078206233ba349e9eed80f8e61fb13cbdc5aff8bddf90ae78",
+    "x_velocity_sha256": "3d5812abc84c11768aa73a732c85d75dbed439188f5bb3239e9b762ea31d9862",
+    "source_mass_derivative_catalog_sha256": "989a224c96ed263218d694804a485bb9c0f28668c38d7b73a84ccf8bb078a6e5",
+    "mass_prefix_sha256": "6878acd7be40592a5fe04dc9c1e870cd6712314005e6518eb8ae8b16ca493b62",
+    "derivative_prefix_sha256": "04700b9b3edc9a54ceba31f0d895fae04054b3c950d0767071da8ee903bfbd7d",
+    "code_sha256": "44d2bde1ff28c19e5b16e138e728759bb7d873882692695c7cb20ef00834a4d4",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "elapsed_seconds": 0.0002721250057220459
+  },
+  "negative_full_T_mass_rejected": true,
+  "code_sha256": "44d2bde1ff28c19e5b16e138e728759bb7d873882692695c7cb20ef00834a4d4"
+}

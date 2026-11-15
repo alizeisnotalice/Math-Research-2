@@ -1,0 +1,52 @@
+{
+  "scope": "R52 exact two-parameter local wall; whitelist relative to computation/round052",
+  "files": [
+    {
+      "path": "audit_wall_2d.py",
+      "bytes": 4727,
+      "sha256": "bf6fe380c5028bc97c95995abb275e78ec84a738d6148461845eed5a8a5c7f30"
+    },
+    {
+      "path": "wall_local_2d.json",
+      "bytes": 2450,
+      "sha256": "e12811806bccbcd1bf5a1fa0a91e780ebe4269b45e1d726bd770b940c8dd0cc7"
+    },
+    {
+      "path": "wall_local_2d.md",
+      "bytes": 2648,
+      "sha256": "024c014b752f8c53334811d731f6fc84dbd3a86640f6db42651f8d1afb16796c"
+    },
+    {
+      "path": "wall_witness.json",
+      "bytes": 2127,
+      "sha256": "1b3241177e4d8abe55c20ac4616bc4138895d29c69f1789665084615769f9366"
+    },
+    {
+      "path": "slice/corner_t0_z0.json",
+      "bytes": 44777,
+      "sha256": "97c70896d07591e65e690be51b08a02b439f070440d3748aad12d0b2ae140dff"
+    },
+    {
+      "path": "slice/corner_t1_z0.json",
+      "bytes": 44789,
+      "sha256": "b4e2f0f4d8132741747a4569e727431889dcb521840dd053b9a5f87527275e68"
+    },
+    {
+      "path": "slice/velocity_mass.json",
+      "bytes": 2759,
+      "sha256": "e50e8fe778b45fc3f5742a7575c28bb0e354375678485ca7f18c6a82d4322211"
+    },
+    {
+      "path": "one_axis_t0/slab.json.gz",
+      "bytes": 1171832,
+      "sha256": "59a844b91d54936c89d28db29a678d3055037d39f1eceb17ff533cfea1941479"
+    },
+    {
+      "path": "one_axis_t1/slab.json.gz",
+      "bytes": 1165744,
+      "sha256": "0f99a2c118b6a32aa2a640f8ba457608d4e1b32fdc9911e5f33565aa329ae06b"
+    }
+  ],
+  "command": "python3 audit_wall_2d.py",
+  "result": "exit 0; gzip slabs read and 26323 boxes excluded; no global area kink asserted"
+}
