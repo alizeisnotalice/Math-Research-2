@@ -1,0 +1,86 @@
+{
+  "status": "PASS_R65_V3_GROUP_DELTA_INDEPENDENT",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "script_sha256": "f1ad0c36286eb301ac003a9265aa23a3f3530199f0d6d9ebcc8fa9fc832390e5",
+  "elapsed_seconds": 0.06855299999006093,
+  "physical_rows": 4140,
+  "groups": 529,
+  "zero_symbolic_rows": 0,
+  "multiplicity_histogram": {
+    "4": 23,
+    "8": 506
+  },
+  "grouped_variables": 3543,
+  "all4140integer_factorization_rows_matched": true,
+  "all_author_saved_maps_matched": true,
+  "signed_interval_scenarios": [
+    {
+      "name": "constant",
+      "zero_actual_groups": 506,
+      "totals": [
+        {
+          "direction": "x",
+          "physical_sum": "6/5",
+          "group_upper": "274146/1705"
+        },
+        {
+          "direction": "y",
+          "physical_sum": "-8/5",
+          "group_upper": "269372/1705"
+        }
+      ]
+    },
+    {
+      "name": "nonmonotone",
+      "zero_actual_groups": 20,
+      "totals": [
+        {
+          "direction": "x",
+          "physical_sum": "744/115",
+          "group_upper": "19264164/39215"
+        },
+        {
+          "direction": "y",
+          "physical_sum": "-50/23",
+          "group_upper": "3785042/7843"
+        }
+      ]
+    }
+  ],
+  "negative_orientation_counterexample": {
+    "correct_range": [
+      "-4",
+      "-1"
+    ],
+    "wrong_upper": "-3"
+  },
+  "source_pins": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/cauchy_occupation_tensor_jump_lp_v2.m",
+      "sha256": "3d696e00cbbd4edb0c0a4392efd820c763bb54ac3d8c73f991d3d530418bbfe2",
+      "bytes": 14385
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/cauchy_occupation_tensor_jump_lp_v3.m",
+      "sha256": "6121279c0386bc614bec6c949a1451016954693c3486dd9563e341f377a8d376",
+      "bytes": 16403
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/inputs/r065-tensor-occupation/central-fine-outer-coarse.json",
+      "sha256": "53cc33d77574f23e742811c568a49e5f5588cb7622f7de62e569e92cd5803f0d",
+      "bytes": 1131
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/results/r065-tensor-occupation/exact-group-map.json",
+      "sha256": "c12ba32ac7b6aa1cf79621f81aab2ed7914f3a6ed3a03f56220fde572be25e91",
+      "bytes": 86123
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r065-canonical-jump-group-interface.md",
+      "sha256": "36b61d980fc6f3c6e6833fdaa2b1ecc53985362282df2bd8a9842748866bacbc",
+      "bytes": 7416
+    }
+  ],
+  "scope": "Exact independent JD=SG*GD and finite signed group interval algebra, unchanged helper diagnostics verified. No MATLAB/LP solve, floating LP feasible-set/optimum equivalence, optimized source/fullD/newC2 certificate."
+}

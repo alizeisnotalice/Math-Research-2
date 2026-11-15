@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/Users/zzh/.venvs/main/bin/python3",
+    "-B",
+    "/Volumes/data/CodexProjects/T2/.local/compute/r065-v3-solve/r065_tensor_source_verify.py",
+    "--input",
+    "/Volumes/data/CodexProjects/T2/.local/compute/r065-v3-solve/occupation-tensor-jump-lp.json",
+    "--output",
+    "/Volumes/data/CodexProjects/T2/.local/compute/r065-v3-solve/source-certificate.json",
+    "--max-seconds",
+    "60",
+    "--max-boxes",
+    "16000",
+    "--initial-subdiv",
+    "2"
+  ],
+  "pid": 79677,
+  "exit_status": 0,
+  "wall_seconds": 19.715693375008414,
+  "owned_pid_absent": true,
+  "stdout": "{\n  \"status\": \"PASS_SOURCE_NONNEGATIVE\",\n  \"axis_intervals\": 45,\n  \"D4_orbits\": 276,\n  \"physical_cells\": 2025,\n  \"complete_terminal_coverage\": true,\n  \"checked_boxes\": 1104,\n  \"accepted_leaves\": 1104,\n  \"unresolved_leaves\": 0,\n  \"unchecked_stack\": 0,\n  \"additional_origin_repair_sufficient_exact\": \"0\",\n  \"elapsed_seconds\": 19.624081791989738\n}\n"
+}

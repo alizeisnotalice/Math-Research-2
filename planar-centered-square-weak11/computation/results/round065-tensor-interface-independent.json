@@ -1,0 +1,229 @@
+{
+  "status": "PASS_R65_NONUNIFORM_INTERFACE_BOUNDED_AUDIT",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Users/zzh/.venvs/main/bin/python3",
+  "script_sha256": "50b7f82660c87a898f3465450b2c0b70146dc62521d0b4e35bf30e0f3fdb090a",
+  "elapsed_seconds": 8.12858070799848,
+  "prepared_grid": {
+    "axis_intervals": 45,
+    "physical_cells": 2025,
+    "D4_orbits": 276,
+    "fine_intervals": 17,
+    "coarse_intervals": 28,
+    "total_area": "16641/1024"
+  },
+  "scalar_interval_functions_AST_identical_to_reviewed_R62V3": true,
+  "anisotropic_error_counterexample": {
+    "correct_lower": "-1/2",
+    "wrong_shared_short_side_lower": "1/4"
+  },
+  "toy_cases": [
+    {
+      "name": "constant_nonuniform3",
+      "axis": [
+        "-2",
+        "-1/2",
+        "1/2",
+        "2"
+      ],
+      "physical_cells": 9,
+      "orbits": 3,
+      "mass_exact": "626/625",
+      "vertical_jumps": 6,
+      "horizontal_jumps": 6,
+      "checks": [
+        {
+          "cell": 0,
+          "box": [
+            "-1/2",
+            "1/2",
+            "-1/2",
+            "1/2"
+          ],
+          "lower_fixed": "8838798346874828831581207473418103174098659060",
+          "error_fixed": "0"
+        },
+        {
+          "cell": 1,
+          "box": [
+            "1/2",
+            "2",
+            "-1/2",
+            "1/2"
+          ],
+          "lower_fixed": "7154664357811674986177660636685575744797167778",
+          "error_fixed": "0"
+        },
+        {
+          "cell": 2,
+          "box": [
+            "1/2",
+            "2",
+            "1/2",
+            "2"
+          ],
+          "lower_fixed": "5786227253083497884028913121528863132406685116",
+          "error_fixed": "0"
+        }
+      ]
+    },
+    {
+      "name": "nonmonotone_nonuniform3",
+      "axis": [
+        "-2",
+        "-1/2",
+        "1/2",
+        "2"
+      ],
+      "physical_cells": 9,
+      "orbits": 3,
+      "mass_exact": "10037/10000",
+      "vertical_jumps": 12,
+      "horizontal_jumps": 12,
+      "checks": [
+        {
+          "cell": 0,
+          "box": [
+            "-1/2",
+            "1/2",
+            "-1/2",
+            "1/2"
+          ],
+          "lower_fixed": "8855250098119508759649161940714678969421602298",
+          "error_fixed": "0"
+        },
+        {
+          "cell": 1,
+          "box": [
+            "1/2",
+            "2",
+            "-1/2",
+            "1/2"
+          ],
+          "lower_fixed": "6876422285450153643616442849386134687472893736",
+          "error_fixed": "0"
+        },
+        {
+          "cell": 2,
+          "box": [
+            "1/2",
+            "2",
+            "1/2",
+            "2"
+          ],
+          "lower_fixed": "5652085663693958576271026993800785464769130694",
+          "error_fixed": "0"
+        }
+      ]
+    },
+    {
+      "name": "nonuniform5",
+      "axis": [
+        "-3",
+        "-2",
+        "-1/4",
+        "1/4",
+        "2",
+        "3"
+      ],
+      "physical_cells": 25,
+      "orbits": 6,
+      "mass_exact": "50073/50000",
+      "vertical_jumps": 30,
+      "horizontal_jumps": 30,
+      "checks": [
+        {
+          "cell": 0,
+          "box": [
+            "-1/4",
+            "1/4",
+            "-1/4",
+            "1/4"
+          ],
+          "lower_fixed": "2297679805943846732633117454117447517141474333",
+          "error_fixed": "0"
+        },
+        {
+          "cell": 1,
+          "box": [
+            "1/4",
+            "2",
+            "-1/4",
+            "1/4"
+          ],
+          "lower_fixed": "2149209904360796311737599806866996122526061600",
+          "error_fixed": "0"
+        },
+        {
+          "cell": 2,
+          "box": [
+            "1/4",
+            "2",
+            "1/4",
+            "2"
+          ],
+          "lower_fixed": "2008489072697737650273073415363954581708205992",
+          "error_fixed": "0"
+        },
+        {
+          "cell": 3,
+          "box": [
+            "2",
+            "3",
+            "-1/4",
+            "1/4"
+          ],
+          "lower_fixed": "1970808119366286577307886514219660768466860292",
+          "error_fixed": "0"
+        },
+        {
+          "cell": 4,
+          "box": [
+            "2",
+            "3",
+            "1/4",
+            "2"
+          ],
+          "lower_fixed": "1838722986918924943931196360111933381652530972",
+          "error_fixed": "0"
+        },
+        {
+          "cell": 5,
+          "box": [
+            "2",
+            "3",
+            "2",
+            "3"
+          ],
+          "lower_fixed": "1693195709866530899636835294692322560427830686",
+          "error_fixed": "0"
+        }
+      ]
+    }
+  ],
+  "fullcell_derivative_reference_points": 108,
+  "outer_boundary_checks": 22,
+  "source_pins": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r065_tensor_source_verify.py",
+      "sha256": "5124b452b656fb093a30f40b619bfbc31d7d3bb095385aa6b10f8e0fccc23e38"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/cauchy_occupation_tensor_jump_lp_v2.m",
+      "sha256": "3d696e00cbbd4edb0c0a4392efd820c763bb54ac3d8c73f991d3d530418bbfe2"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/inputs/r065-tensor-occupation/central-fine-outer-coarse.json",
+      "sha256": "53cc33d77574f23e742811c568a49e5f5588cb7622f7de62e569e92cd5803f0d"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r062_coupled_source_verify_v3.py",
+      "sha256": "58cc151a64c30920c25fbb3a24f79ef7651e5d762210532678cf12ac5a39edc0"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r062_coupled_source.py",
+      "sha256": "a15e5e0a96d94d0b41cf2e8de777133908dec810d3430bec2b6e0aba6cea49e4"
+    }
+  ],
+  "scope": "Independent exact prepared-grid/D4/mass/jump/anisotropic oracle checks plus3tiny nonuniform source cases. No MATLAB/LP run, no4416row exact certificate, no optimized source/fullD/generalC2 claim."
+}

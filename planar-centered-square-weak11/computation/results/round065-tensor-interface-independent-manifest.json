@@ -1,0 +1,59 @@
+{
+  "round": 65,
+  "date": "2026-11-15",
+  "status": "NONUNIFORM INTERFACE/V2 DIAGNOSTIC INDEPENDENT REVIEW PASS",
+  "files": [
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/reviews/r065-tensor-interface-independent-review.md",
+      "destination": "planar-centered-square-weak11/reviews/r065-tensor-interface-independent-review.md",
+      "bytes": 7754,
+      "sha256": "c778cc3b0c7ac19055b285f187b4d9e270017ef3dfff7b97a95ca5edee92eb18"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r065_tensor_interface.py",
+      "destination": "planar-centered-square-weak11/computation/review_r065_tensor_interface.py",
+      "bytes": 7166,
+      "sha256": "50b7f82660c87a898f3465450b2c0b70146dc62521d0b4e35bf30e0f3fdb090a"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round065-tensor-interface-independent.json",
+      "destination": "planar-centered-square-weak11/computation/results/round065-tensor-interface-independent.json",
+      "bytes": 6279,
+      "sha256": "4644ca901dfde539f05a98f20972837a262469bd20cd4df660cf41a633d969bb"
+    }
+  ],
+  "total_payload_bytes": 21199,
+  "source_pins": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r065_tensor_source_verify.py",
+      "sha256": "5124b452b656fb093a30f40b619bfbc31d7d3bb095385aa6b10f8e0fccc23e38"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/cauchy_occupation_tensor_jump_lp_v2.m",
+      "sha256": "3d696e00cbbd4edb0c0a4392efd820c763bb54ac3d8c73f991d3d530418bbfe2"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/inputs/r065-tensor-occupation/central-fine-outer-coarse.json",
+      "sha256": "53cc33d77574f23e742811c568a49e5f5588cb7622f7de62e569e92cd5803f0d"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/computation/r062_coupled_source_verify_v3.py",
+      "sha256": "58cc151a64c30920c25fbb3a24f79ef7651e5d762210532678cf12ac5a39edc0"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/review_r062_coupled_source.py",
+      "sha256": "a15e5e0a96d94d0b41cf2e8de777133908dec810d3430bec2b6e0aba6cea49e4"
+    }
+  ],
+  "actual_run": {
+    "python": "3.13.18",
+    "exit_code": 0,
+    "seconds": 8.12858070799848,
+    "tiny_source_cases": 3,
+    "fullcell_derivative_points": 108,
+    "boundary_checks": 22
+  },
+  "scope": "Proof/code review and bounded exact tiny checks. Actual V2 iterationcap status read,4416positive lambda-only rows remain floating diagnostics. NoMATLAB/LP launch,optimized source/fullD/newC2certificate.",
+  "dependency": "Frozen computation/review_r062_coupled_source.py supplies independent Fraction reference; later V3 requires separate delta review.",
+  "git": "No delegated commit/push; root owns archive."
+}

@@ -1,0 +1,11 @@
+
+	Sponsored License -- for use in support of a program or activity sponsored by MathWorks.
+	Not for government, commercial or other non-sponsored organizational use.
+
+{错误使用 assert
+tensor jump LP failed
+
+出错 cauchy_occupation_tensor_jump_lp (第 70 行)
+[v,lpval,ef,lpout]=linprog(cost,Amat,bv,Aeq,beq,zeros(numel(cost),1),[],opts);assert(ef>0,'tensor jump LP failed');v=max(v,0);
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
