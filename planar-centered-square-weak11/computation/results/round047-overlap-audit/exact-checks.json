@@ -1,0 +1,495 @@
+{
+  "status": "passed_gap_and_slope_replay_pending_catalogue_binding",
+  "scope": "new overlap graph gaps and five new center slopes; upstream candidate/outer-Y/omitted-domain proof supplied by separate audit",
+  "index_sha256": "185064c894cc24fb18db72da588b1ab040d50885dc54e3ec1f096663f780d4a3",
+  "new_center_index_sha256": "f6863ff64889f91b261cff366af33b72927e95505541620c7bfc9be123a406b2",
+  "contract_sha256": "3e391beace80ec39a668eaeb81de218d8ab2d982da39d919f8f3ead749d5a3b7",
+  "module_sha256": "929cf92baca532b92159ff81542390acbff3688386dd5104decd0ee55a8ed524",
+  "source_sha256": {
+    "r039_join_slope.py": "a4c44c806c533bcefb6fbdcda05ee98918caa4fbf585a9ffc64eb5727dd09f56",
+    "r039_endpoint_sweep.py": "3d8039a449d0902899932b0201296b0546cc8216ae741d0937fe86ea0682abd0",
+    "r039_interval_primitives.py": "470c323935ab9d3235d4bb8cd2cace21c7e0d2b60524912e4e563bddef39fcfa"
+  },
+  "old_independent_kernel_sha256": "46ac35f415025e03af461b9ea26a71f1c2a71c04968389ef1dbc66a6f4057bd2",
+  "old_independent_slope_replay_sha256": "6f296cca49b3cd6c6bbdd62e837ce2d678727424cd8fadc8e613db985441ff19",
+  "base_horizontal_period": "328734960629/100000000000",
+  "toy_all_pairs": [
+    {
+      "case": "disjoint",
+      "overlap_radius": "699/200",
+      "final_delta": "699/200",
+      "all_coactive_pairs_match": true
+    },
+    {
+      "case": "positive_overlap",
+      "overlap_radius": "1/200",
+      "final_delta": "1/200",
+      "all_coactive_pairs_match": true
+    },
+    {
+      "case": "touch_only",
+      "overlap_radius": "699/200",
+      "final_delta": "699/200",
+      "all_coactive_pairs_match": true
+    },
+    {
+      "case": "shared_canonical",
+      "overlap_radius": "1/200",
+      "final_delta": "1/200",
+      "all_coactive_pairs_match": true
+    },
+    {
+      "case": "empty_candidate_preserved",
+      "overlap_radius": "1/2",
+      "final_delta": "1/2",
+      "all_coactive_pairs_match": true
+    },
+    {
+      "case": "domain_clip",
+      "overlap_radius": "1/200",
+      "final_delta": "1/200",
+      "all_coactive_pairs_match": true
+    },
+    {
+      "case": "root_x_disjoint",
+      "overlap_radius": "7/2",
+      "final_delta": "7/2",
+      "all_coactive_pairs_match": true
+    },
+    {
+      "case": "root_y_false_overlap",
+      "overlap_radius": "1/2000",
+      "final_delta": "1/2000",
+      "all_coactive_pairs_match": true
+    },
+    {
+      "case": "omitted_box_domain_cap",
+      "overlap_radius": "699/200",
+      "final_delta": "1/400",
+      "all_coactive_pairs_match": true
+    }
+  ],
+  "nonbinary_and_nonpersistent_collision_rejected": true,
+  "new_center_slope_replays": [
+    {
+      "name": "bracket-refine-q0",
+      "hashes": {
+        "run_manifest.json": "2a4eae9e93cf0ce36d8fcfcaf069f2b8dd9e78c9e20e3086e4d7130cf479f7b5",
+        "velocities.json": "549ca221978d2ded69c6f0dc195760428d784dfe5d40bf0364723078592eb148",
+        "slab.json": "25f9081c14bb49b97d9000d1e69562f09fc842aaf98040d8c56d0336aea5f4ce",
+        "slope.json": "64cf75067e85a9d636988c118f310d9ff24704c9dc16a5931fe8c42d7de23fbb"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        26,
+        27
+      ],
+      "s0_physical": "-45694159527431/17280000000000000000",
+      "s0_normalized": "-139/172800000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "1590619721358226088650338649/1992248359960631574528000000000000000",
+      "delta_physical": "1590619721358226088650338649/1992248359960631574528000000000000000",
+      "delta_normalized": "1590619721358226088650338649/6549216861748480406424363592581120000",
+      "beta_lower": "-1279707103650316169320369155519027/18446744073709551616000000000000000",
+      "beta_upper": "-639853551825158084651807502564201/9223372036854775808000000000000000",
+      "sign": "negative",
+      "dJ_dphysical_bounds": [
+        "-122042379727393738681828418304350566864013671875/37121860280359573207845493973057648387555990700032",
+        "-61021189863696869340115309006137943267822265625/18560930140179786603922746986528824193777995350016"
+      ],
+      "dJ_dnormalized_bounds": [
+        "-821649344404567008017448539115807263487085904296875/76025569854176405929667571656822063897714668953665536",
+        "-410824672202283504003345680720955922421567244140625/38012784927088202964833785828411031948857334476832768"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 412,
+      "max_active_at_replayed_gap": 4513,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.265199,
+      "direction": "q0"
+    },
+    {
+      "name": "bracket-refine-q1",
+      "hashes": {
+        "run_manifest.json": "b8b9030666cdfddaf8fdccf9864817f1c1fd5b2ac3e6d76f8589a3b425205cb2",
+        "velocities.json": "9b790bae1b20ec8317aaa475c37b26ba97ba3b502bfb5b170f1be37fa9d22019",
+        "slab.json": "f39454197723c0947f3b7415c109cf6a223ec30b3d9939e5cf6b3efc6629b7dc",
+        "slope.json": "01e08607be95efe79d82176609e435af812c0d28a725ac938fea9fe7156d9f0d"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        77,
+        78
+      ],
+      "s0_physical": "-2301144724403/1920000000000000000",
+      "s0_normalized": "-7/19200000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "1575929661531092124108308542007127/14411518807585587200000000000000000000000",
+      "delta_physical": "328734960629/10000000000000000000",
+      "delta_normalized": "1/100000000",
+      "beta_lower": "660810241103148355281908317748299/9223372036854775808000000000000000",
+      "beta_upper": "1321620482206296710572636215574723/18446744073709551616000000000000000",
+      "sign": "positive",
+      "dJ_dphysical_bounds": [
+        "63019775495829425361815292143659496307373046875/18560930140179786603922746986528824193777995350016",
+        "126039550991658850724471684987518596649169921875/37121860280359573207845493973057648387555990700032"
+      ],
+      "dJ_dnormalized_bounds": [
+        "424280133969303656448328584044872448626406388671875/38012784927088202964833785828411031948857334476832768",
+        "848560267938607312902319871819718988305821810546875/76025569854176405929667571656822063897714668953665536"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 304,
+      "max_active_at_replayed_gap": 4489,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.1325070000000002,
+      "direction": "q1"
+    },
+    {
+      "name": "bracket-refine-q2",
+      "hashes": {
+        "run_manifest.json": "6abaad94cc7e507ec54de05674961ba18d570caea3a1887f592f3d2da7d9c5a7",
+        "velocities.json": "5afc5b1ecf61d9a4aace0bf8f5eeb6b1a3397402bf672cec5330fab42ffdc9c5",
+        "slab.json": "1660c60bb89182e537ff670f77db987ef2e619ebbb84e283c3d5b7e934fe3201",
+        "slope.json": "6252230db36fb6aa7084a130a89f8457155e58b4871bafa8114e7e82186f3736"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        128,
+        129
+      ],
+      "s0_physical": "-45694159527431/17280000000000000000",
+      "s0_normalized": "-139/172800000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "delta_physical": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "delta_normalized": "2991627114234353195069998612723933/1279143918310250079379758514176000000000000",
+      "beta_lower": "-159963387956289521164531160309019/2305843009213693952000000000000000",
+      "beta_upper": "-1279707103650316169307734878175277/18446744073709551616000000000000000",
+      "sign": "negative",
+      "dJ_dphysical_bounds": [
+        "-15255297465924217335179439574148082733154296875/4640232535044946650980686746632206048444498837504",
+        "-122042379727393738680623519723441791534423828125/37121860280359573207845493973057648387555990700032"
+      ],
+      "dJ_dnormalized_bounds": [
+        "-102706168050570876001850416436384860231665919921875/9503196231772050741208446457102757987214333619208192",
+        "-821649344404567008009336569066640226476893033203125/76025569854176405929667571656822063897714668953665536"
+      ],
+      "boxes": 27133,
+      "raw_endpoint_classes": 25788,
+      "nonzero_velocity_gaps_replayed": 288,
+      "max_active_at_replayed_gap": 4476,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.173743,
+      "direction": "q2"
+    },
+    {
+      "name": "bracket-refine-q3",
+      "hashes": {
+        "run_manifest.json": "d93e910685feed397a76aedd41138fc06319243f9d635834247f65231e554290",
+        "velocities.json": "4509efbacb909e0c37603def881f4a9ea850b1ed6f7f28722f9718a53bc0832b",
+        "slab.json": "a0a8fab4eede14b3f542e69384802227c486ff090ec71a273dbff668c753522e",
+        "slope.json": "060ff3cb15abc69b72194a22ba6da6f3b2edfab55fef41604264c3f178946b95"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        179,
+        180
+      ],
+      "s0_physical": "-45694159527431/17280000000000000000",
+      "s0_normalized": "-139/172800000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "delta_physical": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "delta_normalized": "2991627114234353195069998612723933/1279143918310250079379758514176000000000000",
+      "beta_lower": "-639855103326059691187879279907951/9223372036854775808000000000000000",
+      "beta_upper": "-1279710206652119382367244155519027/18446744073709551616000000000000000",
+      "sign": "negative",
+      "dJ_dphysical_bounds": [
+        "-61021337826353043669498374930186367034912109375/18560930140179786603922746986528824193777995350016",
+        "-122042675652706087338184752990629863739013671875/37121860280359573207845493973057648387555990700032"
+      ],
+      "dJ_dnormalized_bounds": [
+        "-410825668359681561586623815083095981892697615234375/38012784927088202964833785828411031948857334476832768",
+        "-821651336719363123167780867741753308408960904296875/76025569854176405929667571656822063897714668953665536"
+      ],
+      "boxes": 27133,
+      "raw_endpoint_classes": 25788,
+      "nonzero_velocity_gaps_replayed": 286,
+      "max_active_at_replayed_gap": 4476,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.1920760000000006,
+      "direction": "q3"
+    },
+    {
+      "name": "bracket-refine-all",
+      "hashes": {
+        "run_manifest.json": "3d465430f7c88baa448799e6e84b60344903f45408f6a9fb51ccbd02b7a17bdf",
+        "velocities.json": "a8b1a49eb6796adc62bcc9db3b95da5c035db5a5a4d5acfbb504aac6fb82870e",
+        "slab.json": "34fa5ccf32d7a39f7ac3c237ad3c794974214418452fe8664aef0b49ca23e45e",
+        "slope.json": "ae9634822b35fe501738860b37dc22423d3de5654a7d19ffdf3a41df14feb5dd"
+      },
+      "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "enum_sha256": "acede2c710655d0c179e7bea3ee9483271caaf37968227e7e9fce6442907056b",
+      "velocity_nonzero_labels": [
+        26,
+        27,
+        77,
+        78,
+        128,
+        129,
+        179,
+        180
+      ],
+      "s0_physical": "-328734960629/128000000000000000",
+      "s0_normalized": "-1/1280000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "endpoint_radius": "1977392619573171547625779828080437/43234556422756761600000000000000000000000",
+      "delta_physical": "328734960629/10000000000000000000",
+      "delta_normalized": "1/100000000",
+      "beta_lower": "3223478470083844097249935241337/922337203685477580800000000000000",
+      "beta_upper": "6446956940167688195848747435799/1844674407370955161600000000000000",
+      "sign": "positive",
+      "dJ_dphysical_bounds": [
+        "1537074313203737305283515568417072296142578125/9280465070089893301961373493264412096888997675008",
+        "3074148626407474611210225789927959442138671875/18560930140179786603922746986528824193777995350016"
+      ],
+      "dJ_dnormalized_bounds": [
+        "10348340507338297301156557702477717854697001953125/19006392463544101482416892914205515974428667238416384",
+        "20696681014676594606643418257288564161695029296875/38012784927088202964833785828411031948857334476832768"
+      ],
+      "boxes": 26331,
+      "raw_endpoint_classes": 25232,
+      "nonzero_velocity_gaps_replayed": 272,
+      "max_active_at_replayed_gap": 4513,
+      "tail_bound": "23820787253964867284592995960140706111190198205884874124835164741/24052915052186143128797603913750000000000000000000000000000000000",
+      "tail_radius": "10",
+      "all_raw_gaps_and_clips_checked": true,
+      "cpu_seconds": 1.122261,
+      "direction": "all"
+    }
+  ],
+  "real_radius_replays": [
+    {
+      "name": "r039",
+      "source_slab_sha256": "c0d262c39a01db8d50cd2fee1a00c7867aa8e08417c4fc85522103b70ce13b25",
+      "output_sha256": "63ac965944c35a1670f3d2c9aba1ed3612f202048e0f2e8e3b717b972abea9b6",
+      "boxes": 25466,
+      "x_classes": 24656,
+      "positive_outer_y_strips": 9319,
+      "overlap_gap_lower": "1679190175941209327441780380377631/21617278211378380800000000000000000000000",
+      "overlap_radius": "1679190175941209327441780380377631/43234556422756761600000000000000000000000",
+      "old_final_delta": "561489540315834114922821552388999/86469112845513523200000000000000000000000",
+      "final_delta": "1679190175941209327441780380377631/43234556422756761600000000000000000000000",
+      "H": "328734960629/500000000000000000",
+      "delta_empty": "328734960629/500000000000000000",
+      "improvement_factor": "3358380351882418654883560760755262/561489540315834114922821552388999",
+      "normalized_final_delta": "1679190175941209327441780380377631/142127102034472231042195390464000000000000",
+      "beta_lower": "82711662599225853187437/1208925819614629174706176",
+      "beta_upper": "82711662599225853188199/1208925819614629174706176",
+      "new_beta_replay": false,
+      "limiting_pair_ranks": [
+        940,
+        941
+      ],
+      "shared_outer_strip": [
+        "2313723436923756966196356393624073592015147/4503599627370496000000000000000000000000000",
+        "4627478805299391074804995313741219693795919/9007199254740992000000000000000000000000000"
+      ],
+      "independent_method": "sorted active rank list, linked neighbours, lazy minimum heap; no production tree",
+      "cpu_seconds": 0.8972499999999997
+    },
+    {
+      "name": "q0",
+      "source_slab_sha256": "25f9081c14bb49b97d9000d1e69562f09fc842aaf98040d8c56d0336aea5f4ce",
+      "output_sha256": "b90c88210bee0c761d298f99e1a5e7086bdd79f1db2fe7373e39401bd34d2d34",
+      "boxes": 26331,
+      "x_classes": 25232,
+      "positive_outer_y_strips": 9670,
+      "overlap_gap_lower": "7922478520706354782931692601/996124179980315787264000000000000000",
+      "overlap_radius": "7922478520706354782931692601/1992248359960631574528000000000000000",
+      "old_final_delta": "1590619721358226088650338649/1992248359960631574528000000000000000",
+      "final_delta": "7922478520706354782931692601/1992248359960631574528000000000000000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "improvement_factor": "7922478520706354782931692601/1590619721358226088650338649",
+      "normalized_final_delta": "7922478520706354782931692601/6549216861748480406424363592581120000",
+      "beta_lower": "-1279707103650316169320369155519027/18446744073709551616000000000000000",
+      "beta_upper": "-639853551825158084651807502564201/9223372036854775808000000000000000",
+      "new_beta_replay": true,
+      "limiting_pair_ranks": [
+        6476,
+        6477
+      ],
+      "shared_outer_strip": [
+        "149555824471144885785683885926752017/36893488147419103232000000000000000",
+        "149555824489445951064015245790033267/36893488147419103232000000000000000"
+      ],
+      "independent_method": "sorted active rank list, linked neighbours, lazy minimum heap; no production tree",
+      "cpu_seconds": 1.0167859999999997
+    },
+    {
+      "name": "q1",
+      "source_slab_sha256": "f39454197723c0947f3b7415c109cf6a223ec30b3d9939e5cf6b3efc6629b7dc",
+      "output_sha256": "5cbec9ee29095b18ea2f58c8eb0479e6629de675c6a74ce89e39f8a5947a6426",
+      "boxes": 26331,
+      "x_classes": 25232,
+      "positive_outer_y_strips": 9670,
+      "overlap_gap_lower": "1575929661531092124108308542007127/7205759403792793600000000000000000000000",
+      "overlap_radius": "1575929661531092124108308542007127/14411518807585587200000000000000000000000",
+      "old_final_delta": "328734960629/10000000000000000000",
+      "final_delta": "328734960629/10000000000000000000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "improvement_factor": "1",
+      "normalized_final_delta": "1/100000000",
+      "beta_lower": "660810241103148355281908317748299/9223372036854775808000000000000000",
+      "beta_upper": "1321620482206296710572636215574723/18446744073709551616000000000000000",
+      "new_beta_replay": true,
+      "limiting_pair_ranks": [
+        968,
+        969
+      ],
+      "shared_outer_strip": [
+        "44166360123342359204545621615404068582922831/9007199254740992000000000000000000000000000",
+        "45226353737596839487902879997435799/9223372036854775808000000000000000"
+      ],
+      "independent_method": "sorted active rank list, linked neighbours, lazy minimum heap; no production tree",
+      "cpu_seconds": 1.081683
+    },
+    {
+      "name": "q2",
+      "source_slab_sha256": "1660c60bb89182e537ff670f77db987ef2e619ebbb84e283c3d5b7e934fe3201",
+      "output_sha256": "120ee3958a47f66bd8d7055bf64008dcc621327593909576858fc8cfb9e8bd99",
+      "boxes": 27133,
+      "x_classes": 25788,
+      "positive_outer_y_strips": 9998,
+      "overlap_gap_lower": "2991627114234353195069998612723933/194555503902405427200000000000000000000000",
+      "overlap_radius": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "old_final_delta": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "final_delta": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "improvement_factor": "1",
+      "normalized_final_delta": "2991627114234353195069998612723933/1279143918310250079379758514176000000000000",
+      "beta_lower": "-159963387956289521164531160309019/2305843009213693952000000000000000",
+      "beta_upper": "-1279707103650316169307734878175277/18446744073709551616000000000000000",
+      "new_beta_replay": true,
+      "limiting_pair_ranks": [
+        13143,
+        13144
+      ],
+      "shared_outer_strip": [
+        "19452161856618607574726441311773077222922831/9007199254740992000000000000000000000000000",
+        "2431524471968270885296801267556401040804807/1125899906842624000000000000000000000000000"
+      ],
+      "independent_method": "sorted active rank list, linked neighbours, lazy minimum heap; no production tree",
+      "cpu_seconds": 1.0581560000000003
+    },
+    {
+      "name": "q3",
+      "source_slab_sha256": "a0a8fab4eede14b3f542e69384802227c486ff090ec71a273dbff668c753522e",
+      "output_sha256": "d1d9a6f7169b4a8ba99d0fe79550dbb90d88e67ae28e37e593826df5ac527251",
+      "boxes": 27133,
+      "x_classes": 25788,
+      "positive_outer_y_strips": 9693,
+      "overlap_gap_lower": "2991627114234353195069998612723933/194555503902405427200000000000000000000000",
+      "overlap_radius": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "old_final_delta": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "final_delta": "2991627114234353195069998612723933/389111007804810854400000000000000000000000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "improvement_factor": "1",
+      "normalized_final_delta": "2991627114234353195069998612723933/1279143918310250079379758514176000000000000",
+      "beta_lower": "-639855103326059691187879279907951/9223372036854775808000000000000000",
+      "beta_upper": "-1279710206652119382367244155519027/18446744073709551616000000000000000",
+      "new_beta_replay": true,
+      "limiting_pair_ranks": [
+        13143,
+        13144
+      ],
+      "shared_outer_strip": [
+        "19452161856618607574726441311773077222922831/9007199254740992000000000000000000000000000",
+        "2431524471968270885296801267556401040804807/1125899906842624000000000000000000000000000"
+      ],
+      "independent_method": "sorted active rank list, linked neighbours, lazy minimum heap; no production tree",
+      "cpu_seconds": 1.1124829999999992
+    },
+    {
+      "name": "all",
+      "source_slab_sha256": "34fa5ccf32d7a39f7ac3c237ad3c794974214418452fe8664aef0b49ca23e45e",
+      "output_sha256": "86e4fd56eee12fe716ff7e70dd90533140fbdf55b0e66837e8fc263e852791c9",
+      "boxes": 26331,
+      "x_classes": 25232,
+      "positive_outer_y_strips": 9670,
+      "overlap_gap_lower": "1977392619573171547625779828080437/21617278211378380800000000000000000000000",
+      "overlap_radius": "1977392619573171547625779828080437/43234556422756761600000000000000000000000",
+      "old_final_delta": "328734960629/10000000000000000000",
+      "final_delta": "328734960629/10000000000000000000",
+      "H": "328734960629/10000000000000000000",
+      "delta_empty": "328734960629/10000000000000000000",
+      "improvement_factor": "1",
+      "normalized_final_delta": "1/100000000",
+      "beta_lower": "3223478470083844097249935241337/922337203685477580800000000000000",
+      "beta_upper": "6446956940167688195848747435799/1844674407370955161600000000000000",
+      "new_beta_replay": true,
+      "limiting_pair_ranks": [
+        1129,
+        1130
+      ],
+      "shared_outer_strip": [
+        "19452161856618607574726441311773077222922831/9007199254740992000000000000000000000000000",
+        "2431524471968270885296801267556401040804807/1125899906842624000000000000000000000000000"
+      ],
+      "independent_method": "sorted active rank list, linked neighbours, lazy minimum heap; no production tree",
+      "cpu_seconds": 1.049619999999999
+    }
+  ],
+  "candidate_bbox_enumerations_rerun": false,
+  "R39_R45_frozen_outputs_modified": false,
+  "main_cpu_seconds": 12.201793,
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "script_sha256": "f9fdffbc00b369b5b302138875a459a70f30655f08f8611971cf19a5997e5bf7",
+  "actual_command": [
+    "/Users/zzh/.local/bin/python3",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/review_round047_overlap.py",
+    "--index",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r047-six-centers-index.json",
+    "--new_index",
+    "/Volumes/data/CodexTemp/T2/planar-centered-square-weak11/round047/bracket_refine_index.json",
+    "--module",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/overlap_position_radius.py",
+    "--contract",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-variation/planar-centered-square-weak11/proofs/overlap-supported-position-radius.md",
+    "--sweep_module",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r039_endpoint_sweep.py",
+    "--old_kernel",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/r039_join_sweep_audit.py",
+    "--old_replay",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/review_round045_join_sweep.py",
+    "--prior_check",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/r039-join-sweep-audit/exact-checks.json",
+    "--output",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-kernel-audit/planar-centered-square-weak11/computation/results/round047-overlap-audit/exact-checks.json"
+  ]
+}
