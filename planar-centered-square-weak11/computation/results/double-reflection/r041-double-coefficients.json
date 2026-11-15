@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "template": "R41",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "arithmetic": "Fraction; exact interval arithmetic and strict rational comparisons",
+  "random_seed": null,
+  "floating_tolerance": null,
+  "script_sha256": "370ad6f8036d438ecd374d1322a61441b76d8b75506347040ef11f8299371a1f",
+  "input_sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+  "reflected_input_sha256": "deb65c6011d01f61253cb1db6b4b0e919f014ad32711677b9ee3fd80645694bf",
+  "cell_mass": "65941670400277227073796193886781311/3125000000000000000000000000000000",
+  "X": "979821360288625294630001/150000000000000000000000",
+  "original_true_left_axis_interval": {
+    "lower": "-9223327361023861199/18446744073709551616",
+    "upper": "-4611663680511930599/9223372036854775808",
+    "lower_float_display": -0.4999975781183532,
+    "upper_float_display": -0.4999975781183532
+  },
+  "short_R15_tail_bound": "26926515139458554369175308496283577011201095478932741874835164741/27059529433709411019897304402968750000000000000000000000000000000",
+  "long_radius_tail_bound": "31606847302378029227370072381918008355357805457568529/31628136330772372967298556794784570246995000000000000",
+  "six_Px_minus_30": "236204881887/25000000000",
+  "coefficients": {
+    "A": {
+      "lower": "5787127961486931243289275587742710423072286086934655993859389/161061273600000000000000000000000000000000000000000000000000",
+      "upper": "5787127961511435025052791405452069980943486886876672595421889/161061273600000000000000000000000000000000000000000000000000",
+      "lower_float_display": 35.931219418141566,
+      "upper_float_display": 35.9312194182937
+    },
+    "b_x": {
+      "lower": "-726594311498127874900854853241598988180237553999257040326033/161061273600000000000000000000000000000000000000000000000000",
+      "upper": "-242198103765398805313183650085259640542199078694128974379511/53687091200000000000000000000000000000000000000000000000000",
+      "lower_float_display": -4.511291232569317,
+      "upper_float_display": -4.51129123131556
+    },
+    "gamma_left_rational_axis": {
+      "lower": "29263721518935736350304353218952349756805301901667/28334198897217871282176000000000000000000000000000",
+      "upper": "39018295385812307529794069610498285111166581083763/37778931862957161709568000000000000000000000000000",
+      "lower_float_display": 1.032805678575551,
+      "upper_float_display": 1.0328056792963582
+    },
+    "gamma_left_true_axis": {
+      "lower": "29263721513892425354572068740649871036805301901667/28334198897217871282176000000000000000000000000000",
+      "upper": "39018295392536722190770448914901590071166581083763/37778931862957161709568000000000000000000000000000",
+      "lower_float_display": 1.0328056783975574,
+      "upper_float_display": 1.032805679474352
+    },
+    "gamma_right_true_axis": {
+      "lower": "480750647497016081942954028753499880266584770606101061759/461168601842738790400000000000000000000000000000000000000",
+      "upper": "961501296006810890368199787243490560238464622739692357893/922337203685477580800000000000000000000000000000000000000",
+      "lower_float_display": 1.0424617928801556,
+      "upper_float_display": 1.0424617939782124
+    },
+    "K_double_true_axis": {
+      "lower": "-205703919442847604263624590697848532528250640999758839315437611379/84442493013196800000000000000000000000000000000000000000000000000",
+      "upper": "-1097087568817746504585728910560271440236590831259988942179485620063/450359962737049600000000000000000000000000000000000000000000000000",
+      "lower_float_display": -2.436023761291603,
+      "upper_float_display": -2.4360237578629964
+    }
+  },
+  "left_axis_error": "2626724476943898165782541/14757395258967641292800000000000000",
+  "right_axis_error": "2779043619548064104229609/14757395258967641292800000000000000",
+  "strict_K_upper": "-12/5",
+  "formula": "J_double(N,lambda=1)=A/m+K/(m*N), every integer N>=7",
+  "strict_threshold_one_deficit": "12/(5*m*N)",
+  "scope": "Fixed canonical R41 source phase, true left/right halo axes, double-reflected period2W; fixed threshold1; no assertion about all thresholds, other phases, N<=6, R35, or arbitrary smoothing.",
+  "sources": [
+    {
+      "role": "original",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-vertical-compute/planar-centered-square-weak11/computation/inputs/r041_final_0036.json",
+      "sha256": "ab714c7f457ccf69f68fd629c947021faab16631c8995caa16b67c1ca2752db3",
+      "size": 44767
+    },
+    {
+      "role": "reflected",
+      "path": "planar-centered-square-weak11/computation/inputs/r054_r041_left_reflected.json",
+      "sha256": "deb65c6011d01f61253cb1db6b4b0e919f014ad32711677b9ee3fd80645694bf",
+      "size": 44845
+    },
+    {
+      "role": "prior",
+      "path": "planar-centered-square-weak11/computation/results/reflection-edge/r041-coefficients.json",
+      "sha256": "112462bf4b2eaa5796ab6d302d5aaddab8a65f2086c9f6f82e84badeaa627567",
+      "size": 21701
+    },
+    {
+      "role": "axis",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-left-axis.json",
+      "sha256": "463b386505fa0b4195386873ea6f6f27a14188b5531f0949f766d739f5554964",
+      "size": 47145
+    },
+    {
+      "role": "old",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-leftseam-old.json",
+      "sha256": "c9c206194efb14c44a3dbaf8952f0a08ada40ee3f1c420312899d1b7cb481c8c",
+      "size": 2417
+    },
+    {
+      "role": "new",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-leftseam-new.json",
+      "sha256": "702a12d59219ef5d1c265ccef5233c53786f54b8225dd579fe2324111d059df0",
+      "size": 2415
+    },
+    {
+      "role": "axis-error",
+      "path": "planar-centered-square-weak11/computation/results/double-reflection/r041-left-axis-error.json",
+      "sha256": "257c4c864d279eb1a8054cb2a1f3841d4ce12e0f0fe14f79f65115c7cee9d2c2",
+      "size": 3568
+    }
+  ],
+  "new_run_counts": {
+    "axis": {
+      "boxes": 99682,
+      "span_rejected": 90272,
+      "cannot_beat_lower": 9393,
+      "root_checked": 17
+    },
+    "old": {
+      "boxes": 39259817,
+      "zero_mass": 180648,
+      "span_rejected": 38758836,
+      "root_checked": 320333,
+      "inner_empty": 266275,
+      "outer_empty": 266275
+    },
+    "new": {
+      "boxes": 220824236,
+      "zero_mass": 455951,
+      "span_rejected": 219530177,
+      "root_checked": 838108,
+      "inner_empty": 783012,
+      "outer_empty": 783005
+    }
+  }
+}

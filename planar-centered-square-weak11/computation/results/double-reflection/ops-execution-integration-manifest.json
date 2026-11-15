@@ -1,0 +1,70 @@
+{
+  "round": 54,
+  "working_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-reflection/planar-centered-square-weak11/computation",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "files": [
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-left-axis.json",
+      "destination": "computation/results/double-reflection/r041-left-axis.json",
+      "sha256": "463b386505fa0b4195386873ea6f6f27a14188b5531f0949f766d739f5554964",
+      "bytes": 47145,
+      "command_argv": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "reflection_edge_seam.py",
+        "inputs/r054_r041_left_reflected.json",
+        "--output",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-left-axis.json"
+      ],
+      "script_sha256": "d32965a4d24e4e98f6342931acd1c5313530aa4d8c54322fd978010c44437da6",
+      "input_sha256": "deb65c6011d01f61253cb1db6b4b0e919f014ad32711677b9ee3fd80645694bf",
+      "elapsed_seconds": 0.07460784912109375,
+      "exit_status": 0,
+      "result_status": "PASS"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-leftseam-old.json",
+      "destination": "computation/results/double-reflection/r041-leftseam-old.json",
+      "sha256": "c9c206194efb14c44a3dbaf8952f0a08ada40ee3f1c420312899d1b7cb481c8c",
+      "bytes": 2417,
+      "command_argv": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "reflection_edge_states.py",
+        "inputs/r054_r041_left_reflected.json",
+        "--state",
+        "seam-old",
+        "--seam",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-left-axis.json",
+        "--output",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-leftseam-old.json"
+      ],
+      "script_sha256": "ea664c7f9520b9983b13383fd032ff3110a6379b7dea381108ed49c88db9fede",
+      "input_sha256": "deb65c6011d01f61253cb1db6b4b0e919f014ad32711677b9ee3fd80645694bf",
+      "elapsed_seconds": 14.575676202774048,
+      "exit_status": 0,
+      "result_status": "PASS"
+    },
+    {
+      "source": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-leftseam-new.json",
+      "destination": "computation/results/double-reflection/r041-leftseam-new.json",
+      "sha256": "702a12d59219ef5d1c265ccef5233c53786f54b8225dd579fe2324111d059df0",
+      "bytes": 2415,
+      "command_argv": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "reflection_edge_states.py",
+        "inputs/r054_r041_left_reflected.json",
+        "--state",
+        "seam-new",
+        "--seam",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-left-axis.json",
+        "--output",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-operations-terra/r054/r041-leftseam-new.json"
+      ],
+      "script_sha256": "ea664c7f9520b9983b13383fd032ff3110a6379b7dea381108ed49c88db9fede",
+      "input_sha256": "deb65c6011d01f61253cb1db6b4b0e919f014ad32711677b9ee3fd80645694bf",
+      "elapsed_seconds": 77.06449580192566,
+      "exit_status": 0,
+      "result_status": "PASS"
+    }
+  ],
+  "scope": "Rational enclosure outputs; interpretation and generality require independent mathematical review."
+}
