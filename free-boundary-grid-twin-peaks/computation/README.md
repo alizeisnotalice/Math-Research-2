@@ -220,3 +220,20 @@ python3 t_family_exact.py
 
 `root-reproduction.json`记录重新编译后n5输出除运行时间字段以外逐项完全一致。
 T族分母沿用本课题已核验n3/n5/n7整数A₂；未新做n7全图计数。
+
+
+## 第16轮复现
+
+GPU完成批的版本、seed、命令及资源记录见 `certificates/r016-gpu/README.md`；`audit_r016_gpu.py`使用Decimal60独立重算所有8784条记录。
+解析附属有限核验（在课题根目录运行）：
+
+```sh
+python3 computation/audit_r016_gpu.py
+python3 certificates/r016-globalization/verify_t_interface_family.py
+python3 certificates/r016-globalization/audit_global_overlap_n3.py
+python3 certificates/r016-globalization/verify_top2_hook_split.py
+cd certificates/r016-fixed-distance
+python3 fixed_d_fibre_obstruction.py
+```
+
+新位集核及P524288批次未计入本轮完成结果。
