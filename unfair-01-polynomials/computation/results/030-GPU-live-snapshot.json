@@ -1,0 +1,52 @@
+{
+  "utc": "2026-11-16T07:52:57.615290+00:00",
+  "queue": {
+    "status": "running",
+    "parent_pid": 44394,
+    "child_pid": 44395,
+    "command": [
+      "/Users/zzh/.venvs/main/bin/python",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round030-prefix-gpu/gpu_factor_search_prefix.py",
+      "--m",
+      "48",
+      "--n",
+      "88",
+      "--fractional-index",
+      "11",
+      "--starts",
+      "32768",
+      "--steps",
+      "12000",
+      "--seed",
+      "2026111609",
+      "--margin",
+      "0.05",
+      "--restart-every",
+      "2000",
+      "--out",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round030-prefix-gpu/live-m48n88d11/run"
+    ],
+    "seconds_limit": 14400,
+    "worker_sha256": "908061fe934bda1f882178982fd5e10f44fb97497483c9e06c05fe3a3fea29cc",
+    "driver_sha256": "673820d0ef94713a50c5b3f774cfba66c0815e571faeec8b4a72f1b151f01fd0",
+    "scope": "All filtered legal low prefixes for this d are assigned among starts; numerical trajectories only, not an exclusion."
+  },
+  "pids_confirmed_live": {
+    "44394": true,
+    "44395": true
+  },
+  "latest_log_step": {
+    "step": 3600,
+    "elapsed_seconds": 1142.1412889999992,
+    "restart_epoch": 1,
+    "min_mse_gpu": 6.895275873830542e-05,
+    "best_max_residual_float64": 0.050729263573884964,
+    "allocated_bytes": 137822976,
+    "driver_bytes": 2257256448
+  },
+  "ioreg_performance_statistics": [
+    "\"PerformanceStatistics\" = {\"In use system memory (driver)\"=0,\"Alloc system memory\"=4286595072,\"Tiler Utilization %\"=5,\"recoveryCount\"=0,\"lastRecoveryTime\"=0,\"Renderer Utilization %\"=100,\"TiledSceneBytes\"=1048576,\"Device Utilization %\"=100,\"SplitSceneCount\"=0,\"Allocated PB Size\"=49807360,\"In use system memory\"=3640115200}"
+  ],
+  "session": 74904,
+  "scope": "live numerical batch only; not completed and not an exclusion"
+}

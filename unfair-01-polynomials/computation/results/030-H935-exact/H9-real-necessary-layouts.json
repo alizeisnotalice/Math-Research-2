@@ -1,0 +1,3032 @@
+{
+  "format": "H9-a3b5-real-necessary-layout-v1",
+  "prerequisite_path": "H9-cycle-prerequisites.json",
+  "prerequisite_sha256": "e4078b96db9e974cbb67a11cbe0a190d5b6eea143d3effcf16c7c38285e22cfc",
+  "group_bit_order": [
+    "cycle:Phi5:pair_j1:zeta75_power15",
+    "cycle:Phi5:pair_j2:zeta75_power30",
+    "cycle:Phi15:pair_j1:zeta75_power5",
+    "cycle:Phi15:pair_j2:zeta75_power10",
+    "cycle:Phi15:pair_j4:zeta75_power20",
+    "cycle:Phi15:pair_j7:zeta75_power35",
+    "cycle:Phi25:pair_j1:zeta75_power3",
+    "cycle:Phi25:pair_j2:zeta75_power6",
+    "cycle:Phi25:pair_j3:zeta75_power9",
+    "cycle:Phi25:pair_j4:zeta75_power12",
+    "cycle:Phi25:pair_j6:zeta75_power18",
+    "cycle:Phi25:pair_j7:zeta75_power21",
+    "cycle:Phi25:pair_j8:zeta75_power24",
+    "cycle:Phi25:pair_j9:zeta75_power27",
+    "cycle:Phi25:pair_j11:zeta75_power33",
+    "cycle:Phi25:pair_j12:zeta75_power36",
+    "G5:mother0:x3_linear",
+    "G5:mother0:x3_quadratic",
+    "G5:mother0:x5_linear",
+    "G5:mother0:x5_quadratic0",
+    "G5:mother0:x5_quadratic1",
+    "G5:mother1:x3_quadratic0",
+    "G5:mother1:x3_quadratic1",
+    "G5:mother1:x3_quadratic2",
+    "G5:mother1:x5_quadratic0",
+    "G5:mother1:x5_quadratic1",
+    "G5:mother1:x5_quadratic2",
+    "G5:mother1:x5_quadratic3",
+    "G5:mother1:x5_quadratic4",
+    "G5:mother2:x3_quadratic0",
+    "G5:mother2:x3_quadratic1",
+    "G5:mother2:x3_quadratic2",
+    "G5:mother2:x5_quadratic0",
+    "G5:mother2:x5_quadratic1",
+    "G5:mother2:x5_quadratic2",
+    "G5:mother2:x5_quadratic3",
+    "G5:mother2:x5_quadratic4"
+  ],
+  "group_counts": {
+    "cyclotomic_quadratic": 16,
+    "G5_quadratic": 19,
+    "G5_linear": 2,
+    "total_bits": 37
+  },
+  "full_fibre_necessity_dependency": "Uses the already supplied/revised two-fibre root-product lemma: for every G5 mother root, x3/x5 fibre selections are whole fibres and eps_i+eta_i is the same e in {0,1,2}. This generator records its necessary consequences but does not reprove that lemma.",
+  "cycle_trace_necessity_dependency": "Uses the independently verified Phi75 zero-pair-sum mask set in the prerequisite file.",
+  "exchange_normalization": {
+    "involution": "bitwise 37-bit complement exchanges A and B",
+    "e0_e2": "choose e=0 representatives",
+    "e1": "fix G5 negative-real mother x3 fibre (epsilon_0=1), leaving two conjugate mother-pair fibre bits free"
+  },
+  "coverage": {
+    "e0_e2_raw": 32,
+    "e0_e2_canonical": 16,
+    "e1_raw": 128,
+    "e1_canonical": 64,
+    "canonical_total": 80,
+    "constant_full_pair_present": true,
+    "standard_pair_masks_u37": [
+      3772973119,
+      133665980352
+    ]
+  },
+  "canonical_layouts": [
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 0,
+      "mask_hex": "0x0000000000",
+      "cycle_mask_u16": 0,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [],
+      "complement_mask_u37": 137438953471,
+      "complement_hex": "0x1fffffffff"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 22,
+      "mask_hex": "0x0000000016",
+      "cycle_mask_u16": 22,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        1,
+        2,
+        4
+      ],
+      "complement_mask_u37": 137438953449,
+      "complement_hex": "0x1fffffffe9"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 41,
+      "mask_hex": "0x0000000029",
+      "cycle_mask_u16": 41,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        0,
+        3,
+        5
+      ],
+      "complement_mask_u37": 137438953430,
+      "complement_hex": "0x1fffffffd6"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 63,
+      "mask_hex": "0x000000003f",
+      "cycle_mask_u16": 63,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "complement_mask_u37": 137438953408,
+      "complement_hex": "0x1fffffffc0"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 26176,
+      "mask_hex": "0x0000006640",
+      "cycle_mask_u16": 26176,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        6,
+        9,
+        10,
+        13,
+        14
+      ],
+      "complement_mask_u37": 137438927295,
+      "complement_hex": "0x1fffff99bf"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 26198,
+      "mask_hex": "0x0000006656",
+      "cycle_mask_u16": 26198,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        9,
+        10,
+        13,
+        14
+      ],
+      "complement_mask_u37": 137438927273,
+      "complement_hex": "0x1fffff99a9"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 26217,
+      "mask_hex": "0x0000006669",
+      "cycle_mask_u16": 26217,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14
+      ],
+      "complement_mask_u37": 137438927254,
+      "complement_hex": "0x1fffff9996"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 26239,
+      "mask_hex": "0x000000667f",
+      "cycle_mask_u16": 26239,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14
+      ],
+      "complement_mask_u37": 137438927232,
+      "complement_hex": "0x1fffff9980"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 39296,
+      "mask_hex": "0x0000009980",
+      "cycle_mask_u16": 39296,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        7,
+        8,
+        11,
+        12,
+        15
+      ],
+      "complement_mask_u37": 137438914175,
+      "complement_hex": "0x1fffff667f"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 39318,
+      "mask_hex": "0x0000009996",
+      "cycle_mask_u16": 39318,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        11,
+        12,
+        15
+      ],
+      "complement_mask_u37": 137438914153,
+      "complement_hex": "0x1fffff6669"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 39337,
+      "mask_hex": "0x00000099a9",
+      "cycle_mask_u16": 39337,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15
+      ],
+      "complement_mask_u37": 137438914134,
+      "complement_hex": "0x1fffff6656"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 39359,
+      "mask_hex": "0x00000099bf",
+      "cycle_mask_u16": 39359,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15
+      ],
+      "complement_mask_u37": 137438914112,
+      "complement_hex": "0x1fffff6640"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 65472,
+      "mask_hex": "0x000000ffc0",
+      "cycle_mask_u16": 65472,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "complement_mask_u37": 137438887999,
+      "complement_hex": "0x1fffff003f"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 65494,
+      "mask_hex": "0x000000ffd6",
+      "cycle_mask_u16": 65494,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "complement_mask_u37": 137438887977,
+      "complement_hex": "0x1fffff0029"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 65513,
+      "mask_hex": "0x000000ffe9",
+      "cycle_mask_u16": 65513,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "complement_mask_u37": 137438887958,
+      "complement_hex": "0x1fffff0016"
+    },
+    {
+      "class_kind": "e0_e2",
+      "mask_u37": 65535,
+      "mask_hex": "0x000000ffff",
+      "cycle_mask_u16": 65535,
+      "epsilon_x3_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 0,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "complement_mask_u37": 137438887936,
+      "complement_hex": "0x1fffff0000"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3772973056,
+      "mask_hex": "0x00e0e30000",
+      "cycle_mask_u16": 0,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665980415,
+      "complement_hex": "0x1f1f1cffff"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3772973078,
+      "mask_hex": "0x00e0e30016",
+      "cycle_mask_u16": 22,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665980393,
+      "complement_hex": "0x1f1f1cffe9"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3772973097,
+      "mask_hex": "0x00e0e30029",
+      "cycle_mask_u16": 41,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665980374,
+      "complement_hex": "0x1f1f1cffd6"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3772973119,
+      "mask_hex": "0x00e0e3003f",
+      "cycle_mask_u16": 63,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665980352,
+      "complement_hex": "0x1f1f1cffc0"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3772999232,
+      "mask_hex": "0x00e0e36640",
+      "cycle_mask_u16": 26176,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665954239,
+      "complement_hex": "0x1f1f1c99bf"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3772999254,
+      "mask_hex": "0x00e0e36656",
+      "cycle_mask_u16": 26198,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665954217,
+      "complement_hex": "0x1f1f1c99a9"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3772999273,
+      "mask_hex": "0x00e0e36669",
+      "cycle_mask_u16": 26217,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665954198,
+      "complement_hex": "0x1f1f1c9996"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3772999295,
+      "mask_hex": "0x00e0e3667f",
+      "cycle_mask_u16": 26239,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665954176,
+      "complement_hex": "0x1f1f1c9980"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3773012352,
+      "mask_hex": "0x00e0e39980",
+      "cycle_mask_u16": 39296,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665941119,
+      "complement_hex": "0x1f1f1c667f"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3773012374,
+      "mask_hex": "0x00e0e39996",
+      "cycle_mask_u16": 39318,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665941097,
+      "complement_hex": "0x1f1f1c6669"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3773012393,
+      "mask_hex": "0x00e0e399a9",
+      "cycle_mask_u16": 39337,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665941078,
+      "complement_hex": "0x1f1f1c6656"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3773012415,
+      "mask_hex": "0x00e0e399bf",
+      "cycle_mask_u16": 39359,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665941056,
+      "complement_hex": "0x1f1f1c6640"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3773038528,
+      "mask_hex": "0x00e0e3ffc0",
+      "cycle_mask_u16": 65472,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665914943,
+      "complement_hex": "0x1f1f1c003f"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3773038550,
+      "mask_hex": "0x00e0e3ffd6",
+      "cycle_mask_u16": 65494,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665914921,
+      "complement_hex": "0x1f1f1c0029"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3773038569,
+      "mask_hex": "0x00e0e3ffe9",
+      "cycle_mask_u16": 65513,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665914902,
+      "complement_hex": "0x1f1f1c0016"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 3773038591,
+      "mask_hex": "0x00e0e3ffff",
+      "cycle_mask_u16": 65535,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133665914880,
+      "complement_hex": "0x1f1f1c0000"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278386688,
+      "mask_hex": "0x00ff030000",
+      "cycle_mask_u16": 0,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160566783,
+      "complement_hex": "0x1f00fcffff"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278386710,
+      "mask_hex": "0x00ff030016",
+      "cycle_mask_u16": 22,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160566761,
+      "complement_hex": "0x1f00fcffe9"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278386729,
+      "mask_hex": "0x00ff030029",
+      "cycle_mask_u16": 41,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160566742,
+      "complement_hex": "0x1f00fcffd6"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278386751,
+      "mask_hex": "0x00ff03003f",
+      "cycle_mask_u16": 63,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160566720,
+      "complement_hex": "0x1f00fcffc0"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278412864,
+      "mask_hex": "0x00ff036640",
+      "cycle_mask_u16": 26176,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160540607,
+      "complement_hex": "0x1f00fc99bf"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278412886,
+      "mask_hex": "0x00ff036656",
+      "cycle_mask_u16": 26198,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160540585,
+      "complement_hex": "0x1f00fc99a9"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278412905,
+      "mask_hex": "0x00ff036669",
+      "cycle_mask_u16": 26217,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160540566,
+      "complement_hex": "0x1f00fc9996"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278412927,
+      "mask_hex": "0x00ff03667f",
+      "cycle_mask_u16": 26239,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160540544,
+      "complement_hex": "0x1f00fc9980"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278425984,
+      "mask_hex": "0x00ff039980",
+      "cycle_mask_u16": 39296,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160527487,
+      "complement_hex": "0x1f00fc667f"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278426006,
+      "mask_hex": "0x00ff039996",
+      "cycle_mask_u16": 39318,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160527465,
+      "complement_hex": "0x1f00fc6669"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278426025,
+      "mask_hex": "0x00ff0399a9",
+      "cycle_mask_u16": 39337,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160527446,
+      "complement_hex": "0x1f00fc6656"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278426047,
+      "mask_hex": "0x00ff0399bf",
+      "cycle_mask_u16": 39359,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160527424,
+      "complement_hex": "0x1f00fc6640"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278452160,
+      "mask_hex": "0x00ff03ffc0",
+      "cycle_mask_u16": 65472,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160501311,
+      "complement_hex": "0x1f00fc003f"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278452182,
+      "mask_hex": "0x00ff03ffd6",
+      "cycle_mask_u16": 65494,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160501289,
+      "complement_hex": "0x1f00fc0029"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278452201,
+      "mask_hex": "0x00ff03ffe9",
+      "cycle_mask_u16": 65513,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160501270,
+      "complement_hex": "0x1f00fc0016"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 4278452223,
+      "mask_hex": "0x00ff03ffff",
+      "cycle_mask_u16": 65535,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        1
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        0
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "complement_mask_u37": 133160501248,
+      "complement_hex": "0x1f00fc0000"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158862848,
+      "mask_hex": "0x1f00e30000",
+      "cycle_mask_u16": 0,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280090623,
+      "complement_hex": "0x00ff1cffff"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158862870,
+      "mask_hex": "0x1f00e30016",
+      "cycle_mask_u16": 22,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280090601,
+      "complement_hex": "0x00ff1cffe9"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158862889,
+      "mask_hex": "0x1f00e30029",
+      "cycle_mask_u16": 41,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280090582,
+      "complement_hex": "0x00ff1cffd6"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158862911,
+      "mask_hex": "0x1f00e3003f",
+      "cycle_mask_u16": 63,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280090560,
+      "complement_hex": "0x00ff1cffc0"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158889024,
+      "mask_hex": "0x1f00e36640",
+      "cycle_mask_u16": 26176,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280064447,
+      "complement_hex": "0x00ff1c99bf"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158889046,
+      "mask_hex": "0x1f00e36656",
+      "cycle_mask_u16": 26198,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280064425,
+      "complement_hex": "0x00ff1c99a9"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158889065,
+      "mask_hex": "0x1f00e36669",
+      "cycle_mask_u16": 26217,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280064406,
+      "complement_hex": "0x00ff1c9996"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158889087,
+      "mask_hex": "0x1f00e3667f",
+      "cycle_mask_u16": 26239,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280064384,
+      "complement_hex": "0x00ff1c9980"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158902144,
+      "mask_hex": "0x1f00e39980",
+      "cycle_mask_u16": 39296,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280051327,
+      "complement_hex": "0x00ff1c667f"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158902166,
+      "mask_hex": "0x1f00e39996",
+      "cycle_mask_u16": 39318,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280051305,
+      "complement_hex": "0x00ff1c6669"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158902185,
+      "mask_hex": "0x1f00e399a9",
+      "cycle_mask_u16": 39337,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280051286,
+      "complement_hex": "0x00ff1c6656"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158902207,
+      "mask_hex": "0x1f00e399bf",
+      "cycle_mask_u16": 39359,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280051264,
+      "complement_hex": "0x00ff1c6640"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158928320,
+      "mask_hex": "0x1f00e3ffc0",
+      "cycle_mask_u16": 65472,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280025151,
+      "complement_hex": "0x00ff1c003f"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158928342,
+      "mask_hex": "0x1f00e3ffd6",
+      "cycle_mask_u16": 65494,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280025129,
+      "complement_hex": "0x00ff1c0029"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158928361,
+      "mask_hex": "0x1f00e3ffe9",
+      "cycle_mask_u16": 65513,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280025110,
+      "complement_hex": "0x00ff1c0016"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133158928383,
+      "mask_hex": "0x1f00e3ffff",
+      "cycle_mask_u16": 65535,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        1,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        0,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 4280025088,
+      "complement_hex": "0x00ff1c0000"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664276480,
+      "mask_hex": "0x1f1f030000",
+      "cycle_mask_u16": 0,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774676991,
+      "complement_hex": "0x00e0fcffff"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664276502,
+      "mask_hex": "0x1f1f030016",
+      "cycle_mask_u16": 22,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774676969,
+      "complement_hex": "0x00e0fcffe9"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664276521,
+      "mask_hex": "0x1f1f030029",
+      "cycle_mask_u16": 41,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774676950,
+      "complement_hex": "0x00e0fcffd6"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664276543,
+      "mask_hex": "0x1f1f03003f",
+      "cycle_mask_u16": 63,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774676928,
+      "complement_hex": "0x00e0fcffc0"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664302656,
+      "mask_hex": "0x1f1f036640",
+      "cycle_mask_u16": 26176,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774650815,
+      "complement_hex": "0x00e0fc99bf"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664302678,
+      "mask_hex": "0x1f1f036656",
+      "cycle_mask_u16": 26198,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774650793,
+      "complement_hex": "0x00e0fc99a9"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664302697,
+      "mask_hex": "0x1f1f036669",
+      "cycle_mask_u16": 26217,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774650774,
+      "complement_hex": "0x00e0fc9996"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664302719,
+      "mask_hex": "0x1f1f03667f",
+      "cycle_mask_u16": 26239,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774650752,
+      "complement_hex": "0x00e0fc9980"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664315776,
+      "mask_hex": "0x1f1f039980",
+      "cycle_mask_u16": 39296,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774637695,
+      "complement_hex": "0x00e0fc667f"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664315798,
+      "mask_hex": "0x1f1f039996",
+      "cycle_mask_u16": 39318,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774637673,
+      "complement_hex": "0x00e0fc6669"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664315817,
+      "mask_hex": "0x1f1f0399a9",
+      "cycle_mask_u16": 39337,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774637654,
+      "complement_hex": "0x00e0fc6656"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664315839,
+      "mask_hex": "0x1f1f0399bf",
+      "cycle_mask_u16": 39359,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774637632,
+      "complement_hex": "0x00e0fc6640"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664341952,
+      "mask_hex": "0x1f1f03ffc0",
+      "cycle_mask_u16": 65472,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774611519,
+      "complement_hex": "0x00e0fc003f"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664341974,
+      "mask_hex": "0x1f1f03ffd6",
+      "cycle_mask_u16": 65494,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774611497,
+      "complement_hex": "0x00e0fc0029"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664341993,
+      "mask_hex": "0x1f1f03ffe9",
+      "cycle_mask_u16": 65513,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774611478,
+      "complement_hex": "0x00e0fc0016"
+    },
+    {
+      "class_kind": "e1",
+      "mask_u37": 133664342015,
+      "mask_hex": "0x1f1f03ffff",
+      "cycle_mask_u16": 65535,
+      "epsilon_x3_by_G5_mother": [
+        1,
+        0,
+        0
+      ],
+      "eta_x5_by_G5_mother": [
+        0,
+        1,
+        1
+      ],
+      "common_e": 1,
+      "selected_group_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "complement_mask_u37": 3774611456,
+      "complement_hex": "0x00e0fc0000"
+    }
+  ],
+  "claim_boundary": "This is an exact necessary root-layout coverage ledger. It does not test coefficients, exclude layouts, or prove a counterexample.",
+  "first_unproved_step": "For each nonstandard one of these 80 necessary classes, determine whether its associated real factor pair can have all coefficients in [0,1], and either exclude it rigorously or produce an exact certified counterexample."
+}
