@@ -1,0 +1,39 @@
+{
+  "seed": 20261116,
+  "precision": "float32",
+  "comparison": "all Walsh entries, CPU vs device",
+  "batch": 65536,
+  "reps": 3,
+  "torch": "2.15.0",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "runs": {
+    "cpu": {
+      "device": "cpu",
+      "seconds": [
+        0.005118250000123226,
+        0.004985291000139114,
+        0.007142541000121128
+      ],
+      "median_seconds": 0.005118250000123226,
+      "values": [
+        1491332,
+        1491332,
+        1491332
+      ]
+    },
+    "mps": {
+      "device": "mps",
+      "seconds": [
+        0.03495000000020809,
+        0.01384925000002113,
+        0.07070741600000474
+      ],
+      "median_seconds": 0.03495000000020809,
+      "values": [
+        1491332,
+        1491332,
+        1491332
+      ]
+    }
+  }
+}

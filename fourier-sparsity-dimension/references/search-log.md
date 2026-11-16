@@ -15,3 +15,11 @@
 上述条目身份核验与数学证明核验分开。检索未提供可核验的一般无对数证明或无穷反例族，不据此宣称世界范围内没有新结果。
 
 归档大小规则实查：[GitHub官方说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)，普通Git超过50 MiB警告，超过100 MiB阻止；本课题自行保持逐文件小于10 MiB。论文全文不提交，只有自写论证、题录和必要精确证书。输入附件的来源哈希见 input-source.md。
+
+## 第2轮补充
+
+- [Irreducible subcube partitions v4](https://arxiv.org/html/2212.14685v4)：2022初稿、2026-09-08版本；作者表与版本在arXiv摘要页核验。实际阅读§4.2.1定理4.7完整证明、命题3.12及紧性定义。结论适用于紧仿射分割，不要求不可约。正文给出自包含线性代表证明与本题应用。
+- [Affine vector space partitions v2](https://arxiv.org/html/2211.16561v2)：核验题录、紧性框架和二元下界入口；主证明采用上条可定位定理。
+- [Tarannikov 2006记录](https://www.mathnet.ru/eng/dm65)：主Agent核验题录摘要，构造子Agent核验原文定理2、3及后续猜想。构造某个秩区间不等于证明一般最大秩；本报告不使用其未核验的一般锐上界，不排除全部平台函数类。
+
+子Agent报告均经主Agent数学整合；原题的完成状态没有因子Agent的“审计通过”而改变。没有用后续论文的误引替代原定理。

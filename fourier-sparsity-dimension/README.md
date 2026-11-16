@@ -4,7 +4,7 @@
 均匀测度下 g:F₂^m→{−1,1}，S={α:ĝ(α)≠0}，s=|S|，d=dim span S（线性维数）。目标：证明绝对常数 c>0 使 s≥cd²，或构造 d→∞、s/d²→0 的显式布尔族。原题采用 {0,1} 编码并要求所有一阶系数非零。
 
 ## 当前状态
-第1轮完成，原题未解决。研究稿：[第1轮](proofs/001-research-zh.md)；证据与复现见[轮次报告](rounds/001.md)和 STATE.md。
+第2轮完成，原题未解决。研究稿：[第1轮](proofs/001-research-zh.md)、[第2轮](proofs/002-affine-partitions-zh.md)；证据与复现见 rounds/001.md、rounds/002.md 和 STATE.md。
 
 ## 材料结构
 proofs/ 保存证明；computation/ 保存精确计算与最小证书；references/ 保存文献与来源；rounds/ 保存逐轮报告。按 T2 模板组织。
