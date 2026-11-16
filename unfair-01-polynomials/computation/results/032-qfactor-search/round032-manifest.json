@@ -1,0 +1,43 @@
+{
+  "status": "completed_bounded_Q_factor_allocation_search",
+  "scope": {
+    "P31_parameters": {
+      "p": 3,
+      "q": 5
+    },
+    "H": "all DFS-enumerated binary monic constant-one H with binary H(x^3)H(x^5)",
+    "degrees": [
+      18,
+      24
+    ],
+    "factor_domain": "rational monic factor allocations from the SymPy QQ factor-list backend"
+  },
+  "actual_H_by_degree": {
+    "18": 1093,
+    "19": 1651,
+    "20": 905,
+    "21": 2305,
+    "22": 3283,
+    "23": 4752,
+    "24": 5522
+  },
+  "aggregate_counts": {
+    "H_completed": 19511,
+    "allocations_all": 68996,
+    "allocations_positive_constant": 68996,
+    "allocations_nonpositive_constant": 0,
+    "allocations_nonnegative_skipped": 40788,
+    "signed_allocations_checked": 28208,
+    "cross_negative_witnessed": 28208,
+    "both_cross_nonnegative_candidates": 0
+  },
+  "runs": {
+    "d18_d19_final_sha256": "e23d878b97c55f54dcc2d1ca50b6fa246af8922cfd3c3881d9deb89b00a225f8",
+    "d20_d24_final_sha256": "dfd59460e014524b18db35a130e1c7e83db1b5423effff323eed79e3f75aa32f",
+    "d18_d19_verifier_sha256": "dcadab0c474813ecc551a7db60208f17edef1596055a872d80f058af46e3484b",
+    "d20_d24_verifier_sha256": "5f8f7ef4ceed26188f8f336f98520ed3ec1cc75b839df3241967eaec7713f4b2"
+  },
+  "exactness": "Support DFS, factor-product checks, substitutions, and negative witnesses use exact integer arithmetic. Search and verifier are separate programs and both actually ran.",
+  "factorization_boundary": "Completeness depends on SymPy 1.14.0 factor_list/Poly.is_irreducible over QQ. No independent irreducibility certificate has been accepted for this archive. A separate generation job is still running and is not mathematical evidence here.",
+  "claim_boundary": "No signed rational allocation in this bounded backend-dependent ledger had both crossed substitutions nonnegative. This does not cover arbitrary real factors, degrees outside 18..24, or prove P31. Degrees 18..19 are retained as a computation check only; the new exploration emphasis is 21..24."
+}

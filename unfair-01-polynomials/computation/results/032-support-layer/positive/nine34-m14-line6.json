@@ -1,0 +1,425 @@
+{
+  "format": "positive-certificate-v1",
+  "case": {
+    "name": "nine34-m14-line6",
+    "I": [
+      0,
+      1,
+      2,
+      5,
+      6,
+      10,
+      14
+    ],
+    "J": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      10,
+      11,
+      15,
+      19
+    ]
+  },
+  "strict_variables": [
+    "a1",
+    "a2",
+    "a5",
+    "a6",
+    "a10",
+    "b1",
+    "b2",
+    "b3",
+    "b7",
+    "b10",
+    "b11",
+    "b15"
+  ],
+  "unit_variables": [
+    "a0",
+    "a14",
+    "b0",
+    "b19"
+  ],
+  "basis": {
+    "multiplier_total_degree_at_most": 1,
+    "positive_atom_total_degree_at_most": 2,
+    "atom_form": "product(positive) * product(1-minus)"
+  },
+  "matrix": {
+    "polynomial_rows": 455,
+    "normalization_rows": 1,
+    "free_multiplier_columns": 273,
+    "positive_atom_columns": 288,
+    "lp_nonnegative_columns": 834,
+    "elapsed_seconds": 0.014785207997192629
+  },
+  "solver": {
+    "name": "SciPy HiGHS linprog",
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  "certificate": {
+    "multipliers": [
+      {
+        "diagonal": 1,
+        "monomial": [],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "diagonal": 1,
+        "monomial": [
+          "b1"
+        ],
+        "coefficient": [
+          -1,
+          20
+        ]
+      },
+      {
+        "diagonal": 1,
+        "monomial": [
+          "b3"
+        ],
+        "coefficient": [
+          1,
+          10
+        ]
+      },
+      {
+        "diagonal": 4,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          10
+        ]
+      },
+      {
+        "diagonal": 6,
+        "monomial": [
+          "a10"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "diagonal": 6,
+        "monomial": [
+          "b10"
+        ],
+        "coefficient": [
+          -1,
+          20
+        ]
+      },
+      {
+        "diagonal": 9,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          5
+        ]
+      },
+      {
+        "diagonal": 10,
+        "monomial": [
+          "a1"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "diagonal": 10,
+        "monomial": [
+          "a5"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "diagonal": 10,
+        "monomial": [
+          "a6"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "diagonal": 10,
+        "monomial": [
+          "a10"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "diagonal": 10,
+        "monomial": [
+          "b11"
+        ],
+        "coefficient": [
+          -1,
+          20
+        ]
+      },
+      {
+        "diagonal": 11,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          10
+        ]
+      },
+      {
+        "diagonal": 11,
+        "monomial": [
+          "a5"
+        ],
+        "coefficient": [
+          -1,
+          20
+        ]
+      },
+      {
+        "diagonal": 15,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          20
+        ]
+      },
+      {
+        "diagonal": 15,
+        "monomial": [
+          "a1"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "diagonal": 15,
+        "monomial": [
+          "b1"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "diagonal": 21,
+        "monomial": [],
+        "coefficient": [
+          3,
+          20
+        ]
+      },
+      {
+        "diagonal": 24,
+        "monomial": [
+          "a10"
+        ],
+        "coefficient": [
+          -1,
+          20
+        ]
+      },
+      {
+        "diagonal": 24,
+        "monomial": [
+          "b11"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "diagonal": 25,
+        "monomial": [],
+        "coefficient": [
+          1,
+          10
+        ]
+      },
+      {
+        "diagonal": 29,
+        "monomial": [
+          "a1"
+        ],
+        "coefficient": [
+          -1,
+          20
+        ]
+      },
+      {
+        "diagonal": 29,
+        "monomial": [
+          "a6"
+        ],
+        "coefficient": [
+          -1,
+          10
+        ]
+      },
+      {
+        "diagonal": 29,
+        "monomial": [
+          "a10"
+        ],
+        "coefficient": [
+          -1,
+          20
+        ]
+      }
+    ],
+    "positive_atoms": [
+      {
+        "positive": [
+          "b10"
+        ],
+        "one_minus": [
+          "a1"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "positive": [
+          "a2"
+        ],
+        "one_minus": [
+          "b2"
+        ],
+        "coefficient": [
+          1,
+          10
+        ]
+      },
+      {
+        "positive": [
+          "a2"
+        ],
+        "one_minus": [
+          "b7"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "positive": [
+          "b7"
+        ],
+        "one_minus": [
+          "a2"
+        ],
+        "coefficient": [
+          3,
+          20
+        ]
+      },
+      {
+        "positive": [
+          "a6"
+        ],
+        "one_minus": [
+          "b3"
+        ],
+        "coefficient": [
+          1,
+          5
+        ]
+      },
+      {
+        "positive": [],
+        "one_minus": [
+          "a6",
+          "b15"
+        ],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "positive": [
+          "b1"
+        ],
+        "one_minus": [
+          "a10"
+        ],
+        "coefficient": [
+          1,
+          10
+        ]
+      },
+      {
+        "positive": [
+          "a10",
+          "b11"
+        ],
+        "one_minus": [],
+        "coefficient": [
+          1,
+          10
+        ]
+      },
+      {
+        "positive": [
+          "a10",
+          "b15"
+        ],
+        "one_minus": [],
+        "coefficient": [
+          1,
+          20
+        ]
+      },
+      {
+        "positive": [],
+        "one_minus": [
+          "b1",
+          "b3"
+        ],
+        "coefficient": [
+          1,
+          10
+        ]
+      },
+      {
+        "positive": [
+          "b1",
+          "b15"
+        ],
+        "one_minus": [],
+        "coefficient": [
+          1,
+          20
+        ]
+      }
+    ],
+    "exact_recovery_check": true
+  },
+  "status": "certificate_found"
+}

@@ -1,0 +1,37 @@
+{
+  "state": "succeeded",
+  "started_at": "2026-11-16T08:45:11.559228+00:00",
+  "script": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/j_boundary/round032-descent/verify_cross_recurrences.py",
+  "script_sha256": "a5649d9604c85ce773be521f59a767e73e032429ea2f13e75d37ba8046c5291c",
+  "command": [
+    "/Users/zzh/.venvs/main/bin/python",
+    "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/j_boundary/round032-descent/verify_cross_recurrences.py"
+  ],
+  "workdir": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/sync/unfair-01-polynomials/computation/results/032-descent",
+  "runtime": {
+    "executable": "/Users/zzh/.venvs/main/bin/python",
+    "version": "3.13.18",
+    "modules": {
+      "sympy": "1.14.0"
+    }
+  },
+  "environment_attempts": [
+    {
+      "candidate": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/sync/unfair-01-polynomials/computation/results/032-descent/.venv/bin/python",
+      "error": "not executable"
+    },
+    {
+      "candidate": "/Users/zzh/.local/bin/python3",
+      "error": "Traceback (most recent call last):\n  File \"<string>\", line 2, in <module>\n    modules = [importlib.import_module(name) for name in json.loads(sys.argv[1])]\n               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"/Users/zzh/.local/share/uv/python/cpython-3.15.0-macos-aarch64-none/lib/python3.15/importlib/__init__.py\", line 88, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1390, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1350, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1302, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'sympy'\n"
+    }
+  ],
+  "timeout_seconds": 120.0,
+  "log_dir": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round032-parent/python-math/20261116T084511Z-316fb197",
+  "stdout": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round032-parent/python-math/20261116T084511Z-316fb197/stdout.txt",
+  "stderr": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round032-parent/python-math/20261116T084511Z-316fb197/stderr.txt",
+  "pid": 89479,
+  "exit_code": 0,
+  "finished_at": "2026-11-16T08:45:11.809006+00:00",
+  "elapsed_seconds": 0.25,
+  "child_returncode": 0
+}

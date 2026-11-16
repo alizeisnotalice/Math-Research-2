@@ -1,0 +1,80 @@
+{
+  "claim_boundary": "This verifies the recorded finite-prefix assignment schedule from frozen source and saved completed-cohort ledger; it is not a statement about numerical optimization success or global factorization.",
+  "cohorts": [
+    {
+      "all_prefixes_assigned": true,
+      "assigned_rows": 32768,
+      "epoch": 0,
+      "maximum_assignments_per_prefix": 11,
+      "minimum_assignments_per_prefix": 10,
+      "prefixes_at_maximum": 958,
+      "prefixes_at_minimum": 2223
+    },
+    {
+      "all_prefixes_assigned": true,
+      "assigned_rows": 32768,
+      "epoch": 1,
+      "maximum_assignments_per_prefix": 11,
+      "minimum_assignments_per_prefix": 10,
+      "prefixes_at_maximum": 958,
+      "prefixes_at_minimum": 2223
+    },
+    {
+      "all_prefixes_assigned": true,
+      "assigned_rows": 32768,
+      "epoch": 2,
+      "maximum_assignments_per_prefix": 11,
+      "minimum_assignments_per_prefix": 10,
+      "prefixes_at_maximum": 958,
+      "prefixes_at_minimum": 2223
+    },
+    {
+      "all_prefixes_assigned": true,
+      "assigned_rows": 32768,
+      "epoch": 3,
+      "maximum_assignments_per_prefix": 11,
+      "minimum_assignments_per_prefix": 10,
+      "prefixes_at_maximum": 958,
+      "prefixes_at_minimum": 2223
+    },
+    {
+      "all_prefixes_assigned": true,
+      "assigned_rows": 32768,
+      "epoch": 4,
+      "maximum_assignments_per_prefix": 11,
+      "minimum_assignments_per_prefix": 10,
+      "prefixes_at_maximum": 958,
+      "prefixes_at_minimum": 2223
+    },
+    {
+      "all_prefixes_assigned": true,
+      "assigned_rows": 32768,
+      "epoch": 5,
+      "maximum_assignments_per_prefix": 11,
+      "minimum_assignments_per_prefix": 10,
+      "prefixes_at_maximum": 958,
+      "prefixes_at_minimum": 2223
+    }
+  ],
+  "complete_restart_snapshots": 5,
+  "final_step_completed": true,
+  "parameters": {
+    "cohorts": 6,
+    "d": 11,
+    "restart_every": 2000,
+    "starts": 32768,
+    "steps": 12000
+  },
+  "pool": {
+    "survivor_count": 3181,
+    "survivor_sha256": "821c24a85b9d6597cf5714dfab0ecd3cc9b6775da4b8f53e070903d2ca25d15f",
+    "valid_low_prefix_count": 5131,
+    "valid_sha256": "db4403d00b7fdd18b13a30ac7e7f76f0191f86e213b95a0549ef62eb8f6a1021"
+  },
+  "source": {
+    "prefix_assignment_expression_verified": "assigned = [codes[(row + offset) % len(codes)] for row in range(starts)]",
+    "worker_sha256": "908061fe934bda1f882178982fd5e10f44fb97497483c9e06c05fe3a3fea29cc"
+  },
+  "status": "deterministic_prefix_coverage_ledger_passed",
+  "total_assignment_rows_by_schedule": 196608
+}

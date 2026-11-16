@@ -8,6 +8,6 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；精确逆纤维、局部多峰提升恒等式及GPU根矩核验 | 第20轮完成 | 平均删峰纤维、原律根协方差与完整GPU大批 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；H10(3,5)完整17类精确认证，Hd(3,5)全部二元参数无界闭合 | 第31轮完成 | 混合替换的正性下降与共同基域幂类条件 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；混合替换degH≤4q正性下降，六点总次≤42严格覆盖 | 第32轮完成 | degH>4q的正性下降与多项补偿 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。

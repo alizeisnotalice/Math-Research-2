@@ -1,0 +1,2368 @@
+{
+  "created_utc": "2026-11-16T08:57:55.046500+00:00",
+  "scope": "round020 42/34 only; no result about unfinished 44/36",
+  "input_configs": [
+    {
+      "tag": "six42",
+      "min_total": 41,
+      "total": 42,
+      "max_terms": 6
+    },
+    {
+      "tag": "nine34",
+      "min_total": 33,
+      "total": 34,
+      "max_terms": 9
+    }
+  ],
+  "batch": {
+    "jobs": 38,
+    "all_workers_exited": true,
+    "recovery_source_sha256": "b29c8206bdd195bda3fe574ffca4ca6951c874892d4c6c5fcdcf3d0da4276b44"
+  },
+  "source_sha256": {
+    "support_search_layer.py": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710",
+    "verify_support_layer.py": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+    "diagonal_domination.py": "ab15883f07a237929f5ec8e42692775e383af750d6c2756602b559f81f30d81f",
+    "check_round19_candidates.py": "5730180d103220fe9d979d64fa8cf9b3465238e7ed1a2d0714c280456e53cf13",
+    "check_layer19_exceptions.py": "a4b0553156b8b9985433ed67fc590a4fa6191c8f29509e622d80c9ca2cc75908"
+  },
+  "all_shard_receipts_checked": 38,
+  "aggregate_counts": {
+    "raw": 7208692055,
+    "canonical": 3421223147,
+    "excluded": 3416792854,
+    "fair": 4430247,
+    "unknown": 46
+  },
+  "unknown_mapping": {
+    "rows": 46,
+    "distinct_rows": 46,
+    "direct_certificates_found": 39,
+    "round19_matches": 0,
+    "round19_special_matches": 0,
+    "unmapped_not_excluded": 7
+  },
+  "existing_certificate_reruns": {
+    "round19_direct_and_special_set": {
+      "all_submitted_supports_verified": true,
+      "submitted": 57,
+      "direct": 52,
+      "special": 5,
+      "full_layer_coverage_claimed": false
+    },
+    "round19_special": {
+      "verified": true,
+      "arithmetic": "pure Python integer polynomials and Fraction; no CAS",
+      "cases": [
+        {
+          "I": [
+            0,
+            1,
+            2,
+            5,
+            9,
+            13
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            10,
+            14,
+            18
+          ],
+          "certificate": "negative quadratic discriminant",
+          "discriminant_coefficients": [
+            -3,
+            0,
+            6,
+            -8,
+            5
+          ]
+        },
+        {
+          "I": [
+            0,
+            1,
+            3,
+            8,
+            13
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            14,
+            19
+          ],
+          "certificate": "integer Bezout after division-free substitutions",
+          "A3": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "A8": [
+            1,
+            -3,
+            9,
+            -16,
+            20,
+            -18,
+            11,
+            -5,
+            1
+          ],
+          "K": [
+            -2,
+            3,
+            -2,
+            2
+          ],
+          "H": [
+            1,
+            -6,
+            18,
+            -31,
+            44,
+            -44,
+            32,
+            -15,
+            5,
+            1
+          ],
+          "U": [
+            -172,
+            -962,
+            1003,
+            -2320,
+            2664,
+            -2922,
+            1609,
+            -991,
+            -165
+          ],
+          "V": [
+            235,
+            2,
+            330
+          ],
+          "Bezout_constant": 579
+        },
+        {
+          "I": [
+            0,
+            1,
+            3,
+            6,
+            8,
+            13
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            4,
+            9,
+            14,
+            19
+          ],
+          "certificate": "six exact diagonals force a8 squared zero",
+          "diagonals": {
+            "6": [
+              [
+                6,
+                0
+              ]
+            ],
+            "8": [
+              [
+                6,
+                2
+              ],
+              [
+                8,
+                0
+              ]
+            ],
+            "27": [
+              [
+                8,
+                19
+              ],
+              [
+                13,
+                14
+              ]
+            ],
+            "14": [
+              [
+                0,
+                14
+              ],
+              [
+                13,
+                1
+              ]
+            ],
+            "1": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "2": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "I": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            9,
+            14
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            6,
+            7,
+            9,
+            12,
+            17
+          ],
+          "certificate": "B5=p^2(p^2-p+1)>0 contradicts support",
+          "A3": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "A4": [
+            0,
+            2,
+            -2,
+            2,
+            -1
+          ]
+        },
+        {
+          "I": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            9,
+            14
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            9,
+            12,
+            17
+          ],
+          "certificate": "support-derived substitutions and integer Bezout",
+          "used_diagonals": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            20,
+            6,
+            23,
+            9,
+            26,
+            21,
+            7,
+            18
+          ],
+          "zero_denominator_branch": "g(1/2)=-3/16",
+          "bezout_constant": 11479312180502943867
+        }
+      ]
+    }
+  },
+  "certificate_dependencies": {
+    "direct_rule": "/Volumes/data/CodexProjects/T2/unfair-01-polynomials/computation/diagonal_domination.py",
+    "round19_candidates": "/Volumes/data/CodexProjects/T2/unfair-01-polynomials/computation/check_round19_candidates.py",
+    "round19_special": "/Volumes/data/CodexProjects/T2/unfair-01-polynomials/computation/check_layer19_exceptions.py",
+    "round19_support_data": "/Volumes/data/CodexProjects/T2/unfair-01-polynomials/computation/results/019-candidate-certificates.json"
+  },
+  "verified_shards": [
+    {
+      "shard": "nine34-m01",
+      "counts": {
+        "raw": 8087097,
+        "canonical": 4044473,
+        "excluded": 3513331,
+        "fair": 531142,
+        "unknown": 0
+      },
+      "ledger_sha256": "5e142a596da59e954c44a41e058927010641decdb27ea1b0f45898f01780b3f5"
+    },
+    {
+      "shard": "nine34-m02",
+      "counts": {
+        "raw": 12752472,
+        "canonical": 6369708,
+        "excluded": 5918853,
+        "fair": 450855,
+        "unknown": 0
+      },
+      "ledger_sha256": "11c2ef2238162cb003c3d8404fb7faeff4535fb7512709c8c1b3ca5c2fcb1623"
+    },
+    {
+      "shard": "nine34-m03",
+      "counts": {
+        "raw": 19945632,
+        "canonical": 9974066,
+        "excluded": 9637227,
+        "fair": 336839,
+        "unknown": 0
+      },
+      "ledger_sha256": "827b470aa6889b464ec9c42611391c1f6770b496770158d7338b3351f141b75b"
+    },
+    {
+      "shard": "nine34-m04",
+      "counts": {
+        "raw": 30924912,
+        "canonical": 15455304,
+        "excluded": 15169556,
+        "fair": 285748,
+        "unknown": 0
+      },
+      "ledger_sha256": "db2128ae94f33c832521df4efdf4e56ccf82f953b4fafd5a415589dd11f566e0"
+    },
+    {
+      "shard": "nine34-m05",
+      "counts": {
+        "raw": 47501472,
+        "canonical": 23753188,
+        "excluded": 23539815,
+        "fair": 213373,
+        "unknown": 0
+      },
+      "ledger_sha256": "f0a40b4ab10b9d091a27069b97fe68c041df2056f76c307d190d12c6df86bbab"
+    },
+    {
+      "shard": "nine34-m06",
+      "counts": {
+        "raw": 72234752,
+        "canonical": 36109934,
+        "excluded": 35931119,
+        "fair": 178815,
+        "unknown": 0
+      },
+      "ledger_sha256": "f1467afff65bc7d8e6dfa01384c26a68bf42845d685d30dda89229858d0e8994"
+    },
+    {
+      "shard": "nine34-m07",
+      "counts": {
+        "raw": 108666752,
+        "canonical": 54337280,
+        "excluded": 54203397,
+        "fair": 133883,
+        "unknown": 0
+      },
+      "ledger_sha256": "a7e1751f6386448f424592445adbb0de0f8ee090759a9d92a847e6c9cfc7239d"
+    },
+    {
+      "shard": "nine34-m08",
+      "counts": {
+        "raw": 161582208,
+        "canonical": 80784988,
+        "excluded": 80672054,
+        "fair": 112934,
+        "unknown": 0
+      },
+      "ledger_sha256": "90dae4bde193904f4acc2535d7d6633c87e2e802962ed5193fa93ed2e58b1c7b"
+    },
+    {
+      "shard": "nine34-m09",
+      "counts": {
+        "raw": 236336805,
+        "canonical": 118173853,
+        "excluded": 118085831,
+        "fair": 88022,
+        "unknown": 0
+      },
+      "ledger_sha256": "58572a36cabbd58d4da155ddffd31623cbdb546504b0813aba74cf459caeec1b"
+    },
+    {
+      "shard": "nine34-m10",
+      "counts": {
+        "raw": 336970512,
+        "canonical": 168481064,
+        "excluded": 168406202,
+        "fair": 74861,
+        "unknown": 1
+      },
+      "ledger_sha256": "c0b6bbfe155998eb9dc25fdb1e529d219c5bb9e26db133d909af7a9e486556e6"
+    },
+    {
+      "shard": "nine34-m11",
+      "counts": {
+        "raw": 463710720,
+        "canonical": 231862950,
+        "excluded": 231802564,
+        "fair": 60383,
+        "unknown": 3
+      },
+      "ledger_sha256": "a5cfa6c6fca1cfb2ca95e62d920bc9a877a937ce018e4373a14f412ad1aafc9f"
+    },
+    {
+      "shard": "nine34-m12",
+      "counts": {
+        "raw": 610938720,
+        "canonical": 305467224,
+        "excluded": 305423496,
+        "fair": 43726,
+        "unknown": 2
+      },
+      "ledger_sha256": "0bfd74b06426fc632a3112a65de10912edc653e495e4c1c75de6994a4ec9698a"
+    },
+    {
+      "shard": "nine34-m13",
+      "counts": {
+        "raw": 766605528,
+        "canonical": 383311920,
+        "excluded": 383274564,
+        "fair": 37349,
+        "unknown": 7
+      },
+      "ledger_sha256": "46b55dcf634129bdbc5ea9aec3658668182d035d615c1f1cba6dc60a1999e1f1"
+    },
+    {
+      "shard": "nine34-m14",
+      "counts": {
+        "raw": 913576656,
+        "canonical": 456788524,
+        "excluded": 456751614,
+        "fair": 36903,
+        "unknown": 7
+      },
+      "ledger_sha256": "33331867ecdc5c04aacc864f724283fa5a2910619cdede6856f0ca66fa73170b"
+    },
+    {
+      "shard": "nine34-m15",
+      "counts": {
+        "raw": 1032710840,
+        "canonical": 516365260,
+        "excluded": 516329652,
+        "fair": 35593,
+        "unknown": 15
+      },
+      "ledger_sha256": "37324a552eb9770512c2ba84e5b2d9b26b173419b911ad0e36d4203dafa11462"
+    },
+    {
+      "shard": "nine34-m16",
+      "counts": {
+        "raw": 1106886656,
+        "canonical": 553444744,
+        "excluded": 553404775,
+        "fair": 39958,
+        "unknown": 11
+      },
+      "ledger_sha256": "45960c16677e625a8ecb018d1d1edfbe5d7e379082fab2e2ab24bb9fe3a59900"
+    },
+    {
+      "shard": "nine34-m17",
+      "counts": {
+        "raw": 693426889,
+        "canonical": 173372050,
+        "excluded": 173372050,
+        "fair": 0,
+        "unknown": 0
+      },
+      "ledger_sha256": "295dbdfdb90379fc1be107d7bbcc34ec65b7a7469cec70ff3bb72e2e0b96d101"
+    },
+    {
+      "shard": "six42-m01",
+      "counts": {
+        "raw": 194262,
+        "canonical": 97342,
+        "excluded": 40281,
+        "fair": 57061,
+        "unknown": 0
+      },
+      "ledger_sha256": "88b499be6d14d02f5a274909fc68709a8384f4c654ff45712b4c3b0af437fc91"
+    },
+    {
+      "shard": "six42-m02",
+      "counts": {
+        "raw": 350328,
+        "canonical": 173020,
+        "excluded": 95549,
+        "fair": 77471,
+        "unknown": 0
+      },
+      "ledger_sha256": "3b6038c6193938be9d3a960e4031e7f310e95406e57faf77669fd72827689f00"
+    },
+    {
+      "shard": "six42-m03",
+      "counts": {
+        "raw": 630048,
+        "canonical": 314998,
+        "excluded": 236226,
+        "fair": 78772,
+        "unknown": 0
+      },
+      "ledger_sha256": "9d6ca7f056fb03f09ce70d192e0bc903baffbb842a162e0ea64444df6ea97c8d"
+    },
+    {
+      "shard": "six42-m04",
+      "counts": {
+        "raw": 1129848,
+        "canonical": 561556,
+        "excluded": 464512,
+        "fair": 97044,
+        "unknown": 0
+      },
+      "ledger_sha256": "ed87db60b5ff1385b82e621d82cca3a155e8e4c82b1ad7bab176deae91bb7e10"
+    },
+    {
+      "shard": "six42-m05",
+      "counts": {
+        "raw": 2019968,
+        "canonical": 1010672,
+        "excluded": 920870,
+        "fair": 89802,
+        "unknown": 0
+      },
+      "ledger_sha256": "1cbb0ba3703c6cc747633ac808518051269fae47a4c6987f64c926b50eb3ed8e"
+    },
+    {
+      "shard": "six42-m06",
+      "counts": {
+        "raw": 3487252,
+        "canonical": 1737728,
+        "excluded": 1635227,
+        "fair": 102501,
+        "unknown": 0
+      },
+      "ledger_sha256": "6e69cf1215ea60253fe9195b57763d66a62ca65181cfb6376fa00db9dfcf28a2"
+    },
+    {
+      "shard": "six42-m07",
+      "counts": {
+        "raw": 5693958,
+        "canonical": 2848047,
+        "excluded": 2752916,
+        "fair": 95131,
+        "unknown": 0
+      },
+      "ledger_sha256": "5165af0eb55e91a5e8441440835ddc2212810eb3f616e4e780e868a790c46daf"
+    },
+    {
+      "shard": "six42-m08",
+      "counts": {
+        "raw": 8750313,
+        "canonical": 4366615,
+        "excluded": 4260259,
+        "fair": 106356,
+        "unknown": 0
+      },
+      "ledger_sha256": "c211a539315c6adb24654b1f7b279cfed4e9c0e050e5499b0195559edb73ee24"
+    },
+    {
+      "shard": "six42-m09",
+      "counts": {
+        "raw": 12698678,
+        "canonical": 6350058,
+        "excluded": 6253269,
+        "fair": 96789,
+        "unknown": 0
+      },
+      "ledger_sha256": "e8c03a2ee87233859b21e6d30a3d7a6b0bd6370cd38dfce61524e647f96623a2"
+    },
+    {
+      "shard": "six42-m10",
+      "counts": {
+        "raw": 17507328,
+        "canonical": 8740126,
+        "excluded": 8637218,
+        "fair": 102908,
+        "unknown": 0
+      },
+      "ledger_sha256": "297a62eb368bb2e1c1a7fb6d63ee9fe51ad8d3930b8dccf17ff0d2c6f738ffaa"
+    },
+    {
+      "shard": "six42-m11",
+      "counts": {
+        "raw": 23071992,
+        "canonical": 11537932,
+        "excluded": 11444630,
+        "fair": 93302,
+        "unknown": 0
+      },
+      "ledger_sha256": "33d0d6d177ede72943a8700cd5b96bc7904b3f763ce5fa8743e53d24fca91bc3"
+    },
+    {
+      "shard": "six42-m12",
+      "counts": {
+        "raw": 29223438,
+        "canonical": 14590278,
+        "excluded": 14491302,
+        "fair": 98976,
+        "unknown": 0
+      },
+      "ledger_sha256": "bc2d0de6ccd7f310a5466bec59a594f849af552ed5c6ef2bdfd462d2db936d29"
+    },
+    {
+      "shard": "six42-m13",
+      "counts": {
+        "raw": 35739528,
+        "canonical": 17872096,
+        "excluded": 17781080,
+        "fair": 91016,
+        "unknown": 0
+      },
+      "ledger_sha256": "a7fae7fb0bece4a33abd10631d58078742a3c0bf4a250dca0028f06a502d9275"
+    },
+    {
+      "shard": "six42-m14",
+      "counts": {
+        "raw": 42360308,
+        "canonical": 21151763,
+        "excluded": 21052517,
+        "fair": 99246,
+        "unknown": 0
+      },
+      "ledger_sha256": "deef1c07c80ea01526749fec225824fbf1e8eb9e176b412f1aadb8906f4ad365"
+    },
+    {
+      "shard": "six42-m15",
+      "counts": {
+        "raw": 48804838,
+        "canonical": 24403761,
+        "excluded": 24314167,
+        "fair": 89594,
+        "unknown": 0
+      },
+      "ledger_sha256": "48657f2528be870496bebb09082290aca09915cf1cc892428dfcba173ab36c95"
+    },
+    {
+      "shard": "six42-m16",
+      "counts": {
+        "raw": 54788607,
+        "canonical": 27358043,
+        "excluded": 27267380,
+        "fair": 90663,
+        "unknown": 0
+      },
+      "ledger_sha256": "db74c7421af56907d8d439bc3742dbce7c9058633dc7e5d6abaaa6e14504bb28"
+    },
+    {
+      "shard": "six42-m17",
+      "counts": {
+        "raw": 60040518,
+        "canonical": 30023182,
+        "excluded": 29941851,
+        "fair": 81331,
+        "unknown": 0
+      },
+      "ledger_sha256": "25c018b69c0e6e04af92fbd77fa7519b6c56ffaad35d857059cb5d40ab017ada"
+    },
+    {
+      "shard": "six42-m18",
+      "counts": {
+        "raw": 64318568,
+        "canonical": 32115165,
+        "excluded": 32034564,
+        "fair": 80601,
+        "unknown": 0
+      },
+      "ledger_sha256": "d3bfb2ddd450085b21bb31c233263147a713fab7c40520547d097c6f4cd9af81"
+    },
+    {
+      "shard": "six42-m19",
+      "counts": {
+        "raw": 67423488,
+        "canonical": 33714826,
+        "excluded": 33643332,
+        "fair": 71494,
+        "unknown": 0
+      },
+      "ledger_sha256": "f1e64c56d96cf225cbf8c5e4213e4b8c6b4687b34d7e8ee49c4e67af97290b0f"
+    },
+    {
+      "shard": "six42-m20",
+      "counts": {
+        "raw": 69209748,
+        "canonical": 34558782,
+        "excluded": 34488977,
+        "fair": 69805,
+        "unknown": 0
+      },
+      "ledger_sha256": "29905a503d76232a8225758ecedd4398020e92c2d76b1aa6e5bfe3aa7c47d8ca"
+    },
+    {
+      "shard": "six42-m21",
+      "counts": {
+        "raw": 38390416,
+        "canonical": 9600627,
+        "excluded": 9600627,
+        "fair": 0,
+        "unknown": 0
+      },
+      "ledger_sha256": "69519a29eb4698275358dac9e8d37dedaa9cb68a6faa7d526e8d231617f7d95e"
+    }
+  ],
+  "minimal_unknown_inputs": [
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m10/unknown.jsonl",
+        "line": 1
+      },
+      "I": [
+        0,
+        3,
+        5,
+        6,
+        10
+      ],
+      "J": [
+        0,
+        6,
+        9,
+        11,
+        12,
+        14,
+        15,
+        19,
+        23
+      ],
+      "direct_diagonal_domination": {
+        "source": 15,
+        "target": 18,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m11/unknown.jsonl",
+        "line": 1
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        5,
+        12,
+        13,
+        16,
+        18,
+        22
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 4,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m11/unknown.jsonl",
+        "line": 2
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        5,
+        14,
+        15,
+        17,
+        19,
+        23
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 4,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m11/unknown.jsonl",
+        "line": 3
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8,
+        11
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        5,
+        8,
+        16,
+        17,
+        20,
+        23
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 3,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m12/unknown.jsonl",
+        "line": 1
+      },
+      "I": [
+        0,
+        1,
+        3,
+        6,
+        12
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        13,
+        18,
+        20,
+        22
+      ],
+      "direct_diagonal_domination": {
+        "source": 21,
+        "target": 3,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m12/unknown.jsonl",
+        "line": 2
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        12
+      ],
+      "J": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        13,
+        14,
+        17,
+        22
+      ],
+      "direct_diagonal_domination": {
+        "source": 4,
+        "target": 11,
+        "target_to_source": [
+          2,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m13/unknown.jsonl",
+        "line": 1
+      },
+      "I": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        8,
+        13
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        11,
+        14,
+        15,
+        20
+      ],
+      "direct_diagonal_domination": {
+        "source": 24,
+        "target": 19,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m13/unknown.jsonl",
+        "line": 2
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        13
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        9,
+        14,
+        16,
+        20
+      ],
+      "direct_diagonal_domination": {
+        "source": 2,
+        "target": 11,
+        "target_to_source": [
+          2,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m13/unknown.jsonl",
+        "line": 3
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        13
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        5,
+        9,
+        14,
+        16,
+        20
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 6,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m13/unknown.jsonl",
+        "line": 4
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        13
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        9,
+        14,
+        16,
+        20
+      ],
+      "direct_diagonal_domination": {
+        "source": 2,
+        "target": 11,
+        "target_to_source": [
+          2,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m13/unknown.jsonl",
+        "line": 5
+      },
+      "I": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        13
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        9,
+        15,
+        19,
+        21
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 4,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m13/unknown.jsonl",
+        "line": 6
+      },
+      "I": [
+        0,
+        1,
+        3,
+        7,
+        8,
+        13
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        4,
+        9,
+        11,
+        15,
+        16,
+        21
+      ],
+      "direct_diagonal_domination": {
+        "source": 24,
+        "target": 18,
+        "target_to_source": [
+          0,
+          2
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m13/unknown.jsonl",
+        "line": 7
+      },
+      "I": [
+        0,
+        3,
+        4,
+        6,
+        8,
+        13
+      ],
+      "J": [
+        0,
+        3,
+        4,
+        6,
+        11,
+        12,
+        14,
+        16,
+        21
+      ],
+      "direct_diagonal_domination": {
+        "source": 3,
+        "target": 7,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m14/unknown.jsonl",
+        "line": 1
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        14
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        9,
+        11,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 20,
+        "target": 8,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m14/unknown.jsonl",
+        "line": 2
+      },
+      "I": [
+        0,
+        1,
+        2,
+        5,
+        10,
+        14
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        10,
+        11,
+        15,
+        19
+      ],
+      "direct_diagonal_domination": null,
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "unmapped_requires_new_exact_certificate"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m14/unknown.jsonl",
+        "line": 3
+      },
+      "I": [
+        0,
+        2,
+        3,
+        4,
+        8,
+        14
+      ],
+      "J": [
+        0,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 2,
+        "target": 5,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m14/unknown.jsonl",
+        "line": 4
+      },
+      "I": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        10,
+        14
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        10,
+        15,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 11,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m14/unknown.jsonl",
+        "line": 5
+      },
+      "I": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        10,
+        14
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        10,
+        15,
+        19
+      ],
+      "direct_diagonal_domination": null,
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "unmapped_requires_new_exact_certificate"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m14/unknown.jsonl",
+        "line": 6
+      },
+      "I": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        10,
+        14
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        10,
+        11,
+        15,
+        19
+      ],
+      "direct_diagonal_domination": null,
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "unmapped_requires_new_exact_certificate"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m14/unknown.jsonl",
+        "line": 7
+      },
+      "I": [
+        0,
+        1,
+        2,
+        5,
+        9,
+        10,
+        14
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        11,
+        15,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 15,
+        "target": 6,
+        "target_to_source": [
+          1,
+          2
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 1
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        15
+      ],
+      "J": [
+        0,
+        2,
+        5,
+        6,
+        7,
+        10,
+        18
+      ],
+      "direct_diagonal_domination": {
+        "source": 20,
+        "target": 12,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 2
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        8,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8,
+        11,
+        18
+      ],
+      "direct_diagonal_domination": {
+        "source": 19,
+        "target": 12,
+        "target_to_source": [
+          0,
+          2
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 3
+      },
+      "I": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        10,
+        11,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 21,
+        "target": 13,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 4
+      },
+      "I": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        10,
+        11,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 4,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 5
+      },
+      "I": [
+        0,
+        2,
+        4,
+        5,
+        8,
+        15
+      ],
+      "J": [
+        0,
+        2,
+        5,
+        6,
+        8,
+        9,
+        12,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 2,
+        "target": 7,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 6
+      },
+      "I": [
+        0,
+        2,
+        4,
+        5,
+        8,
+        15
+      ],
+      "J": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        12,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 23,
+        "target": 16,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 7
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        5,
+        6,
+        7,
+        8,
+        10,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 22,
+        "target": 13,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 8
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 4,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 9
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 4,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 10
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        6,
+        8,
+        9,
+        12,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 3,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 11
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8,
+        9,
+        12,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 3,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 12
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        8,
+        10,
+        12,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 20,
+        "target": 13,
+        "target_to_source": [
+          0,
+          2
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 13
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        11,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        12,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 3,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 14
+      },
+      "I": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        9,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        8,
+        9,
+        13,
+        19
+      ],
+      "direct_diagonal_domination": null,
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "unmapped_requires_new_exact_certificate"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m15/unknown.jsonl",
+        "line": 15
+      },
+      "I": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        9,
+        15
+      ],
+      "J": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        8,
+        9,
+        13,
+        19
+      ],
+      "direct_diagonal_domination": {
+        "source": 24,
+        "target": 18,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 1
+      },
+      "I": [
+        0,
+        3,
+        4,
+        9,
+        10,
+        16
+      ],
+      "J": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        10,
+        11,
+        17
+      ],
+      "direct_diagonal_domination": {
+        "source": 3,
+        "target": 7,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 2
+      },
+      "I": [
+        0,
+        1,
+        3,
+        4,
+        9,
+        10,
+        16
+      ],
+      "J": [
+        0,
+        3,
+        4,
+        5,
+        10,
+        11,
+        17
+      ],
+      "direct_diagonal_domination": {
+        "source": 3,
+        "target": 7,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 3
+      },
+      "I": [
+        0,
+        2,
+        3,
+        4,
+        7,
+        10,
+        16
+      ],
+      "J": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        8,
+        11,
+        17
+      ],
+      "direct_diagonal_domination": {
+        "source": 19,
+        "target": 13,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 4
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        9,
+        16
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        8,
+        11,
+        18
+      ],
+      "direct_diagonal_domination": {
+        "source": 19,
+        "target": 12,
+        "target_to_source": [
+          0,
+          1
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 5
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        9,
+        11,
+        16
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        11,
+        13,
+        18
+      ],
+      "direct_diagonal_domination": {
+        "source": 19,
+        "target": 7,
+        "target_to_source": [
+          0,
+          2
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 6
+      },
+      "I": [
+        0,
+        1,
+        2,
+        6,
+        9,
+        11,
+        16
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        11,
+        13,
+        18
+      ],
+      "direct_diagonal_domination": {
+        "source": 1,
+        "target": 7,
+        "target_to_source": [
+          1,
+          0
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 7
+      },
+      "I": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        16
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        11,
+        18
+      ],
+      "direct_diagonal_domination": {
+        "source": 20,
+        "target": 13,
+        "target_to_source": [
+          0,
+          2
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 8
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        9,
+        11,
+        16
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        11,
+        13,
+        18
+      ],
+      "direct_diagonal_domination": {
+        "source": 19,
+        "target": 14,
+        "target_to_source": [
+          0,
+          2
+        ]
+      },
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "direct_certificate_found"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 9
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        9,
+        11,
+        16
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        4,
+        8,
+        11,
+        13,
+        18
+      ],
+      "direct_diagonal_domination": null,
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "unmapped_requires_new_exact_certificate"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 10
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        9,
+        11,
+        16
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        6,
+        8,
+        11,
+        13,
+        18
+      ],
+      "direct_diagonal_domination": null,
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "unmapped_requires_new_exact_certificate"
+    },
+    {
+      "source_unknown": {
+        "path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round020-fullcpu/output/nine34-m16/unknown.jsonl",
+        "line": 11
+      },
+      "I": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        9,
+        11,
+        16
+      ],
+      "J": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        11,
+        13,
+        18
+      ],
+      "direct_diagonal_domination": null,
+      "round19_candidate_matches_under_allowed_swap_reflection": 0,
+      "round19_special_matches_under_allowed_swap_reflection": false,
+      "mapping_status": "unmapped_requires_new_exact_certificate"
+    }
+  ],
+  "conclusion": "All 46 exact residual supports are new relative to the 57 Round-19 support certificates, even allowing exchange and simultaneous reflection. Rows without a freshly verified diagonal-domination witness remain unexcluded and each needs a new exact certificate or a proven general rule before the 42/34 finite bound can be advanced."
+}
