@@ -1,0 +1,69 @@
+{
+  "schema": "r077-fixed-radical-and-provenance-check-v1",
+  "pid": 83880,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "script_sha256": "03983f570350b67ab2d3b7a47b7da99d706baa689ded7336dffbc0df833e7b6d",
+  "area_input_sha256": "4189622bdf740b2ac5a1afae631b865eacf29ef81f1b3814b38f318b7df48067",
+  "root_bits": 72,
+  "root_bounds": {
+    "2": [
+      "3339217363285192246361/2361183241434822606848",
+      "6678434726570384492723/4722366482869645213696"
+    ],
+    "3": [
+      "8179378680290567732005/4722366482869645213696",
+      "4089689340145283866003/2361183241434822606848"
+    ],
+    "5": [
+      "10559532470363122838503/4722366482869645213696",
+      "1319941558795390354813/590295810358705651712"
+    ],
+    "13": [
+      "17026734495519042445275/4722366482869645213696",
+      "4256683623879760611319/1180591620717411303424"
+    ]
+  },
+  "uncapped_formula": "78/25-53sqrt(5)/50-161sqrt(13)/100+161sqrt(3)/50",
+  "uncapped_formula_interval": [
+    "123261791035917630903951/236118324143482260684800",
+    "246523582071835261808491/472236648286964521369600"
+  ],
+  "uncapped_simple_lower": "652519/1250000",
+  "corrected_formula": "43sqrt(3)/200-101sqrt(2)/1600-24641/160000",
+  "corrected_formula_interval": [
+    "24388650839810929723446641/188894659314785808547840000",
+    "12194325419905464861728883/94447329657392904273920000"
+  ],
+  "corrected_simple_lower": "206483/1600000",
+  "formula_intervals_overlap_geometric_certificates": true,
+  "original_residual_pair_empty": true,
+  "uncapped_cap_countercheck": {
+    "closed_square": [
+      "-161/50",
+      "0",
+      "-161/50",
+      "0"
+    ],
+    "mass": "13",
+    "area": "25921/2500",
+    "mass_exceeds_area": true,
+    "maximum_eligible_mass": "13",
+    "old_is_maximum": false
+  },
+  "process_checks": [
+    {
+      "receipt": "area-process-receipt.json",
+      "pid": 80444,
+      "exit_code": 0,
+      "absent_at_check": true
+    },
+    {
+      "receipt": "qualification-process-receipt.json",
+      "pid": 82360,
+      "exit_code": 0,
+      "absent_at_check": true
+    }
+  ],
+  "scope": "Root arithmetic and enclosure agreement; analytic formula derivations are in the separate theory proof. Geometric lower bounds are independently certified by both exact union algorithms.",
+  "seconds": 0.0009495000012975652
+}

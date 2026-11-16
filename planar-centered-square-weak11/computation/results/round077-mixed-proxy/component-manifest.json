@@ -1,0 +1,94 @@
+{
+  "schema": "r077-mixed-proxy-component-manifest-v1",
+  "frozen": true,
+  "files": [
+    {
+      "path": "computation/round077/certify_mixed_proxy.py",
+      "bytes": 4031,
+      "sha256": "44a1288a726e29695ca706c567b0e8fa9910e78229e8a8bb108b5913dab994d3"
+    },
+    {
+      "path": "computation/round077/check_n20_qualification.py",
+      "bytes": 6357,
+      "sha256": "af78a3ac03f407d9b766a790a8761d8949c26233e3c7831a36b013708cd129e9"
+    },
+    {
+      "path": "computation/round077/check_fixed_formulas.py",
+      "bytes": 3191,
+      "sha256": "03983f570350b67ab2d3b7a47b7da99d706baa689ded7336dffbc0df833e7b6d"
+    },
+    {
+      "path": "computation/round077/README.md",
+      "bytes": 5234,
+      "sha256": "ac87c33427d788a42581ab0fb3c4466833bfd7f22ec4ae994d433f5837b75274"
+    },
+    {
+      "path": "computation/inputs/r077/mixed-proxy-cases.json",
+      "bytes": 1562,
+      "sha256": "9317309e36df5cafac9dd12535f643e2998c456f2fc64087b18767750c1cc6fb"
+    },
+    {
+      "path": "computation/inputs/r077/n20-corrected-actual-input.json",
+      "bytes": 26525,
+      "sha256": "d4a87c2ef5f82165467bed876c71a0a86d19dce89012ea37b76bf83583fdd15a"
+    },
+    {
+      "path": "computation/results/round077-mixed-proxy/area-process-receipt.json",
+      "bytes": 1386,
+      "sha256": "602320bfd9fae519225e6c567284d696f6e875e7dd1ca9eac8944cfd3a2cbbf5"
+    },
+    {
+      "path": "computation/results/round077-mixed-proxy/directed-areas.json",
+      "bytes": 23516,
+      "sha256": "4189622bdf740b2ac5a1afae631b865eacf29ef81f1b3814b38f318b7df48067"
+    },
+    {
+      "path": "computation/results/round077-mixed-proxy/fixed-formula-checks.json",
+      "bytes": 2336,
+      "sha256": "3c121d119fa00271cafd35d71ec472f04a701c709ff744f718a0ba860eb0f25c"
+    },
+    {
+      "path": "computation/results/round077-mixed-proxy/formula-process-receipt.json",
+      "bytes": 1238,
+      "sha256": "63bbd555a58bd1b17a6a086c92cd18ab6ea1d825a060f3fdf2484df7e0d066a6"
+    },
+    {
+      "path": "computation/results/round077-mixed-proxy/n20-qualification.json",
+      "bytes": 213294,
+      "sha256": "c6e1671967a52587f3e91da303420bda1654bc82d07b64fad080c62c637e2180"
+    },
+    {
+      "path": "computation/results/round077-mixed-proxy/qualification-process-receipt.json",
+      "bytes": 1430,
+      "sha256": "071c71346388f5564a71e461e8bc2ca9548ebc35440a32609200dd01fdf19efc"
+    }
+  ],
+  "file_count": 12,
+  "total_bytes": 290100,
+  "frozen_prior_dependency": {
+    "path": "computation/round075/certify_three_atom_collapse.py",
+    "sha256": "a93cf5a038ae2579326e8c48170bfa102f9735cda982878fa75b95a5e91a4456",
+    "included_in_prior_published_R75_archive": true
+  },
+  "process_exit_checks": [
+    {
+      "receipt": "area-process-receipt.json",
+      "pid": 80444,
+      "exit_code": 0,
+      "observed_absent": true
+    },
+    {
+      "receipt": "qualification-process-receipt.json",
+      "pid": 82360,
+      "exit_code": 0,
+      "observed_absent": true
+    },
+    {
+      "receipt": "formula-process-receipt.json",
+      "pid": 83880,
+      "exit_code": 0,
+      "observed_absent": true
+    }
+  ],
+  "scope": "Specified uncapped mixed-only counterexample and corrected capped pre-collapse S20 proxy counterexample; no actual S20 corner-area or C2 claim. Failed original proposal retained. No random search or full400source halo."
+}

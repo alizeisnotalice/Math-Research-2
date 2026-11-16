@@ -1,0 +1,105 @@
+{
+  "schema": "r077-mixed-only-obstruction-axis-caps-component-v1",
+  "frozen": true,
+  "files": [
+    {
+      "path": "computation/round077/check_mixed_only_counterexample.py",
+      "sha256": "5dfafc2c8b93115b776a907e64166d48a7672c94720583274d8d4a59b09f9542",
+      "bytes": 2567
+    },
+    {
+      "path": "computation/inputs/r077/mixed-only-two-outside-counterexample.json",
+      "sha256": "fd89f4f0909c0b6a1f182986a4a7eff6eea03726195d63ce084df818954c3c53",
+      "bytes": 297
+    },
+    {
+      "path": "computation/results/round077-mixed-only/checks.json",
+      "sha256": "1d741e9ef31633e7cf9f5dc44f239d1c2bbc38fe71858bdb41546c3c1b93004f",
+      "bytes": 1207
+    },
+    {
+      "path": "proofs/r077-mixed-only-obstruction-and-unequal-axis-caps.md",
+      "sha256": "3c71513ed72567445d4900b96f819f49d59481a7a6e9a1d1b4c1550cb4a211aa",
+      "bytes": 8338
+    }
+  ],
+  "all_embedded_input_script_pins_match": true,
+  "external_area_producer_workspace": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+  "external_area_evidence": [
+    {
+      "path": "computation/inputs/r077/mixed-proxy-cases.json",
+      "sha256": "9317309e36df5cafac9dd12535f643e2998c456f2fc64087b18767750c1cc6fb",
+      "bytes": 1562
+    },
+    {
+      "path": "computation/round077/certify_mixed_proxy.py",
+      "sha256": "44a1288a726e29695ca706c567b0e8fa9910e78229e8a8bb108b5913dab994d3",
+      "bytes": 4031
+    },
+    {
+      "path": "computation/results/round077-mixed-proxy/directed-areas.json",
+      "sha256": "4189622bdf740b2ac5a1afae631b865eacf29ef81f1b3814b38f318b7df48067",
+      "bytes": 23516
+    },
+    {
+      "path": "computation/results/round077-mixed-proxy/area-process-receipt.json",
+      "sha256": "602320bfd9fae519225e6c567284d696f6e875e7dd1ca9eac8944cfd3a2cbbf5",
+      "bytes": 1386
+    }
+  ],
+  "external_area_use": "only raw uncapped mixed-only record is used by this packet; other S20 records and all qualification execution belong to the separate producer/core packages",
+  "separate_core_attachment": {
+    "path": "proofs/r077-qualified-grid-total-mass-proxy-obstruction.md",
+    "role": "ownership reference for qualified S20 proxy example; not a dependency of the raw counterexample or general cap theorem proved here"
+  },
+  "mathematical_scope": {
+    "unrestricted_mixed_only_counterexample": "old mass1, outside4at(-28/25,0),8at(0,-161/50); three mixed receivers minus complete three-label residual in SW has strict area lower25849/50000>1/2, without adding oldsingleton",
+    "grid_caps": "full uniform Sn with two unequal negative-axis positions: exact n+n+n^2 prefix inequalities, with individual atom<=1 caps separately when needed; no symmetrization",
+    "not_claimed": "no actual full-grid corner/deletion area here; raw example has no global grid caps; no conclusion for arbitrary qualified two-outside original grid corner"
+  },
+  "actual_author_execution": {
+    "scope": "rational square-root bounds and geometric separation scalars only",
+    "strict_lower": "25849/50000",
+    "excess_above_half": "849/50000",
+    "not_run": [
+      "no random scan",
+      "no repeated complete halo union",
+      "no full400oldsource halo",
+      "no numerical verification of all-n cap theorem"
+    ]
+  },
+  "independent_review": {
+    "status": "full mathematical proof independently read and passed, no mathematical fixes",
+    "scope": "complete true-residual geometry, strict rational lower and unequal-axis cap necessity/sufficiency; minimal author scalar code/result read, not independently rerun",
+    "last_nonmathematical_changes": "explicit b1,b2>=0; one-line ownership link to separate core proof"
+  },
+  "execution_receipt": {
+    "actual_command": [
+      "python3",
+      "-B",
+      "planar-centered-square-weak11/computation/round077/check_mixed_only_counterexample.py",
+      "--input",
+      "planar-centered-square-weak11/computation/inputs/r077/mixed-only-two-outside-counterexample.json",
+      "--output",
+      "planar-centered-square-weak11/computation/results/round077-mixed-only/checks.json"
+    ],
+    "actual_working_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources",
+    "portable_command": [
+      "python3",
+      "-B",
+      "computation/round077/check_mixed_only_counterexample.py",
+      "--input",
+      "computation/inputs/r077/mixed-only-two-outside-counterexample.json",
+      "--output",
+      "computation/results/round077-mixed-only/checks.json"
+    ],
+    "portable_working_directory": "topic directory planar-centered-square-weak11",
+    "exit_code": 0,
+    "pid": "not separately captured; synchronous run completed; no background job",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "script_wall_seconds": 0.01317491599911591,
+    "new_math_run_in_manifest_step": false
+  },
+  "git": "only R77 new files; preceding frozen components unchanged; no commit/push/reset/rebase"
+}

@@ -1,0 +1,204 @@
+{
+  "status": "PASS",
+  "original_full_grid": {
+    "n": 20,
+    "old_atoms": 400,
+    "total_atoms": 402,
+    "grid_spacing": "21/400",
+    "internal_atom_mass": "1/400",
+    "actual_bbox_closures": 45302,
+    "closure_counts_by_outside_mask": {
+      "1": 401,
+      "2": 401,
+      "3": 400,
+      "0": 44100
+    },
+    "eligible_closures": 7386,
+    "maximum_eligible_mass": "1",
+    "unique_maximum_is_full_S20": true,
+    "connected": true,
+    "outside_joint_label_connecting_margin": "859/40000",
+    "nonterminal_gap": "8319673/5280000",
+    "raw_full_bbox_bounds_V1_V2_U": {
+      "1": "7/20",
+      "2": "5281/6400",
+      "3": "5729/6400"
+    },
+    "independent_axis_prefix_rows": 440,
+    "local_internal_atom_count": 100,
+    "local_internal_mass": "1/4"
+  },
+  "actual_old_prefix_joint_activity": {
+    "prefix_count": 100,
+    "active_count": 9,
+    "active_prefixes": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        9,
+        1
+      ]
+    ],
+    "scope": "activity only, no area"
+  },
+  "synthetic_proxy": {
+    "mixed_masks": [
+      3,
+      5,
+      7
+    ],
+    "complete_residual_masks": [
+      2,
+      4,
+      6
+    ],
+    "old_singleton_added": false,
+    "full_radius_cutoff": "1/2",
+    "Gamma_cut": "1/400",
+    "receiver_catalog": [
+      {
+        "mask": 2,
+        "radius": "1/4",
+        "clipped": [
+          "-1/2",
+          "-21/200",
+          "-1/4",
+          "-1/400"
+        ]
+      },
+      {
+        "mask": 3,
+        "radius": "sqrt(2)/4",
+        "clipped": [
+          "-sqrt(2)/4",
+          "-1/400",
+          "-sqrt(2)/4",
+          "-1/400"
+        ]
+      },
+      {
+        "mask": 4,
+        "radius": "sqrt(2)/4",
+        "clipped": null
+      },
+      {
+        "mask": 5,
+        "radius": "sqrt(3)/4",
+        "clipped": [
+          "-sqrt(3)/4",
+          "-1/400",
+          "-sqrt(3)/4",
+          "-171/200 + sqrt(3)/4"
+        ]
+      },
+      {
+        "mask": 6,
+        "radius": "sqrt(3)/4",
+        "clipped": [
+          "-sqrt(3)/4",
+          "-1/400",
+          "-sqrt(3)/4",
+          "-171/200 + sqrt(3)/4"
+        ]
+      },
+      {
+        "mask": 7,
+        "radius": "1/2",
+        "clipped": [
+          "-1/2",
+          "-1/400",
+          "-1/2",
+          "-71/200"
+        ]
+      }
+    ],
+    "horizontal_slabs": [
+      {
+        "y0": "-1/2",
+        "y1": "-sqrt(3)/4",
+        "mixed_only_area": "199/800 - 199*sqrt(3)/1600"
+      },
+      {
+        "y0": "-sqrt(3)/4",
+        "y1": "-171/200 + sqrt(3)/4",
+        "mixed_only_area": "-321/400 + 371*sqrt(3)/800"
+      },
+      {
+        "y0": "-171/200 + sqrt(3)/4",
+        "y1": "-71/200",
+        "mixed_only_area": "199/800 - 199*sqrt(3)/1600"
+      },
+      {
+        "y0": "-71/200",
+        "y1": "-sqrt(2)/4",
+        "mixed_only_area": "0"
+      },
+      {
+        "y0": "-sqrt(2)/4",
+        "y1": "-1/4",
+        "mixed_only_area": "201/1600 - 101*sqrt(2)/1600"
+      },
+      {
+        "y0": "-1/4",
+        "y1": "-1/400",
+        "mixed_only_area": "4059/160000"
+      }
+    ],
+    "exact_area": "-24641/160000 - 101*sqrt(2)/1600 + 43*sqrt(3)/200",
+    "decimal_display": 0.129112442502507,
+    "simple_strict_lower": "206483/1600000",
+    "target": "1/8",
+    "lower_excess": "6483/1600000"
+  },
+  "collapse_while_retaining_other_old_atoms": {
+    "unit_square": [
+      "-71/200",
+      "129/200",
+      "-171/200",
+      "29/200"
+    ],
+    "original_mass": "339/400",
+    "synthetic_after_collapse_mass": "409/400",
+    "violates_cap": true
+  },
+  "scope": "Original full S20 input is qualified; synthetic mixed-only clipped/truncated proxy exceeds1/8. No actual S20 halo/Delta area, C2 or main corner counterexample is claimed. Mixed-only omits the separate old-singleton union term but does not subtract mixed overlap with old halo.",
+  "proxy_input_sha256": "9317309e36df5cafac9dd12535f643e2998c456f2fc64087b18767750c1cc6fb",
+  "actual402_input_sha256": "d4a87c2ef5f82165467bed876c71a0a86d19dce89012ea37b76bf83583fdd15a",
+  "script_sha256": "4b4aafc8e041634ce2a77c8fe341428fb4b0fd87af8e30b6e739ed49caeb8013",
+  "runtime": {
+    "python": "3.13.18",
+    "sympy": "1.14.0",
+    "pid": 85854,
+    "seconds": 0.44590100000095845
+  }
+}
