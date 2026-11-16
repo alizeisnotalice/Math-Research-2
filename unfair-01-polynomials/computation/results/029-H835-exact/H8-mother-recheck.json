@@ -1,0 +1,59 @@
+{
+  "H_coefficients_ascending": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "certificate_path": "/Volumes/data/CodexProjects/T2/unfair-01-polynomials/computation/results/025-H8-exact/H8-mother-certificate.json",
+  "certificate_sha256": "b20506cea10ad165a0d9f9562b576c6f86db850f1b75b029e9fe35788939cb25",
+  "galois_exact_recheck": {
+    "name": "H8_1_x_x2_x7_x8",
+    "degree": 8,
+    "status": "full_symmetric_by_exact_modular_certificates",
+    "reductions": [
+      {
+        "prime": 2,
+        "degrees": [
+          8
+        ],
+        "verified_roles": [
+          "transitive"
+        ]
+      },
+      {
+        "prime": 13,
+        "degrees": [
+          1,
+          7
+        ],
+        "verified_roles": [
+          "long_cycle"
+        ]
+      },
+      {
+        "prime": 5,
+        "degrees": [
+          1,
+          2,
+          5
+        ],
+        "verified_roles": [
+          "transposition"
+        ]
+      }
+    ],
+    "mathematical_dependency": "Frobenius factor-degree cycle theorem at squarefree reduction; transitivity plus (N-1)-cycle implies 2-transitivity; conjugates of one transposition give all transpositions."
+  },
+  "sturm_exact_real_root_check": {
+    "all_real": 0,
+    "negative_real": 0,
+    "positive_real": 0
+  },
+  "root_schema_consequence": "four nonreal conjugate parent pairs and no real parent block"
+}

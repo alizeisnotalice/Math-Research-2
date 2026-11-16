@@ -1,0 +1,24 @@
+{
+  "status": "passed_cpu_audit_only",
+  "gpu_or_mps_started": false,
+  "command": [
+    "/Users/zzh/.venvs/main/bin/python", "gpu_factor_search_prefix.py",
+    "--cpu-audit-only", "--m", "48", "--n", "88",
+    "--fractional-index", "11", "--starts", "32768", "--steps", "12000",
+    "--restart-every", "2000", "--margin", ".05", "--seed", "2026111609"
+  ],
+  "worker_sha256": "908061fe934bda1f882178982fd5e10f44fb97497483c9e06c05fe3a3fea29cc",
+  "driver_sha256": "673820d0ef94713a50c5b3f774cfba66c0815e571faeec8b4a72f1b151f01fd0",
+  "prefix_module_sha256": "0b1a06770a61fe113031209986f676c7e1afb862d27c0c697dbebc0a9f78481d",
+  "independent_pool_record": "d11-pool-audit.json",
+  "independent_pool_record_sha256": "70aeb5e6d70b000068ce920cb89bd04cb444ad956cb8f16c9be745d6e0172a52",
+  "comparison": {
+    "raw_ternary_count": 59049,
+    "valid_low_prefix_count": 5131,
+    "valid_low_prefix_codes_sha256": "db4403d00b7fdd18b13a30ac7e7f76f0191f86e213b95a0549ef62eb8f6a1021",
+    "survivor_count": 3181,
+    "survivor_codes_sha256": "821c24a85b9d6597cf5714dfab0ecd3cc9b6775da4b8f53e070903d2ca25d15f",
+    "all_fields_match_independent_record": true
+  },
+  "exploration_boundary": "margin=0.05 restricts any future numerical trajectory to t in [0.05,0.95], deliberately away from the fairness boundary. This CPU-only audit is neither a factorization certificate nor an exclusion theorem."
+}

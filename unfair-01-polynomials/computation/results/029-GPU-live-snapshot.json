@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-16T07:15:19.265122+00:00",
+  "session": 22180,
+  "queue_status": "running",
+  "parent_pid": 27324,
+  "child_pid": 27325,
+  "last_checkpoint": {
+    "step": 8300,
+    "elapsed_seconds": 2130.8928794169988,
+    "restart_epoch": 4,
+    "min_mse_gpu": 1.4435307775784167e-06,
+    "best_max_residual_float64": 0.006380931939929724,
+    "allocated_bytes": 129925888,
+    "driver_bytes": 2156593152
+  },
+  "ps": "  PID  PPID ELAPSED    RSS COMMAND\n27324   870   35:39  10624 /opt/homebrew/Cellar/python@3.13/3.13.18/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round028-prefix-gpu/run_prefix_batch.py --out /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round028-prefix-gpu/live-m44n84d10 --m 44 --n 84 --d 10 --starts 32768 --steps 12000 --restart 2000 --seed 2026111608 --margin 0.001 --seconds 14400\n27325 27324   35:39 439072 /opt/homebrew/Cellar/python@3.13/3.13.18/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round028-prefix-gpu/gpu_factor_search_prefix.py --m 44 --n 84 --fractional-index 10 --starts 32768 --steps 12000 --seed 2026111608 --margin 0.001 --restart-every 2000 --out /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round028-prefix-gpu/live-m44n84d10/run\n",
+  "ioreg": "|   \"PerformanceStatistics\" = {\"In use system memory (driver)\"=0,\"Alloc system memory\"=4136943616,\"Tiler Utilization %\"=1,\"recoveryCount\"=0,\"lastRecoveryTime\"=0,\"Renderer Utilization %\"=100,\"TiledSceneBytes\"=1179648,\"Device Utilization %\"=100,\"SplitSceneCount\"=0,\"Allocated PB Size\"=25165824,\"In use system memory\"=3275472896}",
+  "scope": "Live numerical run only, not completion or exclusion."
+}

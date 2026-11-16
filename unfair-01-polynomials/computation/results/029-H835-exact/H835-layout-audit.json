@@ -1,0 +1,79 @@
+{
+  "status": "independent_H835_32bit_canonical_layout_audit_passed",
+  "target": {
+    "left_support": [
+      0,
+      3,
+      6,
+      21,
+      24
+    ],
+    "right_support": [
+      0,
+      5,
+      10,
+      35,
+      40
+    ],
+    "support": [
+      0,
+      3,
+      5,
+      6,
+      8,
+      10,
+      11,
+      13,
+      16,
+      21,
+      24,
+      26,
+      29,
+      31,
+      34,
+      35,
+      38,
+      40,
+      41,
+      43,
+      46,
+      56,
+      59,
+      61,
+      64
+    ],
+    "binary_terms": 25
+  },
+  "groups": {
+    "complex_parent_pairs": 4,
+    "quadratic_groups": 32,
+    "linear_groups": 0,
+    "per_block": {
+      "a": 3,
+      "b": 5
+    }
+  },
+  "balance": "E=5*u+3*v per block; common E across all four blocks",
+  "canonical_rule": "E<15, or E=15 with first block all-a (0b00000111)",
+  "counts_by_E": {
+    "3": 625,
+    "5": 81,
+    "6": 10000,
+    "8": 50625,
+    "9": 10000,
+    "10": 81,
+    "11": 810000,
+    "12": 625,
+    "13": 50625,
+    "14": 810000,
+    "15": 8
+  },
+  "canonical_mask_count": 1742670,
+  "standard_mask": 117901063,
+  "standard_mask_count": 1,
+  "ledger_sha256": "090cb580dafaa5584483eeb36cf4dba364926cac591cb08d3fec6118ab9b815e",
+  "compressed_sha256": "be54d0cfa9ac20739890e8acc57bade3f5911053c4cc864c2d1f83ec4324ba9e",
+  "source_summary_sha256": "975e4ab32dc0d366c2cc7a5898f38c8515f63e3e56e8638ab68756e28b65c368",
+  "auditor_sha256": "148ebff64053b10f646eca694f777001d4b059fe068d861c824e688b6252e29c",
+  "scope": "Exact necessary root-layout coverage only; no root disks or coefficient-sign scan has run."
+}

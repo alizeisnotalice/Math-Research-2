@@ -1,0 +1,16 @@
+--- round028-prefix-gpu/gpu_factor_search_prefix.py
++++ d11-ready/worker/gpu_factor_search_prefix.py
+@@
+-    if not 1 <= d <= 10:
+-        raise ValueError('fractional-index must be in 1..10 for the audited prefix enumeration')
++    if not 1 <= d <= 11:
++        raise ValueError('fractional-index must be in 1..11 for the audited prefix enumeration')
+@@
+-    assert a.steps > 0 and B >= 16 and d <= 10 and 1 <= d < min(m, n) and 0 < a.margin < .5
++    assert a.steps > 0 and B >= 16 and d <= 11 and 1 <= d < min(m, n) and 0 < a.margin < .5
+
+--- round028-prefix-gpu/run_prefix_batch.py
++++ d11-ready/worker/run_prefix_batch.py
+@@
+- assert hashlib.sha256(WORKER.read_bytes()).hexdigest()=='b7b410d1339c3e72ca1a01d73e00fbf3dc922484e5226522ca1d8f2a39ccced0'
++ assert hashlib.sha256(WORKER.read_bytes()).hexdigest()=='908061fe934bda1f882178982fd5e10f44fb97497483c9e06c05fe3a3fea29cc'

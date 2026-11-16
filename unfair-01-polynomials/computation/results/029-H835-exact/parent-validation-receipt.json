@@ -1,0 +1,60 @@
+{
+  "status": "parent_final_production_verification_passed",
+  "python": "3.13.18",
+  "full_session": 35584,
+  "full_exit_code": 0,
+  "full_receipt_sha256": "566cfdf79469b4f598d1cc73d7693f0bdc639191219932291a611f1d6e05270d",
+  "regression_sessions": [
+    38871,
+    12899
+  ],
+  "regression_exit_codes": [
+    0,
+    0
+  ],
+  "receipts": {
+    "H835-u8-guard-tests.json": {
+      "status": "H835_production_u8_semantic_guards_passed",
+      "rejections": [
+        "synchronized_offset0_positive_leading",
+        "synchronized_nonstandard_255_255",
+        "synchronized_wrong_standard",
+        "synchronized_offset_exceeds_degree",
+        "synchronized_truncated_length",
+        "galois_H_bool"
+      ]
+    },
+    "H835-frontend-semantic-tampers.json": {
+      "status": "H835_frontend_semantic_tampers_passed",
+      "rejections": [
+        "duplicate_lift_disk_with_synced_rouche",
+        "wrong_mother_child_binding",
+        "quadratic_group_relabelled_linear",
+        "canonical_duplicate_and_omission",
+        "canonical_same_count_replacement"
+      ],
+      "notes": "Direct semantic validation; no SHA mismatch is used."
+    },
+    "reverse-ball-kernel-tests.json": {
+      "status": "reverse_directed_ball_kernel_passed",
+      "endpoint_combinations": 512,
+      "top_offsets_checked": 4,
+      "notes": "Reversed boxes certify original degree total_degree-offset; truncation is only above that reversed degree."
+    }
+  },
+  "source_sha256": {
+    "audit_h835_masks.py": "148ebff64053b10f646eca694f777001d4b059fe068d861c824e688b6252e29c",
+    "exact_complex.py": "5e10e0aa79afd5c8ac9e99603606b7a5564bc1694540307eb083c25c54389f1a",
+    "generate_h8_a3b5_balls.py": "05b267f4f7b0d7c763ec2c697b643d3010c209e7066145033746055d10d8dc55",
+    "reverse_ball_kernel.py": "3dcf3d02e2a57e7e4b34ebc08cc9efb018e66932692b7ece0a307d9350a43c3b",
+    "root_ball_common.py": "f34064c821fe0079563715b56f8f5f9b2608415126a2b1f5bd5a872df904b219",
+    "search_top.py": "6310f4b0a6bae5bdd6adad156ba4133b64581cd8793759c91572771b546e6b56",
+    "test_frontend_semantic_tampers.py": "84947b680e1da980864a840e5b4b834336d164e459e1b33d42436b033ed97a3c",
+    "test_h835_u8_guards.py": "093c50db648c912e55ee94fb37e409f01bedb14dab82028d1a96c2d49b52ebff",
+    "test_reverse_ball_kernel.py": "5f8e356d2a2833af306f586751574fa77fce00157fd775fd66bc6e01f465ab52",
+    "verify_frontend.py": "fa62b19f83eac2a407d55f598e12c560946e3cc7dd02fb757190f9f541927b80",
+    "verify_h835_certificate.py": "54b0fc9fb7b94ea8fbce82551722b8ae4c92886420e0500b4b9f7d08058efe4f",
+    "verify_modular_galois.py": "bcaa761280454eba74fba413f4abf6376ba313094d070f1b6940186886a923e8"
+  },
+  "scope": "Full final checker rerun after production entry-point refactor; regression scripts use local inputs and explicit data temporary directory."
+}
