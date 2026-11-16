@@ -1,0 +1,74 @@
+{
+  "schema": "r074-root-reverse-credit-review-supplement-v1",
+  "root": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+  "scope": "Independent source/scope review and one exact deterministic top-case equality certificate. No1200case rerun or general reverse-credit theorem. ClosedQ numerator semantics explicit.",
+  "files": [
+    {
+      "role": "review",
+      "path": "computation/round074/review_root_reverse_credit.md",
+      "bytes": 4282,
+      "sha256": "bf4d8e60fa3c7e6b52ee03d3fc872e66d3edcfdfef5e93c6b2b6dcd58a1df4a1"
+    },
+    {
+      "role": "deterministic_check",
+      "path": "computation/round074/check_reverse_credit_diagonal.py",
+      "bytes": 4754,
+      "sha256": "947376361b4d6bc4cb208abed75fee1b0a3ae2558cd8b4d8512483f8c9b74680"
+    },
+    {
+      "role": "exact_result",
+      "path": "computation/results/round074-reverse-credit-review/diagonal-exact-check.json",
+      "bytes": 2932,
+      "sha256": "eafe3790f217fbc69dce85d22a25ab07b1aad143cc21a3f933232f99dee62ae7"
+    },
+    {
+      "role": "provenance",
+      "path": "computation/results/round074-reverse-credit-review/process-receipt.json",
+      "bytes": 1711,
+      "sha256": "9676919fcc6bce53f6b32f593130dc805874dc4d4a9edb77dd351aaf13ee5f47"
+    }
+  ],
+  "source_pins": [
+    {
+      "role": "root probe script",
+      "path": "/Volumes/data/CodexProjects/T2/.local/round074-root/probe_reverse_credit.py",
+      "sha256": "8f721f9a0cb5816131eb9f2e242978f96a6c69b5a66c7631361186ff8232b5f9"
+    },
+    {
+      "role": "root1200case output",
+      "path": "/Volumes/data/CodexProjects/T2/.local/round074-root/reverse-credit-probe.json",
+      "sha256": "05df929f78f2acbe2f25f8bd52008a31a32d939e4ccca07f7278b3559d31bf5c"
+    },
+    {
+      "role": "root execution receipt",
+      "path": "/Volumes/data/CodexProjects/T2/.local/round074-root/reverse-credit-probe-receipt.json",
+      "sha256": "280c00680ed6be17c84f0595f1dd87631482d72c01f98e0af76976ed46b87549"
+    },
+    {
+      "role": "reviewed closure/area engine",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/round072/actual_halo_geometry.py",
+      "sha256": "3305e4006ff17476b235da0d1c4bd4b20ab4e9a883a30b78322378abbe174671"
+    }
+  ],
+  "total_bytes": 13679,
+  "actual_check_processes": 1,
+  "process_verified_exited": true,
+  "previous_frozen_packages": [
+    {
+      "path": "computation/results/round074-main/component-manifest.json",
+      "sha256": "3b6052863e3c71920a9e5af2c5fdb4e45085eb3ea98abc701c2439f1b26a17c8",
+      "all_file_hashes_unchanged": true
+    },
+    {
+      "path": "computation/results/round074-borel-corners/preliminary-manifest.json",
+      "sha256": "3a52e8646d80b2d0e97db51f200670215a832e9fde17b4879d0c6367e1938b7a",
+      "all_file_hashes_unchanged": true
+    },
+    {
+      "path": "computation/results/round073-regional/component-manifest-v2.json",
+      "sha256": "0fe5481c6dd1ab0b6044c400f5c7c726e384a4feeb23e219858c72d3e4477ac2",
+      "all_file_hashes_unchanged": true
+    }
+  ],
+  "commit_push": "not performed"
+}

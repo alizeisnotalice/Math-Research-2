@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "n": 3,
+  "outside_point": [
+    "-1/3",
+    "-1/4"
+  ],
+  "outside_mass": "3/50",
+  "d4_orbit": [
+    [
+      "-1/3",
+      "-1/4"
+    ],
+    [
+      "-1/3",
+      "41/36"
+    ],
+    [
+      "-1/4",
+      "-1/3"
+    ],
+    [
+      "-1/4",
+      "11/9"
+    ],
+    [
+      "41/36",
+      "-1/3"
+    ],
+    [
+      "41/36",
+      "11/9"
+    ],
+    [
+      "11/9",
+      "-1/4"
+    ],
+    [
+      "11/9",
+      "41/36"
+    ]
+  ],
+  "original": {
+    "atoms": 10,
+    "closures": 46,
+    "eligible": 28,
+    "unique_max_mask": 511,
+    "nonterminal_gap": "3293/8910",
+    "connected": true
+  },
+  "d4_average": {
+    "atoms": 17,
+    "closures": 247,
+    "eligible": 50,
+    "unique_max_mask": 511,
+    "nonterminal_gap": "11543/8910",
+    "connected": true
+  },
+  "receiver_cell": [
+    "-201/1000",
+    "-199/1000",
+    "-201/1000",
+    "-199/1000"
+  ],
+  "receiver_cell_area": "1/250000",
+  "original_common_open_radius": "101/500",
+  "original_full_margin": "4441/562500",
+  "original_residual_exclusion_margin": "22609/2250000",
+  "averaged_relevant_sources": 3,
+  "averaged_all_nonempty_local_subset_exclusion_margins": [
+    "106409/2250000",
+    "70367/1125000",
+    "44767/1125000",
+    "70367/1125000",
+    "44767/1125000",
+    "123859/2250000",
+    "72659/2250000"
+  ],
+  "conclusion": "Original deletion contains this positive-area cell; D4-average full halo misses the entire cell. Both inputs have exact caps, unique S3 maximum, connectivity and nonterminal strictness.",
+  "scope": "Failure of pointwise/receiver-cell preservation only; no claim about total corner area comparison, mass-half bound, or main corner bound.",
+  "script_sha256": "fc657ee198308e92b6d845531f9920db03f64136a57c03ae30baf1b146ec5122",
+  "runtime": {
+    "python": "3.15.0",
+    "pid": 87451,
+    "seconds": 0.009124917000008281
+  }
+}

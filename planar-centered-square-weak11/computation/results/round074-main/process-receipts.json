@@ -1,0 +1,160 @@
+{
+  "receipts": [
+    {
+      "state": "succeeded",
+      "started_at": "2026-11-16T03:44:28.564829+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round074/verify_corner_source_windows.py",
+      "script_sha256": "62323f945e3b41bd168ebdc320989fb7849697d6ba93fff9099c50446164a6c9",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round074/verify_corner_source_windows.py",
+        "--archive",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11",
+        "--out",
+        "computation/results/round074-localization/four-control-window-check.json"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {}
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r074-localization/20261116T034428Z-a2e06aeb",
+      "stdout": "/Volumes/data/CodexTemp/T2/r074-localization/20261116T034428Z-a2e06aeb/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r074-localization/20261116T034428Z-a2e06aeb/stderr.txt",
+      "pid": 66666,
+      "exit_code": 0,
+      "finished_at": "2026-11-16T03:44:28.772108+00:00",
+      "elapsed_seconds": 0.207,
+      "child_returncode": 0,
+      "process_verified_exited": true,
+      "stdout_sha256": "36d86c00b284b690aaf5eecfc318d0dcec7cdec85c3314e24e45c99a29449e94",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "state": "succeeded",
+      "started_at": "2026-11-16T03:48:06.243431+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round074/single_corner_two_seed_pilot.py",
+      "script_sha256": "4fbcc32a448370412fe1b5cbbf7f93be420b5923279fa6b500e49bb3c62badda",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round074/single_corner_two_seed_pilot.py",
+        "--archive",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11",
+        "--out",
+        "computation/results/round074-pilot/two-seed-results.json"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {}
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r074-pilot/20261116T034806Z-2d934bcb",
+      "stdout": "/Volumes/data/CodexTemp/T2/r074-pilot/20261116T034806Z-2d934bcb/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r074-pilot/20261116T034806Z-2d934bcb/stderr.txt",
+      "pid": 70571,
+      "exit_code": 0,
+      "finished_at": "2026-11-16T03:48:06.380254+00:00",
+      "elapsed_seconds": 0.137,
+      "child_returncode": 0,
+      "process_verified_exited": true,
+      "stdout_sha256": "fbf0672bf15545ac1f67ef8178a4280a82bd40b829a9fe9661aad80625cd1a01",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "state": "failed",
+      "started_at": "2026-11-16T03:51:52.249222+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round074/corner_mass_variation.py",
+      "script_sha256": "93ab000ed96419aa587761f5d1c108dbb725f4e06118af2610b131b3c8a9a50a",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round074/corner_mass_variation.py",
+        "--archive",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11",
+        "--out",
+        "computation/results/round074-mass-variation/one-seed-three-direction.json"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {
+          "numpy": "2.5.4",
+          "scipy": "1.18.1"
+        }
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r074-mass-variation/20261116T035152Z-3b0d36bd",
+      "stdout": "/Volumes/data/CodexTemp/T2/r074-mass-variation/20261116T035152Z-3b0d36bd/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r074-mass-variation/20261116T035152Z-3b0d36bd/stderr.txt",
+      "pid": 75038,
+      "exit_code": 1,
+      "finished_at": "2026-11-16T03:51:53.147185+00:00",
+      "elapsed_seconds": 0.898,
+      "child_returncode": 1,
+      "process_verified_exited": true,
+      "stdout_sha256": "827fdfcfb602caf9996def794b7fba55ec7256c0b5160d3d9086680150e2d2c0",
+      "stderr_sha256": "7b90d3dc3260b696aa8697928c30bb2debd29af5795b05bba3835813f95c915c",
+      "stderr_bytes": 4907,
+      "failure_explanation": "Completed numerical/exact batch, then final result write failed: output directory absent in topic because initial mkdir used workspace parent. Directory fixed and unchanged source replayed. Not an additional seed."
+    },
+    {
+      "state": "succeeded",
+      "started_at": "2026-11-16T03:52:31.673427+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round074/corner_mass_variation.py",
+      "script_sha256": "93ab000ed96419aa587761f5d1c108dbb725f4e06118af2610b131b3c8a9a50a",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round074/corner_mass_variation.py",
+        "--archive",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11",
+        "--out",
+        "computation/results/round074-mass-variation/one-seed-three-direction.json"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {
+          "numpy": "2.5.4",
+          "scipy": "1.18.1"
+        }
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r074-mass-variation/20261116T035231Z-cb224efa",
+      "stdout": "/Volumes/data/CodexTemp/T2/r074-mass-variation/20261116T035231Z-cb224efa/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r074-mass-variation/20261116T035231Z-cb224efa/stderr.txt",
+      "pid": 75803,
+      "exit_code": 0,
+      "finished_at": "2026-11-16T03:52:32.346371+00:00",
+      "elapsed_seconds": 0.673,
+      "child_returncode": 0,
+      "process_verified_exited": true,
+      "stdout_sha256": "d7de27dfc9d5cbf2f8b40274e825a8856618b6af01b8d479d65b2f4065166d59",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  ],
+  "all_recorded_child_processes_exited": true,
+  "successful_runs": 3,
+  "failed_runs": 1,
+  "mass_variation_delivered_batch": {
+    "LPcalls": 3,
+    "rational_line_evaluations": 12
+  },
+  "mass_variation_actual_calls_including_I_O_failure_replay": {
+    "LPcalls": 6,
+    "rational_line_evaluations": 24
+  },
+  "accepted_waypoints_match_between_failed_and_successful_runs": true,
+  "scope": "Frozen Borel preliminary executions are a separate dependency; these4 runs are localization, two-seed pilot, mass batch failure and unchanged-source successful replay. No MATLAB."
+}

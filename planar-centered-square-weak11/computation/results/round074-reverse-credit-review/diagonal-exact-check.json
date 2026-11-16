@@ -1,0 +1,89 @@
+{
+  "schema": "r074-exact-top-diagonal-reverse-credit-check-v1",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "pid": 94189,
+  "source_sha256": "947376361b4d6bc4cb208abed75fee1b0a3ae2558cd8b4d8512483f8c9b74680",
+  "reviewed_probe_script_path": "/Volumes/data/CodexProjects/T2/.local/round074-root/probe_reverse_credit.py",
+  "reviewed_probe_script_sha256": "8f721f9a0cb5816131eb9f2e242978f96a6c69b5a66c7631361186ff8232b5f9",
+  "reviewed_probe_output_path": "/Volumes/data/CodexProjects/T2/.local/round074-root/reverse-credit-probe.json",
+  "reviewed_probe_output_sha256": "05df929f78f2acbe2f25f8bd52008a31a32d939e4ccca07f7278b3559d31bf5c",
+  "reviewed_probe_receipt_path": "/Volumes/data/CodexProjects/T2/.local/round074-root/reverse-credit-probe-receipt.json",
+  "reviewed_probe_receipt_sha256": "280c00680ed6be17c84f0595f1dd87631482d72c01f98e0af76976ed46b87549",
+  "reviewed_geometry_source_path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/round072/actual_halo_geometry.py",
+  "reviewed_geometry_source_sha256": "3305e4006ff17476b235da0d1c4bd4b20ab4e9a883a30b78322378abbe174671",
+  "selected_seed": 742090,
+  "raw_integer_positions": [
+    [
+      -10,
+      -10
+    ],
+    [
+      10,
+      10
+    ]
+  ],
+  "raw_integer_weights": [
+    8,
+    7
+  ],
+  "exact_scale": "1/15",
+  "exact_positions": [
+    [
+      "-1/2",
+      "-1/2"
+    ],
+    [
+      "1/2",
+      "1/2"
+    ]
+  ],
+  "exact_masses": [
+    "8/15",
+    "7/15"
+  ],
+  "complete_center_prefixes": [
+    {
+      "radius": "1/2",
+      "mass": "1",
+      "capacity": "1",
+      "slack": "0"
+    }
+  ],
+  "complete_nonempty_subsets": [
+    {
+      "mask": 1,
+      "mass": "8/15",
+      "span_squared": "0",
+      "eligible": true
+    },
+    {
+      "mask": 2,
+      "mass": "7/15",
+      "span_squared": "0",
+      "eligible": true
+    },
+    {
+      "mask": 3,
+      "mass": "1",
+      "span_squared": "1",
+      "eligible": false
+    }
+  ],
+  "singleton_radius_squared": [
+    "2/15",
+    "7/60"
+  ],
+  "clipped_singleton_areas": [
+    "2/15",
+    "7/60"
+  ],
+  "exact_closed_Q_mass": "1",
+  "exact_clipped_halo_area": "1/4",
+  "exact_ratio": "4",
+  "root_area_float": 0.24999999999999994,
+  "root_ratio_float": 4.000000000000001,
+  "floating_ratio_minus_exact": 8.881784197001252e-16,
+  "interpretation": "Exact equality4 for closedQ. The pair mask is ineligible at mass=spanSquared=1; only two singleton halo squares remain, each contributes its quarter area insideQ. Center prefix t=1/2 has equality, so center is outside strict halo.",
+  "scope": "Only one selected seed reconstructed and exactly checked. Metadata/source hashes read for1200-case probe; no other halo area replay. No general reverse-credit theorem, finite-class exhaustive result, Borel extension, or open-Q equality assertion."
+}

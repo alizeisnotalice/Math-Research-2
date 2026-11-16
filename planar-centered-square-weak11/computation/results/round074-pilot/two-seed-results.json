@@ -1,0 +1,153 @@
+{
+  "schema": "r074-two-selected-single-corner-seeds-v1",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "pid": 70571,
+  "source_sha256": "4fbcc32a448370412fe1b5cbbf7f93be420b5923279fa6b500e49bb3c62badda",
+  "frozen_geometry_source_path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/round072/actual_halo_geometry.py",
+  "frozen_geometry_source_sha256": "3305e4006ff17476b235da0d1c4bd4b20ab4e9a883a30b78322378abbe174671",
+  "frozen_clipped_area_source_path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/round073/regional_credit_diagnostic_v2.py",
+  "frozen_clipped_area_source_sha256": "a750b18302b5d4fdf106b9af0c5c924ecb5c072ad88949f0cdf9da5bb5d8c615",
+  "parameters": {
+    "n": 5,
+    "SW_corner": [
+      "-1/2",
+      "-1/25",
+      "-1/2",
+      "-1/25"
+    ],
+    "P_SW_open": [
+      "-1",
+      "23/50",
+      "-1",
+      "23/50"
+    ],
+    "bits": 72,
+    "seed": null,
+    "outside_position_search": false,
+    "mass_optimization": false
+  },
+  "results": [
+    {
+      "name": "single-diagonal",
+      "input_path": "computation/inputs/r074/pilot/single-diagonal.json",
+      "input_sha256": "ba5a61126f8364d26c4fd918247aa4482f1433845e7611c2f6477540ba9f9c05",
+      "state": {
+        "positive_source_count": 26,
+        "maximum_mass": "1",
+        "maximum_count": 2,
+        "full_closure_count": 251,
+        "full_eligible_closure_count": 125,
+        "eligible_component_count": 1,
+        "actual_total_mass": "41/25",
+        "actual_span": "36/25",
+        "nonterminal_gap_span_squared_minus_35total_over33": "6893/20625",
+        "nonterminal": true
+      },
+      "all_complete_maxblock_caps_exact_checked": 251,
+      "SW_corner_full_halo": {
+        "lower": "346201895598338117506758021710585519871670083/1742245718635204932932477990050653242654720000",
+        "upper": "138480758239335247002706243400581962927267911/696898287454081973172991196020261297061888000",
+        "lower_decimal": 0.19871014283194033,
+        "upper_decimal": 0.19871014283194033,
+        "width": "15173581738774892999389/3484491437270409865864955980101306485309440000"
+      },
+      "SW_corner_residual_halo": {
+        "lower": "441/2500",
+        "upper": "441/2500",
+        "lower_decimal": 0.1764,
+        "upper_decimal": 0.1764,
+        "width": "0"
+      },
+      "SW_corner_actual_deletion": {
+        "lower": "1554790033243518693498756170626011514695099/69689828745408197317299119602026129706188800",
+        "upper": "77739501662175934674952982113039350627754339/3484491437270409865864955980101306485309440000",
+        "lower_decimal": 0.02231014283194034,
+        "upper_decimal": 0.02231014283194034,
+        "width": "15173581738774892999389/3484491437270409865864955980101306485309440000"
+      },
+      "full_global_halo": {
+        "lower": "3544164373987468890796504915264495292956741707/1742245718635204932932477990050653242654720000",
+        "upper": "14176657495949875563186182223927379496740296159/6968982874540819731729911960202612970618880000",
+        "lower_decimal": 2.034250585941347,
+        "upper_decimal": 2.034250585941347,
+        "width": "162562869398324913329331/6968982874540819731729911960202612970618880000"
+      },
+      "chosen_S_global_Delta": {
+        "lower": "2429127114060937733719719001632077217657720907/1742245718635204932932477990050653242654720000",
+        "upper": "9716508456243750934879038569397707195544212959/6968982874540819731729911960202612970618880000",
+        "lower_decimal": 1.394250585941347,
+        "upper_decimal": 1.394250585941347,
+        "width": "162562869398324913329331/6968982874540819731729911960202612970618880000"
+      },
+      "auxiliary_threshold": "2/25",
+      "main_threshold": "631/5000",
+      "auxiliary_margin_lower": "-804079253277827418377034679507215772360001/13937965749081639463459823920405225941237760",
+      "main_margin_lower": "-181001658860674895198609818078742151355648189/1742245718635204932932477990050653242654720000",
+      "strict_auxiliary_violation": false,
+      "strict_main_violation": false,
+      "scope": "One exactly specified finite input; complete full/residual halo enclosures clipped to closedSW corner. AllS retained for caps; all outside sources are strictly inP_SW."
+    },
+    {
+      "name": "cross-pair",
+      "input_path": "computation/inputs/r074/pilot/cross-pair.json",
+      "input_sha256": "15a68de242989cf9c7412cb3b1030429db1ed6c00072316db1c8951510caa7fc",
+      "state": {
+        "positive_source_count": 27,
+        "maximum_mass": "1",
+        "maximum_count": 2,
+        "full_closure_count": 323,
+        "full_eligible_closure_count": 141,
+        "eligible_component_count": 1,
+        "actual_total_mass": "41/25",
+        "actual_span": "36/25",
+        "nonterminal_gap_span_squared_minus_35total_over33": "6893/20625",
+        "nonterminal": true
+      },
+      "all_complete_maxblock_caps_exact_checked": 323,
+      "SW_corner_full_halo": {
+        "lower": "32147821730813641749031708317050507625896061/871122859317602466466238995025326621327360000",
+        "upper": "514365147693018267984615276285408595042316499/13937965749081639463459823920405225941237760000",
+        "lower_decimal": 0.036903889488099036,
+        "upper_decimal": 0.036903889488099036,
+        "width": "107943212600473027979523/13937965749081639463459823920405225941237760000"
+      },
+      "SW_corner_residual_halo": {
+        "lower": "14150153007025720976113263199827619025249409/1742245718635204932932477990050653242654720000",
+        "upper": "56600612028102883904489141764437527252035841/6968982874540819731729911960202612970618880000",
+        "lower_decimal": 0.008121789513198115,
+        "upper_decimal": 0.008121789513198115,
+        "width": "7217793025410230207641/1393796574908163946345982392040522594123776000"
+      },
+      "SW_corner_actual_deletion": {
+        "lower": "200581961818406250087786220767922637818640757/6968982874540819731729911960202612970618880000",
+        "upper": "401163923636812500175709170686787642840321227/13937965749081639463459823920405225941237760000",
+        "lower_decimal": 0.02878209997490092,
+        "upper_decimal": 0.02878209997490092,
+        "width": "136729150942367203039713/13937965749081639463459823920405225941237760000"
+      },
+      "full_global_halo": {
+        "lower": "7464680510740877912080903250073470217670140721/3484491437270409865864955980101306485309440000",
+        "upper": "5971744408592702329664911329393955061850830149/2787593149816327892691964784081045188247552000",
+        "lower_decimal": 2.1422582448899243,
+        "upper_decimal": 2.1422582448899243,
+        "width": "943646675894438573587861/13937965749081639463459823920405225941237760000"
+      },
+      "chosen_S_global_Delta": {
+        "lower": "10424610491378569949571736132978831248746193467/6968982874540819731729911960202612970618880000",
+        "upper": "20849220982757139899144609355190332685998701113/13937965749081639463459823920405225941237760000",
+        "lower_decimal": 1.4958582448899242,
+        "upper_decimal": 1.4958582448899242,
+        "width": "1137089232670188506314179/13937965749081639463459823920405225941237760000"
+      },
+      "auxiliary_threshold": "2/25",
+      "main_threshold": "631/5000",
+      "auxiliary_margin_lower": "-356936668144859328450606736048286399830869643/6968982874540819731729911960202612970618880000",
+      "main_margin_lower": "-678903676948645200056528668609647119073461899/6968982874540819731729911960202612970618880000",
+      "strict_auxiliary_violation": false,
+      "strict_main_violation": false,
+      "scope": "One exactly specified finite input; complete full/residual halo enclosures clipped to closedSW corner. AllS retained for caps; all outside sources are strictly inP_SW."
+    }
+  ],
+  "seconds": 0.049653083999146475,
+  "scope": "Two explicit model-selection seeds authorized withAstra; no blind position search and no extension to n9. Floats display exact enclosures only."
+}
