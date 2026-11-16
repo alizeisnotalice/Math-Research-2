@@ -1,0 +1,82 @@
+{
+  "ladder_L_2_to_8": {
+    "2": {
+      "anchor_positive_term": "-a**2 + a",
+      "f_multiples_before_anchor": [
+        "1 - a"
+      ]
+    },
+    "3": {
+      "anchor_positive_term": "a**3 - a**2 + a",
+      "f_multiples_before_anchor": [
+        "1 - a",
+        "a**2 - a + 1"
+      ]
+    },
+    "4": {
+      "anchor_positive_term": "-a**4 + a**3 - a**2 + a",
+      "f_multiples_before_anchor": [
+        "1 - a",
+        "a**2 - a + 1",
+        "-a**3 + a**2 - a + 1"
+      ]
+    },
+    "5": {
+      "anchor_positive_term": "a**5 - a**4 + a**3 - a**2 + a",
+      "f_multiples_before_anchor": [
+        "1 - a",
+        "a**2 - a + 1",
+        "-a**3 + a**2 - a + 1",
+        "a**4 - a**3 + a**2 - a + 1"
+      ]
+    },
+    "6": {
+      "anchor_positive_term": "-a**6 + a**5 - a**4 + a**3 - a**2 + a",
+      "f_multiples_before_anchor": [
+        "1 - a",
+        "a**2 - a + 1",
+        "-a**3 + a**2 - a + 1",
+        "a**4 - a**3 + a**2 - a + 1",
+        "-a**5 + a**4 - a**3 + a**2 - a + 1"
+      ]
+    },
+    "7": {
+      "anchor_positive_term": "a**7 - a**6 + a**5 - a**4 + a**3 - a**2 + a",
+      "f_multiples_before_anchor": [
+        "1 - a",
+        "a**2 - a + 1",
+        "-a**3 + a**2 - a + 1",
+        "a**4 - a**3 + a**2 - a + 1",
+        "-a**5 + a**4 - a**3 + a**2 - a + 1",
+        "a**6 - a**5 + a**4 - a**3 + a**2 - a + 1"
+      ]
+    },
+    "8": {
+      "anchor_positive_term": "-a**8 + a**7 - a**6 + a**5 - a**4 + a**3 - a**2 + a",
+      "f_multiples_before_anchor": [
+        "1 - a",
+        "a**2 - a + 1",
+        "-a**3 + a**2 - a + 1",
+        "a**4 - a**3 + a**2 - a + 1",
+        "-a**5 + a**4 - a**3 + a**2 - a + 1",
+        "a**6 - a**5 + a**4 - a**3 + a**2 - a + 1",
+        "-a**7 + a**6 - a**5 + a**4 - a**3 + a**2 - a + 1"
+      ]
+    }
+  },
+  "p2q13": {
+    "h8": "-a**2 + a",
+    "reversed_h21_template": "-b + u21 + u9 + 2"
+  },
+  "p2q17": {
+    "h12_after_f12_zero": "a*f8",
+    "h8_if_fractional": "f8+a*(1-a)"
+  },
+  "p2q19": {
+    "f10": "1-a+a^2",
+    "f15": "1-a+a^2-a^3",
+    "f5": "1-a",
+    "forbidden_h20_positive_term": "a*(1-a+a^2-a^3)"
+  },
+  "scope": "symbolic identity audit only; the accompanying note supplies inequality proof."
+}

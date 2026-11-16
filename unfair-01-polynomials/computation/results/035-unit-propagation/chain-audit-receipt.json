@@ -1,0 +1,31 @@
+{
+  "audit": "independent-round035-unit-chain-replay-v1",
+  "audit_source_sha256": "a13b40165e426b042ec74db250e2e2389e7ae01f0bd52592d22353c17d256cb5",
+  "chain": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round035-parent/unit-chain-propagation.json.gz",
+  "chain_sha256": "3b91e53a5bda0501472e29501a2ac263f2f7f189d3526e6f027ccb8dbc1fe1d9",
+  "elapsed_seconds": 19.17267095799616,
+  "interpreter": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "negative_tests_rejected": {
+    "chain_missing_zero": "chain witness (2, 11, (0, 3, 7, 11, 14, 18)) 28",
+    "chain_nonminimal_s": "chain witness (2, 11, (0, 3, 7, 11, 14, 18)) 28",
+    "chain_zero_not_divisible": "chain witness (2, 11, (0, 3, 7, 11, 14, 18)) 28",
+    "drop_row": "final coverage/count",
+    "gap_witness": "gap witness (2, 5, (0, 1, 5, 6)) 0"
+  },
+  "result": {
+    "all_unit": 18734,
+    "count": 18734,
+    "event_counts": {
+      "unit": 137616,
+      "unit-chain": 263,
+      "unit-single-product": 3401,
+      "zero-gap": 1064638,
+      "zero-unit": 197560
+    },
+    "unknown": 0
+  },
+  "scope": "Conditional necessary propagation only; no factorization or conjecture conclusion.",
+  "source": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round034-parent/short-G-singletons-q20.json",
+  "source_sha256": "06fe63e01e70e621255a7ca33df650cce95d385dc17fa5d8338cabdec5655847",
+  "status": "complete"
+}
