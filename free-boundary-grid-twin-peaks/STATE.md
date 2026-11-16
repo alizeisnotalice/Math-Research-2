@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/023.md；新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/024.md；严格辅助树族结果与方格顶行臂族归一化比较见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r024.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -73,3 +73,17 @@
 - 有限数值：新的 \(\tau=2\) 提升核给 n=8/n=12 的 \(Q\) 约 .3350861/.3188731；有限 SMC 误差和混合均未认证。n=16 一峰测地批 normalizer ESS 很低，不能作渐近推断。
 
 第一未证步骤不变：证明线需控制 \(W\) 加权根几何的 \(o(n^2)\) 量级；证伪线需归一化后的固定远峰质量。第22轮报告中的 n=4 helper 小数 `.272036` 应勘正为 `.27203544`（分数 `217637729/800034474`）。
+
+## 第24轮追加（2026-11-16）
+
+第24轮已归档。**原题仍开放，总目标 active。**
+
+- 对根相连的度三满二叉树 \(D_h\)，\(N_h=2^{h+2}-2\)，严格有
+  \(A_2(D_h)/B(D_h)\ge N_h/[34560(h+1)]\to\infty\)（\(h\ge2\)）。故不存在仅依赖最大度的全图统一 normalizer \(A_2\le C(\Delta)B\)，即使 \(\Delta=3\)。这是辅助树族结果，绝非自由边界方格反例。
+- 方格顶行首次合并臂族满足精确
+  \(F_n/A_2=((2^{n-1}-2)/(4R_n))p_n\)，且四个边界行/列的互斥性给出
+  \(4F_n\le A_2(n)\)。4×4 的两次下移会产生三峰，故该常数级比较不能迭代为随 \(n\) 增长的归一化界。
+- n=16 \(\tau=2\) 终端有限批及 MacBook n=8/n=12 有限批均通过输入账本与聚合核验；这些 SMC 值不构成渐近概率或混合认证。后续才完成的 n=11 及未结束/未纳入的批次不追溯并入本轮。
+- 新 log-scaled 聚合仅添加公共对数缩放、log-normalizer 输出及 root-scale tuple 守卫；冻结 r023 Decimal 聚合器本已可由 logZ 处理 Double 下溢。
+
+第一未证步骤仍为：证明线控制 \(W\) 加权根几何；证伪线给出固定远峰质量的归一化下界。完整白名单、来源哈希与重放范围见 `certificates/r024/` 和 `manifest-r024.json`。

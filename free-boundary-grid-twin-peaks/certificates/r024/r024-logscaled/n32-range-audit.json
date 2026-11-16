@@ -1,0 +1,17 @@
+{
+  "scope": "Read-only range audit of the incomplete r022 random-tau n=32 output; it is not an aggregation result.",
+  "raw": "/Volumes/data/CodexTemp/T2/a022-random-tau-production-n32-r022/n32-p65536-r128-l16-randomtau.jsonl",
+  "records": 39,
+  "normalizer_logZ_min": "-1070.9996605068236",
+  "normalizer_logZ_max": "-918.5100414572485",
+  "double_min_subnormal_log": "-744.4400719213812",
+  "reported_Z_zero_records": 39,
+  "incomplete": true,
+  "incompatible_with_terminal_distance_aggregator": [
+    "no metadata record",
+    "no run_end record",
+    "no second-birth L-weighted Manhattan histogram",
+    "random-tau mixture schema rather than tau=2 terminal schema"
+  ],
+  "conclusion": "All observed n=32 normalizers underflowed in Double, but the frozen r023 distance aggregator already reconstructs Decimal weights from logZ. This incomplete random-tau file remains unusable because of its schema and missing terminal-distance fields, not because its Z column is zero. The new aggregator adds explicit common scaling and log-normalizer output."
+}

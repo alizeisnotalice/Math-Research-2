@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "method": "independent exact integer rank-interleaving DP; fixed-top-two marked-forest integer no-peak DP",
+  "source_sha256": "a697a6af21329f25d36faad0ba1260fdeddf63a4665afb75d22ad77751dfb26a",
+  "small_all_permutation_cases": [
+    {
+      "n": 3,
+      "degrees": [
+        1,
+        1,
+        2
+      ],
+      "A1": 4,
+      "A2": 2,
+      "Btop2": 2
+    },
+    {
+      "n": 4,
+      "degrees": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "A1": 8,
+      "A2": 16,
+      "Btop2": 12
+    },
+    {
+      "n": 4,
+      "degrees": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "A1": 12,
+      "A2": 6,
+      "Btop2": 6
+    },
+    {
+      "n": 5,
+      "degrees": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "A1": 16,
+      "A2": 88,
+      "Btop2": 56
+    },
+    {
+      "n": 5,
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        4
+      ],
+      "A1": 48,
+      "A2": 24,
+      "Btop2": 24
+    },
+    {
+      "n": 6,
+      "degrees": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "A1": 32,
+      "A2": 416,
+      "Btop2": 240
+    },
+    {
+      "n": 6,
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        5
+      ],
+      "A1": 240,
+      "A2": 120,
+      "Btop2": 120
+    },
+    {
+      "n": 7,
+      "degrees": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "A1": 64,
+      "A2": 1824,
+      "Btop2": 992
+    },
+    {
+      "n": 7,
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6
+      ],
+      "A1": 1440,
+      "A2": 720,
+      "Btop2": 720
+    },
+    {
+      "n": 8,
+      "degrees": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "A1": 128,
+      "A2": 7680,
+      "Btop2": 4032
+    },
+    {
+      "n": 8,
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        7
+      ],
+      "A1": 10080,
+      "A2": 5040,
+      "Btop2": 5040
+    }
+  ],
+  "T_3_3": {
+    "vertices": 30,
+    "max_degree": 3,
+    "A1": "131210660035952640000000",
+    "A2": "4570935802581417984000000",
+    "Btop2": "1382099471396359372800000",
+    "ratio": "838907595/253657849",
+    "ratio_float": 3.3072408297525224
+  },
+  "wall_seconds": 0.10019898414611816,
+  "scope": "Finite auxiliary counterexample to A2 <= Delta*Btop2 on all max-degree-3 trees; not a grid twin-peaks counterexample."
+}

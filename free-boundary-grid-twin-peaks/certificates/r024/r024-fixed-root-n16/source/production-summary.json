@@ -1,0 +1,36 @@
+{
+  "estimate": {
+    "max_probZ": 6.347221717827237e-86,
+    "mean_acceptance": 0.1993947047300226,
+    "mean_min_parent_ess": 64829.075582432415,
+    "mean_probZ": 3.815649326669222e-87,
+    "min_min_parent_ess": 64818.62608654909,
+    "min_probZ": 1.734268393683274e-88,
+    "relative_sample_standard_error": 0.27117454846554867,
+    "sample_standard_error": 1.034706983262401e-87,
+    "unique_terminal_hashes": 64
+  },
+  "kind": "finite_SMC_diagnostic_not_certified_count",
+  "parameters": {
+    "P": 65536,
+    "move_steps": 16,
+    "n": 16,
+    "replicates": 64,
+    "root": 119,
+    "root_xy": [
+      7,
+      7
+    ],
+    "seed_base": "0xA0249000",
+    "threads": 12
+  },
+  "source": "fixed_root_n16.cpp",
+  "strict_checks": {
+    "all_dead_zero": true,
+    "finite_positive_probZ": true,
+    "replicates_exactly_0_to_63": true,
+    "row_count": 64,
+    "seeds_unique_and_formula_match": true,
+    "terminal_peak_assertions_were_enabled_in_binary": true
+  }
+}

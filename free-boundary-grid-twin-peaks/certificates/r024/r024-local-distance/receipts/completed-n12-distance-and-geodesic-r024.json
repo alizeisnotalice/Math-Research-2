@@ -1,0 +1,49 @@
+{
+  "kind": "independent-completion-validation",
+  "status": "passed",
+  "scope": [
+    "completed n12 tau=2 L-weighted terminal-distance batch",
+    "completed n12 and n16 onepeak-geodesic terminal batches"
+  ],
+  "distance_n12": {
+    "raw": "/Volumes/data/CodexTemp/T2/a022-distance-production-r024/n12-p131072-r128.jsonl",
+    "raw_sha256": "3e0aad354e9ac7be0cdf279d1a3748a41fab4dd6aa4b6ee4f337f631f8409eac",
+    "terminal_source_sha256": "01b77bca1735f07293eae5ffeea0326810fdc5ea785c7a9e99d9030cba9b0702",
+    "aggregator_sha256": "cb466dcae1628f81ff2e198e65d2f95a71b198f77cd60fe8e717c9076403c358",
+    "metadata": {"n": 12, "particles": 131072, "replicates": 128, "tau": 2, "domain": "9e27030000000000", "method": "strat", "move_steps": 16},
+    "raw_contract": "exactly one metadata record, complete replicate set 0..127, final run_end with finite wall_seconds",
+    "seed_formula": "(0xA022000000000000 + domain + n*1000000 + 2*10000 + replicate) mod 2^64",
+    "strict_checks": ["raw/source hashes", "metadata", "seed uniqueness and formula", "nondead tau2 invariant", "all group bounds", "integer lift and distance identities", "exact Fraction strict epsilon comparison"],
+    "normalization": "The aggregator uses S=sum_r Z_r L_r as its denominator and sum_r Z_r H_{r,d}/P as every distance-bin numerator. Thus its finite ratio-of-means target is the complete K2 law reconstructed through the tau=2 L-lift, not the unweighted tau=2 slice.",
+    "reports": {
+      "epsilon_1_4": {"path": "reports/n12-distance-eps-1-4.json", "sha256": "829f0cbf9b6542f30eaa035ceedad69069b18cd90b21e8a8c13da45417e52d8d"},
+      "epsilon_1_2": {"path": "reports/n12-distance-eps-1-2.json", "sha256": "163e17fc1310fe9c5279ce7709c6b6a9bc0f3a1ad8635ccfac03c974fd34383f"},
+      "epsilon_1": {"path": "reports/n12-distance-eps-1.json", "sha256": "897dbb5539cdd1f362bcf656722199df9bb2c4442f5b8c691e6de00e6f972054"}
+    }
+  },
+  "distance_n16": {
+    "raw": "raw/n16-p131072-r128-l16.jsonl",
+    "raw_sha256": "d82b603e54f18e88e89f2512406f52cf6e8e3a5f124fb617b24190c9518e886c",
+    "source_sha256": "01b77bca1735f07293eae5ffeea0326810fdc5ea785c7a9e99d9030cba9b0702",
+    "aggregator_sha256": "cb466dcae1628f81ff2e198e65d2f95a71b198f77cd60fe8e717c9076403c358",
+    "metadata": {"n": 16, "particles": 131072, "replicates": 128, "tau": 2, "domain": "9e27040000000002", "method": "strat", "move_steps": 16},
+    "raw_contract": "exactly one metadata record, complete replicate set 0..127, final run_end at 1294.2213550806046 seconds, and no dead trajectory",
+    "seed_formula": "(0xA022000000000000 + domain + n*1000000 + 2*10000 + replicate) mod 2^64",
+    "monitor": "Production PID 6216 and detached monitor PID 7622 both exited; the monitor recorded the terminal exit_observed event after the final run_end.",
+    "strict_checks": ["raw/source hashes", "metadata", "seed uniqueness and formula", "nondead tau2 invariant", "all group bounds", "integer lift and distance identities", "exact Fraction strict epsilon comparison"],
+    "normalization": "As in n12, the estimator is the complete K2 target-law reconstruction with denominator sum_r Z_r L_r, not an unweighted tau=2-slice statistic.",
+    "reports": {
+      "epsilon_1_4": {"path": "reports/n16-distance-eps-1-4.json", "sha256": "32c44da4019dd34be7192ebb09052cb925ddfc4426a67fd739108642c0818850"},
+      "epsilon_1_2": {"path": "reports/n16-distance-eps-1-2.json", "sha256": "973387d46a0e39481f82de5a295f8cde34e13d071060a37c0d3ee11346754092"},
+      "epsilon_1": {"path": "reports/n16-distance-eps-1.json", "sha256": "e15d7f9122bccf406f94645d8c56566f2dc3238ae82c2563a1b08be64b041d2a"}
+    }
+  },
+  "geodesic": {
+    "source_sha256": "97b0cb005a85d7ec1dc04800bf1bf0cd338ff1046e096bb4991c1ff7d763a766",
+    "summarizer_sha256": "aab1ce22d79e86fbbc502344b273aa6b679e90c153fde93e5861e3d6aff24c83",
+    "n12": {"raw_sha256": "5e6b95b50f1eff5aa00d6605564c1a047adb050d62d3662e0c546446b57d68e6", "summary": "reports/n12-geodesic-revalidated.json", "summary_sha256": "84e0406e786928abe0dc7cfcb9f21ed7c9156c8b255d3d70b1b5acb558767304"},
+    "n16": {"raw_sha256": "0aea4dbbfd881938aedcb8534fbcfafcd1ae333ef5f9ad4c852c6c7024bd2053", "summary": "reports/n16-geodesic-revalidated.json", "summary_sha256": "374b140c960faa18f783e656bcfab802c5fafccb3624fe835fd116ee476d6ab1"},
+    "checks": ["source hash", "metadata sidecar", "complete 128-replicate domain", "deterministic seed formula", "nondead connected-grid invariant", "integer prefix monotonicity and group bounds", "underflow reconstruction from logZ"]
+  },
+  "interpretation": "The reported finite quantities are SMC ratio-of-means estimates for the complete K2 target law reconstructed by the tau=2 lift. Their deltaSE fields are independent-replicate ratio diagnostics, not confidence intervals or a mixing certification. They establish no asymptotic assertion."
+}

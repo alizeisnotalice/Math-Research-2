@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "Finite SMC audit of the remote n=12 tau=2 L-lift reconstruction. This is a ratio estimator for the complete K=2 target law; it is not an exact probability, a mixing certificate, or a confidence interval.",
+  "host": "MacBook test machine",
+  "remote_command": ["./distance_terminal", "12", "131072", "128", "2", "2", "n12-distance-p131072-r128-l16.jsonl", "9f28030000000000", "multi", "16"],
+  "remote_exit_code": 0,
+  "raw_sha256": "19d838fdae8b113b74e3127d4a415ebffed3c93692c0fcb93df2c45196eeff8d",
+  "source_sha256": "01b77bca1735f07293eae5ffeea0326810fdc5ea785c7a9e99d9030cba9b0702",
+  "aggregator_sha256": "cb466dcae1628f81ff2e198e65d2f95a71b198f77cd60fe8e717c9076403c358",
+  "raw_records": {"metadata": 1, "replicates": 128, "run_end": 1},
+  "audits": [
+    "frozen aggregator accepted raw SHA, source SHA, metadata, complete replicate set, deterministic seeds, run_end, finite fields, integer group bounds and LF-2LG=4LD guards",
+    "all three exact Fraction thresholds epsilon=1/4, 1/2, 1 were recomputed from the same raw file",
+    "resource record: wall 636.97 seconds; maximum RSS 1229045760 bytes; zero swaps"
+  ],
+  "finite_estimate": {
+    "Q": "0.31868731974814080397733855943166390839840878248717916713554464106835054318010247",
+    "replicate_deltaSE_Q": "0.0014974901086614844408310964002885422692248848767510422407215969942641796787216345",
+    "strict_tail_d_gt_n_over_4": "0.99907331017468894368775176733490007237846345643722340910929330730353867546601256",
+    "replicate_deltaSE_d_gt_n_over_4": "0.000091384399953195843439264925772620628634829868530025743119099094843976709106077675",
+    "strict_tail_d_gt_n_over_2": "0.84405008050037669831271253562380348931742288213812290246222082895757063951466016",
+    "replicate_deltaSE_d_gt_n_over_2": "0.0041938816983868552634612148053332494626439145791403459523698198514640737222721550",
+    "strict_tail_d_gt_n": "0.025441890600528865762641966066835555653694085254339244601635405222118769794780634",
+    "replicate_deltaSE_d_gt_n": "0.0015701031882507355864566856907990158238303453060467950089654773835034407253238060",
+    "tau2_weight_ESS": 123.1636171991865,
+    "liftZ_weight_ESS": 123.16696354657749
+  }
+}
