@@ -23,3 +23,8 @@
 - [Tarannikov 2006记录](https://www.mathnet.ru/eng/dm65)：主Agent核验题录摘要，构造子Agent核验原文定理2、3及后续猜想。构造某个秩区间不等于证明一般最大秩；本报告不使用其未核验的一般锐上界，不排除全部平台函数类。
 
 子Agent报告均经主Agent数学整合；原题的完成状态没有因子Agent的“审计通过”而改变。没有用后续论文的误引替代原定理。
+
+## 第3轮补充
+
+- [Tight Chang’s-Lemma-Type Bounds for Boolean Functions，arXiv v2](https://arxiv.org/html/2012.02335)：主Agent实际核对权重依赖界与§6.3组合引理6.8；[FSTTCS 2021正式记录](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSTTCS.2021.10)用于作者、题录、DOI及会议版定位。一般权重界仍带log s。组合稀疏度式1+t²(s−1)的原假设蕴含非零均值，不能用于平衡字符；本轮证明显式用δ₀=1[ĝ(0)≠0]修正并核验两类种子。正式PDF请求超时，未声称通过该请求读取PDF全文。
+- 文献子Agent检索共同查询、权重预算及寻址组合，未定位到与本轮任意重复叶字符树定理完全相同的已核验陈述；此阴性检索不构成新颖性证明。文献子Agent初稿曾遗漏组合引理的非零均值条件，主Agent以平衡字符发现并修正。

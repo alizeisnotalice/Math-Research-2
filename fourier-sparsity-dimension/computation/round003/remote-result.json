@@ -1,0 +1,168 @@
+{
+  "edge_cases": {
+    "equal_character": {
+      "affdim": 0,
+      "audit": {
+        "altered_coefficient_rejected": false,
+        "exception_counts": {
+          "nonexception": 0,
+          "selectorfree_pair": 1
+        },
+        "loss_histogram": {
+          "3": 1
+        },
+        "minimum_slack": 0,
+        "nodes": 1
+      },
+      "s": 1
+    },
+    "equal_constant": {
+      "affdim": 0,
+      "audit": {
+        "altered_coefficient_rejected": false,
+        "exception_counts": {
+          "nonexception": 0,
+          "selectorfree_pair": 1
+        },
+        "loss_histogram": {
+          "3": 1
+        },
+        "minimum_slack": 0,
+        "nodes": 1
+      },
+      "s": 1
+    },
+    "opposite_character_root_shift": {
+      "affdim": 0,
+      "audit": {
+        "altered_coefficient_rejected": false,
+        "exception_counts": {
+          "nonexception": 0,
+          "selectorfree_pair": 1
+        },
+        "loss_histogram": {
+          "3": 1
+        },
+        "minimum_slack": 0,
+        "nodes": 1
+      },
+      "s": 1
+    },
+    "opposite_constant_root_shift": {
+      "affdim": 0,
+      "audit": {
+        "altered_coefficient_rejected": false,
+        "exception_counts": {
+          "nonexception": 0,
+          "selectorfree_pair": 1
+        },
+        "loss_histogram": {
+          "3": 1
+        },
+        "minimum_slack": 0,
+        "nodes": 1
+      },
+      "s": 1
+    }
+  },
+  "eight_leaf_balanced_sample": {
+    "audit": {
+      "altered_coefficient_rejected": true,
+      "exception_counts": {
+        "nonexception": 5981,
+        "selectorfree_pair": 8019
+      },
+      "loss_histogram": {
+        "0": 10002,
+        "12": 1,
+        "2": 302,
+        "3": 2963,
+        "4": 12,
+        "5": 163,
+        "6": 458,
+        "8": 16,
+        "9": 83
+      },
+      "minimum_slack": 0,
+      "nodes": 14000
+    },
+    "name": "balanced8",
+    "root_best": {
+      "affdim": 6,
+      "labels": [
+        1,
+        9,
+        11,
+        11,
+        8,
+        0,
+        12,
+        4
+      ],
+      "s": 16
+    },
+    "roots": 2000
+  },
+  "elapsed_seconds": 15.956097125000001,
+  "four_leaf_balanced": {
+    "audit": {
+      "altered_coefficient_rejected": true,
+      "exception_counts": {
+        "nonexception": 4032,
+        "selectorfree_pair": 8256
+      },
+      "loss_histogram": {
+        "0": 7920,
+        "2": 384,
+        "3": 3600,
+        "6": 384
+      },
+      "minimum_slack": 0,
+      "nodes": 12288
+    },
+    "name": "balanced4",
+    "root_best": {
+      "affdim": 0,
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "s": 1
+    },
+    "roots": 4096
+  },
+  "four_leaf_comb": {
+    "audit": {
+      "altered_coefficient_rejected": true,
+      "exception_counts": {
+        "nonexception": 7616,
+        "selectorfree_pair": 4672
+      },
+      "loss_histogram": {
+        "0": 7344,
+        "2": 3776,
+        "3": 1168
+      },
+      "minimum_slack": 0,
+      "nodes": 12288
+    },
+    "name": "comb4",
+    "root_best": {
+      "affdim": 0,
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "s": 1
+    },
+    "roots": 4096
+  },
+  "method": "integer_truth_table_fwht_and_f2_elimination",
+  "platform": "macOS-27.3-arm64-arm-64bit",
+  "python": "3.9.6 (default, Oct 19 2026, 19:18:13) \n[Clang 21.0.0 (clang-2100.4.1.1)]",
+  "seed": 20261116
+}
