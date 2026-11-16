@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- |
 | [planar-centered-square-weak11](planar-centered-square-weak11/README.md) | 二维 Lebesgue 背景、中心轴平行共同半径、全尺度弱 (1,1) 精确常数 | 精确值开放；已证下界约1.702793754234565，旧一般上界3.590865312933 | 第82轮完成 | 实际外源共同约束、残余halo信用与一般覆盖预算 |
 
-| [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；加权删峰、局部修复反例及n7精确根比较 | 第21轮完成 | 原律平均秩间隔、根传输不等式与GPU大尺寸核验 |
+| [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；第二出生单层严格重构、百万粒子有限核验 | 第22轮完成 | L加权根几何、原律平均秩比与大尺寸完整核验 |
 
 | [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；短侧正性下降扩大、四角单位引理；六点≤42／九点≤34严格覆盖 | 第34轮完成 | q≥2p短侧模型的内部系数与补偿 |
 
