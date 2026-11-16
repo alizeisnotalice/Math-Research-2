@@ -1,0 +1,11 @@
+{
+  "schema":"r076-triple-null-branch-v1",
+  "m":"1/9",
+  "corner_cut":"1/9",
+  "u_plus_v_values":["1/6","1/4","1/2","3/4","9/10","17/18"],
+  "geometric_cases":[
+    {"name":"strict_null","outside":[["-2/3","0"],["0","-2/3"]],"masses":["1/18","1/18"],"expected_triple_active":false},
+    {"name":"strict_boundary_tie","outside":[["-2/3","0"],["0","-2/3"]],"masses":["1/6","1/6"],"expected_triple_active":false},
+    {"name":"active_geometry_only","outside":[["-2/3","0"],["0","-2/3"]],"masses":["2/9","2/9"],"expected_triple_active":true}
+  ]
+}

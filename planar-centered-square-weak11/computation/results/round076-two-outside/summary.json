@@ -1,0 +1,611 @@
+{
+  "schema": "r076-two-outside-finite-screen-summary-v1",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "pid": 42374,
+  "source_sha256": "9138074039b8eb6763b692eda10c2ae4da763394734fb1327d7dcba5e61698c1",
+  "input_path": "computation/inputs/r076/two_outside_screen_parameters.json",
+  "input_sha256": "5fe80eafa067261a6784ca4cecc7b8bf4ee509a2fa78573edfbce7715637f7f8",
+  "parameters": {
+    "n": 3,
+    "coordinate_denominator": 900,
+    "negative_levels_units": [
+      -899,
+      -875,
+      -750,
+      -600,
+      -500,
+      -450,
+      -400,
+      -300,
+      -225,
+      -150,
+      -125,
+      -101
+    ],
+    "arm_other_levels_units": [
+      -75,
+      0,
+      75,
+      150,
+      225,
+      300,
+      325,
+      349
+    ],
+    "P_open_units": [
+      -900,
+      350,
+      -900,
+      350
+    ],
+    "J_lower_units": -100,
+    "pair_seed": 760076,
+    "pair_counts": {
+      "symmetric_cross": 96,
+      "additional_cross": 480,
+      "same_left": 128,
+      "same_bottom": 128,
+      "corner_plus_arm": 128,
+      "two_corners": 64
+    },
+    "position_pair_limit": 1024,
+    "mass_point_limit_per_pair": 9,
+    "mass_rule": "All exact vertices of 0<=b1<=V1,0<=b2<=V2,b1+b2<=U; add vertex centroid, half centroid and midpoint to each coordinate-biased highest vertex. Deduplicate. Recheck every fullS3 bbox cap for every mass point.",
+    "Gamma": [
+      "-1/2",
+      "-1/9",
+      "-1/2",
+      "-1/9"
+    ],
+    "auxiliary_threshold": "1/18",
+    "floating_trigger_excess": "1/100000",
+    "triple_null_filter": "Record exact min-distance predicate for diagnostics, but do not omit numeric area evaluation before theory pin; cache duplicate actual measures only.",
+    "scope": "One purpose-designed finite batch; no global proof, no repeat batch or parameter optimization"
+  },
+  "data_path": "computation/results/round076-two-outside/screen-data.json.gz",
+  "data_sha256": "f2406da7770a1298288d5dcecf94cb8bf34e5f2a8467b25e2e0c2f76b88acab3",
+  "generated_unique_position_pairs": 1024,
+  "actual_position_pairs_evaluated": 1024,
+  "mass_points_checked": 8143,
+  "unique_actual_measure_area_evaluations": 5392,
+  "duplicate_measure_area_evaluations_avoided": 2751,
+  "complete_exact_cap_checks": 581126,
+  "category_and_triple_counts": {
+    "mass_triple_null": 6876,
+    "mass_triple_active": 1267,
+    "symmetric_cross": 96,
+    "additional_cross": 480,
+    "same_left": 128,
+    "same_bottom": 128,
+    "corner_plus_arm": 128,
+    "two_corners": 64
+  },
+  "triggered": null,
+  "top20": [
+    {
+      "pair_index": 203,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -600,
+          -75
+        ],
+        [
+          150,
+          -500
+        ]
+      ],
+      "kind": "vertex",
+      "masses": [
+        "4/9",
+        "1/3"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.11031369414423534,
+      "residual_halo_Gamma_float": 0.07219064382551264,
+      "Delta_Gamma_float": 0.03812305031872272,
+      "margin_to_1over18_float": 0.017432505236832832,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 271,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -450,
+          150
+        ],
+        [
+          0,
+          -500
+        ]
+      ],
+      "kind": "vertex",
+      "masses": [
+        "2/9",
+        "1/3"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.08084950065742016,
+      "residual_halo_Gamma_float": 0.047069659573789696,
+      "Delta_Gamma_float": 0.03377984108363047,
+      "margin_to_1over18_float": 0.021775714471925084,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 271,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -450,
+          150
+        ],
+        [
+          0,
+          -500
+        ]
+      ],
+      "kind": "vertex",
+      "masses": [
+        "1/3",
+        "2/9"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.06418687498002769,
+      "residual_halo_Gamma_float": 0.03126649010844674,
+      "Delta_Gamma_float": 0.03292038487158095,
+      "margin_to_1over18_float": 0.022635170683974602,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 349,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -450,
+          0
+        ],
+        [
+          150,
+          -300
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "1/5",
+        "23/90"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.05980520099312868,
+      "residual_halo_Gamma_float": 0.027029515341608447,
+      "Delta_Gamma_float": 0.03277568565152023,
+      "margin_to_1over18_float": 0.02277986990403532,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 102,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -450,
+          150
+        ],
+        [
+          -75,
+          -450
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "23/90",
+        "1/5"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.07774869936394928,
+      "residual_halo_Gamma_float": 0.04592776254273493,
+      "Delta_Gamma_float": 0.03182093682121437,
+      "margin_to_1over18_float": 0.023734618734341184,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 349,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -450,
+          0
+        ],
+        [
+          150,
+          -300
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "23/90",
+        "1/5"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.06943193228809814,
+      "residual_halo_Gamma_float": 0.037678880113637396,
+      "Delta_Gamma_float": 0.031753052174460755,
+      "margin_to_1over18_float": 0.023802503381094797,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 193,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -600,
+          75
+        ],
+        [
+          75,
+          -400
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "154/405",
+        "103/405"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.07378831867365426,
+      "residual_halo_Gamma_float": 0.04338698141510265,
+      "Delta_Gamma_float": 0.0304013372585516,
+      "margin_to_1over18_float": 0.02515421829700395,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 275,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -600,
+          -75
+        ],
+        [
+          0,
+          -450
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "128/405",
+        "71/405"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.08932426088788548,
+      "residual_halo_Gamma_float": 0.059303787096683054,
+      "Delta_Gamma_float": 0.030020473791202425,
+      "margin_to_1over18_float": 0.025535081764353127,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 851,
+      "category": "corner_plus_arm",
+      "positions_units": [
+        [
+          -750,
+          -750
+        ],
+        [
+          0,
+          -450
+        ]
+      ],
+      "kind": "vertex",
+      "masses": [
+        "5/9",
+        "1/3"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.0974952384818515,
+      "residual_halo_Gamma_float": 0.06749883890444522,
+      "Delta_Gamma_float": 0.029996399577406296,
+      "margin_to_1over18_float": 0.025559155978149256,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 188,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -225,
+          75
+        ],
+        [
+          0,
+          -450
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "529/3240",
+        "1199/6480"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.055520839909917054,
+      "residual_halo_Gamma_float": 0.026206029933566546,
+      "Delta_Gamma_float": 0.02931480997635051,
+      "margin_to_1over18_float": 0.02624074557920504,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 905,
+      "category": "corner_plus_arm",
+      "positions_units": [
+        [
+          -500,
+          -125
+        ],
+        [
+          150,
+          -500
+        ]
+      ],
+      "kind": "vertex",
+      "masses": [
+        "2/9",
+        "1/3"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.08660728285612938,
+      "residual_halo_Gamma_float": 0.05734168559478403,
+      "Delta_Gamma_float": 0.029265597261345363,
+      "margin_to_1over18_float": 0.02628995829421019,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 102,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -450,
+          150
+        ],
+        [
+          -75,
+          -450
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "1/5",
+        "23/90"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.087644292131968,
+      "residual_halo_Gamma_float": 0.05900677040240883,
+      "Delta_Gamma_float": 0.028637521729559197,
+      "margin_to_1over18_float": 0.026918033825996356,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 133,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -300,
+          0
+        ],
+        [
+          75,
+          -750
+        ]
+      ],
+      "kind": "vertex",
+      "masses": [
+        "1/3",
+        "4/9"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.10929712047799797,
+      "residual_halo_Gamma_float": 0.0810292605823563,
+      "Delta_Gamma_float": 0.028267859895641678,
+      "margin_to_1over18_float": 0.027287695659913874,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 939,
+      "category": "corner_plus_arm",
+      "positions_units": [
+        [
+          -400,
+          75
+        ],
+        [
+          -300,
+          -500
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "1/4",
+        "5/24"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.1260459151017734,
+      "residual_halo_Gamma_float": 0.09894394295586052,
+      "Delta_Gamma_float": 0.027101972145912888,
+      "margin_to_1over18_float": 0.028453583409642665,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 193,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -600,
+          75
+        ],
+        [
+          75,
+          -400
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "179/405",
+        "26/135"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.06611991528275608,
+      "residual_halo_Gamma_float": 0.03923456509065978,
+      "Delta_Gamma_float": 0.0268853501920963,
+      "margin_to_1over18_float": 0.028670205363459253,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 193,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -600,
+          75
+        ],
+        [
+          75,
+          -400
+        ]
+      ],
+      "kind": "vertex",
+      "masses": [
+        "46/81",
+        "17/81"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.09521284566114119,
+      "residual_halo_Gamma_float": 0.06833428567808016,
+      "Delta_Gamma_float": 0.02687855998306103,
+      "margin_to_1over18_float": 0.02867699557249452,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 509,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -750,
+          -75
+        ],
+        [
+          75,
+          -225
+        ]
+      ],
+      "kind": "vertex",
+      "masses": [
+        "2/3",
+        "1/9"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.054645931117909746,
+      "residual_halo_Gamma_float": 0.028502932147308712,
+      "Delta_Gamma_float": 0.026142998970601038,
+      "margin_to_1over18_float": 0.029412556584954515,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 840,
+      "category": "corner_plus_arm",
+      "positions_units": [
+        [
+          -500,
+          -125
+        ],
+        [
+          150,
+          -600
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "47/160",
+        "449/1296"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.11072780392186182,
+      "residual_halo_Gamma_float": 0.08465780440030828,
+      "Delta_Gamma_float": 0.026069999521553516,
+      "margin_to_1over18_float": 0.029485556034002037,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 446,
+      "category": "additional_cross",
+      "positions_units": [
+        [
+          -150,
+          75
+        ],
+        [
+          0,
+          -450
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "37/432",
+        "1/4"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.06062756112260015,
+      "residual_halo_Gamma_float": 0.034722222222222224,
+      "Delta_Gamma_float": 0.02590533890037793,
+      "margin_to_1over18_float": 0.029650216655177624,
+      "minimum_exact_cap_slack": "0"
+    },
+    {
+      "pair_index": 25,
+      "category": "symmetric_cross",
+      "positions_units": [
+        [
+          -600,
+          0
+        ],
+        [
+          0,
+          -600
+        ]
+      ],
+      "kind": "internal",
+      "masses": [
+        "34/81",
+        "20/81"
+      ],
+      "formal_triple_Gamma_active": true,
+      "cached_actual_measure": false,
+      "full_halo_Gamma_float": 0.08858264649415858,
+      "residual_halo_Gamma_float": 0.06286112223506109,
+      "Delta_Gamma_float": 0.025721524259097482,
+      "margin_to_1over18_float": 0.02983403129645807,
+      "minimum_exact_cap_slack": "0"
+    }
+  ],
+  "maximum_area_float": 0.03812305031872272,
+  "minimum_margin_float": 0.017432505236832832,
+  "seconds": 1.0682187089987565,
+  "scope": "One purpose-designed bounded finite screen only. All fullS3 bbox caps exact, compressed to3outside-mask bounds; every sampled mass rechecked against all cap rows. All7full/3res local labels included; Gamma area floating and not certified. Triple-null diagnostic does not filter samples. Not a proof over positions/masses or a repeat search."
+}

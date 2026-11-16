@@ -1,0 +1,76 @@
+{
+  "receipts": [
+    {
+      "state": "succeeded",
+      "started_at": "2026-11-16T04:45:50.973694+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round076/two_outside_capped_screen.py",
+      "script_sha256": "9138074039b8eb6763b692eda10c2ae4da763394734fb1327d7dcba5e61698c1",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round076/two_outside_capped_screen.py",
+        "--input",
+        "computation/inputs/r076/two_outside_screen_parameters.json",
+        "--out",
+        "computation/results/round076-two-outside/summary.json",
+        "--data",
+        "computation/results/round076-two-outside/screen-data.json.gz"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {}
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r076-two-outside/20261116T044550Z-b2335c74",
+      "stdout": "/Volumes/data/CodexTemp/T2/r076-two-outside/20261116T044550Z-b2335c74/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r076-two-outside/20261116T044550Z-b2335c74/stderr.txt",
+      "pid": 42374,
+      "exit_code": 0,
+      "finished_at": "2026-11-16T04:45:52.128115+00:00",
+      "elapsed_seconds": 1.154,
+      "child_returncode": 0,
+      "process_verified_exited": true,
+      "stdout_sha256": "0590a874618a5379c057a137c1783233c3e8bf75f9f5081f050018a3c9752a16",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "state": "succeeded",
+      "started_at": "2026-11-16T04:49:06.487547+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round076/group_screen_statistics.py",
+      "script_sha256": "0d5af7f80a12c9040904fadf2c6971c7cf580be6f81d76adbfd8dd4196673896",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round076/group_screen_statistics.py",
+        "--input",
+        "computation/results/round076-two-outside/screen-data.json.gz",
+        "--out",
+        "computation/results/round076-two-outside/group-statistics.json"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {}
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r076-two-outside/20261116T044906Z-81691dc5",
+      "stdout": "/Volumes/data/CodexTemp/T2/r076-two-outside/20261116T044906Z-81691dc5/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r076-two-outside/20261116T044906Z-81691dc5/stderr.txt",
+      "pid": 46453,
+      "exit_code": 0,
+      "finished_at": "2026-11-16T04:49:06.572820+00:00",
+      "elapsed_seconds": 0.085,
+      "child_returncode": 0,
+      "process_verified_exited": true,
+      "stdout_sha256": "2392208b1af16346b702af11e53e964118f8c7e540f1b43dfc5cd4c6968267a3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  ],
+  "all_recorded_child_processes_exited": true,
+  "scope": "One1024position-pair capped screen and one saved-data grouping. No second batch, new grouping area evaluations, MATLAB, workers or optimization."
+}

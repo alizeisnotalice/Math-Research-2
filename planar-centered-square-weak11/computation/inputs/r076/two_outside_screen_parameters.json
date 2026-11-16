@@ -1,0 +1,18 @@
+{
+  "n": 3,
+  "coordinate_denominator": 900,
+  "negative_levels_units": [-899, -875, -750, -600, -500, -450, -400, -300, -225, -150, -125, -101],
+  "arm_other_levels_units": [-75, 0, 75, 150, 225, 300, 325, 349],
+  "P_open_units": [-900, 350, -900, 350],
+  "J_lower_units": -100,
+  "pair_seed": 760076,
+  "pair_counts": {"symmetric_cross": 96, "additional_cross": 480, "same_left": 128, "same_bottom": 128, "corner_plus_arm": 128, "two_corners": 64},
+  "position_pair_limit": 1024,
+  "mass_point_limit_per_pair": 9,
+  "mass_rule": "All exact vertices of 0<=b1<=V1,0<=b2<=V2,b1+b2<=U; add vertex centroid, half centroid and midpoint to each coordinate-biased highest vertex. Deduplicate. Recheck every fullS3 bbox cap for every mass point.",
+  "Gamma": ["-1/2", "-1/9", "-1/2", "-1/9"],
+  "auxiliary_threshold": "1/18",
+  "floating_trigger_excess": "1/100000",
+  "triple_null_filter": "Record exact min-distance predicate for diagnostics, but do not omit numeric area evaluation before theory pin; cache duplicate actual measures only.",
+  "scope": "One purpose-designed finite batch; no global proof, no repeat batch or parameter optimization"
+}

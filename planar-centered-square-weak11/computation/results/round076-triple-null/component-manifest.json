@@ -1,0 +1,74 @@
+{
+  "schema": "r076-triple-null-corner-payment-component-v1",
+  "frozen": true,
+  "files": [
+    {
+      "path": "computation/round076/check_triple_null_branch.py",
+      "sha256": "f196484cfe93c5d1a3b916abf072fe474f059907ebdbabba63ee7eb2de7886ee",
+      "bytes": 2662
+    },
+    {
+      "path": "computation/inputs/r076/triple-null-branch.json",
+      "sha256": "8efb08c6b64e729aab0f645a13aa59a5ab69a6655c8ab18d4ce28ede76f8ea78",
+      "bytes": 545
+    },
+    {
+      "path": "computation/results/round076-triple-null/checks.json",
+      "sha256": "87e23009747966cbe341a6a6666801e98063506f54ef69a9b8cd378aa368bbc9",
+      "bytes": 2336
+    },
+    {
+      "path": "proofs/r076-triple-null-corner-payment.md",
+      "sha256": "d0354c1085ab5ec702e9d1f799ba96fe7de79938fdbcfe40782e423a1ac20936",
+      "bytes": 7080
+    }
+  ],
+  "all_embedded_input_script_pins_match": true,
+  "mathematical_scope": {
+    "assumptions": "full S3 and same finite outside measure satisfy all global square caps; arbitrary two positive outside positions inside effective P, P-complement sources unrestricted",
+    "proved": "If actual origin+both-outsides receiver misses Gamma, actual corner deletion <=5/108<1/18; exact strict triple predicate L>4delta_Gamma^2, and only active triple implies L<=1",
+    "not_proved": "triple-active arbitrary two-outside half-mass bound; no global counterexample or unrestricted3.5 theorem",
+    "all_n_extension": "owned separately by core; not asserted as an additional theorem in this packet"
+  },
+  "actual_execution_scope": {
+    "scalar_fixtures": 6,
+    "bbox_strict_tie_fixtures": 3,
+    "global_caps_for_fixture_positions": "not checked; geometry-only examples are not claimed admissible",
+    "position_search": false,
+    "halo_area_integration": false
+  },
+  "independent_review": {
+    "status": "full proof independently read and passed, no mathematical fixes",
+    "fixture_scope": "source/code/result read; six-plus-three author fixtures not independently rerun",
+    "review_owner": "parent independent audit package binds this component; no cyclic manifest reference"
+  },
+  "execution_receipt": {
+    "actual_command": [
+      "python3",
+      "-B",
+      "planar-centered-square-weak11/computation/round076/check_triple_null_branch.py",
+      "--input",
+      "planar-centered-square-weak11/computation/inputs/r076/triple-null-branch.json",
+      "--output",
+      "planar-centered-square-weak11/computation/results/round076-triple-null/checks.json"
+    ],
+    "actual_working_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources",
+    "portable_command": [
+      "python3",
+      "-B",
+      "computation/round076/check_triple_null_branch.py",
+      "--input",
+      "computation/inputs/r076/triple-null-branch.json",
+      "--output",
+      "computation/results/round076-triple-null/checks.json"
+    ],
+    "portable_working_directory": "topic directory planar-centered-square-weak11",
+    "exit_code": 0,
+    "pid": "not separately captured; synchronous run completed; no background job",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "script_wall_seconds": 0.01197462500022084,
+    "new_math_run_in_manifest_step": false
+  },
+  "git": "only R76 new files; R74/R75 frozen components unchanged; no commit/push/reset/rebase"
+}
