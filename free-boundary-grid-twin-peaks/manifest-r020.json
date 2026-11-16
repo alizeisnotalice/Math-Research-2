@@ -1,0 +1,700 @@
+{
+  "round": 20,
+  "date": "2026-11-16",
+  "baseline": "4852a00693659da46e41f4d6877e7da4410e838f",
+  "status": "original mathematical problem unresolved; goal active",
+  "evidence_scope": "general combinatorial identities and finite exact counts; SMC numerical diagnostics only; unfinished GPU production excluded",
+  "files": [
+    {
+      "path": "PROJECTS.md",
+      "scope": "only this topic row including trailing newline",
+      "bytes": 302,
+      "sha256": "183545d0ebf794a7452f970c553f4a94de60ac3ba8d594872697969b4e2e1ef3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/README.md",
+      "bytes": 1971,
+      "sha256": "087ebe0edd9f228e6c13c8fa507572eba90195929828e1c01f187f3b2b7a774e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/STATE.md",
+      "bytes": 10328,
+      "sha256": "f171575c9cf1b38b6e72181012d6dc4bb07c44bf25b7de03740c2ed53b6e7858"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/rounds/020.md",
+      "bytes": 9224,
+      "sha256": "f74143c1a70162a50502f2ad5dcb427f8e66058709a53b1b975a96788065ca09"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-verification.json",
+      "bytes": 1778,
+      "sha256": "a5b4e8e3bed2c070977127fd9521d946ce9b66d8eab511ae56fd78f8926f86ec"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/README.md",
+      "bytes": 2171,
+      "sha256": "47493567ddf0fc254a5cb98c6bd7757d3b4467661bef6b0fa26a5e9dbfa0f95b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/covsmc-to-onepeak-inverse.diff",
+      "bytes": 12469,
+      "sha256": "77f090c61cb8d480ef318c48912cea5a4404175a9a8a4b9722ff066f1334603c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/exact-table-comparison.json",
+      "bytes": 327,
+      "sha256": "3917d7201e80f1a36e51a573f82283fe52e480317169c2b4c806a134c9f5fb0d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/inverse_fibre_smc.cpp",
+      "bytes": 8097,
+      "sha256": "e6eff498c7274007e2417414f87eafcaf1e5b3ecf8d02edd8c0a835fd6be2289"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/make_n3_fibre_table.py",
+      "bytes": 699,
+      "sha256": "48edbe10b22d6e56d0aba377d60a787fc93fef3d49c9c97f5eb387639fc23c6a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n10-p16384-r64-l16.csv",
+      "bytes": 10955,
+      "sha256": "e9d4f95e7b6be14c0e1bd49687b344ed43b859fe043d1c2c5e35510454e035e8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n10-p16384-r64-l16.csv.metadata.json",
+      "bytes": 210,
+      "sha256": "b2024779b1ed4c9bb8673870057adb24f9ae530889a4fda34e584cd0ca465cf5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n10-p16384-r64-l16.exit-status.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n10-p16384-r64-l16.resource.txt",
+      "bytes": 777,
+      "sha256": "21804868293ae375189d661e6e94b870211ff6a5144b5cbb2665873ef778ff61"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n11-extra-exit-verification.json",
+      "bytes": 216,
+      "sha256": "08c6a7ece0fb134a5da4c93d200ab676414629b06baa4d8a1a24c74e7d531725"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n11-p65536-r128-l16.csv",
+      "bytes": 22343,
+      "sha256": "c5668ecda18f55eb209c39f5412143e1ac81e43894339bd18c25504240da22b3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n11-p65536-r128-l16.csv.metadata.json",
+      "bytes": 211,
+      "sha256": "bfc93872910c08b9225261c8cfaaed9e784dba05f4765141df1748515c5d3b6d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n11-p65536-r128-l16.resource.txt",
+      "bytes": 777,
+      "sha256": "3370053d22c0ca723082fdfe5073f47077c587cf7c883d71d04c4f2e13c1cce9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n11-p65536-r256-l16.csv",
+      "bytes": 44799,
+      "sha256": "2957592c3da301c309d3c7b18834b9f39188444c707e973a58a38c2d2f474c40"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n11-p65536-r256-l16.csv.metadata.json",
+      "bytes": 211,
+      "sha256": "9d405760fa0546a0fbcab2dd8707dc6d5656f90691282d98ff1971b0e718694d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n11-p65536-r256-l16.exit-status.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n11-p65536-r256-l16.resource.txt",
+      "bytes": 777,
+      "sha256": "078f0ed6b5e9f9330185f132ae12e19c058bd11b97b0b08bdaaf2fab83c64ea7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n11-root-recomputed-summary.json",
+      "bytes": 3585,
+      "sha256": "2c680c2afc98ce1d2f8e47fd953f813e628cce5ac5e63f6922afe5a12dbbb33c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-calibration-verified.json",
+      "bytes": 1246,
+      "sha256": "a6423b22a7dc7a803ffed90e77c0e44e7f444a114782386efbe7e43dc5ddbf08"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-cpp-audit-resource.txt",
+      "bytes": 777,
+      "sha256": "b4e3304221e23b0a21adfc2861423c778a1148b47b0f1ac2c5ad488234b917fe"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-cpp-fibres.csv",
+      "bytes": 652379,
+      "sha256": "6eb7c44b6bd863f435fb5ccf1f74eba38d958a1f6e7d3fa7b2d001e377beae0b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-p17-r512-l0.csv",
+      "bytes": 60202,
+      "sha256": "70f56c80d1ded766a7dc30a1e4a164cdbe8c4d01108c18dc870f35b0bc878893"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-p17-r512-l0.csv.metadata.json",
+      "bytes": 205,
+      "sha256": "bc42d1ea1794c50548dc6e29604fc8035cde76e5cbfc3dce78cfe3132ab540bc"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-p17-r512-l0.resource.txt",
+      "bytes": 777,
+      "sha256": "6827869dbaba3b733aa6c0d8f9e97b8dde7aa27c1a7b72a4837f35045c3b20aa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-p17-r512-l16.csv",
+      "bytes": 72362,
+      "sha256": "d53ffd732d8b765186705aaa7a7fdfd00dacbcb6a6d2cc848ae6c12567262dbc"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-p17-r512-l16.csv.metadata.json",
+      "bytes": 206,
+      "sha256": "4dda77eee0836b7aa9b178a8624778b2e501ec16e7240e235207a3aead993f75"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-p17-r512-l16.resource.txt",
+      "bytes": 777,
+      "sha256": "cd64d8f2ec9983c59006a7d711a38b8bc7e0d6638cc8a81e15c9931c9c1131b2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-p17-r512-l4.csv",
+      "bytes": 69334,
+      "sha256": "8a2cd39efaf1ce5a67dee014bf8d178878fa2fe2051e44c1ca93d5998e83e612"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-p17-r512-l4.csv.metadata.json",
+      "bytes": 205,
+      "sha256": "5545e2ca77916b58c2c983f8225bda453bec2eac986a14337684268e4b60e0b5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-p17-r512-l4.resource.txt",
+      "bytes": 777,
+      "sha256": "3f87c3039d9c767482ad14d9b1e37f49e074e72f635808d4ad55a774eed16c0c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n3-python-table-resource.txt",
+      "bytes": 777,
+      "sha256": "10835c88ed0270036a9f6e86707dbd160a062f6971ff5ca29712a436a70510b9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n7-p4096-r32-l16.csv",
+      "bytes": 5190,
+      "sha256": "324d6a65cf23f5b3172c7fe245d1c26e0ffbedb7b4bc186961a16859b9c82370"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n7-p4096-r32-l16.csv.metadata.json",
+      "bytes": 207,
+      "sha256": "c8a421dc2dc769c0d191fbb26077222d20b5d93278c6c905450b71d7ab7e8825"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n7-p4096-r32-l16.exit-status.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/n7-p4096-r32-l16.resource.txt",
+      "bytes": 777,
+      "sha256": "3073199502f5444b7e0b4945d1ed72c5f9350b067285cbc935ce3539120707db"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/root-recomputed-summary.json",
+      "bytes": 3530,
+      "sha256": "d9a0b2143773bb561df89de5ee35339048b2c8cdb48714dc67af690820e4a211"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/root-table-replay.json",
+      "bytes": 234,
+      "sha256": "809b3c986f8a9d0253c81e168df5b01a43ce57f6dd2c2fa21488b6d7141cce68"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/source-binary-sha256.txt",
+      "bytes": 428,
+      "sha256": "e9b72def5360ad3ad41c3bb2c33125f97a887a8253ca4b41a9c56cf943894aa5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/summarize_inverse.py",
+      "bytes": 3272,
+      "sha256": "e1b3a469449a87ef233d5584c146d1f10b4fe452612d87f3edab6e76cc584f31"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/verify_n3_calibration.py",
+      "bytes": 2214,
+      "sha256": "caf6d607050c2958c0231ba9de7dac752600d3c38ee18d8a286c6e815c8ce922"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-inverse-fibre/verify_n7_gate.py",
+      "bytes": 1469,
+      "sha256": "9d70e6b9c3c6275ced1be5ac6de2b3f29ae75795db198283764e167adea9e0bc"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-root-moments/README.md",
+      "bytes": 1116,
+      "sha256": "2bbf2c3853ca3519f876a262199807a900920d27915ee57b275d3a6c29bad592"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-root-moments/covsmc.cpp",
+      "bytes": 5903,
+      "sha256": "6f1031104b964649ced764cf58b5f6f738063987b985333e10d7eaad411c82de"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-root-moments/n11-p16384-r64-l16.csv",
+      "bytes": 3328899,
+      "sha256": "2072a396d5e8c895f8076c5fc5bf3a377e3d0f5b67969d0f416589732f757a9f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-root-moments/n11-p16384-r64-l16.csv.metadata.json",
+      "bytes": 222,
+      "sha256": "db1b267a5ebd168e7f723ba634bb448796fdc029244d16c9295057af9f7041ae"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-root-moments/n11-summary.json",
+      "bytes": 43380,
+      "sha256": "1d531e15468c5e65de223a768201ff763e08e81db879f2aa6fc6f28cff421681"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-root-moments/production.resource.txt",
+      "bytes": 777,
+      "sha256": "360360e9b56721a4f604dcb5e558c6438c966ba6b695e7bff539ca56c5e5485d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-cpu-root-moments/summarize_covariance.py",
+      "bytes": 2349,
+      "sha256": "18022994f2c88d162404fbd655ec87c8f8489df68ead1511c74608d813d2f65e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/README.md",
+      "bytes": 1097,
+      "sha256": "c8af87838d43fc81b6c5a9cb7f247ee23ae6c6c5bb9f18e94723d5c4a85e19af"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/derivation.md",
+      "bytes": 1713,
+      "sha256": "1fc11d3f1744783ee111726e91b4d1eb019d1a2fb66b6748244d477fd369ee52"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/distance-birth-verified.json",
+      "bytes": 9536,
+      "sha256": "4ce2a21f0deed17b08e9bf84c4aa15487738fcb575f7363b26a6e39ba3e85e01"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/distance_birth_dp.cpp",
+      "bytes": 3506,
+      "sha256": "8dddf95c53c3f73345daedf73ae3fdce7608947a3aba99980b2ff5dbbdfb042a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/n3-direct-resource.txt",
+      "bytes": 777,
+      "sha256": "082e8b0a4489a91530b250ab169baee0fbefcbc80ef79405e8e47e2bb61cfe46"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/n3-direct.json",
+      "bytes": 716,
+      "sha256": "5d32c1f6803c8a81d25f76033ba55fe73219ba7ac2125ee389a2a2427f7cfe4a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/n3-dp.json",
+      "bytes": 466,
+      "sha256": "c088d73f8b8f5545bb30c719fc58838dec424620c8d530ee2d98553f0beb264e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/n3_direct.py",
+      "bytes": 1628,
+      "sha256": "e14b1bdb89ce705456e7da7265a8cc49758f86140a0dc3b72daa554f191d428d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/n4-dp-resource.txt",
+      "bytes": 777,
+      "sha256": "8d93934e8fbc6f7c28686416692153bfb1be4a78c76ab89d0d48e0a484cca5f4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/n4-dp.json",
+      "bytes": 1625,
+      "sha256": "c297cda2f55e85de1baecb1618b22ae03ffb7e13e7ff57d307f09ae9dd472535"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/verify_and_summarize.py",
+      "bytes": 3581,
+      "sha256": "cde30642ddeaa3bc85eaea415165b3e8e83b8daacfbf26c1b71b03f1e4b10f86"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-distance-birth/versions.txt",
+      "bytes": 60,
+      "sha256": "8699bba5ff32c36b7c9ad33804d25d63d003693b46def15367c6905adaf50fec"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/RANGE_AND_INDEX_AUDIT.md",
+      "bytes": 2586,
+      "sha256": "01633e633f74a9120f5e1d4fb141ccbcfce373de2243ed0f92b2ea00fda7b1a3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/README.md",
+      "bytes": 2061,
+      "sha256": "0d902253308e8ba7eb943fc517662680e7c1e1e169849ed77eff77964ea1c6ef"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/base-n3-p17-t10-l0.jsonl",
+      "bytes": 694,
+      "sha256": "1846f39e4d665d0e0187a8f35e303d6f3343fd21c7470e0c3ef699f9d60a421c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/base-n3-p17-t10-l16.jsonl",
+      "bytes": 698,
+      "sha256": "a65ca75009cf7a9976f9b8aaba78545db1ee7f02652f260fc2ac0b8bac87805e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/base-n3-p17-t10-l4.jsonl",
+      "bytes": 699,
+      "sha256": "e88503f1352bff671b7475a01e32e9a91879a0a9448969a9f3298262edceb199"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/base-n8-p257-t65-l4.jsonl",
+      "bytes": 700,
+      "sha256": "71a3d1bb85ab9ccaad8adb22a156a63481bb8c0e133e53817316b3912f10b670"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/host_inverse_from_trace.py",
+      "bytes": 1685,
+      "sha256": "9d642ab3996e5ee25921118cdbb2c07da9888b31679be11b02bf4dc7fc66ca3d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/inverse_fibre_gpu_r020.swift",
+      "bytes": 22356,
+      "sha256": "1f593425af5fe53f98cc3b01109d6498519ad2d555c2ba14332d715c07f26b48"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n16-p1-t257-l0-audit.jsonl",
+      "bytes": 1123,
+      "sha256": "95ed2dd0a10d41e5e8ad593442b20ce0f7ded4c1688c509e77d3484d01f93fce"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n16-p1-t257-l0-audit.jsonl.trace.json",
+      "bytes": 202244,
+      "sha256": "ff15816aa34c1940b5d99254fd967456f798472deb2ec130b5a3a927b746639b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n3-p17-t10-l0.jsonl",
+      "bytes": 1122,
+      "sha256": "085afcfd0ac52a3103bcccd4727c6507a88788f29fd81ee3106fac829128dcb2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n3-p17-t10-l0.jsonl.trace.json",
+      "bytes": 25005,
+      "sha256": "ea0717b327e40f777ce2fc8ae2048fabb09a373dc961489aebcfa969db87b964"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n3-p17-t10-l16.jsonl",
+      "bytes": 1122,
+      "sha256": "a04cc7f3c362cf8a95af2bab5265b5653d89803e7b0aad0da95e4f305452991d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n3-p17-t10-l16.jsonl.trace.json",
+      "bytes": 24985,
+      "sha256": "b4a53301d193160bdbd6bf3b6d66bffbd7bda38c565b645c48cf7505ca5314b4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n3-p17-t10-l4.jsonl",
+      "bytes": 1076,
+      "sha256": "a8e7503dbe3327c49feacdb646cb486a88ad0c8903df121f195c53b91d87239e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n3-p17-t10-l4.jsonl.trace.json",
+      "bytes": 24964,
+      "sha256": "84d5256756ffc234fe8127a12a04d360cff96c0408ecc5be50dbc410e6b5ceb4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n7-inverse-calibration-verified.json",
+      "bytes": 1556,
+      "sha256": "4430385289f48a8a22f63c6dd652b11c95bbb4a3a9a3b8367f5d18c5a8db379a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n7-p4096-r32-t50-l16.jsonl",
+      "bytes": 25004,
+      "sha256": "a153be9506b362422af429e0d46c272509c7426d0d22c3f3ac0969cb90fe38e2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n7-root-recomputed.json",
+      "bytes": 1225,
+      "sha256": "d25f22793e662b5a0f12ea87a75539c54b55f97278769d8decfb8fe3faec7a38"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n8-p257-t65-l4.jsonl",
+      "bytes": 1136,
+      "sha256": "5985c3d61df56f9e21bb1f2779309bf011bf2adc652f63bec6a71f1db4fa1bdf"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/n8-p257-t65-l4.jsonl.trace.json",
+      "bytes": 4450858,
+      "sha256": "9eb9335de844b94cb0a916ba8cda97649b719c06c5419abe65fd6ed5493ce6af"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/root-independent-replay.json",
+      "bytes": 674,
+      "sha256": "3e1b1d3402b0a296bf9fc2e10df71b3c345a578ad153f64771684e14866dd2fa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/summarize_inverse_gpu.py",
+      "bytes": 2914,
+      "sha256": "26bcb25daf963a8b8e2471e7b1060b56bac4aa090d0678c19401f1d9471d330d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/trace-compaction.json",
+      "bytes": 1485,
+      "sha256": "2666b1cc01bd94c4eeba5f8e89f4c016640f3474cf5c7513e722a5a0543ced94"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/verification.json",
+      "bytes": 1160,
+      "sha256": "6e104b0a611cbc9c895fe72af2e13bd0b0c3e70793381bf765097f64b7c112ac"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-inverse-fibre/verify_gpu_integration.py",
+      "bytes": 2787,
+      "sha256": "02ca1a4316415d2ba876d0211b66cc696959b44df859881bafe2098b54e290c4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/README.md",
+      "bytes": 4794,
+      "sha256": "38c522df7ec064c2da6ce962980d1a6dcf24c11ae0cf9d16c2bc1d7ee4270b26"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/check_terminal_integer_bounds.py",
+      "bytes": 1543,
+      "sha256": "4d750015abd59747b9062b1676c2b6e845c67ab56208d81b6efb54be83e79deb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/r020-audit-certificate.json",
+      "bytes": 4119,
+      "sha256": "c8b182f9d15cac7df79c2acd150394adf68791f8fada7ea773c2da3bb3180688"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/r020-frozen-62-certificate.json",
+      "bytes": 68862,
+      "sha256": "04e4875f84b73bfb226939fe67ec09a7af814ea59fb3a01e2998b5f21034ed20"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/r020-n7-calibration.json",
+      "bytes": 3548,
+      "sha256": "ead6fedf7af705cfcaed0744b33f0425e5b24f009ce82423a01811de3afe2acc"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/r020-n7-p4096-r32-l16-domain8200000000000000.jsonl",
+      "bytes": 746799,
+      "sha256": "4cfa51ea8b260067f60cea61f0fc9d6ef731e323710f93599b655c612c17b0b3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/r020-vs-frozen.diff",
+      "bytes": 10253,
+      "sha256": "403d1f8b315e78bcd5aa7184b29b8a3fd571b7cbf9178fbb0a0d5d50d9d9d350"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/replay_trace_catalog.py",
+      "bytes": 1266,
+      "sha256": "74daa3478d676fcddae53573131b47864fbd5bd41a9e1a9cf5cdf4246900832e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/root-numeric-negative-tests.json",
+      "bytes": 3751,
+      "sha256": "e551f00d4ee6f0c79f44dda75662b2a336fda2c93e51b8bbc554705f99a8dfab"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/root_moments_r020.swift",
+      "bytes": 16695,
+      "sha256": "0ddb392f0c9b28a8a40e78944b71f77e3ee0e591a95d63b3a0b2ffbe692addeb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/summarize_gpu_roots.py",
+      "bytes": 3955,
+      "sha256": "f619b9d15e08464208f6c077f899b4b7f863a1f9358f9f0b47d5e5a7d16e875a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/summarizer-checks.json",
+      "bytes": 709,
+      "sha256": "afa56576f187b3751542ea947a6826f71de8f6d3aedfe6775e99c978c0e065fb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/terminal-integer-bounds.json",
+      "bytes": 3400,
+      "sha256": "eba4ad2a0531b1efbe37546edb2a73979dc17e93f9437f6ebb37119691227343"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-gpu-root-moments/verify_root_trace.py",
+      "bytes": 5812,
+      "sha256": "851deadfb3955f6a41a37208d817c242f9bdeb8f24c41715028b4d1dc91e6211"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-inverse-fibre/BIRTH_DELETION_LAYER.md",
+      "bytes": 5024,
+      "sha256": "0bca538c3458b331b9de9f94a66ab141a4181b164c623e78a46c909c142c44ac"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-inverse-fibre/EXACT_INVERSE_FIBRE_DP.md",
+      "bytes": 1806,
+      "sha256": "49a6f34d9bac07224dc943b2416f50fee3354eb6ed70683e7bb951c5e6fdf75a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-inverse-fibre/LABEL_GAP_REFINEMENT.md",
+      "bytes": 3528,
+      "sha256": "d0f3c41b4d400dd7e91296a00550f9c1bfde49fedf3b6112372940577b32657b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-inverse-fibre/README.md",
+      "bytes": 1409,
+      "sha256": "66ec1ffb1112b95bdd28193a0cbfc98fb58e3229f965566fbfdf1d2db7f9f8e8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-inverse-fibre/exact-inverse-fibre-n3.json",
+      "bytes": 589,
+      "sha256": "5345740374bb524cef1396f731ac10afeba33b8c5bda3858ad97b4118dc91aee"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-inverse-fibre/exact_inverse_fibre_n3.py",
+      "bytes": 3415,
+      "sha256": "bff4da322e3b5b0b201c79b608856527bf7786985349fb903b6a88e19d46f6dc"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-inverse-fibre/gap-audit-n3.json",
+      "bytes": 3612,
+      "sha256": "b71602ba8ad708517207effbbacf4d8ac7810f2863bd2554a332c2640c653110"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-inverse-fibre/gap_audit_n3.py",
+      "bytes": 1506,
+      "sha256": "af7ccebd65bec7d0fe8f6c70ab5bc6bfb524f50cf5724179bbd84fd1d8ceb162"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-reflection-pair/README.md",
+      "bytes": 698,
+      "sha256": "4521f1021580ff6040ff04f0677633c0e2677b2a078c53205a678b055e2be246"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-reflection-pair/near-central-split-witness.json",
+      "bytes": 74794,
+      "sha256": "afc7d36e53df90076cc6d9e7726a88c4df9e9525b7249700fc31b2a29c9e8f28"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-reflection-pair/near_central_split_witness.py",
+      "bytes": 1272,
+      "sha256": "b36d92fb5a372e2997a9fdc36fe81a358d50c1c1898060c12dc602d7ca835203"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-reflection-pair/reflection-pair-orbit-audit.md",
+      "bytes": 2475,
+      "sha256": "55411cd48d538112c9711f846c2fba1e740916ffebaca8dd204df71fdeaba86b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-reflection-pair/reflection-pair-orbits.json",
+      "bytes": 12142,
+      "sha256": "1f8b396f24435e3de0087e9a3674b05ce2f01c362337a81d3806b1ed36186151"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-reflection-pair/reflection_pair_orbits.py",
+      "bytes": 4085,
+      "sha256": "d91d2a71e36fa8c4cfccaef63a0bb9341209113e275c6e9d51f433db41d374c2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-reflection-pair/spin-encoding-audit.md",
+      "bytes": 1788,
+      "sha256": "a9d6102dd3d3ac00d5788b96b7a1732c5fc3dac672f82f75d8540d295f8c68c8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-reflection-pair/spin-peak-encoding-audit.json",
+      "bytes": 105,
+      "sha256": "a0e9857a828b9c30f9e21b4c8f9afcbd5d68960d425ea816a846b48e23a18116"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-reflection-pair/spin_peak_encoding.py",
+      "bytes": 3172,
+      "sha256": "f941515323ced1777d72cbe2c1c1c23edace038d42fe6504e2b5f3448abab0a6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/README.md",
+      "bytes": 1233,
+      "sha256": "323ba976275a3de664a7dd8214540965d44a5e3ac2df35f5793d7df2ca6af86c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/domino-local-shapes.json",
+      "bytes": 12776,
+      "sha256": "47dc81c93374317c21b8829dfbba12c7e8e2223870c61ababb0f25a328cc9425"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/domino_local_shapes.py",
+      "bytes": 1935,
+      "sha256": "0f361c18f1a0682b8e28acbad44d6ba3bd9e06c443498716b3d5e5778b94bc22"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/root-deletion-identity-n3.json",
+      "bytes": 415,
+      "sha256": "d330a5157bac2ef71ea6d51e816def529a6dcf8932e29c529a77580f65315c46"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/root-deletion-identity.md",
+      "bytes": 3202,
+      "sha256": "501af28d2763c424426fa9f1ddf4cd1bf13471aaf66f3d25661e2cef6a8ed131"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/root_deletion_identity_n3.py",
+      "bytes": 2085,
+      "sha256": "9ad9f25f6f41485ffaba70df8c1d4670457cf43a20971a790de1b098cab083a2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/two-root-block-identity-n3.json",
+      "bytes": 438,
+      "sha256": "8e480e3d7d82b71b6d4438a234cf2ffb9f2fe3bd4784bb08fbd552a7ef8d2901"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/two-root-block-identity.md",
+      "bytes": 4117,
+      "sha256": "143140942e104df4fe7622745bc0a182ec657a39bd6841f26776c891c65c7283"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/two-root-block-ie-n3.json",
+      "bytes": 346,
+      "sha256": "46a78aeac98dddef0870f572909587f6c36e77a0d887a4e9c42cbecefa1efd2c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/two-root-block-ie-n4-resource.txt",
+      "bytes": 777,
+      "sha256": "0b26ebb43593a6c3fca481e0b6d7a042d4178fb603a762d7b5e65c4304319835"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/two-root-block-ie-n4.json",
+      "bytes": 514,
+      "sha256": "9d0ac5bb913ea78361cc04958266f2f521e1b1300694892ed7c0aaf0a2092c55"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/two-root-block-refinement.md",
+      "bytes": 4191,
+      "sha256": "5e14532ef6c3a3d8e3217dc88986650d4fca44299fe991c11b5b4b6350f17f58"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/two-root-block-verified.json",
+      "bytes": 73,
+      "sha256": "922994519a9faf7a405bd0952b934d14fb222f3935456fc54b4234b18ff0ae99"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/two_root_block_identity_n3.py",
+      "bytes": 1688,
+      "sha256": "d42021758d6360fef8ff649251cda2b04e9300b0374e2bbade1b599ce8418b77"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/two_root_block_ie.cpp",
+      "bytes": 4952,
+      "sha256": "e42393753298f7af150ad5e4b8816d44cb59245249ef263e886ac320c8ebc54a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r020-root-promotion/verify_two_root_block.py",
+      "bytes": 858,
+      "sha256": "55044dfd2afe483ce17566140fa916c46f6d60fdf6c01ee9ca12d0791fb47091"
+    }
+  ]
+}

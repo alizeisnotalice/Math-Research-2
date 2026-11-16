@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "base_numeric_tokens": "identical for all pre-existing replicate fields",
+  "independent_python_dp": "per-terminal-group exact equality",
+  "rows": [
+    {
+      "case": "n3-p17-t10-l0",
+      "groups": 1,
+      "m2_total": "21",
+      "m3_total": "13",
+      "mean_m2": 1.2352941176470589,
+      "mean_m3": 0.7647058823529411
+    },
+    {
+      "case": "n3-p17-t10-l4",
+      "groups": 1,
+      "m2_total": "46",
+      "m3_total": "0",
+      "mean_m2": 2.7058823529411766,
+      "mean_m3": 0.0
+    },
+    {
+      "case": "n3-p17-t10-l16",
+      "groups": 1,
+      "m2_total": "30",
+      "m3_total": "8",
+      "mean_m2": 1.7647058823529411,
+      "mean_m3": 0.47058823529411764
+    },
+    {
+      "case": "n8-p257-t65-l4",
+      "groups": 2,
+      "m2_total": "8139",
+      "m3_total": "46495",
+      "mean_m2": 31.669260700389106,
+      "mean_m3": 180.91439688715954
+    }
+  ],
+  "uint64_bound": {
+    "n_max": 16,
+    "N_max": 256,
+    "per_word_m2": "4*(N-1) <= 1020",
+    "per_word_m3": "4*(N-1)*(N-2) <= 259080",
+    "terminal_weight": "a_i in {0,1}",
+    "per_group_m3": "256*259080 = 66324480",
+    "less_than": "2^64"
+  }
+}

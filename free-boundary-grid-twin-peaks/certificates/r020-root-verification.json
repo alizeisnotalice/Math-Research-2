@@ -1,0 +1,49 @@
+{
+  "round": 20,
+  "scope": "actual root replays and independent completed-batch aggregation; running batches excluded",
+  "python": "Python 3.15.0",
+  "swift": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0",
+  "clang": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+  "machine": "Apple M6",
+  "cpu_logical": "12",
+  "exact_python_replays": [
+    {
+      "script": "r020-root-promotion/root_deletion_identity_n3.py",
+      "returncode": 0,
+      "json_equal": true,
+      "elapsed_seconds": 0.8687414999985776,
+      "source_sha256": "9ad9f25f6f41485ffaba70df8c1d4670457cf43a20971a790de1b098cab083a2"
+    },
+    {
+      "script": "r020-root-promotion/two_root_block_identity_n3.py",
+      "returncode": 0,
+      "json_equal": true,
+      "elapsed_seconds": 2.86662137500025,
+      "source_sha256": "d42021758d6360fef8ff649251cda2b04e9300b0374e2bbade1b599ce8418b77"
+    },
+    {
+      "script": "r020-reflection-pair/spin_peak_encoding.py",
+      "returncode": 0,
+      "json_equal": true,
+      "elapsed_seconds": 0.9419912920020579,
+      "source_sha256": "f941515323ced1777d72cbe2c1c1c23edace038d42fe6504e2b5f3448abab0a6"
+    },
+    {
+      "script": "r020-reflection-pair/near_central_split_witness.py",
+      "returncode": 0,
+      "json_equal": true,
+      "elapsed_seconds": 0.02744449999954668,
+      "source_sha256": "b36d92fb5a372e2997a9fdc36fe81a358d50c1c1898060c12dc602d7ca835203"
+    }
+  ],
+  "n4_DP_recompiled_json_equal": true,
+  "n4_promotion_IE_recompiled_json_equal": true,
+  "cpu_all_n3_fibres_recompiled_byte_equal": true,
+  "gpu_inverse_n8_recompiled_trace_and_integer_groups_equal": true,
+  "cpu_n11_completed_pids_absent": [
+    40645,
+    77135,
+    78393
+  ],
+  "no_global_process_cleanup": true
+}

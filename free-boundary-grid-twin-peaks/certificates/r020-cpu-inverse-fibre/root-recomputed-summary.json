@@ -1,0 +1,76 @@
+{
+  "runs": [
+    {
+      "path": "n7-p4096-r32-l16.csv",
+      "sha256": "324d6a65cf23f5b3172c7fe245d1c26e0ffbedb7b4bc186961a16859b9c82370",
+      "metadata": {
+        "n": 7,
+        "P": 4096,
+        "R": 32,
+        "L": 16,
+        "threads": 8,
+        "seed_base": "2686593536",
+        "tau": 50,
+        "target": "A2_distance_over_A1_equals_E_onepeak_m_distance",
+        "canonical_rule": "least-numbered neighbor reducing Manhattan distance"
+      },
+      "replicates": 32,
+      "mean_Z": "133524158727507445312500000000000000000000000000000",
+      "mean_Z_delta_SE": "1882908266545165977468264843076287233006985881404.3714621637852824829916359287418",
+      "replicate_weight_ESS": "31.803943479688718394769640664289872478131435543708924767210959168132022840948268",
+      "largest_replicate_weight_share": "0.035412421333589851289458593281143887391411473316679213164414370129817875741200242",
+      "zero_normalizer_replicates": 0,
+      "dead_particle_rank_events": 0,
+      "minimum_particle_parent_ESS": 3928.1424919203128,
+      "proposals": 100663296,
+      "accepted": 26810998,
+      "moments": {
+        "2": {
+          "ratio_of_means": "19.506525685108316742983578008894439189114011436344586270643558964096539764341127",
+          "delta_SE": "0.19433094368078344415227607084427943664809635547550691488966694268517227721962329"
+        },
+        "3": {
+          "ratio_of_means": "104.84934870022624012292154396057799203176208612423366388847149807667250381590296",
+          "delta_SE": "3.1530582879073401038300435779308454281627841269405072141592683204187865546481094"
+        }
+      },
+      "scope": "Finite SMC diagnostic only; no certified confidence interval, mixing bound or asymptotic conclusion."
+    },
+    {
+      "path": "n10-p16384-r64-l16.csv",
+      "sha256": "e9d4f95e7b6be14c0e1bd49687b344ed43b859fe043d1c2c5e35510454e035e8",
+      "metadata": {
+        "n": 10,
+        "P": 16384,
+        "R": 64,
+        "L": 16,
+        "threads": 8,
+        "seed_base": "2686593536",
+        "tau": 101,
+        "target": "A2_distance_over_A1_equals_E_onepeak_m_distance",
+        "canonical_rule": "least-numbered neighbor reducing Manhattan distance"
+      },
+      "replicates": 64,
+      "mean_Z": "8.97587615902089425156250000000000000000000000000000000000000000000000000000000E+127",
+      "mean_Z_delta_SE": "2.0055189209967087808135914792272041017844131229662877340148277322396961014352111E+126",
+      "replicate_weight_ESS": "62.048486476026267499243365504670218975601657494109438618921970557573574498322319",
+      "largest_replicate_weight_share": "0.023294325468853153422688062674508090628338298288955921735127115812493485690180487",
+      "zero_normalizer_replicates": 0,
+      "dead_particle_rank_events": 0,
+      "minimum_particle_parent_ESS": 15893.094315582515,
+      "proposals": 1660944384,
+      "accepted": 378144678,
+      "moments": {
+        "2": {
+          "ratio_of_means": "43.836486082368809791995588961456651806881171186701090339840599037831080207927461",
+          "delta_SE": "0.51919816433392604833338536236524192226373286904304332283691067111488543920313493"
+        },
+        "3": {
+          "ratio_of_means": "529.63911161899192144948061400059021384901715515618033207389628315002615932597223",
+          "delta_SE": "15.021026596366082843948946157262518548005065593488017682723079626774466793658410"
+        }
+      },
+      "scope": "Finite SMC diagnostic only; no certified confidence interval, mixing bound or asymptotic conclusion."
+    }
+  ]
+}

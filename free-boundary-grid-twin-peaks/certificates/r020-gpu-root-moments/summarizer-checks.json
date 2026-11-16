@@ -1,0 +1,33 @@
+{
+  "script_sha256": "f619b9d15e08464208f6c077f899b4b7f863a1f9358f9f0b47d5e5a7d16e875a",
+  "checks": [
+    {
+      "kind": "missing_record",
+      "rejected": true
+    },
+    {
+      "kind": "wrong_seed",
+      "rejected": true
+    },
+    {
+      "kind": "doubled_G",
+      "rejected": true
+    },
+    {
+      "kind": "duplicate_record",
+      "rejected": true
+    },
+    {
+      "kind": "wrong_dead",
+      "rejected": true
+    },
+    {
+      "kind": "synthetic_common_log_shift_minus_1000",
+      "ratio_invariance_tolerance": "1e-12",
+      "live_underflows": 1472,
+      "dead_zeros": 64,
+      "passed": true
+    }
+  ],
+  "scope": "aggregator tests only; synthetic files are not research observations"
+}

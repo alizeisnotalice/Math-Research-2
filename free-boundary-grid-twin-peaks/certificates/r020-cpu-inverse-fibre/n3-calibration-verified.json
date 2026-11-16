@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "exact_table": {
+    "A1": 29568,
+    "sum_m2": 63552,
+    "sum_m3": 64512,
+    "target_m2": "331/154",
+    "target_m3": "24/11"
+  },
+  "smc_gate": {
+    "replicates": 512,
+    "relative_tolerance": 0.1,
+    "scope": "deterministic finite-MC diagnostic only"
+  },
+  "runs": [
+    {
+      "L": 0,
+      "replicates": 512,
+      "mean_Z": 28826.929146923318,
+      "weighted_ratio_m2": 2.152369258706033,
+      "weighted_ratio_m3": 2.1315422954735,
+      "relative_errors_vs_exact": [
+        0.025063272898967925,
+        0.0014044285218399732,
+        0.023043114574645807
+      ]
+    },
+    {
+      "L": 4,
+      "replicates": 512,
+      "mean_Z": 29930.908203235616,
+      "weighted_ratio_m2": 2.175256144248504,
+      "weighted_ratio_m3": 2.1457362073930737,
+      "relative_errors_vs_exact": [
+        0.012273681115923196,
+        0.01205270759598065,
+        0.016537571611507818
+      ]
+    },
+    {
+      "L": 16,
+      "replicates": 512,
+      "mean_Z": 29852.303500038193,
+      "weighted_ratio_m2": 2.172981227932184,
+      "weighted_ratio_m3": 2.2769230868530386,
+      "relative_errors_vs_exact": [
+        0.009615242831378268,
+        0.010994287315880147,
+        0.04358974814097616
+      ]
+    }
+  ]
+}
