@@ -9,3 +9,5 @@
 当前状态见 STATE.md；逐轮结果见 rounds/；完整推导见 proofs/；复现代码和实际结果见 computation/；来源与核验范围见 references/。
 
 临时输出统一位于 /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks。尚未执行的实验不算证据。
+
+最新完整报告：[第12轮](rounds/012.md)。首次合并的均值/方差和根深度证书见 `certificates/r012-first-merge/`；原条件律SMC及选父审计见 `certificates/r012-tau-smc/`、`certificates/r012-gpu-parent/`。原题仍开放。

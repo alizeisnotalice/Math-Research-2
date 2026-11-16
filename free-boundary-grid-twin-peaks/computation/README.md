@@ -189,3 +189,7 @@ n9源码与完整generate/calculate/audit命令在certificates/r009-n9/RUN_SUMMA
 ## 第11轮
 
 `audit_interface_gluing.py` 与 `audit_interface_theta_family.py` 为路径/全交错有限精确核验，输出参数请指向CodexTemp。`verify_r011_cpu.py`、`verify_r011_gpu.py` 从已归档原始批次重算矩与数值诊断。两类生产包见 `certificates/r011-cpu-variance`、`certificates/r011-gpu-sis`；实际版本、seed、资源、复现命令与限制各自记录。数学反例和归一化排除见 `proofs/interface-gluing-sharpness.md`。
+
+## 第12轮
+
+`audit_tau_smc_aggregates.py` 独立合并原条件律粒子重复并逐值核对GPU选父迁移；`audit_integer_stratified.py` 核验整数分层引理；`verify_layer_split_tree.py` 核验全n层分裂树的有限实例。新证书在课题根目录 `certificates/r012-first-merge/`、`certificates/r012-tau-smc/`、`certificates/r012-gpu-parent/`。均值/方差定点端点以整数分子分母为准。

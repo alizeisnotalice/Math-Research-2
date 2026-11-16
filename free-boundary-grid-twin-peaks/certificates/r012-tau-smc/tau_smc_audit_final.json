@@ -1,0 +1,59 @@
+{
+  "implementation": "Python 3 standard library",
+  "exact": {
+    "2": {
+      "A2": 8,
+      "A2_by_tau": {
+        "2": 8
+      },
+      "dist2_sum_by_tau": {
+        "2": 16
+      },
+      "Q": "1/2"
+    },
+    "3": {
+      "A2": 143808,
+      "A2_by_tau": {
+        "2": 81984,
+        "3": 33600,
+        "4": 16320,
+        "5": 7680,
+        "6": 3264,
+        "7": 960
+      },
+      "dist2_sum_by_tau": {
+        "2": 345984,
+        "3": 154080,
+        "4": 76480,
+        "5": 36608,
+        "6": 15744,
+        "7": 4704
+      },
+      "Q": "1100/2247"
+    }
+  },
+  "tree_audit": {
+    "2": "all nonzero tau strata exactly agree",
+    "3": "all nonzero tau strata exactly agree"
+  },
+  "smc": {
+    "2": {
+      "particles": 256,
+      "replicates": 128,
+      "Z_mean": 0.3333333333333333,
+      "M_mean": 0.6666666666666666,
+      "Q_ratio": 0.5,
+      "min_unique_ancestors": 154,
+      "note": "finite repeated-ratio diagnostic only; Z and M are the unnormalized estimands"
+    },
+    "3": {
+      "particles": 256,
+      "replicates": 128,
+      "Z_mean": 0.3961763329707536,
+      "M_mean": 1.737491217529399,
+      "Q_ratio": 0.4872945798600756,
+      "min_unique_ancestors": 13,
+      "note": "finite repeated-ratio diagnostic only; Z and M are the unnormalized estimands"
+    }
+  }
+}
