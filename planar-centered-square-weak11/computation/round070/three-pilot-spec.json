@@ -1,0 +1,40 @@
+{
+  "schema": "r070-three-fixed-pilot-v1",
+  "jobs": [
+    {
+      "id": "balanced8",
+      "input": "planar-centered-square-weak11/computation/inputs/r070/balanced8.json",
+      "sha256": "23db1e4b2d3e945f8d6eb5c851538157c62d27f7d475d7db47989b079ee446fa",
+      "source": {
+        "path": "planar-centered-square-weak11/computation/inputs/r069-balanced-core-obstruction.json",
+        "sha256": "3e3fd411ecf30c2195ff9f171ad349e67729d1de6c3a62ee2f84e96cf88c7653"
+      }
+    },
+    {
+      "id": "uniform4-t099",
+      "input": "planar-centered-square-weak11/computation/inputs/r070/uniform4-t099.json",
+      "sha256": "d98ac635edaf89e5d6a423fc1fff59143b89277dd21f1ca47c02c5884c0c3158",
+      "source": {
+        "construction": "Root-authorized deterministic S-only uniform four-corner control, t=99/100; no ambient A"
+      }
+    },
+    {
+      "id": "historical16",
+      "input": "planar-centered-square-weak11/computation/inputs/r070/historical16.json",
+      "sha256": "92d71ca3f3a3e445d258e02b287f1085f6eff02ea563e4be523bfb3bd4ef99c0",
+      "source": {
+        "path": "planar-centered-square-weak11/computation/inputs/r069/s00-c00-n16-S48623.json",
+        "sha256": "3cadeb44d6154dcdde0da3844314fde6d41f3805f8eefb7a390320eadffd0ff1"
+      },
+      "baseline": {
+        "path": "planar-centered-square-weak11/computation/results/round069-state/s00-c00-n16-S48623.json",
+        "sha256": "7c2defab2a2709f1a86f0a46285fdd2b361909f21755661b817cd097a1d92505"
+      }
+    }
+  ],
+  "geometry": "planar-centered-square-weak11/computation/round064/mass_polytope_variation.py",
+  "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+  "bits": 40,
+  "max_nodes": 8000,
+  "max_depth": 10
+}

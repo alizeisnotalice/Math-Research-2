@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "scope": "exact coarse necessary-carrier union with actual internal halo; no full outside halo evaluation",
+  "input_sha256": "de6c7042651809d8f175b519edb28e20854cb8260f7e2dfc8e30b3047f32faf7",
+  "source_sha256": "c7179af132cc95afce4ab44bb46632bee40238abe9141906dafd8d7900d5754d",
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "pid": 46298,
+  "fixtures": [
+    {
+      "t": "sqrt(3)/2",
+      "pure_eligible_masks": [
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "proper_captured_sets_checked": 14,
+      "cells": 169,
+      "internal_halo_area": "11/4 - sqrt(3)",
+      "singleton_carrier_area": "-5/4 + 5*sqrt(3)/2",
+      "I_intersect_K1_area": "35/4 - 5*sqrt(3)",
+      "new_adjacent_pair_area": "-(1 - sqrt(2))*(2 - sqrt(3))/2",
+      "coarse_union_area": "-2*sqrt(3) - sqrt(6)/2 + sqrt(2) + 13/2",
+      "coarse_union_decimal_informational": "3.2253670758437514126",
+      "status": "PASS"
+    },
+    {
+      "t": "7/8",
+      "pure_eligible_masks": [
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "proper_captured_sets_checked": 14,
+      "cells": 169,
+      "internal_halo_area": "65/64",
+      "singleton_carrier_area": "25/8",
+      "I_intersect_K1_area": "5/64",
+      "new_adjacent_pair_area": "-1/8 + sqrt(2)/8",
+      "coarse_union_area": "sqrt(2)/8 + 197/64",
+      "coarse_union_decimal_informational": "3.2549016952966368811",
+      "status": "PASS"
+    },
+    {
+      "t": "9/10",
+      "pure_eligible_masks": [
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "proper_captured_sets_checked": 14,
+      "cells": 169,
+      "internal_halo_area": "101/100",
+      "singleton_carrier_area": "13/4",
+      "I_intersect_K1_area": "1/20",
+      "new_adjacent_pair_area": "-1/10 + sqrt(2)/10",
+      "coarse_union_area": "sqrt(2)/10 + 16/5",
+      "coarse_union_decimal_informational": "3.3414213562373095049",
+      "status": "PASS"
+    }
+  ],
+  "all_t_formula": "5*t**2 - 5*t + (-1 + sqrt(2))*(1 - t) + 15/4",
+  "uniform_upper": "sqrt(2)/10 + 16/5",
+  "strict_rational_upper": "67/20",
+  "strict_threshold": "7/2",
+  "elapsed_seconds": 0.2406792500114534
+}

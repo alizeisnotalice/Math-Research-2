@@ -1,0 +1,97 @@
+{
+  "schema": "r070-analytic-mass-envelope-v1",
+  "status": "PASS",
+  "id": "balanced8",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "source_sha256": "dc1b82821fee355927c93997fff990b0a47c78081dde085d070c6c74c7a43eea",
+  "spec_sha256": "b24fd8cd32b26210b53750fd5aacc2e0137fb79bef2f0d320965c1247977a1c3",
+  "input_sha256": "23db1e4b2d3e945f8d6eb5c851538157c62d27f7d475d7db47989b079ee446fa",
+  "geometry_sha256": "4ef61b815b9c4a9a8972cdaf31716ae7917b59243a29fb8697c8042137788246",
+  "source_provenance": {
+    "path": "planar-centered-square-weak11/computation/inputs/r069-balanced-core-obstruction.json",
+    "sha256": "3e3fd411ecf30c2195ff9f171ad349e67729d1de6c3a62ee2f84e96cf88c7653"
+  },
+  "source_count": 8,
+  "S_mask": 15,
+  "S_rank": 4,
+  "L": "1",
+  "all_maximum_masks": [
+    15
+  ],
+  "ambient_A_supplied": true,
+  "historical_true_geometry_reused": null,
+  "full_closed_bboxes": 48,
+  "internal_all_closed_bboxes": 9,
+  "proper_envelope_labels": 8,
+  "internally_ineligible_envelope_labels": 4,
+  "regions": {
+    "M_S_envelope": {
+      "lower": "41937731/13107200",
+      "upper": "42785359/13107200",
+      "normalized_lower": "41937731/13107200",
+      "normalized_upper": "42785359/13107200"
+    },
+    "I": {
+      "lower": "61050753890538311527778222081/60446290980731458735308800000",
+      "upper": "61050753890539235117545553921/60446290980731458735308800000",
+      "normalized_lower": "61050753890538311527778222081/60446290980731458735308800000",
+      "normalized_upper": "61050753890539235117545553921/60446290980731458735308800000"
+    },
+    "M_minus_I_S_only": {
+      "lower": "677707494180308530945117388797/302231454903657293676544000000",
+      "upper": "695677240039921049466725990397/302231454903657293676544000000",
+      "normalized_lower": "677707494180308530945117388797/302231454903657293676544000000",
+      "normalized_upper": "695677240039921049466725990397/302231454903657293676544000000"
+    },
+    "I_union_M_S_only_budget": {
+      "lower": "491480631816500044292004249601/151115727451828646838272000000",
+      "upper": "500465504746308612527226880001/151115727451828646838272000000",
+      "normalized_lower": "491480631816500044292004249601/151115727451828646838272000000",
+      "normalized_upper": "500465504746308612527226880001/151115727451828646838272000000"
+    },
+    "M_minus_I_union_R_diagnostic": {
+      "lower": "131562797342742657481466138847/75557863725914323419136000000",
+      "upper": "134559188430214311052225357599/75557863725914323419136000000",
+      "normalized_lower": "131562797342742657481466138847/75557863725914323419136000000",
+      "normalized_upper": "134559188430214311052225357599/75557863725914323419136000000"
+    },
+    "internal_old_credit": {
+      "lower": "0",
+      "upper": "0",
+      "normalized_lower": "0",
+      "normalized_upper": "0"
+    },
+    "true_P": {
+      "lower": "2435881967824666239477508833/9444732965739290427392000000",
+      "upper": "19487055742601026937470946433/75557863725914323419136000000",
+      "normalized_lower": "2435881967824666239477508833/9444732965739290427392000000",
+      "normalized_upper": "19487055742601026937470946433/75557863725914323419136000000"
+    },
+    "true_Delta": {
+      "lower": "383201992423080877302171393061/302231454903657293676544000000",
+      "upper": "383201992423095665388774896137/302231454903657293676544000000",
+      "normalized_lower": "383201992423080877302171393061/302231454903657293676544000000",
+      "normalized_upper": "383201992423095665388774896137/302231454903657293676544000000"
+    }
+  },
+  "unresolved_cell_area": {
+    "lower": "211907/3276800",
+    "upper": "211907/3276800",
+    "normalized_lower": "211907/3276800",
+    "normalized_upper": "211907/3276800"
+  },
+  "cell_counts": {
+    "-1": 338,
+    "0": 8257,
+    "1": 3598
+  },
+  "processed_nodes": 8000,
+  "max_nodes": 8000,
+  "max_depth": 10,
+  "certificate_file": "balanced8.cells.json.gz",
+  "certificate_sha256": "c156509d6416e18835deb849e96b52fd61b75da1857fe88b1b8b571ae56e532f",
+  "S_only_budget_at_most_3point5_certified": true,
+  "S_only_budget_strictly_above_3point5_certified": false,
+  "wall_seconds": 0.7621544169960544,
+  "scope": "Three selected inputs only; S-only envelope uses all proper internal bbox closures and exact analytic elimination of m. Undecided cells retained outward. Uniform4 has no ambient A; historical true P/Delta reused from pinned R69 output, and no previous W is recalculated. No general theorem follows from these finite cases."
+}

@@ -1,0 +1,11 @@
+# R70 finite point checks of all remaining-source prefixes
+
+This standalone standard-library Python run tests uniform n-by-n internal grids at n=17,65,257,1025. Each grid has n² equal masses and side 1-1/n². The 256 receiver points per n are the Cartesian product of (-7,-5,...,23)/16. For k=floor(sqrt(n)), it fixes the single common scalar m=(1-1/k)² and radius r=(1-1/k)/2; this differs from the analytic proof's m=1-1/sqrt(n), and has the same limiting order only.
+
+It takes U as all internal sources strictly within radius r. It requires U nonempty/proper and mass(U)<m. For every complete remaining-source distance prefix H, including all distance ties, it checks the strict trigger m+mass(H)>1 and then the necessary strict comparison (R+r)²>m+mass(H). No roots or floats enter these comparisons. All distances on each axis are enumerated; one-dimensional exact interval counts multiply to the square count, so the n=1025 grid's 1,050,625 conceptual sources need not be stored explicitly. This is not enumeration of all source subsets, a halo computation, or a finite area certificate.
+
+Actual counts: 179/256,188/256,255/256,256/256 receiver points pass the full candidate feasibility and all active prefixes, respectively. There are 353172 nonempty distance-prefix events in total. The lower-n failed or infeasible cases remain in the complete output; no claim is made that every finite n passes. All tests using a fixed m are necessary-condition feasibility checks and do not construct outside sources.
+
+Python 3.15.0 was used. The run requested up to twelve workers; eight distinct worker PIDs actually returned tasks. Script wall time was 0.2431436670012772 seconds. All eight recorded worker PIDs and the parent were absent when checked; the process-pool context had closed normally. Requesting twelve workers is not claimed as sustained twelve-core utilization.
+
+Reproduce in a fresh directory under /Volumes/data/CodexTemp/T2: copy check_grid_prefix.py and r070-grid-prefix-input.json there together, then run python3 -B check_grid_prefix.py. The script saves r070-grid-prefix-result.json beside itself. Set temporary/cache environment variables to the data volume. The mathematical area-to-four theorem is separate; this run supplies finite pointwise supporting evidence only.

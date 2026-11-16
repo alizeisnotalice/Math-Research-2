@@ -1,0 +1,74 @@
+{
+  "id": "r070-independent-allH-prefix-equivalence-review",
+  "seed": 70071,
+  "random_cases": 96,
+  "rank_range": [
+    3,
+    8
+  ],
+  "coordinate_denominator": 8,
+  "mass_denominator": 32,
+  "algebra_fixture_scope": "S masses sum to L; all nonempty subsets of S minus U are checked, including ties; no geometric realizability of a mixed T is asserted for random fixtures",
+  "balanced_input_relative_to_integration": "planar-centered-square-weak11/computation/inputs/r069-balanced-core-obstruction.json",
+  "integration_commit": "71e6a09",
+  "fixed_scalar_cases": [
+    {
+      "r": "3/4",
+      "M": "9/16",
+      "m": "1",
+      "comparison_le": true,
+      "equality": true
+    },
+    {
+      "r": "3/4",
+      "M": "9/16",
+      "m": "999999/1000000",
+      "comparison_le": false,
+      "equality": false
+    },
+    {
+      "r": "3/4",
+      "M": "9/16",
+      "m": "1000001/1000000",
+      "comparison_le": true,
+      "equality": false
+    },
+    {
+      "r": "0",
+      "M": "1/8",
+      "m": "1/7",
+      "comparison_le": true,
+      "equality": false
+    },
+    {
+      "r": "2",
+      "M": "1/8",
+      "m": "1/7",
+      "comparison_le": false,
+      "equality": false
+    }
+  ],
+  "fixed_trigger_cases": [
+    {
+      "M": "1/2",
+      "m": "1/2",
+      "L": "1",
+      "r": "1/4",
+      "trigger": false
+    },
+    {
+      "M": "500001/1000000",
+      "m": "1/2",
+      "L": "1",
+      "r": "1/4",
+      "trigger": true
+    },
+    {
+      "M": "499999/1000000",
+      "m": "1/2",
+      "L": "1",
+      "r": "1/4",
+      "trigger": false
+    }
+  ]
+}

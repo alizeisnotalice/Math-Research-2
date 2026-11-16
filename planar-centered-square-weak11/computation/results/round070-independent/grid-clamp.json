@@ -1,0 +1,180 @@
+{
+  "schema": "r070-independent-grid-fixed-total-sub-envelope-v1",
+  "algorithm": "rational rectangular cells; A=count/n^2; cutoff sqrt(2-A)-1/2; subtract central-square intersection",
+  "scope": "sub-envelope contained in full internal-mass/r_U clamp; not actual mixed halo or deletion area",
+  "source_sha256": "75f0e0c3a8af20da1dbafd7f2e76c9ac4eca8a095deb6ce9b46fba500da35e11",
+  "input_sha256": "488cfb1778179208313cf4b3894962a59eecbae870d14c64054e71f4f1ba28dc",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "cases": [
+    {
+      "n": 3,
+      "old_sources": 9,
+      "width": "8/9",
+      "one_dimensional_cells": 5,
+      "proper_mass_cells": 24,
+      "full_mass_cells_excluded": 1,
+      "bits": 80,
+      "area_lower": "10662010732507504923899761926284671832883791808919/3288378683994531565958290873611636794225848221696",
+      "area_upper": "41648479423857441108983470761183892660545766991/12845229234353638929524573725045456227444719616",
+      "area_lower_float_display_only": 3.2423305698952873,
+      "area_upper_float_display_only": 3.2423305698952873,
+      "interval_width": "6588578404688215924540777/3288378683994531565958290873611636794225848221696",
+      "strictly_above_7_over_2": false,
+      "source_domain": {
+        "unique_maximum_S_mass": "1",
+        "outside_source": [
+          "33/32",
+          "4/9",
+          "1/1000"
+        ],
+        "maximum_exclusion_margin": "933689/16000000",
+        "bridge_margin": "952243/10368000",
+        "nonterminal_margin": "139/76800",
+        "support_tree_cost": "32/9",
+        "verification": "column-count general proof plus exact scalar margins; not all 2^(n^2+1) subsets enumerated"
+      }
+    },
+    {
+      "n": 5,
+      "old_sources": 25,
+      "width": "24/25",
+      "one_dimensional_cells": 9,
+      "proper_mass_cells": 80,
+      "full_mass_cells_excluded": 1,
+      "bits": 80,
+      "area_lower": "846677653861052437151240204427462358494295251520139/228359630832953580969325755111919221821239459840000",
+      "area_upper": "846677653861052437151240547180941788431816027659239/228359630832953580969325755111919221821239459840000",
+      "area_lower_float_display_only": 3.7076503004175994,
+      "area_upper_float_display_only": 3.7076503004175994,
+      "interval_width": "3427534794299375207761391/2283596308329535809693257551119192218212394598400",
+      "strictly_above_7_over_2": true,
+      "source_domain": {
+        "unique_maximum_S_mass": "1",
+        "outside_source": [
+          "33/32",
+          "12/25",
+          "1/1000"
+        ],
+        "maximum_exclusion_margin": "933689/16000000",
+        "bridge_margin": "22991/640000",
+        "nonterminal_margin": "139/76800",
+        "support_tree_cost": "144/25",
+        "verification": "column-count general proof plus exact scalar margins; not all 2^(n^2+1) subsets enumerated"
+      }
+    },
+    {
+      "n": 9,
+      "old_sources": 81,
+      "width": "80/81",
+      "one_dimensional_cells": 17,
+      "proper_mass_cells": 288,
+      "full_mass_cells_excluded": 1,
+      "bits": 80,
+      "area_lower": "3095970494963280250135873986614183880062731575232829/799076020210671170527864682287627740996881117872128",
+      "area_upper": "1547985247481640125067937753565404944246057298823305/399538010105335585263932341143813870498440558936064",
+      "area_lower_float_display_only": 3.8744379967090588,
+      "area_upper_float_display_only": 3.8744379967090588,
+      "interval_width": "18771810197634930654597701/9865136051983594697874872620834910382677544665088",
+      "strictly_above_7_over_2": true,
+      "source_domain": {
+        "unique_maximum_S_mass": "1",
+        "outside_source": [
+          "33/32",
+          "40/81",
+          "1/1000"
+        ],
+        "maximum_exclusion_margin": "933689/16000000",
+        "bridge_margin": "9611683/839808000",
+        "nonterminal_margin": "139/76800",
+        "support_tree_cost": "800/81",
+        "verification": "column-count general proof plus exact scalar margins; not all 2^(n^2+1) subsets enumerated"
+      }
+    },
+    {
+      "n": 17,
+      "old_sources": 289,
+      "width": "288/289",
+      "one_dimensional_cells": 33,
+      "proper_mass_cells": 1088,
+      "full_mass_cells_excluded": 1,
+      "bits": 80,
+      "area_lower": "120601715286955783751700927267377669583949992805953507/30516519562878585657822490228324168521170785480474624",
+      "area_upper": "120601715286955783751700978291302298117438276430436797/30516519562878585657822490228324168521170785480474624",
+      "area_lower_float_display_only": 3.9520140898918283,
+      "area_upper_float_display_only": 3.9520140898918283,
+      "interval_width": "88276686208535446857481805/52796746648578867920108114581875724085070563115008",
+      "strictly_above_7_over_2": true,
+      "source_domain": {
+        "unique_maximum_S_mass": "1",
+        "outside_source": [
+          "33/32",
+          "144/289",
+          "1/1000"
+        ],
+        "maximum_exclusion_margin": "933689/16000000",
+        "bridge_margin": "34802563/10690688000",
+        "nonterminal_margin": "139/76800",
+        "support_tree_cost": "5184/289",
+        "verification": "column-count general proof plus exact scalar margins; not all 2^(n^2+1) subsets enumerated"
+      }
+    },
+    {
+      "n": 33,
+      "old_sources": 1089,
+      "width": "1088/1089",
+      "one_dimensional_cells": 65,
+      "proper_mass_cells": 4224,
+      "full_mass_cells_excluded": 1,
+      "bits": 80,
+      "area_lower": "191700163015831916211085345262952520928651758025095781/48145152312363936657195336680547974304260643813851136",
+      "area_upper": "95850081507915958105542703089332253527421386950124105/24072576156181968328597668340273987152130321906925568",
+      "area_lower_float_display_only": 3.981712671134333,
+      "area_upper_float_display_only": 3.981712671134333,
+      "interval_width": "503435636248976785255166549/397893820763338319480953195707008052101327634825216",
+      "strictly_above_7_over_2": true,
+      "source_domain": {
+        "unique_maximum_S_mass": "1",
+        "outside_source": [
+          "33/32",
+          "544/1089",
+          "1/1000"
+        ],
+        "maximum_exclusion_margin": "933689/16000000",
+        "bridge_margin": "134109763/151797888000",
+        "nonterminal_margin": "139/76800",
+        "support_tree_cost": "36992/1089",
+        "verification": "column-count general proof plus exact scalar margins; not all 2^(n^2+1) subsets enumerated"
+      }
+    },
+    {
+      "n": 65,
+      "old_sources": 4225,
+      "width": "4224/4225",
+      "one_dimensional_cells": 129,
+      "proper_mass_cells": 16640,
+      "full_mass_cells_excluded": 1,
+      "bits": 80,
+      "area_lower": "5208897340524405924325598333054111311776441654185384071/1304435883243997445212982578350304978887284042498048000",
+      "area_upper": "5208897340524405924325599497190607935629959527584470581/1304435883243997445212982578350304978887284042498048000",
+      "area_lower_float_display_only": 3.9932183769511274,
+      "area_upper_float_display_only": 3.9932183769511274,
+      "interval_width": "688838163682753560871833779/771855552215383103676321052278286969755789374259200",
+      "strictly_above_7_over_2": true,
+      "source_domain": {
+        "unique_maximum_S_mass": "1",
+        "outside_source": [
+          "33/32",
+          "2112/4225",
+          "1/1000"
+        ],
+        "maximum_exclusion_margin": "933689/16000000",
+        "bridge_margin": "4483391/18279040000",
+        "nonterminal_margin": "139/76800",
+        "support_tree_cost": "278784/4225",
+        "verification": "column-count general proof plus exact scalar margins; not all 2^(n^2+1) subsets enumerated"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.25721924999379553
+}

@@ -1,0 +1,73 @@
+{
+  "packets": {
+    "round070-compute-integration-manifest.json": {
+      "destination": "planar-centered-square-weak11/computation/results/round070-compute-integration-manifest.json",
+      "sha256": "4c24d10ac335c441d80ac0ff4f41842a445bbfd5afa80f79054a16f2b9bc90c3",
+      "bytes": 10816
+    },
+    "round070-core-integration-manifest.json": {
+      "destination": "planar-centered-square-weak11/computation/results/round070-core-integration-manifest.json",
+      "sha256": "98cfb814f88d818197da28dd50401e3628585a92de56218243f47175b3752132",
+      "bytes": 2788
+    },
+    "round070-balanced-four-corner-integration-manifest.json": {
+      "destination": "planar-centered-square-weak11/computation/results/round070-balanced-four-corner-integration-manifest.json",
+      "sha256": "14f100e984dee7baa2295512a137ede1569d25247440fda27a91493e138fc7a3",
+      "bytes": 2154
+    },
+    "round070-allH-prefix-independent-manifest.json": {
+      "destination": "planar-centered-square-weak11/computation/results/round070-allH-prefix-independent-manifest.json",
+      "sha256": "8ac6967455e4fe73ecc15338f69cbd0c3d232770928fb65db037d956db3595d3",
+      "bytes": 1814
+    },
+    "root-prefix-grid-manifest.json": {
+      "destination": "planar-centered-square-weak11/computation/results/round070-root-prefix-grid/root-prefix-grid-manifest.json",
+      "sha256": "05e780669ce7e5cab88e5d61e9d4d18e7efbd155d0fe5f818eff67f71b0c7d6b",
+      "bytes": 1943
+    },
+    "root-symbolic-manifest.json": {
+      "destination": "planar-centered-square-weak11/computation/results/round070-root-symbolic/root-symbolic-manifest.json",
+      "sha256": "84274868a3a567fcde340e38c698fa3781c70b2bf31c3308f001c2721dad4f6e",
+      "bytes": 1635
+    }
+  },
+  "report": {
+    "destination": "planar-centered-square-weak11/rounds/070.md",
+    "sha256": "c37e6fe36ee153c5b3d7a0f754135d654f3b416abc4fc849c32a1a3c22d328fd",
+    "bytes": 12138
+  },
+  "recovered_results": [
+    {
+      "path": "computation/results/round070-independent/grid-clamp.json",
+      "sha256": "744796772299adf3f81a3b9f590bf0dd63c6e3f7f913d82467f368feb563aca3",
+      "source": "computation/review_r070_grid_clamp_obstruction.py",
+      "embedded_bindings": {
+        "input_sha256": "planar-centered-square-weak11/computation/inputs/r070-independent-grid-clamp.json"
+      }
+    },
+    {
+      "path": "computation/results/round070-independent/prefix-n17.json",
+      "sha256": "012d0613006b56564046f52af084d73a46025564add5bc444e9a6c9494fb1a69",
+      "source": "computation/review_r070_grid_prefix_points.py",
+      "embedded_bindings": {
+        "input_sha256": "planar-centered-square-weak11/computation/round070/r070-grid-prefix-input.json",
+        "producer_sha256": "planar-centered-square-weak11/computation/round070/check_grid_prefix.py",
+        "saved_result_sha256": "planar-centered-square-weak11/computation/results/round070-root-prefix-grid/r070-grid-prefix-result.json"
+      }
+    },
+    {
+      "path": "computation/results/round070-independent/saved-cells.json",
+      "sha256": "46c0360d627bebfbc2b47269e6cfa75ed084233b247775743375f44865c6542c",
+      "source": "computation/review_r070_saved_cells.py"
+    }
+  ],
+  "original_binding_paths": {
+    "planar-centered-square-weak11/computation/inputs/r070-independent-grid-clamp.json": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/inputs/r070-independent-grid-clamp.json",
+    "planar-centered-square-weak11/computation/round070/r070-grid-prefix-input.json": "/Volumes/data/CodexProjects/T2/.local/compute/frontier070/r070-grid-prefix-input.json",
+    "planar-centered-square-weak11/computation/round070/check_grid_prefix.py": "/Volumes/data/CodexProjects/T2/.local/compute/frontier070/check_grid_prefix.py",
+    "planar-centered-square-weak11/computation/results/round070-root-prefix-grid/r070-grid-prefix-result.json": "/Volumes/data/CodexProjects/T2/.local/compute/frontier070/r070-grid-prefix-result.json",
+    "planar-centered-square-weak11/rounds/069.md": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/rounds/069.md",
+    "planar-centered-square-weak11/proofs/r069-balanced-core-net-alternative-obstruction.md": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r069-balanced-core-net-alternative-obstruction.md",
+    "planar-centered-square-weak11/computation/inputs/r069-balanced-core-obstruction.json": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/inputs/r069-balanced-core-obstruction.json"
+  }
+}
