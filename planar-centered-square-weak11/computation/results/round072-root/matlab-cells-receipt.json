@@ -1,0 +1,36 @@
+{
+  "date_utc": "2026-11-16T02:11:43.945952+00:00",
+  "transport": "MATLAB MCP evaluate_matlab_code",
+  "matlab": "26.2.0.3433840 (R2026b) Update 1",
+  "optimization_toolbox": {
+    "Name": "Optimization Toolbox",
+    "Version": "26.2",
+    "Release": "(R2026b)",
+    "Date": "22-May-2026"
+  },
+  "kernel_pid": 19719,
+  "kernel_absent": true,
+  "ps_exit_code": 1,
+  "shutdown": "Explicit exit(0) after result serialization; expected MCP disconnect. No transport/process exit code asserted.",
+  "initial_attempt": "MAT-loaded intcon had integer datatype; intlinprog rejected before optimization. Final script explicitly casts indices to double and actual solve then passed.",
+  "script": {
+    "path": "/Volumes/data/CodexProjects/T2/.local/round072-root/r072_matlab_cells.m",
+    "sha256": "025971f2647e84f910279887f3b3976ac52fa0ffed747c90109ad2e9ae96099f",
+    "bytes": 2310
+  },
+  "input": {
+    "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round072-cells/aligned225-matlab.mat",
+    "sha256": "6bd2358e98fb76612f508d7c0fd99917e1c625883046642b56f1c019ff4afddf",
+    "bytes": 146026
+  },
+  "output": {
+    "path": "/Volumes/data/CodexProjects/T2/.local/round072-root/matlab-cells.json",
+    "sha256": "1d6eb3df01c257e9524edf84a693f64476c034da236433ecb1eaafdde0966ad3",
+    "bytes": 6973
+  },
+  "scope": "Numerical re-solve of the exported final finite cut model. Unlisted residual geometric constraints are not checked here; this MATLAB vector is not an additional deletion-area certificate.",
+  "objective": -1383635.9999999967,
+  "max_constraint_violation": 2.220446049250313e-16,
+  "max_integer_error": 6.322246299932982e-13,
+  "elapsed_seconds": 19.055647333333333
+}

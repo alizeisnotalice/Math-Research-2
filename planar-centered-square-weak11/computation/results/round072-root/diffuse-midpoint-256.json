@@ -1,0 +1,60 @@
+{
+  "schema": "r072-diffuse-midpoint-probe-v1",
+  "pid": 19583,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.5.4",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "script_sha256": "9f3213bcf1076458b6716c601f391c7baeb2f7e31fd2aa2df1fc738e133f4e84",
+  "seed": null,
+  "requested_workers": 3,
+  "actual_returning_worker_pids": [
+    19585,
+    19587
+  ],
+  "pool_closed": true,
+  "results": [
+    {
+      "n": 5,
+      "resolution": 256,
+      "sample_points": 65536,
+      "halo_positive_samples": 45544,
+      "internal_positive_samples": 23544,
+      "numerical_midpoint_halo_area": 2.6697056640624997,
+      "numerical_midpoint_internal_area": 1.3801060546875,
+      "near_zero_best_margin_samples": 0,
+      "max_sampled_mass_margin": 0.12734450683593743,
+      "pid": 19585,
+      "elapsed_seconds": 0.024753624999902968
+    },
+    {
+      "n": 17,
+      "resolution": 256,
+      "sample_points": 65536,
+      "halo_positive_samples": 44532,
+      "internal_positive_samples": 18624,
+      "numerical_midpoint_halo_area": 2.7086208087414483,
+      "numerical_midpoint_internal_area": 1.1327888696218615,
+      "near_zero_best_margin_samples": 0,
+      "max_sampled_mass_margin": 0.02825211321004517,
+      "pid": 19585,
+      "elapsed_seconds": 0.045641959000022325
+    },
+    {
+      "n": 65,
+      "resolution": 256,
+      "sample_points": 65536,
+      "halo_positive_samples": 44336,
+      "internal_positive_samples": 16900,
+      "numerical_midpoint_halo_area": 2.7054142390820304,
+      "numerical_midpoint_internal_area": 1.031250014446191,
+      "near_zero_best_margin_samples": 0,
+      "max_sampled_mass_margin": 0.007516544113635948,
+      "pid": 19587,
+      "elapsed_seconds": 0.15503241699980208
+    }
+  ],
+  "scope": "Floating point samples only; midpoint sums have no certified error bound. Cannot establish deletion area or finite-atomic residual transfer.",
+  "count_rounding_tolerance": 1e-11,
+  "strict_margin_tolerance": 1e-12,
+  "elapsed_seconds": 0.35683054100036316
+}

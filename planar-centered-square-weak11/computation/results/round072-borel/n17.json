@@ -1,0 +1,54 @@
+{
+  "schema": "r072-borel-grid-adaptive-v1",
+  "n": 17,
+  "density_t": "17/18",
+  "grid_spacing_h": "18/289",
+  "grid_width_w": "288/289",
+  "J": [
+    "-1/289",
+    "1",
+    "-1/289",
+    "1"
+  ],
+  "receiver_domain": [
+    "-1/2",
+    "865/578",
+    "-1/2",
+    "865/578"
+  ],
+  "integer_coordinate_scale": 37879808,
+  "area_lower": "233950207087/87578116096",
+  "area_upper": "14988796509/5473632256",
+  "area_lower_decimal": 2.6713318065731415,
+  "area_upper_decimal": 2.7383638154663785,
+  "unresolved_area": "5870537057/87578116096",
+  "target_error": "1/50",
+  "target_reached": false,
+  "leaf_counts": {
+    "-1": 38284,
+    "0": 208577,
+    "1": 59572
+  },
+  "processed_cells": 200000,
+  "max_depth": 16,
+  "max_nodes": 200000,
+  "strict_upper_below_3point5": true,
+  "scope": "actual Borel density outside sources; area Delta=H(sigma+nu) using separately proved empty residual halo; no finite atomic approximation or new C2 bound",
+  "assumptions": "all square mass <= max(1,side^2); residual halo empty; strict full witness radius<1/2; halo localized to saved receiver domain",
+  "arithmetic": "integer predicates and fractions.Fraction output; no float decisions; displayed decimals only",
+  "wall_seconds": 4.327789291000045,
+  "certificate_file": "n17.cells.json.gz",
+  "certificate_sha256": "b33c5c284d8f58cae211f6d4fdcce63c610337dcd4a3cbed960f51df796ff801",
+  "receipt": {
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "pid": 18093,
+    "script_sha256": "eafff103fd945ea5542da18b5741d64aacfe23c071b4a7efcd6e12e4d1fa28d6",
+    "parameters": {
+      "n": 17,
+      "target_error": "1/50",
+      "max_depth": 16,
+      "max_nodes": 200000
+    }
+  }
+}

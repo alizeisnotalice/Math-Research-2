@@ -1,0 +1,2000 @@
+{
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "pid": 17073,
+  "source_sha256": "96dfe83990a27a02f68172d79d119ebd7b1526403b9f5aaffffd341e17681132",
+  "parameters": {
+    "source_grid_n": 5,
+    "S_side": "24/25",
+    "candidate_outside_count": 145,
+    "cell_partition": "225 nonuniform aligned cells, source core widths198, gaps42, outer widths127, units1/1000",
+    "strict_mip_full_margin": "1/1000000",
+    "threads": 2,
+    "seed": 0,
+    "mip_feasibility_tolerance": 1e-09,
+    "mip_relative_gap": 0.0,
+    "radius_menu": "all full-source max-distance critical labels R_C<1/2, with at least one S point"
+  },
+  "scope": "Exact positive shared primal cell-area lower bound on one fixed S/O/cell/menu family. Floating MIP optimum/upper not general bound. Closed receiver cells, closed full source labels with strict positive margin imply slightly enlarged open full witnesses.",
+  "ledger": [
+    {
+      "iteration": 0,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 117,
+      "objective_area_units": 1943452.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 976,
+      "rows": 8356,
+      "columns": 710,
+      "nnz": 172542,
+      "cuts": 56,
+      "new_cuts": 180,
+      "worst_full_residual_violation": 0.4554840000000001,
+      "seconds": 44.25423354099985,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 1,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 106,
+      "objective_area_units": 1755238.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 685,
+      "rows": 8536,
+      "columns": 710,
+      "nnz": 173367,
+      "cuts": 236,
+      "new_cuts": 144,
+      "worst_full_residual_violation": 0.44047600000000003,
+      "seconds": 24.824036292000073,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 2,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 102,
+      "objective_area_units": 1604235.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 263,
+      "rows": 8680,
+      "columns": 710,
+      "nnz": 173979,
+      "cuts": 380,
+      "new_cuts": 103,
+      "worst_full_residual_violation": 0.282581,
+      "seconds": 27.493881166999927,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 3,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 95,
+      "objective_area_units": 1545307.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 182,
+      "rows": 8783,
+      "columns": 710,
+      "nnz": 174373,
+      "cuts": 483,
+      "new_cuts": 69,
+      "worst_full_residual_violation": 0.31741999999999515,
+      "seconds": 21.720680833999722,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 4,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 88,
+      "objective_area_units": 1437738.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 105,
+      "rows": 8852,
+      "columns": 710,
+      "nnz": 174590,
+      "cuts": 552,
+      "new_cuts": 23,
+      "worst_full_residual_violation": 0.29891300000000004,
+      "seconds": 22.482719124999676,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 5,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 91,
+      "objective_area_units": 1414116.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 83,
+      "rows": 8875,
+      "columns": 710,
+      "nnz": 174671,
+      "cuts": 575,
+      "new_cuts": 34,
+      "worst_full_residual_violation": 0.2193890000000001,
+      "seconds": 21.618092958000034,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 6,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 88,
+      "objective_area_units": 1398114.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 23,
+      "rows": 8909,
+      "columns": 710,
+      "nnz": 174768,
+      "cuts": 609,
+      "new_cuts": 11,
+      "worst_full_residual_violation": 0.2304,
+      "seconds": 16.398065791000136,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 7,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 88,
+      "objective_area_units": 1398114.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 161,
+      "rows": 8920,
+      "columns": 710,
+      "nnz": 174822,
+      "cuts": 620,
+      "new_cuts": 18,
+      "worst_full_residual_violation": 0.2304,
+      "seconds": 19.92136104200017,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 8,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 89,
+      "objective_area_units": 1383636.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 7,
+      "rows": 8938,
+      "columns": 710,
+      "nnz": 174976,
+      "cuts": 638,
+      "new_cuts": 1,
+      "worst_full_residual_violation": 0.0016000000000000458,
+      "seconds": 16.19301004099998,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 9,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 89,
+      "objective_area_units": 1383636.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 11,
+      "rows": 8939,
+      "columns": 710,
+      "nnz": 174987,
+      "cuts": 639,
+      "new_cuts": 1,
+      "worst_full_residual_violation": 0.0016000000000000458,
+      "seconds": 18.282044708000285,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    },
+    {
+      "iteration": 10,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "selected": 89,
+      "objective_area_units": 1383636.0,
+      "mip_gap": 0.0,
+      "mip_nodes": 1,
+      "rows": 8940,
+      "columns": 710,
+      "nnz": 174998,
+      "cuts": 640,
+      "new_cuts": 0,
+      "worst_full_residual_violation": 1.1102230246251565e-16,
+      "seconds": 16.946457499999724,
+      "warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'mip_feasibility_tolerance'}. These will be passed to HiGHS verbatim."
+      ]
+    }
+  ],
+  "certificate": {
+    "success": true,
+    "selected_cells": [
+      {
+        "cell_id": 25,
+        "bounds": [
+          "-353/1000",
+          "-113/500",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "381/1000",
+        "captured_mass": "399/625",
+        "strict_full_margin": "14439/250000",
+        "label_outside_indices": [
+          32,
+          33,
+          34,
+          35,
+          45,
+          46,
+          47,
+          48,
+          56
+        ],
+        "label_S_indices": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "cell_id": 40,
+        "bounds": [
+          "-113/500",
+          "-99/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "381/1000",
+        "captured_mass": "399/625",
+        "strict_full_margin": "14439/250000",
+        "label_outside_indices": [
+          32,
+          33,
+          34,
+          35,
+          45,
+          46,
+          47,
+          48,
+          56
+        ],
+        "label_S_indices": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "cell_id": 48,
+        "bounds": [
+          "-99/1000",
+          "99/1000",
+          "-99/1000",
+          "99/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          0
+        ]
+      },
+      {
+        "cell_id": 49,
+        "bounds": [
+          "-99/1000",
+          "99/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "cell_id": 50,
+        "bounds": [
+          "-99/1000",
+          "99/1000",
+          "141/1000",
+          "339/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          1
+        ]
+      },
+      {
+        "cell_id": 51,
+        "bounds": [
+          "-99/1000",
+          "99/1000",
+          "339/1000",
+          "381/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "cell_id": 52,
+        "bounds": [
+          "-99/1000",
+          "99/1000",
+          "381/1000",
+          "579/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          2
+        ]
+      },
+      {
+        "cell_id": 53,
+        "bounds": [
+          "-99/1000",
+          "99/1000",
+          "579/1000",
+          "621/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "cell_id": 54,
+        "bounds": [
+          "-99/1000",
+          "99/1000",
+          "621/1000",
+          "819/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          3
+        ]
+      },
+      {
+        "cell_id": 55,
+        "bounds": [
+          "-99/1000",
+          "99/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "cell_id": 56,
+        "bounds": [
+          "-99/1000",
+          "99/1000",
+          "861/1000",
+          "1059/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          4
+        ]
+      },
+      {
+        "cell_id": 61,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "-353/1000",
+          "-113/500"
+        ],
+        "closed_full_label_radius": "381/1000",
+        "captured_mass": "116129/200000",
+        "strict_full_margin": "1/1000000",
+        "label_outside_indices": [
+          41,
+          42,
+          43,
+          54,
+          55,
+          62,
+          63,
+          70,
+          71
+        ],
+        "label_S_indices": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "cell_id": 62,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "-113/500",
+          "-99/1000"
+        ],
+        "closed_full_label_radius": "381/1000",
+        "captured_mass": "116129/200000",
+        "strict_full_margin": "1/1000000",
+        "label_outside_indices": [
+          41,
+          42,
+          43,
+          54,
+          55,
+          62,
+          63,
+          70,
+          71
+        ],
+        "label_S_indices": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "cell_id": 63,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "-99/1000",
+          "99/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          0,
+          5
+        ]
+      },
+      {
+        "cell_id": 64,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          0,
+          1,
+          5,
+          6
+        ]
+      },
+      {
+        "cell_id": 65,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "141/1000",
+          "339/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          1,
+          6
+        ]
+      },
+      {
+        "cell_id": 66,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "339/1000",
+          "381/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          1,
+          2,
+          6,
+          7
+        ]
+      },
+      {
+        "cell_id": 67,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "381/1000",
+          "579/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          2,
+          7
+        ]
+      },
+      {
+        "cell_id": 68,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "579/1000",
+          "621/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          2,
+          3,
+          7,
+          8
+        ]
+      },
+      {
+        "cell_id": 69,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "621/1000",
+          "819/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          3,
+          8
+        ]
+      },
+      {
+        "cell_id": 70,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          3,
+          4,
+          8,
+          9
+        ]
+      },
+      {
+        "cell_id": 71,
+        "bounds": [
+          "99/1000",
+          "141/1000",
+          "861/1000",
+          "1059/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          4,
+          9
+        ]
+      },
+      {
+        "cell_id": 78,
+        "bounds": [
+          "141/1000",
+          "339/1000",
+          "-99/1000",
+          "99/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          5
+        ]
+      },
+      {
+        "cell_id": 79,
+        "bounds": [
+          "141/1000",
+          "339/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          5,
+          6
+        ]
+      },
+      {
+        "cell_id": 80,
+        "bounds": [
+          "141/1000",
+          "339/1000",
+          "141/1000",
+          "339/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          6
+        ]
+      },
+      {
+        "cell_id": 81,
+        "bounds": [
+          "141/1000",
+          "339/1000",
+          "339/1000",
+          "381/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          6,
+          7
+        ]
+      },
+      {
+        "cell_id": 82,
+        "bounds": [
+          "141/1000",
+          "339/1000",
+          "381/1000",
+          "579/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          7
+        ]
+      },
+      {
+        "cell_id": 83,
+        "bounds": [
+          "141/1000",
+          "339/1000",
+          "579/1000",
+          "621/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          7,
+          8
+        ]
+      },
+      {
+        "cell_id": 84,
+        "bounds": [
+          "141/1000",
+          "339/1000",
+          "621/1000",
+          "819/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          8
+        ]
+      },
+      {
+        "cell_id": 85,
+        "bounds": [
+          "141/1000",
+          "339/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          8,
+          9
+        ]
+      },
+      {
+        "cell_id": 86,
+        "bounds": [
+          "141/1000",
+          "339/1000",
+          "861/1000",
+          "1059/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          9
+        ]
+      },
+      {
+        "cell_id": 93,
+        "bounds": [
+          "339/1000",
+          "381/1000",
+          "-99/1000",
+          "99/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          5,
+          10
+        ]
+      },
+      {
+        "cell_id": 94,
+        "bounds": [
+          "339/1000",
+          "381/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          5,
+          6,
+          10,
+          11
+        ]
+      },
+      {
+        "cell_id": 95,
+        "bounds": [
+          "339/1000",
+          "381/1000",
+          "141/1000",
+          "339/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          6,
+          11
+        ]
+      },
+      {
+        "cell_id": 96,
+        "bounds": [
+          "339/1000",
+          "381/1000",
+          "339/1000",
+          "381/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          6,
+          7,
+          11,
+          12
+        ]
+      },
+      {
+        "cell_id": 97,
+        "bounds": [
+          "339/1000",
+          "381/1000",
+          "381/1000",
+          "579/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          7,
+          12
+        ]
+      },
+      {
+        "cell_id": 98,
+        "bounds": [
+          "339/1000",
+          "381/1000",
+          "579/1000",
+          "621/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          7,
+          8,
+          12,
+          13
+        ]
+      },
+      {
+        "cell_id": 99,
+        "bounds": [
+          "339/1000",
+          "381/1000",
+          "621/1000",
+          "819/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          8,
+          13
+        ]
+      },
+      {
+        "cell_id": 100,
+        "bounds": [
+          "339/1000",
+          "381/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          8,
+          9,
+          13,
+          14
+        ]
+      },
+      {
+        "cell_id": 101,
+        "bounds": [
+          "339/1000",
+          "381/1000",
+          "861/1000",
+          "1059/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          9,
+          14
+        ]
+      },
+      {
+        "cell_id": 108,
+        "bounds": [
+          "381/1000",
+          "579/1000",
+          "-99/1000",
+          "99/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          10
+        ]
+      },
+      {
+        "cell_id": 109,
+        "bounds": [
+          "381/1000",
+          "579/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          10,
+          11
+        ]
+      },
+      {
+        "cell_id": 110,
+        "bounds": [
+          "381/1000",
+          "579/1000",
+          "141/1000",
+          "339/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          11
+        ]
+      },
+      {
+        "cell_id": 111,
+        "bounds": [
+          "381/1000",
+          "579/1000",
+          "339/1000",
+          "381/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          11,
+          12
+        ]
+      },
+      {
+        "cell_id": 112,
+        "bounds": [
+          "381/1000",
+          "579/1000",
+          "381/1000",
+          "579/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          12
+        ]
+      },
+      {
+        "cell_id": 113,
+        "bounds": [
+          "381/1000",
+          "579/1000",
+          "579/1000",
+          "621/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          12,
+          13
+        ]
+      },
+      {
+        "cell_id": 114,
+        "bounds": [
+          "381/1000",
+          "579/1000",
+          "621/1000",
+          "819/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          13
+        ]
+      },
+      {
+        "cell_id": 115,
+        "bounds": [
+          "381/1000",
+          "579/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          13,
+          14
+        ]
+      },
+      {
+        "cell_id": 116,
+        "bounds": [
+          "381/1000",
+          "579/1000",
+          "861/1000",
+          "1059/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          14
+        ]
+      },
+      {
+        "cell_id": 123,
+        "bounds": [
+          "579/1000",
+          "621/1000",
+          "-99/1000",
+          "99/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          10,
+          15
+        ]
+      },
+      {
+        "cell_id": 124,
+        "bounds": [
+          "579/1000",
+          "621/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          10,
+          11,
+          15,
+          16
+        ]
+      },
+      {
+        "cell_id": 125,
+        "bounds": [
+          "579/1000",
+          "621/1000",
+          "141/1000",
+          "339/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          11,
+          16
+        ]
+      },
+      {
+        "cell_id": 126,
+        "bounds": [
+          "579/1000",
+          "621/1000",
+          "339/1000",
+          "381/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          11,
+          12,
+          16,
+          17
+        ]
+      },
+      {
+        "cell_id": 127,
+        "bounds": [
+          "579/1000",
+          "621/1000",
+          "381/1000",
+          "579/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          12,
+          17
+        ]
+      },
+      {
+        "cell_id": 128,
+        "bounds": [
+          "579/1000",
+          "621/1000",
+          "579/1000",
+          "621/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          12,
+          13,
+          17,
+          18
+        ]
+      },
+      {
+        "cell_id": 129,
+        "bounds": [
+          "579/1000",
+          "621/1000",
+          "621/1000",
+          "819/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          13,
+          18
+        ]
+      },
+      {
+        "cell_id": 130,
+        "bounds": [
+          "579/1000",
+          "621/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          13,
+          14,
+          18,
+          19
+        ]
+      },
+      {
+        "cell_id": 131,
+        "bounds": [
+          "579/1000",
+          "621/1000",
+          "861/1000",
+          "1059/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          14,
+          19
+        ]
+      },
+      {
+        "cell_id": 138,
+        "bounds": [
+          "621/1000",
+          "819/1000",
+          "-99/1000",
+          "99/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          15
+        ]
+      },
+      {
+        "cell_id": 139,
+        "bounds": [
+          "621/1000",
+          "819/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          15,
+          16
+        ]
+      },
+      {
+        "cell_id": 140,
+        "bounds": [
+          "621/1000",
+          "819/1000",
+          "141/1000",
+          "339/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          16
+        ]
+      },
+      {
+        "cell_id": 141,
+        "bounds": [
+          "621/1000",
+          "819/1000",
+          "339/1000",
+          "381/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          16,
+          17
+        ]
+      },
+      {
+        "cell_id": 142,
+        "bounds": [
+          "621/1000",
+          "819/1000",
+          "381/1000",
+          "579/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          17
+        ]
+      },
+      {
+        "cell_id": 143,
+        "bounds": [
+          "621/1000",
+          "819/1000",
+          "579/1000",
+          "621/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          17,
+          18
+        ]
+      },
+      {
+        "cell_id": 144,
+        "bounds": [
+          "621/1000",
+          "819/1000",
+          "621/1000",
+          "819/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          18
+        ]
+      },
+      {
+        "cell_id": 145,
+        "bounds": [
+          "621/1000",
+          "819/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          18,
+          19
+        ]
+      },
+      {
+        "cell_id": 146,
+        "bounds": [
+          "621/1000",
+          "819/1000",
+          "861/1000",
+          "1059/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          19
+        ]
+      },
+      {
+        "cell_id": 153,
+        "bounds": [
+          "819/1000",
+          "861/1000",
+          "-99/1000",
+          "99/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          15,
+          20
+        ]
+      },
+      {
+        "cell_id": 154,
+        "bounds": [
+          "819/1000",
+          "861/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          15,
+          16,
+          20,
+          21
+        ]
+      },
+      {
+        "cell_id": 155,
+        "bounds": [
+          "819/1000",
+          "861/1000",
+          "141/1000",
+          "339/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          16,
+          21
+        ]
+      },
+      {
+        "cell_id": 156,
+        "bounds": [
+          "819/1000",
+          "861/1000",
+          "339/1000",
+          "381/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          16,
+          17,
+          21,
+          22
+        ]
+      },
+      {
+        "cell_id": 157,
+        "bounds": [
+          "819/1000",
+          "861/1000",
+          "381/1000",
+          "579/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          17,
+          22
+        ]
+      },
+      {
+        "cell_id": 158,
+        "bounds": [
+          "819/1000",
+          "861/1000",
+          "579/1000",
+          "621/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          17,
+          18,
+          22,
+          23
+        ]
+      },
+      {
+        "cell_id": 159,
+        "bounds": [
+          "819/1000",
+          "861/1000",
+          "621/1000",
+          "819/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          18,
+          23
+        ]
+      },
+      {
+        "cell_id": 160,
+        "bounds": [
+          "819/1000",
+          "861/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "4/25",
+        "strict_full_margin": "20119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          18,
+          19,
+          23,
+          24
+        ]
+      },
+      {
+        "cell_id": 161,
+        "bounds": [
+          "819/1000",
+          "861/1000",
+          "861/1000",
+          "1059/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          19,
+          24
+        ]
+      },
+      {
+        "cell_id": 168,
+        "bounds": [
+          "861/1000",
+          "1059/1000",
+          "-99/1000",
+          "99/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          20
+        ]
+      },
+      {
+        "cell_id": 169,
+        "bounds": [
+          "861/1000",
+          "1059/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          20,
+          21
+        ]
+      },
+      {
+        "cell_id": 170,
+        "bounds": [
+          "861/1000",
+          "1059/1000",
+          "141/1000",
+          "339/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          21
+        ]
+      },
+      {
+        "cell_id": 171,
+        "bounds": [
+          "861/1000",
+          "1059/1000",
+          "339/1000",
+          "381/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          21,
+          22
+        ]
+      },
+      {
+        "cell_id": 172,
+        "bounds": [
+          "861/1000",
+          "1059/1000",
+          "381/1000",
+          "579/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          22
+        ]
+      },
+      {
+        "cell_id": 173,
+        "bounds": [
+          "861/1000",
+          "1059/1000",
+          "579/1000",
+          "621/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          22,
+          23
+        ]
+      },
+      {
+        "cell_id": 174,
+        "bounds": [
+          "861/1000",
+          "1059/1000",
+          "621/1000",
+          "819/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          23
+        ]
+      },
+      {
+        "cell_id": 175,
+        "bounds": [
+          "861/1000",
+          "1059/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "141/1000",
+        "captured_mass": "2/25",
+        "strict_full_margin": "119/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          23,
+          24
+        ]
+      },
+      {
+        "cell_id": 176,
+        "bounds": [
+          "861/1000",
+          "1059/1000",
+          "861/1000",
+          "1059/1000"
+        ],
+        "closed_full_label_radius": "99/1000",
+        "captured_mass": "1/25",
+        "strict_full_margin": "199/250000",
+        "label_outside_indices": [],
+        "label_S_indices": [
+          24
+        ]
+      },
+      {
+        "cell_id": 184,
+        "bounds": [
+          "1059/1000",
+          "593/500",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "381/1000",
+        "captured_mass": "116129/200000",
+        "strict_full_margin": "1/1000000",
+        "label_outside_indices": [
+          87,
+          95,
+          96,
+          97,
+          98,
+          108,
+          109,
+          110,
+          111
+        ],
+        "label_S_indices": [
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "cell_id": 190,
+        "bounds": [
+          "1059/1000",
+          "593/500",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "381/1000",
+        "captured_mass": "116129/200000",
+        "strict_full_margin": "1/1000000",
+        "label_outside_indices": [
+          88,
+          98,
+          99,
+          100,
+          101,
+          111,
+          112,
+          113,
+          114
+        ],
+        "label_S_indices": [
+          22,
+          23,
+          24
+        ]
+      },
+      {
+        "cell_id": 199,
+        "bounds": [
+          "593/500",
+          "1313/1000",
+          "99/1000",
+          "141/1000"
+        ],
+        "closed_full_label_radius": "381/1000",
+        "captured_mass": "116129/200000",
+        "strict_full_margin": "1/1000000",
+        "label_outside_indices": [
+          87,
+          95,
+          96,
+          97,
+          98,
+          108,
+          109,
+          110,
+          111
+        ],
+        "label_S_indices": [
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "cell_id": 205,
+        "bounds": [
+          "593/500",
+          "1313/1000",
+          "819/1000",
+          "861/1000"
+        ],
+        "closed_full_label_radius": "381/1000",
+        "captured_mass": "116129/200000",
+        "strict_full_margin": "1/1000000",
+        "label_outside_indices": [
+          88,
+          98,
+          99,
+          100,
+          101,
+          111,
+          112,
+          113,
+          114
+        ],
+        "label_S_indices": [
+          22,
+          23,
+          24
+        ]
+      }
+    ],
+    "selected_count": 89,
+    "certified_area": "345909/250000",
+    "certified_area_float": 1.383636,
+    "outside_weights": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "14679/250000",
+      "16129/250000",
+      "0",
+      "12349/31250",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "168387/500000",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "16129/250000",
+      "0",
+      "0",
+      "378/3125",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "11871/200000",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "19881/250000",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "12129/200000",
+      "5161/1000000",
+      "11871/200000",
+      "83871/250000",
+      "0",
+      "0",
+      "45637/1000000",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "rationalization_scale": "1",
+    "all_caps_exact_checked": 7816,
+    "all_selected_cell_residual_rows_exact_checked": 695624,
+    "smallest_strict_full_margin": "1/1000000"
+  },
+  "seconds": 251.9947499169998
+}
