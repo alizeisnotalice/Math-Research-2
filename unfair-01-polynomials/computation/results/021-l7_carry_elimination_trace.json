@@ -1,0 +1,13 @@
+{
+  "schema": "J1236-L7-carry-elimination/v1",
+  "row_equation": "rho(P+JQ)=lambda*J, deg(P),deg(Q)<7, P,Q coefficientwise nonnegative",
+  "same_row_consequences": [
+    "[x^4] gives p4+q1+q2+q3+q4=0",
+    "[x^5] gives p5+q2+q3+q4+q5=0",
+    "therefore q1=q2=q3=q4=q5=0",
+    "[x^0..x^3] and [x^6] give Q=q0+q6*x^6 and P=(lambda-q0)*J-q6*x^6"
+  ],
+  "exact_remainder": "P+JQ-lambda*J = q6*(x^7+x^8+x^9+x^12)",
+  "global_elimination": "At row k>=1 the x^12 summand contributes q6 to degree (k+1)*7+5. The target J(x)J(x^7) has zero coefficient at every degree congruent to 5 modulo 7, and all other product contributions are nonnegative. Hence q6=0.",
+  "result": "The width-7 row lemma has the same conclusion as the L>=8 lemma once the next-row zero coefficient is used."
+}

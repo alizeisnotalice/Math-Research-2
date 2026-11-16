@@ -1,0 +1,154 @@
+{
+  "search": {
+    "degree": 8,
+    "binary": true,
+    "minimum_support": 6,
+    "mask_order": "increasing seven-bit x^1..x^7 integer",
+    "candidates_checked": 5,
+    "excluded": [
+      [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    ]
+  },
+  "certificates": [
+    {
+      "name": "second_degree8_binary_nonreciprocal_no_real_roots",
+      "degree": 8,
+      "coefficients_ascending": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "sha256": "d28d637f4b3c89eaca226ef9810029352bb0b0020a96d0b17a48f6ec985f5bdf",
+      "exact_real_root_count_method": "SymPy Poly.count_roots(-oo, oo), Sturm sequence",
+      "exact_real_root_count": 0,
+      "support_size": 7,
+      "nonreciprocal": true,
+      "reductions": [
+        {
+          "prime": 2,
+          "factors": [
+            {
+              "coefficients_ascending": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "multiplicity": 1
+            }
+          ]
+        },
+        {
+          "prime": 7,
+          "factors": [
+            {
+              "coefficients_ascending": [
+                6,
+                1
+              ],
+              "multiplicity": 1
+            },
+            {
+              "coefficients_ascending": [
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                1,
+                1
+              ],
+              "multiplicity": 1
+            }
+          ]
+        },
+        {
+          "prime": 17,
+          "factors": [
+            {
+              "coefficients_ascending": [
+                8,
+                15,
+                1
+              ],
+              "multiplicity": 1
+            },
+            {
+              "coefficients_ascending": [
+                4,
+                7,
+                6,
+                1
+              ],
+              "multiplicity": 1
+            },
+            {
+              "coefficients_ascending": [
+                8,
+                13,
+                13,
+                1
+              ],
+              "multiplicity": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

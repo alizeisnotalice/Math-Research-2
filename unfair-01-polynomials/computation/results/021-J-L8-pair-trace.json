@@ -1,0 +1,89 @@
+{
+  "status": "exact_integer_pair_trace_verified",
+  "support": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    8,
+    9,
+    10,
+    11,
+    14,
+    16,
+    17,
+    18,
+    19,
+    22,
+    24,
+    25,
+    26,
+    27,
+    30,
+    48,
+    49,
+    50,
+    51,
+    54
+  ],
+  "trace": [
+    {
+      "zero_target": 15,
+      "pair": [
+        9,
+        6
+      ],
+      "forced": "A9"
+    },
+    {
+      "zero_target": 12,
+      "pair": [
+        2,
+        10
+      ],
+      "forced": "B10"
+    },
+    {
+      "unit_target": 10,
+      "only_pair": [
+        10,
+        0
+      ],
+      "forced": "A10"
+    },
+    {
+      "zero_target": 15,
+      "pair": [
+        14,
+        1
+      ],
+      "forced": "A14"
+    },
+    {
+      "unit_target": 14,
+      "only_pair": [
+        0,
+        14
+      ],
+      "forced": "B14"
+    }
+  ],
+  "contradiction": {
+    "degree": 16,
+    "target": 1,
+    "known_nonnegative_contributions": [
+      [
+        10,
+        6,
+        1
+      ],
+      [
+        2,
+        14,
+        1
+      ]
+    ],
+    "lower_bound": 2
+  }
+}

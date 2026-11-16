@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-16",
+  "python": "3.13.18",
+  "exact_checks": [
+    {
+      "script": "check_P8_stretch.py",
+      "source_sha256": "4cdd34a0c5d3dc483227c2c145823d943d5c9ab528fd6db979815e6b88693d25",
+      "exit_code": 0,
+      "stdout": "{'status': 'passed', 'L_checked': [9, 200], 'support_size': 49, 'zero_coefficients': [9, 10, 12], 'nonzero_translation_stabilizers_found': 0}"
+    },
+    {
+      "script": "check_Q8_support.py",
+      "source_sha256": "60d068e63180122ba0591aa773f4699db5933eac203f6b390201fbc14c127a54",
+      "exit_code": 0,
+      "stdout": "{'status': 'passed', 'L_checked': [9, 200], 'Q8_support_size': 36, 'Q8_nonzero_stabilizers': 0, 'L9_T_to_S_nonzero_inclusions': 0}"
+    },
+    {
+      "script": "verify_l8_exception_trace.py",
+      "source_sha256": "f893102b9ed5a9ec54b07382bdd206e837723657b0c39464b0548b4835cdfe1a",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"verified\",\n  \"target_degree\": 54,\n  \"target_support\": [\n    0,\n    1,\n    2,\n    3,\n    6,\n    8,\n    9,\n    10,\n    11,\n    14,\n    16,\n    17,\n    18,\n    19,\n    22,\n    24,\n    25,\n    26,\n    27,\n    30,\n    48,\n    49,\n    50,\n    51,\n    54\n  ],\n  \"c8\": \"a8+b8+1\",\n  \"c10\": \"a10\",\n  \"c14\": \"b14\",\n  \"c16\": \"a16+b16+2\",\n  \"target_c16\": 1\n}"
+    },
+    {
+      "script": "verify_l7_u_zero_trace.py",
+      "source_sha256": "e325284b770bbeb2bff271b000698919ada3c664de89f6417caa9d326ad40923",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"verified\", \"c11\": \"u-v+b9+b10\", \"c12\": \"t*(1-t)\", \"t0_c10\": \"a10\", \"t0_c13\": \"a13+b13\", \"t0_c16\": \"a16+b16+2\", \"target_c16\": 1}"
+    },
+    {
+      "script": "verify_l7_nonblock_elimination.py",
+      "source_sha256": "8353e0c0f7abdce5f8d4fe5d52512bc32bf5b4743ff22c96629911de1648d35a",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"verified\", \"branches\": [\"V\", \"EA\"], \"conclusion\": \"The two non-block bottom branches EA and V have no nonnegative extension. Together with U and its swap EB, every L=7 factorization starts in a block orientation (J,1) or (1,J).\"}"
+    },
+    {
+      "script": "verify_l7_carry_elimination.py",
+      "source_sha256": "b48d1e9f40f7df908deca802b244510e07c2df223f808c07b58608c216fb79cf",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"verified\",\n  \"remainder\": \"q6*x**12 + q6*x**9 + q6*x**8 + q6*x**7\",\n  \"zero_target_degrees_checked\": [\n    19,\n    26,\n    33,\n    40,\n    47,\n    54,\n    61\n  ],\n  \"result\": \"The width-7 row lemma has the same conclusion as the L>=8 lemma once the next-row zero coefficient is used.\"\n}"
+    },
+    {
+      "script": "test_ds_resume_ledger.py",
+      "source_sha256": "63b4fa56e57c5292ad83fee3a3ea20e0eb341083f9290bf00e679f9793711064",
+      "exit_code": 0,
+      "stdout": "resume-ledger regression: PASS (seed later E, extend 4->8, reject shrink/mismatch)"
+    },
+    {
+      "script": "check_J_L8_parent.py",
+      "source_sha256": "9c04bbc744494980668809d2e6e1dc7a7310988a4246782e6f7bec638c8c19f7",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"exact_integer_pair_trace_verified\", \"support\": [0, 1, 2, 3, 6, 8, 9, 10, 11, 14, 16, 17, 18, 19, 22, 24, 25, 26, 27, 30, 48, 49, 50, 51, 54], \"trace\": [{\"zero_target\": 15, \"pair\": [9, 6], \"forced\": \"A9\"}, {\"zero_target\": 12, \"pair\": [2, 10], \"forced\": \"B10\"}, {\"unit_target\": 10, \"only_pair\": [10, 0], \"forced\": \"A10\"}, {\"zero_target\": 15, \"pair\": [14, 1], \"forced\": \"A14\"}, {\"unit_target\": 14, \"only_pair\": [0, 14], \"forced\": \"B14\"}], \"contradiction\": {\"degree\": 16, \"target\": 1, \"known_nonnegative_contributions\": [[10, 6, 1], [2, 14, 1]], \"lower_bound\": 2}}"
+    }
+  ],
+  "full_and_partial_ds_verifications": [
+    "021-P8-L9-independent.json",
+    "021-P8-L10-independent.json",
+    "021-Q8-L9-independent.json",
+    "021-R8-L9-independent.json"
+  ],
+  "full_mode_rejected_incomplete_ledger": true,
+  "v2_v3_saved_E_progress_identical": true,
+  "v2_v3_existing_helpers_ast_identical_except_main": true,
+  "mp_independent": {
+    "samples": 44,
+    "options": 2048,
+    "verifier_sha256": "7268913b6c699578f4c4d921ca61eb8b6b641e818c2f38cff8b76dd33c7c2caa"
+  },
+  "claims": "Exact support/formula checks supplement proofs; GPU records and saved samples are numerical, not algebraic exclusion."
+}
