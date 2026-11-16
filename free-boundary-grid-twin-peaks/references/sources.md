@@ -6,3 +6,5 @@
 - GitHub 文件限制：https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github 。2026-11-15 实查，50 MiB 警告、100 MiB 阻止；项目执行更严格的单文件 10 MiB 默认。
 
 - 第2轮独立子任务初始面积阶界：/Volumes/data/CodexTemp/T2/a022-r-lower/r_lower_bound.md；SHA-256 `95ac5006706fd4b48c45faabf3ec5afff893629f1d8d8853072fb03f7ba359f3`。已逐步核验提升合法性、层析计数和逆像；主Agent进一步推导逐输出权重、远峰下界及精确逆像公式，见proofs/weighted-promotion.md。
+
+- 第18轮于2026-11-16重新核读 Twin peaks v2 §1–2、§4–5；继续区分环面猜想、自由方格粗糙边界定理和固定宽矩形。新根矩/可拆分支/前缀核结论为本项目自写推导，不声称来自该论文。

@@ -1,0 +1,133 @@
+{
+  "source": "exact prescribed peak-pair DP",
+  "results": [
+    {
+      "n": 3,
+      "A2": 143808,
+      "ordered_root_covariance_about_center": {
+        "Var_Xx": "1055/1498",
+        "Var_Xy": "1055/1498",
+        "Cxx": "-85/214",
+        "Cyy": "-85/214",
+        "Cxy": "0",
+        "dot_covariance": "-85/107",
+        "E_norm_X_minus_c_sq": "1055/749",
+        "E_root_distance_sq_from_variance_identity": "3300/749",
+        "Q_times_n_sq": "3300/749"
+      },
+      "orbit_summed_vertical_reflection": {
+        "definition": "strict left/right only; compare total cross-side peak-pair mass to same-side mass",
+        "same_side_mass": 5376,
+        "cross_side_mass": 62496,
+        "cross_minus_same": 57120,
+        "holds_cross_ge_same": true
+      },
+      "anchor_summed_vertical_reflection": {
+        "definition": "for each strict-left anchor p, sum eligible q in strict-left and compare K(p,refl(q)) to K(p,q)",
+        "anchors": {
+          "holds": 2
+        },
+        "examples": {
+          "holds": {
+            "anchor_p": [
+              0,
+              0
+            ],
+            "same_side_sum": 2688,
+            "reflected_cross_sum": 7872
+          }
+        }
+      },
+      "toward_reflection_candidate": {
+        "definition": "if x-reflection of q strictly reduces d1(p,q), require K(p,refl(q)) >= K(p,q)",
+        "comparisons": {
+          "fails": 4
+        },
+        "examples": {
+          "fails": {
+            "p": [
+              0,
+              0
+            ],
+            "far_q": [
+              2,
+              2
+            ],
+            "reflected_q": [
+              0,
+              2
+            ],
+            "far_distance": 4,
+            "near_distance": 2,
+            "K_near": 2688,
+            "K_far": 7872
+          }
+        }
+      }
+    },
+    {
+      "n": 4,
+      "A2": 779299174080,
+      "ordered_root_covariance_about_center": {
+        "Var_Xx": "1598475587/1391605668",
+        "Var_Xy": "1598475587/1391605668",
+        "Cxx": "-188808541/347901417",
+        "Cyy": "-188808541/347901417",
+        "Cxy": "0",
+        "dot_covariance": "-377617082/347901417",
+        "E_norm_X_minus_c_sq": "1598475587/695802834",
+        "E_root_distance_sq_from_variance_identity": "784569917/115967139",
+        "Q_times_n_sq": "784569917/115967139"
+      },
+      "orbit_summed_vertical_reflection": {
+        "definition": "strict left/right only; compare total cross-side peak-pair mass to same-side mass",
+        "same_side_mass": 191585447680,
+        "cross_side_mass": 587713726400,
+        "cross_minus_same": 396128278720,
+        "holds_cross_ge_same": true
+      },
+      "anchor_summed_vertical_reflection": {
+        "definition": "for each strict-left anchor p, sum eligible q in strict-left and compare K(p,refl(q)) to K(p,q)",
+        "anchors": {
+          "holds": 8
+        },
+        "examples": {
+          "holds": {
+            "anchor_p": [
+              0,
+              0
+            ],
+            "same_side_sum": 21223190080,
+            "reflected_cross_sum": 49165450520
+          }
+        }
+      },
+      "toward_reflection_candidate": {
+        "definition": "if x-reflection of q strictly reduces d1(p,q), require K(p,refl(q)) >= K(p,q)",
+        "comparisons": {
+          "fails": 72
+        },
+        "examples": {
+          "fails": {
+            "p": [
+              0,
+              0
+            ],
+            "far_q": [
+              2,
+              1
+            ],
+            "reflected_q": [
+              1,
+              1
+            ],
+            "far_distance": 3,
+            "near_distance": 2,
+            "K_near": 3065702640,
+            "K_far": 9964924200
+          }
+        }
+      }
+    }
+  ]
+}
