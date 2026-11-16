@@ -11,3 +11,5 @@
 | [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；q≤20短侧交叉最小反例下降；六点≤42／九点≤34严格覆盖 | 第35轮完成 | 任意q的内部单位传播与交叉结构入口 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
+
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；初始化 | 第0轮 | 双线研究与精确基线 |
