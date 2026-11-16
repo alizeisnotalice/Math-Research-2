@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "method": "independent full-subset boundary h DP vs independent-set D4 sum",
+  "cases": [
+    {
+      "n": 3,
+      "matched_fields": [
+        "Btop2",
+        "D",
+        "F",
+        "G",
+        "Manhattan_histogram"
+      ],
+      "reference_sha256": "de199d8c636288e72520d5c9596f12c336b22588b1f415d95a2e8a1f27e51e9f",
+      "D4_sha256": "8893bab119d1ba2a483e7b2a8ef8787f10c89ace5d6929110db094e3ab175cbd"
+    },
+    {
+      "n": 4,
+      "matched_fields": [
+        "Btop2",
+        "D",
+        "F",
+        "G",
+        "Manhattan_histogram"
+      ],
+      "reference_sha256": "29c38db92125ec401a8760427efbe136ad3213f7fb289d5da37432a1ebf1ab99",
+      "D4_sha256": "ff4d5eb9ec619fb3139f82ee499b31473f3247e82e63363e2b72a0565507dadc"
+    },
+    {
+      "n": 5,
+      "matched_fields": [
+        "Btop2",
+        "D",
+        "F",
+        "G",
+        "Manhattan_histogram"
+      ],
+      "reference_sha256": "beab9bee70b316b048cef6446649e743b8b62513f888b685537dac0b947c42ab",
+      "D4_sha256": "3e977383a9505950b8871a9893bdef8f355ce528e36c66ea77b39340cfdfb284"
+    }
+  ],
+  "raw_D4_derived_Q_erratum": "tau2_metrics.Q_den and K2_compare.Q_den in raw JSON lack n^2; integer numerators/counts valid; use corrected summary-n3-n7.json for Q."
+}

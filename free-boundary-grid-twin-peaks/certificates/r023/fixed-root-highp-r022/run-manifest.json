@@ -1,0 +1,12 @@
+{
+  "scope": "Independent r22 high-particle fixed-root normalizer runs; finite SMC only.",
+  "source_sha256": "b6fc769e5f496146b9473b8dc66e2ece122cd4a18cd329f0d1bb845c6dbd84bd",
+  "binary_sha256": "a68b56b73100559f261633505c2c7d417f0c14035986950f74c1a8c5c861dfe9",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+  "compile_command": "CLANG_MODULE_CACHE_PATH=/Volumes/data/CodexTemp/cache/clang c++ -O3 -std=c++20 -pthread -fmodules-cache-path=/Volumes/data/CodexTemp/cache/clang fixed_root_smc.cpp -o fixed_root_smc",
+  "coordinate_roots": [[0, 0], [1, 0], [1, 1]],
+  "vertex_rule": "root=y*11+x; adjacent coordinates are asserted to have Manhattan distance 1",
+  "parameters_per_root": {"n": 11, "P": 262144, "R": 256, "L": 16, "threads": 12},
+  "seed_rule": "0xA0228000 + root*2^36; program derives replicate seed deterministically",
+  "normalizer": "h_root: count of high-to-low labelled one-peak orders whose first/highest-labelled peak is root; not divided by N!"
+}

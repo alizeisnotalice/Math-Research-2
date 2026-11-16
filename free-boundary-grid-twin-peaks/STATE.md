@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-16，本地第22轮完成。**原题开放；用户总目标仍active。**
+2026-11-16，本地第23轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/022.md；新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/023.md；新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -60,4 +60,16 @@
 
 第21轮：全n合法helper加权账本Σ(R−P)/(N−R−1)≤32A₂,d3已证；完整方格N−3大纤维族排除单槽常数重数。n≥7局部domino固定外部标签的四峰族在8!重排后仍≥3峰，否定固定局部消峰加强。原一峰根传输核精确可逆；二项式根比较若成立则A₁/a角≤16^{n−1}，但比较本身未证；精确49根计数将有限核验推至n7。CPU n11 m4≈6082.45、m5≈21316.29；GPU n12 m2≈65.78469、m3≈1244.21001，仅数值。终端逆纤维并行优化及n32逐rank审计通过；已完成进程退出，原GPU生产批继续。原题开放，总目标active。
 
-第22轮：严格得到第二出生τ2切片的L加权重构A₂与完整根矩，并证明理想随机/精确算术SMC未归一化一阶期望；与首次合并θ互逆的条件平均连接已全n推导。n3独立全9!逐距离×出生秩核验。domino有向cover常数修正192/384/288；n3/n4双侧cover完整整数DP通过，n4平均秩比约.272036。n16 P1048576完整4080记录核验，Q≈.301489仅数值；τ4权重集中且层估计逆单调，不能据此宣称精度。原进程已退出。新τ2终端及最短路终端独立trace通过，GPU共享负载实测100%，生产续算。原题开放，总目标active。
+第22轮：严格得到第二出生τ2切片的L加权重构A₂与完整根矩，并证明理想随机/精确算术SMC未归一化一阶期望；与首次合并θ互逆的条件平均连接已全n推导。n3独立全9!逐距离×出生秩核验。domino有向cover常数修正192/384/288；n3/n4双侧cover完整整数DP通过，n4平均秩比约.27203544。n16 P1048576完整4080记录核验，Q≈.301489仅数值；τ4权重集中且层估计逆单调，不能据此宣称精度。原进程已退出。新τ2终端及最短路终端独立trace通过，GPU共享负载实测100%，生产续算。原题开放，总目标active。
+
+## 第23轮追加（2026-11-16）
+
+本地第23轮完成；**原题仍开放，总目标 active。**
+
+- 严格证明：对每个 \(n\ge3\)、\(3\le k\le N-3\)，合法低根状态的首邻点激活概率最小值恰为 \(2/(N-k-1)\)。角点冗余构造达到等号，严格否定逐状态 \(c/\sqrt{k}\) 与最终 \(c/(k+1)\) 下界；该事实不控制状态的 \(\tau=2\) 权重。
+- 严格证明：固定首次合并纤维中 \(L\) 的完整尾、均值和二阶矩；方向平均后 \(E(L^2\mid a,b)\le4m(a,b)^2\)，且参数常数 4 sharp。完整 \(K=2\) 根几何仍需控制 \(m=1/\theta\) 与几何的跨纤维相关性。
+- 精确有限：\(\tau=2\) D4 整数递推至 n=7，独立 full-subset DP 核验 n=3..5。n=7 的 \(Q_{\tau=2}\approx.3426392337\)，\(Q_2\approx.3444183148\)。原 D4 raw 的两项 Q 派生展示分母漏 \(n^2\)，整数原始字段正确；权威摘要已修正。
+- 精确有限：n=5 helper DP 的 172 个检查点全部通过，所选加权平均约 .1919835978。
+- 有限数值：新的 \(\tau=2\) 提升核给 n=8/n=12 的 \(Q\) 约 .3350861/.3188731；有限 SMC 误差和混合均未认证。n=16 一峰测地批 normalizer ESS 很低，不能作渐近推断。
+
+第一未证步骤不变：证明线需控制 \(W\) 加权根几何的 \(o(n^2)\) 量级；证伪线需归一化后的固定远峰质量。第22轮报告中的 n=4 helper 小数 `.272036` 应勘正为 `.27203544`（分数 `217637729/800034474`）。
