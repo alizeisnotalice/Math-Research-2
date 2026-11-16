@@ -1,0 +1,164 @@
+{
+  "schema": "r081-dual-component-v1",
+  "round": 81,
+  "title": "Shared-side capacity payment for a fixed twelve-source alternating family",
+  "review_status_at_manifest_generation": "Independent full-proof mathematical read PASS received; independent producer replay pending at generation",
+  "payload": [
+    {
+      "path": "proofs/r081-dual-shared-side-corner-payment.md",
+      "bytes": 10873,
+      "sha256": "34a04ee2b12bd770b8da42a728ae96d14c15d97e429de67ac35d574f52d851a2"
+    },
+    {
+      "path": "computation/round081-dual/check_shared_side_constants.py",
+      "bytes": 6794,
+      "sha256": "34bcf455634e5104f1977b0dbabc472630eb9a8f9a8d09273178200f8dc77ee2"
+    },
+    {
+      "path": "computation/inputs/r081-dual/shared-side-constants.json",
+      "bytes": 479,
+      "sha256": "135d3b94345272754b11f232422a8e6a09d14433f185fa40125aa6a8f5a0be07"
+    },
+    {
+      "path": "computation/results/round081-dual/checks.json",
+      "bytes": 3745,
+      "sha256": "6ce0b0f5c4810a71de4d0c271b71422f41aa9d6ae8bc9c2cfff48465a3d7010d"
+    }
+  ],
+  "payload_bytes": 21891,
+  "mathematical_scope": {
+    "family": "Fixed w=.999,d=.355,D=.855 and alternating affine masses, t in [1/4,499/1000]",
+    "hypothesis": "One actual input with all global square caps; producer separately certifies complete requested interval",
+    "uniform_corner_sum_strict_upper": "481/1000",
+    "uniform_full_deletion_strict_upper": "3480997/1000000",
+    "near_uniform_costs": "Two even <63/1000 and two odd <1/10, from original local3 and same residual",
+    "joint_shared_budget": "sum(B-B0)+<=10719/20000; kappa=1143/4000",
+    "ties": "Both computed endpoints have five maximum-block ties; no uniqueness asserted"
+  },
+  "explicit_limits": [
+    "Not a general consequence of four arbitrary shared-side inequalities alone",
+    "Positions and alternating mass assignment essential; arbitrary internal profiles/outside positions/rank not treated",
+    "No equal per-corner quota or local mP/2 lemma",
+    "The affine-cost counterexample is uncapped and does not refute a globally capped version"
+  ],
+  "actual_execution": {
+    "receipt_in": "computation/results/round081-dual/checks.json",
+    "caller_observed_exit_code": 0,
+    "pid": 30009,
+    "process_absent_after_completion": true,
+    "pid_absence_check": "ps -p PID -o pid= exit1, empty stdout",
+    "seconds": 0.010109875001944602,
+    "no_parameter_sampling": true,
+    "no_area_union": true,
+    "no_cap_polytope_rerun": true
+  },
+  "external_producer_bindings": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/inputs/r081-compute/family.json",
+      "bytes": 1587,
+      "sha256": "e1c332c16b05f0a19171997a79bea6c08690dd43c7204d844e6f435db6b01402",
+      "role": "Raw actual twelve-source affine family; source binding checked, no compression"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round081-compute/shared_side_family.py",
+      "bytes": 12233,
+      "sha256": "4588762fb1fb0815cc6c58e3eeeabf7823fd552f1450097229932a60bc907289",
+      "role": "Producer code; complete cap polytope and endpoint areas not rerun by this author"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round081-compute/production/summary.json",
+      "bytes": 56141,
+      "sha256": "c13f03d5cad6048380bdce24eae8b3a2ffdd2b1dc57084b67816f5c11fe52d30",
+      "role": "Producer exact cap interval [0,1/2] and two endpoint outputs; independent replay belongs to separate audit"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round081-compute/production/lower-result.json",
+      "bytes": 117509,
+      "sha256": "7be7d7e407032d8e64b68dc8ebbe99b5633b9e9c2399f46ab68453a0c82875f3",
+      "role": "Imported lower endpoint full/residual area certificate, not used to prove uniform area inequality"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round081-compute/production/upper-result.json",
+      "bytes": 119692,
+      "sha256": "1e1594111eaae9ac3d4bd57f84290ceac26fedbf5af67d02569428f5174d6f6b",
+      "role": "Imported upper endpoint full/residual area certificate, not used to prove uniform area inequality"
+    }
+  ],
+  "inherited_sources_read": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r063-maximal-compact-block-deletion.md",
+      "bytes": 14261,
+      "sha256": "250c403cec2fa265e91867f5db576aefdf60c3e88e00f634f900201817c48568",
+      "scope": "Read as inherited prior result, not computationally rerun here"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r068-residual-halo-exclusion-and-central-exactness.md",
+      "bytes": 6071,
+      "sha256": "14a0e577120d3165f28b91ebd51c5f1d3130cdaf5060bf254f676c2fa2eb0d1f",
+      "scope": "Read as inherited prior result, not computationally rerun here"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r068-support-tree-payment-and-chain-union.md",
+      "bytes": 9815,
+      "sha256": "394274bda0a66e498395eaa06b3cd3ac4bd0b2291903d37b173ed486fd32d831",
+      "scope": "Read as inherited prior result, not computationally rerun here"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r069-single-residual-halfplane-credit-payment.md",
+      "bytes": 6616,
+      "sha256": "ef1d2399555289e5832dd77ec2942f02811806cae38096ce50520fd6dd394bbd",
+      "scope": "Read as inherited prior result, not computationally rerun here"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r070-balanced-four-corner-arbitrary-outside-payment.md",
+      "bytes": 7944,
+      "sha256": "8343efa6e70dcb8df3e2f605bb08963989d85e9ad93741a20ffc89cd48083d80",
+      "scope": "Read as inherited prior result, not computationally rerun here"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r070-four-corner-radius-envelope-obstruction.md",
+      "bytes": 3383,
+      "sha256": "94226fade8d92d444318d3e76e4c24d6e46b5465279af10546b58275bc6f50c8",
+      "scope": "Read as inherited prior result, not computationally rerun here"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r070-captured-mass-radius-and-prefix-compatibility.md",
+      "bytes": 9194,
+      "sha256": "43054eb9d7ec35b8bf8cd27067fb2360ca4ba13c2de012b7bdb8cc890030989d",
+      "scope": "Read as inherited prior result, not computationally rerun here"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r074-corner-localization-and-borel-half-mass-obstruction.md",
+      "bytes": 14165,
+      "sha256": "406a08d287ff3478ac9466dbe7323283abffc77409a2130ffc0e19a5eeeced49",
+      "scope": "Read as inherited prior result, not computationally rerun here"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r074-single-effective-outside-corner-payment.md",
+      "bytes": 10474,
+      "sha256": "d5e1dd01b5a390ed7cd832909f244de0ddf9175ecb0c96669e15dd365cb3fa39",
+      "scope": "Read frozen one-effective-outside proof; not rerun"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r080-balanced-corner-halfmass-obstruction.md",
+      "bytes": 9286,
+      "sha256": "9ce460cd9c16979e870ba46171a5bc071fde05cd0835109cd1fd5b1a081d4022",
+      "scope": "Frozen actual single-corner obstruction; preceding payload pins verified unchanged"
+    }
+  ],
+  "portable_reproduction": {
+    "working_directory": "topic directory planar-centered-square-weak11",
+    "argv": [
+      "python3",
+      "computation/round081-dual/check_shared_side_constants.py",
+      "--input",
+      "computation/inputs/r081-dual/shared-side-constants.json",
+      "--producer-family",
+      "PATH_TO_BOUND_PRODUCER_FAMILY_JSON",
+      "--output",
+      "computation/results/round081-dual/checks.json"
+    ]
+  },
+  "R79_R80_payload_pins_checked_unchanged": true,
+  "git": "No commit/push; only new r081-dual files written"
+}

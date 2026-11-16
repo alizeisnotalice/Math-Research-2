@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "scope": "One fixed twelve-source family; exact constants and source binding only, no area integration, cap-polytope rerun, parameter sampling, or uniform B&B",
+  "family_source_binding": {
+    "positions": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "999/1000",
+        "0"
+      ],
+      [
+        "999/1000",
+        "999/1000"
+      ],
+      [
+        "0",
+        "999/1000"
+      ],
+      [
+        "-71/200",
+        "0"
+      ],
+      [
+        "0",
+        "-171/200"
+      ],
+      [
+        "999/1000",
+        "-71/200"
+      ],
+      [
+        "927/500",
+        "0"
+      ],
+      [
+        "677/500",
+        "999/1000"
+      ],
+      [
+        "999/1000",
+        "927/500"
+      ],
+      [
+        "0",
+        "677/500"
+      ],
+      [
+        "-171/200",
+        "999/1000"
+      ]
+    ],
+    "mass_affine": [
+      [
+        "0",
+        "1/4"
+      ],
+      [
+        "0",
+        "1/4"
+      ],
+      [
+        "0",
+        "1/4"
+      ],
+      [
+        "0",
+        "1/4"
+      ],
+      [
+        "0",
+        "1/4"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "-1",
+        "1/2"
+      ],
+      [
+        "0",
+        "1/4"
+      ],
+      [
+        "0",
+        "1/4"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "-1",
+        "1/2"
+      ],
+      [
+        "0",
+        "1/4"
+      ]
+    ],
+    "four_shared_side_mass_affine": [
+      [
+        "0",
+        "1/2"
+      ],
+      [
+        "0",
+        "1/2"
+      ],
+      [
+        "0",
+        "1/2"
+      ],
+      [
+        "0",
+        "1/2"
+      ]
+    ]
+  },
+  "analytic_constants": {
+    "even_near_upper": "24359/390625",
+    "odd_inactive_upper": "84051/1000000",
+    "odd_active_upper": "46573/500000",
+    "reverse_Cauchy_squared_margin": "8889/1000000",
+    "joint_threshold_B0": "19241/40000",
+    "joint_derivative_upper": "1143/4000",
+    "hinge_constant_branch": "759/10000",
+    "hinge_global_upper": "10719/20000",
+    "joint_sum_upper": "12251817/80000000",
+    "near_sum_strict_upper": "163/500",
+    "corner_sum_strict_upper": "481/1000",
+    "noncorner_container_area": "2999997/1000000",
+    "complete_deletion_strict_upper": "3480997/1000000",
+    "target_margin": "19003/1000000"
+  },
+  "uncapped_affine_counterexample": {
+    "exact_area": "(161-11sqrt(101))/200",
+    "strictly_above": "201/800",
+    "sqrt101_strict_upper": "443/44",
+    "global_unit_cap_fails": true
+  },
+  "receipt": {
+    "pid": 30009,
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "working_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources",
+    "actual_command": [
+      "/Users/zzh/.local/bin/python3",
+      "planar-centered-square-weak11/computation/round081-dual/check_shared_side_constants.py",
+      "--input",
+      "planar-centered-square-weak11/computation/inputs/r081-dual/shared-side-constants.json",
+      "--producer-family",
+      "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/inputs/r081-compute/family.json",
+      "--output",
+      "planar-centered-square-weak11/computation/results/round081-dual/checks.json"
+    ],
+    "input_sha256": "135d3b94345272754b11f232422a8e6a09d14433f185fa40125aa6a8f5a0be07",
+    "script_sha256": "34bcf455634e5104f1977b0dbabc472630eb9a8f9a8d09273178200f8dc77ee2",
+    "producer_family_sha256": "e1c332c16b05f0a19171997a79bea6c08690dd43c7204d844e6f435db6b01402",
+    "seconds": 0.010109875001944602,
+    "random_seed": null,
+    "tolerance": "exact Fraction; none",
+    "area_or_parameter_search_performed": false,
+    "cap_polytope_rerun": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "r081-shared-side-compute-component-manifest-v1",
+  "frozen_payload": true,
+  "independent_review_at_freeze": "pending independent endpoint/cap replay; separate uniform theory not asserted here",
+  "files": [
+    {
+      "path": "computation/round081-compute/shared_side_family.py",
+      "bytes": 12233,
+      "sha256": "4588762fb1fb0815cc6c58e3eeeabf7823fd552f1450097229932a60bc907289"
+    },
+    {
+      "path": "computation/round081-compute/regional_credit_postprocess.py",
+      "bytes": 4400,
+      "sha256": "8e9eb50beebb843e39543fd3e04f42fcb1c35ef29552935ed0933c22aa41cc79"
+    },
+    {
+      "path": "computation/round081-compute/README.md",
+      "bytes": 7803,
+      "sha256": "026e1823501b54a39bd8a8f0f5d6193fd68b495c3454763a83df5f812c34c045"
+    },
+    {
+      "path": "computation/inputs/r081-compute/family.json",
+      "bytes": 1587,
+      "sha256": "e1c332c16b05f0a19171997a79bea6c08690dd43c7204d844e6f435db6b01402"
+    },
+    {
+      "path": "computation/inputs/r081-compute/endpoints/lower.json",
+      "bytes": 909,
+      "sha256": "83956b342d4967244e0f71d322fbc10362451d59a22807da025152d75d4a74a1"
+    },
+    {
+      "path": "computation/inputs/r081-compute/endpoints/upper.json",
+      "bytes": 930,
+      "sha256": "1aff59b6d99c41c81351ed2280480572bd0f689865198d1be2b4115d02631604"
+    },
+    {
+      "path": "computation/results/round081-compute/production/summary.json",
+      "bytes": 56141,
+      "sha256": "c13f03d5cad6048380bdce24eae8b3a2ffdd2b1dc57084b67816f5c11fe52d30"
+    },
+    {
+      "path": "computation/results/round081-compute/production/lower-result.json",
+      "bytes": 117509,
+      "sha256": "7be7d7e407032d8e64b68dc8ebbe99b5633b9e9c2399f46ab68453a0c82875f3"
+    },
+    {
+      "path": "computation/results/round081-compute/production/upper-result.json",
+      "bytes": 119692,
+      "sha256": "1e1594111eaae9ac3d4bd57f84290ceac26fedbf5af67d02569428f5174d6f6b"
+    },
+    {
+      "path": "computation/results/round081-compute/regional-credit-diagnostics.json",
+      "bytes": 18757,
+      "sha256": "fd9d453e3d6c037de7a35df731a7eab53b0d6f5739335871e3592a88fd6d3648"
+    },
+    {
+      "path": "computation/results/round081-compute/process-receipt.json",
+      "bytes": 1473,
+      "sha256": "83e205536143e56d424bfa66939d13fcdd8c191aab9dffd7f92ea95150b24b16"
+    },
+    {
+      "path": "computation/results/round081-compute/regional-process-receipt.json",
+      "bytes": 1277,
+      "sha256": "389006f768cb070616e2b4bbc6e9b93429b1acbb718e2984390c25c95bb6b8d5"
+    },
+    {
+      "path": "computation/results/round081-compute/source-reading-ledger.json",
+      "bytes": 3648,
+      "sha256": "8cde0a3a7f236628c4efd193d52edd4b3388c47a267dd66518d77c8728b1187f"
+    }
+  ],
+  "file_count": 13,
+  "total_bytes": 346359,
+  "frozen_dependency": {
+    "path": "computation/round075/certify_three_atom_collapse.py",
+    "sha256": "a93cf5a038ae2579326e8c48170bfa102f9735cda982878fa75b95a5e91a4456"
+  },
+  "process_exit_checks": [
+    {
+      "receipt": "process-receipt.json",
+      "pid": 26771,
+      "exit_code": 0,
+      "observed_absent": true
+    },
+    {
+      "receipt": "regional-process-receipt.json",
+      "pid": 27824,
+      "exit_code": 0,
+      "observed_absent": true
+    }
+  ],
+  "actual_source_qualification_and_endpoint_batches": 1,
+  "saved_geometry_regional_postprocesses": 1,
+  "parameter_samples": 2,
+  "uniform_parameter_area_certificate": false,
+  "scope": "One fixed shared-side alternating12position family, exact fullcap interval and two legal endpoints with fullactual five-region geometry/shared residual. Per-corner excess/reserve retained as bookkeeping, no general aggregate proof or C2 bound. No MATLAB/newagent/commit/push; older frozen rounds unchanged."
+}
