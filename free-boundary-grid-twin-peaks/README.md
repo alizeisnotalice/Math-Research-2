@@ -11,3 +11,5 @@
 临时输出统一位于 /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks。尚未执行的实验不算证据。
 
 最新完整报告：[第12轮](rounds/012.md)。首次合并的均值/方差和根深度证书见 `certificates/r012-first-merge/`；原条件律SMC及选父审计见 `certificates/r012-tau-smc/`、`certificates/r012-gpu-parent/`。原题仍开放。
+
+最新完整报告：[第13轮](rounds/013.md)，含通用晚合并归一化引理与实际满负载GPU批。原题仍开放。

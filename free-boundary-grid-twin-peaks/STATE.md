@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-16，本地第12轮完成。**原题开放；用户总目标仍active。**
+2026-11-16，本地第13轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/012.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/013.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -41,3 +41,5 @@
 第11轮：全n自由方格的安全远根固定侧内族，对所有标签交错恒有θ=2^{-n}，严格否定逐输入交错平均常数界；该族占比≤(n−3)4^{−(n−1)}→0，亦不能证伪原题。CPU/GPU各约4.03亿n8轨迹复算，pooled Q分别.33734083/.33417540，仅数值诊断；新GPU完整随机字/路径与109个256粒子组审计通过。原条件律SMC另轮推进；原题仍开放。
 
 第12轮：n5首次合并完整空间账本及定点均值分解已核验，Q5内部方差贡献约.051206、根均值差约.331798；下一估计转向W加权根均值差。全n层分裂父树排除逐树远点大子树引理；仅辅助路线障碍。原条件律tau-SMC n7/n8完成有限校准，GPU选父优化同seed逐值一致；整数分层的一步条件方差引理已证但未用于本轮冻结多项式生产。原题仍开放，GPU后续核审计与大粒子实验继续。
+
+第13轮：通用晚合并族占比≤(c₀/g)binom(a+b,a)/binom(N−1,b−1)，严格排除整个同心晚合并族和均衡一列隔离晚合并族。新full-GPU核32case逐rank审计完成；n8 P131072 R32整数分层Q≈.33502179、多项式≈.33511310，仅数值证据。主Agent批次312个非独占AGX样本平均98.6%、281次100%；完整输出核验且进程退出。更大n与一峰normalizer另轮继续；原题仍开放。
