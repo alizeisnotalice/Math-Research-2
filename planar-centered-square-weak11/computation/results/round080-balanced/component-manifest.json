@@ -1,0 +1,52 @@
+{
+  "schema": "r080-balanced-component-manifest-v1",
+  "frozen_payload": true,
+  "review_status_at_freeze": "production exact certification; independent replay/theory pending",
+  "files": [
+    {
+      "path": "computation/round080-balanced/certify_balanced.py",
+      "bytes": 7863,
+      "sha256": "6d076fb2595f9e00bbc3a2c8e8ae75406cac952cb352813aed1ecc8aaaafae69"
+    },
+    {
+      "path": "computation/round080-balanced/README.md",
+      "bytes": 5323,
+      "sha256": "9d2dec7c769fb637acb4e94a9e4c373845c2fb10f7aab3a87648a8425d692947"
+    },
+    {
+      "path": "computation/inputs/r080-balanced/six-atom-input.json",
+      "bytes": 648,
+      "sha256": "fd212238abff89584129f3471f6b546148cc47e5adc17eed717df3657ba6f874"
+    },
+    {
+      "path": "computation/results/round080-balanced/six-atom-result.json",
+      "bytes": 42943,
+      "sha256": "f22e7216fe6a39e36e991fd94a24b00047320376de257fc258e3ebd553f0c9a3"
+    },
+    {
+      "path": "computation/results/round080-balanced/process-receipt.json",
+      "bytes": 1412,
+      "sha256": "54e2932d150fb7253d85589a5cfb57ab3588648daf9a01d485e4cd637853e8a6"
+    }
+  ],
+  "file_count": 5,
+  "total_bytes": 58189,
+  "frozen_prior_dependency": {
+    "path": "computation/round075/certify_three_atom_collapse.py",
+    "sha256": "a93cf5a038ae2579326e8c48170bfa102f9735cda982878fa75b95a5e91a4456"
+  },
+  "process": {
+    "pid": 19040,
+    "exit_code": 0,
+    "observed_absent": true,
+    "elapsed_seconds": 0.083
+  },
+  "simple_rational_area_comparisons": {
+    "SW_lower_strictly_above": "1299/10000",
+    "SW_local_half_mass": "1/8",
+    "whole_upper_strictly_below": "273/250",
+    "whole_target": "7/2",
+    "fourcorner_sum_upper_below_aggregate_allowance": "500003/1000000"
+  },
+  "scope": "One actual six-atom input, all old positions retained. All63subset/23bboxcaps and actual strict halo full/residual menus; local halfmass fails while global deletion<3.5. No collapsed proxy, parameter search, generalC2 bound, MATLAB, newagent, commit or push."
+}

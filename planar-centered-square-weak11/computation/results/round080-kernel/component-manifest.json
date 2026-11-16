@@ -1,0 +1,67 @@
+{
+  "schema": "r080-kernel-component-v1",
+  "round": 80,
+  "title": "Actual balanced four-corner block single-corner half-mass obstruction",
+  "review_status_at_manifest_generation": "Final author candidate; independent mathematical review pending",
+  "payload": [
+    {
+      "path": "proofs/r080-balanced-corner-halfmass-obstruction.md",
+      "bytes": 9286,
+      "sha256": "9ce460cd9c16979e870ba46171a5bc071fde05cd0835109cd1fd5b1a081d4022"
+    },
+    {
+      "path": "computation/round080-kernel/check_balanced_corner.py",
+      "bytes": 8894,
+      "sha256": "6085e5bedd3faaa9ef3b339767359f0c6a5e4cc67a4f13e7fa844e9d32f04788"
+    },
+    {
+      "path": "computation/inputs/r080-kernel/balanced-six-source.json",
+      "bytes": 747,
+      "sha256": "c6745a23f614877e2c2c8a0fef06fd2901b60b169775a39aa4b34a7f6cfafbce"
+    },
+    {
+      "path": "computation/results/round080-kernel/checks.json",
+      "bytes": 8734,
+      "sha256": "0f51c636ebca43e9cfac7546c760bf0e581e9baa3a43198944b14129eb0a045e"
+    }
+  ],
+  "payload_bytes": 27661,
+  "mathematical_result": {
+    "scope": "One actual six-atom input; original old block retained",
+    "all_square_caps": "36 coordinate boxes / 23 distinct nonempty bbox closures, exact rational pass",
+    "unique_maximum_eligible_S": "mask 15, mass 1",
+    "connected": "eligible hyperedges 15,17,33",
+    "nonterminal_gap": "395579/250000",
+    "actual_SW_area": "244823/500000 - (171/200)*sqrt(1/8) - (857/1000)*(sqrt(999/4000)-sqrt(749/4000))",
+    "actual_SW_strict_lower": "129915191/1000000000",
+    "half_local_old_mass": "1/8",
+    "strict_surplus_lower": "4915191/1000000000"
+  },
+  "scope_limits": [
+    "No uniform-S_n corner counterexample asserted",
+    "No conclusion against the total four-corner payment, total Delta<=7/2, or weak constant",
+    "Analytic 7-full/3-residual partition and exact scalar qualification only; no author area-union engine, scan, or whole-plane deletion computation"
+  ],
+  "actual_execution": {
+    "receipt_in": "computation/results/round080-kernel/checks.json",
+    "caller_observed_exit_code": 0,
+    "pid": 20244,
+    "process_absent_after_completion": true,
+    "absence_check": "ps -p PID -o pid= returned exit 1 and empty stdout",
+    "actual_working_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]"
+  },
+  "portable_reproduction": {
+    "working_directory": "topic directory planar-centered-square-weak11",
+    "argv": [
+      "python3",
+      "computation/round080-kernel/check_balanced_corner.py",
+      "--input",
+      "computation/inputs/r080-kernel/balanced-six-source.json",
+      "--output",
+      "computation/results/round080-kernel/checks.json"
+    ]
+  },
+  "previous_R79_payload_pins_checked_unchanged": true,
+  "git": "No commit/push or edits to older frozen files"
+}

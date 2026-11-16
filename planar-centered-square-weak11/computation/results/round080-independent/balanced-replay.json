@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "method": "raw63subset and independent36coordinatebox closure qualification; root squaring; horizontal y-slab merged-interval subtraction; original full/residual halos and complete five-region direct decomposition; exact radical algebra",
+  "input_sha256": "fd212238abff89584129f3471f6b546148cc47e5adc17eed717df3657ba6f874",
+  "producer_result_sha256": "f22e7216fe6a39e36e991fd94a24b00047320376de257fc258e3ebd553f0c9a3",
+  "script_sha256": "41dc4d3076c691ca26381d1e88460a499339838133a081c7f538ad9762d0d51e",
+  "counts": {
+    "subset_rows": 63,
+    "bbox_closures": 23,
+    "checked_catalog_fields": 1408,
+    "radius_brackets": 12,
+    "horizontal_slabs": 88,
+    "area_endpoint_fields": 12
+  },
+  "qualification": {
+    "eligible_subsets": 12,
+    "unique_max_mask": 15,
+    "maximum_mass": "1",
+    "connected": true,
+    "nonterminal_gap": "395579/250000"
+  },
+  "areas": {
+    "whole_deletion": {
+      "lower": "190131747291336117249952552562857075417610395929/174224571863520493293247799005065324265472000000",
+      "upper": "152105397833068893799962177941267496306657390799/139379657490816394634598239204052259412377600000"
+    },
+    "SW": {
+      "lower": "181077260593797338996952658068112992385110502681/1393796574908163946345982392040522594123776000000",
+      "upper": "1448618084750378711975627344849200174229754529189/11150372599265311570767859136324180752990208000000"
+    },
+    "SE": {
+      "lower": "62001/1000000",
+      "upper": "62001/1000000"
+    },
+    "NW": {
+      "lower": "62001/1000000",
+      "upper": "62001/1000000"
+    },
+    "NE": {
+      "lower": "62001/1000000",
+      "upper": "62001/1000000"
+    },
+    "noncorner": {
+      "lower": "1080726373414248380490475999568030286880967957423/1393796574908163946345982392040522594123776000000",
+      "upper": "8645810987313987043923812787518492937704399076107/11150372599265311570767859136324180752990208000000"
+    },
+    "whole_full_halo": {
+      "lower": "1028976341238590365833207067552248213665368014557/557518629963265578538392956816209037649510400000",
+      "upper": "1286220426548237957291509777138497649283777451743/696898287454081973172991196020261297061888000000"
+    },
+    "whole_residual_halo": {
+      "lower": "4205547499063147906333587763580806700477131162441/5575186299632655785383929568162090376495104000000",
+      "upper": "841109499812629581266718465877506072963388059077/1115037259926531157076785913632418075299020800000"
+    }
+  },
+  "exact_SW_formula": "244823/500000-(171/200)sqrt(1/8)-(857/1000)(sqrt(999/4000)-sqrt(749/4000))",
+  "strict_SW_rational_lower": "129915191/1000000000",
+  "formula_directed_interval": [
+    "613513622885996554951648629/4722366482869645213696000000",
+    "306756811442998277475825599/2361183241434822606848000000"
+  ],
+  "all_five_region_endpoints_sum_exactly": true,
+  "scope": "One actual non-grid balanced six-source measure; SW deletion strictly above local half-mass (and equal allocated single-corner quota), but full deletion below7/2. No uniform-grid or C2 counterexample, no scan, no old-round rerun.",
+  "runtime": {
+    "python": "3.15.0",
+    "pid": 25674,
+    "seconds": 0.005518166999536334
+  }
+}
