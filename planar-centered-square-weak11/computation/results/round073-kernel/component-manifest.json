@@ -1,0 +1,89 @@
+{
+  "schema": "r073-shared-unit-window-kernel-component-manifest-v1",
+  "author_candidate_frozen": true,
+  "independent_review_status": "pending final independent proof review; root and core have read all new theory and approved; source binding is not a proof substitute",
+  "files": [
+    {
+      "path": "computation/round073/shared_unit_window_kernel.py",
+      "sha256": "3d88da8f97b9afacaf851493cb8c95ac1ce2f007d07368020c3ee07410b7d9f3",
+      "bytes": 11124
+    },
+    {
+      "path": "computation/inputs/r073/noncdf-one-outside.json",
+      "sha256": "437af119aa950b6ac7c461b1091516012812aa802279ae54ead6145b2c5bf507",
+      "bytes": 282
+    },
+    {
+      "path": "computation/results/round073-kernel/shared-unit-window-kernel.json",
+      "sha256": "4babd3fec69f0849e00b9f74cbd2f78d808276c7a20bf6daea45eabfe8d3eff0",
+      "bytes": 197506
+    },
+    {
+      "path": "proofs/r073-shared-unit-window-integral-kernels.md",
+      "sha256": "8b03a1777f86d50fb33eb73e6f0e980b4d0ca4f86d3eedd51b7d1e38b3b18b10",
+      "bytes": 16377
+    }
+  ],
+  "external_mathematical_sources": [
+    {
+      "owner_workspace": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11",
+      "source": {
+        "path": "proofs/r072-uniform-grid-borel-family-and-atomic-discontinuity.md",
+        "sha256": "7b49ddee130e5deee6bbf17641554fbfe122dae9925f73c865574e7073eddf53",
+        "bytes": 12369
+      },
+      "used_for": "admissible Borel family and sharp density; no deletion-area transfer"
+    },
+    {
+      "owner_workspace": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11",
+      "source": {
+        "path": "proofs/r073-cap-preserving-atomization-and-local-full-halo-obstruction.md",
+        "sha256": "53f99433f9fcdb2d8cc5ebb46ec505c92bbe088c8e8b3b223d303495e1100349",
+        "bytes": 11972
+      },
+      "used_for": "general exact-cap atomization for arbitrary bounded truncation; own Section5 proves topology/domain and uniform-window comparison"
+    }
+  ],
+  "all_embedded_input_script_pins_match": true,
+  "actual_computation_scope": {
+    "small_finite_input": "26 positive atoms, all271 literal coordinate-box closures,124eligible, uniqueS25,connected,nonterminal",
+    "continuous_n5_unit_windows": "all441 point/open-interval product cells,961 corner limits; enclosure [0,9/25], not endpoint attainment claim",
+    "implicit_atomic_schematic": "n5 construction68219184 outside atoms specified by indices; only exact scalar/containment/constants checked, no atom enumeration or halo area",
+    "all_n_theorem": "analytic Section5: exact finite unique/connected/nonterminal sequence, every closed unitwindow deficit<=4/n+21/(100n^2), all positive finite parameter measures with bounded total mass simultaneously have slack->0"
+  },
+  "execution_receipt": {
+    "actual_command": [
+      "python3",
+      "-B",
+      "planar-centered-square-weak11/computation/round073/shared_unit_window_kernel.py",
+      "--input",
+      "planar-centered-square-weak11/computation/inputs/r073/noncdf-one-outside.json",
+      "--output",
+      "planar-centered-square-weak11/computation/results/round073-kernel/shared-unit-window-kernel.json"
+    ],
+    "working_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources",
+    "exit_code": 0,
+    "pid_recording": "not separately captured; actual synchronous process completed, no background job",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "script_wall_seconds": 0.03774720799992792,
+    "manifest_python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "new_math_execution_in_manifest_step": false,
+    "portable_command_from_topic_directory": [
+      "python3",
+      "-B",
+      "computation/round073/shared_unit_window_kernel.py",
+      "--input",
+      "computation/inputs/r073/noncdf-one-outside.json",
+      "--output",
+      "computation/results/round073-kernel/shared-unit-window-kernel.json"
+    ],
+    "portable_working_directory": "topic directory planar-centered-square-weak11"
+  },
+  "mathematical_limitations": [
+    "No actual deletion area computed here.",
+    "No general 3.5 budget or C2 value proved.",
+    "Obstruction is to bounded-total-weight positive unit-cap slack; it does not rule out radius/residual-halo credit or weights with growing norm."
+  ],
+  "git": "no commit/push/reset/rebase; only R73 new files written; old components unchanged"
+}

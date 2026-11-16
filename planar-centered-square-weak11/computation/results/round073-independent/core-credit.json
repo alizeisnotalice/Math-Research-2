@@ -1,0 +1,74 @@
+{
+  "status": "PASS_NEW_EXACT_CORE_CREDIT_AND_GRID_COVERAGE_CONTROLS",
+  "source_sha256": "28ff10022a0b0429a49f544f567cd78f897dc2c28eb461af2dd9a58818660ed9",
+  "input_sha256": "d6ab05f9161bf44fe24e3383c6db736b87e3814e7fe5983e7357bc105857ff30",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "actual_positive_atoms": 27,
+  "direct_coordinate_rectangles": 420,
+  "complete_bbox_closures": 326,
+  "eligible_closures": 141,
+  "maximum_mass": "1",
+  "unique_maximum_S": true,
+  "connected": true,
+  "nonterminal_gap": "1213/2640",
+  "residual_positive_atoms": 2,
+  "residual_eligible_labels": "two singletons only",
+  "outside_measure_of_J": "0",
+  "residual_halo_intersection_J_exact": "(10-sqrt(2))/1000",
+  "residual_halo_intersection_J_lower": "136047216638614219219595125381/15845632502852867518708790067200",
+  "residual_halo_intersection_J_upper": "340118041596535548048987813453/39614081257132168796771975168000",
+  "coverage_controls": [
+    {
+      "n": 5,
+      "strict_pair_gap_squared_comparison_margin": 1,
+      "two_by_two_side_over_gap": 4
+    },
+    {
+      "n": 6,
+      "strict_pair_gap_squared_comparison_margin": 8,
+      "two_by_two_side_over_gap": 5
+    },
+    {
+      "n": 9,
+      "strict_pair_gap_squared_comparison_margin": 41,
+      "two_by_two_side_over_gap": 8
+    },
+    {
+      "n": 17,
+      "strict_pair_gap_squared_comparison_margin": 217,
+      "two_by_two_side_over_gap": 16
+    },
+    {
+      "n": 33,
+      "strict_pair_gap_squared_comparison_margin": 953,
+      "two_by_two_side_over_gap": 32
+    },
+    {
+      "n": 65,
+      "strict_pair_gap_squared_comparison_margin": 3961,
+      "two_by_two_side_over_gap": 64
+    }
+  ],
+  "old_internal_halo_holes": [
+    {
+      "n": 3,
+      "receiver": [
+        "9/50",
+        "0"
+      ],
+      "closed_prefix_events": 5,
+      "strict_minimum_nonhalo_prefix_slack": "104/5625"
+    },
+    {
+      "n": 4,
+      "receiver": [
+        "13/100",
+        "0"
+      ],
+      "closed_prefix_events": 7,
+      "strict_minimum_nonhalo_prefix_slack": "51/10000"
+    }
+  ],
+  "elapsed_seconds": 0.008583207999436127,
+  "scope": "New exact admissible27atom example proving H(nu) meets J despite nu(J)=0, plus strict filling inequalities for n>=5 and new point holes for n3,4. No complete Delta/outer-gap area calculated and no counterexample to3.5 claimed."
+}

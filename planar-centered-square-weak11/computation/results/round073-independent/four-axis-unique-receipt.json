@@ -1,0 +1,40 @@
+{
+  "started_utc": "2026-11-16T02:41:12.298581+00:00",
+  "finished_utc": "2026-11-16T02:41:12.389228+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/review_r072_actual_halo_y_slabs.py",
+    "--input",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/inputs/r073/s25-four-axis-unique-input.json",
+    "--saved",
+    "/Volumes/data/CodexProjects/T2/.local/round073-root/s25-four-axis-unique-area.json",
+    "--producer",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/round072/actual_halo_geometry.py",
+    "--bits",
+    "72",
+    "--output",
+    "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-cover-structure/planar-centered-square-weak11/computation/results/round073-independent/four-axis-unique.json"
+  ],
+  "pid": 26699,
+  "exit_status": 0,
+  "owned_pid_absent": true,
+  "wall_seconds": 0.09067904199946497,
+  "source_sha256": "fe05b3b7eaaeafd8000a120b68fbe2b5f063d4a478fcc2193df8a7b9b6455e73",
+  "input_source": "/Volumes/data/CodexProjects/T2/.local/round073-root/s25-four-axis-unique-input.json",
+  "input_sha256": "f8189c0bdc09711fbfc85029b10de0298eb449fcb2030edeb720dc5e7d794d5e",
+  "saved_result_sha256": "f1b954b66f8b2eb9aa80aa2909651eadbe8d21fd90e06d94e84dbc638a43a1fd",
+  "producer_sha256": "3305e4006ff17476b235da0d1c4bd4b20ab4e9a883a30b78322378abbe174671",
+  "output_sha256": "b8a76c19f58146da7bf5a8ffedecf103a196ef8192edc9f9491a2bb23358c266",
+  "stdout": "{\"status\": \"PASS_INDEPENDENT_FULL_ATOMS_HORIZONTAL_SLAB_AREA_AUDIT\", \"sources\": 29, \"maxima\": 1, \"full_halo\": 2.8626878510260276, \"deltas\": [1.5826878638260273], \"seconds\": 0.052130416999716545}\n",
+  "stderr": "",
+  "scope": "New R73 actual29atom/all-maximum complete area audit using frozen read-only R72 independent yslab checker; no old input or certificate rerun/modified.",
+  "post_execution_exact_saved_checks": {
+    "checked_utc": "2026-11-16T02:45:22.385363+00:00",
+    "maximum_count": 1,
+    "chosen_S_unique": true,
+    "nonterminal_gap": "733950007/515625000",
+    "lower_strictly_above_79_over_50": true,
+    "exact_lower_minus_79_over_50": "91463266468178417498794545554091425223642324576685138301/34028236692093846346337460743176821145600000000000000000000"
+  }
+}

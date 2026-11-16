@@ -1,0 +1,92 @@
+{
+  "schema": "r073-regional-diagnostic-component-v2",
+  "supersedes_manifest_sha256": "654e88d4c8c382d920e4515a8322b56f6d7904834539446bd21664566db786e4",
+  "root": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+  "scope": "Four inherited fixed atomic controls; exact clipped C/J sides/corners and unit-window mass diagnostics. V2 corrects sweep orientation metadata; every semantic value matches v1. No general inequality or new source input inferred.",
+  "files": [
+    {
+      "role": "final_code",
+      "path": "computation/round073/regional_credit_diagnostic_v2.py",
+      "bytes": 11430,
+      "sha256": "a750b18302b5d4fdf106b9af0c5c924ecb5c072ad88949f0cdf9da5bb5d8c615"
+    },
+    {
+      "role": "final_scope",
+      "path": "computation/round073/README-v2.md",
+      "bytes": 6195,
+      "sha256": "02c24bee2ed669e209f0d1ad9e14732ae22a495442cda6e65760c610b1de7c87"
+    },
+    {
+      "role": "final_diagnostic",
+      "path": "computation/results/round073-regional/four-control-regions-v2.json",
+      "bytes": 314783,
+      "sha256": "406485d2e169fb2584deb4d2a7c4cc7d581c339971c04b6b66056e077187603c"
+    },
+    {
+      "role": "method_correction",
+      "path": "computation/results/round073-regional/method-correction-v2.json",
+      "bytes": 1353,
+      "sha256": "0e393181f3f3e445467a584ac5a693e3af9d56f8380cd4d5ba9ef7bf078a9385"
+    },
+    {
+      "role": "semantic_comparison",
+      "path": "computation/results/round073-regional/method-comparison-v2.json",
+      "bytes": 652,
+      "sha256": "7d9a60b5349d7428fb6218173b938d0dc07bddf2a90ec70605b0a535882a3ab5"
+    },
+    {
+      "role": "provenance",
+      "path": "computation/results/round073-regional/process-receipts-v2.json",
+      "bytes": 4004,
+      "sha256": "21d5c3ae3635378607e43400d303600efc58227410296bd125a450cd6ca1676f"
+    }
+  ],
+  "source_pins": [
+    {
+      "role": "certified actual input",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/inputs/r072/s25-only.json",
+      "sha256": "2578ac8d799ff30b261353bf1507d0102684b9c0b39b96b189ee91d73b79cd78"
+    },
+    {
+      "role": "certified 72bit halo geometry",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/results/round072-actual/s25-only.json",
+      "sha256": "53365d1b625a2809a348fbd5ea805eaee167b89ad7ed857dd3a365dcb0aa61b9"
+    },
+    {
+      "role": "certified actual input",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/inputs/r072/r071-positive33.json",
+      "sha256": "4a2708f364a6198fbd774861eb2259441840461918fa961d6c3bd0c856677169"
+    },
+    {
+      "role": "certified 72bit halo geometry",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/results/round072-actual/r071-positive33.json",
+      "sha256": "bee5c3530d6ae36e985e9b6eec6f41d2ee900452db7edaa315dda9425a911afe"
+    },
+    {
+      "role": "certified actual input",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/inputs/r072/aligned225-actual-input.json",
+      "sha256": "79c1ff914900e79b6d683eb61a2a9d9da136283cd8cfcdc2e6476ce5b964b833"
+    },
+    {
+      "role": "certified 72bit halo geometry",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/results/round072-actual/aligned225.json",
+      "sha256": "2008cc32e8335c70d689ab3215b914e7111b37d6d47ee6ad3cf347b928d57780"
+    },
+    {
+      "role": "certified actual input",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/inputs/r072/contracted-unique-actual-input.json",
+      "sha256": "a972d3890206cc347d67a2267473798802a1f7284cecc21af9bc6db2c68894a5"
+    },
+    {
+      "role": "certified 72bit halo geometry",
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/computation/results/round072-actual/contracted-unique.json",
+      "sha256": "f752b5973a4c5751d4b9d9686a583b062555b1c97e635bb7512ef1b119cbf98d"
+    }
+  ],
+  "total_bytes": 338417,
+  "actual_processes": 2,
+  "all_recorded_child_processes_exited": true,
+  "v1_bundle": "Unchanged local worktree only, excluded from final archive whitelist. V1 hashes and semantic equality retained.",
+  "commit_push": "not performed by this agent",
+  "status": "final initial diagnostic; awaiting specific inequality before new probes"
+}

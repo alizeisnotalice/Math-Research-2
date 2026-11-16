@@ -1,0 +1,54 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_CAP_RATIONAL_IDENTITIES",
+  "source_sha256": "a0494146b3224c96b177f27025ccd9853113d6cfa2eb3a30b46322978e967944",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "sympy": "1.14.0",
+  "reviewed_domains": "n integer>=2;1<=k,l<=n;0<delta<=1/(2n);R>=1 for cap factorization;zero-capture andR<=1 separately proved",
+  "rational_identities": {
+    "expanded_overlap_compensation": {
+      "exact_numerator": "0",
+      "denominator": "1",
+      "passed": true
+    },
+    "cap_gap_equals_nP": {
+      "exact_numerator": "0",
+      "denominator": "1",
+      "passed": true
+    },
+    "full_excess_factorization": {
+      "exact_numerator": "0",
+      "denominator": "1",
+      "passed": true
+    },
+    "second_factor_positive_form": {
+      "exact_numerator": "0",
+      "denominator": "1",
+      "passed": true
+    },
+    "zero_capture_density": {
+      "exact_numerator": "0",
+      "denominator": "1",
+      "passed": true
+    },
+    "outer_singleton_mass_above_5_over_2": {
+      "exact_numerator": "0",
+      "denominator": "1",
+      "passed": true
+    }
+  },
+  "strict_band_gap_n_ge5_positive_polynomial": "q**2 + 6*q + 1",
+  "outer_residual_n_ge7_positive_polynomial": "q**2 + 9*q + 2",
+  "explicit_n9": {
+    "outside_atoms": 78975,
+    "total_atoms": 79056,
+    "local_complete_cells": 28179,
+    "mass_per_outside_atom": "29997/340000000",
+    "local_full_halo_area_lower": "7832077922743/2230740000000",
+    "local_full_halo_above_7_over_2": "24487922743/2230740000000",
+    "strong_outer_gap_already_paid_by_residual_singletons": true,
+    "outer_residual_singleton_credit_minus_target": "4540367922743/2230740000000",
+    "nonterminal_gap": "8787943/17952000"
+  },
+  "elapsed_seconds": 0.05474624999988009,
+  "scope": "Exact formal rational identity numerators and positive polynomial coefficients; signs/domain and source geometry separately proved in review. Explicit finite input given by counts/formula, no79056source/subset/halo enumeration. Localfull obstruction does not violate actual deletion or outer-gap target."
+}

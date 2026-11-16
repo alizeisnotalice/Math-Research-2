@@ -1,0 +1,74 @@
+{
+  "receipts": [
+    {
+      "state": "succeeded",
+      "started_at": "2026-11-16T02:34:42.120000+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round073/regional_credit_diagnostic.py",
+      "script_sha256": "d26565de6c7b0163fc5b67de9326dcc7acffc0a391cbdf08e4407213e76e7894",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round073/regional_credit_diagnostic.py",
+        "--archive",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11",
+        "--out",
+        "computation/results/round073-regional/four-control-regions.json"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {}
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r073-regional/20261116T023442Z-6968d169",
+      "stdout": "/Volumes/data/CodexTemp/T2/r073-regional/20261116T023442Z-6968d169/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r073-regional/20261116T023442Z-6968d169/stderr.txt",
+      "pid": 25199,
+      "exit_code": 0,
+      "finished_at": "2026-11-16T02:34:42.437840+00:00",
+      "elapsed_seconds": 0.317,
+      "child_returncode": 0,
+      "process_verified_exited": true,
+      "stdout_sha256": "8a26592a22216179cae28bbaa72b3c880eaff393d2f23292db763d8ed742b2ff",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "state": "succeeded",
+      "started_at": "2026-11-16T02:40:44.837691+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round073/regional_credit_diagnostic_v2.py",
+      "script_sha256": "a750b18302b5d4fdf106b9af0c5c924ecb5c072ad88949f0cdf9da5bb5d8c615",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round073/regional_credit_diagnostic_v2.py",
+        "--archive",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11",
+        "--out",
+        "computation/results/round073-regional/four-control-regions-v2.json"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {}
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r073-regional/20261116T024044Z-f2673819",
+      "stdout": "/Volumes/data/CodexTemp/T2/r073-regional/20261116T024044Z-f2673819/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r073-regional/20261116T024044Z-f2673819/stderr.txt",
+      "pid": 26576,
+      "exit_code": 0,
+      "finished_at": "2026-11-16T02:40:45.211623+00:00",
+      "elapsed_seconds": 0.374,
+      "child_returncode": 0,
+      "process_verified_exited": true,
+      "stdout_sha256": "c634f226cd93f3262c2199ed8f20f008c7e3a4c293a1c3731472188ecc38441c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  ],
+  "all_recorded_child_processes_exited": true,
+  "scope": "Initial diagnostic plus one metadata-orientation correction replay. No new source input, LP/MIP, square root or old complete-halo recomputation. V1 actual source remains in local worktree, not final whitelist per root integration direction."
+}
