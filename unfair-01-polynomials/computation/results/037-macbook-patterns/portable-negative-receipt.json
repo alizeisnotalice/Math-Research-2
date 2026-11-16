@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "positive": {
+    "event": "complete",
+    "p": 2,
+    "q": 5,
+    "count": 2,
+    "unknown": 0,
+    "eligible": 3,
+    "masks": 16,
+    "events": {
+      "zero-gap": 24,
+      "zero-unit": 8
+    },
+    "sha256": "97b3ab7b8c29d2a5765031edd875fef4f939f52d34a37a05f7f1bb211ab9cb6c",
+    "seconds": 0.0001867080000010901,
+    "verified": true
+  },
+  "rejected": {
+    "drop_row": "AssertionError",
+    "duplicate_row": "ValueError: identity or duplicate",
+    "false_units": "ValueError: terminal state (2, (0, 1, 5, 6))",
+    "false_gap": "ValueError: gap witness (2, (0, 1, 5, 6))/0",
+    "wrong_count": "AssertionError",
+    "wrong_parameter": "ValueError: identity or duplicate",
+    "corrupt_gzip": "gzip.BadGzipFile: Incorrect length of data produced"
+  },
+  "verifier_sha256": "77410d7350be4202e52fb0c31410d096d029db4f064ef2b3e852b25cf8b8530d",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]"
+}
