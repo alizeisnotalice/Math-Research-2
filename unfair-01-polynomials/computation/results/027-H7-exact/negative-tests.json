@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "tests": [
+    {
+      "name": "negative_radius",
+      "semantic_guard": "positive radius",
+      "frame_line": 14
+    },
+    {
+      "name": "mother_kind_swap",
+      "semantic_guard": "mother kind binding",
+      "frame_line": 14
+    },
+    {
+      "name": "duplicate_mother_block",
+      "semantic_guard": "unique mother block",
+      "frame_line": 14
+    },
+    {
+      "name": "family_mismatch",
+      "semantic_guard": "group mapping binding",
+      "frame_line": 14
+    },
+    {
+      "name": "real_linear_as_quadratic",
+      "semantic_guard": "group mapping binding",
+      "frame_line": 14
+    },
+    {
+      "name": "duplicate_lift_slot",
+      "semantic_guard": "unique lift slot",
+      "frame_line": 14
+    },
+    {
+      "name": "duplicate_disk_synchronized_rouche",
+      "semantic_guard": "disk separation",
+      "frame_line": 14
+    },
+    {
+      "name": "repeated_E_ledger",
+      "semantic_guard": "unique ledger rows",
+      "frame_line": 14
+    },
+    {
+      "name": "wrong_real_choice_same_count",
+      "semantic_guard": "ledger local choices",
+      "frame_line": 14
+    },
+    {
+      "name": "terminal_complement_convention",
+      "semantic_guard": "terminal convention",
+      "frame_line": 14
+    },
+    {
+      "name": "wrong_lift_rouche_bound",
+      "semantic_guard": "lift Rouche",
+      "frame_line": 14
+    }
+  ],
+  "negative_tests": 11,
+  "valid_frontend": {
+    "status": "exact_frontend_and_independent_masks_passed",
+    "root_disks": 49,
+    "mother_disks": 7,
+    "layout_counts": {
+      "4": 27,
+      "6": 432,
+      "8": 27,
+      "10": 11664,
+      "12": 8
+    },
+    "layouts": 12158,
+    "canonical_E_mask_sha256": "f219431b3b22a475d7f9356df332fc63be0d0292b6f53a525a869d32c346eb73",
+    "linear_constant_interval": [
+      "54485858319587569881872339820015322499088058813907712500748450971407390498440851647017853733008634920261/50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "54485858319587569881872339820015322499088058813907712500748450972407390498440851647017853733008634920261/50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "scope": "Complete necessary root-layout coverage; no coefficient exclusions."
+  },
+  "coverage_note": "Independent 25-bit masks include real slots; complement quotient exact."
+}
