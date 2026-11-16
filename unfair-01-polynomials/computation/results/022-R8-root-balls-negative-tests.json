@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "case": "negative_radius",
+      "expected_message": "nonpositive disk radius",
+      "rejected": true,
+      "returncode": 1
+    },
+    {
+      "case": "zero_radius",
+      "expected_message": "nonpositive disk radius",
+      "rejected": true,
+      "returncode": 1
+    },
+    {
+      "case": "wrong_target_with_rehashed_input",
+      "expected_message": "source candidate C is not the exact R8(x)R8(x^9) target",
+      "rejected": true,
+      "returncode": 1
+    },
+    {
+      "case": "changed_center",
+      "expected_message": "mother center was not copied exactly from source suggestion",
+      "rejected": true,
+      "returncode": 1
+    },
+    {
+      "case": "duplicate_source_coverage",
+      "expected_message": "duplicate source coverage in certificate groups",
+      "rejected": true,
+      "returncode": 1
+    }
+  ],
+  "certificate": "unfair-01-polynomials/computation/results/022-R8-L9-root-balls-certificate.json",
+  "certificate_sha256": "c90fb65a17efe38c5ab801678a5126e483ef17158e3c054d1388ef3d2218ed08",
+  "input": "unfair-01-polynomials/computation/results/021-R8-L9-inputs.json",
+  "input_sha256": "92bbaebd9ae148c1cb58bb1759a3cc9ce45efd96baf1d6f3cb354a84efc4b88d",
+  "note": "The wrong-target case updates candidate C_sha256 and certificate input_sha256 before invoking the verifier.",
+  "status": "all_negative_cases_rejected"
+}

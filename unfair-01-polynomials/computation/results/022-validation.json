@@ -1,0 +1,116 @@
+{
+  "round": 22,
+  "created_at": "2026-11-16T10:43:19.142340+08:00",
+  "proof_scope": "R8 all integer L>=9; coprime tensor theorem under both strict degree bounds. Original conjecture OPEN.",
+  "exact_checks": [
+    {
+      "script": "computation/check_R8_low_prefixes.py",
+      "sha256": "659ad70afffe1fc0ef98bae5da7daa193e550d3ffa378484e5daec8bcb688847",
+      "returncode": 0,
+      "stdout": "verified 6 oriented low-prefix families; s+(1-s)=1 at degree 8\n",
+      "stderr": ""
+    },
+    {
+      "script": "computation/check_R8_mod_sieves.py",
+      "sha256": "d3dbab92f04ef6613ad4b5a5aac0adcaca2dfa26690b28e4c1c639ea15ad2db9",
+      "returncode": 0,
+      "stdout": "{\n  \"II_L10\": {\n    \"A_candidates_from_B_0_3\": [\n      0,\n      1,\n      2,\n      5,\n      8\n    ],\n    \"B_candidates_from_A_0_1_2_8\": [\n      0,\n      2,\n      3\n    ]\n  },\n  \"II_L11\": {\n    \"A_candidates_from_B_0_3\": [\n      0,\n      1,\n      2,\n      5,\n      8\n    ],\n    \"B_candidates_from_A_0_1_2_8\": [\n      0,\n      3\n    ]\n  },\n  \"III_L10\": {\n    \"A_candidates_from_B_0_2_4\": [\n      0,\n      1,\n      8\n    ],\n    \"B_candidates_from_A_0_1_8\": [\n      0,\n      2,\n      3,\n      4\n    ]\n  },\n  \"I_L10\": {\n    \"B_candidates_from_full_A_E\": [\n      0\n    ]\n  },\n  \"I_L11\": {\n    \"B_candidates_from_full_A_E\": [\n      0\n    ]\n  },\n  \"I_L12\": {\n    \"B_candidates_from_full_A_E\": [\n      0\n    ]\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "computation/check_R8_L10_rows.py",
+      "sha256": "6ba5902c30b43c95f439bd27e1816f6948dee6fa58958e346f8e3134eac42f2e",
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"verified\",\n  \"rows\": {\n    \"0\": [\n      \"A0B0\",\n      \"v*A8B2\"\n    ],\n    \"1\": [\n      \"A1B0\",\n      \"v*A8B3\"\n    ],\n    \"2\": [\n      \"A0B2\",\n      \"A2B0\"\n    ],\n    \"3\": [\n      \"A0B3\",\n      \"A1B2\"\n    ],\n    \"4\": [\n      \"A1B3\",\n      \"A2B2\"\n    ],\n    \"5\": [\n      \"A2B3\",\n      \"A5B0\"\n    ],\n    \"6\": [],\n    \"7\": [\n      \"A5B2\"\n    ],\n    \"8\": [\n      \"A5B3\",\n      \"A8B0\"\n    ],\n    \"9\": []\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "computation/check_R8_L9_rows.py",
+      "sha256": "18dd7d0cdfc3acea795ba609980ae9c14f0686e4ee5183e71341bc055a26b0f8",
+      "returncode": 0,
+      "stdout": "{'I0': ([0, 1, 2, 3, 4, 5], [0, 8]), 'I1': ([0, 1, 2, 3, 4, 5, 8], [0]), 'II0': ([0, 1, 2, 5], [0, 1, 2, 3, 8]), 'II1': ([0, 1, 2, 5, 8], [0, 1, 2, 3]), 'III0': ([0, 1], [0, 1, 2, 3, 4, 8]), 'III1': ([0, 1, 8], [0, 1, 2, 3, 4])}\n",
+      "stderr": ""
+    },
+    {
+      "script": "computation/check_coprime_tensor.py",
+      "sha256": "8accae5c44eed4465ee98101768ac586978464612828ca7e96f8c240f551afc9",
+      "returncode": 0,
+      "stdout": "{'status': 'passed', 'examples': ['H_a7_b8', 'H_a8_b9', 'a1_Qconstant']}\n",
+      "stderr": ""
+    },
+    {
+      "script": "computation/check_tensor_carry_obstruction.py",
+      "sha256": "855a63af320ae7653783e1823baf82413175bd0892d08b8fde940a92e6eb4a70",
+      "returncode": 0,
+      "stdout": "{'status': 'passed', 'L': 3, 'difference': 'u^3-v', 'canonical_factor_lifts_nonnegative': True}\n",
+      "stderr": ""
+    }
+  ],
+  "root_ball_receipt": "022-R8-root-balls-verification.json",
+  "root_ball_negative_tests": "022-R8-root-balls-negative-tests.json",
+  "partial_gpu": [
+    {
+      "status": "partial_ledger_and_saved_samples_verified",
+      "expected_full_codes": 8345319274,
+      "candidate": "stretch_secondM8_x8_x5_x4_x3_x2_x_1_L10",
+      "codes": 2491824945,
+      "saved_samples": 320,
+      "saved_cpu_records_compared": 256,
+      "samples_without_saved_cpu_record": 64,
+      "saved_numerical_survivors": 0,
+      "max_numpy_convolution_residual": 1.6838086480674974e-11,
+      "max_scaled_saved_difference": 7.207813188766733e-16,
+      "source_sha256": "385dd4ba33e05e24f28a653cc23589f7d69c8d28c1d30c840afe8edb82d2fe47",
+      "checkpoint_sha256": "c9509c2bd5f983e928fa435e69aefd757b453b3a085bbc2713d1a12b6c535dc9",
+      "roots_sha256": "158bbafdac1436ac6cd313c653c8a35e531a777ed2643da423fa0f56bc2d0c01",
+      "verifier_sha256": "e364e53c6b0badf01a45b0092b2c7c16a1367a17c7710bf253fe1a2ac14ae704",
+      "python": "3.13.18",
+      "numpy": "2.5.4",
+      "claim_boundary": "Checks coverage bookkeeping and all saved masks independently. No uniform numerical error bound; no rigorous exclusion of unsaved masks."
+    },
+    {
+      "status": "partial_ledger_and_saved_samples_verified",
+      "expected_full_codes": 116335834062,
+      "candidate": "stretch_secondM8_x8_x5_x4_x3_x2_x_1_L11",
+      "codes": 1186573507,
+      "saved_samples": 256,
+      "saved_cpu_records_compared": 192,
+      "samples_without_saved_cpu_record": 64,
+      "saved_numerical_survivors": 0,
+      "max_numpy_convolution_residual": 3.295396178160104e-10,
+      "max_scaled_saved_difference": 1.1891748324465816e-15,
+      "source_sha256": "385dd4ba33e05e24f28a653cc23589f7d69c8d28c1d30c840afe8edb82d2fe47",
+      "checkpoint_sha256": "24b71f427925d5b2c44e1f14ed4a4dd6cbd68ef9042f9c5dfbf89ed443df18ac",
+      "roots_sha256": "445f0c1adde0c1d8eddef7e5559471c6c963ba9c2f67b6608c014afb04e90333",
+      "verifier_sha256": "e364e53c6b0badf01a45b0092b2c7c16a1367a17c7710bf253fe1a2ac14ae704",
+      "python": "3.13.18",
+      "numpy": "2.5.4",
+      "claim_boundary": "Checks coverage bookkeeping and all saved masks independently. No uniform numerical error bound; no rigorous exclusion of unsaved masks."
+    }
+  ],
+  "withdrawn_intermediate": {
+    "reason": "Allowed residue upper bounds incorrectly treated as positive rows in II; B1/B2 prematurely removed.",
+    "original_bad_note_sha256": "bbf694ab351176fb0ff73f1786215dacff253db47879e04bb923013bb270e17f",
+    "original_bad_script_sha256": "4b0e7d23029d290ed41d78f1a669c0932ace6234e8a40dded722b46fc899b0f9",
+    "repair": "Wide bounds and A5=0/nonzero cases; reviewed independently, then parent expanded proof."
+  },
+  "cpu_progress_snapshot": {
+    "old_verified": 35,
+    "old_total": 36,
+    "new_verified": 29,
+    "new_total": 38,
+    "finite_bound_unchanged": true
+  },
+  "backup": "UNVERIFIED; no completed target-disk copy verified",
+  "archived_files": {
+    "proofs/022-R9-independent-review.md": "58d8a2b918263ead430c4fe79cd5f63f2575e662d5bec804b5f20e7aceaaab72",
+    "proofs/022-numerical-certificate-gap.md": "1d53201e8a1f7b00cdffdabdfb168d0ab86ed06192d3af42f3b68f9409a0fec3",
+    "proofs/022-carry-obstruction.md": "5e4dc2e31ac8161d5a1af3c75a14316b9c2ee92d0a0c333796a55774da0bc67b",
+    "proofs/022-coprime-tensor.md": "12002c610422e2ff05bf582ecdf462839cd8f98d1e3bd05665657efc29adc7dc",
+    "proofs/022-R8-all-stretches.md": "470a34d9a4ff9dc9c4f19dd00cb07aec526867e88852b6e8c89f1cb6a4aa059b",
+    "computation/root_balls/verify_root_balls.py": "724724628d04c516e394e06e15fe3bd1e4c4b9004f9ed9a5ae704267f7b9eab1",
+    "computation/root_balls/root_ball_common.py": "1a969f59cfd7ba51e86b2a75bb3d9c069e68575744bc8db781897338332d252c",
+    "computation/root_balls/test_negative_cases.py": "76064058609c743aa72d361f32acde287debdeb0f54d5ecc275d7e62baeb03de",
+    "computation/root_balls/generate_root_balls.py": "6a80e79f079aa23170ef354af24407999f368222bb492c2555e7ff904978ee83"
+  }
+}
