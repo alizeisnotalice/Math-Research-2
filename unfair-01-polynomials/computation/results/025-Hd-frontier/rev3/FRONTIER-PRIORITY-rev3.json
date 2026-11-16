@@ -1,0 +1,29 @@
+{
+  "selection": "Round-25 implementation priority is the first unclosed target compatible with the existing all-quadratic root-block engine. It is not claimed to be the mathematically smallest open frontier target.",
+  "mathematically_lower_open_target": {
+    "target": "H7(x^3)H7(x^4)",
+    "total_degree": 49,
+    "status": "open; exact binary and S7-feasible, but one real mother root requires a real-linear-group engine extension",
+    "necessary_layout_size": 12158
+  },
+  "round25_unique_priority": {
+    "target": "H10(x^2)H10(x^3)",
+    "d": 10,
+    "a": 2,
+    "b": 3,
+    "total_degree": 50,
+    "ledger_row": {"noncanonical_count": 17, "negative_t_count": 4, "vdegree_gt_d_count": 0, "low_v012_count": 8},
+    "general_coverage": {
+      "Hd_single_stretch": "not covered: both exponents exceed one",
+      "coprime_tensor": "not covered: deg H10=10 is not <2 or <3"
+    },
+    "input_feasibility": {
+      "mother": "H10=1+x+x^2+x^9+x^10",
+      "known_mother_conditions": "existing S10 certificate and exact zero-real-root audit from the H10(3,4) preparation can be reused after new-target validation",
+      "engine": "compatible with the existing all-quadratic n=5 cache after new a=2,b=3 input/options and independent layout audit"
+    },
+    "expected_canonical_count": 8310,
+    "formula": "F5(2)F5(3)/2+2^(5-1)-2 = 8310",
+    "claim_boundary": "This is a preparation priority, not a proof or a claim that the target is harder than every other open target."
+  }
+}

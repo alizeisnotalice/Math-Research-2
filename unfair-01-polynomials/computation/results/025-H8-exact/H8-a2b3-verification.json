@@ -1,0 +1,61 @@
+{
+  "status": "all_1482_layouts_verified_exactly",
+  "root_disks": 40,
+  "nonreal_mother_disks": 8,
+  "negative_layouts": 1481,
+  "standard_layouts": 1,
+  "constant_factors": "handled analytically as empty/full root sets",
+  "layout_counts": {
+    "2": 81,
+    "3": 16,
+    "4": 81,
+    "5": 1296,
+    "6": 8
+  },
+  "minimum_certified_negative_margin": "102346591/137438953472",
+  "arithmetic": "integers and Fraction only; no endpoint pinning; no options cache",
+  "Galois": {
+    "name": "H8_1_x_x2_x7_x8",
+    "degree": 8,
+    "status": "full_symmetric_by_exact_modular_certificates",
+    "reductions": [
+      {
+        "prime": 2,
+        "degrees": [
+          8
+        ],
+        "verified_roles": [
+          "transitive"
+        ]
+      },
+      {
+        "prime": 13,
+        "degrees": [
+          1,
+          7
+        ],
+        "verified_roles": [
+          "long_cycle"
+        ]
+      },
+      {
+        "prime": 5,
+        "degrees": [
+          1,
+          2,
+          5
+        ],
+        "verified_roles": [
+          "transposition"
+        ]
+      }
+    ],
+    "mathematical_dependency": "Frobenius factor-degree cycle theorem at squarefree reduction; transitivity plus (N-1)-cycle implies 2-transitivity; conjugates of one transposition give all transpositions."
+  },
+  "input_sha256": "74d1287798fb12764921d72062f6ab30682ea33567682d9be61841854de43049",
+  "balls_sha256": "9547fefd249f677b8c66422accf7ddaecc1cbfeeb81a3539216cc3aa98378f7c",
+  "certificate_sha256": "1507a8cc69171d3cf565776c2726b640972107d58cd152f3bf2a7063e408a919",
+  "galois_sha256": "b20506cea10ad165a0d9f9562b576c6f86db850f1b75b029e9fe35788939cb25",
+  "verifier_sha256": "aa2c976f27bce1a32ce98b26424ebfafa3a0d26c502660d7a02cb0fd4aaf8eb8",
+  "mathematical_dependency": "018 root-product balance and 025 H8 root-layout coverage proof; standard class from exact root-family degree counts"
+}

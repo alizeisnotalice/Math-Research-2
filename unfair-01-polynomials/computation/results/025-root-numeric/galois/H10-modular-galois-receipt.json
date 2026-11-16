@@ -1,0 +1,13 @@
+{
+  "status": "full_symmetric_by_exact_modular_certificates",
+  "name": "H10_1_x_x2_x9_x10",
+  "degree": 10,
+  "reductions": [
+    {"prime": 7, "degrees": [10], "verified_roles": ["transitive"]},
+    {"prime": 73, "degrees": [1, 9], "verified_roles": ["long_cycle"]},
+    {"prime": 19, "degrees": [2, 3, 5], "verified_roles": ["transposition"]}
+  ],
+  "claim": "Exact finite-field factor and cycle-type audit only. This establishes the advertised Galois-group conclusion under its stated theorem, not any numerical coefficient-sign conclusion.",
+  "verifier": "scripts/verify_modular_galois.py",
+  "source_certificate": "galois/H10-mother-certificate.json"
+}
