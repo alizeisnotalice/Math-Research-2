@@ -1,0 +1,111 @@
+{
+  "status": "all_required_exact_checks_passed",
+  "actual_python": "Python 3.15.0",
+  "full_coefficient_rerun": {
+    "exit_code": 0,
+    "exec_chunk": "bc400b",
+    "candidate_count": 17,
+    "negative_count": 15,
+    "survivors": [
+      "constant",
+      "standard"
+    ],
+    "verifier_sha256": "3d831370cb43842a832ecc92e4b3dacae0754b6ad50af481f0273a8f4d61b795",
+    "receipt_sha256": "7492657c1a4a88187c85cf942636e39e32e15c1bf71279fc183f1ef107b22f4c"
+  },
+  "modular_rerun_exit_code": 0,
+  "layout_rerun_exit_code": 0,
+  "modular_mutation_rerun_exit_code": 0,
+  "source_files": [
+    {
+      "path": "H10-17-layouts.json",
+      "sha256": "375a0b772d95ebd513e18f8ca5d3c9c51483b1585ad0d8771ffd6ebff8dec2c7"
+    },
+    {
+      "path": "H10-double-cycles.json",
+      "sha256": "570d5eaf9349472e76f7e96f12c08a47053ce6175def288e0213b97ab22f457d"
+    },
+    {
+      "path": "H10-modular-negative-tests.json",
+      "sha256": "9acea0695e63310b0edc0a637948cab47afea98bf908b49d31001af4d3a3d0f8"
+    },
+    {
+      "path": "H10-modular-verification.json",
+      "sha256": "04e43b2eda6aae0ce7f6df2cfaddc9213f47e7e1e24d6850703dc2b86e2bc901"
+    },
+    {
+      "path": "H10-mother-balls.json",
+      "sha256": "e7bbb1186e93c854b972d3780a3836007d386ba06e9780588b047d8062ed0080"
+    },
+    {
+      "path": "H10-mother-certificate.json",
+      "sha256": "a6559a16f8ca29459f452288b1b62e004a9b809ceb9f2bb543b0c6e0e591d97f"
+    },
+    {
+      "path": "H1035-search-witnesses.json",
+      "sha256": "9afbb7d9fe32f7950964f4c5e2243790a90ca7afd43cca26d3000b902c1b9b56"
+    },
+    {
+      "path": "build_h10_17_layouts.py",
+      "sha256": "d402a476abcb85cfa8138d9e2a9236c111f335178761512d1bb45b1c1ce13441"
+    },
+    {
+      "path": "exact_complex.py",
+      "sha256": "5e10e0aa79afd5c8ac9e99603606b7a5564bc1694540307eb083c25c54389f1a"
+    },
+    {
+      "path": "extract_h10_mother_balls.py",
+      "sha256": "37800690276bc7f32720246668030bf63ccc6b27da724166e10a56fdfb8fa35e"
+    },
+    {
+      "path": "finite_fields.py",
+      "sha256": "1787ebc883ed92242affd9fd1e018e9c5a651abfffa9543616d0511c46772e55"
+    },
+    {
+      "path": "negative-witness-summary.json",
+      "sha256": "b6676aed3dfdc29fa636f2b7ac6ad251584a7fcf8bbdb3132a75a27d66894ace"
+    },
+    {
+      "path": "parent-coefficient-verification.json",
+      "sha256": "7492657c1a4a88187c85cf942636e39e32e15c1bf71279fc183f1ef107b22f4c"
+    },
+    {
+      "path": "parent-layout-verification.json",
+      "sha256": "7696b1cafc4c250c401681874e6710b56951799bc94b81aadc942065e4a673f2"
+    },
+    {
+      "path": "parent-modular-verification.json",
+      "sha256": "04e43b2eda6aae0ce7f6df2cfaddc9213f47e7e1e24d6850703dc2b86e2bc901"
+    },
+    {
+      "path": "search_h1035.py",
+      "sha256": "c63f09b836a54ef8cae76e82ebb67f1439a76c4957d15794a0efdb5a2babcc30"
+    },
+    {
+      "path": "test_h10_modular.py",
+      "sha256": "38df518b65180a814456b633c695eb42040fdcb5d74475a6d8d2ca07c70ab9b3"
+    },
+    {
+      "path": "verify_h1035_coefficients.py",
+      "sha256": "3d831370cb43842a832ecc92e4b3dacae0754b6ad50af481f0273a8f4d61b795"
+    },
+    {
+      "path": "verify_h1035_layout.py",
+      "sha256": "5f109de74bc01eb50905ec260d761b48df9fbe7e0dbee92a7fac10d886a6802c"
+    },
+    {
+      "path": "verify_h10_modular.py",
+      "sha256": "0b1d94661689fbf1791cfc721937fd5c04b8f78249b7f6ebdc348b24a68aaaf0"
+    },
+    {
+      "path": "verify_h10_mothers.py",
+      "sha256": "e39f9e8683d46d074f0c78e1121599938e61cbd59b4cc5ce8a237e2722b6e974"
+    }
+  ],
+  "search_scope_note": "Only the two selected positive Frobenius certificates are independently accepted. The full prime<=5000 negative search classifications are not claimed as parent reverified.",
+  "source_root_balls": {
+    "path": "../026-H10-exact/H10-a2b3-root-balls.json",
+    "sha256": "2019946b5d7637e4ec799b66ef76b1f3462eec5502e33876f5b221f8e750e8d3",
+    "use": "five mother disks only; 2/3 lifted disks unused"
+  }
+}

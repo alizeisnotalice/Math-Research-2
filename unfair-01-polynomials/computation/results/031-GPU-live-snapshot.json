@@ -1,0 +1,34 @@
+{
+  "utc": "2026-11-16T08:19:26.306503+00:00",
+  "status": "running_partial_unknown",
+  "session": 74904,
+  "pids": [
+    44394,
+    44395
+  ],
+  "latest_worker_record": {
+    "step": 6800,
+    "elapsed_seconds": 2696.1848354169997,
+    "restart_epoch": 3,
+    "min_mse_gpu": 8.194630936486647e-05,
+    "best_max_residual_float64": 0.0506562739610672,
+    "allocated_bytes": 137822976,
+    "driver_bytes": 2257256448
+  },
+  "ioreg_performance_statistics": "|   \"PerformanceStatistics\" = {\"In use system memory (driver)\"=0,\"Alloc system memory\"=4423368704,\"Tiler Utilization %\"=1,\"recoveryCount\"=0,\"lastRecoveryTime\"=0,\"Renderer Utilization %\"=100,\"TiledSceneBytes\"=1179648,\"Device Utilization %\"=100,\"SplitSceneCount\"=0,\"Allocated PB Size\"=25690112,\"In use system memory\"=3483205632}",
+  "ps": "  PID  PPID  %CPU %MEM ELAPSED COMMAND\n44394   870   0.0  0.1   45:35 /opt/homebrew/Cellar/python@3.13/3.13.18/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round030-prefix-gpu/run_prefix_batch.py --out /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round030-prefix-gpu/live-m48n88d11 --m 48 --n 88 --d 11 --starts 32768 --steps 12000 --restart 2000 --seed 2026111609 --margin 0.05 --seconds 14400\n44395 44394   0.0  0.4   45:35 /opt/homebrew/Cellar/python@3.13/3.13.18/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round030-prefix-gpu/gpu_factor_search_prefix.py --m 48 --n 88 --fractional-index 11 --starts 32768 --steps 12000 --seed 2026111609 --margin 0.05 --restart-every 2000 --out /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round030-prefix-gpu/live-m48n88d11/run\n",
+  "parameters": {
+    "m": 48,
+    "n": 88,
+    "d": 11,
+    "starts": 32768,
+    "steps": 12000,
+    "restart_every": 2000,
+    "seed": 2026111609,
+    "margin": 0.05,
+    "necessary_prefix_count": 3181
+  },
+  "completed_batch": false,
+  "finite_exclusion": false,
+  "next_d12_gpu_launched": false
+}

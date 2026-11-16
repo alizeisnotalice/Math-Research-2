@@ -1,0 +1,40 @@
+{
+  "all_survivors_checked_legal_and_filter_surviving": true,
+  "claim_boundary": "Exact finite prefix-pool enumeration and source-gate audit only; no GPU was launched, and neither survivor status nor a numerical search settles factorization.",
+  "d": 12,
+  "filter_rejections": {
+    "forced_positive_fractional_cross_at_d_plus_i": 4280,
+    "prefix_product_coefficient_gt_1": 1010
+  },
+  "frozen_implementation_gate": {
+    "driver_accepts_d_argument": true,
+    "prefix_module_general_enumerator": true,
+    "worker_explicitly_rejects_d12": false,
+    "worker_gate_conclusion": "The explicit rejection flag records the inspected source gate; GPU execution additionally requires a matching independent CPU-only audit."
+  },
+  "model": "i<d pairs in {(0,0),(1,0),(0,1)}; low convolution binary; d-cross zero; named filters are necessary only",
+  "proposed_parameters": {
+    "d": 12,
+    "m": 52,
+    "margin": 0.001,
+    "mathematical_shape_gate": "m,n>d and starts>=survivor_count",
+    "n": 92,
+    "restart_every": 2000,
+    "scope_note": "margin=.001 defines only the planned numerical submodel; it is not an exclusion theorem.",
+    "seed": 2026111610,
+    "shape_gate_passes": true,
+    "starts": 32768,
+    "steps": 12000
+  },
+  "raw_ternary_count": 177147,
+  "source_sha256": {
+    "driver": "bcc2bd725b06091e06565e18b158b8becf8977eef622929daedb5c3c3db2b503",
+    "module": "0b1a06770a61fe113031209986f676c7e1afb862d27c0c697dbebc0a9f78481d",
+    "worker": "250ecf20c4ac60a67385c4e3e64cd856639aee543e2cdbc11ae96e7630ca2cad"
+  },
+  "status": "cpu_only_d12_prefix_pool_audited",
+  "survivor_codes_sha256": "b40d0e2f03d5c92b50c832d695c874fd2b77fe416c1ca2af846c829b1c245ad8",
+  "survivor_count": 6605,
+  "valid_codes_sha256": "0499ace4436dcb94dd12930609f086992aba76fb45fe4d5291f5ea3d8346a5a3",
+  "valid_low_prefix_count": 11005
+}
