@@ -1,0 +1,69 @@
+[
+  {
+    "label": "cut-full",
+    "source_sha256": "193f10d405d3d015f182716137730a45e902e58a5087d49533f82367049b37e3",
+    "compile_command": [
+      "clang++",
+      "-O3",
+      "-std=c++20",
+      "-pthread",
+      "-fmodules-cache-path=/Volumes/data/CodexTemp/cache/clang-modules",
+      "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r019-cut-full/cut_covariance_ie.cpp",
+      "-o",
+      "/Volumes/data/CodexTemp/T2/a022-r019-root-verify/cut-full"
+    ],
+    "run_command": [
+      "/Volumes/data/CodexTemp/T2/a022-r019-root-verify/cut-full",
+      "4"
+    ],
+    "exit_code": 0,
+    "archived_counts_match": true
+  },
+  {
+    "label": "cut-d4",
+    "source_sha256": "0943bf7328228d17d2158b4fbc438c1e6c6556df5d69a6b02fac4a5a52d815e1",
+    "compile_command": [
+      "clang++",
+      "-O3",
+      "-std=c++20",
+      "-pthread",
+      "-fmodules-cache-path=/Volumes/data/CodexTemp/cache/clang-modules",
+      "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r019-cut-d4/cut_covariance_d4.cpp",
+      "-o",
+      "/Volumes/data/CodexTemp/T2/a022-r019-root-verify/cut-d4"
+    ],
+    "run_command": [
+      "/Volumes/data/CodexTemp/T2/a022-r019-root-verify/cut-d4",
+      "4"
+    ],
+    "exit_code": 0,
+    "archived_counts_match": true
+  },
+  {
+    "label": "root-image",
+    "source_sha256": "c6b3d52405ac7cbbc92f65c471b8ffc15d8ac01a1d45848974bcd245ce322ff2",
+    "compile_command": [
+      "clang++",
+      "-O3",
+      "-std=c++20",
+      "-pthread",
+      "-fmodules-cache-path=/Volumes/data/CodexTemp/cache/clang-modules",
+      "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r019-root-image/root_image_n5.cpp",
+      "-o",
+      "/Volumes/data/CodexTemp/T2/a022-r019-root-verify/root-image"
+    ],
+    "run_command": [
+      "/Volumes/data/CodexTemp/T2/a022-r019-root-verify/root-image",
+      "3",
+      "/Volumes/data/CodexTemp/T2/a022-r019-root-verify/root-image.json",
+      "1"
+    ],
+    "exit_code": 0,
+    "archived_counts_match": true
+  },
+  {
+    "label": "central-exchange",
+    "n2_n3_bruteforce_and_n4_counts_match": true,
+    "exit_code": 0
+  }
+]

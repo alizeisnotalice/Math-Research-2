@@ -1,0 +1,200 @@
+import Foundation
+import Metal
+
+// Experimental original-law SMC, n<=16 (MAXN prefix capacity is 256).  It stores an exact occupancy and
+// external-boundary bitset.  It is deliberately separate from r013 production.
+let metal = """
+  #include <metal_stdlib>
+  using namespace metal;
+  constant uint W=32, MAXN=256;
+  struct P{uint n,N,tau,r,lo,hi;};
+  struct S{uint o[W],b[W],r1,r2;};
+  inline ulong seed(constant P&p){return(ulong(p.hi)<<32)|p.lo;}
+  inline ulong nxt(thread ulong&x){x+=0x9e3779b97f4a7c15ul;ulong z=x;z=(z^(z>>30))*0xbf58476d1ce4e5b9ul;z=(z^(z>>27))*0x94d049bb133111ebul;return z^(z>>31);}
+  inline ulong key(constant P&p,uint c,uint d){return seed(p)^(ulong(p.r)<<32)^(ulong(c)*0x9e3779b97f4a7c15ul)^(ulong(d)*0xd1b54a32d192ed03ul);}
+  inline ulong below(thread ulong&x,ulong n){ulong t=(0ul-n)%n;while(1){ulong z=nxt(x);if(z>=t)return z%n;}}
+  inline uint lm(constant P&p){uint r=p.N&31;return r?((1u<<r)-1u):0xffffffffu;}
+  inline bool has(const thread S&s,uint v){return(s.o[v>>5]&(1u<<(v&31)))!=0;}
+  inline void put(thread uint*x,uint v){x[v>>5]|=1u<<(v&31);} inline void del(thread uint*x,uint v){x[v>>5]&=~(1u<<(v&31));}
+  inline uint aw(const thread S&s,uint q,constant P&p){uint last=(p.N-1)>>5;if(q>last)return 0;uint f=~s.o[q];if(q==last)f&=lm(p);if(p.r==1)return f;if(p.r==p.tau)return f&~s.b[q];return s.b[q];}
+  inline uint cnt(const thread S&s,constant P&p){uint z=0;for(uint q=0;q<W;q++)z+=popcount(aw(s,q,p));return z;}
+  inline uint kth(const thread S&s,uint k,constant P&p){for(uint q=0;q<W;q++){uint x=aw(s,q,p),c=popcount(x);if(k>=c){k-=c;continue;}for(uint j=0;j<32;j++)if(x&(1u<<j)){if(!k)return(q<<5)+j;--k;}}return p.N;}
+  inline void add(thread S&s,uint v,constant P&p){put(s.o,v);del(s.b,v);uint x=v%p.n,y=v/p.n;if(x&&!has(s,v-1))put(s.b,v-1);if(x+1<p.n&&!has(s,v+1))put(s.b,v+1);if(y&&!has(s,v-p.n))put(s.b,v-p.n);if(y+1<p.n&&!has(s,v+p.n))put(s.b,v+p.n);}
+  kernel void count(device S*x[[buffer(0)]],device uint*a[[buffer(1)]],constant P&p[[buffer(2)]],device uint*d[[buffer(3)]],uint i[[thread_position_in_grid]]){thread S q=x[i];a[i]=d[0]?0:cnt(q,p);}
+  kernel void sum(device uint*a[[buffer(0)]],device ulong*g[[buffer(1)]],constant uint&n[[buffer(2)]],uint j[[thread_position_in_grid]]){uint lo=256*j,hi=min(lo+256,n);ulong z=0;for(uint i=lo;i<hi;i++)z+=a[i];g[j]=z;}
+  kernel void cdf(device ulong*g[[buffer(0)]],device ulong*c[[buffer(1)]],device ulong*t[[buffer(2)]],device uint*d[[buffer(3)]],constant uint&G[[buffer(4)]],constant uint&r[[buffer(5)]],uint i[[thread_position_in_grid]]){if(i)return;ulong z=0;for(uint j=0;j<G;j++){z+=g[j];c[j]=z;}t[r]=z;if(!z)d[0]=1;}
+  kernel void prop(device S*x[[buffer(0)]],device uint*a[[buffer(1)]],device ulong*c[[buffer(2)]],device ulong*t[[buffer(3)]],device S*y[[buffer(4)]],constant P&p[[buffer(5)]],constant uint&n[[buffer(6)]],constant uint&r[[buffer(7)]],device uint*d[[buffer(8)]],constant uint&st[[buffer(9)]],device uint*parents[[buffer(10)]],device ushort*px[[buffer(11)]],device ushort*py[[buffer(12)]],uint ch[[thread_position_in_grid]]){if(ch>=n)return;if(d[0]){parents[ch]=0xffffffffu;y[ch]=x[ch];for(uint k=0;k+1<p.r;k++)py[ch*MAXN+k]=px[ch*MAXN+k];return;}ulong T=t[r],z=key(p,ch,1),u=below(z,T);if(st)u=(ulong(ch)*T+u)/n;uint G=(n+255)/256,L=0,H=G-1;while(L<H){uint m=(L+H)/2;if(u<c[m])H=m;else L=m+1;}ulong pre=L?c[L-1]:0,v=u-pre,s=0;uint lo=256*L,hi=min(lo+256,n),par=lo;for(uint i=lo;i<hi;i++){if(v<s+a[i]){par=i;break;}s+=a[i];}parents[ch]=par;thread S q=x[par];for(uint k=0;k+1<p.r;k++)py[ch*MAXN+k]=px[par*MAXN+k];z=key(p,ch,2);uint w=kth(q,uint(below(z,a[par])),p);py[ch*MAXN+p.r-1]=ushort(w);if(p.r==1)q.r1=w;if(p.r==p.tau)q.r2=w;add(q,w,p);y[ch]=q;}
+  inline bool rebuildPrefix(thread S&s,device ushort*pref,uint id,constant P&p){for(uint w=0;w<W;w++){s.o[w]=0;s.b[w]=0;}s.r1=0;s.r2=0;uint births=0;for(uint q=0;q<p.r;q++){uint v=uint(pref[id*MAXN+q]);if(v>=p.N||has(s,v))return false;bool birth=(s.b[v>>5]&(1u<<(v&31)))==0;bool want=(q==0)||(q+1==p.tau);if(birth!=want)return false;if(birth){births++;if(q==0)s.r1=v;else s.r2=v;}add(s,v,p);}return births==((p.r<p.tau)?1u:2u);}
+  kernel void move(device S*state[[buffer(0)]],device ushort*pref[[buffer(1)]],constant P&p[[buffer(2)]],constant uint&n[[buffer(3)]],constant uint&L[[buffer(4)]],device uint*d[[buffer(5)]],uint ch[[thread_position_in_grid]]){if(ch>=n||!L||d[0])return;thread S s=state[ch];for(uint step=0;step<L;step++){ulong z=key(p,ch,step+3u);uint i=uint(below(z,ulong(p.r))),v=uint(below(z,ulong(p.N))),j=p.r;for(uint k=0;k<p.r;k++)if(uint(pref[ch*MAXN+k])==v){j=k;break;}ushort oldi=pref[ch*MAXN+i],oldj=(j<p.r?pref[ch*MAXN+j]:ushort(v));pref[ch*MAXN+i]=oldj;if(j<p.r)pref[ch*MAXN+j]=oldi;thread S trial=s;if(rebuildPrefix(trial,pref,ch,p))s=trial;else{pref[ch*MAXN+i]=oldi;if(j<p.r)pref[ch*MAXN+j]=oldj;}}state[ch]=s;}
+  kernel void term(device S*x[[buffer(0)]],device uint*a[[buffer(1)]],device ulong*m[[buffer(2)]],constant P&p[[buffer(3)]],constant uint&n[[buffer(4)]],device uint*d[[buffer(5)]],uint j[[thread_position_in_grid]]){if(d[0]){m[j]=0;return;}uint lo=256*j,hi=min(lo+256,n);ulong z=0;for(uint i=lo;i<hi;i++){thread S q=x[i];uint r=q.r2;if(p.r==p.tau)r=kth(q,0,p);int X=int(q.r1%p.n)-int(r%p.n),Y=int(q.r1/p.n)-int(r/p.n);z+=ulong(a[i])*ulong(X*X+Y*Y);}m[j]=z;}
+  """
+struct P { var n, N, tau, r, lo, hi: UInt32 }
+struct R {
+  let logZ, z, u, q: Double
+  let dead: Bool
+  let gpu, wall: Double
+}
+let dev = MTLCreateSystemDefaultDevice()!
+let lib = try dev.makeLibrary(source: metal, options: nil)
+let q = dev.makeCommandQueue()!
+func pipe(_ s: String) -> MTLComputePipelineState {
+  try! dev.makeComputePipelineState(function: lib.makeFunction(name: s)!)
+}
+let pc = pipe("count")
+let pg = pipe("sum")
+let pd = pipe("cdf")
+let pp = pipe("prop")
+let pm = pipe("move")
+let pt = pipe("term")
+var traceOn = false
+var traceRows = [[String: Any]]()
+func en(_ cb: MTLCommandBuffer, _ p: MTLComputePipelineState, _ bs: [(MTLBuffer, Int)], _ n: Int) {
+  let e = cb.makeComputeCommandEncoder()!
+  e.setComputePipelineState(p)
+  for (b, i) in bs { e.setBuffer(b, offset: 0, index: i) }
+  e.dispatchThreads(
+    MTLSize(width: n, height: 1, depth: 1),
+    threadsPerThreadgroup: MTLSize(width: 256, height: 1, depth: 1))
+  e.endEncoding()
+}
+func run(_ n: Int, _ tau: Int, _ Np: Int, _ sd: UInt64, _ strat: Bool, _ moveL: Int) -> R {
+  let N = n * n
+  let G = (Np + 255) / 256
+  var np = UInt32(Np)
+  var gg = UInt32(G)
+  var dead: UInt32 = 0
+  var sm: UInt32 = strat ? 1 : 0
+  var lm: UInt32 = UInt32(moveL)
+  let nb = dev.makeBuffer(bytes: &np, length: 4, options: .storageModeShared)!
+  let gbb = dev.makeBuffer(bytes: &gg, length: 4, options: .storageModeShared)!
+  let db = dev.makeBuffer(bytes: &dead, length: 4, options: .storageModeShared)!
+  let sb = dev.makeBuffer(bytes: &sm, length: 4, options: .storageModeShared)!
+  let lb = dev.makeBuffer(bytes: &lm, length: 4, options: .storageModeShared)!
+  let a = dev.makeBuffer(length: Np * 4, options: .storageModeShared)!
+  let g = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let c = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let t = dev.makeBuffer(length: N * 8, options: .storageModeShared)!
+  let mo = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let pa = dev.makeBuffer(length: Np * 4, options: .storageModeShared)!
+  var px = dev.makeBuffer(length: Np * 256 * 2, options: .storageModeShared)!
+  var py = dev.makeBuffer(length: Np * 256 * 2, options: .storageModeShared)!
+  let x = dev.makeBuffer(length: Np * 264, options: .storageModeShared)!
+  let y = dev.makeBuffer(length: Np * 264, options: .storageModeShared)!
+  memset(x.contents(), 0, Np * 264)
+  memset(y.contents(), 0, Np * 264)
+  memset(px.contents(), 0, Np * 256 * 2)
+  memset(py.contents(), 0, Np * 256 * 2)
+  var ps = [MTLBuffer]()
+  var rs = [MTLBuffer]()
+  for z in 1...N {
+    var p = P(
+      n: UInt32(n), N: UInt32(N), tau: UInt32(tau), r: UInt32(z),
+      lo: UInt32(truncatingIfNeeded: sd), hi: UInt32(truncatingIfNeeded: sd >> 32))
+    var r = UInt32(z - 1)
+    ps.append(dev.makeBuffer(bytes: &p, length: 24, options: .storageModeShared)!)
+    rs.append(dev.makeBuffer(bytes: &r, length: 4, options: .storageModeShared)!)
+  }
+  let st = Date()
+  var gpuTotal = 0.0
+  var src = x
+  var dst = y
+  for i in 0..<N {
+    let cb = q.makeCommandBuffer()!
+    en(cb, pc, [(src, 0), (a, 1), (ps[i], 2), (db, 3)], Np)
+    en(cb, pg, [(a, 0), (g, 1), (nb, 2)], G)
+    en(cb, pd, [(g, 0), (c, 1), (t, 2), (db, 3), (gbb, 4), (rs[i], 5)], 1)
+    if i + 1 == N {
+      en(cb, pt, [(src, 0), (a, 1), (mo, 2), (ps[i], 3), (nb, 4), (db, 5)], G)
+      cb.commit(); cb.waitUntilCompleted()
+      precondition(cb.status == .completed && cb.error == nil)
+      gpuTotal += cb.gpuEndTime-cb.gpuStartTime
+      if traceOn {
+        let aa=Array(UnsafeBufferPointer(start:a.contents().bindMemory(to:UInt32.self,capacity:Np),count:Np)).map(Int.init)
+        let cc=Array(UnsafeBufferPointer(start:c.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let words=(0..<Np).map { j -> [Int] in let p=px.contents().advanced(by:j*512).bindMemory(to:UInt16.self,capacity:256); return (0..<i).map{Int(p[$0])} }
+        let bits=(0..<Np).map { j -> [Any] in let s=src.contents().advanced(by:j*264);let o=(0..<32).map{k in Int(s.load(fromByteOffset:k*4,as:UInt32.self))};let b=(0..<32).map{k in Int(s.load(fromByteOffset:128+k*4,as:UInt32.self))};return [o,b,Int(s.load(fromByteOffset:256,as:UInt32.self)),Int(s.load(fromByteOffset:260,as:UInt32.self))] }
+        let mm=Array(UnsafeBufferPointer(start:mo.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        traceRows.append(["rank":i+1,"terminal":true,"allowed":aa,"cdf":cc,"prefix":words,"state":bits,"moment_groups":mm])
+      }
+    } else {
+      en(
+        cb, pp,
+        [
+          (src, 0), (a, 1), (c, 2), (t, 3), (dst, 4), (ps[i], 5), (nb, 6), (rs[i], 7), (db, 8),
+          (sb, 9), (pa, 10), (px, 11), (py, 12),
+        ], Np)
+      if moveL > 0 { en(cb, pm, [(dst, 0), (py, 1), (ps[i], 2), (nb, 3), (lb, 4), (db, 5)], Np) }
+      cb.commit(); cb.waitUntilCompleted()
+      precondition(cb.status == .completed && cb.error == nil)
+      gpuTotal += cb.gpuEndTime-cb.gpuStartTime
+      if traceOn {
+        let aa=Array(UnsafeBufferPointer(start:a.contents().bindMemory(to:UInt32.self,capacity:Np),count:Np)).map(Int.init)
+        let cc=Array(UnsafeBufferPointer(start:c.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let ppv=Array(UnsafeBufferPointer(start:pa.contents().bindMemory(to:UInt32.self,capacity:Np),count:Np)).map(Int.init)
+        let words=(0..<Np).map { j -> [Int] in let p=py.contents().advanced(by:j*512).bindMemory(to:UInt16.self,capacity:256); return (0...i).map{Int(p[$0])} }
+        let bits=(0..<Np).map { j -> [Any] in let s=dst.contents().advanced(by:j*264);let o=(0..<32).map{k in Int(s.load(fromByteOffset:k*4,as:UInt32.self))};let b=(0..<32).map{k in Int(s.load(fromByteOffset:128+k*4,as:UInt32.self))};return [o,b,Int(s.load(fromByteOffset:256,as:UInt32.self)),Int(s.load(fromByteOffset:260,as:UInt32.self))] }
+        traceRows.append(["rank":i+1,"allowed":aa,"cdf":cc,"parents":ppv,"prefix":words,"state":bits])
+      }
+      swap(&src, &dst)
+      swap(&px, &py)
+    }
+  }
+  let ts = Array(
+    UnsafeBufferPointer(start: t.contents().bindMemory(to: UInt64.self, capacity: N), count: N))
+  if ts.contains(0) {
+    return R(
+      logZ: -.infinity, z: 0, u: 0, q: 0, dead: true, gpu: gpuTotal,
+      wall: -st.timeIntervalSinceNow)
+  }
+  var l = 0.0
+  for (i, z) in ts.enumerated() { l += log(Double(z) / (Double(Np) * Double(N - i))) }
+  let raw = UnsafeBufferPointer(
+    start: mo.contents().bindMemory(to: UInt64.self, capacity: G), count: G
+  ).reduce(0, &+)
+  let qv = Double(raw) / Double(ts[N - 1]) / Double(N)
+  let z = exp(l)
+  let u = z * Double(raw) / Double(ts[N - 1]) / Double(N)
+  return R(
+    logZ: l, z: z, u: u, q: qv, dead: false, gpu: gpuTotal,
+    wall: -st.timeIntervalSinceNow)
+}
+let v = CommandLine.arguments
+let maybeMoveL = v.count >= 10 ? Int(v[9]) : 0
+guard (v.count == 9 || v.count == 10 || v.count == 11), let n = Int(v[1]), let np = Int(v[2]), let Rn = Int(v[3]), let lo = Int(v[4]),
+  let hi = Int(v[5]), let dom = UInt64(v[7], radix: 16), let moveL = maybeMoveL
+else { fatalError("usage: bitset_smc n P R lo hi out domainhex strat|multi") }
+guard v[8] == "strat" || v[8] == "multi" else { fatalError("method must be strat or multi") }
+guard v.count < 11 || v[10] == "trace" else { fatalError("the optional final argument must be trace") }
+let strat = v[8] == "strat"
+traceOn = v.count == 11 && v[10] == "trace"
+precondition(
+  n >= 2 && n <= 16 && np > 0 && Rn > 0 && moveL >= 0 && lo >= 2 && hi <= n * n + 1 && lo <= hi
+    && UInt64(np) <= UInt64.max / UInt64(np) / UInt64(n * n))
+precondition(!traceOn || (Rn == 1 && lo == hi), "trace requires exactly one tau and one replicate")
+let outURL = URL(fileURLWithPath: v[6])
+FileManager.default.createFile(atPath: outURL.path, contents: nil)
+let fh = try FileHandle(forWritingTo: outURL)
+func o(_ s: String) { try! fh.write(contentsOf: (s + "\n").data(using: .utf8)!) }
+o(
+  "{\"kind\":\"metadata\",\"implementation\":\"r019-soa-gpu-resample-move\",\"n\":\(n),\"particles\":\(np),\"replicates\":\(Rn),\"tau_lo\":\(lo),\"tau_hi\":\(hi),\"domain\":\"\(String(dom,radix:16))\",\"method\":\"\(strat ? "strat" : "multi")\",\"move_steps\":\(moveL),\"moment_scale\":\"U_over_Z\"}"
+)
+let T = Date()
+for tau in lo...hi {
+  for r in 0..<Rn {
+    let sd = (0xA022_0000_0000_0000 &+ dom) &+ UInt64(n * 1_000_000 + tau * 10000 + r)
+    let z: R = autoreleasepool { run(n, tau, np, sd, strat, moveL) }
+    let l = z.dead ? "null" : String(z.logZ)
+    let us = z.dead || tau > n * n ? "null" : String(z.u)
+    let qs = z.dead || tau > n * n ? "null" : String(z.q)
+    o(
+      "{\"kind\":\"replicate\",\"tau\":\(tau),\"replicate\":\(r),\"seed_hex\":\"\(String(sd,radix:16))\",\"Z\":\(z.z),\"U\":\(us),\"logZ\":\(l),\"U_over_Z\":\(qs),\"scaled_U\":\(qs),\"dead\":\(z.dead),\"gpu_seconds\":\(z.gpu),\"wall_seconds\":\(z.wall)}"
+    )
+    if traceOn {
+      let obj:[String:Any] = ["implementation":"r019-soa-gpu-resample-move","method":strat ? "strat" : "multi","n":n,"tau":tau,"P":np,"seed_hex":String(sd,radix:16),"L":moveL,"rows":traceRows]
+      let u=URL(fileURLWithPath:outURL.path+".trace.json")
+      try JSONSerialization.data(withJSONObject:obj,options:[.prettyPrinted]).write(to:u)
+      traceRows.removeAll()
+    }
+  }
+}
+o("{\"kind\":\"run_end\",\"wall_seconds\":\(-T.timeIntervalSinceNow)}")

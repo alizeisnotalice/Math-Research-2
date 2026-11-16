@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Z_times_two",
+    "command": [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/negative-numeric-Z_times_two.jsonl.trace.json"
+    ],
+    "rc": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py\", line 103, in <module>\n    assert rep['dead'] is False and close(rep['logZ'],ell) and close(rep['Z'],math.exp(ell))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  },
+  {
+    "name": "U_times_two",
+    "command": [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/negative-numeric-U_times_two.jsonl.trace.json"
+    ],
+    "rc": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py\", line 106, in <module>\n    assert close(rep['U'],math.exp(ell)*raw/(totals[-1]*N))\n           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  },
+  {
+    "name": "Z_zero",
+    "command": [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/negative-numeric-Z_zero.jsonl.trace.json"
+    ],
+    "rc": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py\", line 103, in <module>\n    assert rep['dead'] is False and close(rep['logZ'],ell) and close(rep['Z'],math.exp(ell))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  }
+]

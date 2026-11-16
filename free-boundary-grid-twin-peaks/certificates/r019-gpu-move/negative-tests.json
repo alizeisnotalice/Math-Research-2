@@ -1,0 +1,22 @@
+[
+  {
+    "name": "parent_vector_truncated",
+    "command": [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/negative-parent_vector_truncated.jsonl.trace.json"
+    ],
+    "rc": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py\", line 74, in <module>\n    assert len(row['parents'])==P and len(row['state'])==P\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  },
+  {
+    "name": "occupied_bitset_truncated",
+    "command": [
+      "/Users/zzh/.local/bin/python3",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py",
+      "/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/negative-occupied_bitset_truncated.jsonl.trace.json"
+    ],
+    "rc": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/Volumes/data/CodexTemp/T2/a022-gpu-resample-full-r019/verify_soa_trace.py\", line 77, in <module>\n    assert len(after)==r and len(bits)==4 and len(bits[0])==32 and len(bits[1])==32\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  }
+]
