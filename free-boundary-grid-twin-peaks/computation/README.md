@@ -197,3 +197,26 @@ n9源码与完整generate/calculate/audit命令在certificates/r009-n9/RUN_SUMMA
 第13轮：`audit_late_merge_families.py` 核验晚合并两族；`audit_r013_gpu.py` 独立审计新核来源、4800个实际seed、原条件矩与整机遥测。证书在课题根 `certificates/r013-analytic/` 和 `certificates/r013-gpu/`。
 
 第14轮：`audit_early_interface.py` 检查可逆交错及完整方格单向阶乘例；`audit_r014_gpu.py` 以Decimal60重算n8/n9矩、一峰归一化和明确同P合并。课题根 `certificates/r014-boundary/` 保存出生及有理归一化核验，`r014-dominating/` 为n3–n5支配条件整数DP，`r014-completion/` 为n3/n4一般双向完成数和严格dyadic求和区间；各包附复现命令。小粒子大掩码核审计在 `r014-gpu/kernel-audit/`。编译二进制和重跑输出均应写CodexTemp；冻结源中的绝对临时输出路径在包README注明。
+
+
+## 第15轮复现
+
+在课题根目录运行，二进制和缓存均放data临时目录。数学参数与结果见rounds/015.md。
+
+```sh
+cd certificates/r015-completion
+clang++ -O3 -std=c++20 -pthread -fmodules-cache-path=/Volumes/data/CodexTemp/cache/clang completion_gain_compact.cpp -I/opt/homebrew/opt/gmp/include -L/opt/homebrew/opt/gmp/lib -lgmpxx -lgmp -o /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/r015-completion
+/Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/r015-completion 5 /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/r015-completion-n5.json 4
+python3 verify_r015.py
+python3 audit_r015_n3.py
+cd ../r015-hook
+python3 audit_recursive_hook_tree.py /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks/r015-hook.json
+cd ../r015-t-interface
+python3 audit_square_dstar.py
+python3 verify_t_interface.py
+python3 audit_bounded_parent.py
+python3 t_family_exact.py
+```
+
+`root-reproduction.json`记录重新编译后n5输出除运行时间字段以外逐项完全一致。
+T族分母沿用本课题已核验n3/n5/n7整数A₂；未新做n7全图计数。

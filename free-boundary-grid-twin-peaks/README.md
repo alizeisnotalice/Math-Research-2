@@ -10,4 +10,4 @@
 
 临时输出统一位于 /Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks。尚未执行的实验不算证据。
 
-最新完整报告：[第14轮](rounds/014.md)，含双向提前界面计数、双峰粗边界严格概率界、n3–n5有限覆盖账本及n9 GPU复核。原题仍开放。首次合并均值/方差基线见 `certificates/r012-first-merge/`；最新数值及正确性证据见 `certificates/r014-gpu/`。
+最新完整报告：[第15轮](rounds/015.md)，含T形真实占比消失、有界父提前插入、固定密度粗边界和n5一般完成数完整账本。原题仍开放。首次合并均值/方差基线见 `certificates/r012-first-merge/`；最新数值及正确性证据见 `certificates/r014-gpu/`。
