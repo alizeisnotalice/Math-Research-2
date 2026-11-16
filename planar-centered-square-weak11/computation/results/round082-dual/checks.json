@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "scope": "Exact Laurent-polynomial identities and branch positivity for one near location and all a in [0,1/2]; no mass samples, area integration, root solving or parameter subdivision",
+  "exact_symbolic_laurent_coefficients": {
+    "u": {
+      "1": "1/2",
+      "-1": "1/32"
+    },
+    "z": {
+      "1": "1/2",
+      "-1": "-1/32"
+    },
+    "full_before_cover": {
+      "0": "151001/1000000",
+      "2": "1/2",
+      "-2": "1/512",
+      "1": "-303/1000",
+      "-1": "-303/16000"
+    },
+    "G2": {
+      "0": "22737/125000",
+      "-2": "1/512",
+      "1": "-249/2000",
+      "-1": "-961/32000"
+    },
+    "G3": {
+      "2": "-1/4",
+      "0": "31073/500000",
+      "1": "71/400",
+      "-2": "1/1024",
+      "-1": "-357/32000"
+    },
+    "P": {
+      "2": "-13987/125000",
+      "0": "-1/512",
+      "3": "249/2000",
+      "1": "961/32000"
+    }
+  },
+  "zero_and_low_branch": {
+    "zero_mass_exact_cost": "62001/1000000",
+    "z_below_crop_implies_no_contact": true,
+    "monotonic_derivative_margin": "197/125",
+    "contact_u": "7541/28400",
+    "contact_z": "2541/28400",
+    "contact_cost": "691638777/10082000000"
+  },
+  "intermediate_branch": {
+    "P_at_d": "14101223/80000000000",
+    "Pprime_at_d": "-937829/400000000",
+    "Psecond_at_d": "41393/1000000",
+    "positive_cubic_remainder_coefficient": "249/2000",
+    "Taylor_global_lower": "291048892263/2649152000000000",
+    "comparison_margin": "1/10000",
+    "s_less_than_one_from_root_bounds": true
+  },
+  "high_branch": {
+    "anchor_s": "3/5",
+    "anchor_u": "169/480",
+    "coverage_u_threshold": "177/500",
+    "derivative_uniform_upper": "-1757/19200",
+    "cost_at_anchor": "9038149/144000000"
+  },
+  "uniform_actual_near_area_strict_upper": "699/10000",
+  "receipt": {
+    "pid": 35861,
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "actual_command": [
+      "/Users/zzh/.local/bin/python3",
+      "planar-centered-square-weak11/computation/round082-dual/check_near_uniform_constants.py",
+      "--input",
+      "planar-centered-square-weak11/computation/inputs/r082-dual/near-uniform-constants.json",
+      "--output",
+      "planar-centered-square-weak11/computation/results/round082-dual/checks.json"
+    ],
+    "working_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources",
+    "input_sha256": "87dfed5a694cb0ab96e077341fcd88944841a4e7bd2186455b3fa8bbcdf377c9",
+    "script_sha256": "20c579daa0a62cf6515bd33b4897a4fbb93575a048f540e2939361ade4049417",
+    "seconds": 0.020373291001305915,
+    "random_seed": null,
+    "tolerance": "exact Fraction; none",
+    "mass_sample_count": 0,
+    "parameter_subdivision_performed": false,
+    "area_union_integration_performed": false
+  }
+}

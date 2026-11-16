@@ -1,0 +1,15 @@
+{
+  "schema": "r082-robust-shared-axis-geometry-v1",
+  "w_closed_verification_range": ["3/4", "1"],
+  "actual_w_domain": "3/4<w<1",
+  "near_distance_range": ["44/125", "179/500"],
+  "far_distance_range": ["17/20", "43/50"],
+  "old_corner_mass": "1/4",
+  "near_mass_upper_from_side_caps": "1/2",
+  "base_near_area_upper_from_separate_proof": "699/10000",
+  "base_near_distance": "71/200",
+  "base_crop_e": "1/1000",
+  "near_distance_displacement_bound": "3/1000",
+  "symbolic_position_scope": "Each near/far variable ranges over every point in its entire axial support segment. Shared capacity windows use fixed support endpoints, independent of the chosen point variables; only w varies with the input.",
+  "scope": "Independent affine-window and rational-constant check only. Base all-mass near-only analytic area proof is an external dependency, not recomputed. No parameter area evaluations or B&B."
+}

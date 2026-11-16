@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "identities": {
+    "full_union_first_branch": "(4000000*s**4 - 2424000*s**3 + 1208008*s**2 - 151500*s + 15625)/(8000000*s**2)",
+    "G2": "-249*s/2000 + 22737/125000 - 961/(32000*s) + 1/(512*s**2)",
+    "G3": "-s**2/4 + 71*s/400 + 31073/500000 - 357/(32000*s) + 1/(1024*s**2)",
+    "coverage_change_matches": true,
+    "P_taylor_exact": true
+  },
+  "constants": {
+    "zero_near_area": "62001/1000000",
+    "contact": "691638777/10082000000",
+    "taylor_lower": "291048892263/2649152000000000",
+    "high_branch_derivative_upper": "-1757/19200",
+    "high_branch_cost_upper": "9038149/144000000",
+    "active_count_hinge_bounds": [
+      "0",
+      "111/400",
+      "111/200",
+      "233/400",
+      "11/100"
+    ],
+    "hinge_max_active_count": 3,
+    "joint_sum_upper": "5359/32000",
+    "robust_near_upper_using_exact_crop": "74499/1000000",
+    "aggregate_relaxed_upper": "62/125"
+  },
+  "input_sha256": "e22f4d4b318d6aa7b73ebc2f4fae5c73e7c1b3d49101615733e408b197f8f12b",
+  "script_sha256": "13f5a4a75cddc03b8b1ae108c3d5f6bc13bd026e6727c5a98ed51c652fab847a",
+  "scope": "Independent symbolic identities and exact constant comparisons only; no measure sampling or halo integration. Analytic branch domains and Borel bundle set inclusions require separate mathematical review, not these identities.",
+  "runtime": {
+    "pid": 36846,
+    "python": "3.13.18",
+    "sympy": "1.14.0",
+    "seconds": 0.040437542000290705
+  }
+}

@@ -1,0 +1,6999 @@
+{
+  "schema": "r082-robust-geometry-constants-v1",
+  "pid": 38291,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "source_sha256": "fa6f1dc5ca9da4bef0a0508532639957c30271b8ff0e4325f6c5325132f83bb3",
+  "input_sha256": "d7d7dea287c0074c782fe9edb740816ec2ce3767fb5a9540597eefdca4977f01",
+  "formal_proof_path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/proofs/r082-robust-shared-side-arbitrary-mass-payment.md",
+  "formal_proof_sha256": "6817649e38760727974aec8fb97d6022f0a3889924186c0d310406df36ad5fbd",
+  "parameter_ranges": {
+    "w": [
+      "3/4",
+      "1"
+    ],
+    "d0": [
+      "44/125",
+      "179/500"
+    ],
+    "D0": [
+      "17/20",
+      "43/50"
+    ],
+    "d1": [
+      "44/125",
+      "179/500"
+    ],
+    "D1": [
+      "17/20",
+      "43/50"
+    ],
+    "d2": [
+      "44/125",
+      "179/500"
+    ],
+    "D2": [
+      "17/20",
+      "43/50"
+    ],
+    "d3": [
+      "44/125",
+      "179/500"
+    ],
+    "D3": [
+      "17/20",
+      "43/50"
+    ]
+  },
+  "actual_w_open_interval": "3/4<w<1; closed range used only for safe affine extrema",
+  "windows": [
+    {
+      "label": "side_0",
+      "boundary": "closed",
+      "box_affine": [
+        {
+          "constant": "-43/50",
+          "coefficients": {}
+        },
+        {
+          "constant": "7/50",
+          "coefficients": {}
+        },
+        {
+          "constant": "0",
+          "coefficients": {}
+        },
+        {
+          "constant": "1",
+          "coefficients": {}
+        }
+      ],
+      "expected_capture_indices": [
+        0,
+        3,
+        4,
+        11
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d0": "-1"
+                }
+              },
+              "minimum": "251/500",
+              "maximum": "127/250"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d0": "1"
+                }
+              },
+              "minimum": "123/250",
+              "maximum": "249/500"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "D0": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-17/20"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D0": "1"
+                }
+              },
+              "minimum": "37/20",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "d1": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-44/125"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d1": "1"
+                }
+              },
+              "minimum": "169/125",
+              "maximum": "679/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "123/50",
+              "maximum": "68/25"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D1": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/25",
+              "maximum": "-73/50"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "981/500",
+              "maximum": "1109/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d2": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-481/500"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "D2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "8/5",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D2": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-3/5"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "d3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "551/500",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d3": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-51/500"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D3": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/100"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D3": "1"
+                }
+              },
+              "minimum": "99/100",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "corner_unit_0",
+      "boundary": "closed",
+      "box_affine": [
+        {
+          "constant": "-179/500",
+          "coefficients": {}
+        },
+        {
+          "constant": "321/500",
+          "coefficients": {}
+        },
+        {
+          "constant": "-43/50",
+          "coefficients": {}
+        },
+        {
+          "constant": "7/50",
+          "coefficients": {}
+        }
+      ],
+      "expected_capture_indices": [
+        0,
+        4,
+        5
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "d0": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "3/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "d0": "1"
+                }
+              },
+              "minimum": "497/500",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D0": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/100"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D0": "1"
+                }
+              },
+              "minimum": "99/100",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d1": "-1"
+                }
+              },
+              "minimum": "251/500",
+              "maximum": "127/250"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d1": "1"
+                }
+              },
+              "minimum": "123/250",
+              "maximum": "249/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "D1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "979/500",
+              "maximum": "1109/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "D1": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-479/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "d2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "73/50",
+              "maximum": "429/250"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "d2": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/250",
+              "maximum": "-23/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "123/50",
+              "maximum": "68/25"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D2": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/25",
+              "maximum": "-73/50"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "981/500",
+              "maximum": "1109/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d3": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-481/500"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "D3": "-1"
+                }
+              },
+              "minimum": "-251/500",
+              "maximum": "-123/250"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "D3": "1"
+                }
+              },
+              "minimum": "373/250",
+              "maximum": "751/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "effective_source_window_0",
+      "boundary": "open",
+      "box_affine": [
+        {
+          "constant": "-1",
+          "coefficients": {}
+        },
+        {
+          "constant": "-1/2",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "-1",
+          "coefficients": {}
+        },
+        {
+          "constant": "-1/2",
+          "coefficients": {
+            "w": "1"
+          }
+        }
+      ],
+      "expected_capture_indices": [
+        0,
+        4,
+        5
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d0": "-1"
+                }
+              },
+              "minimum": "321/500",
+              "maximum": "81/125"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "301/500",
+              "maximum": "429/500"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D0": "-1"
+                }
+              },
+              "minimum": "7/50",
+              "maximum": "3/20"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "11/10",
+              "maximum": "34/25"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d1": "-1"
+                }
+              },
+              "minimum": "321/500",
+              "maximum": "81/125"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "301/500",
+              "maximum": "429/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "13/5",
+              "maximum": "143/50"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D1": "-1"
+                }
+              },
+              "minimum": "-34/25",
+              "maximum": "-27/20"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "1051/500",
+              "maximum": "1179/500"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d2": "-1"
+                }
+              },
+              "minimum": "-429/500",
+              "maximum": "-213/250"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "13/5",
+              "maximum": "143/50"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D2": "-1"
+                }
+              },
+              "minimum": "-34/25",
+              "maximum": "-27/20"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "1051/500",
+              "maximum": "1179/500"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d3": "-1"
+                }
+              },
+              "minimum": "-429/500",
+              "maximum": "-213/250"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D3": "-1"
+                }
+              },
+              "minimum": "7/50",
+              "maximum": "3/20"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "11/10",
+              "maximum": "34/25"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "side_1",
+      "boundary": "closed",
+      "box_affine": [
+        {
+          "constant": "-1",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "0",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "-43/50",
+          "coefficients": {}
+        },
+        {
+          "constant": "7/50",
+          "coefficients": {}
+        }
+      ],
+      "expected_capture_indices": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d0": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-51/500"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "d0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "551/500",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D0": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/100"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D0": "1"
+                }
+              },
+              "minimum": "99/100",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d1": "-1"
+                }
+              },
+              "minimum": "251/500",
+              "maximum": "127/250"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d1": "1"
+                }
+              },
+              "minimum": "123/250",
+              "maximum": "249/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D1": "1"
+                }
+              },
+              "minimum": "37/20",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "D1": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-17/20"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d2": "1"
+                }
+              },
+              "minimum": "169/125",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "d2": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-44/125"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "123/50",
+              "maximum": "68/25"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D2": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/25",
+              "maximum": "-73/50"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "981/500",
+              "maximum": "1109/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d3": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-481/500"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D3": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-3/5"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "D3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "8/5",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "corner_unit_1",
+      "boundary": "closed",
+      "box_affine": [
+        {
+          "constant": "-7/50",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "43/50",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "-179/500",
+          "coefficients": {}
+        },
+        {
+          "constant": "321/500",
+          "coefficients": {}
+        }
+      ],
+      "expected_capture_indices": [
+        1,
+        6,
+        7
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d0": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-481/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "981/500",
+              "maximum": "1109/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "D0": "-1"
+                }
+              },
+              "minimum": "-251/500",
+              "maximum": "-123/250"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "D0": "1"
+                }
+              },
+              "minimum": "373/250",
+              "maximum": "751/500"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "d1": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "3/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "d1": "1"
+                }
+              },
+              "minimum": "497/500",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D1": "1"
+                }
+              },
+              "minimum": "99/100",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D1": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/100"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d2": "1"
+                }
+              },
+              "minimum": "123/250",
+              "maximum": "249/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d2": "-1"
+                }
+              },
+              "minimum": "251/500",
+              "maximum": "127/250"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "D2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "979/500",
+              "maximum": "1109/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "D2": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-479/500"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "d3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "73/50",
+              "maximum": "429/250"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "d3": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/250",
+              "maximum": "-23/50"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D3": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/25",
+              "maximum": "-73/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "123/50",
+              "maximum": "68/25"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "effective_source_window_1",
+      "boundary": "open",
+      "box_affine": [
+        {
+          "constant": "1/2",
+          "coefficients": {}
+        },
+        {
+          "constant": "1",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "-1",
+          "coefficients": {}
+        },
+        {
+          "constant": "-1/2",
+          "coefficients": {
+            "w": "1"
+          }
+        }
+      ],
+      "expected_capture_indices": [
+        1,
+        6,
+        7
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d0": "-1"
+                }
+              },
+              "minimum": "-429/500",
+              "maximum": "-213/250"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "1051/500",
+              "maximum": "1179/500"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D0": "-1"
+                }
+              },
+              "minimum": "7/50",
+              "maximum": "3/20"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "11/10",
+              "maximum": "34/25"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d1": "-1"
+                }
+              },
+              "minimum": "321/500",
+              "maximum": "81/125"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "301/500",
+              "maximum": "429/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "11/10",
+              "maximum": "34/25"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D1": "-1"
+                }
+              },
+              "minimum": "7/50",
+              "maximum": "3/20"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "301/500",
+              "maximum": "429/500"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d2": "-1"
+                }
+              },
+              "minimum": "321/500",
+              "maximum": "81/125"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "13/5",
+              "maximum": "143/50"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D2": "-1"
+                }
+              },
+              "minimum": "-34/25",
+              "maximum": "-27/20"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "1051/500",
+              "maximum": "1179/500"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d3": "-1"
+                }
+              },
+              "minimum": "-429/500",
+              "maximum": "-213/250"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D3": "-1"
+                }
+              },
+              "minimum": "-34/25",
+              "maximum": "-27/20"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "13/5",
+              "maximum": "143/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "side_2",
+      "boundary": "closed",
+      "box_affine": [
+        {
+          "constant": "-7/50",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "43/50",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "-1",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "0",
+          "coefficients": {
+            "w": "1"
+          }
+        }
+      ],
+      "expected_capture_indices": [
+        1,
+        2,
+        7,
+        8
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d0": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-481/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "981/500",
+              "maximum": "1109/500"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D0": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-3/5"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "D0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "8/5",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d1": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-51/500"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "d1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "551/500",
+              "maximum": "679/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D1": "1"
+                }
+              },
+              "minimum": "99/100",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D1": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/100"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d2": "1"
+                }
+              },
+              "minimum": "123/250",
+              "maximum": "249/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d2": "-1"
+                }
+              },
+              "minimum": "251/500",
+              "maximum": "127/250"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_3",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D2": "1"
+                }
+              },
+              "minimum": "37/20",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "D2": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-17/20"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d3": "1"
+                }
+              },
+              "minimum": "169/125",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "d3": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-44/125"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D3": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/25",
+              "maximum": "-73/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "123/50",
+              "maximum": "68/25"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "corner_unit_2",
+      "boundary": "closed",
+      "box_affine": [
+        {
+          "constant": "-321/500",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "179/500",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "-7/50",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "43/50",
+          "coefficients": {
+            "w": "1"
+          }
+        }
+      ],
+      "expected_capture_indices": [
+        2,
+        8,
+        9
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "d0": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/250",
+              "maximum": "-23/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "d0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "73/50",
+              "maximum": "429/250"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D0": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/25",
+              "maximum": "-73/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "123/50",
+              "maximum": "68/25"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d1": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-481/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "981/500",
+              "maximum": "1109/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "D1": "1"
+                }
+              },
+              "minimum": "373/250",
+              "maximum": "751/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "D1": "-1"
+                }
+              },
+              "minimum": "-251/500",
+              "maximum": "-123/250"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "d2": "1"
+                }
+              },
+              "minimum": "497/500",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "d2": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "3/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D2": "1"
+                }
+              },
+              "minimum": "99/100",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D2": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/100"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d3": "1"
+                }
+              },
+              "minimum": "123/250",
+              "maximum": "249/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d3": "-1"
+                }
+              },
+              "minimum": "251/500",
+              "maximum": "127/250"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "D3": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-479/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "D3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "979/500",
+              "maximum": "1109/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "effective_source_window_2",
+      "boundary": "open",
+      "box_affine": [
+        {
+          "constant": "1/2",
+          "coefficients": {}
+        },
+        {
+          "constant": "1",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "1/2",
+          "coefficients": {}
+        },
+        {
+          "constant": "1",
+          "coefficients": {
+            "w": "1"
+          }
+        }
+      ],
+      "expected_capture_indices": [
+        2,
+        8,
+        9
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d0": "-1"
+                }
+              },
+              "minimum": "-429/500",
+              "maximum": "-213/250"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "1051/500",
+              "maximum": "1179/500"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D0": "-1"
+                }
+              },
+              "minimum": "-34/25",
+              "maximum": "-27/20"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "13/5",
+              "maximum": "143/50"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d1": "-1"
+                }
+              },
+              "minimum": "-429/500",
+              "maximum": "-213/250"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "1051/500",
+              "maximum": "1179/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "11/10",
+              "maximum": "34/25"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D1": "-1"
+                }
+              },
+              "minimum": "7/50",
+              "maximum": "3/20"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "301/500",
+              "maximum": "429/500"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d2": "-1"
+                }
+              },
+              "minimum": "321/500",
+              "maximum": "81/125"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "11/10",
+              "maximum": "34/25"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D2": "-1"
+                }
+              },
+              "minimum": "7/50",
+              "maximum": "3/20"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "301/500",
+              "maximum": "429/500"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d3": "-1"
+                }
+              },
+              "minimum": "321/500",
+              "maximum": "81/125"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D3": "-1"
+                }
+              },
+              "minimum": "-34/25",
+              "maximum": "-27/20"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "13/5",
+              "maximum": "143/50"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "side_3",
+      "boundary": "closed",
+      "box_affine": [
+        {
+          "constant": "0",
+          "coefficients": {}
+        },
+        {
+          "constant": "1",
+          "coefficients": {}
+        },
+        {
+          "constant": "-7/50",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "43/50",
+          "coefficients": {
+            "w": "1"
+          }
+        }
+      ],
+      "expected_capture_indices": [
+        2,
+        3,
+        9,
+        10
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "d0": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-44/125"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d0": "1"
+                }
+              },
+              "minimum": "169/125",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D0": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/25",
+              "maximum": "-73/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "123/50",
+              "maximum": "68/25"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d1": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-481/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "981/500",
+              "maximum": "1109/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "D1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "8/5",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D1": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-3/5"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "d2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "551/500",
+              "maximum": "679/500"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d2": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-51/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "3/4",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/4"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D2": "1"
+                }
+              },
+              "minimum": "99/100",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D2": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/100"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {}
+              },
+              "minimum": "0",
+              "maximum": "0"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d3": "1"
+                }
+              },
+              "minimum": "123/250",
+              "maximum": "249/500"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d3": "-1"
+                }
+              },
+              "minimum": "251/500",
+              "maximum": "127/250"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_0",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "0",
+                "coefficients": {
+                  "D3": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-17/20"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D3": "1"
+                }
+              },
+              "minimum": "37/20",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "corner_unit_3",
+      "boundary": "closed",
+      "box_affine": [
+        {
+          "constant": "-43/50",
+          "coefficients": {}
+        },
+        {
+          "constant": "7/50",
+          "coefficients": {}
+        },
+        {
+          "constant": "-321/500",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "179/500",
+          "coefficients": {
+            "w": "1"
+          }
+        }
+      ],
+      "expected_capture_indices": [
+        3,
+        10,
+        11
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d0": "-1"
+                }
+              },
+              "minimum": "251/500",
+              "maximum": "127/250"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d0": "1"
+                }
+              },
+              "minimum": "123/250",
+              "maximum": "249/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "D0": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-479/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "D0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "979/500",
+              "maximum": "1109/500"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "d1": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/250",
+              "maximum": "-23/50"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "d1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "73/50",
+              "maximum": "429/250"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "123/50",
+              "maximum": "68/25"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D1": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/25",
+              "maximum": "-73/50"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-179/500",
+              "maximum": "-27/250"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "277/250",
+              "maximum": "679/500"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "d2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "981/500",
+              "maximum": "1109/500"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "d2": "-1",
+                  "w": "-1"
+                }
+              },
+              "minimum": "-609/500",
+              "maximum": "-481/500"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "161/100",
+              "maximum": "93/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "w": "-1"
+                }
+              },
+              "minimum": "-43/50",
+              "maximum": "-61/100"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "D2": "1"
+                }
+              },
+              "minimum": "373/250",
+              "maximum": "751/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "D2": "-1"
+                }
+              },
+              "minimum": "-251/500",
+              "maximum": "-123/250"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {}
+              },
+              "minimum": "43/50",
+              "maximum": "43/50"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {}
+              },
+              "minimum": "7/50",
+              "maximum": "7/50"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {
+                  "d3": "1"
+                }
+              },
+              "minimum": "497/500",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {
+                  "d3": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "3/500"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "43/50",
+                "coefficients": {
+                  "D3": "-1"
+                }
+              },
+              "minimum": "0",
+              "maximum": "1/100"
+            },
+            {
+              "affine": {
+                "constant": "7/50",
+                "coefficients": {
+                  "D3": "1"
+                }
+              },
+              "minimum": "99/100",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "321/500",
+                "coefficients": {}
+              },
+              "minimum": "321/500",
+              "maximum": "321/500"
+            },
+            {
+              "affine": {
+                "constant": "179/500",
+                "coefficients": {}
+              },
+              "minimum": "179/500",
+              "maximum": "179/500"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    },
+    {
+      "label": "effective_source_window_3",
+      "boundary": "open",
+      "box_affine": [
+        {
+          "constant": "-1",
+          "coefficients": {}
+        },
+        {
+          "constant": "-1/2",
+          "coefficients": {
+            "w": "1"
+          }
+        },
+        {
+          "constant": "1/2",
+          "coefficients": {}
+        },
+        {
+          "constant": "1",
+          "coefficients": {
+            "w": "1"
+          }
+        }
+      ],
+      "expected_capture_indices": [
+        3,
+        10,
+        11
+      ],
+      "source_checks": [
+        {
+          "source_index": 0,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            }
+          ]
+        },
+        {
+          "source_index": 1,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            }
+          ]
+        },
+        {
+          "source_index": 2,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 3,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 4,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d0": "-1"
+                }
+              },
+              "minimum": "321/500",
+              "maximum": "81/125"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "301/500",
+              "maximum": "429/500"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            }
+          ]
+        },
+        {
+          "source_index": 5,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_2",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D0": "-1"
+                }
+              },
+              "minimum": "-34/25",
+              "maximum": "-27/20"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D0": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "13/5",
+              "maximum": "143/50"
+            }
+          ]
+        },
+        {
+          "source_index": 6,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d1": "-1"
+                }
+              },
+              "minimum": "-429/500",
+              "maximum": "-213/250"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "1051/500",
+              "maximum": "1179/500"
+            }
+          ]
+        },
+        {
+          "source_index": 7,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D1": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "13/5",
+              "maximum": "143/50"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D1": "-1"
+                }
+              },
+              "minimum": "-34/25",
+              "maximum": "-27/20"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            }
+          ]
+        },
+        {
+          "source_index": 8,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "1051/500",
+              "maximum": "1179/500"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d2": "-1"
+                }
+              },
+              "minimum": "-429/500",
+              "maximum": "-213/250"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        },
+        {
+          "source_index": 9,
+          "expected_captured": false,
+          "reason": "uniform_outside_facet_1",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "7/4",
+              "maximum": "2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {}
+              },
+              "minimum": "-1/2",
+              "maximum": "-1/2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D2": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "11/10",
+              "maximum": "34/25"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D2": "-1"
+                }
+              },
+              "minimum": "7/50",
+              "maximum": "3/20"
+            }
+          ]
+        },
+        {
+          "source_index": 10,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "d3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "301/500",
+              "maximum": "429/500"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "d3": "-1"
+                }
+              },
+              "minimum": "321/500",
+              "maximum": "81/125"
+            }
+          ]
+        },
+        {
+          "source_index": 11,
+          "expected_captured": true,
+          "reason": "uniform_inside",
+          "four_signed_inclusion_facets": [
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {
+                  "D3": "-1"
+                }
+              },
+              "minimum": "7/50",
+              "maximum": "3/20"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "D3": "1",
+                  "w": "1"
+                }
+              },
+              "minimum": "11/10",
+              "maximum": "34/25"
+            },
+            {
+              "affine": {
+                "constant": "-1/2",
+                "coefficients": {
+                  "w": "1"
+                }
+              },
+              "minimum": "1/4",
+              "maximum": "1/2"
+            },
+            {
+              "affine": {
+                "constant": "1",
+                "coefficients": {}
+              },
+              "minimum": "1",
+              "maximum": "1"
+            }
+          ]
+        }
+      ],
+      "all_affine_extrema_verified": true
+    }
+  ],
+  "window_count": 12,
+  "source_window_incidence_checks": 144,
+  "signed_affine_facet_checks": 576,
+  "side_weight_multiplicity": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "necessary_weight_constraints": {
+    "side": "a_i+b_(i-1)<=1/2",
+    "corner": "a_i+b_i<=3/4",
+    "summed_side": "sum_i(a_i+b_i)<=2",
+    "nonnegative_weights": true,
+    "sufficient_for_global_caps": false
+  },
+  "robust_constants": {
+    "u_rational_upper": "7/16",
+    "z_rational_upper": "3/8",
+    "distance_lipschitz_upper": "19/16",
+    "coarser_lipschitz_used": "6/5",
+    "crop_area_loss": "999/1000000",
+    "distance_displacement": "3/1000",
+    "base_near_bound_assumed_from_separate_proof": "699/10000",
+    "near_bound_after_perturbation": "74499/1000000",
+    "far_full_rectangle_upper": "139/20000",
+    "joint_threshold": "189/400",
+    "joint_kappa_upper": "23/80",
+    "active_count_hinge_bounds": [
+      "0",
+      "111/400",
+      "111/200",
+      "233/400",
+      "11/100"
+    ],
+    "joint_sum_upper": "5359/32000",
+    "sum_using_075_near_and_007_far": "3171/6400",
+    "coarser_aggregate_upper": "62/125",
+    "aggregate_strict_below_half": true
+  },
+  "all_checks_pass": true,
+  "area_parameter_samples": 0,
+  "branch_and_bound_nodes": 0,
+  "random_seed": null,
+  "numerical_tolerance": null,
+  "seconds": 0.0029010830003244337,
+  "scope": "Independent affine containment/exclusion for all robust geometry parameters and rational constant checks conditional on separate analytic near/far/joint lemmas. Does not duplicate the base near-only three-branch area proof, enumerate mass vectors or claim global cap sufficiency from these selected windows.",
+  "window_capture_sets_exact_only_among_named_support_families": true,
+  "entire_segments_verified_by_affine_extrema_not_point_samples": true,
+  "capacity_windows_independent_of_all_segment_point_variables": true,
+  "additional_rho_scope": "Not enumerated. May enter capacity windows, strengthening the necessary inequalities by nonnegativity. No rho mass enters corner witnesses by the separate analytic P-window containment theorem.",
+  "geometry_check_is_not_Borel_area_proof": true,
+  "pre_execution_prepared_source_sha256": "d77f409b8582cbfa1b4e39cd94f287583aa425d95673222ee1c8b66d192e7e9a"
+}

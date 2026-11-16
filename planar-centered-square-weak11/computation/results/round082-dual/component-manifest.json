@@ -1,0 +1,101 @@
+{
+  "schema": "r082-dual-component-v1",
+  "round": 82,
+  "title": "Base uniform true near-halo payment, including zero and high masses",
+  "review_status_at_manifest_generation": "Author final candidate; independent full-proof review pending",
+  "payload": [
+    {
+      "path": "proofs/r082-dual-near-halo-uniform-payment.md",
+      "bytes": 7642,
+      "sha256": "5ccdea97c9b4249b77f7a3d657cff99c38c5d27ae7bd17042fe815b3c2296c4a"
+    },
+    {
+      "path": "computation/round082-dual/check_near_uniform_constants.py",
+      "bytes": 6840,
+      "sha256": "20c579daa0a62cf6515bd33b4897a4fbb93575a048f540e2939361ade4049417"
+    },
+    {
+      "path": "computation/inputs/r082-dual/near-uniform-constants.json",
+      "bytes": 563,
+      "sha256": "87dfed5a694cb0ab96e077341fcd88944841a4e7bd2186455b3fa8bbcdf377c9"
+    },
+    {
+      "path": "computation/results/round082-dual/checks.json",
+      "bytes": 2802,
+      "sha256": "a48e4588f31f617d90d9bbfeb3a149d527d87852b05d4d9d0c1334a5fa0d8983"
+    }
+  ],
+  "payload_bytes": 17847,
+  "precise_scope": {
+    "old_atom": {
+      "position": [
+        "0",
+        "0"
+      ],
+      "mass": "1/4"
+    },
+    "near_atom": {
+      "position": [
+        "-71/200",
+        "0"
+      ],
+      "mass_interval": [
+        "0",
+        "1/2"
+      ]
+    },
+    "receiver_crop": [
+      "-1/2",
+      "-1/1000",
+      "-1/2",
+      "-1/1000"
+    ],
+    "actual_full_minus_complete_residual_strict_area_upper": "699/10000",
+    "geometry": "All-radius two-atom full halo and complete singleton residual; no maximum-block assumption required"
+  },
+  "proof_structure": [
+    "Exact zero mass and z<=e handling",
+    "Increasing no-contact branch with exact rational contact endpoint",
+    "Rational s=u+z parametrization, cubic Taylor lower certificate >1/10000 before coverage",
+    "High-mass covered-old branch with strictly negative derivative bound and rational anchor",
+    "Matching strict/open receiver and zero-width boundaries"
+  ],
+  "actual_execution": {
+    "receipt_in": "computation/results/round082-dual/checks.json",
+    "caller_observed_exit_code": 0,
+    "pid": 35861,
+    "process_absent_after_completion": true,
+    "process_absence_check": "ps -p PID -o pid= returned exit1 and empty stdout",
+    "seconds": 0.020373291001305915,
+    "mass_sample_count": 0,
+    "no_parameter_subdivision": true,
+    "no_area_integration": true,
+    "preliminary_note": "An exploratory interactive SymPy algebra check preceded the saved Fraction kernel; no masses or areas were sampled. The saved kernel independently reproduces all identities and positivity constants."
+  },
+  "ownership_limits": [
+    "Core owns width/position robustness and arbitrary-eight-mass shared-side theorem",
+    "This payload contains only the base near lemma and exact scalar kernel",
+    "No general internal-profile/maximal-block theorem asserted"
+  ],
+  "inherited_source_read": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r081-dual-shared-side-corner-payment.md",
+      "bytes": 10873,
+      "sha256": "34a04ee2b12bd770b8da42a728ae96d14c15d97e429de67ac35d574f52d851a2",
+      "scope": "Frozen prior partial near formula; the current extended domain is proved afresh including endpoints"
+    }
+  ],
+  "portable_reproduction": {
+    "working_directory": "topic directory planar-centered-square-weak11",
+    "argv": [
+      "python3",
+      "computation/round082-dual/check_near_uniform_constants.py",
+      "--input",
+      "computation/inputs/r082-dual/near-uniform-constants.json",
+      "--output",
+      "computation/results/round082-dual/checks.json"
+    ]
+  },
+  "R79_R80_R81_payload_pins_checked_unchanged": true,
+  "git": "No commit or push; only new r082-dual files written"
+}
