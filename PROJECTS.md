@@ -8,6 +8,6 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；第二出生单层严格重构、百万粒子有限核验 | 第22轮完成 | L加权根几何、原律平均秩比与大尺寸完整核验 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；q≤20短侧交叉最小反例下降；六点≤42／九点≤34严格覆盖 | 第35轮完成 | 任意q的内部单位传播与交叉结构入口 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；q21/q22各余一反转族；六点≤42／九点≤34严格覆盖 | 第36轮完成 | q21剩余族同一有限因子的双端与尾部相容性 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
