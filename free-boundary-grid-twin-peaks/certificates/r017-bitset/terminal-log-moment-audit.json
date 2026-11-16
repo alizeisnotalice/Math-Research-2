@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "n12_positive_range_identity": {
+    "Z": 8.480708068158678e-45,
+    "U": 4.358141646137098e-45,
+    "logZ": -101.47853523981044,
+    "U_over_Z": 0.5138888888888888,
+    "dead": false
+  },
+  "n32_live_underflow": {
+    "tau512": {
+      "Z": 0.0,
+      "logZ": -1394.2672321311788,
+      "dead": false
+    },
+    "tau1025_onepeak": {
+      "Z": 0.0,
+      "U": null,
+      "logZ": -1360.8266259485622,
+      "U_over_Z": null,
+      "scaled_U": null,
+      "dead": false
+    }
+  },
+  "n32_dead": {
+    "tau1023": {
+      "Z": 0.0,
+      "logZ": null,
+      "dead": true
+    },
+    "tau1024": {
+      "Z": 0.0,
+      "logZ": null,
+      "dead": true
+    }
+  },
+  "integer_bounds": {
+    "N": 1024,
+    "guard_max_P": 134217727,
+    "per_particle": 1968128,
+    "per_group": 503840768,
+    "raw_total_bound": 264157666605056
+  },
+  "logsumexp_demo": -1360.8266259485622,
+  "aggregation_rule": "For aligned non-dead tau terms, use ell=logsumexp(logZ_tau) and Q=sum(exp(logZ_tau-ell)*q_tau); never sum emitted Z values."
+}

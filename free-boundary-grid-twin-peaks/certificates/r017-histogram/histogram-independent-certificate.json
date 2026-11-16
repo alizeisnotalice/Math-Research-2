@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "method": "independent Python Manhattan bins from host-read terminal State roots; terminal allowed and frozen-base terminal-field comparisons",
+  "particles": 17,
+  "cases": [
+    {
+      "n": 3,
+      "tau": 2,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 3,
+      "tau": 3,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 3,
+      "tau": 4,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 3,
+      "tau": 5,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 3,
+      "tau": 6,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 3,
+      "tau": 7,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 3,
+      "tau": 8,
+      "state": "dead",
+      "lastT": 0,
+      "hist_sum": 0
+    },
+    {
+      "n": 3,
+      "tau": 9,
+      "state": "dead",
+      "lastT": 0,
+      "hist_sum": 0
+    },
+    {
+      "n": 3,
+      "tau": 10,
+      "state": "alive-onepeak",
+      "lastT": 17,
+      "hist_sum": null
+    },
+    {
+      "n": 16,
+      "tau": 2,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 16,
+      "tau": 128,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 16,
+      "tau": 255,
+      "state": "dead",
+      "lastT": 0,
+      "hist_sum": 0
+    },
+    {
+      "n": 16,
+      "tau": 256,
+      "state": "dead",
+      "lastT": 0,
+      "hist_sum": 0
+    },
+    {
+      "n": 16,
+      "tau": 257,
+      "state": "alive-onepeak",
+      "lastT": 17,
+      "hist_sum": null
+    },
+    {
+      "n": 24,
+      "tau": 2,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 24,
+      "tau": 288,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 24,
+      "tau": 575,
+      "state": "dead",
+      "lastT": 0,
+      "hist_sum": 0
+    },
+    {
+      "n": 24,
+      "tau": 576,
+      "state": "dead",
+      "lastT": 0,
+      "hist_sum": 0
+    },
+    {
+      "n": 24,
+      "tau": 577,
+      "state": "alive-onepeak",
+      "lastT": 17,
+      "hist_sum": null
+    },
+    {
+      "n": 32,
+      "tau": 2,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 32,
+      "tau": 512,
+      "state": "alive-hist",
+      "lastT": 17,
+      "hist_sum": 17
+    },
+    {
+      "n": 32,
+      "tau": 1023,
+      "state": "dead",
+      "lastT": 0,
+      "hist_sum": 0
+    },
+    {
+      "n": 32,
+      "tau": 1024,
+      "state": "dead",
+      "lastT": 0,
+      "hist_sum": 0
+    },
+    {
+      "n": 32,
+      "tau": 1025,
+      "state": "alive-onepeak",
+      "lastT": 17,
+      "hist_sum": null
+    }
+  ],
+  "fk_normalization": {
+    "theory": "For an alive run, H_b is the unweighted terminal particle count and t_N=lastT=P because all P preterminal connected N-1-vertex states have one final legal insertion. The bin FK estimator is Z*(H_b/P)=Z*(H_b/lastT).",
+    "dead_case": "If a preceding rank has zero total weight, lastT=0, the run is dead, and its all-zero histogram is not divided by lastT."
+  }
+}

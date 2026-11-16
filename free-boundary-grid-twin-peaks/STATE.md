@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-16，本地第16轮完成。**原题开放；用户总目标仍active。**
+2026-11-16，本地第17轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/016.md；新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/017.md；新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -49,3 +49,5 @@
 第15轮：匹配父/有界父的提前插入可逆计数与全尾消去已证。完整方格T形族令旧D*界发散，但新界证明其真实A₂占比≤(k+2)(k+1)(2k+1)2^{-k}→0；只排除该族。递归H生成树给A1≥N!e^{-17N}，从而充分大n至少半数高度边界>e^{-50}N的双峰概率≥1−e^{-5N}；尚不控制峰距。n5一般完成数覆盖约.944446A₂，完整整数DP主Agent独立重跑一致并退出。下一缺口为全形态逆像重数和加权根矩；GPU更大尺寸继续，原题仍开放。
 
 第16轮：全部内列位置和四方向的直线T晚合并族总质量≤n(n−2)(2n−1)(2n−2)(4n−5)2^{3−2n}→0。全局比较账本ΣD=Σν已明确；n3最大跨状态重数4，未取得一般预算。真实固定d=3纤维存在Θ(N²)输出，排除逐输出NC^d路线，不否定平均界。GPU两域n10/n12汇总Q≈.325623/.315264，R≈67312.8/1250788.5，仅有限数值；8784记录独立核算，旧批进程核查退出。P524288新批与位集核审计另轮继续。原题仍开放。
+
+第17轮：单峰面积指数率 f 存在，log(5/4)/5≤f≤17，|−log z₁(n,n)−fn²|≤60nlog(16n)，有界纵横比矩形同率；双峰由既有R界同率。具体远峰矩形族 Cⱼ/A₂≥1/[16(2n−3)N^{5n−3}]，仍无固定质量。新n≤32位集核14逐层轨迹、24终端直方图和n12全部143秩旧核一致性通过。n16大尺寸重复权重集中，有限Q≈.291197不作可靠趋势；n12 P524288已完成且退出，整机AGX均值99.61%。下一步为接口平均表面代价、R量级与保持有序前缀目标的resample-move。原题仍开放。
