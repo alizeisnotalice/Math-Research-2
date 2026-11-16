@@ -1,0 +1,51 @@
+{
+  "round": 23,
+  "checked_at": "2026-11-16T11:23:39.830809+08:00",
+  "original_conjecture": "OPEN",
+  "strict_results": [
+    "All binary H(x^a)H(x^b), H=1+x+x^2+x^5+x^6, have only constant/standard nonnegative normalized factors.",
+    "At most 6 support points each, total degree<=40; or at most 9 each, total degree<=32: all fair."
+  ],
+  "files_sha256": {
+    "proofs/023-H-all-binary-substitutions.md": "cc05b2648a1f8ed0824a080a4d54b18b7dc8a9c8973e2b2e70eb750fa2d2497e",
+    "proofs/023-H-a2-independent-review.md": "be6d4543c9c8c5879911541fbdf5c9b03aa209361e6edc1ea59eb3964cc90b98",
+    "proofs/023-layer40-32-audit.md": "80045d34dda839bef262f3754d719d241c5f65bbdb49ce45635ea5c0ac4a9b63",
+    "computation/check_H_all_coprime_substitutions.py": "a5454a95ec4b741aa620f7a720fa6d2112af70136e2eb1ddae65a8cde0f8f3bc",
+    "computation/audit_layer40_32.py": "71cd49678a51f2e6fdd2f32620efb6380ae9e324e4d92d1e30e14445a5522c66",
+    "computation/audit_H_coprime_ledger.py": "8c4ea0191f9139639b2d07c60d950c28a967c91dfd1cf5012be98962a981a03a",
+    "computation/check_H_coprime_boundaries.wls": "8237b675eedbe552a78787978444f08fed7a0293baace2d48d35a9ee55e24005"
+  },
+  "integer_H_carry_cases": 17,
+  "wolfram_version": "15.0.0 for Mac OS X ARM (64-bit) (May 15, 2026)",
+  "wolfram_exact_boundary_tests": 3,
+  "wolfram_exited": true,
+  "layer_receipt": "023-layer40-32-independent.json",
+  "gpu_integer_ledger_receipt": "023-H-coprime-integer-ledger-audit.json",
+  "gpu_integer_negative_tests": [
+    {
+      "case": "duplicate_saved_code",
+      "rejected": true
+    },
+    {
+      "case": "wrong_count",
+      "rejected": true
+    },
+    {
+      "case": "wrong_mask",
+      "rejected": true
+    },
+    {
+      "case": "missing_E",
+      "rejected": true
+    }
+  ],
+  "gpu_archive_checksums_sha256": "ba00a169ca46db118d18bb509e99f5970d3e287ff4144f9e3bf75e701f8c38d4",
+  "gpu_codes": 3868506295,
+  "gpu_saved_rows": 12502,
+  "gpu_complete_queues": 9,
+  "gpu_partial_queues": 2,
+  "gpu_partial_missing_cpu_rows": 128,
+  "gpu_all_H5_processes_reaped": true,
+  "scope_warning": "Numerical GPU coverage is not exact sign exclusion. Big support-ledger replay was done by the completed shard verifiers; this final collector checks metadata and reruns all 57 exceptional certificates.",
+  "backup": "UNVERIFIED"
+}

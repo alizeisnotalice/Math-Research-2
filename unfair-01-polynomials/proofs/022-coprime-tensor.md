@@ -136,7 +136,7 @@ P(x^a)Q(x^b)=U(x^a)\,[W(x^a)Q(x^b)]
 H(x)=1+x+x^2+x^5+x^6
 \]
 
-已有 \(F(H)\)，母式的初等不可分解证明见 `019-complete-H-stretch-family.md`。所以任意互素 \(a,b\ge7\) 都满足 \(\deg H=6<a,b\)，从而
+已有 \(F(H)\)，母式的不可分解性原见 `019-complete-H-stretch-family.md`，自包含初等证明补于 `023-H-all-binary-substitutions.md` 引理1。所以任意互素 \(a,b\ge7\) 都满足 \(\deg H=6<a,b\)，从而
 
 \[
 F(H(x^a)H(x^b)).

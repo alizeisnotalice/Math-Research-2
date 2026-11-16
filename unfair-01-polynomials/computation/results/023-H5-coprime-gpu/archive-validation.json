@@ -1,0 +1,25 @@
+{
+  "status": "ready_for_topic_whitelist_review",
+  "checkpoint_count": 11,
+  "root_input_count": 11,
+  "checkpoint_size_limit_bytes": 10485760,
+  "checkpoint_size_check": "passed_all_11",
+  "source_to_archive_byte_comparisons": {
+    "checkpoints": 11,
+    "inputs": 11,
+    "result": "all_22_passed"
+  },
+  "engine_copy_sha256": "4ecb8f50db982f90a2467a5cd25fbe109d6c98d11fa26439a2d4dfed46bcafee",
+  "archived_partial_rechecks": [
+    {"run":"a5b9","status":"all_retained_rows_reconstructed_mp","rows":896,"missing_stored_cpu_rows":64,"mp_dps":80},
+    {"run":"a3b10","status":"all_retained_rows_reconstructed_mp","rows":1142,"missing_stored_cpu_rows":64,"mp_dps":80}
+  ],
+  "cache_regeneration_check": {
+    "run":"a5b8",
+    "input_sha256":"0f243a6d7e35e544d6206e5ecabf224c62d1ac6c78fb45f79485014b5fb352c8",
+    "options_sha256":"3e436ac4908e35af4224e77ce314c54a1d11fdf0e2007fdfcec48374ae3b499e",
+    "layout_status":"passed_numerical_input_and_layout_checks_only"
+  },
+  "topic_destination_root":"unfair-01-polynomials/computation/results/023-H5-coprime-gpu",
+  "claim_boundary":"Numerical ledger and saved-row audit only. The two stopped queues remain partial prefixes."
+}

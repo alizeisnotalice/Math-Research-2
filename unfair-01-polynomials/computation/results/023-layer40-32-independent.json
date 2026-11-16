@@ -1,0 +1,330 @@
+{
+  "status": "metadata_and_57_candidate_mapping_verified",
+  "scope": "round016 recovered support layers only",
+  "audit_sha256": "71cd49678a51f2e6fdd2f32620efb6380ae9e324e4d92d1e30e14445a5522c66",
+  "created_utc": "2026-11-16T03:12:44.903753+00:00",
+  "source_sha256": {
+    "support_search_layer.py": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710",
+    "verify_support_layer.py": "917234bd55effcf216b49751f8abb9e38d9efeb55748dbc5aac948d638d36d93",
+    "check_round19_candidates.py": "5730180d103220fe9d979d64fa8cf9b3465238e7ed1a2d0714c280456e53cf13",
+    "check_layer19_exceptions.py": "a4b0553156b8b9985433ed67fc590a4fa6191c8f29509e622d80c9ca2cc75908"
+  },
+  "batch": {
+    "jobs": 36,
+    "all_workers_exited": true,
+    "recovery_source_sha256": "b29c8206bdd195bda3fe574ffca4ca6951c874892d4c6c5fcdcf3d0da4276b44"
+  },
+  "groups": [
+    {
+      "range": [
+        39,
+        40
+      ],
+      "max_terms": 6,
+      "degree_pairs": 39,
+      "counts": {
+        "raw": 367653896,
+        "canonical": 177370291,
+        "excluded": 176210306,
+        "fair": 1159985,
+        "unknown": 0
+      },
+      "unknown_rows": 0
+    },
+    {
+      "range": [
+        31,
+        32
+      ],
+      "max_terms": 9,
+      "degree_pairs": 31,
+      "counts": {
+        "raw": 2485172664,
+        "canonical": 1175509824,
+        "excluded": 1174159632,
+        "fair": 1350135,
+        "unknown": 57
+      },
+      "unknown_rows": 57
+    }
+  ],
+  "unknown_certificate_mapping": {
+    "unknowns": 57,
+    "distinct_unknowns": 57,
+    "candidate_entries": 57,
+    "direct_certificates": 52,
+    "special_certificates": 5,
+    "sets_match_exactly": true
+  },
+  "certificate_reruns": {
+    "round19_candidates": {
+      "all_submitted_supports_verified": true,
+      "submitted": 57,
+      "direct": 52,
+      "special": 5,
+      "full_layer_coverage_claimed": false
+    },
+    "round19_exceptions": {
+      "verified": true,
+      "arithmetic": "pure Python integer polynomials and Fraction; no CAS",
+      "cases": [
+        {
+          "I": [
+            0,
+            1,
+            2,
+            5,
+            9,
+            13
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            10,
+            14,
+            18
+          ],
+          "certificate": "negative quadratic discriminant",
+          "discriminant_coefficients": [
+            -3,
+            0,
+            6,
+            -8,
+            5
+          ]
+        },
+        {
+          "I": [
+            0,
+            1,
+            3,
+            8,
+            13
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            14,
+            19
+          ],
+          "certificate": "integer Bezout after division-free substitutions",
+          "A3": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "A8": [
+            1,
+            -3,
+            9,
+            -16,
+            20,
+            -18,
+            11,
+            -5,
+            1
+          ],
+          "K": [
+            -2,
+            3,
+            -2,
+            2
+          ],
+          "H": [
+            1,
+            -6,
+            18,
+            -31,
+            44,
+            -44,
+            32,
+            -15,
+            5,
+            1
+          ],
+          "U": [
+            -172,
+            -962,
+            1003,
+            -2320,
+            2664,
+            -2922,
+            1609,
+            -991,
+            -165
+          ],
+          "V": [
+            235,
+            2,
+            330
+          ],
+          "Bezout_constant": 579
+        },
+        {
+          "I": [
+            0,
+            1,
+            3,
+            6,
+            8,
+            13
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            4,
+            9,
+            14,
+            19
+          ],
+          "certificate": "six exact diagonals force a8 squared zero",
+          "diagonals": {
+            "6": [
+              [
+                6,
+                0
+              ]
+            ],
+            "8": [
+              [
+                6,
+                2
+              ],
+              [
+                8,
+                0
+              ]
+            ],
+            "27": [
+              [
+                8,
+                19
+              ],
+              [
+                13,
+                14
+              ]
+            ],
+            "14": [
+              [
+                0,
+                14
+              ],
+              [
+                13,
+                1
+              ]
+            ],
+            "1": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "2": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "I": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            9,
+            14
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            6,
+            7,
+            9,
+            12,
+            17
+          ],
+          "certificate": "B5=p^2(p^2-p+1)>0 contradicts support",
+          "A3": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "A4": [
+            0,
+            2,
+            -2,
+            2,
+            -1
+          ]
+        },
+        {
+          "I": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            9,
+            14
+          ],
+          "J": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            9,
+            12,
+            17
+          ],
+          "certificate": "support-derived substitutions and integer Bezout",
+          "used_diagonals": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            20,
+            6,
+            23,
+            9,
+            26,
+            21,
+            7,
+            18
+          ],
+          "zero_denominator_branch": "g(1/2)=-3/16",
+          "bezout_constant": 11479312180502943867
+        }
+      ]
+    }
+  },
+  "conclusion": "Both target layers have complete independently verified shard ledgers and their 57 residual supports exactly match rerun strict certificates.",
+  "limit": "This collector validates completed verifier metadata and reruns the 57 certificates. It does not itself replay every compressed ledger record; that replay is the existing verify_support_layer.py execution recorded per shard."
+}
