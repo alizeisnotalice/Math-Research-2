@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "certificate_sha256": "c429ff1cf272f3f591a3e6143879b41c1954cbb077df8188c7c7741feeb2662c",
+  "verifier_sha256": "c7ae3a04a04a8b40969e67b431f867c9487372985c205c8d64112f8e205635e3",
+  "tests": {
+    "valid": {
+      "returncode": 0,
+      "expected_accept": true,
+      "stderr": ""
+    },
+    "tiny_exact_identity_perturbation": {
+      "returncode": 1,
+      "expected_accept": false,
+      "stderr": "exact polynomial equality failed"
+    },
+    "negative_positive_atom": {
+      "returncode": 1,
+      "expected_accept": false,
+      "stderr": "negative positive-atom coefficient"
+    },
+    "missing_strict_variable": {
+      "returncode": 1,
+      "expected_accept": false,
+      "stderr": "strict_variables is not precisely the independently derived nonunit set"
+    }
+  }
+}

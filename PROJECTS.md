@@ -8,6 +8,6 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；加权删峰、局部修复反例及n7精确根比较 | 第21轮完成 | 原律平均秩间隔、根传输不等式与GPU大尺寸核验 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；短母因子条件正性下降，六点总次≤42／九点总次≤34严格覆盖 | 第33轮完成 | 任意互素替换的短侧<2q正性下降 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；短侧正性下降扩大、四角单位引理；六点≤42／九点≤34严格覆盖 | 第34轮完成 | q≥2p短侧模型的内部系数与补偿 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。

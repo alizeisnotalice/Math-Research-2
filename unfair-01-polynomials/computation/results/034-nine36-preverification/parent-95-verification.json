@@ -1,0 +1,271 @@
+{
+  "status": "95_support_local_certificates_verified",
+  "direct": 92,
+  "positive": 3,
+  "layer_completion_claim": false,
+  "source_hashes": {
+    "nine36-m15": {
+      "summary.json": "a8c8775ffc5903cc051c20db5b30b0321b66c94b1ad44b4df3f445ccd3fa99e4",
+      "unknown.jsonl": "ef8fa3eeab0814a0b3fb505fda481025c2513e3178a63fb71b2ef7fc387ba88d",
+      "job.json": "45298912dc4c2f539955860800d009dbb2073cffd2b9a45df0f83a916c6dd3d6",
+      "declared_ledger_sha256_uncompressed": "c8a37fb032c0673f08a0f02cb3d8d9d19d5c6eae77ad6d7793fa52d7e29e2d01"
+    },
+    "nine36-m16": {
+      "summary.json": "e8a4b1d0874b76716bf31d129748b78a9240af810a713587a34d60b95a3aedf4",
+      "unknown.jsonl": "0534cd92a301fd0b9813503b3693191a4f3aa42411ec5b29a1c05abbd7dcd7b6",
+      "job.json": "acc4c158e66a28ec0268540a0ca00d5b65352952e18c9a7464c193887a4eb40a",
+      "declared_ledger_sha256_uncompressed": "1528a8c3e6d506a05d5653c7a919e02061e507e517dc956ced8e8461bcc3c1e8"
+    },
+    "nine36-m17": {
+      "summary.json": "0e1700b0d7b435a9fde8ca88e97637516f0bc2b32570bf884343ee0c3907337c",
+      "unknown.jsonl": "b4d431332f8c7448d9cd529453f90b6af3a3486d7aec50a5167d6b5dc6abb524",
+      "job.json": "bd49a7f9e28e2465f8dde6e2425cdbc2bfdc2307a229121eaca40da1ade59da8",
+      "declared_ledger_sha256_uncompressed": "17138c4e85120b815b28e7eb8f2f3c708f7b61ae1659be5a1122301f40e3545d"
+    }
+  },
+  "historical_field_semantics": {
+    "search_summary_sha256": "This discovery-field name actually contains summary.ledger_sha256_uncompressed, not the summary-file SHA. Both are explicitly bound here."
+  },
+  "diagonal_verifier_sha256": "ab15883f07a237929f5ec8e42692775e383af750d6c2756602b559f81f30d81f",
+  "positive_verifier_sha256": "c7ae3a04a04a8b40969e67b431f867c9487372985c205c8d64112f8e205635e3",
+  "receipts": [
+    {
+      "support_row": [
+        "nine36-m16",
+        8
+      ],
+      "certificate": "line8-recovered-candidate.json",
+      "sha256": "c429ff1cf272f3f591a3e6143879b41c1954cbb077df8188c7c7741feeb2662c",
+      "verification": {
+        "status": "verified",
+        "variables": [
+          "a1",
+          "a2",
+          "a3",
+          "a5",
+          "a6",
+          "a9",
+          "b1",
+          "b2",
+          "b4",
+          "b6",
+          "b8",
+          "b9",
+          "b12"
+        ],
+        "equation_count": 27,
+        "multiplier_terms": 260,
+        "positive_atoms": 22,
+        "strict_witnesses": {
+          "a1": {
+            "diagonal": 1,
+            "other_terms": 1
+          },
+          "a2": {
+            "diagonal": 2,
+            "other_terms": 2
+          },
+          "a3": {
+            "diagonal": 3,
+            "other_terms": 2
+          },
+          "a5": {
+            "diagonal": 5,
+            "other_terms": 2
+          },
+          "a6": {
+            "diagonal": 6,
+            "other_terms": 3
+          },
+          "a9": {
+            "diagonal": 9,
+            "other_terms": 4
+          },
+          "b1": {
+            "diagonal": 1,
+            "other_terms": 1
+          },
+          "b2": {
+            "diagonal": 2,
+            "other_terms": 2
+          },
+          "b4": {
+            "diagonal": 4,
+            "other_terms": 2
+          },
+          "b6": {
+            "diagonal": 6,
+            "other_terms": 3
+          },
+          "b8": {
+            "diagonal": 8,
+            "other_terms": 2
+          },
+          "b9": {
+            "diagonal": 9,
+            "other_terms": 4
+          },
+          "b12": {
+            "diagonal": 12,
+            "other_terms": 2
+          }
+        },
+        "claim_boundary": "The certificate is strictly positive only on the declared open cube 0<x<1; it does not classify arbitrary supports or search bases."
+      }
+    },
+    {
+      "support_row": [
+        "nine36-m16",
+        15
+      ],
+      "certificate": "positive-preverification/nine36-m16-line15.json",
+      "sha256": "f9f7622b166a29751695fd25f58d3105bc80ca591bb1b153b21331e1e7b9f998",
+      "verification": {
+        "status": "verified",
+        "variables": [
+          "a1",
+          "a3",
+          "a4",
+          "a7",
+          "a10",
+          "b1",
+          "b2",
+          "b5",
+          "b7",
+          "b11",
+          "b14"
+        ],
+        "equation_count": 25,
+        "multiplier_terms": 7,
+        "positive_atoms": 6,
+        "strict_witnesses": {
+          "a1": {
+            "diagonal": 1,
+            "other_terms": 1
+          },
+          "a3": {
+            "diagonal": 3,
+            "other_terms": 1
+          },
+          "a4": {
+            "diagonal": 4,
+            "other_terms": 1
+          },
+          "a7": {
+            "diagonal": 7,
+            "other_terms": 1
+          },
+          "a10": {
+            "diagonal": 10,
+            "other_terms": 1
+          },
+          "b1": {
+            "diagonal": 1,
+            "other_terms": 1
+          },
+          "b2": {
+            "diagonal": 2,
+            "other_terms": 1
+          },
+          "b5": {
+            "diagonal": 5,
+            "other_terms": 2
+          },
+          "b7": {
+            "diagonal": 7,
+            "other_terms": 1
+          },
+          "b11": {
+            "diagonal": 11,
+            "other_terms": 2
+          },
+          "b14": {
+            "diagonal": 14,
+            "other_terms": 2
+          }
+        },
+        "claim_boundary": "The certificate is strictly positive only on the declared open cube 0<x<1; it does not classify arbitrary supports or search bases."
+      }
+    },
+    {
+      "support_row": [
+        "nine36-m16",
+        16
+      ],
+      "certificate": "positive-preverification/nine36-m16-line16.json",
+      "sha256": "3284ce9a18912814f29cb864cc65cdbc888a6ecd12a815c136ade7d794e6a7fc",
+      "verification": {
+        "status": "verified",
+        "variables": [
+          "a1",
+          "a3",
+          "a4",
+          "a7",
+          "a10",
+          "b1",
+          "b2",
+          "b5",
+          "b7",
+          "b8",
+          "b11",
+          "b14"
+        ],
+        "equation_count": 25,
+        "multiplier_terms": 11,
+        "positive_atoms": 8,
+        "strict_witnesses": {
+          "a1": {
+            "diagonal": 1,
+            "other_terms": 1
+          },
+          "a3": {
+            "diagonal": 3,
+            "other_terms": 1
+          },
+          "a4": {
+            "diagonal": 4,
+            "other_terms": 1
+          },
+          "a7": {
+            "diagonal": 7,
+            "other_terms": 1
+          },
+          "a10": {
+            "diagonal": 10,
+            "other_terms": 1
+          },
+          "b1": {
+            "diagonal": 1,
+            "other_terms": 1
+          },
+          "b2": {
+            "diagonal": 2,
+            "other_terms": 1
+          },
+          "b5": {
+            "diagonal": 5,
+            "other_terms": 2
+          },
+          "b7": {
+            "diagonal": 7,
+            "other_terms": 1
+          },
+          "b8": {
+            "diagonal": 8,
+            "other_terms": 3
+          },
+          "b11": {
+            "diagonal": 11,
+            "other_terms": 3
+          },
+          "b14": {
+            "diagonal": 14,
+            "other_terms": 2
+          }
+        },
+        "claim_boundary": "The certificate is strictly positive only on the declared open cube 0<x<1; it does not classify arbitrary supports or search bases."
+      }
+    }
+  ],
+  "scope": "The three complete search snapshots were awaiting independent full-ledger verification. This certifies these supports only, not complete shards or the whole 44/36 layer."
+}
