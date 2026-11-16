@@ -195,3 +195,5 @@ n9源码与完整generate/calculate/audit命令在certificates/r009-n9/RUN_SUMMA
 `audit_tau_smc_aggregates.py` 独立合并原条件律粒子重复并逐值核对GPU选父迁移；`audit_integer_stratified.py` 核验整数分层引理；`verify_layer_split_tree.py` 核验全n层分裂树的有限实例。新证书在课题根目录 `certificates/r012-first-merge/`、`certificates/r012-tau-smc/`、`certificates/r012-gpu-parent/`。均值/方差定点端点以整数分子分母为准。
 
 第13轮：`audit_late_merge_families.py` 核验晚合并两族；`audit_r013_gpu.py` 独立审计新核来源、4800个实际seed、原条件矩与整机遥测。证书在课题根 `certificates/r013-analytic/` 和 `certificates/r013-gpu/`。
+
+第14轮：`audit_early_interface.py` 检查可逆交错及完整方格单向阶乘例；`audit_r014_gpu.py` 以Decimal60重算n8/n9矩、一峰归一化和明确同P合并。课题根 `certificates/r014-boundary/` 保存出生及有理归一化核验，`r014-dominating/` 为n3–n5支配条件整数DP，`r014-completion/` 为n3/n4一般双向完成数和严格dyadic求和区间；各包附复现命令。小粒子大掩码核审计在 `r014-gpu/kernel-audit/`。编译二进制和重跑输出均应写CodexTemp；冻结源中的绝对临时输出路径在包README注明。
