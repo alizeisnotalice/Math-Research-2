@@ -1,0 +1,85 @@
+{
+  "claim": "Saved JSON sample audit only; numeric free-coefficient search is non-strict and does not prove exclusion or provide an exact counterexample.",
+  "counts": {
+    "complete_final_cohort_saved_rows": 16,
+    "exact_binary_factor_pairs": 0,
+    "pairs_with_a_fractional_coefficient": 96,
+    "partial_saved_rows": 0,
+    "restart_files": 5,
+    "rotation_snapshot_saved_rows": 80,
+    "total_saved_rows": 96,
+    "unique_saved_json_cases": 96
+  },
+  "files": [
+    {
+      "cases": 16,
+      "file": "restart_0002000.json",
+      "history_step": 1900,
+      "kind": "complete_rotation_snapshot",
+      "maximum_stored_residual_delta": "1.0800564096953167e-16",
+      "minimum_fraction_residual": "0.19687276381775382"
+    },
+    {
+      "cases": 16,
+      "file": "restart_0004000.json",
+      "history_step": 3900,
+      "kind": "complete_rotation_snapshot",
+      "maximum_stored_residual_delta": "1.7061204821298913e-16",
+      "minimum_fraction_residual": "0.048533926906294766"
+    },
+    {
+      "cases": 16,
+      "file": "restart_0006000.json",
+      "history_step": 5900,
+      "kind": "complete_rotation_snapshot",
+      "maximum_stored_residual_delta": "1.9970321419369717e-16",
+      "minimum_fraction_residual": "0.04894816613777664"
+    },
+    {
+      "cases": 16,
+      "file": "restart_0008000.json",
+      "history_step": 7900,
+      "kind": "complete_rotation_snapshot",
+      "maximum_stored_residual_delta": "1.604289542866113e-16",
+      "minimum_fraction_residual": "0.048703613647596455"
+    },
+    {
+      "cases": 16,
+      "file": "restart_0010000.json",
+      "history_step": 9900,
+      "kind": "complete_rotation_snapshot",
+      "maximum_stored_residual_delta": "2.3745431032782654e-16",
+      "minimum_fraction_residual": "0.04907985162104111"
+    },
+    {
+      "cases": 16,
+      "file": "checkpoint.json",
+      "history_step": 12000,
+      "kind": "complete_final_cohort",
+      "maximum_stored_residual_delta": "2.2169106171967725e-16",
+      "minimum_fraction_residual": "0.04885390284851354"
+    }
+  ],
+  "max_designated_complement_delta": "2.980232243e-08",
+  "max_stored_residual_delta": "2.3745431032782654e-16",
+  "model": {
+    "fractional_index": 3,
+    "m": 28,
+    "margin": "0.05",
+    "n": 60,
+    "restart_every": 2000,
+    "starts_per_cohort": 16384
+  },
+  "release_before_exit": {
+    "audit_note": "GPU process was independently absent at audit time; this nonzero value was recorded before exit.",
+    "cleanup_called": true,
+    "process_will_exit": true,
+    "remaining_tensor_bytes_before_exit": 34276096
+  },
+  "run_hashes": {
+    "checkpoint": "91c195015a9952ff8eb0d6c223a48a56f16353617aa32b2b5124adb38b5974e4",
+    "config": "27ce62cdfb93287a5e05926afd1aa33263682a4cd494dda667e98e00bb1a082f",
+    "release": "be3696365e346ead816b89ff69dae299f987b79f030c7422c40a72bc5397fcfb"
+  },
+  "status": "saved_samples_fraction_reconvolution_passed"
+}

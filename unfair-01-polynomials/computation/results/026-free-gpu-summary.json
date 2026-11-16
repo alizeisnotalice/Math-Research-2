@@ -1,0 +1,36 @@
+{
+  "round": 26,
+  "scope": "three completed free-coefficient numerical GPU batches only; no strict exclusion/counterexample claim",
+  "total_complete_starts": 229376,
+  "total_formula": "98304 + 98304 + 32768",
+  "archives": [
+    {
+      "name": "d2",
+      "path": "archive-free026-d2",
+      "complete_starts": 98304,
+      "saved_rows": 96,
+      "partial_rows": 0,
+      "sha256sums_sha256": "f09efb7706fbb6560029bf922c24011702a664d3dfdca29b911124571b9779fd",
+      "exit_evidence": "parent-exit-verification: session 48011 rc0/reaped; parent 30216 and child 30217 absent; release before-exit bytes 35226368"
+    },
+    {
+      "name": "d3",
+      "path": "archive-free026-d3",
+      "complete_starts": 98304,
+      "saved_rows": 96,
+      "partial_rows": 0,
+      "sha256sums_sha256": "f303d3f02ed1f675b311622fc56702d343fcadd91e8b2bcd8e5cdc9e61bc5f56",
+      "exit_evidence": "parent-exit-verification: session 52410 rc0/reaped; parent 45768 and child 45769 absent; release before-exit bytes 34276096"
+    },
+    {
+      "name": "boundary-d1",
+      "path": "archive-free026-boundary",
+      "complete_starts": 32768,
+      "saved_rows": 16,
+      "partial_rows": 0,
+      "sha256sums_sha256": "57a6412fd00ca3cde3e504eb22ed45bbf35aafa1734e7f37f300816eea24f42a",
+      "exit_evidence": "parent-exit-verification: session 6195 rc0/reaped; PID 74196 absent; release before-exit bytes 29098752"
+    }
+  ],
+  "exit_interpretation": "The before-exit allocator values are not final residency measurements. In each row process absence/reaping is the release evidence."
+}
