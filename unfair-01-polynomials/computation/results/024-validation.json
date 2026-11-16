@@ -1,0 +1,33 @@
+{
+  "round": 24,
+  "status": "validated_for_publication",
+  "general_conjecture": "OPEN",
+  "proofs": [
+    "proofs/024-R8-all-binary-substitutions.md",
+    "proofs/024-Hd-separated-coprime.md"
+  ],
+  "R8_integer_coverage": 4602560266,
+  "saved_rows": 1232,
+  "missing_original_cpu_copies": 256,
+  "numeric_role": "Independent high-precision consistency only; no rigorous sign exclusion",
+  "finite_bounds_unchanged": {
+    "cap6_total_degree": 40,
+    "cap9_total_degree": 32
+  },
+  "checks": [
+    "Hd exact row/support audit",
+    "R8 b9 b10 b11 b>=11 exact row/support audits",
+    "n3 ledger regression 12502 rows",
+    "n4 ledger reconstruction 1232 rows",
+    "five invalid ledger mutations rejected",
+    "MP80 from high precision lift_root for four prefixes; no endpoint pinning",
+    "parent rerun archived a2b9 MP80 verifier",
+    "all four R8 parents and children exited verified",
+    "12 GPU device samples 99..100%, mean 99.9167%"
+  ],
+  "backup": "unverified",
+  "proof_sha256": {
+    "proofs/024-R8-all-binary-substitutions.md": "058491fc90dd3a039f6022735af1a6087778fb2d357a675034ce0571b37e1b58",
+    "proofs/024-Hd-separated-coprime.md": "7b80870ea872f32c53cb0395b989854e122dc6e796ba93df3d4dde59322f568e"
+  }
+}
