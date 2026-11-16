@@ -1,0 +1,39 @@
+{
+  "all_survivors_checked_legal_and_filter_surviving": true,
+  "claim_boundary": "Exact finite prefix-pool enumeration and source-gate audit only; no GPU was launched and survival is not a factorization/exclusion theorem.",
+  "d": 10,
+  "filter_rejections": {
+    "forced_positive_fractional_cross_at_d_plus_i": 772,
+    "prefix_product_coefficient_gt_1": 132
+  },
+  "frozen_implementation_gate": {
+    "driver_accepts_d_argument": true,
+    "prefix_module_general_enumerator": true,
+    "worker_explicitly_rejects_d10": true,
+    "worker_gate_conclusion": "the driver accepts d=10, but the current frozen worker rejects it before GPU initialization; the proposed d10 GPU command is not runnable without a separately reviewed source revision and new SHA"
+  },
+  "model": "i<d pairs in {(0,0),(1,0),(0,1)}; low convolution binary; d-cross zero; two named conditions are necessary filters only",
+  "proposed_parameters": {
+    "d": 10,
+    "m": 44,
+    "margin": 0.001,
+    "mathematical_shape_gate": "m,n>d and starts>=survivor_count",
+    "n": 84,
+    "restart_every": 2000,
+    "seed": 2026111608,
+    "shape_gate_passes": true,
+    "starts": 32768,
+    "steps": 12000
+  },
+  "raw_ternary_count": 19683,
+  "source_sha256": {
+    "driver": "25283b64cb31bad939b1843638938752f5c0e7faf1398ab5c9c54de5c91eff24",
+    "module": "0b1a06770a61fe113031209986f676c7e1afb862d27c0c697dbebc0a9f78481d",
+    "worker": "1f8061aa7af30528539aeb6959dcf2f3fe9ae6fa8f861d5d6fbf4297a4cb5749"
+  },
+  "status": "cpu_only_d10_prefix_pool_audited",
+  "survivor_codes_sha256": "a93e50782e8a105c4f1d452d6d96c0b533960ef6e2c78829661a435446892641",
+  "survivor_count": 1671,
+  "valid_codes_sha256": "c77752411ba366a58dce63c939b3aa640b932f2661d4ce77cd689402978ff6fe",
+  "valid_low_prefix_count": 2463
+}

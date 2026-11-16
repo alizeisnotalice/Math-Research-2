@@ -8,6 +8,6 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；根协方差精确至n7、可拆分支像集及采样核修复 | 第18轮完成 | 原律负协方差下界、完成数平均与百万粒子完整批 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；Hd(2,3)与Hd(3,4)全二元无界子类闭合 | 第27轮完成 | H7(x³)H7(x⁵)的双实线性群精确认证 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；H7(3,5)精确闭合，Hd(3,5)全部d≥11及条件奇低块结构定理 | 第28轮完成 | H8(x³)H8(x⁵)的零层运输与完整分解 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。

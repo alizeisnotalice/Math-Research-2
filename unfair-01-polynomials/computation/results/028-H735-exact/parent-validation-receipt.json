@@ -1,0 +1,64 @@
+{
+  "status": "parent_full_and_regressions_passed",
+  "python": "3.13.18",
+  "full_verifier_session": 22619,
+  "full_exit_code": 0,
+  "regression_session": 73453,
+  "regression_exit_code": 0,
+  "full_receipt_sha256": "e89044e66056df3f6b47691ce7743c920c3575e5d6e4444e888eb7938456e133",
+  "regression_receipts": {
+    "ball-kernel-tests.json": {
+      "status": "corner_enumeration_passed",
+      "cases": 2,
+      "boundary_cases": [
+        "zero",
+        "-2^-100_not_strict",
+        "-2^-90_strict"
+      ],
+      "notes": "All endpoint combinations, including sign-crossing and cutoff terms, lie in directed balls."
+    },
+    "compact-schema-tests.json": {
+      "status": "compact_positional_schema_passed",
+      "witness_count": 119062,
+      "tamper_rejections": [
+        "bool",
+        "wrong_standard",
+        "wrong_length"
+      ]
+    },
+    "certificate-guard-tests.json": {
+      "status": "certificate_guard_negative_tests_passed",
+      "tamper_rejections": [
+        "bool_source_bits",
+        "wrong_root_box_sha",
+        "positive_constant_marked_negative",
+        "wrong_H_in_galois_certificate"
+      ]
+    },
+    "frontend-semantic-tamper-tests.json": {
+      "status": "frontend_semantic_tamper_regressions_passed",
+      "rejections": [
+        "duplicate_disk_with_synchronised_rouche",
+        "wrong_mother_child_block_binding",
+        "linear_group_kind_changed",
+        "canonical_duplicate_and_omission",
+        "canonical_same_count_replacement"
+      ],
+      "notes": "All tests call semantic validators directly; none rely on a SHA mismatch."
+    }
+  },
+  "source_sha256": {
+    "build_h7_a3b5_layout.py": "e048c02b25e818663ea49199811cbd3ef5de9733c89c5d91d98ff82ac33f753f",
+    "test_compact_schema.py": "9e6959c217bfaab9cf97962169982a2bc0889cc11bb63dade4ad0fab6ff57564",
+    "verify_h735_ball_certificate.py": "f71a94b6e149e68aab52765cffd8b58c5e02395ed40fd2a45b77efd20f05bd02",
+    "test_ball_kernel.py": "a3704373b631b3f47ec986b31ddaf3edb5c8ca2e568d3065eaaa312dec1b9c44",
+    "generate_h7_a3b5_balls.py": "69ea28b1981b8b327b33e9e95ffcc57cb86e2271021121c080ddabd61a702198",
+    "root_ball_common.py": "f34064c821fe0079563715b56f8f5f9b2608415126a2b1f5bd5a872df904b219",
+    "verify_frontend.py": "00f94d85841a3fb023599154c0e057ced40e528670267c4a741945f9cdc1e330",
+    "exact_complex.py": "d9470f25479e489ac88e654534af5059d4992505e9cb6dca6bb68a78f0281da0",
+    "test_frontend_semantic_tampers.py": "2ef73a5bc1d5c34d809909b31a7c65f139ae21fb080ddcaa84f52159c99f0ef8",
+    "search_compact.py": "accf85e3131905a258c6973a5c664960a01889c2166d04c30eb33ce2298d2e4a",
+    "test_certificate_guards.py": "4e69c05530adaf545e4d5ed42532fe11fef86a1e1326fe596f21f4a170521a01"
+  },
+  "notes": "Only regression input paths adapted; main verifier and frontend remain byte-identical. Full independent root/mask/modular/coefficient verification rerun."
+}
