@@ -1,0 +1,78 @@
+{
+  "schema": "r079-kernel-component-v1",
+  "round": 79,
+  "title": "Actual discrete-prefix quadratic safety envelope",
+  "review_status_at_manifest_generation": "Author candidate; independent mathematical review pending",
+  "payload": [
+    {
+      "path": "proofs/r079-continuous-quadratic-prefix-envelope.md",
+      "sha256": "b9561e32f5403d6294a7eb4e801df4c63fa76e0a21ee432fcb3d9d8f632e2cb7",
+      "bytes": 11733
+    },
+    {
+      "path": "computation/round079-kernel/check_quadratic_envelope.py",
+      "sha256": "6d23402406306ff17b2d2ab8ba8ce994ff230e01548bcd973a773d3b1c054a81",
+      "bytes": 7521
+    },
+    {
+      "path": "computation/inputs/r079-kernel/quadratic-fixtures.json",
+      "sha256": "be7f6ee7add4648bea1d7c896071f2a5f0d68ee47b773a8ceb27215c13489fd1",
+      "bytes": 416
+    },
+    {
+      "path": "computation/results/round079-kernel/checks.json",
+      "sha256": "a7ffe31cc0cc64235e33c08b763e37c101e4ffac9d04ff16d9d6ea04b801599e",
+      "bytes": 8734
+    }
+  ],
+  "payload_bytes": 28404,
+  "external_bindings": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/inputs/r078/n20-corrected-actual-input.json",
+      "sha256": "d4a87c2ef5f82165467bed876c71a0a86d19dce89012ea37b76bf83583fdd15a",
+      "bytes": 26525,
+      "role": "Actual S20 source only; R77 qualification and R78 exact area are inherited, not rerun here"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources/planar-centered-square-weak11/proofs/r078-actual-prefix-menu-and-joint-payment.md",
+      "sha256": "bfb8c7d9888b6463750d0870eb94ab48850ff37334c83d990822e68158683ad6",
+      "bytes": 13296,
+      "role": "Frozen actual-menu/residual identity referenced by the proof"
+    }
+  ],
+  "mathematical_scope": [
+    "All-n original open-grid counts with integer events; explicit mass-margin error",
+    "Strict shared-radius convex minimum and safe full-halo outer envelope minus same exact residual",
+    "Rational cell exclusion and inclusion in envelope only",
+    "One fixed S20 receiver strictly rejected by quadratic envelope but accepted by total-local-mass proxy"
+  ],
+  "not_claimed": [
+    "No general joint-active area budget or Delta<=7/2 proof",
+    "No deletion-area continuity from mass error",
+    "No new halo area integration, cap qualification, or parameter search"
+  ],
+  "actual_run": {
+    "status": "PASS",
+    "caller_observed_exit_code": 0,
+    "count_fixtures": 34,
+    "integer_event_fixtures": 16,
+    "receipt_in": "computation/results/round079-kernel/checks.json",
+    "process_note": "Tiny synchronous completed Python invocation; no separate PID captured, no background task launched",
+    "actual_working_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources"
+  },
+  "portable_reproduction": {
+    "working_directory": "topic directory planar-centered-square-weak11",
+    "argv": [
+      "python3",
+      "computation/round079-kernel/check_quadratic_envelope.py",
+      "--input",
+      "computation/inputs/r079-kernel/quadratic-fixtures.json",
+      "--actual-input",
+      "PATH_TO_BOUND_RAW_S20_INPUT",
+      "--output",
+      "computation/results/round079-kernel/checks.json"
+    ]
+  },
+  "git": "No commit or push by component author; older files unchanged",
+  "author_freeze_note": "Final author candidate includes D_Gamma boundary convention; no code/result change; independent review pending at generation."
+}

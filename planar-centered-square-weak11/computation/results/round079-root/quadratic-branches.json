@@ -1,0 +1,35 @@
+{
+  "scope": "Symbolic identities only; no measure convergence, area certification, parameter search or C2 theorem",
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "pid": 12399,
+  "script_sha256": "aebb49fc0588c8bd4b3101ddc4f23ebd77597badea837e9285d2e48aef8d2727",
+  "finite_n_error": "(n**2 + n - 1)/(n**2*(n + 1))",
+  "limit_distance_branches": [
+    {
+      "variable": "X",
+      "sign": 1,
+      "polynomial": "4*X**2 + 7*X*c + Y*c + 3*c**2",
+      "quadratic_coefficient": "4"
+    },
+    {
+      "variable": "X",
+      "sign": -1,
+      "polynomial": "2*X**2 - 2*X*Y - 5*X*c + Y*c + 3*c**2",
+      "quadratic_coefficient": "2"
+    },
+    {
+      "variable": "Y",
+      "sign": 1,
+      "polynomial": "X*c + 4*Y**2 + 7*Y*c + 3*c**2",
+      "quadratic_coefficient": "4"
+    },
+    {
+      "variable": "Y",
+      "sign": -1,
+      "polynomial": "-2*X*Y + X*c + 2*Y**2 - 5*Y*c + 3*c**2",
+      "quadratic_coefficient": "2"
+    }
+  ],
+  "seconds": 0.08612104199710302
+}

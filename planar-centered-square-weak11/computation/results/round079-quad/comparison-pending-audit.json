@@ -1,0 +1,348 @@
+{
+  "schema": "r079-production-comparison-pending-audit-v1",
+  "status": "production complete; pending independent theorem and certificate audit",
+  "pid": 15985,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "script_sha256": "ac5490e890e01ea1a5d34e74f448b0f7e6389c4b41f20e12f4cb12a130718ed9",
+  "summary_sha256": "cb063b019b674acb4a837299f400d5ea9cc2c559fe4aa49ffbd3d98a6cebd89a",
+  "production_elapsed_seconds": 3.847,
+  "production_script_seconds": 3.7190567910001846,
+  "worker_limit": 8,
+  "distinct_task_worker_pids": [
+    15435,
+    15436,
+    15437,
+    15438,
+    15439
+  ],
+  "distinct_task_worker_count": 5,
+  "pool_context_joined_before_summary": true,
+  "pool_join_fact_source": "ProcessPoolExecutor context in the pinned production source; executed-task PIDs are additionally checked absent. Idle pool worker PIDs were not logged, so no list of eight observed PIDs is claimed.",
+  "observed_exits": [
+    {
+      "pid": 15433,
+      "observed_absent": true
+    },
+    {
+      "pid": 15435,
+      "observed_absent": true
+    },
+    {
+      "pid": 15436,
+      "observed_absent": true
+    },
+    {
+      "pid": 15437,
+      "observed_absent": true
+    },
+    {
+      "pid": 15438,
+      "observed_absent": true
+    },
+    {
+      "pid": 15439,
+      "observed_absent": true
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "corrected",
+      "actual_input_sha256": "d4a87c2ef5f82165467bed876c71a0a86d19dce89012ea37b76bf83583fdd15a",
+      "actual_R78_path": "computation/results/round078-actual-prefix/actual-prefix-area.json",
+      "actual_R78_sha256": "0403e1e720e2802048bb324ccd0cdb730f63eeb55fed881d5a53fcdf2b9b961c",
+      "actual_R78_area": {
+        "lower": "27304555012606067149288845536610876661244647659/3568119231764899702645714923623737840956866560000",
+        "upper": "6826138753151516787323265979866870959874897567/892029807941224925661428730905934460239216640000",
+        "lower_decimal": 0.007652366201647474,
+        "upper_decimal": 0.007652366201647474,
+        "width": "4218382856607178254942609/3568119231764899702645714923623737840956866560000",
+        "two_algorithms_identical": true,
+        "midpoint_cells": [
+          2392,
+          2392
+        ]
+      },
+      "variants": {
+        "exact_pureold_plus_three_mixed": {
+          "state_interval": [
+            "897816870718585914026689810650800405783034899/89202980794122492566142873090593446023921664000",
+            "18319473953225688408433045413298591065217230527/1784059615882449851322857461811868920478433280000"
+          ],
+          "state_decimal_interval": [
+            0.010064875217462937,
+            0.010268420287157458
+          ],
+          "state_gap": "363136538853970127899249200282582949556532547/1784059615882449851322857461811868920478433280000",
+          "state_gap_decimal": 0.00020354506969451905,
+          "target_met": false,
+          "state_upper_below_half_P": true,
+          "state_upper_below_main_corner_threshold": true,
+          "state_minus_actual_interval": [
+            "2152029954034342352943632126641133097955451423/892029807941224925661428730905934460239216640000",
+            "1866878578769061933515449057997261093837962679/713623846352979940529142984724747568191373312000"
+          ],
+          "state_minus_actual_decimal_interval": [
+            0.0024125090158154646,
+            0.0026160540855099837
+          ],
+          "actual_area_is_from_frozen_R78": true,
+          "state_lower_is_not_actual_lower": true
+        },
+        "four_soft_branches": {
+          "state_interval": [
+            "4551950386800862297515396198860134963045182559/446014903970612462830714365452967230119608320000",
+            "3715425943990165734210351166825972219646114547/356811923176489970264571492362373784095686656000"
+          ],
+          "state_decimal_interval": [
+            0.010205825738730889,
+            0.010412841339252006
+          ],
+          "state_gap": "369328172747379480990171038689321246049842499/1784059615882449851322857461811868920478433280000",
+          "state_gap_decimal": 0.00020701560052111746,
+          "target_met": false,
+          "state_upper_below_half_P": true,
+          "state_upper_below_main_corner_threshold": true,
+          "state_minus_actual_interval": [
+            "2277762020450207807707526417853398966215467551/892029807941224925661428730905934460239216640000",
+            "9849704427295590192814666131648845535216497811/3568119231764899702645714923623737840956866560000"
+          ],
+          "state_minus_actual_decimal_interval": [
+            0.002553459537083415,
+            0.0027604751376045325
+          ],
+          "actual_area_is_from_frozen_R78": true,
+          "state_lower_is_not_actual_lower": true
+        }
+      },
+      "tile_termination_counts": {
+        "maximum_nodes": 3,
+        "target_met": 1
+      },
+      "tiles": [
+        {
+          "tile_id": "0-0",
+          "pid": 15437,
+          "termination": "maximum_nodes",
+          "created_node_count": 19997,
+          "split_count": 4999,
+          "leaf_count": 14998,
+          "maximum_depth": 12,
+          "gaps": [
+            "171987143/5368709120000",
+            "381238827/10737418240000"
+          ],
+          "unresolved_leaf_area": [
+            "171987143/5368709120000",
+            "381238827/10737418240000"
+          ]
+        },
+        {
+          "tile_id": "0-1",
+          "pid": 15435,
+          "termination": "maximum_nodes",
+          "created_node_count": 19997,
+          "split_count": 4999,
+          "leaf_count": 14998,
+          "maximum_depth": 11,
+          "gaps": [
+            "87947388460950450340039/755578637259143234191360000",
+            "87947388460950450340039/755578637259143234191360000"
+          ],
+          "unresolved_leaf_area": [
+            "31245189/268435456000",
+            "31245189/268435456000"
+          ]
+        },
+        {
+          "tile_id": "1-0",
+          "pid": 15436,
+          "termination": "target_met",
+          "created_node_count": 17,
+          "split_count": 4,
+          "leaf_count": 13,
+          "maximum_depth": 4,
+          "gaps": [
+            "199/10240000",
+            "199/10240000"
+          ],
+          "unresolved_leaf_area": [
+            "39601/163840000",
+            "39601/163840000"
+          ]
+        },
+        {
+          "tile_id": "1-1",
+          "pid": 15436,
+          "termination": "maximum_nodes",
+          "created_node_count": 19997,
+          "split_count": 4999,
+          "leaf_count": 14998,
+          "maximum_depth": 12,
+          "gaps": [
+            "12730683588701823974901327639069862669453991/356811923176489970264571492362373784095686656000",
+            "12730683588701823974901327639069862669453991/356811923176489970264571492362373784095686656000"
+          ],
+          "unresolved_leaf_area": [
+            "191550037/5368709120000",
+            "191550037/5368709120000"
+          ]
+        }
+      ],
+      "certificate_sha256": "fb00faf83ebce3009e49ae0160d1c70669fcbcd4444060a72c9a532d31be8d78",
+      "certificate_bytes": 244344,
+      "certificate_leaf_count": 45007,
+      "coverage_replay_scope": "Counts/totals are read from production certificate, not independently reclassified here."
+    },
+    {
+      "case_id": "farface",
+      "actual_input_sha256": "e343e448b9582a731ddaccca37452adcce1c6f28b4153aa520a0ec2b4a3ef574",
+      "actual_R78_path": "computation/results/round078-farface/farface-area.json",
+      "actual_R78_sha256": "4d649e564bdf22de9d70bfa92cbfe0291fd8ee560d7d095261ced9843c537fca",
+      "actual_R78_area": {
+        "lower": "11858401111138926820337853643981821624724913609/713623846352979940529142984724747568191373312000",
+        "upper": "148230013889236585254230364611791079536511999/8920298079412249256614287309059344602392166400",
+        "lower_decimal": 0.016617159266386683,
+        "upper_decimal": 0.016617159266386683,
+        "width": "575524961464738196046311/713623846352979940529142984724747568191373312000",
+        "two_algorithms_identical": true,
+        "midpoint_cells": [
+          29241,
+          29241
+        ]
+      },
+      "variants": {
+        "exact_pureold_plus_three_mixed": {
+          "state_interval": [
+            "34273970773311433492902417497115912433045995439/1784059615882449851322857461811868920478433280000",
+            "859781331425439745587355491332699224727704363/44601490397061246283071436545296723011960832000"
+          ],
+          "state_decimal_interval": [
+            0.01921122504438199,
+            0.019276964150105845
+          ],
+          "state_gap": "117282483706156330591802156192056556062179081/1784059615882449851322857461811868920478433280000",
+          "state_gap_decimal": 6.57391057238549e-05,
+          "target_met": true,
+          "state_upper_below_half_P": true,
+          "state_upper_below_main_corner_threshold": true,
+          "state_minus_actual_interval": [
+            "4627967995464116442056344574757696525743595639/1784059615882449851322857461811868920478433280000",
+            "1898100191668109109059834217341365970918356199/713623846352979940529142984724747568191373312000"
+          ],
+          "state_minus_actual_decimal_interval": [
+            0.0025940657779953075,
+            0.002659804883719162
+          ],
+          "actual_area_is_from_frozen_R78": true,
+          "state_lower_is_not_actual_lower": true
+        },
+        "four_soft_branches": {
+          "state_interval": [
+            "34273970773311433492902417497115912433045995439/1784059615882449851322857461811868920478433280000",
+            "859781331425439745587355491332699224727704363/44601490397061246283071436545296723011960832000"
+          ],
+          "state_decimal_interval": [
+            0.01921122504438199,
+            0.019276964150105845
+          ],
+          "state_gap": "117282483706156330591802156192056556062179081/1784059615882449851322857461811868920478433280000",
+          "state_gap_decimal": 6.57391057238549e-05,
+          "target_met": true,
+          "state_upper_below_half_P": true,
+          "state_upper_below_main_corner_threshold": true,
+          "state_minus_actual_interval": [
+            "4627967995464116442056344574757696525743595639/1784059615882449851322857461811868920478433280000",
+            "1898100191668109109059834217341365970918356199/713623846352979940529142984724747568191373312000"
+          ],
+          "state_minus_actual_decimal_interval": [
+            0.0025940657779953075,
+            0.002659804883719162
+          ],
+          "actual_area_is_from_frozen_R78": true,
+          "state_lower_is_not_actual_lower": true
+        }
+      },
+      "tile_termination_counts": {
+        "maximum_nodes": 1,
+        "target_met": 3
+      },
+      "tiles": [
+        {
+          "tile_id": "0-0",
+          "pid": 15439,
+          "termination": "maximum_nodes",
+          "created_node_count": 19997,
+          "split_count": 4999,
+          "leaf_count": 14998,
+          "maximum_depth": 12,
+          "gaps": [
+            "145388249212298688520399938799003930477920009/3568119231764899702645714923623737840956866560000",
+            "145388249212298688520399938799003930477920009/3568119231764899702645714923623737840956866560000"
+          ],
+          "unresolved_leaf_area": [
+            "54688981/1342177280000",
+            "54688981/1342177280000"
+          ]
+        },
+        {
+          "tile_id": "0-1",
+          "pid": 15438,
+          "termination": "target_met",
+          "created_node_count": 1,
+          "split_count": 0,
+          "leaf_count": 1,
+          "maximum_depth": 0,
+          "gaps": [
+            "0",
+            "0"
+          ],
+          "unresolved_leaf_area": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "tile_id": "1-0",
+          "pid": 15438,
+          "termination": "target_met",
+          "created_node_count": 1,
+          "split_count": 0,
+          "leaf_count": 1,
+          "maximum_depth": 0,
+          "gaps": [
+            "0",
+            "0"
+          ],
+          "unresolved_leaf_area": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "tile_id": "1-1",
+          "pid": 15438,
+          "termination": "target_met",
+          "created_node_count": 11873,
+          "split_count": 2968,
+          "leaf_count": 8905,
+          "maximum_depth": 12,
+          "gaps": [
+            "89176718200013972663204373585109181646438153/3568119231764899702645714923623737840956866560000",
+            "89176718200013972663204373585109181646438153/3568119231764899702645714923623737840956866560000"
+          ],
+          "unresolved_leaf_area": [
+            "13424739/536870912000",
+            "13424739/536870912000"
+          ]
+        }
+      ],
+      "certificate_sha256": "f1568f9afa41688a2a3f68705024d25874c4f196e8c4b52f541db30fbe90cc50",
+      "certificate_bytes": 135796,
+      "certificate_leaf_count": 23905,
+      "coverage_replay_scope": "Counts/totals are read from production certificate, not independently reclassified here."
+    }
+  ],
+  "new_parameter_search_or_tree_runs_in_postprocess": 0,
+  "seconds": 0.22511695899811457,
+  "scope": "Two fixed continuous-envelope-state brackets compared with inherited audited actual regional areas. State lower brackets do not give actual halo lower bounds. Corrected target not met; no second batch launched."
+}

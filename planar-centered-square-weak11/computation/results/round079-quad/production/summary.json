@@ -1,0 +1,100 @@
+{
+  "schema": "r079-quadratic-envelope-summary-v1",
+  "source_sha256": "428c3c90516d9d51a062c602fefb85c8da722ae9db7abf331c1f0c5eb7645aee",
+  "parameters_sha256": "380edaf5c4fa12b9fa4cb58caab5fc3e8e5bc8d8fd0c7d7dc2fd42e0d5cfaf73",
+  "pid": 15433,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "workers": 8,
+  "worker_pids": [
+    15435,
+    15436,
+    15437,
+    15438,
+    15439
+  ],
+  "target_area_gap": "1/10000",
+  "cases": [
+    {
+      "case_id": "corrected",
+      "input_sha256": "d4a87c2ef5f82165467bed876c71a0a86d19dce89012ea37b76bf83583fdd15a",
+      "certificate": "corrected-certificate.json.gz",
+      "certificate_sha256": "fb00faf83ebce3009e49ae0160d1c70669fcbcd4444060a72c9a532d31be8d78",
+      "certificate_bytes": 244344,
+      "variants": {
+        "exact_pureold_plus_three_mixed": {
+          "envelope_minus_true_residual_lower": "897816870718585914026689810650800405783034899/89202980794122492566142873090593446023921664000",
+          "envelope_minus_true_residual_upper": "18319473953225688408433045413298591065217230527/1784059615882449851322857461811868920478433280000",
+          "lower_decimal": 0.010064875217462937,
+          "upper_decimal": 0.010268420287157458,
+          "gap": "363136538853970127899249200282582949556532547/1784059615882449851322857461811868920478433280000",
+          "target_met": false,
+          "unresolved_leaf_area": "17860051/41943040000",
+          "actual_deletion_upper_valid": true,
+          "this_lower_is_not_actual_deletion_lower": true
+        },
+        "four_soft_branches": {
+          "envelope_minus_true_residual_lower": "4551950386800862297515396198860134963045182559/446014903970612462830714365452967230119608320000",
+          "envelope_minus_true_residual_upper": "3715425943990165734210351166825972219646114547/356811923176489970264571492362373784095686656000",
+          "lower_decimal": 0.010205825738730889,
+          "upper_decimal": 0.010412841339252006,
+          "gap": "369328172747379480990171038689321246049842499/1784059615882449851322857461811868920478433280000",
+          "target_met": false,
+          "unresolved_leaf_area": "4609437597/10737418240000",
+          "actual_deletion_upper_valid": true,
+          "this_lower_is_not_actual_deletion_lower": true
+        }
+      },
+      "tile_count": 4,
+      "leaf_count": 45007,
+      "created_node_count": 60008,
+      "all_tiles_target_met": false,
+      "worker_pids": [
+        15435,
+        15436,
+        15437
+      ]
+    },
+    {
+      "case_id": "farface",
+      "input_sha256": "e343e448b9582a731ddaccca37452adcce1c6f28b4153aa520a0ec2b4a3ef574",
+      "certificate": "farface-certificate.json.gz",
+      "certificate_sha256": "f1568f9afa41688a2a3f68705024d25874c4f196e8c4b52f541db30fbe90cc50",
+      "certificate_bytes": 135796,
+      "variants": {
+        "exact_pureold_plus_three_mixed": {
+          "envelope_minus_true_residual_lower": "34273970773311433492902417497115912433045995439/1784059615882449851322857461811868920478433280000",
+          "envelope_minus_true_residual_upper": "859781331425439745587355491332699224727704363/44601490397061246283071436545296723011960832000",
+          "lower_decimal": 0.01921122504438199,
+          "upper_decimal": 0.019276964150105845,
+          "gap": "117282483706156330591802156192056556062179081/1784059615882449851322857461811868920478433280000",
+          "target_met": true,
+          "unresolved_leaf_area": "176501657/2684354560000",
+          "actual_deletion_upper_valid": true,
+          "this_lower_is_not_actual_deletion_lower": true
+        },
+        "four_soft_branches": {
+          "envelope_minus_true_residual_lower": "34273970773311433492902417497115912433045995439/1784059615882449851322857461811868920478433280000",
+          "envelope_minus_true_residual_upper": "859781331425439745587355491332699224727704363/44601490397061246283071436545296723011960832000",
+          "lower_decimal": 0.01921122504438199,
+          "upper_decimal": 0.019276964150105845,
+          "gap": "117282483706156330591802156192056556062179081/1784059615882449851322857461811868920478433280000",
+          "target_met": true,
+          "unresolved_leaf_area": "176501657/2684354560000",
+          "actual_deletion_upper_valid": true,
+          "this_lower_is_not_actual_deletion_lower": true
+        }
+      },
+      "tile_count": 4,
+      "leaf_count": 23905,
+      "created_node_count": 31872,
+      "all_tiles_target_met": false,
+      "worker_pids": [
+        15438,
+        15439
+      ]
+    }
+  ],
+  "seconds": 3.7190567910001846,
+  "scope": "Two fixed actual inputs, continuous quadratic oldcapture OUTER states minus identical complete actual residual. State-inner lower bounds cannot be used as actual halo lower bounds. No parameter search or general C2 claim."
+}

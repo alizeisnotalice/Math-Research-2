@@ -1,0 +1,122 @@
+{
+  "schema": "r079-quadratic-production-component-manifest-v1",
+  "frozen_payload": true,
+  "independent_review_status_at_freeze": "pending independent cell theorem/certificate audit",
+  "files": [
+    {
+      "path": "computation/round079-quad/quadratic_envelope.py",
+      "bytes": 12942,
+      "sha256": "428c3c90516d9d51a062c602fefb85c8da722ae9db7abf331c1f0c5eb7645aee"
+    },
+    {
+      "path": "computation/round079-quad/report_production.py",
+      "bytes": 4349,
+      "sha256": "ac5490e890e01ea1a5d34e74f448b0f7e6389c4b41f20e12f4cb12a130718ed9"
+    },
+    {
+      "path": "computation/round079-quad/README.md",
+      "bytes": 7558,
+      "sha256": "8f0f298187d2356adb25ebbb03a72aa3a4e567a8fedce6600a8b83009a753bc8"
+    },
+    {
+      "path": "computation/round079-quad/PRODUCTION.md",
+      "bytes": 3528,
+      "sha256": "4128e515500cf285b0139d7d659c9d582f6cc6f06b098751a1a480db7bc44d8d"
+    },
+    {
+      "path": "computation/inputs/r079-quad/parameters.json",
+      "bytes": 690,
+      "sha256": "380edaf5c4fa12b9fa4cb58caab5fc3e8e5bc8d8fd0c7d7dc2fd42e0d5cfaf73"
+    },
+    {
+      "path": "computation/inputs/r079-quad/corrected-actual-input.json",
+      "bytes": 26525,
+      "sha256": "d4a87c2ef5f82165467bed876c71a0a86d19dce89012ea37b76bf83583fdd15a"
+    },
+    {
+      "path": "computation/inputs/r079-quad/farface-actual-input.json",
+      "bytes": 26510,
+      "sha256": "e343e448b9582a731ddaccca37452adcce1c6f28b4153aa520a0ec2b4a3ef574"
+    },
+    {
+      "path": "computation/results/round079-quad/production/summary.json",
+      "bytes": 4876,
+      "sha256": "cb063b019b674acb4a837299f400d5ea9cc2c559fe4aa49ffbd3d98a6cebd89a"
+    },
+    {
+      "path": "computation/results/round079-quad/production/corrected-certificate.json.gz",
+      "bytes": 244344,
+      "sha256": "fb00faf83ebce3009e49ae0160d1c70669fcbcd4444060a72c9a532d31be8d78"
+    },
+    {
+      "path": "computation/results/round079-quad/production/farface-certificate.json.gz",
+      "bytes": 135796,
+      "sha256": "f1568f9afa41688a2a3f68705024d25874c4f196e8c4b52f541db30fbe90cc50"
+    },
+    {
+      "path": "computation/results/round079-quad/process-receipt.json",
+      "bytes": 1412,
+      "sha256": "2a8f9037412b6ad2883a1e99f08cc2d04a17a3c51e62d28ad8633946ef70db08"
+    },
+    {
+      "path": "computation/results/round079-quad/comparison-pending-audit.json",
+      "bytes": 13411,
+      "sha256": "e67b68ae19a5a058eca836d53f5336ce8f073bfb49e8c26a77ff86eb7655fb12"
+    },
+    {
+      "path": "computation/results/round079-quad/postprocess-receipt.json",
+      "bytes": 1245,
+      "sha256": "fc97ed2ac287df671738f5b6429e704bfcbb4f67a7992f4c95d95d0464171c73"
+    }
+  ],
+  "file_count": 13,
+  "total_bytes": 483186,
+  "mathematical_batches": 1,
+  "postprocess_runs": 1,
+  "executed_math_source_sha256": "428c3c90516d9d51a062c602fefb85c8da722ae9db7abf331c1f0c5eb7645aee",
+  "parameters_sha256": "380edaf5c4fa12b9fa4cb58caab5fc3e8e5bc8d8fd0c7d7dc2fd42e0d5cfaf73",
+  "observed_process_exits": [
+    {
+      "pid": 15433,
+      "observed_absent": true
+    },
+    {
+      "pid": 15435,
+      "observed_absent": true
+    },
+    {
+      "pid": 15436,
+      "observed_absent": true
+    },
+    {
+      "pid": 15437,
+      "observed_absent": true
+    },
+    {
+      "pid": 15438,
+      "observed_absent": true
+    },
+    {
+      "pid": 15439,
+      "observed_absent": true
+    },
+    {
+      "pid": 15985,
+      "observed_absent": true
+    }
+  ],
+  "worker_limit": 8,
+  "distinct_task_worker_count": 5,
+  "all_idle_worker_PIDs_logged": false,
+  "inherited_actual_area_dependencies": [
+    {
+      "path": "computation/results/round078-actual-prefix/actual-prefix-area.json",
+      "sha256": "0403e1e720e2802048bb324ccd0cdb730f63eeb55fed881d5a53fcdf2b9b961c"
+    },
+    {
+      "path": "computation/results/round078-farface/farface-area.json",
+      "sha256": "4d649e564bdf22de9d70bfa92cbfe0291fd8ee560d7d095261ced9843c537fca"
+    }
+  ],
+  "scope": "Two fixed-input continuous quadratic outer-state brackets, lower endpoints never actualhalo lower bounds. Corrected target unmet with all unresolved branches retained; farface case target met. No second search, MATLAB, newagent, commit or push. No final general upper-bound claim."
+}

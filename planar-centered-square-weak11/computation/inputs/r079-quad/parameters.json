@@ -1,0 +1,15 @@
+{
+  "schema": "r079-two-fixed-quadratic-envelopes-v1",
+  "cases": [
+    {"id": "corrected", "input": "corrected-actual-input.json"},
+    {"id": "farface", "input": "farface-actual-input.json"}
+  ],
+  "target_area_gap": "1/10000",
+  "residual_bits": 72,
+  "tiles_per_axis": 2,
+  "maximum_nodes_per_tile": 20000,
+  "maximum_depth": 24,
+  "arithmetic": "fractions.Fraction plus integer isqrt; no numerical solver tolerance",
+  "random_seed": null,
+  "scope": "Only two already frozen actual inputs. Bounds concern the continuous quadratic outer states minus true residual, and their lower endpoints are not actual halo lower bounds. Implementation prepared before production authorization."
+}
