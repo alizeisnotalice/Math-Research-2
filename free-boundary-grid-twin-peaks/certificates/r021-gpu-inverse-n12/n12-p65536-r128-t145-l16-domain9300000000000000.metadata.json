@@ -1,0 +1,31 @@
+{
+  "kind": "production-sidecar-metadata",
+  "integrated_source": "inverse_fibre_gpu_r020.swift",
+  "integrated_source_sha256": "e56997103ba08ea5507b667499f3d059349c6c4b96c00cf1599484bdf78f2e56",
+  "binary": "inverse_fibre_gpu_r020",
+  "binary_sha256": "e3ff71e6516690737031f63231378d05ebadd700551e9205894f5a77d70e711a",
+  "baseline_source": "/Volumes/data/CodexTemp/T2/a022-gpu-root-moments-r020/root_moments_r020.swift",
+  "baseline_source_sha256": "0ddb392f0c9b28a8a40e78944b71f77e3ee0e591a95d63b3a0b2ffbe692addeb",
+  "command": [
+    "./inverse_fibre_gpu_r020",
+    "12",
+    "65536",
+    "128",
+    "145",
+    "145",
+    "n12-p65536-r128-t145-l16-domain9300000000000000.jsonl",
+    "9300000000000000",
+    "strat",
+    "16"
+  ],
+  "changes_since_previous_verified_source": [
+    "explicit np<=UInt32.max input guard",
+    "corrected metadata-only inverse range statement"
+  ],
+  "metal_kernel_change_since_previous_verified_source": false,
+  "previous_verification_source_sha256": "1f593425af5fe53f98cc3b01109d6498519ad2d555c2ba14332d715c07f26b48",
+  "current_source_sha256": "e56997103ba08ea5507b667499f3d059349c6c4b96c00cf1599484bdf78f2e56",
+  "raw_output": "n12-p65536-r128-t145-l16-domain9300000000000000.jsonl",
+  "telemetry": "n12-p65536-r128-t145-l16.telemetry.jsonl",
+  "source_verification_note": "Current source is e569...; prior 1f593425... verification is retained only as prior-version evidence. Current source differs by explicit UInt32 particle-count guard and corrected range metadata; Metal kernel text is unchanged."
+}

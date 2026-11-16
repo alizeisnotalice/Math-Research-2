@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-16，本地第20轮完成。**原题开放；用户总目标仍active。**
+2026-11-16，本地第21轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/020.md；新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/021.md；新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -57,3 +57,5 @@
 第19轮：切协方差完整整数至n7，n6/n7异切正条目否定逐项负相关；但全部非降同函数的负相关在n3..7由119面有理枚举严格认证，不外推一般n。中央镜像有效域为单射，n4成功比例≈.46226，宏观质量仍缺。全n散布分支插入有明确逆像预算；n5根像计数已核验。全GPU有序前缀移动核最终冻结后主Agent实际复跑62例；n7校准通过，n16单层仍权重集中。CPU完整n8/n10/n11根矩显示C/n²约−.06118/−.06248/−.06681，仅数值。已完成程序退出，百万粒子完整GPU批与更高P CPU批继续。原题开放。
 
 第20轮：严格建立单根与两根提升恒等式，推出闭domino支撑的无共同邻点2至4峰质量Ω(N²A₁)，尚不能删去额外峰而得双峰下界。规范最短路逆纤维DP在n3全部onepeak词逐项认证，严格R_d=E₁m_d；n4距离×出生秩联合表精确。固定镜像标签对轨道same12/split6否定逐轨道单射，不否定原题。CPU n11两批m3≈853.53/833.32仅数值；完整根矩Q≈.317702、C/n²≈−.063962。GPU根矩62trace及inverse逐group审计通过，已结束批次均退出。n16百万完整批、n12根矩及inverse批继续，近期整机GPU采样100%；原题开放，总目标active。
+
+第21轮：全n合法helper加权账本Σ(R−P)/(N−R−1)≤32A₂,d3已证；完整方格N−3大纤维族排除单槽常数重数。n≥7局部domino固定外部标签的四峰族在8!重排后仍≥3峰，否定固定局部消峰加强。原一峰根传输核精确可逆；二项式根比较若成立则A₁/a角≤16^{n−1}，但比较本身未证；精确49根计数将有限核验推至n7。CPU n11 m4≈6082.45、m5≈21316.29；GPU n12 m2≈65.78469、m3≈1244.21001，仅数值。终端逆纤维并行优化及n32逐rank审计通过；已完成进程退出，原GPU生产批继续。原题开放，总目标active。
