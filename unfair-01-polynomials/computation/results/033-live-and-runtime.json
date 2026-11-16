@@ -1,0 +1,59 @@
+{
+  "time": "2026-11-16T17:46:43.997414+08:00",
+  "versions": {
+    "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1"
+  },
+  "gpu_queue": {
+    "status": "running",
+    "parent_pid": 98918,
+    "child_pid": 98930,
+    "command": [
+      "/Users/zzh/.venvs/main/bin/python",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round032-prefix-gpu/gpu_factor_search_prefix.py",
+      "--m",
+      "52",
+      "--n",
+      "92",
+      "--fractional-index",
+      "12",
+      "--starts",
+      "32768",
+      "--steps",
+      "12000",
+      "--seed",
+      "2026111610",
+      "--margin",
+      "0.001",
+      "--restart-every",
+      "2000",
+      "--out",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round032-prefix-gpu/live-m52n92d12/run"
+    ],
+    "seconds_limit": 14400,
+    "worker_sha256": "250ecf20c4ac60a67385c4e3e64cd856639aee543e2cdbc11ae96e7630ca2cad",
+    "driver_sha256": "bcc2bd725b06091e06565e18b158b8becf8977eef622929daedb5c3c3db2b503",
+    "scope": "All filtered legal low prefixes for this d are assigned among starts; numerical trajectories only, not an exclusion."
+  },
+  "last_gpu_history": {
+    "step": 5200,
+    "elapsed_seconds": 2930.873738833001,
+    "restart_epoch": 2,
+    "min_mse_gpu": 3.0066331646594335e-07,
+    "best_max_residual_float64": 0.0026766642267423914,
+    "allocated_bytes": 145883904,
+    "driver_bytes": 2391474176
+  },
+  "gpu_device_counters": [
+    "|   \"PerformanceStatistics\" = {\"In use system memory (driver)\"=0,\"Alloc system memory\"=5144592384,\"Tiler Utilization %\"=2,\"recoveryCount\"=0,\"lastRecoveryTime\"=0,\"Renderer Utilization %\"=100,\"TiledSceneBytes\"=1179648,\"Device Utilization %\"=100,\"SplitSceneCount\"=0,\"Allocated PB Size\"=25690112,\"In use system memory\"=4061085696}"
+  ],
+  "pid_observation": "  PID  PPID  %CPU    RSS ELAPSED COMMAND\n98918   870   0.0   7904   50:01 /opt/homebrew/Cellar/python@3.13/3.13.18/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round032-prefix-gpu/run_prefix_batch.py --out /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round032-prefix-gpu/live-m52n92d12 --m 52 --n 92 --d 12 --starts 32768 --steps 12000 --restart 2000 --seed 2026111610 --margin 0.001 --seconds 14400\n98930 98918   0.0  65344   50:01 /opt/homebrew/Cellar/python@3.13/3.13.18/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round032-prefix-gpu/gpu_factor_search_prefix.py --m 52 --n 92 --fractional-index 12 --starts 32768 --steps 12000 --seed 2026111610 --margin 0.001 --restart-every 2000 --out /Volumes/data/CodexTemp/T2/unfair-01-polynomials/round032-prefix-gpu/live-m52n92d12/run\n",
+  "cpu44_36": {
+    "jobs_started": 3,
+    "jobs_verified": 0,
+    "expected": 40
+  },
+  "gpu_scope": "Instantaneous device-wide counter while owned MPS task active; numeric only, not completion/exclusion."
+}

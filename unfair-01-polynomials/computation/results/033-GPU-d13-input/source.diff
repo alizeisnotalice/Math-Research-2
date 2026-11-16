@@ -1,0 +1,10 @@
+--- round032-prefix-gpu/gpu_factor_search_prefix.py (sha256 250ecf20c4ac60a67385c4e3e64cd856639aee543e2cdbc11ae96e7630ca2cad)
++++ worker/gpu_factor_search_prefix.py (sha256 4cbe9ed5f04acebfaf6f420ce5a7c076b086352c317376cd14ef0520a8acff70)
+@@ survivor_codes
+-    if not 1 <= d <= 12:
+-        raise ValueError('fractional-index must be in 1..12 for the audited prefix enumeration')
++    if not 1 <= d <= 13:
++        raise ValueError('fractional-index must be in 1..13 for the audited prefix enumeration')
+@@ main shape gate
+-    assert a.steps > 0 and B >= 16 and d <= 12 and 1 <= d < min(m, n) and 0 < a.margin < .5
++    assert a.steps > 0 and B >= 16 and d <= 13 and 1 <= d < min(m, n) and 0 < a.margin < .5

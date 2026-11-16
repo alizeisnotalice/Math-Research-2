@@ -1,0 +1,55 @@
+{
+  "status": "cpu_preparation_complete_gpu_not_started",
+  "parameters": {
+    "m": 56,
+    "n": 96,
+    "fractional_index": 13,
+    "starts": 32768,
+    "steps": 12000,
+    "restart_every": 2000,
+    "margin": 0.001,
+    "seed": 2026111611,
+    "driver_seconds_limit": 14400
+  },
+  "enumeration": {
+    "raw_ternary_count": 531441,
+    "valid_low_prefix_count": 22481,
+    "survivor_count": 12291,
+    "valid_low_prefix_codes_sha256": "b18366f51dce7cddb47d8f17000d29e41de945cee92d2696259bf6b333fdcd51",
+    "survivor_codes_sha256": "f4c76dbb3c8dc8a36c7707b169d596dd9273285fe6ae0adad2f408fdf363b006",
+    "filter_rejections": {
+      "prefix_product_coefficient_gt_1": 2428,
+      "forced_positive_fractional_cross_at_d_plus_i": 9968
+    },
+    "coverage": {
+      "all_survivors_covered": true,
+      "assignment_rows": 32768,
+      "prefixes_with_3_rows": 8186,
+      "prefixes_with_2_rows": 4105,
+      "requested_starts_covers_pool": true,
+      "starts_increase_proposed": false
+    }
+  },
+  "frozen_source": {
+    "round032_worker_sha256": "250ecf20c4ac60a67385c4e3e64cd856639aee543e2cdbc11ae96e7630ca2cad",
+    "d13_worker_sha256": "4cbe9ed5f04acebfaf6f420ce5a7c076b086352c317376cd14ef0520a8acff70",
+    "prefix_module_sha256": "0b1a06770a61fe113031209986f676c7e1afb862d27c0c697dbebc0a9f78481d",
+    "driver_sha256": "2332ab3bd4bd0bf7fa095d4dd962c5406fe15d9cc8f8649ae368b09790afec34",
+    "only_worker_semantic_change": "d upper bound 12 -> 13 in survivor_codes and shape assertion"
+  },
+  "artifacts": {
+    "plan_sha256": "4b1328a1bfa623a09d306556793c50dfbaa6731e9163c290602c168e30f0ca0c",
+    "independent_audit_sha256": "7733215a3707ad97ce160a00718624fee8998db2e3e7e47c74af87f46f8aa58b",
+    "generator_sha256": "61d1866bbcaeb28231f661f9edbaf7c219baabfb886a11a1b7338c2e2f38b39a",
+    "verifier_sha256": "70ab4f71c960d45269435b04e38dd95ce1df9f583112796d3c97b3270b813c94",
+    "worker_cpu_audit_sha256": "54d89b577d73a9ffe116ff368191e0586d8a031ee27f6ec0667eed4772df62d7"
+  },
+  "runtime_used": {
+    "python": "3.13.18",
+    "numpy": "2.5.4",
+    "torch": "2.15.0",
+    "commands": ["generator", "independent verifier", "worker --cpu-audit-only", "py_compile", "driver --help"],
+    "gpu_or_mps_started": false
+  },
+  "claim_boundary": "Exact finite integer prefix enumeration and CPU-only cross-check. No GPU search was launched. These necessary-prefix data do not prove nonexistence or factorization."
+}
