@@ -1,0 +1,314 @@
+{
+  "definition": "For each nonpeak v select a higher neighbour uniformly; roots are local maxima.",
+  "n2_exact_forest_partition": {
+    "K2_labellings": 8,
+    "weighted_forest_mass": "8",
+    "basins": [
+      {
+        "root_masks": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            14
+          ]
+        ],
+        "weight": "1"
+      },
+      {
+        "root_masks": [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        "weight": "1"
+      },
+      {
+        "root_masks": [
+          [
+            0,
+            5
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        "weight": "1"
+      },
+      {
+        "root_masks": [
+          [
+            0,
+            7
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        "weight": "1"
+      },
+      {
+        "root_masks": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            13
+          ]
+        ],
+        "weight": "1"
+      },
+      {
+        "root_masks": [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            12
+          ]
+        ],
+        "weight": "1"
+      },
+      {
+        "root_masks": [
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "weight": "1"
+      },
+      {
+        "root_masks": [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "weight": "1"
+      }
+    ],
+    "per_labelling_normalization": [
+      {
+        "labels": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "roots": [
+          1,
+          2
+        ],
+        "choice_mass": "1"
+      },
+      {
+        "labels": [
+          0,
+          3,
+          2,
+          1
+        ],
+        "roots": [
+          1,
+          2
+        ],
+        "choice_mass": "1"
+      },
+      {
+        "labels": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "roots": [
+          1,
+          2
+        ],
+        "choice_mass": "1"
+      },
+      {
+        "labels": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "roots": [
+          1,
+          2
+        ],
+        "choice_mass": "1"
+      },
+      {
+        "labels": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "roots": [
+          0,
+          3
+        ],
+        "choice_mass": "1"
+      },
+      {
+        "labels": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "roots": [
+          0,
+          3
+        ],
+        "choice_mass": "1"
+      },
+      {
+        "labels": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "roots": [
+          0,
+          3
+        ],
+        "choice_mass": "1"
+      },
+      {
+        "labels": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "roots": [
+          0,
+          3
+        ],
+        "choice_mass": "1"
+      }
+    ],
+    "preference_poset_formula": {
+      "all_directed_forests_agree": true,
+      "forest_count": 8,
+      "total": "8"
+    },
+    "entropy_direction_audit": {
+      "rooted_partitions": 8,
+      "marginal_distribution": "uniform on 8 rooted partitions",
+      "conditional_distribution_given_each_K2_labelling": "uniform on 4 rooted partitions",
+      "H_Pi": "log(8)",
+      "H_Pi_given_L": "log(4)",
+      "I_Pi_L": "log(2)",
+      "identity": "H(Pi)=H(Pi|L)+I(Pi;L)"
+    }
+  },
+  "n3_conditional_entropy_integrand": {
+    "K2_labellings": 143808,
+    "histogram_product_higher_neighbour_counts": [
+      {
+        "power_2": 1,
+        "power_3": 2,
+        "count": 43120
+      },
+      {
+        "power_2": 3,
+        "power_3": 1,
+        "count": 52944
+      },
+      {
+        "power_2": 4,
+        "power_3": 0,
+        "count": 23936
+      },
+      {
+        "power_2": 5,
+        "power_3": 0,
+        "count": 23808
+      }
+    ],
+    "mean_entropy_coefficients": {
+      "log_2": [
+        416736,
+        143808
+      ],
+      "log_3": [
+        139184,
+        143808
+      ]
+    },
+    "edge_budget": {
+      "sum_higher_degrees": 12,
+      "nonpeaks": 7,
+      "exponent_bound": 5,
+      "maximum_product": 32,
+      "maximum_count": 23808,
+      "c3_c4_histogram": [
+        {
+          "c3": 0,
+          "c4": 0,
+          "count": 23808
+        },
+        {
+          "c3": 0,
+          "c4": 1,
+          "count": 23936
+        },
+        {
+          "c3": 1,
+          "c4": 0,
+          "count": 52944
+        },
+        {
+          "c3": 2,
+          "c4": 0,
+          "count": 43120
+        }
+      ]
+    },
+    "by_manhattan_peak_distance": {
+      "2": {
+        "count": 63552,
+        "sum_log_2": 194640,
+        "sum_log_3": 57432
+      },
+      "3": {
+        "count": 64512,
+        "sum_log_2": 179936,
+        "sum_log_3": 65424
+      },
+      "4": {
+        "count": 15744,
+        "sum_log_2": 42160,
+        "sum_log_3": 16328
+      }
+    }
+  }
+}

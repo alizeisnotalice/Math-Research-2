@@ -181,3 +181,7 @@ python3 -B free-boundary-grid-twin-peaks/computation/verify_r009.py
 ```
 
 n9源码与完整generate/calculate/audit命令在certificates/r009-n9/RUN_SUMMARY.md；必须不用-NDEBUG，输出放全新data临时目录。计算约5GB RSS、外存约12GB；本轮实际修正重跑已完成，不需仅为读取结果重复运行。层检查脚本会在自身目录写同名JSON，若要保持归档只读可复制到新临时目录运行。GPU旧partial证据仅1195条，详见r009-gpu-partial/README.md。
+
+## 第10轮
+
+自然森林、界面和安全根：`audit_natural_forest.py`、`audit_interface_weight.py`、`audit_safe_root_forcing.py`（输出路径参数应放 CodexTemp）。全 safe 切割及 GPU/CPU 完成批次见 `certificates/r010-*`，各包附源码及复现说明。执行 `python3 -B computation/verify_r010.py`（从课题根目录）重算精确账本和数值汇总；其通过不表示原问题闭合。当前文件哈希见 `manifest-r010.json`。
