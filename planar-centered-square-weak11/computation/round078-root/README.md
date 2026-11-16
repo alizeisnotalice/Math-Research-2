@@ -1,0 +1,11 @@
+# R78 MATLAB exact scalar and whole-cell check
+
+Run once with local MATLAB R2026b Update1, Symbolic Math Toolbox26.2. The standalone script embeds every rational parameter. It verifies three symbolic polynomial identities used by the active-prefix contraction proof; coefficient nonnegativity on x,y≥0 and n≥3 is an analytic inference, not a floating parameter scan.
+
+For the separate S20 input with outside positions(-1/2,0),(0,-1/2), masses37/100 each, the script checks the entire cell E=[-61/1000,-59/1000]^2. A common open radius89/200 captures exactly64 old atoms throughout E and both outside atoms, with mass9/10 and strict mass margin1079/10000. The worst outside distance is441/1000<89/200. Any outside capture on E needs radius>439/1000. Squared margins for residual total, all thin joint labels (old count≤10), and all single-outside labels (old count≤100) are respectively7721/250000,1471/250000,37721/250000. Pure-old exclusion also uses the already-proved fact that only the original singleton reaches this corner; the script checks E lies outside its radius1/40. Cell area1/250000. These coarse analytic mass margins differ from producer's full individual-label distance margins; both are scoped separately.
+
+No all-scale cap enumeration, receiver union area, full-input qualification, numeric optimization or general C2 proof is performed by this script. Those require the separate R78 proofs and production/audit components. The full grid certificate cannot be inferred from these scalar checks alone.
+
+The batch launch PID5745 exited0. Both wrapper main-process inspection and a separate ps -p5745 check found no remaining MATLAB process. Before and after lists were empty. MATLAB computation1.508s, total launch-to-exit28.445s. There was no failed MATLAB attempt or second run.
+
+Reproduce in a writable copy with `/Applications/MATLAB_R2026b.app/bin/matlab -batch "run('r078_prefix_scalars.m')"`. The JSON output is written beside the script. Temporary logs use /Volumes/data/CodexTemp/T2; the archived receipt points to the original local run path as provenance. MATLAB batch exits after saving. This package includes only the script, result, exit receipt and this original note.
