@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "algorithm": "exact radical horizontal y slabs and merged x interval difference; no producer imports or numeric comparison",
+  "full_subsets": 7,
+  "residual_subsets": 3,
+  "catalog": [
+    {
+      "mask": 1,
+      "mass": "1",
+      "SW_receiver": [
+        "-1/2",
+        "0",
+        "-1/2",
+        "0"
+      ]
+    },
+    {
+      "mask": 2,
+      "mass": "4",
+      "SW_receiver": [
+        "-3",
+        "-1",
+        "-1",
+        "0"
+      ]
+    },
+    {
+      "mask": 3,
+      "mass": "5",
+      "SW_receiver": [
+        "-sqrt(5)/2",
+        "-2 + sqrt(5)/2",
+        "-sqrt(5)/2",
+        "0"
+      ]
+    },
+    {
+      "mask": 4,
+      "mass": "4",
+      "SW_receiver": [
+        "-1",
+        "0",
+        "-3",
+        "-1"
+      ]
+    },
+    {
+      "mask": 5,
+      "mass": "5",
+      "SW_receiver": [
+        "-sqrt(5)/2",
+        "0",
+        "-sqrt(5)/2",
+        "-2 + sqrt(5)/2"
+      ]
+    },
+    {
+      "mask": 6,
+      "mass": "8",
+      "SW_receiver": [
+        "-sqrt(2)",
+        "-2 + sqrt(2)",
+        "-sqrt(2)",
+        "-2 + sqrt(2)"
+      ]
+    },
+    {
+      "mask": 7,
+      "mass": "9",
+      "SW_receiver": [
+        "-3/2",
+        "-1/2",
+        "-3/2",
+        "-1/2"
+      ]
+    }
+  ],
+  "horizontal_slabs": [
+    {
+      "y_lower": "-3",
+      "y_upper": "-3/2",
+      "deletion_area": "0"
+    },
+    {
+      "y_lower": "-3/2",
+      "y_upper": "-sqrt(2)",
+      "deletion_area": "3/4 - sqrt(2)/2"
+    },
+    {
+      "y_lower": "-sqrt(2)",
+      "y_upper": "-sqrt(5)/2",
+      "deletion_area": "(3 - 2*sqrt(2))*(-sqrt(5) + 2*sqrt(2))/4"
+    },
+    {
+      "y_lower": "-sqrt(5)/2",
+      "y_upper": "-1",
+      "deletion_area": "-(2 - sqrt(5))*(3 - 2*sqrt(2))/4"
+    },
+    {
+      "y_lower": "-1",
+      "y_upper": "-2 + sqrt(5)/2",
+      "deletion_area": "-(2 - sqrt(2))*(2 - sqrt(5))/2"
+    },
+    {
+      "y_lower": "-2 + sqrt(5)/2",
+      "y_upper": "-2 + sqrt(2)",
+      "deletion_area": "(3 - 2*sqrt(2))*(-sqrt(5) + 2*sqrt(2))/4"
+    },
+    {
+      "y_lower": "-2 + sqrt(2)",
+      "y_upper": "-1/2",
+      "deletion_area": "3/4 - sqrt(2)/2"
+    },
+    {
+      "y_lower": "-1/2",
+      "y_upper": "0",
+      "deletion_area": "-1/4 + sqrt(5)/4"
+    }
+  ],
+  "whole_SW_area": "-25/4 + sqrt(5)/2 + 4*sqrt(2)",
+  "whole_SW_decimal": 0.524888238242275,
+  "analytic_partition": {
+    "old_singleton": "1/4",
+    "two_stems": "-1 + sqrt(5)/2",
+    "central_square_after_complete_residual": "-11/2 + 4*sqrt(2)"
+  },
+  "simple_strict_lower": "131/250",
+  "strict_excess_over_half_mass": "-27/4 + sqrt(5)/2 + 4*sqrt(2)",
+  "wrong_area_if_residual_pair_omitted": "-1/4 + sqrt(5)/2",
+  "overcount_without_pair": "6 - 4*sqrt(2)",
+  "clipped_minus_half_to_zero_area": "1/4",
+  "clipped_minus_half_to_minus_one_ninth_area": "49/324",
+  "qualification": {
+    "actual_maximum_eligible_mass": "9",
+    "original_internal_mass": "1",
+    "S_is_maximum": false,
+    "unit_caps_hold": false,
+    "general_caps_hold": false
+  },
+  "scope": "Uncapped whole-SW two-effective-outside collapse counterexample only. Clipped Gamma is different. No uniform-grid/full-cap/3.5/C2 counterexample.",
+  "source_input": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/inputs/r075/three-atom-collapse-d2.json",
+  "source_input_sha256": "173a66e72d79c26b999d3fa622cf23de0ab7b7e61da094ef56993cfe56d7f3ad",
+  "script_sha256": "b2955184788633c2d74d3249d585b1f2961d0166054dd2a16b81f42d94b3e585",
+  "runtime": {
+    "python": "3.13.18",
+    "sympy": "1.14.0",
+    "pid": 9219,
+    "seconds": 1.3321865830002935
+  }
+}

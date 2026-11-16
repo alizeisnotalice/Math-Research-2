@@ -1,0 +1,68 @@
+{
+  "schema": "r075-directed-three-atom-collapse-component-v1",
+  "root": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+  "scope": "One uncapped3atom SW deletion counterexample to the auxiliary half-internal-mass bound. Not a gridcap input, general3.5 counterexample, sharp constant, random search, or C2 result.",
+  "files": [
+    {
+      "role": "exact_input",
+      "path": "computation/inputs/r075/three-atom-collapse-d2.json",
+      "bytes": 370,
+      "sha256": "173a66e72d79c26b999d3fa622cf23de0ab7b7e61da094ef56993cfe56d7f3ad"
+    },
+    {
+      "role": "code",
+      "path": "computation/round075/certify_three_atom_collapse.py",
+      "bytes": 6338,
+      "sha256": "a93cf5a038ae2579326e8c48170bfa102f9735cda982878fa75b95a5e91a4456"
+    },
+    {
+      "role": "proof_and_scope",
+      "path": "computation/round075/three-atom-counterexample.md",
+      "bytes": 4984,
+      "sha256": "83f80ca9d23843e871634478d9a4c2ed899cfd83eab790003b48acd3f38f5f14"
+    },
+    {
+      "role": "directed_dual_algorithm_certificate",
+      "path": "computation/results/round075-collapse/d2-counterexample.json",
+      "bytes": 10031,
+      "sha256": "144985b3a64715a93d3f355671f9a798579791c2639fc01e76d882baa51578d0"
+    },
+    {
+      "role": "provenance",
+      "path": "computation/results/round075-collapse/process-receipt.json",
+      "bytes": 1670,
+      "sha256": "997c699bd72098a23d75ad262088af28489003ec602fad1923e789d73a7e42d2"
+    }
+  ],
+  "total_bytes": 23393,
+  "actual_inputs_evaluated": 1,
+  "random_inputs_evaluated": 0,
+  "subsequent_directed_d_evaluated": 0,
+  "area_algorithms": 2,
+  "bits": 72,
+  "process_verified_exited": true,
+  "earlier_frozen_packages": [
+    {
+      "path": "computation/results/round074-main/component-manifest.json",
+      "sha256": "3b6052863e3c71920a9e5af2c5fdb4e45085eb3ea98abc701c2439f1b26a17c8",
+      "all_file_hashes_unchanged": true
+    },
+    {
+      "path": "computation/results/round074-borel-corners/preliminary-manifest.json",
+      "sha256": "3a52e8646d80b2d0e97db51f200670215a832e9fde17b4879d0c6367e1938b7a",
+      "all_file_hashes_unchanged": true
+    },
+    {
+      "path": "computation/results/round074-reverse-credit-review/supplement-manifest.json",
+      "sha256": "74f68c7341051230760e55f068068e65540bd618ffd9acef7b21956bb9fdf5ee",
+      "all_file_hashes_unchanged": true
+    },
+    {
+      "path": "computation/results/round073-regional/component-manifest-v2.json",
+      "sha256": "0fe5481c6dd1ab0b6044c400f5c7c726e384a4feeb23e219858c72d3e4477ac2",
+      "all_file_hashes_unchanged": true
+    }
+  ],
+  "commit_push": "not performed",
+  "independent_review": "separate audit/core owns independent reconstruction; production two-algorithm equality is not described as independent reviewer replay"
+}

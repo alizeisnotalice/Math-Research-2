@@ -1,0 +1,78 @@
+{
+  "receipts": [
+    {
+      "state": "succeeded",
+      "started_at": "2026-11-16T04:25:08.774987+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round075/orthogonal_n3_midpoint_probe.py",
+      "script_sha256": "9231f104ad4117f69e72e333359816956a70651b61f2b8b53704f6bd29dd92e9",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round075/orthogonal_n3_midpoint_probe.py",
+        "--input",
+        "computation/inputs/r075/orthogonal_n3_probe.json",
+        "--out",
+        "computation/results/round075-orthogonal-probe/midpoint961.json"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {}
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r075-orthogonal/20261116T042508Z-16411dcf",
+      "stdout": "/Volumes/data/CodexTemp/T2/r075-orthogonal/20261116T042508Z-16411dcf/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r075-orthogonal/20261116T042508Z-16411dcf/stderr.txt",
+      "pid": 16656,
+      "exit_code": 0,
+      "finished_at": "2026-11-16T04:25:09.009681+00:00",
+      "elapsed_seconds": 0.234,
+      "child_returncode": 0,
+      "process_verified_exited": true,
+      "stdout_sha256": "4637674407f7f9e90378dcc11b367eeffd9d69ee33225c8fe5f7c77997b7482b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "state": "succeeded",
+      "started_at": "2026-11-16T04:30:43.315495+00:00",
+      "script": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round075/orthogonal_n3_parameter_boxes.py",
+      "script_sha256": "28ceee9d30cb0fcbb0cc89b6922b530741b6b8bd2c4aff11343c6e5fcddf8326",
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python3",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/round075/orthogonal_n3_parameter_boxes.py",
+        "--input",
+        "computation/inputs/r075/orthogonal_n3_boxes.json",
+        "--theory",
+        "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/proofs/r075-orthogonal-two-outside-full-grid-caps.md",
+        "--out",
+        "computation/results/round075-orthogonal-boxes/summary.json",
+        "--certificate",
+        "computation/results/round075-orthogonal-boxes/parameter-tree.json.gz"
+      ],
+      "workdir": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+      "runtime": {
+        "executable": "/Users/zzh/.venvs/main/bin/python3",
+        "version": "3.13.18",
+        "modules": {}
+      },
+      "environment_attempts": [],
+      "timeout_seconds": 120.0,
+      "log_dir": "/Volumes/data/CodexTemp/T2/r075-orthogonal-boxes/20261116T043043Z-7de97fc6",
+      "stdout": "/Volumes/data/CodexTemp/T2/r075-orthogonal-boxes/20261116T043043Z-7de97fc6/stdout.txt",
+      "stderr": "/Volumes/data/CodexTemp/T2/r075-orthogonal-boxes/20261116T043043Z-7de97fc6/stderr.txt",
+      "pid": 23767,
+      "exit_code": 0,
+      "finished_at": "2026-11-16T04:30:43.391560+00:00",
+      "elapsed_seconds": 0.076,
+      "child_returncode": 0,
+      "process_verified_exited": true,
+      "stdout_sha256": "123cb5114fb9fb608dc5ba4ae8c0d249724a59368acd31bba4a3a5d90442c69a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  ],
+  "all_recorded_child_processes_exited": true,
+  "scope": "One961point screen and one exact parameter-tree construction; no tree rerun, adaptive extension, MATLAB or LP."
+}

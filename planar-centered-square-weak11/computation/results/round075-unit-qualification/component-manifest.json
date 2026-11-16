@@ -1,0 +1,100 @@
+{
+  "schema": "r075-two-outside-obstruction-unit-qualification-component-v1",
+  "frozen": true,
+  "files": [
+    {
+      "path": "computation/round075/check_scaled_unit_qualification.py",
+      "sha256": "a958046cd26bf4e81d2bc3903b81a45c9c02200dda7ff0dc2bedf1fb3cd97b1d",
+      "bytes": 4160
+    },
+    {
+      "path": "computation/inputs/r075/scaled-counterexample-unit-qualification.json",
+      "sha256": "21e2d6a9b0fada0f7f2fbd65f1c96e7e5fc1a81bac6e4643d915e0346153e179",
+      "bytes": 306
+    },
+    {
+      "path": "computation/results/round075-unit-qualification/qualification-checks.json",
+      "sha256": "f092da8d1f73998b9aca99a339950e915cae500105a68113667a1fcaa9335510",
+      "bytes": 60313
+    },
+    {
+      "path": "proofs/r075-two-outside-obstruction-and-global-cap-qualification.md",
+      "sha256": "cb14a03352f0d84c7e933d27e3ed02d0f6e539734ead22c06f4dd8ad40b88ff1",
+      "bytes": 10624
+    }
+  ],
+  "all_embedded_input_script_pins_match": true,
+  "external_whole_SW_counterexample_producer_workspace": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+  "external_whole_SW_counterexample_evidence": [
+    {
+      "path": "computation/inputs/r075/three-atom-collapse-d2.json",
+      "sha256": "173a66e72d79c26b999d3fa622cf23de0ab7b7e61da094ef56993cfe56d7f3ad",
+      "bytes": 370
+    },
+    {
+      "path": "computation/round075/certify_three_atom_collapse.py",
+      "sha256": "a93cf5a038ae2579326e8c48170bfa102f9735cda982878fa75b95a5e91a4456",
+      "bytes": 6338
+    },
+    {
+      "path": "computation/results/round075-collapse/d2-counterexample.json",
+      "sha256": "144985b3a64715a93d3f355671f9a798579791c2639fc01e76d882baa51578d0",
+      "bytes": 10031
+    },
+    {
+      "path": "computation/results/round075-collapse/process-receipt.json",
+      "sha256": "997c699bd72098a23d75ad262088af28489003ec602fad1923e789d73a7e42d2",
+      "bytes": 1670
+    }
+  ],
+  "mathematical_scope": {
+    "unrestricted": "exact whole-SW d>=2 two-outside family formula and limit; d2 strict mass1 half-payment counterexample",
+    "global_grid_embedding": "full S3 plus scaled outside atoms passes every unit and smaller-square cap, but fails side10/9 cap by8/81; not a qualified grid counterexample",
+    "corner_clipping": "Gamma formula and143/4536 upper refer only to scaled LOCAL THREE atoms; no identification with full-S3 Gamma halo",
+    "local_total_mass": "scaled local3 totalmass1 satisfies caps, but its selected internal mass1/9 is not a maximum eligible block",
+    "open": "actual uniform-grid corner budget with all global caps and two effective outside atoms"
+  },
+  "actual_author_execution": {
+    "unit_qualification": "all225 closed-unit-center incidence strata checked with exact rational representatives and full captured-index table; all unbounded exterior center tails masszero",
+    "scalar_checks": "rational root lower311/612>1/2 and scaled local-Gamma upper143/4536<1/18; explicit nonunit violation8/81",
+    "not_run_here": [
+      "No complete halo union rerun.",
+      "No d4/d8 numerical area evaluation.",
+      "No finite-atomic transfer or actual full-grid Gamma area claim."
+    ]
+  },
+  "independent_review": {
+    "status": "root and independent auditor read complete proof and approved; no mathematical fixes",
+    "review_scope": "general-d analytic residual partition, limit, all-unit classification, nonunit qualification and scaled-Gamma units all read independently",
+    "small_kernel_scope": "auditor reviewed author source/result, did not rerun225; separate independent d2 raw-atom geometry run belongs to audit package (PID9219)"
+  },
+  "execution_receipt": {
+    "actual_command": [
+      "python3",
+      "-B",
+      "planar-centered-square-weak11/computation/round075/check_scaled_unit_qualification.py",
+      "--input",
+      "planar-centered-square-weak11/computation/inputs/r075/scaled-counterexample-unit-qualification.json",
+      "--output",
+      "planar-centered-square-weak11/computation/results/round075-unit-qualification/qualification-checks.json"
+    ],
+    "actual_working_directory": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-sol-kernel-sources",
+    "portable_command": [
+      "python3",
+      "-B",
+      "computation/round075/check_scaled_unit_qualification.py",
+      "--input",
+      "computation/inputs/r075/scaled-counterexample-unit-qualification.json",
+      "--output",
+      "computation/results/round075-unit-qualification/qualification-checks.json"
+    ],
+    "portable_working_directory": "topic directory planar-centered-square-weak11",
+    "exit_code": 0,
+    "pid": "not separately captured; actual synchronous run completed; no background job",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "script_wall_seconds": 0.014602790999560966,
+    "new_math_run_in_manifest_step": false
+  },
+  "git": "no commit/push/reset/rebase; R74 frozen files unchanged; only R75 new files written"
+}

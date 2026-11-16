@@ -1,0 +1,53 @@
+{
+  "schema": "r075-orthogonal-n3-box-summary-v1",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "pid": 23767,
+  "source_sha256": "28ceee9d30cb0fcbb0cc89b6922b530741b6b8bd2c4aff11343c6e5fcddf8326",
+  "input_path": "computation/inputs/r075/orthogonal_n3_boxes.json",
+  "input_sha256": "0282494cf691f36a9d4a899111fdc6ee1e4e7f4aeeb903bcdfc029c6169d3826",
+  "theory_path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-astra-covering/planar-centered-square-weak11/proofs/r075-orthogonal-two-outside-full-grid-caps.md",
+  "theory_sha256": "7a0e6c14b12f1ddb610e7c63f061400254f38863b3c314ee1528fad7e2553cf3",
+  "parameters": {
+    "n": 3,
+    "root_box": [
+      "1/9",
+      "1",
+      "0",
+      "4/9"
+    ],
+    "target": "1/18",
+    "bits": 72,
+    "max_nodes": 5000,
+    "max_depth": 24,
+    "split_rule": "longer a/b coordinate width; a wins exact tie",
+    "Gamma": [
+      "-1/2",
+      "-1/9",
+      "-1/2",
+      "-1/9"
+    ],
+    "internal_mass": "1/9",
+    "theory_sha256": "7a0e6c14b12f1ddb610e7c63f061400254f38863b3c314ee1528fad7e2553cf3"
+  },
+  "certificate_path": "computation/results/round075-orthogonal-boxes/parameter-tree.json.gz",
+  "certificate_sha256": "36bd0b4bad73c7047601a66f96c6cf76a3ac77e1794ecdcee7c1b4e819cfa99c",
+  "node_count": 71,
+  "leaf_count": 36,
+  "status_counts": {
+    "split": 35,
+    "certified": 36
+  },
+  "removed_cap_strip_count": 7,
+  "maximum_depth": 9,
+  "target_proved": true,
+  "unresolved_leaf_count": 0,
+  "budget_stop": false,
+  "maximum_terminal_area_upper": "1563026333441017474428935886295754233898431/28224380641890319913506143438820582531006464",
+  "maximum_terminal_area_upper_decimal": 0.055378587515262985,
+  "target": "1/18",
+  "minimum_target_margin": "4994813330666965210294304749833684490817/28224380641890319913506143438820582531006464",
+  "strict_target_margin": true,
+  "seconds": 0.023826583001209656,
+  "scope": "One bounded parameter-box run only. All root/area/cap/coverage decisions exact; floating heap priority changes order only. No maximum-area optimization or generaloutside-family claim. Independent leaf and coverage audit recorded separately."
+}
