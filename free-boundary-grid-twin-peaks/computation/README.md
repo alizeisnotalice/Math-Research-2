@@ -169,3 +169,15 @@ python3 -B free-boundary-grid-twin-peaks/computation/certificates/r008-gpu/summa
 ```
 
 输入与两份独立整数结果在results/n8-kernel-*-r008.json。C++约375MB、Python约365MB；结果保存后进程正常退出。n7选定形态源码completion_ie_selected.cpp，参数n、S掩码（其driver保存原运行路径，迁移复现需改为本机新临时目录）。GPU入口与计时/边界更正见certificates/r008-gpu/README.md。
+
+## 第9轮：原条件律计重与n9修正复算
+
+```sh
+python3 -B free-boundary-grid-twin-peaks/computation/original_law_tree_audit.py 3
+python3 -B free-boundary-grid-twin-peaks/computation/verify_minimum_deletion.py --n 3
+python3 -B free-boundary-grid-twin-peaks/computation/check_inert_reduction.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_inert_fibres.py
+python3 -B free-boundary-grid-twin-peaks/computation/verify_r009.py
+```
+
+n9源码与完整generate/calculate/audit命令在certificates/r009-n9/RUN_SUMMARY.md；必须不用-NDEBUG，输出放全新data临时目录。计算约5GB RSS、外存约12GB；本轮实际修正重跑已完成，不需仅为读取结果重复运行。层检查脚本会在自身目录写同名JSON，若要保持归档只读可复制到新临时目录运行。GPU旧partial证据仅1195条，详见r009-gpu-partial/README.md。

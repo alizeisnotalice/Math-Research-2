@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-15，本地第8轮完成。**原题开放；用户总目标仍active。**
+2026-11-15，本地第9轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,8 +28,10 @@
 
 ## 入口
 
-最新报告rounds/008.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/009.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r007.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
 第8轮严格否定一般p(S)≤4/|∂S|：n8诱导最短路前缀14p≈4.05523，独立C++/Python整数复算一致；全n嵌入与20孤点放大给常数必要下界4.93680。只否定辅助界，不是原双峰命题反例。n3峰数多项式普通对数凹/全实根路线已否定。详见proofs/completion-kernel-counterexample.md、rounds/008.md、manifest-r008.json。
+
+第9轮：最低标签删除严格给B1≤A1；原条件律逐路径计重/出生秩分层已由n2/n3全树有理核验。n9选定前缀16p≈4.65628520634，修复弱CAS潜在越界后完整重跑同值，独立逐层raw/fixed计数匹配。已完成进程退出；GPU原条件律实现继续。原题仍未闭合。
