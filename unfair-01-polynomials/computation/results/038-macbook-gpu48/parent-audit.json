@@ -1,0 +1,63 @@
+{
+  "coverage": "every declared mask interval is contiguous and all task cursors terminate exactly at their declared mask counts",
+  "elapsed_seconds": 27.722447291999742,
+  "events": {
+    "control": {
+      "A_support": [
+        0,
+        1,
+        3
+      ],
+      "B_support": [
+        0,
+        5,
+        11,
+        20,
+        45
+      ],
+      "cpu_score": 9.648717558263797e-07,
+      "exact_product_binary": true,
+      "gpu_score": 5.715284032703494e-07,
+      "mask": 131584,
+      "maximum_rounding_change": 9.767535829041663e-07
+    },
+    "masks": 335544320,
+    "max_gpu_cpu_coefficient_error": 7.64543165843179e-06,
+    "max_sample_product_error": 1.2830898327508e-05,
+    "minimum_cpu_score": 9.648717558263797e-07,
+    "minimum_noncontrol_cpu_score": 0.3391387853484149,
+    "near_saved_cpu_score_lt_2e-5": [
+      {
+        "cpu_score": 9.648717558263797e-07,
+        "fair_control": true,
+        "gpu_saved_score": 5.715284032703494e-07,
+        "mask": 131584,
+        "task": 0
+      }
+    ],
+    "samples": 40960
+  },
+  "input": {
+    "max_log_input_error": 0.0,
+    "max_root_product_error": 1.3241397405252385e-12
+  },
+  "interpreter": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "negative_tests_rejected": [
+    "input_nonbinary_endpoint",
+    "input_wrong_mask_total",
+    "event_noncontinuous_cursor",
+    "saved_coefficient_mismatch",
+    "stdin_payload_hash_mismatch"
+  ],
+  "numpy": "2.5.4",
+  "remote_stdin_payload_sha256": "34ca7aa5c1a48b606ea9b8e2ea50391591e561abcad443449565d0ffd28a6364",
+  "scope": "Float64 reconstructions of float32 GPU samples; the fair control is exact separately. No numerical result is an exact unfair factorization, proof, or exclusion.",
+  "source_sha256": {
+    "auditor": "44c4db39ccf8c907e4468327d1085a44b43904a899a4894b8481b27dc4ff4246",
+    "exit": "166a0bed22986f4a407855d1cb1773dcfcd1ea82ca120b8596d261559b2d57aa",
+    "inputs": "30b5517bd78aca5ae45d5b22e2e9db4ae2cf4a5f6639647190c6720467a85d7b",
+    "search": "49003af16478a3fbf49ebe098d6b03e88e44f9673bda6f6b27c26e8227273702",
+    "stdout": "69dde6d8d7eb3d01b9c99761f36ce6e3dc5590bfb2943458940037511f5a812a"
+  },
+  "status": "passed_gpu48_independent_numerical_audit"
+}

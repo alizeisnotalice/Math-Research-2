@@ -1,0 +1,67 @@
+{
+  "time_unix": 1794843315.10262,
+  "claim": "live/partial statuses only; completed d13 and GPU48 separately certified",
+  "local_d14": {
+    "status": "running",
+    "parent_pid": 19271,
+    "child_pid": 19272,
+    "command": [
+      "/Users/zzh/.venvs/main/bin/python",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/d14_round037/worker/gpu_factor_search_prefix.py",
+      "--m",
+      "60",
+      "--n",
+      "100",
+      "--fractional-index",
+      "14",
+      "--starts",
+      "32768",
+      "--steps",
+      "12000",
+      "--seed",
+      "2026111615",
+      "--margin",
+      "0.001",
+      "--restart-every",
+      "2000",
+      "--out",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round038-prefix-gpu/live-m60n100d14/run"
+    ],
+    "seconds_limit": 14400,
+    "worker_sha256": "f0044bf5a0667b1825d1b58662243bc6c9b49682c809d045680ef5c53d348d9f",
+    "driver_sha256": "365cd05993c8ca0b1ce7a5a678827e90c2f4752e27bc6d7c145d65e84d0d459d",
+    "scope": "All filtered legal low prefixes for this d are assigned among starts; numerical trajectories only, not an exclusion."
+  },
+  "local_cpu_parent": 3805,
+  "remote_cpu_parent": 26658,
+  "remote_cpu_workers": [
+    26659,
+    26660,
+    26661,
+    26662,
+    26663,
+    26664,
+    26665,
+    26666,
+    26667,
+    26668,
+    26669,
+    26670,
+    26671,
+    26672,
+    26673
+  ],
+  "remote_gpu_controller": 29067,
+  "remote_gpu_kernel_at_snapshot": 29068,
+  "sessions": {
+    "local_cpu": 88548,
+    "local_d14": 67556,
+    "macbook_cpu46": 81239,
+    "macbook_gpu52": 40772
+  },
+  "failed_remote_kernels_reaped": [
+    26240,
+    28213
+  ],
+  "backup_status": "unverified; previous managed Time Machine target mkdir denied; no verified completed T2 copy"
+}

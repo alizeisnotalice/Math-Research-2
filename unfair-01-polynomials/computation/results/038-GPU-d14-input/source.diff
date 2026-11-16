@@ -1,0 +1,31 @@
+--- /Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/ds_optimize/round033-gpu-d13/worker/gpu_factor_search_prefix.py
++++ /Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/d14_round037/worker/gpu_factor_search_prefix.py
+@@ -11,7 +11,7 @@
+ import torch
+ import fractional_prefixes as prefixes
+ 
+-FROZEN_SOURCE = Path('/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round024-free-gpu/gpu_factor_search_frozen.py')
++FROZEN_SOURCE = Path('/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/ds_optimize/round033-gpu-d13/worker/gpu_factor_search_prefix.py')
+ 
+ 
+ def sha(path: Path) -> str:
+@@ -25,8 +25,8 @@
+ 
+ 
+ def survivor_codes(d: int) -> list[str]:
+-    if not 1 <= d <= 13:
+-        raise ValueError('fractional-index must be in 1..13 for the audited prefix enumeration')
++    if not 1 <= d <= 14:
++        raise ValueError('fractional-index must be in 1..14 for the audited prefix enumeration')
+     return [code for code in prefixes.enumerate_valid_codes(d)
+             if not prefixes.strict_extension_filter_reasons(code, d)]
+ 
+@@ -100,7 +100,7 @@
+     a = ap.parse_args()
+     assert Path('/Volumes/data').is_mount(); a.out.mkdir(parents=True, exist_ok=True)
+     d, m, n, B = a.fractional_index, a.m, a.n, a.starts
+-    assert a.steps > 0 and B >= 16 and d <= 13 and 1 <= d < min(m, n) and 0 < a.margin < .5
++    assert a.steps > 0 and B >= 16 and d <= 14 and 1 <= d < min(m, n) and 0 < a.margin < .5
+     codes = survivor_codes(d)
+     assert B >= len(codes), 'starts must cover every legal filtered prefix at least once'
+     audit = cpu_prefix_audit(d, codes)

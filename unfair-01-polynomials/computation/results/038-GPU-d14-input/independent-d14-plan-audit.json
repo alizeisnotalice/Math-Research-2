@@ -1,0 +1,37 @@
+{
+  "all_coverage_rows_independently_checked": true,
+  "all_survivors_independently_checked": true,
+  "claim_boundary": "Independent finite integer audit only; no MPS/GPU was initialized and no factorization or exclusion is claimed.",
+  "coverage_plan_starts": 32768,
+  "d": 14,
+  "elapsed_seconds": 18.931973957999617,
+  "interpreter": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "negative_tests_rejected": [
+    "plan_drop_survivor",
+    "plan_wrong_rotation",
+    "plan_false_coverage_bound",
+    "worker_audit_count_mismatch",
+    "worker_audit_worker_hash_mismatch",
+    "worker_audit_prefix_hash_mismatch"
+  ],
+  "per_prefix_assignment_count_max": 2,
+  "per_prefix_assignment_count_min": 1,
+  "production_validator_used_for_positive_and_negative_cases": true,
+  "raw_ternary_count": 1594323,
+  "source_sha256": {
+    "plan": "4fd74fb43b5a879f8d76a51830263b573a98b3fedfa983a65003fa6a621077f8",
+    "prefix_module": "0b1a06770a61fe113031209986f676c7e1afb862d27c0c697dbebc0a9f78481d",
+    "verifier": "e3b66fe43a7a74e08dcce799d4bdcc51bd845aa311aa70a5a06b8d3a2ddc0115",
+    "worker": "f0044bf5a0667b1825d1b58662243bc6c9b49682c809d045680ef5c53d348d9f",
+    "worker_cpu_audit": "6bbca63011e853ee906f98419da3c06db61804a04401f8725690b69b70677df0"
+  },
+  "status": "passed_independent_integer_d14_plan_audit_v2",
+  "strict_filter_rejected_by_reason_counts": {
+    "forced_positive_fractional_cross_at_d_plus_i": 21756,
+    "prefix_product_coefficient_gt_1": 6368
+  },
+  "survivor_codes_sha256": "0e86d937ef93e62f0b3bdc8f9fcce6236c3d90a9b7bd9d97dd1871b59c98437c",
+  "survivor_count": 25041,
+  "valid_low_prefix_codes_sha256": "bf0815e68b76178b9fd79ed5318e276b03ed68832e7eceb181aa169bed5d102d",
+  "valid_low_prefix_count": 47413
+}
