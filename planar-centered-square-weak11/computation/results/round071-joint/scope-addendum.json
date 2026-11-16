@@ -1,0 +1,27 @@
+{
+  "historical_metadata_correction": {
+    "affected_entrypoint_hashes": [
+      "8023bcf3c13040952cc18fa9879b20faa2e592e4f95dba39be2d054c2ff6326c",
+      "aec29cbac59a592beaf40e6bc611830ff448212ccc23a65ccffd397cf0fe7d98"
+    ],
+    "old_top_level_scope": "fixed witness radius 49/100",
+    "correct_interpretation": "Each model uses explicit results.radius_hundredths. Exact witness rows and MAT data are authoritative. Menu uses radii15,25,37,49; final six-active and single-positive use25. Historical raw outputs are preserved byte for byte.",
+    "new_code_hash": "65d5a0f9172707fc02dae983278fec4ba22605f9939d2a54769113cdd8035356",
+    "metadata_smoke_output": "computation/results/round071-joint/metadata-smoke.json",
+    "metadata_smoke_sha256": "d1e69df09fb8fe6c234e93e7461977574aad9ca8624b55e38cb5710eb1720b34",
+    "metadata_smoke_exact_eta": "7/100",
+    "metadata_smoke_radii": [
+      25
+    ]
+  },
+  "box_field_correction": {
+    "legacy_field_prefix": "strict_deletion_open_box",
+    "certified_geometry": "five closed L-infinity epsilon boxes, epsilon101/40000",
+    "authoritative_boundary_field": "certified_box_boundary=closed",
+    "common_full_witness": "open square radius253/1000",
+    "residual_condition": "every positive distance prefix M<4(d-epsilon)^2",
+    "area": "10201/80000000",
+    "sixth_receiver": "No symmetric box assigned because one positive residual prefix has equality."
+  },
+  "no_mathematical_model_or_raw_result_rewritten": true
+}

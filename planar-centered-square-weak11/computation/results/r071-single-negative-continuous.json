@@ -1,0 +1,805 @@
+{
+  "schema": "r071-continuous-dual-result-v1",
+  "passed": false,
+  "scope": "pointwise",
+  "minimum_slack": "-1",
+  "most_violated_cell": {
+    "axis_atom_indices": [
+      0,
+      0
+    ],
+    "dimension": 0,
+    "cell_type": "point_x_point",
+    "representative": [
+      "-59/100",
+      "-49/100"
+    ],
+    "active_witness_ids": [
+      "8076"
+    ],
+    "active_cap_ids": [],
+    "slack": "-1"
+  },
+  "minimum_cell": {
+    "axis_atom_indices": [
+      0,
+      0
+    ],
+    "dimension": 0,
+    "cell_type": "point_x_point",
+    "representative": [
+      "-59/100",
+      "-49/100"
+    ],
+    "active_witness_ids": [
+      "8076"
+    ],
+    "active_cap_ids": [],
+    "slack": "-1"
+  },
+  "negative_cell_count": 26,
+  "minimum_cells_by_dimension": {
+    "0": {
+      "axis_atom_indices": [
+        0,
+        0
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "-59/100",
+        "-49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    "1": {
+      "axis_atom_indices": [
+        0,
+        1
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "-59/100",
+        "-97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    "2": {
+      "axis_atom_indices": [
+        1,
+        1
+      ],
+      "dimension": 2,
+      "cell_type": "open_interval_x_open_interval",
+      "representative": [
+        "-107/200",
+        "-97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    }
+  },
+  "witness_union_cells": 35,
+  "checked_cells": 35,
+  "excluded_cells": 0,
+  "unique_checked_signatures": 2,
+  "axis_atoms": {
+    "x": [
+      {
+        "type": "point",
+        "lo": "-59/100",
+        "hi": "-59/100",
+        "representative": "-59/100"
+      },
+      {
+        "type": "open_interval",
+        "lo": "-59/100",
+        "hi": "-12/25",
+        "representative": "-107/200"
+      },
+      {
+        "type": "point",
+        "lo": "-12/25",
+        "hi": "-12/25",
+        "representative": "-12/25"
+      },
+      {
+        "type": "open_interval",
+        "lo": "-12/25",
+        "hi": "39/100",
+        "representative": "-9/200"
+      },
+      {
+        "type": "point",
+        "lo": "39/100",
+        "hi": "39/100",
+        "representative": "39/100"
+      }
+    ],
+    "y": [
+      {
+        "type": "point",
+        "lo": "-49/100",
+        "hi": "-49/100",
+        "representative": "-49/100"
+      },
+      {
+        "type": "open_interval",
+        "lo": "-49/100",
+        "hi": "-12/25",
+        "representative": "-97/200"
+      },
+      {
+        "type": "point",
+        "lo": "-12/25",
+        "hi": "-12/25",
+        "representative": "-12/25"
+      },
+      {
+        "type": "open_interval",
+        "lo": "-12/25",
+        "hi": "12/25",
+        "representative": "0"
+      },
+      {
+        "type": "point",
+        "lo": "12/25",
+        "hi": "12/25",
+        "representative": "12/25"
+      },
+      {
+        "type": "open_interval",
+        "lo": "12/25",
+        "hi": "49/100",
+        "representative": "97/200"
+      },
+      {
+        "type": "point",
+        "lo": "49/100",
+        "hi": "49/100",
+        "representative": "49/100"
+      }
+    ]
+  },
+  "cells": [
+    {
+      "axis_atom_indices": [
+        0,
+        0
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "-59/100",
+        "-49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        0,
+        1
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "-59/100",
+        "-97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        0,
+        2
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "-59/100",
+        "-12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        0,
+        3
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "-59/100",
+        "0"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        0,
+        4
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "-59/100",
+        "12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        0,
+        5
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "-59/100",
+        "97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        0,
+        6
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "-59/100",
+        "49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        1,
+        0
+      ],
+      "dimension": 1,
+      "cell_type": "open_interval_x_point",
+      "representative": [
+        "-107/200",
+        "-49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        1,
+        1
+      ],
+      "dimension": 2,
+      "cell_type": "open_interval_x_open_interval",
+      "representative": [
+        "-107/200",
+        "-97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        1,
+        2
+      ],
+      "dimension": 1,
+      "cell_type": "open_interval_x_point",
+      "representative": [
+        "-107/200",
+        "-12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        1,
+        3
+      ],
+      "dimension": 2,
+      "cell_type": "open_interval_x_open_interval",
+      "representative": [
+        "-107/200",
+        "0"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        1,
+        4
+      ],
+      "dimension": 1,
+      "cell_type": "open_interval_x_point",
+      "representative": [
+        "-107/200",
+        "12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        1,
+        5
+      ],
+      "dimension": 2,
+      "cell_type": "open_interval_x_open_interval",
+      "representative": [
+        "-107/200",
+        "97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        1,
+        6
+      ],
+      "dimension": 1,
+      "cell_type": "open_interval_x_point",
+      "representative": [
+        "-107/200",
+        "49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        2,
+        0
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "-12/25",
+        "-49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        2,
+        1
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "-12/25",
+        "-97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        2,
+        2
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "-12/25",
+        "-12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [
+        "2668"
+      ],
+      "slack": "0"
+    },
+    {
+      "axis_atom_indices": [
+        2,
+        3
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "-12/25",
+        "0"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [
+        "2668"
+      ],
+      "slack": "0"
+    },
+    {
+      "axis_atom_indices": [
+        2,
+        4
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "-12/25",
+        "12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [
+        "2668"
+      ],
+      "slack": "0"
+    },
+    {
+      "axis_atom_indices": [
+        2,
+        5
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "-12/25",
+        "97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        2,
+        6
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "-12/25",
+        "49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        3,
+        0
+      ],
+      "dimension": 1,
+      "cell_type": "open_interval_x_point",
+      "representative": [
+        "-9/200",
+        "-49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        3,
+        1
+      ],
+      "dimension": 2,
+      "cell_type": "open_interval_x_open_interval",
+      "representative": [
+        "-9/200",
+        "-97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        3,
+        2
+      ],
+      "dimension": 1,
+      "cell_type": "open_interval_x_point",
+      "representative": [
+        "-9/200",
+        "-12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [
+        "2668"
+      ],
+      "slack": "0"
+    },
+    {
+      "axis_atom_indices": [
+        3,
+        3
+      ],
+      "dimension": 2,
+      "cell_type": "open_interval_x_open_interval",
+      "representative": [
+        "-9/200",
+        "0"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [
+        "2668"
+      ],
+      "slack": "0"
+    },
+    {
+      "axis_atom_indices": [
+        3,
+        4
+      ],
+      "dimension": 1,
+      "cell_type": "open_interval_x_point",
+      "representative": [
+        "-9/200",
+        "12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [
+        "2668"
+      ],
+      "slack": "0"
+    },
+    {
+      "axis_atom_indices": [
+        3,
+        5
+      ],
+      "dimension": 2,
+      "cell_type": "open_interval_x_open_interval",
+      "representative": [
+        "-9/200",
+        "97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        3,
+        6
+      ],
+      "dimension": 1,
+      "cell_type": "open_interval_x_point",
+      "representative": [
+        "-9/200",
+        "49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        4,
+        0
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "39/100",
+        "-49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        4,
+        1
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "39/100",
+        "-97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        4,
+        2
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "39/100",
+        "-12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [
+        "2668"
+      ],
+      "slack": "0"
+    },
+    {
+      "axis_atom_indices": [
+        4,
+        3
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "39/100",
+        "0"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [
+        "2668"
+      ],
+      "slack": "0"
+    },
+    {
+      "axis_atom_indices": [
+        4,
+        4
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "39/100",
+        "12/25"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [
+        "2668"
+      ],
+      "slack": "0"
+    },
+    {
+      "axis_atom_indices": [
+        4,
+        5
+      ],
+      "dimension": 1,
+      "cell_type": "point_x_open_interval",
+      "representative": [
+        "39/100",
+        "97/200"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    },
+    {
+      "axis_atom_indices": [
+        4,
+        6
+      ],
+      "dimension": 0,
+      "cell_type": "point_x_point",
+      "representative": [
+        "39/100",
+        "49/100"
+      ],
+      "active_witness_ids": [
+        "8076"
+      ],
+      "active_cap_ids": [],
+      "slack": "-1"
+    }
+  ],
+  "affine_constant_if_all_rhs_supplied": "-201/2500",
+  "exclusion_assumptions": {
+    "points": [],
+    "zero_capacity_cap_ids": []
+  },
+  "outside_witness_union": "LHS=0; RHS>=0 by nonnegative cap weights",
+  "arithmetic": "Python fractions.Fraction; exact integer/rational inputs; no tolerance",
+  "wall_seconds": 0.0002123750000464497,
+  "receipt": {
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "input_sha256": "c876c6a77d4a621194cbd8726d3883de84d0792deb11b4c11e04ead36308900e",
+    "script_sha256": "373a0dc123b44059b47a559244f0dc18f4dc722dc208def86715c9ea4d8ccd01"
+  }
+}

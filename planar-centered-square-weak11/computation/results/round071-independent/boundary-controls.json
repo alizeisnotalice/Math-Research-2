@@ -1,0 +1,75 @@
+{
+  "status": "PASS_LITERAL_R71_BOUNDARY_EQUIVALENCE_CONTROLS",
+  "source_sha256": "2316e72ceac8144e412a74aeeb2a87a174a1c56b48eee60e7f1ef29a1705b63e",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "stats": {
+    "mass_assignments": 256,
+    "literal_subset_eligibility_checks": 3471,
+    "bbox_cap_rows": 2304,
+    "receiver_cases": 1536,
+    "literal_halo_subset_checks": 20826,
+    "complete_tied_prefix_rows": 3072,
+    "positive_zero_distance_cases": 384
+  },
+  "positions": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1/2",
+      "0"
+    ],
+    [
+      "0",
+      "3/2"
+    ],
+    [
+      "1/2",
+      "3/2"
+    ]
+  ],
+  "receivers": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1/4",
+      "0"
+    ],
+    [
+      "1/4",
+      "3/4"
+    ],
+    [
+      "2",
+      "0"
+    ],
+    [
+      "1/2",
+      "3/2"
+    ],
+    [
+      "-1/4",
+      "3/4"
+    ]
+  ],
+  "mass_values": [
+    "0",
+    "1/4",
+    "1/2",
+    "1"
+  ],
+  "bbox_closures": 9,
+  "boundary_example": {
+    "radius": "1/4",
+    "source_distance": "1/4",
+    "source_mass": "1/2",
+    "larger_true_witness": "3/10"
+  },
+  "algebraic_toy_dual_eta_upper": "-1/10",
+  "elapsed_seconds": 0.17414962499992725,
+  "scope": "Only exact finite equivalence/boundary controls and algebraic dual signs; no geometric shared-measure obstruction, LP production replay, halo area or new C2 bound."
+}

@@ -1,0 +1,202 @@
+{
+  "schema": "r071-joint-compute-component-v1",
+  "scope": "shared finite-position LP, exact augmentation, actual33 geometry and five closed deletion boxes; no new general bound; no commit/push by computation agent",
+  "root": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+  "source_pins": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/proofs/r064-source-state-mass-polytope-variation.md",
+      "sha256": "ef14cc7ee5b1384c241eb69bf78b6ae7639f1916afe58723e9187bef3a5cbdfe"
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-root-integration/planar-centered-square-weak11/rounds/070.md",
+      "sha256": "c37e6fe36ee153c5b3d7a0f754135d654f3b416abc4fc849c32a1a3c22d328fd"
+    }
+  ],
+  "files": [
+    {
+      "role": "code",
+      "path": "computation/round071/joint_outside_lp.py",
+      "bytes": 8176,
+      "sha256": "65d5a0f9172707fc02dae983278fec4ba22605f9939d2a54769113cdd8035356"
+    },
+    {
+      "role": "code",
+      "path": "computation/round071/shared_batch.py",
+      "bytes": 1641,
+      "sha256": "f3c6b76dcfb329b76ea575909fe19116bf8d11b1d2df362dcf01e00c9b189255"
+    },
+    {
+      "role": "code",
+      "path": "computation/round071/six_receiver_check.py",
+      "bytes": 1270,
+      "sha256": "3d14bd12760f5f48d899c81769f72b918121e8444cdda6ccdf640f0f864cf3bc"
+    },
+    {
+      "role": "code",
+      "path": "computation/round071/augment_support.py",
+      "bytes": 6357,
+      "sha256": "af3bb1e2232553c587c4948c2d8124ef41946e63361c90702dfc56297764b43c"
+    },
+    {
+      "role": "code",
+      "path": "computation/round071/primal_geometry_certificate.py",
+      "bytes": 5637,
+      "sha256": "be5e7d6ae97a2c863c2fd744d775f8ce2524b7d5cdddcacc66d98b3cd13dc2b2"
+    },
+    {
+      "role": "code",
+      "path": "computation/round071/README.md",
+      "bytes": 8720,
+      "sha256": "339e4698864a1f985406a4da91e081e3746e3029e374ab713770e17bfa686931"
+    },
+    {
+      "role": "historical_actual_entrypoint",
+      "path": "computation/round071/source_snapshots/6d61fd806f4f79578290747961fa106850f803f692d2d1ef31ff5b89a90654a9.py",
+      "bytes": 5219,
+      "sha256": "6d61fd806f4f79578290747961fa106850f803f692d2d1ef31ff5b89a90654a9"
+    },
+    {
+      "role": "historical_actual_entrypoint",
+      "path": "computation/round071/source_snapshots/8023bcf3c13040952cc18fa9879b20faa2e592e4f95dba39be2d054c2ff6326c.py",
+      "bytes": 6800,
+      "sha256": "8023bcf3c13040952cc18fa9879b20faa2e592e4f95dba39be2d054c2ff6326c"
+    },
+    {
+      "role": "historical_actual_entrypoint",
+      "path": "computation/round071/source_snapshots/aec29cbac59a592beaf40e6bc611830ff448212ccc23a65ccffd397cf0fe7d98.py",
+      "bytes": 8077,
+      "sha256": "aec29cbac59a592beaf40e6bc611830ff448212ccc23a65ccffd397cf0fe7d98"
+    },
+    {
+      "role": "matlab_input",
+      "path": "computation/inputs/r071/six-active.mat",
+      "bytes": 122498,
+      "sha256": "f55389b8f67b49a69c21af4daaa01df337c8d3f504ba7f99bc6a2cc487d4c35e"
+    },
+    {
+      "role": "matlab_input",
+      "path": "computation/inputs/r071/single-positive.mat",
+      "bytes": 119526,
+      "sha256": "6f50af9c577405b8a2267f9f8215335682130e4359801967b14b0ad2196962e0"
+    },
+    {
+      "role": "exact_finite_model",
+      "path": "computation/inputs/r071/six-active-exact.json",
+      "bytes": 3907066,
+      "sha256": "070e40b0a7b319cf3800252cdfe96e47577d682e8bb67db18b38912cf20e992e"
+    },
+    {
+      "role": "continuous_oracle_input",
+      "path": "computation/inputs/r071/single-negative-dual-geometry.json",
+      "bytes": 4567,
+      "sha256": "c876c6a77d4a621194cbd8726d3883de84d0792deb11b4c11e04ead36308900e"
+    },
+    {
+      "role": "continuous_oracle_input",
+      "path": "computation/inputs/r071/perimeter-twenty-dual-geometry.json",
+      "bytes": 5914,
+      "sha256": "dc5693f7138d0d302ee3fe2250cc057b6341b57501bcc3597ea1120d47af1797"
+    },
+    {
+      "role": "continuous_oracle_input",
+      "path": "computation/inputs/r071/six-active-dual-geometry.json",
+      "bytes": 5914,
+      "sha256": "5a88adf5362c6ef59d5d34f82056fd36c08129eff0bf05ed21898d5ac48200c4"
+    },
+    {
+      "role": "actual_positive_input",
+      "path": "computation/inputs/r071/positive33-actual-input.json",
+      "bytes": 2116,
+      "sha256": "4a2708f364a6198fbd774861eb2259441840461918fa961d6c3bd0c856677169"
+    },
+    {
+      "role": "final_result",
+      "path": "computation/results/round071-joint/six-receiver-check.json",
+      "bytes": 26549,
+      "sha256": "c73894cc275c5c3c820674dcee146c15bb8f8575c2a7402b040470a1151a8dd0"
+    },
+    {
+      "role": "final_result",
+      "path": "computation/results/round071-joint/single-positive.json",
+      "bytes": 3723,
+      "sha256": "7bec475b50f067cd3c07cee0e3dca4224a707cfda3e536180e2e6a0cb686b339"
+    },
+    {
+      "role": "final_result",
+      "path": "computation/results/round071-joint/one-column-result.json",
+      "bytes": 10439,
+      "sha256": "cb4980ff4f3c71e13b2cf6a6b6840b13166dbe9235f6c1d3508eea0fb57eabfb"
+    },
+    {
+      "role": "final_result",
+      "path": "computation/results/round071-joint/primal-geometry-certificate.json",
+      "bytes": 10783,
+      "sha256": "85c02fbbd8d97654281cc66fea2ee0c0a21940c2783fac3679794235530e7d62"
+    },
+    {
+      "role": "final_result",
+      "path": "computation/results/round071-joint/three-orbit-singletons.json",
+      "bytes": 9647,
+      "sha256": "fe44217204735265ede69048de408c360ba41a0b72dfa62ad5f3d1940f50c356"
+    },
+    {
+      "role": "final_result",
+      "path": "computation/results/round071-joint/probe-summary.json",
+      "bytes": 41865,
+      "sha256": "a276ab0ec8e5d71ce07950b6f0fc155948cbf351d46448ec32137839671de3fe"
+    },
+    {
+      "role": "final_result",
+      "path": "computation/results/round071-joint/process-receipts.json",
+      "bytes": 20486,
+      "sha256": "7e48c9d88d1e7ac7872e1e78863391ef89c7bf32e17b409b484d746c897491cc"
+    },
+    {
+      "role": "final_result",
+      "path": "computation/results/round071-joint/scope-addendum.json",
+      "bytes": 1476,
+      "sha256": "7860387eaf5a3c964a6687c7dac942fa636bbe7f6db5c59bfa94055612243739"
+    },
+    {
+      "role": "final_result",
+      "path": "computation/results/round071-joint/metadata-smoke.json",
+      "bytes": 3788,
+      "sha256": "d1e69df09fb8fe6c234e93e7461977574aad9ca8624b55e38cb5710eb1720b34"
+    },
+    {
+      "role": "exact_finite_model",
+      "path": "computation/results/round071-joint/one-column-model.json",
+      "bytes": 1328373,
+      "sha256": "8928f25a146d75c952494ebaf5a614d0307da7f0e889a450b6c65d3ede87f57b"
+    },
+    {
+      "role": "matlab_input",
+      "path": "computation/results/round071-joint/one-column.mat",
+      "bytes": 134196,
+      "sha256": "3947ef3280730b6b331642aa539b836f814a6e4f1add96732559491ff3599186"
+    }
+  ],
+  "total_bytes": 5810823,
+  "total_actual_lp_solves": 66,
+  "child_process_receipts": 11,
+  "all_recorded_child_processes_exited": true,
+  "excluded_reproducible_outputs": [
+    "single-negative.mat",
+    "single-negative-exact.json",
+    "perimeter-twenty.mat",
+    "perimeter-twenty-exact.json",
+    "single-positive-exact.json",
+    "singletons.json",
+    "menu.json",
+    "shared-batch.json",
+    "single-midpoint.json",
+    "one-column-dual-geometry.json",
+    "all raw stdout/stderr caches"
+  ],
+  "matlab_inputs": [
+    "computation/inputs/r071/six-active.mat",
+    "computation/inputs/r071/single-positive.mat",
+    "computation/results/round071-joint/one-column.mat"
+  ],
+  "independent_review_note": "Separate audit and continuous-dual agents own their review outputs; this manifest binds only this component production files."
+}

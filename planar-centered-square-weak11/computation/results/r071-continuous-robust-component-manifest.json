@@ -1,0 +1,136 @@
+{
+  "schema": "r071-continuous-and-robust-component-manifest-v1",
+  "frozen": true,
+  "files": [
+    {
+      "path": "computation/round071/continuous_dual.py",
+      "sha256": "373a0dc123b44059b47a559244f0dc18f4dc722dc208def86715c9ea4d8ccd01",
+      "bytes": 9061
+    },
+    {
+      "path": "computation/round071/check_continuous_dual_regression.py",
+      "sha256": "b9beddc836893af86cd1170f7461d3ff0743348254a256532b21374fb4530a91",
+      "bytes": 3696
+    },
+    {
+      "path": "computation/inputs/r071-continuous-regression.json",
+      "sha256": "9698af3bea4ddd2381edf9f05757ddb8b36f6449e66900604bb70fce32c98ac5",
+      "bytes": 2376
+    },
+    {
+      "path": "computation/results/r071-continuous-regression.json",
+      "sha256": "a0b989d5b8bc56ba2c6a9213c68a605e6d56156cb16119b071a5a8041fb227e5",
+      "bytes": 45748
+    },
+    {
+      "path": "computation/results/r071-single-negative-continuous.json",
+      "sha256": "93df42f7149cae057bf71cf4e8722b421ecaad7fc515d5a202d3e80c7bd41ef9",
+      "bytes": 15088
+    },
+    {
+      "path": "computation/results/r071-perimeter-twenty-continuous.json",
+      "sha256": "90e3f46641207f93e07bd28d820cc90916d5a9d72dc97d79f0b7e1544b2990ae",
+      "bytes": 87665
+    },
+    {
+      "path": "computation/results/r071-six-active-continuous.json",
+      "sha256": "9a659e3644236df50cb938f5b1736214f31fe398b3ecf8e93c45cbe4f78067b5",
+      "bytes": 87664
+    },
+    {
+      "path": "proofs/r071-continuous-dual-cell-oracle.md",
+      "sha256": "9074d9f565b362060d56440bde277011512dd9ffe4c4989bebc5f26f918076f3",
+      "bytes": 8986
+    },
+    {
+      "path": "computation/round071/check_robust_deletion_cells.py",
+      "sha256": "548894d207d01b6a8b01d47c089f244f6d0cb7d1dc2a4809f7edb15e1bc5e12b",
+      "bytes": 8508
+    },
+    {
+      "path": "computation/inputs/r071-robust-cell-independent-config.json",
+      "sha256": "02b758651a022476dfe737680a292f96b9ac1d0bc4596fc7be95be2b863251b3",
+      "bytes": 366
+    },
+    {
+      "path": "computation/results/r071-robust-cell-independent.json",
+      "sha256": "16eeed755c073a1de682611ef7819232b793a2d70d6f10d7f7f59993eaf6bafc",
+      "bytes": 20723
+    },
+    {
+      "path": "proofs/r071-independent-robust-deletion-cells.md",
+      "sha256": "028590ab72f3264309f755485fffad298d5b409591491374a041b6700a6ffa04",
+      "bytes": 9101
+    }
+  ],
+  "producer_workspace": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11",
+  "external_oracle_input_bindings": [
+    {
+      "output": "computation/results/r071-single-negative-continuous.json",
+      "external_input": {
+        "path": "computation/inputs/r071/single-negative-dual-geometry.json",
+        "sha256": "c876c6a77d4a621194cbd8726d3883de84d0792deb11b4c11e04ead36308900e",
+        "bytes": 4567
+      },
+      "input_pin_matches": true,
+      "checker_pin_matches": true
+    },
+    {
+      "output": "computation/results/r071-perimeter-twenty-continuous.json",
+      "external_input": {
+        "path": "computation/inputs/r071/perimeter-twenty-dual-geometry.json",
+        "sha256": "dc5693f7138d0d302ee3fe2250cc057b6341b57501bcc3597ea1120d47af1797",
+        "bytes": 5914
+      },
+      "input_pin_matches": true,
+      "checker_pin_matches": true
+    },
+    {
+      "output": "computation/results/r071-six-active-continuous.json",
+      "external_input": {
+        "path": "computation/inputs/r071/six-active-dual-geometry.json",
+        "sha256": "5a88adf5362c6ef59d5d34f82056fd36c08129eff0bf05ed21898d5ac48200c4",
+        "bytes": 5914
+      },
+      "input_pin_matches": true,
+      "checker_pin_matches": true
+    }
+  ],
+  "external_robust_input": {
+    "path": "computation/inputs/r071/positive33-actual-input.json",
+    "sha256": "4a2708f364a6198fbd774861eb2259441840461918fa961d6c3bd0c856677169",
+    "bytes": 2116
+  },
+  "external_robust_compared_claim": {
+    "path": "computation/results/round071-joint/primal-geometry-certificate.json",
+    "sha256": "85c02fbbd8d97654281cc66fea2ee0c0a21940c2783fac3679794235530e7d62",
+    "bytes": 10783
+  },
+  "embedded_receipts_verified": true,
+  "actual_checks": {
+    "regression_fixtures": 9,
+    "invalid_inputs_rejected": 4,
+    "closed_residual_prefix_counts": [
+      5,
+      6,
+      7,
+      7,
+      6,
+      6
+    ],
+    "residual_subset_checks": 1530,
+    "disjoint_box_pairs": 10,
+    "five_closed_box_union_area": "10201/80000000"
+  },
+  "scope": {
+    "continuous_oracle": "exact indicator inequality only; validity and meaning of bbox/residual RHS remain producer/core responsibilities",
+    "robust_cells": "independent all-radius actual deletion Delta lower certificate; no P-only containment, no full halo area, no general C2 bound",
+    "production_claim": "read and independently compared prefixes/cells only; LP and maximum-block/terminal status not rerun in this component"
+  },
+  "receipt": {
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "status": "all source/input/config/result/claim pins checked; mathematical runs recorded in embedded receipts; child execs exit0; no background process"
+  },
+  "git": "no commit or push in delegated worktree"
+}

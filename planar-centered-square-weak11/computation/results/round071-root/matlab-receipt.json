@@ -1,0 +1,78 @@
+{
+  "schema": "r071-root-matlab-receipt-v1",
+  "date_utc": "2026-11-16T01:34:06.271836+00:00",
+  "transport": "MATLAB MCP evaluate_matlab_code",
+  "matlab": "26.2.0.3433840 (R2026b) Update 1",
+  "optimization_toolbox": {
+    "Name": "Optimization Toolbox",
+    "Version": "26.2",
+    "Release": "(R2026b)",
+    "Date": "22-May-2026"
+  },
+  "session_pid": 10112,
+  "numeric_scope": "Independent floating solves of three exported finite LPs; not an exact certificate or a continuous-position result.",
+  "initial_attempt": "Initial post-solve residual reporting used row b from MAT and failed dimension concatenation. Final script normalizes all vector inputs to columns, reran all three solves successfully. Initial attempt is not counted as validation.",
+  "script": {
+    "path": "/Volumes/data/CodexProjects/T2/.local/round071-root/r071_matlab_joint.m",
+    "sha256": "3d0d6aea410718b85afa0556a7802bd8f4e8be15b0c1973c6ef17402b244ba3b",
+    "bytes": 2880
+  },
+  "inputs": [
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/inputs/r071/six-active.mat",
+      "sha256": "f55389b8f67b49a69c21af4daaa01df337c8d3f504ba7f99bc6a2cc487d4c35e",
+      "bytes": 122498
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/inputs/r071/single-positive.mat",
+      "sha256": "6f50af9c577405b8a2267f9f8215335682130e4359801967b14b0ad2196962e0",
+      "bytes": 119526
+    },
+    {
+      "path": "/Volumes/data/CodexProjects/T2/.local/workspaces/pcw-position-slab-impl/planar-centered-square-weak11/computation/results/round071-joint/one-column.mat",
+      "sha256": "3947ef3280730b6b331642aa539b836f814a6e4f1add96732559491ff3599186",
+      "bytes": 134196
+    }
+  ],
+  "output": {
+    "path": "/Volumes/data/CodexProjects/T2/.local/round071-root/matlab-joint.json",
+    "sha256": "b1cd2e0ba6742a7f99e1b44f472ce6987c78f6a815e34409ffe8f798673fbcd2",
+    "bytes": 8496
+  },
+  "shutdown": "Timer exit request did not terminate session promptly. Explicit MATLAB exit(0) caused expected MCP disconnect. Both known launcher and kernel subsequently absent on independent ps checks. No exit status claimed for disconnected MCP transport.",
+  "process_checks": [
+    {
+      "pid": 10039,
+      "present": false,
+      "ps_exit_code": 1
+    },
+    {
+      "pid": 10112,
+      "present": false,
+      "ps_exit_code": 1
+    }
+  ],
+  "cases": [
+    {
+      "name": "six-active",
+      "eta": -0.010000000000000004,
+      "exitflag": 1,
+      "max_constraint_violation": 0,
+      "elapsed_seconds": 0.08543433333333333
+    },
+    {
+      "name": "single-positive",
+      "eta": 0.07,
+      "exitflag": 1,
+      "max_constraint_violation": 0,
+      "elapsed_seconds": 0.08131025
+    },
+    {
+      "name": "one-column",
+      "eta": 0.010099999999999984,
+      "exitflag": 1,
+      "max_constraint_violation": 2.7755575615628914e-17,
+      "elapsed_seconds": 0.072992875
+    }
+  ]
+}

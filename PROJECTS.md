@@ -4,7 +4,7 @@
 
 | 课题目录 | 问题与对象 | 当前结论/证明状态 | 最新轮次 | 下一问题 |
 | --- | --- | --- | --- | --- |
-| [planar-centered-square-weak11](planar-centered-square-weak11/README.md) | 二维 Lebesgue 背景、中心轴平行共同半径、全尺度弱 (1,1) 精确常数 | 精确值开放；已证下界约1.702793754234565，旧一般上界3.590865312933 | 第70轮完成 | 实际外源共同约束、残余halo信用与一般覆盖预算 |
+| [planar-centered-square-weak11](planar-centered-square-weak11/README.md) | 二维 Lebesgue 背景、中心轴平行共同半径、全尺度弱 (1,1) 精确常数 | 精确值开放；已证下界约1.702793754234565，旧一般上界3.590865312933 | 第71轮完成 | 实际外源共同约束、残余halo信用与一般覆盖预算 |
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；原条件律计重全树核验，n9完成核独立复核 | 第9轮完成 | 首次合并加权估计、原条件律GPU与构造归一化 |
 

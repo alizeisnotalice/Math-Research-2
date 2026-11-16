@@ -1,0 +1,29 @@
+{
+  "schema": "r071-continuous-regression-v1",
+  "cases": [
+    {"name":"open_witness_boundary", "expected_passed":true,"expected_checked_cells":1,
+     "witnesses":[{"id":"w","bounds":[0,1,0,1],"weight":1,"boundary":"open"}],
+     "caps":[{"id":"c","bounds":[0,1,0,1],"weight":1,"boundary":"closed"}]},
+    {"name":"closed_cap_boundary_and_overlap", "expected_passed":true,"expected_minimum_slack":"0",
+     "witnesses":[{"id":"w","bounds":[-1,1,-1,1],"weight":1,"boundary":"closed"}],
+     "caps":[{"id":"left","bounds":[-1,0,-1,1],"weight":1,"boundary":"closed"},{"id":"right","bounds":[0,1,-1,1],"weight":1,"boundary":"closed"}]},
+    {"name":"degenerate_residual_R0", "expected_passed":true,"expected_checked_cells":1,
+     "witnesses":[{"id":"w","bounds":[0,0,0,0],"weight":1,"boundary":"closed"}],
+     "caps":[{"id":"R0","bounds":[0,0,0,0],"weight":1,"boundary":"closed","kind":"residual","rhs":0}]},
+    {"name":"open_degenerate_empty", "expected_passed":true,"expected_checked_cells":0,
+     "witnesses":[{"id":"w","bounds":[0,0,-1,1],"weight":1,"boundary":"open"}],"caps":[]},
+    {"name":"outside_finite_source_window", "expected_passed":false,"expected_minimum_slack":"-1",
+     "witnesses":[{"id":"w","bounds":[-2,2,-2,2],"weight":1,"boundary":"open"}],
+     "caps":[{"id":"c","bounds":[-1,1,-1,1],"weight":1,"boundary":"closed"}]},
+    {"name":"closed_witness_corner_failure", "expected_passed":false,"expected_minimum_slack":"-1","expected_minimum_dimension":0,
+     "witnesses":[{"id":"w","bounds":[0,0,0,0],"weight":1,"boundary":"closed"}],"caps":[]},
+    {"name":"exact_rational_sliver", "expected_passed":false,"expected_minimum_slack":"-1/7",
+     "witnesses":[{"id":"w","bounds":[0,1,0,1],"weight":"1/7","boundary":"open"}],
+     "caps":[{"id":"c","bounds":[0,"999999999999999999/1000000000000000000",0,1],"weight":"1/7","boundary":"closed"}]},
+    {"name":"declared_zero_atom_exclusion", "expected_passed":true,"expected_checked_cells":0,
+     "excluded_points":[[0,0]],"witnesses":[{"id":"w","bounds":[0,0,0,0],"weight":1,"boundary":"closed"}],"caps":[]},
+    {"name":"zero_capacity_collar_exclusion", "expected_passed":true,"expected_checked_cells":0,
+     "zero_capacity_cap_ids":["z"],"witnesses":[{"id":"w","bounds":[0,1,0,1],"weight":1,"boundary":"open"}],
+     "caps":[{"id":"z","bounds":[0,1,0,1],"weight":0,"boundary":"closed","rhs":0}]}
+  ]
+}
