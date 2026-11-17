@@ -1,0 +1,1063 @@
+{
+  "method": "row-transfer exact layer census; memory models exclude allocator/OS/thread overhead",
+  "n3_to_n8": [
+    {
+      "n": 3,
+      "rectangle": [
+        1,
+        3
+      ],
+      "valid_row_masks": 5,
+      "layer_histogram": {
+        "0": 1,
+        "1": 3,
+        "2": 1
+      },
+      "total_independent_sets": 5,
+      "max_layer": 1,
+      "max_layer_count": 3,
+      "u256_C_bits": 256,
+      "C_upper_bits": 10,
+      "coarse_signed_sum_bits": 12,
+      "peak_compact_hash_model": {
+        "k": 2,
+        "previous": 3,
+        "current": 1,
+        "two_value_arrays": 128,
+        "compact_hash_previous": 80,
+        "hash_plus_two_arrays": 208,
+        "sorted_masks_plus_two_values": 152,
+        "formatted": {
+          "bytes": 208,
+          "MiB": 0.0001983642578125,
+          "GiB": 1.9371509552001953e-07
+        }
+      },
+      "peak_sorted_binary_model": {
+        "k": 2,
+        "previous": 3,
+        "current": 1,
+        "two_value_arrays": 128,
+        "compact_hash_previous": 80,
+        "hash_plus_two_arrays": 208,
+        "sorted_masks_plus_two_values": 152,
+        "formatted": {
+          "bytes": 152,
+          "MiB": 0.00014495849609375,
+          "GiB": 1.4156103134155273e-07
+        }
+      },
+      "predecessor_lookups": 5,
+      "sorted_binary_comparisons_upper": 7,
+      "re_enumerated_parallel_hash_model": {
+        "transition_k": 2,
+        "previous": 3,
+        "power_of_two_slots": 4,
+        "load_factor": 0.75,
+        "two_value_arrays": 128,
+        "parallel_hash_bytes": 48,
+        "total": 176,
+        "formatted": {
+          "bytes": 176,
+          "MiB": 0.0001678466796875,
+          "GiB": 1.6391277313232422e-07
+        }
+      },
+      "layer_pairs": [
+        {
+          "k": 1,
+          "previous": 1,
+          "current": 3,
+          "two_value_arrays": 128,
+          "compact_hash_previous": 32,
+          "hash_plus_two_arrays": 160,
+          "sorted_masks_plus_two_values": 136
+        },
+        {
+          "k": 2,
+          "previous": 3,
+          "current": 1,
+          "two_value_arrays": 128,
+          "compact_hash_previous": 80,
+          "hash_plus_two_arrays": 208,
+          "sorted_masks_plus_two_values": 152
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "rectangle": [
+        2,
+        4
+      ],
+      "valid_row_masks": 8,
+      "layer_histogram": {
+        "0": 1,
+        "1": 8,
+        "2": 18,
+        "3": 12,
+        "4": 2
+      },
+      "total_independent_sets": 41,
+      "max_layer": 2,
+      "max_layer_count": 18,
+      "u256_C_bits": 256,
+      "C_upper_bits": 29,
+      "coarse_signed_sum_bits": 35,
+      "peak_compact_hash_model": {
+        "k": 3,
+        "previous": 18,
+        "current": 12,
+        "two_value_arrays": 960,
+        "compact_hash_previous": 416,
+        "hash_plus_two_arrays": 1376,
+        "sorted_masks_plus_two_values": 1104,
+        "formatted": {
+          "bytes": 1376,
+          "MiB": 0.001312255859375,
+          "GiB": 1.2814998626708984e-06
+        }
+      },
+      "peak_sorted_binary_model": {
+        "k": 3,
+        "previous": 18,
+        "current": 12,
+        "two_value_arrays": 960,
+        "compact_hash_previous": 416,
+        "hash_plus_two_arrays": 1376,
+        "sorted_masks_plus_two_values": 1104,
+        "formatted": {
+          "bytes": 1104,
+          "MiB": 0.0010528564453125,
+          "GiB": 1.0281801223754883e-06
+        }
+      },
+      "predecessor_lookups": 88,
+      "sorted_binary_comparisons_upper": 328,
+      "re_enumerated_parallel_hash_model": {
+        "transition_k": 3,
+        "previous": 18,
+        "power_of_two_slots": 32,
+        "load_factor": 0.5625,
+        "two_value_arrays": 960,
+        "parallel_hash_bytes": 384,
+        "total": 1344,
+        "formatted": {
+          "bytes": 1344,
+          "MiB": 0.00128173828125,
+          "GiB": 1.2516975402832031e-06
+        }
+      },
+      "layer_pairs": [
+        {
+          "k": 1,
+          "previous": 1,
+          "current": 8,
+          "two_value_arrays": 288,
+          "compact_hash_previous": 32,
+          "hash_plus_two_arrays": 320,
+          "sorted_masks_plus_two_values": 296
+        },
+        {
+          "k": 2,
+          "previous": 8,
+          "current": 18,
+          "two_value_arrays": 832,
+          "compact_hash_previous": 192,
+          "hash_plus_two_arrays": 1024,
+          "sorted_masks_plus_two_values": 896
+        },
+        {
+          "k": 3,
+          "previous": 18,
+          "current": 12,
+          "two_value_arrays": 960,
+          "compact_hash_previous": 416,
+          "hash_plus_two_arrays": 1376,
+          "sorted_masks_plus_two_values": 1104
+        },
+        {
+          "k": 4,
+          "previous": 12,
+          "current": 2,
+          "two_value_arrays": 448,
+          "compact_hash_previous": 288,
+          "hash_plus_two_arrays": 736,
+          "sorted_masks_plus_two_values": 544
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "rectangle": [
+        3,
+        5
+      ],
+      "valid_row_masks": 13,
+      "layer_histogram": {
+        "0": 1,
+        "1": 15,
+        "2": 83,
+        "3": 215,
+        "4": 276,
+        "5": 174,
+        "6": 53,
+        "7": 9,
+        "8": 1
+      },
+      "total_independent_sets": 827,
+      "max_layer": 4,
+      "max_layer_count": 276,
+      "u256_C_bits": 256,
+      "C_upper_bits": 62,
+      "coarse_signed_sum_bits": 71,
+      "peak_compact_hash_model": {
+        "k": 5,
+        "previous": 276,
+        "current": 174,
+        "two_value_arrays": 14400,
+        "compact_hash_previous": 6320,
+        "hash_plus_two_arrays": 20720,
+        "sorted_masks_plus_two_values": 16608,
+        "formatted": {
+          "bytes": 20720,
+          "MiB": 0.0197601318359375,
+          "GiB": 1.9297003746032715e-05
+        }
+      },
+      "peak_sorted_binary_model": {
+        "k": 4,
+        "previous": 215,
+        "current": 276,
+        "two_value_arrays": 15712,
+        "compact_hash_previous": 4928,
+        "hash_plus_two_arrays": 20640,
+        "sorted_masks_plus_two_values": 17432,
+        "formatted": {
+          "bytes": 17432,
+          "MiB": 0.01662445068359375,
+          "GiB": 1.623481512069702e-05
+        }
+      },
+      "predecessor_lookups": 3189,
+      "sorted_binary_comparisons_upper": 24810,
+      "re_enumerated_parallel_hash_model": {
+        "transition_k": 5,
+        "previous": 276,
+        "power_of_two_slots": 512,
+        "load_factor": 0.5390625,
+        "two_value_arrays": 14400,
+        "parallel_hash_bytes": 6144,
+        "total": 20544,
+        "formatted": {
+          "bytes": 20544,
+          "MiB": 0.01959228515625,
+          "GiB": 1.913309097290039e-05
+        }
+      },
+      "layer_pairs": [
+        {
+          "k": 1,
+          "previous": 1,
+          "current": 15,
+          "two_value_arrays": 512,
+          "compact_hash_previous": 32,
+          "hash_plus_two_arrays": 544,
+          "sorted_masks_plus_two_values": 520
+        },
+        {
+          "k": 2,
+          "previous": 15,
+          "current": 83,
+          "two_value_arrays": 3136,
+          "compact_hash_previous": 352,
+          "hash_plus_two_arrays": 3488,
+          "sorted_masks_plus_two_values": 3256
+        },
+        {
+          "k": 3,
+          "previous": 83,
+          "current": 215,
+          "two_value_arrays": 9536,
+          "compact_hash_previous": 1904,
+          "hash_plus_two_arrays": 11440,
+          "sorted_masks_plus_two_values": 10200
+        },
+        {
+          "k": 4,
+          "previous": 215,
+          "current": 276,
+          "two_value_arrays": 15712,
+          "compact_hash_previous": 4928,
+          "hash_plus_two_arrays": 20640,
+          "sorted_masks_plus_two_values": 17432
+        },
+        {
+          "k": 5,
+          "previous": 276,
+          "current": 174,
+          "two_value_arrays": 14400,
+          "compact_hash_previous": 6320,
+          "hash_plus_two_arrays": 20720,
+          "sorted_masks_plus_two_values": 16608
+        },
+        {
+          "k": 6,
+          "previous": 174,
+          "current": 53,
+          "two_value_arrays": 7264,
+          "compact_hash_previous": 3984,
+          "hash_plus_two_arrays": 11248,
+          "sorted_masks_plus_two_values": 8656
+        },
+        {
+          "k": 7,
+          "previous": 53,
+          "current": 9,
+          "two_value_arrays": 1984,
+          "compact_hash_previous": 1216,
+          "hash_plus_two_arrays": 3200,
+          "sorted_masks_plus_two_values": 2408
+        },
+        {
+          "k": 8,
+          "previous": 9,
+          "current": 1,
+          "two_value_arrays": 320,
+          "compact_hash_previous": 208,
+          "hash_plus_two_arrays": 528,
+          "sorted_masks_plus_two_values": 392
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "rectangle": [
+        4,
+        6
+      ],
+      "valid_row_masks": 21,
+      "layer_histogram": {
+        "0": 1,
+        "1": 24,
+        "2": 238,
+        "3": 1276,
+        "4": 4072,
+        "5": 8052,
+        "6": 10010,
+        "7": 7836,
+        "8": 3846,
+        "9": 1176,
+        "10": 226,
+        "11": 28,
+        "12": 2
+      },
+      "total_independent_sets": 36787,
+      "max_layer": 6,
+      "max_layer_count": 10010,
+      "u256_C_bits": 256,
+      "C_upper_bits": 108,
+      "coarse_signed_sum_bits": 123,
+      "peak_compact_hash_model": {
+        "k": 7,
+        "previous": 10010,
+        "current": 7836,
+        "two_value_arrays": 571072,
+        "compact_hash_previous": 228800,
+        "hash_plus_two_arrays": 799872,
+        "sorted_masks_plus_two_values": 651152,
+        "formatted": {
+          "bytes": 799872,
+          "MiB": 0.7628173828125,
+          "GiB": 0.000744938850402832
+        }
+      },
+      "peak_sorted_binary_model": {
+        "k": 7,
+        "previous": 10010,
+        "current": 7836,
+        "two_value_arrays": 571072,
+        "compact_hash_previous": 228800,
+        "hash_plus_two_arrays": 799872,
+        "sorted_masks_plus_two_values": 651152,
+        "formatted": {
+          "bytes": 651152,
+          "MiB": 0.6209869384765625,
+          "GiB": 0.0006064325571060181
+        }
+      },
+      "predecessor_lookups": 219732,
+      "sorted_binary_comparisons_upper": 2798460,
+      "re_enumerated_parallel_hash_model": {
+        "transition_k": 7,
+        "previous": 10010,
+        "power_of_two_slots": 16384,
+        "load_factor": 0.6109619140625,
+        "two_value_arrays": 571072,
+        "parallel_hash_bytes": 196608,
+        "total": 767680,
+        "formatted": {
+          "bytes": 767680,
+          "MiB": 0.73211669921875,
+          "GiB": 0.0007149577140808105
+        }
+      },
+      "layer_pairs": [
+        {
+          "k": 1,
+          "previous": 1,
+          "current": 24,
+          "two_value_arrays": 800,
+          "compact_hash_previous": 32,
+          "hash_plus_two_arrays": 832,
+          "sorted_masks_plus_two_values": 808
+        },
+        {
+          "k": 2,
+          "previous": 24,
+          "current": 238,
+          "two_value_arrays": 8384,
+          "compact_hash_previous": 560,
+          "hash_plus_two_arrays": 8944,
+          "sorted_masks_plus_two_values": 8576
+        },
+        {
+          "k": 3,
+          "previous": 238,
+          "current": 1276,
+          "two_value_arrays": 48448,
+          "compact_hash_previous": 5440,
+          "hash_plus_two_arrays": 53888,
+          "sorted_masks_plus_two_values": 50352
+        },
+        {
+          "k": 4,
+          "previous": 1276,
+          "current": 4072,
+          "two_value_arrays": 171136,
+          "compact_hash_previous": 29168,
+          "hash_plus_two_arrays": 200304,
+          "sorted_masks_plus_two_values": 181344
+        },
+        {
+          "k": 5,
+          "previous": 4072,
+          "current": 8052,
+          "two_value_arrays": 387968,
+          "compact_hash_previous": 93088,
+          "hash_plus_two_arrays": 481056,
+          "sorted_masks_plus_two_values": 420544
+        },
+        {
+          "k": 6,
+          "previous": 8052,
+          "current": 10010,
+          "two_value_arrays": 577984,
+          "compact_hash_previous": 184048,
+          "hash_plus_two_arrays": 762032,
+          "sorted_masks_plus_two_values": 642400
+        },
+        {
+          "k": 7,
+          "previous": 10010,
+          "current": 7836,
+          "two_value_arrays": 571072,
+          "compact_hash_previous": 228800,
+          "hash_plus_two_arrays": 799872,
+          "sorted_masks_plus_two_values": 651152
+        },
+        {
+          "k": 8,
+          "previous": 7836,
+          "current": 3846,
+          "two_value_arrays": 373824,
+          "compact_hash_previous": 179120,
+          "hash_plus_two_arrays": 552944,
+          "sorted_masks_plus_two_values": 436512
+        },
+        {
+          "k": 9,
+          "previous": 3846,
+          "current": 1176,
+          "two_value_arrays": 160704,
+          "compact_hash_previous": 87920,
+          "hash_plus_two_arrays": 248624,
+          "sorted_masks_plus_two_values": 191472
+        },
+        {
+          "k": 10,
+          "previous": 1176,
+          "current": 226,
+          "two_value_arrays": 44864,
+          "compact_hash_previous": 26880,
+          "hash_plus_two_arrays": 71744,
+          "sorted_masks_plus_two_values": 54272
+        },
+        {
+          "k": 11,
+          "previous": 226,
+          "current": 28,
+          "two_value_arrays": 8128,
+          "compact_hash_previous": 5168,
+          "hash_plus_two_arrays": 13296,
+          "sorted_masks_plus_two_values": 9936
+        },
+        {
+          "k": 12,
+          "previous": 28,
+          "current": 2,
+          "two_value_arrays": 960,
+          "compact_hash_previous": 640,
+          "hash_plus_two_arrays": 1600,
+          "sorted_masks_plus_two_values": 1184
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "rectangle": [
+        5,
+        7
+      ],
+      "valid_row_masks": 34,
+      "layer_histogram": {
+        "0": 1,
+        "1": 35,
+        "2": 537,
+        "3": 4773,
+        "4": 27381,
+        "5": 107004,
+        "6": 293409,
+        "7": 573797,
+        "8": 807161,
+        "9": 820006,
+        "10": 602827,
+        "11": 321496,
+        "12": 125145,
+        "13": 36053,
+        "14": 7895,
+        "15": 1363,
+        "16": 188,
+        "17": 19,
+        "18": 1
+      },
+      "total_independent_sets": 3729091,
+      "max_layer": 9,
+      "max_layer_count": 820006,
+      "u256_C_bits": 256,
+      "C_upper_bits": 170,
+      "coarse_signed_sum_bits": 192,
+      "peak_compact_hash_model": {
+        "k": 9,
+        "previous": 807161,
+        "current": 820006,
+        "two_value_arrays": 52069344,
+        "compact_hash_previous": 18449408,
+        "hash_plus_two_arrays": 70518752,
+        "sorted_masks_plus_two_values": 58526632,
+        "formatted": {
+          "bytes": 70518752,
+          "MiB": 67.25192260742188,
+          "GiB": 0.06567570567131042
+        }
+      },
+      "peak_sorted_binary_model": {
+        "k": 9,
+        "previous": 807161,
+        "current": 820006,
+        "two_value_arrays": 52069344,
+        "compact_hash_previous": 18449408,
+        "hash_plus_two_arrays": 70518752,
+        "sorted_masks_plus_two_values": 58526632,
+        "formatted": {
+          "bytes": 58526632,
+          "MiB": 55.815345764160156,
+          "GiB": 0.05450717359781265
+        }
+      },
+      "predecessor_lookups": 31943826,
+      "sorted_binary_comparisons_upper": 622453660,
+      "re_enumerated_parallel_hash_model": {
+        "transition_k": 9,
+        "previous": 807161,
+        "power_of_two_slots": 1048576,
+        "load_factor": 0.7697687149047852,
+        "two_value_arrays": 52069344,
+        "parallel_hash_bytes": 12582912,
+        "total": 64652256,
+        "formatted": {
+          "bytes": 64652256,
+          "MiB": 61.657196044921875,
+          "GiB": 0.06021210551261902
+        }
+      },
+      "layer_pairs": [
+        {
+          "k": 1,
+          "previous": 1,
+          "current": 35,
+          "two_value_arrays": 1152,
+          "compact_hash_previous": 32,
+          "hash_plus_two_arrays": 1184,
+          "sorted_masks_plus_two_values": 1160
+        },
+        {
+          "k": 2,
+          "previous": 35,
+          "current": 537,
+          "two_value_arrays": 18304,
+          "compact_hash_previous": 800,
+          "hash_plus_two_arrays": 19104,
+          "sorted_masks_plus_two_values": 18584
+        },
+        {
+          "k": 3,
+          "previous": 537,
+          "current": 4773,
+          "two_value_arrays": 169920,
+          "compact_hash_previous": 12288,
+          "hash_plus_two_arrays": 182208,
+          "sorted_masks_plus_two_values": 174216
+        },
+        {
+          "k": 4,
+          "previous": 4773,
+          "current": 27381,
+          "two_value_arrays": 1028928,
+          "compact_hash_previous": 109104,
+          "hash_plus_two_arrays": 1138032,
+          "sorted_masks_plus_two_values": 1067112
+        },
+        {
+          "k": 5,
+          "previous": 27381,
+          "current": 107004,
+          "two_value_arrays": 4300320,
+          "compact_hash_previous": 625856,
+          "hash_plus_two_arrays": 4926176,
+          "sorted_masks_plus_two_values": 4519368
+        },
+        {
+          "k": 6,
+          "previous": 107004,
+          "current": 293409,
+          "two_value_arrays": 12813216,
+          "compact_hash_previous": 2445808,
+          "hash_plus_two_arrays": 15259024,
+          "sorted_masks_plus_two_values": 13669248
+        },
+        {
+          "k": 7,
+          "previous": 293409,
+          "current": 573797,
+          "two_value_arrays": 27750592,
+          "compact_hash_previous": 6706496,
+          "hash_plus_two_arrays": 34457088,
+          "sorted_masks_plus_two_values": 30097864
+        },
+        {
+          "k": 8,
+          "previous": 573797,
+          "current": 807161,
+          "two_value_arrays": 44190656,
+          "compact_hash_previous": 13115360,
+          "hash_plus_two_arrays": 57306016,
+          "sorted_masks_plus_two_values": 48781032
+        },
+        {
+          "k": 9,
+          "previous": 807161,
+          "current": 820006,
+          "two_value_arrays": 52069344,
+          "compact_hash_previous": 18449408,
+          "hash_plus_two_arrays": 70518752,
+          "sorted_masks_plus_two_values": 58526632
+        },
+        {
+          "k": 10,
+          "previous": 820006,
+          "current": 602827,
+          "two_value_arrays": 45530656,
+          "compact_hash_previous": 18743008,
+          "hash_plus_two_arrays": 64273664,
+          "sorted_masks_plus_two_values": 52090704
+        },
+        {
+          "k": 11,
+          "previous": 602827,
+          "current": 321496,
+          "two_value_arrays": 29578336,
+          "compact_hash_previous": 13778912,
+          "hash_plus_two_arrays": 43357248,
+          "sorted_masks_plus_two_values": 34400952
+        },
+        {
+          "k": 12,
+          "previous": 321496,
+          "current": 125145,
+          "two_value_arrays": 14292512,
+          "compact_hash_previous": 7348496,
+          "hash_plus_two_arrays": 21641008,
+          "sorted_masks_plus_two_values": 16864480
+        },
+        {
+          "k": 13,
+          "previous": 125145,
+          "current": 36053,
+          "two_value_arrays": 5158336,
+          "compact_hash_previous": 2860464,
+          "hash_plus_two_arrays": 8018800,
+          "sorted_masks_plus_two_values": 6159496
+        },
+        {
+          "k": 14,
+          "previous": 36053,
+          "current": 7895,
+          "two_value_arrays": 1406336,
+          "compact_hash_previous": 824080,
+          "hash_plus_two_arrays": 2230416,
+          "sorted_masks_plus_two_values": 1694760
+        },
+        {
+          "k": 15,
+          "previous": 7895,
+          "current": 1363,
+          "two_value_arrays": 296256,
+          "compact_hash_previous": 180464,
+          "hash_plus_two_arrays": 476720,
+          "sorted_masks_plus_two_values": 359416
+        },
+        {
+          "k": 16,
+          "previous": 1363,
+          "current": 188,
+          "two_value_arrays": 49632,
+          "compact_hash_previous": 31168,
+          "hash_plus_two_arrays": 80800,
+          "sorted_masks_plus_two_values": 60536
+        },
+        {
+          "k": 17,
+          "previous": 188,
+          "current": 19,
+          "two_value_arrays": 6624,
+          "compact_hash_previous": 4304,
+          "hash_plus_two_arrays": 10928,
+          "sorted_masks_plus_two_values": 8128
+        },
+        {
+          "k": 18,
+          "previous": 19,
+          "current": 1,
+          "two_value_arrays": 640,
+          "compact_hash_previous": 448,
+          "hash_plus_two_arrays": 1088,
+          "sorted_masks_plus_two_values": 792
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "rectangle": [
+        6,
+        8
+      ],
+      "valid_row_masks": 55,
+      "layer_histogram": {
+        "0": 1,
+        "1": 48,
+        "2": 1046,
+        "3": 13732,
+        "4": 121560,
+        "5": 769820,
+        "6": 3612344,
+        "7": 12842256,
+        "8": 35093344,
+        "9": 74412500,
+        "10": 123186310,
+        "11": 159834860,
+        "12": 162959262,
+        "13": 130801432,
+        "14": 82815006,
+        "15": 41465716,
+        "16": 16481550,
+        "17": 5228500,
+        "18": 1333340,
+        "19": 275696,
+        "20": 46562,
+        "21": 6400,
+        "22": 690,
+        "23": 52,
+        "24": 2
+      },
+      "total_independent_sets": 851302029,
+      "max_layer": 12,
+      "max_layer_count": 162959262,
+      "u256_C_bits": 256,
+      "C_upper_bits": 249,
+      "coarse_signed_sum_bits": 279,
+      "peak_compact_hash_model": {
+        "k": 12,
+        "previous": 159834860,
+        "current": 162959262,
+        "two_value_arrays": 10329411904,
+        "compact_hash_previous": 3653368240,
+        "hash_plus_two_arrays": 13982780144,
+        "sorted_masks_plus_two_values": 11608090784,
+        "formatted": {
+          "bytes": 13982780144,
+          "MiB": 13335.018295288086,
+          "GiB": 13.022478803992271
+        }
+      },
+      "peak_sorted_binary_model": {
+        "k": 12,
+        "previous": 159834860,
+        "current": 162959262,
+        "two_value_arrays": 10329411904,
+        "compact_hash_previous": 3653368240,
+        "hash_plus_two_arrays": 13982780144,
+        "sorted_masks_plus_two_values": 11608090784,
+        "formatted": {
+          "bytes": 11608090784,
+          "MiB": 11070.33804321289,
+          "GiB": 10.810876995325089
+        }
+      },
+      "predecessor_lookups": 9876689636,
+      "sorted_binary_comparisons_upper": 267500933028,
+      "re_enumerated_parallel_hash_model": {
+        "transition_k": 12,
+        "previous": 159834860,
+        "power_of_two_slots": 268435456,
+        "load_factor": 0.5954312533140182,
+        "two_value_arrays": 10329411904,
+        "parallel_hash_bytes": 3221225472,
+        "total": 13550637376,
+        "formatted": {
+          "bytes": 13550637376,
+          "MiB": 12922.894836425781,
+          "GiB": 12.620014488697052
+        }
+      },
+      "layer_pairs": [
+        {
+          "k": 1,
+          "previous": 1,
+          "current": 48,
+          "two_value_arrays": 1568,
+          "compact_hash_previous": 32,
+          "hash_plus_two_arrays": 1600,
+          "sorted_masks_plus_two_values": 1576
+        },
+        {
+          "k": 2,
+          "previous": 48,
+          "current": 1046,
+          "two_value_arrays": 35008,
+          "compact_hash_previous": 1104,
+          "hash_plus_two_arrays": 36112,
+          "sorted_masks_plus_two_values": 35392
+        },
+        {
+          "k": 3,
+          "previous": 1046,
+          "current": 13732,
+          "two_value_arrays": 472896,
+          "compact_hash_previous": 23920,
+          "hash_plus_two_arrays": 496816,
+          "sorted_masks_plus_two_values": 481264
+        },
+        {
+          "k": 4,
+          "previous": 13732,
+          "current": 121560,
+          "two_value_arrays": 4329344,
+          "compact_hash_previous": 313888,
+          "hash_plus_two_arrays": 4643232,
+          "sorted_masks_plus_two_values": 4439200
+        },
+        {
+          "k": 5,
+          "previous": 121560,
+          "current": 769820,
+          "two_value_arrays": 28524160,
+          "compact_hash_previous": 2778528,
+          "hash_plus_two_arrays": 31302688,
+          "sorted_masks_plus_two_values": 29496640
+        },
+        {
+          "k": 6,
+          "previous": 769820,
+          "current": 3612344,
+          "two_value_arrays": 140229248,
+          "compact_hash_previous": 17595888,
+          "hash_plus_two_arrays": 157825136,
+          "sorted_masks_plus_two_values": 146387808
+        },
+        {
+          "k": 7,
+          "previous": 3612344,
+          "current": 12842256,
+          "two_value_arrays": 526547200,
+          "compact_hash_previous": 82567872,
+          "hash_plus_two_arrays": 609115072,
+          "sorted_masks_plus_two_values": 555445952
+        },
+        {
+          "k": 8,
+          "previous": 12842256,
+          "current": 35093344,
+          "two_value_arrays": 1533939200,
+          "compact_hash_previous": 293537280,
+          "hash_plus_two_arrays": 1827476480,
+          "sorted_masks_plus_two_values": 1636677248
+        },
+        {
+          "k": 9,
+          "previous": 35093344,
+          "current": 74412500,
+          "two_value_arrays": 3504187008,
+          "compact_hash_previous": 802133584,
+          "hash_plus_two_arrays": 4306320592,
+          "sorted_masks_plus_two_values": 3784933760
+        },
+        {
+          "k": 10,
+          "previous": 74412500,
+          "current": 123186310,
+          "two_value_arrays": 6323161920,
+          "compact_hash_previous": 1700857152,
+          "hash_plus_two_arrays": 8024019072,
+          "sorted_masks_plus_two_values": 6918461920
+        },
+        {
+          "k": 11,
+          "previous": 123186310,
+          "current": 159834860,
+          "two_value_arrays": 9056677440,
+          "compact_hash_previous": 2815687088,
+          "hash_plus_two_arrays": 11872364528,
+          "sorted_masks_plus_two_values": 10042167920
+        },
+        {
+          "k": 12,
+          "previous": 159834860,
+          "current": 162959262,
+          "two_value_arrays": 10329411904,
+          "compact_hash_previous": 3653368240,
+          "hash_plus_two_arrays": 13982780144,
+          "sorted_masks_plus_two_values": 11608090784
+        },
+        {
+          "k": 13,
+          "previous": 162959262,
+          "current": 130801432,
+          "two_value_arrays": 9400342208,
+          "compact_hash_previous": 3724783136,
+          "hash_plus_two_arrays": 13125125344,
+          "sorted_masks_plus_two_values": 10704016304
+        },
+        {
+          "k": 14,
+          "previous": 130801432,
+          "current": 82815006,
+          "two_value_arrays": 6835726016,
+          "compact_hash_previous": 2989747024,
+          "hash_plus_two_arrays": 9825473040,
+          "sorted_masks_plus_two_values": 7882137472
+        },
+        {
+          "k": 15,
+          "previous": 82815006,
+          "current": 41465716,
+          "two_value_arrays": 3976983104,
+          "compact_hash_previous": 1892914432,
+          "hash_plus_two_arrays": 5869897536,
+          "sorted_masks_plus_two_values": 4639503152
+        },
+        {
+          "k": 16,
+          "previous": 41465716,
+          "current": 16481550,
+          "two_value_arrays": 1854312512,
+          "compact_hash_previous": 947787808,
+          "hash_plus_two_arrays": 2802100320,
+          "sorted_masks_plus_two_values": 2186038240
+        },
+        {
+          "k": 17,
+          "previous": 16481550,
+          "current": 5228500,
+          "two_value_arrays": 694721600,
+          "compact_hash_previous": 376721152,
+          "hash_plus_two_arrays": 1071442752,
+          "sorted_masks_plus_two_values": 826574000
+        },
+        {
+          "k": 18,
+          "previous": 5228500,
+          "current": 1333340,
+          "two_value_arrays": 209978880,
+          "compact_hash_previous": 119508576,
+          "hash_plus_two_arrays": 329487456,
+          "sorted_masks_plus_two_values": 251806880
+        },
+        {
+          "k": 19,
+          "previous": 1333340,
+          "current": 275696,
+          "two_value_arrays": 51489152,
+          "compact_hash_previous": 30476352,
+          "hash_plus_two_arrays": 81965504,
+          "sorted_masks_plus_two_values": 62155872
+        },
+        {
+          "k": 20,
+          "previous": 275696,
+          "current": 46562,
+          "two_value_arrays": 10312256,
+          "compact_hash_previous": 6301632,
+          "hash_plus_two_arrays": 16613888,
+          "sorted_masks_plus_two_values": 12517824
+        },
+        {
+          "k": 21,
+          "previous": 46562,
+          "current": 6400,
+          "two_value_arrays": 1694784,
+          "compact_hash_previous": 1064288,
+          "hash_plus_two_arrays": 2759072,
+          "sorted_masks_plus_two_values": 2067280
+        },
+        {
+          "k": 22,
+          "previous": 6400,
+          "current": 690,
+          "two_value_arrays": 226880,
+          "compact_hash_previous": 146288,
+          "hash_plus_two_arrays": 373168,
+          "sorted_masks_plus_two_values": 278080
+        },
+        {
+          "k": 23,
+          "previous": 690,
+          "current": 52,
+          "two_value_arrays": 23744,
+          "compact_hash_previous": 15776,
+          "hash_plus_two_arrays": 39520,
+          "sorted_masks_plus_two_values": 29264
+        },
+        {
+          "k": 24,
+          "previous": 52,
+          "current": 2,
+          "two_value_arrays": 1728,
+          "compact_hash_previous": 1200,
+          "hash_plus_two_arrays": 2928,
+          "sorted_masks_plus_two_values": 2144
+        }
+      ]
+    }
+  ]
+}

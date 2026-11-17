@@ -1,0 +1,1780 @@
+{
+  "round": 27,
+  "date": "2026-11-17",
+  "status": "Original free-boundary grid problem unresolved; goal active",
+  "evidence_scope": "Completed n8 boundary count with Pratt/CRT certificate; punctured identities and finite tables; monotone-path finite checks; completed L64 and n12 diagnostics. Subsequent n16 and n6-punctured material excluded.",
+  "integration": {
+    "certificate_files": 348,
+    "entry_files": 5,
+    "single_file_limit_bytes": 10485760,
+    "base_commit": "b71048e6a2f0af76d12e2ed2dd96caf1b9f70991"
+  },
+  "files": [
+    {
+      "path": "PROJECTS.md",
+      "scope": "Only the A022 topic row",
+      "row": "| [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；n8边界完成数经Pratt/CRT认证 | 第27轮完成 | 全局分支权重、穿孔根传输与远峰归一化 |",
+      "row_sha256": "d1f48306d0ede34fa3741e25e79329a5bac21ffb11740c12bab5c89266491f5d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/README.md",
+      "bytes": 1721,
+      "sha256": "df76d98512b404703467195f844f2ee0418969ed0f9adaf36b1bba43d35a03b6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/STATE.md",
+      "bytes": 18340,
+      "sha256": "9bcc2652738c855c901d3eaf0aa705709111f604936e81eaca2d0fcb8c835ee3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/PACKAGE_INDEX.md",
+      "bytes": 1358,
+      "sha256": "8bc705eb47f7b3fc61521191968781ce8ccf29398fa08ac57d6d22548f7000d7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/REPLAY.md",
+      "bytes": 2002,
+      "sha256": "eccf7bb7b75a9f2624abed23f22f7e4271f3bcd053fe63a6868b819361a15b68"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/REPLAY.md",
+      "bytes": 1477,
+      "sha256": "5c417618247f439ad9f3e179d1551dc2e83d579a70154692891199d8988b4aea"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/REPORT.md",
+      "bytes": 8818,
+      "sha256": "ff07ce645c0cedd408447ee95e37fa30fc3212729d80be1fe908c7e910b11f35"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/UPSTREAM_SOURCE_SHA256.txt",
+      "bytes": 91,
+      "sha256": "d43a1d062e59912d9dd969104bddd56824917bb964d29be09fc2c25b5d439b08"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/boundary-test.json",
+      "bytes": 113,
+      "sha256": "b9870542048d3800d01f75c4e7042071ba69baf69f2dab9490ca3462cb290531"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/completion_layer_mod.cpp",
+      "bytes": 9762,
+      "sha256": "221ae28c1e074125b2a2fbc9794668c559d3b95f68e6f66de5740304746a6684"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/crt-verification.json",
+      "bytes": 1095,
+      "sha256": "77d0b5bcc15dbf3141060a1eef1e0efd6870234ade89b1cd2334f3b22d6b439b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/crt_verify.py",
+      "bytes": 1537,
+      "sha256": "6664223b3a50b91be2bcbb3e413505e3f97e3874752ce55aa539955b29358e5f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/layer-estimate.json",
+      "bytes": 29822,
+      "sha256": "643452f07275a393d69b90687a3984c82ec81f7267fd4ba2e76b69cc3f3f5ab0"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/layer_estimate.py",
+      "bytes": 4028,
+      "sha256": "daf962c4b2b10bd399519a9f77adbf26d88bd81af02b102e34bac97d9aebad37"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n3-p0.json",
+      "bytes": 242,
+      "sha256": "73cef66154c715b205230f257e2416dbeae8642bb98465577769f31263d4875b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n3-p0.resource.txt",
+      "bytes": 1007,
+      "sha256": "9c4f7f3eb8b5c7a5ea6f5b234c647771f134feeb6685a3cabc2bd83be64789db"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n3-p1.json",
+      "bytes": 242,
+      "sha256": "7acc36dcc7edeb2444b4ac3274ddfdff4fcebe61f82bff5869b78ca0bfa7045e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n3-p1.resource.txt",
+      "bytes": 1005,
+      "sha256": "4108c81b81bc67206443f0f66c01d95459e1c469c162c919c03acc61728b9459"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n3-p2.json",
+      "bytes": 242,
+      "sha256": "d4e5fb57497fa254022a556bdf6323ec58c268fec5531e8ceb4b78f7687b98d3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n3-p2.resource.txt",
+      "bytes": 1006,
+      "sha256": "5c514e38e29db734738a8857da8afff02d0dfbb0958af04c95315ed83c0d8292"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n3-p3.json",
+      "bytes": 242,
+      "sha256": "03f0e61c5be2cd491d67ff457cc622fb76ddfd51d895da1dc2d6352291a51e8c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n3-p3.resource.txt",
+      "bytes": 1006,
+      "sha256": "6848a7a733683a8b8ae3d3079c6d53a3bb299a0d838e4d1cf25e3382f11808fb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n4-p0.json",
+      "bytes": 248,
+      "sha256": "64cd0fada2cdec2249ec12cd7290e90359539eb7b3b839748c0586eebae0df23"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n4-p0.resource.txt",
+      "bytes": 1246,
+      "sha256": "8c996de4ab5bcbbc56011b7b0a01584c4cff725972ee7959fc830ed74c03aaa1"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n4-p1.json",
+      "bytes": 248,
+      "sha256": "74d6758550f6dfa3596c86f0e4db9ba36eb0f9d06c0cdcd2e3e3377c90001751"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n4-p1.resource.txt",
+      "bytes": 1246,
+      "sha256": "858a4a7f2708c5f1136771258b56824ed2ca80c91df0a9bebe7949b3fd1f011d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n4-p2.json",
+      "bytes": 248,
+      "sha256": "6cc6fbc07e5cdab7ce7b5fc229639c57edbf7f65caac5025977af4cfaece3611"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n4-p2.resource.txt",
+      "bytes": 1246,
+      "sha256": "c9fb303970968d53f35959f54968518efb1f54744010ae75c371afafe1a970c3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n4-p3.json",
+      "bytes": 248,
+      "sha256": "0d785f0adbe8c36eae47c4895e68e92a127578083a5bb287c8b34ccf381c47bf"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n4-p3.resource.txt",
+      "bytes": 1246,
+      "sha256": "cc6855c45eeb67935aa6fb5d6aeff2ee1bf45224f70cb0fbda79f3d401bf8670"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n5-p0.json",
+      "bytes": 260,
+      "sha256": "6700d17d56ff39c7d49c1cd489a6bd831ce80f62a8cf68371c111d7c7ea8deed"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n5-p0.resource.txt",
+      "bytes": 1748,
+      "sha256": "0e334d6620ab3e6eb343091f0f60b6839178f76b499304413958797d61edba25"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n5-p1.json",
+      "bytes": 260,
+      "sha256": "dbcdbc534cc47a7c65e5d586ab3add89aed52090d73456b72a0b696af37f6ca9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n5-p1.resource.txt",
+      "bytes": 1746,
+      "sha256": "73172cb4b6495ddc1ff3357d0da4d19e7f9552042a3305a56d7f598920e08e83"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n5-p2.json",
+      "bytes": 260,
+      "sha256": "3f8cfc1baf9623a4c32fb270532669e7ef5649aea27547772df66ad326884e1c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n5-p2.resource.txt",
+      "bytes": 1748,
+      "sha256": "5e34ab76a69cef00775f77a0d8fc57eb23d11f68ca417aa9676dc28ec90344a8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n5-p3.json",
+      "bytes": 260,
+      "sha256": "a52adaa62f891db104f4202f59f46942b3534479382b94cff19ab6974958b65b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n5-p3.resource.txt",
+      "bytes": 1747,
+      "sha256": "d0f011f9fb155d63f648a52c4926b88eff300f700f5926c74ab6567f3028802e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n6-p0.json",
+      "bytes": 269,
+      "sha256": "2c5505157800f84030ccfde17243ceb5251615c0993e035154f9997f9d3d4813"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n6-p0.resource.txt",
+      "bytes": 2304,
+      "sha256": "7efc6d8d6843060f9e3a065b7cc8b3fe1b7cfd92776ffdbc5de5b31e5a6c4f54"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n6-p1.json",
+      "bytes": 269,
+      "sha256": "3a19fafcbcf75d7b835abf5c15fa7cf89fb690ee5a0d19431c2b6c8eb0f2b930"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n6-p1.resource.txt",
+      "bytes": 2309,
+      "sha256": "1b4a5d6c8a5889360329030292e1edd3b971fd6778d6f5a481157cd2c07b7960"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n6-p2.json",
+      "bytes": 269,
+      "sha256": "17e8e6f5bc93c6a6c313601b7886608ab15f5742b72452cf9dc9e908a594ff24"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n6-p2.resource.txt",
+      "bytes": 2310,
+      "sha256": "c32494b04f8a8f7e37bb6083b3c339dfbbb042f216ef32f5f0772bc610ccbe89"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n6-p3.json",
+      "bytes": 269,
+      "sha256": "7c5a4b48c76d2ef41e991b2b89bf83453952a0192445351d0c12a68d614b91ca"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n6-p3.resource.txt",
+      "bytes": 2307,
+      "sha256": "ccb79304a001de7959f1539c76322ac17b44135880ef1cfe18c2a97555ff4eb5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n7-p0.json",
+      "bytes": 274,
+      "sha256": "5d1ba586b038ae09709e6b91a4b6a1bce2acfc0e3bbde6f8d77ab742d6acdfcb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n7-p0.resource.txt",
+      "bytes": 3180,
+      "sha256": "b60e40c41d445f176e76145c5f8dcb39e96b7243fa6982e6265d3c3943b5fea6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n7-p1.json",
+      "bytes": 274,
+      "sha256": "44b296897cebff17317501bf9c051ec27c9dc3bdd37bb5c15a3da3a6c7873da9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n7-p1.resource.txt",
+      "bytes": 3183,
+      "sha256": "4cee547fa4f13fb605fc4e490950d69fd132dcc49f95e81c39bd7b9a1a3b495f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n7-p2.json",
+      "bytes": 274,
+      "sha256": "3bd5aad7ddcf2bc81235d42bccb5c5f7fae3d5a801fce0a6f25e4e9add8721c0"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n7-p2.resource.txt",
+      "bytes": 3180,
+      "sha256": "0617aff405495120fc00e67aa64a9e3caa07bfab329aee408112284394740c03"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n7-p3.json",
+      "bytes": 274,
+      "sha256": "5571ede89af64fcd34a3ce68b3693d836ea7622e882a7d269ddb7802ea5a5d7f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/modular-runs/n7-p3.resource.txt",
+      "bytes": 3176,
+      "sha256": "eff1a1671ac19f0513ec5d1d7474c39b7f69c507f806fda97f826a6eac38d823"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-independent/n8-crt-verified.json",
+      "bytes": 1571,
+      "sha256": "1f12c31998786543178a441e757b1318865cd8c5c2252ccb18be499980ff8133"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-independent/verify_n8.py",
+      "bytes": 2880,
+      "sha256": "59f67b52727ea2971a15c9a7a3fb3a2642782e8b79364ba06ea8e4be9838d071"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-plan.json",
+      "bytes": 278,
+      "sha256": "18947331bebe75537632bb1545325add53ba21590f55debb2c5e7fc164f598c4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/PORTABLE_ARCHIVE.md",
+      "bytes": 1170,
+      "sha256": "076c43cd8d7f19f9244693f71651ba6f7cdce180f84fd950bc2f201c9f9409dc"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/REPLAY.md",
+      "bytes": 1006,
+      "sha256": "5102a711973a2515de02fa4f09dc607d49c7e28026d2572ea275c38f03e986ff"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/audit-receipt.json",
+      "bytes": 11597,
+      "sha256": "bf0d5d9e03a312a87c33383241cc81ba443351f3a0b34a71eb79b6467e6cc1fd"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/audit_receipts_portable.py",
+      "bytes": 4462,
+      "sha256": "b29dc2446afd781c112d442e3052c36fc08aff18fba11e4c9c549a84cf412faf"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/portable-audit.json",
+      "bytes": 675,
+      "sha256": "a3b4295ed9aaed3059807bc67c7436d4a995c71eeeeb5ff723fba1fe0476dcb0"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/boundary-test.json",
+      "bytes": 113,
+      "sha256": "b9870542048d3800d01f75c4e7042071ba69baf69f2dab9490ca3462cb290531"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/driver.exit.json",
+      "bytes": 77,
+      "sha256": "ced2c37f09c9daed81a58ceb6b55a452adb886f104b024a63f11dd462a18cd58"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/launcher.exit.json",
+      "bytes": 163,
+      "sha256": "148c83cf810bd243844b61759af22de7fe9316a0bf5a28e0cd08658fae8604b6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p0.exit.json",
+      "bytes": 403,
+      "sha256": "34578d161d51c79d8d7d2dc32604bd652145fd0592d17259daf50649e70c55f9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p0.json",
+      "bytes": 275,
+      "sha256": "2f81dac6dcb0962784382121024f88f7f7d92e84f1426e02d7cfe075ca3df22f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p0.resource.txt",
+      "bytes": 3184,
+      "sha256": "f52cca255c3357491deb7a38eff632ccf4559c6168aba600a00f5f9ffb42942d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p0.started.json",
+      "bytes": 187,
+      "sha256": "9332d35f9e197cc1de70e40477312dab4913f3808a502447615583a5b32e1c8a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p1.exit.json",
+      "bytes": 403,
+      "sha256": "93527d7b9954c5ebd72173f6a29405a00f1e34aa2b3f533530f295d0b6f72b07"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p1.json",
+      "bytes": 275,
+      "sha256": "f6c6205a00750e17f2d0ff35b91b7caeaf1c238a6820ecdc3425fab5072630aa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p1.resource.txt",
+      "bytes": 3185,
+      "sha256": "6e8e09e53e41c37ae50e10fd796de1a42d319af11b7e296a9715e657578a5013"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p1.started.json",
+      "bytes": 187,
+      "sha256": "d8c3897c05783ac6effa3c190f50a135a942fea71e1aeba30c8b72cc4dfffa87"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p2.exit.json",
+      "bytes": 403,
+      "sha256": "8ace5faa2a9991c5ccc4069a57e1cbb34409f4f3687d3fa800bfc4e8619dddf7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p2.json",
+      "bytes": 275,
+      "sha256": "3333b1b7fae293656f3afa854e3807fa1decdfb5e34c773f6023be4e9d47c4de"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p2.resource.txt",
+      "bytes": 3179,
+      "sha256": "8b3a3ffb84a858fc9643ee1bda1dad75c711ac5d8f86d53a6162fe18bd9fffdd"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p2.started.json",
+      "bytes": 187,
+      "sha256": "e7a87bd719fc5d84ad8c52640d18484365bb473650b748dc0b03614b37ac7be5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p3.exit.json",
+      "bytes": 403,
+      "sha256": "bda8b5bb754facb1a8baea000ac54bd9b154bbe664aae3bf332a74f50e3e8ba0"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p3.json",
+      "bytes": 275,
+      "sha256": "fcd7df8ac453e242198dde6793fa90668efa236bf9c8148c23c4d345dc07737e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p3.resource.txt",
+      "bytes": 3180,
+      "sha256": "bbbc212a45ef3f20dab96ad86f71dd29db60a9d533cd5eba4deb7453f8d104e9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n7-p3.started.json",
+      "bytes": 187,
+      "sha256": "40e65037c6066d4b1af6741caaad14220ffc50ffed6a3f74e17d5cd5f45285cc"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p0.exit.json",
+      "bytes": 422,
+      "sha256": "9cf54b2b7bb46d9c29109838175d98f20f67e3237d7727836450a3f3964829a0"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p0.json",
+      "bytes": 282,
+      "sha256": "62fec806f762c1edd7089f572c123eebc4bbc7be3bb0fc1401b9ab2487500871"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p0.resource.txt",
+      "bytes": 4159,
+      "sha256": "ffad5b16572f5462a3f3583994000a58f8c184dc894219cebf2336eaf70476cf"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p0.started.json",
+      "bytes": 206,
+      "sha256": "4407fb57ba4f72d1b4124f952eaf3f9eb3292751f3ab6d7b1d7af3986c2323db"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p1.exit.json",
+      "bytes": 422,
+      "sha256": "8a7fac1ed2f21d6321944273ef03c75720d97c33b715ff52bda45025430aeecf"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p1.json",
+      "bytes": 282,
+      "sha256": "54ea36fffe05d6bded40c0a8baaa7e94e84dcc597606703b888ac116c29e6ebe"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p1.resource.txt",
+      "bytes": 4159,
+      "sha256": "8575955a3d6f25548563c0c94403d7f8a8afbb3cb06e362c3587b3f436563a17"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p1.started.json",
+      "bytes": 206,
+      "sha256": "bcc60ab875606a700e09f4e63cbc67924efb1e1adce2b71d46c3c66978063acb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p2.exit.json",
+      "bytes": 422,
+      "sha256": "42bcd5c1b7e01033ded484a2610b2fa842fa202a2258e8e93fe92c7e031cba32"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p2.json",
+      "bytes": 282,
+      "sha256": "dbedfa44d88768aa1b44a8e027d3243356e8ba2c5fa284cc02399a1af42d1552"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p2.resource.txt",
+      "bytes": 4160,
+      "sha256": "d707691e996bf8290a803ce9304c5f84d68aecfd34d2ccc41fc73047060d3f53"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p2.started.json",
+      "bytes": 206,
+      "sha256": "90c91d53f93514302184687491acab04ef93f63c9b3fdf971577f2a266a43709"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p3.exit.json",
+      "bytes": 422,
+      "sha256": "92d7bca46b9b4670d9ac8566904dd862d6d39942b81249d80e70f0c60241362f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p3.json",
+      "bytes": 282,
+      "sha256": "875e227cd404054e3af913feb7e9552c5c74332bcb001170b82df93894be7f12"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p3.resource.txt",
+      "bytes": 4162,
+      "sha256": "1172d70e3d7ab2b70bacfa2b1161111f625402ba9b8d33c1a8acc96fab697c04"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/n8-p3.started.json",
+      "bytes": 206,
+      "sha256": "086ecaea8adb9b76ba653334356a6690b1de51656a54f4d33ff864f240a4b05d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/plan-n8.json",
+      "bytes": 278,
+      "sha256": "18947331bebe75537632bb1545325add53ba21590f55debb2c5e7fc164f598c4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/progress.json",
+      "bytes": 123,
+      "sha256": "b8abe2a799977e3ca898e762f5126c26d9ea13aac85bdcc49c3d725fd1994460"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/n8-remote/remote-results/run-metadata.json",
+      "bytes": 702,
+      "sha256": "b958e9725c03b36bb33bba29553917ad7db170f4c812d3cfa7a7b21aba824938"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/pratt-certificates.json",
+      "bytes": 7930,
+      "sha256": "f6b52934ad862cfa25dda1feb309dee55fdf513e26d46d29fb7a71deb246779c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/pratt-verify.json",
+      "bytes": 176,
+      "sha256": "7117f3bdb41959e802c0d2d98fd29bf0530a2b8ea3522defe817857d6c5e0220"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/pratt_verify.py",
+      "bytes": 1364,
+      "sha256": "4d37392047be3a863de4d8605fabb7cce46e4eb18249ed1a693ee499ade52c44"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/prime-audit.json",
+      "bytes": 693,
+      "sha256": "b99e4578555627305b687a041324c96f57632b55162bd172adca924600bdb5a6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-completion-layer/prime_audit.py",
+      "bytes": 1589,
+      "sha256": "c43b019b38dbf280448a92df6f8c810f68c6fc86a73b613d09778bb35dd1372b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-global-normalizer/REPLAY.md",
+      "bytes": 1021,
+      "sha256": "556b7983613419befa2e7a01c052cdd4bdab1c60a6b411b6bca40a6ad5555f8a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-global-normalizer/punctured-normalizer-table.md",
+      "bytes": 4243,
+      "sha256": "f32859aa380c0fb85d097f69181f4e4c2e21483e64c3fcc42b6d211ff1b20c9c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-global-normalizer/punctured-table-n3.json",
+      "bytes": 2156,
+      "sha256": "04156041f023a8aacfb3bbd9bdde6a721a10c255de5f390482d338f0d1ea9b1d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-global-normalizer/punctured-table-n4.json",
+      "bytes": 4060,
+      "sha256": "3fcfa8bef42bf1ac801d7355465723bb9e43639d077569d432f4bdfeca511b78"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-global-normalizer/punctured-table-n5.json",
+      "bytes": 7238,
+      "sha256": "430c8ee21b2a20c2433d3e63918f8b008e4ad8225d6ff194889841005e358172"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-global-normalizer/punctured_normalizer_table.py",
+      "bytes": 5478,
+      "sha256": "518343328234388b40601d3e07515011578143781e81665badfe11907e5df1eb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-global-normalizer/rank_one_deletion.md",
+      "bytes": 6075,
+      "sha256": "a4995bacc4d05fc67b1841cdfec75505849b6ef33dcbc1e9d9a349e3b5918ffe"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-global-normalizer/rank_one_deletion_n2_n3.json",
+      "bytes": 795,
+      "sha256": "5b33acef2d97d00649df1f67f1ecc5824f81325edd44ea86e21830fd087377a8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-global-normalizer/verify_rank_one_deletion_n3.py",
+      "bytes": 3969,
+      "sha256": "beb07c0d87eb95b6329814bf0871867aa35179afa9f0b076f1c47f2cc5f948e2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/ARCHIVE.md",
+      "bytes": 455,
+      "sha256": "50a19404c52dfe0db8981f93f1a8cc22d50d2287220b09ca89edd5805cf01cbd"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/L64_RECOVERY_SUMMARY.md",
+      "bytes": 3154,
+      "sha256": "ba06f2178810743ff027f50cd690bd0904a08f7bbddfe55f5d0d8cc0dd7559d1"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/canonical/n24-move64-canonical-eps-1-2.json",
+      "bytes": 6234,
+      "sha256": "c30622d91b1214efd7fc8d039ba17335b69b534ec5ad1a52872459f4c5de7946"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/canonical/n24-move64-canonical-eps-1-4.json",
+      "bytes": 6235,
+      "sha256": "2305f7bb63555788a6c809bbc10f052202502a5812181646aab3ef27d117f554"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/canonical/n24-move64-canonical-eps-1.json",
+      "bytes": 6235,
+      "sha256": "e53a67119dab498134339992130dbf316b4947edc3483c99b1c64d8dcb538c61"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/canonical/n24-p131072-r32-l64-reconstructed.sidecar.json",
+      "bytes": 376,
+      "sha256": "7cc0306ac6431804fa04af3648c566ec94d08a8f566135bb2088bdb569cbb358"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/canonical/seed-mapping-ledger.json",
+      "bytes": 5618,
+      "sha256": "e602e8792b27ebe5c3a1594120b2b449bf5added68260064da626da015d70e83"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/cone/REPLAY.md",
+      "bytes": 420,
+      "sha256": "1027d45a9af2537c0e19020b3a20fd4efb1421e821311b8e1f12c7f8cc65eec2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/cone/audit_cone.py",
+      "bytes": 1129,
+      "sha256": "c004ccbd0f5aaf069a3ffd4be21a26d55d98676ebe7eb5f051ecf8e39c012a67"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/cone/l64-cone.json",
+      "bytes": 1115,
+      "sha256": "ecf007cd7fd2334fca49fad3466ee7958aab8d98b49532025da2a60f2229147a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/original/n24-p131072-r32-l64.jsonl.gz",
+      "bytes": 50740,
+      "sha256": "7a5736d0a02b5ad2ae55dd20277e2f5d5a6c0628fa09cdac958685415fc33b11"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-l64-recovery/reports/n24-resume-p131072-r28-l64.resource.txt",
+      "bytes": 777,
+      "sha256": "ec2a600621358c641f417a2eeb65ac5e1034229258462ce5aa423c62d1318b1e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-merge-rb-production-audit/README.md",
+      "bytes": 1210,
+      "sha256": "817aed6ff83dfcee72daa728b8741385e83900f18e42fa2d713a1f1833166de4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-merge-rb-production-audit/aggregate_production_r026.py",
+      "bytes": 6888,
+      "sha256": "f1593cc93db21d778289966c80539606b079d702fa3fd5c197394c27d4737389"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-merge-rb-production-audit/n3-production-audit-final.json",
+      "bytes": 1192,
+      "sha256": "b25c61860764b353cd99ee45c519e5ea37d1e2a5206a3578697090de292bced6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-merge-rb-production-audit/n7-production-audit-final.json",
+      "bytes": 1406,
+      "sha256": "e8ee19d8c9f85b5845cca1fb931e78cbaf7441e62daa20cf2c4f6cfda0d13d6b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-merge-rb-production-audit/production-audit-tests.json",
+      "bytes": 1101,
+      "sha256": "2312e3c8835d4bfbd5ce1923700cefcdce141236308c9287b2b7ecad8098e84b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-merge-rb-production-audit/test_production_audit.py",
+      "bytes": 3284,
+      "sha256": "03c200089823847ac7a3ccdd1a802455cc6f9d1746a20a1aad5892ac37475827"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/audit-receipt.json",
+      "bytes": 50985,
+      "sha256": "0ac2480b9d30e1a1cbb467e9707d73e62f6771a0f19dac5d7e58b9a90ee7fd60"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/audit_scan.py",
+      "bytes": 3910,
+      "sha256": "ac5ddc586d49f0a342e80186afcbd3bfe41ebf6eac87628934b4f25e3dd41f96"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/completion_ie_selected.cpp",
+      "bytes": 5577,
+      "sha256": "850dea773006f6fccecaf3ded0980604071da056c01dd595ded5873a3f558f42"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/driver.exit.json",
+      "bytes": 77,
+      "sha256": "cc043b1637067fff11efe6f4936ae3f99dee7aa628e56539062e510414ad55f2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/n7-monotone-manifest.json",
+      "bytes": 26672,
+      "sha256": "c31d2559ede1aca271457219e9f85a777bbcead0dfdefa2d1d37a45ef00375ee"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDDD.exit.json",
+      "bytes": 333,
+      "sha256": "c61ed9d197560efa49e9fe3c05d98a437bd1f4bfd82e7676fbd10643890db43e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDDD.json",
+      "bytes": 392,
+      "sha256": "4e027dee8df63a94517c2e8d908917ea2ee9881d949032a6dbc674241a9171ec"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDDD.resource.txt",
+      "bytes": 777,
+      "sha256": "eb321f2d2e81d8d971ca26a5da1598151d947493ea729d40eba9d630086205c0"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDDR.exit.json",
+      "bytes": 332,
+      "sha256": "43f72b23ab437031c922c3f62828ef50828723a5dfcfc78e06fe6d59285f35f4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDDR.json",
+      "bytes": 395,
+      "sha256": "1763dba3f3f4186f00a41f757a6e4b7f257cbdf2293218c14c94323556bb6389"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDDR.resource.txt",
+      "bytes": 777,
+      "sha256": "5ba2c5c8317ce74a425a55ef9ee04ac641985f65bb7b94c2b045cf08b0eb76e1"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDRD.exit.json",
+      "bytes": 332,
+      "sha256": "51c0ba1a5287264038b78dca95628b93d07d28479469c306f6f22c1a384c5030"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDRD.json",
+      "bytes": 396,
+      "sha256": "b9c7e1bac37e88dea3a12eb02ebccc8bb851386e4643558f40d19ff97f95f259"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDRD.resource.txt",
+      "bytes": 777,
+      "sha256": "19106c697f2c8f234e30e0a6b70aeef19f8113b322704e6348aa701e2520a97e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDRR.exit.json",
+      "bytes": 330,
+      "sha256": "f158b0df06748ba3b33aa79b578c33c13df45cd7e9684b77732bd0aea0cd0876"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDRR.json",
+      "bytes": 400,
+      "sha256": "4066b8dddc64ad5321a6cf35cf1d13ba74b3eeadb107652fe4a6adfe8a7bd259"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDDRR.resource.txt",
+      "bytes": 777,
+      "sha256": "9fb9d38cc94abb566ea9a5016e7bea68122a79e7aa6697dce293a944b0859d94"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRDD.exit.json",
+      "bytes": 332,
+      "sha256": "be392e5e27a791db5b2b753b5547dd6fd7ce2776210cd8d215d294df108a369b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRDD.json",
+      "bytes": 398,
+      "sha256": "7fb5127ef57c080a06fb2e31b05d81b97cfb2e7564fbbc641a7be83c7841d17e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRDD.resource.txt",
+      "bytes": 777,
+      "sha256": "4098afb18028bfbdff57079a37bb35217ac06389906659471aa5298cccbb9fa6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRDR.exit.json",
+      "bytes": 330,
+      "sha256": "0753111c3c6100e768c8d3f595e5a628cf4bb36e11721ed657647f0fe1d243e7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRDR.json",
+      "bytes": 398,
+      "sha256": "cf177ae767ef71ee0b784abcf56a1839834387f6b125e63f47691b16ca40c816"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRDR.resource.txt",
+      "bytes": 777,
+      "sha256": "e95540d3285d8275eb916d97abe9cee0df119b3a3bf4ebdfd3423d0c57893f77"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRRD.exit.json",
+      "bytes": 330,
+      "sha256": "2909fc1887ace68c137314fad55a2a531185237aa579c398503d624d481535bb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRRD.json",
+      "bytes": 400,
+      "sha256": "4431db087225f77b11ef9d21d29aa0b8d719c10e4e388327c429e53dec111f77"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRRD.resource.txt",
+      "bytes": 777,
+      "sha256": "9bbb9afd1ca73f0a4c9de8ab2609bc4ff28a06bd5ccdc8e1de80e6977a5ceebe"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRRR.exit.json",
+      "bytes": 329,
+      "sha256": "f331727403bc41cfb2f92011e8332d587cf5e606274c819248a18e6fdc8a1f62"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRRR.json",
+      "bytes": 403,
+      "sha256": "aabc713eafa31d59ab56b8899418f7e055a8b7fa97cde4eeaba7f9636cf7d3d4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDDRRR.resource.txt",
+      "bytes": 777,
+      "sha256": "db094afa38cc4afe15ade5b1f2280b2a811ee48843ddff640387b19fdfed6672"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDDD.exit.json",
+      "bytes": 332,
+      "sha256": "74b6d9b948fb69d939a3e1f6c9c189ebbd51d35a2f54f67bacc46d87234a5e10"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDDD.json",
+      "bytes": 401,
+      "sha256": "747c9f676a3c9c55c266e8ff8816a912b030d5f16ed22a9eb983f6d11ab86d03"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDDD.resource.txt",
+      "bytes": 777,
+      "sha256": "8b5011c4521894a43fa30b5320d99fb66fae135b1305761b4f7971f40f5f3d50"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDDR.exit.json",
+      "bytes": 330,
+      "sha256": "6e487b97cf132f4eac68b0f519f7bc1383859e82186ffe0e0c43aa582f0ab87f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDDR.json",
+      "bytes": 400,
+      "sha256": "5be5bfc3e1057ccabcd4d32f2ce1e4e79e7da5ccaa5415681ec8e07857190387"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDDR.resource.txt",
+      "bytes": 777,
+      "sha256": "e6d759643eeda1b444c97dfe1a99171e5ced29750df12103ede8a4df4a109382"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDRD.exit.json",
+      "bytes": 330,
+      "sha256": "4e2be55b027b720f7e41e3b2322f437a94ea00fd9aba3bf80927fe744e2cfe9b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDRD.json",
+      "bytes": 400,
+      "sha256": "6f1f15bc58ac1baf01ccc5bb4ce020d2db4f2026cb025998b2e80a95428636b8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDRD.resource.txt",
+      "bytes": 777,
+      "sha256": "6b8ecf431006de949bcba36376a74a980c43efb89cdfc07ace10320bab8560c5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDRR.exit.json",
+      "bytes": 329,
+      "sha256": "ccde6cca8c773c4ceb3d264d92768efbbac4534124660b21d708ee33f8e935cb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDRR.json",
+      "bytes": 402,
+      "sha256": "6829d54eb99758088b03a231d320e17eabfeef54b09522175e424858ab6bf286"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRDRR.resource.txt",
+      "bytes": 777,
+      "sha256": "395e06628855ac809e329db2b9a118d3ef1472b0c384566a96351936044e1c41"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRDD.exit.json",
+      "bytes": 330,
+      "sha256": "e30638a8364fb7fd796b2cf0a4ec89f43d14f960044bf2783e769525e1f0afb5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRDD.json",
+      "bytes": 403,
+      "sha256": "8db69c34ddede26b88ef199e6ee2a3e2a312266de51d90df580d1a23caa41453"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRDD.resource.txt",
+      "bytes": 777,
+      "sha256": "ef1772497ba9a64b0609429c91e342f18c1650906ebe88566b6a51b168667a3b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRDR.exit.json",
+      "bytes": 329,
+      "sha256": "6b374d6e26213bc30e569bcf1a487b849b4c76ff56bc6366572196a6a7fc8a31"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRDR.json",
+      "bytes": 402,
+      "sha256": "87c62340badff5f49b83850fed02c48918804bf95991ec1ee49d6c276a31a4d1"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRDR.resource.txt",
+      "bytes": 777,
+      "sha256": "3d2c1eda1c3b273289be741f6db78d8150bf18575eb939b1a30b96333fd20ae9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRRD.exit.json",
+      "bytes": 329,
+      "sha256": "fc6e8492b95eecf27c790166bbc85152209cf4eca3d5738820fca007abd564fd"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRRD.json",
+      "bytes": 403,
+      "sha256": "002be708bdbe1b618d3736b2f6e82907157f3490e62194eb20475961373208ed"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRRD.resource.txt",
+      "bytes": 777,
+      "sha256": "2d80e88d01bceb8a855d45fb863e9a4df44e3aa87020e2f5ed0d66b2361b82d8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRRR.exit.json",
+      "bytes": 327,
+      "sha256": "db178f3d4718f3c8231996abc4217dfb9c1f532d046c5138b5f2b2fbbfeef899"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRRR.json",
+      "bytes": 405,
+      "sha256": "b1b9e7681dc7d92489859939c4406e178b4a3eb02147e80b7e238e7e10e1d18b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DDRRRR.resource.txt",
+      "bytes": 777,
+      "sha256": "bf4f6a3e0e905baa7263ea015bf1c9d5e1f887b001d4a307d41c9434537400dd"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDDD.exit.json",
+      "bytes": 332,
+      "sha256": "822616423dc035b2cf215ba8fcc6136e97cb0313f24ee75598314b6d0f855e9b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDDD.json",
+      "bytes": 401,
+      "sha256": "6e7b7b0334a2f6ca40adea268fd7274eae12c374d7c36b78f5848b7f8f4d7ce6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDDD.resource.txt",
+      "bytes": 777,
+      "sha256": "c5c92af66dc706e0789da9884a314aa29c91e8920ceed8b4f3a56a5fa58b2414"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDDR.exit.json",
+      "bytes": 330,
+      "sha256": "0085fd2e995f55c59ac2da0502b3d734d963b7f39ba817826ae6b14f1b32325a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDDR.json",
+      "bytes": 403,
+      "sha256": "b16b7bf8543aef5c19181b60bb98e1ab6b7d354b31514de8c1cde1c0619210d9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDDR.resource.txt",
+      "bytes": 777,
+      "sha256": "89b84a1219fd6b9432ce16e6c735c264255b5db3a3607eab9e272fd0e60cf976"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDRD.exit.json",
+      "bytes": 330,
+      "sha256": "49a988497c96163efe17fa6dc7a7a381ff3a699019cc02f5252c6809ece79fd0"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDRD.json",
+      "bytes": 400,
+      "sha256": "c03730bd877be2a5286309effc71b5e568311d7f60c757526a9572616e79a8ed"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDRD.resource.txt",
+      "bytes": 777,
+      "sha256": "e8ae909f15508ffb3616148d57d17c20df21903811e19456e29ade6e2a198e7d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDRR.exit.json",
+      "bytes": 329,
+      "sha256": "cd38a6c8a4ebee27f34944dcd162e700e8e991059f0508080c1cd025729d9b1c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDRR.json",
+      "bytes": 403,
+      "sha256": "4c337cbdf5ee246d4513372f69d4a22d3fd5647590ce5eb8c659aeb6e35ca9bf"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDDRR.resource.txt",
+      "bytes": 777,
+      "sha256": "7972abaf0f5a642afe697bded258fc5a7237d434d009a4f18a1fc4b9e5e34848"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRDD.exit.json",
+      "bytes": 330,
+      "sha256": "2650b1aca4dd67458d9e707afa8518376e15d59609cc8bf275957389a85dfe06"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRDD.json",
+      "bytes": 401,
+      "sha256": "ca2477393d87c3bf3de0cd1554bab87f8172ec3c7cc20433fba9120a19a750d8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRDD.resource.txt",
+      "bytes": 777,
+      "sha256": "59798576a3637481167bccc81fe962c16f8ef05274cd97fa4c3001972ec73195"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRDR.exit.json",
+      "bytes": 329,
+      "sha256": "12c2ba070868f9eb68380e7057061ebb95360f0f23bce52e5c721bf6bfcd39f7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRDR.json",
+      "bytes": 400,
+      "sha256": "70cd87555f3b28f2f613b1c9884a7eb97a4c535497d628b87d51a44322cf5140"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRDR.resource.txt",
+      "bytes": 777,
+      "sha256": "b83a6596c212be4b71425822d7a6812254ab7b515abc395d01011dff100c980d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRRD.exit.json",
+      "bytes": 329,
+      "sha256": "efbf8f6502189e371370a5e727ef62620c823c3f3e778bdc021b6278a823631c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRRD.json",
+      "bytes": 402,
+      "sha256": "5724f9477241795133e7a75663386393fe7aa3acd8f7eb3f5a614a4d93bd539d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRRD.resource.txt",
+      "bytes": 777,
+      "sha256": "4af0a3e9710b055e6bc6ff9c303d6d9f001cd92e3240d7bfd417e64ae28e803d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRRR.exit.json",
+      "bytes": 327,
+      "sha256": "84818a3e593bfcb22809b4af4eb2fdf55cb3942a442b9276ab94cbbdc022cdaf"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRRR.json",
+      "bytes": 403,
+      "sha256": "c07cf490980c10936358a6487959ac82fad8eddeb9cf66a0fffd74cd21311737"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRDRRR.resource.txt",
+      "bytes": 777,
+      "sha256": "5b990887ae3e1f97c5997d864ebfc23a4d78eeb0550ea8becb8964ee612b6211"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDDD.exit.json",
+      "bytes": 330,
+      "sha256": "92094060250a90438b048e93feab3aae87101a00ce11330258c3697e0e20ca44"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDDD.json",
+      "bytes": 405,
+      "sha256": "270b5c22dc31eee049d5c807cbc619129389437951ebb19430871417a1ecb8d3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDDD.resource.txt",
+      "bytes": 777,
+      "sha256": "e320fc84c8b8719b8bb02280dc92a41615fcbed948e5e7553cac100d6e026342"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDDR.exit.json",
+      "bytes": 329,
+      "sha256": "dc9c8e0d535732ab65cc734e6c0ec3d51127a2ada3b61878939edf1fa3fa2b96"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDDR.json",
+      "bytes": 403,
+      "sha256": "03750676b408c8f2b450d50b594013f29f2e6a157af1048a6a34b4adf874d7fe"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDDR.resource.txt",
+      "bytes": 777,
+      "sha256": "f50501a80b8330469e8403b7985909afff7c24b2e04d2a27d4136de84bfa7c9f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDRD.exit.json",
+      "bytes": 329,
+      "sha256": "626edeac80bd39a914d163403268eebcb710445613364ee3f722d2d6f4736452"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDRD.json",
+      "bytes": 402,
+      "sha256": "645138eaa69d41b7a806a7ef96cd6e691f8e9237f4ef22f15fef0915127b1818"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDRD.resource.txt",
+      "bytes": 777,
+      "sha256": "94668f35b0e58796dac7426543315104b144ad7a387a436d9232dafcad78fa0c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDRR.exit.json",
+      "bytes": 327,
+      "sha256": "fa06dc20064cf15989daf7878b9e26a835ffba929d35f9d961eb8b14b418dd10"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDRR.json",
+      "bytes": 403,
+      "sha256": "79bb67b2c1d74fe337b06bf258a2a7efe731c6687dab4c8ce1c252dc6bc2e6a2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRDRR.resource.txt",
+      "bytes": 777,
+      "sha256": "07298a7afc7b86298c7379a464d06143561ee08838dc5b544825ebe553f13789"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRDD.exit.json",
+      "bytes": 329,
+      "sha256": "fb1df454923c946527debf5c20fbf5c85139ccb567b7becfbdd1f6e215d31abd"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRDD.json",
+      "bytes": 405,
+      "sha256": "ab26fe0df1a36034c5acf153c5bb57a9b57e5daa27cd01419965d8a556be054e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRDD.resource.txt",
+      "bytes": 777,
+      "sha256": "64770e081464a28238f3917b3719f47c9ac856177c3bdecc0e06509c3a58178d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRDR.exit.json",
+      "bytes": 327,
+      "sha256": "2e51c4f4eeb256f42eb0c4c58e8ad04903b67136bd711456356df8d28c979dc8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRDR.json",
+      "bytes": 403,
+      "sha256": "2aca3b9519f95c5daab4f5b6d187234bab59a720284ba61e95d7c71c448c7e10"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRDR.resource.txt",
+      "bytes": 777,
+      "sha256": "53e566f4fd2d5817c489c88bc0b36959bd9e4c8c9cb5fd8b1f3d6534c7021fd6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRRD.exit.json",
+      "bytes": 327,
+      "sha256": "c918de00858d02e53e2560ea32f12bd64dae996a1f4cab8a880ea01f615fd3d6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRRD.json",
+      "bytes": 403,
+      "sha256": "e62416db20a6cacf1cb8c114c9df3944088e718b0e250648728c7a5532a5262e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRRD.resource.txt",
+      "bytes": 777,
+      "sha256": "7f54ca1492d8d9bf76d7e4ce0ab2b094a093cadf3828f0c5fb522e27d02b7e40"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRRR.exit.json",
+      "bytes": 326,
+      "sha256": "3450a0ab5dbbc700feee2ca37f123cba2668f8687a30adea133db5c713dc0e69"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRRR.json",
+      "bytes": 402,
+      "sha256": "9da6ca572127d8aad6405ec455373bc51f8581d27396588d25a733571791ffae"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/DRRRRR.resource.txt",
+      "bytes": 777,
+      "sha256": "4da86b63dd111ab16237e9b495bbc59d090bfd4296c96107c5f4401bf5032cae"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDDD.exit.json",
+      "bytes": 332,
+      "sha256": "a168cabf52b3aec84d8b1e7e9226a6d0f1a6f55ff19212689f2da13e627d8b78"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDDD.json",
+      "bytes": 402,
+      "sha256": "5d3d86735c843955a35701c9fe5aab835ae258fa975420426757f54255384d88"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDDD.resource.txt",
+      "bytes": 777,
+      "sha256": "9c782c311d369abd7295bcec9fbb49562977746d64360ed58c23cd6aaea24872"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDDR.exit.json",
+      "bytes": 330,
+      "sha256": "701d2d2f85ad87730c8b328a0e356bb7d5d673e1f5f1b16af2098d4038e5dfc6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDDR.json",
+      "bytes": 403,
+      "sha256": "03432588fcba352b989fde69e0ed52ba2da236dec2455448852ab8ee940609e4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDDR.resource.txt",
+      "bytes": 777,
+      "sha256": "0a91c5e9b94cbfef6806b4d62f4c51f23420bd7d55cb2d761161b8730365f647"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDRD.exit.json",
+      "bytes": 330,
+      "sha256": "3efa9772f9c4bc82aa0489e4eed02ab3618022e662501623a84493f27e35941f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDRD.json",
+      "bytes": 403,
+      "sha256": "5d44723f989423e8f2b6f9fb51753d5314946776ae264d7b036ea8b82c7a8a5b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDRD.resource.txt",
+      "bytes": 777,
+      "sha256": "d2f3277bf98b87004bcf34099dcde4796ccb4796fae541f2a5ba1502b571cf4e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDRR.exit.json",
+      "bytes": 329,
+      "sha256": "3fb889e216289916db5285255292fc1c42d9edc7b6432dd92ba2ebb355116bb8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDRR.json",
+      "bytes": 405,
+      "sha256": "5beec8e776d8ffd1d101f74fa9ff3e0b3c5c9e41a7f477652228300dbdda03dc"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDDRR.resource.txt",
+      "bytes": 777,
+      "sha256": "11479b61ec09940fe39fe661290afc8d4efb81e3767a83ac147c60878068af83"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRDD.exit.json",
+      "bytes": 330,
+      "sha256": "33584a9e1b0f4c7971c13f6f782751e29e53abffce02f3f78daca063931c0ad6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRDD.json",
+      "bytes": 403,
+      "sha256": "0c8baefb9dcb490297f2bc87bf5dca08f2313952bbdc4e5adab59197beb0bb7e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRDD.resource.txt",
+      "bytes": 777,
+      "sha256": "51bc8d3631cbed2ce8e38153e45083e5889890fe0b443d37c6730c328088ee98"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRDR.exit.json",
+      "bytes": 329,
+      "sha256": "f28603f1024c47576ea445cbab1054de0cf8951ae7979d558c6c20687b337998"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRDR.json",
+      "bytes": 402,
+      "sha256": "7243f82012b7c6036f1d60f0ea1223f33089a5b24d19fe2811819de0b1a14142"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRDR.resource.txt",
+      "bytes": 777,
+      "sha256": "b3011a6521faa43368b0e77c506c9d8b8dadc9f75eb5065e7cd4b520073b8356"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRRD.exit.json",
+      "bytes": 329,
+      "sha256": "088f77cfa5630a1d75471a0c32842ffd53e173da0c06f267482fb44099f78dde"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRRD.json",
+      "bytes": 403,
+      "sha256": "20907a527ed781632d8f62000f8d3c92bbbdc31158ac5653a387e1d6e8401bd2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRRD.resource.txt",
+      "bytes": 777,
+      "sha256": "d9510832140815293f5b3a237c19442c6052ca5d90c2ee38f0993c8c8e0dcdc7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRRR.exit.json",
+      "bytes": 327,
+      "sha256": "942cff3651a948199182c77db694f5fcadd6e69d0a489defc5f13acba5dd82d4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRRR.json",
+      "bytes": 405,
+      "sha256": "d06388879dbd6d680f706fd7adb2a7e32c8553228c842edaa79cae9f8abbeefb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDDRRR.resource.txt",
+      "bytes": 777,
+      "sha256": "6c73e9e130bcf9ea95e6273eb32143a08047c505fa2222908d36f25278342fc4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDDD.exit.json",
+      "bytes": 330,
+      "sha256": "8eb5f5e68213359d7474bf1f041e9a95eecc5f910593af0e3fd6e8843c5635b3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDDD.json",
+      "bytes": 403,
+      "sha256": "f1fbb8992a8ae37b2bfb0a33f436c13f234d7c131590338aec7f5057279541a7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDDD.resource.txt",
+      "bytes": 777,
+      "sha256": "cdd1dfc2ee439e2d32628485b5e3f2695c471997775c0e7c7832d602e744a01b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDDR.exit.json",
+      "bytes": 329,
+      "sha256": "99ce2e7dd3739f2253cd76e0e241db85f4218db3cd5f8fd0dce0a15a2e445c6c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDDR.json",
+      "bytes": 402,
+      "sha256": "f1792f407633f547cc3dc739292db597f2335263e3c8cc3f571c2b2dbe5cea98"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDDR.resource.txt",
+      "bytes": 777,
+      "sha256": "48fd608c7e3fd84220ea623efe166560e411619028e7b4317843e9505f243c2c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDRD.exit.json",
+      "bytes": 329,
+      "sha256": "8b1aab2d252e6c020b1bb342ddd47c921c4da88487f461354df56f9f3defaf5c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDRD.json",
+      "bytes": 400,
+      "sha256": "3952969cfd4c33f86bc122f81010da268a3b5265986e32424d0b087788af742c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDRD.resource.txt",
+      "bytes": 777,
+      "sha256": "8a3ff675abc90c4a97f56f3acc14e36d825968e4991cc266dea5a8f7a7e7beb9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDRR.exit.json",
+      "bytes": 327,
+      "sha256": "dc0c39a3996cef7e86c3fc7ebfc6f4d10142d1a204e451620d56274661f27f62"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDRR.json",
+      "bytes": 401,
+      "sha256": "e21a4ca149d088633e6177f13527c5bb76128ee903eaeeb98098c974ce8a278a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRDRR.resource.txt",
+      "bytes": 777,
+      "sha256": "4a7a89269c609e4036e7f45efdff3406eddd9f9553b5397f40201b54682aeb59"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRDD.exit.json",
+      "bytes": 329,
+      "sha256": "0d6b3317fc6e6b70f5ef7befb9071cc653ec2acac75d936199c3bcb778b193dd"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRDD.json",
+      "bytes": 403,
+      "sha256": "13c07b64ecf045ee2149bc53e39cf7a7cd276dd4c032d85fee7bb8355dc7c1db"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRDD.resource.txt",
+      "bytes": 777,
+      "sha256": "c4278bc19aab029bf000ed498b74d665f76e892dcc96400db8347f854f4ac6eb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRDR.exit.json",
+      "bytes": 327,
+      "sha256": "120cc1a69f65efc576fc3333a18d687b01de680d475ed5af93f5076527f7fce7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRDR.json",
+      "bytes": 400,
+      "sha256": "27218858206514cdfd93f40d384385903e97e9ba53100744a73e09f0c7e0a048"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRDR.resource.txt",
+      "bytes": 777,
+      "sha256": "66b068839ca1d7fdf49c75346b98a9997e286b962fc15a08eb337289e86ba428"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRRD.exit.json",
+      "bytes": 327,
+      "sha256": "d1d42cdb9116924a944671ceb332e75335f45732c1360d76ea0a06def58494cc"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRRD.json",
+      "bytes": 403,
+      "sha256": "e8e21f3281cc7346eccbbb927c4ff02522c72bb05bc08b7801dfbfed1dbd0f87"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRRD.resource.txt",
+      "bytes": 777,
+      "sha256": "0dd2fc18ecec326da4bce299ee9fb214baa89233cca9bb1f9df6e80b330a556f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRRR.exit.json",
+      "bytes": 326,
+      "sha256": "490de8e752b7d8fface8176779ce00886edfa43335d0f894f9dcfcb12fbaa2a0"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRRR.json",
+      "bytes": 401,
+      "sha256": "fad439355f6b06118129313b2496f3d2f754a168a75f907c61dde52072d1327e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RDRRRR.resource.txt",
+      "bytes": 777,
+      "sha256": "1fafe2cb356dca4bd2226f5038fcd9524bc4c3ebcce49e691f20088c1d55077a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDDD.exit.json",
+      "bytes": 330,
+      "sha256": "49253ccf08814522f39983b5b03d66ce06a43771557b053766444a09a2fee063"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDDD.json",
+      "bytes": 405,
+      "sha256": "75235e392c12450196320e45824de2866057bfa12b25872ff8d7b73df7c04957"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDDD.resource.txt",
+      "bytes": 777,
+      "sha256": "cc51f5c4f02fd8e5ef02d4f3fa2bfea76d94a38001ec5129dcff0182abeebaff"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDDR.exit.json",
+      "bytes": 329,
+      "sha256": "4e5bb4eac88f066b999bac3dbe15bb801d2a97395d87edfcc3d6a6ad318becea"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDDR.json",
+      "bytes": 403,
+      "sha256": "ed9f17aeaff788c31b484eac36a85e8f79be6ae06d7893867bc0da6dffddf08d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDDR.resource.txt",
+      "bytes": 777,
+      "sha256": "fa42bd4c7e722cf9adbfab0f8cda50a5896bd6f55f4f17324e4844c0e08a0eed"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDRD.exit.json",
+      "bytes": 329,
+      "sha256": "2726bfb78e967f343606da2c433ea56a991e8e8338b2a3bca3258fca240b1257"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDRD.json",
+      "bytes": 402,
+      "sha256": "80d13cdfb13776e93442b6fa87c8dd60c08bbc72463919e9b740bb8f7f3db106"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDRD.resource.txt",
+      "bytes": 777,
+      "sha256": "99a7109279ca38df6691921b69e6060fdea6b919d556354c732ec9cf80e9882a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDRR.exit.json",
+      "bytes": 327,
+      "sha256": "715e9cc82644bbe8ffe706efa07d17977259d5efe4e5d175213136670a186276"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDRR.json",
+      "bytes": 403,
+      "sha256": "8bb3f8c7acd80e8649d533c880ad1bc74fc285c0f209a55e0106c399fb5be7c5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDDRR.resource.txt",
+      "bytes": 777,
+      "sha256": "93e8f30cf7d222f0b512723d585b644d4c5fac7bb6735cff2c8626a16c69f4ad"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRDD.exit.json",
+      "bytes": 329,
+      "sha256": "dc8ef36d56d8a57121a08c15379066bf8eae1a600a338d11e9c14ae8b7e12aed"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRDD.json",
+      "bytes": 402,
+      "sha256": "36c89895acdc389c915c1de666ff32fdfe8dbe10a7c55b37490bebb82b0c1f9e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRDD.resource.txt",
+      "bytes": 777,
+      "sha256": "58e2754073c2b88786289b4715152dedbbebb84977f21cf39b01c08fdcd75ec7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRDR.exit.json",
+      "bytes": 327,
+      "sha256": "31118d069be94a85352e62e559a2b9a49cb8770fd9dda8870b86b3937bb2b736"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRDR.json",
+      "bytes": 400,
+      "sha256": "c36d91e6562f9082cb7160e0f4e938fd60f0ed23b7c0169146d28d931e0c9a67"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRDR.resource.txt",
+      "bytes": 777,
+      "sha256": "e53e2c31c92626b06f0261a3c7a58317aa16e7a9dc924a3754a3a0f7759e161c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRRD.exit.json",
+      "bytes": 327,
+      "sha256": "995164667d8f9a7ca922895bcf32059533f06649954cbb88493d6b7f0de01385"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRRD.json",
+      "bytes": 400,
+      "sha256": "1a953c55225995222e1c9a5a3662e4ee68a90050bf52b48d5d66d20870b73db5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRRD.resource.txt",
+      "bytes": 777,
+      "sha256": "da394009e0a166ab020147e57760683d8c1d7f526705b59e40694bd793c9c9f4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRRR.exit.json",
+      "bytes": 326,
+      "sha256": "4054ec75d135f02efbbf625ecb6e23b25ecb2251936a2fd016993b1927082881"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRRR.json",
+      "bytes": 401,
+      "sha256": "2e0df4586cc3e399b9e441259419655dd35b31a8c99d9e6b89607a41a1bea4c2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRDRRR.resource.txt",
+      "bytes": 777,
+      "sha256": "27724f30dbbb552f711bc17f03e203dee702ee53acc91b5cd5c8e15d86f9963d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDDD.exit.json",
+      "bytes": 329,
+      "sha256": "57e15bb84d765ec17090dac51e6d6d0edc992b6c748947f6c12bd25c61c7d1b7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDDD.json",
+      "bytes": 403,
+      "sha256": "c42c11198675bcf8fd9de5906a28391988c7b65eb1b11385f770aa1786c5c0fb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDDD.resource.txt",
+      "bytes": 777,
+      "sha256": "95a1a4b9e7cfc29fb18f50b1262230f742803643ad0003d8859511e1a51ab820"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDDR.exit.json",
+      "bytes": 327,
+      "sha256": "2eb1da1a45bd45a5be7a0332255a89a73ec40629b354d4a3df2ad60a95befb06"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDDR.json",
+      "bytes": 400,
+      "sha256": "8cbc433a734c3f15ee42cede9dfa14027773f66b8fa0cee88532502465d6704d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDDR.resource.txt",
+      "bytes": 777,
+      "sha256": "3076d1091f6bc3d42aab204a9fcf52dc60aa43e4730021f245a75d6e5e241568"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDRD.exit.json",
+      "bytes": 327,
+      "sha256": "e34086c4897b8326e2d6747fbf89ec0cd8892f437cd57b4a4e93875aa7d1026a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDRD.json",
+      "bytes": 398,
+      "sha256": "2a02372dd7a0b5a11359b3a765934d807ae3858f85b4f15d4c88294de870a57b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDRD.resource.txt",
+      "bytes": 777,
+      "sha256": "e224dc273d995cdb25cf89ef6dc2c3fe0eb5a22ff2e628c7677e457027c13c34"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDRR.exit.json",
+      "bytes": 326,
+      "sha256": "ffc90b5199168e60f5a821e8962439330bcd6f2f7ac86931c154736e3268a3ff"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDRR.json",
+      "bytes": 398,
+      "sha256": "866e653cd6b780119298e3d9a8669ca4b64bc7a8bf36bbc25f949155f7f40562"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRDRR.resource.txt",
+      "bytes": 777,
+      "sha256": "e484436e2379b01fbcf9da81c4466d2ebf3df451bf25e951578edc756b984ae8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRDD.exit.json",
+      "bytes": 327,
+      "sha256": "f2303687de2587f13557225eca15a60cee5f1cbc7a0f3e1d74b27dc7341dccb6"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRDD.json",
+      "bytes": 400,
+      "sha256": "a8963f0dfea0187a885eb5edbaebf15015de00bc8772f2ff3c24fdebe48b6bea"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRDD.resource.txt",
+      "bytes": 777,
+      "sha256": "85a340c6ec6d28fc6ad5bb5bc66f093a9eaa4538897142ed6dc2a2c07fcf6a42"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRDR.exit.json",
+      "bytes": 326,
+      "sha256": "f72f5b7b0f29dc72d020cda834aaf5888f619ff650d2415a16f6c745c127cc14"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRDR.json",
+      "bytes": 396,
+      "sha256": "951a64600768315116d45010198f9ebb327ef64f6f54ab6c4815e2798035f1f3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRDR.resource.txt",
+      "bytes": 777,
+      "sha256": "e4c1d98f17a14f014ab6f99537758c8947527fe3e75e2f14bc51823aee0bb091"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRRD.exit.json",
+      "bytes": 326,
+      "sha256": "611170016c7c30ef6367442be4f58ab873c6bd13897d4e7dc250cf0437afa5f4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRRD.json",
+      "bytes": 395,
+      "sha256": "eee09d477dd436df405220f724dcfed14c7d69e64f3854eea84ad1a2528ff2c1"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRRD.resource.txt",
+      "bytes": 777,
+      "sha256": "6eaa33eaaf1a1786b850900da6ea21d9d8f97b25c2970a67a64de09dcf5afd9b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRRR.exit.json",
+      "bytes": 324,
+      "sha256": "ea77a07e84848eb6378e83e986d2766b4cf3b02ffc0dd2f28c40f2ce880e276b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRRR.json",
+      "bytes": 392,
+      "sha256": "26e1dd0de5cf2e9d96086812a7afcf516ded685e2ee905d32a0419b1abf79693"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/raw/RRRRRR.resource.txt",
+      "bytes": 777,
+      "sha256": "db1aea5b2ac0545da34a844a91d03531b8b386cb13337a4442d6c1f75d1e02d8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/run-metadata.json",
+      "bytes": 340,
+      "sha256": "5d3ffd6a6419338e80f308efd4ced1bfa8c5fda6e7dc23089da0b7afc06dd1d4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-n7/smoke-n6-top.json",
+      "bytes": 324,
+      "sha256": "4bf8df405dded717d2d6195180df830b4755f1961d58e82d45b6dc7f1d9ccfd7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-proof/ADJACENT_TURN_OBSTRUCTION.md",
+      "bytes": 1196,
+      "sha256": "09f9a5ffe67dcd730d79d8e3e5bb4b1ac279fb0949e5fffeab1583855ea8b3e1"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-proof/CONTRACTION_TURN_LOSS.md",
+      "bytes": 1739,
+      "sha256": "9493770a687b74bf8f003e918b5765e72c30b012bf431b937ef6fc0dfb66b23b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-proof/FOUR_WORD_TURN_CONVEXITY_OBSTRUCTION.md",
+      "bytes": 960,
+      "sha256": "69cee7721fb2f5fa5851b86f393dd52a0b9a0bebbaac0e1e179946d53f62cc53"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-proof/adjacent-turn-order-audit.json",
+      "bytes": 1497,
+      "sha256": "2859de37f913f094b7795c3d8462f37c2e27e4f21b565f4615afc6f28b73f6e9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-proof/audit_adjacent_turn_order.py",
+      "bytes": 2366,
+      "sha256": "4a077987f3ebacffcfaa29c483b3f6d3e6bea30aa3ae3ec54288d81c627219f3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-proof/audit_contraction_turn_edges.py",
+      "bytes": 2454,
+      "sha256": "bcc8264b5b4cb998f24ca716360e4e589fad1fdbd45d667641caa210a1582ac3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-proof/audit_four_word_turn_convexity.py",
+      "bytes": 2045,
+      "sha256": "2e0b04f9dacac2c57f09163be5a33a9074dada7eb3b982b074116d1d144c7c90"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-proof/contraction-turn-edges.json",
+      "bytes": 1095,
+      "sha256": "6c54f8a2c5382a3cae9a824bccc5f4655c380e63d4b876788c01a69d287115cd"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-monotone-proof/four-word-turn-convexity-audit.json",
+      "bytes": 1190,
+      "sha256": "b14ba70b52825d59a140ce70302f1b5ffed7d5df0f4bff38b6e6c92b8992d1f5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/ARCHIVE.md",
+      "bytes": 497,
+      "sha256": "b67ca7ca17c512cb85cd5873c384dbd9b5f9a5fd8ea9f4011d71c03da8a5aa27"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/raw/n12-p131072-r32-l16.jsonl",
+      "bytes": 1481351,
+      "sha256": "05fde7b272cd8eabed5fc62f81371033b7a380178a9a578e4372ae3b913ee7f1"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/receipts/n12-p131072-r32-l16.receipt.json",
+      "bytes": 2515,
+      "sha256": "75b1af7b7ffe92a3be2378b269f773366134af69067dc09a91cff7642ccb4ca9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/reports/n12-p131072-r32-l16.resource.txt",
+      "bytes": 777,
+      "sha256": "c6d5d885ee9a73f239cea00a8193c7083e31867d2591481b461a1d6c8badc3eb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/reports/n12-production-audit.json",
+      "bytes": 1590,
+      "sha256": "698412c507b5ba754d97e354e3d899c3643a5cc55d7abc01026e718c6cfc320c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/reports/n12-production-final-status.md",
+      "bytes": 2039,
+      "sha256": "c1af1c88c6bd5e9b818e04484cac05171d93a6ebcb2851597e05e32e9b531fe3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/source/aggregate_production_r026.py",
+      "bytes": 6888,
+      "sha256": "f1593cc93db21d778289966c80539606b079d702fa3fd5c197394c27d4737389"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/source/validate_n12_trace.py",
+      "bytes": 3469,
+      "sha256": "4df3f021edabb30f23dadb76a5a2cb9c779a3fadf4830a2a9155951b94ce1a8b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/source/verify_merge_rb_trace.py",
+      "bytes": 13821,
+      "sha256": "6285b4bb4299a06e4a5f705744453f6390d1215186c3e6cc5c9f0ffeeaf8567a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/trace/n12-p17-r1-l16.jsonl",
+      "bytes": 2460,
+      "sha256": "f73e57e6628e0db17f30a3a77e32ed6e8ea743bad6a085b61e08814f73e43a9c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r027/r027-n12-merge-rb/trace/n12-p17-r1-l16.jsonl.trace.json",
+      "bytes": 5405031,
+      "sha256": "efadc94110d1b270d3446b3fa6d745e0e16f6b9b39300c9e5bc2d922821a26d8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/computation/README.md",
+      "bytes": 19831,
+      "sha256": "b15b50dc0c6074d18779fb5445901c54ae5550b6cd00ddbb34c9ddd96d1a1991"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/rounds/027.md",
+      "bytes": 7090,
+      "sha256": "b48b46a5bd6c796ee7c8c471c01a188b0484e5a1d0c0b42996758816ad6ae306"
+    }
+  ]
+}

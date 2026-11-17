@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第26轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第27轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/026.md；第26轮证书见certificates/r026/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/027.md；第27轮证书见certificates/r027/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -127,3 +127,22 @@
 
 第一未证步骤仍为 W 加权根几何的全局小量估计，或固定正远峰质量的归一化证明。
 本轮入口 rounds/026.md、certificates/r026/REPLAY.md、manifest-r026.json。
+
+## 第27轮追加（2026-11-17）
+
+第27轮已归档；**原题仍开放，总目标 active。**
+
+- 删去全局最大点后，A2/B 精确等于穿孔好词的首邻点间隙 J−1 的平均；这是既有 L
+  重构的局部化。方格仍有长度 n²−3 的纤维，故必须控制加权质量。逐孔公式已精确至
+  n=5；有限中心比例不能证明或否定统一正下界。
+- n=7 全部64条角点单调路径均 h(S)≥h(T)；局部转角交换和四字平滑差均无统一符号。
+  全 n 比较尚未证明。
+- MacBook n=8 顶行完成数由四素数两层递推及独立 Pratt/CRT 认证：
+  423654409051746526004003370676397710547897396520579268896000。
+  这不是完整 A2(8) 或原条件概率。四个精确程序已退出，实测最大 RSS约7.57GB。
+- 本机 L64 canonical32 与新 n12 条件平均 GPU 批已结束并退出；前者 ESS≈2.979，
+  不能用作可靠概率。生产聚合器的重复ID拒绝、下溢处理等9种负例已实际核验。
+- 截点后的 n16 GPU、MacBook n24 GPU 和 n6逐孔表分别留待下一轮。
+
+缺口仍为全局 W 加权几何或固定远峰质量的归一化证明；见 rounds/027.md、
+certificates/r027/REPLAY.md、manifest-r027.json。

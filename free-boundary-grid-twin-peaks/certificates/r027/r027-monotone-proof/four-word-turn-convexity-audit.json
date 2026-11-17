@@ -1,0 +1,46 @@
+{
+  "kind": "exact-four-word-turn-convexity-audit",
+  "input_sha256": "7abf972b7dea2034907136e1c001972b27da4c61f53abbadf2780311e9c87d74",
+  "definition": "Delta=h(pRDq)+h(pDRq)-h(pRRq)-h(pDDq)",
+  "scope": "Hash-guarded integer post-processing of existing n=5,6 all-path completion data; no completion count is re-run.",
+  "runs": [
+    {
+      "n": 5,
+      "comparisons": 12,
+      "positive_count": 6,
+      "negative_count": 6,
+      "zero_count": 0,
+      "positive_example": {
+        "position": 0,
+        "prefix": "",
+        "suffix": "RR",
+        "delta": "1800140788220400"
+      },
+      "negative_example": {
+        "position": 1,
+        "prefix": "R",
+        "suffix": "R",
+        "delta": "-439335780549600"
+      }
+    },
+    {
+      "n": 6,
+      "comparisons": 32,
+      "positive_count": 14,
+      "negative_count": 18,
+      "zero_count": 0,
+      "positive_example": {
+        "position": 0,
+        "prefix": "",
+        "suffix": "RRD",
+        "delta": "1535764041719956047274732800"
+      },
+      "negative_example": {
+        "position": 0,
+        "prefix": "",
+        "suffix": "RRR",
+        "delta": "-391726482016374893895897600"
+      }
+    }
+  ]
+}

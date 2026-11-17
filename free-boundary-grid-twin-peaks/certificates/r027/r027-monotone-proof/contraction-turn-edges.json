@@ -1,0 +1,54 @@
+{
+  "kind": "exact-contracted-root-graph-turn-loss-audit",
+  "formula": "|E(G_n/S_w)| = 2n(n-1) - (n-1) - turns(w)",
+  "scope": "Pure graph calculation for every corner monotone path n=3..7; it checks no completion counts.",
+  "runs": [
+    {
+      "n": 3,
+      "grid_edges": 12,
+      "path_count": 4,
+      "all_turn_formula_passed": true
+    },
+    {
+      "n": 4,
+      "grid_edges": 24,
+      "path_count": 8,
+      "all_turn_formula_passed": true
+    },
+    {
+      "n": 5,
+      "grid_edges": 40,
+      "path_count": 16,
+      "all_turn_formula_passed": true
+    },
+    {
+      "n": 6,
+      "grid_edges": 60,
+      "path_count": 32,
+      "all_turn_formula_passed": true
+    },
+    {
+      "n": 7,
+      "grid_edges": 84,
+      "path_count": 64,
+      "all_turn_formula_passed": true
+    }
+  ],
+  "n5_examples": [
+    {
+      "word": "RRRR",
+      "turns": 0,
+      "contracted_simple_edges": 36
+    },
+    {
+      "word": "RDRD",
+      "turns": 3,
+      "contracted_simple_edges": 33
+    },
+    {
+      "word": "DDRD",
+      "turns": 2,
+      "contracted_simple_edges": 34
+    }
+  ]
+}

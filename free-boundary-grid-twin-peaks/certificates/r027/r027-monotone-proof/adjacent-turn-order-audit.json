@@ -1,0 +1,50 @@
+{
+  "kind": "exact-adjacent-turn-order-audit",
+  "input_certificate_path": "r026/r026-monotone-prefix-scan/monotone-prefix-ie-scan.json",
+  "input_sha256": "7abf972b7dea2034907136e1c001972b27da4c61f53abbadf2780311e9c87d74",
+  "scope": "Exact integer h values already obtained by the cited serial IE runs. This audit only compares them; it is not an all-n calculation.",
+  "runs": [
+    {
+      "n": 5,
+      "comparisons": 12,
+      "DR_larger_count": 6,
+      "DR_smaller_count": 6,
+      "explicit_DR_larger": {
+        "word_RD": "DRDR",
+        "word_DR": "DDRR",
+        "h_RD": "1888583709324000",
+        "h_DR": "3094099338837000",
+        "sign_h_DR_minus_h_RD": 1
+      },
+      "explicit_DR_smaller": {
+        "word_RD": "DDRD",
+        "word_DR": "DDDR",
+        "h_RD": "928216128189000",
+        "h_DR": "705808255723200",
+        "sign_h_DR_minus_h_RD": -1
+      },
+      "no_ties": true
+    },
+    {
+      "n": 6,
+      "comparisons": 32,
+      "DR_larger_count": 16,
+      "DR_smaller_count": 16,
+      "explicit_DR_larger": {
+        "word_RD": "DDRDR",
+        "word_DR": "DDDRR",
+        "h_RD": "513835499298043758320217600",
+        "h_DR": "842451994147498521356371200",
+        "sign_h_DR_minus_h_RD": 1
+      },
+      "explicit_DR_smaller": {
+        "word_RD": "DDDRD",
+        "word_DR": "DDDDR",
+        "h_RD": "158811869214788201877292800",
+        "h_DR": "113757046434820316213683200",
+        "sign_h_DR_minus_h_RD": -1
+      },
+      "no_ties": true
+    }
+  ]
+}

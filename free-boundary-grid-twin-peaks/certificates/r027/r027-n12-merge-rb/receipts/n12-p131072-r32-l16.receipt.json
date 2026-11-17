@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "scope": "finite n12 merge-RB production only; no accuracy or cone certification",
+  "source_sha256": "3a9f3c0a8c10409346c25f16f2d82463f928bfaacf7307b4a88a770ec8f69ec6",
+  "binary_sha256": "5de42d7ec2eb946cfb805b59df658cf2f25d87e6018d4561d3e7a7b3a2a9d598",
+  "raw_sha256": "05fde7b272cd8eabed5fc62f81371033b7a380178a9a578e4372ae3b913ee7f1",
+  "trace_raw_sha256": "f73e57e6628e0db17f30a3a77e32ed6e8ea743bad6a085b61e08814f73e43a9c",
+  "trace_sha256": "efadc94110d1b270d3446b3fa6d745e0e16f6b9b39300c9e5bc2d922821a26d8",
+  "rank_replay_stdout": "{\n  \"passed\": true,\n  \"scope\": \"Exact Python replay of resample, append, rank-biased move, and state fields for one GPU trace\",\n  \"n\": 12,\n  \"P\": 17,\n  \"tau\": 2,\n  \"move_steps\": 16,\n  \"ranks_checked\": 144,\n  \"first_merge_rb\": \"per-particle GPU payload matches independent full-word A/B scan including terminal omitted vertex; Fraction mH identity and finite moment inequality checked\",\n  \"proposal_categories\": {\n    \"root_outside_proposed\": 10852,\n    \"root_outside_accepted\": 818,\n    \"self_active_proposed\": 286,\n    \"self_active_accepted\": 286,\n    \"root_outside_rejected\": 10034,\n    \"nonroot_outside_proposed\": 8610,\n    \"nonroot_outside_rejected\": 7343,\n    \"nonroot_outside_accepted\": 1267,\n    \"root_nonroot_active_proposed\": 9960,\n    \"root_nonroot_active_rejected\": 9667,\n    \"root_root_active_proposed\": 134,\n    \"root_root_active_accepted\": 134,\n    \"root_nonroot_active_accepted\": 293,\n    \"nonroot_active_proposed\": 9054,\n    \"nonroot_active_accepted\": 2754,\n    \"nonroot_active_rejected\": 6300\n  },\n  \"terminal_full_word_reconstruction\": \"passed: appended unique omitted vertex and verified K=2, L, d/L fields, root fields, and all group/raw identities\",\n  \"caveat\": \"Trace equality validates this finite implementation path only; it is not a mixing or SMC-accuracy certificate.\"\n}",
+  "trace_payload_audit_stdout": "{\"audit_passed\": true, \"scope\": \"n12/P17 trace and RB payload structural audit only; not an accuracy, mixing, or cone claim\"}",
+  "telemetry_sha256": "e307de92f3a2b06f974029729c0a89c3fef6fd346f29c66edc7cdc287b4546d2",
+  "resource_sha256": "c6d5d885ee9a73f239cea00a8193c7083e31867d2591481b461a1d6c8badc3eb",
+  "parameters": {
+    "n": 12,
+    "P": 131072,
+    "R": 32,
+    "L": 16,
+    "tau": 2,
+    "method": "strat",
+    "domain": "9e260c0000000001"
+  },
+  "returncode": 0,
+  "wall_ended_epoch": 1794887834.020926
+}

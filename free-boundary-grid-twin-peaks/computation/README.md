@@ -241,3 +241,7 @@ python3 fixed_d_fibre_obstruction.py
 ## 第26轮
 
 行释放整数递推、独立峰集容斥、n=7 MacBook 计数、条件平均采样审计及已完成 CPU 批次，见 [本轮重放入口](../certificates/r026/REPLAY.md) 和 [报告](../rounds/026.md)。GPU 大批仍在运行，未计入本轮完成证据。
+
+## 第27轮
+
+n=8顶行完成数的模递推、Pratt/CRT证书、逐孔计数与已结束GPU批，见[本轮重放入口](../certificates/r027/REPLAY.md)和[报告](../rounds/027.md)。内存模型与实际RSS分别记录；未结束的后续批不计入本轮完成证据。
