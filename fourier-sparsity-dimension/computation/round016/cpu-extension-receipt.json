@@ -1,0 +1,75 @@
+{
+  "child_pid": 62615,
+  "child_returncode": 0,
+  "child_stderr": "",
+  "child_stdout": "",
+  "command": [
+    "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r016/extension-cpu/verify_extension_cpu",
+    "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r016/extension-cpu/seed_masks.txt",
+    "15",
+    "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r016/extension-cpu/verify-result.json"
+  ],
+  "compiler": {
+    "argv": [
+      "/usr/bin/clang++",
+      "--version"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Apple clang version 21.0.0 (clang-2100.4.1.1)\nTarget: arm64-apple-darwin27.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n"
+  },
+  "elapsed_seconds_wall": 1.194531542,
+  "finished_utc": "2026-11-17T09:54:42.032020+00:00",
+  "hashes": {
+    "binary_sha256": "ff1ff173b7a21257484be07534a717a8f0f9c6dd5af1d0e792f982f66dc693e3",
+    "cpp_sha256": "6c341da3a336588ffb4e076281b91c89e28ad887fb361bb2cc1057684cf43ed0",
+    "runner_sha256": "4a94cd436a7953cab5a22c2a0bce999393a87033e145c27626a8c94713548d62",
+    "seed_extraction_sha256": "d2d53e4e05d24888b3ed115d85914785147d32ca56ba6cb87026a7b9a5550d9c",
+    "seed_json_sha256": "c94010a703187ddeccc15f94d3390e7777324cd2d99742a1476872a0b61f3df0",
+    "seed_text_sha256": "16c5b23d9b53ae0d533dd9296735970dd46534b2c04ef3eb16be2a9b280bd745"
+  },
+  "python": {
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "--version"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Python 3.9.6\n"
+  },
+  "result": {
+    "all_abs_walsh_equal_8": true,
+    "bad_phase_count": 0,
+    "bad_walsh_term_count": 0,
+    "elapsed_seconds": 0.166073,
+    "f0_six_mask_hex": "0x935f6ca06ca06ca0",
+    "first_bad_frequency": -1,
+    "first_bad_index": -1,
+    "first_bad_walsh": 0,
+    "full_coverage": true,
+    "maximum_bad_abs_deviation_from_8": 0,
+    "phase_count_expected": 1605632,
+    "phase_count_processed": 1605632,
+    "schema": "a28-r016-extension-cpu-v1",
+    "seed_count": 896,
+    "threads": 15
+  },
+  "result_sha256": "262be721ed15df0a5a2a09f192efb8542f7d011efcf1d466c5cb53f2f2c80e60",
+  "samples": [
+    {
+      "host_cpu_line": "CPU usage: 63.80% user, 6.51% sys, 29.68% idle",
+      "label": "start",
+      "owned_child_ps": "62615   0.0  0.0 00:00 /Users/zhengzhihao/CodexRemoteMath/a28-selector/r016/extension-cpu/verify_extension_cpu /Users/zhengzhihao/CodexRemoteMath/a28-selector/r016/extension-cpu/seed_masks.txt 15 /Users/zhengzhihao/CodexRemoteMath/a28-selector/r016/extension-cpu/verify-result.json",
+      "utc": "2026-11-17T09:54:41.444718+00:00"
+    },
+    {
+      "host_cpu_line": "CPU usage: 62.53% user, 7.6% sys, 30.40% idle",
+      "label": "end",
+      "owned_child_ps": "",
+      "utc": "2026-11-17T09:54:42.032001+00:00"
+    }
+  ],
+  "schema": "a28-r016-extension-cpu-run-v1",
+  "started_utc": "2026-11-17T09:54:40.837499+00:00",
+  "timed_out": false
+}
