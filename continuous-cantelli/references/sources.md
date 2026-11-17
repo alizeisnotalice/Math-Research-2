@@ -88,3 +88,10 @@
 - `proofs/001-tail-and-local-rigidity.md`，第1节归一化及自动有界性；SHA256 `3f099de9e6a514f855e4691a47ad2f516b79683bc77093bf7f3e897e30ceb12c`。
 - `proofs/015-joint-fourier-core-certificate.md`，第1节任意H≥sup f的高斯混合表示；SHA256 `a23e90ee6369429fc6351675d46deab33ed39596e7a7401c0f595f0bc8de0154`。
 - `proofs/006-contact-budget.md`，第1—2节；确认旧轮研究f=0，本轮研究f=sup f，二者不同；SHA256 `61928d519a2a01adba20bdaafedc48cf47d0dd98392e32d9f113cc3d50e56399`。
+
+## 第17轮内部来源与核验
+
+基线提交18d0fefc57aaf61d810a92ffe3da7efbbad00627。本轮独立核对Hermite核导数、远处源的统一上界、负矩推论及平台边界密度跳跃；未增加外部文献或首创性声明。
+
+- `proofs/016-attained-maximum-contact.md`，第1—3节减去最小方差、二次与平坦接触；SHA256 `deeead58ba1b9ac7568329511dcb30305590bb13cc6aa42bc018846b290f2f02`。
+- `proofs/015-joint-fourier-core-certificate.md`，第1节完整变换与高斯混合输出等价；SHA256 `a23e90ee6369429fc6351675d46deab33ed39596e7a7401c0f595f0bc8de0154`。
