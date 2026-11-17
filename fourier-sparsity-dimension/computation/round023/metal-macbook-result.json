@@ -1,0 +1,162 @@
+{
+  "all_checks_passed" : true,
+  "cpu_oracle" : "explicit definition-level O(N^2) character sums for full and A-weighted partial spectra",
+  "device" : "Apple M5 Pro",
+  "elapsed_seconds" : 0.56919598579406738,
+  "gpu_backend" : "Metal int32 global staged ping-pong FWHT, elementwise compared to CPU oracle",
+  "registry_id" : "4294968585",
+  "rows" : [
+    {
+      "all_checks_passed" : true,
+      "base_patches" : [
+        [
+          8,
+          24,
+          40,
+          56
+        ],
+        [
+          1,
+          3,
+          5,
+          7
+        ]
+      ],
+      "free_dimension" : 0,
+      "full_cpu_bad_absq" : 0,
+      "full_gpu_bad_absq" : 0,
+      "gpu_cpu_mismatch_count" : 0,
+      "joint_patch_codimensions" : [
+        4,
+        4
+      ],
+      "k" : 3,
+      "K_dimension" : 2,
+      "K_restriction_rank" : 1,
+      "mu" : 3,
+      "N" : 64,
+      "parameter_kernel_size" : 4,
+      "parameter_projection_rank" : 6,
+      "partial_patch_cpu_bad_absq" : 0,
+      "partial_patch_gpu_bad_absq" : 0,
+      "patch_direction_ranks" : [
+        2,
+        2
+      ],
+      "patch_sizes" : [
+        4,
+        4
+      ],
+      "phase_count" : 256,
+      "q" : 8,
+      "support_A_size" : 14
+    },
+    {
+      "all_checks_passed" : true,
+      "base_patches" : [
+        [
+          8,
+          24,
+          40,
+          56,
+          72,
+          88,
+          104,
+          120
+        ],
+        [
+          1,
+          3,
+          5,
+          7,
+          65,
+          67,
+          69,
+          71
+        ]
+      ],
+      "free_dimension" : 1,
+      "full_cpu_bad_absq" : 0,
+      "full_gpu_bad_absq" : 0,
+      "gpu_cpu_mismatch_count" : 0,
+      "joint_patch_codimensions" : [
+        5,
+        5
+      ],
+      "k" : 4,
+      "K_dimension" : 3,
+      "K_restriction_rank" : 1,
+      "mu" : 3,
+      "N" : 256,
+      "parameter_kernel_size" : 8,
+      "parameter_projection_rank" : 7,
+      "partial_patch_cpu_bad_absq" : 0,
+      "partial_patch_gpu_bad_absq" : 0,
+      "patch_direction_ranks" : [
+        3,
+        3
+      ],
+      "patch_sizes" : [
+        8,
+        8
+      ],
+      "phase_count" : 1024,
+      "q" : 16,
+      "support_A_size" : 28
+    },
+    {
+      "all_checks_passed" : true,
+      "base_patches" : [
+        [
+          16,
+          48,
+          80,
+          112,
+          144,
+          176,
+          208,
+          240
+        ],
+        [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ]
+      ],
+      "free_dimension" : 0,
+      "full_cpu_bad_absq" : 0,
+      "full_gpu_bad_absq" : 0,
+      "gpu_cpu_mismatch_count" : 0,
+      "joint_patch_codimensions" : [
+        5,
+        5
+      ],
+      "k" : 4,
+      "K_dimension" : 2,
+      "K_restriction_rank" : 1,
+      "mu" : 4,
+      "N" : 256,
+      "parameter_kernel_size" : 4,
+      "parameter_projection_rank" : 8,
+      "partial_patch_cpu_bad_absq" : 0,
+      "partial_patch_gpu_bad_absq" : 0,
+      "patch_direction_ranks" : [
+        3,
+        3
+      ],
+      "patch_sizes" : [
+        8,
+        8
+      ],
+      "phase_count" : 1024,
+      "q" : 16,
+      "support_A_size" : 30
+    }
+  ],
+  "schema" : "a28-r023-two-patch-metal-v1"
+}
