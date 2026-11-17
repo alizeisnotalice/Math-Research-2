@@ -1,0 +1,24 @@
+{
+  "claim_boundary": "Complete finite integer replay of the stated prefix plan only; no MPS/GPU and no global factorization/exclusion claim.",
+  "elapsed_seconds": 335.082680624997,
+  "input_sha256": "aa1d442efdb8efe1c1bd65a99f7ab8021222553008ecc915b13f9800323e5a7a",
+  "interpreter": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "negative_tests_rejected": [
+    "drop_survivor",
+    "wrong_rotation",
+    "false_starts",
+    "wrong_d"
+  ],
+  "source_sha256": "194f9fda058936becdb5d43e6e3e87cf808b5c587349d0f664bd814188493936",
+  "status": "passed_independent_d15_integer_replay",
+  "summary": {
+    "raw": 4782969,
+    "rejected": {
+      "forced_positive_fractional_cross_at_d_plus_i": 47928,
+      "prefix_product_coefficient_gt_1": 13964
+    },
+    "starts": 49152,
+    "survivors": 46011,
+    "valid": 94971
+  }
+}

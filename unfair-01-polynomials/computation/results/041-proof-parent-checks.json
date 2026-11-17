@@ -1,0 +1,49 @@
+{
+  "all_passed": true,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "wolfram_version": "15.0.0 for Mac OS X ARM (64-bit) (May 15, 2026)",
+  "checks": [
+    {
+      "file": "results/041-slice/audit_quartic_factor_types.py",
+      "source_sha256": "6101579fe5020a5820ea428053e88608bedf3de9247fd4ea116e70e5c3f8de12",
+      "returncode": 0,
+      "seconds": 0.4347875839994231,
+      "stdout": "{\n  \"arithmetic\": \"exact integer enumeration and SymPy identities\",\n  \"one_plus_three_initial_pairs\": [\n    [\n      -1,\n      0\n    ],\n    [\n      -1,\n      1\n    ],\n    [\n      -1,\n      2\n    ],\n    [\n      0,\n      -1\n    ],\n    [\n      0,\n      0\n    ],\n    [\n      0,\n      1\n    ],\n    [\n      1,\n      -2\n    ],\n    [\n      1,\n      -1\n    ],\n    [\n      1,\n      0\n    ]\n  ],\n  \"one_plus_three_after_fourth_row\": [\n    [\n      -1,\n      0\n    ],\n    [\n      -1,\n      1\n    ],\n    [\n      0,\n      -1\n    ],\n    [\n      0,\n      0\n    ],\n    [\n      1,\n      -2\n    ],\n    [\n      1,\n      -1\n    ],\n    [\n      1,\n      0\n    ]\n  ],\n  \"one_plus_three_root_equations\": [\n    \"a**4 - a**2 + 1\",\n    \"(a - 1)*(a**3 + a**2 - 1)\",\n    \"a**4 + a + 1\",\n    \"a**4 + 1\",\n    \"a**4 + a**2 + 2*a + 1\",\n    \"a**4 + a**2 + a + 1\",\n    \"(a**2 - a + 1)*(a**2 + a + 1)\"\n  ],\n  \"two_plus_two_terminal_factorizations\": {\n    \"c1_0_c2_1\": \"(1+y+y^2)(1-y+y^2)=1+y^2+y^4\",\n    \"c1_minus1_c2_2\": \"(1-y+y^2)(1+y^2)=1-y+2y^2-y^3+y^4\"\n  },\n  \"scope\": \"Checks the displayed low-row algebra only; the low-end boxes and integer-slice descent are external hypotheses.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "results/041-slice/check_analytic_two_by_two_closure.py",
+      "source_sha256": "4657bd324bbbd0bb3ae6f16898b1e2ac947c460736e6e3439da5e2b9b44e6bd0",
+      "returncode": 0,
+      "seconds": 0.40195104200029164,
+      "stdout": "{\n  \"status\": \"passed_exact_two_by_two_branch_regressions\",\n  \"branches\": {\n    \"c1=-2\": {\n      \"UV_p\": \"h1-2 < 0\",\n      \"outcome\": \"negative\"\n    },\n    \"c1=1\": {\n      \"forced\": \"h1=0, {r,t}={1,0}, c2=a+a^-1>=2\",\n      \"outcome\": \"UV_2p>=2\"\n    },\n    \"c1=0\": {\n      \"forced\": \"c2=1,h2=0,a=1,{r,t}={1,-1}\",\n      \"outcome\": \"Q reducible\"\n    },\n    \"c1=-1\": {\n      \"forced\": \"h1=1,c2=2,h2=0,a=1,{r,t}={-1,0}\",\n      \"outcome\": \"Q reducible\"\n    }\n  },\n  \"scope\": \"Exact checks of the forced equality factorizations and finite c1 branch labels; continuous inequalities are proved in the companion manuscript.\",\n  \"python\": \"3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]\",\n  \"sympy\": \"1.14.0\",\n  \"platform\": \"macOS-27.2-arm64-arm-64bit-Mach-O\",\n  \"source_sha256\": \"4657bd324bbbd0bb3ae6f16898b1e2ac947c460736e6e3439da5e2b9b44e6bd0\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "results/041-slice/check_reducible_quartic_terminal.py",
+      "source_sha256": "6599c5efa1007353460b002947ab99a64795d64d56ca50baf3710f24e379a2be",
+      "returncode": 0,
+      "seconds": 0.40153041599842254,
+      "stdout": "{\n  \"status\": \"passed_exact_reducible_quartic_terminal_regressions\",\n  \"low_row_survivors\": [\n    [\n      -1,\n      0\n    ],\n    [\n      -1,\n      1\n    ],\n    [\n      0,\n      -1\n    ],\n    [\n      0,\n      0\n    ],\n    [\n      1,\n      -2\n    ],\n    [\n      1,\n      -1\n    ],\n    [\n      1,\n      0\n    ]\n  ],\n  \"unique_root_relation_survivor\": \"S=(1+y)(1-y+y^3), a^3+a^2-1=0 with a in (0,1)\",\n  \"diophantine_support_examples\": {\n    \"p=2,q=3\": [\n      [\n        0,\n        4\n      ],\n      [\n        2,\n        1\n      ]\n    ],\n    \"p=3,q=4\": [\n      [\n        0,\n        6\n      ],\n      [\n        3,\n        2\n      ]\n    ],\n    \"p=3,q=5\": [\n      [\n        0,\n        6\n      ],\n      [\n        3,\n        1\n      ]\n    ],\n    \"p=4,q=5\": [\n      [\n        0,\n        8\n      ],\n      [\n        4,\n        3\n      ]\n    ],\n    \"p=4,q=7\": [\n      [\n        0,\n        8\n      ],\n      [\n        4,\n        1\n      ]\n    ],\n    \"p=5,q=7\": [\n      [\n        0,\n        10\n      ],\n      [\n        5,\n        3\n      ]\n    ],\n    \"p=5,q=9\": [\n      [\n        0,\n        10\n      ],\n      [\n        5,\n        1\n      ]\n    ],\n    \"p=5,q=11\": [\n      [\n        0,\n        10\n      ]\n    ]\n  },\n  \"scope\": \"Exact checks of the finite low-row table, residual factorization and coefficient-support equation; the universal inequalities are proved in the companion audit manuscript.\",\n  \"python\": \"3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]\",\n  \"sympy\": \"1.14.0\",\n  \"platform\": \"macOS-27.2-arm64-arm-64bit-Mach-O\",\n  \"source_sha256\": \"6599c5efa1007353460b002947ab99a64795d64d56ca50baf3710f24e379a2be\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "file": "results/041-squarefree/verify_q2_fraction_interval.py",
+      "source_sha256": "3d5da7b9fcba16e1256ffb5d069699f269f7cf5c4b33263f25c652a6c1e88757",
+      "returncode": 0,
+      "seconds": 0.04925708399969153,
+      "stdout": "{\"edge_count\": 34, \"outside_edge_count\": 18, \"source_sha256\": \"3d5da7b9fcba16e1256ffb5d069699f269f7cf5c4b33263f25c652a6c1e88757\", \"state_count\": 17, \"status\": \"passed_independent_fraction_interval_q2_audit\"}\n",
+      "stderr": ""
+    },
+    {
+      "file": "results/041-squarefree/verify_q2_newman_squarefree.wl",
+      "source_sha256": "294f02b4bbb050efcfb5befd901098a3292d8a0c1ac56bad99b0c119bc1f688c",
+      "returncode": 0,
+      "seconds": 1.8877202500007115,
+      "stdout": "<|rootIntervalAndMonotonicity -> True, stateCount -> 17, zeroNotInStateSet -> True, transitionFormulaModuloQSquared -> True, edgeCount -> 34, outsideEdgeCount -> 18, allOutsideEdgesViolateValueOrDerivativeBound -> True, outsideEdges -> {{{1, 0, 1, 0, 0, 0}, 0, {0, 1, 0, 1, 0, 0}}, {{1, 0, 1, 0, 0, 0}, 1, {1, 1, 0, 1, 0, 0}}, {{0, 0, 0, 1, 0, 0}, 0, {0, 0, 0, 0, 1, 0}}, {{0, 0, 0, 1, 0, 0}, 1, {1, 0, 0, 0, 1, 0}}, {{1, 0, 0, 1, 0, 0}, 0, {0, 1, 0, 0, 1, 0}}, {{1, 0, 0, 1, 0, 0}, 1, {1, 1, 0, 0, 1, 0}}, {{0, 1, 1, 1, 0, 0}, 0, {0, 0, 1, 1, 1, 0}}, {{0, 1, 1, 1, 0, 0}, 1, {1, 0, 1, 1, 1, 0}}, {{1, 1, 1, 1, 0, 0}, 0, {0, 1, 1, 1, 1, 0}}, {{1, 1, 1, 1, 0, 0}, 1, {1, 1, 1, 1, 1, 0}}, {{0, 0, 0, 1, 1, 0}, 0, {0, 0, 0, 0, 1, 1}}, {{0, 0, 0, 1, 1, 0}, 1, {1, 0, 0, 0, 1, 1}}, {{1, 0, 0, 1, 1, 0}, 0, {0, 1, 0, 0, 1, 1}}, {{1, 0, 0, 1, 1, 0}, 1, {1, 1, 0, 0, 1, 1}}, {{0, 1, 0, 1, 1, 0}, 0, {0, 0, 1, 0, 1, 1}}, {{0, 1, 0, 1, 1, 0}, 1, {1, 0, 1, 0, 1, 1}}, {{1, 1, 0, 1, 1, 0}, 0, {0, 1, 1, 0, 1, 1}}, {{1, 1, 0, 1, 1, 0}, 1, {1, 1, 1, 0, 1, 1}}}, edgeAudit -> {True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True}|>\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Three exact symbolic regressions and two independently implemented finite-state certificates; original conjecture remains open."
+}

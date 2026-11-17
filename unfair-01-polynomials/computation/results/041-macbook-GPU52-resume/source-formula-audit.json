@@ -1,0 +1,51 @@
+{
+  "conclusion": "Original GPU52 source uses the correct B inverse imaginary term. The prepared resume script alone used avR. That expression is algebraically wrong, but is roundoff-only for these conjugate-root-group inputs; v1 received masks retain their original correct-source score. The faulty resume script must still not be run.",
+  "max_broken_imagB_error": 9.332594409376818e-12,
+  "max_correct_reconstruction_or_imag_error": 1.854817955404542e-05,
+  "sample_count": 6,
+  "samples": [
+    {
+      "broken_resume_imagB_max_abs": 1.3196044579908808e-14,
+      "correct_imagB_max_abs": 6.381859680999107e-15,
+      "mask": 525312,
+      "task": 0
+    },
+    {
+      "broken_resume_imagB_max_abs": 3.029798634202052e-13,
+      "correct_imagB_max_abs": 5.27196653471061e-13,
+      "mask": 1,
+      "task": 1
+    },
+    {
+      "broken_resume_imagB_max_abs": 1.3940081146692724e-14,
+      "correct_imagB_max_abs": 1.1728313416805147e-14,
+      "mask": 0,
+      "task": 2
+    },
+    {
+      "broken_resume_imagB_max_abs": 9.332594409376818e-12,
+      "correct_imagB_max_abs": 8.779912279228023e-13,
+      "mask": 23166975,
+      "task": 2
+    },
+    {
+      "broken_resume_imagB_max_abs": 5.742582056624375e-12,
+      "correct_imagB_max_abs": 5.390223676662256e-12,
+      "mask": 23166976,
+      "task": 2
+    },
+    {
+      "broken_resume_imagB_max_abs": 2.7497979673968433e-12,
+      "correct_imagB_max_abs": 3.4303680316803386e-12,
+      "mask": 17,
+      "task": 3
+    }
+  ],
+  "sha256": {
+    "auditor": "4928a928ecf800cf43a7f65973cacd561bc99653d978c3693b3e667128620008",
+    "discarded_resume_search": "dee1f1831c6030d599739411fcc5dabf7fdf3e97632e9eecac5c9a13cefd6968",
+    "inputs": "0fec4b56469a7f133a13c6ca7701379233151833b885fe09f9b64a23f37f41a0",
+    "original_search": "49003af16478a3fbf49ebe098d6b03e88e44f9673bda6f6b27c26e8227273702"
+  },
+  "status": "passed_cpu_inverse_formula_audit"
+}

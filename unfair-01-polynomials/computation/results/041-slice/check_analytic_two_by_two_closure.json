@@ -1,0 +1,26 @@
+{
+  "status": "passed_exact_two_by_two_branch_regressions",
+  "branches": {
+    "c1=-2": {
+      "UV_p": "h1-2 < 0",
+      "outcome": "negative"
+    },
+    "c1=1": {
+      "forced": "h1=0, {r,t}={1,0}, c2=a+a^-1>=2",
+      "outcome": "UV_2p>=2"
+    },
+    "c1=0": {
+      "forced": "c2=1,h2=0,a=1,{r,t}={1,-1}",
+      "outcome": "Q reducible"
+    },
+    "c1=-1": {
+      "forced": "h1=1,c2=2,h2=0,a=1,{r,t}={-1,0}",
+      "outcome": "Q reducible"
+    }
+  },
+  "scope": "Exact checks of the forced equality factorizations and finite c1 branch labels; continuous inequalities are proved in the companion manuscript.",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "sympy": "1.14.0",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "source_sha256": "4657bd324bbbd0bb3ae6f16898b1e2ac947c460736e6e3439da5e2b9b44e6bd0"
+}
