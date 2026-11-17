@@ -4,7 +4,10 @@ from math import factorial, isqrt
 from functools import lru_cache
 import json,sys,hashlib
 from pathlib import Path
-S=10**9; T=10**18; K=64
+S=10**9; T=10**18
+K=int(sys.argv[1]) if len(sys.argv)>1 else 64
+TARGET=F(sys.argv[2]) if len(sys.argv)>2 else F(4187,5000)
+assert K>=64
 PARAMS=['-0.0021161707485670258','-0.002171588117597346','0.03368534128826296','0.025084694928075076','-0.0038913081911800527','0.708816831902889','0.0035625741962694224','-0.012629515020220292','0.3490932487151976','-0.0006351709996987754','-0.0006510120748306202']
 def add(a,b):return (a[0]+b[0],a[1]+b[1])
 def neg(a):return (-a[1],-a[0])
@@ -87,6 +90,6 @@ for a,b in zip(H,H[1:]+H[:1]):
     perimeter_upper+=F(z,S)
 assert perimeter_upper<F(88,7)
 upper=area+perimeter_upper*epsilon+F(22,7)*epsilon*epsilon
-assert upper<F(4187,5000)
-result={'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'K':K,'coordinate_denominator':S,'parameter_decimals_interpreted_exactly':PARAMS,'sample_count':len(pts),'hull_vertices':len(H),'rational_polygon_area':str(area),'epsilon':str(epsilon),'perimeter_upper':str(perimeter_upper),'strict_upper':str(upper),'strict_upper_display_only':float(upper),'target':'4187/5000','verified':True,'scope':'upper bound on m({D,B3,B5,B7,B9}), not on Lambda','hull_grid_points':H}
+assert upper<TARGET
+result={'python':sys.version,'script_sha256':globals().get('STREAMED_SOURCE_SHA256') or hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'K':K,'coordinate_denominator':S,'parameter_decimals_interpreted_exactly':PARAMS,'sample_count':len(pts),'hull_vertices':len(H),'rational_polygon_area':str(area),'epsilon':str(epsilon),'perimeter_upper':str(perimeter_upper),'strict_upper':str(upper),'strict_upper_display_only':float(upper),'target':str(TARGET),'verified':True,'scope':'upper bound on m({D,B3,B5,B7,B9}), not on Lambda','hull_grid_points':H}
 print(json.dumps(result,indent=2))
