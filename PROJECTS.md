@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；新增基形状坐标与面积证明 | 第9轮完成 | 七体联合放置与全域下界 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；规则最低点—有限阶尾系数递推已证 | 第8轮完成 | 次阶匹配、中等参数约束与中间正性 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；全部形式尾部匹配仍不充分已证 | 第9轮完成 | 有限参数联合约束与共同连续模 |

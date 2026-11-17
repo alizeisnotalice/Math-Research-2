@@ -1,0 +1,86 @@
+{
+  "formal_jets_alpha_half_c_one_q_zero": [
+    {
+      "order": 1,
+      "derivative": 4,
+      "value": "-180/19",
+      "target": "12"
+    },
+    {
+      "order": 2,
+      "derivative": 6,
+      "value": "21052260/62453",
+      "target": "180"
+    },
+    {
+      "order": 3,
+      "derivative": 8,
+      "value": "-4376392457696/160191945",
+      "target": "3360"
+    },
+    {
+      "order": 4,
+      "derivative": 10,
+      "value": "1335010540627814179696/336840476146449",
+      "target": "75600"
+    }
+  ],
+  "repair": {
+    "w": 10000.0,
+    "D": -3556.274410941867,
+    "old_fourth": -14313.015738198617,
+    "new_fourth": -99663.60160080342,
+    "target_second": 4.785,
+    "mean_change": "exactly zero in the mathematical formula",
+    "sampled_sup_change": 3.216394914912637e-05,
+    "analytic_sup_bound_formula_value": 0.00015350235175174359
+  },
+  "rows": [
+    {
+      "lambda_value": 0.5,
+      "before_F": 0.999781698254231,
+      "after_F": 0.9997816983698529,
+      "change": 1.1562184543123522e-10
+    },
+    {
+      "lambda_value": 1.0,
+      "before_F": 0.9974186877860414,
+      "after_F": 0.9974186895575754,
+      "change": 1.7715340305812788e-09
+    },
+    {
+      "lambda_value": 2.0,
+      "before_F": 0.9869503112494673,
+      "after_F": 0.9869503350907519,
+      "change": 2.3841284613190794e-08
+    },
+    {
+      "lambda_value": 4.0,
+      "before_F": 0.9945602129529926,
+      "after_F": 0.9945604045815553,
+      "change": 1.9162856268462036e-07
+    },
+    {
+      "lambda_value": 8.0,
+      "before_F": 0.9999217184890457,
+      "after_F": 0.9999219239525396,
+      "change": 2.0546349399630515e-07
+    },
+    {
+      "lambda_value": 12.0,
+      "before_F": 0.9999994059859655,
+      "after_F": 0.9999994192145228,
+      "change": 1.3228557360633886e-08
+    }
+  ],
+  "runtime": {
+    "python": "3.13.18",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1",
+    "numpy": "2.5.4",
+    "pid": 29806
+  },
+  "input_sha256": "f020ee2e84f2ccbc5aa446733425fcdf9e66b9268c84879987aa2fe6d680c388",
+  "script_sha256": "56c1e09f70eee59759d36ca2a7ec6a9400914c10019f4b683509124bf1af79b2",
+  "scope": "rational formal coefficients and exact moment cancellation; profile and quadrature are floating, sup-bound display not directed interval"
+}

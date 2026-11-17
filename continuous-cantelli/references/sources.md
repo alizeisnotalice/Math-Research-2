@@ -37,3 +37,8 @@
 - 继承 proofs/007-tail-matching.md，定位§3–§4 主项渐近及指数小线性化误差，基线a9ae8f3d6fa433fa16c320485c4b9858497c4b5d；SHA-256: a65cb3ccbf3a70e6a0e041e6ad0107bb41d8bb7b42f74f8b783522767a06f900。本轮次阶公式另作解析推导和实际符号核验，不把旧参数当作认证解。
 - 继承 computation/round007-matched-results.json，定位修正尾候选浮点参数，基线a9ae8f3d6fa433fa16c320485c4b9858497c4b5d；SHA-256: f020ee2e84f2ccbc5aa446733425fcdf9e66b9268c84879987aa2fe6d680c388。本轮次阶公式另作解析推导和实际符号核验，不把旧参数当作认证解。
 - 本轮无新增外部定理依赖，不主张首创性。
+
+## 第9轮来源与核验
+- 继承 proofs/008-tail-jet-recursion.md（§3 任意有限阶递推），基线e430dc517b5af6f2c6a9fd9c57fe8726d3b3b20c；SHA-256: 83f16faa4bf294ba19923ceae12a4846f33789369b43d172532bd139b630c811。本轮逐阶非零系数及局部修补另行证明，不把浮点轮廓当精确解。
+- 继承 computation/round007-matched-results.json（浮点轮廓参数），基线e430dc517b5af6f2c6a9fd9c57fe8726d3b3b20c；SHA-256: f020ee2e84f2ccbc5aa446733425fcdf9e66b9268c84879987aa2fe6d680c388。本轮逐阶非零系数及局部修补另行证明，不把浮点轮廓当精确解。
+- 光滑指定Taylor数据的构造采用缩小截断支撑与逐阶一致收敛，自包含展开，不依赖未核验的外部存在定理。不主张首创性。
