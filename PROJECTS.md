@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；剪切降维及无穷RM外包障碍，唯一局部符号轨道 | 第32轮完成 | 例外类bent补全、共同秩与非平坦谱 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；真实不可投影两倍块及剪切无穷族 | 第33轮完成 | 非可投影块共同预算、高容量构造与非平坦谱 |
