@@ -8,6 +8,6 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；七点全局恒等式与任意奇阶空间局部化 | 第32轮完成 | 长尾提升权重、端点质量与全局根几何 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；实二次非平凡原始块次数≥6；六点≤49严格公平 | 第45轮完成 | 实二次六次原始块的完整母式覆盖与无界余因子排除 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；实二次非平凡原始块次数≥7；六点≤50严格公平 | 第46轮完成 | 实二次七次原始块的完整母式覆盖与无界余因子排除 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
