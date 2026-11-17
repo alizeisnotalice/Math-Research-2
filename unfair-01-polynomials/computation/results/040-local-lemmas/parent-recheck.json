@@ -1,0 +1,32 @@
+{
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "checks": [
+    {
+      "script": "check_final_low_degree_slice_closure.py",
+      "source_sha256": "e77c93948963bae5dea8d82c426cd718ec7f4209f57e0e5c316cad31d53a04ed",
+      "returncode": 0,
+      "seconds": 0.3431948329998704,
+      "stdout": "{\n  \"status\": \"passed_exact_final_low_degree_closure_regressions\",\n  \"permitted_endpoint_pairs\": [\n    [\n      0,\n      0\n    ],\n    [\n      0,\n      1\n    ],\n    [\n      1,\n      0\n    ]\n  ],\n  \"terminal_cubic_identity\": \"[X^3]((1+X^2+X^3)H)=H_3+H_1+H_0\",\n  \"surviving_before_terminal_step\": \"Q=1+y^2+y^3, a^3+a-1=0 with a in (0,1)\",\n  \"phi5_factorization_checked\": true,\n  \"scope\": \"Exact symbolic regressions for the terminal cubic and Phi_5 steps; the universal proof and hypotheses are in the companion manuscript.\",\n  \"python\": \"3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]\",\n  \"sympy\": \"1.14.0\",\n  \"platform\": \"macOS-27.2-arm64-arm-64bit-Mach-O\",\n  \"source_sha256\": \"e77c93948963bae5dea8d82c426cd718ec7f4209f57e0e5c316cad31d53a04ed\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "counterexample_exact.py",
+      "source_sha256": "d8484bd4a06796b454c887b5116ebb4ed54a460a4ffa658b4f1ab7e42b77cbae",
+      "returncode": 0,
+      "seconds": 0.24835104199883062,
+      "stdout": "{\n  \"arithmetic\": \"exact SymPy ZZ\",\n  \"A\": [\n    0,\n    3,\n    7,\n    11,\n    14\n  ],\n  \"B\": [\n    0,\n    1,\n    13,\n    23,\n    33,\n    45,\n    46\n  ],\n  \"direct_sum_size\": 35,\n  \"UV_support\": [\n    0,\n    1,\n    3,\n    4,\n    7,\n    8,\n    11,\n    12,\n    13,\n    14,\n    15,\n    16,\n    20,\n    23,\n    24,\n    26,\n    27,\n    30,\n    33,\n    34,\n    36,\n    37,\n    40,\n    44,\n    45,\n    46,\n    47,\n    48,\n    49,\n    52,\n    53,\n    56,\n    57,\n    59,\n    60\n  ],\n  \"gcd\": \"x**10 - x**9 + x**7 - x**6 + x**5 - x**4 + x**3 - x + 1\",\n  \"factorization_U\": \"ell*Phi_5\",\n  \"factorization_V\": \"ell*Phi_6*Phi_7*Phi_30*Phi_66\",\n  \"noncyclotomic_witness\": \"ell(0)=1 and ell(-1)=-1, so ell has a root in (-1,0)\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "offp_overlap_verify_phi6.py",
+      "source_sha256": "99570cc176144553014fe3a990013f4d383935b9fb14b2bab134329a207fd917",
+      "returncode": 0,
+      "seconds": 0.027912708999792812,
+      "stdout": "R support [0, 2, 4]\nU support [0, 6, 11, 17]\nV support [0, 1, 4, 19, 20]\nH support [0, 1, 2, 3, 4, 6, 11, 12, 13, 14, 15, 17, 19, 20, 21, 22, 30, 31, 32, 33]\nUV support [0, 1, 4, 6, 7, 10, 11, 12, 15, 17, 18, 19, 20, 21, 25, 26, 30, 31, 36, 37]\noff-p overlap n=13: E_13=D_13=1\n",
+      "stderr": ""
+    }
+  ],
+  "all_passed": true,
+  "scope": "Exact regression identities and two explicit local-lemma counterexamples; not a proof of the original conjecture."
+}
