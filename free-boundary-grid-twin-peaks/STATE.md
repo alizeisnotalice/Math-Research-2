@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第40轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第41轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/036.md；第36轮证书见certificates/r036/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/041.md；第36轮证书见certificates/r036/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -335,3 +335,15 @@ k=o(n)的小高根支对远峰概率及Q贡献均消失；小低根支端点与�
 ## 第40轮追加（2026-11-17）
 
 原K2律严格有A2_{q,b}≤A1·2^{b−1}C(q−1,b)，小低支质量得明确normalizer接口但尚缺实际R增长。进一步用均匀一峰词中的连续分离块及ζ=a(B)/a_B(x)精确表示R与完整Q；绝对小低支可用入口几何替代，误差O(k/n)。n3逐桶计数/欧氏平方/Manhattan尾/入口量独立一致。固定根比较a(H)≤2^{b−1}a_H(x)在路径端点锐，边界sole-child桥仍只给线性代价。报告rounds/040.md，原题仍开放。旧CPU批全结束已回收，新同初态提案比较及MacBook独立CPU/GPU继续。
+
+
+## 第41轮追加（2026-11-17）
+
+原K2律有序(q,low_b)整数空间表补齐至n5：n3/n4/n5分别17/74/210个非零格，
+并逐格核验高低方向及距离矩的b:(q−b)关系。逐根与四根矩两套n3/n4程序
+逐字节/逐格一致，n3再与独立9!账本一致；MacBook实际n5单worker核心2.625GiB，
+总计数/距离矩与旧两账本一致且已退出。父Agent四个重编译运行及六审计全部通过回收。
+有限E(q/N)约.496/.483/.474、E(b/N)约.196/.172/.167不外推极限。原题开放，
+第一缺口仍为完整像集加权空间质量或固定远峰归一化占比。报告rounds/041.md；
+certificate入口certificates/r041/REPLAY.md。新两机CPU/GPU及弯曲切割计算另轮继续，
+agent同时活跃上限1，数值workers算力继续按用户无限制授权。
