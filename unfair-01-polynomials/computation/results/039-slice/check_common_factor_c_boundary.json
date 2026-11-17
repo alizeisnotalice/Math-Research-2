@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "L": 6,
+    "Q": "y**4 + y**3 + y**2 + y + 1",
+    "p": 2,
+    "q": 11
+  },
+  "polynomials": {
+    "C": "x**104 + x**100 + x**96 + x**92 + x**88 + x**82 + x**78 + x**74 + x**70 + x**66 + x**60 + x**56 + x**52 + x**48 + x**44 + x**38 + x**34 + x**30 + x**26 + x**22 + x**16 + x**12 + x**8 + x**4 + 1",
+    "H=U": "x**8 + x**6 + x**4 + x**2 + 1",
+    "S": "y**24 + y**18 + y**12 + y**6 + 1",
+    "V=S(x^p)": "x**48 + x**36 + x**24 + x**12 + 1",
+    "W=UV": "x**56 + x**54 + x**52 + x**50 + x**48 + x**44 + x**42 + x**40 + x**38 + x**36 + x**32 + x**30 + x**28 + x**26 + x**24 + x**20 + x**18 + x**16 + x**14 + x**12 + x**8 + x**6 + x**4 + x**2 + 1"
+  },
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "scope": "This refutes only an attempted inference from the common-factor conclusion Q(x^p)|H plus binary C/U/V/W to contradiction. It does not supply F,G or q-slice compatibility, so it is not a complete-crossed-model or original-conjecture counterexample.",
+  "source_sha256": "95bbe9728e5e95ffd366b73dc6993c9d4678576686899dec2e605a35479a57e9",
+  "status": "passed_exact_boundary_for_common_factor_plus_C",
+  "sympy": "1.14.0",
+  "verified": {
+    "C_binary": true,
+    "H_U_V_W_binary": true,
+    "Q(x^p)_divides_H": true,
+    "Q(x^p)_divides_U_and_V": true,
+    "Q_divides_S": true
+  }
+}

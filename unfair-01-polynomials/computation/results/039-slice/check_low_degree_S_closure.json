@@ -1,0 +1,26 @@
+{
+  "divisibility_examples": 96,
+  "finite_geometric_bound_checked_through_degree": 199,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "quadratic_parameter_branches": {
+    "constant_minus_one": {
+      "conclusion": "opposite signs, hence a positive root",
+      "product_of_roots": -1
+    },
+    "constant_one_negative_small_root": {
+      "Q(-1/2)": "5/4-b/2<0",
+      "Q(0)": 1,
+      "conclusion": "a root lies strictly in (-1/2,0)",
+      "condition": "b>=3"
+    },
+    "constant_one_positive_roots": {
+      "condition": "b<=-3",
+      "product": 1,
+      "sum_of_roots": "-b>0"
+    }
+  },
+  "scope": "Exact regression of the symbolic residue and quadratic branches; the unbounded theorem is supplied by the analytic proof, not a finite loop.",
+  "source_sha256": "e307b03c4baa9ba4e1ef2ecfc465d85e613aa44f874f0a632ab571dffe4b0e85",
+  "status": "passed_exact_low_degree_closure_regressions",
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,56 @@
+{
+  "elapsed_seconds": 41.835724332999234,
+  "input": {
+    "max_log_input_error": 0.0,
+    "max_root_product_error": 7.789787108985239e-14
+  },
+  "interpreter": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "negative_tests_rejected": [
+    "input_endpoint",
+    "wrong_mask_total",
+    "batch_cursor_jump",
+    "dropped_partial_batch",
+    "saved_coefficient",
+    "fake_completion"
+  ],
+  "numpy": "2.5.4",
+  "payload_sha256": "ce7ae5d6594bcdcf75baf35f3d0e9e7be3cb6329ed0165d6b868da620be0e998",
+  "scope": "Only two whole task mask spaces and the recorded contiguous task-2 prefix are audited. The global batch was interrupted; all unreceived masks are unknown. Numerical values are not exact exclusions or factorization certificates.",
+  "source_sha256": {
+    "auditor": "4fba9c1948fca2c480ed24c8ce12f50864a72888e5aa0e999af368a7d1454f98",
+    "inputs": "0fec4b56469a7f133a13c6ca7701379233151833b885fe09f9b64a23f37f41a0",
+    "payload": "ce7ae5d6594bcdcf75baf35f3d0e9e7be3cb6329ed0165d6b868da620be0e998",
+    "remote": "a86e686db0f77d053e0f4519d9217836d2c78730e1d74090aca871da3b44a0f8",
+    "search": "49003af16478a3fbf49ebe098d6b03e88e44f9673bda6f6b27c26e8227273702",
+    "stdout": "20ad4917f47d5aa744b22439fa14e32884d0422ad9edfe1ddb877772a3ccffa9"
+  },
+  "status": "passed_interrupted_gpu52_partial_audit",
+  "stream": {
+    "fair_control": {
+      "exact_rounded_product_binary": true,
+      "mask": 525312,
+      "rounding_change": 1.5497207641601562e-06
+    },
+    "max_gpu_cpu_coefficient_error": 7.08629424863716e-05,
+    "max_sample_product_error": 0.0001574880387921751,
+    "near_saved_cpu_score_lt_2e-5": [
+      {
+        "cpu_score": 7.853164106563781e-06,
+        "gpu_score": 7.951281304485747e-07,
+        "mask": 525312,
+        "task": 0
+      }
+    ],
+    "received_masks": 157384704,
+    "received_task_prefix": {
+      "masks": 23166976,
+      "of": 33554432,
+      "task": 2
+    },
+    "received_tasks_complete": [
+      0,
+      1
+    ],
+    "saved_cases": 19212
+  }
+}

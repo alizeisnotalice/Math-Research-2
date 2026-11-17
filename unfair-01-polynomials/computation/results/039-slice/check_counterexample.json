@@ -1,0 +1,50 @@
+{
+  "full_cross_failure": {
+    "A_x4": "1 - a",
+    "C_binary": false,
+    "C_coefficients_not_01": {
+      "12": "2",
+      "15": "2",
+      "18": "2",
+      "20": "2",
+      "21": "2",
+      "23": "2",
+      "6": "2",
+      "9": "2"
+    },
+    "reason": "a>1, hence 1-a<0; A is not coefficientwise nonnegative"
+  },
+  "identities": {
+    "H=F G": true,
+    "R=section_q(G)": true,
+    "T=H/U": "1+x",
+    "U=F R(x^p)": true
+  },
+  "integrality": {
+    "F_not_in_Qx": true,
+    "G_not_in_Qx": true,
+    "R_not_in_Qy": true,
+    "a_rational": false
+  },
+  "parameters": {
+    "minimal_polynomial": "a^3-a^2-1",
+    "p": 2,
+    "positive_isolating_interval": [
+      "1323084/902777",
+      "1792505/1223076"
+    ],
+    "q": 3
+  },
+  "polynomials": {
+    "F": "x**4*(a**2 - a) + x**2*(1 - a) + 1",
+    "G": "(x + 1)*(a*x**2 + 1)",
+    "H": "x**7 + x**6 + x**3 + x**2 + x + 1",
+    "R(y)": "a*y + 1",
+    "U": "x**6 + x**2 + 1"
+  },
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "scope": "Exact counterexample to fixed-point uniqueness/rationality from H,U binary plus polynomial F,G alone; it is not a complete crossed-model or original-conjecture counterexample.",
+  "source_sha256": "7025775602d53dd10f08d83aa5ef517fe8573d476eb35121d71a3595ca687c88",
+  "status": "passed_exact_boundary_counterexample",
+  "sympy": "1.14.0"
+}

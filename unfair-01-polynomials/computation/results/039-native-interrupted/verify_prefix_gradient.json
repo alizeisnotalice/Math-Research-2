@@ -1,0 +1,43 @@
+{
+  "finite_difference_checks": [
+    {
+      "absolute_error": 3.716422725119628e-09,
+      "analytic": 9.991711252318964,
+      "coordinate": "a(1, 3)",
+      "finite_difference": 9.991711248602542
+    },
+    {
+      "absolute_error": 2.3098870371995872e-08,
+      "analytic": 36.98453040178949,
+      "coordinate": "a(2, 5)",
+      "finite_difference": 36.98453042488836
+    },
+    {
+      "absolute_error": 6.132326291208301e-08,
+      "analytic": 34.54333760096175,
+      "coordinate": "b(0, 4)",
+      "finite_difference": 34.54333766228501
+    },
+    {
+      "absolute_error": 4.133717368404177e-09,
+      "analytic": 20.7626697588966,
+      "coordinate": "b(2, 8)",
+      "finite_difference": 20.762669763030317
+    }
+  ],
+  "fixed_logit_gradients_zero": true,
+  "max_finite_difference_error": 6.132326291208301e-08,
+  "max_linear_convolution_error": 7.549516567451064e-15,
+  "numpy": "2.5.4",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "scope": "Formula check only; no Wolfram GPU dispatch/global optimization claim.",
+  "seed": 2026111617,
+  "small_model": {
+    "L": 32,
+    "m": 6,
+    "n": 9,
+    "starts": 3
+  },
+  "source_sha256": "63dc03f028ad485ec34d894bd84fb103c98a528059cbbd2c2e1770e4326b513a",
+  "status": "passed_float64_dft_correlation_gradient_check"
+}
