@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；近2q维无固定低重量方向显式族及低余维删去归约 | 第24轮完成 | 包含极大空间的结构、一般残余与非平坦谱 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；稀疏Sidon种子强制MM补全的充要判据 | 第25轮完成 | 一般种子存在性、四点障碍与非平坦谱 |
