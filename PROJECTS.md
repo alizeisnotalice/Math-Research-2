@@ -8,6 +8,6 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；全层几何尾收缩已否定，n7全孔整数表完成 | 第29轮完成 | 非几何总尾和、全局加权根几何与远峰归一化 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；共同因子次数≤3条件下降；六点≤47严格公平 | 第42轮完成 | 任意额外切片因子下的Φ5分配与一般剥离入口 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；共轭商端点与二次域归约；六点≤48严格公平 | 第43轮完成 | 二次域整数范数系统中变号余因子的联合预算 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
