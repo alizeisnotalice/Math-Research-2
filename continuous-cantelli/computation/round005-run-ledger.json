@@ -1,0 +1,32 @@
+{
+  "runs": [
+    {
+      "script": "continuous-cantelli/computation/round005_exact.py",
+      "output": "continuous-cantelli/computation/round005-exact-results.json",
+      "returncode": 0,
+      "process_absent": true,
+      "runtime": {
+        "python": "3.13.18",
+        "pid": 22281
+      },
+      "scipy": "1.18.1",
+      "script_sha256": "d2f6a6651adc230da476a5b8fe64ec25da40b867eeb23ae69a93ba8017f44ab7"
+    },
+    {
+      "script": "continuous-cantelli/computation/round005_microstructure.py",
+      "output": "continuous-cantelli/computation/round005-microstructure-results.json",
+      "returncode": 0,
+      "process_absent": true,
+      "runtime": {
+        "python": "3.13.18",
+        "numpy": "2.5.4",
+        "pid": 22282,
+        "elapsed_seconds": 11.498837999999523
+      },
+      "scipy": "1.18.1",
+      "script_sha256": "304168452ba29f8a1dc59ca3027ae55144cc8660c8dd92cc552d1bf2a6872b6c"
+    }
+  ],
+  "seed": "none; deterministic quadrature",
+  "remote": "no round5 remote job; MacBook permission retained"
+}
