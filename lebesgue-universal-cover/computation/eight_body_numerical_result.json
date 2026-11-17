@@ -1,0 +1,190 @@
+{
+  "status": "completed",
+  "scope": "floating local search only; sampled-boundary hull and Powell do not certify m(F8), a lower bound, or global placement coverage",
+  "seed": 20261117,
+  "elapsed_seconds": 28.465735666999535,
+  "objective_calls": 41987,
+  "parameterization": "disk fixed at origin; B3 angle fixed at zero; x=[t3x,t3y,rho5,t5x,t5y,rho7,t7x,t7y,rho9,t9x,t9y,rho11,t11x,t11y,rho19,t19x,t19y,rhoF,tFx,tFy]",
+  "degrees_of_freedom": 20,
+  "input_seven_certificate": "/Volumes/data/CodexProjects/T2/.local/workspaces/lebesgue-main/lebesgue-universal-cover/computation/010-seven-body-certificate.json",
+  "input_seven_certificate_sha256": "b2519e76515b074433dfa92d0f0206e16f3ee298e1a8502e18da3df1bc37df64",
+  "input_seven_parameters_exact_strings": [
+    "-0.0020790704930314674",
+    "-0.002150754661986609",
+    "0.034418570172989604",
+    "0.025080434204262637",
+    "-0.003974555116224853",
+    "0.7112252356608182",
+    "0.0037732438582037697",
+    "-0.012567848773088535",
+    "0.3489814997015024",
+    "-0.000625881303159127",
+    "-0.0006373680298773501",
+    "0.11631747690492546",
+    "-0.0011598022717360227",
+    "0.006076119069870128",
+    "0.23425164464078788",
+    "-0.00090053054753337",
+    "-0.0015826217171541158"
+  ],
+  "fourier_shape": "h(t)=1/2+cos(3t)/80-19*cos(5t)/1200",
+  "curvature_radius_lower_bound": 0.02,
+  "best_parameters": [
+    -0.001596257929712958,
+    -0.002919442393794826,
+    0.05121464896977835,
+    0.02464167646388727,
+    -0.005976067545118195,
+    0.7189979342752278,
+    0.004516203660704413,
+    -0.012407545755070916,
+    0.34972813881990994,
+    -0.0005916505031997194,
+    -0.0007999287826682254,
+    0.1136138969315887,
+    -0.0011450052586001469,
+    0.006069465985436147,
+    0.23180815743002847,
+    -0.0006532317393185777,
+    -0.0021340749559243728,
+    2.0876915299317496,
+    0.007169937979170267,
+    -0.013467590404175424
+  ],
+  "coarse_sample_area": 0.8386569031403249,
+  "fine_sample_area": 0.8386828780639637,
+  "coarse_sampling": {
+    "arc_segments_per_Reuleaux_arc": 48,
+    "disk_vertices": 384,
+    "fourier_boundary_points": 512
+  },
+  "fine_sampling": {
+    "arc_segments_per_Reuleaux_arc": 192,
+    "disk_vertices": 1536,
+    "fourier_boundary_points": 2048
+  },
+  "phases": [
+    {
+      "phase": "fourier-only-multistart",
+      "starts": [
+        {
+          "start_angle": 0.0,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.8404999255092177,
+          "nit": 176,
+          "nfev": 331
+        },
+        {
+          "start_angle": 0.5235987755982988,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.8444186747125483,
+          "nit": 170,
+          "nfev": 300
+        },
+        {
+          "start_angle": 1.0471975511965976,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.8445266314257516,
+          "nit": 211,
+          "nfev": 388
+        },
+        {
+          "start_angle": 1.5707963267948966,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.8389093414341932,
+          "nit": 339,
+          "nfev": 621
+        },
+        {
+          "start_angle": 2.0943951023931953,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.8388076520270644,
+          "nit": 231,
+          "nfev": 406
+        },
+        {
+          "start_angle": 2.6179938779914944,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.848961674830375,
+          "nit": 144,
+          "nfev": 264
+        },
+        {
+          "start_angle": 3.141592653589793,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.8415517501035998,
+          "nit": 192,
+          "nfev": 347
+        },
+        {
+          "start_angle": 3.665191429188092,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.8434274883597289,
+          "nit": 242,
+          "nfev": 430
+        },
+        {
+          "start_angle": 4.1887902047863905,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.8404060323079481,
+          "nit": 291,
+          "nfev": 532
+        },
+        {
+          "start_angle": 4.71238898038469,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.840737703341892,
+          "nit": 252,
+          "nfev": 460
+        },
+        {
+          "start_angle": 5.235987755982989,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.84448430871135,
+          "nit": 212,
+          "nfev": 380
+        },
+        {
+          "start_angle": 5.759586531581287,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "fun": 0.8403742370769269,
+          "nit": 227,
+          "nfev": 402
+        }
+      ]
+    },
+    {
+      "phase": "joint-0",
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "fun": 0.8386569031403249,
+      "nit": 23,
+      "nfev": 18263
+    },
+    {
+      "phase": "joint-1",
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "fun": 0.8387326110207334,
+      "nit": 24,
+      "nfev": 18863
+    }
+  ],
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "script_sha256": "d5737f958fe5fd3763c75cf1b3136e43cade50a0a6c150578fce4b3a21e79dc4"
+}

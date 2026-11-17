@@ -12,6 +12,6 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；前三圆弧切除坐标已复算 | 第12轮完成 | 全局参数域与剩余圆弧构造 |
+| [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；八体严格可行上界<0.8388 | 第13轮完成 | 全局20维域与AH构造 |
 
 | [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；固定幅度正方差的有限约束校正已证 | 第12轮完成 | 共同连续模与一般尾部兼容性 |
