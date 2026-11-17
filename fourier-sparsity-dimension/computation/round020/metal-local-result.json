@@ -1,0 +1,47 @@
+{
+  "all_checks_passed" : true,
+  "backend" : "Metal int32 global staged ping-pong FWHT; Swift int64 CPU elementwise oracle",
+  "bad_abs_walsh_count" : 0,
+  "case_count" : 120,
+  "coefficients_checked" : 261888,
+  "device" : "Apple M6",
+  "elapsed_seconds" : 0.022400021553039551,
+  "gpu_cpu_mismatch_count" : 0,
+  "groups" : [
+    {
+      "cases" : 24,
+      "coefficients" : 768,
+      "N" : 16,
+      "phases" : 48
+    },
+    {
+      "cases" : 24,
+      "coefficients" : 3072,
+      "N" : 64,
+      "phases" : 48
+    },
+    {
+      "cases" : 24,
+      "coefficients" : 12288,
+      "N" : 256,
+      "phases" : 48
+    },
+    {
+      "cases" : 24,
+      "coefficients" : 49152,
+      "N" : 1024,
+      "phases" : 48
+    },
+    {
+      "cases" : 24,
+      "coefficients" : 196608,
+      "N" : 4096,
+      "phases" : 48
+    }
+  ],
+  "input_binding" : "5e7303916cc3029c7088955e5bed677071878cf717ed4578f078c46d02641789",
+  "mode" : "full",
+  "phases_checked" : 240,
+  "registry_id" : "4294968363",
+  "schema" : "a28-r020-metal-fwht-v1"
+}

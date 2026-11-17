@@ -1,0 +1,42 @@
+{
+  "schema": "a28-r020-macbook-cpu-final-receipt-v1",
+  "scope": "Final MacBook CPU finite crosscheck; no rerun was performed to create this receipt.",
+  "remote_host": "zzhMateBook-Pro-S.local",
+  "remote_directory": "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r020/common-mm-cpu",
+  "compile": {
+    "actual_command": "CLANG_MODULE_CACHE_PATH=/Users/zhengzhihao/CodexRemoteMath/a28-selector/cache/clang /usr/bin/clang++ -O3 -std=c++17 -pthread verify_common_mm_pairs.cpp -o verify_common_mm_pairs_final",
+    "source_sha256": "6e416b99f3f816985105d3fdfe69e827971f4aabb375a4f5d33d71f5ee74a150",
+    "binary_sha256": "5fc4b918a5b708315c59487195f9c05bb1b29818331f4cab15577fb3cfa8b2d2",
+    "clang_version": "Apple clang version 21.0.0 (clang-2100.4.1.1), arm64-apple-darwin27.3.0, POSIX threads"
+  },
+  "runs": [
+    {
+      "actual_command": "./verify_common_mm_pairs_final smoke smoke-final.json",
+      "mode": "smoke",
+      "case_count": 15,
+      "exit_code": 0,
+      "output_sha256": "59fc50eb5785d8d7630e125f590d4fd34a65426929ac89f7c1441907da42d523"
+    },
+    {
+      "actual_command": "./verify_common_mm_pairs_final full cases-gpu-final.json",
+      "mode": "full",
+      "seed": 20261120,
+      "case_count": 120,
+      "exit_code": 0,
+      "program_elapsed_seconds": 0.00695383,
+      "output_sha256": "5e7303916cc3029c7088955e5bed677071878cf717ed4578f078c46d02641789",
+      "all_checks_passed": true
+    }
+  ],
+  "final_output": {
+    "path": "/Volumes/data/CodexProjects/T2-A28-compute/fourier-sparsity-dimension/computation/round020/cases-gpu-final.json",
+    "sha256": "5e7303916cc3029c7088955e5bed677071878cf717ed4578f078c46d02641789",
+    "schema": "a28-r020-common-mm-crosscheck-v1",
+    "input_indexing": "index=x+(y<<k), x and y each k-bit, little-endian 64-bit truth words",
+    "crosscheck": "Equal to root local-final-cases.json after removing elapsed_seconds; root local output was not overwritten."
+  },
+  "current_readback": {
+    "method": "SSH read-only compiler/Python/version/hash query after completed runs",
+    "python_version_not_a_driver": "Python 3.9.6"
+  }
+}
