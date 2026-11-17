@@ -1,0 +1,105 @@
+{
+  "schema": "a28-r017-independent-cylinder-audit-v2",
+  "input": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round017/nonparallel-cases.json",
+  "output": "/Volumes/data/CodexTemp/T2/a28/r017-cylinder-check/cylinder-audit.json",
+  "input_sha256": "f6496c6403874a863933dd418530cc16874bc790c4f91204095e041ac225fb80",
+  "script_sha256": "b21628e69d3f61160e7ad0a8f2d12f7145d412f380a9a6c94320e5f254d04c4a",
+  "python": "3.15.0",
+  "arithmetic": "exact GF(2) and integer Walsh",
+  "elapsed_seconds": 12.059140707999177,
+  "cases": [
+    {
+      "name": "nonparallel_coupled_four_double_blocks",
+      "V_dimension": 11,
+      "freeze_nonstar_blocks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "star_blocks": [],
+      "freeze_rank_r": 2,
+      "V0_dimension": 9,
+      "V0_phase_count": 512,
+      "common_factors_intrinsic": {
+        "0": 6,
+        "1": 6,
+        "2": 6,
+        "3": 6
+      },
+      "cylinder_count": 8,
+      "cylinder_labels": [
+        "double_0_u0",
+        "double_0_u1",
+        "double_1_u0",
+        "double_1_u1",
+        "double_2_u0",
+        "double_2_u1",
+        "double_3_u0",
+        "double_3_u1"
+      ],
+      "joint_ambient_dimension": 15,
+      "cylinder_codimension": 3,
+      "disjoint_and_cover": true,
+      "normal_union_rank": 4,
+      "parameter_projection_rank": 4,
+      "K_dimension": 5,
+      "kernel_restriction_ranks_by_block": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "kernel_restriction_image_rank": 5,
+      "kernel_bound_m1_plus_2m2": 8,
+      "walsh_support_slices_exact": true
+    },
+    {
+      "name": "nonparallel_mixed_three_double_two_minimal",
+      "V_dimension": 10,
+      "freeze_nonstar_blocks": [],
+      "star_blocks": [
+        0,
+        1,
+        2
+      ],
+      "freeze_rank_r": 0,
+      "V0_dimension": 10,
+      "V0_phase_count": 1024,
+      "common_factors_intrinsic": {
+        "0": 6,
+        "1": 6,
+        "2": 6
+      },
+      "cylinder_count": 8,
+      "cylinder_labels": [
+        "double_0_u0",
+        "double_0_u1",
+        "double_1_u0",
+        "double_1_u1",
+        "double_2_u0",
+        "double_2_u1",
+        "minimal_3",
+        "minimal_4"
+      ],
+      "joint_ambient_dimension": 16,
+      "cylinder_codimension": 3,
+      "disjoint_and_cover": true,
+      "normal_union_rank": 5,
+      "parameter_projection_rank": 5,
+      "K_dimension": 5,
+      "kernel_restriction_ranks_by_block": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "kernel_restriction_image_rank": 5,
+      "kernel_bound_m1_plus_2m2": 8,
+      "walsh_support_slices_exact": true
+    }
+  ],
+  "failed_assertions": 0,
+  "exit_status": 0
+}
