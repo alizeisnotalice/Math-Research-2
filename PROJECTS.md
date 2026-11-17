@@ -11,3 +11,5 @@
 | [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；七次S3/S4任意次数整数余因子排除；六点≤51严格公平 | 第49轮完成 | 七次单非有理位置2的完整母式覆盖与无界余因子排除 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
+
+| [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；初始化 | 第0轮 | 文献核验与有限网桥接 |
