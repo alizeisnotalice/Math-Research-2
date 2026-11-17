@@ -1,0 +1,63 @@
+{
+  "d": 15,
+  "raw_ternary_code_count": 4782969,
+  "valid_low_prefix_count": 94971,
+  "valid_low_prefix_codes_sha256": "793ec7d0ed6340d0f8c7e2c59706d7592077d2917a022bd75dd217aa1c90029a",
+  "strict_filter_rejected_by_reason_counts": {
+    "forced_positive_fractional_cross_at_d_plus_i": 47928,
+    "prefix_product_coefficient_gt_1": 13964
+  },
+  "survivor_count": 46011,
+  "survivor_codes_sha256": "80f10e03d019aad3513165f940e45c311c50c3fb7dd981c3a4ab62cad0e009df",
+  "all_consumed_survivors_cpu_audited": true,
+  "float_arithmetic_used": false,
+  "plan_path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/d15_prefix_plan_39/d15-prefix-plan.json",
+  "plan_sha256": "aa1d442efdb8efe1c1bd65a99f7ab8021222553008ecc915b13f9800323e5a7a",
+  "plan_claim_boundary": "Exact finite low-prefix/necessary-filter plan only. It neither starts GPU nor proves nonexistence or factorization.",
+  "starts": 4096,
+  "coverage_by_start_rows": false,
+  "coverage_mode": "disjoint_cyclic_windows_by_restart_epoch",
+  "coverage_epochs_required": 12,
+  "coverage_epoch_offsets": [
+    0,
+    4096,
+    8192,
+    12288,
+    16384,
+    20480,
+    24576,
+    28672,
+    32768,
+    36864,
+    40960,
+    45056
+  ],
+  "full_plan_covered_after_epochs": 12,
+  "coverage_schedule_complete": true,
+  "degree_lift": {
+    "plan_m": 64,
+    "plan_n": 104,
+    "run_m": 96,
+    "run_n": 144,
+    "justification": "Low-prefix and d-cross checks only use indices at most d."
+  },
+  "parameters": {
+    "m": 96,
+    "n": 144,
+    "starts": 4096,
+    "steps": 72000,
+    "fractional_index": 15,
+    "margin": 0.001,
+    "restart_every": 6000,
+    "seed": 2026111707,
+    "out": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/d15_resume_adapter_39/m96n144-b4096-production",
+    "cpu_audit_only": false,
+    "prefix_plan": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/d15_prefix_plan_39/d15-prefix-plan.json",
+    "seconds": 14400.0,
+    "allow_incomplete_coverage_smoke": false
+  },
+  "worker_sha256": "3c7401a8b66742138bc24801997ce66f7163f9f016869b9fd0ad7ba8ca48422b",
+  "prefix_module_sha256": "0b1a06770a61fe113031209986f676c7e1afb862d27c0c697dbebc0a9f78481d",
+  "frozen_source_path": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/d14_round037/worker/gpu_factor_search_prefix.py",
+  "frozen_source_sha256": "f0044bf5a0667b1825d1b58662243bc6c9b49682c809d045680ef5c53d348d9f"
+}

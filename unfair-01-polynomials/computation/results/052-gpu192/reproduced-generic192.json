@@ -1,0 +1,42 @@
+{
+  "bindings": {
+    "base_source": "f0044bf5a0667b1825d1b58662243bc6c9b49682c809d045680ef5c53d348d9f",
+    "checkpoint": "9f2b96c9a1f7c17b1bc0aa0e2062e93592fc77ce3fcb50cee0a971de597f0396",
+    "config": "679b07d644b619e031803efe98fcffe7bf0879d20e74c1c65c3b276d55576e2c",
+    "cpu_audit": "ec3ad4a1a7b3c845f4bb919e519c5ea99f3b88e2f62be1e206a315bd9de8d793",
+    "fraction_verifier": "e7c8af4fa9be841dc955fdfc1b728a83ae3b453c05a7c8ec19f6386a7f1ad979",
+    "prefix_module": "0b1a06770a61fe113031209986f676c7e1afb862d27c0c697dbebc0a9f78481d",
+    "prefix_plan": "aa1d442efdb8efe1c1bd65a99f7ab8021222553008ecc915b13f9800323e5a7a",
+    "release": "e4db74302c36dceb3702b79e2ee2a6d2207e0236d258c3c11f1964f487afad0b",
+    "result": "2894113e6b6d3fe2d47c2d803026645cf38fc076fdb23d9da821ec83938c9224",
+    "script": "db53f8283780837b77ba70233fad5d84708d470822afe8faf37126328b37cda5",
+    "windows": "d912b8f2f3a7ec99ae5deb70ea04dba5e39a592cea200abeb342101cc492d087",
+    "worker": "3c7401a8b66742138bc24801997ce66f7163f9f016869b9fd0ad7ba8ca48422b"
+  },
+  "coverage": {
+    "cyclic_repeated_slots": 3141,
+    "prefix_pool": 46011,
+    "starts_per_window": 4096,
+    "union_covers_pool": true,
+    "windows": 12,
+    "windows_are_disjoint": false
+  },
+  "release": {
+    "cleanup_called": true,
+    "last_completed_step": 72000,
+    "pid": 92463,
+    "process_will_exit": true,
+    "remaining_tensor_bytes_before_exit": 23347968,
+    "terminal_status": "complete",
+    "timed_out": false
+  },
+  "samples": {
+    "maximum_designated_complement_error": "2.98023224275e-08",
+    "minimum_exact_decimal_residual": "0.001214543473906815",
+    "saved": 192,
+    "unique_json_cases": 192,
+    "unique_prefix_codes": 192
+  },
+  "scope": "Exact audit of saved JSON decimals, source bindings and cyclic prefix assignment; float/MPS trajectories remain non-certifying numerical exploration.",
+  "status": "passed_192_saved_exact_decimal_samples_and_cyclic_pool_coverage"
+}
