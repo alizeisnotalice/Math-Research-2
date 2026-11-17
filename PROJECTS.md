@@ -12,6 +12,6 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；全局20维紧域与一个严格局部排除盒 | 第24轮完成 | 并行核验反射覆盖、整体凸性与全域下界 |
+| [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；全局20维紧域与一个严格局部排除盒 | 第25轮完成 | 整合基覆盖、Sprague、EH及修正后下界剪枝 |
 
 | [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；有限对数尖峰在外部间隙条件下排除 | 第18轮完成 | 无间隙尾部预算、平坦及混合接触 |
