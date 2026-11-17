@@ -62,3 +62,10 @@
 - [Delsarte–Goethals–MacWilliams 1970](https://doi.org/10.1016/S0019-9958(70)90214-7) 本轮仅核题录/摘要；[Leducq，arXiv:1001.2554](https://arxiv.org/html/1001.2554) Theorem 1由文献子Agent核读，主Agent也实际重开HTML核对引言、定理1及其二元特例。最小重量支撑的仿射刻画属于经典结果。归档证明另给导数与周期的二元自包含论证，不主张单缺块推论首次出现。
 - [Borissov–Manev–Nikova，WCC2001原文](https://www.esat.kuleuven.be/cosic/publications/article-413.pdf) Lemma 2由文献子Agent核读：非最小码字的分解结论带有非最小性假设，不能推出全部两倍最小重量码字可拆成两个仿射块。Kasami–Tokura相关旧原文未取得全文；严格小于两倍最小重量的转述不能支付等号边界，本轮不依赖未读原命题。
 - 本轮显式RM(3,6)例子仅否定“次数＋两倍最小重量”简化。主Agent完整检查其48点补集无六块精确覆盖；不把它作为实际部分分割无法补全的反例。无外部论文全文纳入提交。
+
+## 第9轮补充（2026-11-17）
+
+- 一般部分仿射族的法向秩≤2^c−1采用本轮自包含证明。文献子Agent检索完整仿射分割、线性partial spreads与near partitions，没有找到同一结论和归纳；检索阴性不承担首次性断言，也不把线性partial spread文献直接移用于仿射不交族。
+- [Ballet–Rolland，arXiv:1203.4592v4](https://arxiv.org/html/1203.4592v4)：主Agent实际读取§4.1（HTML行319–323）和Remark 4.3的二元分支（行374–384）。第二重量3·2^(n−r−1)要求2≤r<n−1；本轮r=k,n=2k,k≥2符合。r1与r=n−1端点另有公式，未混用。[Kasami–Tokura–Azumi 1976](https://doi.org/10.1016/S0019-9958(76)90355-7)仅取得题录，未声称读其原全文。
+- bent相位次数界按经典Rothaus界归属；本轮正文给基于Walsh/Poisson、任意(k+1)维坐标面奇偶性与ANF差分的直接证明，明确k≥2。参考访问到的[Rothaus原论文题录](https://doi.org/10.1016/0097-3165(76)90024-8)不计为原文证明已核读。
+- 未提交外部文献全文。一般部分秩定理、近覆盖推论、有限计算与尚未解决的一般A28目标分开标记。
