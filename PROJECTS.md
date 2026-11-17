@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；全局20维外域已严格排除 | 第14轮完成 | 盒内面积下界与AH构造 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；固定幅度正方差的有限约束校正已证 | 第12轮完成 | 共同连续模与一般尾部兼容性 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；两个核心邻域的任意尾部补全严格排除 | 第13轮完成 | 核心分离与完整等式约束 |
