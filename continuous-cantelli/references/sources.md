@@ -73,3 +73,10 @@
 - `computation/round013_core_certificate.py`，SHA256 `aa948a33a1b3cb6b264598d8640e07d10d424ef3770ad9d2ce78c81159cc441f`；分别用于前轮核心下界、积分算法、冻结L8/L12节点输入。
 - `computation/round004-L8-T12-long.json`，SHA256 `a2ccd74596c61862d39888e6837d855ae70e71c826b43c2aae05316e7393061c`；分别用于前轮核心下界、积分算法、冻结L8/L12节点输入。
 - `computation/round004-L12-T12.json`，SHA256 `4338fd414c308a01d841f3d502d34d6322ec39b497dbd752f5f8474cb107206a`；分别用于前轮核心下界、积分算法、冻结L8/L12节点输入。
+
+## 第15轮内部来源及核验
+
+基线提交2a700ad032b38a40a87a7207c7d6787ddfbd40f9。重核三层条件权重、条件方差和四阶矩比较，新增六阶余项、有限核心和邻域证书。本轮没有新增外部文献或首创性声明。
+
+- `proofs/005-gaussian-marginal-relaxation.md`，第1节三层正测度及权重下界；SHA256 `8673ea8cfc36717f419ba145c2f34704cdc147e07c89a9f5dae0b457da9afc23`。
+- `proofs/013-tail-independent-core-cuts.md`，第5节严格次解公式与全部实参数上界；SHA256 `aaf6f69e45040975334c56db01a63a188b6adee66296e80ff0d0789d8fad0ba4`。
