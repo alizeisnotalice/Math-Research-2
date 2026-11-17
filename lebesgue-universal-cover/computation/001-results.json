@@ -1,0 +1,49 @@
+{
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "script_sha256": "4ecbe98cdb7dab9158e6432c60395308aab6ed4bd5e61bcc118c33bf83fe9fcf",
+  "seed": 20261117,
+  "polygon_checks": 101,
+  "tangential_example": {
+    "area": "5/6",
+    "perimeter": "10/3",
+    "slack": "0"
+  },
+  "finite_grid_checks": {
+    "1": {
+      "accepted": 256,
+      "scope": "all subsets containing origin"
+    },
+    "2": {
+      "accepted": 255,
+      "scope": "at most two nonzero grid points"
+    }
+  },
+  "error_budgets": [
+    {
+      "epsilon": "1/10",
+      "n": 240,
+      "delta": "1/80",
+      "error_upper_pi_replaced_by_4": "81/1600"
+    },
+    {
+      "epsilon": "1/100",
+      "n": 2400,
+      "delta": "1/800",
+      "error_upper_pi_replaced_by_4": "801/160000"
+    },
+    {
+      "epsilon": "1/1000",
+      "n": 24000,
+      "delta": "1/8000",
+      "error_upper_pi_replaced_by_4": "8001/16000000"
+    },
+    {
+      "epsilon": "1/10000",
+      "n": 240000,
+      "delta": "1/80000",
+      "error_upper_pi_replaced_by_4": "80001/1600000000"
+    }
+  ],
+  "status": "passed",
+  "scope": "finite exact checks, not solution of any finite-family minimum"
+}
