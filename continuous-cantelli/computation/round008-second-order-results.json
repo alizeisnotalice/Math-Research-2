@@ -1,0 +1,93 @@
+{
+  "formula": "(-c**3 - 2*c**2 - d4*(3*c**2 + 12*c + 4)/12)/c**4",
+  "parameters": {
+    "kappa": 0.1,
+    "u": 63.83780247965678,
+    "A": 1.1717287077784382,
+    "B": 0.2626377986875291,
+    "alpha": 0.09090909090909094,
+    "curvature": 73.98640863097208,
+    "m": 0.5540585960578989,
+    "root_bracket": [
+      40,
+      100
+    ],
+    "root_residual": -3.885780586188048e-16
+  },
+  "derived": {
+    "fourth_derivative": -14313.015738198617,
+    "surplus_second": 0.6753016848300266,
+    "deficit_second": 4.785,
+    "required_tail_q": -4.896444888570225,
+    "actual_tail_q": -1.5,
+    "Csur": 0.16665139251208402,
+    "Ctail": 0.16665139251208402
+  },
+  "rows": [
+    {
+      "lambda_value": 20.0,
+      "surplus_normalized": 1.0016990022481294,
+      "deficit_normalized": 1.01213563327974,
+      "surplus_second": 0.6796008992517422,
+      "deficit_second": 4.854253311895995,
+      "quadrature_errors": [
+        9.615631410209754e-14,
+        7.68511265768125e-17
+      ]
+    },
+    {
+      "lambda_value": 40.0,
+      "surplus_normalized": 1.0004227296726516,
+      "deficit_normalized": 1.0030013123941455,
+      "surplus_second": 0.6763674762424898,
+      "deficit_second": 4.802099830632756,
+      "quadrature_errors": [
+        1.0853313524218178e-13,
+        6.651980393374817e-18
+      ]
+    },
+    {
+      "lambda_value": 80.0,
+      "surplus_normalized": 1.0001055574340436,
+      "deficit_normalized": 1.0007483221584126,
+      "surplus_second": 0.6755675778791215,
+      "deficit_second": 4.78926181384054,
+      "quadrature_errors": [
+        8.511720503853033e-15,
+        7.269066128553866e-19
+      ]
+    },
+    {
+      "lambda_value": 160.0,
+      "surplus_normalized": 1.0000263815673263,
+      "deficit_normalized": 1.0001869556498142,
+      "surplus_second": 0.675368123552289,
+      "deficit_second": 4.786064635243292,
+      "quadrature_errors": [
+        8.671266394224278e-15,
+        8.693290258700572e-20
+      ]
+    },
+    {
+      "lambda_value": 320.0,
+      "surplus_normalized": 1.0000065949051993,
+      "deficit_normalized": 1.0000467311143333,
+      "surplus_second": 0.675318292405791,
+      "deficit_second": 4.785266107728603,
+      "quadrature_errors": [
+        8.647601335174316e-15,
+        1.0783228954050075e-20
+      ]
+    }
+  ],
+  "runtime": {
+    "python": "3.13.18",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1",
+    "numpy": "2.5.4",
+    "pid": 27977
+  },
+  "source_sha256": "f020ee2e84f2ccbc5aa446733425fcdf9e66b9268c84879987aa2fe6d680c388",
+  "script_sha256": "39ec587982daa877fa4fb113a75e8ced03e867cde1363e06e63d99fd1b429a7b",
+  "scope": "exact symbolic formula; numerical profile from round7, floating quadrature and truncation not certified"
+}
