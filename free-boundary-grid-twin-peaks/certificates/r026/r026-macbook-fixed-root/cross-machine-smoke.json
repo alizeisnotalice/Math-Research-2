@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Same frozen source and deterministic seed streams were exercised locally and on the MacBook before production. Exact equality includes terminal hashes and every CSV field; timing is not a CSV field.",
+  "source_sha256": "d8e7040f251c60ba7b660fcdba9e153b9dc21e351105fb474ad32314cc3456a4",
+  "remote_binary_sha256": "4399b9633a95bc14dfb148d4055a0df5a0e8678054d55ce7ec58a8f958649cf6",
+  "cases": [
+    {"n": 3, "root": 0, "particles": 257, "replicates": 2, "move_steps": 4, "threads": 2, "seed_base": "0xA0251000", "all_CSV_fields_equal": true, "metadata_equal": true},
+    {"n": 16, "root": 119, "particles": 17, "replicates": 1, "move_steps": 16, "threads": 1, "seed_base": "0xA0251001", "all_CSV_fields_equal": true, "metadata_equal": true}
+  ]
+}

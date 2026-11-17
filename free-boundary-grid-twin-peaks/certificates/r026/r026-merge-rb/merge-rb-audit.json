@@ -1,0 +1,188 @@
+{
+  "scope": "Exact target-law n3 identity plus finite r025 terminal-trace diagnostic; no GPU execution",
+  "n3_exact": {
+    "method": "all 9! words, exact Fraction arithmetic, independent first-merge scan",
+    "full_K2_totals": {
+      "one": "143808",
+      "d2": "633600",
+      "f0": "1620480",
+      "g0": "-456960"
+    },
+    "tau2_L_totals": {
+      "one": "143808",
+      "d2": "633600",
+      "f0": "1620480",
+      "g0": "-456960"
+    },
+    "tau2_m_totals": {
+      "one": "143808",
+      "d2": "633600",
+      "f0": "1620480",
+      "g0": "-456960"
+    },
+    "every_target_total_recovers_exactly": true,
+    "complete_fixed_fibres": 32128,
+    "every_complete_fibre_recovers_all_H_totals": true,
+    "tau2_words_with_L_not_equal_m": 67200,
+    "tau2_words_first_merge_at_terminal_last_vertex": 0
+  },
+  "trace_diagnostic": {
+    "input_raw_sha256": "b9034d0795cecd32f4799f26404168f5b1a616a536354bb736e26ddeefdeb11a",
+    "input_trace_sha256": "dc6b27ad38ace87bd3660532896e102d0a2e8edc8d7cdd7f2fc532a5a07d21ff",
+    "particles": 17,
+    "particles_with_L_not_equal_m": 12,
+    "L_weighted_terminal_totals": {
+      "one": "26",
+      "d2": "108",
+      "f0": "280",
+      "g0": "-76"
+    },
+    "m_weighted_terminal_totals": {
+      "one": "239/8",
+      "d2": "2777/24",
+      "f0": "1871/6",
+      "g0": "-151/2"
+    },
+    "terminal_last_vertex_is_first_merge_for_particles": 0,
+    "per_particle_first_merge": [
+      {
+        "a": 1,
+        "b": 1,
+        "q": 2,
+        "m": "1",
+        "L": 1,
+        "d2": 4
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "q": 5,
+        "m": "5/2",
+        "L": 1,
+        "d2": 2
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "q": 2,
+        "m": "1",
+        "L": 1,
+        "d2": 2
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "q": 6,
+        "m": "15/8",
+        "L": 2,
+        "d2": 5
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "q": 3,
+        "m": "3/2",
+        "L": 1,
+        "d2": 2
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "q": 5,
+        "m": "5/3",
+        "L": 1,
+        "d2": 4
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "q": 2,
+        "m": "1",
+        "L": 1,
+        "d2": 2
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "q": 2,
+        "m": "1",
+        "L": 1,
+        "d2": 4
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "q": 2,
+        "m": "1",
+        "L": 1,
+        "d2": 4
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "q": 4,
+        "m": "3/2",
+        "L": 1,
+        "d2": 5
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "q": 6,
+        "m": "5/3",
+        "L": 1,
+        "d2": 5
+      },
+      {
+        "a": 5,
+        "b": 1,
+        "q": 6,
+        "m": "3",
+        "L": 5,
+        "d2": 5
+      },
+      {
+        "a": 1,
+        "b": 5,
+        "q": 6,
+        "m": "3",
+        "L": 1,
+        "d2": 2
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "q": 4,
+        "m": "3/2",
+        "L": 2,
+        "d2": 5
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "q": 5,
+        "m": "5/3",
+        "L": 2,
+        "d2": 5
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "q": 4,
+        "m": "2",
+        "L": 3,
+        "d2": 4
+      },
+      {
+        "a": 1,
+        "b": 5,
+        "q": 6,
+        "m": "3",
+        "L": 1,
+        "d2": 5
+      }
+    ],
+    "scope": "Finite trace comparison only. Different L and m totals on this incomplete particle sample do not contradict the fibre conditional-expectation identity."
+  },
+  "theory": "For a complete fixed first-merge fibre and a root-symmetric interleaving-invariant H, E_tau2[L H | fibre] = m H. This is not L=m per word and does not itself establish finite-SMC variance reduction."
+}

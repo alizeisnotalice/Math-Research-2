@@ -1,0 +1,137 @@
+{
+  "scope": "Exact integer subset DP; checks only n=3,4, not a general proof.",
+  "runs": [
+    {
+      "n": 3,
+      "top_H": 156,
+      "minimum_H": 156,
+      "all_ge_top": true,
+      "rows": [
+        {
+          "word": "RR",
+          "vertices": [
+            0,
+            1,
+            2
+          ],
+          "H": 156
+        },
+        {
+          "word": "RD",
+          "vertices": [
+            0,
+            1,
+            4
+          ],
+          "H": 336
+        },
+        {
+          "word": "DR",
+          "vertices": [
+            0,
+            3,
+            4
+          ],
+          "H": 336
+        },
+        {
+          "word": "DD",
+          "vertices": [
+            0,
+            3,
+            6
+          ],
+          "H": 156
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "top_H": 4213440,
+      "minimum_H": 4213440,
+      "all_ge_top": true,
+      "rows": [
+        {
+          "word": "RRR",
+          "vertices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "H": 4213440
+        },
+        {
+          "word": "RRD",
+          "vertices": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "H": 14580720
+        },
+        {
+          "word": "RDR",
+          "vertices": [
+            0,
+            1,
+            5,
+            6
+          ],
+          "H": 17422020
+        },
+        {
+          "word": "RDD",
+          "vertices": [
+            0,
+            1,
+            5,
+            9
+          ],
+          "H": 28440720
+        },
+        {
+          "word": "DRR",
+          "vertices": [
+            0,
+            4,
+            5,
+            6
+          ],
+          "H": 28440720
+        },
+        {
+          "word": "DRD",
+          "vertices": [
+            0,
+            4,
+            5,
+            9
+          ],
+          "H": 17422020
+        },
+        {
+          "word": "DDR",
+          "vertices": [
+            0,
+            4,
+            8,
+            9
+          ],
+          "H": 14580720
+        },
+        {
+          "word": "DDD",
+          "vertices": [
+            0,
+            4,
+            8,
+            12
+          ],
+          "H": 4213440
+        }
+      ]
+    }
+  ]
+}

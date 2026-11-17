@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-16，本地第23轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第26轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/025.md；第25轮证书见certificates/r025/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/026.md；第26轮证书见certificates/r026/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -110,3 +110,20 @@
 第一未证步骤不变：证明线仍需控制 \(W\) 加权根几何的 \(o(n^2)\) 量级；证伪线仍需固定
 远峰质量的归一化下界。完整白名单、来源哈希与重放范围见 `certificates/r025/` 和
 `manifest-r025.json`。
+
+## 第26轮追加（2026-11-17）
+
+第26轮已归档；**原题仍开放，总目标 active。**
+
+- 严格行释放纤维：对 n≥3，固定两行完成词的出生秩 r_i，合法插回数恰为
+  C=(M+n)!/(M+p)! × ∏(r_i+i−1)。由此得到显式上下界，尚未控制全局 A1/A2。
+- 独立算法核验 n=6 的边界完成数；MacBook 精确推进至 n=7。
+  顶行两峰臂族 F7/A2≈1.6924566342e−10，仅为有限精确值。
+- 单调路径完成数 h(S)≥h(toprow) 候选在 n=3--6 全扫描存活；全 n 比较仍未证。
+  恰一单点支的首次合并层有 U1=Bplus1+B1/2，亦未给全局质量界。
+- 首次合并条件平均的 n=3 全枚举与 GPU trace 完成，n=3/n=7 有限校准已归档。
+  修正了初版 n=7 参考 B 字段误用 n=3 的汇总错误；最终审计不代表精度或混合认证。
+- CPU 恢复批及 MacBook 固定根批已完成并核验退出；两份大尺寸 GPU 批仍运行，留待后轮。
+
+第一未证步骤仍为 W 加权根几何的全局小量估计，或固定正远峰质量的归一化证明。
+本轮入口 rounds/026.md、certificates/r026/REPLAY.md、manifest-r026.json。

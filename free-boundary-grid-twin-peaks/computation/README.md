@@ -1,6 +1,6 @@
 # 计算复现
 
-所有脚本使用Python标准库；不需要安装numpy/sympy。精确计数使用int/Fraction或C++ unsigned __int128；n≤5限制不可擅自放大。随机搜索不承担渐近证明或混合认证。
+各轮使用 Python 标准库、C++ 整数程序或 Swift/Metal；具体依赖、整数位宽和适用尺寸以各程序及轮次证书为准，不得擅自放大。随机搜索不承担渐近证明或混合认证。
 
 在 `/Volumes/data/CodexProjects/T2` 工作。依赖data写入前确认其已挂载。临时输出根为 `/Volumes/data/CodexTemp/T2/free-boundary-grid-twin-peaks`，C++共享缓存为 `/Volumes/data/CodexTemp/cache/clang`。
 
@@ -237,3 +237,7 @@ python3 fixed_d_fibre_obstruction.py
 ```
 
 新位集核及P524288批次未计入本轮完成结果。
+
+## 第26轮
+
+行释放整数递推、独立峰集容斥、n=7 MacBook 计数、条件平均采样审计及已完成 CPU 批次，见 [本轮重放入口](../certificates/r026/REPLAY.md) 和 [报告](../rounds/026.md)。GPU 大批仍在运行，未计入本轮完成证据。

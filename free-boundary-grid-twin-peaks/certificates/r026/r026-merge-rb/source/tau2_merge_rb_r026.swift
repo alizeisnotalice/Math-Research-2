@@ -1,0 +1,517 @@
+import Foundation
+import Metal
+
+// Experimental original-law SMC, n<=32 (MAXN prefix capacity is 1024).  It stores an exact occupancy and
+// external-boundary bitset.  It is deliberately separate from r013 production.
+let metal = """
+  #include <metal_stdlib>
+  using namespace metal;
+  constant uint W=32, MAXN=1024;
+  struct P{uint n,N,tau,r,lo,hi;};
+  struct S{uint o[W],b[W],r1,r2;};
+  inline ulong seed(constant P&p){return(ulong(p.hi)<<32)|p.lo;}
+  inline ulong nxt(thread ulong&x){x+=0x9e3779b97f4a7c15ul;ulong z=x;z=(z^(z>>30))*0xbf58476d1ce4e5b9ul;z=(z^(z>>27))*0x94d049bb133111ebul;return z^(z>>31);}
+  inline ulong key(constant P&p,uint c,uint d){return seed(p)^(ulong(p.r)<<32)^(ulong(c)*0x9e3779b97f4a7c15ul)^(ulong(d)*0xd1b54a32d192ed03ul);}
+  inline ulong below(thread ulong&x,ulong n){ulong t=(0ul-n)%n;while(1){ulong z=nxt(x);if(z>=t)return z%n;}}
+  inline uint lm(constant P&p){uint r=p.N&31;return r?((1u<<r)-1u):0xffffffffu;}
+  inline bool has(const thread S&s,uint v){return(s.o[v>>5]&(1u<<(v&31)))!=0;}
+  inline void put(thread uint*x,uint v){x[v>>5]|=1u<<(v&31);} inline void del(thread uint*x,uint v){x[v>>5]&=~(1u<<(v&31));}
+  inline uint aw(const thread S&s,uint q,constant P&p){uint last=(p.N-1)>>5;if(q>last)return 0;uint f=~s.o[q];if(q==last)f&=lm(p);if(p.r==1)return f;if(p.r==p.tau)return f&~s.b[q];return s.b[q];}
+  inline uint cnt(const thread S&s,constant P&p){uint z=0;for(uint q=0;q<W;q++)z+=popcount(aw(s,q,p));return z;}
+  inline uint kth(const thread S&s,uint k,constant P&p){for(uint q=0;q<W;q++){uint x=aw(s,q,p),c=popcount(x);if(k>=c){k-=c;continue;}for(uint j=0;j<32;j++)if(x&(1u<<j)){if(!k)return(q<<5)+j;--k;}}return p.N;}
+  inline void add(thread S&s,uint v,constant P&p){put(s.o,v);del(s.b,v);uint x=v%p.n,y=v/p.n;if(x&&!has(s,v-1))put(s.b,v-1);if(x+1<p.n&&!has(s,v+1))put(s.b,v+1);if(y&&!has(s,v-p.n))put(s.b,v-p.n);if(y+1<p.n&&!has(s,v+p.n))put(s.b,v+p.n);}
+  kernel void count(device S*x[[buffer(0)]],device uint*a[[buffer(1)]],constant P&p[[buffer(2)]],device uint*d[[buffer(3)]],uint i[[thread_position_in_grid]]){thread S q=x[i];a[i]=d[0]?0:cnt(q,p);}
+  kernel void sum(device uint*a[[buffer(0)]],device ulong*g[[buffer(1)]],constant uint&n[[buffer(2)]],uint j[[thread_position_in_grid]]){uint lo=256*j,hi=min(lo+256,n);ulong z=0;for(uint i=lo;i<hi;i++)z+=a[i];g[j]=z;}
+  kernel void cdf(device ulong*g[[buffer(0)]],device ulong*c[[buffer(1)]],device ulong*t[[buffer(2)]],device uint*d[[buffer(3)]],constant uint&G[[buffer(4)]],constant uint&r[[buffer(5)]],uint i[[thread_position_in_grid]]){if(i)return;ulong z=0;for(uint j=0;j<G;j++){z+=g[j];c[j]=z;}t[r]=z;if(!z)d[0]=1;}
+  kernel void prop(device S*x[[buffer(0)]],device uint*a[[buffer(1)]],device ulong*c[[buffer(2)]],device ulong*t[[buffer(3)]],device S*y[[buffer(4)]],constant P&p[[buffer(5)]],constant uint&n[[buffer(6)]],constant uint&r[[buffer(7)]],device uint*d[[buffer(8)]],constant uint&st[[buffer(9)]],device uint*parents[[buffer(10)]],device ushort*px[[buffer(11)]],device ushort*py[[buffer(12)]],uint ch[[thread_position_in_grid]]){if(ch>=n)return;if(d[0]){parents[ch]=0xffffffffu;y[ch]=x[ch];for(uint k=0;k+1<p.r;k++)py[ch*MAXN+k]=px[ch*MAXN+k];return;}ulong T=t[r],z=key(p,ch,1),u=below(z,T);if(st)u=(ulong(ch)*T+u)/n;uint G=(n+255)/256,L=0,H=G-1;while(L<H){uint m=(L+H)/2;if(u<c[m])H=m;else L=m+1;}ulong pre=L?c[L-1]:0,v=u-pre,s=0;uint lo=256*L,hi=min(lo+256,n),par=lo;for(uint i=lo;i<hi;i++){if(v<s+a[i]){par=i;break;}s+=a[i];}parents[ch]=par;thread S q=x[par];for(uint k=0;k+1<p.r;k++)py[ch*MAXN+k]=px[par*MAXN+k];z=key(p,ch,2);uint w=kth(q,uint(below(z,a[par])),p);py[ch*MAXN+p.r-1]=ushort(w);if(p.r==1)q.r1=w;if(p.r==p.tau)q.r2=w;add(q,w,p);y[ch]=q;}
+  inline bool rebuildPrefix(thread S&s,device ushort*pref,uint id,constant P&p){for(uint w=0;w<W;w++){s.o[w]=0;s.b[w]=0;}s.r1=0;s.r2=0;uint births=0;for(uint q=0;q<p.r;q++){uint v=uint(pref[id*MAXN+q]);if(v>=p.N||has(s,v))return false;bool birth=(s.b[v>>5]&(1u<<(v&31)))==0;bool want=(q==0)||(q+1==p.tau);if(birth!=want)return false;if(birth){births++;if(q==0)s.r1=v;else s.r2=v;}add(s,v,p);}return births==((p.r<p.tau)?1u:2u);}
+  // r>=2: with probability 1/2 choose i uniformly in {0,1}, and with
+  // probability 1/2 choose i uniformly in {0,...,r-1}.  Hence p0=p1=
+  // 1/4+1/(2r), pi=1/(2r) for i>=2.  The vertex is still uniform on V.
+  // r=1 is deliberately the historical uniform proposal.  For fixed rank
+  // weights this is a symmetric proposal: a swap i<->j has mass
+  // (p_i+p_j)/N in both directions; a replace at i has mass p_i/N both
+  // ways.  Invalid candidates remain self loops.
+  kernel void move(device S*state[[buffer(0)]],device ushort*pref[[buffer(1)]],constant P&p[[buffer(2)]],constant uint&n[[buffer(3)]],constant uint&L[[buffer(4)]],device uint*d[[buffer(5)]],uint ch[[thread_position_in_grid]]){if(ch>=n||!L||d[0])return;thread S s=state[ch];for(uint step=0;step<L;step++){ulong z=key(p,ch,step+3u);uint i=0;if(p.r>=2u){uint branch=uint(below(z,2ul));i=branch?uint(below(z,ulong(p.r))):uint(below(z,2ul));}uint v=uint(below(z,ulong(p.N))),j=p.r;for(uint k=0;k<p.r;k++)if(uint(pref[ch*MAXN+k])==v){j=k;break;}ushort oldi=pref[ch*MAXN+i],oldj=(j<p.r?pref[ch*MAXN+j]:ushort(v));pref[ch*MAXN+i]=oldj;if(j<p.r)pref[ch*MAXN+j]=oldi;thread S trial=s;if(rebuildPrefix(trial,pref,ch,p))s=trial;else{pref[ch*MAXN+i]=oldi;if(j<p.r)pref[ch*MAXN+j]=oldj;}}state[ch]=s;}
+  kernel void term(device S*x[[buffer(0)]],device uint*a[[buffer(1)]],device ulong*m[[buffer(2)]],device ulong*f[[buffer(3)]],device long*h[[buffer(4)]],constant P&p[[buffer(5)]],constant uint&n[[buffer(6)]],device uint*d[[buffer(7)]],uint j[[thread_position_in_grid]]){if(d[0]){m[j]=0;f[j]=0;h[j]=0;return;}uint lo=256*j,hi=min(lo+256,n);ulong z=0,ff=0;long hh=0;for(uint i=lo;i<hi;i++){thread S q=x[i];uint r=q.r2;if(p.r==p.tau)r=kth(q,0,p);int X=int(q.r1%p.n)-int(r%p.n),Y=int(q.r1/p.n)-int(r/p.n);z+=ulong(a[i])*ulong(X*X+Y*Y);if(p.tau<=p.N){int xp=2*int(q.r1%p.n)-int(p.n-1),yp=2*int(q.r1/p.n)-int(p.n-1),xq=2*int(r%p.n)-int(p.n-1),yq=2*int(r/p.n)-int(p.n-1);ff+=ulong(a[i])*ulong(xp*xp+yp*yp+xq*xq+yq*yq);hh+=long(a[i])*long(xp*xq+yp*yq);}}m[j]=z;f[j]=ff;h[j]=hh;}
+  """
+// A deliberately separate runtime library: terminal-only exact inverse fibres.
+// Keeping this small avoids recompiling or perturbing the frozen SMC kernels.
+let inverseMetal = """
+  #include <metal_stdlib>
+  using namespace metal;
+  constant uint W2=32, MAXN2=1024;
+  struct P2{uint n,N,tau,r,lo,hi;};
+  struct S2{uint o[W2],b[W2],r1,r2;};
+  inline uint md2(uint a,uint b,uint n){return uint(abs(int(a%n)-int(b%n))+abs(int(a/n)-int(b/n)));}
+  inline bool ed2(uint a,uint b,uint n){return md2(a,b,n)==1;}
+  inline bool has2(const thread S2&s,uint v){return (s.o[v>>5]&(1u<<(v&31)))!=0;}
+  inline uint sv2(device const ushort*pref,const thread S2&q,uint id,uint k,uint N){
+    if(k+1<N)return uint(pref[id*MAXN2+k]);
+    for(uint v=0;v<N;v++)if(!has2(q,v))return v;
+    return N;
+  }
+  // The rank table is terminal-only: rank[id*1024+v] is sigma^{-1}(v).
+  // It converts every "earlier tau neighbour" query from an O(N) prefix scan
+  // to inspection of at most the four graph neighbours of w.
+  inline bool nearFast(device const ushort*rank,uint id,uint d,uint mask,uint r,uint w,uint N,uint n){
+    uint ti=r-popcount(mask), x=w%n, y=w/n;
+    uint nb[4]={x?w-1:N,x+1<n?w+1:N,y?w-n:N,y+1<n?w+n:N};
+    for(uint j=0;j<4;j++){uint z=nb[j];if(z>=N)continue;uint rz=uint(rank[id*MAXN2+z]);
+      if(rz==0 || (rz>=d && rz-d+1<ti) || (rz>0 && rz<d && (mask&(1u<<(rz-1)))))return true;
+    }
+    return false;
+  }
+  inline bool canon2(device const ushort*pref,const thread S2&q,uint id,uint N,uint n,uint d,uint v){
+    uint cur=sv2(pref,q,id,0,N);
+    for(uint k=1;k<d;k++){
+      uint best=N,old=md2(cur,v,n);
+      for(uint w=0;w<N;w++)if(ed2(cur,w,n)&&md2(w,v,n)+1==old&&w<best)best=w;
+      if(best!=sv2(pref,q,id,k,N))return false;
+      cur=best;
+    }
+    return true;
+  }
+  inline ulong invFast(device const ushort*pref,device const ushort*rank,const thread S2&q,uint id,uint N,uint n,uint d){
+    if(md2(sv2(pref,q,id,0,N),sv2(pref,q,id,d-1,N),n)!=d-1)return 0;
+    for(uint k=0;k+1<d;k++)if(!ed2(sv2(pref,q,id,k,N),sv2(pref,q,id,k+1,N),n))return 0;
+    uint plen=d-1,full=(1u<<plen)-1,T=N-plen,u=sv2(pref,q,id,0,N); ulong ans=0;
+    uint last=sv2(pref,q,id,d-1,N),x=last%n,y=last/n;
+    uint cand[4]={x?last-1:N,x+1<n?last+1:N,y?last-n:N,y+1<n?last+n:N};
+    for(uint ci=0;ci<4;ci++){uint v=cand[ci];
+      if(v>=N||uint(rank[id*MAXN2+v])<d||md2(u,v,n)!=d||!canon2(pref,q,id,N,n,d,v))continue;
+      ulong cur[4]={0,0,0,0},nxt[4];cur[0]=1;
+      for(uint r=1;r<N;r++){
+        for(uint z=0;z<4;z++)nxt[z]=0;
+        for(uint mask=0;mask<=full;mask++){
+          ulong c=cur[mask];if(!c)continue;uint ti=r-popcount(mask);
+          for(uint j=0;j<plen;j++)if(!(mask&(1u<<j))&&nearFast(rank,id,d,mask,r,sv2(pref,q,id,j+1,N),N,n))nxt[mask|(1u<<j)]+=c;
+          if(ti<T){uint w=(ti==0?sv2(pref,q,id,0,N):sv2(pref,q,id,d+ti-1,N));bool born=!nearFast(rank,id,d,mask,r,w,N,n);if((w==v&&born)||(w!=v&&!born))nxt[mask]+=c;}
+        }
+        for(uint z=0;z<4;z++)cur[z]=nxt[z];
+      }
+      ans+=cur[full];
+    }
+    return ans;
+  }
+  kernel void inverseRanks(device S2*x[[buffer(0)]],constant P2&p[[buffer(1)]],constant uint&np[[buffer(2)]],device uint*dead[[buffer(3)]],device const ushort*pref[[buffer(4)]],device ushort*rank[[buffer(5)]],uint id[[thread_position_in_grid]]){
+    if(id>=np)return;for(uint v=0;v<p.N;v++)rank[id*MAXN2+v]=ushort(p.N);
+    if(dead[0]||p.tau!=p.N+1)return;thread S2 q=x[id];
+    for(uint k=0;k+1<p.N;k++)rank[id*MAXN2+uint(pref[id*MAXN2+k])]=ushort(k);
+    for(uint v=0;v<p.N;v++)if(!has2(q,v)){rank[id*MAXN2+v]=ushort(p.N-1);break;}
+  }
+  kernel void inverseParticle(device S2*x[[buffer(0)]],constant P2&p[[buffer(1)]],constant uint&np[[buffer(2)]],device uint*dead[[buffer(3)]],device const ushort*pref[[buffer(4)]],device const ushort*rank[[buffer(5)]],device ulong*m2[[buffer(6)]],device ulong*m3[[buffer(7)]],uint id[[thread_position_in_grid]]){
+    if(id>=np)return;if(dead[0]||p.tau!=p.N+1){m2[id]=0;m3[id]=0;return;}thread S2 q=x[id];m2[id]=invFast(pref,rank,q,id,p.N,p.n,2);m3[id]=invFast(pref,rank,q,id,p.N,p.n,3);
+  }
+  kernel void inverseReduce(device uint*a[[buffer(0)]],device const ulong*part2[[buffer(1)]],device const ulong*part3[[buffer(2)]],device ulong*m2[[buffer(3)]],device ulong*m3[[buffer(4)]],constant uint&np[[buffer(5)]],device uint*dead[[buffer(6)]],uint j[[thread_position_in_grid]]){
+    if(dead[0]){m2[j]=0;m3[j]=0;return;}uint lo=256*j,hi=min(lo+256,np);ulong z2=0,z3=0;for(uint i=lo;i<hi;i++){z2+=ulong(a[i])*part2[i];z3+=ulong(a[i])*part3[i];}m2[j]=z2;m3[j]=z3;
+  }
+  """
+// Independent terminal-only tau=2 lift.  The frozen SMC, RNG and MH strings
+// above are deliberately untouched.  At terminal rank the stored prefix has
+// N-1 entries; its omitted last vertex is treated as rank N.
+let liftMetal = """
+  #include <metal_stdlib>
+  using namespace metal;
+  constant uint W3=32, MAXN3=1024;
+  struct P3{uint n,N,tau,r,lo,hi;};
+  struct S3{uint o[W3],b[W3],r1,r2;};
+  inline uint md3(uint a,uint b,uint n){return uint(abs(int(a%n)-int(b%n))+abs(int(a/n)-int(b/n)));}
+  inline bool edge3(uint a,uint b,uint n){return md3(a,b,n)==1;}
+  kernel void tau2Lift(device const S3*x[[buffer(0)]],device const ushort*pref[[buffer(1)]],constant P3&p[[buffer(2)]],constant uint&np[[buffer(3)]],device uint*dead[[buffer(4)]],device atomic_uint*bad[[buffer(5)]],device ulong*sl[[buffer(6)]],device ulong*sld[[buffer(7)]],device ulong*slf[[buffer(8)]],device long*slg[[buffer(9)]],uint j[[thread_position_in_grid]]){
+    uint G=(np+255)/256;if(j>=G)return;
+    if(dead[0]||p.tau!=2u){sl[j]=0; sld[j]=0; slf[j]=0; slg[j]=0; return;}
+    uint lo=256*j,hi=min(lo+256,np);ulong al=0,ald=0,alf=0;long alg=0;
+    for(uint i=lo;i<hi;i++){
+      thread S3 q=x[i];uint vx=q.r1,vy=q.r2;
+      bool ok=(vx<p.N&&vy<p.N&&vx!=vy&&uint(pref[i*MAXN3])==vx&&uint(pref[i*MAXN3+1])==vy&&!edge3(vx,vy,p.n));
+      uint best=p.N;
+      for(uint k=0;k+1<p.N;k++){
+        uint w=uint(pref[i*MAXN3+k]); if(w>=p.N){ok=false;continue;}
+        if(edge3(vy,w,p.n))best=min(best,k+1u);
+      }
+      // degree >=2 and only one omitted terminal vertex imply best < N.
+      if(best==p.N||best<=2u||best>p.N-1u)ok=false;
+      if(!ok){atomic_fetch_or_explicit(bad,1u,memory_order_relaxed);continue;}
+      ulong L=ulong(best-2u);
+      long dx=long(int(vx%p.n)-int(vy%p.n)),dy=long(int(vx/p.n)-int(vy/p.n));
+      ulong d2=ulong(dx*dx+dy*dy);
+      long ax=2l*long(vx%p.n)-long(p.n-1u), ay=2l*long(vx/p.n)-long(p.n-1u);
+      long bx=2l*long(vy%p.n)-long(p.n-1u), by=2l*long(vy/p.n)-long(p.n-1u);
+      ulong f0=ulong(ax*ax+ay*ay+bx*bx+by*by); long g0=ax*bx+ay*by;
+      al+=L; ald+=L*d2; alf+=L*f0; alg+=long(L)*g0;
+    }
+    sl[j]=al;sld[j]=ald;slf[j]=alf;slg[j]=alg;
+  }
+  """
+// A separate read-only terminal kernel.  It rederives the tau=2 lift L and
+// bins it by the original (unrescaled) Manhattan distance of the two roots.
+// The frozen SMC/RNG/MH and the r022 lift kernel above remain untouched.
+let distanceMetal = """
+  #include <metal_stdlib>
+  using namespace metal;
+  constant uint W4=32, MAXN4=1024;
+  struct P4{uint n,N,tau,r,lo,hi;};
+  struct S4{uint o[W4],b[W4],r1,r2;};
+  inline uint md4(uint a,uint b,uint n){return uint(abs(int(a%n)-int(b%n))+abs(int(a/n)-int(b/n)));}
+  inline bool edge4(uint a,uint b,uint n){return md4(a,b,n)==1;}
+  // One thread owns one 256-particle group.  Its output is G*(2n-1) UInt64
+  // bins and one UInt64 sum L^2 per group; no atomic output is necessary.
+  kernel void tau2Distance(device const S4*x[[buffer(0)]],device const ushort*pref[[buffer(1)]],constant P4&p[[buffer(2)]],constant uint&np[[buffer(3)]],device const uint*dead[[buffer(4)]],device atomic_uint*bad[[buffer(5)]],device ulong*hist[[buffer(6)]],device ulong*suml2[[buffer(7)]],uint j[[thread_position_in_grid]]){
+    uint G=(np+255u)/256u;if(j>=G)return;uint m=2u*p.n-1u;
+    for(uint d=0;d<m;d++)hist[j*m+d]=0;
+    if(dead[0]||p.tau!=2u){suml2[j]=0;return;}
+    uint lo=256u*j,hi=min(lo+256u,np);ulong ql2=0;
+    for(uint i=lo;i<hi;i++){
+      thread S4 q=x[i];uint vx=q.r1,vy=q.r2;bool ok=(vx<p.N&&vy<p.N&&vx!=vy&&uint(pref[i*MAXN4])==vx&&uint(pref[i*MAXN4+1])==vy&&!edge4(vx,vy,p.n));
+      uint best=p.N;
+      for(uint k=0;k+1<p.N;k++){uint w=uint(pref[i*MAXN4+k]);if(w>=p.N){ok=false;continue;}if(edge4(vy,w,p.n))best=min(best,k+1u);}
+      if(best==p.N||best<=2u||best>p.N-1u)ok=false;
+      uint d=md4(vx,vy,p.n);if(d<2u||d>=m)ok=false;
+      if(!ok){atomic_fetch_or_explicit(bad,1u,memory_order_relaxed);continue;}
+      ulong L=ulong(best-2u);hist[j*m+d]+=L;ql2+=L*L;
+    }
+    suml2[j]=ql2;
+  }
+  """
+// r026: terminal-only first-merge scan.  It leaves the frozen sampler and
+// integer L observables untouched.  A/B are two 1024-bit work sets/particle.
+let mergeRBMetal = """
+  #include <metal_stdlib>
+  using namespace metal;
+  constant uint W5=32, MAXN5=1024;
+  struct P5{uint n,N,tau,r,lo,hi;}; struct S5{uint o[W5],b[W5],r1,r2;};
+  inline bool h5(device const uint*x,uint o,uint v){return (x[o+(v>>5)]&(1u<<(v&31)))!=0;}
+  inline void p5(device uint*x,uint o,uint v){x[o+(v>>5)]|=1u<<(v&31);}
+  inline bool e5(uint u,uint v,uint n){return uint(abs(int(u%n)-int(v%n))+abs(int(u/n)-int(v/n)))==1u;}
+  inline bool t5(device const uint*x,uint o,uint v,uint N,uint n){uint X=v%n,Y=v/n,z[4]={X?v-1u:N,X+1u<n?v+1u:N,Y?v-n:N,Y+1u<n?v+n:N};for(uint j=0;j<4;j++)if(z[j]<N&&h5(x,o,z[j]))return true;return false;}
+  kernel void firstMergeRB(device const S5*state[[buffer(0)]],device const ushort*pref[[buffer(1)]],constant P5&p[[buffer(2)]],constant uint&np[[buffer(3)]],device const uint*dead[[buffer(4)]],device atomic_uint*bad[[buffer(5)]],device uint*A[[buffer(6)]],device uint*B[[buffer(7)]],device ushort*out[[buffer(8)]],uint id[[thread_position_in_grid]]){
+    if(id>=np)return;uint o=id*W5;for(uint w=0;w<W5;w++){A[o+w]=0;B[o+w]=0;}if(dead[0]||p.tau!=2u){for(uint j=0;j<4;j++)out[4u*id+j]=0;return;}
+    thread S5 s=state[id];uint r1=s.r1,r2=s.r2,miss=p.N;bool ok=(r1<p.N&&r2<p.N&&r1!=r2&&uint(pref[id*MAXN5])==r1&&uint(pref[id*MAXN5+1])==r2&&!e5(r1,r2,p.n));for(uint v=0;v<p.N;v++)if((s.o[v>>5]&(1u<<(v&31)))==0){miss=v;break;}if(miss>=p.N)ok=false;p5(A,o,r1);p5(B,o,r2);uint a=1,b=1;bool f=false;
+    for(uint k=2;k<p.N;k++){uint v=(k+1u<p.N)?uint(pref[id*MAXN5+k]):miss;if(v>=p.N||h5(A,o,v)||h5(B,o,v)){ok=false;break;}bool x=t5(A,o,v,p.N,p.n),y=t5(B,o,v,p.N,p.n);if(x&&y){f=true;break;}if(x==y){ok=false;break;}if(x){p5(A,o,v);a++;}else{p5(B,o,v);b++;}}
+    if(!ok||!f){atomic_fetch_or_explicit(bad,1u,memory_order_relaxed);for(uint j=0;j<4;j++)out[4u*id+j]=0;return;}out[4u*id]=ushort(a);out[4u*id+1u]=ushort(b);out[4u*id+2u]=ushort(r1);out[4u*id+3u]=ushort(r2);
+  }
+  """
+struct P { var n, N, tau, r, lo, hi: UInt32 }
+struct R {
+  let logZ, z, u, q, d, f, g, fOverZ, gOverZ, v, c, zm2, zm3, meanM2, meanM3: Double
+  let m2Groups, m3Groups, liftLGroups, liftLDGroups, liftLFGroups: [UInt64]
+  let liftLGGroups: [Int64]
+  let liftZ, liftD, liftF, liftG, liftMeanL, liftMeanLD, liftMeanLF, liftMeanLG: Double
+  let distanceHistGroups, distanceL2Groups: [UInt64]
+  let distanceHistMeans: [Double]
+  let distanceMeanL2: Double
+  let dead: Bool
+  let gpu, wall: Double
+}
+let dev = MTLCreateSystemDefaultDevice()!
+let lib = try dev.makeLibrary(source: metal, options: nil)
+let inverseLib = try dev.makeLibrary(source: inverseMetal, options: nil)
+let liftLib = try dev.makeLibrary(source: liftMetal, options: nil)
+let distanceLib = try dev.makeLibrary(source: distanceMetal, options: nil)
+let mergeRBLib = try dev.makeLibrary(source: mergeRBMetal, options: nil)
+let q = dev.makeCommandQueue()!
+func pipe(_ s: String) -> MTLComputePipelineState {
+  try! dev.makeComputePipelineState(function: lib.makeFunction(name: s)!)
+}
+let pc = pipe("count")
+let pg = pipe("sum")
+let pd = pipe("cdf")
+let pp = pipe("prop")
+let pm = pipe("move")
+let pt = pipe("term")
+let pir = try! dev.makeComputePipelineState(function: inverseLib.makeFunction(name: "inverseRanks")!)
+let pip = try! dev.makeComputePipelineState(function: inverseLib.makeFunction(name: "inverseParticle")!)
+let pig = try! dev.makeComputePipelineState(function: inverseLib.makeFunction(name: "inverseReduce")!)
+let ptl = try! dev.makeComputePipelineState(function: liftLib.makeFunction(name: "tau2Lift")!)
+let ptd = try! dev.makeComputePipelineState(function: distanceLib.makeFunction(name: "tau2Distance")!)
+let ptrb = try! dev.makeComputePipelineState(function: mergeRBLib.makeFunction(name: "firstMergeRB")!)
+var traceOn = false
+var traceRows = [[String: Any]]()
+func en(_ cb: MTLCommandBuffer, _ p: MTLComputePipelineState, _ bs: [(MTLBuffer, Int)], _ n: Int) {
+  let e = cb.makeComputeCommandEncoder()!
+  e.setComputePipelineState(p)
+  for (b, i) in bs { e.setBuffer(b, offset: 0, index: i) }
+  e.dispatchThreads(
+    MTLSize(width: n, height: 1, depth: 1),
+    threadsPerThreadgroup: MTLSize(width: 256, height: 1, depth: 1))
+  e.endEncoding()
+}
+func run(_ n: Int, _ tau: Int, _ Np: Int, _ sd: UInt64, _ strat: Bool, _ moveL: Int) -> R {
+  let N = n * n
+  let G = (Np + 255) / 256
+  var np = UInt32(Np)
+  var gg = UInt32(G)
+  var dead: UInt32 = 0
+  var sm: UInt32 = strat ? 1 : 0
+  var lm: UInt32 = UInt32(moveL)
+  let nb = dev.makeBuffer(bytes: &np, length: 4, options: .storageModeShared)!
+  let gbb = dev.makeBuffer(bytes: &gg, length: 4, options: .storageModeShared)!
+  let db = dev.makeBuffer(bytes: &dead, length: 4, options: .storageModeShared)!
+  let sb = dev.makeBuffer(bytes: &sm, length: 4, options: .storageModeShared)!
+  let lb = dev.makeBuffer(bytes: &lm, length: 4, options: .storageModeShared)!
+  let a = dev.makeBuffer(length: Np * 4, options: .storageModeShared)!
+  let g = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let c = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let t = dev.makeBuffer(length: N * 8, options: .storageModeShared)!
+  let mo = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let inverseM2 = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let inverseM3 = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  // rank and per-particle inverse buffers belong solely to the terminal kernel.
+  // At P=4096 this adds 8 MiB + 32 KiB + 32 KiB.
+  let inverseRank = dev.makeBuffer(length: Np * 1024 * 2, options: .storageModeShared)!
+  let inversePart2 = dev.makeBuffer(length: Np * 8, options: .storageModeShared)!
+  let inversePart3 = dev.makeBuffer(length: Np * 8, options: .storageModeShared)!
+  let rootF = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let rootG = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let liftBad = dev.makeBuffer(length: 4, options: .storageModeShared)!
+  let liftL = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let liftLD = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let liftLF = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let liftLG = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let distanceBad = dev.makeBuffer(length: 4, options: .storageModeShared)!
+  let distanceM = 2 * n - 1
+  // G*distanceM<=16384*63; this terminal-only UInt64 histogram uses at most
+  // 8,257,536 bytes for P<=2^22,n<=32.
+  let distanceHist = dev.makeBuffer(length: G * distanceM * 8, options: .storageModeShared)!
+  let distanceL2 = dev.makeBuffer(length: G * 8, options: .storageModeShared)!
+  let rbA = dev.makeBuffer(length: Np * 32 * 4, options: .storageModeShared)!
+  let rbB = dev.makeBuffer(length: Np * 32 * 4, options: .storageModeShared)!
+  let rbPayload = dev.makeBuffer(length: Np * 4 * 2, options: .storageModeShared)!
+  let rbBad = dev.makeBuffer(length: 4, options: .storageModeShared)!
+  let pa = dev.makeBuffer(length: Np * 4, options: .storageModeShared)!
+  var px = dev.makeBuffer(length: Np * 1024 * 2, options: .storageModeShared)!
+  var py = dev.makeBuffer(length: Np * 1024 * 2, options: .storageModeShared)!
+  let x = dev.makeBuffer(length: Np * 264, options: .storageModeShared)!
+  let y = dev.makeBuffer(length: Np * 264, options: .storageModeShared)!
+  memset(x.contents(), 0, Np * 264)
+  memset(y.contents(), 0, Np * 264)
+  memset(px.contents(), 0, Np * 1024 * 2)
+  memset(py.contents(), 0, Np * 1024 * 2)
+  memset(liftBad.contents(), 0, 4)
+  memset(distanceBad.contents(), 0, 4)
+  memset(rbBad.contents(), 0, 4)
+  var ps = [MTLBuffer]()
+  var rs = [MTLBuffer]()
+  for z in 1...N {
+    var p = P(
+      n: UInt32(n), N: UInt32(N), tau: UInt32(tau), r: UInt32(z),
+      lo: UInt32(truncatingIfNeeded: sd), hi: UInt32(truncatingIfNeeded: sd >> 32))
+    var r = UInt32(z - 1)
+    ps.append(dev.makeBuffer(bytes: &p, length: 24, options: .storageModeShared)!)
+    rs.append(dev.makeBuffer(bytes: &r, length: 4, options: .storageModeShared)!)
+  }
+  let st = Date()
+  var gpuTotal = 0.0
+  var src = x
+  var dst = y
+  for i in 0..<N {
+    let cb = q.makeCommandBuffer()!
+    en(cb, pc, [(src, 0), (a, 1), (ps[i], 2), (db, 3)], Np)
+    en(cb, pg, [(a, 0), (g, 1), (nb, 2)], G)
+    en(cb, pd, [(g, 0), (c, 1), (t, 2), (db, 3), (gbb, 4), (rs[i], 5)], 1)
+    if i + 1 == N {
+      en(cb, pt, [(src, 0), (a, 1), (mo, 2), (rootF, 3), (rootG, 4), (ps[i], 5), (nb, 6), (db, 7)], G)
+      en(cb, ptl, [(src, 0), (px, 1), (ps[i], 2), (nb, 3), (db, 4), (liftBad, 5), (liftL, 6), (liftLD, 7), (liftLF, 8), (liftLG, 9)], G)
+      en(cb, ptd, [(src, 0), (px, 1), (ps[i], 2), (nb, 3), (db, 4), (distanceBad, 5), (distanceHist, 6), (distanceL2, 7)], G)
+      en(cb, ptrb, [(src, 0), (px, 1), (ps[i], 2), (nb, 3), (db, 4), (rbBad, 5), (rbA, 6), (rbB, 7), (rbPayload, 8)], Np)
+      en(cb, pir, [(src, 0), (ps[i], 1), (nb, 2), (db, 3), (px, 4), (inverseRank, 5)], Np)
+      en(cb, pip, [(src, 0), (ps[i], 1), (nb, 2), (db, 3), (px, 4), (inverseRank, 5), (inversePart2, 6), (inversePart3, 7)], Np)
+      en(cb, pig, [(a, 0), (inversePart2, 1), (inversePart3, 2), (inverseM2, 3), (inverseM3, 4), (nb, 5), (db, 6)], G)
+      cb.commit(); cb.waitUntilCompleted()
+      precondition(cb.status == .completed && cb.error == nil)
+      gpuTotal += cb.gpuEndTime-cb.gpuStartTime
+      if traceOn {
+        let aa=Array(UnsafeBufferPointer(start:a.contents().bindMemory(to:UInt32.self,capacity:Np),count:Np)).map(Int.init)
+        let cc=Array(UnsafeBufferPointer(start:c.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let words=(0..<Np).map { j -> [Int] in let p=px.contents().advanced(by:j*2048).bindMemory(to:UInt16.self,capacity:1024); return (0..<i).map{Int(p[$0])} }
+        let bits=(0..<Np).map { j -> [Any] in let s=src.contents().advanced(by:j*264);let o=(0..<32).map{k in Int(s.load(fromByteOffset:k*4,as:UInt32.self))};let b=(0..<32).map{k in Int(s.load(fromByteOffset:128+k*4,as:UInt32.self))};return [o,b,Int(s.load(fromByteOffset:256,as:UInt32.self)),Int(s.load(fromByteOffset:260,as:UInt32.self))] }
+        let mm=Array(UnsafeBufferPointer(start:mo.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let ff=Array(UnsafeBufferPointer(start:rootF.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let hh=Array(UnsafeBufferPointer(start:rootG.contents().bindMemory(to:Int64.self,capacity:G),count:G)).map{String($0)}
+        let im2=Array(UnsafeBufferPointer(start:inverseM2.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let im3=Array(UnsafeBufferPointer(start:inverseM3.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let ll=Array(UnsafeBufferPointer(start:liftL.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let ld=Array(UnsafeBufferPointer(start:liftLD.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let lf=Array(UnsafeBufferPointer(start:liftLF.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let lg=Array(UnsafeBufferPointer(start:liftLG.contents().bindMemory(to:Int64.self,capacity:G),count:G)).map{String($0)}
+        let dh=distanceHist.contents().bindMemory(to:UInt64.self,capacity:G*distanceM)
+        let dg=(0..<G).map{j in (0..<distanceM).map{k in String(dh[j*distanceM+k])}}
+        let dl2=Array(UnsafeBufferPointer(start:distanceL2.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let rbp=Array(UnsafeBufferPointer(start:rbPayload.contents().bindMemory(to:UInt16.self,capacity:Np*4),count:Np*4)).map(Int.init)
+        traceRows.append(["rank":i+1,"terminal":true,"allowed":aa,"cdf":cc,"prefix":words,"state":bits,"moment_groups":mm,"root_F_groups":ff,"root_G_groups":hh,"inverse_m2_groups":im2,"inverse_m3_groups":im3,"tau2_lift_L_groups":ll,"tau2_lift_LD_groups":ld,"tau2_lift_LF_groups":lf,"tau2_lift_LG_groups":lg,"tau2_lift_bad":liftBad.contents().bindMemory(to:UInt32.self,capacity:1).pointee,"tau2_distance_L_hist_groups":dg,"tau2_distance_L2_groups":dl2,"tau2_distance_bad":distanceBad.contents().bindMemory(to:UInt32.self,capacity:1).pointee,"first_merge_rb_payload_ab_r1_r2":rbp,"first_merge_rb_bad":rbBad.contents().bindMemory(to:UInt32.self,capacity:1).pointee])
+      }
+    } else {
+      en(
+        cb, pp,
+        [
+          (src, 0), (a, 1), (c, 2), (t, 3), (dst, 4), (ps[i], 5), (nb, 6), (rs[i], 7), (db, 8),
+          (sb, 9), (pa, 10), (px, 11), (py, 12),
+        ], Np)
+      if moveL > 0 { en(cb, pm, [(dst, 0), (py, 1), (ps[i], 2), (nb, 3), (lb, 4), (db, 5)], Np) }
+      cb.commit(); cb.waitUntilCompleted()
+      precondition(cb.status == .completed && cb.error == nil)
+      gpuTotal += cb.gpuEndTime-cb.gpuStartTime
+      if traceOn {
+        let aa=Array(UnsafeBufferPointer(start:a.contents().bindMemory(to:UInt32.self,capacity:Np),count:Np)).map(Int.init)
+        let cc=Array(UnsafeBufferPointer(start:c.contents().bindMemory(to:UInt64.self,capacity:G),count:G)).map{String($0)}
+        let ppv=Array(UnsafeBufferPointer(start:pa.contents().bindMemory(to:UInt32.self,capacity:Np),count:Np)).map(Int.init)
+        let words=(0..<Np).map { j -> [Int] in let p=py.contents().advanced(by:j*2048).bindMemory(to:UInt16.self,capacity:1024); return (0...i).map{Int(p[$0])} }
+        let bits=(0..<Np).map { j -> [Any] in let s=dst.contents().advanced(by:j*264);let o=(0..<32).map{k in Int(s.load(fromByteOffset:k*4,as:UInt32.self))};let b=(0..<32).map{k in Int(s.load(fromByteOffset:128+k*4,as:UInt32.self))};return [o,b,Int(s.load(fromByteOffset:256,as:UInt32.self)),Int(s.load(fromByteOffset:260,as:UInt32.self))] }
+        traceRows.append(["rank":i+1,"allowed":aa,"cdf":cc,"parents":ppv,"prefix":words,"state":bits])
+      }
+      swap(&src, &dst)
+      swap(&px, &py)
+    }
+  }
+  let ts = Array(
+    UnsafeBufferPointer(start: t.contents().bindMemory(to: UInt64.self, capacity: N), count: N))
+  if ts.contains(0) {
+    return R(
+      logZ: -.infinity, z: 0, u: 0, q: 0, d: 0, f: 0, g: 0, fOverZ: 0, gOverZ: 0, v: 0, c: 0, zm2: 0, zm3: 0, meanM2: 0, meanM3: 0, m2Groups: [], m3Groups: [], liftLGroups: [], liftLDGroups: [], liftLFGroups: [], liftLGGroups: [], liftZ: 0, liftD: 0, liftF: 0, liftG: 0, liftMeanL: 0, liftMeanLD: 0, liftMeanLF: 0, liftMeanLG: 0, distanceHistGroups: [], distanceL2Groups: [], distanceHistMeans: [], distanceMeanL2: 0, dead: true, gpu: gpuTotal,
+      wall: -st.timeIntervalSinceNow)
+  }
+  var l = 0.0
+  for (i, z) in ts.enumerated() { l += log(Double(z) / (Double(Np) * Double(N - i))) }
+  let raw = UnsafeBufferPointer(
+    start: mo.contents().bindMemory(to: UInt64.self, capacity: G), count: G
+  ).reduce(0, &+)
+  let rawF = UnsafeBufferPointer(
+    start: rootF.contents().bindMemory(to: UInt64.self, capacity: G), count: G
+  ).reduce(0, &+)
+  let rawG = UnsafeBufferPointer(
+    start: rootG.contents().bindMemory(to: Int64.self, capacity: G), count: G
+  ).reduce(0, &+)
+  let groupM2 = Array(UnsafeBufferPointer(
+    start: inverseM2.contents().bindMemory(to: UInt64.self, capacity: G), count: G
+  ))
+  let groupM3 = Array(UnsafeBufferPointer(
+    start: inverseM3.contents().bindMemory(to: UInt64.self, capacity: G), count: G
+  ))
+  let rawM2 = groupM2.reduce(0, &+)
+  let rawM3 = groupM3.reduce(0, &+)
+  let groupLiftL = Array(UnsafeBufferPointer(start: liftL.contents().bindMemory(to: UInt64.self, capacity: G), count: G))
+  let groupLiftLD = Array(UnsafeBufferPointer(start: liftLD.contents().bindMemory(to: UInt64.self, capacity: G), count: G))
+  let groupLiftLF = Array(UnsafeBufferPointer(start: liftLF.contents().bindMemory(to: UInt64.self, capacity: G), count: G))
+  let groupLiftLG = Array(UnsafeBufferPointer(start: liftLG.contents().bindMemory(to: Int64.self, capacity: G), count: G))
+  let groupDistanceHist = Array(UnsafeBufferPointer(start: distanceHist.contents().bindMemory(to: UInt64.self, capacity: G * distanceM), count: G * distanceM))
+  let groupDistanceL2 = Array(UnsafeBufferPointer(start: distanceL2.contents().bindMemory(to: UInt64.self, capacity: G), count: G))
+  precondition(liftBad.contents().bindMemory(to: UInt32.self, capacity: 1).pointee == 0, "tau2 lift terminal invariant failed")
+  for k in 0..<G { precondition(Int64(groupLiftLF[k]) - 2 * groupLiftLG[k] == 4 * Int64(groupLiftLD[k]), "tau2 lift group identity failed") }
+  precondition(distanceBad.contents().bindMemory(to: UInt32.self, capacity: 1).pointee == 0, "tau2 distance terminal invariant failed")
+  if tau == 2 { precondition(rbBad.contents().bindMemory(to: UInt32.self, capacity: 1).pointee == 0, "first-merge RB terminal invariant failed") }
+  for k in 0..<G {
+    let h = (0..<distanceM).reduce(UInt64(0)) { $0 &+ groupDistanceHist[k * distanceM + $1] }
+    precondition(h == groupLiftL[k], "tau2 distance histogram does not sum to L")
+    precondition(groupDistanceHist[k * distanceM] == 0 && groupDistanceHist[k * distanceM + 1] == 0, "tau2 root distance d=0 or 1")
+    precondition(groupDistanceL2[k] <= UInt64(min(256, Np - 256 * k)) * UInt64((N - 3) * (N - 3)), "tau2 distance L2 bound")
+  }
+  let rawLiftL = groupLiftL.reduce(0, &+), rawLiftLD = groupLiftLD.reduce(0, &+), rawLiftLF = groupLiftLF.reduce(0, &+), rawLiftLG = groupLiftLG.reduce(0, &+)
+  let rawDistanceL2 = groupDistanceL2.reduce(0, &+)
+  let distanceMeans = (0..<distanceM).map { k in Double(stride(from: k, to: groupDistanceHist.count, by: distanceM).reduce(UInt64(0)) { $0 &+ groupDistanceHist[$1] }) / Double(Np) }
+  let qv = Double(raw) / Double(ts[N - 1]) / Double(N)
+  let z = exp(l)
+  let u = z * Double(raw) / Double(ts[N - 1]) / Double(N)
+  let d = z * Double(raw) / Double(ts[N - 1])
+  let fOverZ = Double(rawF) / Double(ts[N - 1])
+  let gOverZ = Double(rawG) / Double(ts[N - 1])
+  let f = z * fOverZ
+  let gValue = z * gOverZ
+  return R(
+    logZ: l, z: z, u: u, q: qv, d: d, f: f, g: gValue, fOverZ: fOverZ, gOverZ: gOverZ, v: fOverZ / 8, c: gOverZ / 4, zm2: z * Double(rawM2) / Double(ts[N - 1]), zm3: z * Double(rawM3) / Double(ts[N - 1]), meanM2: Double(rawM2) / Double(ts[N - 1]), meanM3: Double(rawM3) / Double(ts[N - 1]), m2Groups: groupM2, m3Groups: groupM3, liftLGroups: groupLiftL, liftLDGroups: groupLiftLD, liftLFGroups: groupLiftLF, liftLGGroups: groupLiftLG, liftZ: z * Double(rawLiftL) / Double(Np), liftD: z * Double(rawLiftLD) / Double(Np), liftF: z * Double(rawLiftLF) / Double(Np), liftG: z * Double(rawLiftLG) / Double(Np), liftMeanL: Double(rawLiftL) / Double(Np), liftMeanLD: Double(rawLiftLD) / Double(Np), liftMeanLF: Double(rawLiftLF) / Double(Np), liftMeanLG: Double(rawLiftLG) / Double(Np), distanceHistGroups: groupDistanceHist, distanceL2Groups: groupDistanceL2, distanceHistMeans: distanceMeans, distanceMeanL2: Double(rawDistanceL2) / Double(Np), dead: false, gpu: gpuTotal,
+    wall: -st.timeIntervalSinceNow)
+}
+let v = CommandLine.arguments
+let maybeMoveL = v.count >= 10 ? Int(v[9]) : 0
+guard (v.count == 9 || v.count == 10 || v.count == 11), let n = Int(v[1]), let np = Int(v[2]), let Rn = Int(v[3]), let lo = Int(v[4]),
+  let hi = Int(v[5]), let dom = UInt64(v[7], radix: 16), let moveL = maybeMoveL
+else { fatalError("usage: bitset_smc n P R lo hi out domainhex strat|multi") }
+guard v[8] == "strat" || v[8] == "multi" else { fatalError("method must be strat or multi") }
+guard v.count < 11 || v[10] == "trace" else { fatalError("the optional final argument must be trace") }
+let strat = v[8] == "strat"
+traceOn = v.count == 11 && v[10] == "trace"
+precondition(
+  n >= 2 && n <= 32 && np > 0 && Rn > 0 && moveL >= 0 && lo >= 2 && hi <= n * n + 1 && lo <= hi
+    // Every prefix and terminal-rank address is particle*1024+vertex in a
+    // Metal uint.  This bound is checked before run() allocates any buffer.
+    && np <= (1 << 22)
+    && UInt64(np) <= UInt64.max / UInt64(np) / UInt64(n * n))
+precondition(!traceOn || (Rn == 1 && lo == hi), "trace requires exactly one tau and one replicate")
+let outURL = URL(fileURLWithPath: v[6])
+FileManager.default.createFile(atPath: outURL.path, contents: nil)
+let fh = try FileHandle(forWritingTo: outURL)
+func o(_ s: String) { try! fh.write(contentsOf: (s + "\n").data(using: .utf8)!) }
+/* Historical r025 metadata excluded from r026 output.
+o(
+  "{\"kind\":\"metadata\",\"implementation\":\"r025-tau2-rankbiased-prefix-mh\",\"frozen_source_sha256\":\"01b77bca1735f07293eae5ffeea0326810fdc5ea785c7a9e99d9030cba9b0702\",\"mh_move_kernel\":\"r>=2: half uniform {0,1}, half uniform [0,r); r=1: rank 0\",\"mh_rank_weights\":\"r>=2: p0=p1=1/4+1/(2r), pi=1/(2r) i>=2\",\"mh_target_scope\":\"fixed-tau ordered valid prefix only; detailed balance does not assert SMC unbiasedness or mixing\",\"lift_scope\":\"tau=2 only; L=j-2 from earliest low-root neighbour rank in terminal prefix; complete_K2_fields_are_Z_tau2_times_tau2_means\",\"distance_scope\":\"tau=2 only; original Manhattan d(root1,root2)=0,...,2n-2, bins weighted by L, plus sum L^2\",\"inverse_scope\":\"tau=N+1 only; canonical greedy inverse fibres d=2,3\",\"n\":\(n),\"particles\":\(np),\"replicates\":\(Rn),\"tau_lo\":\(lo),\"tau_hi\":\(hi),\"domain\":\"\(String(dom,radix:16))\",\"method\":\"\(strat ? "strat" : "multi")\",\"move_steps\":\(moveL),\"moment_scale\":\"U_over_Z\",\"distance_integer_bound\":\"N<=1024,n<=32: d<=62,1<=L<=N-3<=1021, group hist bin<=256*1021=261376, group sumL2<=256*1021^2=266864896, raw<=P*1021^2<2^64; G*(2n-1)<=1032192 UInt64 cells=8257536 bytes\",\"lift_integer_bound\":\"N<=1024,n<=32: 1<=L<=N-3<=1021, d2<=1922,F0<=3844,abs(G0)<=1922; each 256-particle group L*F0<1006639104 and abs(L*G0)<503319552, so UInt64/Int64 and exact LF-2LG=4LD are safe\",\"inverse_integer_bound\":\"N<=1024: m2<=4092,m3<=4182024,a_i<=1; group<=256*m3=1070598144; host raw<=P*m3<=17540679991296<2^64 under P<=2^22\"}"
+) */
+let metadata: [String: Any] = [
+  "kind": "metadata", "implementation": "r026-tau2-firstmerge-rb-terminal",
+  "base_rankbiased_source_sha256": "60746225d734d03a5567c0b2e45581e89cd8a39599605f6e1a4397b612e23334",
+  "rb_scope": "tau=2 full N scan appends omitted terminal point; payload=(a,b,r1,r2); host Float statistics are diagnostics",
+  "rb_gpu_working_bytes_per_particle": 256, "rb_payload_bytes_per_particle": 8,
+  "n": n, "particles": np, "replicates": Rn, "tau_lo": lo, "tau_hi": hi,
+  "domain": String(dom, radix: 16), "method": strat ? "strat" : "multi", "move_steps": moveL,
+]
+o(String(data: try! JSONSerialization.data(withJSONObject: metadata), encoding: .utf8)!)
+let T = Date()
+for tau in lo...hi {
+  for r in 0..<Rn {
+    let sd = (0xA022_0000_0000_0000 &+ dom) &+ UInt64(n * 1_000_000 + tau * 10000 + r)
+    let z: R = autoreleasepool { run(n, tau, np, sd, strat, moveL) }
+    let l = z.dead ? "null" : String(z.logZ)
+    let us = z.dead || tau > n * n ? "null" : String(z.u)
+    let qs = z.dead || tau > n * n ? "null" : String(z.q)
+    let rs = z.dead || tau > n * n
+    let fs = rs ? "null" : String(z.f)
+    let gs = rs ? "null" : String(z.g)
+    let fzs = rs ? "null" : String(z.fOverZ)
+    let gzs = rs ? "null" : String(z.gOverZ)
+    let vs = rs ? "null" : String(z.v)
+    let cs = rs ? "null" : String(z.c)
+    let ds = rs ? "null" : String(z.d)
+    let ids = rs ? "null" : String(z.f - 2 * z.g - 4 * z.d)
+    let inverseActive = !z.dead && tau == n * n + 1
+    let im2 = inverseActive ? String(z.zm2) : "null"
+    let im3 = inverseActive ? String(z.zm3) : "null"
+    let mm2 = inverseActive ? String(z.meanM2) : "null"
+    let mm3 = inverseActive ? String(z.meanM3) : "null"
+    let gm2 = inverseActive ? "[" + z.m2Groups.map(String.init).joined(separator: ",") + "]" : "null"
+    let gm3 = inverseActive ? "[" + z.m3Groups.map(String.init).joined(separator: ",") + "]" : "null"
+    let liftActive = !z.dead && tau == 2
+    let llg = liftActive ? "[" + z.liftLGroups.map(String.init).joined(separator: ",") + "]" : "null"
+    let ldg = liftActive ? "[" + z.liftLDGroups.map(String.init).joined(separator: ",") + "]" : "null"
+    let lfg = liftActive ? "[" + z.liftLFGroups.map(String.init).joined(separator: ",") + "]" : "null"
+    let lgg = liftActive ? "[" + z.liftLGGroups.map(String.init).joined(separator: ",") + "]" : "null"
+    let lig = liftActive ? "[" + zip(zip(z.liftLFGroups,z.liftLGGroups),z.liftLDGroups).map { String(Int64($0.0.0) - 2 * $0.0.1 - 4 * Int64($0.1)) }.joined(separator: ",") + "]" : "null"
+    let lz = liftActive ? String(z.liftZ) : "null", ld = liftActive ? String(z.liftD) : "null", lf = liftActive ? String(z.liftF) : "null", lg = liftActive ? String(z.liftG) : "null"
+    let ml = liftActive ? String(z.liftMeanL) : "null", mld = liftActive ? String(z.liftMeanLD) : "null", mlf = liftActive ? String(z.liftMeanLF) : "null", mlg = liftActive ? String(z.liftMeanLG) : "null"
+    let distanceActive = !z.dead && tau == 2
+    let dhg = distanceActive ? "[" + (0..<(z.distanceHistGroups.count / (2 * n - 1))).map { j in
+      "[" + (0..<(2 * n - 1)).map { k in String(z.distanceHistGroups[j * (2 * n - 1) + k]) }.joined(separator: ",") + "]"
+    }.joined(separator: ",") + "]" : "null"
+    let dl2g = distanceActive ? "[" + z.distanceL2Groups.map(String.init).joined(separator: ",") + "]" : "null"
+    let dhm = distanceActive ? "[" + z.distanceHistMeans.map { String($0) }.joined(separator: ",") + "]" : "null"
+    let dm2 = distanceActive ? String(z.distanceMeanL2) : "null"
+    o(
+      "{\"kind\":\"replicate\",\"tau\":\(tau),\"replicate\":\(r),\"seed_hex\":\"\(String(sd,radix:16))\",\"Z\":\(z.z),\"U\":\(us),\"logZ\":\(l),\"U_over_Z\":\(qs),\"scaled_U\":\(qs),\"D\":\(ds),\"F\":\(fs),\"G\":\(gs),\"F_over_Z\":\(fzs),\"G_over_Z\":\(gzs),\"V\":\(vs),\"C\":\(cs),\"F_minus_2G_minus_4D\":\(ids),\"inverse_m2_groups\":\(gm2),\"inverse_m3_groups\":\(gm3),\"Zmean_m2\":\(im2),\"Zmean_m3\":\(im3),\"mean_m2\":\(mm2),\"mean_m3\":\(mm3),\"scaled_mean_m2\":\(mm2),\"scaled_mean_m3\":\(mm3),\"K2\":null,\"tau2_lift_L_groups\":\(llg),\"tau2_lift_L_distance2_groups\":\(ldg),\"tau2_lift_L_F0_groups\":\(lfg),\"tau2_lift_L_G0_groups\":\(lgg),\"tau2_lift_group_LF_minus_2LG_minus_4LD\":\(lig),\"tau2_lift_complete_K2_Z\":\(lz),\"tau2_lift_complete_K2_D\":\(ld),\"tau2_lift_complete_K2_F\":\(lf),\"tau2_lift_complete_K2_G\":\(lg),\"tau2_lift_scaled_mean_L\":\(ml),\"tau2_lift_scaled_mean_L_distance2\":\(mld),\"tau2_lift_scaled_mean_L_F0\":\(mlf),\"tau2_lift_scaled_mean_L_G0\":\(mlg),\"tau2_distance_L_hist_groups\":\(dhg),\"tau2_distance_L2_groups\":\(dl2g),\"tau2_distance_scaled_mean_L_hist\":\(dhm),\"tau2_distance_scaled_mean_L2\":\(dm2),\"dead\":\(z.dead),\"gpu_seconds\":\(z.gpu),\"wall_seconds\":\(z.wall)}"
+    )
+    if traceOn {
+      /* Historical r025 outer trace header excluded in r026.
+      let obj:[String:Any] = ["implementation":"r025-tau2-rankbiased-prefix-mh","frozen_source_sha256":"01b77bca1735f07293eae5ffeea0326810fdc5ea785c7a9e99d9030cba9b0702","mh_move_kernel":"r>=2: half uniform {0,1}, half uniform [0,r); r=1: rank 0","method":strat ? "strat" : "multi","n":n,"tau":tau,"P":np,"seed_hex":String(sd,radix:16),"L":moveL,"rows":traceRows]
+      */
+      let obj:[String:Any] = [
+        "implementation":"r026-tau2-firstmerge-rb-terminal",
+        "base_rankbiased_source_sha256":"60746225d734d03a5567c0b2e45581e89cd8a39599605f6e1a4397b612e23334",
+        "mh_move_kernel":"r>=2: half uniform {0,1}, half uniform [0,r); r=1: rank 0",
+        "rb_scope":"full N scan including appended omitted terminal vertex",
+        "method":strat ? "strat" : "multi","n":n,"tau":tau,"P":np,
+        "seed_hex":String(sd,radix:16),"L":moveL,"rows":traceRows
+      ]
+      let u=URL(fileURLWithPath:outURL.path+".trace.json")
+      try JSONSerialization.data(withJSONObject:obj,options:[.prettyPrinted]).write(to:u)
+      traceRows.removeAll()
+    }
+  }
+}
+o("{\"kind\":\"run_end\",\"wall_seconds\":\(-T.timeIntervalSinceNow)}")

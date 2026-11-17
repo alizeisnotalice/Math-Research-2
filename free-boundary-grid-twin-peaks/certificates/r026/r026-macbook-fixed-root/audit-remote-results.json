@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "scope": "Finite SMC raw-record audit. The means and delta SEs are diagnostics, not confidence intervals or analytic inequalities.",
+  "source_sha256": "d8e7040f251c60ba7b660fcdba9e153b9dc21e351105fb474ad32314cc3456a4",
+  "driver_exit": {
+    "exit_code": 0,
+    "ended_unix": 1794883996.951447,
+    "wall_seconds": 42163.594375133514,
+    "task_exit_codes": {
+      "n16-root119-p262144-r128-l16": 0,
+      "n16-root0-p262144-r32-l16": 0
+    }
+  },
+  "checks": [
+    "driver and task exits zero",
+    "complete replicate sets",
+    "metadata and deterministic seed formulas",
+    "finite positive normalizers",
+    "dead=0",
+    "proposal/acceptance fields",
+    "terminal-hash uint64 field for every record"
+  ],
+  "runs": [
+    {
+      "root": 119,
+      "root_xy": [
+        7,
+        7
+      ],
+      "metadata": {
+        "n": 16,
+        "N": 256,
+        "root": 119,
+        "root_xy": [
+          7,
+          7
+        ],
+        "P": 262144,
+        "R": 128,
+        "L": 16,
+        "threads": 12,
+        "seed_base": "176080254140416",
+        "normalizer": "probZ_estimates_h_root_over_(N-1)_factorial; logZ_is_log_probZ; root_is_first_highest_labelled_peak"
+      },
+      "exit": {
+        "exit_code": 0,
+        "ended_unix": 1794883996.951115,
+        "monitor_pid": 26145
+      },
+      "file_sha256": {
+        "n16-root119-p262144-r128-l16.csv": "3e7741f43086e3444f173d2f8ba19cdce0bb27a1171d5d0d094e9d1ce9138348",
+        "n16-root119-p262144-r128-l16.csv.metadata.json": "1465335e75a50c63439ca3396cb1167c12917bffdda1326b8836596629009767",
+        "n16-root119-p262144-r128-l16.exit.json": "f8fa062532c8c7b507bd7c96396494956acbe3248cc7af90407700d4a39e6762",
+        "n16-root119-p262144-r128-l16.resource.txt": "093c7473f212a0762497e9ca05f5d0e9a04256e897b2466f681cc45e0225daa2"
+      },
+      "resource": {
+        "wall_seconds": "42154.35",
+        "maximum_RSS_bytes": "1701380096",
+        "swaps": "0",
+        "peak_memory_footprint_bytes": "1701971528"
+      },
+      "mean_probZ_h_over_255_factorial": "4.55778058378876763328125E-87",
+      "replicate_delta_SE": "6.82333980617579958413692543169830933284132361011597362728865413428724950889513933285705088E-88",
+      "replicate_weight_ESS": "33.2781558833474340643709846781906726703164899657512547109424896996769902731646033672089969",
+      "max_replicate_weight_share": "0.120887906541626103028079146790444681082356996352673440526502684403084350650750547297572268",
+      "minimum_particle_parent_ESS": 259289.98760955772,
+      "terminal_hashes": {
+        "records_checked": 128,
+        "all_uint64": true,
+        "distinct_count": 128
+      }
+    },
+    {
+      "root": 0,
+      "root_xy": [
+        0,
+        0
+      ],
+      "metadata": {
+        "n": 16,
+        "N": 256,
+        "root": 0,
+        "root_xy": [
+          0,
+          0
+        ],
+        "P": 262144,
+        "R": 32,
+        "L": 16,
+        "threads": 3,
+        "seed_base": "176080270917632",
+        "normalizer": "probZ_estimates_h_root_over_(N-1)_factorial; logZ_is_log_probZ; root_is_first_highest_labelled_peak"
+      },
+      "exit": {
+        "exit_code": 0,
+        "ended_unix": 1794883966.815885,
+        "monitor_pid": 26146
+      },
+      "file_sha256": {
+        "n16-root0-p262144-r32-l16.csv": "b38c18f29ce4a036db9ca18f2f5df68eaf9b98ad92a7d777ed7d3cb41a8a5eec",
+        "n16-root0-p262144-r32-l16.csv.metadata.json": "da5e4f575910893303a99be053b75c2eeb57af461d1347c3e7e32c3cb13fb485",
+        "n16-root0-p262144-r32-l16.exit.json": "53f64f4968838648bca4260996f01b736b459d4633375f302ca366fce99a04ca",
+        "n16-root0-p262144-r32-l16.resource.txt": "fff528379310837864554c4b9221aff5f799600d3540f5601b2deaa9547484ca"
+      },
+      "resource": {
+        "wall_seconds": "42123.47",
+        "maximum_RSS_bytes": "442335232",
+        "swaps": "0",
+        "peak_memory_footprint_bytes": "442303136"
+      },
+      "mean_probZ_h_over_255_factorial": "1.218189176195402040528125E-100",
+      "replicate_delta_SE": "4.92093867547484443624694114390046268694614135650051001105624700891535483334893871493251919E-101",
+      "replicate_weight_ESS": "5.28177072870353446416367001533466415310418719232694783380233699919078038834804782523475021",
+      "max_replicate_weight_share": "0.282694505688659259185821513220684343022991465578063699742181263693985913069775738153921052",
+      "minimum_particle_parent_ESS": 252321.37730341297,
+      "terminal_hashes": {
+        "records_checked": 32,
+        "all_uint64": true,
+        "distinct_count": 32
+      }
+    }
+  ]
+}
