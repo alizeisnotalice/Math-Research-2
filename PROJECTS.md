@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；非平行最小/两倍仿射分割给dimV≤7q/2−1 | 第17轮完成 | 更大局部谱、缺少独立分块与一般大残余 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；不可拆两倍块无穷族与二次图分割O(q)预算 | 第18轮完成 | 一般两倍块的几何表示、更大块与残余 |

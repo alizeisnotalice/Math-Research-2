@@ -1,0 +1,44 @@
+{
+  "schema": "a28-r018-cpu-final-receipt-v1",
+  "scope": "Read-only provenance supplement after the completed final phase scans; no computation was rerun to create this receipt.",
+  "remote_host": "zzhMateBook-Pro-S.local",
+  "remote_directory": "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r018/nonaffine-cpu",
+  "compile": {
+    "actual_command": "CLANG_MODULE_CACHE_PATH=/Users/zhengzhihao/CodexRemoteMath/a28-selector/cache/clang /usr/bin/clang++ -O3 -std=c++17 -pthread verify_nonaffine_blocks.cpp -o verify_nonaffine_blocks_final",
+    "flags": ["-O3", "-std=c++17", "-pthread"],
+    "clang_version": "Apple clang version 21.0.0 (clang-2100.4.1.1); Target arm64-apple-darwin27.3.0; Thread model posix",
+    "source_sha256": "f134e419555bf48f5edb539973a630ae7903106cc72f4503fac9c085845ad0b1",
+    "binary_sha256": "efd5e9f75d36b9f98ca45836e171cb27b511f4f0c1c3b371463234afbcb01c2a"
+  },
+  "driver": {
+    "kind": "foreground remote shell; no Python driver",
+    "current_remote_python_version_read_only": "Python 3.9.6",
+    "threads_per_run": 15
+  },
+  "runs": [
+    {
+      "actual_command": "./verify_nonaffine_blocks_final 0 15 r0-final.json",
+      "r": 0,
+      "thread_count": 15,
+      "exit_code": 0,
+      "program_elapsed_seconds": 0.000644917,
+      "output_file": "r0-final.json",
+      "output_sha256": "6da257a0c3571cfc82f88b141f7633989f11a9d141c9f5e9b8d1b26918ee4639",
+      "all_checks_passed": true
+    },
+    {
+      "actual_command": "./verify_nonaffine_blocks_final 1 15 r1-final.json",
+      "r": 1,
+      "thread_count": 15,
+      "exit_code": 0,
+      "program_elapsed_seconds": 0.00917667,
+      "output_file": "r1-final.json",
+      "output_sha256": "ea65f06d48a997f812a383fda04bfdcbdbd8c8ce13e9f052183f529ad1d9a477",
+      "all_checks_passed": true
+    }
+  ],
+  "current_readback": {
+    "method": "ssh read-only clang/python version and SHA-256 query after completed runs",
+    "source_binary_and_output_hashes_match_the_final_run_record": true
+  }
+}
