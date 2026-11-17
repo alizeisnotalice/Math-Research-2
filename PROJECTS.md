@@ -8,7 +8,7 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；低支方向比较及界面深度约化已核验 | 第37轮完成 | 小低根端点及平衡内部的加权空间估计 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；七次S3/S4任意次数整数余因子排除；六点≤51严格公平 | 第49轮完成 | 七次单非有理位置2的完整母式覆盖与无界余因子排除 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；七次单非有理位置全排除；六点≤52严格公平 | 第50轮完成 | 七次多非有理位置{1,2}的完整整环母式与无界余因子 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
