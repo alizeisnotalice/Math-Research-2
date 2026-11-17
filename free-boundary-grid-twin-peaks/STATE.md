@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第27轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第28轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/027.md；第27轮证书见certificates/r027/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/028.md；第28轮证书见certificates/r028/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -146,3 +146,25 @@
 
 缺口仍为全局 W 加权几何或固定远峰质量的归一化证明；见 rounds/027.md、
 certificates/r027/REPLAY.md、manifest-r027.json。
+
+## 第28轮追加（2026-11-17）
+
+第28轮已归档；**原题仍开放，总目标 active。**
+
+- 严格证明全 n≥3 的末端折线 h(R^(n−2)D)>h(T)，并给出同顶点集根词包含的割集
+  充要判据。自然单转角块转置对所有 b≥2 失败；不否定一般路径或平均候选。
+- n=6 逐孔表、独立 H 整数递推与 n=3–6 的 72 个模 checkpoint 精确吻合；独立
+  出生子集 DP 另核验 n=2–4。n=7 中心孔四模与独立 Pratt/CRT 认证得到
+  Bv/Av≈.21064792648007563>1/5，仅有限结果。原模型两条渐近缺口均未闭合。
+- 穿孔长纤维有根分辨、多源前缀生成函数。全局尾收缩 T_(t+1)≤(4/5)T_t 足以给
+  A2≤5B，但该收缩及所需计重映射均未证明，也不能直接替代峰距结论。
+- 本机 n7 第一模完成、第二模异常退出原因未知；原进程全部退出。MacBook恢复后
+  仅完成缺少的三模并回收进程，最大实测RSS约3.88GB。
+- 本机 n16 条件平均批完成，仅作有限诊断。旧Mac n24百万粒子批完成，但提升ESS
+  约1，必要条件严格失败：B/A插件误差或距离TV误差至少一项>11/50。不得作为
+  原条件概率的可信支持。旧批均已退出。
+- Mac新n32 GPU已通过1024层trace双审计后启动，n7其余孔类CPU后续运行；本机
+  n24条件平均批未计入本轮完成结果。小trace ID检查修复已验证，生产核未修改。
+
+第一未证步骤仍为 W 加权根几何的全局小量估计，或固定正远峰质量的归一化证明。
+本轮入口 rounds/028.md、certificates/r028/REPLAY.md、manifest-r028.json。

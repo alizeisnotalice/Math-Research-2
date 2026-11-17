@@ -1,0 +1,28 @@
+{
+  "scope": "Incomplete local n=7 center modular attempt; not a CRT certificate or exact count.",
+  "n": 7,
+  "v": 24,
+  "source_sha256": "5f93fa39695e0f4badabcbabaad2befab920fa1590ea2337fe47a09201587db9",
+  "pass_execution": "sequential",
+  "completed_pass": {
+    "prime_index": 0,
+    "checkpoint": "n7-v24-p0.json",
+    "checkpoint_sha256": "241e53cb24fe1d8cd017d49484d8f2ba476f28368897fc40c31ac7d12660cadb",
+    "resource_sha256": "4b53d4e572558c1f3395088135f669d98f156ebc1f2cb28b9a8e1d2aed3ce100",
+    "exit_code": 0,
+    "wall_seconds": 85.04908108400195,
+    "swaps": 0
+  },
+  "failed_pass": {
+    "prime_index": 1,
+    "checkpoint_written": false,
+    "exit_code": 1,
+    "wall_seconds": 200.4293189170021,
+    "resource_sha256": "36d22587fc704f582a25ba5f1dd80fc9333e0a019364a123ce9ca92c97e88a42",
+    "observed_time_messages": ["command terminated abnormally", "signal: Invalid argument"],
+    "cause": "not diagnosed"
+  },
+  "not_started_after_failure": [2, 3],
+  "cleanup": "The owning driver stopped its queued remaining passes and its own caffeinate child; its recorded driver, program, and child exit checks were absent after cleanup.",
+  "conclusion": "One residue alone is insufficient for CRT recovery; no n=7 exact count is asserted."
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "Exact Python replay of resample, append, rank-biased move, and state fields for one GPU trace",
+  "n": 16,
+  "P": 17,
+  "tau": 2,
+  "move_steps": 16,
+  "ranks_checked": 256,
+  "first_merge_rb": "per-particle GPU payload matches independent full-word A/B scan including terminal omitted vertex; Fraction mH identity and finite moment inequality checked",
+  "proposal_categories": {
+    "root_outside_proposed": 18542,
+    "root_outside_accepted": 821,
+    "self_active_proposed": 280,
+    "self_active_accepted": 280,
+    "root_outside_rejected": 17721,
+    "root_root_active_proposed": 151,
+    "root_root_active_accepted": 151,
+    "nonroot_outside_proposed": 16113,
+    "nonroot_outside_rejected": 14198,
+    "root_nonroot_active_proposed": 17704,
+    "root_nonroot_active_accepted": 297,
+    "root_nonroot_active_rejected": 17407,
+    "nonroot_outside_accepted": 1915,
+    "nonroot_active_proposed": 16570,
+    "nonroot_active_accepted": 4521,
+    "nonroot_active_rejected": 12049
+  },
+  "terminal_full_word_reconstruction": "passed: appended unique omitted vertex and verified K=2, L, d/L fields, root fields, and all group/raw identities",
+  "caveat": "Trace equality validates this finite implementation path only; it is not a mixing or SMC-accuracy certificate."
+}

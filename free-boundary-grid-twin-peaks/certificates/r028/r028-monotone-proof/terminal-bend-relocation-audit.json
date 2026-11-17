@@ -1,0 +1,103 @@
+{
+  "kind": "terminal-bend-root-relocation-audit",
+  "scope": "Exact rooted graph transformation for T=R^(n-1) and S=R^(n-2)D. Full rooted-word injection is exhaustively checked only n=3,4; the general proof is separate.",
+  "runs": [
+    {
+      "n": 3,
+      "mapped_edge_removals": [
+        [
+          "(0, 1)",
+          "(2, 0)"
+        ],
+        [
+          "(1, 2)",
+          "(2, 0)"
+        ]
+      ],
+      "root_edge_addition": [
+        "('r', 'r')",
+        "(1, 2)"
+      ],
+      "top_h": "156",
+      "terminal_bend_h": "336",
+      "strict": true,
+      "all_old_words_injected_into_new": true,
+      "old_words_stream_checked": 156,
+      "new_word_starting_root_then_z_exists": true
+    },
+    {
+      "n": 4,
+      "mapped_edge_removals": [
+        [
+          "(1, 1)",
+          "(3, 0)"
+        ],
+        [
+          "(2, 2)",
+          "(3, 0)"
+        ]
+      ],
+      "root_edge_addition": [
+        "('r', 'r')",
+        "(2, 2)"
+      ],
+      "top_h": "4213440",
+      "terminal_bend_h": "14580720",
+      "strict": true,
+      "all_old_words_injected_into_new": true,
+      "old_words_stream_checked": 4213440,
+      "new_word_starting_root_then_z_exists": true
+    },
+    {
+      "n": 5,
+      "mapped_edge_removals": [
+        [
+          "(2, 1)",
+          "(4, 0)"
+        ],
+        [
+          "(3, 2)",
+          "(4, 0)"
+        ]
+      ],
+      "root_edge_addition": [
+        "('r', 'r')",
+        "(3, 2)"
+      ]
+    },
+    {
+      "n": 6,
+      "mapped_edge_removals": [
+        [
+          "(3, 1)",
+          "(5, 0)"
+        ],
+        [
+          "(4, 2)",
+          "(5, 0)"
+        ]
+      ],
+      "root_edge_addition": [
+        "('r', 'r')",
+        "(4, 2)"
+      ]
+    },
+    {
+      "n": 7,
+      "mapped_edge_removals": [
+        [
+          "(4, 1)",
+          "(6, 0)"
+        ],
+        [
+          "(5, 2)",
+          "(6, 0)"
+        ]
+      ],
+      "root_edge_addition": [
+        "('r', 'r')",
+        "(5, 2)"
+      ]
+    }
+  ]
+}

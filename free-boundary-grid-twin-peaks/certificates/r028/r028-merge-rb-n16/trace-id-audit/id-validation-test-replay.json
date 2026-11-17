@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "scope": "trace ID validation only; production kernel unchanged",
+  "validator_sha256": "968a73bd81e6a6e7c21d7c98067aac66288bebb797c1cdf5dcd8d3e213a04dfe",
+  "test_source_sha256": "511ccdef58182c6f27becba96230ab0b7bbb16c17c1862f918bc1e97aef78a87",
+  "raw_sha256": "a82bc04bc95654811d69fcc7f3f9da964e32116ad579fec6bf736f2c43caa932",
+  "tests": [
+    {
+      "ids": [
+        0,
+        0
+      ],
+      "expected_accepted": true,
+      "returncode": 0,
+      "stderr": "",
+      "pid": 97412,
+      "exit_confirmed": true
+    },
+    {
+      "ids": [
+        1,
+        1
+      ],
+      "expected_accepted": false,
+      "returncode": 1,
+      "stderr": "replicate/RB pairing failure",
+      "pid": 97414,
+      "exit_confirmed": true
+    },
+    {
+      "ids": [
+        0,
+        1
+      ],
+      "expected_accepted": false,
+      "returncode": 1,
+      "stderr": "replicate/RB pairing failure",
+      "pid": 97416,
+      "exit_confirmed": true
+    },
+    {
+      "ids": [
+        1,
+        0
+      ],
+      "expected_accepted": false,
+      "returncode": 1,
+      "stderr": "replicate/RB pairing failure",
+      "pid": 97418,
+      "exit_confirmed": true
+    }
+  ]
+}
