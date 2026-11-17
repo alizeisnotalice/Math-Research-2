@@ -40,3 +40,12 @@
 
 - [Mande–Sanyal 2020全文](https://arxiv.org/html/2008.00266)：本轮主Agent实际阅读§3.4定理3.7、3.8及§6对应证明和相邻构造。每个谱点都有至少三对折叠的方向，以及唯一此类方向必折叠全部支撑，均属于已有定理，不能作为本轮新发现。轻锚点自包含证明用于复核；本轮正规形和通用包装推导明确以原定理3.8为入口。未声称逐项重证整篇论文。
 - 本轮没有据有限计算推断一般平台谱的最优维数；此前Tarannikov的构造上端与一般上界仍严格区分。没有提交外部论文全文。
+
+## 第6轮补充（2026-11-17）
+
+- [Meidl 2024官方记录](https://www.aimsciences.org/article/doi/10.3934/amc.2023004)：主Agent核对题录、摘要及访问范围。摘要明确admissible分块常值空间维数等于块数，块数至多2^{n/2}，也提及非平行覆盖。Full Text入口返回登录/付费页，未取得全文。文献子Agent曾把索引片段中的Proposition 2.7及Theorem 3.4说成全文核读，来源审计后撤回；本轮不把这些条目登记为已核对全文。
+- [Çeşmelioğlu–Meidl 2025](https://doi.org/10.1007/s12095-025-00805-7)，Construction and equivalence for generalized boolean functions：取得官方公开PDF；主Agent实际读取提取文本第1664–1665页Theorem 2、Remark 1及第1670页§4入口。文中partition-constant affine space仅是H，不是任意含H的共同扩展V。H的维数界不能替代本轮V的2t−1界。主证明自包含，并沿用第2轮仿射分割秩定理；未对其首次性作全球检索承诺。
+- [Meidl–Pott 2019](https://doi.org/10.1007/s12095-019-00370-w)只取得题录/摘要；未取得正文，不将其原命题作为本轮已读依赖。六变量逐函数MM分类的原文访问受限，本轮不使用该分类代替共同U检验。
+- [de Seguins Pazzis 2023](https://arxiv.org/abs/2307.10347)和[2026](https://arxiv.org/abs/2607.14648)的锐交替矩阵空间结论带域大小限制，不能直接用于F₂。二次子类补充改用直接ANF维数及自包含的特定pencil包含极大性证明。
+
+实际来源文件哈希见source-files-r006.json；外部全文不归档。有限搜索阴性没有被当作一般上界；错误的四原子独立翻号推断已由24个最小码字的证书及正确Hadamard分类排除。
