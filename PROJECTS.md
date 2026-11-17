@@ -12,6 +12,6 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；七体族严格可行上界<0.838 | 第10轮完成 | 非正多边形测试与圆弧构造 |
+| [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；平滑定宽体已排除七体候选 | 第11轮完成 | 八体联合放置与圆弧构造 |
 
 | [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；有限变换/矩的光滑非恒定插值已证 | 第10轮完成 | 固定幅度、共同连续模与可认证分离 |
