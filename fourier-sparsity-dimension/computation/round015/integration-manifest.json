@@ -1,0 +1,173 @@
+{
+  "round": 15,
+  "date": "2026-11-17",
+  "baseline_commit": "713c72453e1bdfee36be5e77a7d826c3c1455341",
+  "general_A28": "open",
+  "theorem": "For 1 in E subset B subset C, E algebra and EB subset B: sigma(wB+zE)=kappa(B), kappa(S_Q(B,E)+Cdiag)<=kappa(C)+(Q-1)kappa(B).",
+  "theory_audit": "Independent audits passed; final deletion quantifier requires retaining the unit. No general Boolean sparsity/dimension bound claimed.",
+  "actual_computation": "16 small kernel cases; 16384 local graph configurations; 1106 newly computed core capacities compared with 29085 historical R14 T results; two strict T examples freshly rerun; Q4 GPU/CPU full comparison of 98304 phases.",
+  "validation": "verify_receipts.py, JSON and Python AST, shell syntax, report links, proof delimiters and file-size checks passed. See RUN_RECORD for versions, timing semantics, limitations and exit evidence.",
+  "dependencies": [
+    {
+      "path": "fourier-sparsity-dimension/computation/round013/capacity_dp.cpp",
+      "sha256": "08d26814acc317f1377da6827ca6ec9626f3eb12a2a0e62a9e1ba27e3025ee1d"
+    },
+    {
+      "path": "fourier-sparsity-dimension/proofs/013-selector-capacity-zh.md",
+      "sha256": "cf3e0e5c301f486b1cfdbf529de44ac7fd103602e67c43fd9ee3b8602fe77ecc"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round014/remote-parent-audit.json",
+      "sha256": "8086daac2c76d94bdff2a2f9d02a8ecd7a487a2f1783ffa76c378a87aae1ae6a"
+    }
+  ],
+  "files": [
+    {
+      "path": "PROJECTS.md",
+      "bytes": 1610,
+      "sha256": "eea5b3c39ba1d0dd3df4faed32f4b502d655a6b016830fc1ceeb36d8228c978a"
+    },
+    {
+      "path": "fourier-sparsity-dimension/README.md",
+      "bytes": 1848,
+      "sha256": "1481605ab77870860d54f6e29994b2f4f9bebc84d7b5a7ea290f545f74b1e588"
+    },
+    {
+      "path": "fourier-sparsity-dimension/STATE.md",
+      "bytes": 17996,
+      "sha256": "68336cbbbcb64ad776864cf8267689275c1df5814238b3135c1a546457994c9f"
+    },
+    {
+      "path": "fourier-sparsity-dimension/rounds/015.md",
+      "bytes": 3875,
+      "sha256": "b206ca94f39d258370a0fc4f4b39c264825d98e9dd9e88242efb1df6f165d343"
+    },
+    {
+      "path": "fourier-sparsity-dimension/proofs/015-selector-old-direction-addback-zh.md",
+      "bytes": 6998,
+      "sha256": "af0e11879e27f5a1b77e1b362ee25d4d83f867fd31cffb0c2207e459277db159"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/MetalWalshVerifier_r015.swift",
+      "bytes": 6735,
+      "sha256": "26fba2c735c09609ad144c6233bfb4cfe4f8d31fcb6fe7b8e1d4d3d61a04e8db"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/RUN_RECORD.md",
+      "bytes": 7836,
+      "sha256": "ad5faa6b240872bc5c95be1eb8d325ee9cb662f263c0882aac3a3e11de73a4ea"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/RUN_RECORD_CORE_CAPACITY.md",
+      "bytes": 3018,
+      "sha256": "66a5309819c2da12cb2e7b4dc634e2023b95e1ff27854e0c0b8f52d52302c591"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/RUN_RECORD_Q4_METAL.md",
+      "bytes": 1188,
+      "sha256": "677095739c182bd859fcc524b71730b198f4d39bf339e4f3fac55eb8cd91e805"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/STRICT_EXAMPLES_RECORD.md",
+      "bytes": 1411,
+      "sha256": "d6e8701c93544cbdd7c07be1b5780255db480fcaeebbaeb26df6e839ea39a514"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/audit_core_capacity.py",
+      "bytes": 7666,
+      "sha256": "8f4314a78bf934131866f52cc7b2803c9b406e4fa867b7b3d5a227f4b379ac45"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/extract_strict_examples.py",
+      "bytes": 2565,
+      "sha256": "cf2f002630047d68da5bbc3a4e5ef36754e3333d25203522a2e3d8f5398cdfda"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/generate_q4_input.py",
+      "bytes": 2105,
+      "sha256": "09daffc032f6faa9658b3ac8a931b46a20b8c0e7432a24722343274b7855f566"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/nonunital-kernel-verification.json",
+      "bytes": 5973,
+      "sha256": "8d76f61786ac712e7dd445a25a2aef38d722ee148f2c7aa0d8fc17b9948f0125"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/q4-input.json",
+      "bytes": 1843,
+      "sha256": "cec2b5f13927ad3365b9918b0a2c8acefa8b21f87e7aa473b5443a115adb5e11"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/q4-metal-environment.txt",
+      "bytes": 194,
+      "sha256": "70e9632835476b2d3c2b13d81b45c02f8ff092aca6cfdbd7e60c04774f6d16fe"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/q4-metal-manifest-sha256.txt",
+      "bytes": 353,
+      "sha256": "a0aaffc58e6bb0beaba409c78a48cdec88eedc9dee8b40b5d78d5e5fd2fe586f"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/q4-metal-report.json",
+      "bytes": 1084,
+      "sha256": "c0314d3c4bb64dd44e9eed586d48ef5a8665a5f15eacbd45a2a484507645ee0d"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/remote-core-capacity-summary.json",
+      "bytes": 1144,
+      "sha256": "fb2604d2f3ba51efd123413fa15560d84be850f4fe298339d87d3355ea3a12ae"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/remote-counterexample-result.json",
+      "bytes": 92,
+      "sha256": "1967ff1e84d6ff1ae24424b3482351dce35472eb28e28510b2d3ea0ac852f76f"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/run_q4_metal.sh",
+      "bytes": 898,
+      "sha256": "2ea427a1aced2fa757bfb32dab32f6cb4e91d104f9e9b4a61105bda9b6c56ed4"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/strict-examples-verification.json",
+      "bytes": 1863,
+      "sha256": "13f46af3af819d748f32a9551a3041fcf8ed60608a2cb124dd01ec19e8b4c9bf"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/strict-examples.json",
+      "bytes": 2604,
+      "sha256": "827489628cd34856a65c543df0d25f951e90e8b7c89e0bc04c4c85c768899af4"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/triangle-resource.json",
+      "bytes": 1908,
+      "sha256": "b8b77efef27ddf17920eb4fb2033b0ce4e4ae723f7de28c92adb62dcf0fce0d5"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/triangle-scan.json",
+      "bytes": 1490,
+      "sha256": "d5beb0feb43d7aef1b88d487bc1566d455868ff019a2625d3c1471effaaa7e70"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/triangle_graph_scan.py",
+      "bytes": 5884,
+      "sha256": "6307726e5578bfc58dbf536d1691e61b7f7d86b8d22fdee89c90fbf8c206bd26"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/verify_nonunital_kernel.py",
+      "bytes": 4234,
+      "sha256": "b7477d29eabc160a3d810beac7fb6f9e8be9aa566b20fff0673c06493ffaf471"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/verify_receipts.py",
+      "bytes": 4628,
+      "sha256": "0d1b7cb28b7472a06f705bae23acf93a3d23c284c467f2af378bdf9ffa14d314"
+    },
+    {
+      "path": "fourier-sparsity-dimension/computation/round015/verify_strict_examples.py",
+      "bytes": 3885,
+      "sha256": "be18cab3e15d9e305b3185e91b43af8a1b7543d5bd1830b8021f14b37a9126f7"
+    }
+  ],
+  "self_hash_excluded": true,
+  "backup": "target backup disk not verified"
+}
