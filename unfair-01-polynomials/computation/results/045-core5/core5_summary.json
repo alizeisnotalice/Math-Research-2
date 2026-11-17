@@ -1,0 +1,126 @@
+{
+  "parameters": {
+    "T": [
+      -19,
+      19
+    ],
+    "N": [
+      -99,
+      99
+    ],
+    "c": [
+      -13,
+      13
+    ],
+    "d": [
+      -9,
+      9
+    ],
+    "positive_axis_points": [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "delta_conditions": [
+      "delta=T^2-4N>0",
+      "delta is nonsquare",
+      "delta<(20-|T|)^2"
+    ]
+  },
+  "counts": {
+    "raw_box": 3981393,
+    "delta_trace": 584820,
+    "positive_axis": 176049,
+    "annulus_schur": 404
+  },
+  "axis_first_failure_counts": {
+    "1/4": 0,
+    "1/2": 344320,
+    "3/4": 43263,
+    "1/1": 8455,
+    "4/3": 5506,
+    "2/1": 5713,
+    "4/1": 1514
+  },
+  "schur_first_failure_counts": {
+    "H(2x)": 174806,
+    "reverse(H)(2x)": 839
+  },
+  "survivor_count": 404,
+  "survivors_sha256": "47961d58e3bbed6bff168fa19b3ec4dd5028945f5948e0ffebf79634de56d3a7",
+  "witnesses_sha256": "bbd26a4ea7f8b47ebaf48e0d7912c71dcd92b88f409ea6bebfb0e9215b998432",
+  "delta_family_witnesses_sha256": "2f63450ceb9c3873cb16a3a86189c053af9b02f9c2deeab1338614365d83a950",
+  "coverage": {
+    "delta_rejected_families": 6621,
+    "delta_rejected_tuples": 3396573,
+    "post_delta_tuples": 584820,
+    "post_delta_partition_check": true
+  },
+  "runtime": {
+    "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O"
+  },
+  "schur_semantics_self_tests": [
+    {
+      "polynomial_ascending": [
+        -1,
+        2
+      ],
+      "root_radius": "1/2",
+      "strictly_inside": true
+    },
+    {
+      "polynomial_ascending": [
+        -2,
+        1
+      ],
+      "root_radius": "2",
+      "strictly_inside": false
+    },
+    {
+      "polynomial_ascending": [
+        -1,
+        1
+      ],
+      "root_radius": "1",
+      "strictly_inside": false
+    },
+    {
+      "polynomial_ascending": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "meaning": "Phi_5(2x), all radii 1/2",
+      "strictly_inside": true
+    }
+  ],
+  "scope": "Every screen is a necessary condition. Surviving tuples are not claimed to define P, Pbar, a complete-cross model, or a counterexample."
+}
