@@ -1,0 +1,239 @@
+{
+  "degree": 7,
+  "support_sets_total": 63,
+  "forbidden_pairs": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      6
+    ]
+  ],
+  "surviving_supports": [
+    {
+      "S": [
+        1
+      ],
+      "r": 1,
+      "t": 6,
+      "forbidden": false
+    },
+    {
+      "S": [
+        2
+      ],
+      "r": 2,
+      "t": 5,
+      "forbidden": false
+    },
+    {
+      "S": [
+        3
+      ],
+      "r": 3,
+      "t": 4,
+      "forbidden": false
+    },
+    {
+      "S": [
+        4
+      ],
+      "r": 4,
+      "t": 3,
+      "forbidden": false
+    },
+    {
+      "S": [
+        5
+      ],
+      "r": 5,
+      "t": 2,
+      "forbidden": false
+    },
+    {
+      "S": [
+        6
+      ],
+      "r": 6,
+      "t": 1,
+      "forbidden": false
+    },
+    {
+      "S": [
+        1,
+        2
+      ],
+      "r": 1,
+      "t": 5,
+      "forbidden": false
+    },
+    {
+      "S": [
+        2,
+        4
+      ],
+      "r": 2,
+      "t": 3,
+      "forbidden": false
+    },
+    {
+      "S": [
+        3,
+        5
+      ],
+      "r": 3,
+      "t": 2,
+      "forbidden": false
+    },
+    {
+      "S": [
+        5,
+        6
+      ],
+      "r": 5,
+      "t": 1,
+      "forbidden": false
+    },
+    {
+      "S": [
+        2,
+        3,
+        4
+      ],
+      "r": 2,
+      "t": 3,
+      "forbidden": false
+    },
+    {
+      "S": [
+        3,
+        4,
+        5
+      ],
+      "r": 3,
+      "t": 2,
+      "forbidden": false
+    }
+  ],
+  "reversal_orbits": {
+    "(1,)": [
+      [
+        1
+      ],
+      [
+        6
+      ]
+    ],
+    "(1, 2)": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "(2,)": [
+      [
+        2
+      ],
+      [
+        5
+      ]
+    ],
+    "(2, 3, 4)": [
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "(2, 4)": [
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "(3,)": [
+      [
+        3
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  "odd_boundary_polynomial": "(1+2x)^3(1+x/2)^3(1+x)",
+  "odd_boundary_coefficients": [
+    "1",
+    "17/2",
+    "117/4",
+    "419/8",
+    "419/8",
+    "117/4",
+    "17/2",
+    "1"
+  ],
+  "power_sum_upper_bound": "3*(2^s+2^(-s))+1 for every positive integer s",
+  "scope": "Exact finite audit of the support classification and boundary polynomial only."
+}
