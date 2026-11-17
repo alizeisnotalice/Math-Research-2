@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "source_sha256": "5d9122f587fd6f6549978bd869463f9891d904b665f3cee13576cac876ae1b63",
+  "input_sha256": "f139a59424542739cefb04115809e8c4984cd29d3f85df80ad263140b1754de7",
+  "result_sha256": "bed604755d364dd9f82c8048b6d69f604c897d978087b36eace93b1c9d4573f1",
+  "task": "local_d19",
+  "result": {
+    "threads": 12,
+    "D": 19,
+    "kappa": 24,
+    "elapsed_seconds": 59.3514,
+    "partition": [
+      "0x300000303000003",
+      "0xc00000c0c00000c",
+      "0x1000001010000010",
+      "0x2000002020000020",
+      "0x4000004040000040",
+      "0x8000008080000080",
+      "0x3030000030300",
+      "0xc0c00000c0c00",
+      "0x10100000101000",
+      "0x20200000202000",
+      "0x40400000404000",
+      "0x80800000808000"
+    ]
+  },
+  "partition_terms": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "direct_sum_components": [
+    {
+      "old_points": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "D": 7,
+      "kappa": 8,
+      "serial_exit": 0,
+      "parallel_exit": 0
+    },
+    {
+      "old_points": [
+        4
+      ],
+      "D": 3,
+      "kappa": 4,
+      "serial_exit": 0,
+      "parallel_exit": 0
+    },
+    {
+      "old_points": [
+        5
+      ],
+      "D": 3,
+      "kappa": 4,
+      "serial_exit": 0,
+      "parallel_exit": 0
+    },
+    {
+      "old_points": [
+        6
+      ],
+      "D": 3,
+      "kappa": 4,
+      "serial_exit": 0,
+      "parallel_exit": 0
+    },
+    {
+      "old_points": [
+        7
+      ],
+      "D": 3,
+      "kappa": 4,
+      "serial_exit": 0,
+      "parallel_exit": 0
+    }
+  ],
+  "arithmetic": "F2 rank, integer DP",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "scope": "Witness lower bound and independent direct-sum upper certificate; not a general addback theorem."
+}

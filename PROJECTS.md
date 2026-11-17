@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；任意模块代数的三角选择器容量精确倍率 | 第13轮完成 | 一般大残余、额外合法方向与非三角构造 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；仿射扩张容量界、大跳构造与全模刚性 | 第14轮完成 | 一般旧方向加回预算、大残余与非三角构造 |

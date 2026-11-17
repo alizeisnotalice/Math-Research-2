@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "source_sha256": "5d9122f587fd6f6549978bd869463f9891d904b665f3cee13576cac876ae1b63",
+  "input_sha256": "f139a59424542739cefb04115809e8c4984cd29d3f85df80ad263140b1754de7",
+  "result_sha256": "b2ba7c5f201a138d9611492f6f15e52900e18b8d050c83350a72bcbd0243e7ac",
+  "task": "remote_d18_free_pair",
+  "result": {
+    "D": 18,
+    "kappa": 24,
+    "partition": [
+      "0x300000303000003",
+      "0xc00000c0c00000c",
+      "0x10001000100010",
+      "0x20002000200020",
+      "0x4000004040000040",
+      "0x8000008080000080",
+      "0x3030000030300",
+      "0xc0c00000c0c00",
+      "0x1000100010001000",
+      "0x2000200020002000",
+      "0x40400000404000",
+      "0x80800000808000"
+    ]
+  },
+  "partition_terms": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "direct_sum_components": [
+    {
+      "old_points": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "D": 7,
+      "kappa": 8,
+      "serial_exit": 0,
+      "parallel_exit": 0
+    },
+    {
+      "old_points": [
+        4,
+        5
+      ],
+      "D": 5,
+      "kappa": 8,
+      "serial_exit": 0,
+      "parallel_exit": 0
+    },
+    {
+      "old_points": [
+        6
+      ],
+      "D": 3,
+      "kappa": 4,
+      "serial_exit": 0,
+      "parallel_exit": 0
+    },
+    {
+      "old_points": [
+        7
+      ],
+      "D": 3,
+      "kappa": 4,
+      "serial_exit": 0,
+      "parallel_exit": 0
+    }
+  ],
+  "arithmetic": "F2 rank, integer DP",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "scope": "Witness lower bound and independent direct-sum upper certificate; not a general addback theorem."
+}

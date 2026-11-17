@@ -1,0 +1,350 @@
+{
+  "all_authorized_runs_ok": true,
+  "authorized_names": [
+    "remote_d18_free_pair",
+    "remote_d18_mixed"
+  ],
+  "compile": {
+    "argv": [
+      "/usr/bin/clang++",
+      "-O3",
+      "-std=c++17",
+      "-pthread",
+      "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r014/d18-parallel/capacity_dp_parallel.cpp",
+      "-o",
+      "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r014/d18-parallel/capacity_dp_parallel"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  "compiler": {
+    "argv": [
+      "/usr/bin/clang++",
+      "--version"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Apple clang version 21.0.0 (clang-2100.4.1.1)\nTarget: arm64-apple-darwin27.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n"
+  },
+  "driver_sha256": "567bd5fe6e87c804cb3cf4b9057fb727fde61886742aed358a8114a78aca6b6e",
+  "finished_utc": "2026-11-17T08:48:19.216533+00:00",
+  "host": {
+    "argv": [
+      "/bin/hostname"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "zzhMateBook-Pro-S.local\n"
+  },
+  "input_sha256": "f139a59424542739cefb04115809e8c4984cd29d3f85df80ad263140b1754de7",
+  "per_case_timeout_seconds": 900,
+  "python": {
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "--version"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Python 3.9.6\n"
+  },
+  "runs": [
+    {
+      "D": 7,
+      "candidate_upper": null,
+      "command": [
+        "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r014/d18-parallel/capacity_dp_parallel",
+        "15",
+        "7",
+        "0xf000f000f000f",
+        "0xf000f000f000f0",
+        "0xf000f000f000f00",
+        "0xf000f000f000f000",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xc0c0c0c0c0c0c0c0"
+      ],
+      "cpu_samples": [
+        {
+          "child_pid": 50194,
+          "host_cpu_line": "CPU usage: 71.30% user, 8.76% sys, 19.92% idle",
+          "label": "start",
+          "own_dp_cpu_percent_sum": 0.0,
+          "own_dp_ps_rows": [],
+          "utc": "2026-11-17T08:47:38.534251+00:00"
+        },
+        {
+          "child_pid": 50194,
+          "host_cpu_line": "CPU usage: 59.19% user, 7.25% sys, 33.55% idle",
+          "label": "end",
+          "own_dp_cpu_percent_sum": 0.0,
+          "own_dp_ps_rows": [],
+          "utc": "2026-11-17T08:47:39.789589+00:00"
+        }
+      ],
+      "elapsed_seconds_wall": 2.706264667,
+      "expected_kappa": 8,
+      "finished_utc": "2026-11-17T08:47:39.789627+00:00",
+      "matches_expected_serial_kappa": true,
+      "mode": "validation",
+      "name": "old_serial_triangular_Q4_D7",
+      "parsed": {
+        "D": 7,
+        "elapsed_seconds": 0.0130325,
+        "kappa": 8,
+        "partition": [
+          "0xf000f000f000f",
+          "0xf000f000f000f0",
+          "0xf000f000f000f00",
+          "0xf000f000f000f000"
+        ],
+        "threads": 15
+      },
+      "pid": 50194,
+      "reference": "round013/capacity-verification.json triangular_Q4",
+      "returncode": 0,
+      "started_utc": "2026-11-17T08:47:37.083368+00:00",
+      "stderr": "subcode counts completed\nweight 16 states 12 done\nweight 32 states 102 done\nweight 48 states 12 done\nweight 64 states 1 done\n",
+      "stdout": "{\"threads\":15,\"D\":7,\"kappa\":8,\"elapsed_seconds\":0.0130325,\"partition\":[\"0xf000f000f000f\",\"0xf000f000f000f0\",\"0xf000f000f000f00\",\"0xf000f000f000f000\"]}\n",
+      "timed_out": false,
+      "timeout_seconds": 900
+    },
+    {
+      "D": 13,
+      "candidate_upper": null,
+      "command": [
+        "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r014/d18-parallel/capacity_dp_parallel",
+        "15",
+        "13",
+        "12297829382473034410",
+        "7392283487217560234",
+        "3512861310540840960",
+        "868082073854803968",
+        "287332900645175040",
+        "67779170971733196",
+        "4279075918001100",
+        "224561496588288",
+        "56913480056832",
+        "4042322160",
+        "817901760",
+        "202116108",
+        "50529027"
+      ],
+      "cpu_samples": [
+        {
+          "child_pid": 50231,
+          "host_cpu_line": "CPU usage: 59.61% user, 6.95% sys, 33.43% idle",
+          "label": "start",
+          "own_dp_cpu_percent_sum": 0.0,
+          "own_dp_ps_rows": [],
+          "utc": "2026-11-17T08:47:41.058053+00:00"
+        },
+        {
+          "child_pid": 50231,
+          "host_cpu_line": "CPU usage: 59.79% user, 7.2% sys, 33.18% idle",
+          "label": "end",
+          "own_dp_cpu_percent_sum": 0.0,
+          "own_dp_ps_rows": [],
+          "utc": "2026-11-17T08:47:42.166470+00:00"
+        }
+      ],
+      "elapsed_seconds_wall": 2.3760006250000005,
+      "expected_kappa": 16,
+      "finished_utc": "2026-11-17T08:47:42.166513+00:00",
+      "matches_expected_serial_kappa": true,
+      "mode": "validation",
+      "name": "old_serial_selector_task11_D13",
+      "parsed": {
+        "D": 13,
+        "elapsed_seconds": 0.0390806,
+        "kappa": 16,
+        "partition": [
+          "0x3030303",
+          "0xc0c0c0c",
+          "0xc030c030",
+          "0x30c030c0",
+          "0x303030300000000",
+          "0xc0c0c0c00000000",
+          "0xc030c03000000000",
+          "0x30c030c000000000"
+        ],
+        "threads": 15
+      },
+      "pid": 50231,
+      "reference": "round014/selector-capacity-results.jsonl id=11",
+      "returncode": 0,
+      "started_utc": "2026-11-17T08:47:39.790513+00:00",
+      "stderr": "subcode counts completed\nweight 8 states 8 done\nweight 16 states 92 done\nweight 24 states 568 done\nweight 32 states 6854 done\nweight 40 states 568 done\nweight 48 states 92 done\nweight 56 states 8 done\nweight 64 states 1 done\n",
+      "stdout": "{\"threads\":15,\"D\":13,\"kappa\":16,\"elapsed_seconds\":0.0390806,\"partition\":[\"0x3030303\",\"0xc0c0c0c\",\"0xc030c030\",\"0x30c030c0\",\"0x303030300000000\",\"0xc0c0c0c00000000\",\"0xc030c03000000000\",\"0x30c030c000000000\"]}\n",
+      "timed_out": false,
+      "timeout_seconds": 900
+    },
+    {
+      "D": 18,
+      "candidate_upper": 24,
+      "command": [
+        "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r014/d18-parallel/capacity_dp_parallel",
+        "15",
+        "18",
+        "9223372588758073472",
+        "4611686294379036736",
+        "2305860808095043632",
+        "1152939097061330944",
+        "649931257589073161",
+        "361700864190383365",
+        "216172795049017347",
+        "36029346783166592",
+        "18014673391583296",
+        "9007336695791648",
+        "4503668347895824",
+        "3377751260921868",
+        "844437815230467",
+        "141287244202112",
+        "70643622101056",
+        "52982716575792",
+        "13245679143948",
+        "3311419785987"
+      ],
+      "cpu_samples": [
+        {
+          "child_pid": 50236,
+          "host_cpu_line": "CPU usage: 63.87% user, 2.81% sys, 33.31% idle",
+          "label": "start",
+          "own_dp_cpu_percent_sum": 129.3,
+          "own_dp_ps_rows": [
+            "50236 50177 129.3  0.0       00:06 /Users/zhengzhihao/CodexRemoteMath/a28-selector/r014/d18-parallel/capacity_dp_parallel 15 18 9223372588758073472 4611686294379036736 2305860808095043632 1152939097061330944 649931257589073161 361700864190383365 216172795049017347 36029346783166592 18014673391583296 9007336695791648 4503668347895824 3377751260921868 844437815230467 141287244202112 70643622101056 52982716575792 13245679143948 3311419785987"
+          ],
+          "utc": "2026-11-17T08:47:48.708963+00:00"
+        },
+        {
+          "child_pid": 50236,
+          "host_cpu_line": "CPU usage: 59.28% user, 7.43% sys, 33.28% idle",
+          "label": "end",
+          "own_dp_cpu_percent_sum": 0.0,
+          "own_dp_ps_rows": [],
+          "utc": "2026-11-17T08:48:01.944405+00:00"
+        }
+      ],
+      "elapsed_seconds_wall": 19.777137,
+      "expected_kappa": null,
+      "finished_utc": "2026-11-17T08:48:01.944437+00:00",
+      "matches_expected_serial_kappa": false,
+      "mode": "authorized_d18",
+      "name": "remote_d18_free_pair",
+      "parsed": {
+        "D": 18,
+        "elapsed_seconds": 16.9326,
+        "kappa": 24,
+        "partition": [
+          "0x300000303000003",
+          "0xc00000c0c00000c",
+          "0x10001000100010",
+          "0x20002000200020",
+          "0x4000004040000040",
+          "0x8000008080000080",
+          "0x3030000030300",
+          "0xc0c00000c0c00",
+          "0x1000100010001000",
+          "0x2000200020002000",
+          "0x40400000404000",
+          "0x80800000808000"
+        ],
+        "threads": 15
+      },
+      "pid": 50236,
+      "reference": null,
+      "returncode": 0,
+      "started_utc": "2026-11-17T08:47:42.167252+00:00",
+      "stderr": "subcode counts completed\nweight 4 states 16 done\nweight 8 states 120 done\nweight 12 states 624 done\nweight 16 states 2332 done\nweight 20 states 7248 done\nweight 24 states 22344 done\nweight 28 states 49456 done\nweight 32 states 97862 done\nweight 36 states 49456 done\nweight 40 states 22344 done\nweight 44 states 7248 done\nweight 48 states 2332 done\nweight 52 states 624 done\nweight 56 states 120 done\nweight 60 states 16 done\nweight 64 states 1 done\n",
+      "stdout": "{\"threads\":15,\"D\":18,\"kappa\":24,\"elapsed_seconds\":16.9326,\"partition\":[\"0x300000303000003\",\"0xc00000c0c00000c\",\"0x10001000100010\",\"0x20002000200020\",\"0x4000004040000040\",\"0x8000008080000080\",\"0x3030000030300\",\"0xc0c00000c0c00\",\"0x1000100010001000\",\"0x2000200020002000\",\"0x40400000404000\",\"0x80800000808000\"]}\n",
+      "timed_out": false,
+      "timeout_seconds": 900
+    },
+    {
+      "D": 18,
+      "candidate_upper": 24,
+      "command": [
+        "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r014/d18-parallel/capacity_dp_parallel",
+        "15",
+        "18",
+        "9223372588758073472",
+        "4611686294379036736",
+        "2305843147189518368",
+        "1152924885014545171",
+        "649931257589073161",
+        "361700864190383365",
+        "216176080698999552",
+        "36029346783166592",
+        "18014673391583296",
+        "9007336695791648",
+        "4503668347895824",
+        "3377751260921868",
+        "844437815230467",
+        "141287244202112",
+        "70643622101056",
+        "35321811050528",
+        "20972325311251",
+        "13245679143948"
+      ],
+      "cpu_samples": [
+        {
+          "child_pid": 50297,
+          "host_cpu_line": "CPU usage: 63.55% user, 3.11% sys, 33.32% idle",
+          "label": "start",
+          "own_dp_cpu_percent_sum": 146.0,
+          "own_dp_ps_rows": [
+            "50297 50177 146.0  0.0       00:07 /Users/zhengzhihao/CodexRemoteMath/a28-selector/r014/d18-parallel/capacity_dp_parallel 15 18 9223372588758073472 4611686294379036736 2305843147189518368 1152924885014545171 649931257589073161 361700864190383365 216176080698999552 36029346783166592 18014673391583296 9007336695791648 4503668347895824 3377751260921868 844437815230467 141287244202112 70643622101056 35321811050528 20972325311251 13245679143948"
+          ],
+          "utc": "2026-11-17T08:48:08.139980+00:00"
+        },
+        {
+          "child_pid": 50297,
+          "host_cpu_line": "CPU usage: 58.94% user, 7.50% sys, 33.54% idle",
+          "label": "end",
+          "own_dp_cpu_percent_sum": 0.0,
+          "own_dp_ps_rows": [],
+          "utc": "2026-11-17T08:48:19.215694+00:00"
+        }
+      ],
+      "elapsed_seconds_wall": 17.270469333,
+      "expected_kappa": null,
+      "finished_utc": "2026-11-17T08:48:19.215734+00:00",
+      "matches_expected_serial_kappa": false,
+      "mode": "authorized_d18",
+      "name": "remote_d18_mixed",
+      "parsed": {
+        "D": 18,
+        "elapsed_seconds": 15.3183,
+        "kappa": 24,
+        "partition": [
+          "0x3000300030003",
+          "0xc00000c0c00000c",
+          "0x10001000100010",
+          "0x2000002020000020",
+          "0x4000004040000040",
+          "0x8000008080000080",
+          "0x300030003000300",
+          "0xc0c00000c0c00",
+          "0x1000100010001000",
+          "0x20200000202000",
+          "0x40400000404000",
+          "0x80800000808000"
+        ],
+        "threads": 15
+      },
+      "pid": 50297,
+      "reference": null,
+      "returncode": 0,
+      "started_utc": "2026-11-17T08:48:01.945223+00:00",
+      "stderr": "subcode counts completed\nweight 4 states 20 done\nweight 8 states 156 done\nweight 12 states 668 done\nweight 16 states 2244 done\nweight 20 states 7348 done\nweight 24 states 20836 done\nweight 28 states 53404 done\nweight 32 states 92790 done\nweight 36 states 53404 done\nweight 40 states 20836 done\nweight 44 states 7348 done\nweight 48 states 2244 done\nweight 52 states 668 done\nweight 56 states 156 done\nweight 60 states 20 done\nweight 64 states 1 done\n",
+      "stdout": "{\"threads\":15,\"D\":18,\"kappa\":24,\"elapsed_seconds\":15.3183,\"partition\":[\"0x3000300030003\",\"0xc00000c0c00000c\",\"0x10001000100010\",\"0x2000002020000020\",\"0x4000004040000040\",\"0x8000008080000080\",\"0x300030003000300\",\"0xc0c00000c0c00\",\"0x1000100010001000\",\"0x20200000202000\",\"0x40400000404000\",\"0x80800000808000\"]}\n",
+      "timed_out": false,
+      "timeout_seconds": 900
+    }
+  ],
+  "schema": "a28-r014-d18-remote-v1",
+  "source_sha256": "a8217f49d07d16991c8914933c2a680c17d47519f67b47f3e8b6669860598467",
+  "started_utc": "2026-11-17T08:47:35.999296+00:00",
+  "threads": 15,
+  "validation_passed": true
+}
