@@ -8,3 +8,6 @@
 - 第2轮独立子任务初始面积阶界：/Volumes/data/CodexTemp/T2/a022-r-lower/r_lower_bound.md；SHA-256 `95ac5006706fd4b48c45faabf3ec5afff893629f1d8d8853072fb03f7ba359f3`。已逐步核验提升合法性、层析计数和逆像；主Agent进一步推导逐输出权重、远峰下界及精确逆像公式，见proofs/weighted-promotion.md。
 
 - 第18轮于2026-11-16重新核读 Twin peaks v2 §1–2、§4–5；继续区分环面猜想、自由方格粗糙边界定理和固定宽矩形。新根矩/可拆分支/前缀核结论为本项目自写推导，不声称来自该论文。
+
+
+第42轮网页复核（2026-11-17）：重新读取 [Burdzy Problem 9](https://sites.math.washington.edu/~burdzy/open_mathjax.php) 的原问题表述和 [Twin peaks arXiv摘要页](https://arxiv.org/abs/1606.08025)。对象仍为均匀标号在恰两峰下的n×n方格图距；本轮仅重新核对网页与摘要，不把摘要中的树图结论当方格结论，也不声称本轮重审了全文证明。构造和有限证书是本项目自写。

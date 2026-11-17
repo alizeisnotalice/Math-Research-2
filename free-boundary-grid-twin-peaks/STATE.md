@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第41轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第42轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/041.md；第36轮证书见certificates/r036/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/042.md；第36轮证书见certificates/r036/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -347,3 +347,16 @@ k=o(n)的小高根支对远峰概率及Q贡献均消失；小低根支端点与�
 第一缺口仍为完整像集加权空间质量或固定远峰归一化占比。报告rounds/041.md；
 certificate入口certificates/r041/REPLAY.md。新两机CPU/GPU及弯曲切割计算另轮继续，
 agent同时活跃上限1，数值workers算力继续按用户无限制授权。
+
+
+## 第42轮追加（2026-11-17）
+
+178条n5 Lipschitz切割的4134交集轨道全部精确完成并退出；1051个有局部极大点
+无双侧桥的严格零证书。还原15931无序对得到S1=16756357278752626754500、
+S2=221954860157521456430308，原律rho5>5/2的均匀二阶矩下界约.1790974，
+130项正有理权将下界提高至>.19935098，全部178个对偶不等式认证此事件族的非负
+线性二阶矩最优性。此为有限n5结果，不是无穷子列。全n曲线规则给rho>n/3(n≥4)，
+但固定正归一化仍未证。两侧独立subset DP逐事件核验32/178两族；n3两版9!交集
+36/136均一致，最终公开目录10项重放全部通过并回收。原题开放，总目标active。
+入口rounds/042.md、certificates/r042/REPLAY.md。下一步n7区域精确计数与完整空间
+权估计；在途两机搜索/Metal另管，子agent同时活跃仍上限1。
