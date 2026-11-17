@@ -55,3 +55,10 @@
 - [Kolomeec 2016](https://doi.org/10.4213/mvk187)，A graph of minimal distances between bent functions，Mathematical Aspects of Cryptography 7(2), 103–110：文献子Agent实际通过MathNet原文渲染阅读8页；第105页为单个最小翻号的仿射平坦表征，第106页Lemma 1为特定MM排列交换，第107页Statement 3为相同仿射线性部的两平行陪集拼接。后两项并非一般相交翻号的E₄闭包或秩定理。主Agent核对阅读备忘录；本轮其独立重开MathNet记录页失败，未将这次失败记作主Agent阅读全文。证明自包含。
 - [Kolomeec 2017](https://doi.org/10.1007/s10623-016-0306-4)，The graph of minimal distances of bent functions and its properties：只取得ePrint元数据/摘要与Springer预览，ePrint PDF当前403；未核读全文，不以摘要推断E₄或秩结论。
 - [Bykov–Kolomeec 2025原文](https://math-sobolev.ru/sites/math-sobolev.ru/files/2026-02/32-3-5.pdf)，DOI 10.33048/daio.2025.32.811：文献子Agent读取公开俄文原文，其最近邻分类/计数仍围绕单个仿射平坦。主Agent未逐项重读该全文；本文定理不依赖其计数。已核查来源没有定位本文完整结构断言，不据此宣称首次性。外部PDF不提交。
+
+## 第8轮补充（2026-11-17）
+
+- [Filmus等，arXiv:2212.14685v4](https://arxiv.org/abs/2212.14685) Theorem 4.7 和 [Bamberg–Filmus–Ihringer–Kurz，arXiv:2211.16561v2](https://arxiv.org/abs/2211.16561) 的分割定义由文献子Agent重核：完整覆盖是原定理的假设。本轮部分族结论给自包含证明，单缺块补全后才应用完整分割界。
+- [Delsarte–Goethals–MacWilliams 1970](https://doi.org/10.1016/S0019-9958(70)90214-7) 本轮仅核题录/摘要；[Leducq，arXiv:1001.2554](https://arxiv.org/html/1001.2554) Theorem 1由文献子Agent核读，主Agent也实际重开HTML核对引言、定理1及其二元特例。最小重量支撑的仿射刻画属于经典结果。归档证明另给导数与周期的二元自包含论证，不主张单缺块推论首次出现。
+- [Borissov–Manev–Nikova，WCC2001原文](https://www.esat.kuleuven.be/cosic/publications/article-413.pdf) Lemma 2由文献子Agent核读：非最小码字的分解结论带有非最小性假设，不能推出全部两倍最小重量码字可拆成两个仿射块。Kasami–Tokura相关旧原文未取得全文；严格小于两倍最小重量的转述不能支付等号边界，本轮不依赖未读原命题。
+- 本轮显式RM(3,6)例子仅否定“次数＋两倍最小重量”简化。主Agent完整检查其48点补集无六块精确覆盖；不把它作为实际部分分割无法补全的反例。无外部论文全文纳入提交。
