@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第35轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第36轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/035.md；第35轮证书见certificates/r035/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/036.md；第36轮证书见certificates/r036/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -302,3 +302,16 @@ L≥6原律质量0.3050990081364525、Q贡献0.1065048184414510，均为有限�
 本机n11扫描、MacBookCPU Ψ搜索和GPU长批在途，未计作完成证书。
 下一关键估计是完整L提升下的端点乘积空间质量，或固定正远峰归一化质量。
 入口rounds/035.md、certificates/r035/REPLAY.md、manifest-r035.json。
+
+
+## 第36轮追加（2026-11-17）
+
+原题开放，总目标active。有序高根支a/低根支b的精确B→P2核为(q−1)/b，不能将对称m
+用于高低方向事件；已有根距/Q等对称量仍可用m。无向纤维中高根方向概率a/q，故严格有
+P2(a/q≤δ)≤δ(0<δ<1/2)、E2[ρ1_{a≤k}]≤2k、E2[q/a]=2。
+k=o(n)的小高根支对远峰概率及Q贡献均消失；小低根支端点与平衡内部几何仍未证。
+单点方向恒等式E2[F1_Hhigh]=E2[F/(q−1)1_Hlow]包括q2；最高峰单点扇区有一致距离尾界。
+几何Ψ精确识别低单点原律质量；其晚合并部分尚无渐近上界。早低单点计重给16K(K−1)/n²，
+指定n3紧前邻点交换不能扩大低支。两个低Ψ有限词已独立有理复核，未形成无限族。
+最终8项Python3.15小审计全部通过并退出；在途两机CPU/GPU另管。
+入口rounds/036.md、certificates/r036/REPLAY.md、manifest-r036.json。
