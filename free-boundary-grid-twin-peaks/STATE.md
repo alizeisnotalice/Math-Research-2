@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第28轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第29轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/028.md；第28轮证书见certificates/r028/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/029.md；第29轮证书见certificates/r029/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -168,3 +168,24 @@ certificates/r027/REPLAY.md、manifest-r027.json。
 
 第一未证步骤仍为 W 加权根几何的全局小量估计，或固定正远峰质量的归一化证明。
 本轮入口 rounds/028.md、certificates/r028/REPLAY.md、manifest-r028.json。
+
+## 第29轮追加（2026-11-17）
+
+第29轮已归档；**原题仍开放，总目标 active。**
+
+- 严格否定全层固定几何尾收缩：标签间隔L（不是峰距）的全局尾满足
+  T_(N−3)=8A1(G−closed(corner))，且T_(N−3)/B≥8N^(−2n−6)。所以任何固定
+  0<κ<1均不能全n、全层满足T_(t+1)≤κT_t；κ=4/5在每个n≥100已矛盾。
+  最大连续尾比趋于1。这不否定总尾和A2≤5B，更不解决原峰距问题。
+- 角部8点缓冲的稳定前移证明A1(G)≤(N)_8 A1(删角闭邻域图)；独立n3全枚举、
+  n4子集DP、n5独立集容斥核验。n5末端T22=317962771193456640=8A1(H)。
+- n5全孔完整L分布经独立算法匹配；有限最大连续尾比约.762381<4/5，并不与全n
+  反例矛盾。短间隔IE公式已证，模实现修复有向边重数漏计后104小checkpoint通过。
+- n7全D4逐孔表四模CRT完成，覆盖49点；ΣAv/ΣBv与旧独立总计数精确吻合，
+  最小Bv/Av仍在中心约.21064792648，所有孔通过1/5有限检查，不是统一下界证明。
+- 本机n24 L16批完成并核验退出，提升ESS约3.49，仍仅有限实现诊断；新本机L64、
+  Macn32 GPU继续。截点后完成的Macn7短尾模结果留第30轮CRT，不重复计算。
+
+原题第一缺口仍是W加权根几何的全局小量界，或固定正远峰质量的归一化证明。
+辅助路线下一步改为总尾和/非几何可求和控制，已否定的全层几何收缩不再作为待证目标。
+本轮入口 rounds/029.md、certificates/r029/REPLAY.md、manifest-r029.json。
