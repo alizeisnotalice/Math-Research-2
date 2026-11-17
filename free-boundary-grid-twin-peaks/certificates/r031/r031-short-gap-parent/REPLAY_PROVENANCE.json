@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "finite n=7 identity crosscheck against archived full counts; not asymptotic",
+  "command": "python3 -B r031-short-gap-parent/audit_n7_identities.py --short-gaps r031-n7-orbit-public/n7-short-tail-orbits-crt-audit-public.json --full-count r031-short-gap-parent/n7-exact-r005.json --output OUT/n7-identities.json",
+  "inputs": {
+    "audit_script": {
+      "path": "r031-short-gap-parent/audit_n7_identities.py",
+      "sha256": "22df11ef14961535c15d0c1ae7d3ffe031f72b7f184960c587becb17d2917ee7"
+    },
+    "public_orbit_audit": {
+      "path": "r031-n7-orbit-public/n7-short-tail-orbits-crt-audit-public.json",
+      "sha256": "f0d431533a52352d30b6a0b8021a00027491ac27b6a26f5a0e6c411e7c01f5f9",
+      "origin": "copied from the public r031 orbit whitelist"
+    },
+    "full_n7_count": {
+      "path": "r031-short-gap-parent/n7-exact-r005.json",
+      "sha256": "ff7974ff8487a339516fee95324674efd873abd9a36b8fc50b0f8121c632f8d6",
+      "origin": "archived computation/results/n7-exact-r005.json"
+    }
+  },
+  "output": {
+    "path": "r031-short-gap-parent/n7-identities.json",
+    "sha256": "8b9af393223e79f0b4659f540bc9e63023d36cc895783da419e384441fb0dd2f"
+  },
+  "assertions": [
+    "A2 agrees with the complete n=7 count",
+    "A1 = 4 h1 - 2 B",
+    "h2 = 2 h3",
+    "4 T4 <= tail moment <= 46 T4"
+  ]
+}

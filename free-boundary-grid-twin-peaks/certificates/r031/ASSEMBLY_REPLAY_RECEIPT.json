@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "scope": "assembly-level reproduction checks; individual mathematical scope is stated by each package",
+  "checks": [
+    {
+      "name": "finite-package-sha256",
+      "status": "passed",
+      "manifest": "r031-finite-compute-public/SHA256SUMS"
+    },
+    {
+      "name": "orbit-package-sha256",
+      "status": "passed",
+      "manifest": "r031-n7-orbit-public/SHA256SUMS",
+      "checked_files": 133
+    },
+    {
+      "name": "h1-h5-checkpoint-crt",
+      "status": "passed",
+      "result_sha256": "c1c11b5306a1cdaf74d0ef1fbf12d3c7127564ad19d8c69b4a31d34c1dbaec5c",
+      "summary": "124 residue checkpoints, 31 points, r029/r030 complete references"
+    },
+    {
+      "name": "n32-merge-rb-public-audit",
+      "status": "passed",
+      "result_sha256": "bb67e25075004ebe5cfd47da6b07117054f37d6bf6470c0fe1e6767b53a6ffe4"
+    },
+    {
+      "name": "n7-orbit-public-audit",
+      "status": "passed",
+      "result_sha256": "f0d431533a52352d30b6a0b8021a00027491ac27b6a26f5a0e6c411e7c01f5f9"
+    },
+    {
+      "name": "n7-parent-full-count-identities",
+      "status": "passed",
+      "result_sha256": "8b9af393223e79f0b4659f540bc9e63023d36cc895783da419e384441fb0dd2f"
+    }
+  ],
+  "previous_proof_replay_receipt": {
+    "path": "r031-parent-proof-replay-receipt.json",
+    "sha256": "3e017a0e5fa6cc346f608baab867eb69e554f2212c4d8c72c859b5ea61bf4158",
+    "scope": "seven finite integer output comparisons; preserved evidence, not rerun during this assembly step"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "package": "r031 public finite n32 merge-RB raw audit",
+  "source_origin_label": "private r031 n32 merge-RB work package (path intentionally not distributed)",
+  "frozen_auditor_source_sha256": "f1593cc93db21d778289966c80539606b079d702fa3fd5c197394c27d4737389",
+  "production_swift_source_sha256": "3a9f3c0a8c10409346c25f16f2d82463f928bfaacf7307b4a88a770ec8f69ec6",
+  "production_binary_sha256_not_distributed": "1796a6f18d363af99e7ef2ed9529ff13777a39d8683a3e854faf6772d7cc3188",
+  "raw_sha256_uncompressed": "9ec4cea2102d7ea1adb4b6757042e06e27ce375e0c53ce6c4a361664b9abe451",
+  "parameters": {"n": 32, "P": 262144, "R": 32, "L": 16, "tau": 2, "method": "strat", "domain": "9e28100000000001"},
+  "omitted": ["historical binary", "large trace", "telemetry"],
+  "recorded_interpretation": "ESS and maxshare are finite weight-imbalance diagnostics. Q_mRB is not a probability, mixing, cone, or original-question certificate.",
+  "public_replay_change": "verify_n32_public.py only adds gzip input handling, raw receipt hashing, frozen-auditor loading, and recorded-field comparison; it does not alter raw data or frozen auditor logic."
+}

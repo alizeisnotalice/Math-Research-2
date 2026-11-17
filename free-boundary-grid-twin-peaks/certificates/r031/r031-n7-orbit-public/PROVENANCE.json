@@ -1,0 +1,33 @@
+{
+  "package": "n7 non-center short-tail orbit CRT public certificate",
+  "scope": "Archived exact finite n=7 verification only; it does not rerun the enumerator and makes no asymptotic claim.",
+  "raw_checkpoint_source": {
+    "contents": "36 JSON outputs with matching 36 exit and 36 resource receipts, plus root exit/started receipts and frozen C++ source",
+    "shared_source_path": "raw/source/short_tail_mod.cpp",
+    "shared_source_sha256": "9d757fcfd65729242d2742cc94b9c34e3e88ba23d1052b985c3b70f0b8a02d13",
+    "historical_executable_sha256": "e05c577bae9fb899a9c5789a6b8e2e6f4d0008ae0ae79fdf02cd64e17917ecc2",
+    "historical_executable_included": false,
+    "historical_executable_reverified_by_replay": false
+  },
+  "supporting_certificates": {
+    "r29_verified_directory": "r29-verified",
+    "r30_public_center": {
+      "path": "center/short-tail-n7-center-crt-audit-public.json",
+      "sha256": "e68d9011d4cf1a7edf0cb5e1a5269b2798dddaa2680565ef3340cefc00c88a36"
+    },
+    "r30_historical_center": {
+      "path": "historical/short-tail-n7-center-crt-audit-original.json",
+      "sha256": "02b46f419cbe8497855b336e959828e27908cfc54b0d4f9e1b941656af4b5293",
+      "difference_from_public": "Only the listed path-valued I/O metadata changes; audit_orbits.py asserts equality after normalizing those paths."
+    },
+    "pratt": {
+      "path": "pratt/pratt-certificates.json",
+      "sha256": "f6b52934ad862cfa25dda1feb309dee55fdf513e26d46d29fb7a71deb246779c"
+    },
+    "historical_r031_audit": {
+      "path": "historical/n7-short-tail-orbits-crt-audit.json",
+      "sha256": "3156a1b48cea34e37fe249b9c85fe826b7b4f0d8f987a8c249045e15363307ca"
+    }
+  },
+  "replay": "Run audit_orbits.py only over the packaged archival material. The absent executable is never treated as newly verified."
+}

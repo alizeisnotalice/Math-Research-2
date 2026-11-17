@@ -1,0 +1,23 @@
+Copy exactly these paths into the r031 certificate directory:
+
+README.md
+COPY_WHITELIST.txt
+REPLAY_RECEIPT.md
+SHA256SUMS
+short-gap-h45/REPLAY.md
+short-gap-h45/PROVENANCE.json
+short-gap-h45/source/short_gap_h45_mod.cpp
+short-gap-h45/source/verify_h1_h5_portable.py
+short-gap-h45/raw/checkpoints/
+short-gap-h45/reports/
+merge-rb-n32/REPLAY.md
+merge-rb-n32/PROVENANCE.json
+merge-rb-n32/source/auditor_frozen_r026.py
+merge-rb-n32/source/production_r026.swift
+merge-rb-n32/source/verify_n32_public.py
+merge-rb-n32/raw/n32-p262144-r32-l16.jsonl.gz
+merge-rb-n32/receipt/n32-p262144-r32-l16.receipt.json
+merge-rb-n32/reports/
+
+Do not copy `_independent_replay/` (local replay scratch), historical binaries,
+large trace files, or telemetry.

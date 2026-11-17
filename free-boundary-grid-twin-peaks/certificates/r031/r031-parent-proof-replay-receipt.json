@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "scope": "finite integer crosschecks; not an asymptotic proof",
+  "checks": [
+    {
+      "script": "r031-short-gap-identity/enumerate_five_vertex_prefixes.py",
+      "complete_json_matches": true,
+      "result_sha256": "18631ca3e9920556a32753e4600abd5b5e9a1711788dcebc2611206d0911733d"
+    },
+    {
+      "script": "r031-short-gap-identity/enumerate_short_gaps_small_graphs.py",
+      "complete_json_matches": true,
+      "result_sha256": "94bf99367a13f723247073cbda3460229b5f396ae5e438e8012de317cb94ac73"
+    },
+    {
+      "script": "r031-short-gap-identity/check_rank3_identity_small_graphs.py",
+      "complete_json_matches": true,
+      "result_sha256": "295a4c5c7dde8f9b75d8728f3a0497e1fab06a0fae5c40588bec2fad000d0d6f"
+    },
+    {
+      "script": "r031-short-gap-spatial/audit_joint_h2_h3.py",
+      "complete_json_matches": true,
+      "result_sha256": "033ded3329bad585eb9808a7b0ecf9dc6696184c5e2c57e2f2ce37bc0c2b7e3d"
+    },
+    {
+      "script": "r031-short-gap-spatial/audit_n3_rootpair_flux.py",
+      "complete_json_matches": true,
+      "result_sha256": "a8efb0c6de06e69317b7374b113ef05c24fcdc03a738326125eabed8bef2e54c"
+    },
+    {
+      "script": "r031-short-gap-spatial/audit_n3_top_prefix_flux.py",
+      "complete_json_matches": true,
+      "result_sha256": "69ec2d1287497bdbdf5c7bbbd26f79891adc9029189c85af5a19d08cb62af7a1"
+    },
+    {
+      "script": "r031-short-gap-spatial/audit_top5_polyomino_flux.py",
+      "complete_json_matches": true,
+      "result_sha256": "c595cee1a5f24388162d4a04e70e7304f3ac5fd40b4b6c51829b2be618ba5377"
+    }
+  ],
+  "all_subprocesses_waited": true,
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "driver_sha256": "69a2f34978673af96463485d1d225ffbf2675284d8ef45c73ea28fe912c07979"
+}

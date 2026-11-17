@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第30轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第31轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/029.md；第29轮证书见certificates/r029/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/031.md；第31轮证书见certificates/r031/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r031.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -210,3 +210,23 @@ certificates/r027/REPLAY.md、manifest-r027.json。
 
 原题首缺口仍是W加权根几何的全局小量界，或远峰构造的固定正归一化质量。
 本轮入口 rounds/030.md、certificates/r030/REPLAY.md、manifest-r030.json。
+
+
+## 第31轮追加（2026-11-17）
+
+第31轮已归档；**原题仍未闭合，总目标 active。**
+
+- 严格短桶计数：无三角形连通图N≥3有A1=4h1−2B；双部连通图N≥5有h2=2h3。
+  前式由最高标签交换与三点P3前缀计数，后式由五点局部分解和有限同构型分类证明。
+  L=完整词首邻点秩−2，h_t均对全部孔求和，不能误作逐孔恒等式。
+- 任意无序对称根权有2h1(f)−B(f)=B_(q=2)(f)。方格上d>2逐桶2h1=B，
+  d>4逐桶h2=2h3；后一空间差只在q3/4局部合并出现。归一化矩差O(n^-2)
+  只比较短桶，不控制完整Q。连通U五格形态的平方距系数+4否定逐形态非正路线。
+- n7全49最高点的h1..h3经36新模与中心旧证书、Pratt/双CRT精确合并；
+  4h1−2B与旧独立A1完全一致。L≥4占B约17.38%，提升后占原律约47.76%。
+- h1..h5新递归核124小checkpoint逐项匹配完整L表，n7尚不在本轮生产结果中。
+- Mac n32 GPU完成并全部退出；ESS约1、最大重复权重几乎1，Q≈.225仅为
+  有限失衡诊断，不作概率或渐近证据。新远程任务遇SSH不可达，未冒充启动。
+
+首缺口仍为长间隔与一般W加权根几何，或固定正远峰归一化质量。
+本轮入口 rounds/031.md、certificates/r031/REPLAY.md、manifest-r031.json。
