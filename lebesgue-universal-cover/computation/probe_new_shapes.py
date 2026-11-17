@@ -5,7 +5,7 @@ import numpy as np
 import scipy
 from scipy.optimize import linprog
 from fractions import Fraction
-r=json.loads(Path(__file__).with_name('004-remote-certificate.json').read_text());V=np.array(r['hull_grid_points'],float)/r['coordinate_denominator'];e=np.roll(V,-1,axis=0)-V
+r=json.loads((Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).with_name('004-remote-certificate.json')).read_text());V=np.array(r['hull_grid_points'],float)/r['coordinate_denominator'];e=np.roll(V,-1,axis=0)-V
 N=np.column_stack((e[:,1],-e[:,0]));N/=np.linalg.norm(N,axis=1)[:,None];b=(N*V).sum(axis=1)+float(Fraction(r['epsilon']))
 rows=[]
 for n in (3,5,7,9,11,13,15,17,19,21):

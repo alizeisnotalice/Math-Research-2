@@ -1,0 +1,79 @@
+{
+  "status": "completed",
+  "scope": "floating local search only; sampled boundary hull and Powell do not certify a six-body minimum or a lower bound",
+  "seed": 20261117,
+  "elapsed_seconds": 40.846098333000555,
+  "objective_calls": 53015,
+  "parameterization": "disk fixed at origin; B3 angle fixed to zero; x=[t3x,t3y,rho5,t5x,t5y,rho7,t7x,t7y,rho9,t9x,t9y,rho11,t11x,t11y]",
+  "degrees_of_freedom": 14,
+  "source_five_body_params": [
+    -0.0021161707485670258,
+    -0.002171588117597346,
+    0.03368534128826296,
+    0.025084694928075076,
+    -0.0038913081911800527,
+    0.708816831902889,
+    0.0035625741962694224,
+    -0.012629515020220292,
+    0.3490932487151976,
+    -0.0006351709996987754,
+    -0.0006510120748306202
+  ],
+  "best_parameters": [
+    -0.002116717736623155,
+    -0.002172190513432106,
+    0.03369871051209932,
+    0.025092651107061735,
+    -0.0038921881207567045,
+    0.7087849854618435,
+    0.0035628282693877652,
+    -0.01262876252254122,
+    0.34909300190743575,
+    -0.0006339143657618253,
+    -0.0006497687888177878,
+    0.11685175287929492,
+    -0.0009822210255093589,
+    0.006365090528266086
+  ],
+  "coarse_sample_area": 0.8379113405434758,
+  "fine_sample_area": 0.8379281039894768,
+  "coarse_sampling": {
+    "arc_segments_per_Reuleaux_arc": 48,
+    "disk_vertices": 384
+  },
+  "fine_sampling": {
+    "arc_segments_per_Reuleaux_arc": 192,
+    "disk_vertices": 1536
+  },
+  "phases": [
+    {
+      "phase": "P11-only",
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "fun": 0.8379120891153148,
+      "nit": 5,
+      "nfev": 590
+    },
+    {
+      "phase": "joint-0",
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "fun": 0.8379113409806952,
+      "nit": 12,
+      "nfev": 5273
+    },
+    {
+      "phase": "joint-1",
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "fun": 0.8379906723827878,
+      "nit": 82,
+      "nfev": 47152
+    }
+  ],
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "script_sha256": "165e63b5fc6ac7bb493d14663d593228adfae1a0c2aaa27e8ea682c612ae1758"
+}
