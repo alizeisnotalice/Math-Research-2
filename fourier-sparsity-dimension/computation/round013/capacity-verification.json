@@ -1,0 +1,1371 @@
+{
+  "status": "passed",
+  "source_sha256": "3d5fe450c5662fd3fcbc873a3a982f7cb9211c4d72c1f61544be6340143fd68c",
+  "cpp_sha256": "08d26814acc317f1377da6827ca6ec9626f3eb12a2a0e62a9e1ba27e3025ee1d",
+  "binary_sha256": "69d2d8a086509ea1056bb63854dd281dca496b40673f0bb70362c5257bbcd66d",
+  "period_input_sha256": "445b06403a7479a909f243e43ef059bceab0504ee131f44e5e874cfe4e4f054c",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+  "records": [
+    {
+      "case": "MM_k1",
+      "D": 3,
+      "kappa": 4,
+      "basis_masks": [
+        "0x3333333333333333",
+        "0xcccccccccccccccc",
+        "0xaaaaaaaaaaaaaaaa"
+      ],
+      "input_args_sha256": "139369020554053a18f7d81c34471edd4fa83280e6efb118e990a2bd08934fda",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.3287224169980618,
+      "partition": [
+        {
+          "mask": "0x3333333333333333",
+          "size": 32,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0x3333333333333333"
+          ]
+        },
+        {
+          "mask": "0xcccccccccccccccc",
+          "size": 32,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xcccccccccccccccc"
+          ]
+        }
+      ],
+      "bent_verification": {
+        "native_truth_table_size": 4,
+        "all_phases_checked": 8,
+        "Walsh_magnitude": 2,
+        "domain64_repetition": 16
+      }
+    },
+    {
+      "case": "MM_k2",
+      "D": 6,
+      "kappa": 8,
+      "basis_masks": [
+        "0xf000f000f000f",
+        "0xf000f000f000f0",
+        "0xf000f000f000f00",
+        "0xf000f000f000f000",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc"
+      ],
+      "input_args_sha256": "d6aa6fb23f8a4915819f15608acf3a2a8a85baf07fce4babc5461a7fa4ef1200",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 0.014856499998131767,
+      "partition": [
+        {
+          "mask": "0xf000f000f000f",
+          "size": 16,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000f000f"
+          ]
+        },
+        {
+          "mask": "0xf000f000f000f0",
+          "size": 16,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000f000f0"
+          ]
+        },
+        {
+          "mask": "0xf000f000f000f00",
+          "size": 16,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000f000f00"
+          ]
+        },
+        {
+          "mask": "0xf000f000f000f000",
+          "size": 16,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000f000f000"
+          ]
+        }
+      ],
+      "bent_verification": {
+        "native_truth_table_size": 16,
+        "all_phases_checked": 64,
+        "Walsh_magnitude": 4,
+        "domain64_repetition": 4
+      }
+    },
+    {
+      "case": "MM_k3",
+      "D": 11,
+      "kappa": 16,
+      "basis_masks": [
+        "0xff",
+        "0xff00",
+        "0xff0000",
+        "0xff000000",
+        "0xff00000000",
+        "0xff0000000000",
+        "0xff000000000000",
+        "0xff00000000000000",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0"
+      ],
+      "input_args_sha256": "7f0fcc2416ca398d5ca1de55756900c8a9ebac074cbae46c3ae7acc1cace0917",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 0.015955541995936073,
+      "partition": [
+        {
+          "mask": "0xff",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xff"
+          ]
+        },
+        {
+          "mask": "0xff00",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xff00"
+          ]
+        },
+        {
+          "mask": "0xff0000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xff0000"
+          ]
+        },
+        {
+          "mask": "0xff000000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xff000000"
+          ]
+        },
+        {
+          "mask": "0xff00000000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xff00000000"
+          ]
+        },
+        {
+          "mask": "0xff0000000000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xff0000000000"
+          ]
+        },
+        {
+          "mask": "0xff000000000000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xff000000000000"
+          ]
+        },
+        {
+          "mask": "0xff00000000000000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xff00000000000000"
+          ]
+        }
+      ],
+      "bent_verification": {
+        "native_truth_table_size": 64,
+        "all_phases_checked": 2048,
+        "Walsh_magnitude": 8,
+        "domain64_repetition": 1
+      }
+    },
+    {
+      "case": "triangular_Q4",
+      "D": 7,
+      "kappa": 8,
+      "basis_masks": [
+        "0xf000f000f000f",
+        "0xf000f000f000f0",
+        "0xf000f000f000f00",
+        "0xf000f000f000f000",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xc0c0c0c0c0c0c0c0"
+      ],
+      "input_args_sha256": "ea4ea76d53005cd0d65e8c1094a54487a287b7f76c891b4980d229bed3029c7a",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 0.013568166999903042,
+      "partition": [
+        {
+          "mask": "0xf000f000f000f",
+          "size": 16,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000f000f"
+          ]
+        },
+        {
+          "mask": "0xf000f000f000f0",
+          "size": 16,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000f000f0"
+          ]
+        },
+        {
+          "mask": "0xf000f000f000f00",
+          "size": 16,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000f000f00"
+          ]
+        },
+        {
+          "mask": "0xf000f000f000f000",
+          "size": 16,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000f000f000"
+          ]
+        }
+      ],
+      "bent_verification": {
+        "native_truth_table_size": 16,
+        "all_phases_checked": 128,
+        "Walsh_magnitude": 4,
+        "domain64_repetition": 4
+      }
+    },
+    {
+      "case": "MM_k2_Q2",
+      "D": 13,
+      "kappa": 16,
+      "basis_masks": [
+        "0xf000f",
+        "0xf000f0",
+        "0xf000f00",
+        "0xf000f000",
+        "0xaaaaaaaa",
+        "0xcccccccc",
+        "0xf000f00000000",
+        "0xf000f000000000",
+        "0xf000f0000000000",
+        "0xf000f00000000000",
+        "0xaaaaaaaa00000000",
+        "0xcccccccc00000000",
+        "0xffff0000ffff0000"
+      ],
+      "input_args_sha256": "12942aee69f053015005007d242c506b8125fab6de0a7bfb4ca435a6c0781183",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 0.05808416700165253,
+      "partition": [
+        {
+          "mask": "0xf000f",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f"
+          ]
+        },
+        {
+          "mask": "0xf000f0",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f0"
+          ]
+        },
+        {
+          "mask": "0xf000f00",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f00"
+          ]
+        },
+        {
+          "mask": "0xf000f000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000"
+          ]
+        },
+        {
+          "mask": "0xf000f00000000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f00000000"
+          ]
+        },
+        {
+          "mask": "0xf000f000000000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f000000000"
+          ]
+        },
+        {
+          "mask": "0xf000f0000000000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f0000000000"
+          ]
+        },
+        {
+          "mask": "0xf000f00000000000",
+          "size": 8,
+          "subcode_dimension": 1,
+          "subcode_basis": [
+            "0xf000f00000000000"
+          ]
+        }
+      ],
+      "bent_verification": {
+        "native_truth_table_size": 64,
+        "all_phases_checked": 8192,
+        "Walsh_magnitude": 8,
+        "domain64_repetition": 1
+      }
+    },
+    {
+      "case": "period_0",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x402010840201080",
+        "0x9900660000000000",
+        "0x99000000990000",
+        "0x99006600",
+        "0x18002400810042",
+        "0x24008100420018",
+        "0x4004088020020110",
+        "0x2400810042001800"
+      ],
+      "input_args_sha256": "e37354d65cc838f2bcf58afcfc5541180b49fc41218b3463ba4201eca936e9cc",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.3398568329939735,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x402010840201080",
+            "0x66ff6699669966",
+            "0x6699006666",
+            "0x66ff99ff",
+            "0x18002400810042",
+            "0x24008100420018",
+            "0x15515dd575575445",
+            "0x262efe604647f76"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_1",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x30c00c030000",
+        "0x3c000000000300c",
+        "0x300cc0030000",
+        "0xc030030c0000",
+        "0xc30000000000003c",
+        "0xc3000000003c00",
+        "0x3c00c300000",
+        "0x300c0000000003c0"
+      ],
+      "input_args_sha256": "27856a3bc86b77f5cf37e61aff3ecc868d6400ffc49d015b2b792b6eb539aaa3",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 0.958775416998833,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x30c00c030000",
+            "0x3c000000000300c",
+            "0xcccc000000",
+            "0xf0f0f0fffff",
+            "0x3cc33cc33cc300",
+            "0x3f3c0cfffff",
+            "0x33ccffffff",
+            "0xffff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_2",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x550055000000000",
+        "0x8228000000004114",
+        "0x228800008822",
+        "0x882200002288",
+        "0xff0000",
+        "0x2882000000001441",
+        "0x5005055000000000",
+        "0x5005500500000000"
+      ],
+      "input_args_sha256": "a41d87f5562a2b2bed392418234da6c22fef815bb496322f90974308e59ca881",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 0.9188814999943133,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x550055000000000",
+            "0x1bb199999999d88d",
+            "0x228800008822",
+            "0x77dd0000dd77",
+            "0xff0000",
+            "0x5555aaaa",
+            "0xaaaa",
+            "0x5555"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_3",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0xff000000000000",
+        "0x600000900060900",
+        "0x6000009000609000",
+        "0x69960000000000",
+        "0x600006000066000",
+        "0x96000096",
+        "0xff",
+        "0x9000006000906000"
+      ],
+      "input_args_sha256": "df131f15b63c10a935ac3b9d4008fd54d1e5f28d9c7d6ec834bc1e714446b6d7",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.3728711660005501,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0xff00ff00ff",
+            "0x600000900060900",
+            "0x6666ff6600ff66",
+            "0xff0ff6600ff66",
+            "0x6900006900",
+            "0x69ffff69",
+            "0xff",
+            "0xffffff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_4",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0xcc00cc000000000",
+        "0x3cc30000000000",
+        "0x30c00c0300000000",
+        "0xcc03003",
+        "0x3c003c",
+        "0x30cc03000000000",
+        "0xc0330c0",
+        "0xc00cc00c00000000"
+      ],
+      "input_args_sha256": "db6db428a5f977b8c623025a09e1eee47f6f05861a2ebf4a88bcc551d9960808",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.0763725409997278,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x3cf03cf0f0f0f0f",
+            "0x3cc30000000000",
+            "0x3c3cc3c3",
+            "0xcc03003",
+            "0x3c003c",
+            "0x3303ff3",
+            "0xc300c3",
+            "0xffff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_5",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x55000000aa0000",
+        "0x5555",
+        "0x414100001414",
+        "0x8241000014280000",
+        "0x4128000028410000",
+        "0x4182000028140000",
+        "0x141400004141",
+        "0x2841000041280000"
+      ],
+      "input_args_sha256": "55d9d58facc277efdb81e375a0f9724fd336969d716972dd356cd8443c3cb730",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.430891749994771,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x55000000aa0000",
+            "0x5555",
+            "0x414100001414",
+            "0x1bd899998db19999",
+            "0x3cc3ffff3cc3",
+            "0xff000000ff",
+            "0x141400004141",
+            "0xffff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_6",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0xcc000000cc000000",
+        "0xff00000000",
+        "0x55005500000000",
+        "0xcc0000000033",
+        "0xaa5500",
+        "0xcc00000000cc",
+        "0xff0000000000",
+        "0xff000000"
+      ],
+      "input_args_sha256": "8864205e805a35a0d6d753f3dd9dbe2dfd8c5a2035da7e6e97f10fc939acdf28",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.3368792080000276,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x33cc330033cc33",
+            "0xff00000000",
+            "0x55005500000000",
+            "0x33ff0000ffcc",
+            "0xaa5500",
+            "0xff",
+            "0xffff",
+            "0x55aaff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_7",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x120048008400210",
+        "0x333300000000",
+        "0x1001400440041001",
+        "0x2002800880082002",
+        "0x1001800880081001",
+        "0x33030030000",
+        "0xcc0000000000cc00",
+        "0x120084004800210"
+      ],
+      "input_args_sha256": "ab3fcb1e96edca1f15d4528df6f5ae128257431b7261c3edec217d3b650a1ef0",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.567347583004448,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x120048008400210",
+            "0x333300000000",
+            "0x1001400440041001",
+            "0x330f33ff33f0330",
+            "0xcc0c00cffff",
+            "0x33030030000",
+            "0x33cc33cc330033",
+            "0x33330000"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_8",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0xff0000",
+        "0xa5000000a500",
+        "0x330000cc",
+        "0x33003300000000",
+        "0xcc003300000000",
+        "0xcc00cc00000000",
+        "0x5a00000000a50000",
+        "0xa500000000a50000"
+      ],
+      "input_args_sha256": "d1661e68af7bed8083ce5a8067ce038700127a7ab63fe42e20ef9b44af5feaeb",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 0.9816427920013666,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0xff0000",
+            "0x5aff00005aff",
+            "0x330000cc",
+            "0x33003300000000",
+            "0xff00ff00ff",
+            "0xff",
+            "0x5a5a5a5aff5a5a",
+            "0xffff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_9",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x18810000422400",
+        "0x1800004224000081",
+        "0x4400440088008800",
+        "0x1800002424000018",
+        "0x8100002442000018",
+        "0x9900000066",
+        "0x4400220088001100",
+        "0x44008800110022"
+      ],
+      "input_args_sha256": "fdd8632dfe878979c96b915b82243ec229679b2831ca3cb24a6c12fdf84767f8",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.2890559160005068,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x18810000422400",
+            "0x1800004224000081",
+            "0x65a1e18f65ad2db",
+            "0x6600000099",
+            "0x669900ff6699ff",
+            "0x9900000066",
+            "0x660000009900",
+            "0x229988ff7799dd"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_10",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x330000000033",
+        "0xff0000000000",
+        "0x66006600",
+        "0xf000000f00000000",
+        "0x66009900",
+        "0xff00000000",
+        "0x5a000000a50000",
+        "0xf00000f00000000"
+      ],
+      "input_args_sha256": "1e2a936c5a37e2469f896559b643dc59cce97aa6d4e758d84d4eb5cee8db8193",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.639463584004261,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x330000000033",
+            "0xff0000ffff",
+            "0x66006600",
+            "0xff000f00ff00f",
+            "0xff00",
+            "0xff",
+            "0x5a000000a50000",
+            "0xff00ff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_11",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0xa500005a000000",
+        "0xcc0033",
+        "0xf000000f00000000",
+        "0xf0000f000000000",
+        "0xff0000",
+        "0xa50000a5000000",
+        "0x5a0000a5000000",
+        "0x990000006600"
+      ],
+      "input_args_sha256": "4157b84209e04e8420812979d931f0938d60135bd21e57682dcbd8c70419d88a",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.3650250830032746,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x5a00ff5aff00ff",
+            "0xcc0033",
+            "0xff000f00ff00f",
+            "0x33ff33",
+            "0xff00",
+            "0xff",
+            "0xffffff00ff",
+            "0x66ff000099ff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_12",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x44220000224400",
+        "0x8800002244000011",
+        "0xcc00000000cc00",
+        "0xaa00000055000000",
+        "0xaa00000055",
+        "0x55000000aa",
+        "0x44110000114400",
+        "0xcc0000cc0000"
+      ],
+      "input_args_sha256": "bcc4272d6d6c106ea7026bf150e3d49de1441a566ff4d1a5d28d69922b4aa68d",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 0.9715959160021157,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x44220000224400",
+            "0x119999bbdd999988",
+            "0x3300ff00ffccff",
+            "0x118855ff77ee55",
+            "0xaa00000055",
+            "0x55000000aa",
+            "0x330000330000",
+            "0xffff00"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_13",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0xff",
+        "0x9900000000990000",
+        "0xf00000000000f",
+        "0xf0000f000",
+        "0xff0000",
+        "0xff00000000000000",
+        "0x990066000000",
+        "0xff00"
+      ],
+      "input_args_sha256": "447a7ff996b7d5e3b90b2448385174cdebe9551971f39c5d06b7897043462ee1",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 0.8625743750017136,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0xff",
+            "0x66996699ff9966",
+            "0xf00000000000f",
+            "0xf0000f000",
+            "0xff0000",
+            "0xffff0000ff",
+            "0x66ff6600ffff",
+            "0xff00"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_14",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0xa000050050000a00",
+        "0x408804001022010",
+        "0x820100408201004",
+        "0x50000a0050000a00",
+        "0x5000a0005000a0",
+        "0x5000a0005000a",
+        "0x50000a0050000a",
+        "0xa0000500a0000500"
+      ],
+      "input_args_sha256": "19909ac8db1bf367eaf017fae4358951115e35b2d71f2f1d573e14ca2f29f09e",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.0239438749995315,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x5a5a0a5f5a5afa5",
+            "0x1ad20e5f4a78fb5",
+            "0x28abfaef28ab0ae",
+            "0xfff0ff00ff00f",
+            "0x5000a0005000a0",
+            "0x5000a0005000a",
+            "0xaa000000aa",
+            "0xffff0ff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_15",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x3300000033000000",
+        "0xaa0000000000aa",
+        "0x33000000cc000000",
+        "0x55000000000055",
+        "0x690000009600",
+        "0xf00f00000",
+        "0xff00000000",
+        "0xff000000000000"
+      ],
+      "input_args_sha256": "431f8fbc56cfd74e9d2a78be82d5828844b68c2039f9a8e8777cb5b4e788a9d0",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.6246385839986033,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x33333300333333",
+            "0x5500ff00ff0055",
+            "0xffffff",
+            "0xff00ff0000",
+            "0x690000009600",
+            "0xf00f00000",
+            "0xffff",
+            "0xff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_16",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x402010840201080",
+        "0x9900660000000000",
+        "0x99000000990000",
+        "0x99006600",
+        "0x18002400810042",
+        "0x24008100420018",
+        "0x4004088020020110",
+        "0x2400810042001800"
+      ],
+      "input_args_sha256": "e37354d65cc838f2bcf58afcfc5541180b49fc41218b3463ba4201eca936e9cc",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.435030665998056,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x402010840201080",
+            "0x66ff6699669966",
+            "0x6699006666",
+            "0x66ff99ff",
+            "0x18002400810042",
+            "0x24008100420018",
+            "0x15515dd575575445",
+            "0x262efe604647f76"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_17",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x30030003000030",
+        "0x300003000300300",
+        "0x110011002200220",
+        "0xf000f0000000",
+        "0xc000000c000cc000",
+        "0x300000c000c03000",
+        "0x8080080804044040",
+        "0x3000000300033000"
+      ],
+      "input_args_sha256": "339e0cb4ae38f7019d5280a5a3116c797584236d1cb382e64aa1f7c7c316ae2c",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.5260804580029799,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x30030003000030",
+            "0x300003000300300",
+            "0x110011002200220",
+            "0xffff000ffff",
+            "0xcc000c000000c",
+            "0x330c330c30003",
+            "0x191991919d9dd9d9",
+            "0xc300c30000"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_18",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0x5000a00000a00050",
+        "0xa0000550000a00",
+        "0xff0000000",
+        "0x5500000000000055",
+        "0x50000aa0000500",
+        "0x50000a00000a0050",
+        "0x550000550000",
+        "0xa0000500000500a0"
+      ],
+      "input_args_sha256": "8ae2412868ed5b8b5195a25b493c53f7e60886d7d159494439f46eadc88002d9",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.1912328750040615,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x555f55555f55505",
+            "0x5f00fa50ff0aff",
+            "0xff0000000",
+            "0xa55af05aa5fff",
+            "0x5555ff5555000",
+            "0x55ff00aaffff",
+            "0xff00ffffff",
+            "0xff00ff"
+          ]
+        }
+      ],
+      "bent_verification": null
+    },
+    {
+      "case": "period_19",
+      "D": 15,
+      "kappa": 16,
+      "basis_masks": [
+        "0xffffffffffffffff",
+        "0xaaaaaaaaaaaaaaaa",
+        "0xcccccccccccccccc",
+        "0xf0f0f0f0f0f0f0f0",
+        "0xff00ff00ff00ff00",
+        "0xffff0000ffff0000",
+        "0xffffffff00000000",
+        "0xaa0000550000",
+        "0x5a0000005a000000",
+        "0x66000000009900",
+        "0xff00",
+        "0xa5000000a5000000",
+        "0x99000000006600",
+        "0xa50000005a000000",
+        "0x6900000069"
+      ],
+      "input_args_sha256": "c955817f614a80cf25eedc711fc2c18796dc4d0dde93a09dbccbb00648e7e543",
+      "DP_exit_code": 0,
+      "DP_elapsed_seconds": 1.0931474160024663,
+      "partition": [
+        {
+          "mask": "0xffffffffffffffff",
+          "size": 64,
+          "subcode_dimension": 15,
+          "subcode_basis": [
+            "0xffffffffffffffff",
+            "0x5555555555555555",
+            "0x3333333333333333",
+            "0xf0f0f0f0f0f0f0f",
+            "0xff00ff00ff00ff",
+            "0xffff0000ffff",
+            "0xffffffff",
+            "0x55ff0055ffff",
+            "0x5a5a5a005a5a5a",
+            "0x3c5a5a005ac35a",
+            "0xff00",
+            "0xff000000ff",
+            "0xffff00",
+            "0xff",
+            "0x6900000069"
+          ]
+        }
+      ],
+      "bent_verification": null
+    }
+  ],
+  "negative_controls": [
+    {
+      "args": [
+        "2",
+        "18446744073709551615",
+        "18446744073709551615"
+      ],
+      "exit_code": 3,
+      "stderr": "dependent basis"
+    },
+    {
+      "args": [
+        "1",
+        "1"
+      ],
+      "exit_code": 5,
+      "stderr": "full/root missing"
+    }
+  ],
+  "elapsed_seconds": 27.373429500003112,
+  "scope": "Exact capacities for listed codes only. Witness checks prove lower bounds; exhaustive DP and its separately proved recurrence prove upper bounds. General selector equality is analytic."
+}

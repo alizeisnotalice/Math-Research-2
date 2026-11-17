@@ -93,3 +93,7 @@
 ## 第12轮：2026-11-17
 
 Gopalan–O'Donnell–Servedio–Shpilka–Wimmer, Testing Fourier Dimensionality and Sparsity，作者公开稿Theorem8.1（印刷第21页）：±1 Boolean函数sparsity s>1的granularity≤floor(log₂s)−1，s=1单列。文献Agent与主Agent均核对该定位和归一化，作为经典输入使用；原文URL与文件哈希见source-files-r012.json，不提交全文。第9轮RM第二重量与bent次数来源沿用，未声称本轮重做文献认证。第12轮新的残余与模块推导独立审查，不作首次性声称。
+
+## 第13轮：2026-11-17
+
+[Hodžić–Meidl–Pašalić, arXiv:1605.05713v1](https://arxiv.org/abs/1605.05713)的gbent刻画带额外Walsh对偶兼容性，不能直接给一般全bent仿射码的上界。文献Agent读摘要及第6、9、11页相关命题，主Agent核对元数据与摘要；非全文核读。版本由PDF首页纠正为v1。Meidl的partition-admissible文章只取得摘要级信息，不导入定理。来源范围与哈希见source-files-r013.json。本轮容量倍率由自包含代数证明承担，未声称文献搜索排除了其他已知结果，也未声称首次。
