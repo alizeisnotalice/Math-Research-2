@@ -1,0 +1,103 @@
+{
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "checks": [
+    {
+      "name": "low-small",
+      "command": [
+        "/Users/zzh/.local/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r037/low-small/audit_low_small_orientation_n3.py"
+      ],
+      "pid": 2499,
+      "exit_code": 0,
+      "waited_reaped": true,
+      "absent_after": true,
+      "wall_seconds": 9.639472416994977
+    },
+    {
+      "name": "merge-depth",
+      "command": [
+        "/Users/zzh/.local/bin/python3",
+        "-B",
+        "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r037/merge-depth/audit_path_merge_depth.py"
+      ],
+      "pid": 2676,
+      "exit_code": 0,
+      "waited_reaped": true,
+      "absent_after": true,
+      "wall_seconds": 0.02897579099953873
+    },
+    {
+      "name": "rollback-compile",
+      "command": [
+        "clang++",
+        "-std=c++20",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r037/undo-search/audit_rollback.cpp",
+        "-o",
+        "/Volumes/data/CodexTemp/T2/a022-r037-final-tree-replay/rollback"
+      ],
+      "pid": 2677,
+      "exit_code": 0,
+      "waited_reaped": true,
+      "absent_after": true,
+      "wall_seconds": 1.7853647919982905
+    },
+    {
+      "name": "rollback",
+      "command": [
+        "/Volumes/data/CodexTemp/T2/a022-r037-final-tree-replay/rollback"
+      ],
+      "pid": 2680,
+      "exit_code": 0,
+      "waited_reaped": true,
+      "absent_after": true,
+      "wall_seconds": 6.424485666997498
+    },
+    {
+      "name": "enumerator-compile",
+      "command": [
+        "clang++",
+        "-std=c++20",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r037/large-side/audit_enumerator.cpp",
+        "-o",
+        "/Volumes/data/CodexTemp/T2/a022-r037-final-tree-replay/enumerator"
+      ],
+      "pid": 2703,
+      "exit_code": 0,
+      "waited_reaped": true,
+      "absent_after": true,
+      "wall_seconds": 2.677012749998539
+    },
+    {
+      "name": "enumerator",
+      "command": [
+        "/Volumes/data/CodexTemp/T2/a022-r037-final-tree-replay/enumerator"
+      ],
+      "pid": 2733,
+      "exit_code": 0,
+      "waited_reaped": true,
+      "absent_after": true,
+      "wall_seconds": 5.901325208003982
+    },
+    {
+      "name": "undo-small-gate",
+      "command": [
+        "bash",
+        "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r037/undo-search/replay_small_gate.sh"
+      ],
+      "pid": 2755,
+      "exit_code": 0,
+      "waited_reaped": true,
+      "absent_after": true,
+      "wall_seconds": 4.316069125001377
+    }
+  ]
+}
