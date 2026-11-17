@@ -4,9 +4,9 @@
 均匀测度下 g:F₂^m→{−1,1}，S={α:ĝ(α)≠0}，s=|S|，d=dim span S（线性维数）。目标：证明绝对常数 c>0 使 s≥cd²，或构造 d→∞、s/d²→0 的显式布尔族。原题采用 {0,1} 编码并要求所有一阶系数非零。
 
 ## 当前状态
-第3轮完成，原题未解决。已证明独立节点选择树即使叶标签任意重复，仍有 s≥(affdim S+2)²/4≥(d+1)²/4；关键未解情形是查询方向存在模叶标签空间的线性依赖。
+第4轮完成，原题未解决。独立节点树的任意重复叶标签已有二次界；本轮进一步证明寻址谱和Sidon等号频带在任意深度同幅谱图提升下仍受二次界控制。一般共享查询及有多对差值碰撞的谱仍未控制。
 
-研究稿：[第1轮](proofs/001-research-zh.md)、[第2轮](proofs/002-affine-partitions-zh.md)、[第3轮](proofs/003-shared-label-rank-budget-zh.md)；证据与复现见 rounds/001.md、rounds/002.md、rounds/003.md 和 STATE.md。
+研究稿：[第1轮](proofs/001-research-zh.md)、[第2轮](proofs/002-affine-partitions-zh.md)、[第3轮](proofs/003-shared-label-rank-budget-zh.md)、[第4轮](proofs/004-signcode-lifts-zh.md)；证据与复现见 rounds/001.md 至 rounds/004.md 和 STATE.md。
 
 ## 材料结构
 proofs/ 保存证明；computation/ 保存精确计算与最小证书；references/ 保存文献与来源；rounds/ 保存逐轮报告。按 T2 模板组织。

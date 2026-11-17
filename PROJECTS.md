@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；独立节点树无界共享标签二次下界 | 第3轮完成 | 依赖查询的共同秩与谱符号切换 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；寻址/Sidon等号类任意深度谱图提升二次界 | 第4轮完成 | 多对差值碰撞与一般共同符号码秩预算 |
