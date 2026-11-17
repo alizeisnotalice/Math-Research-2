@@ -1,0 +1,125 @@
+{
+  "analytic_code_capacity_checks": {
+    "2": {
+      "A2_code_space": 1,
+      "A2_formula": 1,
+      "B_code_space": 1,
+      "B_formula": 1,
+      "identities_pass": true
+    },
+    "3": {
+      "A2_code_space": 5,
+      "A2_formula": 5,
+      "B_code_space": 3,
+      "B_formula": 3,
+      "identities_pass": true
+    },
+    "4": {
+      "A2_code_space": 19,
+      "A2_formula": 19,
+      "B_code_space": 9,
+      "B_formula": 9,
+      "identities_pass": true
+    },
+    "5": {
+      "A2_code_space": 65,
+      "A2_formula": 65,
+      "B_code_space": 27,
+      "B_formula": 27,
+      "identities_pass": true
+    },
+    "6": {
+      "A2_code_space": 211,
+      "A2_formula": 211,
+      "B_code_space": 81,
+      "B_formula": 81,
+      "identities_pass": true
+    },
+    "7": {
+      "A2_code_space": 665,
+      "A2_formula": 665,
+      "B_code_space": 243,
+      "B_formula": 243,
+      "identities_pass": true
+    },
+    "8": {
+      "A2_code_space": 2059,
+      "A2_formula": 2059,
+      "B_code_space": 729,
+      "B_formula": 729,
+      "identities_pass": true
+    }
+  },
+  "double_peak_words_encoded": 81984,
+  "double_words_by_q": {
+    "2": 14784,
+    "3": 16000,
+    "4": 17408,
+    "5": 16512,
+    "6": 15360,
+    "7": 1920
+  },
+  "graph": "P3 square (3x3 grid)",
+  "injection": {
+    "decode_reconstructed_every_encoded_word": true,
+    "fixed_q_prefix_vertex_set_preserved_every_time": true,
+    "same_output_plus_code_collisions": 0
+  },
+  "method": "deterministic earliest-parent first-merge path code plus exact decode",
+  "observed_fixed_output_multiplicity": {
+    "2": {
+      "A2_capacity": 1,
+      "B_capacity": 1,
+      "maximum_observed_preimages_per_fixed_output": 1,
+      "passes": true
+    },
+    "3": {
+      "A2_capacity": 5,
+      "B_capacity": 3,
+      "maximum_observed_preimages_per_fixed_output": 3,
+      "passes": true
+    },
+    "4": {
+      "A2_capacity": 19,
+      "B_capacity": 9,
+      "maximum_observed_preimages_per_fixed_output": 9,
+      "passes": true
+    },
+    "5": {
+      "A2_capacity": 65,
+      "B_capacity": 27,
+      "maximum_observed_preimages_per_fixed_output": 27,
+      "passes": true
+    },
+    "6": {
+      "A2_capacity": 211,
+      "B_capacity": 81,
+      "maximum_observed_preimages_per_fixed_output": 81,
+      "passes": true
+    },
+    "7": {
+      "A2_capacity": 665,
+      "B_capacity": 243,
+      "maximum_observed_preimages_per_fixed_output": 17,
+      "passes": true
+    },
+    "8": {
+      "A2_capacity": 2059,
+      "B_capacity": 729,
+      "maximum_observed_preimages_per_fixed_output": 0,
+      "passes": true
+    }
+  },
+  "permutations_examined": 362880,
+  "run": {
+    "implementation": "CPython",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+    "source_sha256": "5c2c3d9cd43802137ce287030dbab501d0996ca2db795d2b5b28a7537da74843",
+    "utc_finished": "2026-11-17T08:13:30.642665+00:00",
+    "utc_started": "2026-11-17T08:13:29.629101+00:00",
+    "wall_seconds": 1.0125367080036085
+  },
+  "status": "passed",
+  "vertices": 9
+}

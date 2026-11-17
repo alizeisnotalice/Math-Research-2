@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "method": "Subprocess.wait reaped every child; deterministic integer/Fraction audits",
+  "audits": [
+    {
+      "audit": "path-encoding",
+      "pid": 66080,
+      "wait_exit_code": 0,
+      "wall_seconds": 4.393560207994597,
+      "comparison": "exact mathematical JSON; run metadata excluded only for independent-path",
+      "source_sha256": "dc55a5327f32c93c1ace3f9bf6b50dc80e3bc50248e71000e8f48d672a860bb5"
+    },
+    {
+      "audit": "independent-path",
+      "pid": 66084,
+      "wait_exit_code": 0,
+      "wall_seconds": 1.5873447080011829,
+      "comparison": "exact mathematical JSON; run metadata excluded only for independent-path",
+      "source_sha256": "5c2c3d9cd43802137ce287030dbab501d0996ca2db795d2b5b28a7537da74843"
+    },
+    {
+      "audit": "positive-moments",
+      "pid": 66103,
+      "wait_exit_code": 0,
+      "wall_seconds": 0.028629666994675063,
+      "comparison": "exact mathematical JSON; run metadata excluded only for independent-path",
+      "source_sha256": "e3c7a5805fb96f1b436a63ee1a9bb5710785cf7734af36edfc83bad02a01a55f"
+    },
+    {
+      "audit": "two-seed",
+      "pid": 66105,
+      "wait_exit_code": 0,
+      "wall_seconds": 0.9471814170028665,
+      "comparison": "exact mathematical JSON; run metadata excluded only for independent-path",
+      "source_sha256": "da9ffa3712fddd6f6b581f5f750d4965a428100212ceb566855ed26c2342328a"
+    },
+    {
+      "audit": "two-seed-n4",
+      "pid": 66118,
+      "wait_exit_code": 0,
+      "wall_seconds": 0.08134437500120839,
+      "comparison": "exact JSON"
+    },
+    {
+      "audit": "n7-saved-modular-CRT",
+      "pid": 66119,
+      "wait_exit_code": 0,
+      "wall_seconds": 0.03912354199565016,
+      "comparison": "exact JSON; no production enumeration"
+    }
+  ]
+}

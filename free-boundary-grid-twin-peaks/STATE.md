@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第32轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第33轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/032.md；第32轮证书见certificates/r032/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r032.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/033.md；第33轮证书见certificates/r033/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r033.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -250,3 +250,21 @@ certificates/r027/REPLAY.md、manifest-r027.json。
 第一缺口仍为全局W加权根几何或固定正远峰质量。下一步研究远峰短桶的正矩近似，
 必须显式处理单点支与失衡分支端点的提升权重，不能用固定阶矩替代长尾估计。
 本轮入口rounds/032.md、certificates/r032/REPLAY.md、manifest-r032.json。
+
+
+## 第33轮追加（2026-11-17）
+
+原题仍开放，总目标 active。首次合并点降序秩为q+1，q计合并前点数。
+对任意有限连通图已证A_(2,q)≤(3^(q−1)−2^(q−1))A1、B_q≤3^(q−2)A1。
+方格n≥4、0<δ<1时P2(q≤floor((1−δ)log_3N))≤16N^(−δ)；这不推出峰距界。
+远峰非单点支的固定阶短桶与正对称矩之差≤j(j−1)h2/(2M*)，
+M*=floor(εn)−3≥max(1,j)。单点支及端点L提升权重尚未控制。
+全n7十个D4孔类40个模结果经Pratt、双CRT、48!上界及旧h1..3交叉认证；
+h4=3396771146185020250675732839307818411684105820449792，
+h5=2011907760585005003686570084046477536187007211969536。
+全局h3−3h4+2h5=0；T2至T6有限检查通过，L≥6提升质量约0.3050990081364525。
+n4同根、同移动根D4类的距离单调被2651194000(d3)>2523561040(d4)否定。
+主Agent对最终公开目录的六项小审计/保存模CRT均已实际重放并回收子进程。
+本机L64 GPU批按用户内存释放要求停止于29/32，未作完整批证书；后续两机任务不算本轮完成。
+第一缺口仍为全局W加权根几何的little-o估计或固定远峰质量；下一步控制L提升的端点和尾部，
+并研究B/A1归一化比较。入口rounds/033.md、certificates/r033/REPLAY.md、manifest-r033.json。
