@@ -80,3 +80,11 @@
 
 - `proofs/005-gaussian-marginal-relaxation.md`，第1节三层正测度及权重下界；SHA256 `8673ea8cfc36717f419ba145c2f34704cdc147e07c89a9f5dae0b457da9afc23`。
 - `proofs/013-tail-independent-core-cuts.md`，第5节严格次解公式与全部实参数上界；SHA256 `aaf6f69e45040975334c56db01a63a188b6adee66296e80ff0d0789d8fad0ba4`。
+
+## 第16轮内部来源与核验
+
+基线提交d11cf8f82e6986d1034bef13cb24b22a9cbf4f56。本轮独立推导极大接触的密度发散、小区间概率下界与有理实例。未增加外部文献或首创性声明。
+
+- `proofs/001-tail-and-local-rigidity.md`，第1节归一化及自动有界性；SHA256 `3f099de9e6a514f855e4691a47ad2f516b79683bc77093bf7f3e897e30ceb12c`。
+- `proofs/015-joint-fourier-core-certificate.md`，第1节任意H≥sup f的高斯混合表示；SHA256 `a23e90ee6369429fc6351675d46deab33ed39596e7a7401c0f595f0bc8de0154`。
+- `proofs/006-contact-budget.md`，第1—2节；确认旧轮研究f=0，本轮研究f=sup f，二者不同；SHA256 `61928d519a2a01adba20bdaafedc48cf47d0dd98392e32d9f113cc3d50e56399`。

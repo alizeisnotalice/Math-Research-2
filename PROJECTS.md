@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；全局20维紧域与一个严格局部排除盒 | 第20轮完成 | AH面积认证、反射覆盖与全域下界 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；联合Fourier约束及核心三角分离证书 | 第15轮完成 | 正测试分离与确定图的结合 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；二次全局极值排除及平坦接触中心禁区 | 第16轮完成 | 残留极值形态与全局条件 |
