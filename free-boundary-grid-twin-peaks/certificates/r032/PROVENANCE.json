@@ -1,0 +1,69 @@
+{
+  "round": "r032 preparation; no Git action performed",
+  "analytic_r45": {
+    "final_text": "analytic-r45/r45-bipartite-seven-prefix.md",
+    "final_text_sha256": "34f55d196ece90424ca5d319c6b8acbc2d987309c82515889dc4b36f59be2f2e",
+    "scope": "analytic fibre identities plus a computer-assisted complete seven-vertex bipartite local lemma"
+  },
+  "spatial_r45": {
+    "final_lemma": "spatial-r45/HIGHER_GAP_SPATIAL_LEMMA.md",
+    "final_lemma_sha256": "13adb38a11f3ee93e85f8e4a1e2492e13f976173b1722f938f294f7f1aba5700",
+    "public_redacted_copy_sha256": "ba2231520baac44d10b03e661a3f19a2e1ea7742e6ab308fa315d64fe7ee42c7",
+    "audit_script_sha256": "c5330da97568c3b3c0d42dae6aee066558ad7c4c711f32954c98de00a0ef46d8",
+    "public_copy_change": "Private local replay-log path redacted; two trailing LaTeX explicit-space commands removed at box starts for whitespace hygiene. Mathematical statements and audit script unchanged.",
+    "singleton_correction": "For q>2 a singleton branch gives p1=p(q-1)=1/2; the q=4..6 residual table is the corrected version."
+  },
+  "shared_h45_source_sha256": "08c31508f6d3cb0ae50f74973aa372a32e3bac8439d9d6bfd51d4bf6c0312fc8",
+  "historical_binary_sha256_not_distributed": "0e93ead808cf429c434e58edca06e2726fe9782c5d7f774076fb10c14224e152",
+  "n6": {
+    "source_directory_label": "historical r031 source directory only",
+    "archive_round": "r032",
+    "not_in_frozen_r031": true,
+    "parameters": {
+      "n": 6,
+      "D4_representatives": [
+        0,
+        1,
+        2,
+        7,
+        8,
+        14
+      ],
+      "threads_requested": 12,
+      "parallel_processes": 1,
+      "primes": 4
+    }
+  },
+  "n7_center": {
+    "parameters": {
+      "n": 7,
+      "vertex": 24,
+      "threads_requested": 12,
+      "parallel_processes": 1,
+      "primes": 4,
+      "randomness": "none"
+    },
+    "cpu_observation": "Canonical four-run resource totals: user+system CPU 872.64 s / wall 269.96 s = 21816/6749 core-equivalents (about 3.23248). This is process CPU time, not whole-host utilization.",
+    "first_nohup_p0": "abnormal termination without JSON/exit/resource receipt; excluded from the canonical four-prime CRT and not attributed to OOM without diagnostics",
+    "r033_other_holes": "not included"
+  },
+  "short_gap_consequences": {
+    "script_sha256": "2146dbe0192bc6de704fb46ad153e1b9528db98fb968048fb2f8c03ec24751ce",
+    "public_inputs": {
+      "n6_audit_sha256": "eb9928c7d3dc002737ef932c360ffbcb9e4855ff22f268f84cf9a0b786992bd3",
+      "n7_center_audit_sha256": "2a3cf3b351fb916c819683eee6d6e8276eb9ad2f6017cbf605e37f77130ffbe0"
+    },
+    "historical_output_sha256": "26b03c2eb66453991ae8007928d713df64e98ddd24e779194a052bf7a55aa487",
+    "public_replay_output_sha256": "b4f9c0353361321b99911209647e651ad4699935a2c28550f30ef918130765c3"
+  },
+  "dependencies": {
+    "python_packaging_initial": "3.15.0 without SymPy",
+    "spatial_successful_replay": {
+      "python": "3.13.18",
+      "sympy": "1.14.0",
+      "exit_code": 0,
+      "elapsed_seconds": 0.999,
+      "original_run_record_sha256": "5d7a633cff1e6a2d6aba94c081a9045adce095c78bff524c1edd3b8040587cf4"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第31轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第32轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/031.md；第31轮证书见certificates/r031/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r031.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/032.md；第32轮证书见certificates/r032/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r032.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -230,3 +230,23 @@ certificates/r027/REPLAY.md、manifest-r027.json。
 
 首缺口仍为长间隔与一般W加权根几何，或固定正远峰归一化质量。
 本轮入口 rounds/031.md、certificates/r031/REPLAY.md、manifest-r031.json。
+
+## 第32轮追加（2026-11-17）
+
+第32轮已归档；**原题开放，总目标 active。**
+
+- 解析证明：任意奇j，根交换给二项式短桶关系，其空间差项只支撑在d≤j+3；
+  特别h3(d,e)−3h4(d,e)+2h5(d,e)=0于d>6，归一化平方矩误差≤108/n²。
+  小q单点支的p1=p_(q−1)=1/2已纳入完整边缘表；不把有限μ当正Hausdorff矩。
+- 计算机辅助严格定理：每个有限连通二分图N≥7有h3−3h4+2h5=0。解析七点
+  前缀分解配合全部5184个七点二分表示的全排列、独立子集DP承担有限引理。
+  N6的K23加叶差−32，界定门槛；更高全局奇阶式未证。
+- n6全局h1..h5四模CRT与旧总量匹配；已知T2..T6通过全局QE8有限检查。
+  L≥6在原律提升质量仍约32.56%。n7中心四模旧h1..3交叉通过，但新关系逐孔差
+  严格非零；中心QE8在t4,t5,t6失败。都不外推为全局n7或渐近结论。
+- 完成的n6/中心n7、整数与SymPy核验均退出。首个后台p0无诊断异常已封存，
+  唯一有效p0为托管前台重试；不能归因OOM。后续孔类、未完成GPU不纳入本轮。
+
+第一缺口仍为全局W加权根几何或固定正远峰质量。下一步研究远峰短桶的正矩近似，
+必须显式处理单点支与失衡分支端点的提升权重，不能用固定阶矩替代长尾估计。
+本轮入口rounds/032.md、certificates/r032/REPLAY.md、manifest-r032.json。
