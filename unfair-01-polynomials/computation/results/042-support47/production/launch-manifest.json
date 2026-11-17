@@ -1,0 +1,33 @@
+{
+  "format": "a30-support48-launch-v1",
+  "frozen_support_sha256": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710",
+  "payload_sha256": "dc28267aee72f93b4f15817fad33710727a36c740edc6db1346e6080154e4e01",
+  "plan": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/support48_macbook40/plan/support48-plan.json",
+  "plan_sha256": "ba259776db7eb704c7411c9d5c66739736aede2d9e091ab62ed52b448e61a04d",
+  "remote_sha256": "934532d87f8849c1400dba6ae1b89ecc0191f79f6d54191e5f3b56e712d02cab",
+  "scope": "Fresh total-degree 47/48 cap-6 plan only; no total46, no resumed46 coverage, and no general conclusion.",
+  "seconds_limit": 14400,
+  "selected_jobs": 100005,
+  "ssh_command": [
+    "ssh",
+    "-o",
+    "HostName=fe80::8c00:aeff:feee:2fe%%anpi1",
+    "-o",
+    "HostKeyAlias=169.254.63.75",
+    "-o",
+    "ControlMaster=auto",
+    "-o",
+    "ControlPersist=600",
+    "-o",
+    "ControlPath=/Volumes/data/CodexTemp/T2/unfair-01-polynomials/macbook-anpi1-20261117.sock",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "ConnectTimeout=10",
+    "macbook-math",
+    "nice -n 10 env PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /Users/zhengzhihao/.venvs/math/bin/python -u -"
+  ],
+  "workers": 15
+}
