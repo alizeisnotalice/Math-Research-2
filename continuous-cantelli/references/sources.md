@@ -4,3 +4,8 @@
 - Kleptsyn–Kurtzmann, *A counterexample to the Cantelli conjecture through the Skorokhod embedding problem*, Ann. Probab. 43 (2015), 2250–2281, DOI 10.1214/14-AOP932；https://arxiv.org/pdf/1202.2250 ，版本 v2。已读电子版 pp.1–7，尤其 Theorem 1.1 后连续版说明、Proposition 2.1、§2.2 remark、式 (2.7)。论文声称可测反例及连续有界 Brownian transport 的 Root 唯一性；本次核对陈述与适用假设，未重证完整构造或 Root 定理。
 - 2026-11-17 定向检索连续版后续解答，未发现可核验的解决论文；检索阴性不证明文献穷尽。
 - GitHub 文件限制核对：https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github ，2026-11-17；本项目采用更小的 10 MiB 单文件归档门槛。
+
+## 第2轮来源与证据边界
+- 继承本仓第1轮，提交5c7abc333d5bd3577e1ed9ff54fe2199adb683d6，proofs/001-tail-and-local-rigidity.md 的§1、§6。原始高斯变换与有界性本轮按公式再次核对。
+- 第2轮的热测度公式、有限层实现、一般正测度反例与最小噪声层定理均给出自包含证明，不依赖未核验的逆向嵌入定理。定向检索未用于宣称首创性或文献穷尽。
+- 原论文 §2.2 的连续有界 transport 唯一性仍仅作为已核对陈述引用；本轮没有重证 Root/Loynes 定理，也未断言其适用前提已经满足。
