@@ -1,0 +1,27 @@
+{
+  "certificates": [
+    {
+      "input_file": "round004-L8-T12-long.json",
+      "input_sha256": "a2ccd74596c61862d39888e6837d855ae70e71c826b43c2aae05316e7393061c",
+      "L": "8",
+      "minimum_f": "3714663103044521/10000000000000000",
+      "maximum_f": "380533165569383/200000000000000",
+      "exact_maximum_slope": "15311995175424629/2500000000000000",
+      "uniform_lipschitz_bound": "11",
+      "plateau_value": "3/5",
+      "plateau_radius": "1/4",
+      "tail_value": "1",
+      "witness_lambda": "45",
+      "positive_bracket_lower": "193/100",
+      "lower_bound_formula": "exp(-lambda^2/2+L*lambda)*((2/25)*exp(15*(L+1)/4)-1)",
+      "lower_bound_log10_approx": -269.8166206906451,
+      "strict_exclusion": "finite tail and min f>0 force any Gaussian output variance to H=3; witness F(lambda)>1 excludes it"
+    }
+  ],
+  "arithmetic": "exact Fraction for structural assertions; logarithmic display is float only",
+  "runtime": {
+    "python": "3.13.18",
+    "pid": 17070
+  },
+  "script_sha256": "d8b4ed652077fd0cb4cf3b4122ea71fd2f67556ec16a6c359bb3bc4dcecb68ec"
+}

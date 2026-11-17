@@ -1,0 +1,61 @@
+{
+  "certificates": [
+    {
+      "input_file": "round004-L8-T7.json",
+      "input_sha256": "b1ab1967e0e32b09ff673ce740c623361026bd5d4822de51a4b4f37578dd251c",
+      "L": "8",
+      "minimum_f": "2747867876622719/5000000000000000",
+      "maximum_f": "930424886167183/500000000000000",
+      "exact_maximum_slope": "6556380985049111/1250000000000000",
+      "uniform_lipschitz_bound": "11",
+      "plateau_value": "3/5",
+      "plateau_radius": "1/4",
+      "tail_value": "1",
+      "witness_lambda": "45",
+      "positive_bracket_lower": "193/100",
+      "lower_bound_formula": "exp(-lambda^2/2+L*lambda)*((2/25)*exp(15*(L+1)/4)-1)",
+      "lower_bound_log10_approx": -269.8166206906451,
+      "strict_exclusion": "finite tail and min f>0 force any Gaussian output variance to H=3; witness F(lambda)>1 excludes it"
+    },
+    {
+      "input_file": "round004-L8-T12.json",
+      "input_sha256": "0c78a73ed8005c922e9c3d9f38ada52c3b763429b277e4923dcd7de19dfc6f55",
+      "L": "8",
+      "minimum_f": "2019235151295793/5000000000000000",
+      "maximum_f": "9425888817436443/5000000000000000",
+      "exact_maximum_slope": "148133073322813/25000000000000",
+      "uniform_lipschitz_bound": "11",
+      "plateau_value": "3/5",
+      "plateau_radius": "1/4",
+      "tail_value": "1",
+      "witness_lambda": "45",
+      "positive_bracket_lower": "193/100",
+      "lower_bound_formula": "exp(-lambda^2/2+L*lambda)*((2/25)*exp(15*(L+1)/4)-1)",
+      "lower_bound_log10_approx": -269.8166206906451,
+      "strict_exclusion": "finite tail and min f>0 force any Gaussian output variance to H=3; witness F(lambda)>1 excludes it"
+    },
+    {
+      "input_file": "round004-L12-T12.json",
+      "input_sha256": "4338fd414c308a01d841f3d502d34d6322ec39b497dbd752f5f8474cb107206a",
+      "L": "12",
+      "minimum_f": "527545034061009/1250000000000000",
+      "maximum_f": "1884372449112757/1000000000000000",
+      "exact_maximum_slope": "7311682109319749/1250000000000000",
+      "uniform_lipschitz_bound": "11",
+      "plateau_value": "3/5",
+      "plateau_radius": "1/4",
+      "tail_value": "1",
+      "witness_lambda": "65",
+      "positive_bracket_lower": "193/100",
+      "lower_bound_formula": "exp(-lambda^2/2+L*lambda)*((2/25)*exp(15*(L+1)/4)-1)",
+      "lower_bound_log10_approx": -558.6224511563075,
+      "strict_exclusion": "finite tail and min f>0 force any Gaussian output variance to H=3; witness F(lambda)>1 excludes it"
+    }
+  ],
+  "arithmetic": "exact Fraction for structural assertions; logarithmic display is float only",
+  "runtime": {
+    "python": "3.13.18",
+    "pid": 16451
+  },
+  "script_sha256": "d8b4ed652077fd0cb4cf3b4122ea71fd2f67556ec16a6c359bb3bc4dcecb68ec"
+}

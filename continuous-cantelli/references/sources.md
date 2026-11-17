@@ -14,3 +14,8 @@
 - 继承本仓第2轮，提交1f8a45ca02460114764b0e01d17ddbdafbefcedb，proofs/002-heat-positivity-and-finite-values.md 的§3–§5；SHA-256: 0f33ed2989a411e2bba174b96c6fdfe09273745c1b40d8edc5534a9e9e31f2e1. 第3轮扩展有限时间实现，并实际核对时间积分公式及两层源。
 - M. Beiglböck, A. M. G. Cox, M. Huesmann, *Optimal Transport and Skorokhod Embedding*, Invent. Math. 208 (2017), 327–400, DOI 10.1007/s00222-016-0692-2；https://arxiv.org/pdf/1307.3656 。2026-11-17 已读 PDF §3.2–§3.3 中 Theorem 3.8、Corollary 3.10、Lemma 3.11 及 Theorem 3.14 的适用范围。当前PDF44页，相关段落约PDF第13–16页。用于核对随机化停止时的弱闭性；本轮所需有界时间版本另给展开证明，不声称复核全文。
 - 作者站点旧版 Transport2Skorokhod_4_2_15.pdf 返回404，改读上述arXiv全文；不依赖旧版检索摘要中的定理编号。
+
+## 第4轮来源与核验
+- 继承本仓 proofs/001-tail-and-local-rigidity.md，定位 §1–§2（变换和有限尾排除起点），基线提交3f39ed3891e587ba28c8f6add76072c1528e3f49；SHA-256: 3f099de9e6a514f855e4691a47ad2f516b79683bc77093bf7f3e897e30ceb12c. 第4轮单独给出紧性、热测度连续性和显式尾部见证证明。
+- 继承本仓 proofs/003-continuous-time-realization.md，定位 §4（中间正性与原题的等价关系），基线提交3f39ed3891e587ba28c8f6add76072c1528e3f49；SHA-256: 598a303260fa4bdaa9305739889b57b11c434ea88d46f39730015d2d917e4a3d. 第4轮单独给出紧性、热测度连续性和显式尾部见证证明。
+- 本轮定向检索没有提供新的可用连续刚性定理；未依赖搜索摘要作数学推论。近似数据全由本轮脚本实际生成，不把数值搜索阴性或求解器状态当作理论结果。
