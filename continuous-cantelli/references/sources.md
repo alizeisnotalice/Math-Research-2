@@ -47,3 +47,9 @@
 - 继承 proofs/001-tail-and-local-rigidity.md（§1 归一化及变换），基线6c5ac419cacea963380dee9fc754bbd6b9214080；SHA-256: 3f099de9e6a514f855e4691a47ad2f516b79683bc77093bf7f3e897e30ceb12c。本轮另行推导线性化、独立性、压缩映射构造与紧支撑非高斯性。
 - 继承 proofs/004-compactness-and-tail-witness.md（紧性需要固定幅度的边界），基线6c5ac419cacea963380dee9fc754bbd6b9214080；SHA-256: c360497aac046040a7e24f2dde49a7e6edceabf2fb56dec76357607e03e8d7a0。本轮另行推导线性化、独立性、压缩映射构造与紧支撑非高斯性。
 - 本轮未新增外部定理依赖；有限维隐函数步骤展开为压缩映射，并核对其条件。不主张首创性。
+
+## 第11轮来源与核验
+- 继承 proofs/007-tail-matching.md（正负贡献分解），基线f2f7ace215ce9eae8fc9bf8220c243c4d3dfb496；SHA-256: a65cb3ccbf3a70e6a0e041e6ad0107bb41d8bb7b42f74f8b783522767a06f900。本轮实际重做有理结构与统一检测核验，不把历史浮点残差当作证书。
+- 继承 computation/round004-L8-T12-long.json（L8延长候选），基线f2f7ace215ce9eae8fc9bf8220c243c4d3dfb496；SHA-256: a2ccd74596c61862d39888e6837d855ae70e71c826b43c2aae05316e7393061c。本轮实际重做有理结构与统一检测核验，不把历史浮点残差当作证书。
+- 继承 computation/round004-L12-T12.json（L12候选），基线f2f7ace215ce9eae8fc9bf8220c243c4d3dfb496；SHA-256: 4338fd414c308a01d841f3d502d34d6322ec39b497dbd752f5f8474cb107206a。本轮实际重做有理结构与统一检测核验，不把历史浮点残差当作证书。
+- 高斯Chernoff界在证明中由指数矩直接推出，指数界使用有限正项和；无新外部定理依赖，不主张首创性。
