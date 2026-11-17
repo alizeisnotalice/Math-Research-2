@@ -53,3 +53,8 @@
 - 继承 computation/round004-L8-T12-long.json（L8延长候选），基线f2f7ace215ce9eae8fc9bf8220c243c4d3dfb496；SHA-256: a2ccd74596c61862d39888e6837d855ae70e71c826b43c2aae05316e7393061c。本轮实际重做有理结构与统一检测核验，不把历史浮点残差当作证书。
 - 继承 computation/round004-L12-T12.json（L12候选），基线f2f7ace215ce9eae8fc9bf8220c243c4d3dfb496；SHA-256: 4338fd414c308a01d841f3d502d34d6322ec39b497dbd752f5f8474cb107206a。本轮实际重做有理结构与统一检测核验，不把历史浮点残差当作证书。
 - 高斯Chernoff界在证明中由指数矩直接推出，指数界使用有限正项和；无新外部定理依赖，不主张首创性。
+
+## 第12轮来源与核验
+- 继承 proofs/005-gaussian-marginal-relaxation.md（三层精确测度、微结构弱极限与TV收敛），基线3725c9f281c4faaa1502668d9a68976614de9274；SHA-256: 8673ea8cfc36717f419ba145c2f34704cdc147e07c89a9f5dae0b457da9afc23。本轮分别核对对称化、平滑替换、中间层雅可比极限和统一二阶界，未把近似数据等同精确构造。
+- 继承 proofs/010-finite-constraint-interpolation.md（有限测试线性独立性与压缩映射），基线3725c9f281c4faaa1502668d9a68976614de9274；SHA-256: 3ca21f00a0e52f5899a266f39d704036c2d83ffe5b2a184c398648fc5f16d122。本轮分别核对对称化、平滑替换、中间层雅可比极限和统一二阶界，未把近似数据等同精确构造。
+- 无新增外部定理依赖，不主张首创性；无限序列的精确校正由解析论证给出，实际浮点运行只覆盖三组参数。
