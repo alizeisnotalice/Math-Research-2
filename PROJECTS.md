@@ -8,7 +8,7 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；有序分支整数空间表已核验至n5 | 第41轮完成 | 连续块像集的加权空间质量及弯曲切割归一化 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；六点≤53严格公平；七次S234低行归约 | 第53轮完成 | 七次S234完整母式的双树及正根认证 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；实二次非有理原始块次数≥8；六点≤53严格公平 | 第54轮完成 | 八次S1母式与无界整数余因子的低高行耦合 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
