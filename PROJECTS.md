@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；四点精确闭包与非仿射分量谱障碍 | 第26轮完成 | 连通四点障碍的共同秩与一般非平坦谱 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；四点同列配对的共同秩预算 | 第27轮完成 | 无同列配对的连通关系、残余与非平坦谱 |
