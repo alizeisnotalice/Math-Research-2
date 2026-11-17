@@ -42,3 +42,8 @@
 - 继承 proofs/008-tail-jet-recursion.md（§3 任意有限阶递推），基线e430dc517b5af6f2c6a9fd9c57fe8726d3b3b20c；SHA-256: 83f16faa4bf294ba19923ceae12a4846f33789369b43d172532bd139b630c811。本轮逐阶非零系数及局部修补另行证明，不把浮点轮廓当精确解。
 - 继承 computation/round007-matched-results.json（浮点轮廓参数），基线e430dc517b5af6f2c6a9fd9c57fe8726d3b3b20c；SHA-256: f020ee2e84f2ccbc5aa446733425fcdf9e66b9268c84879987aa2fe6d680c388。本轮逐阶非零系数及局部修补另行证明，不把浮点轮廓当精确解。
 - 光滑指定Taylor数据的构造采用缩小截断支撑与逐阶一致收敛，自包含展开，不依赖未核验的外部存在定理。不主张首创性。
+
+## 第10轮来源与核验
+- 继承 proofs/001-tail-and-local-rigidity.md（§1 归一化及变换），基线6c5ac419cacea963380dee9fc754bbd6b9214080；SHA-256: 3f099de9e6a514f855e4691a47ad2f516b79683bc77093bf7f3e897e30ceb12c。本轮另行推导线性化、独立性、压缩映射构造与紧支撑非高斯性。
+- 继承 proofs/004-compactness-and-tail-witness.md（紧性需要固定幅度的边界），基线6c5ac419cacea963380dee9fc754bbd6b9214080；SHA-256: c360497aac046040a7e24f2dde49a7e6edceabf2fb56dec76357607e03e8d7a0。本轮另行推导线性化、独立性、压缩映射构造与紧支撑非高斯性。
+- 本轮未新增外部定理依赖；有限维隐函数步骤展开为压缩映射，并核对其条件。不主张首创性。

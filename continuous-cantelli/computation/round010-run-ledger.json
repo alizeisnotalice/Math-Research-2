@@ -1,0 +1,30 @@
+{
+  "runs": [
+    {
+      "name": "finite",
+      "runtime": {
+        "python": "3.13.18",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "pid": 31643
+      },
+      "exit_code": 0,
+      "process_absent": true,
+      "script_sha256": "f8a0d3628f0eeffef6bf62ae07f63c3a2748a8b22832aad9d80511f59fdcb500"
+    },
+    {
+      "name": "validation",
+      "runtime": {
+        "python": "3.13.18",
+        "mpmath": "1.3.0",
+        "dps": 60,
+        "pid": 31972
+      },
+      "exit_code": 0,
+      "process_absent": true,
+      "script_sha256": "a24e3cd103f13810d95521ec40af49b565b260f893976717a0c29949188c1e12"
+    }
+  ],
+  "seed": "none; deterministic continuation and quadrature",
+  "remote": "no round10 process"
+}

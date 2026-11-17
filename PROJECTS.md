@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；七体族严格可行上界<0.838 | 第10轮完成 | 非正多边形测试与圆弧构造 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；全部形式尾部匹配仍不充分已证 | 第9轮完成 | 有限参数联合约束与共同连续模 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；有限变换/矩的光滑非恒定插值已证 | 第10轮完成 | 固定幅度、共同连续模与可认证分离 |
