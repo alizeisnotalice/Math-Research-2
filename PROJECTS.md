@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；四分之一网格七维锐界、饱和残余六维锐界与模选择器稳定子 | 第11轮完成 | 更高粒度、非饱和残余及一般共同秩 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；四单位全部残余六维锐界、删减细分模块势函数预算 | 第12轮完成 | 更高粒度、t≥5残余及一般共同秩 |

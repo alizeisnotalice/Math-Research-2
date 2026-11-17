@@ -89,3 +89,7 @@
 - [Carlet作者幻灯片](https://people.math.carleton.ca/~finitefields/Files/CC_slides.pdf)第22、29页将全bent仿射空间最大维数列为问题；这只是该材料的状态证据。全bent仿射陪集不是所有非零分量均bent的vectorial映射，后者的输出维数界不能直接套用前者。
 
 外部PDF不提交。实际本地来源文件哈希见source-files-r011.json；没有把未取得一般定理写成该定理不存在的证明。
+
+## 第12轮：2026-11-17
+
+Gopalan–O'Donnell–Servedio–Shpilka–Wimmer, Testing Fourier Dimensionality and Sparsity，作者公开稿Theorem8.1（印刷第21页）：±1 Boolean函数sparsity s>1的granularity≤floor(log₂s)−1，s=1单列。文献Agent与主Agent均核对该定位和归一化，作为经典输入使用；原文URL与文件哈希见source-files-r012.json，不提交全文。第9轮RM第二重量与bent次数来源沿用，未声称本轮重做文献认证。第12轮新的残余与模块推导独立审查，不作首次性声称。
