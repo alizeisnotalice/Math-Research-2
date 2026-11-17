@@ -69,3 +69,10 @@
 - [Ballet–Rolland，arXiv:1203.4592v4](https://arxiv.org/html/1203.4592v4)：主Agent实际读取§4.1（HTML行319–323）和Remark 4.3的二元分支（行374–384）。第二重量3·2^(n−r−1)要求2≤r<n−1；本轮r=k,n=2k,k≥2符合。r1与r=n−1端点另有公式，未混用。[Kasami–Tokura–Azumi 1976](https://doi.org/10.1016/S0019-9958(76)90355-7)仅取得题录，未声称读其原全文。
 - bent相位次数界按经典Rothaus界归属；本轮正文给基于Walsh/Poisson、任意(k+1)维坐标面奇偶性与ANF差分的直接证明，明确k≥2。参考访问到的[Rothaus原论文题录](https://doi.org/10.1016/0097-3165(76)90024-8)不计为原文证明已核读。
 - 未提交外部文献全文。一般部分秩定理、近覆盖推论、有限计算与尚未解决的一般A28目标分开标记。
+
+
+## 第10轮补充（2026-11-17）
+
+- [Canteaut–Daum–Dobbertin–Leander (2006), Finding nonnormal bent functions](https://doi.org/10.1016/j.dam.2005.03.027)，Discrete Applied Mathematics 154, 202–218。原作者站点直接PDF访问失败，通过其[归档副本](https://web.archive.org/web/20111230130710id_/https://www.rocq.inria.fr/secret/Anne.Canteaut/Publications/Canteaut_et_al06.pdf)取得原文。主Agent核读Definition 6（203页）、Fact 22（209页）、Lemma 25（210页）及Fact 26。Fact 22的十四变量Tr(αx^57)非弱正规性为原文算法计算认证，作者注明解析证明未给出。本轮重建有限域并完整整数核验bent性，不将其写成非弱正规性穷举复验。二次直和保持性质另有本轮自包含证明。
+- PDF SHA-256：1ebc57914b36d3ae302efae42569e8cb9aae29d4bf08dddde11ec868a917f0c5；提取文本SHA-256：f22d838a8478fef4ea4f5a63a18dac621133ab55a68a3312d4c9039899650ac3。暂存于CodexTemp/T2/a28/r010-lit，不提交外部全文。
+- Leander–McGuire (2009)十变量非弱正规构造只读摘要、未取得原文；未使用未经正文核验的特定迹公式。没有依据检索阴性主张本轮结果首次出现。

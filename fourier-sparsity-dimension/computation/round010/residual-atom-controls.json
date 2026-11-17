@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "bent_residual_tensor": [
+    {
+      "ell": 1,
+      "variables": 6,
+      "q": 8,
+      "R_size": 32,
+      "D_size": 32,
+      "V_dimension": 7,
+      "all_128_full_slices_bent": true,
+      "common_partial_support_count": 1,
+      "atoms": 16,
+      "atom_sizes": [
+        2
+      ],
+      "expected_atom_size_q_over_t": 2,
+      "normalized_partial_is_seed_Walsh_repeated_over_c": true
+    },
+    {
+      "ell": 2,
+      "variables": 8,
+      "q": 16,
+      "R_size": 64,
+      "D_size": 64,
+      "V_dimension": 7,
+      "all_128_full_slices_bent": true,
+      "common_partial_support_count": 1,
+      "atoms": 16,
+      "atom_sizes": [
+        4
+      ],
+      "expected_atom_size_q_over_t": 4,
+      "normalized_partial_is_seed_Walsh_repeated_over_c": true
+    },
+    {
+      "ell": 3,
+      "variables": 10,
+      "q": 32,
+      "R_size": 128,
+      "D_size": 128,
+      "V_dimension": 7,
+      "all_128_full_slices_bent": true,
+      "common_partial_support_count": 1,
+      "atoms": 16,
+      "atom_sizes": [
+        8
+      ],
+      "expected_atom_size_q_over_t": 8,
+      "normalized_partial_is_seed_Walsh_repeated_over_c": true
+    }
+  ],
+  "signed_plateaued_nonbent_control": {
+    "n": 6,
+    "t": 4,
+    "q": 8,
+    "R_size": 32,
+    "D_size": 32,
+    "h_spectrum_size": 16,
+    "h_walsh_amplitude": 8,
+    "Gamma_matches_formula": true,
+    "signed_g_values_0_pm1": true,
+    "Wg_equals_t_times_h": true,
+    "G_dimension_constant_plus_u_characters": 6,
+    "evaluation_atoms": 16,
+    "atom_sizes": [
+      2
+    ],
+    "support_affine_dimension_after_compression": 5,
+    "log2_support_size": 4,
+    "strictly_not_small_bent_by_affine_dimension": true
+  },
+  "true_bent_compressed_control": {
+    "variables": 6,
+    "q": 8,
+    "t": 4,
+    "R_size": 32,
+    "D_size": 32,
+    "G_dimension": 6,
+    "atoms": 16,
+    "atom_sizes": [
+      2
+    ],
+    "all_64_G_slices_bent": true,
+    "partial_walsh_common_D": true,
+    "Rc_blocks": 4,
+    "block_partial_walsh_cosets_partition_Dc": true,
+    "V_dimension": 10,
+    "all_1024_V_slices_bent": true,
+    "compressed_support_affine_dimension": 5,
+    "compressed_support_log2_size": 4
+  },
+  "source_sha256": "ffdcbccf5f552ff6f2ac15ebbc22c8e5f8de184f0fd9104f990e1c95bf68dac5",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "elapsed_seconds": 0.21637933300007717
+}

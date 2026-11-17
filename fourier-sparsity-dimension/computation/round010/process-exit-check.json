@@ -1,0 +1,18 @@
+{
+  "time_unix": 1794896146.973551,
+  "command": [
+    "ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "ConnectTimeout=10",
+    "macbook-math",
+    "pgrep -fl \"[r]010/lift-(14|15-full|15-qos|30-qos)/verify\""
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "",
+  "scope": "Only this round own worker command paths; no process terminated."
+}

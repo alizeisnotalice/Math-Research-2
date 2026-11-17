@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；一般部分仿射秩界、bent部分覆盖联合秩≤√s−1与三单位残余预算 | 第9轮完成 | 覆盖稀疏时的残余码、一般非平坦谱 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；无最小翻号无穷族、饱和残余压缩边界与t4六维残余 | 第10轮完成 | 非最小共同合法性、带条件覆盖与一般非平坦谱 |
