@@ -1,0 +1,108 @@
+{
+  "schema": "round053-resource-snapshot",
+  "completed_local_gpu": {
+    "pid": 11973,
+    "complete": true,
+    "step": 72000,
+    "samples": 192,
+    "audit": {
+      "bindings": {
+        "base_source": "f0044bf5a0667b1825d1b58662243bc6c9b49682c809d045680ef5c53d348d9f",
+        "checkpoint": "7b2780eadf7e56095c614b23264e21fe0c7ce67af7b81f9dfef9b549a8e27f2b",
+        "config": "ff16e186619fbdff61bcfdeda02faf20532ed671200e43a2c4cfc852811b5fa7",
+        "cpu_audit": "9649fa70f2334f84fc1ef6af6a2075d7eccc827510e5b31edf3aa3af1643313e",
+        "fraction_verifier": "e7c8af4fa9be841dc955fdfc1b728a83ae3b453c05a7c8ec19f6386a7f1ad979",
+        "prefix_module": "0b1a06770a61fe113031209986f676c7e1afb862d27c0c697dbebc0a9f78481d",
+        "prefix_plan": "aa1d442efdb8efe1c1bd65a99f7ab8021222553008ecc915b13f9800323e5a7a",
+        "release": "f84a389cb302b5a7d3bb2439be274e597233b853ba8bc2ad4a89e596d8b7652a",
+        "result": "e573210755d597d63dbe877f290862a3ee5b5230bbe05bbd20219d5f5b1f2cf2",
+        "script": "255fa22dac8eba204b84d5ce59a3e7ece1987ca22e49f66159c5dbbd9f1e90f5",
+        "windows": "c77d06a8e0b890129306eb8ae57cd58f9dd819326de26f207091735ae229e027",
+        "worker": "3c7401a8b66742138bc24801997ce66f7163f9f016869b9fd0ad7ba8ca48422b"
+      },
+      "coverage": {
+        "cyclic_repeated_slots": 3141,
+        "prefix_pool": 46011,
+        "starts_per_window": 4096,
+        "union_covers_pool": true,
+        "windows": 12,
+        "windows_are_disjoint": false
+      },
+      "release": {
+        "cleanup_called": true,
+        "last_completed_step": 72000,
+        "pid": 11973,
+        "process_will_exit": true,
+        "remaining_tensor_bytes_before_exit": 26821376,
+        "terminal_status": "complete",
+        "timed_out": false
+      },
+      "samples": {
+        "maximum_designated_complement_error": "2.9569491716e-08",
+        "minimum_exact_decimal_residual": "0.0013177344808354974",
+        "saved": 192,
+        "unique_json_cases": 192,
+        "unique_prefix_codes": 192
+      },
+      "scope": "Exact audit of saved JSON decimals, source bindings and cyclic prefix assignment; float/MPS trajectories remain non-certifying numerical exploration.",
+      "status": "passed_192_saved_exact_decimal_samples_and_cyclic_pool_coverage"
+    },
+    "pid_absent": true
+  },
+  "ongoing_local_gpu": {
+    "pid": 28911,
+    "command": [
+      "/Users/zzh/.venvs/main/bin/python",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/d15_resume_adapter_39/gpu_factor_search_d15_m96n144_deep.py",
+      "--m",
+      "128",
+      "--n",
+      "176",
+      "--starts",
+      "4096",
+      "--steps",
+      "72000",
+      "--fractional-index",
+      "15",
+      "--margin",
+      "0.001",
+      "--restart-every",
+      "6000",
+      "--seed",
+      "2026111709",
+      "--out",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round053-parent/gpu/m128n176-production",
+      "--prefix-plan",
+      "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/d15_prefix_plan_39/d15-prefix-plan.json",
+      "--seconds",
+      "14400"
+    ],
+    "scope": "Numerical exploration only, cyclic coverage with overlaps; 4h batch and normal release on completion."
+  },
+  "ongoing_remote54": {
+    "pid": 98330,
+    "start_new_session": true,
+    "runner_sha256": "14bb62fc3f2d0bafe7661af0c10e157d3130028e16df732c5eb43bae71173283"
+  },
+  "remote54_transfer": {
+    "status": "checksum_transfer_complete",
+    "remote": "/Users/zhengzhihao/CodexRemoteMath/a30-semantic54",
+    "metadata_sha256": {
+      "input/plan.json": "29e2d5d8473de4859e4af9d60440519bb2c544a3880fdbfd2b61d090975a1e26",
+      "input/frozen_support.py": "d68f1010c61ad1d911749742fef8c790c0a8064bf34512b402e7e65e4703e710",
+      "input/old-events.jsonl": "33fa152157a659e63ef44cbf68be7bff4c0352fd82a495255d05835e2ac8facf",
+      "input/old-exit.json": "632647a12c7c04cf0f4c6a9e64631b95994d5c6f491ec9434e8d1dd36623f030",
+      "input/old-launch.json": "641587566264f6e53312d6c674f82edc2fbe5af03028fd283d4e83dc71228b4d",
+      "input/old-payload.py": "d7fcf57e11531ef077043749c609b2f8013e71df725fe0dd7d155abe9a55169e",
+      "input/new-events.jsonl": "cad44e5ce1536af0af66cf200e9676170241e608ed0a674061e27e6f1e08b447",
+      "input/new-exit.json": "f7846ddbaccb406de056a52800907dd65ca064a1859042d2d23b402aaeab4025",
+      "input/complement.json": "c58e186fc83b53b61a4b535e425becce4fba6e9db4a1cb7c0c25d73c55b3f95d",
+      "input/union-manifest.json": "a29d2463947c41fa0a7f4c8915993703b668a3dc514e56de5984f0c167c9bc4d",
+      "code/audited_chunk_verifier.py": "a557bf120c6bed03adbd8b2ce153a88bf76e678ed94c6bc8815d14dc33edbe4b"
+    },
+    "seconds": 251.50368491600238,
+    "scope": "Disjoint old10784/new90799 chunk union only; semantic verification separate."
+  },
+  "subagent_limit": 2,
+  "scope": "Resource and numerical evidence only; not mathematical exclusion."
+}
