@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "K=floor(4/sqrt(p)): K^2 p<=16<p(K+2)^2",
+    "K=floor(8/sqrt(2q)): K^2 q<=32<q(K+2)^2"
+  ],
+  "event_K_range": [
+    4,
+    32
+  ],
+  "event_cases": 2080,
+  "event_domain": "p=a/b, 1<=a<=b<=64",
+  "method": "exact Fraction arithmetic; no floating point",
+  "moment_K_range": [
+    4,
+    45
+  ],
+  "moment_cases": 4160,
+  "moment_domain": "q=a/b, 1<=a<=2b, b<=64"
+}

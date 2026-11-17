@@ -1,0 +1,53 @@
+{
+  "scope": "Input/output path interfaces only; mathematical counting and checks unchanged",
+  "scripts": [
+    {
+      "packaged_path": "r030-short-tail-crt/audit_short_tail_crt.py",
+      "original_source_id": "a022-short-tail-crt-r030/audit_short_tail_crt.py",
+      "original_sha256": "c48b0c00e27ad71c137c1a4639932fbded802f8d43606afa2cc70d098ee959c4",
+      "packaged_sha256": "713fb7f60ad4f294d2e35decf2da9ffb8ff656de7306835c66774ba666af0f4e"
+    },
+    {
+      "packaged_path": "r030-integrated-tail/verify_prefix_tail_identity_n3.py",
+      "original_source_id": "a022-integrated-tail-r030/verify_prefix_tail_identity_n3.py",
+      "original_sha256": "0036d4816c33aaf530db1a2b9324c3b06b21b50ed1bed69cfa3c02d7d320fbc6",
+      "packaged_sha256": "eb24e84c9fc8216bab792fa78ce32c2f1b20ae926d98c269062b2886c623fbf7"
+    },
+    {
+      "packaged_path": "r030-integrated-tail/audit_quadratic_envelope_finite.py",
+      "original_source_id": "a022-integrated-tail-r030/audit_quadratic_envelope_finite.py",
+      "original_sha256": "685bdc096f52c935f61ee2440db80d01c3df74fd6c5029d6749b0a87bcc1f8cc",
+      "packaged_sha256": "8ea544cb063a6c056174d894a0986a500d1fdc6371b221cef8b523fca0c7d373"
+    },
+    {
+      "packaged_path": "r030-gap-geometry/audit_n3_joint.py",
+      "original_source_id": "a022-gap-geometry-r030/audit_n3_joint.py",
+      "original_sha256": "9c23151effcbd2e77e003c0d60f74173f2f90091700d14e1c6c091f39e0f4ede",
+      "packaged_sha256": "2b8487f55ed12842c5666e0882554146ecb5fab5eca2a01c4766a354e5802a12"
+    },
+    {
+      "packaged_path": "r030-gap-geometry/summarize_n5_geometry.py",
+      "original_source_id": "a022-gap-geometry-r030/summarize_n5_geometry.py",
+      "original_sha256": "b25149474e873e233ee26075ad856af4114740a24da671efc5fa62ee1ac24798",
+      "packaged_sha256": "962605141cf4ed4d4b60c0ccf494a404bdcdffd34b63599b02f705aa9dc05bfb"
+    },
+    {
+      "packaged_path": "r030-gap-geometry/crosscheck_r29_tail.py",
+      "original_source_id": "a022-gap-geometry-r030/crosscheck_r29_tail.py",
+      "original_sha256": "97e983dbf8ab5ee193cb1e3b83a4c9073b2e7d01b9c87784237097cc5ac0a0b5",
+      "packaged_sha256": "03f6acf8b1956d34f521513058bb24f9807c6b56d3db02312c1ab9a53e13b547"
+    }
+  ],
+  "crt_output": {
+    "original_sha256": "02b46f419cbe8497855b336e959828e27908cfc54b0d4f9e1b941656af4b5293",
+    "public_sha256": "e68d9011d4cf1a7edf0cb5e1a5269b2798dddaa2680565ef3340cefc00c88a36",
+    "declared_differences": [
+      "pratt.certificate_path",
+      "reference_selected_normalizer.path",
+      "raw_files[*].json",
+      "raw_files[*].exit",
+      "raw_files[*].resource"
+    ]
+  },
+  "parent_replay_driver": "replay.py independently orchestrates packaged scripts and checks recomputed n5 raw JSON against frozen raw JSON."
+}

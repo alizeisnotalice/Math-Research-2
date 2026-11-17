@@ -1,0 +1,330 @@
+{
+  "round": 30,
+  "date": "2026-11-17",
+  "status": "Original free-boundary grid problem unresolved; goal active",
+  "evidence_scope": "Exact corner insertion family and vanishing far-distance lower bound; conditional QE8 transfer only; n7 center short-gap CRT and n5 full gap-geometry joint counts. Later all-orbit residues lack CRT at this cutoff; ongoing GPU runs excluded.",
+  "integration": {
+    "certificate_files": 58,
+    "entry_files": 5,
+    "single_file_limit_bytes": 10485760,
+    "base_commit": "148a0b42b7a482f02903013dd930710fbd6ad5b8"
+  },
+  "files": [
+    {
+      "path": "PROJECTS.md",
+      "scope": "Only the A022 topic row",
+      "row": "| [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；角点插入族与n5间隔—峰距精确联合表 | 第30轮完成 | 可求和全局尾估计、W加权根几何与远峰固定占比 |",
+      "row_sha256": "ae9a74d529610e21d660471aa66a9a42809e2671d824e617c705c81941ebdc57"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/README.md",
+      "bytes": 1732,
+      "sha256": "ed29c07e525de3d37230f65b63c8a97eb77d6d5ef4f00ab2491d4024bca22d59"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/STATE.md",
+      "bytes": 22990,
+      "sha256": "37deabe5fc5462650dfb9f1d62a118df3051a780320dd22dcac5db581e51a989"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/IO_PROVENANCE.json",
+      "bytes": 2765,
+      "sha256": "2a33cdfeabf60384d60f88acf4c005ece3379383f8ed68b964f62434646c501e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/PACKAGE_INDEX.md",
+      "bytes": 708,
+      "sha256": "40f71c75ad760f90a7498fa5f02c1d147493b7a847be41b5926e404df394ad2b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/PARENT_REPLAY_RECEIPT.json",
+      "bytes": 705,
+      "sha256": "7aa74cac23ba1bb3fabb0b8fa6f3876e8be2dd22e0da0b8d84a88e0f92d611e7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/REPLAY.md",
+      "bytes": 1497,
+      "sha256": "deb6f4bcba2f31ffdf514aeaa1b60ba342efd9f76df13a5add6f2487fbd998f8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-corner-far-parent/audit_corner_insertion.py",
+      "bytes": 3131,
+      "sha256": "71eeec0827b42b302920146e070e9fbdb4c4e564073ed7062a116fcc3d7306cb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-corner-far-parent/corner-insertion-n3.json",
+      "bytes": 622,
+      "sha256": "e43a41f044b8573f87c3c07f1ae39857df88f3005f1f02e57dcefd551c18e741"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-corner-far/check_corner_geometry.py",
+      "bytes": 471,
+      "sha256": "6cbbe6258fdcc5bd1080abe97dc435d6e5e3ac08eb27d43bbaebe022e8513eb2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-corner-far/geometry-check.json",
+      "bytes": 59,
+      "sha256": "5545cfc960eafb3192e5bf5b6dc296990c50b5d07c6611189532006ab4c6a8ca"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/README.md",
+      "bytes": 548,
+      "sha256": "6db8728bea86340be6a99ea5016bac425c1497a9deca2cbf04ece6833df3bc65"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/audit_n3_joint.py",
+      "bytes": 1642,
+      "sha256": "2b8487f55ed12842c5666e0882554146ecb5fab5eca2a01c4766a354e5802a12"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/crosscheck_r29_tail.py",
+      "bytes": 2396,
+      "sha256": "03f6acf8b1956d34f521513058bb24f9807c6b56d3db02312c1ab9a53e13b547"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/gap-n3-all.json",
+      "bytes": 4205,
+      "sha256": "e8f4e25f4f2d59c7d41d9ce9e0d53d7060661aafe68aa8d00470b6e90f17946b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/gap-n5-v0.json",
+      "bytes": 7830,
+      "sha256": "697e333be9e183649b04ba2259567f8a2ea0b4643ae959b7d0aad0b342bf5eb1"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/gap-n5-v1.json",
+      "bytes": 8214,
+      "sha256": "6c3ca3be40498434156cc0bd6ec3ca8eb2f653598351316c05365af06a8a40d3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/gap-n5-v12.json",
+      "bytes": 3346,
+      "sha256": "f16441c28216466e60f2b09a58850eccaf9104a436be96bb89af63411200df51"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/gap-n5-v2.json",
+      "bytes": 6867,
+      "sha256": "33eca624fa4132c33f1266573c44afca78f1d0addcda6df68ddfa55dd8bb8545"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/gap-n5-v6.json",
+      "bytes": 5840,
+      "sha256": "1dc00f0ded3c7e24021a99d9ce1cfeab7e0bd891e43440c9e4c5474c896b5a90"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/gap-n5-v7.json",
+      "bytes": 5318,
+      "sha256": "f25cacc0a323271906bea0a366eb9bc320f72ea5661370bda2f83840021d8e3f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/gap_geometry_dp.cpp",
+      "bytes": 4840,
+      "sha256": "ac44aef2c818f748d7d2ae4d513ff7f15bca9a61ad291a004673c0d04cd13cb0"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/n3-joint-audit.json",
+      "bytes": 163,
+      "sha256": "53cde7acc45d0bc82f7414fb1b9396dd3f0a73b2eeb94f76c5ad584db0d0c611"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/n5-gap-geometry-summary.json",
+      "bytes": 30070,
+      "sha256": "5a97a92f0fa417b7a4ead9935bf38ba89f3f158fd1b62198126f3707a3548ca9"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/resource-n5-v0.txt",
+      "bytes": 777,
+      "sha256": "b63132a97fa28fbcf6cbd6501275b474d4d852d2184338a8283c20709a843e06"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/resource-n5-v1.txt",
+      "bytes": 777,
+      "sha256": "9431a5ef29c5cc038b1c437f7baf46ca10865b93aac31df6b2fe9efc7c8b6fb3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/resource-n5-v12.txt",
+      "bytes": 777,
+      "sha256": "d0b8f01066a7ac51226cc221eb99f4e75c7a8d314e8d8b39310499d8b4b23316"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/resource-n5-v2.txt",
+      "bytes": 777,
+      "sha256": "35eff0915c9a264d5fbabcbc278e136004a41cad3ca8b2a7817087e4c049d828"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/resource-n5-v6.txt",
+      "bytes": 777,
+      "sha256": "1b49edaf08f4360ec5d8112ad82212dd48b0147b5f5742f8f5cea0f53337488f"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/resource-n5-v7.txt",
+      "bytes": 777,
+      "sha256": "654c905d124f630752bf6e0bd5633867450f14c9aa07fa1f12a1335203db72c8"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-gap-geometry/summarize_n5_geometry.py",
+      "bytes": 3287,
+      "sha256": "962605141cf4ed4d4b60c0ccf494a404bdcdffd34b63599b02f705aa9dc05bfb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/audit_local_qe8_n7_counterexample.py",
+      "bytes": 1019,
+      "sha256": "dcc25e4742b3dded37df514360f42f76a868344244eccde9c46df10854e33c5d"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/audit_quadratic_envelope_finite.py",
+      "bytes": 1585,
+      "sha256": "8ea544cb063a6c056174d894a0986a500d1fdc6371b221cef8b523fca0c7d373"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/check_qe8_transfer_fractions.py",
+      "bytes": 1945,
+      "sha256": "64a7f4cb8f067f6f2bcde174acfa44ac9ef4d5e91811314d7054341f90c48d7b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/local-qe8-n7-center-counterexample.json",
+      "bytes": 251,
+      "sha256": "fdbc02bed2bf4a710c861c617e8a78ec48c94c0eac5f454df123284746cbe5a2"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/prefix-tail-identity-n3.json",
+      "bytes": 619,
+      "sha256": "d16109c01313c7580feea743926ab0ba583360d64559909f77d8331294f607e1"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/qe8-transfer-fraction-check.json",
+      "bytes": 387,
+      "sha256": "06e6acb7efd644fcdec30cbf2dd9e5a4120b6cec7cae9f7cd5e6657a04d4cb4b"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/qe8-transfer.md",
+      "bytes": 3342,
+      "sha256": "1e2d5d7dd533af567690de5cc03369f95c5fdc1e70f030eae8d753b9f7c14a2a"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/quadratic-envelope-finite.json",
+      "bytes": 850,
+      "sha256": "31697788bc3bb5301b779fbb5b2b01ee4d89090526c9d79e58ce6e576e6a6912"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/quadratic-prefix-tail.md",
+      "bytes": 5018,
+      "sha256": "e5495e5491e7731f37c694728cddd981d71f736ae6577538ec4da669f70f57b3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-integrated-tail/verify_prefix_tail_identity_n3.py",
+      "bytes": 1918,
+      "sha256": "eb24e84c9fc8216bab792fa78ce32c2f1b20ae926d98c269062b2886c623fbf7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/README.md",
+      "bytes": 748,
+      "sha256": "7190dc824f1ac67162e5ddc9f3663baa3860bf6c25c1b2d3919c2b49fca021a5"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/REPLAY.md",
+      "bytes": 827,
+      "sha256": "ce948880cae3e53efd3a2e419aa55fec18868b41974c6ae306626d9406ac54c7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/audit_short_tail_crt.py",
+      "bytes": 6861,
+      "sha256": "713fb7f60ad4f294d2e35decf2da9ffb8ff656de7306835c66774ba666af0f4e"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p0.exit-status.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p0.json",
+      "bytes": 441,
+      "sha256": "344724156e44636d3ed058020b4ed2f5bb28a158ec8625c6527ebdacf1f99822"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p0.resource.txt",
+      "bytes": 6395,
+      "sha256": "5cfb5e862ffda2953739268f1bceeaeff460e8523a3253405c7698da1da8d0eb"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p1.exit-status.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p1.json",
+      "bytes": 442,
+      "sha256": "18217445f3c2b54ec706daf141acccf4d73c2c88042cb14f395a0dfd33b53434"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p1.resource.txt",
+      "bytes": 6387,
+      "sha256": "87c22be5adc8fc92d243c03536ef49ade397c6aec614d8dc9c9b24a41c9bf317"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p2.exit-status.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p2.json",
+      "bytes": 442,
+      "sha256": "e0353883926f5329169c19e5b67f32cd4cd676ab4c63f943b7f709edeaab4ec4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p2.resource.txt",
+      "bytes": 6397,
+      "sha256": "642a59813593a91d98585a4d0c46ff296d83b36d532bccb1618e2f91236fafc7"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p3.exit-status.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p3.json",
+      "bytes": 442,
+      "sha256": "16b677cdedf9319f91f09192545575d8f2e05043b7aa4434a4b0f5ec1b884851"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/n7-v24-p3.resource.txt",
+      "bytes": 6389,
+      "sha256": "0a972ee8196174156830e68c82d8decbd08d05077763eb72e1e99f9a89b285c4"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/raw/short_tail_mod.cpp",
+      "bytes": 11148,
+      "sha256": "9d757fcfd65729242d2742cc94b9c34e3e88ba23d1052b985c3b70f0b8a02d13"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-short-tail-crt/short-tail-n7-center-crt-audit-public.json",
+      "bytes": 4968,
+      "sha256": "e68d9011d4cf1a7edf0cb5e1a5269b2798dddaa2680565ef3340cefc00c88a36"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-spatial-geometry/GEODESIC_PATH_ROOT_LEMMA.md",
+      "bytes": 5273,
+      "sha256": "e84089ffc00c44fea1bea3b8d178c69141548ef2174c1ae48ca776d7e6489947"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/r030-spatial-geometry/audit_geodesic_path_kernel.py",
+      "bytes": 2526,
+      "sha256": "4b74f98644338ba6bb43b491861bcf564b6067acafef0e8035f9a2c646e0810c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/certificates/r030/replay.py",
+      "bytes": 3516,
+      "sha256": "5235bf9b7d270ed3752679babe410c6d132aa9c9ee7d40c138816d5feece483c"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/computation/README.md",
+      "bytes": 21041,
+      "sha256": "6db05d17179ae31c3c6614c6a6aa128348c7ae044b9f8efb26a51bf06fae31a3"
+    },
+    {
+      "path": "free-boundary-grid-twin-peaks/rounds/030.md",
+      "bytes": 8176,
+      "sha256": "38a55d68665f88377ad1e94b0dfab0d2da062bbcbcf8d8763bba46e52e9b3e29"
+    }
+  ]
+}
