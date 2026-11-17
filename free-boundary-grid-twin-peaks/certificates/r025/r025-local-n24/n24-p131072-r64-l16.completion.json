@@ -1,0 +1,44 @@
+{
+  "kind": "independent-completion-and-aggregation-receipt",
+  "status": "passed_with_concentration_warning",
+  "scope": "n24 tau=2 L-lift terminal-distance stratified SMC; complete K2 target-law reconstruction",
+  "raw": {
+    "path": "raw/n24-p131072-r64-l16.jsonl",
+    "sha256": "c2ae8f909a3699857a5cafb400e9f5e0abe3451db5dd01766bd736a8d6816016",
+    "records": 66,
+    "structure": "one metadata, 64 unique replicates indexed 0..63, one final run_end",
+    "run_end_wall_seconds": 2930.665172100067,
+    "dead_replicates": 0,
+    "domain": "9e27050000000002",
+    "method": "strat",
+    "particles": 131072,
+    "move_steps": 16,
+    "seed_formula": "(0xA022000000000000 + domain + n*1000000 + 2*10000 + replicate) mod 2^64"
+  },
+  "frozen_implementation": {
+    "binary_sha256": "137aa827fd2fcfbacd9a40aaa7059ee9dd8f38a3616e0c849724d2143f10f2cd",
+    "source_sha256": "01b77bca1735f07293eae5ffeea0326810fdc5ea785c7a9e99d9030cba9b0702",
+    "aggregator_sha256": "cb466dcae1628f81ff2e198e65d2f95a71b198f77cd60fe8e717c9076403c358"
+  },
+  "validation": {
+    "frozen_aggregator_completed": true,
+    "checks": ["raw and source hashes", "metadata", "full replicate range", "deterministic seed uniqueness", "nondead tau=2 invariant", "integer group bounds", "integer group LF-2LG=4LD identity", "distance-histogram sum identity", "exact-Fraction strict threshold rule"],
+    "driver_postcheck_failure": "The original r024 driver demanded the printed floating F_minus_2G_minus_4D field equal literal zero. Fifteen records differ only by floating roundoff at magnitudes about 1e-216 to 1e-218 while every integer group residual is exactly zero. The frozen aggregator applies the documented scale-aware tolerance and completed all checks. This is a driver postcheck defect, not a kernel or raw-data failure."
+  },
+  "reports": {
+    "epsilon_1_4": {"path": "reports/n24-distance-eps-1-4.json", "sha256": "25c0a03b5f3ad7d7a56790b3489637e285d1f0693715ff939334ffc228fa6666"},
+    "epsilon_1_2": {"path": "reports/n24-distance-eps-1-2.json", "sha256": "7b8e4ee4453c628d2fd49c392626989d3c56d9d2ed2f7313910c1c0c4b6a4aab"},
+    "epsilon_1": {"path": "reports/n24-distance-eps-1.json", "sha256": "4cba5623a7fbb26234a6151163118e5540337f9d1b7a1ffdcc7499ef5ea95f49"}
+  },
+  "resources_and_exit": {
+    "telemetry_sha256": "a7ea73d7c8af86a243533bd67e0bf55538953b454a2d253b79e5ef96ea4a64aa",
+    "resource_sha256": "de8ba49a2f855f843f6f1bbff75cb11c966484b2408bc99d63791cafa03169c4",
+    "time_returncode": 0,
+    "time_maximum_resident_set_size_bytes": 1225441280,
+    "time_peak_memory_footprint_bytes": 1526679136,
+    "time_swaps": 0,
+    "telemetry_final": "time wrapper returncode 0",
+    "postrun_ps": "driver PID 13117, time wrapper PID 13119, and GPU child PID 13121 absent"
+  },
+  "interpretation": "The reports are finite SMC ratio-of-means diagnostics for the complete K2 target law reconstructed by tau=2 L-weighting. The lift-normalizer ESS is only about 1.45 of 64 and maximum share about 0.808, so these values must not be pooled with the independent MacBook multi-method run, treated as precise frequencies, confidence intervals, or asymptotic evidence."
+}

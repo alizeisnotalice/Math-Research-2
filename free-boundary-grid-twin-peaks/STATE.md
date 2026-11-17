@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/024.md；严格辅助树族结果与方格顶行臂族归一化比较见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r024.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/025.md；第25轮证书见certificates/r025/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r025.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -87,3 +87,26 @@
 - 新 log-scaled 聚合仅添加公共对数缩放、log-normalizer 输出及 root-scale tuple 守卫；冻结 r023 Decimal 聚合器本已可由 logZ 处理 Double 下溢。
 
 第一未证步骤仍为：证明线控制 \(W\) 加权根几何；证伪线给出固定远峰质量的归一化下界。完整白名单、来源哈希与重放范围见 `certificates/r024/` 和 `manifest-r024.json`。
+
+## 第25轮追加（2026-11-17）
+
+第25轮已归档；**原题仍开放，总目标 active。**
+
+- 严格方格结果：若 \(T\) 是顶行、\(R\) 是前两行、\(H_S=h(S)\)，则对每个
+  \(n\ge3\)、\(b=\lfloor n/2\rfloor\)，
+  \[H_T/(n!H_R)\ge\binom{n^2-2n+b}{b}/\binom nb\ge(n-2)^b.\]
+  这排除 \(H_T\le n!C^nH_R\) 型固定条带常数底数代价，但不比较 \(H_T\) 与 \(A_1\)，
+  不给原题结论。
+- 严格有限结构：对任意有限连通简单图，首次合并给出
+  \[B/A_2\le\sum_{d\ge2}d/[2(d-1)]P_2(\rho=d),\quad
+  P_2(\rho>r)\le2r(1-B/A_2)/(r-1)\quad(r\in\mathbb Z,r\ge2).\]
+  3×3 全枚举认证 \(A_2=143808,B=81984,B/A_2=61/107\)。两份冻结 n=24 plug-in
+  输出违反该必要条件；Fraction 认证显示每份中 \(B/A\) 绝对误差或距离律 TV 误差至少一项
+  分别大于本机 `.15`、MacBook `.18`。这是确定性可行性限制，不是置信区间或 bug 归因。
+- rank-biased prefix move 的 Fraction 详细平衡和 n=3 小 GPU trace 已审计；它不认证
+  SMC 无偏性、混合或方差。已完成 n=11/n=16/n=24 有限批仅作为账本和有限诊断归档。
+  截止时仍运行或重启后补跑的队列留待下一轮。
+
+第一未证步骤不变：证明线仍需控制 \(W\) 加权根几何的 \(o(n^2)\) 量级；证伪线仍需固定
+远峰质量的归一化下界。完整白名单、来源哈希与重放范围见 `certificates/r025/` 和
+`manifest-r025.json`。
