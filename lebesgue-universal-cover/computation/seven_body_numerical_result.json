@@ -1,0 +1,85 @@
+{
+  "status": "completed",
+  "scope": "floating local search only; sampled boundary hull and Powell do not certify m(F7), a lower bound, or global placement coverage",
+  "seed": 20261117,
+  "elapsed_seconds": 54.20825137500651,
+  "objective_calls": 55459,
+  "parameterization": "disk fixed at origin; B3 angle fixed at zero; x=[t3x,t3y,rho5,t5x,t5y,rho7,t7x,t7y,rho9,t9x,t9y,rho11,t11x,t11y,rho19,t19x,t19y]",
+  "degrees_of_freedom": 17,
+  "input_six_parameters": [
+    -0.002116717736623155,
+    -0.002172190513432106,
+    0.03369871051209932,
+    0.025092651107061735,
+    -0.0038921881207567045,
+    0.7087849854618435,
+    0.0035628282693877652,
+    -0.01262876252254122,
+    0.34909300190743575,
+    -0.0006339143657618253,
+    -0.0006497687888177878,
+    0.11685175287929492,
+    -0.0009822210255093589,
+    0.006365090528266086
+  ],
+  "best_parameters": [
+    -0.0020790704930314674,
+    -0.002150754661986609,
+    0.034418570172989604,
+    0.025080434204262637,
+    -0.003974555116224853,
+    0.7112252356608182,
+    0.0037732438582037697,
+    -0.012567848773088535,
+    0.3489814997015024,
+    -0.000625881303159127,
+    -0.0006373680298773501,
+    0.11631747690492546,
+    -0.0011598022717360227,
+    0.006076119069870128,
+    0.23425164464078788,
+    -0.00090053054753337,
+    -0.0015826217171541158
+  ],
+  "coarse_sample_area": 0.8379720359393537,
+  "fine_sample_area": 0.8379929157720318,
+  "coarse_sampling": {
+    "arc_segments_per_Reuleaux_arc": 48,
+    "disk_vertices": 384
+  },
+  "fine_sampling": {
+    "arc_segments_per_Reuleaux_arc": 192,
+    "disk_vertices": 1536
+  },
+  "phases": [
+    {
+      "phase": "P19-only",
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "fun": 0.8379955607667088,
+      "nit": 7,
+      "nfev": 989
+    },
+    {
+      "phase": "joint-0",
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "fun": 0.8379720361181229,
+      "nit": 21,
+      "nfev": 12274
+    },
+    {
+      "phase": "joint-1",
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "fun": 0.8381980939096454,
+      "nit": 66,
+      "nfev": 42196
+    }
+  ],
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "script_sha256": "1d6094181a936ec9d400b42d0d861d5eb5ef22ece63da1af80797c7aade05ca3"
+}
