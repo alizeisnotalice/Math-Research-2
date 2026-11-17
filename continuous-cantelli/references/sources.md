@@ -102,3 +102,11 @@
 
 - `proofs/016-attained-maximum-contact.md`，第1节减去最小方差表示；SHA256 `deeead58ba1b9ac7568329511dcb30305590bb13cc6aa42bc018846b290f2f02`。
 - `proofs/017-cusp-negative-moments.md`，第2—3节负矩条件及其对数模型缺口；SHA256 `4bd392e5aa7463f58397f10ea861f7968a62dfd6e9a9ee51992255e7d402c669`。
+
+## 第19轮内部来源与核验
+
+基线提交ef7242862f2795b7b33e54b14c91dfac68741ce9。8个独立工作区继续协作；审查与原始报告哈希见reviews/019-integrated-audit.md。无新增外部文献或首创性声明。
+
+- proofs/018-logarithmic-contact-fourier.md，第2—3节有限相位子列及对数核心；SHA256 6c117f6aa7e262cacb6b756c1c36bde2999d0bdcc00667be0ff972f0f7aaedcf。
+- proofs/001-tail-and-local-rigidity.md，第3节一致连续尾部约束；SHA256 3f099de9e6a514f855e4691a47ad2f516b79683bc77093bf7f3e897e30ceb12c。
+- 独立工作区agent-07的research/r019-tail-budget-final.md，第2—3节尾部预算及临界候选，经主Agent整合与独立核对；SHA256 5445b9e750781153daa0aa6ab51538d6412b56d86e538c665dec10b90df6408e。

@@ -1,0 +1,32 @@
+{
+  "python": "3.13.18",
+  "runs": [
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "continuous-cantelli/computation/round019_independent_certificate_audit.py"
+      ],
+      "pid": 61030,
+      "exit_code": 0,
+      "process_absent": true,
+      "elapsed_seconds": 0.07459958300023573,
+      "stdout": "r019 critical certificate independent arithmetic audit passed\nP/B = 5037503378984.7523550025280744826888519761059360406\n",
+      "stderr": "",
+      "script_sha256": "c34a3666379c844c678a503faa3a94787c308ae9c8fab25764684f27e5d3bb38"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "continuous-cantelli/computation/round019_tail_action_check.py"
+      ],
+      "pid": 61031,
+      "exit_code": 0,
+      "process_absent": true,
+      "elapsed_seconds": 0.7837298750018817,
+      "stdout": "python=3.13.18 mpmath=1.3.0 sympy=1.14.0\nsympy stationary q^2: s**(b + 1)*(1 - e)/(b*d)\nsympy minimum difference after stationarity: 0\nbeta d eps q R  tail_integral  full_line_bound  ratio  Aeps  Kloc\n1.0 4.0 0.1 20.0 1.0 4.248354255291589e-18 1.04636485270533789e-16 0.040601079483 1.897366596101 1.4142135623731\n1.5 4.0 0.2 20.0 1.0 6.48014019797279268e-9 1.69229348648698785e-7 0.0382920589704 1.4925649756468 1.485502048305\nfixed-eps comparison beta=1,d=3,C=1,eps= 0.1 Aeps/Kloc= 1.161895003862225\nfixed-eps comparison beta=1,d=3,C=1,eps= 0.5 Aeps/Kloc= 0.8660254037844386\n",
+      "stderr": "",
+      "script_sha256": "dc99ae8bf6a016e86974b691ea606531d7a3513b24a5e9b86209c7e5b00bf7c7"
+    }
+  ],
+  "scope": "algebra and rational checks are exact; quadrature is numerical calibration only"
+}
