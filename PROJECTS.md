@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；最大不交翻号闭包与20份构造的包含极大性 | 第6轮完成 | 无最大翻号分割的共同秩与多方向替换 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；最小翻号张成秩≤3√s/2与一般局部加权预算 | 第7轮完成 | 非最小方向的共同秩与一般局部支撑分解 |

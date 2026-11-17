@@ -1,0 +1,43 @@
+{
+  "status": "completed",
+  "process_exit_codes": [
+    0,
+    0
+  ],
+  "exit_evidence": "Both exec sessions 64955 and 12889 were polled to exit 0 before integration.",
+  "local_summaries": [
+    "local-independent-0.summary.json",
+    "local-independent-1.summary.json"
+  ],
+  "commands": [
+    [
+      "nice",
+      "-n",
+      "10",
+      "/Volumes/data/CodexTemp/T2/a28/r007/independent_multineighbor",
+      "0",
+      "1073741824",
+      "/Volumes/data/CodexTemp/T2/a28/r007/local-independent-0"
+    ],
+    [
+      "nice",
+      "-n",
+      "10",
+      "/Volumes/data/CodexTemp/T2/a28/r007/independent_multineighbor",
+      "1073741824",
+      "1073741824",
+      "/Volumes/data/CodexTemp/T2/a28/r007/local-independent-1"
+    ]
+  ],
+  "compiler_queried_at_archival": "Apple clang version 21.0.0 (clang-2100.4.1.1)\nTarget: arm64-apple-darwin27.2.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "python_at_archival": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "binary_sha256_at_archival": "873386e2c36ae051db373ab91a6442685d5136f41efc13f3497396ed7dd2d92e",
+  "source_sha256": {
+    "independent_multineighbor.cpp": "a0ff39653b0ef4519d94d44a1de35559a189fa0bd8a31814ac7cddca175f258e",
+    "neighbor_input.hpp": "5eca953b7a0b0f17d6954f88246e9e6d2c1e7ab7872c6030835d3760bf3db141"
+  },
+  "seed": 2026111706,
+  "arithmetic": "unsigned 64-bit bitsets and exact integer popcounts",
+  "tolerance": 0
+}

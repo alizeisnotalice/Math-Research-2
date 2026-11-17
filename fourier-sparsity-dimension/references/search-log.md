@@ -49,3 +49,9 @@
 - [de Seguins Pazzis 2023](https://arxiv.org/abs/2307.10347)和[2026](https://arxiv.org/abs/2607.14648)的锐交替矩阵空间结论带域大小限制，不能直接用于F₂。二次子类补充改用直接ANF维数及自包含的特定pencil包含极大性证明。
 
 实际来源文件哈希见source-files-r006.json；外部全文不归档。有限搜索阴性没有被当作一般上界；错误的四原子独立翻号推断已由24个最小码字的证书及正确Hadamard分类排除。
+
+## 第7轮补充（2026-11-17）
+
+- [Kolomeec 2016](https://doi.org/10.4213/mvk187)，A graph of minimal distances between bent functions，Mathematical Aspects of Cryptography 7(2), 103–110：文献子Agent实际通过MathNet原文渲染阅读8页；第105页为单个最小翻号的仿射平坦表征，第106页Lemma 1为特定MM排列交换，第107页Statement 3为相同仿射线性部的两平行陪集拼接。后两项并非一般相交翻号的E₄闭包或秩定理。主Agent核对阅读备忘录；本轮其独立重开MathNet记录页失败，未将这次失败记作主Agent阅读全文。证明自包含。
+- [Kolomeec 2017](https://doi.org/10.1007/s10623-016-0306-4)，The graph of minimal distances of bent functions and its properties：只取得ePrint元数据/摘要与Springer预览，ePrint PDF当前403；未核读全文，不以摘要推断E₄或秩结论。
+- [Bykov–Kolomeec 2025原文](https://math-sobolev.ru/sites/math-sobolev.ru/files/2026-02/32-3-5.pdf)，DOI 10.33048/daio.2025.32.811：文献子Agent读取公开俄文原文，其最近邻分类/计数仍围绕单个仿射平坦。主Agent未逐项重读该全文；本文定理不依赖其计数。已核查来源没有定位本文完整结构断言，不据此宣称首次性。外部PDF不提交。
