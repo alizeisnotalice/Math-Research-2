@@ -1,0 +1,97 @@
+{
+  "aggregate": {
+    "exit_code": 0,
+    "original_sha256": "3af6adcf8b90a9061f25c9dc1e16863b8852bfaa82bcfcbf71e41c1afbd47ece",
+    "wall_seconds": 0.06484037500194972
+  },
+  "compile": {
+    "binary_sha256_historical_only": "a0a80708e1bc2cc732bc94e8f3bc824a2cf019adf187103b5227a1cc3e1cf18f",
+    "exit_code": 0,
+    "flags": [
+      "-O3",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic"
+    ],
+    "original_sha256": "22c46611442473a5de5f36cc52e7ef633f4fdc05a4ee7e619e91343754d5954a",
+    "wall_seconds": 1.9738746250004624
+  },
+  "completed": {
+    "binary_sha256_historical_only": "a0a80708e1bc2cc732bc94e8f3bc824a2cf019adf187103b5227a1cc3e1cf18f",
+    "original_sha256": "05efc51c17aa9d469b542b121ffede340ba264e3a12bcf188ab32b6081f2f618",
+    "status": "completed-strict-coverage",
+    "utc_finished": "2026-11-17T08:43:15.669797+00:00"
+  },
+  "gates": [
+    {
+      "exit_code": 0,
+      "mode": "gate-n7-r45",
+      "portable_command": [
+        "./bipartite_prefix_dp",
+        "--mode",
+        "gate-n7-r45",
+        "--out-dir",
+        "./gates",
+        "--source-sha",
+        "be18e9f8c593648c4e2121305f400db5199ed2fcdde46c4522ddbae27b15b5c4"
+      ],
+      "receipt_original_sha256": "b20c9157f20f76cf51be093866a099a01bf4772b3860a671ff8903e89b2a9888",
+      "result": "evidence/gates/gate-n7-r45.json",
+      "result_sha256": "82f2bd8b654035224d51467cd10f857ff1b459b641a5f6ed89ff775d66fe971e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "utc_finished": "2026-11-17T08:41:58.858680+00:00",
+      "utc_started": "2026-11-17T08:41:57.839369+00:00",
+      "wall_seconds": 1.0193292499970994
+    },
+    {
+      "exit_code": 0,
+      "mode": "gate-n9-direct",
+      "portable_command": [
+        "./bipartite_prefix_dp",
+        "--mode",
+        "gate-n9-direct",
+        "--out-dir",
+        "./gates",
+        "--source-sha",
+        "be18e9f8c593648c4e2121305f400db5199ed2fcdde46c4522ddbae27b15b5c4"
+      ],
+      "receipt_original_sha256": "c6a78190d843d20226cddd4e3d19fd75431031a105c0e71fc389e57f0c627c23",
+      "result": "evidence/gates/gate-n9-direct.json",
+      "result_sha256": "a557a75a580b416e9d3a1c4301216b2e22e3d6aba14763ff7641b73696da4507",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "utc_finished": "2026-11-17T08:41:58.870241+00:00",
+      "utc_started": "2026-11-17T08:41:58.859230+00:00",
+      "wall_seconds": 0.01104825000220444
+    }
+  ],
+  "kind": "path-redacted-minimal-run-receipts",
+  "redaction": "all removed values were local paths, local cache paths, or PIDs; original digests identify source receipts.",
+  "resource_profile": {
+    "exit_code_file_original_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "maximum_resident_set_size_bytes": 2195456,
+    "peak_memory_footprint_bytes": 1556888,
+    "profile_checkpoint_original_sha256": "abb1d1c3318462707e862dc81b696147ed1fab43f7e5f73779d2c53df88bc8e8",
+    "profile_exit_code": "0",
+    "scope": "uncounted isolated left=4 [0,1024) reprofile; not a full-batch resource total",
+    "sys_seconds": 0.0,
+    "time_stderr_original_sha256": "e688662fab7a8335f426e725d5a4ae68db575787ca72b363f5505b5d440a4042",
+    "user_seconds": 0.13,
+    "wall_seconds": 0.14
+  },
+  "source_sha256": "be18e9f8c593648c4e2121305f400db5199ed2fcdde46c4522ddbae27b15b5c4",
+  "started": {
+    "benchmark_counted_range": {
+      "left": 4,
+      "start": 0,
+      "stop": 1024
+    },
+    "chunk": 4096,
+    "original_sha256": "4edb875f9318b71b65348c682fb7f6e4067a60c3a4b0a046c91b4e59eb674493",
+    "utc_started": "2026-11-17T08:41:55.863320+00:00",
+    "workers": 12
+  }
+}

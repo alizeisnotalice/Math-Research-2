@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第33轮完成。**原题开放；用户总目标仍active。**
+2026-11-17，本地第34轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/033.md；第33轮证书见certificates/r033/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r033.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/034.md；第34轮证书见certificates/r034/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -268,3 +268,21 @@ n4同根、同移动根D4类的距离单调被2651194000(d3)>2523561040(d4)否�
 本机L64 GPU批按用户内存释放要求停止于29/32，未作完整批证书；后续两机任务不算本轮完成。
 第一缺口仍为全局W加权根几何的little-o估计或固定远峰质量；下一步控制L提升的端点和尾部，
 并研究B/A1归一化比较。入口rounds/033.md、certificates/r033/REPLAY.md、manifest-r033.json。
+
+
+## 第34轮追加（2026-11-17）
+
+原题开放，总目标active。对每一峰词σ，定义l_p为最早邻点秩，b_p为最早的唯一早邻
+后继秩（无则N+1），R_p=b_p−l_p−1，Γ=Σ_{p非根非根邻}1/R_p。
+稳定移p至第二位的像恰为B中首次合并前低根单点的切片，E1Γ=B_(low,1)/A1。
+辅助L∞壳的首达唯一父点与dyadicCauchy给每词Γ≥[floor(log2n)−2]_+/32。
+故B/A1→∞严格成立；结合Bq指数界给B-law中q→∞，并有loglog n尺度的显式早合并尾。
+角根ring词则Γ≤1+(11/3)H_(n−1)，故逐词最小Γ的阶为Θ(log n)；不能推B/A1上界。
+n3实际枚举提升像35264，逐纤维逆像数与R一致，并独立核对low-singleton集合；
+删除低根后整词一峰的加强已被具体n3词否定，正确逆操作是在首邻点后回插。
+九点全1,327,360二分表示、326完成分片的整数证书认证R27=h2−5h4+5h6−2h7=0；
+解析前九点分解将其提升为所有N≥9连通二分图的机器辅助严格恒等式。
+只有一套完整N9 DP扫描，三图直接9!是局部交叉，不写成两套全扫描。
+最终公开树的六项小规模/保存证据审计已实际重放，exit0且全部回收；大在途任务另管。
+第一缺口仍为完整L提升后的加权根几何或固定远峰正质量；下一步考察加权回插泛函
+与失衡端点，不能从Γ对数界直接乘N。入口rounds/034.md及manifest-r034.json。
