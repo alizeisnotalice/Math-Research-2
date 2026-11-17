@@ -1,0 +1,29 @@
+{
+  "fetched_unix": 1794897883.8088262,
+  "fetch_command": [
+    "ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "ConnectTimeout=10",
+    "macbook-math",
+    "cat /Users/zhengzhihao/CodexRemoteMath/a28-selector/r011/result.json"
+  ],
+  "fetch_exit_code": 0,
+  "raw_result_sha256": "dd2cf2190067635f9eb47c4019ab59ac1140573999da2d44d8135d4dc1d08314",
+  "process_check_command": [
+    "ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "macbook-math",
+    "pgrep -fl \"[r]011/audit.py\""
+  ],
+  "process_check_exit_code": 1,
+  "process_check_stdout": "",
+  "original_execution_exit_code_reported_by_subagent": 0,
+  "scope": "Main agent fetch and comparison; original remote execution performed by compute subagent."
+}

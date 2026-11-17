@@ -76,3 +76,16 @@
 - [Canteaut–Daum–Dobbertin–Leander (2006), Finding nonnormal bent functions](https://doi.org/10.1016/j.dam.2005.03.027)，Discrete Applied Mathematics 154, 202–218。原作者站点直接PDF访问失败，通过其[归档副本](https://web.archive.org/web/20111230130710id_/https://www.rocq.inria.fr/secret/Anne.Canteaut/Publications/Canteaut_et_al06.pdf)取得原文。主Agent核读Definition 6（203页）、Fact 22（209页）、Lemma 25（210页）及Fact 26。Fact 22的十四变量Tr(αx^57)非弱正规性为原文算法计算认证，作者注明解析证明未给出。本轮重建有限域并完整整数核验bent性，不将其写成非弱正规性穷举复验。二次直和保持性质另有本轮自包含证明。
 - PDF SHA-256：1ebc57914b36d3ae302efae42569e8cb9aae29d4bf08dddde11ec868a917f0c5；提取文本SHA-256：f22d838a8478fef4ea4f5a63a18dac621133ab55a68a3312d4c9039899650ac3。暂存于CodexTemp/T2/a28/r010-lit，不提交外部全文。
 - Leander–McGuire (2009)十变量非弱正规构造只读摘要、未取得原文；未使用未经正文核验的特定迹公式。没有依据检索阴性主张本轮结果首次出现。
+
+
+## 第11轮补充（2026-11-17）
+
+本轮上界和迭代结论均有自包含证明。下面记录文献子Agent实际核读的范围；主Agent核对摘录、文件哈希及其与本轮对象的区分，没有将所有下载全文记作自己逐页重读，也不依据检索阴性主张首次。
+
+- [Tarannikov 2006原文](https://www.mathnet.ru/eng/dm65)，On values of the affine rank of the support of spectrum of a plateaued function：Lemma 5（125页）区分仿射秩与线性秩；Theorem 2（135页）是|S|=4^h、仿射秩从2h至2^(h+1)−2的构造区间，不是上界；Theorem 3（136页）的一般上界为2^(2h−1)−2^(h−1)+h。不可把构造端点当成一般平方根界。本轮h=2上界另由字符平均与自正交证明。
+- [Sanyal 2019](https://theoryofcomputing.org/articles/v015a011/v015a011.pdf)，Theorem 1.1的Fourier维数界为O(√s log s)。[Mande–Sanyal 2020](https://doi.org/10.4230/LIPIcs.FSTTCS.2020.29)的O(√s)是自适应奇偶决策树深度，不能用来替换非自适应Fourier秩。子Agent读取原文引言的明确区分。
+- [Chakraborty等，arXiv:2012.02335](https://arxiv.org/abs/2012.02335) Theorem 1.3及第4页后的讨论将delta=Pr[f=−1]引入精细界；其小delta取等例不自动解决一般对数能否删除。定向检索未得到解决本项目一般A28的原文定理，这不是穷尽性声明。
+- [Chistopolskaya–Podolskii，arXiv:1810.08668](https://arxiv.org/abs/1810.08668)，第3页给PDT深度≥gran+1。本轮无周期例子需要的较弱归纳证明已自包含，不混作Fourier维数上界。
+- [Carlet作者幻灯片](https://people.math.carleton.ca/~finitefields/Files/CC_slides.pdf)第22、29页将全bent仿射空间最大维数列为问题；这只是该材料的状态证据。全bent仿射陪集不是所有非零分量均bent的vectorial映射，后者的输出维数界不能直接套用前者。
+
+外部PDF不提交。实际本地来源文件哈希见source-files-r011.json；没有把未取得一般定理写成该定理不存在的证明。
