@@ -1,0 +1,285 @@
+{
+  "purpose": "Complete affine-equivalence representatives for support sets A subset F_2^8 with |A|=32 and 1_A in RM(4,8), organized by affine-span dimension. Variables/monomials use zero-based indices.",
+  "source": {
+    "paper": "S. Nezami and J. Haah, Classification of Small Triorthogonal Codes, arXiv:2107.09684v2 (2022). Lemma 5 and Corollary 6: PDF pp.8-9; exhaustive classification assertion: PDF p.16; Table II and its completeness caption: PDF pp.18-19.",
+    "repository": "https://github.com/sgnez/Tri_from_RM",
+    "license": "MIT (repository LICENSE)",
+    "commit": "89c7c5fc8b871eec1eddda10c4043106c553de45",
+    "notebook": "Code_Builder.ipynb",
+    "notebook_blob": "051da0754bb9ba89720d2b22e5687e49212d1a5a",
+    "notebook_cell_execution_count": 319,
+    "raw_json_lines": [
+      112,
+      170
+    ],
+    "paper_table_ii_numbers": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "ambient_dimension": 8,
+  "RM_order": 4,
+  "support_weight": 32,
+  "embedding_convention": "A representative g on F_2^m is embedded as supp(g) x {0}^{8-m}. Its indicator on F_2^8 is g(x_0,...,x_{m-1}) times product_{j=m}^{7}(1+x_j).",
+  "completeness_scope": "This list is complete up to affine equivalence. If m is the affine-span dimension of A, then the induced g has no affine-linear factor and belongs to RM(m-4,m); m>=5 follows from |A|=32. Conversely each listed g embeds by the stated convention. Nezami-Haah Table II classifies every no-linear-factor representative of weight c<40 in the required RM(m-4,m) family; its rows 6--14 are exactly the weight-32 cases m<=8. Rows with m=9 have affine span 9 and are irrelevant to A subset F_2^8.",
+  "representatives": [
+    {
+      "id": "span5_code6",
+      "affine_span_dimension": 5,
+      "source_raw_json_lines": [
+        112,
+        116
+      ],
+      "source_table_ii_number": 6,
+      "source_polys_zero_based_entry": 5,
+      "source_expression_one_based": "1",
+      "monomials_zero_based": [],
+      "constant_term": 1
+    },
+    {
+      "id": "span6_code7",
+      "affine_span_dimension": 6,
+      "source_raw_json_lines": [
+        118,
+        122
+      ],
+      "source_table_ii_number": 7,
+      "source_polys_zero_based_entry": 6,
+      "source_expression_one_based": "x1*x2 + x3",
+      "monomials_zero_based": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "constant_term": 0
+    },
+    {
+      "id": "span6_code8",
+      "affine_span_dimension": 6,
+      "source_raw_json_lines": [
+        124,
+        128
+      ],
+      "source_table_ii_number": 8,
+      "source_polys_zero_based_entry": 7,
+      "source_expression_one_based": "x2*x3 + x1*x4 + x5",
+      "monomials_zero_based": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "constant_term": 0
+    },
+    {
+      "id": "span7_code9",
+      "affine_span_dimension": 7,
+      "source_raw_json_lines": [
+        130,
+        134
+      ],
+      "source_table_ii_number": 9,
+      "source_polys_zero_based_entry": 8,
+      "source_expression_one_based": "x1*x2*x3 + x1*x4*x5 + x2*x3",
+      "monomials_zero_based": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "constant_term": 0
+    },
+    {
+      "id": "span7_code10",
+      "affine_span_dimension": 7,
+      "source_raw_json_lines": [
+        136,
+        140
+      ],
+      "source_table_ii_number": 10,
+      "source_polys_zero_based_entry": 9,
+      "source_expression_one_based": "x1*x3*x4 + x1*x2*x5 + x2*x3*x6",
+      "monomials_zero_based": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ]
+      ],
+      "constant_term": 0
+    },
+    {
+      "id": "span7_code11",
+      "affine_span_dimension": 7,
+      "source_raw_json_lines": [
+        142,
+        146
+      ],
+      "source_table_ii_number": 11,
+      "source_polys_zero_based_entry": 10,
+      "source_expression_one_based": "x1*x2*x4 + x1*x5*x6 + x2*x3*x7",
+      "monomials_zero_based": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          6
+        ]
+      ],
+      "constant_term": 0
+    },
+    {
+      "id": "span8_code12",
+      "affine_span_dimension": 8,
+      "source_raw_json_lines": [
+        148,
+        152
+      ],
+      "source_table_ii_number": 12,
+      "source_polys_zero_based_entry": 11,
+      "source_expression_one_based": "x1*x2*x3 + x1*x2*x3*x4 + x1*x2*x5*x6 + x3*x4*x5*x6",
+      "monomials_zero_based": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "constant_term": 0
+    },
+    {
+      "id": "span8_code13",
+      "affine_span_dimension": 8,
+      "source_raw_json_lines": [
+        154,
+        158
+      ],
+      "source_table_ii_number": 13,
+      "source_polys_zero_based_entry": 12,
+      "source_expression_one_based": "x1*x2*x3*x4 + x2*x3*x4*x5 + x1*x5*x6*x7",
+      "monomials_zero_based": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ]
+      ],
+      "constant_term": 0
+    },
+    {
+      "id": "span8_code14",
+      "affine_span_dimension": 8,
+      "source_raw_json_lines": [
+        160,
+        164
+      ],
+      "source_table_ii_number": 14,
+      "source_polys_zero_based_entry": 13,
+      "source_expression_one_based": "x1*x2*x3*x5 + x1*x2*x6 + x1*x2*x4*x6 + x3*x4*x5*x7",
+      "monomials_zero_based": [
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          3,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "constant_term": 0
+    }
+  ]
+}
