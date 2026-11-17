@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；五体族最小面积严格小于0.8374 | 第2轮完成 | 新增形状及全域下界 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；初始化 | 第0轮 | 定量尾部必要条件与连续构造障碍 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；定量尾部约束、周期及有限维局部刚性 | 第1轮完成 | 停止图逆向表示的正性条件 |

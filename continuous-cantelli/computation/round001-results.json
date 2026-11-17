@@ -1,0 +1,67 @@
+{
+  "exact_fourth_identity": "0",
+  "exp_4_5_lower": "1178747/14336",
+  "runtime": {
+    "python": "3.13.18",
+    "executable": "/Users/zzh/.venvs/main/bin/python",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0"
+  },
+  "seed": null,
+  "method": "deterministic quad on [-12,12]; no interval certification",
+  "parameters": {
+    "k": 3.0,
+    "B": 0.40002260270644735,
+    "m": 1.0
+  },
+  "range_a": [
+    0.595533547584868,
+    1.3955787529977628
+  ],
+  "moments": {
+    "mean": [
+      1.0,
+      1.3354234102677476e-12
+    ],
+    "fourth": [
+      12.000000000000002,
+      8.660739248444775e-13
+    ],
+    "sixth": [
+      125.40727393916794,
+      2.177063818908172e-10
+    ]
+  },
+  "fourth_residual": 1.7763568394002505e-15,
+  "sixth_residual": 5.407273939167936,
+  "transforms": [
+    {
+      "t": 0.5,
+      "shifted_mgf": 1.0001087778168876,
+      "quad_error": 1.6516924359978049e-12
+    },
+    {
+      "t": 1.0,
+      "shifted_mgf": 1.0055786525117782,
+      "quad_error": 1.3035661607646507e-12
+    },
+    {
+      "t": 2.0,
+      "shifted_mgf": 1.165365841285551,
+      "quad_error": 2.2505742333355004e-12
+    },
+    {
+      "t": 4.0,
+      "shifted_mgf": 5.632979981499668,
+      "quad_error": 5.2117003825467435e-12
+    }
+  ],
+  "cosine_matrix": "Matrix([[-1 + sqrt(2)/2, -1, -1 - sqrt(2)/2], [-1, -2, -1], [-2, 0, -2]])",
+  "exact_cosine_determinant": "4*sqrt(2)",
+  "conditional_moment_polynomials": {
+    "2": "A + x**2",
+    "4": "3*A**2 + 6*A*x**2 + x**4",
+    "6": "15*A**3 + 45*A**2*x**2 + 15*A*x**4 + x**6"
+  }
+}
