@@ -1,0 +1,231 @@
+{
+  "schema": "a28-r019-d15-graph-projection-v2",
+  "scope": "all 20 archived dim-15 common-bent codes; directions of weight16 only",
+  "arithmetic": "exact F2 difference sets and integer FWHT on reported candidates",
+  "tolerance": 0,
+  "supersedes": "v1 is invalid: it summed repeated difference bits as integers, allowing carries; discard its numerical results.",
+  "partitions_path": "fourier-sparsity-dimension/computation/round006/weight8-partitions.json",
+  "partitions_sha256": "fcce87287d5572cf55950547c6ebe3acfefb90f18692652f910756f5a206203d",
+  "audit_path": "fourier-sparsity-dimension/computation/round006/common-mm-audit.json",
+  "audit_sha256": "445b06403a7479a909f243e43ef059bceab0504ee131f44e5e874cfe4e4f054c",
+  "two_dimensional_kernels": 651,
+  "r18_positive_control": [
+    {
+      "mask_hex": "0x1540404040151515",
+      "weight": 16,
+      "graph_kernels": 16
+    },
+    {
+      "mask_hex": "0x4015151515404040",
+      "weight": 16,
+      "graph_kernels": 16
+    },
+    {
+      "mask_hex": "0x2a808080802a2a2a",
+      "weight": 16,
+      "graph_kernels": 16
+    },
+    {
+      "mask_hex": "0x802a2a2a2a808080",
+      "weight": 16,
+      "graph_kernels": 16
+    }
+  ],
+  "negative_control": {
+    "seed": 0,
+    "mask_hex": "0x1270021c6492004",
+    "weight": 16,
+    "graph_kernels": 0,
+    "direct_graph_kernels": 0
+  },
+  "weight16_occurrences": 5680,
+  "unique_weight16_switches": 5076,
+  "nongraph_occurrences": 0,
+  "nongraph_certificates": [],
+  "per_code": [
+    {
+      "code_index": 0,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 0,
+      "seed_mask_hex": "0xccff555a0f99693c",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 1,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 1,
+      "seed_mask_hex": "0x9969cc0fc300aa5a",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 2,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 2,
+      "seed_mask_hex": "0x55a50f99ccc396",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 3,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 3,
+      "seed_mask_hex": "0xff33a5663c96f055",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 4,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 4,
+      "seed_mask_hex": "0xf033c396a5aa99",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 5,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 5,
+      "seed_mask_hex": "0xcc0f3c96995aff55",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 6,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 6,
+      "seed_mask_hex": "0x3c00a5aaf0663396",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 7,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 7,
+      "seed_mask_hex": "0x99690fc3330055a5",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 8,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 8,
+      "seed_mask_hex": "0xc35a559633660fff",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 9,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 9,
+      "seed_mask_hex": "0xcc5a999655c3ff0f",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 10,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 10,
+      "seed_mask_hex": "0x9955cc96a50f3c00",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 11,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 11,
+      "seed_mask_hex": "0xcca50fc3009969aa",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 12,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 12,
+      "seed_mask_hex": "0xf06633c35aff5569",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 13,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 13,
+      "seed_mask_hex": "0x96a59933000fc355",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 14,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 14,
+      "seed_mask_hex": "0xa5ccaa69ff66f03c",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 15,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/corrected-results.json",
+      "row_index": 15,
+      "seed_mask_hex": "0x96ff99cc5a3c0faa",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 16,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/beam-continuation-4seed.json",
+      "row_index": 0,
+      "seed_mask_hex": "0xccff555a0f99693c",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 17,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/beam-continuation-4seed.json",
+      "row_index": 1,
+      "seed_mask_hex": "0xa5ff3c6933aa990f",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 18,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/beam-continuation-4seed.json",
+      "row_index": 2,
+      "seed_mask_hex": "0x66a53cf0ff965533",
+      "weight16_codewords": 348,
+      "graph_projection_words": 348,
+      "nongraph_words": 0
+    },
+    {
+      "code_index": 19,
+      "source_file": "/Volumes/data/CodexProjects/T2-A28/fourier-sparsity-dimension/computation/round005/gpu/beam-continuation-4seed.json",
+      "row_index": 3,
+      "seed_mask_hex": "0xf0a53369aa993cff",
+      "weight16_codewords": 220,
+      "graph_projection_words": 220,
+      "nongraph_words": 0
+    }
+  ],
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "elapsed_seconds": 2.292006165997009,
+  "source_sha256": "7aed9dea65e6dd5b551b47060b4bf4e8786f1832587cc65f05870188e85022d1"
+}

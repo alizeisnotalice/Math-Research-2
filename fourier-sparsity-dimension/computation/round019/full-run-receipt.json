@@ -1,0 +1,133 @@
+{
+  "child_pid": 81066,
+  "child_returncode": 0,
+  "child_stderr": "",
+  "child_stdout": "",
+  "command": [
+    "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r019/rm36/audit_rm36_weight16",
+    "full",
+    "15",
+    "/Users/zhengzhihao/CodexRemoteMath/a28-selector/r019/rm36/full-result.json"
+  ],
+  "compiler": {
+    "argv": [
+      "/usr/bin/clang++",
+      "--version"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Apple clang version 21.0.0 (clang-2100.4.1.1)\nTarget: arm64-apple-darwin27.3.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n"
+  },
+  "elapsed_seconds_wall": 1.083731167,
+  "finished_utc": "2026-11-17T11:30:21.191827+00:00",
+  "hashes": {
+    "binary_sha256": "d2d508247cbd39c792ff31439c0512805ffde72a2dd3c9b84311f6ba0f722a50",
+    "orbit_input_sha256": "feba42b40fa4185cba8062ddbf662221ab889418028fc8775bc1681fb0a3eab7",
+    "runner_sha256": "5ac122eb6170dfc99ee54d28f233d4405e3cbd273d892502c5680321fa735782",
+    "source_sha256": "fb6ac1006f19240afbb8e938ae53516574813f4d2740b911fcfab0451f76c3c4"
+  },
+  "python": {
+    "argv": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "--version"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Python 3.9.6\n"
+  },
+  "result": {
+    "all_weight16_projectable": true,
+    "control_difference_vs_direct_collision": true,
+    "difference_mask_is_bitwise_or_including_zero": true,
+    "elapsed_seconds": 0.00991133,
+    "generator_justification": "permutations from cycle and swap; conjugates of x0->x0+x1 give all elementary transvections; these generate GL(6,F2) by row reduction",
+    "kernel_count": 651,
+    "macwilliams_count_match": true,
+    "macwilliams_independent_target": 232081500,
+    "orbit_count": 6,
+    "orbit_size_sum": 1048576,
+    "orbits": [
+      {
+        "kernel_tests_examined": 38736,
+        "nongraph_representative_count": 0,
+        "projectable_representative_count": 2604,
+        "quadratic_coverage": 32768,
+        "representative": 0,
+        "size": 1,
+        "weight16_representative_count": 2604
+      },
+      {
+        "kernel_tests_examined": 21952,
+        "nongraph_representative_count": 0,
+        "projectable_representative_count": 784,
+        "quadratic_coverage": 32768,
+        "representative": 1,
+        "size": 1395,
+        "weight16_representative_count": 784
+      },
+      {
+        "kernel_tests_examined": 23424,
+        "nongraph_representative_count": 0,
+        "projectable_representative_count": 384,
+        "quadratic_coverage": 32768,
+        "representative": 20,
+        "size": 54684,
+        "weight16_representative_count": 384
+      },
+      {
+        "kernel_tests_examined": 46208,
+        "nongraph_representative_count": 0,
+        "projectable_representative_count": 448,
+        "quadratic_coverage": 32768,
+        "representative": 1064,
+        "size": 468720,
+        "weight16_representative_count": 448
+      },
+      {
+        "kernel_tests_examined": 0,
+        "nongraph_representative_count": 0,
+        "projectable_representative_count": 0,
+        "quadratic_coverage": 32768,
+        "representative": 1536,
+        "size": 357120,
+        "weight16_representative_count": 0
+      },
+      {
+        "kernel_tests_examined": 0,
+        "nongraph_representative_count": 0,
+        "projectable_representative_count": 0,
+        "quadratic_coverage": 32768,
+        "representative": 12640,
+        "size": 166656,
+        "weight16_representative_count": 0
+      }
+    ],
+    "quadratic_masks_per_orbit": 32768,
+    "schema": "a28-r019-rm36-weight16-v1",
+    "top_degree_quotient_justification": "linear substitutions act on cubic leading forms; generated lower-degree terms are absorbed by complete degree<=2 enumeration",
+    "total_nongraph_weight16_count_weighted_by_orbit": 0,
+    "total_projectable_weight16_count_weighted_by_orbit": 232081500,
+    "total_weight16_count_weighted_by_orbit": 232081500
+  },
+  "result_sha256": "9b590e790327d04187fe9bae289cd3b05a47299819f5b23dd13cf4690ab3473c",
+  "samples": [
+    {
+      "host_cpu_line": "CPU usage: 63.89% user, 9.49% sys, 26.61% idle",
+      "host_memory_line": "PhysMem: 21G used (5090M wired, 1703M compressor), 2179M unused.",
+      "label": "start",
+      "owned_child_ps": "81066   0.0  0.0 00:00 /Users/zhengzhihao/CodexRemoteMath/a28-selector/r019/rm36/audit_rm36_weight16 full 15 /Users/zhengzhihao/CodexRemoteMath/a28-selector/r019/rm36/full-result.json",
+      "utc": "2026-11-17T11:30:20.586840+00:00"
+    },
+    {
+      "host_cpu_line": "CPU usage: 65.18% user, 8.64% sys, 26.17% idle",
+      "host_memory_line": "PhysMem: 21G used (5089M wired, 1703M compressor), 2204M unused.",
+      "label": "end",
+      "owned_child_ps": "",
+      "utc": "2026-11-17T11:30:21.191790+00:00"
+    }
+  ],
+  "schema": "a28-r019-rm36-full-run-v1",
+  "started_utc": "2026-11-17T11:30:20.047243+00:00",
+  "threads": 15,
+  "timed_out": false
+}
