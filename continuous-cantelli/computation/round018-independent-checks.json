@@ -1,0 +1,32 @@
+{
+  "python": "3.13.18",
+  "runs": [
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "continuous-cantelli/computation/round018_independent_certificate_audit.py"
+      ],
+      "pid": 53744,
+      "exit_code": 0,
+      "process_absent": true,
+      "elapsed_seconds": 8.207314083003439,
+      "stdout": "round018 independent audit passed\nsource_sha256 53b0484e8730a1d8894ca612b28840e15ad97b434b19a85e05b395f7810c7376\nmpmath 1.3.0\n",
+      "stderr": "",
+      "script_sha256": "b0dcb72fa3fe3ee2fdfb0c9260f18302d25fcee8b8f376bdeafadc65c2cca75b"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "continuous-cantelli/computation/round018_saddle_crosscheck.py"
+      ],
+      "pid": 53979,
+      "exit_code": 0,
+      "process_absent": true,
+      "elapsed_seconds": 0.666149625001708,
+      "stdout": "python=3.13.18 scipy=1.18.1\nmethod=direct w=t/t_star; scipy.integrate.quad adaptive Gauss-Kronrod\nbeta xi t_star scaled_integral error_bound leading ratio\n1 100 70.71067811865476 0.1324585147307371 8.24e-15 0.1321089772381835 1.002645826951815\n2 500 62.99605249474364 0.1022600038744347 1.09e-13 0.1018124451895772 1.004395913328907\n0.5 100 184.2015749320193 0.2463956472022683 1.74e-14 0.2462101014706387 1.000753607307423\n",
+      "stderr": "",
+      "script_sha256": "ff31361bf05cf79aa5cd1de7e5d8652ee4251a8799c4b9dbecbfc1c68fcb338b"
+    }
+  ],
+  "scope": "independent review implementations rerun at final archive paths; numerical results are not interval certificates"
+}

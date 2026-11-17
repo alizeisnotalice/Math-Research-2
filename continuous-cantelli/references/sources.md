@@ -95,3 +95,10 @@
 
 - `proofs/016-attained-maximum-contact.md`，第1—3节减去最小方差、二次与平坦接触；SHA256 `deeead58ba1b9ac7568329511dcb30305590bb13cc6aa42bc018846b290f2f02`。
 - `proofs/015-joint-fourier-core-certificate.md`，第1节完整变换与高斯混合输出等价；SHA256 `a23e90ee6369429fc6351675d46deab33ed39596e7a7401c0f595f0bc8de0154`。
+
+## 第18轮内部来源与核验
+
+基线提交760762de743ec11de6f0c1a80c9e0c45d4b1cdeb。有限峰相位、固定频率证书及鞍点另经3个Agent独立审查；另2个Agent回溯审查第16、17轮。整合及来源哈希见reviews/018-integrated-audit.md。无新增外部文献或首创性声明。
+
+- `proofs/016-attained-maximum-contact.md`，第1节减去最小方差表示；SHA256 `deeead58ba1b9ac7568329511dcb30305590bb13cc6aa42bc018846b290f2f02`。
+- `proofs/017-cusp-negative-moments.md`，第2—3节负矩条件及其对数模型缺口；SHA256 `4bd392e5aa7463f58397f10ea861f7968a62dfd6e9a9ee51992255e7d402c669`。
