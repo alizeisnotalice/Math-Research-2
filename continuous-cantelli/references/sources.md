@@ -64,3 +64,12 @@
 - 继承 computation/round004-L12-T12.json（L12核心十进制节点），基线5ef5464975c862626152a7633fed6aed119f57d1；SHA-256: 4338fd414c308a01d841f3d502d34d6322ec39b497dbd752f5f8474cb107206a。本轮重做定向有理积分或独立条件Jensen推导，不沿用浮点误差作为严格证书。
 - 继承 proofs/005-gaussian-marginal-relaxation.md（精确三层测度及正性），基线5ef5464975c862626152a7633fed6aed119f57d1；SHA-256: 8673ea8cfc36717f419ba145c2f34704cdc147e07c89a9f5dae0b457da9afc23。本轮重做定向有理积分或独立条件Jensen推导，不沿用浮点误差作为严格证书。
 - Machin恒等式用有理正切加法核验，积分余项及定向舍入规则完整展开。无新外部未核验定理依赖，不主张首创性。
+
+## 第14轮内部来源及核验
+
+基线提交19fb37c53af564973c8fbbfca657aaedd0173120。沿用第13轮有理积分原语，加入Mills双侧界；本轮实际运行和核验范围见rounds/014.md。无新增外部文献或首创性声明。
+
+- `proofs/013-tail-independent-core-cuts.md`，SHA256 `aaf6f69e45040975334c56db01a63a188b6adee66296e80ff0d0789d8fad0ba4`；分别用于前轮核心下界、积分算法、冻结L8/L12节点输入。
+- `computation/round013_core_certificate.py`，SHA256 `aa948a33a1b3cb6b264598d8640e07d10d424ef3770ad9d2ce78c81159cc441f`；分别用于前轮核心下界、积分算法、冻结L8/L12节点输入。
+- `computation/round004-L8-T12-long.json`，SHA256 `a2ccd74596c61862d39888e6837d855ae70e71c826b43c2aae05316e7393061c`；分别用于前轮核心下界、积分算法、冻结L8/L12节点输入。
+- `computation/round004-L12-T12.json`，SHA256 `4338fd414c308a01d841f3d502d34d6322ec39b497dbd752f5f8474cb107206a`；分别用于前轮核心下界、积分算法、冻结L8/L12节点输入。
