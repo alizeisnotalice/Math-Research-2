@@ -1,0 +1,103 @@
+{
+  "counts": {
+    "a_cores": 5440,
+    "coupled_row8": 282,
+    "high_options": 1895568,
+    "mothers": 91,
+    "mothers_exception": 77,
+    "mothers_generic": 14,
+    "newton3_b": 118320,
+    "newton8": 90586,
+    "root_inner_reject": 16,
+    "root_pass": 16,
+    "root_positive_reject": 59,
+    "row4": 104610,
+    "row6": 244177,
+    "row8": 129169
+  },
+  "domains": 88,
+  "fresh_outputs_sha256": {
+    "entry.json": "d01f66150ab1f81d56841d9ada1840f393a03a7d1e2a52ef1baa0790aa43c062",
+    "entry.rows.jsonl": "9084a4ec30bb5cf5123b808754572550a6e99f7d7cf3d3f6be798ae106be56d1",
+    "independent-entry.json": "d2e3aa1503e1867e23518e1df15f49404689326ce90b83878bbe26caef5f034b",
+    "independent-trees.json": "dce8d5d038f88b0fefc7686be1ef3661e72556e13684829cab00fc3ce008d344",
+    "trees.json": "39082d3abd32992864305c47a3f8c0ff4073e5501bda52245ba9abef04f3eaeb",
+    "trees.rows.jsonl": "d2b75551d6660d68217ed7f0298d1f959eb454da1183f47c7079843435d5a12e"
+  },
+  "processes": [
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round064-s235-entry/package/source/s235_entry.py",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round064-parent/s235-parent-replay/entry.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 5.925932,
+      "exit_code": 0,
+      "pid": 36386,
+      "source_sha256": "8cd00bc004c214be4fdb76e25297ed95b017b39db51318424922f3b3cfc90589",
+      "stage": "entry"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round064-s235-entry/package/source/s235_trees.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round064-parent/s235-parent-replay/entry.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round064-parent/s235-parent-replay/trees.json",
+        "--depth",
+        "128",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 0.178347,
+      "exit_code": 0,
+      "pid": 36552,
+      "source_sha256": "7839ed85c9ab7f5bf8ed622c780fa182aee92724f40373652cbd010b4f612d9b",
+      "stage": "trees"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round064-s235-entry/package/source/verify_s235_entry.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round064-parent/s235-parent-replay/entry.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round064-parent/s235-parent-replay/independent-entry.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 31.785752,
+      "exit_code": 0,
+      "pid": 36560,
+      "source_sha256": "59fe18ae0ba03c6920ec2c637395a15fa6d5ccecdf5f94e8bee846947d1dfeac",
+      "stage": "independent-entry"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round064-s235-entry/package/source/verify_s235_trees.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round064-parent/s235-parent-replay/trees.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round064-parent/s235-parent-replay/independent-trees.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 0.195337,
+      "exit_code": 0,
+      "pid": 37083,
+      "source_sha256": "54522d880a4b46f538c380d10c46e2fb93f8068dd80444948e61ed918430e821",
+      "stage": "independent-trees"
+    }
+  ],
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "source_manifest_sha256": "9784ff35c6d1ce29735cf5265dc7b688aff0c31553e237b61c112b76ca725acb",
+  "status": "verified",
+  "trees": {
+    "dead": 16,
+    "forward_dead": 16,
+    "reverse_dead": 16
+  },
+  "workers": 4
+}
