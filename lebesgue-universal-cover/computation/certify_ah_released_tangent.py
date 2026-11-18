@@ -77,6 +77,9 @@ def certify(archive, p, delta, i, j, bounds, tmax, inner_offset=F(0)):
     corners=[g.line_pair(u,v,h,beta) for (_,u,h),(_,v,beta) in zip(tangent_rows,tangent_rows[1:])]
     corner=corners[0]
     allpts=[left,*corners,right]
+    hexagon, tilted, *_=g.setup()
+    Pslack=min((A('.5')-g.dot(normal,x)).lower() for x in allpts for normal in (*hexagon,tilted[3],tilted[5]))
+    assert Pslack>0
     for x,y,z in zip(allpts,allpts[1:],allpts[2:]):
         assert g.cross(g.minus(y,x),g.minus(z,y))>0
     assert all(g.cross(u,v)>0 for (_,u,_),(_,v,_) in zip(tangent_rows,tangent_rows[1:]))
@@ -111,9 +114,9 @@ def certify(archive, p, delta, i, j, bounds, tmax, inner_offset=F(0)):
     def green(l,r,base):
         result = A(0)
         # 8 even-order quadrature with the 8th Taylor coefficient enclosed on its whole cell.
-        for k in range(32):
-            u=l+(r-l)*k/32
-            v=l+(r-l)*(k+1)/32
+        for k in range(128):
+            u=l+(r-l)*k/128
+            v=l+(r-l)*(k+1)/128
             half=A((v-u)/2)
             span=A(u).union(A(v))
             center=density(A((u+v)/2),base)
@@ -132,6 +135,26 @@ def certify(archive, p, delta, i, j, bounds, tmax, inner_offset=F(0)):
     old=read('eh-two-line-cover-certificate.json')
     eh=front(old,read('eh-upper-chain-parameters.json'))
     rows.extend((f'EH_{k}',u,h) for k,(u,h) in enumerate(zip(eh['normals'],eh['offsets'])))
+    # Verify that the exact unit-distance formulas have the same ten normal cones
+    # and the same three hexagon contacts over the entire proposed w interval.
+    for cell in range(512):
+        w0=bounds[0]+(bounds[1]-bounds[0])*cell/512
+        w1=bounds[0]+(bounds[1]-bounds[0])*(cell+1)/512
+        v=ns['centered_points'](w0,w1)
+        edges=[g.minus(v[k],v[l]) for k,l in ns['orders']]
+        for k,e in enumerate(edges):
+            f=edges[(k+1)%10]
+            assert (e[1]>0 if k<5 else e[1]<0)
+            assert g.cross(e,f)>0 and g.dot(e,f)>A('.75')
+        for k in range(5):
+            for l in range(k+1,5):
+                if (k,l) not in ns['orders'] and (l,k) not in ns['orders']:
+                    sep=g.minus(v[k],v[l])
+                    assert g.dot(sep,sep)<1
+        for k,u in enumerate(hexagon):
+            cr=[g.cross(e,u) for e in edges]
+            possible={ns['sector'][j] for j in range(10) if not cr[j]<0 and not cr[(j+1)%10]>0}
+            assert possible=={((1,3,0)[k%3],int(k<3))}
     # The six unrotated hexagon strips are exact equalities of the normalized constant-width bodies.
     exact_hex={'B1-Q','P-F1','F1-H','E3-D1','D1-G','C3-B1'}
     hexrows=[(name,u,h) for name,u,h in rows if name in exact_hex]
@@ -217,9 +240,9 @@ def certify(archive, p, delta, i, j, bounds, tmax, inner_offset=F(0)):
                 added_area=str(added),deleted_area=str(deleted),overlap_correction_exact='0',candidate_true_area=str(area),
                 true_area_rational=fmt(area),gain_against_R199=str(oldarea-area),gain_against_0062=str(best-area),
                 explicit_full_body_slacks=explicit,explicit_old_tangent_excess=str(oldexcess),
-                uniform_full_body_lower_slack=str(worst),verified_cells=cells,hex_equalities=sorted(exact_hex),
-                all_other_rows=len(active),historical_identity_slacks=fits,
-                Tprime_P_true_Sprague_contact_used=bool(inner_offset),universal_placement_proved=False)
+                uniform_full_body_lower_slack=str(worst),verified_cells=cells,normal_fan_cells=512,hex_equalities=sorted(exact_hex),
+                all_other_rows=len(active),new_boundary_P_clearance=str(Pslack),historical_identity_slacks=fits,
+                true_Sprague_contact_groups=['Q','Tp','H','Te','G'] if inner_offset else [],universal_placement_proved=False)
 
 
 if __name__=='__main__':

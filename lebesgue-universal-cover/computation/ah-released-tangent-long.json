@@ -22,16 +22,16 @@
     "1055089579380487477596793721448299/2596148429267413814265248164610048",
     "2110179158760974955193587442896651/5192296858534827628530496329220096"
   ],
-  "added_area": "[5.7180e-8 +/- 6.16e-13]",
-  "deleted_area": "[1.124481140e-5 +/- 6.91e-15]",
+  "added_area": "[5.71795907392e-8 +/- 2.12e-20]",
+  "deleted_area": "[1.1244811398134414e-5 +/- 8.73e-22]",
   "overlap_correction_exact": "0",
-  "candidate_true_area": "[0.844080858889 +/- 6.23e-13]",
+  "candidate_true_area": "[0.8440808588894111866 +/- 3.25e-20]",
   "true_area_rational": [
-    "84408085888919964040669246744047697/100000000000000000000000000000000000",
-    "84408085888962273275271171901586391/100000000000000000000000000000000000"
+    "10551010736117639832094143632046091/12500000000000000000000000000000000",
+    "42204042944470559330120850952304627/50000000000000000000000000000000000"
   ],
-  "gain_against_R199": "[1.1187632e-5 +/- 4.05e-13]",
-  "gain_against_0062": "[1.1125322e-5 +/- 3.18e-13]",
+  "gain_against_R199": "[1.11876318073952e-5 +/- 3.55e-20]",
+  "gain_against_0062": "[1.11253221057963e-5 +/- 3.87e-20]",
   "explicit_full_body_slacks": {
     "left_tangent": "[1.5553230308447985990685087785039652937081781667e-7 +/- 1.54e-54]",
     "right_tangent": "[6.0095984528048636049926249973394820940329722931e-5 +/- 2.20e-52]",
@@ -40,6 +40,7 @@
   "explicit_old_tangent_excess": "[9.2174892360084195317869517695930e-11 +/- 5.35e-43]",
   "uniform_full_body_lower_slack": "[1.7682727912359032397801414920478861291509656140e-10 +/- 1.08e-57]",
   "verified_cells": 1071,
+  "normal_fan_cells": 512,
   "hex_equalities": [
     "B1-Q",
     "C3-B1",
@@ -49,11 +50,18 @@
     "P-F1"
   ],
   "all_other_rows": 216,
+  "new_boundary_P_clearance": "[0.00049495481833840848137440153504841915322189032608 +/- 3.25e-52]",
   "historical_identity_slacks": {
     "widened-projected-obstruction-points.json": "[2.1554436170418588755955895398674112525618413593e-14 +/- 3.43e-61]",
     "widened-projected-obstruction-18-points.json": "[2.1554436170418588755955895398674112525618413593e-14 +/- 3.43e-61]"
   },
-  "Tprime_P_true_Sprague_contact_used": true,
+  "true_Sprague_contact_groups": [
+    "Q",
+    "Tp",
+    "H",
+    "Te",
+    "G"
+  ],
   "universal_placement_proved": false,
   "source_sha256": {
     "certify_ah_two_line_cap.py": "3d3781ceccaf14b9db4c0bb096e6d24a98c825c0a5f1eadbe6df639a57c86e9b",
@@ -69,7 +77,7 @@
     "widened-projected-obstruction-points.json": "b96c68753e81a3ee006de1cc030ed120418be376aaf3fed8da68d1850f1d54bd",
     "widened-projected-obstruction-18-points.json": "65e9a5b1aa78e796b0910303d04b4c16a18af403640ddf6e322b7ab7405af71a"
   },
-  "verifier_sha256": "636725b67c120148cca9580104b9bed663e4a8b9ac2e0b24b7c25f9026c4e78d",
+  "verifier_sha256": "f43d04412b1d234095f792aa87890ce47f64242f695a17905a3d4493af349b5b",
   "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
   "flint": "0.9.0"
 }
