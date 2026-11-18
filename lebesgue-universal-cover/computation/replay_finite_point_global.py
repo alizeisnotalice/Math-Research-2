@@ -31,6 +31,7 @@ def run():
     parser.add_argument("--parts",help="verify only the stated roots, for example 180")
     parser.add_argument("--extra-only",action="store_true",help="verify the two additional .83730 old-low leaves")
     parser.add_argument("--replay-five",action="store_true",help="also recompute the outside-of-501 five-body proof")
+    parser.add_argument("--outer-audit",type=Path,help="receipt for an independent complete higher-threshold selection")
     parser.add_argument("--lift",type=Path,help="higher-threshold terminal witness")
     parser.add_argument("--outer",type=Path,help="higher-threshold five-body outer leaf index")
     a=parser.parse_args()
@@ -66,12 +67,21 @@ def run():
         lifted=json.loads(a.lift.read_bytes())
         outer=json.loads(a.outer.read_bytes())
         assert digest(inp)==lifted["prior_bank_sha256"] and digest(a.outer)==lifted["outer_sha256"]
-        assert outer["tree_manifest_sha256"]==PINNED_MANIFEST
         cap=F(lifted["target"])
-        assert cap>F(rec["target"]) and F(outer["target"])==cap
-        extra_keys={(int(p),i) for p,x in outer["retained"].items() for i in x}
-        assert not extra_keys.intersection(keys)
-        keys=sorted(set(keys)|extra_keys)
+        assert cap>F(rec["target"])
+        if "outer_audit_sha256" in lifted:
+            assert a.outer_audit and digest(a.outer_audit)==lifted["outer_audit_sha256"]
+            audit=json.loads(a.outer_audit.read_bytes())
+            assert audit["complete"] and audit["parts"]==1024 and F(audit["target"])==cap
+            assert len(audit["audits"])==4
+            keys=sorted((int(p),i) for p,x in outer.items() for i in x)
+            assert len(keys)==len(set(keys))==audit["audits"][-1]["remaining"]
+        else:
+            assert a.outer_audit is None
+            assert outer["tree_manifest_sha256"]==PINNED_MANIFEST and F(outer["target"])==cap
+            extra_keys={(int(p),i) for p,x in outer["retained"].items() for i in x}
+            assert not extra_keys.intersection(keys)
+            keys=sorted(set(keys)|extra_keys)
         rows=lifted["rows"]
         assert [(r[0],r[1]) for r in rows]==keys
 
@@ -216,6 +226,19 @@ def run():
     if a.lift:
         out.update(lift_sha256=digest(a.lift),outer_sha256=digest(a.outer),
                    prior_score_complement="see the independently audited higher-threshold five-body exterior")
+    if a.outer_audit:
+        out["outer_audit_sha256"]=digest(a.outer_audit)
+    if out["complete"] and cap>=F(".83731"):
+        from certify_finite_point_leaf import finite_clouds
+        groups,error,floor=finite_clouds()
+        groups.append(dict(body="P",denominator=shape["denominator"],points=shape["points"],
+                           diameter_squared_numerator=dia2))
+        cloud_path=work/"six-rational-groups.json"
+        cloud_path.write_text(json.dumps(groups,separators=(",",":"))+"\n")
+        assert digest(cloud_path)=="6a264f46e692045b6fd7b5c74f33f86b71601e972f9236479962a5d26742be4b"
+        out.update(finite_group_sizes=[len(g["points"]) for g in groups],cloud_sha256=digest(cloud_path),
+                   hausdorff_error=str(error),all_finite_area_lower=str(floor),
+                   all_finite_decimal_floor=".83730015182")
     (work/"replay.json").write_text(json.dumps(out,indent=2)+"\n")
     print(json.dumps(out,indent=2))
 

@@ -92,7 +92,20 @@ if __name__=='__main__':
     args=parser.parse_args()
     assert 0 < args.target < args.lower*F(S-5,S+5)**2
     ctx.prec=160
+    proofs = {
+        F('.83730'): ('finite-point-lift-083730-replay.json',
+                      'd4a93ccaa6e8458c2427f26a533f3447f3961cef2e4b04721fdc396907034dd0', 541),
+        F('.83731'): ('finite-point-lift-083731-replay.json',
+                      'a395ae3c05008ce57a0adbd27c1dc47c71346b1eb119347f2a1d66050015bc96', 614),
+    }
+    name, expected, leaves = proofs[args.lower]
+    proof = (HERE/name).read_bytes()
+    summary = json.loads(proof)
+    assert sha256(proof).hexdigest() == expected and summary['complete']
+    assert summary['original_leaves'] == leaves and F(summary['target']) == args.lower
+    assert summary['geometry_sha256'] == sha256((HERE/'finite-point-leaf-input.json').read_bytes()).hexdigest()
     groups,receipt=generate(args.target,args.lower)
+    receipt.update(curved_proof=name, curved_proof_sha256=expected)
     raw=(json.dumps(groups,separators=(',',':'))+'\n').encode()
     args.coordinates.write_bytes(raw)
     receipt['sha256']=sha256(raw).hexdigest()
