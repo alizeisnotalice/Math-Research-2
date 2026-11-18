@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- |
 | [planar-centered-square-weak11](planar-centered-square-weak11/README.md) | 二维 Lebesgue 背景、中心轴平行共同半径、全尺度弱 (1,1) 精确常数 | 精确值开放；已证下界约1.702793754234565，旧一般上界3.590865312933 | 第82轮完成 | 实际外源共同约束、残余halo信用与一般覆盖预算 |
 
-| [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；奇偶宽度严格排重，少转折自然盆地指数排除 | 第44轮完成 | 互斥族的界面代价和完整加权空间估计 |
+| [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；安全切割互斥容量锐，峰对择类n7尾下界12.5465% | 第45轮完成 | 切割界面尺度归一化及全局加权空间估计 |
 
 | [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；八次S1/S7、S2/S6排除；六点≤55、九点≤36严格公平 | 第56轮完成 | 八次S3/S5的母式和余因子完整约束 |
 

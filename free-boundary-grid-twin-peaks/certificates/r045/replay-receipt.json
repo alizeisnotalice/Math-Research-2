@@ -1,0 +1,77 @@
+[
+  {
+    "command": [
+      "clang++",
+      "--version"
+    ],
+    "pid": 39725,
+    "returncode": 0,
+    "waited": true,
+    "absent": true
+  },
+  {
+    "command": [
+      "/Users/zzh/.local/bin/python3",
+      "-B",
+      "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r045/audit_rounding_capacity.py"
+    ],
+    "pid": 39728,
+    "returncode": 0,
+    "waited": true,
+    "absent": true
+  },
+  {
+    "command": [
+      "/Users/zzh/.local/bin/python3",
+      "-B",
+      "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r045/rootwise/verify_vectors.py"
+    ],
+    "pid": 39760,
+    "returncode": 0,
+    "waited": true,
+    "absent": true
+  },
+  {
+    "command": [
+      "clang++",
+      "-std=c++20",
+      "-O3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r045/rootwise/cut_region_rootwise.cpp",
+      "-o",
+      "/Volumes/data/CodexTemp/T2/a022-r045-final-replay/rootwise"
+    ],
+    "pid": 39767,
+    "returncode": 0,
+    "waited": true,
+    "absent": true
+  },
+  {
+    "command": [
+      "/Users/zzh/.local/bin/python3",
+      "-B",
+      "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r045/rootwise/audit_rootwise.py",
+      "/Volumes/data/CodexTemp/T2/a022-r045-final-replay/n5-gate.json"
+    ],
+    "pid": 39797,
+    "returncode": 0,
+    "waited": true,
+    "absent": true
+  },
+  {
+    "command": [
+      "/Users/zzh/.local/bin/python3",
+      "-B",
+      "/Volumes/data/CodexTemp/T2/a022-main-rounds/free-boundary-grid-twin-peaks/certificates/r045/rootwise/run_rootwise_n7.py",
+      "/Volumes/data/CodexTemp/T2/a022-r045-final-replay/n7",
+      "--workers",
+      "12"
+    ],
+    "pid": 40020,
+    "returncode": 0,
+    "waited": true,
+    "absent": true
+  }
+]
