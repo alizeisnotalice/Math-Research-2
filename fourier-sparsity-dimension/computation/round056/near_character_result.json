@@ -1,0 +1,508 @@
+{
+  "python": "3.15.0",
+  "workers": 12,
+  "source_sha256": "e3e12bcf00baeddfc676ba9f8702e41a6da3dafafd560b928868b56ba4b06ef8",
+  "truth_tables": 65536,
+  "strictly_below_3": 5504,
+  "exactly_3": 26880,
+  "geometric_catalog_exactly_same": true,
+  "all_maximal_carrier_reconstructions_checked": 8864,
+  "norm_numerators_over_16": {
+    "16": 32,
+    "32": 1120,
+    "40": 3840,
+    "44": 512,
+    "48": 26880,
+    "52": 17920,
+    "56": 14336,
+    "64": 896
+  },
+  "below_3_by_affine_rank_linear_rank_norm": [
+    [
+      0,
+      0,
+      "1",
+      2
+    ],
+    [
+      0,
+      1,
+      "1",
+      30
+    ],
+    [
+      2,
+      2,
+      "2",
+      280
+    ],
+    [
+      2,
+      3,
+      "2",
+      840
+    ],
+    [
+      3,
+      3,
+      "5/2",
+      1920
+    ],
+    [
+      3,
+      4,
+      "5/2",
+      1920
+    ],
+    [
+      4,
+      4,
+      "11/4",
+      512
+    ]
+  ],
+  "carrier_multiplicity_by_affine_rank": [
+    [
+      0,
+      1,
+      32
+    ],
+    [
+      2,
+      4,
+      1120
+    ],
+    [
+      3,
+      1,
+      3840
+    ],
+    [
+      4,
+      1,
+      512
+    ]
+  ],
+  "canonical_finite_witnesses": [
+    {
+      "truth_mask": "0x0",
+      "norm": "1",
+      "carrier": 0,
+      "carrier_negative": 0,
+      "normal_basis": [],
+      "affine_origin": 0,
+      "affine_spectrum_rank": 0,
+      "linear_spectrum_rank": 0
+    },
+    {
+      "truth_mask": "0x1",
+      "norm": "11/4",
+      "carrier": 0,
+      "carrier_negative": 0,
+      "normal_basis": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "affine_origin": 0,
+      "affine_spectrum_rank": 4,
+      "linear_spectrum_rank": 4
+    },
+    {
+      "truth_mask": "0x3",
+      "norm": "5/2",
+      "carrier": 0,
+      "carrier_negative": 0,
+      "normal_basis": [
+        2,
+        4,
+        8
+      ],
+      "affine_origin": 0,
+      "affine_spectrum_rank": 3,
+      "linear_spectrum_rank": 3
+    },
+    {
+      "truth_mask": "0xf",
+      "norm": "2",
+      "carrier": 0,
+      "carrier_negative": 0,
+      "normal_basis": [
+        4,
+        8
+      ],
+      "affine_origin": 0,
+      "affine_spectrum_rank": 2,
+      "linear_spectrum_rank": 2
+    },
+    {
+      "truth_mask": "0xff",
+      "norm": "1",
+      "carrier": 8,
+      "carrier_negative": 1,
+      "normal_basis": [],
+      "affine_origin": 0,
+      "affine_spectrum_rank": 0,
+      "linear_spectrum_rank": 1
+    },
+    {
+      "truth_mask": "0x17f",
+      "norm": "5/2",
+      "carrier": 8,
+      "carrier_negative": 1,
+      "normal_basis": [
+        9,
+        10,
+        12
+      ],
+      "affine_origin": 8,
+      "affine_spectrum_rank": 3,
+      "linear_spectrum_rank": 4
+    },
+    {
+      "truth_mask": "0x33f",
+      "norm": "2",
+      "carrier": 2,
+      "carrier_negative": 1,
+      "normal_basis": [
+        6,
+        10
+      ],
+      "affine_origin": 12,
+      "affine_spectrum_rank": 2,
+      "linear_spectrum_rank": 3
+    }
+  ],
+  "higher_environment_exact_lifts": [
+    {
+      "ambient_dimension": 8,
+      "offset_case": "in_direction",
+      "affine_spectrum_rank": 2,
+      "linear_spectrum_rank": 2,
+      "joint_coordinate_atoms_covered": 4,
+      "norm": "2",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 0,
+        "carrier_negative": 1,
+        "normal_basis": [
+          6,
+          33
+        ],
+        "affine_origin": 32,
+        "affine_spectrum_rank": 2,
+        "linear_spectrum_rank": 2
+      }
+    },
+    {
+      "ambient_dimension": 8,
+      "offset_case": "out_of_direction",
+      "affine_spectrum_rank": 2,
+      "linear_spectrum_rank": 3,
+      "joint_coordinate_atoms_covered": 8,
+      "norm": "2",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 128,
+        "carrier_negative": 1,
+        "normal_basis": [
+          6,
+          33
+        ],
+        "affine_origin": 32,
+        "affine_spectrum_rank": 2,
+        "linear_spectrum_rank": 3
+      }
+    },
+    {
+      "ambient_dimension": 9,
+      "offset_case": "in_direction",
+      "affine_spectrum_rank": 3,
+      "linear_spectrum_rank": 3,
+      "joint_coordinate_atoms_covered": 8,
+      "norm": "5/2",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 129,
+        "carrier_negative": 1,
+        "normal_basis": [
+          129,
+          132,
+          147
+        ],
+        "affine_origin": 128,
+        "affine_spectrum_rank": 3,
+        "linear_spectrum_rank": 3
+      }
+    },
+    {
+      "ambient_dimension": 9,
+      "offset_case": "out_of_direction",
+      "affine_spectrum_rank": 3,
+      "linear_spectrum_rank": 4,
+      "joint_coordinate_atoms_covered": 16,
+      "norm": "5/2",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 385,
+        "carrier_negative": 1,
+        "normal_basis": [
+          129,
+          132,
+          147
+        ],
+        "affine_origin": 128,
+        "affine_spectrum_rank": 3,
+        "linear_spectrum_rank": 4
+      }
+    },
+    {
+      "ambient_dimension": 12,
+      "offset_case": "in_direction",
+      "affine_spectrum_rank": 4,
+      "linear_spectrum_rank": 4,
+      "joint_coordinate_atoms_covered": 16,
+      "norm": "11/4",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 513,
+        "carrier_negative": 1,
+        "normal_basis": [
+          513,
+          531,
+          645,
+          1545
+        ],
+        "affine_origin": 640,
+        "affine_spectrum_rank": 4,
+        "linear_spectrum_rank": 4
+      }
+    },
+    {
+      "ambient_dimension": 12,
+      "offset_case": "out_of_direction",
+      "affine_spectrum_rank": 4,
+      "linear_spectrum_rank": 5,
+      "joint_coordinate_atoms_covered": 32,
+      "norm": "11/4",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 2561,
+        "carrier_negative": 1,
+        "normal_basis": [
+          513,
+          531,
+          645,
+          1545
+        ],
+        "affine_origin": 640,
+        "affine_spectrum_rank": 4,
+        "linear_spectrum_rank": 5
+      }
+    },
+    {
+      "ambient_dimension": 15,
+      "offset_case": "in_direction",
+      "affine_spectrum_rank": 5,
+      "linear_spectrum_rank": 5,
+      "joint_coordinate_atoms_covered": 32,
+      "norm": "23/8",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 2049,
+        "carrier_negative": 1,
+        "normal_basis": [
+          2049,
+          2181,
+          3081,
+          10257,
+          18435
+        ],
+        "affine_origin": 18560,
+        "affine_spectrum_rank": 5,
+        "linear_spectrum_rank": 5
+      }
+    },
+    {
+      "ambient_dimension": 15,
+      "offset_case": "out_of_direction",
+      "affine_spectrum_rank": 5,
+      "linear_spectrum_rank": 6,
+      "joint_coordinate_atoms_covered": 64,
+      "norm": "23/8",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 18433,
+        "carrier_negative": 1,
+        "normal_basis": [
+          18435,
+          18567,
+          19467,
+          16386,
+          26643
+        ],
+        "affine_origin": 18560,
+        "affine_spectrum_rank": 5,
+        "linear_spectrum_rank": 6
+      }
+    },
+    {
+      "ambient_dimension": 40,
+      "offset_case": "in_direction",
+      "affine_spectrum_rank": 6,
+      "linear_spectrum_rank": 6,
+      "joint_coordinate_atoms_covered": 64,
+      "norm": "47/16",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 8193,
+        "carrier_negative": 1,
+        "normal_basis": [
+          8193,
+          73731,
+          532485,
+          4202505,
+          33562641,
+          268443681
+        ],
+        "affine_origin": 532480,
+        "affine_spectrum_rank": 6,
+        "linear_spectrum_rank": 6
+      }
+    },
+    {
+      "ambient_dimension": 40,
+      "offset_case": "out_of_direction",
+      "affine_spectrum_rank": 6,
+      "linear_spectrum_rank": 7,
+      "joint_coordinate_atoms_covered": 128,
+      "norm": "47/16",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 549755822081,
+        "carrier_negative": 1,
+        "normal_basis": [
+          8193,
+          73731,
+          532485,
+          4202505,
+          33562641,
+          268443681
+        ],
+        "affine_origin": 532480,
+        "affine_spectrum_rank": 6,
+        "linear_spectrum_rank": 7
+      }
+    },
+    {
+      "ambient_dimension": 64,
+      "offset_case": "in_direction",
+      "affine_spectrum_rank": 8,
+      "linear_spectrum_rank": 8,
+      "joint_coordinate_atoms_covered": 256,
+      "norm": "191/64",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 131073,
+        "carrier_negative": 1,
+        "normal_basis": [
+          131073,
+          1179651,
+          8519685,
+          67239945,
+          537002001,
+          4295098401,
+          34359869505,
+          274878038145
+        ],
+        "affine_origin": 8519680,
+        "affine_spectrum_rank": 8,
+        "linear_spectrum_rank": 8
+      }
+    },
+    {
+      "ambient_dimension": 64,
+      "offset_case": "out_of_direction",
+      "affine_spectrum_rank": 8,
+      "linear_spectrum_rank": 9,
+      "joint_coordinate_atoms_covered": 512,
+      "norm": "191/64",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 9223372036854906881,
+        "carrier_negative": 1,
+        "normal_basis": [
+          131073,
+          1179651,
+          8519685,
+          67239945,
+          537002001,
+          4295098401,
+          34359869505,
+          274878038145
+        ],
+        "affine_origin": 8519680,
+        "affine_spectrum_rank": 8,
+        "linear_spectrum_rank": 9
+      }
+    },
+    {
+      "ambient_dimension": 70,
+      "offset_case": "in_direction",
+      "affine_spectrum_rank": 10,
+      "linear_spectrum_rank": 10,
+      "joint_coordinate_atoms_covered": 1024,
+      "norm": "767/256",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 2097153,
+        "carrier_negative": 1,
+        "normal_basis": [
+          2097153,
+          18874371,
+          136314885,
+          1075838985,
+          8592031761,
+          68721573921,
+          549757911105,
+          4398048608385,
+          35184374186241,
+          281474978808321
+        ],
+        "affine_origin": 136314880,
+        "affine_spectrum_rank": 10,
+        "linear_spectrum_rank": 10
+      }
+    },
+    {
+      "ambient_dimension": 70,
+      "offset_case": "out_of_direction",
+      "affine_spectrum_rank": 10,
+      "linear_spectrum_rank": 11,
+      "joint_coordinate_atoms_covered": 2048,
+      "norm": "767/256",
+      "recovers_every_coefficient": true,
+      "recovered_representation": {
+        "carrier": 590295810358707748865,
+        "carrier_negative": 1,
+        "normal_basis": [
+          2097153,
+          18874371,
+          136314885,
+          1075838985,
+          8592031761,
+          68721573921,
+          549757911105,
+          4398048608385,
+          35184374186241,
+          281474978808321
+        ],
+        "affine_origin": 136314880,
+        "affine_spectrum_rank": 10,
+        "linear_spectrum_rank": 11
+      }
+    }
+  ],
+  "elapsed_seconds": 0.4814671250005631
+}
