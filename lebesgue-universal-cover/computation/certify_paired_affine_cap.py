@@ -39,6 +39,32 @@ extern "C" int paired_read_fan(const L* lower,const L* upper,const L* original,
 """
 
 
+BASE_WRAPPER=r"""
+#include "tomar_six_083730_guard.cpp"
+
+extern "C" int paired_run_original(const L* lower,const L* upper,const L* original,
+    const L* anchor_lower,const L* anchor_upper,const std::int32_t* table,
+    const std::int32_t* counts,L goal,int depth,int cap,const L* dirs,
+    const L* disk,const L* endpoints,const L* pointers,const L* triples,
+    int normals,int cells,L* out){
+    Tester tester(table,counts,original,goal);
+    Box lo,hi,whole_lo,whole_hi;
+    std::copy(lower,lower+11,lo.begin());std::copy(upper,upper+11,hi.begin());
+    std::copy(anchor_lower,anchor_lower+11,whole_lo.begin());
+    std::copy(anchor_upper,anchor_upper+11,whole_hi.begin());
+    for(int i=0;i<11;++i)
+        if(whole_lo[i]>lo[i] || lo[i]>hi[i] || hi[i]>whole_hi[i])return 1;
+    DynamicGuard run{tester,dirs,disk,endpoints,pointers,triples,whole_lo,whole_hi,
+                     normals,cells,depth,cap,2};
+    run.init_collective();
+    bool closed=run.walk(lo,hi,0);
+    out[0]=closed;out[1]=run.calls;out[2]=run.old;out[3]=run.added;
+    out[4]=run.depth;out[5]=run.reason;out[6]=run.tried;
+    return 0;
+}
+"""
+
+
 def digest(path):
     return sha256(path.read_bytes()).hexdigest()
 
@@ -91,17 +117,19 @@ def compile_drivers(comp, work, cache, base, receipt, kernel):
     wrapper.write_text(FAN_WRAPPER)
     original=comp/'tomar_six_083730_guard.cpp'
     assert digest(original)==receipt['weighted_sha256']
+    base_wrapper=work/'paired-original.cpp'
+    base_wrapper.write_text(BASE_WRAPPER)
     flags=['clang++','-O3','-std=c++17','-ftrapv','-shared','-fPIC',f'-fmodules-cache-path={cache}',
-        '-I',str(work)]
-    for src,file in ((wrapper,'paired.so'),(original,'original.so')):
+           '-I',str(work),'-I',str(comp.resolve())]
+    for src,file in ((wrapper,'paired.so'),(base_wrapper,'original.so')):
         subprocess.run([*flags,str(src),'-o',str(work/file)],check=True)
     vector=lambda dtype:np.ctypeslib.ndpointer(dtype=dtype,ndim=1,flags='C_CONTIGUOUS')
     I,S,L,C=vector(np.int64),vector(np.int32),ctypes.c_int64,ctypes.c_int
     affine=ctypes.CDLL(str(work/'paired.so')).paired_read_fan
     affine.argtypes=[I,I,I,S,S,L,I]
     affine.restype=C
-    original=ctypes.CDLL(str(work/'original.so')).lift_guard_run
-    original.argtypes=[I,I,I,S,S,L,C,C,I,I,I,I,I,C,C,C,I]
+    original=ctypes.CDLL(str(work/'original.so')).paired_run_original
+    original.argtypes=[I,I,I,I,I,S,S,L,C,C,I,I,I,I,I,C,C,I]
     original.restype=C
     return affine,original,digest(fan)
 
@@ -196,7 +224,9 @@ def verify(args):
     assert GOAL<=proof_goal<F('.838')
     main=args.comp
     read=lambda name:json.loads((main/name).read_bytes())
-    header=read('finite-point-lift-083742.json')
+    header_path=main/'finite-point-lift-083742.json'
+    assert digest(header_path)=='0e84a6fe33567f0784f08b88db7cae6dc79ef6807891bc175d510900139c8cec'
+    header=read(header_path.name)
     assert F(header['target'])==F('.83742')
     expected=next(r for r in header['rows'] if tuple(r[:2])==KEY)
     assert expected[2:]==[64,1360089,32642,647403,67,1316653,647403]
@@ -225,10 +255,13 @@ def verify(args):
     main_upper=np.array([int(F(x)*FINE) for x in tree.root['hi']],np.int64)
     affine,baseline,fan_sha=compile_drivers(main,args.work,args.cache,base,header,build_kernel)
 
+    anchor_lo,anchor_hi=[np.array([int(x*FINE) for x in row],np.int64)
+                          for row in zip(*rootbox,strict=True)]
+
     def run_old(lo,hi,target,depth):
         out=np.zeros(30,np.int64)
-        assert not baseline(lo,hi,main_upper,*table,target,depth,2**(depth+1)-1,*support,
-                            len(support[1]),len(support[3])-1,2,out)
+        assert not baseline(lo,hi,main_upper,anchor_lo,anchor_hi,*table,target,depth,
+                            2**(depth+1)-1,*support,len(support[1]),len(support[3])-1,out)
         return out
 
     def run_fan(lo,hi,target):
@@ -236,7 +269,7 @@ def verify(args):
         assert not affine(lo,hi,main_upper,*table,target,out)
         return list(map(int,out))
 
-    lo,hi=[np.array([int(x*FINE) for x in row],np.int64) for row in zip(*rootbox,strict=True)]
+    lo,hi=anchor_lo.copy(),anchor_hi.copy()
     for code in record['path']:
         old=run_old(lo,hi,tracking_goal,0)
         assert old[0]==0 and old[5]==2
@@ -254,8 +287,20 @@ def verify(args):
     assert old_expected[0]==1 and old_expected[1]>1 and 1<=old_expected[4]<=20 and old_expected[5]==0
     children=run_old(lo,hi,goal,old_expected[4])
     assert parent[0]==0 and parent[1]==1 and parent[5]==2
-    assert children[:7].tolist()==old_expected, children[:7]
+    assert children[:7].tolist()==old_expected, children[:7].tolist()
     assert int(children[1])==2*int(children[2]+children[3])-1
+    low_five=None
+    if record.get('low_five_pose', False):
+        from certify_five_harmonic import placement_area
+        pose_file=main/'mixed-support-blind-low-pose.json'
+        pose=json.loads(pose_file.read_bytes())
+        assert pose['coordinate_denominator']==FINE
+        z=pose['pose']
+        assert all(l<=x<=h for l,x,h in zip(lo,z,hi,strict=True))
+        area_upper=F(placement_area([F(x,FINE) for x in z],pi,k=1024)['upper'])
+        assert area_upper<F('.837345331409')<GOAL
+        low_five=dict(five_area_upper=str(F(ceil(area_upper*BOUND_SCALE),BOUND_SCALE)),
+                      pose_numerator=z,pose_sha256=digest(pose_file))
     fan=run_fan(lo,hi,goal)
     lower=[F(int(v),FINE) for v in lo]
     width=[F(int(v),FINE) for v in hi-lo]
@@ -278,11 +323,12 @@ def verify(args):
              for ell,b,d in zip(lengths,walls,depths,strict=True)]
     pointers=list(map(int,support[3]))
     rows=np.asarray(support[4]).reshape(-1,8).tolist()
+    assert len(record['rows'])==len(pointers)-1==384
     all_bounds=[]
     separate=[]
     comparison=None
     for cell,(pick,lm) in enumerate(record['rows']):
-        assert pointers[cell]<=pick<pointers[cell+1] and lm>=0
+        assert type(pick) is type(lm) is int and pointers[cell]<=pick<pointers[cell+1] and lm>=0
         chosen=None
         independent=[]
         # A simple independent cap bound uses the same affine fan,
@@ -336,14 +382,14 @@ def verify(args):
     assert min(separate)<GOAL and comparison is not None
     return dict(
         leaf=list(KEY),path=record['path'],box=record['box'],target=str(GOAL),proof_goal=str(proof_goal),
-        reference_tree_sha256=digest(main/'finite-point-lift-083742.json'),
+        reference_tree_sha256=digest(header_path),
         original_parent=parent[:7].tolist(),original_full_subtree=children[:7].tolist(),
         original_split_axis=fan[2],paired_nodes=1,p30_angle_cells=len(all_bounds),
         coupled_conditional_floor_at_1e12=str(F((worst*BOUND_SCALE).__floor__(),BOUND_SCALE)),
         uncoupled_min_at_1e12=str(F((min(separate)*BOUND_SCALE).__ceil__(),BOUND_SCALE)),
         weakest_cell=all_bounds.index(worst),
         witness_pair=comparison,fan_floor=str(floor),source_sha256=digest(Path(__file__)),
-        paired_fan_sha256=fan_sha,input_sha256=digest(args.input)
+        paired_fan_sha256=fan_sha,input_sha256=digest(args.input),certified_low_five=low_five
     )
 
 
