@@ -12,6 +12,6 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 平面凸万能覆盖最小面积 | 0.836 ≤ Λ < 0.844093594386489758783，精确值开放 | 第46轮完成 | 改进一般下界与极值结构 |
+| [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 平面凸万能覆盖最小面积 | 0.836 ≤ Λ < 0.844093594386489758782661348091016727，精确值开放 | 第47轮完成 | 改进一般下界与极值结构 |
 
 | [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；实解析且导数为 次于 x/log x 尺度的精确函数必为常数 | 第28轮完成 | 快速振荡两尾与原点临界饱和 |
