@@ -1,0 +1,68 @@
+{
+  "backend": "Metal direct int32 Walsh and GF(2) circuits",
+  "device": "Apple M5 Pro",
+  "gpu_fraction_of_commit_and_wait": 0.8989355493726622,
+  "host": "zzhMateBook-Pro-S.local",
+  "process_cpu_seconds": 0.17041,
+  "python": "3.9.6",
+  "records": [
+    {
+      "ambient_dimension": 3,
+      "base_dimension": 1,
+      "commit_and_wait_seconds": 0.0017932079999999906,
+      "gpu_command_seconds": 0.000258416635915637,
+      "kernel_cases": 64,
+      "operation": "all subspaces",
+      "signature_sha256": "03dd4d8af0625e790f83515111769e1acabe743736c18c4726d85cb61a6f5aa6",
+      "tables": 4
+    },
+    {
+      "ambient_dimension": 4,
+      "base_dimension": 2,
+      "commit_and_wait_seconds": 0.002404207999999991,
+      "gpu_command_seconds": 0.002271708333864808,
+      "kernel_cases": 1072,
+      "operation": "all subspaces",
+      "signature_sha256": "3c756de8f5d56f27af14ef35755269770b432e25214e6f0d62fde0d5676af54f",
+      "tables": 16
+    },
+    {
+      "ambient_dimension": 5,
+      "base_dimension": 3,
+      "commit_and_wait_seconds": 0.02376541700000001,
+      "gpu_command_seconds": 0.023241333314217627,
+      "kernel_cases": 95744,
+      "operation": "all subspaces",
+      "signature_sha256": "710b55a4285b8dedb8dfea610f5198608b87d56bb240bccf787e730e60715f88",
+      "tables": 256
+    },
+    {
+      "ambient_dimension": 4,
+      "commit_and_wait_seconds": 0.0007564580000000154,
+      "failures": [
+        {
+          "D": 3,
+          "count": 420,
+          "dimH": 2
+        },
+        {
+          "D": 3,
+          "count": 840,
+          "dimH": 3
+        }
+      ],
+      "first_failure": [
+        2,
+        3
+      ],
+      "gpu_command_seconds": 4.53333486802876e-05,
+      "kernel_cases": 19487,
+      "operation": "all subspaces and up to three deletions",
+      "signature_sha256": "d1321b43b60681a3c5f1d06a762ebfdab7ffe33f01f8d8548e89c3254efa0324",
+      "tables": 1
+    }
+  ],
+  "status": "pass",
+  "total_gpu_command_seconds": 0.02581679163267836,
+  "wall_seconds": 0.28079645799999997
+}
