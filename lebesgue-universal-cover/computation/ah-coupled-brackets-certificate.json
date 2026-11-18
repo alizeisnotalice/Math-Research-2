@@ -1,0 +1,153 @@
+{
+  "input": {
+    "lines": [
+      [
+        ".427",
+        ".00135"
+      ]
+    ],
+    "brackets": [
+      [
+        31,
+        0,
+        75,
+        "10.85",
+        "12.48"
+      ],
+      [
+        34,
+        0,
+        75,
+        "2.96",
+        "4.35"
+      ]
+    ],
+    "conflict_examples": [
+      [
+        34,
+        74,
+        "4.26",
+        "AH-line:3"
+      ]
+    ],
+    "common_state_examples": [
+      [
+        31,
+        74,
+        "12.48",
+        "I-E3-0"
+      ]
+    ]
+  },
+  "input_sha256": "6c2509fa5753c58b8bc679b1afd1146be01671200f68e79f18dc4cfed051f212",
+  "script_sha256": "2468eae14da9a94ad2b85e853d1a61f7a0c4629999c050899ba03c8551b6af21",
+  "geometry_sha256": "0838febe17a5963577c279ca441dadddce5c45d81da65e3c22fa7995d49f3269",
+  "geometry_and_placement_bits": 128,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "flint": "0.9.0",
+  "brackets": [
+    {
+      "reference_bin": 31,
+      "subcell_halfopen_indices": [
+        0,
+        75
+      ],
+      "closed_w_endpoints": [
+        "31/100",
+        "8/25"
+      ],
+      "common_bracket_degrees": [
+        "217/20",
+        "312/25"
+      ],
+      "angle_cells_per_parameter_cell": 16,
+      "root_slack_lower": "[8.5529417487339665482428983540619097874e-5 +/- 4.72e-43]",
+      "worst_root": [
+        74,
+        "217/20"
+      ],
+      "placement_slack_lower": "[0.00023571494034822206049135173324172027036 +/- 1.06e-42]",
+      "worst_pose": [
+        74,
+        15,
+        "Z-Tprime:16"
+      ],
+      "certified_strict_conflict_gain": "0",
+      "separate_vs_shared_example": null
+    },
+    {
+      "reference_bin": 34,
+      "subcell_halfopen_indices": [
+        0,
+        75
+      ],
+      "closed_w_endpoints": [
+        "17/50",
+        "7/20"
+      ],
+      "common_bracket_degrees": [
+        "74/25",
+        "87/20"
+      ],
+      "angle_cells_per_parameter_cell": 16,
+      "root_slack_lower": "[5.2726966620123144346603705095189451369e-6 +/- 1.13e-44]",
+      "worst_root": [
+        0,
+        "74/25"
+      ],
+      "placement_slack_lower": "[0.00031565875135575582692117360811293658244 +/- 1.77e-44]",
+      "worst_pose": [
+        0,
+        0,
+        "Z-Tprime:16"
+      ],
+      "certified_strict_conflict_gain": "0",
+      "separate_vs_shared_example": null
+    }
+  ],
+  "strict_nonattainment_examples": [
+    {
+      "bin": 34,
+      "subcell": 74,
+      "w_endpoints": [
+        "656/1875",
+        "7/20"
+      ],
+      "phi_degrees": "4.26",
+      "edge": "AH-line:3",
+      "model_independent_states": [
+        [
+          false,
+          0,
+          0
+        ],
+        [
+          true,
+          0,
+          0
+        ],
+        [
+          false,
+          3,
+          1
+        ]
+      ],
+      "verified_excess_over_every_common_state_per_E": "[0.090643673772729990051822038288726432904 +/- 3.39e-40]",
+      "excess_after_multiplying_E": "[3.8097977139191602389458654312008262170e-5 +/- 2.52e-43]",
+      "shared_error_upper": "[0.35132406325467631292748472391813367206 +/- 2.98e-40]"
+    }
+  ],
+  "common_relaxed_extremizers": [
+    {
+      "bin": 31,
+      "subcell": 74,
+      "phi_degrees": "12.48",
+      "edge": "I-E3-0",
+      "one_joint_maximizing_relaxed_state": [
+        true,
+        0,
+        2
+      ]
+    }
+  ]
+}
