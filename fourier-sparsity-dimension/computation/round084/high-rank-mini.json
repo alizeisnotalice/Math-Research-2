@@ -1,0 +1,227 @@
+{
+  "dense_fallback_rank4": {
+    "child": {
+      "D": 21,
+      "P_squared": [
+        147,
+        160
+      ],
+      "denom": 32768,
+      "s": 480,
+      "v": 19
+    },
+    "core": 7,
+    "dense_child_transform_checked": true,
+    "k": 3,
+    "label_weight_histogram": {
+      "0": 256,
+      "1": 24,
+      "2": 8
+    },
+    "rows": [
+      [
+        1024,
+        0
+      ],
+      [
+        2048,
+        0
+      ],
+      [
+        4096,
+        0
+      ]
+    ],
+    "seed": {
+      "D": 15,
+      "P_squared": [
+        25,
+        32
+      ],
+      "denom": 8192,
+      "s": 288,
+      "v": 13
+    }
+  },
+  "host": "zzhdeMac-Mini.local",
+  "inputs": [
+    {
+      "kind": "cubic",
+      "n": 5,
+      "tables": 4096
+    },
+    {
+      "kind": "rare",
+      "n": 6,
+      "tables": 4096
+    },
+    {
+      "kind": "rare",
+      "n": 7,
+      "tables": 1024
+    }
+  ],
+  "python": "3.15.0",
+  "selected_gains": {
+    "k3-disjoint": 771
+  },
+  "status": "pass",
+  "total_wall_seconds": 5.1714434169989545,
+  "witnesses": [
+    {
+      "actual_first_lift": {
+        "D": 15,
+        "P_squared": [
+          225,
+          88
+        ],
+        "denom": 256,
+        "s": 88,
+        "v": 13
+      },
+      "case": "k3-disjoint",
+      "choice": {
+        "active": 18,
+        "all_candidates_per_greedy_step": true,
+        "common_p2": [
+          169,
+          88
+        ],
+        "disjoint_p2": [
+          225,
+          88
+        ],
+        "disjoint_weight_histogram": {
+          "0": 16,
+          "1": 18
+        },
+        "k": 3,
+        "rows": [
+          [
+            1,
+            0
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            32,
+            0
+          ]
+        ],
+        "selected_affine_basis": [
+          0,
+          1,
+          8,
+          32,
+          2,
+          4,
+          16,
+          64
+        ],
+        "zero": 16
+      },
+      "explicit_trace": [
+        {
+          "D": 9,
+          "P_squared": [
+            81,
+            34
+          ],
+          "denom": 128,
+          "dense_checked": true,
+          "s": 34,
+          "stage": 0,
+          "v": 7
+        },
+        {
+          "D": 15,
+          "P_squared": [
+            225,
+            88
+          ],
+          "active_tail": 72,
+          "dense_checked": true,
+          "explicit_sparse_checked": true,
+          "s": 88,
+          "stage": 1,
+          "tail_codim": 9,
+          "v": 13
+        },
+        {
+          "D": 33,
+          "P_squared": [
+            1089,
+            1816
+          ],
+          "active_tail": 1800,
+          "dense_checked": false,
+          "explicit_sparse_checked": true,
+          "s": 1816,
+          "stage": 2,
+          "tail_codim": 27,
+          "v": 31
+        },
+        {
+          "D": 87,
+          "P_squared": [
+            7569,
+            18361816
+          ],
+          "active_tail": 18361800,
+          "dense_checked": false,
+          "explicit_sparse_checked": false,
+          "s": 18361816,
+          "stage": 3,
+          "tail_codim": 81,
+          "v": 85
+        },
+        {
+          "D": 249,
+          "P_squared": [
+            62001,
+            19107400172580721816
+          ],
+          "active_tail": 19107400172580721800,
+          "dense_checked": false,
+          "explicit_sparse_checked": false,
+          "s": 19107400172580721816,
+          "stage": 4,
+          "tail_codim": 243,
+          "v": 247
+        },
+        {
+          "D": 735,
+          "P_squared": [
+            540225,
+            21530781201163977737296443044704998139106940124087081816
+          ],
+          "active_tail": 21530781201163977737296443044704998139106940124087081800,
+          "dense_checked": false,
+          "explicit_sparse_checked": false,
+          "s": 21530781201163977737296443044704998139106940124087081816,
+          "stage": 5,
+          "tail_codim": 729,
+          "v": 733
+        }
+      ],
+      "family": "rare",
+      "gain_squared": [
+        425,
+        396
+      ],
+      "max_polar_rank": 2,
+      "n": 7,
+      "p2_after": [
+        225,
+        88
+      ],
+      "p2_before": [
+        81,
+        34
+      ],
+      "truth": 340282366841710300950989161676672281132
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "python": "3.15.0",
+  "seed": 8402,
+  "cylinder": {
+    "quotient_bases": 16,
+    "marginal_cap_multiplier": "1",
+    "parents": [
+      {
+        "polar_rank": 2,
+        "s": 40,
+        "R": 9
+      },
+      {
+        "polar_rank": 4,
+        "s": 136,
+        "R": 11
+      },
+      {
+        "polar_rank": 6,
+        "s": 520,
+        "R": 13
+      },
+      {
+        "polar_rank": 8,
+        "s": 2056,
+        "R": 15
+      }
+    ]
+  },
+  "log_growth": {
+    "exact_Walsh": [
+      {
+        "n": 2,
+        "k": 1,
+        "polar_rank": 2,
+        "seed_s_R": [
+          10,
+          5
+        ],
+        "parent_s_R": [
+          16,
+          7
+        ]
+      },
+      {
+        "n": 4,
+        "k": 1,
+        "polar_rank": 4,
+        "seed_s_R": [
+          34,
+          7
+        ],
+        "parent_s_R": [
+          64,
+          11
+        ]
+      },
+      {
+        "n": 4,
+        "k": 2,
+        "polar_rank": 2,
+        "seed_s_R": [
+          76,
+          10
+        ],
+        "parent_s_R": [
+          112,
+          16
+        ]
+      },
+      {
+        "n": 6,
+        "k": 2,
+        "polar_rank": 2,
+        "seed_s_R": [
+          268,
+          12
+        ],
+        "parent_s_R": [
+          304,
+          18
+        ]
+      }
+    ],
+    "asymptotic_formula_evaluations": [
+      {
+        "n": 64,
+        "k": 12,
+        "polar_rank": 40,
+        "gain_over_log_seed": 0.5295713806843395
+      },
+      {
+        "n": 128,
+        "k": 14,
+        "polar_rank": 100,
+        "gain_over_log_seed": 0.705110162917985
+      },
+      {
+        "n": 512,
+        "k": 18,
+        "polar_rank": 476,
+        "gain_over_log_seed": 0.898179323408741
+      },
+      {
+        "n": 2048,
+        "k": 22,
+        "polar_rank": 2004,
+        "gain_over_log_seed": 0.9681209019690086
+      },
+      {
+        "n": 8192,
+        "k": 26,
+        "polar_rank": 8140,
+        "gain_over_log_seed": 0.9905090061854551
+      }
+    ]
+  },
+  "matched_abstract_spectra": {
+    "examples": 418,
+    "max_polar_rank": 12,
+    "caps": [
+      {
+        "v": 3,
+        "cap": "1",
+        "checked_bases": 1
+      },
+      {
+        "v": 4,
+        "cap": "5/4",
+        "checked_bases": 4
+      }
+    ]
+  }
+}
