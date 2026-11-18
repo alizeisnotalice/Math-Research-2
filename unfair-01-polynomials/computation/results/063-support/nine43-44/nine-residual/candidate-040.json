@@ -1,0 +1,208 @@
+{
+  "format": "positive-certificate-v1",
+  "case": {
+    "name": "I0247_J0246891012131518",
+    "I": [
+      0,
+      2,
+      4,
+      5,
+      7,
+      8,
+      14,
+      17
+    ],
+    "J": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      16,
+      20,
+      23,
+      26
+    ]
+  },
+  "strict_variables": [
+    "a2",
+    "a4",
+    "a5",
+    "a7",
+    "a8",
+    "a14",
+    "b2",
+    "b4",
+    "b5",
+    "b6",
+    "b16",
+    "b20",
+    "b23"
+  ],
+  "unit_variables": [
+    "a0",
+    "a17",
+    "b0",
+    "b26"
+  ],
+  "basis": {
+    "multiplier_total_degree_at_most": 1,
+    "positive_atom_total_degree_at_most": 2,
+    "atom_form": "product(positive) * product(1-minus)"
+  },
+  "matrix": {
+    "polynomial_rows": 560,
+    "normalization_rows": 1,
+    "free_multiplier_columns": 406,
+    "positive_atom_columns": 338,
+    "lp_nonnegative_columns": 1150,
+    "elapsed_seconds": 0.007909375000053842
+  },
+  "solver": {
+    "name": "SciPy HiGHS linprog",
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  "certificate": {
+    "multipliers": [
+      {
+        "diagonal": 4,
+        "monomial": [],
+        "coefficient": [
+          1,
+          8
+        ]
+      },
+      {
+        "diagonal": 11,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          8
+        ]
+      },
+      {
+        "diagonal": 23,
+        "monomial": [],
+        "coefficient": [
+          1,
+          8
+        ]
+      },
+      {
+        "diagonal": 24,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          8
+        ]
+      },
+      {
+        "diagonal": 27,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          8
+        ]
+      }
+    ],
+    "positive_atoms": [
+      {
+        "positive": [
+          "a2",
+          "b2"
+        ],
+        "one_minus": [],
+        "coefficient": [
+          1,
+          8
+        ]
+      },
+      {
+        "positive": [
+          "a4"
+        ],
+        "one_minus": [
+          "b20"
+        ],
+        "coefficient": [
+          1,
+          8
+        ]
+      },
+      {
+        "positive": [
+          "b23"
+        ],
+        "one_minus": [
+          "a4"
+        ],
+        "coefficient": [
+          1,
+          8
+        ]
+      },
+      {
+        "positive": [
+          "b6"
+        ],
+        "one_minus": [
+          "a5"
+        ],
+        "coefficient": [
+          1,
+          8
+        ]
+      },
+      {
+        "positive": [
+          "b4"
+        ],
+        "one_minus": [
+          "a7"
+        ],
+        "coefficient": [
+          1,
+          8
+        ]
+      },
+      {
+        "positive": [],
+        "one_minus": [
+          "a7",
+          "b16"
+        ],
+        "coefficient": [
+          1,
+          8
+        ]
+      },
+      {
+        "positive": [
+          "a7"
+        ],
+        "one_minus": [
+          "b20"
+        ],
+        "coefficient": [
+          1,
+          8
+        ]
+      },
+      {
+        "positive": [
+          "b16"
+        ],
+        "one_minus": [
+          "a8"
+        ],
+        "coefficient": [
+          1,
+          8
+        ]
+      }
+    ],
+    "exact_recovery_check": true
+  },
+  "status": "certificate_found"
+}
