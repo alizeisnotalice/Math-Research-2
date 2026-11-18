@@ -1,0 +1,57 @@
+{
+  "python": "3.13.18",
+  "scipy": "1.18.1",
+  "numpy": "2.5.4",
+  "a": 0.0002,
+  "B": 0.0064,
+  "q": 4,
+  "p": 1,
+  "omega": 1,
+  "kappa": 1,
+  "theta": 0,
+  "H": "cosine",
+  "randomness": "none",
+  "quantity": "linear response only divided by eta, in complex modulation",
+  "window": [
+    -10,
+    10
+  ],
+  "epsabs": 1e-11,
+  "epsrel": 1e-11,
+  "predicted_limit": [
+    -0.036688367773735554,
+    -0.00023479533568171684
+  ],
+  "rows": [
+    {
+      "n": 20000,
+      "L": 28.359261614488258,
+      "response": [
+        -0.036688362916189717,
+        -0.0002347951959131756
+      ],
+      "absolute_error": 4.859556236050873e-09,
+      "estimated_quadrature_error": 9.646666663020643e-13
+    },
+    {
+      "n": 80000,
+      "L": 56.718523228976515,
+      "response": [
+        -0.03668836655085622,
+        -0.00023479530072963072
+      ],
+      "absolute_error": 1.2233787272244712e-09,
+      "estimated_quadrature_error": 1.0097536470711763e-12
+    },
+    {
+      "n": 320000,
+      "L": 113.43704645795303,
+      "response": [
+        -0.03668836746749374,
+        -0.0002347953269105636
+      ],
+      "absolute_error": 3.063673993436264e-10,
+      "estimated_quadrature_error": 1.2119495662784375e-12
+    }
+  ]
+}
