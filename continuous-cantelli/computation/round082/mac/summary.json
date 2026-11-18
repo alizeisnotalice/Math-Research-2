@@ -1,0 +1,419 @@
+{
+  "device": "Apple M5 Pro",
+  "macOS": "27.3 (26C5035r)",
+  "swift": "6.4.2",
+  "metalLifecycle": {
+    "pid": 49593,
+    "startUTC": "2026-11-18T04:39:15Z",
+    "exitUTC": "2026-11-18T04:39:18Z",
+    "exitCode": 0,
+    "pidAbsentAfterExit": true
+  },
+  "gpuDevicePercent": {
+    "prelaunchProbe": 100,
+    "count": 5,
+    "min": 100,
+    "max": 100,
+    "mean": 100
+  },
+  "metal": {
+    "device": "Apple M5 Pro",
+    "dimensions": [
+      57,
+      51,
+      81,
+      5,
+      81,
+      512
+    ],
+    "evaluated": 35492580,
+    "finite": 35492580,
+    "gpuSeconds": 2.319082166766748,
+    "profiles": 438180,
+    "representatives": {
+      "leastScaledResidual": {
+        "core": {
+          "center": 0.00019431718,
+          "coefficient": -2,
+          "k": 3.7857144,
+          "l": 4.037,
+          "lambda": 0.0058639487,
+          "mean": 6.017593,
+          "std": 0.004396625
+        },
+        "maxNegative": -1.6450513e-09,
+        "maxPositive": 1.9914637e-09,
+        "negativeStrike": 1.925,
+        "positiveStrike": 0.875,
+        "signChanges": 3
+      },
+      "maxNegative": {
+        "core": {
+          "center": 0.035824563,
+          "coefficient": 0,
+          "k": 2.580357,
+          "l": 2.7303572,
+          "lambda": 0.95656836,
+          "mean": 1.340837,
+          "std": 0.6755279
+        },
+        "maxNegative": -0.0043802676,
+        "maxPositive": 0.0074882484,
+        "negativeStrike": 1.05,
+        "positiveStrike": 0,
+        "signChanges": 2
+      },
+      "maxPositive": {
+        "core": {
+          "center": 0.05438778,
+          "coefficient": 0.35,
+          "k": 2.5,
+          "l": 2.65,
+          "lambda": 0.769582,
+          "mean": 1.4307915,
+          "std": 0.7318636
+        },
+        "maxNegative": -0.0043760254,
+        "maxPositive": 0.0075062416,
+        "negativeStrike": 1.05,
+        "positiveStrike": 0,
+        "signChanges": 2
+      },
+      "mostSignChanges": {
+        "core": {
+          "center": 0.00030500002,
+          "coefficient": -1.9,
+          "k": 3.8660715,
+          "l": 4.2154284,
+          "lambda": 0.014748116,
+          "mean": 0.39277405,
+          "std": 0.010609225
+        },
+        "maxNegative": -7.313226e-05,
+        "maxPositive": 7.113871e-05,
+        "negativeStrike": 0,
+        "positiveStrike": 0.7,
+        "signChanges": 7
+      }
+    },
+    "signChangeCounts": {
+      "2": 351250,
+      "3": 946,
+      "4": 51921,
+      "5": 18252,
+      "6": 15693,
+      "7": 118
+    }
+  },
+  "cpuVerification": {
+    "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+    "scipy": "1.18.1",
+    "mpmath": "1.3.0",
+    "verified": {
+      "leastScaledResidual": {
+        "metal": {
+          "core": {
+            "center": 0.00019431718,
+            "coefficient": -2,
+            "k": 3.7857144,
+            "l": 4.037,
+            "lambda": 0.0058639487,
+            "mean": 6.017593,
+            "std": 0.004396625
+          },
+          "maxNegative": -1.6450513e-09,
+          "maxPositive": 1.9914637e-09,
+          "negativeStrike": 1.925,
+          "positiveStrike": 0.875,
+          "signChanges": 3
+        },
+        "positive": {
+          "atMetalStrike": 1.9899828633112347e-09,
+          "directConditionalCallCheck": 1.9899828347902254e-09,
+          "refinedStrike": 0.8866908882403667,
+          "refinedValue": 1.9913455911312077e-09
+        },
+        "negative": {
+          "atMetalStrike": -1.6458094842800712e-09,
+          "directConditionalCallCheck": -1.6458094834372937e-09,
+          "refinedStrike": 1.9305237994487083,
+          "refinedValue": -1.6459896263397736e-09
+        },
+        "visibleSignChangeStrikes": [
+          0.38521079911539047,
+          1.4075736778496897,
+          2.7247785470201364
+        ],
+        "moments": {
+          "varianceNoise": 1.9330213913177176e-05,
+          "meanVariancePerturbation": 2.117582368135751e-22,
+          "standardizedHermite4": 5.503943008266727e-22,
+          "standardizedHermite6": 1.8452516585153964e-06
+        },
+        "mp60": "0.00000000198998286331531569100903077805980318027476768"
+      },
+      "maxNegative": {
+        "metal": {
+          "core": {
+            "center": 0.035824563,
+            "coefficient": 0,
+            "k": 2.580357,
+            "l": 2.7303572,
+            "lambda": 0.95656836,
+            "mean": 1.340837,
+            "std": 0.6755279
+          },
+          "maxNegative": -0.0043802676,
+          "maxPositive": 0.0074882484,
+          "negativeStrike": 1.05,
+          "positiveStrike": 0,
+          "signChanges": 2
+        },
+        "positive": {
+          "atMetalStrike": 0.007488067592784015,
+          "directConditionalCallCheck": 0.007488067592784023,
+          "refinedStrike": 0,
+          "refinedValue": 0.007488067592784015
+        },
+        "negative": {
+          "atMetalStrike": -0.004380221566181091,
+          "directConditionalCallCheck": -0.004380221566181091,
+          "refinedStrike": 1.0670509844853884,
+          "refinedValue": -0.004385377314221389
+        },
+        "visibleSignChangeStrikes": [
+          0.5918685572581392,
+          1.9324385418402952
+        ],
+        "moments": {
+          "varianceNoise": 0.4563381392393759,
+          "meanVariancePerturbation": 0.0,
+          "standardizedHermite4": 0.0,
+          "standardizedHermite6": 1.8040029698877988
+        }
+      },
+      "maxPositive": {
+        "metal": {
+          "core": {
+            "center": 0.05438778,
+            "coefficient": 0.35,
+            "k": 2.5,
+            "l": 2.65,
+            "lambda": 0.769582,
+            "mean": 1.4307915,
+            "std": 0.7318636
+          },
+          "maxNegative": -0.0043760254,
+          "maxPositive": 0.0075062416,
+          "negativeStrike": 1.05,
+          "positiveStrike": 0,
+          "signChanges": 2
+        },
+        "positive": {
+          "atMetalStrike": 0.007505999803975802,
+          "directConditionalCallCheck": 0.007505999803975828,
+          "refinedStrike": 1.1515141839847816e-08,
+          "refinedValue": 0.007505999803975802
+        },
+        "negative": {
+          "atMetalStrike": -0.004375947819871502,
+          "directConditionalCallCheck": -0.004375947819871495,
+          "refinedStrike": 1.064425518224164,
+          "refinedValue": -0.004379640017545339
+        },
+        "visibleSignChangeStrikes": [
+          0.5908373837219614,
+          1.9346970913181873
+        ],
+        "moments": {
+          "varianceNoise": 0.5356243216139048,
+          "meanVariancePerturbation": -1.734723475976807e-18,
+          "standardizedHermite4": 0.0,
+          "standardizedHermite6": 1.8152041430096906
+        }
+      },
+      "mostSignChanges": {
+        "metal": {
+          "core": {
+            "center": 0.00030500002,
+            "coefficient": -1.9,
+            "k": 3.8660715,
+            "l": 4.2154284,
+            "lambda": 0.014748116,
+            "mean": 0.39277405,
+            "std": 0.010609225
+          },
+          "maxNegative": -7.313226e-05,
+          "maxPositive": 7.113871e-05,
+          "negativeStrike": 0,
+          "positiveStrike": 0.7,
+          "signChanges": 7
+        },
+        "positive": {
+          "atMetalStrike": 7.113870454928223e-05,
+          "directConditionalCallCheck": 7.11387045492847e-05,
+          "refinedStrike": 0.7036178462529245,
+          "refinedValue": 7.114725162079844e-05
+        },
+        "negative": {
+          "atMetalStrike": -7.313208464737075e-05,
+          "directConditionalCallCheck": -7.313208464738658e-05,
+          "refinedStrike": 1.8101065562809205e-09,
+          "refinedValue": -7.313208464737081e-05
+        },
+        "visibleSignChangeStrikes": [
+          0.3491367965963251,
+          1.0997722231421532,
+          1.9402519808289747,
+          2.863883103386882,
+          3.6525500976455887,
+          4.812461116605608,
+          5.290606127767255
+        ],
+        "moments": {
+          "varianceNoise": 0.00011255539138047298,
+          "meanVariancePerturbation": 0.0,
+          "standardizedHermite4": 8.38378629124785e-20,
+          "standardizedHermite6": 0.004379736793376753
+        },
+        "mp60": "0.0000711387045492823261761881889843914325566164544"
+      }
+    }
+  },
+  "macBookCpuRerunExitVerified": true,
+  "independentLocalReferenceMatches": true,
+  "gaussianSmoothingCheck": {
+    "base": {
+      "k": 3.0,
+      "l": 4.0,
+      "coefficient": 0.0,
+      "mean": 1.0
+    },
+    "rawSixthMomentExcess": 5.407273939167943,
+    "rows": [
+      {
+        "meanNoiseVariance": 1.0,
+        "standardizedStrike": 0.0,
+        "callResidual": 0.0030629508432677573,
+        "rescaledResidual": 3.262752554374391,
+        "targetHermiteShape": 1.1968268412042982,
+        "rescaledError": 2.0659257131700928
+      },
+      {
+        "meanNoiseVariance": 1.0,
+        "standardizedStrike": 1.4,
+        "callResidual": -0.0013536938121091332,
+        "rescaledResidual": -1.4419976582411562,
+        "targetHermiteShape": -0.7364195669828474,
+        "rescaledError": -0.7055780912583088
+      },
+      {
+        "meanNoiseVariance": 1.0,
+        "standardizedStrike": 2.6,
+        "callResidual": 0.0002669642326216599,
+        "rescaledResidual": 0.2843787825806695,
+        "targetHermiteShape": 0.11053277043604012,
+        "rescaledError": 0.17384601214462939
+      },
+      {
+        "meanNoiseVariance": 4.0,
+        "standardizedStrike": 0.0,
+        "callResidual": 0.00010072073776362193,
+        "rescaledResidual": 1.676420780730937,
+        "targetHermiteShape": 1.1968268412042982,
+        "rescaledError": 0.47959393952663887
+      },
+      {
+        "meanNoiseVariance": 4.0,
+        "standardizedStrike": 1.4,
+        "callResidual": -5.910905235747347e-05,
+        "rescaledResidual": -0.9838256341403726,
+        "targetHermiteShape": -0.7364195669828474,
+        "rescaledError": -0.24740606715752522
+      },
+      {
+        "meanNoiseVariance": 4.0,
+        "standardizedStrike": 2.6,
+        "callResidual": 1.1393160212115832e-05,
+        "rescaledResidual": 0.1896305662753621,
+        "targetHermiteShape": 0.11053277043604012,
+        "rescaledError": 0.07909779583932197
+      },
+      {
+        "meanNoiseVariance": 16.0,
+        "standardizedStrike": 0.0,
+        "callResidual": 2.006390089482018e-06,
+        "rescaledResidual": 1.3125512276195552,
+        "targetHermiteShape": 1.1968268412042982,
+        "rescaledError": 0.11572438641525706
+      },
+      {
+        "meanNoiseVariance": 16.0,
+        "standardizedStrike": 1.4,
+        "callResidual": -1.2252888430654568e-06,
+        "rescaledResidual": -0.8015661478717264,
+        "targetHermiteShape": -0.7364195669828474,
+        "rescaledError": -0.06514658088887904
+      },
+      {
+        "meanNoiseVariance": 16.0,
+        "standardizedStrike": 2.6,
+        "callResidual": 2.0261818427739236e-07,
+        "rescaledResidual": 0.13254987048904085,
+        "targetHermiteShape": 0.11053277043604012,
+        "rescaledError": 0.022017100053000727
+      },
+      {
+        "meanNoiseVariance": 64.0,
+        "standardizedStrike": 0.0,
+        "callResidual": 3.351231175809016e-08,
+        "rescaledResidual": 1.2254584247948825,
+        "targetHermiteShape": 1.1968268412042982,
+        "rescaledError": 0.028631583590584375
+      },
+      {
+        "meanNoiseVariance": 64.0,
+        "standardizedStrike": 1.4,
+        "callResidual": -2.058840252187579e-08,
+        "rescaledResidual": -0.7528645443986746,
+        "targetHermiteShape": -0.7364195669828474,
+        "rescaledError": -0.016444977415827178
+      },
+      {
+        "meanNoiseVariance": 64.0,
+        "standardizedStrike": 2.6,
+        "callResidual": 3.17641670160508e-09,
+        "rescaledResidual": 0.116153330028073,
+        "targetHermiteShape": 0.11053277043604012,
+        "rescaledError": 0.005620559592032878
+      },
+      {
+        "meanNoiseVariance": 256.0,
+        "standardizedStrike": 0.0,
+        "callResidual": 5.326727688849277e-10,
+        "rescaledResidual": 1.2039653548392555,
+        "targetHermiteShape": 1.1968268412042982,
+        "rescaledError": 0.007138513634957322,
+        "mp60": 5.326727688810577e-10
+      },
+      {
+        "meanNoiseVariance": 256.0,
+        "standardizedStrike": 1.4,
+        "callResidual": -3.2763848140332387e-10,
+        "rescaledResidual": -0.740539790212109,
+        "targetHermiteShape": -0.7364195669828474,
+        "rescaledError": -0.004120223229261644,
+        "mp60": -3.2763848140571933e-10
+      },
+      {
+        "meanNoiseVariance": 256.0,
+        "standardizedStrike": 2.6,
+        "callResidual": 4.952787846522427e-11,
+        "rescaledResidual": 0.11194461826093645,
+        "targetHermiteShape": 0.11053277043604012,
+        "rescaledError": 0.0014118478248963257
+      }
+    ]
+  },
+  "largestMetalVsCpuStrikeDifference": 2.417960241977296e-07
+}
