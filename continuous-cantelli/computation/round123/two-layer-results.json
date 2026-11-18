@@ -1,0 +1,38 @@
+{
+  "scope": "Two-layer R002 model at y=0; rational finite-difference witness plus supplemental numerical calibration",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "mpmath": "1.3.0",
+  "rational_witness": {
+    "j": 80,
+    "k": 70,
+    "grid": 512,
+    "fixed_point_denominator": "1000000000000000000000000000",
+    "normalized_integral_upper_bound_exact_fraction": "-356905254734269208549594101711638446766677902039503/81920000000000000000000000000000000000000000000000000",
+    "normalized_integral_upper_bound_decimal": "-0.004356753597830434674677662374409649008382"
+  },
+  "generic_kl_witness": {
+    "n": 17600,
+    "j": 10120,
+    "k": 7480,
+    "negative_t_interval_from_rational_x": [
+      "11/20",
+      "3/5"
+    ],
+    "lower_density_magnitude": "1/24",
+    "inner_negative_mass_lower": "1/2208"
+  },
+  "calibrations": [
+    {
+      "j": 59,
+      "k": 53,
+      "scaled_integral_without_gaussian_constant": "-0.0000851190115756255561287560441654762594087321",
+      "absolute_cross_method_difference": "1.734859947697e-52"
+    },
+    {
+      "j": 80,
+      "k": 70,
+      "scaled_integral_without_gaussian_constant": "-0.00556521826064776094635357658582173154603175",
+      "absolute_cross_method_difference": "3.728422478187e-53"
+    }
+  ]
+}
