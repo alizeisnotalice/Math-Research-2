@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 平面凸万能覆盖最小面积 | 0.83600000162452 ≤ Λ < 0.844093591925499381，精确值开放 | 第62轮完成 | 改进一般下界与极值结构 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；四次接触的上侧 Gevrey 零型条件 | 第41轮完成 | 快速振荡尾部及平坦最大点 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；原点饱和时中心测度的次阶亏损 | 第42轮完成 | 快速振荡尾部及平坦最大点 |
