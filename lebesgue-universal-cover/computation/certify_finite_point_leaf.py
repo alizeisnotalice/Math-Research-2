@@ -164,13 +164,14 @@ def run():
     p=argparse.ArgumentParser(description=__doc__)
     for k in ("cert","table","work","cache"):
         p.add_argument(k,type=Path)
+    p.add_argument("--input",type=Path,default=HERE/"finite-point-leaf-input.json")
     p.add_argument("--finite-clouds",action="store_true",help="certify all six rational groups on the full leaf")
     a=p.parse_args()
     assert __debug__
     a.work.mkdir(exist_ok=False)
     a.cache.mkdir(parents=True,exist_ok=True)
     ctx.prec=160
-    input_path=HERE/"finite-point-leaf-input.json"
+    input_path=a.input
     data=json.loads(input_path.read_bytes())
     assert data["part"]==180 and data["pos"]==23955 and F(data["target"])==F(".83730")
     header,box,tree_sha=original_leaf(a.cert,data["part"],data["pos"])
@@ -201,6 +202,7 @@ def run():
     target=data["target"]
     expected=data["expected"]
     if a.finite_clouds:
+        assert digest(a.input)==digest(HERE/"finite-point-leaf-input.json")
         target=".83731"
         expected=[1,3182625,47209,1544104,83,0,3125697]
     threshold=F(target)*2*Q*Q
