@@ -1,0 +1,164 @@
+{
+  "bank_truth_sha256": "af2f78683d32e0d9079817b7c84bcff14229db606c4832f3247c511ca469f0df",
+  "case_intervals": [
+    [
+      0,
+      786432
+    ],
+    [
+      786432,
+      1048576
+    ]
+  ],
+  "combined": {
+    "band_actual_address_mass_equalities": 9222512,
+    "band_line_mass_equalities": 2118912,
+    "bands_with_complete_coefficient_cancellation": 2597632,
+    "colliding_bands": 5114112,
+    "completely_canceled_coefficient_occurrences": 8772464,
+    "cpu_gpu_integer_coefficients_verified": 134217728,
+    "direct_cpu_full_walsh_cases": 128,
+    "global_line_mass_equalities": 1228,
+    "private_bands": 7748608,
+    "private_bands_with_two_local_preimages": 5629696,
+    "tested_bands_including_empty": 16777216,
+    "tested_nonempty_bands": 12862720,
+    "verified_cases": 1048576
+  },
+  "machine": {
+    "Apple M5 Pro": {
+      "case_interval": [
+        0,
+        786432
+      ],
+      "exact_bands": {
+        "overlapping_bands_with_cancellation": {
+          "active_lines": 2,
+          "address_walsh": [
+            16,
+            32,
+            -16,
+            0,
+            16,
+            32,
+            -16,
+            0
+          ],
+          "case_id": 136,
+          "data_frequency": 1,
+          "local_preimages": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "precollision_occurrences": 12,
+          "precollision_union": 8,
+          "supported_addresses": 3,
+          "true_band_sparsity": 6
+        },
+        "private_with_two_local_preimages": {
+          "active_lines": 1,
+          "address_walsh": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
+          ],
+          "case_id": 4,
+          "data_frequency": 0,
+          "local_preimages": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "precollision_occurrences": 8,
+          "precollision_union": 8,
+          "supported_addresses": 1,
+          "true_band_sparsity": 8
+        }
+      },
+      "gpu_command_buffer_count": 48,
+      "gpu_command_seconds_summed": 0.21021908323746175,
+      "process": 64300,
+      "process_exited": true,
+      "python_independent_witness_cases": 8,
+      "results_sha256": "0deb16b2d66ff6e93f465a9cf8b92c968fbdfdfb6aec858e996a9c9d41727216",
+      "wall_seconds": 1.008133888244629
+    },
+    "Apple M6": {
+      "case_interval": [
+        786432,
+        1048576
+      ],
+      "exact_bands": {
+        "overlapping_bands_with_cancellation": {
+          "active_lines": 3,
+          "address_walsh": [
+            64,
+            -16,
+            -32,
+            16,
+            0,
+            -16,
+            32,
+            16
+          ],
+          "case_id": 786440,
+          "data_frequency": 2,
+          "local_preimages": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "precollision_occurrences": 16,
+          "precollision_union": 8,
+          "supported_addresses": 5,
+          "true_band_sparsity": 7
+        },
+        "private_with_two_local_preimages": {
+          "active_lines": 1,
+          "address_walsh": [
+            8,
+            -8,
+            8,
+            -8,
+            -8,
+            8,
+            -8,
+            8
+          ],
+          "case_id": 786432,
+          "data_frequency": 3,
+          "local_preimages": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "precollision_occurrences": 8,
+          "precollision_union": 8,
+          "supported_addresses": 1,
+          "true_band_sparsity": 8
+        }
+      },
+      "gpu_command_buffer_count": 16,
+      "gpu_command_seconds_summed": 0.007898249996287632,
+      "process": 35027,
+      "process_exited": true,
+      "python_independent_witness_cases": 8,
+      "results_sha256": "20156ebac14afd5db13d25b4c94c961b822f0b870b970c08a31062ef5e15351c",
+      "wall_seconds": 0.6266162395477295
+    }
+  },
+  "nominal_metal_command_overlap_seconds": 0.0009453296661376953,
+  "nominal_process_overlap_seconds": 0.6266162395477295,
+  "scheduled_unix": 1794970495.092328,
+  "schema": "a28-r050-verified-two-machine-four-line-sweep-v1"
+}
