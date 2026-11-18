@@ -1,0 +1,1322 @@
+{
+  "python": "3.15.0",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "arithmetic": "Exact integers; explicit GF(2) elimination and Walsh transforms.",
+  "source_sha256": "6dfb101601149eb93039d31a494d08cd02cfb6f3f37fad6b9c5ae86d9ae6a9a2",
+  "workers": 6,
+  "totals": {
+    "full_walsh_coefficients_checked": 1942992,
+    "checks_with_nonzero_marks": 89790,
+    "checks_with_no_marks": 55,
+    "tight_nonempty_global_bounds": 8677,
+    "families": 89845,
+    "isolated_coefficients_checked": 1312688,
+    "marked_nodes_checked": 298829,
+    "tight_local_isolations": 112019,
+    "marked_nodes_with_no_outside_sensitive_query": 88887
+  },
+  "templates": {
+    "dependent_triad_all_leaves": {
+      "shape": [
+        1,
+        0,
+        [
+          2,
+          0,
+          null,
+          null
+        ],
+        [
+          3,
+          0,
+          null,
+          null
+        ]
+      ],
+      "leaf_library": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sampling_seed": null,
+      "physical_selector_variables": 2,
+      "distinct_query_directions": [
+        1,
+        2,
+        3
+      ],
+      "query_rank": 2,
+      "maximum_isolation_cost": 1,
+      "maximum_actual_band_multiplicity": 2,
+      "tight_Kraft_frequencies": [
+        1,
+        2,
+        3
+      ],
+      "component_check": {
+        "query_groups": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "ranks": [
+          2
+        ],
+        "nullities": [
+          1
+        ],
+        "maximum_path_nullity": 1
+      },
+      "node_certificates": {
+        "0": {
+          "q": 1,
+          "depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "lca_positions": [],
+          "path_rank": 1,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 0
+        },
+        "1": {
+          "q": 2,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 1
+        },
+        "4": {
+          "q": 3,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 1
+        }
+      },
+      "counts": {
+        "full_walsh_coefficients_checked": 1048576,
+        "checks_with_nonzero_marks": 65520,
+        "checks_with_no_marks": 16,
+        "tight_nonempty_global_bounds": 6976,
+        "families": 65536,
+        "isolated_coefficients_checked": 748480,
+        "marked_nodes_checked": 187120,
+        "tight_local_isolations": 77712,
+        "marked_nodes_with_no_outside_sensitive_query": 64240
+      },
+      "witnesses": {
+        "tight_global_bound": {
+          "leaf_masks": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "weighted_cost_numerator": 16,
+          "weighted_cost_denominator": 4,
+          "nonzero_selector_sparsity": 4,
+          "root_data_sparsity": 4
+        },
+        "uncorrected_local_bound_failure": {
+          "leaf_masks": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "node_index": 4,
+          "depth": 1,
+          "ell": 1,
+          "band_sparsity": 4,
+          "delta_sparsity": 4
+        }
+      },
+      "seconds": 3.1546819579998555
+    },
+    "offset_dependent_triad": {
+      "shape": [
+        1,
+        1,
+        [
+          2,
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          0,
+          null,
+          null
+        ]
+      ],
+      "leaf_library": [
+        0,
+        15,
+        3,
+        1,
+        2
+      ],
+      "sampling_seed": null,
+      "physical_selector_variables": 2,
+      "distinct_query_directions": [
+        1,
+        2,
+        3
+      ],
+      "query_rank": 2,
+      "maximum_isolation_cost": 1,
+      "maximum_actual_band_multiplicity": 2,
+      "tight_Kraft_frequencies": [
+        1,
+        2,
+        3
+      ],
+      "component_check": {
+        "query_groups": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "ranks": [
+          2
+        ],
+        "nullities": [
+          1
+        ],
+        "maximum_path_nullity": 1
+      },
+      "node_certificates": {
+        "0": {
+          "q": 1,
+          "depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "lca_positions": [],
+          "path_rank": 1,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 0
+        },
+        "1": {
+          "q": 2,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 1
+        },
+        "4": {
+          "q": 3,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 1
+        }
+      },
+      "counts": {
+        "full_walsh_coefficients_checked": 10000,
+        "checks_with_nonzero_marks": 620,
+        "checks_with_no_marks": 5,
+        "tight_nonempty_global_bounds": 124,
+        "families": 625,
+        "isolated_coefficients_checked": 6288,
+        "marked_nodes_checked": 1572,
+        "tight_local_isolations": 780,
+        "marked_nodes_with_no_outside_sensitive_query": 572
+      },
+      "witnesses": {
+        "tight_global_bound": {
+          "leaf_masks": [
+            0,
+            0,
+            15,
+            15
+          ],
+          "weighted_cost_numerator": 4,
+          "weighted_cost_denominator": 4,
+          "nonzero_selector_sparsity": 1,
+          "root_data_sparsity": 0
+        },
+        "uncorrected_local_bound_failure": {
+          "leaf_masks": [
+            0,
+            15,
+            0,
+            15
+          ],
+          "node_index": 4,
+          "depth": 1,
+          "ell": 1,
+          "band_sparsity": 1,
+          "delta_sparsity": 1
+        }
+      },
+      "seconds": 0.009866458000033163
+    },
+    "multiple_dependencies": {
+      "shape": [
+        1,
+        0,
+        [
+          2,
+          0,
+          [
+            4,
+            0,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          3,
+          0,
+          null,
+          [
+            5,
+            0,
+            null,
+            null
+          ]
+        ]
+      ],
+      "leaf_library": [
+        0,
+        15,
+        3,
+        1,
+        2
+      ],
+      "sampling_seed": null,
+      "physical_selector_variables": 3,
+      "distinct_query_directions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "query_rank": 3,
+      "maximum_isolation_cost": 1,
+      "maximum_actual_band_multiplicity": 2,
+      "tight_Kraft_frequencies": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "component_check": {},
+      "node_certificates": {
+        "0": {
+          "q": 1,
+          "depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "lca_positions": [],
+          "path_rank": 1,
+          "delta_count": 4,
+          "max_ell_over_delta_choices": 0
+        },
+        "1": {
+          "q": 2,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 1
+        },
+        "2": {
+          "q": 4,
+          "depth": 2,
+          "ell": 1,
+          "delta": 4,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 3,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 1
+        },
+        "6": {
+          "q": 3,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 1
+        },
+        "8": {
+          "q": 5,
+          "depth": 2,
+          "ell": 1,
+          "delta": 4,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 3,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 1
+        }
+      },
+      "counts": {
+        "full_walsh_coefficients_checked": 500000,
+        "checks_with_nonzero_marks": 15620,
+        "checks_with_no_marks": 5,
+        "tight_nonempty_global_bounds": 836,
+        "families": 15625,
+        "isolated_coefficients_checked": 381200,
+        "marked_nodes_checked": 70300,
+        "tight_local_isolations": 22484,
+        "marked_nodes_with_no_outside_sensitive_query": 15300
+      },
+      "witnesses": {
+        "tight_global_bound": {
+          "leaf_masks": [
+            0,
+            0,
+            0,
+            15,
+            15,
+            15
+          ],
+          "weighted_cost_numerator": 4,
+          "weighted_cost_denominator": 4,
+          "nonzero_selector_sparsity": 1,
+          "root_data_sparsity": 0
+        },
+        "uncorrected_local_bound_failure": {
+          "leaf_masks": [
+            0,
+            0,
+            15,
+            0,
+            15,
+            15
+          ],
+          "node_index": 6,
+          "depth": 1,
+          "ell": 1,
+          "band_sparsity": 1,
+          "delta_sparsity": 1
+        }
+      },
+      "seconds": 1.4118104169992876
+    },
+    "independent_queries_empty_blockers": {
+      "shape": [
+        1,
+        0,
+        [
+          2,
+          0,
+          null,
+          null
+        ],
+        [
+          4,
+          0,
+          null,
+          null
+        ]
+      ],
+      "leaf_library": [
+        0,
+        15,
+        3,
+        1,
+        2
+      ],
+      "sampling_seed": null,
+      "physical_selector_variables": 3,
+      "distinct_query_directions": [
+        1,
+        2,
+        4
+      ],
+      "query_rank": 3,
+      "maximum_isolation_cost": 0,
+      "maximum_actual_band_multiplicity": 1,
+      "tight_Kraft_frequencies": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "component_check": {
+        "query_groups": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ]
+        ],
+        "ranks": [
+          1,
+          1,
+          1
+        ],
+        "nullities": [
+          0,
+          0,
+          0
+        ],
+        "maximum_path_nullity": 0
+      },
+      "node_certificates": {
+        "0": {
+          "q": 1,
+          "depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "lca_positions": [],
+          "path_rank": 1,
+          "delta_count": 4,
+          "max_ell_over_delta_choices": 0
+        },
+        "1": {
+          "q": 2,
+          "depth": 1,
+          "ell": 0,
+          "delta": 2,
+          "lca_positions": [],
+          "path_rank": 2,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 1
+        },
+        "4": {
+          "q": 4,
+          "depth": 1,
+          "ell": 0,
+          "delta": 4,
+          "lca_positions": [],
+          "path_rank": 2,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 1
+        }
+      },
+      "counts": {
+        "full_walsh_coefficients_checked": 20000,
+        "checks_with_nonzero_marks": 620,
+        "checks_with_no_marks": 5,
+        "tight_nonempty_global_bounds": 620,
+        "families": 625,
+        "isolated_coefficients_checked": 10288,
+        "marked_nodes_checked": 1572,
+        "tight_local_isolations": 1572,
+        "marked_nodes_with_no_outside_sensitive_query": 1572
+      },
+      "witnesses": {
+        "tight_global_bound": {
+          "leaf_masks": [
+            0,
+            0,
+            0,
+            15
+          ],
+          "weighted_cost_numerator": 3,
+          "weighted_cost_denominator": 1,
+          "nonzero_selector_sparsity": 3,
+          "root_data_sparsity": 1
+        }
+      },
+      "seconds": 0.022613082999669132
+    },
+    "seven_distinct_dependent_queries": {
+      "shape": [
+        1,
+        0,
+        [
+          2,
+          0,
+          [
+            4,
+            0,
+            null,
+            null
+          ],
+          [
+            5,
+            0,
+            null,
+            null
+          ]
+        ],
+        [
+          3,
+          0,
+          [
+            6,
+            0,
+            null,
+            null
+          ],
+          [
+            7,
+            0,
+            null,
+            null
+          ]
+        ]
+      ],
+      "leaf_library": [
+        0,
+        15,
+        1
+      ],
+      "sampling_seed": null,
+      "physical_selector_variables": 3,
+      "distinct_query_directions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "query_rank": 3,
+      "maximum_isolation_cost": 2,
+      "maximum_actual_band_multiplicity": 4,
+      "tight_Kraft_frequencies": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "component_check": {},
+      "node_certificates": {
+        "0": {
+          "q": 1,
+          "depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "lca_positions": [],
+          "path_rank": 1,
+          "delta_count": 4,
+          "max_ell_over_delta_choices": 0
+        },
+        "1": {
+          "q": 2,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 1
+        },
+        "2": {
+          "q": 4,
+          "depth": 2,
+          "ell": 2,
+          "delta": 4,
+          "lca_positions": [
+            0,
+            1
+          ],
+          "path_rank": 3,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 2
+        },
+        "5": {
+          "q": 5,
+          "depth": 2,
+          "ell": 2,
+          "delta": 4,
+          "lca_positions": [
+            0,
+            1
+          ],
+          "path_rank": 3,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 2
+        },
+        "8": {
+          "q": 3,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 1
+        },
+        "9": {
+          "q": 6,
+          "depth": 2,
+          "ell": 2,
+          "delta": 4,
+          "lca_positions": [
+            0,
+            1
+          ],
+          "path_rank": 3,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 2
+        },
+        "12": {
+          "q": 7,
+          "depth": 2,
+          "ell": 2,
+          "delta": 4,
+          "lca_positions": [
+            0,
+            1
+          ],
+          "path_rank": 3,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 2
+        }
+      },
+      "counts": {
+        "full_walsh_coefficients_checked": 209952,
+        "checks_with_nonzero_marks": 6558,
+        "checks_with_no_marks": 3,
+        "tight_nonempty_global_bounds": 42,
+        "families": 6561,
+        "isolated_coefficients_checked": 136440,
+        "marked_nodes_checked": 34110,
+        "tight_local_isolations": 7706,
+        "marked_nodes_with_no_outside_sensitive_query": 5922
+      },
+      "witnesses": {
+        "uncorrected_local_bound_failure": {
+          "leaf_masks": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            0,
+            15
+          ],
+          "node_index": 12,
+          "depth": 2,
+          "ell": 2,
+          "band_sparsity": 2,
+          "delta_sparsity": 1
+        },
+        "tight_global_bound": {
+          "leaf_masks": [
+            0,
+            0,
+            0,
+            0,
+            15,
+            15,
+            15,
+            15
+          ],
+          "weighted_cost_numerator": 16,
+          "weighted_cost_denominator": 16,
+          "nonzero_selector_sparsity": 1,
+          "root_data_sparsity": 0
+        }
+      },
+      "seconds": 0.5531229589996656
+    },
+    "dependent_and_repeated_query": {
+      "shape": [
+        1,
+        0,
+        [
+          2,
+          0,
+          [
+            4,
+            0,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          3,
+          0,
+          [
+            4,
+            0,
+            null,
+            null
+          ],
+          null
+        ]
+      ],
+      "leaf_library": [
+        0,
+        15,
+        1
+      ],
+      "sampling_seed": null,
+      "physical_selector_variables": 3,
+      "distinct_query_directions": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "query_rank": 3,
+      "maximum_isolation_cost": 1,
+      "maximum_actual_band_multiplicity": 2,
+      "tight_Kraft_frequencies": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "component_check": {},
+      "node_certificates": {
+        "0": {
+          "q": 1,
+          "depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "lca_positions": [],
+          "path_rank": 1,
+          "delta_count": 4,
+          "max_ell_over_delta_choices": 0
+        },
+        "1": {
+          "q": 2,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 1
+        },
+        "2": {
+          "q": 4,
+          "depth": 2,
+          "ell": 1,
+          "delta": 4,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 3,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 1
+        },
+        "6": {
+          "q": 3,
+          "depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "delta_count": 2,
+          "max_ell_over_delta_choices": 1
+        },
+        "7": {
+          "q": 4,
+          "depth": 2,
+          "ell": 1,
+          "delta": 4,
+          "lca_positions": [
+            0
+          ],
+          "path_rank": 3,
+          "delta_count": 1,
+          "max_ell_over_delta_choices": 1
+        }
+      },
+      "counts": {
+        "full_walsh_coefficients_checked": 23328,
+        "checks_with_nonzero_marks": 726,
+        "checks_with_no_marks": 3,
+        "tight_nonempty_global_bounds": 78,
+        "families": 729,
+        "isolated_coefficients_checked": 15672,
+        "marked_nodes_checked": 2946,
+        "tight_local_isolations": 1054,
+        "marked_nodes_with_no_outside_sensitive_query": 678
+      },
+      "witnesses": {
+        "tight_global_bound": {
+          "leaf_masks": [
+            0,
+            0,
+            0,
+            15,
+            15,
+            15
+          ],
+          "weighted_cost_numerator": 4,
+          "weighted_cost_denominator": 4,
+          "nonzero_selector_sparsity": 1,
+          "root_data_sparsity": 0
+        },
+        "uncorrected_local_bound_failure": {
+          "leaf_masks": [
+            0,
+            0,
+            15,
+            0,
+            0,
+            15
+          ],
+          "node_index": 6,
+          "depth": 1,
+          "ell": 1,
+          "band_sparsity": 1,
+          "delta_sparsity": 1
+        }
+      },
+      "seconds": 0.022537082999406266
+    },
+    "three_independent_dependent_clusters": {
+      "shape": [
+        1,
+        0,
+        [
+          4,
+          0,
+          [
+            8,
+            0,
+            null,
+            null
+          ],
+          [
+            12,
+            0,
+            null,
+            null
+          ]
+        ],
+        [
+          2,
+          0,
+          [
+            16,
+            0,
+            [
+              32,
+              0,
+              null,
+              null
+            ],
+            [
+              48,
+              0,
+              null,
+              null
+            ]
+          ],
+          [
+            64,
+            0,
+            [
+              128,
+              0,
+              null,
+              null
+            ],
+            [
+              192,
+              0,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "leaf_library": [
+        0,
+        15,
+        3,
+        1,
+        2
+      ],
+      "sampling_seed": 202611180945,
+      "physical_selector_variables": 8,
+      "distinct_query_directions": [
+        1,
+        2,
+        4,
+        8,
+        12,
+        16,
+        32,
+        48,
+        64,
+        128,
+        192
+      ],
+      "query_rank": 8,
+      "maximum_isolation_cost": 1,
+      "maximum_actual_band_multiplicity": 2,
+      "tight_Kraft_frequencies": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        12,
+        13,
+        16,
+        17,
+        18,
+        19,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        64,
+        65,
+        66,
+        67,
+        128,
+        129,
+        130,
+        131,
+        192,
+        193,
+        194,
+        195
+      ],
+      "component_check": {
+        "query_groups": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            4,
+            8,
+            12
+          ],
+          [
+            16,
+            32,
+            48
+          ],
+          [
+            64,
+            128,
+            192
+          ]
+        ],
+        "ranks": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "nullities": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "maximum_path_nullity": 1
+      },
+      "node_certificates": {
+        "0": {
+          "q": 1,
+          "depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "lca_positions": [],
+          "path_rank": 1,
+          "delta_count": 128,
+          "max_ell_over_delta_choices": 0
+        },
+        "1": {
+          "q": 4,
+          "depth": 1,
+          "ell": 0,
+          "delta": 4,
+          "lca_positions": [],
+          "path_rank": 2,
+          "delta_count": 64,
+          "max_ell_over_delta_choices": 1
+        },
+        "2": {
+          "q": 8,
+          "depth": 2,
+          "ell": 1,
+          "delta": 8,
+          "lca_positions": [
+            1
+          ],
+          "path_rank": 3,
+          "delta_count": 32,
+          "max_ell_over_delta_choices": 2
+        },
+        "5": {
+          "q": 12,
+          "depth": 2,
+          "ell": 1,
+          "delta": 8,
+          "lca_positions": [
+            1
+          ],
+          "path_rank": 3,
+          "delta_count": 32,
+          "max_ell_over_delta_choices": 2
+        },
+        "8": {
+          "q": 2,
+          "depth": 1,
+          "ell": 0,
+          "delta": 2,
+          "lca_positions": [],
+          "path_rank": 2,
+          "delta_count": 64,
+          "max_ell_over_delta_choices": 1
+        },
+        "9": {
+          "q": 16,
+          "depth": 2,
+          "ell": 0,
+          "delta": 16,
+          "lca_positions": [],
+          "path_rank": 3,
+          "delta_count": 32,
+          "max_ell_over_delta_choices": 2
+        },
+        "10": {
+          "q": 32,
+          "depth": 3,
+          "ell": 1,
+          "delta": 32,
+          "lca_positions": [
+            2
+          ],
+          "path_rank": 4,
+          "delta_count": 16,
+          "max_ell_over_delta_choices": 3
+        },
+        "13": {
+          "q": 48,
+          "depth": 3,
+          "ell": 1,
+          "delta": 32,
+          "lca_positions": [
+            2
+          ],
+          "path_rank": 4,
+          "delta_count": 16,
+          "max_ell_over_delta_choices": 3
+        },
+        "16": {
+          "q": 64,
+          "depth": 2,
+          "ell": 0,
+          "delta": 64,
+          "lca_positions": [],
+          "path_rank": 3,
+          "delta_count": 32,
+          "max_ell_over_delta_choices": 2
+        },
+        "17": {
+          "q": 128,
+          "depth": 3,
+          "ell": 1,
+          "delta": 128,
+          "lca_positions": [
+            2
+          ],
+          "path_rank": 4,
+          "delta_count": 16,
+          "max_ell_over_delta_choices": 3
+        },
+        "20": {
+          "q": 192,
+          "depth": 3,
+          "ell": 1,
+          "delta": 128,
+          "lca_positions": [
+            2
+          ],
+          "path_rank": 4,
+          "delta_count": 16,
+          "max_ell_over_delta_choices": 3
+        }
+      },
+      "counts": {
+        "full_walsh_coefficients_checked": 131072,
+        "checks_with_nonzero_marks": 126,
+        "checks_with_no_marks": 2,
+        "tight_nonempty_global_bounds": 1,
+        "families": 128,
+        "isolated_coefficients_checked": 14320,
+        "marked_nodes_checked": 1209,
+        "tight_local_isolations": 711,
+        "marked_nodes_with_no_outside_sensitive_query": 603
+      },
+      "witnesses": {
+        "uncorrected_local_bound_failure": {
+          "leaf_masks": [
+            0,
+            0,
+            1,
+            0,
+            3,
+            15,
+            3,
+            0,
+            15,
+            1,
+            15,
+            3
+          ],
+          "node_index": 13,
+          "depth": 3,
+          "ell": 1,
+          "band_sparsity": 8,
+          "delta_sparsity": 2
+        },
+        "tight_global_bound": {
+          "leaf_masks": [
+            0,
+            2,
+            3,
+            1,
+            15,
+            15,
+            2,
+            2,
+            1,
+            0,
+            3,
+            2
+          ],
+          "weighted_cost_numerator": 304,
+          "weighted_cost_denominator": 4,
+          "nonzero_selector_sparsity": 76,
+          "root_data_sparsity": 4
+        }
+      },
+      "seconds": 0.1364400000002206
+    },
+    "leaf_only": {
+      "shape": null,
+      "leaf_library": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sampling_seed": null,
+      "physical_selector_variables": 0,
+      "distinct_query_directions": [],
+      "query_rank": 0,
+      "maximum_isolation_cost": 0,
+      "maximum_actual_band_multiplicity": 0,
+      "tight_Kraft_frequencies": [],
+      "component_check": {},
+      "node_certificates": {},
+      "counts": {
+        "full_walsh_coefficients_checked": 64,
+        "checks_with_nonzero_marks": 0,
+        "checks_with_no_marks": 16,
+        "tight_nonempty_global_bounds": 0,
+        "families": 16
+      },
+      "witnesses": {},
+      "seconds": 5.7124999329971615e-05
+    }
+  },
+  "excluded_path_dependent_control": {
+    "path_query_vectors": [
+      1,
+      2,
+      3
+    ],
+    "path_rank": 2,
+    "delta_solutions": []
+  },
+  "seconds": 3.346885250000014
+}

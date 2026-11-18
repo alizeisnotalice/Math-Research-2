@@ -1,0 +1,1351 @@
+{
+  "address_frequencies_capacity_equals_one" : 1815,
+  "address_frequency_capacity_checks" : 36968,
+  "all_checks_passed" : true,
+  "all_feasible_dual_shift_evaluations" : 87276,
+  "command_buffers" : 4,
+  "component_examples" : [
+    {
+      "address_bits" : 3,
+      "components" : 1,
+      "data_bits" : 2,
+      "description" : "independent selector components with reversed and dependent labels",
+      "global_sparsity" : 16,
+      "nodes" : [
+        {
+          "band_addresses" : [
+            1
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 0,
+          "lca_blockers_maximum_over_shifts" : 0,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 1,
+          "node" : 0,
+          "query" : 1,
+          "true_band_sparsity" : 4
+        },
+        {
+          "band_addresses" : [
+            2,
+            3
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 1,
+          "lca_blockers_maximum_over_shifts" : 1,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            0
+          ],
+          "minimizing_shift" : 2,
+          "node" : 1,
+          "query" : 2,
+          "true_band_sparsity" : 4
+        },
+        {
+          "band_addresses" : [
+            4,
+            5
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 1,
+          "lca_blockers_maximum_over_shifts" : 1,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            0
+          ],
+          "minimizing_shift" : 4,
+          "node" : 2,
+          "query" : 4,
+          "true_band_sparsity" : 4
+        },
+        {
+          "band_addresses" : [
+            4,
+            5,
+            6,
+            7
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            0,
+            1
+          ],
+          "minimizing_shift" : 4,
+          "node" : 3,
+          "query" : 4,
+          "true_band_sparsity" : 8
+        },
+        {
+          "band_addresses" : [
+            4,
+            5,
+            6,
+            7
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            0,
+            1
+          ],
+          "minimizing_shift" : 4,
+          "node" : 4,
+          "query" : 6,
+          "true_band_sparsity" : 8
+        },
+        {
+          "band_addresses" : [
+            2,
+            3,
+            6,
+            7
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            0,
+            2
+          ],
+          "minimizing_shift" : 2,
+          "node" : 5,
+          "query" : 2,
+          "true_band_sparsity" : 8
+        },
+        {
+          "band_addresses" : [
+            2,
+            3,
+            6,
+            7
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            0,
+            2
+          ],
+          "minimizing_shift" : 2,
+          "node" : 6,
+          "query" : 6,
+          "true_band_sparsity" : 8
+        }
+      ],
+      "nodes_with_shift_dependent_blocker_count" : 0,
+      "number_of_distinct_query_labels" : 4,
+      "ordering_cycle_between_two_labels" : true,
+      "query_rank" : 3,
+      "weighted_bound_denominator" : 16,
+      "weighted_bound_numerator" : 160,
+      "zero_blocker_active_nodes" : 1,
+      "zero_blocker_all_nodes" : 1
+    },
+    {
+      "address_bits" : 7,
+      "components" : 2,
+      "data_bits" : 2,
+      "description" : "independent selector components with reversed and dependent labels",
+      "global_sparsity" : 64,
+      "nodes" : [
+        {
+          "band_addresses" : [
+            1
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 0,
+          "lca_blockers_maximum_over_shifts" : 0,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 1,
+          "node" : 0,
+          "query" : 1,
+          "true_band_sparsity" : 0
+        },
+        {
+          "band_addresses" : [
+            2,
+            3
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 1,
+          "lca_blockers_maximum_over_shifts" : 1,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 2,
+          "node" : 1,
+          "query" : 2,
+          "true_band_sparsity" : 8
+        },
+        {
+          "band_addresses" : [
+            16,
+            17
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 1,
+          "lca_blockers_maximum_over_shifts" : 1,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 16,
+          "node" : 2,
+          "query" : 16,
+          "true_band_sparsity" : 8
+        },
+        {
+          "band_addresses" : [
+            4,
+            5,
+            6,
+            7
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            1
+          ],
+          "minimizing_shift" : 4,
+          "node" : 3,
+          "query" : 4,
+          "true_band_sparsity" : 8
+        },
+        {
+          "band_addresses" : [
+            8,
+            9,
+            10,
+            11
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            1
+          ],
+          "minimizing_shift" : 8,
+          "node" : 4,
+          "query" : 8,
+          "true_band_sparsity" : 8
+        },
+        {
+          "band_addresses" : [
+            32,
+            33,
+            48,
+            49
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            2
+          ],
+          "minimizing_shift" : 32,
+          "node" : 5,
+          "query" : 32,
+          "true_band_sparsity" : 8
+        },
+        {
+          "band_addresses" : [
+            64,
+            65,
+            80,
+            81
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            2
+          ],
+          "minimizing_shift" : 64,
+          "node" : 6,
+          "query" : 64,
+          "true_band_sparsity" : 8
+        },
+        {
+          "band_addresses" : [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            1,
+            3
+          ],
+          "minimizing_shift" : 8,
+          "node" : 7,
+          "query" : 8,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            1,
+            3
+          ],
+          "minimizing_shift" : 8,
+          "node" : 8,
+          "query" : 12,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            4,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            1,
+            4
+          ],
+          "minimizing_shift" : 4,
+          "node" : 9,
+          "query" : 4,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            4,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            1,
+            4
+          ],
+          "minimizing_shift" : 4,
+          "node" : 10,
+          "query" : 12,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            64,
+            65,
+            80,
+            81,
+            96,
+            97,
+            112,
+            113
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            2,
+            5
+          ],
+          "minimizing_shift" : 64,
+          "node" : 11,
+          "query" : 64,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            64,
+            65,
+            80,
+            81,
+            96,
+            97,
+            112,
+            113
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            2,
+            5
+          ],
+          "minimizing_shift" : 64,
+          "node" : 12,
+          "query" : 96,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            32,
+            33,
+            48,
+            49,
+            96,
+            97,
+            112,
+            113
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            2,
+            6
+          ],
+          "minimizing_shift" : 32,
+          "node" : 13,
+          "query" : 32,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            32,
+            33,
+            48,
+            49,
+            96,
+            97,
+            112,
+            113
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            2,
+            6
+          ],
+          "minimizing_shift" : 32,
+          "node" : 14,
+          "query" : 96,
+          "true_band_sparsity" : 16
+        }
+      ],
+      "nodes_with_shift_dependent_blocker_count" : 14,
+      "number_of_distinct_query_labels" : 9,
+      "ordering_cycle_between_two_labels" : true,
+      "query_rank" : 7,
+      "weighted_bound_denominator" : 64,
+      "weighted_bound_numerator" : 2560,
+      "zero_blocker_active_nodes" : 2,
+      "zero_blocker_all_nodes" : 3
+    },
+    {
+      "address_bits" : 15,
+      "components" : 4,
+      "data_bits" : 2,
+      "description" : "independent selector components with reversed and dependent labels",
+      "global_sparsity" : 256,
+      "nodes" : [
+        {
+          "band_addresses" : [
+            1
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 0,
+          "lca_blockers_maximum_over_shifts" : 0,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 1,
+          "node" : 0,
+          "query" : 1,
+          "true_band_sparsity" : 0
+        },
+        {
+          "band_addresses" : [
+            2,
+            3
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 1,
+          "lca_blockers_maximum_over_shifts" : 1,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 2,
+          "node" : 1,
+          "query" : 2,
+          "true_band_sparsity" : 0
+        },
+        {
+          "band_addresses" : [
+            4,
+            5
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 1,
+          "lca_blockers_maximum_over_shifts" : 1,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 4,
+          "node" : 2,
+          "query" : 4,
+          "true_band_sparsity" : 0
+        },
+        {
+          "band_addresses" : [
+            8,
+            9,
+            10,
+            11
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 8,
+          "node" : 3,
+          "query" : 8,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            64,
+            65,
+            66,
+            67
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 64,
+          "node" : 4,
+          "query" : 64,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            512,
+            513,
+            516,
+            517
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 512,
+          "node" : 5,
+          "query" : 512,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            4096,
+            4097,
+            4100,
+            4101
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 2,
+          "lca_blockers_maximum_over_shifts" : 2,
+          "lca_blockers_minimum" : 0,
+          "minimizing_blocker_ancestors" : [
+
+          ],
+          "minimizing_shift" : 4096,
+          "node" : 6,
+          "query" : 4096,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            16,
+            17,
+            18,
+            19,
+            24,
+            25,
+            26,
+            27
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            3
+          ],
+          "minimizing_shift" : 16,
+          "node" : 7,
+          "query" : 16,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            32,
+            33,
+            34,
+            35,
+            40,
+            41,
+            42,
+            43
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            3
+          ],
+          "minimizing_shift" : 32,
+          "node" : 8,
+          "query" : 32,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            128,
+            129,
+            130,
+            131,
+            192,
+            193,
+            194,
+            195
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            4
+          ],
+          "minimizing_shift" : 128,
+          "node" : 9,
+          "query" : 128,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            256,
+            257,
+            258,
+            259,
+            320,
+            321,
+            322,
+            323
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            4
+          ],
+          "minimizing_shift" : 256,
+          "node" : 10,
+          "query" : 256,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            1024,
+            1025,
+            1028,
+            1029,
+            1536,
+            1537,
+            1540,
+            1541
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            5
+          ],
+          "minimizing_shift" : 1024,
+          "node" : 11,
+          "query" : 1024,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            2048,
+            2049,
+            2052,
+            2053,
+            2560,
+            2561,
+            2564,
+            2565
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            5
+          ],
+          "minimizing_shift" : 2048,
+          "node" : 12,
+          "query" : 2048,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            8192,
+            8193,
+            8196,
+            8197,
+            12288,
+            12289,
+            12292,
+            12293
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            6
+          ],
+          "minimizing_shift" : 8192,
+          "node" : 13,
+          "query" : 8192,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            16384,
+            16385,
+            16388,
+            16389,
+            20480,
+            20481,
+            20484,
+            20485
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 3,
+          "lca_blockers_maximum_over_shifts" : 3,
+          "lca_blockers_minimum" : 1,
+          "minimizing_blocker_ancestors" : [
+            6
+          ],
+          "minimizing_shift" : 16384,
+          "node" : 14,
+          "query" : 16384,
+          "true_band_sparsity" : 16
+        },
+        {
+          "band_addresses" : [
+            32,
+            33,
+            34,
+            35,
+            40,
+            41,
+            42,
+            43,
+            48,
+            49,
+            50,
+            51,
+            56,
+            57,
+            58,
+            59
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            3,
+            7
+          ],
+          "minimizing_shift" : 32,
+          "node" : 15,
+          "query" : 32,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            32,
+            33,
+            34,
+            35,
+            40,
+            41,
+            42,
+            43,
+            48,
+            49,
+            50,
+            51,
+            56,
+            57,
+            58,
+            59
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            3,
+            7
+          ],
+          "minimizing_shift" : 32,
+          "node" : 16,
+          "query" : 48,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            16,
+            17,
+            18,
+            19,
+            24,
+            25,
+            26,
+            27,
+            48,
+            49,
+            50,
+            51,
+            56,
+            57,
+            58,
+            59
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            3,
+            8
+          ],
+          "minimizing_shift" : 16,
+          "node" : 17,
+          "query" : 16,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            16,
+            17,
+            18,
+            19,
+            24,
+            25,
+            26,
+            27,
+            48,
+            49,
+            50,
+            51,
+            56,
+            57,
+            58,
+            59
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            3,
+            8
+          ],
+          "minimizing_shift" : 16,
+          "node" : 18,
+          "query" : 48,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            256,
+            257,
+            258,
+            259,
+            320,
+            321,
+            322,
+            323,
+            384,
+            385,
+            386,
+            387,
+            448,
+            449,
+            450,
+            451
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            4,
+            9
+          ],
+          "minimizing_shift" : 256,
+          "node" : 19,
+          "query" : 256,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            256,
+            257,
+            258,
+            259,
+            320,
+            321,
+            322,
+            323,
+            384,
+            385,
+            386,
+            387,
+            448,
+            449,
+            450,
+            451
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            4,
+            9
+          ],
+          "minimizing_shift" : 256,
+          "node" : 20,
+          "query" : 384,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            128,
+            129,
+            130,
+            131,
+            192,
+            193,
+            194,
+            195,
+            384,
+            385,
+            386,
+            387,
+            448,
+            449,
+            450,
+            451
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            4,
+            10
+          ],
+          "minimizing_shift" : 128,
+          "node" : 21,
+          "query" : 128,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            128,
+            129,
+            130,
+            131,
+            192,
+            193,
+            194,
+            195,
+            384,
+            385,
+            386,
+            387,
+            448,
+            449,
+            450,
+            451
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            4,
+            10
+          ],
+          "minimizing_shift" : 128,
+          "node" : 22,
+          "query" : 384,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            2048,
+            2049,
+            2052,
+            2053,
+            2560,
+            2561,
+            2564,
+            2565,
+            3072,
+            3073,
+            3076,
+            3077,
+            3584,
+            3585,
+            3588,
+            3589
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            5,
+            11
+          ],
+          "minimizing_shift" : 2048,
+          "node" : 23,
+          "query" : 2048,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            2048,
+            2049,
+            2052,
+            2053,
+            2560,
+            2561,
+            2564,
+            2565,
+            3072,
+            3073,
+            3076,
+            3077,
+            3584,
+            3585,
+            3588,
+            3589
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            5,
+            11
+          ],
+          "minimizing_shift" : 2048,
+          "node" : 24,
+          "query" : 3072,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            1024,
+            1025,
+            1028,
+            1029,
+            1536,
+            1537,
+            1540,
+            1541,
+            3072,
+            3073,
+            3076,
+            3077,
+            3584,
+            3585,
+            3588,
+            3589
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            5,
+            12
+          ],
+          "minimizing_shift" : 1024,
+          "node" : 25,
+          "query" : 1024,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            1024,
+            1025,
+            1028,
+            1029,
+            1536,
+            1537,
+            1540,
+            1541,
+            3072,
+            3073,
+            3076,
+            3077,
+            3584,
+            3585,
+            3588,
+            3589
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            5,
+            12
+          ],
+          "minimizing_shift" : 1024,
+          "node" : 26,
+          "query" : 3072,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            16384,
+            16385,
+            16388,
+            16389,
+            20480,
+            20481,
+            20484,
+            20485,
+            24576,
+            24577,
+            24580,
+            24581,
+            28672,
+            28673,
+            28676,
+            28677
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            6,
+            13
+          ],
+          "minimizing_shift" : 16384,
+          "node" : 27,
+          "query" : 16384,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            16384,
+            16385,
+            16388,
+            16389,
+            20480,
+            20481,
+            20484,
+            20485,
+            24576,
+            24577,
+            24580,
+            24581,
+            28672,
+            28673,
+            28676,
+            28677
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            6,
+            13
+          ],
+          "minimizing_shift" : 16384,
+          "node" : 28,
+          "query" : 24576,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            8192,
+            8193,
+            8196,
+            8197,
+            12288,
+            12289,
+            12292,
+            12293,
+            24576,
+            24577,
+            24580,
+            24581,
+            28672,
+            28673,
+            28676,
+            28677
+          ],
+          "delta_sparsity" : 4,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            6,
+            14
+          ],
+          "minimizing_shift" : 8192,
+          "node" : 29,
+          "query" : 8192,
+          "true_band_sparsity" : 32
+        },
+        {
+          "band_addresses" : [
+            8192,
+            8193,
+            8196,
+            8197,
+            12288,
+            12289,
+            12292,
+            12293,
+            24576,
+            24577,
+            24580,
+            24581,
+            28672,
+            28673,
+            28676,
+            28677
+          ],
+          "delta_sparsity" : 0,
+          "depth" : 4,
+          "lca_blockers_maximum_over_shifts" : 4,
+          "lca_blockers_minimum" : 2,
+          "minimizing_blocker_ancestors" : [
+            6,
+            14
+          ],
+          "minimizing_shift" : 8192,
+          "node" : 30,
+          "query" : 24576,
+          "true_band_sparsity" : 32
+        }
+      ],
+      "nodes_with_shift_dependent_blocker_count" : 30,
+      "number_of_distinct_query_labels" : 19,
+      "ordering_cycle_between_two_labels" : true,
+      "query_rank" : 15,
+      "weighted_bound_denominator" : 256,
+      "weighted_bound_numerator" : 40960,
+      "zero_blocker_active_nodes" : 4,
+      "zero_blocker_all_nodes" : 7
+    }
+  ],
+  "cpu_backend" : "Int32 direct local Walsh and full FWHT",
+  "device" : "Apple M5 Pro",
+  "exact_blocker_multiplication_coefficient_checks" : 17580,
+  "exhaustive_three_address_variable_label_configurations" : 252,
+  "full_coefficient_mismatches" : 0,
+  "full_coefficients_cpu_metal_and_haar" : 156064,
+  "gpu_backend" : "Int32 Metal FWHT",
+  "gpu_command_seconds" : 0.0028467500815168023,
+  "local_band_lower_bound_checks" : 1257,
+  "local_nonzero_coefficient_globally_vanishing_occurrences" : 1123,
+  "maximum_minimal_blocker_count" : 2,
+  "measured_cpu_gpu_overlap_seconds" : 0.00018891668878495693,
+  "nodes_where_blocker_count_depends_on_shift" : 670,
+  "number_of_trees" : 319,
+  "random_five_address_variable_cases" : 64,
+  "schema" : "a28-r045-parity-query-lca-blocker-metal-v1",
+  "seed_hex" : "a280450ddbb12345",
+  "trees_with_dependence_of_distinct_query_labels" : 107,
+  "trees_with_two_label_order_cycles" : 3,
+  "zero_blocker_nodes_active" : 714,
+  "zero_blocker_nodes_all" : 761
+}
