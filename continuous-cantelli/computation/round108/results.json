@@ -1,0 +1,70 @@
+{
+  "scope": "Exact Gaussian tilt benchmark and illustrative symmetric mixture profiles; the mixtures are not exact graphs.",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "likelihood_algebra": "f*s**2/2 - f*t**2/2 - s*x + t*x",
+  "true_gaussian_cells": [
+    {
+      "p_t": "0.01072411002167580539235548386281454155",
+      "p_u": "0.2578461108058647250894813557050102607",
+      "score_mean": "-2.641434830894679808200087770671768389",
+      "score_variance": "0.09812214519415784390488702032519841332",
+      "conditional_kl_formula": "0.1827509865328564531349705075650460498",
+      "conditional_kl_integral": "0.1827509865328564531349705075650460498"
+    },
+    {
+      "p_t": "0.147931143909781246022411970505147536",
+      "p_u": "0.4843077783882705498210372885899794786",
+      "score_mean": "-1.444210334152739565088925853787961349",
+      "score_variance": "0.1095324549271812952395643996745493762",
+      "conditional_kl_formula": "0.1642766373713218034050677987983779199",
+      "conditional_kl_integral": "0.1642766373713218034050677987983779199"
+    },
+    {
+      "p_t": "0.5993810938454699338358821174595304077",
+      "p_u": "0.2484594052710261477674682446498758442",
+      "score_mean": "-0.1172596359299548520777724443270595386",
+      "score_variance": "0.2178767962971510781279994122374262174",
+      "conditional_kl_formula": "0.2871534612516339871373037118031084119",
+      "conditional_kl_integral": "0.2871534612516339871373037118031084119"
+    },
+    {
+      "p_t": "0.2419636522230730147493504281725075147",
+      "p_u": "0.009386705534838577322013111055134416471",
+      "score_mean": "1.290499339458166546945649277743687805",
+      "score_variance": "0.2379609924787524096814921859723685729",
+      "conditional_kl_formula": "0.2410807760538881189170733258091889868",
+      "conditional_kl_integral": "0.2410807760538881189170733258091889868"
+    }
+  ],
+  "categorical_kl": "1.1045413866685712216279297622662543488",
+  "mean_conditional_kl": "0.25670861333142877837207023773374565121",
+  "max_cross_method_difference": "4.1145472746825e-48",
+  "illustrative_multiwell": [
+    {
+      "symmetric_mixture_base_a": "0.5",
+      "union_probability": "0.82575210824288060964875718743997285",
+      "Huber_probability": "0.82795049885955560753975948991164939",
+      "coarse_entropy_required_delta": "0.000033813794824811822883802745438623374",
+      "local_tilt_defect_at_lambda_one": "0.0048735784314042109947918999952175431",
+      "indicative_required_energy_ratio_for_log_lr_threshold_100": "0.46861331071194336488383653800168684"
+    },
+    {
+      "symmetric_mixture_base_a": "0.8",
+      "union_probability": "0.73035697801993545296844109612879709",
+      "Huber_probability": "0.67986994744981843339788856814150572",
+      "coarse_entropy_required_delta": "0.012076922984595449066140424889693286",
+      "local_tilt_defect_at_lambda_one": "0.028822901592033568597483035284728545",
+      "indicative_required_energy_ratio_for_log_lr_threshold_100": "2.7714328453878431343733687773777447"
+    },
+    {
+      "symmetric_mixture_base_a": "0.95",
+      "union_probability": "0.68268967607551757427206762866696894",
+      "Huber_probability": "0.31673215234207828482531971830708715",
+      "coarse_entropy_required_delta": "0.56183110571071213830143176849869508",
+      "local_tilt_defect_at_lambda_one": "0.053524716525484774128946164897281789",
+      "indicative_required_energy_ratio_for_log_lr_threshold_100": "5.1466073582196898200909773939694028"
+    }
+  ]
+}
