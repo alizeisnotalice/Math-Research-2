@@ -1,0 +1,351 @@
+{
+  "best_margin": {
+    "L": [
+      2,
+      1
+    ],
+    "a": 5,
+    "compatibility_dimension_margin": [
+      1,
+      2
+    ],
+    "compatible_dimension": 5,
+    "coordinates": [
+      16,
+      1,
+      2,
+      4,
+      7,
+      8,
+      11,
+      28,
+      13,
+      14
+    ],
+    "generators": [
+      [
+        20,
+        0,
+        9,
+        20,
+        9
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        20,
+        20,
+        3,
+        0,
+        3
+      ],
+      [
+        20,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        16,
+        0,
+        4
+      ]
+    ],
+    "kind": "basis-rank2",
+    "local_dimension": 5,
+    "margin": [
+      1,
+      2
+    ],
+    "nonlocal_dimension": 0,
+    "parent_l1": [
+      23,
+      4
+    ],
+    "seed": "actual-4-2"
+  },
+  "best_nonlocal_margin": {
+    "L": [
+      2,
+      1
+    ],
+    "a": 5,
+    "certified_ranks_unchanged": true,
+    "compatibility_dimension_margin": [
+      0,
+      1
+    ],
+    "compatible_dimension": 6,
+    "coordinates": [
+      16,
+      17,
+      18,
+      20,
+      23,
+      24,
+      27,
+      28,
+      29,
+      30
+    ],
+    "extension_vector": 832,
+    "generators": [
+      [
+        26,
+        17,
+        0,
+        17,
+        11
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        26,
+        5,
+        26,
+        5,
+        5
+      ],
+      [
+        26,
+        9,
+        0,
+        19,
+        9
+      ],
+      [
+        0,
+        16,
+        0,
+        16,
+        10
+      ]
+    ],
+    "kind": "random-rank2",
+    "local_dimension": 5,
+    "margin": [
+      1,
+      1
+    ],
+    "new_generators": [
+      [
+        26,
+        17,
+        0,
+        17,
+        11,
+        0
+      ],
+      [
+        0,
+        32,
+        0,
+        32,
+        32,
+        26
+      ],
+      [
+        26,
+        5,
+        26,
+        5,
+        5,
+        0
+      ],
+      [
+        26,
+        9,
+        0,
+        19,
+        9,
+        0
+      ],
+      [
+        0,
+        16,
+        0,
+        16,
+        10,
+        0
+      ]
+    ],
+    "nonlocal_dimension": 1,
+    "parent_l1": [
+      6,
+      1
+    ],
+    "seed": "actual-4-2"
+  },
+  "draws_per_task": 640,
+  "exact_examples": [
+    {
+      "a": 5,
+      "case": "tight-rank2-pencil",
+      "compatible_dimension": 5,
+      "g": [
+        [
+          20,
+          0,
+          17,
+          0,
+          5
+        ],
+        [
+          10,
+          17,
+          0,
+          17,
+          10
+        ],
+        [
+          26,
+          25,
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "local_dimension": 5,
+      "nonlocal_dimension": 0
+    },
+    {
+      "a": 5,
+      "case": "rank4-pencil-before-extension",
+      "certified_ranks_unchanged": true,
+      "compatible_dimension": 6,
+      "extension_vector": 512,
+      "g": [
+        [
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          8
+        ],
+        [
+          0,
+          0,
+          8,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "local_dimension": 5,
+      "new_generators": [
+        [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          40,
+          16
+        ],
+        [
+          0,
+          0,
+          8,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "nonlocal_dimension": 1
+    },
+    {
+      "a": 6,
+      "case": "rank4-pencil-after-extension",
+      "compatible_dimension": 6,
+      "local_dimension": 6,
+      "nonlocal_dimension": 0
+    }
+  ],
+  "host": "zzhdeMac-Mini.local",
+  "mean_active_cores": 4.458800991269313,
+  "python": "3.15.0",
+  "random_scan": {
+    "compatibility_dimension_upper_bound_failures": 0,
+    "compatibility_dimension_upper_bound_ties": 1,
+    "compatibility_rechecks": 3853,
+    "full_address_trials": 35045,
+    "near_one_axis": 1,
+    "nonlocal_found": 1971,
+    "possible_one_axis_counterexample": 0
+  },
+  "status": "pass",
+  "tasks": 72,
+  "wall_seconds": 1.3178415830043377,
+  "worker_wall_seconds": 0.6266700409978512,
+  "workers": 12
+}
