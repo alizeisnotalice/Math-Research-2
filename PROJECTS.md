@@ -12,4 +12,4 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；多层切片的装填预算与逐步递推障碍 | 第75轮完成 | 一般共同运动商、高容量构造与非平坦谱 |
+| [fourier-sparsity-dimension](fourier-sparsity-dimension/README.md) | A28／A165：布尔 Fourier 稀疏度与谱线性维数 | 原题未解决；奇重量分支的模长对齐与二次共同因子 | 第76轮完成 | 一般共同运动商、高容量构造与非平坦谱 |
