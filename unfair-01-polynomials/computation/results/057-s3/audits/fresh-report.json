@@ -1,0 +1,216 @@
+{
+  "architecture": "arm64",
+  "archive": {
+    "layers": 8869759,
+    "manifest_sha256": "71999092bfb1ebec6a863c3cd62b11f43125eb389ad170c88227c02633ce9b2d",
+    "mothers": 869396,
+    "root_sha256": "6da30bcf5f93f0fc121923d1979a37d0508327a5401d10c4e8d86ceb41fd546a",
+    "states": {
+      "empty_forward": 869395,
+      "empty_reverse": 1
+    },
+    "tree_sha256": "1952d4f37bc538467cbab5a486b6ce7dac313e9e550fb5dc4d1177dd957e638a"
+  },
+  "binaries_sha256": {
+    "boundary": "e9be111e76ea842a6852136d048f60fd8e4aa415cc535b1f75a6263fc043d6c4",
+    "budget": "a50fdda86d4563d948d1ba5fd6165d6e01dadb3a7fdeaebac5f681a266c1732a",
+    "screen": "ab66a3d2ec54a880090cf973df7fa330cf6a549639490dc65f6a1d0ef119c03c"
+  },
+  "cached_cores": 0,
+  "commands": [
+    {
+      "command": [
+        "clang++",
+        "--version"
+      ],
+      "exit_code": 0,
+      "label": "compiler-version",
+      "pid": 51582,
+      "seconds": 0.014003833000060695,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ce403379b194079b66c357f092406ba3c976e92f75e4a332c2580339788ba1b1"
+    },
+    {
+      "command": [
+        "clang++",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-Wno-deprecated-literal-operator",
+        "-fmodules-cache-path=/Volumes/data/CodexTemp/cache",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/certificate/modules/s3_tail_screen.cpp",
+        "-I/opt/homebrew/include",
+        "-L/opt/homebrew/lib",
+        "-lgmpxx",
+        "-lgmp",
+        "-o",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/screen"
+      ],
+      "exit_code": 0,
+      "label": "compile-screen",
+      "pid": 51583,
+      "seconds": 0.9464751250002337,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "clang++",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-Wno-deprecated-literal-operator",
+        "-fmodules-cache-path=/Volumes/data/CodexTemp/cache",
+        "-Wno-return-type",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/certificate/modules/exact_boundary.cpp",
+        "-I/opt/homebrew/include",
+        "-L/opt/homebrew/lib",
+        "-lgmpxx",
+        "-lgmp",
+        "-o",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/boundary"
+      ],
+      "exit_code": 0,
+      "label": "compile-fixture",
+      "pid": 51587,
+      "seconds": 0.7707637920002526,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "clang++",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-Wno-deprecated-literal-operator",
+        "-fmodules-cache-path=/Volumes/data/CodexTemp/cache",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/certificate/modules/s3_budget_tree.cpp",
+        "-o",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/budget"
+      ],
+      "exit_code": 0,
+      "label": "compile-budget",
+      "pid": 51592,
+      "seconds": 0.7560162500003571,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/boundary"
+      ],
+      "exit_code": 0,
+      "label": "exact-boundary",
+      "pid": 51629,
+      "seconds": 0.44936600000028193,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9ac08fd0dd5e1b5028dc6317d255f32500ff2ce7b7370002a2cc588a2abf2905"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/certificate/modules/s3_tail_groups.py",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/groups.txt"
+      ],
+      "exit_code": 0,
+      "label": "groups",
+      "pid": 51632,
+      "seconds": 73.19967712499965,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "def4077af972ef843519567da169a1db0460547aa02591581cc76571e0522db5"
+    },
+    {
+      "command": [
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/screen",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/groups.txt"
+      ],
+      "exit_code": 0,
+      "label": "root-screen",
+      "pid": 52426,
+      "seconds": 107.35565470799975,
+      "stderr_sha256": "f0fa2dd85c6e2674b3532747f25c4a8f304875cc2327c0b62d3ceaa7ddb37e13",
+      "stdout_sha256": "583fd0896f322429a69eeed66c84476074166f085f3f27fdfd58f7f0838209ca"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/certificate/modules/s3_trees.py",
+        "--input",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/roots.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/dual",
+        "--workers",
+        "8",
+        "--depth",
+        "96",
+        "--state-cap",
+        "10000"
+      ],
+      "exit_code": 0,
+      "label": "dual-trees",
+      "pid": 53584,
+      "seconds": 38.98725358299998,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "564c5ec5f1df7270b7ba6fdc6bd8f64ac98775ce45d0efa68884806b97f6da08"
+    },
+    {
+      "command": [
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/budget",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/roots.jsonl"
+      ],
+      "exit_code": 0,
+      "label": "third-native",
+      "pid": 54484,
+      "seconds": 2.318211875000088,
+      "stderr_sha256": "2aa17076d73eff41295757012656b9ffeceef8b482d4ba48a8332ff3a6b3a6a0",
+      "stdout_sha256": "84bb29f56c6c10b5edfed4fe899fa0b0689bc2cfac679e8c3ba65d38d58c51fd"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/certificate/modules/s3_budget_crosscheck.py",
+        "--native",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/native-budget.raw",
+        "--reference",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/dual/rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/section_eigen39/round057-s3-tail/portable-full-v2/third-comparison.json"
+      ],
+      "exit_code": 0,
+      "label": "third-exact-compare",
+      "pid": 54501,
+      "seconds": 1.854809208000006,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3af4c4ffb94758672315be857e432bbabaf5670caf9c23c848d306d88476a6e6"
+    }
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+  "finished": "2026-11-18T01:03:12.376112+00:00",
+  "groups_sha256": "5cf9a01d716e19c9bf5dac8bb43e90ce49c4d238a09b434ce89d09d85528ca36",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "screen_counts": {
+    "cayley": 196098368,
+    "exact_calls": 4,
+    "groups": 1915327,
+    "inner_minus_reject": 452659,
+    "inner_plus_reject": 918205,
+    "interval_fallback_calls": 4,
+    "mothers": 1523605945,
+    "outer_minus_reject": 862290,
+    "outer_plus_reject": 192995818,
+    "pass": 869396,
+    "positive": 864141765,
+    "reserved": 0
+  },
+  "seconds": 228.38617004199978,
+  "started": "2026-11-18T00:59:23.988636+00:00",
+  "status": "passed_fresh_full",
+  "third_summary_sha256": "d74730978e56cea9ffa9297ac89dfb700344a19daf635ca1501697348611b00c",
+  "tree_summary_sha256": "cf97af08cffd3c7864ce7cc4c10dfa0177172e267383855e9ca293856b94ac70",
+  "workers": 8
+}

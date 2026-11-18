@@ -1,0 +1,47 @@
+{
+  "binary_sha256": "e5a683450a68491afbb6d154a9b52fdec94e256d5d2f0b176144f8b7df83fedb",
+  "command": [
+    "clang++",
+    "-std=c++20",
+    "-O3",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-Wno-deprecated-literal-operator",
+    "-fmodules-cache-path=/Volumes/data/CodexTemp/cache/shared-clang-modules",
+    "-I/opt/homebrew/include",
+    "-L/opt/homebrew/lib",
+    "-lgmpxx",
+    "-lgmp",
+    "s3_tail_screen.cpp",
+    "-o",
+    "s3_tail_screen_json"
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+  "execution": [
+    "./s3_tail_screen_json",
+    "full-groups.txt"
+  ],
+  "exit_code": 0,
+  "gmp": "6.3.0",
+  "group_command": [
+    "/Users/zzh/.venvs/main/bin/python",
+    "-B",
+    "s3_tail_groups.py",
+    "--out",
+    "full-groups.txt"
+  ],
+  "group_runtime_wall_seconds": 52.3,
+  "group_stream_sha256": "5cf9a01d716e19c9bf5dac8bb43e90ce49c4d238a09b434ce89d09d85528ca36",
+  "initial_portable_preflight": {
+    "exit_code": 1,
+    "out": "portable-full-v1",
+    "reason": "Default shared Clang module-cache directory did not exist. No math stage started.",
+    "recovery": "portable-full-v2 explicitly supplied the existing shared cache directory."
+  },
+  "pass_stream_sha256": "6da30bcf5f93f0fc121923d1979a37d0508327a5401d10c4e8d86ceb41fd546a",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "runtime_user_seconds": 98.57,
+  "runtime_wall_seconds": 102.11,
+  "seed": null,
+  "source_sha256": "b76c012f2a907a33866eeaa531e640483846fcf797c2cd28ba558c3388cc4827"
+}

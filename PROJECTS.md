@@ -8,7 +8,7 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；安全切割互斥容量锐，峰对择类n7尾下界12.5465% | 第45轮完成 | 切割界面尺度归一化及全局加权空间估计 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；八次S1/S7、S2/S6排除；六点≤55、九点≤36严格公平 | 第56轮完成 | 八次S3/S5的母式和余因子完整约束 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；八次单非有理位置全排除；六点≤59、九点≤38严格公平 | 第57轮完成 | 八次S12/S67两非有理位置完整覆盖核验 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
