@@ -1,0 +1,126 @@
+{
+  "closed_singleton_orbit": [
+    3,
+    6
+  ],
+  "fresh_outputs_sha256": {
+    "envelope.json": "a83f15ec0f5e945f1d0ed9f430d253d6af8d7bee859c353badb66d04f73ccd16",
+    "r3-entry.json": "5d635c8329c45e3a1e8c83cb44cba9ffaa18226b7c2ba24b742f3c14e9d38c37",
+    "r3-full.json": "7d1f2c0c4e0065fa99e83fd0ddce1473b3a0163235f1ac512484382735cb374a",
+    "r3-full.rows.jsonl": "ac19275357a98800e79a9013a3a0f8a01d1682d8da0dfa0725747a573056379b",
+    "r3-independent.json": "624a4e56a5bf0a5069964f9afbaf70552575b181097bbab4816c28d90f2ebd57",
+    "r3-trees.json": "3726a8be3156eec32332f3b871d6922f22805de5e107da88729121a29c14cefd",
+    "r3-trees.rows.jsonl": "b22ab5b23819cdc74b0408ad12127a36fb89b562249dc085ff9e0968f60dc9cf",
+    "singleton-probe.json": "46a63edb76ce9ce318f7dbc9064ec9bc3ab8c39dda02af29b792221dfb26a048",
+    "witness-verification.json": "bffc30644fee6936b32ac4414ce68d5252b72fdf70781a99d432e66e48b298e1"
+  },
+  "processes": [
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round067-degree9-entry/package/source/verify_envelope.py",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/envelope.json"
+      ],
+      "elapsed_seconds": 0.221668,
+      "exit_code": 0,
+      "pid": 66746,
+      "source_sha256": "244c0a6f9b545f196530c0052cd0dfd8ae67c22d63d991ca3214e5b6097620c8",
+      "stage": "envelope"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round067-degree9-entry/package/source/singleton_probe.py",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/singleton-probe.json"
+      ],
+      "elapsed_seconds": 8.840507,
+      "exit_code": 0,
+      "pid": 66748,
+      "source_sha256": "c0e285be0a29d406256ab6d8dd755ff6fd8a3d024382244057f1eec865033829",
+      "stage": "singleton-probe"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round067-degree9-entry/package/source/verify_witnesses.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/singleton-probe.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/witness-verification.json"
+      ],
+      "elapsed_seconds": 0.771369,
+      "exit_code": 0,
+      "pid": 66863,
+      "source_sha256": "6139faed93c739dba0bd401e819e0db0a392cf2d19fc8771407333c3b21e9d10",
+      "stage": "witnesses"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round067-degree9-entry/package/source/r3_entry.py",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/r3-entry.json"
+      ],
+      "elapsed_seconds": 0.116344,
+      "exit_code": 0,
+      "pid": 66864,
+      "source_sha256": "f213fef448b7ffd9159c30621e376edf8c708a15100d475eaf0d7fc1f3286396",
+      "stage": "r3-entry"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round067-degree9-entry/package/source/r3_full.py",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/r3-full.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 152.171714,
+      "exit_code": 0,
+      "pid": 66866,
+      "source_sha256": "e8daf78db274b2ce9d8c11dd2c9acc00cf453481f3e490444219690bff97c479",
+      "stage": "r3-full"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round067-degree9-entry/package/source/r3_trees.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/r3-full.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/r3-trees.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 0.188885,
+      "exit_code": 0,
+      "pid": 69684,
+      "source_sha256": "99b3cfaa28e1217d5297499008e373f82888985ac09e73818659c891c033eb1a",
+      "stage": "r3-trees"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round067-degree9-entry/package/source/verify_r3_independent.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/r3-full.rows.jsonl",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/r3-trees.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/degree9-main-replay/r3-independent.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 181.803663,
+      "exit_code": 0,
+      "pid": 69693,
+      "source_sha256": "a5da1b8a6b70fabb324219d5483454311f401305659d3d627a89b63c32a55595",
+      "stage": "r3-independent"
+    }
+  ],
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "root_survivors": 243,
+  "source_manifest_sha256": "8ad4b90e4ac2cc315765a2ddf39d61139f61abbe7b0de44ad229aa617f9d51d2",
+  "status": "verified",
+  "supported_orbit_count": 25,
+  "workers": 4
+}

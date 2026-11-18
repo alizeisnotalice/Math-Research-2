@@ -1,0 +1,175 @@
+{
+  "status": "verified",
+  "audit": {
+    "census_sha256": "3c23f85601ad1cca2601cc75f9479640d974ade55ad526459a625ee00cb346cd",
+    "counts": {
+      "candidates": 13215,
+      "early_rejections": 14431,
+      "late_rejections": 2
+    },
+    "ordered_shape_status_sha256": "b601224a88a0191af61eca5ba0a25534b640dd14575470be689b1fc909394165",
+    "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "seconds": 11.845691583999724,
+    "sources_sha256": {
+      "audit_census31.py": "addf8454ed90c3d4afe79818a93ec5e95ea4a11cf636a2e3e570d1e14ce46b28",
+      "audit_degree31.py": "06d9d3050430cbff1e651235f94250096ee3fcd3dcb632240acfabfef523888b",
+      "census31.py": "0008c22be8f45968f6c8b96445cb92d66d0f9a638d904366ccb68f6ceaae8fdb",
+      "prefix_29_30.py": "d3c26f10096267d370e2938375c783b6dbb41407a7e780da6911b9ba855a68ad",
+      "verify_degree_19.py": "68b666b558234f3a504c48a2c4871b2a2a432a547d84dda14e862ea3926aa814",
+      "verify_degrees_17_18.py": "2fd4e86576eb9dea6ebf0377b6b6f5505a2737840f8e626a5eb8a91914a555bf",
+      "verify_degrees_21_22.py": "d5d509e35c766bf3f5d8621abc0a772294f322a85572ec85a531262c4ada6681",
+      "verify_degrees_23_24.py": "df4814ef19cab1df0492ee2860c88b8eb41f7659df31b5eae6bc31570eec0bca",
+      "verify_degrees_25_26.py": "57aa4457c89c53413017172c8f7b373f8c8e84807d09a3ea6bd0aa0962657838"
+    },
+    "status": "verified"
+  },
+  "real": {
+    "monomials": [
+      "u**2",
+      "u*v",
+      "u",
+      "v**2",
+      "v",
+      "1"
+    ],
+    "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "rational_boxes": {
+      "c": [
+        "23784427644584876874505337887704286981/10000000000000000000000000000000000000",
+        "59461074881784341664018198508321253111/25000000000000000000000000000000000000"
+      ],
+      "e": [
+        "4363479145196308602671597464899022707/10000000000000000000000000000000000000",
+        "10908759055298905913335137431573688817/25000000000000000000000000000000000000"
+      ],
+      "q": [
+        "41205240643131887109055323281647682319960573584074497/50000000000000000000000000000000000000000000000000000",
+        "16482096673454213048543961645114010188131761744373987/20000000000000000000000000000000000000000000000000000"
+      ]
+    },
+    "row23_coefficients": [
+      [
+        4,
+        -2,
+        6,
+        -12,
+        3,
+        -4
+      ],
+      [
+        -12,
+        20,
+        -32,
+        42,
+        -24,
+        8
+      ],
+      [
+        117,
+        -189,
+        396,
+        -668,
+        443,
+        -297
+      ],
+      [
+        2,
+        -8,
+        21,
+        -24,
+        20,
+        -6
+      ],
+      [
+        -47,
+        76,
+        -158,
+        265,
+        -175,
+        118
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "shape": "XXBAABBB",
+    "sources_sha256": {
+      "verify_c12_c16.py": "6a42d3b14cbc406d0aba2d228d6b2e412ad9eccd25fdf61575b7a5e9d8aaf528",
+      "verify_real31.py": "fb5c834f9ce7c251b2b3acd2639d7c5262db5f0cffc7fcfa8d2db1ab1b8233a2"
+    },
+    "status": "verified",
+    "strict_lower_bound": "11/160",
+    "sympy": "1.14.0"
+  },
+  "slices": [
+    {
+      "counts": {
+        "buchberger_unit": 3262,
+        "isolated_constant": 1938,
+        "mod1279": 5192,
+        "mod163": 8,
+        "unit": 5200
+      },
+      "seconds": 18.381422166999982,
+      "start": 0,
+      "status": "complete",
+      "stop": 5200,
+      "sha256": "14164f6fda3c7e64dc51d8f185f08526f337b2bf2a28606d6eeb1e42acd90949"
+    },
+    {
+      "counts": {
+        "buchberger_unit": 2867,
+        "isolated_constant": 1633,
+        "mod1279": 4495,
+        "mod163": 5,
+        "unit": 4500
+      },
+      "seconds": 18.737224625001545,
+      "start": 5200,
+      "status": "complete",
+      "stop": 9700,
+      "sha256": "41c81866ffbda899a249ec6ce0c6e96f0a2843ff52b66a11c7bde606c7e65b6b"
+    },
+    {
+      "counts": {
+        "buchberger_unit": 1925,
+        "isolated_constant": 374,
+        "mod1279": 2297,
+        "mod163": 2,
+        "unit": 2299,
+        "unresolved": 1
+      },
+      "seconds": 29.592409332999523,
+      "start": 9700,
+      "status": "complete",
+      "stop": 12000,
+      "sha256": "50359544e5b2c82db0b270361e14f5683f011c290d2aa95cb9c319296baa2076"
+    },
+    {
+      "counts": {
+        "buchberger_unit": 1108,
+        "isolated_constant": 107,
+        "mod1279": 1215,
+        "unit": 1215
+      },
+      "seconds": 53.861398041999564,
+      "start": 12000,
+      "status": "complete",
+      "stop": 13215,
+      "sha256": "fc2d0759611e1b0c735404bd2dab756b21e2309ea80fe59e26b816d2c36286bf"
+    }
+  ],
+  "tally": {
+    "buchberger_unit": 9162,
+    "isolated_constant": 4052,
+    "mod1279": 13199,
+    "mod163": 15,
+    "unit": 13214,
+    "unresolved": 1
+  }
+}
