@@ -1,0 +1,9 @@
+# 先前文献检索与归属标记，2026-11-19
+
+本轮定向检索了 “Lebesgue universal covering finite test family”, “constant width universal cover five tangent lines”, “quadrilateral universal cover circumscribed constant width”, “rotors irrational triangle”, “regular pentagon parallel body diameter circle equilateral triangle”。这份选录用于划清数学问题的边界，五切定理、有限清单反例和两个固定宿主应用均附从头证明。本轮未定位同一量词下的五切单频障碍、有限清单结论或本组固定宿主精确距离的先前陈述，文献检索的范围不足以确定首创。
+
+- G. Kuperberg, *Circumscribing Constant-Width Bodies with Polytopes* (1999)，命题 1 已将定宽体的精确外切问题转译为奇函数在有限接触方向上与线性函数一致。§2 与开头讨论一般中心对称外切六边形。这里的五切问题允许五面不同时接触；宿主可非中心对称，摆放只需五个弱不等式成立。检索历史工作时两种量词均应保留。[Kuperberg 原文](https://nyjm.albany.edu/j/1999/5-6p.pdf)
+- Z. Lángi, *On Universal Covers for Four-Dimensional Sets of a Given Diameter* (2010)，第 60 页陈述 Makeev 关于中心对称且外切多面体的一般面数必要界 n(n+1)。这个结果在二维已排除外切的中心对称八边形。此处五个一般位置单面法向可以没有任何平行对。[Lángi 原文](https://rendiconti.dmi.units.it/volumi/42/040.pdf)
+- H. Schaal, *Prüfung einer Kreisform mit Hohlwinkel und Taster*, Elem. Math. 17 (1962), 33–38。Schaal 的无理角三角形只允许圆作转子的结果与有限清单证明使用的三方向傅里叶刚性密切相关。可查原刊末页、原版题录和后来的专著第 17 章；本次取得的原刊 OCR 仅到末页，未逐句核对该文全部定理。有限清单证明在本文已重新给出其所需刚性。[原刊末页](https://www.e-periodica.ch/cntmng?pid=edm-001%3A1962%3A17%3A%3A192) · [原刊起始页](https://gdz.sub.uni-goettingen.de/dms/load/img/?DMDID=DMDLOG_0019&PPN=PPN378850199_0017) · [专著所附归属](https://doi.org/10.1007/978-3-030-03868-7_17)
+- P. Brass 与 M. Sharifi (2005) 已用单位圆盘、正三角形、正五边形的任意摆放凸包建立面积下界。P. Gibbs (2014) 已将正 Reuleaux 五边形等定宽曲体作为共同宿主试体；U. Mishra (2026) 用三个曲体和可核对的参数细分建立面积下界。本文精确计算 C₄ 的平行体半径，并分类给定双斜面下的可行摆放。正五边形和正 Reuleaux 五边形作为试体均有明确先例。[Brass–Sharifi 原文](https://www.cs.cmu.edu/~mehrbod/UC05.pdf) · [Gibbs 原文](https://arxiv.org/abs/1401.8217) · [Mishra 原文及试体溯源](https://arxiv.org/html/2608.30538v2#S1.SS1)
+- J. Baez、K. Bagdasaryan、P. Gibbs 的六边形加斜切构造提供本轮 Gibbs 支撑背景。Z. Deng (2026) 的临界逃逸直径与支撑函数优化给出一般的置入对偶。各篇中的自由宿主优化、固定宿主的置入以及多方向同时外切应分别比较。[Baez–Bagdasaryan–Gibbs 原文](https://arxiv.org/abs/1502.01251) · [Deng 原文](https://arxiv.org/abs/2609.32931)
