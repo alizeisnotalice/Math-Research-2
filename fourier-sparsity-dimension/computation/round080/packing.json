@@ -1,0 +1,59 @@
+{
+  "python": "3.15.0",
+  "all_three_variable_seed_tests": 512,
+  "three_variable_seed_density_bruteforce_tests": 256,
+  "equal_full_seeds": [
+    {
+      "variables_per_seed": 2,
+      "s": 16,
+      "d": 6,
+      "density": "5/2"
+    },
+    {
+      "variables_per_seed": 4,
+      "s": 64,
+      "d": 10,
+      "density": "63/10"
+    },
+    {
+      "variables_per_seed": 6,
+      "s": 256,
+      "d": 14,
+      "density": "255/14"
+    }
+  ],
+  "imbalanced_examples": [
+    {
+      "switch_variables": 2,
+      "pair_lifts": [
+        1,
+        4
+      ],
+      "s": 40
+    },
+    {
+      "switch_variables": 4,
+      "pair_lifts": [
+        1,
+        16
+      ],
+      "s": 136
+    },
+    {
+      "switch_variables": 6,
+      "pair_lifts": [
+        1,
+        64
+      ],
+      "s": 520
+    },
+    {
+      "switch_variables": 8,
+      "pair_lifts": [
+        1,
+        256
+      ],
+      "s": 2056
+    }
+  ]
+}
