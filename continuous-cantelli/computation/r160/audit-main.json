@@ -1,0 +1,477 @@
+{
+  "ngrid": 94556,
+  "kernel_node_counts": {
+    "gap_kernel_nodes": 454029085,
+    "base_kernel_nodes": 1512896
+  },
+  "max_abs_v_dx_dxx_error": [
+    1.5527603913767507e-07,
+    1.7207648839168144e-07,
+    4.0682178337192454e-07
+  ],
+  "infinite_v": 0.1475306398322153,
+  "scipy": "1.18.1",
+  "numpy": "2.5.4",
+  "stages": [
+    {
+      "stage": 0,
+      "root": 0.1499540187182936,
+      "root_minus_infinite": 0.0024233788860783256,
+      "scaled_root_error": 0.0024233788860783256,
+      "mass_rescaled_root": 0.14785575504466467,
+      "mass_rescaled_minus_infinite": 0.00032511521244937835,
+      "cpu_stage_curvature": -2.9850379615550535,
+      "center": {
+        "order_1": {
+          "root": 0.14995403800367443,
+          "gpu_minus_exact_stage_root": 1.928538082007769e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -1.802757010338496e-08,
+            -2.9740034879210953e-09,
+            1.7562304055473987e-08
+          ],
+          "gpu_gap_mass": 0.0,
+          "exact_gap_mass": 0.0,
+          "midpoint_gap_error": 0.0,
+          "gpu_minus_exact_gap": 0.0,
+          "latest_gap_mass": 0.0
+        },
+        "order_4": {
+          "root": 0.14995403800367443,
+          "gpu_minus_exact_stage_root": 1.928538082007769e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -1.802757010338496e-08,
+            -2.9740034879210953e-09,
+            1.7562304055473987e-08
+          ],
+          "gpu_gap_mass": 0.0,
+          "exact_gap_mass": 0.0,
+          "midpoint_gap_error": 0.0,
+          "gpu_minus_exact_gap": 0.0,
+          "latest_gap_mass": 0.0
+        }
+      },
+      "spatial": {
+        "variance_count": 41,
+        "sample_count": 257,
+        "all_sampled_argmax_zero": true,
+        "maximum_curvature_on_core": -0.16533564031124115
+      }
+    },
+    {
+      "stage": 1,
+      "root": 0.14860380604451826,
+      "root_minus_infinite": 0.0010731662123029673,
+      "scaled_root_error": 0.0021463324246059345,
+      "mass_rescaled_root": 0.14755510192507568,
+      "mass_rescaled_minus_infinite": 2.4462092860388918e-05,
+      "cpu_stage_curvature": -2.9893806714182376,
+      "center": {
+        "order_1": {
+          "root": 0.14860385118520772,
+          "gpu_minus_exact_stage_root": 4.5140689464151507e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            9.001857037560512e-09,
+            -2.9740034879210953e-09,
+            1.5534164488073543e-07
+          ],
+          "gpu_gap_mass": 0.0020285542123019695,
+          "exact_gap_mass": 0.00202855190506801,
+          "midpoint_gap_error": 2.185385158427755e-09,
+          "gpu_minus_exact_gap": 2.307233959442101e-09,
+          "latest_gap_mass": 0.0020285542123019695
+        },
+        "order_4": {
+          "root": 0.14860385118520772,
+          "gpu_minus_exact_stage_root": 4.5140689464151507e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            9.001857037560512e-09,
+            -2.974025470336983e-09,
+            -8.307693422082707e-08
+          ],
+          "gpu_gap_mass": 0.002028551883995533,
+          "exact_gap_mass": 0.00202855190506801,
+          "midpoint_gap_error": 2.185385158427755e-09,
+          "gpu_minus_exact_gap": -2.107247709659532e-11,
+          "latest_gap_mass": 0.002028551883995533
+        }
+      },
+      "spatial": {
+        "variance_count": 41,
+        "sample_count": 257,
+        "all_sampled_argmax_zero": true,
+        "maximum_curvature_on_core": -0.17182165384292603
+      }
+    },
+    {
+      "stage": 2,
+      "root": 0.1480574845348331,
+      "root_minus_infinite": 0.0005268447026178236,
+      "scaled_root_error": 0.0021073788104712943,
+      "mass_rescaled_root": 0.1475335720771495,
+      "mass_rescaled_minus_infinite": 2.9322449342228385e-06,
+      "cpu_stage_curvature": -2.9934021380119207,
+      "center": {
+        "order_1": {
+          "root": 0.1480574937197222,
+          "gpu_minus_exact_stage_root": 9.184889099289606e-09,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            2.7886166931168077e-08,
+            -2.974003432409944e-09,
+            7.27885582918475e-08
+          ],
+          "gpu_gap_mass": 0.0028469450771808624,
+          "exact_gap_mass": 0.002846942562144017,
+          "midpoint_gap_error": 2.2169312804791452e-09,
+          "gpu_minus_exact_gap": 2.5150368454518457e-09,
+          "latest_gap_mass": 0.000818390806671232
+        },
+        "order_4": {
+          "root": 0.1480574937197222,
+          "gpu_minus_exact_stage_root": 9.184889099289606e-09,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            2.7886166931168077e-08,
+            -2.9740254148258316e-09,
+            -1.65630020809715e-07
+          ],
+          "gpu_gap_mass": 0.002846942748874426,
+          "exact_gap_mass": 0.002846942562144017,
+          "midpoint_gap_error": 2.2169312804791452e-09,
+          "gpu_minus_exact_gap": 1.867304089131494e-10,
+          "latest_gap_mass": 0.0008183907484635711
+        }
+      },
+      "spatial": {
+        "variance_count": 41,
+        "sample_count": 257,
+        "all_sampled_argmax_zero": true,
+        "maximum_curvature_on_core": -0.17172105610370636
+      }
+    },
+    {
+      "stage": 4,
+      "root": 0.1476615818191545,
+      "root_minus_infinite": 0.00013094198693922032,
+      "scaled_root_error": 0.002095071791027525,
+      "mass_rescaled_root": 0.14753068495785907,
+      "mass_rescaled_minus_infinite": 4.512564377723294e-08,
+      "cpu_stage_curvature": -2.996389601975864,
+      "center": {
+        "order_1": {
+          "root": 0.14766155398860253,
+          "gpu_minus_exact_stage_root": -2.7830551974084017e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -1.557847517652533e-08,
+            -2.98127950104643e-09,
+            -4.298461675489307e-08
+          ],
+          "gpu_gap_mass": 0.003440146567299962,
+          "exact_gap_mass": 0.003440144126951372,
+          "midpoint_gap_error": 2.2178846931751595e-09,
+          "gpu_minus_exact_gap": 2.4403485898716326e-09,
+          "latest_gap_mass": 0.0001967017014976591
+        },
+        "order_4": {
+          "root": 0.14766155398860253,
+          "gpu_minus_exact_stage_root": -2.7830551974084017e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -1.557847517652533e-08,
+            -2.977641522239338e-09,
+            -4.298461675489307e-08
+          ],
+          "gpu_gap_mass": 0.0034401442389935255,
+          "exact_gap_mass": 0.003440144126951372,
+          "midpoint_gap_error": 2.2178846931751595e-09,
+          "gpu_minus_exact_gap": 1.1204215333293632e-10,
+          "latest_gap_mass": 0.00019670168694574386
+        }
+      },
+      "spatial": {
+        "variance_count": 41,
+        "sample_count": 257,
+        "all_sampled_argmax_zero": true,
+        "maximum_curvature_on_core": -0.17160429060459137
+      }
+    },
+    {
+      "stage": 6,
+      "root": 0.147563359682915,
+      "root_minus_infinite": 3.27198506997195e-05,
+      "scaled_root_error": 0.002094070444782048,
+      "mass_rescaled_root": 0.14753064053640894,
+      "mass_rescaled_minus_infinite": 7.041936478380251e-10,
+      "cpu_stage_curvature": -2.997135260298729,
+      "center": {
+        "order_1": {
+          "root": 0.1475633049096725,
+          "gpu_minus_exact_stage_root": -5.477324249714144e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -4.468120795575459e-08,
+            -2.9780962140790734e-09,
+            2.360165272108361e-07
+          ],
+          "gpu_gap_mass": 0.00358734093606472,
+          "exact_gap_mass": 0.0035873384968122535,
+          "midpoint_gap_error": 2.217886101336941e-09,
+          "gpu_minus_exact_gap": 2.43925246667942e-09,
+          "latest_gap_mass": 4.904600064037368e-05
+        },
+        "order_4": {
+          "root": 0.1475633049096725,
+          "gpu_minus_exact_stage_root": -5.477324249714144e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -4.468120795575459e-08,
+            -2.97855096142996e-09,
+            -2.4020518907263977e-09
+          ],
+          "gpu_gap_mass": 0.0035873386077582836,
+          "exact_gap_mass": 0.0035873384968122535,
+          "midpoint_gap_error": 2.217886101336941e-09,
+          "gpu_minus_exact_gap": 1.109460301407239e-10,
+          "latest_gap_mass": 4.904600064037368e-05
+        }
+      },
+      "spatial": {
+        "variance_count": 41,
+        "sample_count": 257,
+        "all_sampled_argmax_zero": true,
+        "maximum_curvature_on_core": -0.17157301306724548
+      }
+    },
+    {
+      "stage": 8,
+      "root": 0.14753881931318052,
+      "root_minus_infinite": 8.179480965236907e-06,
+      "scaled_root_error": 0.0020939471271006482,
+      "mass_rescaled_root": 0.14753063984321999,
+      "mass_rescaled_minus_infinite": 1.1004697153538245e-11,
+      "cpu_stage_curvature": -2.997321604081358,
+      "center": {
+        "order_1": {
+          "root": 0.14753879082391885,
+          "gpu_minus_exact_stage_root": -2.848926167198229e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -4.3375045222227016e-08,
+            -2.9733213113836143e-09,
+            1.0632808278288053e-07
+          ],
+          "gpu_gap_mass": 0.0036241181660443544,
+          "exact_gap_mass": 0.0036241158688050112,
+          "midpoint_gap_error": 2.217886548461917e-09,
+          "gpu_minus_exact_gap": 2.2972393431963667e-09,
+          "latest_gap_mass": 1.2258644346729852e-05
+        },
+        "order_4": {
+          "root": 0.14753879082391885,
+          "gpu_minus_exact_stage_root": -2.848926167198229e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -4.3375045222227016e-08,
+            -2.9757797892493443e-09,
+            1.0632808278288053e-07
+          ],
+          "gpu_gap_mass": 0.003624115837737918,
+          "exact_gap_mass": 0.0036241158688050112,
+          "midpoint_gap_error": 2.217886548461917e-09,
+          "gpu_minus_exact_gap": -3.10670933423296e-11,
+          "latest_gap_mass": 1.2258644346729852e-05
+        }
+      },
+      "spatial": {
+        "variance_count": 41,
+        "sample_count": 257,
+        "all_sampled_argmax_zero": true,
+        "maximum_curvature_on_core": -0.17156516015529633
+      }
+    },
+    {
+      "stage": 10,
+      "root": 0.14753268468009365,
+      "root_minus_infinite": 2.0448478783574586e-06,
+      "scaled_root_error": 0.0020939242274380376,
+      "mass_rescaled_root": 0.14753063983239345,
+      "mass_rescaled_minus_infinite": 1.78163039876722e-13,
+      "cpu_stage_curvature": -2.9973681855990906,
+      "center": {
+        "order_1": {
+          "root": 0.14753270932575435,
+          "gpu_minus_exact_stage_root": 2.4645660706701378e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            3.086307698296764e-08,
+            -2.9739946616480495e-09,
+            1.36961318730755e-07
+          ],
+          "gpu_gap_mass": 0.003633311949670315,
+          "exact_gap_mass": 0.00363330961758096,
+          "midpoint_gap_error": 2.217887041557065e-09,
+          "gpu_minus_exact_gap": 2.332089354961653e-09,
+          "latest_gap_mass": 3.064563998123049e-06
+        },
+        "order_4": {
+          "root": 0.14753270932575435,
+          "gpu_minus_exact_stage_root": 2.4645660706701378e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            3.086307698296764e-08,
+            -2.9764211650906702e-09,
+            1.36961318730755e-07
+          ],
+          "gpu_gap_mass": 0.0036333096213638783,
+          "exact_gap_mass": 0.00363330961758096,
+          "midpoint_gap_error": 2.217887041557065e-09,
+          "gpu_minus_exact_gap": 3.782918422956527e-12,
+          "latest_gap_mass": 3.064563998123049e-06
+        }
+      },
+      "spatial": {
+        "variance_count": 41,
+        "sample_count": 257,
+        "all_sampled_argmax_zero": true,
+        "maximum_curvature_on_core": -0.17156319320201874
+      }
+    },
+    {
+      "stage": 12,
+      "root": 0.14753115104294726,
+      "root_minus_infinite": 5.11210731968248e-07,
+      "scaled_root_error": 0.0020939191581419436,
+      "mass_rescaled_root": 0.14753063983225947,
+      "mass_rescaled_minus_infinite": 4.418687638008123e-14,
+      "cpu_stage_curvature": -2.997379830701403,
+      "center": {
+        "order_1": {
+          "root": 0.14753112753833197,
+          "gpu_minus_exact_stage_root": -2.350461528188852e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -5.491129040358089e-08,
+            -2.9740289675395104e-09,
+            1.4473502485401468e-07
+          ],
+          "gpu_gap_mass": 0.0036356106866151094,
+          "exact_gap_mass": 0.0036356080290435022,
+          "midpoint_gap_error": 2.2178952598095325e-09,
+          "gpu_minus_exact_gap": 2.6575716072230193e-09,
+          "latest_gap_mass": 7.661373047085362e-07
+        },
+        "order_4": {
+          "root": 0.14753112753833197,
+          "gpu_minus_exact_stage_root": -2.350461528188852e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -5.491129040358089e-08,
+            -2.976455470982131e-09,
+            -9.368355424754782e-08
+          ],
+          "gpu_gap_mass": 0.003635608358308673,
+          "exact_gap_mass": 0.0036356080290435022,
+          "midpoint_gap_error": 2.2178952598095325e-09,
+          "gpu_minus_exact_gap": 3.2926517068432304e-10,
+          "latest_gap_mass": 7.661373047085362e-07
+        }
+      },
+      "spatial": {
+        "variance_count": 41,
+        "sample_count": 257,
+        "all_sampled_argmax_zero": true,
+        "maximum_curvature_on_core": -0.17156270146369934
+      }
+    },
+    {
+      "stage": 14,
+      "root": 0.14753076763471767,
+      "root_minus_infinite": 1.2780250238653146e-07,
+      "scaled_root_error": 0.0020939161991009314,
+      "mass_rescaled_root": 0.14753063983211992,
+      "mass_rescaled_minus_infinite": -9.536815781530095e-14,
+      "cpu_stage_curvature": -2.9973827419616628,
+      "center": {
+        "order_1": {
+          "root": 0.14753077018304553,
+          "gpu_minus_exact_stage_root": 2.5483278542903776e-09,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -1.675144578605625e-08,
+            -2.9739908313786145e-09,
+            1.466841772490568e-07
+          ],
+          "gpu_gap_mass": 0.003636185312643647,
+          "exact_gap_mass": 0.0036361826303367706,
+          "midpoint_gap_error": 2.218040290064699e-09,
+          "gpu_minus_exact_gap": 2.6823068766113067e-09,
+          "latest_gap_mass": 1.9153365826696245e-07
+        },
+        "order_4": {
+          "root": 0.14753077018304553,
+          "gpu_minus_exact_stage_root": 2.5483278542903776e-09,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -1.675144578605625e-08,
+            -2.976417778910445e-09,
+            -9.17344018525057e-08
+          ],
+          "gpu_gap_mass": 0.003636182751506567,
+          "exact_gap_mass": 0.0036361826303367706,
+          "midpoint_gap_error": 2.218040290064699e-09,
+          "gpu_minus_exact_gap": 1.2116979641874082e-10,
+          "latest_gap_mass": 1.9153365826696245e-07
+        }
+      },
+      "spatial": {}
+    },
+    {
+      "stage": 16,
+      "root": 0.14753067178309637,
+      "root_minus_infinite": 3.195088107976751e-08,
+      "scaled_root_error": 0.0020939329424436437,
+      "mass_rescaled_root": 0.14753063983244646,
+      "mass_rescaled_minus_infinite": 2.311761893025732e-13,
+      "cpu_stage_curvature": -2.997383469769314,
+      "center": {
+        "order_1": {
+          "root": 0.1475306510646167,
+          "gpu_minus_exact_stage_root": -2.0718479654124877e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -5.191561980311121e-08,
+            -2.974001045430441e-09,
+            8.756569069845455e-08
+          ],
+          "gpu_gap_mass": 0.0036363289691507816,
+          "exact_gap_mass": 0.0036363262802341367,
+          "midpoint_gap_error": 2.2184159479028687e-09,
+          "gpu_minus_exact_gap": 2.688916644899564e-09,
+          "latest_gap_mass": 4.788323693105667e-08
+        },
+        "order_4": {
+          "root": 0.1475306510646167,
+          "gpu_minus_exact_stage_root": -2.0718479654124877e-08,
+          "checked_v": 0.14753906428813934,
+          "gpu_minus_cpu": [
+            -5.191561980311121e-08,
+            -2.976427548873062e-09,
+            8.756569069845455e-08
+          ],
+          "gpu_gap_mass": 0.0036363264080137014,
+          "exact_gap_mass": 0.0036363262802341367,
+          "midpoint_gap_error": 2.2184159479028687e-09,
+          "gpu_minus_exact_gap": 1.2777956470699792e-10,
+          "latest_gap_mass": 4.788323693105667e-08
+        }
+      },
+      "spatial": {}
+    }
+  ]
+}
