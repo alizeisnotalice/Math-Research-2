@@ -20,6 +20,16 @@ Use finitely many nested dyadic partitions of [0,H+1], then let their meshes ten
 
 Couple each sequence of grids on the same launched Brownian path. The first grid hit decreases to the infimum of times in the relatively open strict exterior after launch; openness and density of the nested grids prove this even if the infimum itself is outside that open set. This infimum equals τ almost surely. At τ, continuity and the launch assumption give τ=E(Y), including a launch already on the graph. By strong Markov, the Brownian increments immediately after τ start afresh from zero and almost surely return to zero at positive times arbitrarily close to zero (by immediate oscillation on both sides). At each such time τ+d the position is again Y, so τ+d>E(Y). The argument also covers a tangency at τ=H since the grids extend past H. Brownian path continuity gives convergence of the stopped positions as well as times. Bounded continuous testing of the discrete laws proves (1).
 
+## E is the least barrier for matching the two exit laws
+
+For any nonnegative bounded continuous function e, launch both paths as above, stopping a source above e at once. Their complete first-exit laws for e coincide if and only if e≥E pointwise. For sufficiency use the clipping proof since the strict exterior of e is contained in that of E. For necessity, positive γ-mass with f(x)>e(x) would exit strictly above the graph of e immediately, whereas the path from (0,0) always exits on the graph of e. Continuity then gives f≤e everywhere. Subtracting the common freely evolved stopped measures, as in the next section, shows each Q_t vanishes as a measure on {e≤t}. Thus S lies in the closed region {t≤e(x)} and E≤e. When e≥f, equality of the terminal *spatial* laws is already equivalent to equality of the spacetime laws because both times equal e at the terminal position.
+
+For a quantitative test write Δ_e for the difference of the two stopped spacetime laws. Regardless of equality, the surviving position laws at t are supported on {e>t}. Therefore, with total variation denoting variation mass,
+
+    |Q_t|({e≤t}) ≤ |Δ_e|([0,t]×ℝ) ≤ |Δ_e|([0,∞)×ℝ).
+
+In fact the restriction on the left is the restriction of the freely propagated signed stop law from times ≤t; Gaussian propagation contracts variation. In particular a mismatch has an observable lower bound at any time for which the tested exterior contains signed heat mass. Among all matching barriers, E has the least exit-time distribution in stochastic order and the least exit-position law in convex order: on a common Brownian path from zero the exit under any larger barrier occurs no earlier, and bounded-time optional sampling gives convex order.
+
 ## Consequences for individual slices
 
 Let π be the common terminal spatial law and D={x:f(x)=E(x)}. Each source located in D is immediately stopped, so the common exit measure dominates the image of 1_Dγ under x↦(E(x),x). Also γ≼cxπ by conditional Jensen for Brownian motion with bounded duration. From the start at zero one has ∫y dπ=0 and ∫y² dπ=Eτ_{0,0}. If f is nonconstant, E(x)>1 at every finite x by round 169. Thus τ_{0,0}>1 almost surely and the same exit law is obtained by launching a fresh Brownian motion at absolute time 1 from γ.
