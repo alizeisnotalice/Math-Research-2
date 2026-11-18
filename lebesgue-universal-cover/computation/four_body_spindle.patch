@@ -1,0 +1,158 @@
+--- four_body_multifan.cpp
++++ four_body_spindle.cpp
+@@ -1,4 +1,4 @@
+-// Integer fan-area lower bound on whole 11D dyadic boxes; coordinates in units 2^-28.
++// Integer spindle and polygon area forms at 2^-40 coordinate precision.
+ #include <algorithm>
+ #include <array>
+ #include <cstdint>
+@@ -6,7 +6,7 @@
+ #include <limits>
+ #include <vector>
+ using L=std::int64_t;using W=__int128_t;
+-constexpr L Q=L(1)<<28,Fine=L(1)<<44,ratio=Fine/Q;
++constexpr L Q=L(1)<<40,Fine=L(1)<<44,ratio=Fine/Q;
+ struct P { L x,y,a,b; int body; };
+ struct V { L x,y; };
+ using Box=std::array<L,11>;
+@@ -25,11 +25,11 @@
+ struct Form { W f=0; std::array<W,8> g{}; };
+ using Move=std::array<int,8>;
+ struct Tester {
+-    const std::int32_t* table;const std::int32_t* sizes;const L* original_hi;
++    const L* table;const std::int32_t* sizes;const L* original_hi;
+     L goal;int total=0;int split_axis=0;int modes=4;
+     std::vector<P> pts,hull,conv;
+     L hx[5]{},hy[5]{},theta[5]{},tn[5]{},tw[5]{},rad[5]{};
+-    Tester(const std::int32_t* p,const std::int32_t* n,const L* h,L t):table(p),sizes(n),original_hi(h),goal(t){
++    Tester(const L* p,const std::int32_t* n,const L* h,L t):table(p),sizes(n),original_hi(h),goal(t){
+         for(int k=0;k<5;++k){if((k<4 && sizes[k]<3) || (k==4 && sizes[k]!=0) || sizes[k]>1024)std::abort();total+=sizes[k];}
+         if(total>4096)std::abort();
+         for(int k=0;k<11;++k)if(h[k]<=-Fine || h[k]>=Fine)std::abort();
+@@ -57,10 +57,9 @@
+                 hx[b]=small(up(std::max(std::abs(lo[idx]-tx*ratio),std::abs(hi[idx]-tx*ratio)),ratio));
+                 hy[b]=small(up(std::max(std::abs(lo[idx+1]-ty*ratio),std::abs(hi[idx+1]-ty*ratio)),ratio));
+                 if(b>1){
+-                    int k=idx-1;L num=(lo[k]+hi[k])*512;
+-                    row=int((num+original_hi[k]/2)/original_hi[k]);if(row<0 || row>1024)return -1;
+-                    L anchor=L(row)*original_hi[k];
+-                    theta[b]=small(up(std::max(std::abs(1024*lo[k]-anchor),std::abs(1024*hi[k]-anchor)),1024*ratio));
++                    int k=idx-1;row=0;
++                    theta[b]=small(up(hi[k]-lo[k],2*ratio));
++
+                 }
+             }
+             tw[b]=hx[b]+hy[b];tn[b]=norm(tx,ty);
+@@ -142,15 +141,57 @@
+                 }
+             }
+         }
++        // A common-body edge contains an outward circular segment. Certify its
++        // containing disk also contains the origin, so that its polar wedge is disjoint.
++        for(unsigned i=0;i<conv.size();++i){
++            auto a=conv[i],b=conv[(i+1)%conv.size()];
++            if(a.body!=b.body)continue;
++            L R=a.body?Q:Q/2, vx=b.a-a.a,vy=b.b-a.b;
++            L upper_d=norm(vx,vy);
++            if(upper_d>R||!upper_d)continue;
++            W z=det(a.x,a.y,b.x,b.y)-W(tw[a.body])*upper_d
++                -W(tn[a.body])*up(W(upper_d)*theta[a.body],Q);
++            L da=perturb(a),db=perturb(b);
++            W prod=W(a.x)*b.x+W(a.y)*b.y+W(norm(a.x,a.y))*db+W(norm(b.x,b.y))*da+W(da)*db;
++            if(z<=0 || 2*prod*upper_d>W(3)*R*z)continue;
++            W sq=W(vx)*vx+W(vy)*vy;
++            L d=L(__builtin_sqrtl((long double)sq));
++            while(W(d)*d>sq)--d;
++            while(W(d+1)*(d+1)<=sq)++d;
++            W increment=W(d)*d*d/(6*R);
++            W x=W(d)*d*Q/(W(R)*R);
++            W x2=x*x/Q;
++            twice+=increment+increment*3*x/(40*Q)+increment*9*x2/(896*Q);
++        }
+         result.f=twice-error;
++        // All affine forms use the exact midpoint and exact halfwidth, including rotations.
++        auto add_ratio=[&](W numerator,L denominator){
++            result.f+=numerator/denominator-(numerator%denominator<0);
++        };
++        auto slope=[&](int index,W numerator,L denominator){
++            result.g[index]=numerator/denominator;if(numerator%denominator)--result.f;
++        };
+         for(int k=1;k<4;++k){
+-            int i=(k-1)*3;
+-            result.g[i]=W(g[k].y)*hx[k];
+-            result.g[i+1]=-W(g[k].x)*hy[k];
+-            if(i){W v=grot[k]*theta[k]; result.g[i-1]=v/Q;
+-                if(v%Q) --result.f;
+-            }
+-        }
++            int i=3*(k-1);
++            for(int j=0;j<2;++j){
++                W grad=j?-W(g[k].x):W(g[k].y);
++                L sum=lo[i+j]+hi[i+j],nom=sum/(2*ratio);
++                add_ratio(grad*(sum-2*ratio*nom),2*ratio);
++                slope(i+j,grad*(hi[i+j]-lo[i+j]),2*ratio);
++            }
++            if(i){
++                int index=i-1;
++                if(ab(grot[k]) >= (W(1)<<85) || hi[index]-lo[index] >= (L(1)<<41))return 0;
++                slope(index,grot[k]*(hi[index]-lo[index]),2*Fine);
++
++            }
++        }
++        // Publish on a 2^-56 squared-coordinate lattice so the affine
++        // return values and LP evidence are exact signed 64-bit integers.
++        const L rescale=L(1)<<24;
++        result.f=result.f/rescale-(result.f%rescale<0);
++        for(int j=0;j<8;++j){W u=result.g[j]; result.g[j]=u/rescale;
++            if(u%rescale)--result.f;}
+         W best=-1;
+         for(int b=1;b<4;++b){
+             int k=3*(b-1);
+@@ -216,26 +257,24 @@
+         split_axis=original_axis;return 0;
+     }
+ };
+-bool split_probe(Tester& t,Box& lo,Box& hi,int depth,int maxd,int maxcalls,L* stat){
+-    if(stat[0]>=maxcalls)return false;
+-    ++stat[0];stat[1]=std::max(stat[1],L(depth));
+-    if(t.check(lo,hi)==1){++stat[2];return true;}
+-    if(depth==maxd)return false;
+-    int k=t.split_axis;auto l=lo[k],h=hi[k];if((l+h)%2 || h<=l)return false;
+-    auto mid=(l+h)/2;hi[k]=mid;
+-    bool ok=split_probe(t,lo,hi,depth+1,maxd,maxcalls,stat);hi[k]=h;
+-    if(!ok)return false;
+-    lo[k]=mid;ok=split_probe(t,lo,hi,depth+1,maxd,maxcalls,stat);lo[k]=l;
+-    return ok;
+-}
+-extern "C" int fan_probe(int n,const L* lo,const L* hi,const L* original_hi,const std::int32_t* table,
+-    const std::int32_t* counts,L goal,int depth,int calls,L* results){
+-    Tester t(table,counts,original_hi,goal);
+-    for(int i=0;i<n;++i){
+-        Box l,h;std::copy(lo+11*i,lo+11*i+11,l.begin());std::copy(hi+11*i,hi+11*i+11,h.begin());
+-        L* stat=results+4*i;
+-        stat[3]=split_probe(t,l,h,0,depth,calls,stat)?1:0;
+-    }
+-    return 0;
+-}
+-
++extern "C" int forms_for_box(const L* ll,const L* hh,const L* oh,const L* tab,const std::int32_t* count,const int* moves,int nm,L* output){
++    Tester t(tab,count,oh,0);Box l,h;std::copy(ll,ll+11,l.begin());std::copy(hh,hh+11,h.begin());
++    int written=0;
++    for(int j=0;j<nm;++j){Move u;std::copy(moves+8*j,moves+8*j+8,u.begin());Form f;
++       if(t.form(l,h,u,f)!=1)continue;
++       if(ab(f.f)>std::numeric_limits<L>::max())return -1;
++       L* out=output+9*written++;out[0]=L(f.f);
++       for(int i=0;i<8;++i){if(ab(f.g[i])>std::numeric_limits<L>::max())return -1;out[i+1]=L(f.g[i]);}
++    }
++    return written;
++}
++extern "C" int box_try(const L* ll,const L* hh,const L* oh,const L* tab,const std::int32_t* count,L goal){
++    Tester t(tab,count,oh,goal);Box l,h;std::copy(ll,ll+11,l.begin());std::copy(hh,hh+11,h.begin());
++    if(t.check(l,h)==1)return -1;return t.split_axis;
++}
++extern "C" void rotate_material(const L* xy, L c,L s,int n,L* dst){
++ for(int i=0;i<n;++i){
++  const L x=xy[2*i],y=xy[2*i+1];
++  dst[2*i]=L((W(x)*c-W(y)*s)/Q);dst[2*i+1]=L((W(x)*s+W(y)*c)/Q);
++ }
++}
