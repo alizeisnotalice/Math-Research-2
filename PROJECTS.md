@@ -8,7 +8,7 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；指定峰对提升、局部删除率与n12五标签界 | 第52轮完成 | 早独占见证真权、远峰累计逆像控制 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；平方因子分歧下界；六点≤77、九点≤44 | 第65轮完成 | 64次积模163的平方次数七边界 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；第7项缺口积次数≥65；六点≤79、九点≤44 | 第66轮完成 | 完整核验65及66次积 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 

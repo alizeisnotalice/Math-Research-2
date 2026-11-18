@@ -1,0 +1,106 @@
+{
+  "counts": {
+    "a_cores": 11080,
+    "core_LaBtj": 1136145,
+    "coupled_row8": 821,
+    "high_options": 1906554,
+    "mothers": 421,
+    "mothers_exception": 352,
+    "mothers_generic": 69,
+    "newton8_both": 73296,
+    "root_inner_reject": 45,
+    "root_outer_reject": 20,
+    "root_pass": 101,
+    "root_positive_reject": 255,
+    "row4_normalized": 982575,
+    "row5": 159290,
+    "row6": 151259,
+    "row7": 106172,
+    "row8": 71231
+  },
+  "domains": 88,
+  "fresh_outputs_sha256": {
+    "entry.json": "0371ae5c4e5679b7fc5fdee5cf217e4249c1f415075657839c83516e064931da",
+    "entry.rows.jsonl": "be64ed88e39a72a71b5c1ce20b43aac12902c2ba84311bfb047972f22f59ca76",
+    "independent-entry.json": "b88737b876cf1d1a5a692baa0726910d852b69651a0769b25c8058d88915392c",
+    "independent-trees.json": "d705aa8b18b883995bec4bcfe2f4e471eb7d3fe8b03ba9117a01e922556b8fee",
+    "trees.json": "c9258e2a82088ef9667f2aa676849bf7b2598de1db3f88481daa1aa553c58e0a",
+    "trees.rows.jsonl": "98214153c3f239544756f1ca31915718f91822ea74bf8c56ba93e8d5ee44cd3e"
+  },
+  "processes": [
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round066-s2345-entry/package/source/s2345_entry.py",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round066-parent/s2345-replay/entry.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 18.034699,
+      "exit_code": 0,
+      "pid": 4481,
+      "source_sha256": "f6e0c04c481e940fe62bc1bdf7f437677c261c32c1b981223db78c00f2ed44f7",
+      "stage": "entry"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round066-s2345-entry/package/source/s2345_trees.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round066-parent/s2345-replay/entry.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round066-parent/s2345-replay/trees.json",
+        "--depth",
+        "128",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 0.199705,
+      "exit_code": 0,
+      "pid": 4791,
+      "source_sha256": "c9b7c601120e17c7fd69fa5e4a07a8fbfe6ae3834305254d1c940c84746c0834",
+      "stage": "trees"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round066-s2345-entry/package/source/verify_s2345_entry.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round066-parent/s2345-replay/entry.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round066-parent/s2345-replay/independent-entry.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 105.319646,
+      "exit_code": 0,
+      "pid": 4799,
+      "source_sha256": "82620ff9770595b9e7dad418664881a183cdfb3edb26032c2a4339893dbf29ca",
+      "stage": "independent-entry"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round066-s2345-entry/package/source/verify_s2345_trees.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round066-parent/s2345-replay/trees.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round066-parent/s2345-replay/independent-trees.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 0.186691,
+      "exit_code": 0,
+      "pid": 6473,
+      "source_sha256": "16dd403bb0bc739365028556ace2449e9656b1aa2ac4717add16899d11a86635",
+      "stage": "independent-trees"
+    }
+  ],
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "source_manifest_sha256": "6ddbf724472f9e4ac680567c11cf4f9dd006d2d9d11deaf75b9f6c5d2291b3d2",
+  "status": "verified",
+  "trees": {
+    "dead": 101,
+    "forward_dead": 101,
+    "reverse_dead": 101
+  },
+  "workers": 4
+}
