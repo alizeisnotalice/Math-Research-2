@@ -1,0 +1,1057 @@
+{
+  "python": "3.15.0",
+  "python_executable": "/Users/zzh/.local/bin/python3",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "arithmetic": "Exact integers; deterministic exhaustive enumeration.",
+  "source_sha256": "7034bad12b146a6f7a30a9a49ff777b0f6585ffd1893041d95d332bcc49770ba",
+  "parallel_affine_splices": [
+    {
+      "selector_bits": 1,
+      "shared_data_bits": 0,
+      "private_bits_per_leaf": 3,
+      "ambient_bits": 7,
+      "counts": {
+        "families": 65536,
+        "with_noncharacter": 65280,
+        "all_noncharacter": 57600,
+        "with_collisions": 34596,
+        "noncharacter_and_colliding": 34592,
+        "all_noncharacter_and_colliding": 33856
+      },
+      "quadratic_slack_histogram_for_colliding_noncharacter": {
+        "3": 3136,
+        "7": 224,
+        "24": 14336,
+        "28": 512,
+        "35": 12800,
+        "39": 3584
+      },
+      "witnesses": {
+        "binary_collision_without_coefficient_cancellation": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x3"
+          ],
+          "assembled_truth_mask": "0x100010001000100010001aaabaaab",
+          "leaf_sparsities": [
+            8,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              6,
+              4
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 10,
+            "1": 2,
+            "2": -2,
+            "3": -2,
+            "4": -2,
+            "5": -2,
+            "6": -2,
+            "7": -2,
+            "8": -2,
+            "9": -2,
+            "10": -2,
+            "11": -2,
+            "12": -2,
+            "13": -2,
+            "14": -2,
+            "15": -2,
+            "32": -4,
+            "33": 4,
+            "64": -4,
+            "65": 4,
+            "96": -4,
+            "97": 4
+          },
+          "sparsity": 22,
+          "lifted_rank": 7,
+          "projected_lifted_rank": 6
+        }
+      }
+    },
+    {
+      "selector_bits": 1,
+      "shared_data_bits": 1,
+      "private_bits_per_leaf": 2,
+      "ambient_bits": 6,
+      "counts": {
+        "families": 65536,
+        "with_noncharacter": 65280,
+        "all_noncharacter": 57600,
+        "with_collisions": 46088,
+        "noncharacter_and_colliding": 46080,
+        "all_noncharacter_and_colliding": 44608
+      },
+      "quadratic_slack_histogram_for_colliding_noncharacter": {
+        "3": 5120,
+        "4": 576,
+        "7": 448,
+        "24": 16384,
+        "28": 1024,
+        "31": 6144,
+        "40": 9728,
+        "44": 6144,
+        "48": 512
+      },
+      "witnesses": {
+        "binary_collision_without_coefficient_cancellation": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x3"
+          ],
+          "assembled_truth_mask": "0x100010001aaab",
+          "leaf_sparsities": [
+            8,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              6,
+              4
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 10,
+            "1": 2,
+            "2": -2,
+            "3": -2,
+            "4": -2,
+            "5": -2,
+            "6": -2,
+            "7": -2,
+            "8": -2,
+            "9": -2,
+            "10": -2,
+            "11": -2,
+            "12": -2,
+            "13": -2,
+            "14": -2,
+            "15": -2,
+            "16": -4,
+            "17": 4,
+            "32": -4,
+            "33": 4,
+            "48": -4,
+            "49": 4
+          },
+          "sparsity": 22,
+          "lifted_rank": 7,
+          "projected_lifted_rank": 6
+        }
+      }
+    },
+    {
+      "selector_bits": 1,
+      "shared_data_bits": 2,
+      "private_bits_per_leaf": 1,
+      "ambient_bits": 5,
+      "counts": {
+        "families": 65536,
+        "with_noncharacter": 65280,
+        "all_noncharacter": 57600,
+        "with_collisions": 55248,
+        "noncharacter_and_colliding": 55232,
+        "all_noncharacter_and_colliding": 52288
+      },
+      "quadratic_slack_histogram_for_colliding_noncharacter": {
+        "0": 64,
+        "3": 6144,
+        "4": 3072,
+        "7": 896,
+        "28": 4096,
+        "31": 29696,
+        "35": 8192,
+        "39": 3072
+      },
+      "witnesses": {
+        "collision_number_exceeds_smaller_square_root": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x1"
+          ],
+          "assembled_truth_mask": "0x10203",
+          "leaf_sparsities": [
+            8,
+            8
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              6,
+              6
+            ],
+            "1": [
+              -2,
+              -2
+            ],
+            "2": [
+              -2,
+              -2
+            ],
+            "3": [
+              -2,
+              -2
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 12,
+            "2": -4,
+            "4": -4,
+            "6": -4,
+            "8": -2,
+            "9": -2,
+            "10": -2,
+            "11": -2,
+            "12": -2,
+            "13": -2,
+            "14": -2,
+            "15": -2,
+            "16": -2,
+            "17": 2,
+            "18": -2,
+            "19": 2,
+            "20": -2,
+            "21": 2,
+            "22": -2,
+            "23": 2
+          },
+          "sparsity": 20,
+          "lifted_rank": 6,
+          "projected_lifted_rank": 5
+        },
+        "binary_collision_without_coefficient_cancellation": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x3"
+          ],
+          "assembled_truth_mask": "0x10a0b",
+          "leaf_sparsities": [
+            8,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              6,
+              4
+            ],
+            "2": [
+              -2,
+              -4
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 10,
+            "1": 2,
+            "2": -2,
+            "3": -2,
+            "4": -6,
+            "5": 2,
+            "6": -2,
+            "7": -2,
+            "8": -2,
+            "9": -2,
+            "10": -2,
+            "11": -2,
+            "12": -2,
+            "13": -2,
+            "14": -2,
+            "15": -2,
+            "16": -4,
+            "17": 4,
+            "20": -4,
+            "21": 4
+          },
+          "sparsity": 20,
+          "lifted_rank": 6,
+          "projected_lifted_rank": 5
+        },
+        "tight_with_all_noncharacter_and_collision": {
+          "leaf_truth_masks": [
+            "0x11",
+            "0x11"
+          ],
+          "assembled_truth_mask": "0x3030303",
+          "leaf_sparsities": [
+            4,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              4,
+              4
+            ],
+            "1": [
+              -4,
+              -4
+            ],
+            "2": [
+              -4,
+              -4
+            ],
+            "3": [
+              -4,
+              -4
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 8,
+            "2": -8,
+            "4": -8,
+            "6": -8
+          },
+          "sparsity": 4,
+          "lifted_rank": 3,
+          "projected_lifted_rank": 3
+        },
+        "single_fiber_per_frequency_affine_graph": {
+          "leaf_truth_masks": [
+            "0x11",
+            "0x22"
+          ],
+          "assembled_truth_mask": "0x9090909",
+          "leaf_sparsities": [
+            4,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              4,
+              4
+            ],
+            "1": [
+              -4,
+              4
+            ],
+            "2": [
+              -4,
+              -4
+            ],
+            "3": [
+              -4,
+              4
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 8,
+            "3": -8,
+            "4": -8,
+            "7": -8
+          },
+          "sparsity": 4,
+          "lifted_rank": 3,
+          "projected_lifted_rank": 3
+        }
+      }
+    },
+    {
+      "selector_bits": 1,
+      "shared_data_bits": 3,
+      "private_bits_per_leaf": 0,
+      "ambient_bits": 4,
+      "counts": {
+        "families": 65536,
+        "with_noncharacter": 65280,
+        "all_noncharacter": 57600,
+        "with_collisions": 62624,
+        "noncharacter_and_colliding": 62592,
+        "all_noncharacter_and_colliding": 56704
+      },
+      "quadratic_slack_histogram_for_colliding_noncharacter": {
+        "0": 896,
+        "4": 25088,
+        "7": 3840,
+        "28": 32768
+      },
+      "witnesses": {
+        "collision_number_exceeds_smaller_square_root": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x1"
+          ],
+          "assembled_truth_mask": "0x3",
+          "leaf_sparsities": [
+            8,
+            8
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              6,
+              6
+            ],
+            "1": [
+              -2,
+              -2
+            ],
+            "2": [
+              -2,
+              -2
+            ],
+            "3": [
+              -2,
+              -2
+            ],
+            "4": [
+              -2,
+              -2
+            ],
+            "5": [
+              -2,
+              -2
+            ],
+            "6": [
+              -2,
+              -2
+            ],
+            "7": [
+              -2,
+              -2
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 12,
+            "2": -4,
+            "4": -4,
+            "6": -4,
+            "8": -4,
+            "10": -4,
+            "12": -4,
+            "14": -4
+          },
+          "sparsity": 8,
+          "lifted_rank": 4,
+          "projected_lifted_rank": 4
+        },
+        "single_fiber_per_frequency_affine_graph": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x2"
+          ],
+          "assembled_truth_mask": "0x9",
+          "leaf_sparsities": [
+            8,
+            8
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              6,
+              6
+            ],
+            "1": [
+              -2,
+              2
+            ],
+            "2": [
+              -2,
+              -2
+            ],
+            "3": [
+              -2,
+              2
+            ],
+            "4": [
+              -2,
+              -2
+            ],
+            "5": [
+              -2,
+              2
+            ],
+            "6": [
+              -2,
+              -2
+            ],
+            "7": [
+              -2,
+              2
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 12,
+            "3": -4,
+            "4": -4,
+            "7": -4,
+            "8": -4,
+            "11": -4,
+            "12": -4,
+            "15": -4
+          },
+          "sparsity": 8,
+          "lifted_rank": 4,
+          "projected_lifted_rank": 4
+        },
+        "binary_collision_without_coefficient_cancellation": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x3"
+          ],
+          "assembled_truth_mask": "0xb",
+          "leaf_sparsities": [
+            8,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              6,
+              4
+            ],
+            "2": [
+              -2,
+              -4
+            ],
+            "4": [
+              -2,
+              -4
+            ],
+            "6": [
+              -2,
+              -4
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 10,
+            "1": 2,
+            "2": -2,
+            "3": -2,
+            "4": -6,
+            "5": 2,
+            "6": -2,
+            "7": -2,
+            "8": -6,
+            "9": 2,
+            "10": -2,
+            "11": -2,
+            "12": -6,
+            "13": 2,
+            "14": -2,
+            "15": -2
+          },
+          "sparsity": 16,
+          "lifted_rank": 5,
+          "projected_lifted_rank": 4
+        },
+        "tight_with_all_noncharacter_and_collision": {
+          "leaf_truth_masks": [
+            "0x3",
+            "0x3"
+          ],
+          "assembled_truth_mask": "0xf",
+          "leaf_sparsities": [
+            4,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              4,
+              4
+            ],
+            "2": [
+              -4,
+              -4
+            ],
+            "4": [
+              -4,
+              -4
+            ],
+            "6": [
+              -4,
+              -4
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 8,
+            "4": -8,
+            "8": -8,
+            "12": -8
+          },
+          "sparsity": 4,
+          "lifted_rank": 3,
+          "projected_lifted_rank": 3
+        }
+      }
+    },
+    {
+      "selector_bits": 2,
+      "shared_data_bits": 0,
+      "private_bits_per_leaf": 2,
+      "ambient_bits": 10,
+      "counts": {
+        "families": 65536,
+        "with_noncharacter": 61440,
+        "all_noncharacter": 4096,
+        "with_collisions": 55600,
+        "noncharacter_and_colliding": 54528,
+        "all_noncharacter_and_colliding": 4096
+      },
+      "quadratic_slack_histogram_for_colliding_noncharacter": {
+        "28": 256,
+        "31": 2304,
+        "32": 6912,
+        "36": 13824,
+        "40": 768,
+        "43": 9216,
+        "48": 768,
+        "52": 2048,
+        "55": 12288,
+        "60": 4096,
+        "64": 2048
+      },
+      "witnesses": {
+        "quaternary_equal_magnitude_collision_without_cancellation": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x1",
+            "0x1",
+            "0x7"
+          ],
+          "assembled_truth_mask": "0x1000100012223000100010001222300010001000122234445444544456667888988898889aaab888988898889aaab888988898889aaabcccdcccdcccdeeef888988898889aaab888988898889aaab888988898889aaabcccdcccdcccdeeef888988898889aaab888988898889aaab888988898889aaabcccdcccdcccdeeef",
+          "leaf_sparsities": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              2,
+              2,
+              2,
+              -2
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 4,
+            "1": 4,
+            "2": 4,
+            "3": -4,
+            "4": -2,
+            "5": -2,
+            "6": -2,
+            "7": -2,
+            "8": -2,
+            "9": -2,
+            "10": -2,
+            "11": -2,
+            "12": -2,
+            "13": -2,
+            "14": -2,
+            "15": -2,
+            "16": -2,
+            "17": 2,
+            "18": -2,
+            "19": 2,
+            "32": -2,
+            "33": 2,
+            "34": -2,
+            "35": 2,
+            "48": -2,
+            "49": 2,
+            "50": -2,
+            "51": 2,
+            "64": -2,
+            "65": -2,
+            "66": 2,
+            "67": 2,
+            "128": -2,
+            "129": -2,
+            "130": 2,
+            "131": 2,
+            "192": -2,
+            "193": -2,
+            "194": 2,
+            "195": 2,
+            "256": -2,
+            "257": 2,
+            "258": 2,
+            "259": -2,
+            "512": -2,
+            "513": 2,
+            "514": 2,
+            "515": -2,
+            "768": 2,
+            "769": -2,
+            "770": -2,
+            "771": 2
+          },
+          "sparsity": 52,
+          "lifted_rank": 11,
+          "projected_lifted_rank": 9
+        }
+      }
+    },
+    {
+      "selector_bits": 2,
+      "shared_data_bits": 1,
+      "private_bits_per_leaf": 1,
+      "ambient_bits": 7,
+      "counts": {
+        "families": 65536,
+        "with_noncharacter": 61440,
+        "all_noncharacter": 4096,
+        "with_collisions": 61440,
+        "noncharacter_and_colliding": 59392,
+        "all_noncharacter_and_colliding": 4096
+      },
+      "quadratic_slack_histogram_for_colliding_noncharacter": {
+        "28": 2048,
+        "31": 13824,
+        "32": 6144,
+        "36": 12288,
+        "39": 4608,
+        "55": 1024,
+        "63": 8192,
+        "64": 8192,
+        "67": 2048,
+        "79": 1024
+      },
+      "witnesses": {
+        "quaternary_equal_magnitude_collision_without_cancellation": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x1",
+            "0x1",
+            "0x2"
+          ],
+          "assembled_truth_mask": "0x10203040506078081828384858687",
+          "leaf_sparsities": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "1": [
+              -2,
+              -2,
+              -2,
+              2
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 8,
+            "4": -4,
+            "5": -4,
+            "6": -4,
+            "7": 4,
+            "8": -2,
+            "9": -2,
+            "10": -2,
+            "11": -2,
+            "12": -2,
+            "13": -2,
+            "14": -2,
+            "15": -2,
+            "16": -2,
+            "17": 2,
+            "18": -2,
+            "19": 2,
+            "20": -2,
+            "21": 2,
+            "22": -2,
+            "23": 2,
+            "32": -2,
+            "33": -2,
+            "34": 2,
+            "35": 2,
+            "36": -2,
+            "37": -2,
+            "38": 2,
+            "39": 2,
+            "64": -2,
+            "65": 2,
+            "66": 2,
+            "67": -2,
+            "68": 2,
+            "69": -2,
+            "70": -2,
+            "71": 2
+          },
+          "sparsity": 37,
+          "lifted_rank": 8,
+          "projected_lifted_rank": 6
+        }
+      }
+    },
+    {
+      "selector_bits": 2,
+      "shared_data_bits": 2,
+      "private_bits_per_leaf": 0,
+      "ambient_bits": 4,
+      "counts": {
+        "families": 65536,
+        "with_noncharacter": 61440,
+        "all_noncharacter": 4096,
+        "with_collisions": 65152,
+        "noncharacter_and_colliding": 61440,
+        "all_noncharacter_and_colliding": 4096
+      },
+      "quadratic_slack_histogram_for_colliding_noncharacter": {
+        "0": 512,
+        "4": 24576,
+        "7": 3072,
+        "28": 33280
+      },
+      "witnesses": {
+        "tight_with_all_noncharacter_and_collision": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x1",
+            "0x1",
+            "0x1"
+          ],
+          "assembled_truth_mask": "0xf",
+          "leaf_sparsities": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "1": [
+              -2,
+              -2,
+              -2,
+              -2
+            ],
+            "2": [
+              -2,
+              -2,
+              -2,
+              -2
+            ],
+            "3": [
+              -2,
+              -2,
+              -2,
+              -2
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 8,
+            "4": -8,
+            "8": -8,
+            "12": -8
+          },
+          "sparsity": 4,
+          "lifted_rank": 3,
+          "projected_lifted_rank": 3
+        },
+        "quaternary_equal_magnitude_collision_without_cancellation": {
+          "leaf_truth_masks": [
+            "0x1",
+            "0x1",
+            "0x1",
+            "0x2"
+          ],
+          "assembled_truth_mask": "0x87",
+          "leaf_sparsities": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "colliding_frequency_rows": {
+            "0": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "1": [
+              -2,
+              -2,
+              -2,
+              2
+            ],
+            "2": [
+              -2,
+              -2,
+              -2,
+              -2
+            ],
+            "3": [
+              -2,
+              -2,
+              -2,
+              2
+            ]
+          },
+          "assembled_spectrum": {
+            "0": 8,
+            "4": -4,
+            "5": -4,
+            "6": -4,
+            "7": 4,
+            "8": -8,
+            "12": -4,
+            "13": -4,
+            "14": -4,
+            "15": 4
+          },
+          "sparsity": 10,
+          "lifted_rank": 5,
+          "projected_lifted_rank": 3
+        }
+      }
+    }
+  ],
+  "nonparallel_affine_partition": {
+    "blocks": [
+      [
+        0,
+        4,
+        8,
+        12
+      ],
+      [
+        2,
+        6,
+        10,
+        14
+      ],
+      [
+        1,
+        3,
+        9,
+        11
+      ],
+      [
+        5,
+        7,
+        13,
+        15
+      ]
+    ],
+    "details_by_noncharacter_count_slack_collisions_cancelled": [
+      [
+        1,
+        28,
+        6,
+        0,
+        2048
+      ],
+      [
+        1,
+        28,
+        8,
+        0,
+        4096
+      ],
+      [
+        1,
+        28,
+        10,
+        0,
+        8192
+      ],
+      [
+        1,
+        28,
+        12,
+        0,
+        2048
+      ],
+      [
+        2,
+        0,
+        16,
+        12,
+        512
+      ],
+      [
+        2,
+        4,
+        16,
+        6,
+        20480
+      ],
+      [
+        2,
+        7,
+        16,
+        8,
+        3072
+      ],
+      [
+        2,
+        28,
+        16,
+        0,
+        512
+      ],
+      [
+        3,
+        28,
+        16,
+        0,
+        16384
+      ],
+      [
+        4,
+        0,
+        16,
+        12,
+        256
+      ],
+      [
+        4,
+        4,
+        16,
+        6,
+        3584
+      ],
+      [
+        4,
+        28,
+        16,
+        0,
+        256
+      ]
+    ],
+    "tight_witness": {
+      "leaf_truth_masks": [
+        "0x1",
+        "0x2",
+        "0x1",
+        "0x2"
+      ],
+      "assembled_truth_mask": "0xc3",
+      "assembled_spectrum": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -8,
+        0,
+        -8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -8,
+        0
+      ],
+      "collision_count": 16,
+      "cancelled_collision_count": 12
+    },
+    "noncharacter_splices": 61440
+  },
+  "elapsed_seconds": 30.646548083999733
+}
