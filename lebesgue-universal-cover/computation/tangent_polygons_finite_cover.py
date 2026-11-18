@@ -99,6 +99,8 @@ if __name__=='__main__':
                       'a395ae3c05008ce57a0adbd27c1dc47c71346b1eb119347f2a1d66050015bc96', 614),
         F('.83732'): ('finite-point-lift-083732-replay.json',
                       'cd21296af9d2d2e963588cd531aaee321364570ee182e0bf06a979b11d7f4846', 705),
+        F('.83735'): ('tomar-six-083735-macbook-replay.json',
+                      '100e0d535f6704925292eeaf3d6604514f5a18f66d80d4a4563abab3d6f7cdec', 1046),
     }
     name, expected, leaves = proofs[args.lower]
     proof = (HERE/name).read_bytes()
