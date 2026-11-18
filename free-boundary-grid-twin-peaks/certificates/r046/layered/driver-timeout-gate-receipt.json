@@ -1,0 +1,21 @@
+{
+  "expected_timeout_reproduced": true,
+  "wrapper_exit_code": 1,
+  "no_matching_process": true,
+  "command": [
+    "python3",
+    "-B",
+    "run_crt.py",
+    "driver-timeout-gate",
+    "65454345",
+    "--workers",
+    "1",
+    "--max-table-mib",
+    "128",
+    "--aggregate-table-mib",
+    "128",
+    "--timeout",
+    "1"
+  ],
+  "stderr": "Traceback (most recent call last):\n  File \"/Volumes/data/CodexTemp/T2/a022-r046-layered/run_crt.py\", line 258, in <module>\n    main()\n    ~~~~^^\n  File \"/Volumes/data/CodexTemp/T2/a022-r046-layered/run_crt.py\", line 244, in main\n    raw, simultaneous = run_queue(options.output, planned, primes, options.workers, options.max_table_mib,\n                        ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                  options.aggregate_table_mib * MIB, options.timeout)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Volumes/data/CodexTemp/T2/a022-r046-layered/run_crt.py\", line 168, in run_queue\n    raise TimeoutError(f'timing out job {key}')\nTimeoutError: timing out job ('65454345', 0)\n"
+}
