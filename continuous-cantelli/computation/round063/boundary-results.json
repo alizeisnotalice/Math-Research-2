@@ -1,0 +1,115 @@
+{
+  "scope": "Symbolic derivative and positive numerical boundary integrals for explicit reference profiles",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "derivatives_for_positive_z_exact": [
+    "-erfc(sqrt(2)*z/(2*sqrt(s)))",
+    "sqrt(2)*exp(-z**2/(2*s))/(sqrt(pi)*sqrt(s))",
+    "-sqrt(2)*z*exp(-z**2/(2*s))/(sqrt(pi)*s**(3/2))"
+  ],
+  "methods_digits": {
+    "tanh-sinh": 70,
+    "gauss-legendre": 52
+  },
+  "rows": [
+    {
+      "k": "0.5",
+      "L": "30",
+      "omitted_second_over_r2": "4.586561503004921799177385431328005",
+      "third_remainder_kernel_over_r2": "0.088063964285404689073205700120413775",
+      "gamma_reference_relative_error": "0.0",
+      "cross_method_relative_difference": "9.77234863759e-53"
+    },
+    {
+      "k": "0.5",
+      "L": "100",
+      "omitted_second_over_r2": "0.93901770841800020388202226689466324",
+      "third_remainder_kernel_over_r2": "0.02243704835572403219484363582986415",
+      "gamma_reference_relative_error": "0.0",
+      "cross_method_relative_difference": "5.5435638817e-52"
+    },
+    {
+      "k": "0.5",
+      "L": "1000",
+      "omitted_second_over_r2": "0.000085945646059444566296256363487584115",
+      "third_remainder_kernel_over_r2": "0.0000024639949618164088363400622716680701",
+      "gamma_reference_relative_error": "1.28619613178e-71",
+      "cross_method_relative_difference": "3.79466107583e-52"
+    },
+    {
+      "k": "0.5",
+      "L": "10000",
+      "omitted_second_over_r2": "6.3742614617775477334874335567120366e-19",
+      "third_remainder_kernel_over_r2": "1.9380754653283671160600843063305899e-20",
+      "gamma_reference_relative_error": "0.0",
+      "cross_method_relative_difference": "6.35993779133e-50"
+    },
+    {
+      "k": "1",
+      "L": "30",
+      "omitted_second_over_r2": "0.0000075483800564753583464345432496923481",
+      "third_remainder_kernel_over_r2": "0.000022828211006749320106449236141366092",
+      "gamma_reference_relative_error": "0.0",
+      "cross_method_relative_difference": "4.70527857719e-53"
+    },
+    {
+      "k": "1",
+      "L": "100",
+      "omitted_second_over_r2": "8.7015585023889235159909762671338541e-21",
+      "third_remainder_kernel_over_r2": "1.0224446904534030579300513899726254e-19",
+      "gamma_reference_relative_error": "1.41040638408e-71",
+      "cross_method_relative_difference": "3.02476046153e-52"
+    },
+    {
+      "k": "1",
+      "L": "1000",
+      "omitted_second_over_r2": "1.0168493868086110458921340589000625e-215",
+      "third_remainder_kernel_over_r2": "1.2633445624437192465432228268004275e-213",
+      "gamma_reference_relative_error": "1.0333501055e-71",
+      "cross_method_relative_difference": "2.95015425758e-52"
+    },
+    {
+      "k": "1",
+      "L": "10000",
+      "omitted_second_over_r2": "1.5209110217591789235423861976929395e-2169",
+      "third_remainder_kernel_over_r2": "1.8999831430930361719668302504795963e-2166",
+      "gamma_reference_relative_error": "0.0",
+      "cross_method_relative_difference": "3.18134435667e-50"
+    },
+    {
+      "k": "2",
+      "L": "30",
+      "omitted_second_over_r2": "4.1991500850372269614550706312612697e-170",
+      "third_remainder_kernel_over_r2": "8.6778734290723089152515146216839127e-13",
+      "gamma_reference_relative_error": "0.0",
+      "cross_method_relative_difference": "3.14258490423e-51"
+    },
+    {
+      "k": "2",
+      "L": "100",
+      "omitted_second_over_r2": "6.3032978160528037220510582337818383e-2083",
+      "third_remainder_kernel_over_r2": "3.4498449631854173762699173515426475e-43",
+      "gamma_reference_relative_error": "0.0",
+      "cross_method_relative_difference": "9.50274303436e-50"
+    },
+    {
+      "k": "2",
+      "L": "1000",
+      "omitted_second_over_r2": "6.4865535847655078416804643392285367e-216246",
+      "third_remainder_kernel_over_r2": "4.7072348384610297742018538190606693e-434",
+      "gamma_reference_relative_error": "0.0",
+      "cross_method_relative_difference": "3.08150294828e-48"
+    },
+    {
+      "k": "2",
+      "L": "10000",
+      "omitted_second_over_r2": "5.8571449532214633367420685089982594e-21705695",
+      "third_remainder_kernel_over_r2": "1.0530008846013984986690310950590232e-4342",
+      "gamma_reference_relative_error": "0.0",
+      "cross_method_relative_difference": "9.81079392245e-46"
+    }
+  ],
+  "max_gamma_reference_relative_error": "1.4104063840834e-71",
+  "max_cross_method_relative_difference": "9.810793922448e-46"
+}
