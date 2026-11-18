@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 平面凸万能覆盖最小面积 | 0.83600000162452 ≤ Λ < 0.844093594386489758782661348091016727，精确值开放 | 第52轮完成 | 改进一般下界与极值结构 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；实解析且导数增长慢于两尾线性除以对数尺度的精确函数必为常数 | 第29轮完成 | 快速振荡两尾与双阈值饱和 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；任意连续精确解的加权中心在宏观区间按长度分布 | 第30轮完成 | 快速振荡尾部及平坦最大点 |
