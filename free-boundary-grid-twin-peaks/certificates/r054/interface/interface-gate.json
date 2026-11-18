@@ -1,0 +1,322 @@
+{
+  "scope": "Exact interleaving counts for fixed local words, no claim on their normalized mass under K=2",
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "source_sha256": "f3028a85e18478f026b14e7acaad618963bc265a0d3ecae1d6fa993abe6529dc",
+  "original_grid_bruteforce_gate": {
+    "seed": 2026111854,
+    "cases": [
+      {
+        "peak_masks": 4,
+        "exact_two_peak_count": 0
+      },
+      {
+        "peak_masks": 4,
+        "exact_two_peak_count": 1
+      },
+      {
+        "peak_masks": 5,
+        "exact_two_peak_count": 0
+      },
+      {
+        "peak_masks": 2,
+        "exact_two_peak_count": 0
+      },
+      {
+        "peak_masks": 3,
+        "exact_two_peak_count": 0
+      },
+      {
+        "peak_masks": 3,
+        "exact_two_peak_count": 165
+      }
+    ],
+    "literal_color_words_checked": 77220
+  },
+  "reflection_gates": [
+    {
+      "M": 1,
+      "bridges": 2,
+      "corridor_counts": [
+        0,
+        2
+      ]
+    },
+    {
+      "M": 2,
+      "bridges": 6,
+      "corridor_counts": [
+        0,
+        4,
+        6
+      ]
+    },
+    {
+      "M": 3,
+      "bridges": 20,
+      "corridor_counts": [
+        0,
+        8,
+        18,
+        20
+      ]
+    },
+    {
+      "M": 4,
+      "bridges": 70,
+      "corridor_counts": [
+        0,
+        16,
+        54,
+        68,
+        70
+      ]
+    },
+    {
+      "M": 5,
+      "bridges": 252,
+      "corridor_counts": [
+        0,
+        32,
+        162,
+        232,
+        250,
+        252
+      ]
+    },
+    {
+      "M": 6,
+      "bridges": 924,
+      "corridor_counts": [
+        0,
+        64,
+        486,
+        792,
+        900,
+        922,
+        924
+      ]
+    }
+  ],
+  "multicolor_gates": [
+    {
+      "r": 2,
+      "M": 4,
+      "all_words": 70,
+      "ordered_count": 14,
+      "corridor_counts": [
+        0,
+        16,
+        54,
+        68,
+        70
+      ]
+    },
+    {
+      "r": 3,
+      "M": 3,
+      "all_words": 1680,
+      "ordered_count": 42,
+      "corridor_counts": [
+        0,
+        216,
+        1296,
+        1680
+      ]
+    },
+    {
+      "r": 4,
+      "M": 2,
+      "all_words": 2520,
+      "ordered_count": 14,
+      "corridor_counts": [
+        0,
+        576,
+        2520
+      ]
+    },
+    {
+      "r": 4,
+      "M": 3,
+      "all_words": 369600,
+      "ordered_count": 462,
+      "corridor_counts": [
+        0,
+        13824,
+        237600,
+        369600
+      ]
+    }
+  ],
+  "same_mask_examples": [
+    {
+      "n": 6,
+      "M": 18,
+      "fixed_peak_pair": [
+        0,
+        4
+      ],
+      "distance": 4,
+      "same_induced_peaks": [
+        [
+          2,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "fixed_cross_pair": [
+        2,
+        3
+      ],
+      "two_word_pairs": [
+        {
+          "killer_local_rank": 2,
+          "accepted_words": "2203961430",
+          "acceptance_exact": "17/70",
+          "acceptance_decimal": "0.242857142857142857142857142857142857142857142857142857143"
+        },
+        {
+          "killer_local_rank": 18,
+          "accepted_words": "1",
+          "acceptance_exact": "1/9075135300",
+          "acceptance_decimal": "1.10191194615026841528191871695841273022122325823616095288E-10"
+        }
+      ],
+      "early_over_late_ratio": "2203961430"
+    },
+    {
+      "n": 8,
+      "M": 32,
+      "fixed_peak_pair": [
+        0,
+        5
+      ],
+      "distance": 5,
+      "same_induced_peaks": [
+        [
+          3,
+          0
+        ],
+        [
+          5
+        ]
+      ],
+      "fixed_cross_pair": [
+        3,
+        4
+      ],
+      "two_word_pairs": [
+        {
+          "killer_local_rank": 2,
+          "accepted_words": "450883717216034179",
+          "acceptance_exact": "31/126",
+          "acceptance_decimal": "0.246031746031746031746031746031746031746031746031746031746"
+        },
+        {
+          "killer_local_rank": 32,
+          "accepted_words": "1",
+          "acceptance_exact": "1/1832624140942590534",
+          "acceptance_decimal": "5.45665626496473382553634050254289347585602887490489437495E-19"
+        }
+      ],
+      "early_over_late_ratio": "450883717216034179"
+    },
+    {
+      "n": 10,
+      "M": 50,
+      "fixed_peak_pair": [
+        0,
+        6
+      ],
+      "distance": 6,
+      "same_induced_peaks": [
+        [
+          4,
+          0
+        ],
+        [
+          6
+        ]
+      ],
+      "fixed_cross_pair": [
+        4,
+        5
+      ],
+      "two_word_pairs": [
+        {
+          "killer_local_rank": 2,
+          "accepted_words": "24968060013801239764675820028",
+          "acceptance_exact": "49/198",
+          "acceptance_decimal": "0.247474747474747474747474747474747474747474747474747474747"
+        },
+        {
+          "killer_local_rank": 50,
+          "accepted_words": "1",
+          "acceptance_exact": "1/100891344545564193334812497256",
+          "acceptance_decimal": "9.91165302141833906737674969688360149541221027064328376789E-30"
+        }
+      ],
+      "early_over_late_ratio": "24968060013801239764675820028"
+    },
+    {
+      "n": 12,
+      "M": 72,
+      "fixed_peak_pair": [
+        0,
+        7
+      ],
+      "distance": 7,
+      "same_induced_peaks": [
+        [
+          5,
+          0
+        ],
+        [
+          7
+        ]
+      ],
+      "fixed_cross_pair": [
+        5,
+        6
+      ],
+      "two_word_pairs": [
+        {
+          "killer_local_rank": 2,
+          "accepted_words": "367465464649873494718744753773649665860850",
+          "acceptance_exact": "71/286",
+          "acceptance_decimal": "0.248251748251748251748251748251748251748251748251748251748"
+        },
+        {
+          "killer_local_rank": 72,
+          "accepted_words": "1",
+          "acceptance_exact": "1/1480212998448786189993816895482588794876100",
+          "acceptance_decimal": "6.75578447863899734746974551059676349344876211743621607954E-43"
+        }
+      ],
+      "early_over_late_ratio": "367465464649873494718744753773649665860850"
+    }
+  ],
+  "two_way_slack_example": {
+    "n": 8,
+    "M": 32,
+    "undesired_peak_ranks": [
+      30,
+      30
+    ],
+    "suppressor_ranks": [
+      2,
+      2
+    ],
+    "corridor_width": 12,
+    "protection_anchors": [
+      2,
+      61
+    ],
+    "global_anchor_manhattan": 10,
+    "accepted_exact": "3966718919789086/3966718919789157",
+    "accepted_decimal": "0.999999999999982101076119662680105475695883558800820497054",
+    "corridor_exact": "4002841143795/4041299260691",
+    "certified_corridor_lower": "688680589/695297229"
+  }
+}
