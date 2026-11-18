@@ -1,0 +1,405 @@
+{
+  "active_site_multiplicity_bound_checks" : 64059,
+  "all_checks_passed" : true,
+  "bands_with_complete_coefficient_cancellation" : 10672,
+  "bands_with_repeated_active_label" : 18612,
+  "bands_with_two_or_more_active_and_some_inactive_sites" : 4230,
+  "batches" : [
+    {
+      "cases" : 7224,
+      "coefficients" : 462336,
+      "cpu_fwht_wall_seconds" : 0.0030740416841581464,
+      "data_bits" : 2,
+      "gpu_fwht_command_seconds" : 0.0090022500371560454,
+      "measured_cpu_gpu_overlap_seconds" : 0.00045083335135132074,
+      "modes" : 4,
+      "shapes" : 1806
+    },
+    {
+      "cases" : 7224,
+      "coefficients" : 924672,
+      "cpu_fwht_wall_seconds" : 0.005282416648697108,
+      "data_bits" : 3,
+      "gpu_fwht_command_seconds" : 0.00011887500295415521,
+      "measured_cpu_gpu_overlap_seconds" : 0.00011887500295415521,
+      "modes" : 4,
+      "shapes" : 1806
+    }
+  ],
+  "bounds_tight_bands_with_two_or_more_active_sites" : 4856,
+  "cases" : 14448,
+  "coefficient_checks_cpu_metal_formula" : 1387008,
+  "command_buffers_completed" : 2,
+  "cpu_backend" : "Int32 CPU FWHT with small integer direct Walsh and branch analysis",
+  "cpu_gpu_formula_mismatches" : 0,
+  "data_variable_counts" : [
+    2,
+    3
+  ],
+  "examples" : {
+    "repeated-with-inactive" : {
+      "active_query_sites" : 2,
+      "data_bits" : 2,
+      "largest_local_lift" : 32,
+      "leaf_mode" : 2,
+      "leaf_truth_tables" : [
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "maximum_frequency_label" : 3,
+      "minimum_isolator_sizes" : [
+        1,
+        1
+      ],
+      "nodes" : [
+        {
+          "label" : 0,
+          "leaf_index" : -1,
+          "left" : 1,
+          "path_mask" : 0,
+          "path_values" : 0,
+          "right" : 2
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 0,
+          "left" : 0,
+          "path_mask" : 1,
+          "path_values" : 0,
+          "right" : 0
+        },
+        {
+          "label" : 1,
+          "leaf_index" : -1,
+          "left" : 3,
+          "path_mask" : 1,
+          "path_values" : 1,
+          "right" : 8
+        },
+        {
+          "label" : 2,
+          "leaf_index" : -1,
+          "left" : 4,
+          "path_mask" : 3,
+          "path_values" : 1,
+          "right" : 5
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 1,
+          "left" : 0,
+          "path_mask" : 7,
+          "path_values" : 1,
+          "right" : 0
+        },
+        {
+          "label" : 3,
+          "leaf_index" : -1,
+          "left" : 6,
+          "path_mask" : 7,
+          "path_values" : 5,
+          "right" : 7
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 2,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 5,
+          "right" : 0
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 3,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 13,
+          "right" : 0
+        },
+        {
+          "label" : 2,
+          "leaf_index" : -1,
+          "left" : 9,
+          "path_mask" : 3,
+          "path_values" : 3,
+          "right" : 12
+        },
+        {
+          "label" : 3,
+          "leaf_index" : -1,
+          "left" : 10,
+          "path_mask" : 7,
+          "path_values" : 3,
+          "right" : 11
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 4,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 3,
+          "right" : 0
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 5,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 11,
+          "right" : 0
+        },
+        {
+          "label" : 3,
+          "leaf_index" : -1,
+          "left" : 13,
+          "path_mask" : 7,
+          "path_values" : 7,
+          "right" : 14
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 6,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 7,
+          "right" : 0
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 7,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 15,
+          "right" : 0
+        }
+      ],
+      "number_of_leaves" : 8,
+      "physical_query_sites" : 3,
+      "postcollision_band_sparsity" : 16,
+      "precollision_occurrences" : 64,
+      "precollision_union" : 32,
+      "shape_index" : 18
+    },
+    "three-active-tight" : {
+      "active_query_sites" : 3,
+      "data_bits" : 2,
+      "largest_local_lift" : 32,
+      "leaf_mode" : 1,
+      "leaf_truth_tables" : [
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "maximum_frequency_label" : 3,
+      "minimum_isolator_sizes" : [
+        2,
+        2,
+        1
+      ],
+      "nodes" : [
+        {
+          "label" : 0,
+          "leaf_index" : -1,
+          "left" : 1,
+          "path_mask" : 0,
+          "path_values" : 0,
+          "right" : 2
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 0,
+          "left" : 0,
+          "path_mask" : 1,
+          "path_values" : 0,
+          "right" : 0
+        },
+        {
+          "label" : 1,
+          "leaf_index" : -1,
+          "left" : 3,
+          "path_mask" : 1,
+          "path_values" : 1,
+          "right" : 10
+        },
+        {
+          "label" : 2,
+          "leaf_index" : -1,
+          "left" : 4,
+          "path_mask" : 3,
+          "path_values" : 1,
+          "right" : 7
+        },
+        {
+          "label" : 3,
+          "leaf_index" : -1,
+          "left" : 5,
+          "path_mask" : 7,
+          "path_values" : 1,
+          "right" : 6
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 1,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 1,
+          "right" : 0
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 2,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 9,
+          "right" : 0
+        },
+        {
+          "label" : 3,
+          "leaf_index" : -1,
+          "left" : 8,
+          "path_mask" : 7,
+          "path_values" : 5,
+          "right" : 9
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 3,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 5,
+          "right" : 0
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 4,
+          "left" : 0,
+          "path_mask" : 15,
+          "path_values" : 13,
+          "right" : 0
+        },
+        {
+          "label" : 3,
+          "leaf_index" : -1,
+          "left" : 11,
+          "path_mask" : 3,
+          "path_values" : 3,
+          "right" : 12
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 5,
+          "left" : 0,
+          "path_mask" : 11,
+          "path_values" : 3,
+          "right" : 0
+        },
+        {
+          "label" : -1,
+          "leaf_index" : 6,
+          "left" : 0,
+          "path_mask" : 11,
+          "path_values" : 11,
+          "right" : 0
+        }
+      ],
+      "number_of_leaves" : 7,
+      "physical_query_sites" : 3,
+      "postcollision_band_sparsity" : 8,
+      "precollision_occurrences" : 80,
+      "precollision_union" : 32,
+      "shape_index" : 31
+    }
+  },
+  "gpu_backend" : "Metal integer FWHT",
+  "gpu_device" : "Apple M5 Pro",
+  "individual_inactive_node_occurrences" : 54093,
+  "leaf_functions" : "only noncharacters",
+  "ordered_shapes_on_four_query_labels" : 1806,
+  "schema" : "a28-r044-ordered-tree-collision-bands-metal-v1",
+  "seed_hex" : "a280440dcaf12345"
+}
