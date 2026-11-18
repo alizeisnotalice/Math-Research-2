@@ -12,6 +12,6 @@
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
-| [lebesgue-universal-cover](lebesgue-universal-cover/STATE.md) | 平面凸万能覆盖最小面积 | 0.83744145457600263406 < Λ < 0.844090199381915819309863137479469765909，精确值开放 | 第220轮完成 | 改进一般界，判定低面积凸宿主能容纳的连续输入族 |
+| [lebesgue-universal-cover](lebesgue-universal-cover/STATE.md) | 平面凸万能覆盖最小面积 | 0.83745145414617248855 < Λ < 0.844090199381915819309863137479469765909，精确值开放 | 第221轮完成 | 推进 .83750 难叶与 .84409 的共同摆放 |
 
 | [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；真正高斯输入下所有有界轮廓的 Wasserstein 精确首变分 | 第208轮完成 | 快速振荡尾部及平坦最大点 |
