@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 直径≤1、允许全欧氏等距的平面凸万能覆盖最小面积 | 原题开放；全局20维紧域与一个严格局部排除盒 | 第33轮完成 | 四维耦合剪枝及Sprague/EH覆盖整合 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；排除平方尺度两侧分别趋零与趋无穷的最大接触 | 第20轮完成 | 双侧平坦和振荡接触 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；极大点平坦相的弱星极限为唯一空间常数 | 第21轮完成 | 中间比例与双侧平坦接触 |
