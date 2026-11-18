@@ -1,0 +1,18 @@
+# Real-transform endpoint and far-tail budgets at the lower terminal wing
+
+Use R084 through T=L−1>0 when the left lower tail tends to L and the other end has liminf≥L. Write −A for the limiting left boundary. The positive limiting survivor Q=Q_{T−} has support [−A,B], and for λ>0
+H(λ)=∫e^{−λy}Q(dy)=∫_{f(x)≥T}e^{−λx−λ²(f(x)−T)/2}g(x)dx.
+The level T is counted in the future because of the left time limit. Brownian comparison with the static barrier −A gives 0≤q(−A+u)≤p_T(u−A)−p_T(u+A) for u>0, in the density sense. The upper density is K₀u+O(u³) at 0, with K₀=(2A/T)p_T(A). Consequently
+limsup λ² exp(−Aλ)H(λ)≤K₀.                                             (1)
+
+On the far negative tail write x=−λ+z and complete the Gaussian square. The resulting integrand is g(z)exp(λ²[L−f(−λ+z)]/2). If f(−r)=L−D/r+o(1/r), a fixed positive-length z interval in (1) implies D≤2A. If f(−r)=L−2A/r+[β log r+C+o(1)]/r², for each fixed z the exponent is Aλ+Az−(β log λ+C)/2+o(1). Fatou over z, restricting if desired to |z|≤K and then increasing K, shows that the remote contribution is at least exp[(A²−C)/2] on the scale exp(Aλ)λ^{−β/2} in the liminf sense. Therefore β≥4, and for β=4 it is necessary that C≥A²−2log K₀. A one-sided upper bound on f with the indicated right-hand side suffices for these obstructions. No smoothness or speed is used at the opposite far end.
+
+**Competition with the finite edge.** Suppose T−f(−A+w)∼c_i w for w↓0 on the interior and c_i>0. Then
+q(−A+u)∼2g(A)u/c_i,  and  λ²e^{−Aλ}H(λ)→K_i=2g(A)/c_i.              (2)
+For a direct proof use q(y)=p_T(y)−∫_{f<T}p_{T−f(x)}(y−x)g(x)dx. Around the left edge the nearby past points are x=−A+w for w>0. Their variances v(w)∼c_i w give continuity by domination with Cw^{−1/2}; the off-diagonal contribution is smooth there. The exterior density vanishes and so its value at the boundary is zero. Its centered second difference at offsets ±u therefore equals q(−A+u). In the near-source term substitute w=u²z. After dividing by u, bounded z intervals converge by domination with Cz^{−1/2}. For w>K u² the bound on the Gaussian second derivative gives error ≤C u²∫_{Ku²}^δ w^{−3/2}dw≤C u/√K. Sources separated from −A give O(u²). Thus the limit is 2g(A)∫₀∞(p_{c_i z}(0)−p_{c_i z}(1))dz=2g(A)/c_i. Here ∫₀∞(p_s(0)−p_s(1))ds=1 by substitution or integration by parts. The Laplace limit follows by the static linear domination.
+
+If f(−A−w)−T∼c_o w on the outward side, c_o>0, this finite collar consumes at least K_o=2g(A)/c_o of (1), by w=z/λ², Fatou and ∫₀∞ exp(−c_o z/2)dz=2/c_o. More generally an outward upper bound by (c_o+o(1))w suffices. This collar is disjoint from the remote window above. Hence K_o≤K_i≤K₀ and c_o≥c_i. At β=4, the necessary joint inequality is
+exp[(A²−C)/2]+K_o ≤ K_i.
+In particular a differentiable nonzero crossing with matching slopes excludes every finite C at β=4. With no inward slope assumption one can replace K_i by K₀ in the joint inequality. Right lower tails are obtained by reflection.
+
+The edge-speed bound in r088-critical-level-continuation.md also gives a pointwise derivative refinement. For almost every 0<t<T, the left boundary rate obeys g(A(t))A′(t)≤[A(t)/t]p_t(A(t)). Indeed the same static killed density at time t has linear coefficient 2A(t)p_t(A(t))/t. Test the chance of hitting the old barrier before t+h, scaling z=√h u in its integral against 2barΦ(z/√h). Since ∫₀∞2u barΦ(u)du=1/2, the upper bound on the exit probability is h A(t)p_t(A(t))/t+o(h). Compare with the exact mass ∫_{A(t)}^{A(t+h)}g. This argument controls the front itself without requiring a priori derivative assumptions.
