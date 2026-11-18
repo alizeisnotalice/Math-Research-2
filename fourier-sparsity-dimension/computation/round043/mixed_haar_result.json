@@ -1,0 +1,329 @@
+{
+  "python": "3.15.0",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "source_sha256": "be9f3d9dffb382622a84d1830fcc3bb537c59f42f81bc03546b53f8a5a68f063",
+  "shared_variables": 2,
+  "leaf_truth_masks": [
+    "0x0",
+    "0xf",
+    "0x3",
+    "0x1",
+    "0x2"
+  ],
+  "templates": {
+    "all_private": {
+      "tree": [
+        "private",
+        null,
+        [
+          "private",
+          null,
+          null,
+          null
+        ],
+        [
+          "private",
+          null,
+          null,
+          null
+        ]
+      ],
+      "private_coordinates": 3,
+      "shared_child_path_counts_out_of_4": [],
+      "counts": {
+        "compared_coefficients": 140000,
+        "root_rank_budget_checks": 625,
+        "tight_root_rank_budgets": 6,
+        "tight_strengthened_root_rank_budgets": 6,
+        "leaf_families": 625,
+        "positive_subtree_budget_checks": 1620,
+        "tight_subtree_budgets": 1068,
+        "tight_strengthened_subtree_budgets": 1068,
+        "positive_subtree_budget_checks_with_shared_forks": 0,
+        "single_effective_child_checks": 200,
+        "equal_means_two_effective_children_checks": 48
+      }
+    },
+    "root_with_one_private_child": {
+      "tree": [
+        "private",
+        null,
+        [
+          "private",
+          null,
+          null,
+          null
+        ],
+        null
+      ],
+      "private_coordinates": 2,
+      "shared_child_path_counts_out_of_4": [],
+      "counts": {
+        "compared_coefficients": 10000,
+        "root_rank_budget_checks": 125,
+        "tight_root_rank_budgets": 2,
+        "tight_strengthened_root_rank_budgets": 2,
+        "leaf_families": 125,
+        "positive_subtree_budget_checks": 220,
+        "tight_subtree_budgets": 120,
+        "tight_strengthened_subtree_budgets": 120,
+        "positive_subtree_budget_checks_with_shared_forks": 0,
+        "single_effective_child_checks": 100
+      }
+    },
+    "repeated_parity_dead_paths": {
+      "tree": [
+        "shared",
+        6,
+        [
+          "shared",
+          6,
+          [
+            "private",
+            null,
+            null,
+            null
+          ],
+          [
+            "private",
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          "private",
+          null,
+          null,
+          null
+        ]
+      ],
+      "private_coordinates": 3,
+      "shared_child_path_counts_out_of_4": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "counts": {
+        "compared_coefficients": 5500000,
+        "dead_path_checks": 46875,
+        "root_rank_budget_checks": 15625,
+        "tight_root_rank_budgets": 0,
+        "tight_strengthened_root_rank_budgets": 400,
+        "leaf_families": 15625,
+        "positive_subtree_budget_checks": 43600,
+        "tight_subtree_budgets": 30000,
+        "tight_strengthened_subtree_budgets": 36400,
+        "positive_subtree_budget_checks_with_shared_forks": 6400,
+        "shared_double_effective_forks": 6400
+      }
+    },
+    "same_parity_through_private_branches": {
+      "tree": [
+        "private",
+        null,
+        [
+          "shared",
+          6,
+          null,
+          null
+        ],
+        [
+          "private",
+          null,
+          [
+            "shared",
+            6,
+            null,
+            null
+          ],
+          null
+        ]
+      ],
+      "private_coordinates": 2,
+      "shared_child_path_counts_out_of_4": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "counts": {
+        "compared_coefficients": 450000,
+        "root_rank_budget_checks": 3125,
+        "tight_root_rank_budgets": 8,
+        "tight_strengthened_root_rank_budgets": 8,
+        "leaf_families": 3125,
+        "positive_subtree_budget_checks": 5760,
+        "tight_subtree_budgets": 3060,
+        "tight_strengthened_subtree_budgets": 3060,
+        "positive_subtree_budget_checks_with_shared_forks": 0,
+        "single_effective_child_checks": 2700
+      }
+    },
+    "different_shared_parities": {
+      "tree": [
+        "private",
+        null,
+        [
+          "shared",
+          10,
+          [
+            "private",
+            null,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          "shared",
+          12,
+          null,
+          [
+            "private",
+            null,
+            null,
+            null
+          ]
+        ]
+      ],
+      "private_coordinates": 3,
+      "shared_child_path_counts_out_of_4": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "counts": {
+        "compared_coefficients": 5500000,
+        "root_rank_budget_checks": 15625,
+        "tight_root_rank_budgets": 40,
+        "tight_strengthened_root_rank_budgets": 40,
+        "leaf_families": 15625,
+        "positive_subtree_budget_checks": 44983,
+        "tight_subtree_budgets": 18183,
+        "tight_strengthened_subtree_budgets": 18183,
+        "positive_subtree_budget_checks_with_shared_forks": 0,
+        "single_effective_child_checks": 8600
+      }
+    },
+    "unbalanced_shared_predicate": {
+      "tree": [
+        "shared",
+        8,
+        [
+          "private",
+          null,
+          [
+            "private",
+            null,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          "private",
+          null,
+          null,
+          null
+        ]
+      ],
+      "private_coordinates": 3,
+      "shared_child_path_counts_out_of_4": [
+        [
+          3,
+          1
+        ]
+      ],
+      "counts": {
+        "compared_coefficients": 900000,
+        "root_rank_budget_checks": 3125,
+        "tight_root_rank_budgets": 0,
+        "tight_strengthened_root_rank_budgets": 0,
+        "leaf_families": 3125,
+        "positive_subtree_budget_checks": 9540,
+        "tight_subtree_budgets": 4000,
+        "tight_strengthened_subtree_budgets": 4000,
+        "positive_subtree_budget_checks_with_shared_forks": 960,
+        "shared_double_effective_forks": 960,
+        "single_effective_child_checks": 2500
+      }
+    },
+    "conditional_unbalanced_parity": {
+      "tree": [
+        "shared",
+        8,
+        [
+          "shared",
+          10,
+          null,
+          [
+            "private",
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          "private",
+          null,
+          null,
+          null
+        ]
+      ],
+      "private_coordinates": 2,
+      "shared_child_path_counts_out_of_4": [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "counts": {
+        "compared_coefficients": 450000,
+        "root_rank_budget_checks": 3125,
+        "tight_root_rank_budgets": 0,
+        "tight_strengthened_root_rank_budgets": 0,
+        "leaf_families": 3125,
+        "positive_subtree_budget_checks": 6020,
+        "tight_subtree_budgets": 2500,
+        "tight_strengthened_subtree_budgets": 2500,
+        "positive_subtree_budget_checks_with_shared_forks": 480,
+        "shared_double_effective_forks": 480
+      }
+    }
+  },
+  "totals": {
+    "compared_coefficients": 12950000,
+    "root_rank_budget_checks": 41375,
+    "tight_root_rank_budgets": 56,
+    "tight_strengthened_root_rank_budgets": 456,
+    "leaf_families": 41375,
+    "positive_subtree_budget_checks": 111743,
+    "tight_subtree_budgets": 58931,
+    "tight_strengthened_subtree_budgets": 65331,
+    "positive_subtree_budget_checks_with_shared_forks": 7840,
+    "single_effective_child_checks": 14100,
+    "equal_means_two_effective_children_checks": 48,
+    "dead_path_checks": 46875,
+    "shared_double_effective_forks": 7840
+  },
+  "elapsed_seconds": 18.874314791999495
+}

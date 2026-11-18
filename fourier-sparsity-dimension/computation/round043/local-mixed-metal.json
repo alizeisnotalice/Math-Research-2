@@ -1,0 +1,542 @@
+{
+  "active_subtree_gated_lower_bound_checks" : 795,
+  "all_checks_passed" : true,
+  "cases" : 128,
+  "cases_with_effective_shared_split" : 81,
+  "coefficients_cpu_gpu_and_haar" : 162116,
+  "command_buffers_completed" : 12,
+  "cpu_backend" : "exact Int32 FWHT with direct integer intrinsic Walsh coefficients",
+  "cpu_gpu_and_haar_disagreements" : 0,
+  "device" : "Apple M6",
+  "effective_private_node_instances_with_zero_own_signal" : 18,
+  "effective_shared_split_total" : 103,
+  "equality_cases_for_effective_private_shared_bound" : 8,
+  "examples" : [
+    {
+      "allocated_private_queries" : 4,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 2,
+      "effective_private_queries" : 2,
+      "kind" : "repeated parity plus nonlinear shared query",
+      "never_reached_private_nodes" : [
+        4
+      ],
+      "private_haar_cost" : 8,
+      "root_mean_sparsity" : 2,
+      "shared_nodes_with_two_effective_private_branches" : 1,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        4
+      ],
+      "sparsity" : 10
+    },
+    {
+      "allocated_private_queries" : 5,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+        0
+      ],
+      "data_bits" : 2,
+      "effective_private_queries" : 5,
+      "kind" : "zero private root difference with active descendants",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 32,
+      "root_mean_sparsity" : 2,
+      "shared_nodes_with_two_effective_private_branches" : 2,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4
+      ],
+      "sparsity" : 34
+    },
+    {
+      "allocated_private_queries" : 7,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+        0,
+        1,
+        2
+      ],
+      "data_bits" : 2,
+      "effective_private_queries" : 7,
+      "kind" : "exact n-bound witness",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 16,
+      "root_mean_sparsity" : 0,
+      "shared_nodes_with_two_effective_private_branches" : 0,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sparsity" : 16
+    },
+    {
+      "allocated_private_queries" : 0,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 2,
+      "effective_private_queries" : 0,
+      "kind" : "no private queries",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 0,
+      "root_mean_sparsity" : 4,
+      "shared_nodes_with_two_effective_private_branches" : 0,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sparsity" : 4
+    },
+    {
+      "allocated_private_queries" : 2,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 2,
+      "effective_private_queries" : 2,
+      "kind" : "shared root multiplexes two independent private queries",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 4,
+      "root_mean_sparsity" : 0,
+      "shared_nodes_with_two_effective_private_branches" : 1,
+      "signal_sparsity_by_node" : [
+        0,
+        2,
+        2
+      ],
+      "sparsity" : 4
+    },
+    {
+      "allocated_private_queries" : 4,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 3,
+      "effective_private_queries" : 2,
+      "kind" : "repeated parity plus nonlinear shared query",
+      "never_reached_private_nodes" : [
+        4
+      ],
+      "private_haar_cost" : 8,
+      "root_mean_sparsity" : 2,
+      "shared_nodes_with_two_effective_private_branches" : 1,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        4
+      ],
+      "sparsity" : 10
+    },
+    {
+      "allocated_private_queries" : 5,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+        0
+      ],
+      "data_bits" : 3,
+      "effective_private_queries" : 5,
+      "kind" : "zero private root difference with active descendants",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 32,
+      "root_mean_sparsity" : 2,
+      "shared_nodes_with_two_effective_private_branches" : 2,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4
+      ],
+      "sparsity" : 34
+    },
+    {
+      "allocated_private_queries" : 7,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+        0,
+        1,
+        2
+      ],
+      "data_bits" : 3,
+      "effective_private_queries" : 7,
+      "kind" : "exact n-bound witness",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 16,
+      "root_mean_sparsity" : 0,
+      "shared_nodes_with_two_effective_private_branches" : 0,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sparsity" : 16
+    },
+    {
+      "allocated_private_queries" : 0,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 3,
+      "effective_private_queries" : 0,
+      "kind" : "no private queries",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 0,
+      "root_mean_sparsity" : 4,
+      "shared_nodes_with_two_effective_private_branches" : 0,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sparsity" : 4
+    },
+    {
+      "allocated_private_queries" : 2,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 3,
+      "effective_private_queries" : 2,
+      "kind" : "shared root multiplexes two independent private queries",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 4,
+      "root_mean_sparsity" : 0,
+      "shared_nodes_with_two_effective_private_branches" : 1,
+      "signal_sparsity_by_node" : [
+        0,
+        2,
+        2
+      ],
+      "sparsity" : 4
+    },
+    {
+      "allocated_private_queries" : 4,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 4,
+      "effective_private_queries" : 2,
+      "kind" : "repeated parity plus nonlinear shared query",
+      "never_reached_private_nodes" : [
+        4
+      ],
+      "private_haar_cost" : 8,
+      "root_mean_sparsity" : 2,
+      "shared_nodes_with_two_effective_private_branches" : 1,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        4
+      ],
+      "sparsity" : 10
+    },
+    {
+      "allocated_private_queries" : 5,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+        0
+      ],
+      "data_bits" : 4,
+      "effective_private_queries" : 5,
+      "kind" : "zero private root difference with active descendants",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 32,
+      "root_mean_sparsity" : 2,
+      "shared_nodes_with_two_effective_private_branches" : 2,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4
+      ],
+      "sparsity" : 34
+    },
+    {
+      "allocated_private_queries" : 7,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+        0,
+        1,
+        2
+      ],
+      "data_bits" : 4,
+      "effective_private_queries" : 7,
+      "kind" : "exact n-bound witness",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 16,
+      "root_mean_sparsity" : 0,
+      "shared_nodes_with_two_effective_private_branches" : 0,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sparsity" : 16
+    },
+    {
+      "allocated_private_queries" : 0,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 4,
+      "effective_private_queries" : 0,
+      "kind" : "no private queries",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 0,
+      "root_mean_sparsity" : 4,
+      "shared_nodes_with_two_effective_private_branches" : 0,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sparsity" : 4
+    },
+    {
+      "allocated_private_queries" : 2,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 4,
+      "effective_private_queries" : 2,
+      "kind" : "shared root multiplexes two independent private queries",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 4,
+      "root_mean_sparsity" : 0,
+      "shared_nodes_with_two_effective_private_branches" : 1,
+      "signal_sparsity_by_node" : [
+        0,
+        2,
+        2
+      ],
+      "sparsity" : 4
+    },
+    {
+      "allocated_private_queries" : 4,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 5,
+      "effective_private_queries" : 2,
+      "kind" : "repeated parity plus nonlinear shared query",
+      "never_reached_private_nodes" : [
+        4
+      ],
+      "private_haar_cost" : 8,
+      "root_mean_sparsity" : 2,
+      "shared_nodes_with_two_effective_private_branches" : 1,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        4
+      ],
+      "sparsity" : 10
+    },
+    {
+      "allocated_private_queries" : 5,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+        0
+      ],
+      "data_bits" : 5,
+      "effective_private_queries" : 5,
+      "kind" : "zero private root difference with active descendants",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 32,
+      "root_mean_sparsity" : 2,
+      "shared_nodes_with_two_effective_private_branches" : 2,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4
+      ],
+      "sparsity" : 34
+    },
+    {
+      "allocated_private_queries" : 7,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+        0,
+        1,
+        2
+      ],
+      "data_bits" : 5,
+      "effective_private_queries" : 7,
+      "kind" : "exact n-bound witness",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 16,
+      "root_mean_sparsity" : 0,
+      "shared_nodes_with_two_effective_private_branches" : 0,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sparsity" : 16
+    },
+    {
+      "allocated_private_queries" : 0,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 5,
+      "effective_private_queries" : 0,
+      "kind" : "no private queries",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 0,
+      "root_mean_sparsity" : 4,
+      "shared_nodes_with_two_effective_private_branches" : 0,
+      "signal_sparsity_by_node" : [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sparsity" : 4
+    },
+    {
+      "allocated_private_queries" : 2,
+      "also_effective_private_nodes_with_zero_own_signal" : [
+
+      ],
+      "data_bits" : 5,
+      "effective_private_queries" : 2,
+      "kind" : "shared root multiplexes two independent private queries",
+      "never_reached_private_nodes" : [
+
+      ],
+      "private_haar_cost" : 4,
+      "root_mean_sparsity" : 0,
+      "shared_nodes_with_two_effective_private_branches" : 1,
+      "signal_sparsity_by_node" : [
+        0,
+        2,
+        2
+      ],
+      "sparsity" : 4
+    }
+  ],
+  "gpu_backend" : "exact Int32 staged Metal FWHT",
+  "gpu_command_seconds" : 0.0015209166685963282,
+  "metal4_supported" : true,
+  "number_of_private_node_shared_input_pairs_unreachable" : 4014,
+  "private_coordinate_limit" : 8,
+  "schema" : "a28-r043-shared-private-haar-tree-metal-v1",
+  "seed_hex" : "a280430d6ab12345",
+  "series" : [
+    {
+      "cases" : 32,
+      "coefficients" : 10156,
+      "data_bits" : 2
+    },
+    {
+      "cases" : 32,
+      "coefficients" : 25864,
+      "data_bits" : 3
+    },
+    {
+      "cases" : 32,
+      "coefficients" : 41712,
+      "data_bits" : 4
+    },
+    {
+      "cases" : 32,
+      "coefficients" : 84384,
+      "data_bits" : 5
+    }
+  ],
+  "shared_data_range" : [
+    2,
+    5
+  ],
+  "total_never_reached_private_node_instances" : 33
+}
