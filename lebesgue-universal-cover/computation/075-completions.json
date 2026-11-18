@@ -1,0 +1,73 @@
+{
+  "precision_bits": 160,
+  "active_lens_corners_with_uncertain_included": 12,
+  "raw_lens_alignment": {
+    "b_minus_w": [
+      "[0.88452003627016131527764448943488994939913 +/- 4.98e-42]",
+      "[-0.46650220303513306270002718942408528883608 +/- 7.09e-42]"
+    ],
+    "m5": [
+      "[0.8792281965040595881410333701766874378438795333 +/- 1.26e-47]",
+      "[-0.4764008590170873936544942557594023629051036585 +/- 2.23e-47]"
+    ],
+    "reflected_b_minus_w": [
+      "[0.03825725938524936699423151808602990954257 +/- 3.56e-42]",
+      "[0.99926792308385930157551039961834672889719 +/- 7.97e-42]"
+    ],
+    "reflected_m5": [
+      "[0.02703885195850325493022435394316923770554 +/- 4.11e-42]",
+      "[0.99963438340463566944525295599755100415873 +/- 8.95e-42]"
+    ],
+    "no_width_one_directions_in_degrees_open_modulo_180": [
+      0,
+      60
+    ]
+  },
+  "root_angle_range_degrees": [
+    "1.44",
+    "1.47"
+  ],
+  "root_compatibility_at_left_exact_bounds": [
+    "[-2.3074863894351707831771444508078446512959529482e-6 +/- 2.45e-53]",
+    "[-6.8277476375449594073475859847096110637407794818e-7 +/- 4.48e-54]"
+  ],
+  "root_compatibility_at_right_exact_bounds": [
+    "[4.3252270076908118131100084417255765499003531005e-7 +/- 1.17e-54]",
+    "[2.0911052289769115457194380068102682262790978101e-6 +/- 4.89e-53]"
+  ],
+  "rigid_motion": "R_(pi/3-phi), with exact translation centering widths along n0,n1",
+  "results": [
+    {
+      "delta": "0.0000155",
+      "passes": true,
+      "cells": 2048,
+      "curve_subdivisions": 8,
+      "strict_minimum_nonhex_slack_lower_bound": "[4.4913139845718408674542615771290535122104744014e-5 +/- 2.86e-52]",
+      "closest_edge": "chord_Tp_7",
+      "cell": 0,
+      "certified_approximate_witness_radius": "8e-8"
+    },
+    {
+      "delta": "0.005",
+      "passes": true,
+      "cells": 2048,
+      "curve_subdivisions": 8,
+      "strict_minimum_nonhex_slack_lower_bound": "[1.4870877568797058797374391659894572401859480270e-5 +/- 1.57e-52]",
+      "closest_edge": "chord_H_0",
+      "cell": 2047,
+      "certified_approximate_witness_radius": "8e-8"
+    },
+    {
+      "delta": "0.007",
+      "passes": true,
+      "cells": 2048,
+      "curve_subdivisions": 8,
+      "strict_minimum_nonhex_slack_lower_bound": "[1.8303786186872361862622016132302828426383109670e-7 +/- 3.96e-54]",
+      "closest_edge": "chord_H_0",
+      "cell": 2047,
+      "certified_approximate_witness_radius": "2e-8"
+    }
+  ],
+  "script_sha256": "ce515738a620673b04d3bb0dfa6fbf41154c3f3b62ac0642e7198be8083e0717",
+  "input_sha256": "c7186f26cd6562f903f82ed179850682c471840ed3f9160f7c1bd499f9aa0518"
+}
