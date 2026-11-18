@@ -1,0 +1,57 @@
+{
+  "python": "3.15.0",
+  "normalization": "Walsh/N",
+  "ordinary_full_physical_space_only": true,
+  "census": [
+    {
+      "rank": 1,
+      "truth_tables": 4,
+      "faithful": 2,
+      "endpoint": 2,
+      "least_positive_gap": null,
+      "distribution": {
+        "0": 2
+      }
+    },
+    {
+      "rank": 2,
+      "truth_tables": 16,
+      "faithful": 8,
+      "endpoint": 8,
+      "least_positive_gap": null,
+      "distribution": {
+        "0": 8
+      }
+    },
+    {
+      "rank": 3,
+      "truth_tables": 256,
+      "faithful": 184,
+      "endpoint": 16,
+      "least_positive_gap": "1/4",
+      "distribution": {
+        "0": 16,
+        "1/4": 56,
+        "1/2": 112
+      }
+    },
+    {
+      "rank": 4,
+      "truth_tables": 65536,
+      "faithful": 62464,
+      "endpoint": 32,
+      "least_positive_gap": "5/8",
+      "distribution": {
+        "0": 32,
+        "5/8": 5280,
+        "3/4": 1600,
+        "7/8": 13440,
+        "1": 3360,
+        "9/8": 10080,
+        "5/4": 18816,
+        "3/2": 8960,
+        "15/8": 896
+      }
+    }
+  ]
+}
