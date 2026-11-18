@@ -8,7 +8,7 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；最短路修复给出原律秩矩界，n9有严格远峰下界 | 第47轮完成 | 早秩及亚线性峰距、拼接归一化 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；新增一般低行定理；六点≤65、九点≤40严格公平 | 第59轮完成 | 八次S23/S56双端与第7行缺口的有限补全 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；第7项缺口迫两因子次数≥20；六点≤67、九点≤42严格公平 | 第60轮完成 | 排除第7项缺口的次数20支 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 

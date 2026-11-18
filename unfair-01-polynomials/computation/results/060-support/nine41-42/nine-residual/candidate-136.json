@@ -1,0 +1,157 @@
+{
+  "format": "positive-certificate-v1",
+  "case": {
+    "name": "I0247_J0246891012131518",
+    "I": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      10,
+      11,
+      19
+    ],
+    "J": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      10,
+      13,
+      14,
+      22
+    ]
+  },
+  "strict_variables": [
+    "a1",
+    "a2",
+    "a3",
+    "a7",
+    "a10",
+    "a11",
+    "b1",
+    "b2",
+    "b4",
+    "b6",
+    "b10",
+    "b13",
+    "b14"
+  ],
+  "unit_variables": [
+    "a0",
+    "a19",
+    "b0",
+    "b22"
+  ],
+  "basis": {
+    "multiplier_total_degree_at_most": 1,
+    "positive_atom_total_degree_at_most": 2,
+    "atom_form": "product(positive) * product(1-minus)"
+  },
+  "matrix": {
+    "polynomial_rows": 560,
+    "normalization_rows": 1,
+    "free_multiplier_columns": 350,
+    "positive_atom_columns": 338,
+    "lp_nonnegative_columns": 1038,
+    "elapsed_seconds": 0.015227417000460264
+  },
+  "solver": {
+    "name": "SciPy HiGHS linprog",
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  "certificate": {
+    "multipliers": [
+      {
+        "diagonal": 2,
+        "monomial": [],
+        "coefficient": [
+          1,
+          5
+        ]
+      },
+      {
+        "diagonal": 5,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          5
+        ]
+      },
+      {
+        "diagonal": 8,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          5
+        ]
+      }
+    ],
+    "positive_atoms": [
+      {
+        "positive": [],
+        "one_minus": [
+          "a1",
+          "b1"
+        ],
+        "coefficient": [
+          1,
+          5
+        ]
+      },
+      {
+        "positive": [
+          "a1"
+        ],
+        "one_minus": [
+          "b4"
+        ],
+        "coefficient": [
+          1,
+          5
+        ]
+      },
+      {
+        "positive": [
+          "a2"
+        ],
+        "one_minus": [
+          "b6"
+        ],
+        "coefficient": [
+          1,
+          5
+        ]
+      },
+      {
+        "positive": [
+          "b2"
+        ],
+        "one_minus": [
+          "a3"
+        ],
+        "coefficient": [
+          1,
+          5
+        ]
+      },
+      {
+        "positive": [
+          "b1"
+        ],
+        "one_minus": [
+          "a7"
+        ],
+        "coefficient": [
+          1,
+          5
+        ]
+      }
+    ],
+    "exact_recovery_check": true
+  },
+  "status": "certificate_found"
+}

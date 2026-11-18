@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "out": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round059-parent/gap7-probe/larger-degrees/m32n48",
+    "m": 32,
+    "n": 48,
+    "starts": 8192,
+    "steps": 20000,
+    "restart": 2000,
+    "seconds": 14400.0,
+    "seed": 2026111808
+  },
+  "prefix": {
+    "minpoly_ascending": [
+      1,
+      -2,
+      4,
+      -7,
+      6,
+      -4,
+      1
+    ],
+    "isolation_interval": [
+      "265422694562681831097/368934881474191032320",
+      "1061690778250727324389/1475739525896764129280"
+    ],
+    "left": [
+      "1",
+      "t",
+      "0",
+      "-t*(t**2 - t + 1) + 1",
+      "-(1 - t)*(-t*(t**2 - t + 1) + 1) + 1",
+      "0",
+      "0",
+      "0"
+    ],
+    "right": [
+      "1",
+      "1 - t",
+      "t**2 - t + 1",
+      "0",
+      "0",
+      "t**2*(t**2 - t + 1)",
+      "0",
+      "0"
+    ],
+    "degree8_remaining_budget": "-t**2*(-t*(t**2 - t + 1) + 1)*(t**2 - t + 1) + 1",
+    "source_sha256": "88d3d12f2132e3f8b8f10a2a0f6f10de77423449a088d9b5e059992ab4bfe3a5"
+  },
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "torch": "2.15.0",
+  "numpy": "2.5.4",
+  "sympy": "1.14.0",
+  "device": "mps",
+  "dtype": "float32",
+  "scope": "Numerical optimization for an exact C7-gap starting prefix. Samples alone have no exclusion credit."
+}

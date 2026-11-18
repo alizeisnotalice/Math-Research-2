@@ -1,0 +1,120 @@
+{
+  "counts": {
+    "dead_after_factor": 1,
+    "dead_forward_or_reverse": 848
+  },
+  "domains": 88,
+  "fresh_outputs_sha256": {
+    "front.json": "fc6545026f1bc4aaf81556c3cdc7f1287213b44cb38311233e8bdfe5e512258a",
+    "front.rows.jsonl": "f1c46ce2835f8e545fea6e750e5b57397b1be747c1da231ceb042da05499a3e7",
+    "independent-front.json": "0126b15e8533fa364ec7cd3a520113318ec1cf38ea925158510c5ef0b4c76e22",
+    "independent-tail.json": "921e08db756ed287cc52eb6a5cc5730529f79592a0a2dfcacfc8a68b14610f28",
+    "independent-trees.json": "1d2c3a91d5c9c0423f0f81c2fe7d26df9ebb3be6ecbbf54d320ade44f30ccc48",
+    "tail.json": "ec42cbb52eafd8f10be03516b4157e760650d495147fabacbfbb7d6f597949ee",
+    "tail.rows.jsonl": "42a708be8b25731ddcac0bc6d78dcbc7088c16b5a9f44ceb79f28a60d790173d",
+    "trees.json": "c5662cd4343d2d02883c2d06f9effce6a17db47d826b6936aa452765b5eb6ab3",
+    "trees.rows.jsonl": "2d3b895e3eb605f42e3b54a1bfe905b4030a586b0badc1f2e5a696350d591c1a"
+  },
+  "processes": [
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round060-s23-entry/package/source/s23_entry.py",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/front.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 0.873435,
+      "exit_code": 0,
+      "pid": 244,
+      "source_sha256": "5fd487844381dd168ccc9455a8b8cbedf58fef67a2942c1885c1028a93bb4d50",
+      "stage": "front"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round060-s23-entry/package/source/s23_tail.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/front.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/tail.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 19.732788,
+      "exit_code": 0,
+      "pid": 309,
+      "source_sha256": "9d520b0d0e821673269c99cd0e968f9f64e55637ecf47234197149ab99c63eb9",
+      "stage": "tail"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round060-s23-entry/package/source/s23_trees.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/tail.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/trees.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 5.490896,
+      "exit_code": 0,
+      "pid": 1178,
+      "source_sha256": "58c893013a603fb035bc83abe96a5c9b6b6f56120329ba357aa95fef4043a5a3",
+      "stage": "trees"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round060-s23-entry/package/source/verify_s23_front.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/front.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/independent-front.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 2.082213,
+      "exit_code": 0,
+      "pid": 1343,
+      "source_sha256": "d5a2d2f062d44d7461522334cc7edac1c74bc439e90e50d55c5b33db0b8a5668",
+      "stage": "independent-front"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round060-s23-entry/package/source/verify_s23_tail.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/front.rows.jsonl",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/tail.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/independent-tail.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 31.711636,
+      "exit_code": 0,
+      "pid": 1382,
+      "source_sha256": "61522352a1d492d082050d2bc8515e30827b44e0c30db2dac00a147cfb121e74",
+      "stage": "independent-tail"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round060-s23-entry/package/source/verify_s23_trees.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/trees.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round060-parent/s23-parent-replay/independent-trees.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 5.625433,
+      "exit_code": 0,
+      "pid": 2358,
+      "source_sha256": "83d262868e5cf80d739056a5364a0418f778cf37a326673b4eb053b9b5f4b0d6",
+      "stage": "independent-trees"
+    }
+  ],
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "source_manifest_sha256": "10b246e586b623664685c051c73afb12ada6d68c06ce3a24f2d6a89a361fc085",
+  "status": "verified",
+  "workers": 4
+}
