@@ -1,0 +1,68 @@
+{
+  "python": "3.15.0",
+  "four_variable_layouts": [
+    {
+      "query_dim": 1,
+      "tables": 65536,
+      "rows": 131072,
+      "rows_with_deletion_rank": 61888,
+      "rows_with_fibre_direction_rank": 125120,
+      "rows_with_relation_only_residual": 0,
+      "verified_low_overlap_sufficient": 2912,
+      "verified_aggregate_sufficient": 51200,
+      "verified_squared_sum_sufficient": 51200,
+      "actual_non_decreasing_child": 51200
+    },
+    {
+      "query_dim": 2,
+      "tables": 65536,
+      "rows": 262144,
+      "rows_with_deletion_rank": 130816,
+      "rows_with_fibre_direction_rank": 259968,
+      "rows_with_relation_only_residual": 0,
+      "verified_low_overlap_sufficient": 384,
+      "verified_aggregate_sufficient": 65536,
+      "verified_squared_sum_sufficient": 65536,
+      "actual_non_decreasing_child": 65536
+    },
+    {
+      "query_dim": 3,
+      "tables": 65536,
+      "rows": 524288,
+      "rows_with_deletion_rank": 520192,
+      "rows_with_fibre_direction_rank": 524032,
+      "rows_with_relation_only_residual": 0,
+      "verified_low_overlap_sufficient": 0,
+      "verified_aggregate_sufficient": 65536,
+      "verified_squared_sum_sufficient": 65536,
+      "actual_non_decreasing_child": 65536
+    }
+  ],
+  "bent_switch": {
+    "parent_support": [
+      0,
+      2,
+      4,
+      7,
+      8,
+      11,
+      12,
+      14,
+      16,
+      18,
+      21,
+      22,
+      25,
+      26,
+      28,
+      30
+    ],
+    "parent_rank": 6,
+    "child_ranks": [
+      5,
+      5
+    ],
+    "both_child_support_sizes": 16,
+    "singleton_fibres": 16
+  }
+}

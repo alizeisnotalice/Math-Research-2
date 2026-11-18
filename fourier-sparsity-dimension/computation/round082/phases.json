@@ -1,0 +1,136 @@
+{
+  "python": "3.15.0",
+  "pencil_counts": [
+    {
+      "distinct_matrices": 1,
+      "zero_present": false,
+      "count": 35
+    },
+    {
+      "distinct_matrices": 1,
+      "zero_present": true,
+      "count": 1
+    },
+    {
+      "distinct_matrices": 2,
+      "zero_present": false,
+      "count": 3570
+    },
+    {
+      "distinct_matrices": 2,
+      "zero_present": true,
+      "count": 210
+    },
+    {
+      "distinct_matrices": 4,
+      "zero_present": false,
+      "count": 20160
+    },
+    {
+      "distinct_matrices": 4,
+      "zero_present": true,
+      "count": 2520
+    }
+  ],
+  "sharp_pencils": [
+    {
+      "distinct_matrices": 1,
+      "zero_present": true,
+      "count": 1
+    },
+    {
+      "distinct_matrices": 2,
+      "zero_present": false,
+      "count": 1680
+    },
+    {
+      "distinct_matrices": 4,
+      "zero_present": false,
+      "count": 17640
+    }
+  ],
+  "full_support_equality": [
+    {
+      "data_dimension": 2,
+      "R_parent": 7,
+      "s_parent": 16,
+      "all_address_slices": 16
+    },
+    {
+      "data_dimension": 3,
+      "R_parent": 9,
+      "s_parent": 32,
+      "all_address_slices": 32
+    },
+    {
+      "data_dimension": 4,
+      "R_parent": 11,
+      "s_parent": 64,
+      "all_address_slices": 64
+    },
+    {
+      "data_dimension": 5,
+      "R_parent": 13,
+      "s_parent": 128,
+      "all_address_slices": 128
+    },
+    {
+      "data_dimension": 6,
+      "R_parent": 15,
+      "s_parent": 256,
+      "all_address_slices": 256
+    }
+  ],
+  "variable_support_equality": {
+    "s_parent": 64,
+    "R_parent": 15,
+    "address_branches": 512,
+    "labels": 8,
+    "repetitions_per_label": 256
+  },
+  "nonfull_support_counterexamples": [
+    {
+      "dimension": 2,
+      "parent_s": 16,
+      "parent_R": 7,
+      "child_s": 10,
+      "child_R": 5
+    },
+    {
+      "dimension": 3,
+      "parent_s": 24,
+      "parent_R": 8,
+      "child_s": 18,
+      "child_R": 6
+    },
+    {
+      "dimension": 4,
+      "parent_s": 40,
+      "parent_R": 9,
+      "child_s": 34,
+      "child_R": 7
+    },
+    {
+      "dimension": 5,
+      "parent_s": 72,
+      "parent_R": 10,
+      "child_s": 66,
+      "child_R": 8
+    },
+    {
+      "dimension": 6,
+      "parent_s": 136,
+      "parent_R": 11,
+      "child_s": 130,
+      "child_R": 9
+    },
+    {
+      "dimension": 7,
+      "parent_s": 264,
+      "parent_R": 12,
+      "child_s": 258,
+      "child_R": 10
+    }
+  ],
+  "counterexample_single_bit_affine_restrictions": 36
+}
