@@ -37,7 +37,13 @@ G_L+\mu F_L=h_L(R_{-\theta}n)+(\mu-d_0)h_L(v_0)+(-\mu-d_1)h_L(v_1)+\mu h_L(v_2)+
 
 第62轮其余分支所需的耳与弧几何，在每个切深单独重算。新增帽面积采用第62轮 Green 积分式并从第47轮旧体的严格面积上端扣除。
 
-## 切深 0.00005 的严格结果
+## 保留左侧的真圆弧
+
+对更深的切除，可把内近似中 \(H\to U_1\) 的四条弦换回真圆弧。所用内凸体是原内多边形顶点与这一段边界圆弧的凸包。各保留弦连结原边界相邻采样点，所以都支撑该凸包。其余边界恰为所加圆弧。候选姿态仍由六边形相容关系及其余弦的证书满足 \(P\) 的所有不等式，尤其 \(m_5\cdot x\le1/2\)。因此其 CB 支撑点 \(b=(1/2,b_y)\) 满足 \(b_y\ge C_{3,y}\)。
+
+圆弧的单位外法向 \(u\) 满足 \(u_x,u_y\le0\)，这是 \(H-C_3=(-1,0)\)、\(U_1-C_3\) 严格第三象限及短弧次序的结果。对候选姿态中任一点 \(x\)，若 \(x_y\le C_{3,y}\)，则 \(|x-C_3|\le |x-b|\le1\)，从而满足该圆弧的切线。若 \(x_y\ge C_{3,y}\)，用 \(x_x\ge-1/2\) 得 \(u\cdot x\le u\cdot H\le u\cdot C_3+1\)。因此候选姿态自动满足这整段真实圆弧的所有支撑线。圆弧和临接弦交点的法向锥由对应两侧极端法向生成，也无需另测。
+
+## 两种切深的严格结果
 
 取 \(\phi_*=30.75^\circ\) 及 12 个闭角格。Arb 核验 \(F_L(\phi_*)<-1.45978\times10^{-4}\)，在 32 条非六边形边上的全角格最小严格余量大于 \(8.42584\times10^{-6}\)。新增帽面积严格大于 \(1.1190189991101190301\times10^{-8}\)，故得到一般上界
 
@@ -45,8 +51,29 @@ G_L+\mu F_L=h_L(R_{-\theta}n)+(\mu-d_0)h_L(v_0)+(-\mu-d_1)h_L(v_1)+\mu h_L(v_2)+
 \Lambda<0.844093583196299768.
 \]
 
-用 Python 3.13.18、NumPy 2.5.5、python-flint 0.9.0 重放 `computation/eh-root-conditioned-50.json`。重放无需调用 SciPy，实际退出零且输出与原证书逐字节一致。
+切深增至 \(0.0001\) 时，取 \(\phi_*=31.1^\circ\) 与 16 个闭角格。Arb 核验 \(F_L(\phi_*)<-1.00643549\times10^{-4}\)，全部 32 条非六边形边最小严格余量大于 \(2.55074282\times10^{-6}\)。新增帽面积严格大于 \(2.23903403585955555\times10^{-8}\)，故得到一般上界
+
+\[
+\Lambda<0.844093571996149401.
+\]
+
+用 Python 3.13.18、NumPy 2.5.5、python-flint 0.9.0 重放 `computation/eh-root-conditioned-50.json` 与 `computation/eh-root-conditioned-100.json`。两次重放无需调用 SciPy，实际退出零且输出与原证书逐字节一致。
 
 ```sh
 python -B computation/certify_eh_relocation_root_condition.py 0.00005 30.75 OUTPUT.json --replay computation/eh-root-conditioned-50.json
+python -B computation/certify_eh_relocation_root_condition.py 0.0001 31.1 OUTPUT.json --angle-cells 16 --replay computation/eh-root-conditioned-100.json
+```
+
+## 切深 0.000105
+
+采用保留 \(H\to U_1\) 真圆弧的内凸体，取 \(\phi_*=31.06^\circ\)。对 28 条其余边分别自适应划分全角段，共用 30 个闭角格、60 组端点对偶。Arb 核验 \(F_L(\phi_*)<-1.35202554\times10^{-5}\)，所认证边的最小严格余量大于 \(2.38383496\times10^{-6}\)。真圆弧用上述解析论证处理。新增帽面积严格大于 \(2.35109056212188182\times10^{-8}\)，故一般万能覆盖面积满足
+
+\[
+\Lambda<0.844093570875584138.
+\]
+
+以下重放实际退出零且输出与原证书逐字节一致。\(\delta=0.0002\) 的同一个姿态判据在右侧 Sprague 内弦遇到未认证区间，故该切深仍待进一步处理。
+
+```sh
+python -B computation/certify_eh_relocation_adaptive.py 0.000105 31.06 OUTPUT.json --replay computation/eh-root-adaptive-105.json
 ```
