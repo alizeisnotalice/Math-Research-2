@@ -1,0 +1,101 @@
+{
+  "scope": "Exact local symbolic checks plus floating heat-cap and scalar saddle calibrations",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "exact_reflected_linear_coefficient": "sqrt(2)*b*exp(-b**2/(2*T))/(sqrt(pi)*T**(3/2))",
+  "exact_saddle": "sqrt(kappa)*sqrt(1/(c*z**2/2 - z))",
+  "cap_rows": [
+    {
+      "z": "1e2",
+      "scaled_cap": "0.34634107726324555644812893340355089",
+      "predicted_limit": "0.34641586681798733928353437359932384",
+      "cross_method_difference": "8.6860295995007e-51"
+    },
+    {
+      "z": "1e3",
+      "scaled_cap": "0.34641511865860792519649652356280124",
+      "predicted_limit": "0.34641586681798733928353437359932384",
+      "cross_method_difference": "4.0944127025636e-50"
+    },
+    {
+      "z": "1e4",
+      "scaled_cap": "0.34641585933636714894133498372208061",
+      "predicted_limit": "0.34641586681798733928353437359932384",
+      "cross_method_difference": "3.2401361058501e-50"
+    },
+    {
+      "z": "1e5",
+      "scaled_cap": "0.3464158667431711347404792369808955",
+      "predicted_limit": "0.34641586681798733928353437359932384",
+      "cross_method_difference": "1.6696739096131e-50"
+    }
+  ],
+  "fork_rows": [
+    {
+      "z": "1e3",
+      "kappa_over_threshold": "0.5",
+      "effective_log_rate": "0.20916688933814741173267425759",
+      "limit": "0.205025253169416732919408946527",
+      "Bessel_identity_cross_error": "1.0534707479863e-67"
+    },
+    {
+      "z": "1e3",
+      "kappa_over_threshold": "1",
+      "effective_log_rate": "0.00447247371349842734243247675961",
+      "limit": "0.0",
+      "Bessel_identity_cross_error": "8.8605618237821e-68"
+    },
+    {
+      "z": "1e3",
+      "kappa_over_threshold": "2",
+      "effective_log_rate": "-0.285080766067162728512890959645",
+      "limit": "-0.289949493661166534161182106947",
+      "Bessel_identity_cross_error": "0.0"
+    },
+    {
+      "z": "1e4",
+      "kappa_over_threshold": "0.5",
+      "effective_log_rate": "0.205554360748549587643215093804",
+      "limit": "0.205025253169416732919408946527",
+      "Bessel_identity_cross_error": "1.0428453995418e-67"
+    },
+    {
+      "z": "1e4",
+      "kappa_over_threshold": "1",
+      "effective_log_rate": "0.000562205819808517133281679972498",
+      "limit": "0.0",
+      "Bessel_identity_cross_error": "8.7694441547164e-68"
+    },
+    {
+      "z": "1e4",
+      "kappa_over_threshold": "2",
+      "effective_log_rate": "-0.289347656065734782400397664876",
+      "limit": "-0.289949493661166534161182106947",
+      "Bessel_identity_cross_error": "1.4748619710995e-67"
+    },
+    {
+      "z": "1e5",
+      "kappa_over_threshold": "0.5",
+      "effective_log_rate": "0.205089675000601502521182904998",
+      "limit": "0.205025253169416732919408946527",
+      "Bessel_identity_cross_error": "1.0307294066877e-67"
+    },
+    {
+      "z": "1e5",
+      "kappa_over_threshold": "1",
+      "effective_log_rate": "0.0000677318003443241406094429121607",
+      "limit": "0.0",
+      "Bessel_identity_cross_error": "8.6673858645373e-68"
+    },
+    {
+      "z": "1e5",
+      "kappa_over_threshold": "2",
+      "effective_log_rate": "-0.289877798619262523794329333231",
+      "limit": "-0.289949493661166534161182106947",
+      "Bessel_identity_cross_error": "0.0"
+    }
+  ],
+  "max_cap_cross_method_difference": "4.09441270256356e-50",
+  "max_fork_relative_Bessel_error": "1.4748619710995e-67"
+}
