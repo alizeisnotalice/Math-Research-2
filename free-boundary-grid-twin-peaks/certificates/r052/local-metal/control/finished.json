@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "n": 16,
+    "P": 131072,
+    "R": 12,
+    "tau": 2,
+    "L": 16,
+    "domain": "9e52128000000001"
+  },
+  "source_sha256": "3a9f3c0a8c10409346c25f16f2d82463f928bfaacf7307b4a88a770ec8f69ec6",
+  "binary_sha256": "d80af5d6629ae5e0edeea67c107119f0e2e978f85294dd19e53d6fc0cddc46bc",
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "/Volumes/data/CodexTemp/T2/a022-r052-local-metal-n16-l16/tau2_merge_rb_calibration_r026",
+    "16",
+    "131072",
+    "12",
+    "2",
+    "2",
+    "/Volumes/data/CodexTemp/T2/a022-r052-local-metal-n16-l16/n16.jsonl",
+    "9e52128000000001",
+    "strat",
+    "16"
+  ],
+  "started_utc": "2026-11-18T03:50:01.562922+00:00",
+  "pid": 17784,
+  "caffeinate_pid": 17785,
+  "returncode": 0,
+  "caffeinate_returncode": 0,
+  "waited_reaped": true,
+  "resource_sha256": "da0ecbc598c5e25901f34f1d8346fb04511fd3ef949a80cd13483565b7da3010",
+  "raw_sha256": "8bb78f39b9277a09f01801ee6875a1e8bba51937a70d2989407926071bf47222",
+  "rows": 26,
+  "ended_utc": "2026-11-18T03:51:56.522177+00:00",
+  "remote_process_presence_after_wait": [],
+  "process_check_scope": "local /usr/bin/time, caffeinate and Metal binary"
+}
