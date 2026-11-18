@@ -1,7 +1,7 @@
 #!/bin/zsh
 set -eu
 mount | rg -q ' on /Volumes/data '
-cd /Volumes/data/CodexTemp/T2/cc157-metal-local
+cd "$(dirname "$0")"
 export TMPDIR="$PWD" TMP="$PWD" TEMP="$PWD"
 export XDG_CACHE_HOME=/Volumes/data/CodexTemp/cache
 export CLANG_MODULE_CACHE_PATH=/Volumes/data/CodexTemp/cache/swift-clang
