@@ -1,0 +1,92 @@
+{
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "exact_checks": "three vanishing moments and integration by parts for alpha=5/2,7/2",
+  "numerical_runs": [
+    {
+      "digits": 50,
+      "alpha": "2.5",
+      "weak_coefficient_fixed_core": "0.330937120520939576",
+      "weak_calibration_Gaussian_test": [
+        {
+          "n": 12,
+          "fractional_ratio": "2.4685523290473142"
+        },
+        {
+          "n": 32,
+          "fractional_ratio": "1.0016798001469367"
+        },
+        {
+          "n": 64,
+          "fractional_ratio": "1.00000002561728624"
+        },
+        {
+          "n": 96,
+          "fractional_ratio": "1.00000000000039089"
+        }
+      ],
+      "pointwise_bump_coefficient": "-0.0312598629684388158",
+      "pointwise_calibration_locally": [
+        {
+          "n": 16,
+          "local_bump_ratio": "0.96689680861648147"
+        },
+        {
+          "n": 32,
+          "local_bump_ratio": "0.997844079145103106"
+        },
+        {
+          "n": 64,
+          "local_bump_ratio": "0.999991554827460957"
+        },
+        {
+          "n": 96,
+          "local_bump_ratio": "0.999999967010683512"
+        }
+      ]
+    },
+    {
+      "digits": 75,
+      "alpha": "2.5",
+      "weak_coefficient_fixed_core": "0.330937120520939576",
+      "weak_calibration_Gaussian_test": [
+        {
+          "n": 12,
+          "fractional_ratio": "2.4685523290473142"
+        },
+        {
+          "n": 32,
+          "fractional_ratio": "1.0016798001469367"
+        },
+        {
+          "n": 64,
+          "fractional_ratio": "1.00000002561728624"
+        },
+        {
+          "n": 96,
+          "fractional_ratio": "1.00000000000039089"
+        }
+      ],
+      "pointwise_bump_coefficient": "-0.0312598629684388158",
+      "pointwise_calibration_locally": [
+        {
+          "n": 16,
+          "local_bump_ratio": "0.96689680861648147"
+        },
+        {
+          "n": 32,
+          "local_bump_ratio": "0.997844079145103106"
+        },
+        {
+          "n": 64,
+          "local_bump_ratio": "0.999991554827460957"
+        },
+        {
+          "n": 96,
+          "local_bump_ratio": "0.999999967010683512"
+        }
+      ]
+    }
+  ]
+}
