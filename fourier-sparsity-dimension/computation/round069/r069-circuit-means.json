@@ -1,0 +1,90 @@
+{
+  "python": "3.15.0",
+  "exact_joint_costs": [
+    {
+      "budgets": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "common": "9",
+      "private": "145/96",
+      "joint": "1009/96"
+    },
+    {
+      "budgets": [
+        2,
+        1,
+        1
+      ],
+      "common": "26/3",
+      "private": "607/384",
+      "joint": "3935/384"
+    },
+    {
+      "budgets": [
+        2,
+        2
+      ],
+      "common": "25/3",
+      "private": "851/512",
+      "joint": "15353/1536"
+    },
+    {
+      "budgets": [
+        3,
+        1
+      ],
+      "common": "67/8",
+      "private": "317/192",
+      "joint": "1925/192"
+    },
+    {
+      "budgets": [
+        4
+      ],
+      "common": "81/10",
+      "private": "887/512",
+      "joint": "25171/2560"
+    }
+  ],
+  "ten_label_conditional_mean": {
+    "physical_rows": 512,
+    "truth_table_size": 2048,
+    "common_size": 10,
+    "abs_mean_histogram": {
+      "1": 20,
+      "1/2": 240,
+      "0": 252
+    },
+    "private_labels": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "max_private_unordered_difference_multiplicity": 2
+  },
+  "sixteen_label_conditional_mean": {
+    "physical_rows": 4096,
+    "truth_table_size": 131072,
+    "common_size": 16,
+    "abs_mean_histogram": {
+      "1": 512,
+      "1/2": 2048,
+      "0": 1536
+    },
+    "private_labels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      12,
+      20,
+      28
+    ],
+    "max_private_unordered_difference_multiplicity": 2
+  }
+}

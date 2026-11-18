@@ -1,0 +1,139 @@
+{
+  "python": "3.15.0",
+  "local_cases": [
+    {
+      "local_case": "four_common",
+      "common_rank": 4,
+      "simultaneous_common_labels": 4,
+      "private_projection_labels": 7,
+      "private_fibers": {
+        "0": 4,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "16": 8,
+        "20": 8,
+        "24": 8,
+        "28": 8
+      },
+      "local_spectrum_size": 60,
+      "absolute_mean_counts_scaled_by_2": {
+        "0": 6,
+        "1": 8,
+        "2": 2
+      },
+      "local_budget": "529/96",
+      "truth_table_entries": 512
+    },
+    {
+      "local_case": "ten_common_odd_signs",
+      "common_rank": 9,
+      "simultaneous_common_labels": 10,
+      "private_projection_labels": 7,
+      "private_fibers": {
+        "0": 10,
+        "1": 130,
+        "2": 130,
+        "3": 130,
+        "16": 256,
+        "20": 256,
+        "24": 256,
+        "28": 256
+      },
+      "local_spectrum_size": 1424,
+      "absolute_mean_counts_scaled_by_2": {
+        "0": 252,
+        "1": 240,
+        "2": 20
+      },
+      "local_budget": "6007/512",
+      "truth_table_entries": 16384
+    }
+  ],
+  "family_checks": [
+    {
+      "n": 1,
+      "distance_12": {
+        "common_labels": 32,
+        "common_rank": 30,
+        "dependency_rank": 2,
+        "exact_dependency_distance": 12,
+        "matching_subfamily": {
+          "bags": 16,
+          "ports": 256,
+          "distinct_common_directions": 256
+        },
+        "four_common_subfamily": {
+          "bags": 8,
+          "total_data_rank": 70,
+          "sparsity": 3840
+        }
+      },
+      "distance_10": {
+        "common_labels": 10,
+        "common_rank": 9,
+        "dependency_rank": 1,
+        "exact_dependency_distance": 10,
+        "bags": 1,
+        "total_data_rank": 14,
+        "sparsity": 1424
+      }
+    },
+    {
+      "n": 2,
+      "distance_12": {
+        "common_labels": 64,
+        "common_rank": 60,
+        "dependency_rank": 4,
+        "exact_dependency_distance": 12,
+        "matching_subfamily": {
+          "bags": 32,
+          "ports": 1024,
+          "distinct_common_directions": 1024
+        },
+        "four_common_subfamily": {
+          "bags": 16,
+          "total_data_rank": 140,
+          "sparsity": 15360
+        }
+      },
+      "distance_10": {
+        "common_labels": 20,
+        "common_rank": 18,
+        "dependency_rank": 2,
+        "exact_dependency_distance": 10,
+        "bags": 2,
+        "total_data_rank": 28,
+        "sparsity": 5696
+      }
+    },
+    {
+      "n": 4,
+      "distance_12": {
+        "common_labels": 128,
+        "common_rank": 120,
+        "dependency_rank": 8,
+        "exact_dependency_distance": 12,
+        "matching_subfamily": {
+          "bags": 64,
+          "ports": 4096,
+          "distinct_common_directions": 4096
+        },
+        "four_common_subfamily": {
+          "bags": 32,
+          "total_data_rank": 280,
+          "sparsity": 61440
+        }
+      },
+      "distance_10": {
+        "common_labels": 40,
+        "common_rank": 36,
+        "dependency_rank": 4,
+        "exact_dependency_distance": 10,
+        "bags": 4,
+        "total_data_rank": 56,
+        "sparsity": 22784
+      }
+    }
+  ]
+}
