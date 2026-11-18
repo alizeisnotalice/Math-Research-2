@@ -137,7 +137,7 @@ def main():
         assert {(r[0],r[1]) for r in sel["leaves"]}==skipped and len(sel["leaves"])==len(skipped)
         run=work/"five-replay"
         subprocess.run([sys.executable,"-I","-B",kit/"replay_083741.py",args.upstream.resolve(),
-                        args.tree.resolve(),run,cache,"--workers",str(args.workers)],check=True)
+                        args.tree.resolve(),run,cache,"--workers",str(min(args.workers,12))],check=True)
         pure=[]
         for part,pos in sorted(skipped):
             stem=f"part{part}-pos{pos}"
