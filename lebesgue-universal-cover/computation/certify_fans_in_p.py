@@ -7,6 +7,7 @@ At an endpoint lying on a P support line, the directed derivative is checked
 into the permitted halfplane; all other cells have strict interval slack.
 """
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT
 import contextlib, hashlib, io, json, runpy, sys
 
 here=Path(__file__).parent
@@ -83,7 +84,7 @@ for name,c,a,b,apex,active_set in ARCS:
     rows.append({'fan':name,'apex_slacks':apex_rows,'arc_supports':arc_rows})
 
 out={'status':'passed','scope':'every point of each of the five fixed-angle Sprague fans is in P; convexity of P then covers all fan segments from the apex to its certified arc.  This supplement does not alter or replace the frozen main certificate.',
-     'python':sys.version,'sigma_degrees_exact':'1.5494','cells_per_arc':256,
+     'python':sys.version,"sigma_degrees_interval": SIGMA_OUT,'cells_per_arc':256,
      'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
      'base_certificate_sha256':hashlib.sha256((here/'certify_sprague_fixed.py').read_bytes()).hexdigest(),
      'fans':rows}

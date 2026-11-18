@@ -1,6 +1,7 @@
 """Check fixed-angle cut containment and all exterior tangents using rational intervals."""
 from fractions import Fraction as F
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT
 import contextlib
 import hashlib
 import io
@@ -207,7 +208,7 @@ for a, b in (
 
 result = {
     "passed": True,
-    "sigma_degrees_exact": "1.5494",
+    "sigma_degrees_interval": SIGMA_OUT,
     "python": sys.version,
     "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     "dependencies_replayed": {

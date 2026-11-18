@@ -1,5 +1,6 @@
 """Whole-rectangle tangent tests giving injectivity of the AH coordinate map."""
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT
 from fractions import Fraction as F
 import contextlib,io,runpy,json,sys,hashlib
 with contextlib.redirect_stdout(io.StringIO()):d=runpy.run_path(str(Path(__file__).with_name('certify_ah_path.py')))
@@ -32,4 +33,4 @@ for j in range(64):
  a=norm2(sub(X,L0));b=norm2(sub(X,M))
  assert a.hi<1 and b.lo>1
  arc_upper_L0.append(a.hi);arc_lower_M.append(b.lo)
-print(json.dumps({'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'corners':checks,'arc_L0_squared_distance_upper':str(max(arc_upper_L0)),'arc_M_squared_distance_lower':str(min(arc_lower_M)),'segment_M_outward_derivative_half_lower':str(dot(sub(Z,M),sub(T,Z)).lo),'passed':True,'scope':'fixed-angle coordinate injectivity and positive-quadrant path placement; no area or universal-cover theorem'},indent=2))
+print(json.dumps({"sigma_degrees_interval": SIGMA_OUT, 'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'corners':checks,'arc_L0_squared_distance_upper':str(max(arc_upper_L0)),'arc_M_squared_distance_lower':str(min(arc_lower_M)),'segment_M_outward_derivative_half_lower':str(dot(sub(Z,M),sub(T,Z)).lo),'passed':True,'scope':'fixed-angle coordinate injectivity and positive-quadrant path placement; no area or universal-cover theorem'},indent=2))

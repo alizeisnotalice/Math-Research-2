@@ -12,6 +12,7 @@ import hashlib
 import io
 import json
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT, radians
 import runpy
 import sys
 
@@ -31,8 +32,8 @@ def cross(a, b):
     return a[0] * b[1] - a[1] * b[0]
 
 
-def unit(q: F):
-    angle = scale(PI, q)
+def unit(q: F, coefficient=0):
+    angle = radians(q, coefficient)
     return (I(*trig(angle, "cos")), I(*trig(angle, "sin")))
 
 
@@ -74,9 +75,8 @@ def out(x):
     return x.out()
 
 
-sigma = F("1.5494")
 n = [unit(F(j, 3)) for j in range(6)]
-m = [unit(F(1, 6) + sigma / 180 + F(j, 3)) for j in range(6)]
+m = [unit(F(1, 6) + F(j, 3), 1) for j in range(6)]
 B3 = meet(n[1], m[0])
 C3 = meet(n[0], m[5])
 E2 = meet(n[3], m[3])
@@ -164,7 +164,7 @@ pal = unit(F(7, 6))
 pal_U, pal_J, pal_T = dot(pal, U), dot(pal, J), dot(pal, T)
 pal_C_U, pal_C_J = cross(sub(U, C3), pal), cross(sub(J, C3), pal)
 pal_B_J, pal_B_T = cross(sub(J, B3), pal), cross(sub(T, B3), pal)
-assert pal_U.lo > F(1, 2) - F(1, 10**15)
+assert pal_U.lo <= F(1, 2) <= pal_U.hi  # exact from the line-circle construction
 assert pal_J.lo > F(1, 2) and pal_T.lo > F(1, 2)
 assert pal_C_U.lo > 0 and pal_C_J.lo > 0
 assert pal_B_J.hi < 0 and pal_B_T.hi < 0
@@ -186,7 +186,7 @@ assert S_B_J.hi < 0 and S_B_T.hi < 0
 # E' is the negative-slant E cap: eprime.x>=1/2 for
 # eprime=u(7pi/6-sigma).  It contains EH strictly, including all three
 # boundary pieces at this fixed positive slant.
-eprime = unit(F(7, 6) - sigma / 180)
+eprime = unit(F(7, 6), -1)
 ep_U, ep_J, ep_T = dot(eprime, U), dot(eprime, J), dot(eprime, T)
 ep_C_U, ep_C_J = cross(sub(U, C3), eprime), cross(sub(J, C3), eprime)
 ep_B_J, ep_B_T = cross(sub(J, B3), eprime), cross(sub(T, B3), eprime)
@@ -222,7 +222,7 @@ result = {
     "python": sys.version,
     "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     "interval_engine": "rational outward-rounded intervals from certify_ah_path.py",
-    "sigma_degrees_exact": str(sigma),
+    "sigma_degrees_interval": SIGMA_OUT,
     "points": {k: [out(z) for z in v] for k, v in {
         "B3": B3, "C3": C3, "E2": E2, "I": Ip, "H": H, "J": J,
         "J_other": J_other, "R": R, "S": S, "S_other": S_other,

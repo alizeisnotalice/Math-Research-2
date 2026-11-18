@@ -5,6 +5,7 @@ import io
 import itertools
 import json
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT, radians
 import runpy
 import sys
 
@@ -13,11 +14,10 @@ with contextlib.redirect_stdout(io.StringIO()):
 I, V, add, sub, mul, dot, perp = (base[name] for name in ("I", "V", "add", "sub", "mul", "dot", "perp"))
 PI, scale, trig = (base[name] for name in ("PI", "scale", "trig"))
 half = I(F(1, 2))
-sigma = F("1.5494") / 180
 
 
-def unit(q):
-    angle = scale(PI, q)
+def unit(q, coefficient=0):
+    angle = radians(q, coefficient)
     return V(I(*trig(angle, "cos")), I(*trig(angle, "sin")))
 
 
@@ -37,8 +37,8 @@ def signed(value, direction):
 
 
 n = [unit(F(j, 3)) for j in range(6)]
-pos = [unit(F(1, 6) + sigma + F(j, 3)) for j in range(6)]
-neg = [unit(F(1, 6) - sigma + F(j, 3)) for j in range(6)]
+pos = [unit(F(1, 6) + F(j, 3), 1) for j in range(6)]
+neg = [unit(F(1, 6) + F(j, 3), -1) for j in range(6)]
 
 # The F1/C1 reflection exchanges the two F cuts and fixes their intersection.
 R = meet(pos[2], neg[2])
@@ -104,6 +104,6 @@ for A, D, Ap, Dp in itertools.product((False, True), repeat=4):
     assert (not Ap) or (not D and not Dp) or (not A and not Dp)
     count += 1
 
-print(json.dumps({"python": sys.version, "sigma_degrees": "7747/5000",
+print(json.dumps({"python": sys.version, "sigma_degrees_interval": SIGMA_OUT,
                   "consistent_hit_patterns": count, "exact_maps_passed": True,
                   "fixed_angle_intervals": checks}, indent=2))

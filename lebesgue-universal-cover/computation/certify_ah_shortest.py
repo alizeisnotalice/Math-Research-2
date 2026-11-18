@@ -1,5 +1,6 @@
 """Certify R lies outside the C unit disk, and orientation of tangent path."""
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT
 from fractions import Fraction as F
 import runpy,io,contextlib,json,sys,hashlib
 with contextlib.redirect_stdout(io.StringIO()):
@@ -28,5 +29,5 @@ def cross(a,b):return a[0]*b[1]-a[1]*b[0]
 u=sub(Y,C);v=sub(T,C);z=sub(Z,C)
 for a,b in ((u,v),(v,z),(u,z)):
  assert cross(a,b).lo>0 and dot(a,b).lo>0
-out={'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'parent_script_sha256':hashlib.sha256(Path(__file__).with_name('certify_ah_path.py').read_bytes()).hexdigest(),'sigma_degrees_exact':'1.5494','visited_nodes':nodes,'leaf_count':len(leaves),'minimum_factor_lower':str(min(F(x['factor_lower']) for x in leaves)),'leaves':leaves,'passed':True,'scope':'fixed-angle R outside C disk plus tangent-path orientation; shortestness follows the analytic potential argument, not a new universal-cover theorem'}
+out={'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'parent_script_sha256':hashlib.sha256(Path(__file__).with_name('certify_ah_path.py').read_bytes()).hexdigest(),"sigma_degrees_interval": SIGMA_OUT,'visited_nodes':nodes,'leaf_count':len(leaves),'minimum_factor_lower':str(min(F(x['factor_lower']) for x in leaves)),'leaves':leaves,'passed':True,'scope':'fixed-angle R outside C disk plus tangent-path orientation; shortestness follows the analytic potential argument, not a new universal-cover theorem'}
 print(json.dumps(out,indent=2))

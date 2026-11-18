@@ -1,5 +1,6 @@
 """Rational Taylor interval quadrature for the fixed-angle AH Jordan region."""
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT
 from fractions import Fraction as F
 import runpy,io,contextlib,json,sys,hashlib
 with contextlib.redirect_stdout(io.StringIO()):d=runpy.run_path(str(Path(__file__).with_name('certify_ah_path.py')))
@@ -73,4 +74,4 @@ for j in range(N):
 signed=(fixed+integral)/2
 assert signed.hi<0 or signed.lo>0
 area=-signed if signed.hi<0 else signed
-print(json.dumps({'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'sigma_degrees_exact':'1.5494','cells':N,'jet_order':order,'midpoint_remainder_formula':'width*f(mid) + width^3/12 * enclosure(f_second_derivative/2)','area_interval':area.out(),'area_display_only':[float(area.lo),float(area.hi)],'width':str(area.hi-area.lo),'maximum_abs_density_quadratic_coefficient':str(max_f2),'paired_tangent_point':[x.out() for x in Tp],'scope':'area of the fixed-angle candidate AH Jordan region only, not an independently proved universal cover','passed':True},indent=2))
+print(json.dumps({'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),"sigma_degrees_interval": SIGMA_OUT,'cells':N,'jet_order':order,'midpoint_remainder_formula':'width*f(mid) + width^3/12 * enclosure(f_second_derivative/2)','area_interval':area.out(),'area_display_only':[float(area.lo),float(area.hi)],'width':str(area.hi-area.lo),'maximum_abs_density_quadratic_coefficient':str(max_f2),'paired_tangent_point':[x.out() for x in Tp],'scope':'area of the fixed-angle candidate AH Jordan region only, not an independently proved universal cover','passed':True},indent=2))

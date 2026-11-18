@@ -13,6 +13,7 @@ import hashlib
 import io
 import json
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT
 import runpy
 import sys
 
@@ -74,7 +75,7 @@ result = {
     "python": sys.version,
     "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     "frozen_base_script_sha256": hashlib.sha256((base / "audit_eh_geometry.py").read_bytes()).hexdigest(),
-    "sigma_degrees_exact": "1.5494",
+    "sigma_degrees_interval": SIGMA_OUT,
     "endpoint_x_intervals": {"U": [out(U[0])], "J": [out(J[0])], "T": [out(T[0])]},
     "arc_x_monotonicity": {
         "U_to_J_C3_radial_y": [out(rC_U[1]), out(rC_J[1])],

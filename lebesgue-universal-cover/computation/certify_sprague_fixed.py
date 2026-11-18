@@ -9,6 +9,7 @@ tests.  Every comparison is between rational interval endpoints.
 from fractions import Fraction as F
 from math import isqrt
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT, radians
 import hashlib, json, sys
 from rational_trig import PI, trig, scale
 
@@ -48,8 +49,8 @@ def dot(a,b): return sum((x*y for x,y in zip(a,b)),I(0))
 def cross(a,b): return a[0]*b[1]-a[1]*b[0]
 def norm2(a): return dot(a,a)
 def perp(a): return -a[1],a[0]
-def unit(q):
-    a=scale(PI,q); return I(*trig(a,'cos')), I(*trig(a,'sin'))
+def unit(q, coefficient=0):
+    a=radians(q, coefficient); return I(*trig(a,'cos')), I(*trig(a,'sin'))
 # Cramer's-rule formula for a.x=b.x=1/2; no floating operations occur.
 def meet(a,b):
     d=cross(a,b)
@@ -63,9 +64,8 @@ def cc(a,b,sign):
     return add(mul(I(F(1,2)),add(a,b)),mul(I(sign)*(I(1)-ds/I(4)).sqrt()/ds.sqrt(),perp(q)))
 def param(x,a,b): return dot(sub(x,a),sub(b,a))/norm2(sub(b,a))
 
-sigma=F('1.5494')/180
 n=[unit(F(j,3)) for j in range(6)]
-m=[unit(F(1,6)+sigma+F(j,3)) for j in range(6)]
+m=[unit(F(1,6)+F(j,3), 1) for j in range(6)]
 A1=meet(n[1],n[2]); B1=meet(n[0],n[1]); D1=meet(n[4],n[5]); E1=meet(n[3],n[4]); F1=meet(n[2],n[3])
 B3=meet(n[1],m[0]); B2=meet(n[0],m[0]); C3=meet(n[0],m[5]); C2=meet(n[5],m[5])
 D3=meet(n[5],m[4]); E3=meet(n[4],m[3]); E2=meet(n[3],m[3]); F3=meet(n[3],m[2]); F2=meet(n[2],m[2])
@@ -172,8 +172,7 @@ for name,c,u0,u1,apex,segs,tangent_index in arcs:
         assert wA.hi<=0, (name,'apex vor',wA.out())
         # A zero endpoint is one of I,H,P,Q and follows exactly from its
         # orthogonal-projection definition; all other entries are strict.
-        assert w0.hi<0 or w0.lo<=0<=w0.hi, (name,'u0 vor',w0.out())
-        assert w1.hi<0 or w1.lo<=0<=w1.hi, (name,'u1 vor',w1.out())
+        assert [w0, w1][1-tangent_index].hi<0, (name, "non-tangent Voronoi endpoint", w0.out(), w1.out())
         vals.append({'apex':wA.out(),'arc':arc_halfplane(name,c,v0,v1,a,b,tangent_index)})
     arc_rows.append({'arc':name,'minor_dot_lower':str(dot(v0,v1).lo),
                      'apex_disk_margin_lower':str((norm2(d)-I(1)).lo),
@@ -206,7 +205,7 @@ strict_nonpositive(vor(G,F3,F2), 'G nearest F3 on F3F2')
 strict_nonpositive(vor(C2,F3,F2), 'C2 nearest F3 on F3F2')
 
 out={'status':'passed','scope':'fixed-angle coordinate/branch/distance certificate, including strict signs for the support/convexity F3F2 and B3B2 contact lemma.  Together with proof.md it proves Sprague Propositions 3--5/Lemma 1 at this angle.  It does not prove Gibbs Proposition 2 or later reflection cuts.',
- 'python':sys.version,'sigma_degrees_exact':'1.5494','rounding_denominator':str(Q),
+ 'python':sys.version,"sigma_degrees_interval": SIGMA_OUT,'rounding_denominator':str(Q),
  'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
  'trig_helper_sha256':hashlib.sha256(Path(__file__).with_name('rational_trig.py').read_bytes()).hexdigest(),
  'coordinates':{k:[x.out() for x in p] for k,p in [('F3',F3),('F2',F2),('B3',B3),('B2',B2),('C3',C3),('C2',C2),('E3',E3),('E2',E2),('G',G),('K',K),('I',Ip),('H',H),('J',J),('P',P),('Q',Qp),('X',X)]},

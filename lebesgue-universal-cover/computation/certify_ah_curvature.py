@@ -1,5 +1,6 @@
 """Certified positive turning of the AH replacement boundary at fixed angle."""
 from pathlib import Path
+from sigma_parameter import SIGMA_OUT
 from fractions import Fraction as F
 import contextlib,io,runpy,json,sys,hashlib
 base=Path(__file__).parent
@@ -31,4 +32,4 @@ incoming=bd['perp'](bd['sub'](Y,E));outgoing=bd['perp'](bd['sub'](Y,C));corner=c
 assert corner.lo>0 and bd['dot'](incoming,outgoing).lo>0
 end=at(I(1));Tp=(end[0].c[0],end[1].c[0]);velocity=(end[0].c[1],end[1].c[1])
 orientation=bd['dot'](velocity,bd['perp'](bd['sub'](Tp,G)));assert orientation.lo>0
-print(json.dumps({'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'sigma_degrees_exact':'1.5494','leaf_count':len(leaves),'minimum_curvature_numerator_lower':str(min(F(x['curvature_numerator_lower']) for x in leaves)),'Y_corner_cross_lower':str(corner.lo),'paired_end_forward_tangent_dot_lower':str(orientation.lo),'leaves':leaves,'passed':True,'scope':'local AH replacement boundary has convex turning; this does not prove all remaining boundary pieces or universal coverage'},indent=2))
+print(json.dumps({'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),"sigma_degrees_interval": SIGMA_OUT,'leaf_count':len(leaves),'minimum_curvature_numerator_lower':str(min(F(x['curvature_numerator_lower']) for x in leaves)),'Y_corner_cross_lower':str(corner.lo),'paired_end_forward_tangent_dot_lower':str(orientation.lo),'leaves':leaves,'passed':True,'scope':'local AH replacement boundary has convex turning; this does not prove all remaining boundary pieces or universal coverage'},indent=2))

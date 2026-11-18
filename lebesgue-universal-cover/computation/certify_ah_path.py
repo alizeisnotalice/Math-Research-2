@@ -4,6 +4,7 @@ from math import isqrt
 import json,sys,hashlib
 from pathlib import Path
 from rational_trig import PI,trig,scale
+from sigma_parameter import SIGMA_OUT, radians
 Q=10**24
 class I:
  def __init__(self,a,b=None):
@@ -39,7 +40,7 @@ def norm2(a):return dot(a,a)
 def upper_cross(l,n):
  q=sub(n,l);d=norm2(q).sqrt();h=(1-norm2(q)/4).sqrt()
  return sub(mul(I(F(1,2)),add(l,n)),mul(h/d,perp(q)))
-r3=I(3).sqrt();half=I(F(1,2));a=scale(PI,F(5,6)+F('1.5494')/180)
+r3=I(3).sqrt();half=I(F(1,2));a=radians(F(5,6), 1)
 co=I(*trig(a,'cos'));si=I(*trig(a,'sin'))
 F3=V(-half,(half+half*co)/si)
 E=V(half*F3[0]-r3*half*F3[1],r3*half*F3[0]+half*F3[1])
@@ -86,5 +87,5 @@ dL=V(r3*half,half);dN=V(-r3*half,half)
 assert dot(sub(box,Lbox),dL).lo>0
 assert dot(sub(box,Nbox),dN).lo>0
 assert box[1].lo>max(Lbox[1].hi,Nbox[1].hi)
-out={'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'trig_helper_sha256':hashlib.sha256(Path(__file__).with_name('rational_trig.py').read_bytes()).hexdigest(),'sigma_degrees_exact':'1.5494','rounding_denominator':Q,'arc_cells':64,'coordinates':{name:[x.out() for x in p] for name,p in [('F3',F3),('E3',E),('C',C),('G',G),('Nm',Nm),('Y',Y),('Z',Z),('T',T)]},'arc_G_distance_squared_upper':str(max(arc_bounds)),'whole_path_Nm_distance_squared_lower':str(norm2(sub(box,Nm)).lo),'inverse_L_monotonicity_lower':str(dot(sub(box,Lbox),dL).lo),'inverse_N_monotonicity_lower':str(dot(sub(box,Nbox),dN).lo),'passed':True,'scope':'continuous candidate path in parameter image R at one fixed sigma; not a universal-cover or area certificate'}
+out={'python':sys.version,'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'trig_helper_sha256':hashlib.sha256(Path(__file__).with_name('rational_trig.py').read_bytes()).hexdigest(),"sigma_degrees_interval": SIGMA_OUT,'rounding_denominator':Q,'arc_cells':64,'coordinates':{name:[x.out() for x in p] for name,p in [('F3',F3),('E3',E),('C',C),('G',G),('Nm',Nm),('Y',Y),('Z',Z),('T',T)]},'arc_G_distance_squared_upper':str(max(arc_bounds)),'whole_path_Nm_distance_squared_lower':str(norm2(sub(box,Nm)).lo),'inverse_L_monotonicity_lower':str(dot(sub(box,Lbox),dL).lo),'inverse_N_monotonicity_lower':str(dot(sub(box,Nbox),dN).lo),'passed':True,'scope':'continuous candidate path in parameter image R at one fixed sigma; not a universal-cover or area certificate'}
 print(json.dumps(out,indent=2))
