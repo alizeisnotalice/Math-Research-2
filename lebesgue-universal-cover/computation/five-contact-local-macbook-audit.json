@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "architecture": "arm64",
+  "python": "3.12.13",
+  "flint": "0.9.0",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "stationary": {
+    "stationary_angle_box": [
+      [
+        ".51344083304023783470819109772128672",
+        ".51344083304023783470819109772128674"
+      ],
+      [
+        "1.57829241385673393299924195305530265",
+        "1.57829241385673393299924195305530268"
+      ]
+    ],
+    "contraction_norm_upper": "[6.20617407735014830964010419476725298417661292166716746246e-11 +/- 2.08e-68]",
+    "verified_topology": {
+      "atomic_normal_intervals": 62,
+      "exact_contact_endpoint_comparisons": 56,
+      "interior_minimum_comparisons": 0
+    },
+    "area_ball": "[0.837295006221025243456393253909267018677 +/- 5.09e-40]"
+  },
+  "independent_local_proofs": [
+    {
+      "name": "certify_five_body_contact_stationary.py",
+      "source_sha256": "c46a06d878962083f005692a66b7a546779e4ee0a1cb4d42c075e8b1a3ed3a4f",
+      "reference_sha256": "1ad6912c1939657959fda04e6fea3312688516343ddadde9803ce70f522c377a",
+      "numerical_fields_identical": true,
+      "independent_output_sha256": "2dc021e72076e8c42b3c39987d32c3e3a0e96f8bd1cf891e78c721bafdeaa413"
+    },
+    {
+      "name": "certify_five_body_contact_transverse.py",
+      "source_sha256": "6460ce26be5f1f4ae5ec74c1aeda7adb4032958810f2c10ce2316b3ffac10956",
+      "reference_sha256": "53065b1d8adf6a963de59bb69a5e9534cfd8573b0a946c769fdbc70be21f400c",
+      "numerical_fields_identical": true,
+      "independent_output_sha256": "d6f016e5d5886dce8b9d55924a97b885bd17fc4f05bf078c32f727030e98f5cb"
+    },
+    {
+      "name": "certify_five_body_contact_basin.py",
+      "source_sha256": "3afbbbb8a3767f19b56df879395dde5767c2d6eb85c4710065593f0628808187",
+      "reference_sha256": "282fafa2a4d37f72871c082b9e3e3e71c19fdb9ee4889cfa1a08fef19dcd150a",
+      "numerical_fields_identical": true,
+      "independent_output_sha256": "282fafa2a4d37f72871c082b9e3e3e71c19fdb9ee4889cfa1a08fef19dcd150a"
+    },
+    {
+      "name": "certify_five_wide_contact_tube.py",
+      "source_sha256": "66c5ee68d47305f8ca28676947e398aed88f327eb0c6aec9aac0114d6679f635",
+      "reference_sha256": "8b74545bb789b0acb8a1f17079f047942ba66fb9b6421ef56f78b587c24c6135",
+      "numerical_fields_identical": true,
+      "independent_output_sha256": "8b74545bb789b0acb8a1f17079f047942ba66fb9b6421ef56f78b587c24c6135"
+    },
+    {
+      "name": "certify_five_wide_basin_bridge.py",
+      "source_sha256": "9ef57239caebc7d507bda223d0454ea0b34dc6003a72360584116afb750e1169",
+      "reference_sha256": "24a4514c6124c97a81bb17ae59c1f7053c554337a94a9482c1c3d904caae9f0f",
+      "numerical_fields_identical": true,
+      "independent_output_sha256": "24a4514c6124c97a81bb17ae59c1f7053c554337a94a9482c1c3d904caae9f0f"
+    }
+  ]
+}
