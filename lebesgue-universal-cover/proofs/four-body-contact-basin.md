@@ -59,3 +59,16 @@ python -B lebesgue-universal-cover/computation/certify_four_body_basin_raw_box.p
 ```
 
 冻结输出为 `four-body-basin-enlarged.json` 与 `four-body-basin-raw-anisotropic.json`。同样复算了每坐标半宽 $4\cdot10^{-6}$ 的闭盒输出 `four-body-basin-raw-isotropic.json`。实际执行用 Python 3.13.18、python-flint 0.9.0 和 160 位 Arb；无需优化器或随机输入。
+
+## 加宽法向盒
+
+将复多圆盘物理半径 $R$ 提高到 $6\cdot10^{-5}$，用两个闭子盒核验实二维域，得到 $|\alpha-\alpha_0|,|\beta-\beta_0|\le3\cdot10^{-5}$，同时保持 $\|\xi\|_\infty\le1.5\cdot10^{-4}$。新的复余项小于 $1.44\times10^{-17}$，$\nabla^2F-.1I$ 最小核验行列式仍大于 $1.46$，横截有效线性系数仍大于 $7.10\times10^{-6}$，所以开头的同一面积下界适用于加宽后的整个域。
+
+用两原始平移的相关包络覆核，八维等半宽 $5.8\cdot10^{-6}$ 的闭盒全部落入加宽域。两个法向最大偏移分别小于 $2.786\times10^{-5}$ 和 $2.029\times10^{-5}$，最大的横截偏移小于 $1.496\times10^{-4}$。这一等半宽盒与前面的各向异性盒都可用作全域树的终止条件。
+
+```sh
+python -B lebesgue-universal-cover/computation/certify_four_body_basin.py --radius .00006 --transverse .00015 > WIDER
+python -B lebesgue-universal-cover/computation/certify_four_body_basin_raw_box.py WIDER --width .0000058
+```
+
+相应冻结输出为 `four-body-basin-wider-angles.json` 和 `four-body-basin-raw-isotropic-enlarged.json`。`four-body-basin-audit.json` 汇总两套尺度的精确半宽、源码绑定和真极值点属于盒内的核验。
