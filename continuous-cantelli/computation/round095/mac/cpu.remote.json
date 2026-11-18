@@ -1,0 +1,399 @@
+{
+  "secondOrderJointCheck": [
+    {
+      "lambda": 4096,
+      "theta": -20,
+      "scaledGap": -2.7341339432019467,
+      "target": -2.0
+    },
+    {
+      "lambda": 4096,
+      "theta": -16,
+      "scaledGap": -0.7335600885115819,
+      "target": 0.0
+    },
+    {
+      "lambda": 4096,
+      "theta": 0,
+      "scaledGap": 7.268817918138698,
+      "target": 8.0
+    },
+    {
+      "lambda": 1048576,
+      "theta": -20,
+      "scaledGap": -2.4665001682035377,
+      "target": -2.0
+    },
+    {
+      "lambda": 1048576,
+      "theta": -16,
+      "scaledGap": -0.46649770732004653,
+      "target": 0.0
+    },
+    {
+      "lambda": 1048576,
+      "theta": 0,
+      "scaledGap": 7.533512139709692,
+      "target": 8.0
+    },
+    {
+      "lambda": 100000000,
+      "theta": -20,
+      "scaledGap": -2.3587628217655796,
+      "target": -2.0
+    },
+    {
+      "lambda": 100000000,
+      "theta": -16,
+      "scaledGap": -0.3587627954194181,
+      "target": 0.0
+    },
+    {
+      "lambda": 100000000,
+      "theta": 0,
+      "scaledGap": 7.641237309965907,
+      "target": 8.0
+    }
+  ],
+  "jointAsymptoticCheck": [
+    {
+      "lambda": 256,
+      "etaOffset": -0.5,
+      "scaledGap": -0.1975219689954491
+    },
+    {
+      "lambda": 256,
+      "etaOffset": 0,
+      "scaledGap": 0.30316633871468845
+    },
+    {
+      "lambda": 256,
+      "etaOffset": 0.5,
+      "scaledGap": 0.8052290503104335
+    },
+    {
+      "lambda": 4096,
+      "etaOffset": -0.5,
+      "scaledGap": -0.4704877573030648
+    },
+    {
+      "lambda": 4096,
+      "etaOffset": 0,
+      "scaledGap": 0.029521644409930364
+    },
+    {
+      "lambda": 4096,
+      "etaOffset": 0.5,
+      "scaledGap": 0.5296580978816504
+    },
+    {
+      "lambda": 65536,
+      "etaOffset": -0.5,
+      "scaledGap": -0.49748455559369253
+    },
+    {
+      "lambda": 65536,
+      "etaOffset": 0,
+      "scaledGap": 0.0025146279056215914
+    },
+    {
+      "lambda": 65536,
+      "etaOffset": 0.5,
+      "scaledGap": 0.5025243886954319
+    },
+    {
+      "lambda": 1048576,
+      "etaOffset": -0.5,
+      "scaledGap": -0.49980067354570806
+    },
+    {
+      "lambda": 1048576,
+      "etaOffset": 0,
+      "scaledGap": 0.00019919710919776509
+    },
+    {
+      "lambda": 1048576,
+      "etaOffset": 0.5,
+      "scaledGap": 0.5001998940633937
+    }
+  ],
+  "scipy": "1.18.1",
+  "mpmath": "1.3.0",
+  "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+  "checked": {
+    "sync.json": {
+      "critical": {
+        "parameters": {
+          "lambda": 32,
+          "offset": -1,
+          "profile": {
+            "b": 0.25,
+            "beta": 4,
+            "Ccrit": 7.4611797,
+            "t": 4
+          },
+          "result": [
+            0.50360906,
+            0.002881065,
+            -0.00072798855,
+            4.4076
+          ]
+        },
+        "reference": {
+          "logMargin": 0.5036090133481046,
+          "logTailCorrection": 0.0028810245209502576,
+          "logCapCorrection": -0.0007279888271543043,
+          "tailFirstTerm": -4.315405780521953,
+          "edgeSlope": null
+        },
+        "mp68LogMargin": "0.503609013348135507681041254098949412563588715266",
+        "absoluteMetalError": 4.6651895457827663e-08
+      },
+      "criticalEqualLeading": {
+        "parameters": {
+          "lambda": 32,
+          "offset": 0,
+          "profile": {
+            "b": 0.25,
+            "beta": 4,
+            "Ccrit": 7.4611797,
+            "t": 4
+          },
+          "result": [
+            0.01236509,
+            0.011637101,
+            -0.00072798855,
+            4.9377933
+          ]
+        },
+        "reference": {
+          "logMargin": 0.012365060487008743,
+          "logTailCorrection": 0.011637071659854439,
+          "logCapCorrection": -0.0007279888271543043,
+          "tailFirstTerm": -4.565405780521953,
+          "edgeSlope": null
+        },
+        "mp68LogMargin": "0.0123650604870396793208151856194799354443634465458",
+        "absoluteMetalError": 2.951299125746043e-08
+      },
+      "maxFirstCorrectionError": {
+        "parameters": {
+          "lambda": 65536,
+          "offset": 0,
+          "profile": {
+            "b": 0.25,
+            "beta": 4,
+            "Ccrit": 7.4611797,
+            "t": 4
+          },
+          "result": [
+            -0.00018573552,
+            -0.0001857357,
+            -1.7371338e-10,
+            0.017650604
+          ]
+        },
+        "reference": {
+          "logMargin": -0.00018573522962470935,
+          "logTailCorrection": -0.0001857354139408273,
+          "logCapCorrection": -1.8431611794078574e-10,
+          "tailFirstTerm": -12.19002476668135,
+          "edgeSlope": null
+        },
+        "mp68LogMargin": "-0.000185735240227339300058619164418629977617220025025",
+        "absoluteMetalError": 2.903752906527335e-10
+      },
+      "subcritical": {
+        "parameters": {
+          "lambda": 65536,
+          "offset": -1,
+          "profile": {
+            "b": 0.25,
+            "beta": 3.25,
+            "Ccrit": -0.62221164,
+            "t": 0.25
+          },
+          "result": [
+            4.658762,
+            -0.00012094287,
+            -2.5611362e-09,
+            0.007373333
+          ]
+        },
+        "reference": {
+          "logMargin": 4.658762143093167,
+          "logTailCorrection": -0.00012094282177600477,
+          "logCapCorrection": -2.555271775218178e-09,
+          "tailFirstTerm": -7.93348543332168,
+          "edgeSlope": null
+        },
+        "mp68LogMargin": "4.65876214309903292427939664923617438530582019239",
+        "absoluteMetalError": 1.4309316664906646e-07
+      },
+      "supercritical": {
+        "parameters": {
+          "lambda": 32,
+          "offset": -1,
+          "profile": {
+            "b": 0.25,
+            "beta": 4.046875,
+            "Ccrit": 7.4611797,
+            "t": 4
+          },
+          "result": [
+            0.42356724,
+            0.004067463,
+            -0.00072798855,
+            4.4803195
+          ]
+        },
+        "reference": {
+          "logMargin": 0.42356724101540455,
+          "logTailCorrection": 0.004067437410118838,
+          "logCapCorrection": -0.0007279888271543043,
+          "tailFirstTerm": -4.350160498132888,
+          "edgeSlope": null
+        },
+        "mp68LogMargin": "0.423567241015435498431899295457586308888422218848",
+        "absoluteMetalError": 1.0154045382293475e-09
+      }
+    },
+    "joint_admissible/joint_admissible.json": {
+      "critical": {
+        "parameters": {
+          "lambda": 32,
+          "offset": 0,
+          "profile": {
+            "b": 4,
+            "Ccrit": 73.52011,
+            "share": 0.90000004,
+            "t": 0.25
+          },
+          "result": [
+            2.7740784,
+            3.140537,
+            0.26589346,
+            88.77051
+          ]
+        },
+        "reference": {
+          "logMargin": 2.7740777282714575,
+          "logTailCorrection": 3.1405366464236546,
+          "logCapCorrection": 0.2658935495199056,
+          "tailFirstTerm": -274.37510181326263,
+          "edgeSlope": 8277853976.717683
+        },
+        "mp68LogMargin": "2.77407772827145782917448103044316555112701347105",
+        "absoluteMetalError": 6.717285425672515e-07
+      },
+      "criticalEqualLeading": {
+        "parameters": {
+          "lambda": 32,
+          "offset": 0,
+          "profile": {
+            "b": 4,
+            "Ccrit": 73.52011,
+            "share": 0.90000004,
+            "t": 0.25
+          },
+          "result": [
+            2.7740784,
+            3.140537,
+            0.26589346,
+            88.77051
+          ]
+        },
+        "reference": {
+          "logMargin": 2.7740777282714575,
+          "logTailCorrection": 3.1405366464236546,
+          "logCapCorrection": 0.2658935495199056,
+          "tailFirstTerm": -274.37510181326263,
+          "edgeSlope": 8277853976.717683
+        },
+        "mp68LogMargin": "2.77407772827145782917448103044316555112701347105",
+        "absoluteMetalError": 6.717285425672515e-07
+      },
+      "maxFirstCorrectionError": {
+        "parameters": {
+          "lambda": 65536,
+          "offset": 0,
+          "profile": {
+            "b": 4,
+            "Ccrit": 21.837877,
+            "share": 0.1,
+            "t": 4
+          },
+          "result": [
+            0.00015034089,
+            -0.049870964,
+            5.8207647e-11,
+            9.85274
+          ]
+        },
+        "reference": {
+          "logMargin": 0.0001489006362978178,
+          "logTailCorrection": -0.04987099660386595,
+          "logCapCorrection": 5.277955850007725e-11,
+          "tailFirstTerm": -207.21786723293576,
+          "edgeSlope": 0.005508338170369686
+        },
+        "mp68LogMargin": "0.00014890063086971733679378808388839995678849407394",
+        "absoluteMetalError": 1.440253702182187e-06
+      },
+      "subcritical": {
+        "parameters": {
+          "lambda": 32,
+          "offset": -0.08333333333333337,
+          "profile": {
+            "b": 4,
+            "Ccrit": 73.52011,
+            "share": 0.90000004,
+            "t": 0.25
+          },
+          "result": [
+            2.7685027,
+            3.1349347,
+            0.26589346,
+            88.72205
+          ]
+        },
+        "reference": {
+          "logMargin": 2.768503310223409,
+          "logTailCorrection": 3.1349353590996776,
+          "logCapCorrection": 0.2658935495199056,
+          "tailFirstTerm": -274.37510181326263,
+          "edgeSlope": 8277853976.717683
+        },
+        "mp68LogMargin": "2.76850331022340977285636759721752400525026948253",
+        "absoluteMetalError": 6.102234091365233e-07
+      },
+      "supercritical": {
+        "parameters": {
+          "lambda": 32,
+          "offset": 1,
+          "profile": {
+            "b": 4,
+            "Ccrit": 73.52011,
+            "share": 0.90000004,
+            "t": 0.25
+          },
+          "result": [
+            2.841006,
+            3.2077758,
+            0.26589346,
+            89.352615
+          ]
+        },
+        "reference": {
+          "logMargin": 2.8410058376106817,
+          "logTailCorrection": 3.207775876069018,
+          "logCapCorrection": 0.2658935495199056,
+          "tailFirstTerm": -274.37510181326263,
+          "edgeSlope": 8277853976.717683
+        },
+        "mp68LogMargin": "2.84100583761068212098407628469440267318960191283",
+        "absoluteMetalError": 1.6238931843659543e-07
+      }
+    }
+  }
+}
