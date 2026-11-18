@@ -1,0 +1,49 @@
+{
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "precision": 70,
+  "symbolic": {
+    "optimal_observation_offset": "d*(1 - theta)/theta",
+    "optimal_exponent_constant": "d**2/2",
+    "finite_radius_coefficient": "(d - r)**2/2"
+  },
+  "reflected_wall_model": {
+    "normalized_model_rows": [
+      {
+        "h_power_two": -4,
+        "old_heat_divided_by_h_to_three_half_and_gaussian": "0.051336989162892702872"
+      },
+      {
+        "h_power_two": -8,
+        "old_heat_divided_by_h_to_three_half_and_gaussian": "0.05483308640542300832"
+      },
+      {
+        "h_power_two": -12,
+        "old_heat_divided_by_h_to_three_half_and_gaussian": "0.055061188207820145714"
+      },
+      {
+        "h_power_two": -20,
+        "old_heat_divided_by_h_to_three_half_and_gaussian": "0.055076377129462189512"
+      }
+    ],
+    "analytic_limit": "0.055076436704072339504"
+  },
+  "critical_loglog_model": {
+    "normalized_model_rows": [
+      {
+        "log_inverse_radius": 50,
+        "width_ratio": "0.12379200265870176935"
+      },
+      {
+        "log_inverse_radius": 500,
+        "width_ratio": "0.10079372089118095551"
+      },
+      {
+        "log_inverse_radius": 5000,
+        "width_ratio": "0.097216533016183156609"
+      }
+    ],
+    "analytic_limit": "0.09663277561302237733"
+  }
+}
