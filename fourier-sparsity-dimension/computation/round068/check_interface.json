@@ -1,0 +1,47 @@
+{
+  "python": "3.15.0",
+  "checks": [
+    {
+      "a": 5,
+      "cells": 32,
+      "spectral_points_per_block": 1024,
+      "difference_points_per_block": 15903,
+      "min_transformed_data_difference_weight": 3,
+      "interface_rank": 36,
+      "fixed_slice_rank": 37,
+      "global_projected_rank": 38,
+      "relation_rank": 1974,
+      "original_tail_sparsity": 4096,
+      "dense_core_tail_sparsity": 8192,
+      "full_pair_difference_and_sparse_square_checks": true,
+      "rank_one_slice_variant": {
+        "labels_per_block": 64,
+        "interface_rank": 31,
+        "projected_rank": 35,
+        "max_slice_rank": 1,
+        "tail_sparsity": 16384
+      }
+    },
+    {
+      "a": 7,
+      "cells": 128,
+      "spectral_points_per_block": 16384,
+      "difference_points_per_block": 1040511,
+      "min_transformed_data_difference_weight": 3,
+      "interface_rank": 134,
+      "fixed_slice_rank": 135,
+      "global_projected_rank": 136,
+      "relation_rank": 32498,
+      "original_tail_sparsity": 65536,
+      "dense_core_tail_sparsity": 131072,
+      "full_pair_difference_and_sparse_square_checks": false,
+      "rank_one_slice_variant": {
+        "labels_per_block": 256,
+        "interface_rank": 127,
+        "projected_rank": 131,
+        "max_slice_rank": 1,
+        "tail_sparsity": 262144
+      }
+    }
+  ]
+}
