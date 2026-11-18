@@ -1,0 +1,437 @@
+{
+  "device": "Apple M5 Pro",
+  "macOS": "27.3 (26C5035r)",
+  "swift": "6.4.2",
+  "metalLifecycle": {
+    "pid": 55055,
+    "exitCode": 0,
+    "verifiedAbsentAfterExit": true
+  },
+  "metal": {
+    "crossed": 2136964,
+    "device": "Apple M5 Pro",
+    "dimensions": [
+      29,
+      17,
+      17,
+      17,
+      15,
+      51,
+      1536
+    ],
+    "evaluated": 108994905,
+    "extremalCrossings": {
+      "earliestA1024": {
+        "lowerNu": 0.4000001,
+        "lowerResidual": 0.03297472,
+        "profile": {
+          "a": 1024,
+          "b": 0.125,
+          "bandMass": 0.02105132,
+          "length": 0.25,
+          "logGain": 1.476396,
+          "moment": 4.4741497,
+          "r": 2,
+          "valleyMass": 0.000779184,
+          "w": 1
+        },
+        "upperNu": 0.60000014,
+        "upperResidual": -0.010537408
+      },
+      "earliestCrossing": {
+        "lowerNu": 0.20000005,
+        "lowerResidual": 0.016658328,
+        "profile": {
+          "a": 32,
+          "b": 0.125,
+          "bandMass": 0.02105132,
+          "length": 0.25,
+          "logGain": 0.46812868,
+          "moment": 4.4741497,
+          "r": 2,
+          "valleyMass": 0.0044077085,
+          "w": 0.17677669
+        },
+        "upperNu": 0.4000001,
+        "upperResidual": -0.0066884914
+      },
+      "latestA1024": {
+        "lowerNu": 5,
+        "lowerResidual": 0.09064342,
+        "profile": {
+          "a": 1024,
+          "b": 0.875,
+          "bandMass": 0.46059334,
+          "length": 0.91700405,
+          "logGain": 9.021201,
+          "moment": 0.8649101,
+          "r": 0.5,
+          "valleyMass": 4.869901e-05,
+          "w": 0.0625
+        },
+        "upperNu": 5.2000003,
+        "upperResidual": -0.4258565
+      },
+      "latestCrossing": {
+        "lowerNu": 6.6000004,
+        "lowerResidual": 0.053947266,
+        "profile": {
+          "a": 32,
+          "b": 0.875,
+          "bandMass": 0.38968405,
+          "length": 0.70710677,
+          "logGain": 5.392726,
+          "moment": 0.7106669,
+          "r": 0.5,
+          "valleyMass": 0.0015583673,
+          "w": 0.0625
+        },
+        "upperNu": 6.8,
+        "upperResidual": -0.36248717
+      }
+    },
+    "finite": 108994905,
+    "gpuSeconds": 7.659418124705553,
+    "negativeAtFirst": 2137155,
+    "positiveAtLast": 0,
+    "profiles": 2137155
+  },
+  "adaptive": {
+    "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+    "scipy": "1.18.1",
+    "mpmath": "1.3.0",
+    "crossings": {
+      "earliestA1024": {
+        "parameters": {
+          "lowerNu": 0.4000001,
+          "lowerResidual": 0.03297472,
+          "profile": {
+            "a": 1024,
+            "b": 0.125,
+            "bandMass": 0.02105132,
+            "length": 0.25,
+            "logGain": 1.476396,
+            "moment": 4.4741497,
+            "r": 2,
+            "valleyMass": 0.000779184,
+            "w": 1
+          },
+          "upperNu": 0.60000014,
+          "upperResidual": -0.010537408
+        },
+        "scipyBracket": [
+          0.03297461817159409,
+          -0.010538110957334352
+        ],
+        "rootNu": 0.564873135539122,
+        "physicalShift": 0.000854605948330357,
+        "rootWithDerivativeScaling": 4.000004688088256,
+        "mpmathResidualAtRoot": "-0.000000000356856839203103992196883627381857149698615246"
+      },
+      "earliestCrossing": {
+        "parameters": {
+          "lowerNu": 0.20000005,
+          "lowerResidual": 0.016658328,
+          "profile": {
+            "a": 32,
+            "b": 0.125,
+            "bandMass": 0.02105132,
+            "length": 0.25,
+            "logGain": 0.46812868,
+            "moment": 4.4741497,
+            "r": 2,
+            "valleyMass": 0.0044077085,
+            "w": 0.17677669
+          },
+          "upperNu": 0.4000001,
+          "upperResidual": -0.0066884914
+        },
+        "scipyBracket": [
+          0.01665831026819334,
+          -0.006688618200110244
+        ],
+        "rootNu": 0.3665694556659049,
+        "physicalShift": 0.008873424281062678,
+        "rootWithDerivativeScaling": 4.000855955901974,
+        "mpmathResidualAtRoot": "-0.00000000000129421049922270517260835245521483385097076101"
+      },
+      "latestA1024": {
+        "parameters": {
+          "lowerNu": 5,
+          "lowerResidual": 0.09064342,
+          "profile": {
+            "a": 1024,
+            "b": 0.875,
+            "bandMass": 0.46059334,
+            "length": 0.91700405,
+            "logGain": 9.021201,
+            "moment": 0.8649101,
+            "r": 0.5,
+            "valleyMass": 4.869901e-05,
+            "w": 0.0625
+          },
+          "upperNu": 5.2000003,
+          "upperResidual": -0.4258565
+        },
+        "scipyBracket": [
+          0.09044686368002743,
+          -0.42557202302741914
+        ],
+        "rootNu": 5.036202788244311,
+        "physicalShift": 0.039414653783265786,
+        "rootWithDerivativeScaling": 4.0008462137586545,
+        "mpmathResidualAtRoot": "-0.0000000000379500693447958323432016293194426500461953491"
+      },
+      "latestCrossing": {
+        "parameters": {
+          "lowerNu": 6.6000004,
+          "lowerResidual": 0.053947266,
+          "profile": {
+            "a": 32,
+            "b": 0.875,
+            "bandMass": 0.38968405,
+            "length": 0.70710677,
+            "logGain": 5.392726,
+            "moment": 0.7106669,
+            "r": 0.5,
+            "valleyMass": 0.0015583673,
+            "w": 0.0625
+          },
+          "upperNu": 6.8,
+          "upperResidual": -0.36248717
+        },
+        "scipyBracket": [
+          0.053535428974771614,
+          -0.3631656512287554
+        ],
+        "rootNu": 6.625824433937288,
+        "physicalShift": 1.009762708102646,
+        "rootWithDerivativeScaling": 4.484759504051766,
+        "mpmathResidualAtRoot": "0.000000000000144102114310967693519117258558961789400682213"
+      }
+    },
+    "fixedAsymptoticProfile": {
+      "w": 0.5,
+      "r": 1,
+      "length": 1,
+      "b": 0.5
+    },
+    "asymptoticChecks": [
+      {
+        "a": 1000.0,
+        "nu": -2,
+        "value": "-4.986403336652055645533659679863",
+        "limitingValue": -6.0
+      },
+      {
+        "a": 1000.0,
+        "nu": 1,
+        "value": "0.99336523811195898925125311338003",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1000.0,
+        "nu": 3,
+        "value": "-0.019808456354348847574450974834566",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1000.0,
+        "nu": 4,
+        "value": "-2.0263054808883359017556958503294",
+        "limitingValue": 0.0
+      },
+      {
+        "a": 1000.0,
+        "nu": 6,
+        "value": "-9.0386790398465930653087449251444",
+        "limitingValue": -6.0
+      },
+      {
+        "a": 1000000.0,
+        "nu": -2,
+        "value": "-5.4875421841024223179913965558238",
+        "limitingValue": -6.0
+      },
+      {
+        "a": 1000000.0,
+        "nu": 1,
+        "value": "1.243771092769476999208360837073",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1000000.0,
+        "nu": 3,
+        "value": "0.73131327878253355458435853980753",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1000000.0,
+        "nu": 4,
+        "value": "-1.0249156278210959420821847399263",
+        "limitingValue": 0.0
+      },
+      {
+        "a": 1000000.0,
+        "nu": 6,
+        "value": "-7.5373734385222866249197047249143",
+        "limitingValue": -6.0
+      },
+      {
+        "a": 1000000000000.0,
+        "nu": -2,
+        "value": "-5.7437652544176469408904863244684",
+        "limitingValue": -6.0
+      },
+      {
+        "a": 1000000000000.0,
+        "nu": 1,
+        "value": "1.3718826272088234704482555099501",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1000000000000.0,
+        "nu": 3,
+        "value": "1.1156478816264704113468588204577",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1000000000000.0,
+        "nu": 4,
+        "value": "-0.51246949116470611820221529052749",
+        "limitingValue": 0.0
+      },
+      {
+        "a": 1000000000000.0,
+        "nu": 6,
+        "value": "-6.7687042367470591772902921978655",
+        "limitingValue": -6.0
+      },
+      {
+        "a": 1e+24,
+        "nu": -2,
+        "value": "-5.8718826272029689072324633526294",
+        "limitingValue": -6.0
+      },
+      {
+        "a": 1e+24,
+        "nu": 1,
+        "value": "1.4359413136014844536162316763147",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1e+24,
+        "nu": 3,
+        "value": "1.3078239408044533608486950289441",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1e+24,
+        "nu": 4,
+        "value": "-0.25623474559406218553507329474121",
+        "limitingValue": 0.0
+      },
+      {
+        "a": 1e+24,
+        "nu": 6,
+        "value": "-6.3843521183910932783026099421118",
+        "limitingValue": -6.0
+      },
+      {
+        "a": 1e+48,
+        "nu": -2,
+        "value": "-5.9359413136014844536162258135861",
+        "limitingValue": -6.0
+      },
+      {
+        "a": 1e+48,
+        "nu": 1,
+        "value": "1.4679706568007422268081129067931",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1e+48,
+        "nu": 3,
+        "value": "1.4039119704022266804243387203792",
+        "limitingValue": 1.5
+      },
+      {
+        "a": 1e+48,
+        "nu": 4,
+        "value": "-0.12811737279703109276754837282779",
+        "limitingValue": 0.0
+      },
+      {
+        "a": 1e+48,
+        "nu": 6,
+        "value": "-6.1921760591955466391513225592417",
+        "limitingValue": -6.0
+      }
+    ]
+  },
+  "adaptiveArtifact": "sync.cpu.json",
+  "fourWayActivity": {
+    "participantWindowsUTC": {
+      "localCPUAll12": [
+        "2026-11-18T02:13:46.625000+00:00",
+        "2026-11-18T02:16:00.172000+00:00"
+      ],
+      "localMetal": [
+        "2026-11-18T02:13:45.010000+00:00",
+        "2026-11-18T02:14:25.017000+00:00"
+      ],
+      "macBookCPUAll15": [
+        "2026-11-18T02:13:46.342035+00:00",
+        "2026-11-18T02:14:26.012043+00:00"
+      ],
+      "macBookMetalLifecycle": [
+        "2026-11-18T02:13:45+00:00",
+        "2026-11-18T02:13:57+00:00"
+      ]
+    },
+    "rawLifecycleIntersectionUTC": [
+      "2026-11-18T02:13:46.625000+00:00",
+      "2026-11-18T02:13:57+00:00"
+    ],
+    "rawLifecycleIntersectionSeconds": 10.375,
+    "postRunRemoteMinusLocalClockOffsetBoundsSeconds": [
+      -0.055421,
+      0.326636
+    ],
+    "adjustedLifecycleIntersectionUTC": [
+      "2026-11-18T02:13:46.625000+00:00",
+      "2026-11-18T02:13:56.673364+00:00"
+    ],
+    "adjustedLifecycleIntersectionSecondsIfStable": 10.048364,
+    "sampleSupportedIntersectionUTC": [
+      "2026-11-18T02:13:46.625000+00:00",
+      "2026-11-18T02:13:54.673364+00:00"
+    ],
+    "sampleSupportedIntersectionSecondsIfStable": 8.048364,
+    "simultaneousGpuCommandSecondsLowerIfStable": 4.9,
+    "localMetalCumulativeBoundsUTC": [
+      "02:13:46.514",
+      "02:13:58.161"
+    ],
+    "localMetalCumulativeGpuSeconds": [
+      1.3897370000031515,
+      12.236329583325642
+    ],
+    "remoteGpuCommandSecondsOutsideCpuWindowUpper": 1.951636,
+    "localGpuUnscheduledTimeInEnclosingWindowUpper": 0.800408
+  },
+  "macBookGPUDeviceSamples": {
+    "count": 16,
+    "min": 100,
+    "mean": 100,
+    "max": 100,
+    "baseline": 100
+  },
+  "macBookCPUandGpuSnapshots": {
+    "matchingWorkerSnapshots": 16,
+    "macBookMetalPidPositiveSnapshots": 15,
+    "all15WorkerSnapshots": 10,
+    "peakSampledCpuAggregatePercent": 890.8
+  },
+  "cpuCheckReplicatedLocally": true
+}
