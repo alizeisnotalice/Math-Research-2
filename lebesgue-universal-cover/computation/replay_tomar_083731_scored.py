@@ -107,7 +107,7 @@ def run(args):
     work.mkdir(parents=True,exist_ok=True)
     sys.path.insert(0,str(args.computation))
     data=Data(args.computation,args.tree,args.table,args.seed_receipt)
-    compare_next=int(F('.83732')*AREA)+1
+    compare_next=int((data.target+F('.00001'))*AREA)+1
     C,kernel_sha,binary_sha=kernel(args.computation,work,args.cache)
     parts=sorted(data.seed_rows)
     if args.parts:

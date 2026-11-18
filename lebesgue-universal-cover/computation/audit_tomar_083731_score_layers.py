@@ -100,7 +100,7 @@ def main():
         assert all(old[k]==v for k,v in new.items())
     assert retained==json.loads((a.work/'retained.json').read_bytes())
     assert sum(map(len,retained.values()))==totals[-1]['remaining']
-    assert next_count+accepted_next==next_['totals']['remaining']
+    assert next_count+accepted_next==next_.get('totals', next_)['remaining']
     result=dict(stage_sha256=sha(run_raw),first_seed_sha256=sha(a.first_seed_audit.read_bytes()),
            next_seed_sha256=sha(a.future_seed_audit.read_bytes()),stages=totals,
            target=run['target'],next_target=next_['target'],
