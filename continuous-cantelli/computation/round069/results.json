@@ -1,0 +1,143 @@
+{
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "numeric_model": "one forward gap wing, v=u^alpha for u in (0,1/4)",
+  "exact_checks": [
+    {
+      "alpha": "1/2",
+      "theta": "9/10",
+      "even_derivative_order": 32
+    },
+    {
+      "alpha": "3/4",
+      "theta": "9/10",
+      "even_derivative_order": 18
+    },
+    {
+      "alpha": "3/2",
+      "theta": "9/10",
+      "even_derivative_order": 4
+    }
+  ],
+  "numeric_runs": [
+    {
+      "digits": 45,
+      "records": [
+        {
+          "alpha": "1.2",
+          "limiting_coefficient": "-1.07192212308130811",
+          "values": [
+            {
+              "n": 24,
+              "ratio_to_limiting_coefficient": "0.994693360098209868"
+            },
+            {
+              "n": 64,
+              "ratio_to_limiting_coefficient": "0.999999483088006872"
+            },
+            {
+              "n": 128,
+              "ratio_to_limiting_coefficient": "0.999999999999804366"
+            }
+          ]
+        },
+        {
+          "alpha": "1.5",
+          "limiting_coefficient": "-1.60476114975066142",
+          "values": [
+            {
+              "n": 24,
+              "ratio_to_limiting_coefficient": "0.995975336384651336"
+            },
+            {
+              "n": 64,
+              "ratio_to_limiting_coefficient": "0.99999960810070975"
+            },
+            {
+              "n": 128,
+              "ratio_to_limiting_coefficient": "0.999999999999851679"
+            }
+          ]
+        },
+        {
+          "alpha": "1.8",
+          "limiting_coefficient": "-3.97416950108730506",
+          "values": [
+            {
+              "n": 24,
+              "ratio_to_limiting_coefficient": "0.968553009495773355"
+            },
+            {
+              "n": 64,
+              "ratio_to_limiting_coefficient": "0.998782284290499861"
+            },
+            {
+              "n": 128,
+              "ratio_to_limiting_coefficient": "0.999991275822210122"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "digits": 70,
+      "records": [
+        {
+          "alpha": "1.2",
+          "limiting_coefficient": "-1.07192212308130811",
+          "values": [
+            {
+              "n": 24,
+              "ratio_to_limiting_coefficient": "0.994693360098209868"
+            },
+            {
+              "n": 64,
+              "ratio_to_limiting_coefficient": "0.999999483088006872"
+            },
+            {
+              "n": 128,
+              "ratio_to_limiting_coefficient": "0.999999999999804366"
+            }
+          ]
+        },
+        {
+          "alpha": "1.5",
+          "limiting_coefficient": "-1.60476114975066142",
+          "values": [
+            {
+              "n": 24,
+              "ratio_to_limiting_coefficient": "0.995975336384651336"
+            },
+            {
+              "n": 64,
+              "ratio_to_limiting_coefficient": "0.99999960810070975"
+            },
+            {
+              "n": 128,
+              "ratio_to_limiting_coefficient": "0.999999999999851679"
+            }
+          ]
+        },
+        {
+          "alpha": "1.8",
+          "limiting_coefficient": "-3.97416950108730506",
+          "values": [
+            {
+              "n": 24,
+              "ratio_to_limiting_coefficient": "0.968553009495773355"
+            },
+            {
+              "n": 64,
+              "ratio_to_limiting_coefficient": "0.998782284290499861"
+            },
+            {
+              "n": 128,
+              "ratio_to_limiting_coefficient": "0.999991275822210122"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
