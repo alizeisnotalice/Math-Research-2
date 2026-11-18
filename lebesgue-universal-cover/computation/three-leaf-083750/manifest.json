@@ -1,0 +1,117 @@
+{
+  "scope": "three original leaves",
+  "threshold": "67/80",
+  "strict": true,
+  "result": {
+    "scope": "three original leaves",
+    "target": "67/80",
+    "areas": "strictly greater",
+    "tree_manifest_sha256": "56cbe5dfdadc6b5aa07cf6ec9acf4f637a3c4fa78db54df0ae2d78916d292410",
+    "table64_container_sha256": "0913f79e54bfcb804c8c4a4c0bbd7962d42d461591175ab037739b3562c6016d",
+    "leaves": {
+      "1205/140208": {
+        "complete": true,
+        "inputs": 5,
+        "nodes": 109641,
+        "five_terminals": 54821
+      },
+      "1205/140080": {
+        "complete": true,
+        "inputs": 5,
+        "nodes": 122279,
+        "five_terminals": 61140
+      },
+      "180/24225": {
+        "complete": true,
+        "inputs": 6,
+        "nodes": 5615271,
+        "five_terminals": 522841,
+        "P30_terminals": 2284795,
+        "P30_long_edge": 1813759,
+        "exact_box_reassembly": true
+      }
+    },
+    "seven_control": {
+      "complete": true,
+      "leaf": "180/24225",
+      "inputs": 7,
+      "nodes": 5282119,
+      "five_terminals": 375679,
+      "P30_terminals": 2212876,
+      "Q11_terminals": 52505,
+      "P30_long_edge": 1772333,
+      "Q11_long_edge": 16008
+    }
+  },
+  "existing_repo_revision": "d87ef8dacb129da57865a9aec093d58fca76750f",
+  "math_research_2_computation_sha256": {
+    "audit_five_harmonic_tree.py": "336e6bd6de2603661134da31ba3bfe312dcfaeebc3de9434423a9552117a6c85",
+    "build_q11_leaf_bank.py": "518a30764c03ba8fc26fa8bd3ddb30bda747a6619265d81c384d4c5febe1186f",
+    "certify_finite_point_leaf.py": "f2992ef5ec1ab1675a25a3d4e8321cd7b20c940c9da7a918821eb8e0e1a8d2ab",
+    "certify_five_harmonic.py": "d33ce2fca063b87aa19066d57ef2f4cda82d57b46e1cad670f4293998d6d0a59",
+    "certify_large_support.py": "126513b3129846d74eb823f401e768f4b158befb1f1420a32f806c111970a502",
+    "certify_nine.py": "610e94cf22e901453bc34f77afb8f0994d9e471432cbe20498fca3b1530c9541",
+    "certify_tomar_six_high.py": "3ebc1a678a41ac69cac40a36dbc569d606472a17156e547a636bf0e7fda2c75c",
+    "finite-point-global-input.json": "348f983e915e77a50b55d627d3d2728a99377f7283dd67848896b0bcfff5469f",
+    "finite-point-leaf-input.json": "b99b3bf66adf904b8b99ba1e1c7f8e75abc1ea6d8e00728b9553c20b961ffebc",
+    "replay_q11_with_p30.py": "277a76503bb254e62f7e50e2855ea3eae597e54c012b3778517bdf1c4dfd0a3a",
+    "tomar_fan_table.py": "0eb1c89449128bbfa27421afb7967f8f27d1e606cd5298b9afd9847a244c43c5",
+    "tomar_grouped_scored_fan.cpp": "8ab87c85f82d2d3fb38c4899f8f24b29af35bfa70dff18316b053384281f62fa",
+    "tomar_p30_scaled_material.py": "da3fdc4472aaf0b09e020b6a3a7b467f227fe695c84ad0c4f502244e0f20cc2b",
+    "tomar-six-high-input.json": "ed4c60115add12a52910dcdeaf70488f2bdd0da271483d6fa56b7e7a44493ffe",
+    "tomar_six_083730_guard.cpp": "42a4ee583d22940b3cd0b05f04285ba7e3d351745de707476211dce4efba5f81",
+    "verify_tomar_fan_table.py": "a3ed5860a5d1716986b5ecad447cb7b27d7411e967417884d0dec097517faed1"
+  },
+  "seven_only_computation_sha256": {
+    "multi-host-points.json": "9052ca388aabacc87116ba99a05d9ef98b49dfeed564e8cfd18efb647f93f282",
+    "q11-leaf-bank.json": "ef0ad7c72898085f45b6ee96fb3b2003405c64974ae0994fdd0526bb142dd03f"
+  },
+  "upstream_tree_files_sha256": {
+    "SHA256SUMS": "56cbe5dfdadc6b5aa07cf6ec9acf4f637a3c4fa78db54df0ae2d78916d292410",
+    "part0000.json": "e28aff763d77762b968bcc37a76c23dde326e6fbf6923589a10cbd723229fee5",
+    "part0180.json": "db38870c05741986e0860a1a4881d7b687ccc8b8501291f96558aa69c1b8099b",
+    "part0180.npy": "f024b37b4f4547be7825ff1f60e1f9d24dcd3876a5584c14239fd28ecc4cb5f9",
+    "part1205.json": "0529338eac7b0fe9e02577cb9d2de7bbe597a3f9ae49dd96561a3c93bb8d1b4c",
+    "part1205.npy": "df2413c532134b4853c744da6e2fecac592c106bc81d62f9832c78b0cbe96112"
+  },
+  "table64": {
+    "generator_source": "tomar_fan_table.py",
+    "arguments": [
+      "--subdiv",
+      "64"
+    ],
+    "canonical_arrays_sha256": "2a165882c538349aa7c281ce94f85043b0b6ffcc336fc4b47e621bdbbeb9dbd9",
+    "original_sha256": "0913f79e54bfcb804c8c4a4c0bbd7962d42d461591175ab037739b3562c6016d",
+    "independent_regeneration_byte_identical": true
+  },
+  "package_files_sha256": {
+    "PROOF.md": "65964b5563039453332da7ce4991cd69ac0533fb83b9bc9721f8a0e3025a212d",
+    "README.md": "20a1a0d6720674141146a1e00a6990d799e092daff520ac7a455914de254d7ae",
+    "angle_mesh.hpp": "6be067e2c673163ecadb163ce15ae292888c82437f225dd2142df81a897fc6d6",
+    "angle_mesh_leaf_guard.cpp": "2ec3ec2fbf7ce09d68c76a6d193a10d2901c562e5aa3959bef42b7a26051495f",
+    "audit_partition.py": "aa1df649ce78f3c59392700556bebb2a921de6275582d6cbf9dd13c65fdf2b40",
+    "frozen/five.jsonl": "0a74d93c01d06b0a24a04aa653e9db54c6525be5e132099c1605de6fd2c0a699",
+    "frozen/seven-control.jsonl": "dac144c2def7a02510790d8063af9355cf1bd507a67efbf7cfe47f69c8083c72",
+    "frozen/six-audit.json": "4b7e5fe79510454d85970709ef70c7ce5f589396f22711db4f2bd8a6aed85f98",
+    "frozen/six-part-0.jsonl": "1ff4b07fd612928bd4dd9d6ab992ad8fb28d652127b382553242f2ee1f8378e4",
+    "frozen/six-part-1.jsonl": "570b463c2429480e7e378020f868887c2cfc31bbcd737fec7de005648c145fb7",
+    "frozen/six-part-2.jsonl": "76c0bc37b849c0b1f259886ca1b399b5426f2602ff56be33c46098b8fa5127f7",
+    "frozen/six-part-3.jsonl": "aed7637fa280e7d68c4b05123b047485d792f254b6a44367118f72d39f507882",
+    "frozen/six-root-frontiers/180-24225-mode0-frontier.json": "de3e3859c77d8b34b7962f1f288b03be85b7a05ca3886b62897d3b425383425d",
+    "frozen/six-root.jsonl": "a6a1f37721d3ddf3f1d44afb1955e351d1e696cdaed1809ddd9fcd54baede7ff",
+    "frozen/three-leaf-result.json": "5bdb7ccbc7da1702605701d40616bda4a29b743d7930228403d9f4481f6b0f04",
+    "long_edge_support.hpp": "290509037c3e17d04bafc32d0650c468e33d4c39a892dd114d6aecf99f3a65e9",
+    "replay_angle_mesh.py": "8b0b821ffedb54a430d6ec8d0dac3e5e51b8a64d17c1c20fe49566a60f470164",
+    "replay_three_leaves_083750.py": "08134e89cbf2c452f6c847c5187afc5d1af5de0b32b098cac870f4004f4bb77c"
+  },
+  "software": {
+    "Python": "3.13.18",
+    "NumPy": "2.5.5",
+    "python-flint": "0.9.0",
+    "Arb_precision_bits": [
+      128,
+      160
+    ],
+    "Apple_Clang": "21.0.0"
+  }
+}
