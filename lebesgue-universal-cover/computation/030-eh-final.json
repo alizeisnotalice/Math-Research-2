@@ -1,0 +1,72 @@
+{
+  "python": "3.15.0 (main, Oct 14 2026, 00:56:12) [Clang 23.1.3 ]",
+  "script_sha256": "1f3d07332d80ec80cc8f16098a971d579b3f0ec6dd9e83ec2329dbb735c82d9e",
+  "frozen_base_script_sha256": "745f069755740bdef5102a54502e4d12db79905f8c938c55f560d78bfeae6ba2",
+  "sigma_degrees_exact": "1.5494",
+  "endpoint_x_intervals": {
+    "U": [
+      [
+        "-499973602854903764556597/1000000000000000000000000",
+        "-249986801427451868084403/500000000000000000000000"
+      ]
+    ],
+    "J": [
+      [
+        "-99979080030209816648349/200000000000000000000000",
+        "-49989540015104901906497/100000000000000000000000"
+      ]
+    ],
+    "T": [
+      [
+        "-6243358395402006169851/12500000000000000000000",
+        "-499468671632160387940737/1000000000000000000000000"
+      ]
+    ]
+  },
+  "arc_x_monotonicity": {
+    "U_to_J_C3_radial_y": [
+      [
+        "-1453183999130601305257/200000000000000000000000",
+        "-1453183999130594836907/200000000000000000000000"
+      ],
+      [
+        "-7231679555495698404451/500000000000000000000000",
+        "-14463359110991347286323/1000000000000000000000000"
+      ]
+    ],
+    "J_to_T_B3_radial_y": [
+      [
+        "-510853259711405639870303/1000000000000000000000000",
+        "-255426629855702792727153/500000000000000000000000"
+      ],
+      [
+        "-63946334983932279069241/125000000000000000000000",
+        "-511570679871458161842113/1000000000000000000000000"
+      ]
+    ],
+    "conclusion": "x strictly increases on both CCW boundary arcs; it is affine on TU."
+  },
+  "whole_closed_EH_x_slab": {
+    "lower": "-1/2 < x",
+    "upper": "x < -499/1000",
+    "justification": "boundary monotonicity plus the affine-extremum principle on the compact Jordan closure"
+  },
+  "pal_line_equality": {
+    "normal": "u(7pi/6)",
+    "analytic_identity": "pal.U=1/2 exactly from U=proj_pal(C3)-sqrt(1-d^2)perp(pal)",
+    "interval_consistency": [
+      "249999999999999989664543/500000000000000000000000",
+      "500000000000000020513063/1000000000000000000000000"
+    ],
+    "closed_region": "pal.x>=1/2",
+    "interior": "pal.x>1/2"
+  },
+  "S_disk_strict_interior": {
+    "S_x_exact": "1/2",
+    "S_outside_closed_EH": true,
+    "boundary_fact_from_frozen_certificate": "|x-S|^2>=1 on boundary, with equality only at T",
+    "critical_point_argument": "the only interior local minimizer of |x-S|^2 is S; since S is outside closure(EH), compactness implies |x-S|^2>1 throughout EH interior"
+  },
+  "passed": true,
+  "scope": "fixed-angle geometric addendum only; does not prove the global universal-cover theorem"
+}
