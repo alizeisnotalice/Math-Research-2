@@ -1,0 +1,60 @@
+{
+  "python": "3.15.0",
+  "rng_seed": 830021,
+  "audits": [
+    {
+      "address_dim": 2,
+      "seed_data_dim": 2,
+      "cases": 784,
+      "sum_marked_blocks": 1504,
+      "local_queries": 168,
+      "different_endpoint_answer_groups": 58,
+      "effective_cross_queries": 38,
+      "actual_cross_sparsity_loss": 86
+    },
+    {
+      "address_dim": 3,
+      "seed_data_dim": 2,
+      "cases": 784,
+      "sum_marked_blocks": 1816,
+      "local_queries": 136,
+      "different_endpoint_answer_groups": 40,
+      "effective_cross_queries": 108,
+      "actual_cross_sparsity_loss": 334
+    },
+    {
+      "address_dim": 4,
+      "seed_data_dim": 2,
+      "cases": 784,
+      "sum_marked_blocks": 1474,
+      "local_queries": 94,
+      "different_endpoint_answer_groups": 54,
+      "effective_cross_queries": 170,
+      "actual_cross_sparsity_loss": 620
+    },
+    {
+      "address_dim": 3,
+      "seed_data_dim": 3,
+      "cases": 784,
+      "sum_marked_blocks": 1714,
+      "local_queries": 118,
+      "different_endpoint_answer_groups": 66,
+      "effective_cross_queries": 140,
+      "actual_cross_sparsity_loss": 396
+    }
+  ],
+  "large_cross_only": {
+    "parent_support": 65536,
+    "parent_rank_plus_one": 93,
+    "children": [
+      {
+        "support": 65530,
+        "rank_plus_one": 92
+      },
+      {
+        "support": 65530,
+        "rank_plus_one": 92
+      }
+    ]
+  }
+}
