@@ -1,0 +1,617 @@
+{
+  "schema": "a28-r067-overlap-rank-two-audit-v1",
+  "python": "3.15.0",
+  "workers": 12,
+  "exact_small_census": [
+    {
+      "n": 1,
+      "truth_tables": 4,
+      "coordinate_splits": 2,
+      "by_query_dimension": [
+        {
+          "accepted": 4,
+          "has_triangles": 0,
+          "positive_rank_equality": 0
+        },
+        {
+          "accepted": 4,
+          "has_triangles": 0,
+          "positive_rank_equality": 0
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "truth_tables": 16,
+      "coordinate_splits": 3,
+      "by_query_dimension": [
+        {
+          "accepted": 16,
+          "has_triangles": 8,
+          "positive_rank_equality": 8
+        },
+        {
+          "accepted": 16,
+          "has_triangles": 0,
+          "positive_rank_equality": 0
+        },
+        {
+          "accepted": 16,
+          "has_triangles": 0,
+          "positive_rank_equality": 0
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "truth_tables": 256,
+      "coordinate_splits": 4,
+      "by_query_dimension": [
+        {
+          "accepted": 72,
+          "has_triangles": 56,
+          "positive_rank_equality": 56
+        },
+        {
+          "accepted": 256,
+          "has_triangles": 192,
+          "positive_rank_equality": 64
+        },
+        {
+          "accepted": 256,
+          "has_triangles": 0,
+          "positive_rank_equality": 0
+        },
+        {
+          "accepted": 256,
+          "has_triangles": 0,
+          "positive_rank_equality": 0
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "truth_tables": 65536,
+      "coordinate_splits": 5,
+      "by_query_dimension": [
+        {
+          "accepted": 312,
+          "has_triangles": 280,
+          "positive_rank_equality": 280
+        },
+        {
+          "accepted": 5184,
+          "has_triangles": 4928,
+          "positive_rank_equality": 448
+        },
+        {
+          "accepted": 65536,
+          "has_triangles": 61440,
+          "positive_rank_equality": 512
+        },
+        {
+          "accepted": 65536,
+          "has_triangles": 0,
+          "positive_rank_equality": 0
+        },
+        {
+          "accepted": 65536,
+          "has_triangles": 0,
+          "positive_rank_equality": 0
+        }
+      ]
+    }
+  ],
+  "boolean_selector_families": [
+    {
+      "N": 1,
+      "shared_private_axis": false,
+      "input_dimension": 2,
+      "truth_table_entries": 4,
+      "external_rank": 2,
+      "tail_points": 3,
+      "four_relation_count": 1,
+      "four_relation_rank": 1,
+      "four_relation_component_count": 1,
+      "max_slice_linear_rank": 2,
+      "tail_band_sizes": {
+        "1": 1,
+        "2": 1,
+        "3": 1
+      },
+      "all_four_relations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "N": 1,
+      "shared_private_axis": true,
+      "input_dimension": 2,
+      "truth_table_entries": 4,
+      "external_rank": 2,
+      "tail_points": 3,
+      "four_relation_count": 1,
+      "four_relation_rank": 1,
+      "four_relation_component_count": 1,
+      "max_slice_linear_rank": 2,
+      "tail_band_sizes": {
+        "1": 1,
+        "2": 1,
+        "3": 1
+      },
+      "all_four_relations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "N": 2,
+      "shared_private_axis": false,
+      "input_dimension": 5,
+      "truth_table_entries": 32,
+      "external_rank": 4,
+      "tail_points": 12,
+      "four_relation_count": 2,
+      "four_relation_rank": 2,
+      "four_relation_component_count": 1,
+      "max_slice_linear_rank": 2,
+      "tail_band_sizes": {
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "8": 2,
+        "12": 2
+      },
+      "all_four_relations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          8,
+          12
+        ]
+      ]
+    },
+    {
+      "N": 2,
+      "shared_private_axis": true,
+      "input_dimension": 4,
+      "truth_table_entries": 16,
+      "external_rank": 3,
+      "tail_points": 9,
+      "four_relation_count": 3,
+      "four_relation_rank": 2,
+      "four_relation_component_count": 1,
+      "max_slice_linear_rank": 2,
+      "tail_band_sizes": {
+        "1": 1,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2
+      },
+      "all_four_relations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "N": 4,
+      "shared_private_axis": false,
+      "input_dimension": 10,
+      "truth_table_entries": 1024,
+      "external_rank": 8,
+      "tail_points": 48,
+      "four_relation_count": 4,
+      "four_relation_rank": 4,
+      "four_relation_component_count": 1,
+      "max_slice_linear_rank": 2,
+      "tail_band_sizes": {
+        "1": 4,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "8": 4,
+        "12": 4,
+        "16": 4,
+        "32": 4,
+        "48": 4,
+        "64": 4,
+        "128": 4,
+        "192": 4
+      },
+      "all_four_relations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          8,
+          12
+        ],
+        [
+          0,
+          16,
+          32,
+          48
+        ],
+        [
+          0,
+          64,
+          128,
+          192
+        ]
+      ]
+    },
+    {
+      "N": 4,
+      "shared_private_axis": true,
+      "input_dimension": 7,
+      "truth_table_entries": 128,
+      "external_rank": 5,
+      "tail_points": 33,
+      "four_relation_count": 10,
+      "four_relation_rank": 4,
+      "four_relation_component_count": 1,
+      "max_slice_linear_rank": 2,
+      "tail_band_sizes": {
+        "1": 1,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "8": 4,
+        "9": 4,
+        "16": 4,
+        "17": 4
+      },
+      "all_four_relations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          8,
+          9
+        ],
+        [
+          0,
+          1,
+          16,
+          17
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          16,
+          17
+        ],
+        [
+          4,
+          5,
+          8,
+          9
+        ],
+        [
+          4,
+          5,
+          16,
+          17
+        ],
+        [
+          8,
+          9,
+          16,
+          17
+        ]
+      ]
+    },
+    {
+      "N": 8,
+      "shared_private_axis": true,
+      "input_dimension": 12,
+      "truth_table_entries": 4096,
+      "external_rank": 9,
+      "tail_points": 129,
+      "four_relation_count": 36,
+      "four_relation_rank": 8,
+      "four_relation_component_count": 1,
+      "max_slice_linear_rank": 2,
+      "tail_band_sizes": {
+        "1": 1,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "8": 8,
+        "9": 8,
+        "16": 8,
+        "17": 8,
+        "32": 8,
+        "33": 8,
+        "64": 8,
+        "65": 8,
+        "128": 8,
+        "129": 8,
+        "256": 8,
+        "257": 8
+      },
+      "all_four_relations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          8,
+          9
+        ],
+        [
+          0,
+          1,
+          16,
+          17
+        ],
+        [
+          0,
+          1,
+          32,
+          33
+        ],
+        [
+          0,
+          1,
+          64,
+          65
+        ],
+        [
+          0,
+          1,
+          128,
+          129
+        ],
+        [
+          0,
+          1,
+          256,
+          257
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          16,
+          17
+        ],
+        [
+          2,
+          3,
+          32,
+          33
+        ],
+        [
+          2,
+          3,
+          64,
+          65
+        ],
+        [
+          2,
+          3,
+          128,
+          129
+        ],
+        [
+          2,
+          3,
+          256,
+          257
+        ],
+        [
+          4,
+          5,
+          8,
+          9
+        ],
+        [
+          4,
+          5,
+          16,
+          17
+        ],
+        [
+          4,
+          5,
+          32,
+          33
+        ],
+        [
+          4,
+          5,
+          64,
+          65
+        ],
+        [
+          4,
+          5,
+          128,
+          129
+        ],
+        [
+          4,
+          5,
+          256,
+          257
+        ],
+        [
+          8,
+          9,
+          16,
+          17
+        ],
+        [
+          8,
+          9,
+          32,
+          33
+        ],
+        [
+          8,
+          9,
+          64,
+          65
+        ],
+        [
+          8,
+          9,
+          128,
+          129
+        ],
+        [
+          8,
+          9,
+          256,
+          257
+        ],
+        [
+          16,
+          17,
+          32,
+          33
+        ],
+        [
+          16,
+          17,
+          64,
+          65
+        ],
+        [
+          16,
+          17,
+          128,
+          129
+        ],
+        [
+          16,
+          17,
+          256,
+          257
+        ],
+        [
+          32,
+          33,
+          64,
+          65
+        ],
+        [
+          32,
+          33,
+          128,
+          129
+        ],
+        [
+          32,
+          33,
+          256,
+          257
+        ],
+        [
+          64,
+          65,
+          128,
+          129
+        ],
+        [
+          64,
+          65,
+          256,
+          257
+        ],
+        [
+          128,
+          129,
+          256,
+          257
+        ]
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.9628653330000816
+}
