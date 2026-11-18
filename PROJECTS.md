@@ -8,7 +8,7 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；奇偶宽度严格排重，少转折自然盆地指数排除 | 第44轮完成 | 互斥族的界面代价和完整加权空间估计 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；八次实二次S1/S7排除；六点≤53严格公平 | 第55轮完成 | 八次S2/S6根筛未拒绝母式的无界前缀认证 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；八次S1/S7、S2/S6排除；六点≤55、九点≤36严格公平 | 第56轮完成 | 八次S3/S5的母式和余因子完整约束 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
