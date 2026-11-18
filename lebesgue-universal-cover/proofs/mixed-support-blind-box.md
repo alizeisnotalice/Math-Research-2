@@ -27,3 +27,11 @@
     python -I -B computation/audit_mixed_support_blind_box.py R169_COMPUTATION CERT11D computation/mixed-support-blind-input.json
 
 所需外部数据仅为冻结的第169轮普通树账本、三十点有理坐标、原分片 1202 的树与表头、原树总清单。三十点姿态和 125 个法向均在冻结输入中。最终验证不运行数值优化，也不运行浮点凸包算法。
+
+## 盒内确有低面积的五体摆放
+
+同一原盒内还可固定十一项分母为 \(2^{44}\) 的位置参数，使五体凸包的面积至多 **0.837345331409**。验证器在 32,768 条有理法向上向上舍入每个曲体的支撑，以有理对偶凸包求交半平面，所得外多边形有 5,035 条有效边。它包含该真实曲边凸包，其面积低于 0.83741 至少 0.000064668591。因此这棵盲叶即使允许任意精度的纯五体面积计算，也不能按原门槛整体排除。
+
+    python -I -B computation/verify_mixed_blind_low_pose.py CERT11D computation/mixed-support-blind-low-pose.json
+
+这个具体低面积点与前文用于上界混合面积预算的六体姿态分别给出。对于只在五体低面积子域上共有的内多边形，前文对全原盒的上端仍然需要另行证明。

@@ -43,24 +43,46 @@ class Events:
                     for a,b in zip(self.points,self.points[1:]+self.points[:1],strict=True)]
         self.den=den
         self.twopi=2*pi
+        self.trig={}
+        self.endpoint_values={}
+        self.rotations={}
+        self.values={}
 
-    def endpoint(self,t,weights,n,den):
-        c,s=self.cos_sin(t)
-        total=arb(0)
-        for w,(a,b) in zip(weights,n,strict=True):
+    def direction_at(self,t,n):
+        key=t,n
+        if key not in self.endpoint_values:
+            a,b=n
+            c,s=self.cos_sin(t)
             u,v=a*c+b*s,-a*s+b*c
             vals=[u*x+v*y for x,y in self.points]
             h=vals[0]
             for val in vals[1:]:
                 h=h.max(val)
-            total+=ar(w)*h
-        return total/(den*self.den)
+            self.endpoint_values[key]=h
+        return self.endpoint_values[key]
+
+    def endpoint(self,t,weights,n,den):
+        return sum((ar(w)*self.direction_at(t,a) for w,a in zip(weights,n,strict=True)),arb(0))/(den*self.den)
 
     def cos_sin(self,t):
         if t==0 or t==1:
             return arb(1),arb(0)
-        z=self.twopi*ar(t)
-        return z.cos(),z.sin()
+        if t not in self.trig:
+            z=self.twopi*ar(t)
+            self.trig[t]=z.cos(),z.sin()
+        return self.trig[t]
+
+    def directions(self,n):
+        if n not in self.rotations:
+            events=set()
+            for m in self.edges:
+                for a in n:
+                    c,s=dot(m,a),det(m,a)
+                    assert c or s
+                    g=gcd(abs(c),abs(s))
+                    events.add((c//g,s//g))
+            self.rotations[n]=sorted(events,key=cmp_to_key(orientation_sort))
+        return self.rotations[n]
 
     def event_value(self,c,s,weights,n,den):
         support=F(0)
@@ -70,27 +92,26 @@ class Events:
         assert support>=0
         return ar(support/(den*self.den))/arb(c*c+s*s).sqrt()
 
-    def minimum(self,l,r,n,w,den):
+    def minimum(self,l,r,n,w,den,detail=True):
         assert 0<=l<r<=1 and r-l<=F(1,2) and all(q>0 for q in w)
         assert all(sum(q*x[i] for q,x in zip(w,n,strict=True))==0 for i in (0,1))
+        n,w=tuple(n),tuple(w)
         u,v=self.cos_sin(l),self.cos_sin(r)
-        events=set()
-        for m in self.edges:
-            for a in n:
-                c,s=dot(m,a),det(m,a)
-                assert c or s
-                if det(u,(c,s))<0 or det((c,s),v)<0:
-                    continue
-                g=gcd(abs(c),abs(s))
-                events.add((c//g,s//g))
-        events=sorted(events,key=cmp_to_key(orientation_sort))
-        e=[self.endpoint(l,w,n,den),self.endpoint(r,w,n,den)]
-        values=e+[self.event_value(c,s,w,n,den) for c,s in events]
-        best=values[0]
-        for val in values[1:]:
+        events=[z for z in self.directions(n) if not det(u,z)<0 and not det(z,v)<0]
+        endpoints=[self.endpoint(l,w,n,den),self.endpoint(r,w,n,den)]
+        terms=[]
+        for c,s in events:
+            key=(c,s,n,w,den)
+            if key not in self.values:
+                self.values[key]=self.event_value(c,s,w,n,den)
+            terms.append(self.values[key])
+        best=endpoints[0]
+        for val in [endpoints[1],*terms]:
             best=best.min(val)
-        return best,dict(events=[list(z) for z in events],endpoint_support=[str(t) for t in e],
-                         minimum_support=str(best), event_support=[str(z) for z in values[2:]])
+        if not detail:
+            return best,len(events)
+        return best,dict(events=[list(z) for z in events],endpoint_support=[str(t) for t in endpoints],
+                         minimum_support=str(best), event_support=[str(z) for z in terms])
 
 
 def read(p):
@@ -108,7 +129,7 @@ def cap_value(ev,caps,row):
 
 
 def run(comp,one=False):
-    sys.path.insert(0,str(comp))
+    sys.path.insert(1,str(comp))
     from certify_mixed_support_budget import Host, cloud
     from certify_high_six_host_neighborhood import Caps
     ctx.prec=160
@@ -146,6 +167,19 @@ def run(comp,one=False):
                     a=c.evaluate(l,r,int(h),index,n,pts)
                     b,record=cap_value(ev,c,row)
                     assert a>0 and b>0 and not b<a, (a,b,record)
+                    if not record['events']:
+                        mid=(l+r)/2
+                        cosine,sine=ev.cos_sin(mid)
+                        js,_,_=c.triples[index]
+                        for d,z in zip(js,pts,strict=True):
+                            x,y=raw['points'][z]
+                            y*=int(h)
+                            m,n=c.host.normals[d]
+                            u,v=m*cosine+n*sine,-m*sine+n*cosine
+                            selected=x*u+y*v
+                            assert (x,y) in ev.points
+                            assert all(px*u+py*v<selected for px,py in ev.points if (px,py)!=(x,y))
+                        record['same_active_formula']=True
                     old=old.min(a)
                     new=new.min(b)
                     record.update(row_index=j, angles=[str(l),str(r)],orig=str(a),exact_margin=str(b))
@@ -155,6 +189,25 @@ def run(comp,one=False):
                 if not one:
                     assert before==1
                 result[tag][h]=dict(cells=len(details),old_min=str(old),new_min=str(new),rows=details)
+    if not one:
+        tag='new_P30-.83755'
+        checks={}
+        obj=Caps(hosts['new_P30'],q,pi,F('.83755'),F('.00013'))
+        for hand,events in es.items():
+            row=data['rows'][tag][hand][0]
+            j,power=row[2:4]
+            ids,w,_=obj.triples[j]
+            normals=[obj.host.normals[t] for t in ids]
+            a,b=F(0),F(1,2)
+            best,detail=events.minimum(a,b,normals,w,obj.host.den)
+            assert len(detail['events'])==15
+            u,v=events.cos_sin(a),events.cos_sin(b)
+            assert all(det(u,z)>0 and det(z,v)>0 for z in detail['events'])
+            assert best<events.endpoint(a,w,normals,obj.host.den) and best<events.endpoint(b,w,normals,obj.host.den)
+            slack=best-obj.bound(power,j)
+            assert slack<0
+            checks[hand]=dict(detail,angles=['0','1/2'],original_row=0,exact_margin=str(slack))
+        result['interior_event_regression']=checks
     return result
 
 

@@ -79,8 +79,14 @@ def main(a):
     original=scaled(tree.root['hi'])
     before=process_time()
     if a.cert is not None:
-        from certify_mixed_leaf_centers import replay_bank
-        certs=replay_bank(a.comp,read(a.cert))
+        proposed=read(a.cert)
+        if proposed.get('angle_verifier')=='events':
+            sys.path.insert(0,str(Path(__file__).resolve().parent))
+            from compress_q11_event_banks import replay
+            certs=replay(a.comp,proposed)
+        else:
+            from certify_mixed_leaf_centers import replay_bank
+            certs=replay_bank(a.comp,proposed)
     else:
         certs=None
     bank_cpu=process_time()-before
