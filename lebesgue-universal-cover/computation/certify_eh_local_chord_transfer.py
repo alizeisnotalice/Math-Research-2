@@ -27,7 +27,8 @@ def verify(archive,ah_file,eh_file):
     # of the true pre-EH host. Its coordinate box has T as a corner, so it
     # suffices to pay the norm change on this box, including both arcs.
     change=g.norm(g.minus(n_u,n_v));diameter=g.norm(g.minus(v,t));cost=change*diameter
-    margin=min(g.arb(row['placement_margin_lower']).lower() for row in ah['bins']);assert margin>cost
+    placement_rows = [*ah['bins'], *ah.get('root_conditioned_classes', [])]
+    margin=min(g.arb(row['placement_margin_lower']).lower() for row in placement_rows);assert margin>cost
     corners=[(a,b) for a in (v[0],t[0]) for b in (v[1],t[1])]
     clear=base.prev.ah_clearance(ah,corners)
     gl,gu=map(F,eh['EH_gain_over_R126_exact_interval']);assert (gl,gu)==tuple(map(base.eh.gain_endpoint,(gain.lower(),gain.upper())))

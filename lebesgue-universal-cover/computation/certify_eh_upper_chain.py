@@ -107,7 +107,8 @@ def run(archive,ah_file,param_file,weights,generate,out_weights):
     if generate:
         duals=[pose['right_weights']]+[du for x in pose['edges'].values() for du in x['weights'].values()];b.trim(pose,duals,initial);pose.pop('summary');weights['pose']=pose;out_weights.write_text(json.dumps(weights,separators=(',',':'))+'\n');return
     u,v,t=(geo[k] for k in ('u','v','t'));cost=g.norm(g.minus(v,t))*g.norm(g.minus(b.unit_outer(v,t),b.unit_outer(u,t)))
-    m=min(g.arb(row['placement_margin_lower']).lower() for row in ah['bins']);assert m>cost
+    placement_rows = [*ah['bins'], *ah.get('root_conditioned_classes', [])]
+    m=min(g.arb(row['placement_margin_lower']).lower() for row in placement_rows);assert m>cost
     clear=b.prev.ah_clearance(ah,[(a,c) for a in (v[0],t[0]) for c in (v[1],t[1])])
     gains=list(map(b.eh.gain_endpoint,(geo['gain'].lower(),geo['gain'].upper())));l,h=map(F,ah['area_exact_interval']);ends=(l-gains[1],h-gains[0])
     return {'AH_sha256':sha256(ah_file.read_bytes()).hexdigest(),'R126_sha256':sha256(oldpath.read_bytes()).hexdigest(),'parameter_sha256':sha256(param_file.read_bytes()).hexdigest(),'model_sha256':model_hash,
