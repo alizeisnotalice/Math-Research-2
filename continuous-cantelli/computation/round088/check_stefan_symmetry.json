@@ -1,0 +1,40 @@
+{
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "decimal_precision": 80,
+  "symbolic": {
+    "mixed_enthalpy_product": "a*(a + b)",
+    "model_plus_minus_factorization": "(r - 3)*(r - 1)/(r*(r + 3))",
+    "model_limt_r_times_lower_tail_deficit": "1"
+  },
+  "synthetic_branch_rates": [
+    {
+      "lambda": 8,
+      "positive_log_exponential_rate_after_quadratic_removed": "0.416612335598913905",
+      "negative_log_exponential_rate_after_quadratic_removed": "0.443164338928851903"
+    },
+    {
+      "lambda": 16,
+      "positive_log_exponential_rate_after_quadratic_removed": "0.589692171700113419",
+      "negative_log_exponential_rate_after_quadratic_removed": "0.467307679343245704"
+    },
+    {
+      "lambda": 32,
+      "positive_log_exponential_rate_after_quadratic_removed": "0.745060724887286589",
+      "negative_log_exponential_rate_after_quadratic_removed": "0.482896594740234455"
+    },
+    {
+      "lambda": 64,
+      "positive_log_exponential_rate_after_quadratic_removed": "0.849345845463269562",
+      "negative_log_exponential_rate_after_quadratic_removed": "0.49128008775172563"
+    },
+    {
+      "lambda": 128,
+      "positive_log_exponential_rate_after_quadratic_removed": "0.913469795005394982",
+      "negative_log_exponential_rate_after_quadratic_removed": "0.495600079712711002"
+    }
+  ],
+  "predicted_positive_rate": "1",
+  "predicted_negative_rate": "0.5"
+}

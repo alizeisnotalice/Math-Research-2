@@ -1,0 +1,63 @@
+{
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "exact_checks": [
+    "translated sine solves heat equation",
+    "normal reflection integral = 1/4"
+  ],
+  "runs": [
+    {
+      "digits": 50,
+      "limiting_reflection_rate": "0.322137778895773945",
+      "records": [
+        {
+          "power": 6,
+          "reflection_rate_over_bound": "0.990096348350164224",
+          "finite_horizon_jump_kernel_mass": "0.88523391447320162"
+        },
+        {
+          "power": 12,
+          "reflection_rate_over_bound": "0.999843773690843362",
+          "finite_horizon_jump_kernel_mass": "0.985605191411278931"
+        },
+        {
+          "power": 24,
+          "reflection_rate_over_bound": "0.999999961853028756",
+          "finite_horizon_jump_kernel_mass": "0.999775068916083919"
+        },
+        {
+          "power": 40,
+          "reflection_rate_over_bound": "0.999999999999417923",
+          "finite_horizon_jump_kernel_mass": "0.999999121362941815"
+        }
+      ]
+    },
+    {
+      "digits": 75,
+      "limiting_reflection_rate": "0.322137778895773945",
+      "records": [
+        {
+          "power": 6,
+          "reflection_rate_over_bound": "0.990096348350164224",
+          "finite_horizon_jump_kernel_mass": "0.88523391447320162"
+        },
+        {
+          "power": 12,
+          "reflection_rate_over_bound": "0.999843773690843362",
+          "finite_horizon_jump_kernel_mass": "0.985605191411278931"
+        },
+        {
+          "power": 24,
+          "reflection_rate_over_bound": "0.999999961853028756",
+          "finite_horizon_jump_kernel_mass": "0.999775068916083919"
+        },
+        {
+          "power": 40,
+          "reflection_rate_over_bound": "0.999999999999417923",
+          "finite_horizon_jump_kernel_mass": "0.999999121362941815"
+        }
+      ]
+    }
+  ]
+}
