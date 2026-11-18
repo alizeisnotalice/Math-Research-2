@@ -1,0 +1,535 @@
+{
+  "common_epoch": 1794977111.056313,
+  "local": {
+    "first_id": 0,
+    "count": 8000000,
+    "rank_losses": 1756841,
+    "cases_with_collisions": 2925982,
+    "cases_with_missing_basis_bands": 1756841,
+    "positional_checksum64": "4eb73ec95ef77cba",
+    "tested_by_hk": [
+      [
+        999998,
+        1000002,
+        1000000,
+        1000000,
+        0
+      ],
+      [
+        799998,
+        800002,
+        800000,
+        800000,
+        800000
+      ]
+    ],
+    "collision_pairs_by_hk": [
+      [
+        2980680,
+        1390921,
+        595712,
+        198840,
+        0
+      ],
+      [
+        2477014,
+        1200266,
+        561131,
+        240514,
+        79472
+      ]
+    ],
+    "sum_diagnostics": {
+      "s_original": 474515662,
+      "s_restricted": 101047065,
+      "external_rank_before": 21242192,
+      "external_rank_after": 17635390,
+      "eligible_basis_pairs": 49835964,
+      "colliding_basis_pairs": 9724550,
+      "collided_basis_representatives": 7866378,
+      "missing_basis_bands": 3746089,
+      "core_size": 384000000,
+      "h": 44000000,
+      "k": 22000004,
+      "compressed_spectral_fingerprint": 17123264928777376
+    },
+    "actual_external_rank_loss_sum": 3606802,
+    "interval_half_open": [
+      0,
+      8000000
+    ],
+    "cores": 12,
+    "average_a28_cpu_core_equivalents": 3.556188674834436,
+    "peak_a28_cpu_percent": 747.792681,
+    "median_a28_cpu_percent": 350.556866,
+    "full_worker_cpu_samples": 53,
+    "peak_whole_machine_cpu_percent": 100.0,
+    "device": "Apple M6",
+    "gpu_command_count": 489,
+    "gpu_command_duration_sum": 6.540333083339647,
+    "metal_wall_seconds": 5.532392541665104,
+    "gpu_device_samples": 35,
+    "gpu_device_peak_percent": 100,
+    "gpu_device_baseline": [
+      100
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "remaining_pids": []
+  },
+  "macbook": {
+    "first_id": 8000000,
+    "count": 12000000,
+    "rank_losses": 2636878,
+    "cases_with_collisions": 4389844,
+    "cases_with_missing_basis_bands": 2636878,
+    "positional_checksum64": "43847353d0ee5c7c",
+    "tested_by_hk": [
+      [
+        1500000,
+        1500000,
+        1500000,
+        1500000,
+        0
+      ],
+      [
+        1200000,
+        1200000,
+        1200000,
+        1200000,
+        1200000
+      ]
+    ],
+    "collision_pairs_by_hk": [
+      [
+        4471125,
+        2086371,
+        894489,
+        297853,
+        0
+      ],
+      [
+        3719221,
+        1800168,
+        839166,
+        360968,
+        120705
+      ]
+    ],
+    "sum_diagnostics": {
+      "s_original": 711773526,
+      "s_restricted": 151543064,
+      "external_rank_before": 31863296,
+      "external_rank_after": 26450211,
+      "eligible_basis_pairs": 74753980,
+      "colliding_basis_pairs": 14590066,
+      "collided_basis_representatives": 11801734,
+      "missing_basis_bands": 5623139,
+      "core_size": 576000000,
+      "h": 66000000,
+      "k": 33000000,
+      "compressed_spectral_fingerprint": 25681976465798928
+    },
+    "actual_external_rank_loss_sum": 5413085,
+    "interval_half_open": [
+      8000000,
+      20000000
+    ],
+    "cores": 15,
+    "average_a28_cpu_core_equivalents": 3.773748453545933,
+    "peak_a28_cpu_percent": 797.348798,
+    "median_a28_cpu_percent": 370.901302,
+    "full_worker_cpu_samples": 88,
+    "peak_whole_machine_cpu_percent": 100.0,
+    "device": "Apple M5 Pro",
+    "gpu_command_count": 733,
+    "gpu_command_duration_sum": 35.024710541416425,
+    "metal_wall_seconds": 26.75694691669196,
+    "gpu_device_samples": 125,
+    "gpu_device_peak_percent": 100,
+    "gpu_device_baseline": [
+      100
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "remaining_pids": []
+  },
+  "independent_case_audits": 8192,
+  "controls": [
+    {
+      "id": 0,
+      "h": 5,
+      "k": 2,
+      "n": 8,
+      "shift": 0,
+      "rows": [
+        2,
+        4
+      ],
+      "phase_forms": [
+        2,
+        36,
+        72
+      ],
+      "phase_table": 151,
+      "external_basis_representatives": [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "expected_diagnostics": [
+        48,
+        4,
+        3,
+        0,
+        9,
+        3,
+        3,
+        3,
+        32,
+        5,
+        2,
+        3295711200
+      ]
+    },
+    {
+      "id": 1,
+      "h": 5,
+      "k": 2,
+      "n": 8,
+      "shift": 1,
+      "rows": [
+        2,
+        4
+      ],
+      "phase_forms": [
+        2,
+        36,
+        72
+      ],
+      "phase_table": 151,
+      "external_basis_representatives": [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "expected_diagnostics": [
+        48,
+        8,
+        3,
+        3,
+        9,
+        3,
+        3,
+        0,
+        32,
+        5,
+        2,
+        662413984
+      ]
+    },
+    {
+      "id": 2,
+      "h": 6,
+      "k": 2,
+      "n": 9,
+      "shift": 2,
+      "rows": [
+        2,
+        4
+      ],
+      "phase_forms": [
+        2,
+        68,
+        136
+      ],
+      "phase_table": 151,
+      "external_basis_representatives": [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "expected_diagnostics": [
+        80,
+        4,
+        3,
+        0,
+        9,
+        3,
+        3,
+        3,
+        64,
+        6,
+        2,
+        2486034080
+      ]
+    },
+    {
+      "id": 3,
+      "h": 6,
+      "k": 2,
+      "n": 9,
+      "shift": 3,
+      "rows": [
+        2,
+        4
+      ],
+      "phase_forms": [
+        2,
+        68,
+        136
+      ],
+      "phase_table": 151,
+      "external_basis_representatives": [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "expected_diagnostics": [
+        80,
+        8,
+        3,
+        3,
+        9,
+        3,
+        3,
+        0,
+        64,
+        6,
+        2,
+        4285688288
+      ]
+    }
+  ],
+  "exact_expectations_all_linear_subspaces_and_cosets": [
+    {
+      "h": 5,
+      "model_id": 1,
+      "basis": [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "table": 151,
+      "forms": [
+        2,
+        36,
+        72
+      ],
+      "rows": [
+        {
+          "k": 1,
+          "all_linear_subspaces": 31,
+          "all_cosets": 496,
+          "nonzero_difference_collision_count": 15,
+          "one_pair_collision_probability": "15/31",
+          "eligible_pairs": 9,
+          "expected_representative_collision_pairs": "135/31",
+          "actual_rank_loss_histogram": {
+            "0": 220,
+            "2": 156,
+            "3": 120
+          },
+          "expected_actual_external_rank_loss": "42/31"
+        },
+        {
+          "k": 2,
+          "all_linear_subspaces": 155,
+          "all_cosets": 1240,
+          "nonzero_difference_collision_count": 35,
+          "one_pair_collision_probability": "7/31",
+          "eligible_pairs": 9,
+          "expected_representative_collision_pairs": "63/31",
+          "actual_rank_loss_histogram": {
+            "0": 862,
+            "2": 238,
+            "3": 140
+          },
+          "expected_actual_external_rank_loss": "112/155"
+        },
+        {
+          "k": 3,
+          "all_linear_subspaces": 155,
+          "all_cosets": 620,
+          "nonzero_difference_collision_count": 15,
+          "one_pair_collision_probability": "3/31",
+          "eligible_pairs": 9,
+          "expected_representative_collision_pairs": "27/31",
+          "actual_rank_loss_histogram": {
+            "0": 533,
+            "2": 57,
+            "3": 30
+          },
+          "expected_actual_external_rank_loss": "51/155"
+        },
+        {
+          "k": 4,
+          "all_linear_subspaces": 31,
+          "all_cosets": 62,
+          "nonzero_difference_collision_count": 1,
+          "one_pair_collision_probability": "1/31",
+          "eligible_pairs": 9,
+          "expected_representative_collision_pairs": "9/31",
+          "actual_rank_loss_histogram": {
+            "0": 59,
+            "2": 2,
+            "3": 1
+          },
+          "expected_actual_external_rank_loss": "7/62"
+        }
+      ]
+    },
+    {
+      "h": 6,
+      "model_id": 3,
+      "basis": [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "table": 151,
+      "forms": [
+        2,
+        68,
+        136
+      ],
+      "rows": [
+        {
+          "k": 1,
+          "all_linear_subspaces": 63,
+          "all_cosets": 2016,
+          "nonzero_difference_collision_count": 31,
+          "one_pair_collision_probability": "31/63",
+          "eligible_pairs": 9,
+          "expected_representative_collision_pairs": "31/7",
+          "actual_rank_loss_histogram": {
+            "0": 888,
+            "2": 632,
+            "3": 496
+          },
+          "expected_actual_external_rank_loss": "86/63"
+        },
+        {
+          "k": 2,
+          "all_linear_subspaces": 651,
+          "all_cosets": 10416,
+          "nonzero_difference_collision_count": 155,
+          "one_pair_collision_probability": "5/21",
+          "eligible_pairs": 9,
+          "expected_representative_collision_pairs": "15/7",
+          "actual_rank_loss_histogram": {
+            "0": 7116,
+            "2": 2060,
+            "3": 1240
+          },
+          "expected_actual_external_rank_loss": "70/93"
+        },
+        {
+          "k": 3,
+          "all_linear_subspaces": 1395,
+          "all_cosets": 11160,
+          "nonzero_difference_collision_count": 155,
+          "one_pair_collision_probability": "1/9",
+          "eligible_pairs": 9,
+          "expected_representative_collision_pairs": "1",
+          "actual_rank_loss_histogram": {
+            "0": 9390,
+            "2": 1150,
+            "3": 620
+          },
+          "expected_actual_external_rank_loss": "104/279"
+        },
+        {
+          "k": 4,
+          "all_linear_subspaces": 651,
+          "all_cosets": 2604,
+          "nonzero_difference_collision_count": 31,
+          "one_pair_collision_probability": "1/21",
+          "eligible_pairs": 9,
+          "expected_representative_collision_pairs": "3/7",
+          "actual_rank_loss_histogram": {
+            "0": 2421,
+            "2": 121,
+            "3": 62
+          },
+          "expected_actual_external_rank_loss": "107/651"
+        },
+        {
+          "k": 5,
+          "all_linear_subspaces": 63,
+          "all_cosets": 126,
+          "nonzero_difference_collision_count": 1,
+          "one_pair_collision_probability": "1/63",
+          "eligible_pairs": 9,
+          "expected_representative_collision_pairs": "1/7",
+          "actual_rank_loss_histogram": {
+            "0": 123,
+            "2": 2,
+            "3": 1
+          },
+          "expected_actual_external_rank_loss": "1/18"
+        }
+      ]
+    }
+  ],
+  "four_way_active_seconds": 3.817599296569824,
+  "four_way_positive_intervals": 303
+}
