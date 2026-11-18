@@ -1,0 +1,18 @@
+# Exact local agreement or infinitely many crossings at the central zero
+
+Assume the continuous nonnegative bounded exact graph f has its unique zero at 0 and liminf f(x)>1 on each far tail. Write F_* for the inverse of the symmetric expanding Brownian first-exit boundary embedding the standard Gaussian from 0, as in round 94. Then:
+
+1. If f(u)−f(−u) has a fixed weak sign near u=0 on the positive axis, it vanishes on a smaller neighborhood.
+2. If each of f(u)−F_*(u) and f(−u)−F_*(u) has a fixed weak sign near zero, both vanish on a smaller neighborhood. The two signs need not agree.
+
+Consequently any graph in this class that differs from the canonical graph arbitrarily close to its zero must cross the canonical profile in both directions arbitrarily close to zero on at least one wing. This includes deviations smaller than every positive power of distance and requires no early connected-sublevel hypothesis.
+
+**Localization.** For fixed small r>0 and real t, q=t²/2, the contribution of |x|≥r to the exact tilt is O(exp(−c_r q)) as |t| tends to infinity. On compact annuli this follows from the strictly positive minimum and on the remote tails from f≥1+ε and the Gaussian moment generating function. Constants may depend on r. The canonical embedding exists by Cox and Peskir; symmetry follows by reflection and uniqueness. For the standard Gaussian the moving boundary is continuous and strictly expanding: a positive jump would skip an interval of terminal values, while a constant interval at positive radius would deposit an atom by positive Brownian hitting probability. Its initial radius is zero since the target charges every neighborhood of zero. The inverse F_* thus starts at zero and is continuous at the small positive radii used here. At time s=F_*(r), optional sampling of the exponential Brownian martingale up to the minimum of s and the first exit gives
+
+    |1−∫_{|x|<r}exp(tx−qF_*(|x|))γ(dx)| ≤ exp(|t|r−qs).
+
+Indeed the paths surviving to s are inside [−r,r], and earlier exits correspond exactly to stopped positions in that interval, up to its atom-free endpoints. This finite-time argument only uses the canonical process. [Cox and Peskir, Embedding laws in diffusions by functions of time](https://arxiv.org/abs/1201.5321).
+
+**Fixed sign.** Subtract the transforms of f at t and −t. On (0,r) the resulting integrand for t>0 is 2g(u)sinh(tu) times exp(−qf(u))−exp(−qf(−u)). The integral on (0,r) is O(exp(−c q)) by localization for some c>0. If the difference has fixed sign there, cancellation is impossible. Shrink to (0,r') so both heights are <c/2. Any strict inequality at a point of (0,r') gives by continuity a closed interval of positive length, away from zero, with a fixed positive gap between the heights. Its absolute integral is bounded below by a positive constant times exp(−qc/2) for all sufficiently large t. This contradicts the upper bound and proves the first claim.
+
+For the second claim, if the two deviations from F_* have opposite signs, the canonical height is between f(u) and f(−u); the first claim gives equality of all three heights on a smaller neighborhood. If the signs agree, add the two transforms at t and −t for each graph and subtract. Localization for the exact graph and the finite-time estimate for the canonical graph give an O(exp(−c q)) bound for the local difference. On (0,r) this is the integral of 2g(u)cosh(tu) times the sum of the two differences of the exponential heights from the canonical exponential height. The terms have the same sign. On a smaller neighborhood all three heights are <c/2, and the same fixed-interval lower bound excludes any strict inequality there. This proves local agreement. It does not provide a continuation rule beyond that neighborhood.
