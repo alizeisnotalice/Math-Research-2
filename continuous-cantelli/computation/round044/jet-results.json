@@ -1,0 +1,53 @@
+{
+  "scope": "Symbolic audit of local triangular coefficients and a finite numerical model; no full-jet numerical claim.",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "symbolic_diagonal_by_order_relative_to_source_at_zero": {
+    "5": "-c/2 + w1/2",
+    "6": "7*c**2 - w1/2 + w2/2",
+    "7": "-9*c**2 + 18*c*w1 + c/6 - w2/2 + w3/2",
+    "8": "495*c**3/2 - 45*c*w1/2 + 45*c*w2/2 - c/24 + 45*w1**2/4 + w1/6 - w3/2 + w4/2",
+    "9": "-715*c**3/2 + 2145*c**2*w1/2 + 55*c**2/12 - 55*c*w2/2 + 55*c*w3/2 - c/40 - 55*w1**2/4 + 55*w1*w2/2 - w1/24 + w2/6 - w4/2 + w5/2",
+    "10": "15015*c**4 - 3003*c**2*w1/2 + 3003*c**2*w2/2 - 11*c**2/8 + 3003*c*w1**2/2 + 11*c*w1 - 33*c*w3 + 33*c*w4 + c/90 - 33*w1*w2 + 33*w1*w3 - w1/40 + 33*w2**2/2 - w2/24 + w3/6 - w5/2 + w6/2"
+  },
+  "zero_linear_channel_by_even_symmetry": [
+    5,
+    7
+  ],
+  "solved_orders": [
+    6,
+    8
+  ],
+  "methods": {
+    "gauss-legendre": 60,
+    "tanh-sinh": 44
+  },
+  "cutoff_radius": "0.12",
+  "borel_radii": [
+    "0.04",
+    "0.025"
+  ],
+  "diagonal_polynomials": [
+    "a/2 + 27/4",
+    "89*a/4 + b/2 + 3871/16"
+  ],
+  "formal_without_integral": [
+    "-27/2",
+    "935/8"
+  ],
+  "numeric_a2_a4": [
+    "-13.500000026704734547208487998567651490456238081438",
+    "116.87484668629606631846747863234890159956874980005"
+  ],
+  "non_diagonal_correction": [
+    "-0.0000000267047345472084879985676514905",
+    "-0.000153313703933681532521367651098"
+  ],
+  "actual_coefficient_residual_relative_to_g_at_zero": [
+    "1.62845949927e-61",
+    "-2.33906219395e-60"
+  ],
+  "sup_norm_departure_from_one_upper_bound": "0.0216456542797144096764392321565",
+  "cross_method_max_difference": "5.61575448106e-48"
+}
