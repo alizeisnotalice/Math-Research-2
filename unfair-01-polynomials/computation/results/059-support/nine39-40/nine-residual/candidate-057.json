@@ -1,0 +1,251 @@
+{
+  "format": "positive-certificate-v1",
+  "case": {
+    "name": "I0247_J0246891012131518",
+    "I": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      7,
+      12,
+      17
+    ],
+    "J": [
+      0,
+      1,
+      2,
+      4,
+      9,
+      12,
+      13,
+      18,
+      23
+    ]
+  },
+  "strict_variables": [
+    "a1",
+    "a2",
+    "a3",
+    "a6",
+    "a7",
+    "a12",
+    "b1",
+    "b2",
+    "b4",
+    "b9",
+    "b12",
+    "b13",
+    "b18"
+  ],
+  "unit_variables": [
+    "a0",
+    "a17",
+    "b0",
+    "b23"
+  ],
+  "basis": {
+    "multiplier_total_degree_at_most": 1,
+    "positive_atom_total_degree_at_most": 2,
+    "atom_form": "product(positive) * product(1-minus)"
+  },
+  "matrix": {
+    "polynomial_rows": 560,
+    "normalization_rows": 1,
+    "free_multiplier_columns": 364,
+    "positive_atom_columns": 338,
+    "lp_nonnegative_columns": 1066,
+    "elapsed_seconds": 0.00863104200016096
+  },
+  "solver": {
+    "name": "SciPy HiGHS linprog",
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  "certificate": {
+    "multipliers": [
+      {
+        "diagonal": 2,
+        "monomial": [],
+        "coefficient": [
+          2,
+          11
+        ]
+      },
+      {
+        "diagonal": 5,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          11
+        ]
+      },
+      {
+        "diagonal": 8,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          11
+        ]
+      },
+      {
+        "diagonal": 11,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          11
+        ]
+      },
+      {
+        "diagonal": 20,
+        "monomial": [],
+        "coefficient": [
+          -1,
+          11
+        ]
+      },
+      {
+        "diagonal": 30,
+        "monomial": [],
+        "coefficient": [
+          1,
+          11
+        ]
+      }
+    ],
+    "positive_atoms": [
+      {
+        "positive": [
+          "a1",
+          "b1"
+        ],
+        "one_minus": [],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [],
+        "one_minus": [
+          "a1",
+          "b1"
+        ],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [
+          "a1"
+        ],
+        "one_minus": [
+          "b4"
+        ],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [
+          "a2"
+        ],
+        "one_minus": [
+          "b9"
+        ],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [
+          "a2"
+        ],
+        "one_minus": [
+          "b18"
+        ],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [
+          "b2"
+        ],
+        "one_minus": [
+          "a3"
+        ],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [
+          "b2"
+        ],
+        "one_minus": [
+          "a6"
+        ],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [
+          "b1"
+        ],
+        "one_minus": [
+          "a7"
+        ],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [
+          "a7"
+        ],
+        "one_minus": [
+          "b4"
+        ],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [
+          "b13"
+        ],
+        "one_minus": [
+          "a7"
+        ],
+        "coefficient": [
+          1,
+          11
+        ]
+      },
+      {
+        "positive": [
+          "a12",
+          "b18"
+        ],
+        "one_minus": [],
+        "coefficient": [
+          1,
+          11
+        ]
+      }
+    ],
+    "exact_recovery_check": true
+  },
+  "status": "certificate_found"
+}

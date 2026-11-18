@@ -1,0 +1,57 @@
+{
+  "counts": {
+    "C4_value_2": 866,
+    "a_cores": 1140,
+    "a_row2": 996,
+    "newton2_c": 3568,
+    "newton3_core": 265662,
+    "row3": 127424,
+    "row4_normalized": 78208,
+    "row5_projection_divisibility": 201888,
+    "shared_unit_d": 866
+  },
+  "domains": 112,
+  "fresh_outputs_sha256": {
+    "four-row-entry.json": "61276dbcb7042d65d31d63904ca8b81a8ec34dfe2664bbbea184401078514059",
+    "four-row-entry.rows.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "independent-entry.json": "be91fd88271e166241af9e15882586b17a627aa1c5b735bea39b90daea52d591",
+    "independent-entry.rows.jsonl": "f828ddc3c35d1a80291522380b89885b1be654bcccc4cf59770ee993401a1414"
+  },
+  "processes": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round059-s13-entry/relocated package/source/s13_exact_four_rows.py",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round059-s13-entry/fresh-package-run/four-row-entry.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 1.129431,
+      "exit_code": 0,
+      "pid": 73384,
+      "source_sha256": "31bcb24ba880cf1dd1a4c4079a85183c3688375942d4f1d191d5c55594a25cbd",
+      "stage": "radical"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round059-s13-entry/relocated package/source/verify_s13_integral_basis.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round059-s13-entry/fresh-package-run/four-row-entry.json",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/agents/algebraic_global/round059-s13-entry/fresh-package-run/independent-entry.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 5.867985,
+      "exit_code": 0,
+      "pid": 73417,
+      "source_sha256": "d4836445302ff7671cff9a46ed5def55e5f6d398169af154c9edbc98bd6354d7",
+      "stage": "integral-basis"
+    }
+  ],
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "source_manifest_sha256": "a41808e69d16f7fd0462f47ce666619f91dadb4bceac0889fdd6e637042db837",
+  "status": "verified",
+  "workers": 4
+}
