@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-18，本地第43轮完成。**原题开放；用户总目标仍active。**
+2026-11-18，本地第44轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/043.md；第36轮证书见certificates/r036/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/044.md；第36轮证书见certificates/r036/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -370,3 +370,14 @@ S2=221954860157521456430308，原律rho5>5/2的均匀二阶矩下界约.1790974�
 给原距离尾概率>0.02218587。混合抽样0.06562为有限构造概率诊断，
 65,536词的重数直方图及全图双峰/距离已独立复核。原题未闭合。
 报告rounds/043.md。现行配置为两个 GPT-6.2 Sol 子 Agent。
+
+
+## 第44轮追加（2026-11-18）
+
+同奇偶1-Lipschitz切割在固定根指派下两两排除，给出(1-o(1))2^(n−1)个
+非空、线性远距的互斥事件。所选n5/n6/n7奇偶族精确条件质量约.08823/.09284/.05612。
+MacBook n8隔行族16项整数计数完成并回收。无条件并集质量约1.22139e−16。
+自然盆地条件权至多(3/4)^e，内直切端点度锐化达到。真联合律下，横纵少转折
+盆地概率至多6γ^n，γ=(105/128)8^(1/11)<1，阈值floor(n/11)。
+完整Lipschitz族仍可在某些远峰标号上取得条件质量1。原题继续开放。
+证伪的归一化新接口为所选互斥族平均对数代价≤(n−1)log2+O(1)。
