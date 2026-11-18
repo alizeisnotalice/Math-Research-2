@@ -1,0 +1,71 @@
+{
+  "precision_bits": 160,
+  "dependencies_sha256": {
+    "irregular_inputs.json": "6da6ad6149b612e2ef5bb8bb4f55575eb395629c082af860980d3b2b6963e824",
+    "harmonic_extension_inputs.json": "ab077f27f1cd8bb0d3497c9b22958b59338c0be9ff47bf44698335ff27e67a23",
+    "certify_irregular_hex.py": "0f10dba9a7e10f487cedbb75b514582715937b343942f6e8d9fb60c43bb7ce59",
+    "certify_nine.py": "610e94cf22e901453bc34f77afb8f0994d9e471432cbe20498fca3b1530c9541",
+    "certify_harmonic_extension.py": "be86f04944c45c79beb59c22baa6c8ba0cfc91349768964d82c330c62ab6b2b2"
+  },
+  "exact_results": {
+    "fixed_hosts_all_placements": [
+      {
+        "angle_perturbations": [
+          "0",
+          "0.0001"
+        ],
+        "angular_cells": 86,
+        "host_inner_polygon_vertices": 142,
+        "lower": "644047138675254292341328567958119585242563379489682304463643/768001693583601296295858508789075051816523955625000000000000",
+        "display": 0.8386011958776314
+      },
+      {
+        "angle_perturbations": [
+          "0.01",
+          "0.02"
+        ],
+        "angular_cells": 119,
+        "host_inner_polygon_vertices": 121,
+        "lower": "181577044855569924108020666860254088921867746828058574769020404059/216523970423261480530061605744441481725026516974512812500000000000",
+        "display": 0.8386001997867616
+      },
+      {
+        "angle_perturbations": [
+          "-0.03631707",
+          "0.03750075"
+        ],
+        "angular_cells": 94,
+        "host_inner_polygon_vertices": 164,
+        "lower": "60616332706825638033024942788265967671693459729444805642643/72282512337280122004316094944854122523908137000000000000000",
+        "display": 0.8386030140178514
+      }
+    ],
+    "fixed_host_common_strict_threshold": "4193/5000",
+    "host_neighborhood_halfwidth": "1/12000",
+    "host_neighborhood_lower": "207100640344261/247100296800000",
+    "single_point_budget": "83809903/100000000",
+    "single_point": {
+      "outer_vertices": 2052,
+      "upper": "118146311442800371546593509270674563/140987334656000000000000000000000000",
+      "display": 0.8379923752092324
+    },
+    "freely_rearranged_eight": {
+      "sample_count": 147480,
+      "polygon_vertices": 1937,
+      "grid_polygon_area": "1675445852690597155324051/2000000000000000000000000",
+      "true_hull_radius_upper": "3/5",
+      "epsilon": "147711500653/3211264000000000000",
+      "hull_perimeter_upper": "3343848358283/1000000000000",
+      "lower": "11728120968728580087268181/14000000000000000000000000",
+      "upper": "30235736128237105868065715046032448643/36092757671936000000000000000000000000",
+      "display_bracket": [
+        0.8377229263377557,
+        0.8377230801554121
+      ]
+    }
+  },
+  "runtime": {
+    "python": "3.13.18",
+    "python_flint": "0.9.0"
+  }
+}
