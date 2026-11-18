@@ -1,0 +1,165 @@
+{
+  "exact_decimal_witness": {
+    "double": {
+      "estimated_error": 9.737237843332595e-12,
+      "ratio": 1.450963878899871,
+      "side_values": [
+        0.41340383599958624,
+        1.037560042900285
+      ]
+    },
+    "high_precision": {
+      "decimal_precision": 65,
+      "ratio": "1.45096387889986974076512159472082798854939719145836068251696",
+      "side_values": [
+        "0.413403835999586258903447339599206621174383293149000815619879",
+        "1.03756004290028348186167425512162136737501389830935986689708"
+      ]
+    },
+    "input": {
+      "M": 1.000001,
+      "delta": 0.0001,
+      "epsilon": 1e-12,
+      "r": 0.25
+    }
+  },
+  "gpu_input": "metal-full-96.json",
+  "mpmath": "1.3.0",
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "scipy": "1.18.1",
+  "verified_gpu_maxima": {
+    "abs_y_minus_1_le_1": {
+      "admissible_radius": true,
+      "gpu_ratio": 8.560958862304688,
+      "input": {
+        "M": 32.0,
+        "delta": 0.033496543765068054,
+        "epsilon": 9.999999960041972e-13,
+        "r": 3.17480206489563
+      },
+      "relative_error": 9.59503236863668e-08,
+      "verified": {
+        "estimated_error": 2.0471468416901816e-11,
+        "ratio": 8.560958040877992,
+        "side_values": [
+          3.711568511614634,
+          4.849389529263357
+        ]
+      }
+    },
+    "all": {
+      "admissible_radius": true,
+      "gpu_ratio": 1204893.875,
+      "input": {
+        "M": 1.0000009536743164,
+        "delta": 11.000006675720215,
+        "epsilon": 3.4648348190557954e-08,
+        "r": 1.000000238418579
+      },
+      "relative_error": 3.7370272232273294e-07,
+      "verified": {
+        "estimated_error": 1.601888975238556e-08,
+        "ratio": 1204893.424728047,
+        "side_values": [
+          0.006485805957833478,
+          1204893.4182422413
+        ]
+      }
+    },
+    "near_M1_and_contact": {
+      "admissible_radius": true,
+      "gpu_ratio": 2.245203733444214,
+      "input": {
+        "M": 1.0080158710479736,
+        "delta": 0.0467735156416893,
+        "epsilon": 4.814372234207553e-10,
+        "r": 1.0026648044586182
+      },
+      "relative_error": 1.0648074466601543e-07,
+      "verified": {
+        "estimated_error": 1.623818911452346e-11,
+        "ratio": 2.245203494373274,
+        "side_values": [
+          0.8091674138781262,
+          1.436036080495148
+        ]
+      }
+    },
+    "near_M1_at_contact_small_core_small_epsilon": {
+      "admissible_radius": true,
+      "gpu_ratio": 0.9131908416748047,
+      "input": {
+        "M": 1.0080158710479736,
+        "delta": 0.0,
+        "epsilon": 7.742637087027049e-10,
+        "r": 0.21933293342590332
+      },
+      "relative_error": 1.2053508392506629e-05,
+      "verified": {
+        "estimated_error": 9.91344674701565e-12,
+        "ratio": 0.9131798346540039,
+        "side_values": [
+          0.3858468009398502,
+          0.5273330337141537
+        ]
+      }
+    },
+    "near_M1_contact_r_le_0.25": {
+      "admissible_radius": true,
+      "gpu_ratio": 1.590091347694397,
+      "input": {
+        "M": 1.0080158710479736,
+        "delta": 0.033496543765068054,
+        "epsilon": 9.999999960041972e-13,
+        "r": 0.21933293342590332
+      },
+      "relative_error": 8.608770096785179e-08,
+      "verified": {
+        "estimated_error": 1.1121429153017118e-11,
+        "ratio": 1.5900912108071004,
+        "side_values": [
+          0.353337306486715,
+          1.2367539043203855
+        ]
+      }
+    },
+    "near_M1_near_contact_small_core_small_epsilon": {
+      "admissible_radius": true,
+      "gpu_ratio": 1.415988564491272,
+      "input": {
+        "M": 1.0080158710479736,
+        "delta": 0.0008511380292475224,
+        "epsilon": 8.329807066331796e-09,
+        "r": 0.21933293342590332
+      },
+      "relative_error": 4.036018202646652e-06,
+      "verified": {
+        "estimated_error": 7.41823628055906e-12,
+        "ratio": 1.4159942794699587,
+        "side_values": [
+          0.38501595285627765,
+          1.030978326613681
+        ]
+      }
+    },
+    "near_contact_r_le_0.25": {
+      "admissible_radius": true,
+      "gpu_ratio": 4.839216709136963,
+      "input": {
+        "M": 32.0,
+        "delta": 0.0008511380292475224,
+        "epsilon": 2.1544346751056764e-08,
+        "r": 0.19842512905597687
+      },
+      "relative_error": 2.7623117395680907e-06,
+      "verified": {
+        "estimated_error": 4.091107353097921e-12,
+        "ratio": 4.839230076599014,
+        "side_values": [
+          1.2716513282764788,
+          3.5675787483225356
+        ]
+      }
+    }
+  }
+}

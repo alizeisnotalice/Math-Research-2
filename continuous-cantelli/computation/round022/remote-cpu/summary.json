@@ -1,0 +1,414 @@
+{
+  "relation": "scan16 is the nested initial subset of scan20",
+  "independent_check_python": "3.13.18",
+  "independent_check_scipy": "1.18.1",
+  "stages": {
+    "scan16": {
+      "start_utc": "2026-11-18T00:34:26Z",
+      "end_utc": "2026-11-18T00:34:33Z",
+      "wall_seconds": 7,
+      "observed_total_cpu_seconds": 53.173944,
+      "observed_worker_elapsed_seconds": [
+        3.2195499999797903,
+        3.3025338330189697
+      ],
+      "maximum_worker_rss_bytes": 161087488,
+      "supervisor_pid": 15312,
+      "worker_exit_receipts": [
+        [
+          0,
+          15316,
+          0
+        ],
+        [
+          1,
+          15317,
+          0
+        ],
+        [
+          2,
+          15318,
+          0
+        ],
+        [
+          3,
+          15319,
+          0
+        ],
+        [
+          4,
+          15320,
+          0
+        ],
+        [
+          5,
+          15321,
+          0
+        ],
+        [
+          6,
+          15322,
+          0
+        ],
+        [
+          7,
+          15323,
+          0
+        ],
+        [
+          8,
+          15324,
+          0
+        ],
+        [
+          9,
+          15325,
+          0
+        ],
+        [
+          10,
+          15326,
+          0
+        ],
+        [
+          11,
+          15327,
+          0
+        ],
+        [
+          12,
+          15328,
+          0
+        ],
+        [
+          13,
+          15329,
+          0
+        ],
+        [
+          14,
+          15330,
+          0
+        ]
+      ],
+      "post_exit_process_count": 0,
+      "points": 983040,
+      "host": "MacBook",
+      "backend": {
+        "python": "3.12.13",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "machine": "arm64"
+      },
+      "actual_sampled_t_range": [
+        0.050656506528947855,
+        403.47542090133436
+      ],
+      "ps_samples": [
+        {
+          "file": "ps-1.txt",
+          "processes": 15,
+          "combined_cpu_percent": 1379.2
+        },
+        {
+          "file": "ps-2.txt",
+          "processes": 15,
+          "combined_cpu_percent": 1444.3
+        },
+        {
+          "file": "ps-3.txt",
+          "processes": 15,
+          "combined_cpu_percent": 1431.3
+        },
+        {
+          "file": "ps-4.txt",
+          "processes": 0,
+          "combined_cpu_percent": 0
+        },
+        {
+          "file": "ps-5.txt",
+          "processes": 0,
+          "combined_cpu_percent": 0
+        }
+      ],
+      "systemwide_cpu_usage": [
+        "CPU usage: 3.53% user, 7.7% sys, 89.38% idle ",
+        "CPU usage: 2.78% user, 3.47% sys, 93.73% idle "
+      ],
+      "numerical_results": {
+        "radius_capped": {
+          "nominal_positive_count": 232239,
+          "best_independently_checked_candidate": {
+            "run": "scan16",
+            "mode": "radius_capped",
+            "case": {
+              "index": 32793,
+              "t": 0.34053509939118415,
+              "c": 5.295740797255615,
+              "d": 0.06430358139274074,
+              "x": -0.18475124430815726,
+              "m": 11.960123379772984,
+              "eps": 1.3904007862505154e-17,
+              "delta": 0.1312734428793192,
+              "log_ratio": 1.3951985911928904,
+              "log_ratio_order_48": 1.3952914797842026,
+              "log_ratio_order_96": 1.3952926750787022
+            },
+            "contributions": [
+              0.48032235074987883,
+              3.555833530234564
+            ],
+            "error_estimates": [
+              5.338828599539318e-15,
+              3.947774635477548e-14
+            ],
+            "split_counts": [
+              59,
+              92
+            ],
+            "ratio": 4.036155880984443,
+            "independent_log_ratio": 1.3952927243878572
+          }
+        },
+        "variance_capped": {
+          "nominal_positive_count": 331969,
+          "best_independently_checked_candidate": {
+            "run": "scan16",
+            "mode": "variance_capped",
+            "case": {
+              "index": 9964,
+              "t": 0.050726555558786315,
+              "c": 0.1167980549715389,
+              "d": 0.43430993410932445,
+              "x": -15.82064302161465,
+              "m": 1.0208545098376558,
+              "eps": 7.851349867121758e-15,
+              "delta": -3.933057025074959,
+              "log_ratio": 67.93565271051737,
+              "log_ratio_order_48": 67.93565271051736,
+              "log_ratio_order_96": 67.93565271051735
+            },
+            "contributions": [
+              34806788872.08048,
+              3.19211917267967e+29
+            ],
+            "error_estimates": [
+              0.02875321617761209,
+              3544069692571647.0
+            ],
+            "split_counts": [
+              101,
+              63
+            ],
+            "ratio": 3.19211917267967e+29,
+            "independent_log_ratio": 67.93565271051736
+          }
+        }
+      }
+    },
+    "scan20": {
+      "start_utc": "2026-11-18T00:35:12Z",
+      "end_utc": "2026-11-18T00:36:54Z",
+      "wall_seconds": 102,
+      "observed_total_cpu_seconds": 882.295422,
+      "observed_worker_elapsed_seconds": [
+        98.81494983402081,
+        101.11865416599903
+      ],
+      "maximum_worker_rss_bytes": 312442880,
+      "supervisor_pid": 16151,
+      "worker_exit_receipts": [
+        [
+          0,
+          16156,
+          0
+        ],
+        [
+          1,
+          16157,
+          0
+        ],
+        [
+          2,
+          16158,
+          0
+        ],
+        [
+          3,
+          16159,
+          0
+        ],
+        [
+          4,
+          16160,
+          0
+        ],
+        [
+          5,
+          16161,
+          0
+        ],
+        [
+          6,
+          16162,
+          0
+        ],
+        [
+          7,
+          16163,
+          0
+        ],
+        [
+          8,
+          16164,
+          0
+        ],
+        [
+          9,
+          16165,
+          0
+        ],
+        [
+          10,
+          16166,
+          0
+        ],
+        [
+          11,
+          16167,
+          0
+        ],
+        [
+          12,
+          16168,
+          0
+        ],
+        [
+          13,
+          16170,
+          0
+        ],
+        [
+          14,
+          16171,
+          0
+        ]
+      ],
+      "post_exit_process_count": 0,
+      "points": 15728640,
+      "host": "MacBook",
+      "backend": {
+        "python": "3.12.13",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "machine": "arm64"
+      },
+      "actual_sampled_t_range": [
+        0.050656505655617384,
+        403.4788399578369
+      ],
+      "ps_samples": [
+        {
+          "file": "ps-1.txt",
+          "processes": 15,
+          "combined_cpu_percent": 867.8
+        },
+        {
+          "file": "ps-2.txt",
+          "processes": 15,
+          "combined_cpu_percent": 891.3
+        },
+        {
+          "file": "ps-3.txt",
+          "processes": 15,
+          "combined_cpu_percent": 950.4
+        },
+        {
+          "file": "ps-4.txt",
+          "processes": 15,
+          "combined_cpu_percent": 889.3
+        },
+        {
+          "file": "ps-5.txt",
+          "processes": 15,
+          "combined_cpu_percent": 829.6
+        }
+      ],
+      "systemwide_cpu_usage": [
+        "CPU usage: 93.12% user, 6.87% sys, 0.0% idle ",
+        "CPU usage: 95.72% user, 4.27% sys, 0.0% idle ",
+        "CPU usage: 96.6% user, 3.81% sys, 0.12% idle "
+      ],
+      "numerical_results": {
+        "radius_capped": {
+          "nominal_positive_count": 3725274,
+          "best_independently_checked_candidate": {
+            "run": "scan20",
+            "mode": "radius_capped",
+            "case": {
+              "index": 1031604,
+              "t": 0.050695820852652146,
+              "c": 0.11227634573668258,
+              "d": 0.451527171818961,
+              "x": -16.4586095612328,
+              "m": 1.001402937126101,
+              "eps": 3.22329923957158e-06,
+              "delta": -0.6322528198361397,
+              "log_ratio": 1.632608190047561,
+              "log_ratio_order_48": 1.6326081900475522,
+              "log_ratio_order_96": 1.6326081900475555
+            },
+            "contributions": [
+              5.117203968834345,
+              1.872706536575074e-20
+            ],
+            "error_estimates": [
+              5.681237791851801e-14,
+              4.695238651973812e-26
+            ],
+            "split_counts": [
+              61,
+              46
+            ],
+            "ratio": 5.117203968834345,
+            "independent_log_ratio": 1.6326081900475493
+          }
+        },
+        "variance_capped": {
+          "nominal_positive_count": 5316379,
+          "best_independently_checked_candidate": {
+            "run": "scan20",
+            "mode": "variance_capped",
+            "case": {
+              "index": 697444,
+              "t": 0.05066241213257741,
+              "c": 0.1071466239853085,
+              "d": 0.47283255643709343,
+              "x": -17.24751275276447,
+              "m": 1.0217799518100414,
+              "eps": 5.279364711404267e-22,
+              "delta": -3.985414706170559,
+              "log_ratio": 75.02302238282388,
+              "log_ratio_order_48": 75.02302238282387,
+              "log_ratio_order_96": 75.02302238282387
+            },
+            "contributions": [
+              199806307963.87097,
+              3.8201871249754376e+32
+            ],
+            "error_estimates": [
+              0.0022182956356691422,
+              4.2412598342015176e+18
+            ],
+            "split_counts": [
+              102,
+              63
+            ],
+            "ratio": 3.8201871249754376e+32,
+            "independent_log_ratio": 75.02302238282385
+          }
+        }
+      }
+    }
+  }
+}

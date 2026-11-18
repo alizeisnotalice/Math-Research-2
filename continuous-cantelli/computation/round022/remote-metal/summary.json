@@ -1,0 +1,275 @@
+{
+  "device": "Apple M5 Pro",
+  "macOS": "27.3 (26C5035r)",
+  "swift": "6.4.2",
+  "memoryBytes": 25769803776,
+  "baselineDeviceUtilizationPercent": 97,
+  "cpuConcurrentEvidence": "top captured one scan at 21.7% CPU plus support_bitset CPU jobs at 98.7\u201399.4% each during the r=1/8 scan. The IOAccelerator sampler is system-wide.",
+  "totalRatiosEvaluated": 890620411,
+  "totalGpuSeconds": 112.32023508276325,
+  "totalWallSecondsApprox": 137.0,
+  "controlledWallSecondsApprox": 85.0,
+  "jobsExited": true,
+  "runs": [
+    {
+      "name": "full",
+      "tCount": 512,
+      "mCount": 48,
+      "shiftCount": 65,
+      "epsilonCount": 25,
+      "midpointPanels": 1024,
+      "pid": 15446,
+      "exitCode": 0,
+      "startedUTC": "2026-11-18T00:34:41Z",
+      "endedUTC": "2026-11-18T00:34:44Z",
+      "wallSecondsApprox": 3.0,
+      "deviceUtilizationPercent": {
+        "minimum": 95,
+        "maximum": 99,
+        "sampleCount": 10,
+        "mean": 98.3
+      },
+      "metalBest": {
+        "c": 0.05795805383771464,
+        "d": 0.8699574874955216,
+        "epsilon": 9.999999747378753e-06,
+        "radius": 0.25,
+        "ratio": 44.30222,
+        "shift": -0.140625,
+        "t": 0.05042104289678841,
+        "variance": 1.0001,
+        "x": -31.89784247218148
+      },
+      "cpuBestAtSameParameters": {
+        "gpuVsCPUAbsDifference": 0.0025536301019855046,
+        "mpmath50Vs70AbsDifference": "1.16673976636e-47",
+        "mpmath70Digits": "44.304773630103175865797376359241794449599348533417514507358738045",
+        "parameters": {
+          "c": 0.05795805383771464,
+          "d": 0.8699574874955216,
+          "epsilon": 9.999999747378753e-06,
+          "radius": 0.25,
+          "ratio": 44.30222,
+          "shift": -0.140625,
+          "t": 0.05042104289678841,
+          "variance": 1.0001,
+          "x": -31.89784247218148
+        },
+        "scipyAdaptive": 44.304773630101984,
+        "scipyEstimatedError": 4.920095847519511e-13
+      },
+      "gpuSeconds": 1.9299315001117066,
+      "coreCount": 18989,
+      "ratiosEvaluated": 30857125,
+      "nonfiniteCount": 0
+    },
+    {
+      "name": "refinement",
+      "tCount": 1536,
+      "mCount": 65,
+      "shiftCount": 129,
+      "epsilonCount": 33,
+      "midpointPanels": 2048,
+      "pid": 15546,
+      "exitCode": 0,
+      "startedUTC": "2026-11-18T00:34:56Z",
+      "endedUTC": "2026-11-18T00:35:45Z",
+      "wallSecondsApprox": 49.0,
+      "deviceUtilizationPercent": {
+        "minimum": 0,
+        "maximum": 100,
+        "sampleCount": 162,
+        "mean": 98.33333333333333
+      },
+      "metalBest": {
+        "c": 0.05795805383771464,
+        "d": 0.8699574874955216,
+        "epsilon": 9.999999747378753e-06,
+        "radius": 0.25,
+        "ratio": 44.316658,
+        "shift": -0.13671875,
+        "t": 0.05042104289678841,
+        "variance": 1.0001,
+        "x": -31.89784247218148
+      },
+      "cpuBestAtSameParameters": {
+        "gpuVsCPUAbsDifference": 0.0008162779207339099,
+        "mpmath50Vs70AbsDifference": "1.16250924861e-47",
+        "mpmath70Digits": "44.317474277920451761060035947883268369843177585265478897133349947",
+        "parameters": {
+          "c": 0.05795805383771464,
+          "d": 0.8699574874955216,
+          "epsilon": 9.999999747378753e-06,
+          "radius": 0.25,
+          "ratio": 44.316658,
+          "shift": -0.13671875,
+          "t": 0.05042104289678841,
+          "variance": 1.0001,
+          "x": -31.89784247218148
+        },
+        "scipyAdaptive": 44.31747427792073,
+        "scipyEstimatedError": 4.933207931656502e-13
+      },
+      "gpuSeconds": 38.71899895876413,
+      "coreCount": 77247,
+      "ratiosEvaluated": 328840479,
+      "nonfiniteCount": 0
+    },
+    {
+      "name": "radius125",
+      "tCount": 1024,
+      "mCount": 57,
+      "shiftCount": 97,
+      "epsilonCount": 29,
+      "midpointPanels": 1536,
+      "pid": 17952,
+      "exitCode": 0,
+      "startedUTC": "2026-11-18T00:37:19Z",
+      "endedUTC": "2026-11-18T00:37:38Z",
+      "wallSecondsApprox": 19.0,
+      "deviceUtilizationPercent": {
+        "minimum": 96,
+        "maximum": 100,
+        "sampleCount": 32,
+        "mean": 98.65625
+      },
+      "metalBest": {
+        "c": 4.578256765870097,
+        "d": 0.06449318764601873,
+        "epsilon": 9.999999974752431e-07,
+        "radius": 0.125,
+        "ratio": 1.5824596,
+        "shift": 0.08333333333333334,
+        "t": 0.295266372692915,
+        "variance": 2,
+        "x": -0.24336793214119817
+      },
+      "cpuBestAtSameParameters": {
+        "gpuVsCPUAbsDifference": 9.051130003268071e-07,
+        "mpmath50Vs70AbsDifference": "8.35490914937e-52",
+        "mpmath70Digits": "1.5824586948869994640297596062163930099101958543268247707221415951",
+        "parameters": {
+          "c": 4.578256765870097,
+          "d": 0.06449318764601873,
+          "epsilon": 9.999999974752431e-07,
+          "radius": 0.125,
+          "ratio": 1.5824596,
+          "shift": 0.08333333333333334,
+          "t": 0.295266372692915,
+          "variance": 2,
+          "x": -0.24336793214119817
+        },
+        "scipyAdaptive": 1.5824586948869996,
+        "scipyEstimatedError": 1.2174206872328266e-13
+      },
+      "gpuSeconds": 13.468829333141912,
+      "coreCount": 57411,
+      "ratiosEvaluated": 161497143,
+      "nonfiniteCount": 0
+    },
+    {
+      "name": "radius0625",
+      "tCount": 1024,
+      "mCount": 57,
+      "shiftCount": 97,
+      "epsilonCount": 29,
+      "midpointPanels": 1536,
+      "pid": 18425,
+      "exitCode": 0,
+      "startedUTC": "2026-11-18T00:37:38Z",
+      "endedUTC": "2026-11-18T00:37:56Z",
+      "wallSecondsApprox": 18.0,
+      "deviceUtilizationPercent": {
+        "minimum": 97,
+        "maximum": 100,
+        "sampleCount": 31,
+        "mean": 98.83870967741936
+      },
+      "metalBest": {
+        "c": 5.72734247523597,
+        "d": 0.06419118660153626,
+        "epsilon": 1.0000000116860969e-07,
+        "radius": 0.0625,
+        "ratio": 2.1569283,
+        "shift": 0.046875,
+        "t": 0.3676449095587767,
+        "variance": 3.9999999999999996,
+        "x": -0.1566285367432494
+      },
+      "cpuBestAtSameParameters": {
+        "gpuVsCPUAbsDifference": 3.241194734826536e-08,
+        "mpmath50Vs70AbsDifference": "7.26788680313e-52",
+        "mpmath70Digits": "2.1569282675880533746245273431465537794227029438746133511645382641",
+        "parameters": {
+          "c": 5.72734247523597,
+          "d": 0.06419118660153626,
+          "epsilon": 1.0000000116860969e-07,
+          "radius": 0.0625,
+          "ratio": 2.1569283,
+          "shift": 0.046875,
+          "t": 0.3676449095587767,
+          "variance": 3.9999999999999996,
+          "x": -0.1566285367432494
+        },
+        "scipyAdaptive": 2.156928267588053,
+        "scipyEstimatedError": 8.240544479697543e-14
+      },
+      "gpuSeconds": 14.110341458057519,
+      "coreCount": 58368,
+      "ratiosEvaluated": 164189184,
+      "nonfiniteCount": 0
+    },
+    {
+      "name": "radius03125",
+      "tCount": 1280,
+      "mCount": 57,
+      "shiftCount": 97,
+      "epsilonCount": 29,
+      "midpointPanels": 2048,
+      "pid": 18848,
+      "exitCode": 0,
+      "startedUTC": "2026-11-18T00:38:35Z",
+      "endedUTC": "2026-11-18T00:39:23Z",
+      "wallSecondsApprox": 48.0,
+      "deviceUtilizationPercent": {
+        "minimum": 0,
+        "maximum": 100,
+        "sampleCount": 88,
+        "mean": 98.10227272727273
+      },
+      "metalBest": {
+        "c": 6.556184211787949,
+        "d": 0.06397991146392933,
+        "epsilon": 9.999999939225274e-09,
+        "radius": 0.03125,
+        "ratio": 2.5780067,
+        "shift": 0.025390625,
+        "t": 0.4194640854114043,
+        "variance": 5.999999999999998,
+        "x": -0.113115757551837
+      },
+      "cpuBestAtSameParameters": {
+        "gpuVsCPUAbsDifference": 5.172480106452326e-07,
+        "mpmath50Vs70AbsDifference": "3.68814287366e-51",
+        "mpmath70Digits": "2.578006182751989629584381621408372902318776805912496412256952738",
+        "parameters": {
+          "c": 6.556184211787949,
+          "d": 0.06397991146392933,
+          "epsilon": 9.999999939225274e-09,
+          "radius": 0.03125,
+          "ratio": 2.5780067,
+          "shift": 0.025390625,
+          "t": 0.4194640854114043,
+          "variance": 5.999999999999998,
+          "x": -0.113115757551837
+        },
+        "scipyAdaptive": 2.5780061827519893,
+        "scipyEstimatedError": 3.542421758620623e-14
+      },
+      "gpuSeconds": 44.09213383268798,
+      "coreCount": 72960,
+      "ratiosEvaluated": 205236480,
+      "nonfiniteCount": 0
+    }
+  ]
+}

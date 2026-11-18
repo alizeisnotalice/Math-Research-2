@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 平面凸万能覆盖最小面积 | 已独立复现 Λ<0.8440935944，精确值开放 | 第35轮完成 | 改进一般下界与极值结构 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；极大点平坦相的弱星极限为唯一空间常数 | 第21轮完成 | 中间比例与双侧平坦接触 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；双侧非零平坦幂次首项须为偶次且两侧同系数 | 第22轮完成 | 中间比例与偶次平坦接触 |
