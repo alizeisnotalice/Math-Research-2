@@ -1,0 +1,82 @@
+{
+  "python": "3.13.18",
+  "flint": "0.9.0",
+  "precision": 160,
+  "exact_pair_square_numerator": 999999999780957826752538,
+  "max_pair_square_denominator": 1000000000000000000000000,
+  "point_count": 11,
+  "tested_hands": {
+    "Kstar": {
+      "1": {
+        "cells": 90,
+        "area_independent_padding_lower": "[0.0031514092708316833842792083030916047628063186172 +/- 2.31e-50]",
+        "depth": 12,
+        "allowed_padding": "63/20000"
+      },
+      "-1": {
+        "cells": 90,
+        "area_independent_padding_lower": "[0.0031514092191232756965278238475632561571707241899 +/- 2.44e-50]",
+        "depth": 12,
+        "allowed_padding": "63/20000"
+      }
+    },
+    "R108": {
+      "1": {
+        "cells": 113,
+        "area_independent_padding_lower": "[0.0015626790319554502273746129518907133303906700985 +/- 3.87e-51]",
+        "depth": 12,
+        "allowed_padding": "39/25000"
+      },
+      "-1": {
+        "cells": 113,
+        "area_independent_padding_lower": "[0.0015626790359961298093623927212599525842204464421 +/- 1.59e-50]",
+        "depth": 12,
+        "allowed_padding": "39/25000"
+      }
+    }
+  },
+  "search": {
+    "python": "3.13.18",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "coarse": [
+      {
+        "attempt": 0,
+        "centre_margins": {
+          "0/1": 0.0034881450275292274,
+          "0/-1": 0.003488145027529172,
+          "1/1": 0.0012976169318791757,
+          "1/-1": 0.0012976169318791757
+        },
+        "conic_objective": 0.0007528114567054989,
+        "max_pair_before_rescale": 1.0000000007291083,
+        "separation_iterations": 6
+      },
+      {
+        "attempt": 1,
+        "centre_margins": {
+          "0/1": 0.0034039161039171565,
+          "0/-1": 0.0034039160217471096,
+          "1/1": 0.0013555334176612464,
+          "1/-1": 0.0013555331832037902
+        },
+        "conic_objective": 0.0007571053248054092,
+        "max_pair_before_rescale": 1.0000000000142548,
+        "separation_iterations": 6
+      },
+      {
+        "attempt": 2,
+        "centre_margins": {
+          "0/1": 0.0032777747529413484,
+          "0/-1": 0.003277774753044945,
+          "1/1": 0.001340086153686072,
+          "1/-1": 0.0013400861546614764
+        }
+      }
+    ],
+    "final_conic_endpoint_objective": 0.0015703877248834585,
+    "final_max_pair_before_rescale": 1.00000000069177,
+    "separation_iterations": 6
+  },
+  "certificate_sha256": "9052ca388aabacc87116ba99a05d9ef98b49dfeed564e8cfd18efb647f93f282"
+}
