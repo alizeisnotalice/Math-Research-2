@@ -2,6 +2,7 @@
 import argparse
 from fractions import Fraction as F
 from hashlib import sha256
+from itertools import count
 import json
 import platform
 from pathlib import Path
@@ -27,15 +28,16 @@ def lower_radius(n, pi):
     return ar(F(1,2)) if n == 0 else 1 - 1 / (2 * (pi/(2*n)).cos())
 
 
-def sampled_group(n, pi):
+def sampled_group(n, pi, core_scale=LAMBDA):
     inradius = lower_radius(n, pi)
     # Half of the largest gap in centered unit-circle coordinates.
     def contained(k):
         half_gap = pi / (2*n*k) if n else pi / k
         sagitta = (1 - half_gap.cos()) * (1 if n else ar(F(1,2)))
-        return sagitta + ar(F(12,S)) < ar(1-LAMBDA)*inradius
+        return sagitta + ar(F(12,S)) < ar(1-core_scale)*inradius
 
-    k = next(k for k in range(1, 4096) if contained(k))
+    assert 0 < core_scale < 1 and ar(1-core_scale)*inradius > ar(F(12,S))
+    k = next(k for k in count(1) if contained(k))
     points = []
     if n:
         arc_body(points, k, pi, n, arb(0), arb(0), arb(0))
