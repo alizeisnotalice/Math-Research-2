@@ -1,0 +1,50 @@
+{
+  "python": "3.13.18",
+  "scipy": "1.18.1",
+  "numpy": "2.5.4",
+  "sympy": "1.14.0",
+  "deterministic": true,
+  "cutoff": "normalized sinc^4(x/8)",
+  "near_origin_fourier": "48*u**3 - 24*u**2 + 1",
+  "noise_second_moment": 48,
+  "gaussian_cutoff_density": [
+    {
+      "t": 4,
+      "y0": 0.20623979497698217,
+      "y1": 0.1812318992262213
+    },
+    {
+      "t": 16,
+      "y0": 0.3690018055139586,
+      "y1": 0.24029378809477966
+    },
+    {
+      "t": 64,
+      "y0": 0.3967212965390405,
+      "y1": 0.24194452241744538
+    }
+  ],
+  "auxiliary_profile": "not asserted exact: 1+(a+b sin(k x^2))/(1+x^2)",
+  "a": 0.019950221082685654,
+  "b": 0.4,
+  "k": 0.7,
+  "liminf_f_minus_x_fprime": 0.44000000000000006,
+  "rows": [
+    {
+      "t": 10,
+      "window_average": 0.9786328440822278
+    },
+    {
+      "t": 50,
+      "window_average": 1.003258430533751
+    },
+    {
+      "t": 100,
+      "window_average": 0.9974216788037342
+    },
+    {
+      "t": 300,
+      "window_average": 0.9998648044771188
+    }
+  ]
+}
