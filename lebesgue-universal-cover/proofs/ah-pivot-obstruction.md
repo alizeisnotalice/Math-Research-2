@@ -42,3 +42,26 @@ K_t=(1-t)K_w+tQ_A R .
 python -B computation/certify_ah_ideal_root_fold.py computation FOLD.json
 python -B computation/certify_ah_pivot_obstruction.py computation FOLD.json OBSTRUCTION.json
 ```
+
+## 闭万能子宿主必须保留的两段边界
+
+对闭万能覆盖 \(C\subset G\)，上面的证明实际上迫使 \(x_w=Z+wD\in C\)。否则 \(C\) 的补集包含 \(x_w\) 的开邻域，而恒等姿态下 \(K_t\) 含有趋于 \(x_w\) 的点。反射和其他十个姿态已经被 \(G\) 自己的真实配对支持与 \(m_3,m_5\) 排除。这个论证适用于 \(w_*<w\le.430\)。
+
+反过来，还必有 \(q(w)\in C\)。此次使用 \(\widetilde K_t=(1-t)K_w+tR\)，其中同一个三角形 \(R\) 的顶点 \(V\) 超过直段 \(Z+wD\) 的原外支撑线，法向超出量大于 \(.01291962628\)。恒等像于是严格超出原 Gibbs 宿主；其余十个姿态仍违反 \(m_3\) 或 \(m_5\)。唯一可能的 \(Q_A\) 像含有趋于 \(q(w)\) 的点，故闭万能子宿主必须包含 \(q(w)\)。两支通过闭包同时延至 \(w=w_*\)。
+
+结合《Compulsory pieces of the AH boundary》已证的 \([.429,1]\) 和 \(G\)-圆弧，强制直段现为 \([w_*,1]\)，同时强制的配对边界由 \(q(w_*)\) 起，一直接到 \(P_0\)。记 \(b=-D/|D|,n=Jb\)，
+\[
+\lambda_*=\frac{b\cdot(q(w_*)-Z)}{|D|}
+=0.50062149483526682835750775748\ \pm5.65\,10^{-30},\qquad
+\eta_*=\frac{n\cdot(q(w_*)-Z)}{|D|}
+=0.01741482490521013945789013152\ \pm5.40\,10^{-30}.
+\]
+对 \((a,s)=(p\tan\delta,\tan\delta)\)，新尾段的两个必要条件为
+\[
+ a\le w_*s,\qquad a+\lambda_*s\le\eta_* .
+\]
+保留这些强制边界本身时，该端点检验也是充分的。这是因为配对图的水平投影递增，作为凸非负高度函数 \(f(\lambda)\) 满足 \(f(0)=0\)，故 \(f(\lambda)/(p+\lambda)\) 随 \(\lambda>0\) 单调不减。原证书覆盖较远的配对尾和圆弧，本次重新验证扩展区间中的投影严格递增。
+
+```sh
+python -B computation/certify_ah_compulsory_fold_walls.py computation FOLD.json OBSTRUCTION.json WALLS.json
+```
