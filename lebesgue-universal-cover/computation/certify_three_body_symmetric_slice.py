@@ -146,6 +146,11 @@ def main():
     root_bracket = interval(a0, a1)
     _, lower_gradient, upper_gradient, weight_plus = balanced_gradient(root_bracket)
     area, b, gamma, delta = triple_area(root_bracket)
+    c, _, w, n_gamma, _ = triple(root_bracket)
+    top_x = [root_bracket-R3/2, arb(0), b+c72]
+    oblique_x = [r*n_gamma[0], w[0]+n_gamma[0], c]
+    for xs in (top_x, oblique_x):
+        assert xs[0] < xs[1] < xs[2]
     area_lower, area_upper = '.8347809457752035', '.8347809457752037'
     assert q(area_lower) < area < q(area_upper), area
     assert q(area_upper) < q('.834780947305')
@@ -164,6 +169,8 @@ def main():
         'balanced_weight_plus': str(weight_plus),
         'b_enclosure': str(b),
         'gamma_delta_degrees': [str(gamma*180/pi), str(delta*180/pi)],
+        'top_contact_x_B3_D_B5': list(map(str, top_x)),
+        'oblique_contact_x_D_B5_B3': list(map(str, oblique_x)),
         'area_ball': str(area),
         'strict_global_optimum_bracket': [area_lower, area_upper],
         'scope': 'Global minimum over both arbitrary translations at theta_5=0 only.'
