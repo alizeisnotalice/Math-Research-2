@@ -1,0 +1,44 @@
+{
+  "witness": {
+    "sigma": "1.5497",
+    "w": ".712",
+    "deformation": ".024",
+    "pivot": ".8697",
+    "angle": ".01262",
+    "cut_only": true
+  },
+  "witness_sha256": "bf476c80f1feb176e06dda424be3b79a4d70f23bf333036b4233d39ca6a6b8a5",
+  "fixed_points": [
+    {
+      "turn": 0,
+      "sign": 1,
+      "point": [
+        "[-0.028171494424517138128902689576182151 +/- 6.04e-37]",
+        "[0.552109786681609170355532801381432604 +/- 7.44e-37]"
+      ],
+      "unit_w_coordinate": "[0.4597380879647245235386466539416960 +/- 4.79e-35]",
+      "height_relative_base": "[0.000160980451836642423290761478031549 +/- 7.38e-37]",
+      "pivot_minus_w_times_length": "[0.015866922010584646197894949544892811 +/- 8.38e-37]",
+      "selected_baseline_violation_over_cos": "[3.9270735011520659901691369300601e-5 +/- 7.34e-37]",
+      "slope_threshold_tan_delta": "[0.0101456635212080934459679543355745 +/- 7.64e-35]",
+      "w_less_than_pivot": true
+    },
+    {
+      "turn": 240,
+      "sign": -1,
+      "point": [
+        "[-0.06394485396955859178932586373501223 +/- 1.67e-36]",
+        "[0.53737531457126391986239685202206071 +/- 3.97e-36]"
+      ],
+      "unit_w_coordinate": "[-0.5398017688029588230617833390358849 +/- 5.12e-35]",
+      "height_relative_base": "[0.00067340050149221085308912730165866 +/- 5.97e-36]",
+      "pivot_minus_w_times_length": "[0.05455251813113139272210557127133140 +/- 5.96e-36]",
+      "selected_baseline_violation_over_cos": "[1.508882832409384175430896328176e-5 +/- 4.62e-36]",
+      "slope_threshold_tan_delta": "[0.0123440773141491801169544000977650 +/- 3.70e-35]",
+      "w_less_than_pivot": true
+    }
+  ],
+  "all_fixed_points_before_pivot": true,
+  "consequence": "At least one displayed height must exceed or equal |D|(p-w_i) tan(delta) for its own row. If both fixed points are before the baseline pivot, every greater or equal pivot and greater or equal angle below pi/2 is excluded.",
+  "source_sha256": "d15bf6dd9da3f40a73a5dbe0b074a1fd3df137ca6735477b3744b043be630b6e"
+}
