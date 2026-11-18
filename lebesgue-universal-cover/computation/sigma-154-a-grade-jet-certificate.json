@@ -1,0 +1,287 @@
+{
+  "parameters": {
+    "sigma_degrees": "1.54",
+    "line": [
+      ".429",
+      ".009"
+    ],
+    "physical_parameters": [
+      ".273",
+      ".306",
+      ".0102"
+    ],
+    "bins": [
+      [
+        30,
+        "direct",
+        [
+          ".5",
+          "7",
+          0,
+          1,
+          -1
+        ]
+      ],
+      [
+        0,
+        "split",
+        [
+          "12",
+          "23",
+          "36",
+          "46",
+          ".00002"
+        ]
+      ],
+      [
+        1,
+        "split",
+        [
+          "12",
+          "23",
+          "36",
+          "46",
+          ".00002"
+        ]
+      ]
+    ]
+  },
+  "rows": [
+    {
+      "bin": 30,
+      "reachable": [
+        [
+          0,
+          75
+        ]
+      ],
+      "classes": [
+        {
+          "reference_bin": 30,
+          "subcells": [
+            0,
+            75
+          ],
+          "bracket": [
+            "1/2",
+            "7"
+          ],
+          "pose": [
+            0,
+            1,
+            -1
+          ],
+          "root_margin_lower": "[5.4288903422354768644278154368489891039e-5 +/- 4.39e-43]",
+          "root_id": [
+            0,
+            "1/2"
+          ],
+          "placement_margin_lower": "[0.00015411101511955697992691295186453987043 +/- 3.84e-42]",
+          "placement_id": [
+            0,
+            "1/2",
+            "25/24",
+            "AH-line:3",
+            0,
+            0,
+            1
+          ],
+          "placed_leaves": 600,
+          "verified_dihedral_pose_counts": {
+            "0,1": 600
+          },
+          "root_free_leaves": 300,
+          "sign_separation_lower": "[1.1313272949911967257828047300300191866e-6 +/- 4.75e-44]",
+          "starting_angle_cells": 12,
+          "max_subdivision_depth": 4
+        }
+      ],
+      "positive": true
+    },
+    {
+      "bin": 0,
+      "reachable": [
+        [
+          0,
+          75
+        ]
+      ],
+      "classes": [
+        {
+          "reference_bin": 0,
+          "subcells": [
+            0,
+            75
+          ],
+          "bracket": [
+            "12",
+            "23"
+          ],
+          "anchor_degrees": "23",
+          "anchor_comparison_sign": -1,
+          "anchor_threshold": "-1/50000",
+          "root_margin_lower": "[2.0000000000000000000000000000000000000e-5 +/- 1.62e-43]",
+          "root_id": [
+            0,
+            "23"
+          ],
+          "placement_margin_lower": "[2.5124533634858490407254056684165766134e-7 +/- 7.14e-46]",
+          "placement_id": [
+            65,
+            "265/12",
+            "23",
+            [
+              "I-E3-0",
+              "3/2"
+            ],
+            300,
+            1
+          ],
+          "root_free_leaves": 225,
+          "sign_separation_lower": "[0.00037478174505790513907934267652293416827 +/- 2.36e-42]",
+          "placed_leaves": 715,
+          "pose_counts": {
+            "300,1": 715
+          },
+          "empty_conditional_subcells": 0
+        },
+        {
+          "reference_bin": 0,
+          "subcells": [
+            0,
+            75
+          ],
+          "bracket": [
+            "36",
+            "46"
+          ],
+          "anchor_degrees": "23",
+          "anchor_comparison_sign": 1,
+          "anchor_threshold": "-1/50000",
+          "root_margin_lower": "[0.00069445310846434422282243180161442402924 +/- 1.34e-43]",
+          "root_id": [
+            0,
+            "36"
+          ],
+          "placement_margin_lower": "[1.7609337018216242458342408393431291343e-6 +/- 1.74e-44]",
+          "placement_id": [
+            7,
+            "36",
+            "221/6",
+            [
+              "Z-Tprime:3",
+              0
+            ],
+            180,
+            1
+          ],
+          "root_free_leaves": 150,
+          "sign_separation_lower": "[9.4587549244758971137842901975345933747e-5 +/- 2.58e-43]",
+          "placed_leaves": 750,
+          "pose_counts": {
+            "180,1": 750
+          },
+          "empty_conditional_subcells": 0
+        }
+      ],
+      "positive": true
+    },
+    {
+      "bin": 1,
+      "reachable": [
+        [
+          0,
+          75
+        ]
+      ],
+      "classes": [
+        {
+          "reference_bin": 1,
+          "subcells": [
+            0,
+            75
+          ],
+          "bracket": [
+            "12",
+            "23"
+          ],
+          "anchor_degrees": "23",
+          "anchor_comparison_sign": -1,
+          "anchor_threshold": "-1/50000",
+          "root_margin_lower": "[2.0000000000000000000000000000000000000e-5 +/- 1.62e-43]",
+          "root_id": [
+            0,
+            "23"
+          ],
+          "placement_margin_lower": "[1.4343468421088076983285687302274948243e-6 +/- 4.39e-44]",
+          "placement_id": [
+            41,
+            "265/12",
+            "23",
+            [
+              "I-E3-0",
+              "3/2"
+            ],
+            300,
+            1
+          ],
+          "root_free_leaves": 225,
+          "sign_separation_lower": "[0.00024751277874670405783310258510966684562 +/- 3.84e-42]",
+          "placed_leaves": 675,
+          "pose_counts": {
+            "300,1": 675
+          },
+          "empty_conditional_subcells": 0
+        },
+        {
+          "reference_bin": 1,
+          "subcells": [
+            0,
+            75
+          ],
+          "bracket": [
+            "36",
+            "46"
+          ],
+          "anchor_degrees": "23",
+          "anchor_comparison_sign": 1,
+          "anchor_threshold": "-1/50000",
+          "root_margin_lower": "[0.00073257076988625024941151075134064253722 +/- 8.63e-44]",
+          "root_id": [
+            0,
+            "36"
+          ],
+          "placement_margin_lower": "[6.2587561099706704305943364528321949487e-5 +/- 2.78e-43]",
+          "placement_id": [
+            0,
+            "36",
+            "221/6",
+            [
+              "Z-Tprime:3",
+              0
+            ],
+            180,
+            1
+          ],
+          "root_free_leaves": 154,
+          "sign_separation_lower": "[5.9729985742076168256932511887263910953e-6 +/- 2.41e-44]",
+          "placed_leaves": 746,
+          "pose_counts": {
+            "180,1": 746
+          },
+          "empty_conditional_subcells": 0
+        }
+      ],
+      "positive": true
+    }
+  ],
+  "all_passed": true,
+  "source_hashes": {
+    "certify_sigma_pinned_fan.py": "e2102774fafa6648d359db28cafd62b0de08969b8ab9d758effea6c6de8fdc6c",
+    "certify_sigma_jet_bracket.py": "7234ad39c67afc3169c9f03a97ecec8ce5b394116e6fd7a26b0f4708ac8a0719",
+    "certify_sigma_extended_graph.py": "c41f6d1bd129a8399c02043dca424fa2d0bad8de42fff11a1c288ad4ebebfea2"
+  },
+  "flint": "0.9.0",
+  "bits": 128,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]"
+}
