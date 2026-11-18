@@ -1,0 +1,174 @@
+{
+  "complete": true,
+  "fixed_host_65_line_counterexample": true,
+  "domain": "all rigid isometries, with reflection reduced by the exact mirror",
+  "input_sha256": "d2a2691d0c1670dfa5c038b930f84e6ca51ee1c703fa5c446196972cbd60b332",
+  "derived_host_geometry_sha256": "8f189e678491f29638a2abc28781ee8503b604b38718fe066bc03bffcaf442ed",
+  "mirror_axis_degrees": 30,
+  "curvature_deviation": [
+    "0.500000000000000000000000000000000000000000000000000000000",
+    "[-0.0660369942199043709854937503306609903609136002881399297 +/- 2.90e-56]",
+    "-0.500000000000000000000000000000000000000000000000000000000",
+    "[-0.219055000000000000000000000000000000000000000000000000000 +/- 6.91e-59]",
+    "0.500000000000000000000000000000000000000000000000000000000"
+  ],
+  "centre_support_deviation": "[-0.06313361060235949491357796894104196314623944962117845311 +/- 6.68e-57]",
+  "decomposition": "h=1/2+f; antiperiodic f, mirror-even around 30 degrees",
+  "angular_side": "F(phi)<0 for every 0<phi<60 degrees",
+  "compatibility_closed_cells_half_chamber": [
+    {
+      "domain_degrees": [
+        "0",
+        "15/2"
+      ],
+      "quantity": "derivative per radian",
+      "upper": "[-0.112481288657652221192475191279108130699732374197717287279 +/- 1.44e-58]",
+      "closed_cells": 64
+    },
+    {
+      "domain_degrees": [
+        "15/2",
+        "10"
+      ],
+      "quantity": "F",
+      "upper": "[-0.0189593541791084201153487419540307816033630750655234170912 +/- 1.99e-59]",
+      "closed_cells": 64
+    },
+    {
+      "domain_degrees": [
+        "10",
+        "55/2"
+      ],
+      "quantity": "F",
+      "upper": "[-0.0263056753077344726004616989660317559019719576661993882600 +/- 3.80e-59]",
+      "closed_cells": 64
+    },
+    {
+      "domain_degrees": [
+        "55/2",
+        "30"
+      ],
+      "quantity": "F",
+      "upper": "[-0.0559885551602406046051297388189618007227564992285332547166 +/- 7.66e-60]",
+      "closed_cells": 64
+    }
+  ],
+  "six_rotations": [
+    {
+      "rotation_degrees": 0,
+      "true_face": "I-E3",
+      "violation_lower": "[0.0629276401236582973238765096416824092292972662484572169857 +/- 3.26e-59]",
+      "violation_display": 0.0629276401236583
+    },
+    {
+      "rotation_degrees": 60,
+      "true_face": "K-C3",
+      "violation_lower": "[0.00668356302371516681862621536439772013623195666603456972017 +/- 2.86e-60]",
+      "violation_display": 0.006683563023715167
+    },
+    {
+      "rotation_degrees": 120,
+      "true_face": "K-C3",
+      "violation_lower": "[0.0629276401236582973238765096416824092294852286783192115114 +/- 1.96e-60]",
+      "violation_display": 0.0629276401236583
+    },
+    {
+      "rotation_degrees": 180,
+      "true_face": "K-C3",
+      "violation_lower": "[1.90165376641589248395330221608294192618398753897008924960e-5 +/- 4.14e-62]",
+      "violation_display": 1.9016537664158925e-05
+    },
+    {
+      "rotation_degrees": 240,
+      "true_face": "deep",
+      "violation_lower": "[1.90155299005450358535027995493215972755427564927735196699e-5 +/- 1.81e-62]",
+      "violation_display": 1.9015529900545037e-05
+    },
+    {
+      "rotation_degrees": 300,
+      "true_face": "I-E3",
+      "violation_lower": "[0.00668356302371516681862621536439772013541041310814107360823 +/- 2.73e-60]",
+      "violation_display": 0.006683563023715167
+    }
+  ],
+  "six_compatible_rotations_violation_lower": "1901/100000000",
+  "support_difference_rotation_120": "[-0.0665375242954639784119184851265250818382157552727052695 +/- 3.96e-56]",
+  "original_bounded_repair_at_240": {
+    "sufficient_parallel_deep_AH_shift": "1902/100000000",
+    "other_rows": 207,
+    "weakest_other_edge": "I-E3",
+    "strict_other_margin_lower": "[1.90165376641589248395330221608294169216312006173584783892e-5 +/- 4.03e-62]"
+  },
+  "parallel_repair_for_polygon": {
+    "necessary_parallel_shift_lower": "28634/1250000000",
+    "sufficient_parallel_shift": "2291/100000000",
+    "other_rows": 207,
+    "first_retained_chain_vertex_at_lower": 19,
+    "added_area_lower": "[1.24986104841452827369377376736102465621816335796575381302e-6 +/- 8.42e-64]",
+    "added_area_at_sufficient_shift": "[1.250010229191078393101230e-6 +/- 7.11e-31]",
+    "B_grade_area_deficit_lower": "[8.04910384990793321164217006033061234181865079968483461972e-7 +/- 3.69e-64]"
+  },
+  "binary_curvature_Reuleaux_polygon": {
+    "full_period_unit_arc_count": 13,
+    "same_compatibility_roots": true,
+    "Hausdorff_error_upper": "[0.000951929436833464372958573591809042354872077489124304651527 +/- 1.21e-61]",
+    "changed_q_intervals_degrees": [
+      [
+        "20",
+        "45/2"
+      ],
+      [
+        "115/2",
+        "60"
+      ]
+    ],
+    "centred_unit_radius_intervals_radians": [
+      [
+        "[0.36141547155745511801409508729814803726717935607203911879 +/- 1.94e-57]",
+        "[0.38034946054013495217847348930951236594604119655819420005 +/- 1.01e-57]"
+      ],
+      [
+        "[1.01925211430178246995921364161425227187885138025088432444 +/- 2.27e-57]",
+        "[1.03150975679155478292612301135986766641652308878564308647 +/- 5.05e-57]"
+      ]
+    ],
+    "six_rotations": [
+      {
+        "rotation_degrees": 0,
+        "true_face": "I-E3",
+        "violation_lower": "[0.0629276401236582973238765096416824092292972662484572169857 +/- 3.26e-59]",
+        "violation_display": 0.0629276401236583
+      },
+      {
+        "rotation_degrees": 60,
+        "true_face": "K-C3",
+        "violation_lower": "[0.00668356302371516681862621536439772013623195666603456972017 +/- 2.86e-60]",
+        "violation_display": 0.006683563023715167
+      },
+      {
+        "rotation_degrees": 120,
+        "true_face": "K-C3",
+        "violation_lower": "[0.0629276401236582973238765096416824092294852286783192115114 +/- 1.96e-60]",
+        "violation_display": 0.0629276401236583
+      },
+      {
+        "rotation_degrees": 180,
+        "true_face": "K-C3",
+        "violation_lower": "[5.72550911917761032260236894734778188794168646135849287269e-5 +/- 2.97e-62]",
+        "violation_display": 5.72550911917761e-05
+      },
+      {
+        "rotation_degrees": 240,
+        "true_face": "deep",
+        "violation_lower": "[2.29072852377369814764912354501575782182881677003626569132e-5 +/- 1.62e-62]",
+        "violation_display": 2.290728523773698e-05
+      },
+      {
+        "rotation_degrees": 300,
+        "true_face": "I-E3",
+        "violation_lower": "[0.00668356302371516681862621536439772013541041310814107360823 +/- 2.73e-60]",
+        "violation_display": 0.006683563023715167
+      }
+    ]
+  }
+}
