@@ -1,6 +1,6 @@
 # 当前状态
 
-2026-11-17，本地第42轮完成。**原题开放；用户总目标仍active。**
+2026-11-18，本地第43轮完成。**原题开放；用户总目标仍active。**
 
 ## 当前最强原模型结论
 
@@ -28,7 +28,7 @@
 
 ## 入口
 
-最新报告rounds/042.md；第36轮证书见certificates/r036/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
+最新报告rounds/043.md；第36轮证书见certificates/r036/，第24轮历史辅助树族结果与方格顶行臂族归一化比较仍见certificates/r024/，原题仍未闭合。此前新证明为proofs/early-interface-normalization.md、two-peak-level-boundary.md及one-peak-smc-normalizer.md；新增高β最短路种子族归一化消失证明proofs/geodesic-seed-mass.md；新增proofs/top-two-merge-balance.md、single-peak-two-step.md和prefix-contraction.md；新增D4整数账本proofs/d4-exact-accounting.md；新增证明proofs/independent-peak-recursion.md、beta-zero-recursion.md、parallel-cut-multiplicity.md、orbit-obstruction.md；此前证明同在proofs/；实际复现computation/README.md、manifest-r034.json、results/。初始化04c76d3；第1轮e9495adc014694e88a987fdd8d6dd8ef81218182；第2轮90728c0258d293f40f34711db7afec6f59ccf7b9。第3轮e732a1de795112c753c0d306a9d8822b411a1554。本轮提交与同步由Git实际回执记录。
 
 第4轮提交b39cdd776eff70e97ef060d2f00ca6f4e07fdac1。按用户要求，已完成n7计算保存后核验退出释放内存；第6轮新增B_+/A1=E₁T、前二扇区E_W[2ab/((a+b)(a+b−1))]及D_s≥n²A1/128（n≥10,s≤n）。GPU完成23.488亿次提案、保存209标号独立复核，AGX采样99–100%；计时为提交等待墙钟，非纯硬件时间。第7轮已证全最短路高β种子族占比≤(2n−3)2^{3−2n}/R_n→0；仅排除此族，不覆盖GPU交换后代。n5全连通S扫描仅为有限基线。第5轮提交003de213eef0adf1deedf74c72ba7a66e4fd33ef，已核验远端包含。
 
@@ -360,3 +360,13 @@ S2=221954860157521456430308，原律rho5>5/2的均匀二阶矩下界约.1790974�
 36/136均一致，最终公开目录10项重放全部通过并回收。原题开放，总目标active。
 入口rounds/042.md、certificates/r042/REPLAY.md。下一步n7区域精确计数与完整空间
 权估计；在途两机搜索/Metal另管，子agent同时活跃仍上限1。
+
+
+## 第43轮追加（2026-11-18）
+
+中央二值切割重数有四状态精确递推。相同外角峰对可分别达到重数0及2^n，
+所以常数重数和逐词覆盖均不可用。n7的128个切割计数完成，全部事件交错及
+反射恒等式通过整数审核，两个区域由独立子集递推交叉认证。单个n7常宽曲线
+给原距离尾概率>0.02218587。混合抽样0.06562为有限构造概率诊断，
+65,536词的重数直方图及全图双峰/距离已独立复核。原题未闭合。
+报告rounds/043.md。现行配置为两个 GPT-6.2 Sol 子 Agent。
