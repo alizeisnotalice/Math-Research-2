@@ -1,0 +1,134 @@
+{
+  "parameters": {
+    "sigma_degrees": "1.54",
+    "line": [
+      ".429",
+      ".01003"
+    ],
+    "physical_parameters": [
+      ".292",
+      ".329",
+      ".0114"
+    ],
+    "bins": [
+      [
+        5,
+        "split",
+        [
+          "12",
+          "23",
+          "36",
+          "46",
+          ".00002"
+        ]
+      ]
+    ],
+    "EH_margin_retreat": ".00000009488"
+  },
+  "rows": [
+    {
+      "bin": 5,
+      "reachable": [
+        [
+          0,
+          75
+        ]
+      ],
+      "classes": [
+        {
+          "reference_bin": 5,
+          "subcells": [
+            0,
+            75
+          ],
+          "bracket": [
+            "12",
+            "23"
+          ],
+          "anchor_degrees": "23",
+          "anchor_comparison_sign": -1,
+          "anchor_threshold": "-1/50000",
+          "root_margin_lower": "[2.0000000000000000000000000000000000000e-5 +/- 1.62e-43]",
+          "root_id": [
+            0,
+            "23"
+          ],
+          "placement_margin_lower": "[7.7470224009257994385924604877750439189e-5 +/- 9.90e-44]",
+          "placement_id": [
+            0,
+            "265/12",
+            "23",
+            [
+              "I-E3-0",
+              "3/2"
+            ],
+            300,
+            1
+          ],
+          "root_free_leaves": 75,
+          "sign_separation_lower": "[0.00038796092144398740608808685590369434951 +/- 1.28e-42]",
+          "placed_leaves": 825,
+          "pose_counts": {
+            "300,1": 825
+          },
+          "empty_conditional_subcells": 0
+        },
+        {
+          "reference_bin": 5,
+          "subcells": [
+            0,
+            75
+          ],
+          "bracket": [
+            "36",
+            "46"
+          ],
+          "anchor_degrees": "23",
+          "anchor_comparison_sign": 1,
+          "anchor_threshold": "-1/50000",
+          "root_margin_lower": "[0.00041459464921194365114533259759459845149 +/- 3.74e-42]",
+          "root_id": [
+            0,
+            "36"
+          ],
+          "placement_margin_lower": "[5.7963650103285781999925497706242670757e-8 +/- 2.70e-46]",
+          "placement_id": [
+            31,
+            "36",
+            "221/6",
+            [
+              "Z-Tprime:4",
+              0
+            ],
+            180,
+            1
+          ],
+          "root_free_leaves": 235,
+          "sign_separation_lower": "[4.2980482960781702208308925766633156183e-7 +/- 3.23e-46]",
+          "placed_leaves": 665,
+          "pose_counts": {
+            "180,1": 665
+          },
+          "empty_conditional_subcells": 0
+        }
+      ],
+      "positive": true
+    }
+  ],
+  "all_passed": true,
+  "source_hashes": {
+    "certify_sigma_pinned_fan.py": "e2102774fafa6648d359db28cafd62b0de08969b8ab9d758effea6c6de8fdc6c",
+    "certify_sigma_jet_bracket.py": "7234ad39c67afc3169c9f03a97ecec8ce5b394116e6fd7a26b0f4708ac8a0719",
+    "certify_sigma_extended_graph.py": "c41f6d1bd129a8399c02043dca424fa2d0bad8de42fff11a1c288ad4ebebfea2",
+    "certify_sigma154_eh_row_retreat.py": "b896d2b7eb43ba898656a9babec120883df4e94625e102a1e92e7afe911aaf05"
+  },
+  "flint": "0.9.0",
+  "bits": 128,
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "EH_tightening": {
+    "label": "U1-Te-0",
+    "retreat": "593/6250000000",
+    "depth": "0.000555"
+  },
+  "geometry_sha256": "d84c747c09327bc508819cd272262b8f59b04cf300a5f6234256fafed1b9ed48"
+}
