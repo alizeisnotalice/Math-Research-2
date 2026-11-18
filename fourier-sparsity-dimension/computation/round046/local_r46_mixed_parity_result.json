@@ -1,0 +1,1062 @@
+{
+  "all_checks_passed" : true,
+  "both_exact_gate_capacity_checks" : 3606,
+  "coefficient_mismatches" : 0,
+  "cpu_gpu_haar_coefficients" : 33656,
+  "cpu_gpu_measured_overlap_seconds" : 0,
+  "density_weighted_subtree_rank_checks" : 1275,
+  "device" : "Apple M6",
+  "feasible_dual_shift_count" : 5613,
+  "gate_isolation_coefficient_checks" : 22612,
+  "gpu_command_buffers" : 7,
+  "gpu_command_seconds" : 9.8166666248289403e-05,
+  "inactive_nodes_still_in_formal_private_tree" : 16,
+  "marked_nodes" : 943,
+  "marked_nodes_with_gate_rank_strictly_smaller_than_blocker_count" : 23,
+  "marked_nodes_with_shared_and_shifted_private_blockers" : 107,
+  "marked_nodes_with_shift_dependent_count" : 421,
+  "max_l_among_marked" : 3,
+  "random_trees" : 192,
+  "schema" : "a28-r046-mixed-parity-lca-blocker-metal-v1",
+  "seed_hex" : "a280460edabc2345",
+  "structured_results" : [
+    {
+      "g" : 1,
+      "kind" : "shared and offset-private LCA blockers together",
+      "marked_node_details" : [
+        {
+          "actual_blocker_gate_cardinality" : 4,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 3,
+          "offset_private_blocking_nodes" : [
+            1
+          ],
+          "private_ancestors" : 1,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 2,
+          "true_band_sparsity" : 4
+        },
+        {
+          "actual_blocker_gate_cardinality" : 4,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 2,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 4,
+          "offset_private_blocking_nodes" : [
+            1
+          ],
+          "private_ancestors" : 1,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 2,
+          "true_band_sparsity" : 4
+        },
+        {
+          "actual_blocker_gate_cardinality" : 4,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 1,
+          "delta" : 1,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 5,
+          "offset_private_blocking_nodes" : [
+            2
+          ],
+          "private_ancestors" : 1,
+          "q" : 1,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 2,
+          "true_band_sparsity" : 8
+        },
+        {
+          "actual_blocker_gate_cardinality" : 4,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 1,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 6,
+          "offset_private_blocking_nodes" : [
+            2
+          ],
+          "private_ancestors" : 1,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 2,
+          "true_band_sparsity" : 8
+        }
+      ],
+      "max_blocker_among_marked" : 2,
+      "max_gate_rank_among_marked" : 2,
+      "n_form" : 6,
+      "never_reached_private_nodes" : [
+
+      ],
+      "root_mean_sparsity" : 0,
+      "sparsity" : 8,
+      "w_bits" : 2,
+      "weighted_gate_rank_lower_numerator" : 192,
+      "weighted_lower_denominator" : 192,
+      "weighted_lower_numerator" : 192,
+      "x_bits" : 2
+    },
+    {
+      "g" : 1,
+      "kind" : "repeated shared parity produces a dead private path",
+      "marked_node_details" : [
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 0,
+          "blocking_nodes" : [
+
+          ],
+          "data_offset_mask" : 2,
+          "delta" : 1,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 0,
+          "node" : 2,
+          "offset_private_blocking_nodes" : [
+
+          ],
+          "private_ancestors" : 0,
+          "q" : 1,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 2,
+          "true_band_sparsity" : 2
+        },
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 1,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 1,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 3,
+          "offset_private_blocking_nodes" : [
+
+          ],
+          "private_ancestors" : 0,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+            0,
+            1
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 2,
+          "true_band_sparsity" : 2
+        },
+        {
+          "actual_blocker_gate_cardinality" : 4,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 5,
+          "offset_private_blocking_nodes" : [
+            2
+          ],
+          "private_ancestors" : 1,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 2,
+          "true_band_sparsity" : 4
+        }
+      ],
+      "max_blocker_among_marked" : 2,
+      "max_gate_rank_among_marked" : 2,
+      "n_form" : 3,
+      "never_reached_private_nodes" : [
+        4
+      ],
+      "root_mean_sparsity" : 2,
+      "sparsity" : 8,
+      "w_bits" : 2,
+      "weighted_gate_rank_lower_numerator" : 528,
+      "weighted_lower_denominator" : 192,
+      "weighted_lower_numerator" : 456,
+      "x_bits" : 2
+    },
+    {
+      "g" : 0,
+      "kind" : "cross-branch reversal and dependent distinct private masks",
+      "marked_node_details" : [
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 0,
+          "delta" : 2,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 3,
+          "offset_private_blocking_nodes" : [
+            0,
+            1
+          ],
+          "private_ancestors" : 2,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 9
+        },
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 2,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 4,
+          "offset_private_blocking_nodes" : [
+            0,
+            1
+          ],
+          "private_ancestors" : 2,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 9
+        },
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 1,
+          "delta" : 1,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 5,
+          "offset_private_blocking_nodes" : [
+            0,
+            2
+          ],
+          "private_ancestors" : 2,
+          "q" : 1,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 9
+        },
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 2,
+          "delta" : 1,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 6,
+          "offset_private_blocking_nodes" : [
+            0,
+            2
+          ],
+          "private_ancestors" : 2,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 4,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 9
+        }
+      ],
+      "max_blocker_among_marked" : 2,
+      "max_gate_rank_among_marked" : 2,
+      "n_form" : 7,
+      "never_reached_private_nodes" : [
+
+      ],
+      "root_mean_sparsity" : 0,
+      "sparsity" : 13,
+      "w_bits" : 2,
+      "weighted_gate_rank_lower_numerator" : 192,
+      "weighted_lower_denominator" : 192,
+      "weighted_lower_numerator" : 192,
+      "x_bits" : 3
+    },
+    {
+      "g" : 0,
+      "kind" : "all queries shared",
+      "marked_node_details" : [
+
+      ],
+      "max_blocker_among_marked" : 0,
+      "max_gate_rank_among_marked" : 0,
+      "n_form" : 0,
+      "never_reached_private_nodes" : [
+
+      ],
+      "root_mean_sparsity" : 4,
+      "sparsity" : 4,
+      "w_bits" : 2,
+      "weighted_gate_rank_lower_numerator" : 0,
+      "weighted_lower_denominator" : 48,
+      "weighted_lower_numerator" : 0,
+      "x_bits" : 1
+    },
+    {
+      "g" : 1,
+      "kind" : "shared and offset-private LCA blockers together",
+      "marked_node_details" : [
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 3,
+          "offset_private_blocking_nodes" : [
+            1
+          ],
+          "private_ancestors" : 1,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 4
+        },
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 2,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 4,
+          "offset_private_blocking_nodes" : [
+            1
+          ],
+          "private_ancestors" : 1,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 4
+        },
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 1,
+          "delta" : 1,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 5,
+          "offset_private_blocking_nodes" : [
+            2
+          ],
+          "private_ancestors" : 1,
+          "q" : 1,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 8
+        },
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 1,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 6,
+          "offset_private_blocking_nodes" : [
+            2
+          ],
+          "private_ancestors" : 1,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 8
+        }
+      ],
+      "max_blocker_among_marked" : 2,
+      "max_gate_rank_among_marked" : 2,
+      "n_form" : 6,
+      "never_reached_private_nodes" : [
+
+      ],
+      "root_mean_sparsity" : 0,
+      "sparsity" : 8,
+      "w_bits" : 3,
+      "weighted_gate_rank_lower_numerator" : 13440,
+      "weighted_lower_denominator" : 13440,
+      "weighted_lower_numerator" : 13440,
+      "x_bits" : 2
+    },
+    {
+      "g" : 1,
+      "kind" : "repeated shared parity produces a dead private path",
+      "marked_node_details" : [
+        {
+          "actual_blocker_gate_cardinality" : 32,
+          "blocker_gate_rank" : 0,
+          "blocking_nodes" : [
+
+          ],
+          "data_offset_mask" : 2,
+          "delta" : 1,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 0,
+          "node" : 2,
+          "offset_private_blocking_nodes" : [
+
+          ],
+          "private_ancestors" : 0,
+          "q" : 1,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 2
+        },
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 1,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 1,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 3,
+          "offset_private_blocking_nodes" : [
+
+          ],
+          "private_ancestors" : 0,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+            0,
+            1
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 2
+        },
+        {
+          "actual_blocker_gate_cardinality" : 8,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 5,
+          "offset_private_blocking_nodes" : [
+            2
+          ],
+          "private_ancestors" : 1,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 4,
+          "true_band_sparsity" : 4
+        }
+      ],
+      "max_blocker_among_marked" : 2,
+      "max_gate_rank_among_marked" : 2,
+      "n_form" : 3,
+      "never_reached_private_nodes" : [
+        4
+      ],
+      "root_mean_sparsity" : 2,
+      "sparsity" : 8,
+      "w_bits" : 3,
+      "weighted_gate_rank_lower_numerator" : 36960,
+      "weighted_lower_denominator" : 13440,
+      "weighted_lower_numerator" : 31920,
+      "x_bits" : 2
+    },
+    {
+      "g" : 0,
+      "kind" : "cross-branch reversal and dependent distinct private masks",
+      "marked_node_details" : [
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 0,
+          "delta" : 2,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 3,
+          "offset_private_blocking_nodes" : [
+            0,
+            1
+          ],
+          "private_ancestors" : 2,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 9
+        },
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 2,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 4,
+          "offset_private_blocking_nodes" : [
+            0,
+            1
+          ],
+          "private_ancestors" : 2,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 9
+        },
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 1,
+          "delta" : 1,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 5,
+          "offset_private_blocking_nodes" : [
+            0,
+            2
+          ],
+          "private_ancestors" : 2,
+          "q" : 1,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 9
+        },
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 2,
+          "delta" : 1,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 6,
+          "offset_private_blocking_nodes" : [
+            0,
+            2
+          ],
+          "private_ancestors" : 2,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 8,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 9
+        }
+      ],
+      "max_blocker_among_marked" : 2,
+      "max_gate_rank_among_marked" : 2,
+      "n_form" : 7,
+      "never_reached_private_nodes" : [
+
+      ],
+      "root_mean_sparsity" : 0,
+      "sparsity" : 13,
+      "w_bits" : 3,
+      "weighted_gate_rank_lower_numerator" : 13440,
+      "weighted_lower_denominator" : 13440,
+      "weighted_lower_numerator" : 13440,
+      "x_bits" : 3
+    },
+    {
+      "g" : 0,
+      "kind" : "all queries shared",
+      "marked_node_details" : [
+
+      ],
+      "max_blocker_among_marked" : 0,
+      "max_gate_rank_among_marked" : 0,
+      "n_form" : 0,
+      "never_reached_private_nodes" : [
+
+      ],
+      "root_mean_sparsity" : 4,
+      "sparsity" : 4,
+      "w_bits" : 3,
+      "weighted_gate_rank_lower_numerator" : 0,
+      "weighted_lower_denominator" : 3360,
+      "weighted_lower_numerator" : 0,
+      "x_bits" : 1
+    },
+    {
+      "g" : 1,
+      "kind" : "shared and offset-private LCA blockers together",
+      "marked_node_details" : [
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 3,
+          "offset_private_blocking_nodes" : [
+            1
+          ],
+          "private_ancestors" : 1,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 4
+        },
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 2,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 4,
+          "offset_private_blocking_nodes" : [
+            1
+          ],
+          "private_ancestors" : 1,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 4
+        },
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 1,
+          "delta" : 1,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 5,
+          "offset_private_blocking_nodes" : [
+            2
+          ],
+          "private_ancestors" : 1,
+          "q" : 1,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 8
+        },
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 1,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 6,
+          "offset_private_blocking_nodes" : [
+            2
+          ],
+          "private_ancestors" : 1,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 8
+        }
+      ],
+      "max_blocker_among_marked" : 2,
+      "max_gate_rank_among_marked" : 2,
+      "n_form" : 6,
+      "never_reached_private_nodes" : [
+
+      ],
+      "root_mean_sparsity" : 0,
+      "sparsity" : 8,
+      "w_bits" : 4,
+      "weighted_gate_rank_lower_numerator" : 11531520,
+      "weighted_lower_denominator" : 11531520,
+      "weighted_lower_numerator" : 11531520,
+      "x_bits" : 2
+    },
+    {
+      "g" : 1,
+      "kind" : "repeated shared parity produces a dead private path",
+      "marked_node_details" : [
+        {
+          "actual_blocker_gate_cardinality" : 64,
+          "blocker_gate_rank" : 0,
+          "blocking_nodes" : [
+
+          ],
+          "data_offset_mask" : 2,
+          "delta" : 1,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 0,
+          "node" : 2,
+          "offset_private_blocking_nodes" : [
+
+          ],
+          "private_ancestors" : 0,
+          "q" : 1,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 2
+        },
+        {
+          "actual_blocker_gate_cardinality" : 32,
+          "blocker_gate_rank" : 1,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 1,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 3,
+          "offset_private_blocking_nodes" : [
+
+          ],
+          "private_ancestors" : 0,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+            0,
+            1
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 2
+        },
+        {
+          "actual_blocker_gate_cardinality" : 16,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 2,
+          "marked_signal_sparsity" : 2,
+          "minimal_blockers" : 2,
+          "node" : 5,
+          "offset_private_blocking_nodes" : [
+            2
+          ],
+          "private_ancestors" : 1,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+            0
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 8,
+          "true_band_sparsity" : 4
+        }
+      ],
+      "max_blocker_among_marked" : 2,
+      "max_gate_rank_among_marked" : 2,
+      "n_form" : 3,
+      "never_reached_private_nodes" : [
+        4
+      ],
+      "root_mean_sparsity" : 2,
+      "sparsity" : 8,
+      "w_bits" : 4,
+      "weighted_gate_rank_lower_numerator" : 31711680,
+      "weighted_lower_denominator" : 11531520,
+      "weighted_lower_numerator" : 27387360,
+      "x_bits" : 2
+    },
+    {
+      "g" : 0,
+      "kind" : "cross-branch reversal and dependent distinct private masks",
+      "marked_node_details" : [
+        {
+          "actual_blocker_gate_cardinality" : 32,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 0,
+          "delta" : 2,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 3,
+          "offset_private_blocking_nodes" : [
+            0,
+            1
+          ],
+          "private_ancestors" : 2,
+          "q" : 2,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 16,
+          "true_band_sparsity" : 9
+        },
+        {
+          "actual_blocker_gate_cardinality" : 32,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            1
+          ],
+          "data_offset_mask" : 3,
+          "delta" : 2,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 4,
+          "offset_private_blocking_nodes" : [
+            0,
+            1
+          ],
+          "private_ancestors" : 2,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 16,
+          "true_band_sparsity" : 9
+        },
+        {
+          "actual_blocker_gate_cardinality" : 32,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 1,
+          "delta" : 1,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 5,
+          "offset_private_blocking_nodes" : [
+            0,
+            2
+          ],
+          "private_ancestors" : 2,
+          "q" : 1,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 16,
+          "true_band_sparsity" : 9
+        },
+        {
+          "actual_blocker_gate_cardinality" : 32,
+          "blocker_gate_rank" : 2,
+          "blocking_nodes" : [
+            0,
+            2
+          ],
+          "data_offset_mask" : 2,
+          "delta" : 1,
+          "marked_signal_sparsity" : 4,
+          "minimal_blockers" : 2,
+          "node" : 6,
+          "offset_private_blocking_nodes" : [
+            0,
+            2
+          ],
+          "private_ancestors" : 2,
+          "q" : 3,
+          "shared_blocking_nodes" : [
+
+          ],
+          "shared_data_domain" : 16,
+          "shared_gate_cardinality" : 16,
+          "true_band_sparsity" : 9
+        }
+      ],
+      "max_blocker_among_marked" : 2,
+      "max_gate_rank_among_marked" : 2,
+      "n_form" : 7,
+      "never_reached_private_nodes" : [
+
+      ],
+      "root_mean_sparsity" : 0,
+      "sparsity" : 13,
+      "w_bits" : 4,
+      "weighted_gate_rank_lower_numerator" : 11531520,
+      "weighted_lower_denominator" : 11531520,
+      "weighted_lower_numerator" : 11531520,
+      "x_bits" : 3
+    },
+    {
+      "g" : 0,
+      "kind" : "all queries shared",
+      "marked_node_details" : [
+
+      ],
+      "max_blocker_among_marked" : 0,
+      "max_gate_rank_among_marked" : 0,
+      "n_form" : 0,
+      "never_reached_private_nodes" : [
+
+      ],
+      "root_mean_sparsity" : 4,
+      "sparsity" : 4,
+      "w_bits" : 4,
+      "weighted_gate_rank_lower_numerator" : 0,
+      "weighted_lower_denominator" : 2882880,
+      "weighted_lower_numerator" : 0,
+      "x_bits" : 1
+    }
+  ],
+  "structured_trees" : 12,
+  "total_trees" : 204,
+  "unreachable_private_nodes" : 88
+}

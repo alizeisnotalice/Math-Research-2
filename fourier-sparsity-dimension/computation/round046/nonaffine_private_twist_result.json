@@ -1,0 +1,62 @@
+{
+  "source_sha256": "d8534af2b3280bf80b6344038e01db1cff648e6b7f2da667be6181b91b531eb9",
+  "round045_helper_sha256": "6dfb101601149eb93039d31a494d08cd02cfb6f3f37fad6b9c5ae86d9ae6a9a2",
+  "cases": [
+    {
+      "shared_bits": 2,
+      "full_Walsh_support": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "sparsity": 4,
+      "target_private_depth": 1,
+      "target_ell": 1,
+      "target_p": "1/4",
+      "target_band_support": [
+        8,
+        12
+      ],
+      "claimed_local_lower_bound": "4",
+      "root_conditional_half_differences": {
+        "0": "-1/2",
+        "1": "1/2",
+        "2": "1/2",
+        "3": "1/2"
+      },
+      "claimed_global_bound_from_only_two_terms": "3",
+      "already_violates_global_bound": false
+    },
+    {
+      "shared_bits": 3,
+      "full_Walsh_support": [
+        0,
+        8,
+        16,
+        24
+      ],
+      "sparsity": 4,
+      "target_private_depth": 1,
+      "target_ell": 1,
+      "target_p": "1/8",
+      "target_band_support": [
+        16,
+        24
+      ],
+      "claimed_local_lower_bound": "8",
+      "root_conditional_half_differences": {
+        "0": "-1/2",
+        "1": "1/2",
+        "2": "1/2",
+        "3": "1/2",
+        "4": "1/2",
+        "5": "1/2",
+        "6": "1/2",
+        "7": "1/2"
+      },
+      "claimed_global_bound_from_only_two_terms": "5",
+      "already_violates_global_bound": true
+    }
+  ]
+}

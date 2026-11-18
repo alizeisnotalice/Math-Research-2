@@ -1,0 +1,845 @@
+{
+  "python": "3.15.0",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "source_sha256": "2137d15c338b6f59969fd53f116011b34c4a01aa098955cdf0cd4caf5b63fe59",
+  "round045_helper_sha256": "6dfb101601149eb93039d31a494d08cd02cfb6f3f37fad6b9c5ae86d9ae6a9a2",
+  "arithmetic": "Exact GF(2) matrices and integer Walsh transforms; no tolerance or random seed.",
+  "workers": 6,
+  "templates": {
+    "dependent_repeated_private_under_shared_split": {
+      "shape": [
+        0,
+        1,
+        0,
+        [
+          1,
+          2,
+          0,
+          null,
+          null
+        ],
+        [
+          1,
+          2,
+          0,
+          null,
+          null
+        ]
+      ],
+      "leaf_truth_library": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "private_variables": 1,
+      "counts": {
+        "root_walsh_coefficients": 524288,
+        "empty_mark_cases": 4096,
+        "nonempty_tight_global_bounds": 2048,
+        "leaf_families": 65536,
+        "isolated_coefficients": 196608,
+        "marked_private_nodes": 98304,
+        "marked_nodes_with_shared_lca": 98304,
+        "marked_nodes_with_both_LCA_types": 0,
+        "marked_nodes_with_dependent_shared_blockers": 0,
+        "tight_local_bounds": 4096,
+        "ignore_shared_LCA_failures": 4096,
+        "static_dead_private_nodes": 0
+      },
+      "witnesses": {
+        "drop_shared_LCA": {
+          "leaf_truth_masks": [
+            0,
+            5,
+            0,
+            10
+          ],
+          "node": 4,
+          "private_depth": 0,
+          "reach_numerator": 2,
+          "reach_denominator": 4,
+          "private_lcas": 0,
+          "shared_lcas": 1,
+          "actual_band_size": 1
+        },
+        "global_tight": {
+          "leaf_truth_masks": [
+            0,
+            5,
+            0,
+            10
+          ],
+          "weighted_cost": "1",
+          "sparsity": 1,
+          "nonzero_private_sparsity": 1
+        }
+      },
+      "max_ell": 1,
+      "scaled_Kraft_weights": {
+        "1": 2
+      },
+      "node_plans": {
+        "1": {
+          "private_depth": 0,
+          "ell": 1,
+          "delta": 1,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0
+          ],
+          "path_rank": 1,
+          "shared_blocker_rank": 1,
+          "shared_lcas": 1,
+          "private_lcas": 0,
+          "reachable_w": [
+            0,
+            2
+          ],
+          "blocked_w": [
+            0,
+            2
+          ],
+          "free_count": 0,
+          "outside": 1
+        },
+        "4": {
+          "private_depth": 0,
+          "ell": 1,
+          "delta": 1,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0
+          ],
+          "path_rank": 1,
+          "shared_blocker_rank": 1,
+          "shared_lcas": 1,
+          "private_lcas": 0,
+          "reachable_w": [
+            1,
+            3
+          ],
+          "blocked_w": [
+            1,
+            3
+          ],
+          "free_count": 0,
+          "outside": 1
+        }
+      }
+    },
+    "triad_parities_affine_twists": {
+      "shape": [
+        1,
+        1,
+        1,
+        [
+          2,
+          2,
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          2,
+          0,
+          null,
+          null
+        ]
+      ],
+      "leaf_truth_library": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "private_variables": 2,
+      "counts": {
+        "root_walsh_coefficients": 1048576,
+        "empty_mark_cases": 16,
+        "nonempty_tight_global_bounds": 24,
+        "leaf_families": 65536,
+        "isolated_coefficients": 748480,
+        "marked_private_nodes": 187120,
+        "marked_nodes_with_shared_lca": 0,
+        "marked_nodes_with_both_LCA_types": 0,
+        "marked_nodes_with_dependent_shared_blockers": 0,
+        "tight_local_bounds": 2088,
+        "static_dead_private_nodes": 0
+      },
+      "witnesses": {
+        "global_tight": {
+          "leaf_truth_masks": [
+            0,
+            0,
+            15,
+            15
+          ],
+          "weighted_cost": "1",
+          "sparsity": 1,
+          "nonzero_private_sparsity": 1
+        }
+      },
+      "max_ell": 1,
+      "scaled_Kraft_weights": {
+        "1": 2,
+        "2": 2,
+        "3": 2
+      },
+      "node_plans": {
+        "0": {
+          "private_depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "delta_count": 2,
+          "blocked_ancestor_positions": [],
+          "path_rank": 1,
+          "shared_blocker_rank": 0,
+          "shared_lcas": 0,
+          "private_lcas": 0,
+          "reachable_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "blocked_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "free_count": 0,
+          "outside": 2
+        },
+        "1": {
+          "private_depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "shared_blocker_rank": 0,
+          "shared_lcas": 0,
+          "private_lcas": 1,
+          "reachable_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "blocked_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "free_count": 0,
+          "outside": 1
+        },
+        "4": {
+          "private_depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "shared_blocker_rank": 0,
+          "shared_lcas": 0,
+          "private_lcas": 1,
+          "reachable_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "blocked_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "free_count": 0,
+          "outside": 1
+        }
+      }
+    },
+    "alternating_private_shared_private": {
+      "shape": [
+        1,
+        2,
+        0,
+        [
+          0,
+          1,
+          0,
+          [
+            2,
+            2,
+            0,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          0,
+          1,
+          1,
+          null,
+          [
+            3,
+            2,
+            0,
+            null,
+            null
+          ]
+        ]
+      ],
+      "leaf_truth_library": [
+        0,
+        15,
+        3,
+        1,
+        2
+      ],
+      "private_variables": 2,
+      "counts": {
+        "root_walsh_coefficients": 250000,
+        "empty_mark_cases": 297,
+        "nonempty_tight_global_bounds": 32,
+        "leaf_families": 15625,
+        "isolated_coefficients": 137856,
+        "marked_private_nodes": 34464,
+        "marked_nodes_with_shared_lca": 0,
+        "marked_nodes_with_both_LCA_types": 0,
+        "marked_nodes_with_dependent_shared_blockers": 0,
+        "tight_local_bounds": 32,
+        "static_dead_private_nodes": 0
+      },
+      "witnesses": {
+        "global_tight": {
+          "leaf_truth_masks": [
+            0,
+            0,
+            0,
+            15,
+            15,
+            15
+          ],
+          "weighted_cost": "1",
+          "sparsity": 1,
+          "nonzero_private_sparsity": 1
+        }
+      },
+      "max_ell": 1,
+      "scaled_Kraft_weights": {
+        "1": 2,
+        "2": 2,
+        "3": 2
+      },
+      "node_plans": {
+        "0": {
+          "private_depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "delta_count": 2,
+          "blocked_ancestor_positions": [],
+          "path_rank": 1,
+          "shared_blocker_rank": 0,
+          "shared_lcas": 0,
+          "private_lcas": 0,
+          "reachable_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "blocked_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "free_count": 0,
+          "outside": 2
+        },
+        "2": {
+          "private_depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "shared_blocker_rank": 0,
+          "shared_lcas": 0,
+          "private_lcas": 1,
+          "reachable_w": [
+            0,
+            2
+          ],
+          "blocked_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "free_count": 0,
+          "outside": 1
+        },
+        "8": {
+          "private_depth": 1,
+          "ell": 1,
+          "delta": 2,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0
+          ],
+          "path_rank": 2,
+          "shared_blocker_rank": 0,
+          "shared_lcas": 0,
+          "private_lcas": 1,
+          "reachable_w": [
+            0,
+            2
+          ],
+          "blocked_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "free_count": 0,
+          "outside": 1
+        }
+      }
+    },
+    "repeated_shared_direction_dead_private": {
+      "shape": [
+        0,
+        1,
+        0,
+        [
+          0,
+          1,
+          0,
+          [
+            1,
+            0,
+            0,
+            null,
+            null
+          ],
+          [
+            1,
+            2,
+            0,
+            null,
+            null
+          ]
+        ],
+        [
+          1,
+          2,
+          0,
+          null,
+          null
+        ]
+      ],
+      "leaf_truth_library": [
+        0,
+        15,
+        3,
+        1,
+        2
+      ],
+      "private_variables": 1,
+      "counts": {
+        "root_walsh_coefficients": 125000,
+        "empty_mark_cases": 2025,
+        "nonempty_tight_global_bounds": 0,
+        "leaf_families": 15625,
+        "isolated_coefficients": 40000,
+        "marked_private_nodes": 20000,
+        "marked_nodes_with_shared_lca": 20000,
+        "marked_nodes_with_both_LCA_types": 0,
+        "marked_nodes_with_dependent_shared_blockers": 10000,
+        "tight_local_bounds": 0,
+        "static_dead_private_nodes": 1
+      },
+      "witnesses": {},
+      "max_ell": 2,
+      "scaled_Kraft_weights": {
+        "1": 4
+      },
+      "node_plans": {
+        "2": {
+          "private_depth": 0,
+          "ell": 2,
+          "delta": 1,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0,
+            1
+          ],
+          "path_rank": 1,
+          "shared_blocker_rank": 1,
+          "shared_lcas": 2,
+          "private_lcas": 0,
+          "reachable_w": [
+            0,
+            2
+          ],
+          "blocked_w": [
+            0,
+            2
+          ],
+          "free_count": 0,
+          "outside": 1
+        },
+        "5": {
+          "private_depth": 0,
+          "ell": 2,
+          "delta": 1,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0,
+            1
+          ],
+          "path_rank": 1,
+          "shared_blocker_rank": 1,
+          "shared_lcas": 2,
+          "private_lcas": 0,
+          "reachable_w": [],
+          "blocked_w": [],
+          "free_count": 0,
+          "outside": 1
+        },
+        "8": {
+          "private_depth": 0,
+          "ell": 1,
+          "delta": 1,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0
+          ],
+          "path_rank": 1,
+          "shared_blocker_rank": 1,
+          "shared_lcas": 1,
+          "private_lcas": 0,
+          "reachable_w": [
+            1,
+            3
+          ],
+          "blocked_w": [
+            1,
+            3
+          ],
+          "free_count": 0,
+          "outside": 1
+        }
+      }
+    },
+    "shared_and_private_blockers": {
+      "shape": [
+        0,
+        1,
+        0,
+        [
+          1,
+          2,
+          0,
+          [
+            2,
+            1,
+            0,
+            null,
+            null
+          ],
+          [
+            2,
+            0,
+            0,
+            null,
+            null
+          ]
+        ],
+        [
+          2,
+          2,
+          0,
+          null,
+          null
+        ]
+      ],
+      "leaf_truth_library": [
+        0,
+        15,
+        3,
+        1,
+        2
+      ],
+      "private_variables": 2,
+      "counts": {
+        "root_walsh_coefficients": 250000,
+        "empty_mark_cases": 297,
+        "nonempty_tight_global_bounds": 72,
+        "leaf_families": 15625,
+        "isolated_coefficients": 109600,
+        "marked_private_nodes": 42400,
+        "marked_nodes_with_shared_lca": 30000,
+        "marked_nodes_with_both_LCA_types": 20000,
+        "marked_nodes_with_dependent_shared_blockers": 0,
+        "tight_local_bounds": 3600,
+        "static_dead_private_nodes": 0
+      },
+      "witnesses": {
+        "global_tight": {
+          "leaf_truth_masks": [
+            0,
+            0,
+            15,
+            15,
+            0,
+            0
+          ],
+          "weighted_cost": "2",
+          "sparsity": 4,
+          "nonzero_private_sparsity": 2
+        }
+      },
+      "max_ell": 2,
+      "scaled_Kraft_weights": {
+        "1": 4,
+        "2": 4,
+        "3": 2
+      },
+      "node_plans": {
+        "1": {
+          "private_depth": 0,
+          "ell": 0,
+          "delta": 1,
+          "delta_count": 2,
+          "blocked_ancestor_positions": [],
+          "path_rank": 1,
+          "shared_blocker_rank": 0,
+          "shared_lcas": 0,
+          "private_lcas": 0,
+          "reachable_w": [
+            0,
+            2
+          ],
+          "blocked_w": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "free_count": 0,
+          "outside": 2
+        },
+        "2": {
+          "private_depth": 1,
+          "ell": 2,
+          "delta": 2,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0,
+            1
+          ],
+          "path_rank": 2,
+          "shared_blocker_rank": 1,
+          "shared_lcas": 1,
+          "private_lcas": 1,
+          "reachable_w": [
+            0,
+            2
+          ],
+          "blocked_w": [
+            0,
+            2
+          ],
+          "free_count": 0,
+          "outside": 1
+        },
+        "5": {
+          "private_depth": 1,
+          "ell": 2,
+          "delta": 2,
+          "delta_count": 1,
+          "blocked_ancestor_positions": [
+            0,
+            1
+          ],
+          "path_rank": 2,
+          "shared_blocker_rank": 1,
+          "shared_lcas": 1,
+          "private_lcas": 1,
+          "reachable_w": [
+            0,
+            2
+          ],
+          "blocked_w": [
+            0,
+            2
+          ],
+          "free_count": 0,
+          "outside": 1
+        },
+        "8": {
+          "private_depth": 0,
+          "ell": 1,
+          "delta": 2,
+          "delta_count": 2,
+          "blocked_ancestor_positions": [
+            0
+          ],
+          "path_rank": 1,
+          "shared_blocker_rank": 1,
+          "shared_lcas": 1,
+          "private_lcas": 0,
+          "reachable_w": [
+            1,
+            3
+          ],
+          "blocked_w": [
+            1,
+            3
+          ],
+          "free_count": 0,
+          "outside": 2
+        }
+      }
+    },
+    "shared_only": {
+      "shape": [
+        0,
+        1,
+        0,
+        [
+          0,
+          2,
+          0,
+          null,
+          null
+        ],
+        null
+      ],
+      "leaf_truth_library": [
+        0,
+        15,
+        3,
+        1,
+        2
+      ],
+      "private_variables": 0,
+      "counts": {
+        "root_walsh_coefficients": 500,
+        "empty_mark_cases": 125,
+        "nonempty_tight_global_bounds": 0,
+        "leaf_families": 125,
+        "static_dead_private_nodes": 0
+      },
+      "witnesses": {},
+      "max_ell": 0,
+      "scaled_Kraft_weights": {},
+      "node_plans": {}
+    },
+    "leaf_only": {
+      "shape": null,
+      "leaf_truth_library": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "private_variables": 0,
+      "counts": {
+        "root_walsh_coefficients": 64,
+        "empty_mark_cases": 16,
+        "nonempty_tight_global_bounds": 0,
+        "leaf_families": 16,
+        "static_dead_private_nodes": 0
+      },
+      "witnesses": {},
+      "max_ell": 0,
+      "scaled_Kraft_weights": {},
+      "node_plans": {}
+    }
+  },
+  "totals": {
+    "root_walsh_coefficients": 2198428,
+    "empty_mark_cases": 6872,
+    "nonempty_tight_global_bounds": 2176,
+    "leaf_families": 178088,
+    "isolated_coefficients": 1232544,
+    "marked_private_nodes": 382288,
+    "marked_nodes_with_shared_lca": 148304,
+    "marked_nodes_with_both_LCA_types": 20000,
+    "marked_nodes_with_dependent_shared_blockers": 10000,
+    "tight_local_bounds": 9816,
+    "ignore_shared_LCA_failures": 4096,
+    "static_dead_private_nodes": 1
+  },
+  "nonaffine_shared_counterexample": {
+    "test": "Shared AND then the same private character in both branches",
+    "Walsh_support": [
+      4
+    ],
+    "private_blocker_count": 0,
+    "shared_blocker_count": 1,
+    "shared_masses": [
+      "3/4",
+      "1/4"
+    ],
+    "unsupported_local_bounds": [
+      "2/3",
+      "2"
+    ],
+    "unsupported_global_bound": "4/3"
+  },
+  "elapsed_seconds": 4.128272417000517
+}
