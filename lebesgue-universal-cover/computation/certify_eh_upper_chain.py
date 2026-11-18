@@ -108,12 +108,20 @@ def run(archive,ah_file,param_file,weights,generate,out_weights):
     if generate:
         duals=[pose['right_weights']]+[du for x in pose['edges'].values() for du in x['weights'].values()];b.trim(pose,duals,initial);pose.pop('summary');weights['pose']=pose;out_weights.write_text(json.dumps(weights,separators=(',',':'))+'\n');return
     u,v,t=(geo[k] for k in ('u','v','t'));cost=g.norm(g.minus(v,t))*g.norm(g.minus(b.unit_outer(v,t),b.unit_outer(u,t)))
-    m=placement_lower(ah);assert m>cost
+    m=placement_lower(ah)
+    direct=[]
+    if m>cost:
+        slack=m-cost
+    else:
+        from certify_eh_pinned_weak_classes import verify
+        normal=b.unit_outer(v,t)
+        slack,direct=verify(archive,ah,normal,g.dot(normal,t),cost)
+    assert slack>0
     clear=b.prev.ah_clearance(ah,[(a,c) for a in (v[0],t[0]) for c in (v[1],t[1])])
     gains=list(map(b.eh.gain_endpoint,(geo['gain'].lower(),geo['gain'].upper())));l,h=map(F,ah['area_exact_interval']);ends=(l-gains[1],h-gains[0])
     return {'AH_sha256':sha256(ah_file.read_bytes()).hexdigest(),'R126_sha256':sha256(oldpath.read_bytes()).hexdigest(),'parameter_sha256':sha256(param_file.read_bytes()).hexdigest(),'model_sha256':model_hash,
             'active_facet_indices':geo['active'],'interior_vertex_heights':geo['breaks'],'F_right_upper_by_case':bounds,'F_limit_exact':str(b.F_LIMIT),'EH_placement':pose['summary'],'arc_signs':b.eh.voronoi_signs(b.eh.arc_data()),
-            'AH_local_chord_transfer_cost_upper':str(cost.upper()),'AH_after_transfer_lower':str((m-cost).lower()),'whole_rectangle_AH_clearance':clear,'EH_gain_over_R126_exact_interval':list(map(str,gains)),
+            'AH_local_chord_transfer_cost_upper':str(cost.upper()),'AH_after_transfer_lower':str(slack.lower()),**({'AH_direct_deep_chord_classes':direct} if direct else {}),'whole_rectangle_AH_clearance':clear,'EH_gain_over_R126_exact_interval':list(map(str,gains)),
             'gain_over_R126_arb':str(geo['gain']),'area_exact_interval':list(map(str,ends)),'area_decimal_interval':b.prev.format_area(*ends)}
 
 
