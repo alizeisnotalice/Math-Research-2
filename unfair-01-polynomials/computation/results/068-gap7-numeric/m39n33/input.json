@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "out": "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round067-parent/local-mps-fixed31/m39n33",
+    "m": 39,
+    "n": 33,
+    "starts": 12288,
+    "steps": 36000,
+    "restart": 2000,
+    "seconds": 14400,
+    "seed": 2026112001
+  },
+  "prefix": {
+    "minpoly_ascending": [
+      1,
+      -2,
+      4,
+      -7,
+      6,
+      -4,
+      1
+    ],
+    "isolation_interval": [
+      "265422694562681831097/368934881474191032320",
+      "1061690778250727324389/1475739525896764129280"
+    ],
+    "left": [
+      "1",
+      "t",
+      "0",
+      "-t*(t**2 - t + 1) + 1",
+      "-(1 - t)*(-t*(t**2 - t + 1) + 1) + 1",
+      "0",
+      "0",
+      "0"
+    ],
+    "right": [
+      "1",
+      "1 - t",
+      "t**2 - t + 1",
+      "0",
+      "0",
+      "t**2*(t**2 - t + 1)",
+      "0",
+      "0"
+    ],
+    "degree8_remaining_budget": "-t**2*(-t*(t**2 - t + 1) + 1)*(t**2 - t + 1) + 1",
+    "source_sha256": "f5a884b40e48d59d08bec9b9739bf778130539819edd86920cc64513f3acdb4f"
+  },
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "torch": "2.15.0",
+  "numpy": "2.5.4",
+  "sympy": "1.14.0",
+  "device": "mps",
+  "dtype": "float32",
+  "scope": "Numerical optimization for an exact C7-gap starting prefix. Samples alone have no exclusion credit."
+}

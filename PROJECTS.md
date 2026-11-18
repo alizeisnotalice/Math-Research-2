@@ -8,7 +8,7 @@
 
 | [free-boundary-grid-twin-peaks](free-boundary-grid-twin-peaks/README.md) | A022：自由边界方格、恰有两峰、原图曼哈顿距离 | 原题开放；早首接触不可达质量、标记容量和界面秩权 | 第54轮完成 | 可达大分量的原律搬移权与晚首触 |
 
-| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；第9行内部正，第7项缺口积至少67次 | 第67轮完成 | 第10行普遍正性，及更高次数的缺口排除 |
+| [unfair-01-polynomials](unfair-01-polynomials/README.md) | A30／A175：独立有限支撑整数变量的均匀和，非负实系数 0–1 多项式因子 | 原题开放；第9行内部正，第7项缺口积至少69次 | 第68轮完成 | 第10行两个局部形状的有限补全 |
 
 新课题采用 `templates/PROJECT.md`，用有语义的英文目录名；不要将旧 T 研究的继续攻关指令直接登记为新课题。
 
