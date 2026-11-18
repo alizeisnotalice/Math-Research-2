@@ -1,0 +1,336 @@
+{
+  "arithmetic": "Exact integer arithmetic, exhaustive search, no RNG or tolerance.",
+  "base_phase_formula": "x0*x1+x2*x3 over F2, least significant bit x0",
+  "base_phase_truth_mask": "0x7888",
+  "bent_truth_tables": 896,
+  "block_space_pairs_by_kind_and_dim": {
+    "affine": {
+      "1": 30,
+      "2": 90,
+      "3": 30
+    },
+    "nonaffine": {
+      "1": 360,
+      "2": 360
+    }
+  },
+  "blocks_by_kind_and_max_local_dim": {
+    "affine": {
+      "3": 30
+    },
+    "nonaffine": {
+      "2": 360
+    }
+  },
+  "eight_point_legal_blocks": 390,
+  "elapsed_seconds": 0.18655504199989537,
+  "independent_bent_quadratic_check": true,
+  "max_dim_witnesses": {
+    "affine": {
+      "affine_span_dimension": 3,
+      "all_walsh_spectra_by_switch_mask": {
+        "0x0": [
+          4,
+          4,
+          4,
+          -4,
+          4,
+          4,
+          4,
+          -4,
+          4,
+          4,
+          4,
+          -4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0x33": [
+          -4,
+          4,
+          -4,
+          -4,
+          4,
+          4,
+          4,
+          -4,
+          -4,
+          4,
+          -4,
+          -4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0x55": [
+          -4,
+          -4,
+          4,
+          -4,
+          4,
+          4,
+          4,
+          -4,
+          -4,
+          -4,
+          4,
+          -4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0x66": [
+          -4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          -4,
+          -4,
+          4,
+          4,
+          4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0x99": [
+          4,
+          -4,
+          -4,
+          -4,
+          4,
+          4,
+          4,
+          -4,
+          4,
+          -4,
+          -4,
+          -4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0xaa": [
+          4,
+          4,
+          -4,
+          4,
+          4,
+          4,
+          4,
+          -4,
+          4,
+          4,
+          -4,
+          4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0xcc": [
+          4,
+          -4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          -4,
+          4,
+          -4,
+          4,
+          4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0xff": [
+          -4,
+          -4,
+          -4,
+          4,
+          4,
+          4,
+          4,
+          -4,
+          -4,
+          -4,
+          -4,
+          4,
+          -4,
+          -4,
+          -4,
+          4
+        ]
+      },
+      "basis_masks": [
+        "0xff",
+        "0x66",
+        "0xaa"
+      ],
+      "basis_supports": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          1,
+          3,
+          5,
+          7
+        ]
+      ],
+      "block_mask": "0xff",
+      "block_support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dim": 3
+    },
+    "nonaffine": {
+      "affine_span_dimension": 4,
+      "all_walsh_spectra_by_switch_mask": {
+        "0x0": [
+          4,
+          4,
+          4,
+          -4,
+          4,
+          4,
+          4,
+          -4,
+          4,
+          4,
+          4,
+          -4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0x303": [
+          -4,
+          4,
+          -4,
+          -4,
+          -4,
+          4,
+          -4,
+          -4,
+          4,
+          4,
+          4,
+          -4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0x3cf": [
+          -4,
+          -4,
+          -4,
+          4,
+          -4,
+          4,
+          -4,
+          -4,
+          4,
+          -4,
+          4,
+          4,
+          -4,
+          -4,
+          -4,
+          4
+        ],
+        "0xcc": [
+          4,
+          -4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          -4,
+          4,
+          -4,
+          4,
+          4,
+          -4,
+          -4,
+          -4,
+          4
+        ]
+      },
+      "basis_masks": [
+        "0x3cf",
+        "0xcc"
+      ],
+      "basis_supports": [
+        [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          3,
+          6,
+          7
+        ]
+      ],
+      "block_mask": "0x3cf",
+      "block_support": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dim": 2
+    }
+  },
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "python": "3.15.0",
+  "python_executable": "/Users/zzh/.local/bin/python3",
+  "source_sha256": "09f7f289e223fae9ad12fd01a730bbe1508caa91f15f7f24092b92d3360ab494",
+  "truth_tables_checked": 65536
+}
