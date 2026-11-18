@@ -14,4 +14,4 @@
 
 | [lebesgue-universal-cover](lebesgue-universal-cover/README.md) | 平面凸万能覆盖最小面积 | 0.8372 < Λ < 0.844093401087945927979259982635382690950，精确值开放 | 第120轮完成，三体和四体全域最优值已定 | 改进一般下界与极值结构 |
 
-| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；一侧分离尾下的窗口对数修正 | 第119轮完成 | 快速振荡尾部及平坦最大点 |
+| [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；含平台的时间预解式与两次穿越图的全切点一阶正性 | 第120轮完成 | 快速振荡尾部及平坦最大点 |
