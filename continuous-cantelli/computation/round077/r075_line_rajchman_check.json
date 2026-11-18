@@ -1,0 +1,101 @@
+{
+  "python": "3.13.18",
+  "mpmath": "1.3.0",
+  "precision": 130,
+  "product_depth": 155,
+  "rows": [
+    {
+      "p": 2,
+      "contraction": "0.4142135623730950488017",
+      "limit": "0.04914395807692379871645",
+      "checks": [
+        {
+          "k": 4,
+          "direct": "0.04918751044464315506648",
+          "folded_difference": "7.0442e-133",
+          "diff_from_limit": "4.35524e-5"
+        },
+        {
+          "k": 12,
+          "direct": "0.0491439581096064855585",
+          "folded_difference": "1.62017e-131",
+          "diff_from_limit": "3.26827e-11"
+        },
+        {
+          "k": 32,
+          "direct": "0.04914395807692379871645",
+          "folded_difference": "3.09945e-131",
+          "diff_from_limit": "1.59695e-26"
+        },
+        {
+          "k": 60,
+          "direct": "0.04914395807692379871645",
+          "folded_difference": "4.93094e-132",
+          "diff_from_limit": "5.85938e-48"
+        }
+      ]
+    },
+    {
+      "p": 3,
+      "contraction": "0.3027756377319946465596",
+      "limit": "0.3074292903507156554199",
+      "checks": [
+        {
+          "k": 4,
+          "direct": "0.3074401045398480772896",
+          "folded_difference": "1.12707e-131",
+          "diff_from_limit": "1.08142e-5"
+        },
+        {
+          "k": 12,
+          "direct": "0.3074292903507695961632",
+          "folded_difference": "1.07072e-130",
+          "diff_from_limit": "5.39407e-14"
+        },
+        {
+          "k": 32,
+          "direct": "0.3074292903507156554199",
+          "folded_difference": "2.3105e-130",
+          "diff_from_limit": "9.47881e-35"
+        },
+        {
+          "k": 60,
+          "direct": "0.3074292903507156554199",
+          "folded_difference": "4.33923e-130",
+          "diff_from_limit": "8.30856e-64"
+        }
+      ]
+    },
+    {
+      "p": 5,
+      "contraction": "0.1925824035672520156254",
+      "limit": "0.6670038464640391108676",
+      "checks": [
+        {
+          "k": 4,
+          "direct": "0.6670040863349777799248",
+          "folded_difference": "7.88951e-131",
+          "diff_from_limit": "2.39871e-7"
+        },
+        {
+          "k": 12,
+          "direct": "0.6670038464640391117263",
+          "folded_difference": "1.23978e-130",
+          "diff_from_limit": "8.58703e-19"
+        },
+        {
+          "k": 32,
+          "direct": "0.6670038464640391108676",
+          "folded_difference": "5.74807e-130",
+          "diff_from_limit": "2.08213e-47"
+        },
+        {
+          "k": 60,
+          "direct": "0.6670038464640391108676",
+          "folded_difference": "1.72442e-129",
+          "diff_from_limit": "1.80733e-87"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "python": "3.13.18",
+  "scipy": "1.18.1",
+  "A_values": [
+    0,
+    0.01,
+    0.25,
+    1,
+    4,
+    16,
+    64
+  ],
+  "z_values": [
+    0,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    6.0
+  ],
+  "frequency_rows": [
+    {
+      "t": 2,
+      "grid_max_normalized_error": 6.27561808604965
+    },
+    {
+      "t": 4,
+      "grid_max_normalized_error": 3.309542800972906
+    },
+    {
+      "t": 8,
+      "grid_max_normalized_error": 1.084637380547408
+    },
+    {
+      "t": 16,
+      "grid_max_normalized_error": 1.0624970675870786
+    },
+    {
+      "t": 32,
+      "grid_max_normalized_error": 1.0605967118530957
+    },
+    {
+      "t": 64,
+      "grid_max_normalized_error": 1.0601201708358803
+    }
+  ],
+  "formula": "t*(1+z^2)*exp(A/16)*abs(error)",
+  "quadrature_abs_tol": 1e-14,
+  "quadrature_rel_tol": 1e-13
+}
