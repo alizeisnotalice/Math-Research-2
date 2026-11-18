@@ -317,11 +317,14 @@ def placement(v,e,a,b):
         margin.append(c-supports(v,e,sn,u)-dot(u,trans))
     return margin
 
-cells=20
-angular_cells=80
-half_bracket=F(1)
-contact_error=F(3,4)*eps
-support_error=F(11,10)*contact_error
+cells = 30
+angular_cells = 100
+half_bracket = F(31,25)
+# The DE contact N(t0) moves by at most eps in its unit line coordinate.
+# A cone with consecutive unit normals of dot product > 3/4 has half-angle
+# secant below sqrt(8/7) < 107/100.
+contact_error = eps
+support_error = F(107,100)*contact_error
 gap=3*support_error
 best_root=arb(1)
 best_edge=arb(1)
@@ -391,6 +394,7 @@ print(json.dumps({
     "ideal_support_placement_slack_lower":str(best_edge),
     "support_placement_error_upper_exact":str(gap),
     "support_parameter_cells":27*cells,
+    "compatibility_bracket_half_width_degrees":str(half_bracket),
     "angle_cells_per_compatibility_bracket":angular_cells,
     "directly_tested_support_rows":[label for label,_,_ in rows],
     "strict_Sprague_endpoint_Voronoi_slacks_lower":arc_signs,
