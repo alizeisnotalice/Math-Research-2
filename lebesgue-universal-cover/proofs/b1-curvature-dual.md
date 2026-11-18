@@ -31,3 +31,17 @@
 ~~~sh
 python -B computation/certify_b1_curvature_dual.py OUTPUT.json
 ~~~
+
+## 两个互不相交的相容根区间
+
+沿用同一归一化和双命中条件 A≥0、B≥0。对每条切线分别取 φ=1° 和 20°，把对偶式中 F(φ)/sin(3φ) 的系数改为正。四组有理乘子给出连续上界，按切线和角度依次小于 −4.09985×10⁻⁶、−4.60303×10⁻⁵、−2.40425×10⁻⁵、−6.48379×10⁻⁵。由于三个角的 sin(3φ) 都严格为正，结合先前的 6.1° 负系数证书可得
+
+\[
+ F(1^\circ)<0,\qquad F(6.1^\circ)>0,\qquad F(20^\circ)<0 .
+\]
+
+支撑函数连续，故两个开区间各至少有一个相容角。这对任意满足这两个命中条件的归一化定宽体成立。要在这些角实现实际摆放，仍需核对平移后的其他边。[四组有理乘子](../computation/b1-curvature-bracket-weights.json) · [连续核积分](../computation/b1-curvature-bracket.json)
+
+~~~sh
+python -B computation/certify_b1_curvature_dual.py OUTPUT.json --weights computation/b1-curvature-bracket-weights.json
+~~~

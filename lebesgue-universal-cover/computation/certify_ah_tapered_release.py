@@ -117,7 +117,7 @@ def run(archive):
         tab=[]
         tab_pos=[]
         for name,u,h in active:
-            if name in hexnames or name.startswith(sprague):
+            if name in hexnames or name.startswith(sprague) or name=='taper_64':
                 continue
             pre=preimage(u,k,s)
             tri=triangle_support(g,A,ns['reflection'](pre))
@@ -125,6 +125,14 @@ def run(archive):
             tab_pos.append((name,pre,h,triangle_support(g,A,pre)))
         tabs.append(tab)
         tabs_positive.append(tab_pos)
+    # The terminal paired tangent at q(1) is identical to the first tangent of the G arc.
+    # The unit-pair map q(1) lies on that circle and the tangent join was certified in R34.
+    _n,_m,_c3,_b3,*_=g.setup()
+    f3=g.line_pair(_n[3],_m[2])
+    gc=g.circle_line(f3,_n[5],1)
+    radial=g.minus(last,gc)
+    assert all((x-y).contains(0) for x,y in zip(radial,rows[-1][1]))
+    assert (g.dot(radial,radial)-1).contains(0)
     assert {'I-E3','K-C3'}<=set(name for name,*_ in tabs[0])
     def cell_slacks(l,r,t0,t1,indices,js):
         mid=A((l+r)/2)
@@ -146,6 +154,26 @@ def run(archive):
                     uncertain.append(ix)
             ans.append(uncertain)
         return ans
+    # Verify that the exact unit-distance formulas have the same ten normal cones
+    # and the same three hexagon contacts over the entire proposed w interval.
+    for cell in range(512):
+        w0=F('.427')+(F(1)-F('.427'))*cell/512
+        w1=F('.427')+(F(1)-F('.427'))*(cell+1)/512
+        v=ns['centered_points'](w0,w1)
+        edges=[g.minus(v[k],v[l]) for k,l in ns['orders']]
+        for k,e in enumerate(edges):
+            f=edges[(k+1)%10]
+            assert (e[1]>0 if k<5 else e[1]<0)
+            assert g.cross(e,f)>0 and g.dot(e,f)>A('.75')
+        for k in range(5):
+            for l in range(k+1,5):
+                if (k,l) not in ns['orders'] and (l,k) not in ns['orders']:
+                    sep=g.minus(v[k],v[l])
+                    assert g.dot(sep,sep)<1
+        for k,u in enumerate(hexn):
+            cr=[g.cross(e,u) for e in edges]
+            possible={ns['sector'][j] for j in range(10) if not cr[j]<0 and not cr[(j+1)%10]>0}
+            assert possible=={((1,3,0)[k%3],int(k<3))}
     # Cache discharged rows down each branch. Each successful leaf selects one rigid pose
     # for every support direction and every (w,t) in the complete leaf.
     # Preimages of the two genuine normalized cap normals are antipodes. This also
@@ -181,16 +209,16 @@ def run(archive):
     indices=list(range(len(poses)))
     ids=[list(range(len(tab))) for tab in tabs]
     for j in range(32):
-        l=F('.4285')+(F('.950')-F('.4285'))*j/32
-        r=F('.4285')+(F('.950')-F('.4285'))*(j+1)/32
+        l=F('.427')+(F(1)-F('.427'))*j/32
+        r=F('.427')+(F(1)-F('.427'))*(j+1)/32
         sweep(l,r,F(0),F(1),indices,ids)
     reflected_counts, reflected_checks=counts.copy(),checks
     tabs=tabs_positive
     counts=[0]*(len(poses)+1)
     checks=0
     for j in range(32):
-        l=F('.4285')+(F('.950')-F('.4285'))*j/32
-        r=F('.4285')+(F('.950')-F('.4285'))*(j+1)/32
+        l=F('.427')+(F(1)-F('.427'))*j/32
+        r=F('.427')+(F(1)-F('.427'))*(j+1)/32
         sweep(l,r,F(0),F(1),indices,ids)
     fits={}
     for name in ('widened-projected-obstruction-points.json','widened-projected-obstruction-18-points.json'):
@@ -201,7 +229,7 @@ def run(archive):
     return dict(p=str(p),delta=str(delta),start=str(a),end=str(b),peak=str(peak),amplitude=str(amp),positions=65,
                 total_added=str(totaladded),old_host_deleted=str(deleted),overlap=str(overlap),surviving_added=str(totaladded-overlap),
                 net_gain_R199=str(net),true_area=str(area),all_corners_P_clearance=str(pclear),min_local_cross=str(min(turns)),
-                first_retained_segment=label,poses=poses,negative_triangle_leaves=reflected_counts,negative_visited=reflected_checks,positive_triangle_leaves=counts,positive_visited=checks,disk_nontrivial_slack=str(min(diskfree)),w_interval=['.4285','.950'],
+                first_retained_segment=label,poses=poses,negative_triangle_leaves=reflected_counts,negative_visited=reflected_checks,positive_triangle_leaves=counts,positive_visited=checks,disk_nontrivial_slack=str(min(diskfree)),w_interval=['.427','1'],
                 t_interval=['0','1'],full_Minkowski_simplex=True,historical_witnesses=fits,universal_placement_proved=False)
 
 if __name__=='__main__':

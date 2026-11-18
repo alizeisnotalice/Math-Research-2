@@ -35,22 +35,24 @@ def positive_area(a, b, left, right):
     return max(v.upper() for v in candidates)
 
 
-def verify():
+def verify(input_path):
     geometry = load_geometry(HERE)
     ctx.prec = 192
     A = geometry["A"]
     pi = arb.pi()
-    phi = 61*pi/1800
     dot, reflect = geometry["dot"], geometry["reflection"]
     cut_angle = A(Fraction(".0175"))
     cut = geometry["mul"](-1, geometry["perp"](geometry["rotate"](
         geometry["direct"], (cut_angle.cos(), cut_angle.sin()))))
     pivot = geometry["add"](geometry["z"], geometry["mul"](A(Fraction(".430")), geometry["D"]))
-    input_path = HERE / "b1-curvature-dual-weights.json"
     results = []
     def unit(x):
         return x.cos(), x.sin()
     for row in json.loads(input_path.read_bytes()):
+        angle = Fraction(row.get("angle", "6.1")) / 180
+        phi = angle.numerator*pi/angle.denominator
+        sign = row.get("F_coefficient", -1)
+        assert sign in (-1, 1)
         weights = [A(Fraction(v)) for v in row["weights"]]
         wa, wb, wf = weights
         assert min(weights) > 0
@@ -58,7 +60,7 @@ def verify():
         p, dp = geometry["point_jets"](A(Fraction(row["tangent"])))
         q, dq = reflect(p[2]), reflect(dp[2])
         tangent = geometry["mul"](-1/geometry["norm"](dq), geometry["perp"](dq))
-        v = wf/(3*phi).sin()
+        v = -sign*wf/(3*phi).sin()
         c = -wa*dot(cut,pivot)-wb*dot(tangent,q)+v/2+(nu[0]+nu[1])/2+nu[2]
         slope = arb(0)
         terms = [(cut,wa),(reflect(tangent),wb),(unit(phi),-v),
@@ -96,5 +98,6 @@ def verify():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("out", type=Path)
+    parser.add_argument("--weights", type=Path, default=HERE / "b1-curvature-dual-weights.json")
     args = parser.parse_args()
-    args.out.write_text(json.dumps(verify(), indent=2)+"\n")
+    args.out.write_text(json.dumps(verify(args.weights), indent=2)+"\n")
