@@ -1,0 +1,210 @@
+{
+  "start_utc": "2026-11-18T00:44:25Z",
+  "end_utc": "2026-11-18T00:47:05Z",
+  "wall_seconds": 160,
+  "observed_total_cpu_seconds": 1279.407156,
+  "observed_worker_elapsed_seconds": [
+    157.0680210830178,
+    158.86335850000614
+  ],
+  "maximum_worker_rss_bytes": 367476736,
+  "supervisor_pid": 24553,
+  "worker_exit_receipts": [
+    [
+      0,
+      24557,
+      0
+    ],
+    [
+      1,
+      24558,
+      0
+    ],
+    [
+      2,
+      24559,
+      0
+    ],
+    [
+      3,
+      24560,
+      0
+    ],
+    [
+      4,
+      24561,
+      0
+    ],
+    [
+      5,
+      24562,
+      0
+    ],
+    [
+      6,
+      24563,
+      0
+    ],
+    [
+      7,
+      24564,
+      0
+    ],
+    [
+      8,
+      24565,
+      0
+    ],
+    [
+      9,
+      24566,
+      0
+    ],
+    [
+      10,
+      24567,
+      0
+    ],
+    [
+      11,
+      24568,
+      0
+    ],
+    [
+      12,
+      24569,
+      0
+    ],
+    [
+      13,
+      24570,
+      0
+    ],
+    [
+      14,
+      24571,
+      0
+    ]
+  ],
+  "post_exit_process_count": 0,
+  "points": 15728640,
+  "host": "MacBook",
+  "backend": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "machine": "arm64"
+  },
+  "independent_check_backend": {
+    "python": "3.13.18",
+    "scipy": "1.18.1"
+  },
+  "actual_c_range": [
+    0.0009765631814354066,
+    4095.9979213486995
+  ],
+  "actual_x_range": [
+    1.0000089180315384,
+    5.645272588507114
+  ],
+  "ps_samples": [
+    {
+      "file": "ps-1.txt",
+      "processes": 15,
+      "combined_cpu_percent": 799.1
+    },
+    {
+      "file": "ps-2.txt",
+      "processes": 15,
+      "combined_cpu_percent": 860.0
+    },
+    {
+      "file": "ps-3.txt",
+      "processes": 15,
+      "combined_cpu_percent": 795.7
+    },
+    {
+      "file": "ps-4.txt",
+      "processes": 15,
+      "combined_cpu_percent": 779.1
+    },
+    {
+      "file": "ps-5.txt",
+      "processes": 15,
+      "combined_cpu_percent": 843.5
+    }
+  ],
+  "systemwide_cpu_usage": [
+    "CPU usage: 93.62% user, 6.37% sys, 0.0% idle ",
+    "CPU usage: 96.32% user, 3.67% sys, 0.0% idle ",
+    "CPU usage: 96.17% user, 3.82% sys, 0.0% idle "
+  ],
+  "numerical_results": {
+    "radius_capped": {
+      "nominal_positive_count": 4398543,
+      "best_independently_checked_candidate": {
+        "run": "quartic20",
+        "mode": "radius_capped",
+        "case": {
+          "index": 461729,
+          "c": 292.17181229242345,
+          "x": 4.657779424671192,
+          "m": 1.0285752495382035,
+          "eps": 4.0035995425723475e-11,
+          "delta": 3.9852606654167175,
+          "log_ratio": 12.543441692743475,
+          "log_ratio_order_48": 12.543441692743455,
+          "log_ratio_order_96": 12.543441692743444
+        },
+        "contributions": [
+          151010.8990728816,
+          129240.32052425925
+        ],
+        "error_estimates": [
+          1.6767558645849092e-09,
+          1.4359410080668721e-09
+        ],
+        "split_counts": [
+          75,
+          74
+        ],
+        "ratio": 280251.21959714085,
+        "independent_log_ratio": 12.543441692743459
+      },
+      "largest_checked_log_ratio_disagreement": 1.5987211554602254e-14
+    },
+    "variance_capped": {
+      "nominal_positive_count": 8023897,
+      "best_independently_checked_candidate": {
+        "run": "quartic20",
+        "mode": "variance_capped",
+        "case": {
+          "index": 128584,
+          "c": 5.482958837295098,
+          "x": 4.926705211940041,
+          "m": 1.0431112306381674,
+          "eps": 1.6438516985240516e-14,
+          "delta": 3.971111238002777,
+          "log_ratio": 13.822842115989733,
+          "log_ratio_order_48": 13.822842115989722,
+          "log_ratio_order_96": 13.822842115989717
+        },
+        "contributions": [
+          703611.6479118476,
+          303746.8517863684
+        ],
+        "error_estimates": [
+          6.057116023285591e-08,
+          3.372267485783003e-09
+        ],
+        "split_counts": [
+          76,
+          77
+        ],
+        "ratio": 1007358.499698216,
+        "independent_log_ratio": 13.822842115989717
+      },
+      "largest_checked_log_ratio_disagreement": 8.881784197001252e-15
+    }
+  }
+}

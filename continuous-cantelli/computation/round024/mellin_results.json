@@ -1,0 +1,158 @@
+{
+  "python": "3.13.18",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "exact_ledger": {
+    "k_range": [
+      1,
+      18
+    ],
+    "moment_product_verified": true,
+    "all_simple_root_derivatives_verified": true,
+    "polynomials": {
+      "3": "(alpha - 3)*(alpha - 1)",
+      "4": "alpha*(alpha - 4)*(alpha - 2)",
+      "7": "(alpha - 7)*(alpha - 5)*(alpha - 3)*(alpha - 1)",
+      "8": "alpha*(alpha - 8)*(alpha - 6)*(alpha - 4)*(alpha - 2)",
+      "9": "(alpha - 9)*(alpha - 7)*(alpha - 5)*(alpha - 3)*(alpha - 1)"
+    }
+  },
+  "calibrations": [
+    {
+      "alpha": 4,
+      "k": 8,
+      "beta": "0.5",
+      "digits": 60,
+      "finite_log_window": [
+        "-80.0",
+        "4.0"
+      ],
+      "primitive_gaussian_polynomial": "-z**13 + 32*z**11 - 278*z**9 + 648*z**7 - 189*z**5",
+      "primitive_area": "-240.636314364576048",
+      "runs": [
+        {
+          "L": 20,
+          "H_convolution_scaled_ratio": "1.323703596398872",
+          "geometric_difference_scaled_ratio": "-1.141213275474319"
+        },
+        {
+          "L": 100,
+          "H_convolution_scaled_ratio": "1.179161819253207",
+          "geometric_difference_scaled_ratio": "1.510629878562327"
+        },
+        {
+          "L": 500,
+          "H_convolution_scaled_ratio": "0.8086198841276997",
+          "geometric_difference_scaled_ratio": "1.901394102315372"
+        },
+        {
+          "L": 2000,
+          "H_convolution_scaled_ratio": "0.8527811084554913",
+          "geometric_difference_scaled_ratio": "0.9678752614342057"
+        }
+      ]
+    },
+    {
+      "alpha": 4,
+      "k": 8,
+      "beta": "0.5",
+      "digits": 85,
+      "finite_log_window": [
+        "-80.0",
+        "4.0"
+      ],
+      "primitive_gaussian_polynomial": "-z**13 + 32*z**11 - 278*z**9 + 648*z**7 - 189*z**5",
+      "primitive_area": "-240.636314364576048",
+      "runs": [
+        {
+          "L": 20,
+          "H_convolution_scaled_ratio": "1.323703596398872",
+          "geometric_difference_scaled_ratio": "-1.141213275474319"
+        },
+        {
+          "L": 100,
+          "H_convolution_scaled_ratio": "1.179161819253207",
+          "geometric_difference_scaled_ratio": "1.510629878562327"
+        },
+        {
+          "L": 500,
+          "H_convolution_scaled_ratio": "0.8086198841276997",
+          "geometric_difference_scaled_ratio": "1.901394102315372"
+        },
+        {
+          "L": 2000,
+          "H_convolution_scaled_ratio": "0.8527811084554913",
+          "geometric_difference_scaled_ratio": "0.9678752614342057"
+        }
+      ]
+    },
+    {
+      "alpha": 3,
+      "k": 7,
+      "beta": "-0.5",
+      "digits": 60,
+      "finite_log_window": [
+        "-80.0",
+        "4.0"
+      ],
+      "primitive_gaussian_polynomial": "-z**11 + 25*z**9 - 153*z**7 + 189*z**5",
+      "primitive_area": "-60.1590785911440121",
+      "runs": [
+        {
+          "L": 20,
+          "H_convolution_scaled_ratio": "1.312157328702756",
+          "geometric_difference_scaled_ratio": "2.951308353379818"
+        },
+        {
+          "L": 100,
+          "H_convolution_scaled_ratio": "1.214866927039213",
+          "geometric_difference_scaled_ratio": "1.059718145077626"
+        },
+        {
+          "L": 500,
+          "H_convolution_scaled_ratio": "0.7992780364489333",
+          "geometric_difference_scaled_ratio": "0.04256188830049715"
+        },
+        {
+          "L": 2000,
+          "H_convolution_scaled_ratio": "0.8609883633434295",
+          "geometric_difference_scaled_ratio": "0.8138245023329111"
+        }
+      ]
+    },
+    {
+      "alpha": 3,
+      "k": 7,
+      "beta": "-0.5",
+      "digits": 85,
+      "finite_log_window": [
+        "-80.0",
+        "4.0"
+      ],
+      "primitive_gaussian_polynomial": "-z**11 + 25*z**9 - 153*z**7 + 189*z**5",
+      "primitive_area": "-60.1590785911440121",
+      "runs": [
+        {
+          "L": 20,
+          "H_convolution_scaled_ratio": "1.312157328702756",
+          "geometric_difference_scaled_ratio": "2.951308353379818"
+        },
+        {
+          "L": 100,
+          "H_convolution_scaled_ratio": "1.214866927039213",
+          "geometric_difference_scaled_ratio": "1.059718145077626"
+        },
+        {
+          "L": 500,
+          "H_convolution_scaled_ratio": "0.7992780364489333",
+          "geometric_difference_scaled_ratio": "0.04256188830049715"
+        },
+        {
+          "L": 2000,
+          "H_convolution_scaled_ratio": "0.8609883633434295",
+          "geometric_difference_scaled_ratio": "0.8138245023329111"
+        }
+      ]
+    }
+  ]
+}
