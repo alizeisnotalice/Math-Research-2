@@ -97,13 +97,22 @@ if __name__=='__main__':
                       'd4a93ccaa6e8458c2427f26a533f3447f3961cef2e4b04721fdc396907034dd0', 541),
         F('.83731'): ('finite-point-lift-083731-replay.json',
                       'a395ae3c05008ce57a0adbd27c1dc47c71346b1eb119347f2a1d66050015bc96', 614),
+        F('.83732'): ('finite-point-lift-083732-replay.json',
+                      'cd21296af9d2d2e963588cd531aaee321364570ee182e0bf06a979b11d7f4846', 705),
     }
     name, expected, leaves = proofs[args.lower]
     proof = (HERE/name).read_bytes()
     summary = json.loads(proof)
     assert sha256(proof).hexdigest() == expected and summary['complete']
-    assert summary['original_leaves'] == leaves and F(summary['target']) == args.lower
-    assert summary['geometry_sha256'] == sha256((HERE/'finite-point-leaf-input.json').read_bytes()).hexdigest()
+    if 'input_sha256' in summary:
+        lift = (HERE/'finite-point-lift-083732.json').read_bytes()
+        assert summary['input_sha256'] == sha256(lift).hexdigest()
+        assert summary['covered'] == leaves and F(summary['threshold']) == args.lower
+        geometry_hash = json.loads(lift)['point_input_sha256']
+    else:
+        assert summary['original_leaves'] == leaves and F(summary['target']) == args.lower
+        geometry_hash = summary['geometry_sha256']
+    assert geometry_hash == sha256((HERE/'finite-point-leaf-input.json').read_bytes()).hexdigest()
     groups,receipt=generate(args.target,args.lower)
     receipt.update(curved_proof=name, curved_proof_sha256=expected)
     raw=(json.dumps(groups,separators=(',',':'))+'\n').encode()
