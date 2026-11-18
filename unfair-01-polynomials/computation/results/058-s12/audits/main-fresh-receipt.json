@@ -1,0 +1,63 @@
+{
+  "counts": {
+    "mothers": 17,
+    "newton2_core": 39946,
+    "newton3": 56491,
+    "raw_core": 1239790,
+    "root_outer_reject": 2,
+    "root_positive_reject": 15,
+    "row2": 33526,
+    "row3_normalized": 20818,
+    "row4_difference_divisibility": 31411,
+    "row4_normalized": 34674,
+    "row5": 3,
+    "row5_difference": 2182,
+    "row6_cross_pass": 3,
+    "row7": 33,
+    "row8_states": 17
+  },
+  "domains": 112,
+  "fresh_outputs_sha256": {
+    "full-entry.json": "21648a2b6bdef75884d1afbc03d0e1c4a8710ae4cf12cd9602e3a7f8988445cb",
+    "full-entry.rows.jsonl": "45d10a0330453ed52784479176db3d60fe64bd7e55ef7746ddfb02a145162e4a",
+    "independent-entry.json": "c7ac5b1e05f2182d45b7c35b8bb903d3fd5f1986f138573d0eecc0b7756ba3dc"
+  },
+  "processes": [
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/sync/unfair-01-polynomials/computation/results/058-s12/certificate/source/s12_exact_entry.py",
+        "--full",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round058-parent/public-s12-fresh/full-entry.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 0.592971,
+      "exit_code": 0,
+      "pid": 69325,
+      "source_sha256": "54a7ce37dd5dbc01cbf179f046842fc44e1527ce1b1b5daa9acba47e7365ea93",
+      "stage": "radical"
+    },
+    {
+      "command": [
+        "/Users/zzh/.venvs/main/bin/python",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/sync/unfair-01-polynomials/computation/results/058-s12/certificate/source/verify_s12_integral_basis.py",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round058-parent/public-s12-fresh/full-entry.rows.jsonl",
+        "--out",
+        "/Volumes/data/CodexTemp/T2/unfair-01-polynomials/round058-parent/public-s12-fresh/independent-entry.json",
+        "--workers",
+        "4"
+      ],
+      "elapsed_seconds": 1.973076,
+      "exit_code": 0,
+      "pid": 69334,
+      "source_sha256": "1abe9ce3bc80fc70fd0e504d83bc06540a15deb64ef77bf1ae1cfbd0742dea59",
+      "stage": "integral-basis"
+    }
+  ],
+  "python": "3.13.18 (main, Oct 25 2026, 18:31:23) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "source_manifest_sha256": "91a50a00a1954812942f1ae340a90fe65db2af5c8b3b70f55371ad004ab45bb8",
+  "status": "verified",
+  "workers": 4
+}
