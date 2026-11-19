@@ -1,0 +1,110 @@
+{
+  "exact_reflection_then_rotation": [
+    "2/5",
+    "7/60"
+  ],
+  "exact_rotation_then_reflection": [
+    "0",
+    "-5/12"
+  ],
+  "interfaces": {
+    "6ed01289568bd4f5088f1f19220ed6d3c7eca181ad7723e3ec9aba33f9134f3e": {
+      "bow": false,
+      "files": [
+        "physical-nine-47/r6.zip::public-r6-three-thresholds/frozen-sources/nine-replay-kit.zip::nine.cpp"
+      ],
+      "snippets": [
+        "constexpr int CIRCLE=384;",
+        "if(cells!=18*CIRCLE || n!=256)std::abort();",
+        "const int offset[4]={0,CIRCLE,6*CIRCLE,16*CIRCLE};",
+        "const int span[4]={CIRCLE,CIRCLE,2*CIRCLE,2*CIRCLE};",
+        "const int refined[4]={-1,2*CIRCLE,8*CIRCLE,-1};",
+        "for(int f=0;f<4;++f){",
+        "if(!full_cell(refined[f]+4*angle+h)){excluded=false;break;}"
+      ],
+      "use_fine": true
+    },
+    "99ed59828114426e41e30340666f4d159d6d88d01481c48f55694bcb1186c745": {
+      "bow": true,
+      "files": [
+        "physical-nine-47/r6c.zip::public-r6c-global-083747/sources/reuleaux-slice-kit.zip::slice.cpp"
+      ],
+      "snippets": [
+        "const L knots=(i>=768 && i<2304) || (i>=3072 && i<6144) ? 1536:384;",
+        "const L bow=18*std::min(left,right)/(knots*knots);",
+        "constexpr int CIRCLE=384;",
+        "if(cells!=18*CIRCLE || n!=256)std::abort();",
+        "const int offset[4]={0,CIRCLE,6*CIRCLE,16*CIRCLE};",
+        "const int span[4]={CIRCLE,CIRCLE,2*CIRCLE,2*CIRCLE};",
+        "const int refined[4]={-1,2*CIRCLE,8*CIRCLE,-1};",
+        "for(int f=0;f<4;++f){",
+        "if(!full_cell(refined[f]+4*angle+h)){excluded=false;break;}"
+      ],
+      "use_fine": true
+    },
+    "b0ea78a2247bcb50c1ba68d81e517233d64d17a32d1f4c245015ec8a04be46c1": {
+      "bow": false,
+      "files": [
+        "physical-nine-47/r6.zip::public-r6-three-thresholds/frozen-sources/nine-replay-kit.zip::shared.cpp"
+      ],
+      "snippets": [
+        "constexpr int CIRCLE=384;",
+        "if(cells!=18*CIRCLE || n!=256)std::abort();",
+        "const int offset[4]={0,CIRCLE,6*CIRCLE,16*CIRCLE};",
+        "const int span[4]={CIRCLE,CIRCLE,2*CIRCLE,2*CIRCLE};",
+        "const int refined[4]={-1,2*CIRCLE,8*CIRCLE,-1};",
+        "for(int f=0;f<4;++f){",
+        "if(!full_cell(refined[f]+4*angle+h)){excluded=false;break;}"
+      ],
+      "use_fine": true
+    },
+    "c0674f421629bfe53da869465734cf5e90e74532dce632bec298cf8e22079d66": {
+      "bow": true,
+      "files": [
+        "physical-nine-47/r6.zip::public-r6-three-thresholds/frozen-sources/nine-replay-kit.zip::curved.cpp"
+      ],
+      "snippets": [
+        "const L knots=(i>=768 && i<2304) || (i>=3072 && i<6144) ? 1536:384;",
+        "const L bow=18*std::min(left,right)/(knots*knots);",
+        "constexpr int CIRCLE=384;",
+        "if(cells!=18*CIRCLE || n!=256)std::abort();",
+        "const int offset[4]={0,CIRCLE,6*CIRCLE,16*CIRCLE};",
+        "const int span[4]={CIRCLE,CIRCLE,2*CIRCLE,2*CIRCLE};",
+        "const int refined[4]={-1,2*CIRCLE,8*CIRCLE,-1};",
+        "for(int f=0;f<4;++f){",
+        "if(!full_cell(refined[f]+4*angle+h)){excluded=false;break;}"
+      ],
+      "use_fine": true
+    }
+  },
+  "rejected_unsquared_speed_rule": {
+    "desired_curvature": "39/2",
+    "test_slope": "991/1000"
+  },
+  "rejected_virtual_in_curvature_rule": {
+    "artificial_shift": "1/50",
+    "desired_curvature": "20",
+    "physical_min": "1"
+  },
+  "seams": {
+    "P962.json": {
+      "0": {
+        "first_fine_on_seam": "-11083217449563/4000000000000000000",
+        "last_coarse_shift_delta": "6567034183479/1000000000000000000"
+      },
+      "sha256": "2cc33ba99450b0461fb9edce61f0cd5bc601573bb22d0d8d2d340d9b671f2cf9"
+    },
+    "Q962.json": {
+      "0": {
+        "first_fine_on_seam": "-17056692906057/40000000000000000000",
+        "last_coarse_shift_delta": "449796337389/10000000000000000000"
+      },
+      "1": {
+        "first_fine_on_seam": "4978688717583/40000000000000000000",
+        "last_coarse_shift_delta": "449796337389/10000000000000000000"
+      },
+      "difference_if_wrongly_forced_reflected_map": "10764058703139/1250000000000000000",
+      "sha256": "ccd0bead93f2b5f67217a892a7bfdd4bd3c1754ade811752de41437678a00076"
+    }
+  }
+}
