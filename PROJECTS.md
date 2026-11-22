@@ -15,3 +15,4 @@
 | [lebesgue-universal-cover](lebesgue-universal-cover/STATE.md) | 平面凸万能覆盖最小面积 | 0.83751166497236247783096717752723014 < Λ < 0.844088795387818568068160578195374139951，精确值开放 | 第288轮完成，已暂停 | 待续 .83755 全域、B 档共同宿主与定宽体形状估计 |
 
 | [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；真正高斯输入下所有有界轮廓的 Wasserstein 精确首变分 | 第208轮完成 | 快速振荡尾部及平坦最大点 |
+| [critical-binary-derrida-retaux](critical-binary-derrida-retaux/README.md) | 固定二叉 DR 临界参数与 H3 渐近 | 先确定任意正整数初始正值律的临界参数 | 初始化 | 相变判据 |
