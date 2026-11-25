@@ -24,3 +24,20 @@ python3 -B computation/sondow.py 12
 intervals.py 的两个位置参数分别是 γ 的系数和整数常数；可重复使用 --log K COEFF。返回有理端点、精度和严格符号或 floor。approximants.py 输出 n=0 至给定上限的 JSON，error_interval 是带符号的 γ−p/q，form 是 qγ−p。sondow.py 输出单个指标的素因子指数、log S 的区间与 floor、dI 的区间、排除的分母所属的因子集。scaled_threshold_difference 是 \(2^n(\{\log S_n\}-2^{-n})\)。推荐先重放 n=1 和 n=12。
 
 [certificate.json](computation/certificate.json) 保存有限结论的精确端点。[numerical.txt](computation/numerical.txt) 保存积分与拟合输出。[blocks.json](computation/blocks.json) 保存块实验的精确坐标。需要本机重定向额外输出时使用 /Volumes/data/CodexTemp/T2/euler-gamma-irrationality/。
+
+## 正式研究 · 第 2–10 轮
+
+[第 10 轮总审查与各轮入口](rounds/010.md) · [孤立首系数的整除定理](proofs/isolated-leading-coordinate.md)
+
+正式轮次使用 CPython 3.13.18、SymPy 1.14.0、python-flint 0.9.0。已具备上述依赖时可执行以下完整有限重放，另可用已安装的三个专项技能作交叉检查。
+
+~~~sh
+python -B computation/formal/verify.py
+python -B computation/formal/check_skills.py apt mixed riv cmf
+~~~
+
+本机 FLINT 位于 data 临时目录。可用以下命令重放第一条；该临时依赖可再生成，所有必要数学输入均在课题目录。
+
+~~~sh
+PYTHONPATH=/Volumes/data/CodexTemp/T2/euler-gamma-irrationality/flint /Users/zzh/.venvs/main/bin/python3 -B computation/formal/verify.py
+~~~
