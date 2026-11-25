@@ -16,4 +16,4 @@
 
 | [continuous-cantelli](continuous-cantelli/README.md) | 独立标准高斯与连续非负随机系数的高斯输出刚性 | 原题未解决；真正高斯输入下所有有界轮廓的 Wasserstein 精确首变分 | 第208轮完成 | 快速振荡尾部及平坦最大点 |
 | [critical-binary-derrida-retaux](critical-binary-derrida-retaux/README.md) | 固定二叉 DR 临界参数与 H3 渐近 | 已定临界参数；一般 H3 下五项精确渐近 | 第5轮核查完成 | 第4轮证明及第5轮复核 |
-| [euler-gamma-irrationality](euler-gamma-irrationality/README.md) | 欧拉常数 γ 的无理性 | 原题开放；素数阶梯与模素数像秩证书 | 第4轮完成 | 单支积分的全区间符号 |
+| [euler-gamma-irrationality](euler-gamma-irrationality/README.md) | 欧拉常数 γ 的无理性 | 原题开放；符号证书与有间隔首项引理 | 第5轮完成 | 相邻平台反向不等式的无限性 |
